@@ -1,0 +1,17 @@
+---
+layout: null
+---
+[
+{% for plugin in site.plugins %}{% unless forloop.first %},{% endunless %}
+  {
+    "id": "{{ plugin.id }}",
+    "title": "{{ plugin.title }}",
+    "description": "{{ plugin.description }}",
+    "archive": "{{ plugin.archive }}",
+    "author": "{{ plugin.author }}",
+    "homepage": "{{ plugin.homepage }}",
+    "page": "{{ plugin.url | prepend: site.baseurl }}",
+    "license": "{{ plugin.license }}"{% if plugin.featuredimage %},
+    "image": "{{ plugin.featuredimage }}"{% endif %}
+  }{% endfor %}
+]

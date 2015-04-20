@@ -1,0 +1,67 @@
+---
+layout: default
+---
+<div class="page-header">
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+        <h1>{{ page.title }}</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="content row-fluid">
+    <article class="post-content span8">
+      <p class="lead">
+        {{ page.description }}
+      </p>
+
+      {{ content }}
+    </article>
+
+    <div class="span4">
+      {% if page.author %}
+      <dl>
+        <dt>Author</dt>
+        <dd>{{ page.author }}</dd>
+      </dl>
+      {% endif %}
+      {% if page.homepage %}
+      <dl>
+        <dt>Homepage</dt>
+        <dd><a href="{{ page.homepage }}" target="_blank">{{ page.homepage }}</a></dd>
+      </dl>
+      {% endif %}
+      {% if page.source %}
+      <dl>
+        <dt>Source</dt>
+        <dd><a href="{{ page.source }}" target="_blank">{{ page.source }}</a></dd>
+      </dl>
+      {% endif %}
+      {% if page.license %}
+      <dl>
+        <dt>License</dt>
+        <dd>{{ page.license }}</dd>
+      </dl>
+      {% endif %}
+      {% if page.screenshots %}
+      <dl>
+        <dt>Screenshots</dt>
+        <dd>
+          <ul class="thumbnails">
+            {% for screenshot in page.screenshots %}
+            <li class="span12">
+              <a href="{{ screenshot.url }}" data-lightbox="{{ page.id }}" data-title="{{ screenshot.caption }}"><img src="{{ screenshot.url }}" alt="{{ screenshot.alt }}" title="{{ screenshot.caption }}"></a>
+            </li>
+            {% endfor %}
+          </ul>
+        </dd>
+      </dl>
+      {% endif %}
+    </div>
+
+  </div>
+</div>
+

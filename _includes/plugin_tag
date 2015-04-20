@@ -1,0 +1,1 @@
+<a class="label" href="{{ '/by_tag/' | prepend: site.baseurl }}#tag-{{ include.tag | slugify }}">{{ include.tag }}</a>

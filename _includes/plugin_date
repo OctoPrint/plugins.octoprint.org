@@ -1,0 +1,7 @@
+{% assign date = (include.date | append:' 00:00:00') %}
+{% if include.format %}
+  {{ date | date include.format }}
+{% endif %}
+{% unless include.format %}
+  {{ date | date_to_string }}
+{% endunless %}

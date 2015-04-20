@@ -1,0 +1,36 @@
+      <footer>
+          <div class="container">
+              <div class="row">
+                  <div class="span4">
+                      <h2>Contact</h2>
+                      <ul class="icons">
+                          <li><i class="icon-envelope"></i> Mailinglist: <a href="mailto:octoprint+subscribe@googlegroups.com?subject=Subscribe">Subscribe</a> (<a href="https://groups.google.com/group/octoprint">Archive</a>)</li>
+                          <li><i class="icon-google-plus"></i> G+ Page: <a href="https://plus.google.com/+OctoprintOrg/posts" target="_blank">+OctoPrint</a></li>
+                          <li><i class="icon-google-plus"></i> G+ Community: <a href="https://plus.google.com/communities/102771308349328485741" target="_blank">+OctoPrint</a></li>
+                          <li><i class="icon-comments-alt"></i> IRC: <a href="irc://chat.freenode.net/octoprint" target="_blank">#octoprint on freenode</a></li>
+                          <li><i class="icon-twitter"></i> Twitter: <a href="https://twitter.com/OctoPrint3D" target="_blank">@OctoPrint3D</a></li>
+                          <li><i class="icon-legal"></i> <a href="http://octoprint.org/imprint/">Impressum / Imprint</a></li>
+                      </ul>
+                  </div>
+                  <div class="span4">
+                      <h2>Recently Added</h2>
+                      <ul>
+                          {% assign sorted_plugins = (site.plugins | sort: 'date') %}
+                          {% for plugin in sorted_plugins reversed limit:6 %}
+                          <li><a class="post-link" href="{{ plugin.url | prepend: site.baseurl }}">{{ plugin.title }}</a> ({{ plugin.date }})</li>
+                          {% endfor %}
+                      </ul>
+                  </div>
+                  <div class="span4 hidden-phone">
+                      <img src="/assets/img/logo-footer.png" class="pull-right">
+                  </div>
+              </div>
+              <div class="row">
+                <div class="span12">
+                  <p class="poweredBy">
+                    <a href="http://octoprint.org">OctoPrint</a> is sponsored &amp; maintained by <a href="http://www.bq.com">bq</a>
+                  </p>
+                </div>
+              </div>
+          </div>
+      </footer>

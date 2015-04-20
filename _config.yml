@@ -1,0 +1,17 @@
+# Site settings
+title: OctoPrint Plugin Repository
+short_title: Plugin Repo
+email: contact@octoprint.org
+description: The official OctoPrint Plugin Repository
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://plugins.octoprint.org" # the base hostname & protocol for your site
+twitter_username: OctoPrint3D
+github_username:  OctoPrint
+
+# Build settings
+markdown: kramdown
+
+collections:
+  plugins:
+    output: true
+    permalink: /plugins/:path/

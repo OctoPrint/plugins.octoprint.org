@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en" xmlns="http://www.w3.org/1999/html"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+    <title>{{ page.title }}</title>
+    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+    <meta name="author" content="{{ site.author.name }}">
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Le styles -->
+    <link rel="stylesheet" href="/assets/css/site.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap-responsive.css">
+    <link rel="stylesheet" href="/assets/css/prettify.css">
+    <link rel="stylesheet" href="/assets/css/lightbox.css">
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="/assets/img/tentacle-32x32.png">
+
+    <!-- Le RSS feed -->
+    <link rel="alternate" type="application/rss+xml" title="OctoPrint Plugin Repository: New Plugins" href="{{ '/feed.xml' | prepend: site.baseurl }}">
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>
+</head>
+
+<body>
+
+{% include navigation.html %}
+
+<div id="wrap">
+    <div id="main">
+    {{ content }}
+    </div>
+</div>
+
+{% include footer.html %}
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/prettify/r224/prettify.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+<script src="/assets/js/lunr.min.js"></script>
+<script src="/assets/js/mustache.js"></script>
+<script src="/assets/js/URI.min.js"></script>
+<script src="/assets/js/date.format.js"></script>
+<script src="/assets/js/jquery.lunr.search.js"></script>
+<script src="/assets/js/lightbox.min.js"></script>
+<script src="/assets/js/site.js"></script>
+
+</body>
+</html>

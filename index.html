@@ -1,0 +1,29 @@
+---
+layout: page
+title: OctoPrint Plugin Repository
+---
+
+<div class="row-liquid">
+  <div class="span8">
+    <h2>Most recently added plugins</h2>
+    <ul>
+      {% assign sorted_plugins = (site.plugins | sort: 'date', 'last') %}
+      {% for plugin in sorted_plugins reversed %}
+      <li>{% include plugin_snippet plugin=plugin %}</li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="span4">
+    <h2>Search</h2>
+
+    {% include search.html %}
+
+    <!--<h2>Installation</h2>
+
+    Lorem ipsum..-->
+
+    <h2>Stats</h2>
+
+    There are currently {{ site.plugins | size }} plugins listed in this repository.
+  </div>
+</div>
