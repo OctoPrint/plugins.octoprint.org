@@ -10,10 +10,17 @@
       </a>
       <div class="nav-collapse collapse">
         <ul class="nav">
-          <li><a href="{{ '/by_name/' | prepend: site.baseurl }}">by Name</a></li>
-          <li><a href="{{ '/by_date/' | prepend: site.baseurl }}">by Date</a></li>
-          <li><a href="{{ '/by_tag/' | prepend: site.baseurl }}">by Tag</a></li>
-          <li><a href="http://octoprint.org">OctoPrint Home</a></li>
+          <li{% if page.url == '/by_name/index.html' %} class="active"{% endif %}><a href="{{ '/by_name/' | prepend: site.baseurl }}">by Name</a></li>
+          <li{% if page.url == '/by_date/index.html' %} class="active"{% endif %}><a href="{{ '/by_date/' | prepend: site.baseurl }}">by Date</a></li>
+          <li{% if page.url == '/by_tag/index.html' %} class="active"{% endif %}><a href="{{ '/by_tag/' | prepend: site.baseurl }}">by Tag</a></li>
+          <li><form class="navbar-search pull-left" action="{{ '/search/' | prepend: site.baseurl }}" method="get"><input type="text" class="search-query" placeholder="Enter search term & hit enter..." name="q"></form></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Help <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="{{ '/help/installation/' | prepend: site.baseurl }}">Installing Plugins</a></li>
+              <li><a href="{{ '/help/registering/' | prepend: site.baseurl }}">Registering Plugins</a></li>
+            </ul>
+          </li>
         </ul>
       </div>
       <div class="pull-right visible-desktop">

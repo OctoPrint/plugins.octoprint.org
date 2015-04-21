@@ -1,0 +1,57 @@
+---
+layout: page
+title: Installing a plugin
+---
+
+<div class="alert">
+    <strong>Attention!</strong> Plugins are currently only supported in OctoPrint <code>devel</code> version, <strong>not</strong>
+    the stable <code>master</code> version that is included in OctoPi. In order to be able to use any of the
+    plugins here you'll first need to upgrade to the <code>devel</code> branch if you are not running it already.
+
+    You can find instructions on how to do so <a href="https://github.com/foosel/OctoPrint/wiki/FAQ#how-can-i-switch-the-branch-of-the-octoprint-installation-on-my-octopi-image">in OctoPrint's FAQ</a>.
+</div>
+
+All plugins listed in this repository can be installed using <a href="https://github.com/OctoPrint/OctoPrint-PluginManager">OctoPrint's Plugin Manager</a>.
+or via command line.
+
+You have these three options:
+
+<ul>
+    <li>
+        Open the plugin repository in the Plugin Manager's settings dialog, find the plugin you are interesting in there
+        and install it with the "Install" button provided next to it.
+
+        <ul class="thumbnails">
+            <li class="offset4 span4">
+                {% capture screenie %}{% include canonic_url url='/assets/img/help/install_plugin_from_repo.png' %}{% endcapture %}
+                <a href="{{ screenie }}" data-lightbox="install_from_repo" data-title="Installing a plugin from the repository">
+                    <img src="{{ screenie }}" alt="Install plugin from repository" title="Installing a plugin from the repository" class="span12">
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        Copy the part after <code>pip install</code> in the little "Installation" box that's part of every plugin page and
+        paste that into the "Install from URL" text box in the Plugin Manager's settings dialog and hit "Install".
+
+        <ul class="thumbnails">
+            <li class="span4 offset2">
+                {% capture screenie %}{% include canonic_url url='/assets/img/help/install_plugin_from_url_1.png' %}{% endcapture %}
+                <a href="{{ screenie }}" data-lightbox="install_from_url" data-title="Installing a plugin from URL: Where to find the URL">
+                    <img src="{{ screenie }}" alt="Install plugin from URL" title="Installing a plugin from URL: Where to find the URL">
+                </a>
+            </li>
+            <li class="span4">
+                {% capture screenie %}{% include canonic_url url='/assets/img/help/install_plugin_from_url_2.png' %}{% endcapture %}
+                <a href="{{ screenie }}" data-lightbox="install_from_url" data-title="Installing a plugin from URL: Pasting the URL into the Plugin Manager">
+                    <img src="{{ screenie }}" alt="Install plugin from URL" title="Installing a plugin from URL: Pasting the URL into the Plugin Manager">
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        Copy the full "Installation" command listed on each plugin page and paste it into the command line of the host
+        you installed OctoPrint on. <strong>Note:</strong> Make sure you are using the correct version of <code>pip</code> -- on OctoPi you'll
+        need to use <code>~/oprint/bin/pip</code> instead of just <code>pip</code>.
+    </li>
+</ul>

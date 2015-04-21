@@ -5,7 +5,7 @@ title: Plugins by Date
 
 <ul>
   {% assign sorted_plugins = (site.plugins | sort: 'date') %}
-  {% for plugin in sorted_plugins reverse %}
+  {% for plugin in sorted_plugins reversed %}
     <li>{% include plugin_snippet plugin=plugin %}</li>
   {% endfor %}
 </ul>

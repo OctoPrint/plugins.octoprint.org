@@ -7,12 +7,11 @@ archive: https://github.com/OctoPrint/OctoPrint-SoftwareUpdate/archive/master.zi
 homepage: https://github.com/OctoPrint/OctoPrint-SoftwareUpdate
 author: Gina Häußge
 license: AGPLv3
-categories: 
-- helper 
-- administration
 tags: 
 - update 
 - helper
+- administration
 date: 2015-04-15
 ---
 
+Documentation forthcoming

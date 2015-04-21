@@ -12,48 +12,65 @@ layout: default
 </div>
 
 <div class="container">
-  <div class="content row-fluid">
+  <div class="content plugin-content row-fluid">
     <article class="post-content span8">
       <p class="lead">
         {{ page.description }}
       </p>
-
       {{ content }}
     </article>
 
     <div class="span4">
+      {% if page.archive %}
+      <dl class="installation">
+        <dt>Installation</dt>
+        <dd><pre>pip install {{ page.archive }}</pre></dd>
+      </dl>
+      {% endif %}
+      {% if page.tags %}
+      <dl class="tags">
+        <dt>Tags</dt>
+        <dd>
+          {% assign tags = (page.tags | sort) %}
+          {% for tag in tags %}
+          {% include plugin_tag tag=tag %}
+          {% endfor %}
+        </dd>
+      </dl>
+      {% endif %}
       {% if page.author %}
-      <dl>
+      <dl class="author">
         <dt>Author</dt>
         <dd>{{ page.author }}</dd>
       </dl>
       {% endif %}
       {% if page.homepage %}
-      <dl>
+      <dl class="homepage">
         <dt>Homepage</dt>
         <dd><a href="{{ page.homepage }}" target="_blank">{{ page.homepage }}</a></dd>
       </dl>
       {% endif %}
       {% if page.source %}
-      <dl>
+      <dl class="source">
         <dt>Source</dt>
         <dd><a href="{{ page.source }}" target="_blank">{{ page.source }}</a></dd>
       </dl>
       {% endif %}
       {% if page.license %}
-      <dl>
+      <dl class="license">
         <dt>License</dt>
         <dd>{{ page.license }}</dd>
       </dl>
       {% endif %}
       {% if page.screenshots %}
-      <dl>
+      <dl class="screenshots">
         <dt>Screenshots</dt>
         <dd>
           <ul class="thumbnails">
             {% for screenshot in page.screenshots %}
             <li class="span12">
-              <a href="{{ screenshot.url }}" data-lightbox="{{ page.id }}" data-title="{{ screenshot.caption }}"><img src="{{ screenshot.url }}" alt="{{ screenshot.alt }}" title="{{ screenshot.caption }}"></a>
+              {% capture screenie %}{% include canonic_url url=screenshot.url %}{% endcapture %}
+              <a href="{{ screenie }}" data-lightbox="{{ page.id }}" data-title="{{ screenshot.caption }}"><img src="{{ screenie }}" alt="{{ screenshot.alt }}" title="{{ screenshot.caption }}"></a>
             </li>
             {% endfor %}
           </ul>

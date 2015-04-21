@@ -9,6 +9,8 @@ author: Pim Rutgers
 license: AGPLv3
 archive: https://github.com/Booli/OctoPrint-ActionTriggerPlugin/archive/master.zip
 date: 2015-04-17
+tags:
+- printing
 ---
 
 > Its gun do some serial trigger handling yo

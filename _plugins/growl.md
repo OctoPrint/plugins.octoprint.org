@@ -4,16 +4,17 @@ id: growl
 title: Growl
 description: Get Growl notifications from your OctoPrint installation.
 author: Gina Häußge
+homepage: https://github.com/OctoPrint/OctoPrint-Growl
 source: https://github.com/OctoPrint/OctoPrint-Growl
 archive: https://github.com/OctoPrint/OctoPrint-Growl/archive/master.zip 
 screenshots:
-- url: https://i.imgur.com/glZq5zJ.png
+- url: /assets/img/plugins/growl/settings.png
   alt: Settings dialog
   caption: Growl plugin settings dialog
-- url: https://i.imgur.com/cqYpfR4.png
+- url: /assets/img/plugins/growl/notification.png
   alt: Example notification
   caption: Example notification for a started print job
-featuredimage: https://i.imgur.com/cqYpfR4.png
+featuredimage: /assets/img/plugins/growl/notification.png
 date: 2015-04-14
 tags: 
 - notification
@@ -45,4 +46,4 @@ notification about the other events, you'll have to **tell Growl**. OctoPrint wi
 instance needs to be told to also display them. You can do this in the configuration of your Growl service. For example,
 this is how it looks in [Growl for Windows](http://www.growlforwindows.com/gfw/):
 
-![Growl Plugin: Example of granular notification configuration in Growl for Windows](http://i.imgur.com/Z0wJy8Bl.png)
+![Growl Plugin: Example of granular notification configuration in Growl for Windows]({% include canonic_url url="/assets/img/plugins/growl/win_config.png" %})

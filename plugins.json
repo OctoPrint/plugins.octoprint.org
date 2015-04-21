@@ -10,8 +10,8 @@ layout: null
     "archive": "{{ plugin.archive }}",
     "author": "{{ plugin.author }}",
     "homepage": "{{ plugin.homepage }}",
-    "page": "{{ plugin.url | prepend: site.baseurl }}",
+    "page": "{{ plugin.url | prepend: site.baseurl | prepend: site.external }}",
     "license": "{{ plugin.license }}"{% if plugin.featuredimage %},
-    "image": "{{ plugin.featuredimage }}"{% endif %}
+    "image": "{% include canonic_url url=plugin.featuredimage external=true %}"{% endif %}
   }{% endfor %}
 ]

@@ -116,6 +116,24 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.plugin-content {
+  dl {
+    dd {
+      a {
+        word-wrap: break-word;
+        white-space: pre-wrap;
+      }
+    }
+  }
+
+  dl.installation {
+    dd pre {
+      word-wrap: break-word;
+      white-space: pre-wrap;
+    }
+  }
+}
+
 footer {
   #gradient > .vertical(lighten(@octoLight, 3%), @octoDark);
   background-color: @octoDark;
@@ -163,3 +181,5 @@ footer {
     font-size: 0.9em;
   }
 }
+
+.navbar-search .search-query { line-height: inherit; }

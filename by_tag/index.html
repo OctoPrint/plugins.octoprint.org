@@ -15,6 +15,10 @@ title: Plugins by Tag
 {% endfor %}
 
 {% for tag in uniq_tags %}
+{% include plugin_tag tag=tag %}
+{% endfor %}
+
+{% for tag in uniq_tags %}
 {% unless tag == "" %}
 <h2 id="tag-{{ tag | slugify }}">{{ tag }}</h2>
 

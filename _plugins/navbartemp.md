@@ -10,6 +10,8 @@ author: Jarek Szczepanski
 license: AGPLv3
 featuredimage: https://github.com/imrahil/OctoPrint-NavbarTemp/raw/master/navbar.png?raw=true
 date: 2015-04-17
+tags:
+- ui
 ---
 
 ![NavbarTemp](https://github.com/imrahil/OctoPrint-NavbarTemp/raw/master/navbar.png?raw=true)

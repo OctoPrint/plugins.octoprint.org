@@ -1,0 +1,45 @@
+{% capture throwaway %}
+{% assign url = include.url %}
+{% assign characters = (url | split:'') %}
+{% assign leave_as_is = false %}
+{% assign starts_with_http = false %}
+{% assign starts_with_https = false %}
+{% assign starts_with_double_slash = false %}
+{% assign starts_with_non_slash = false %}
+{% if characters[0] == "h" and characters[1] == "t" and characters[2] == "t" and characters[3] == "p" and characters[4] == ":" %}
+  {% assign starts_with_http = true %}
+{% endif %}
+{% if characters[0] == "h" and characters[1] == "t" and characters[2] == "t" and characters[3] == "p" and characters[4] == "s" and characters[5] == ":" %}
+  {% assign starts_with_https = true %}
+{% endif %}
+{% if characters[0] == "/" and characters[1] == "/" %}
+  {% assign starts_with_double_slash = true %}
+{% endif %}
+{% if characters[0] != "/" %}
+  {% assign starts_with_non_slash = true %}
+{% endif %}
+{% if starts_with_http or starts_with_https or starts_with_double_slash or starts_with_non_slash %}
+  {% assign leave_as_is = true %}
+{% endif %}
+
+<!-- starts_with_http: {{ starts_with_http }} -->
+<!-- starts_with_https: {{ starts_with_https }} -->
+<!-- starts_with_double_slash: {{ starts_with_double_slash }} -->
+<!-- starts_with_non_slash: {{ starts_with_non_slash }} -->
+<!-- leave as is: {{ leave_as_is }} -->
+
+{% unless leave_as_is %}
+  {% assign result = (url | prepend: site.baseurl) %}
+  <!-- result: {{ result }} -->
+  {% if include.external %}
+    <!-- need to prepend external url -->
+    {% assign result = (result | prepend: site.external) %}
+    <!-- result: {{ result }} -->
+  {% endif %}
+{% endunless %}
+{% if leave_as_is %}
+  <!-- remote url, use as-is -->
+  {% assign result = url %}
+  <!-- result: {{ result }} -->
+{% endif %}
+{% endcapture %}{% if include.debug %}{{ throwaway }}{% endif %}{{ result }}
