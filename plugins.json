@@ -5,6 +5,7 @@ layout: null
 {% for plugin in site.plugins %}{% unless forloop.first %},{% endunless %}
   {
     "id": "{{ plugin.id }}",
+    "published": "{{ plugin.date }}",
     "title": "{{ plugin.title }}",
     "description": "{{ plugin.description }}",
     "archive": "{{ plugin.archive }}",
