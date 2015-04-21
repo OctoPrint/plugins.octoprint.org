@@ -14,8 +14,9 @@ title: Plugins by Tag
   {% endunless %}
 {% endfor %}
 
+<i class="icon-tag"></i>
 {% for tag in uniq_tags %}
-{% include plugin_tag tag=tag %}
+  {% include plugin_tag tag=tag %}
 {% endfor %}
 
 {% for tag in uniq_tags %}
