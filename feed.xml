@@ -11,8 +11,8 @@ layout: null
     <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
     <generator>Jekyll v{{ jekyll.version }}</generator>
-    {% assign sorted_plugins = (site.plugins | sort: 'date', 'last') %}
-    {% for plugin in sorted_plugins reversed limit:10 %}
+    {% assign sorted_plugins = (site.plugins | sort: 'date', 'last' | reverse) %}
+    {% for plugin in sorted_plugins limit:10 %}
       <item>
         <title>{{ plugin.title | xml_escape }}</title>
         <description>{{ plugin.description | xml_escape }}</description>

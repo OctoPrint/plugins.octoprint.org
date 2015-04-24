@@ -15,8 +15,8 @@
                   <div class="span4">
                       <h2>Recently Added</h2>
                       <ul>
-                          {% assign sorted_plugins = (site.plugins | sort: 'date') %}
-                          {% for plugin in sorted_plugins reversed limit:6 %}
+                          {% assign sorted_plugins = (site.plugins | sort: 'date' | reverse ) %}
+                          {% for plugin in sorted_plugins limit: 6 %}
                           <li><a class="post-link" href="{{ plugin.url | prepend: site.baseurl }}">{{ plugin.title }}</a> ({{ plugin.date }})</li>
                           {% endfor %}
                       </ul>
