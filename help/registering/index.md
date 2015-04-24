@@ -60,7 +60,8 @@ editing it accordingly:
     make sure to use that exactly like that here too.
  5. Ideally, you'll test that your plugin gets listed correctly and the plugin page looks
     as expected. For this you'll need to install [Jekyll](http://jekyllrb.com/), which is what [Github Pages](https://pages.github.com/) and hence
-    the plugin repository uses for rendering the static repository from the source files.
+    the plugin repository uses for rendering the static repository from the source files. Make sure you have at least [Ruby 2.0](https://www.ruby-lang.org/en/)
+    installed.
     
     Github offers [a nice setup guide](https://help.github.com/articles/using-jekyll-with-pages/) that makes sure you 
     have the exact versions of everything you need to run.
