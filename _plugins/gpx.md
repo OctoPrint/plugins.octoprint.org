@@ -11,7 +11,13 @@ license: AGPLv3
 date: 2015-04-23
 tags:
 - printer
+- protocol
 featuredimage: https://markwal.github.io/OctoPrint/gpx.png
+compatibility:
+  octoprint:
+  - 1.2.0
+  os:
+  - linux
 ---
 
 GPX was created by Dr. Henry Thomas in April 2013.  It is a post processing

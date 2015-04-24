@@ -12,6 +12,7 @@ layout: null
     "author": "{{ plugin.author }}",
     "homepage": "{{ plugin.homepage }}",
     "page": "{{ plugin.url | prepend: site.baseurl | prepend: site.external }}",
+    "compatibility": {{ plugin.compatibility | jsonify }},
     "license": "{{ plugin.license }}"{% if plugin.featuredimage %},
     "image": "{% include canonic_url url=plugin.featuredimage external=true %}"{% endif %}
   }{% endfor %}

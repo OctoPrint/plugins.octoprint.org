@@ -12,6 +12,9 @@ tags:
 - helper
 - administration
 date: 2015-04-15
+compatibility:
+  octoprint:
+  - 1.2.0
 ---
 
 Documentation forthcoming

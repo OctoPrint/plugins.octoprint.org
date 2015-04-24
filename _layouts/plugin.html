@@ -38,6 +38,23 @@ layout: default
         </dd>
       </dl>
       {% endif %}
+      <dl class="compatibility">
+        <dt>Compatibility Information</dt>
+        <dd>
+          <ul>
+            {% if page.compatibility contains "octoprint" %}
+            <li>OctoPrint: {% for ver in page.compatibility.octoprint %}{{ ver }}{% unless forloop.last %}, {% endunless %}{% endfor %}</li>
+            {% else %}
+            <li>OctoPrint: all versions</li>
+            {% endif %}
+            {% if page.compatibility contains "os" %}
+            <li>Operating Systems: {% for os in page.compatibility.os %}{% if os == "windows" %}Windows{% endif %}{% if os == "linux" %}Linux{% endif %}{% if os == "macos" %}MacOS{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}</li>
+            {% else %}
+            <li>Operating Systems: all</li>
+            {% endif %}
+          </ul>
+        </dd>
+      </dl>
       {% if page.author %}
       <dl class="author">
         <dt>Author</dt>

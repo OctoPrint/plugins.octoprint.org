@@ -28,7 +28,11 @@
 <!-- starts_with_non_slash: {{ starts_with_non_slash }} -->
 <!-- leave as is: {{ leave_as_is }} -->
 
-{% unless leave_as_is %}
+{% if leave_as_is %}
+  <!-- remote url, use as-is -->
+  {% assign result = url %}
+  <!-- result: {{ result }} -->
+{% else %}
   {% assign result = (url | prepend: site.baseurl) %}
   <!-- result: {{ result }} -->
   {% if include.external %}
@@ -36,10 +40,5 @@
     {% assign result = (result | prepend: site.external) %}
     <!-- result: {{ result }} -->
   {% endif %}
-{% endunless %}
-{% if leave_as_is %}
-  <!-- remote url, use as-is -->
-  {% assign result = url %}
-  <!-- result: {{ result }} -->
 {% endif %}
 {% endcapture %}{% if include.debug %}{{ throwaway }}{% endif %}{{ result }}

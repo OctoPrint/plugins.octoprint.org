@@ -17,6 +17,9 @@ screenshots:
   alt: MQTT messages in MQTT-spy
   caption: Example messages in MQTT-spy
 date: 2015-04-11
+compatibility:
+  octoprint:
+  - 1.2.0
 ---
 
 This is an OctoPrint Plugin that adds support for [MQTT](http://mqtt.org/) to OctoPrint.

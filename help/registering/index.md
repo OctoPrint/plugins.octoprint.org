@@ -45,6 +45,14 @@ editing it accordingly:
           caption: caption of another screenshot
         - ...
         featuredimage: url of a featured image for your plugin
+        compatibility:
+          octoprint:
+          - list of compatible versions
+          - for example
+          - 1.2.0
+          os:
+          - list of compatible oerating systems
+          - possible values are linux, windows, macos, leaving empty defaults to all
         ---
         
         Longer description of your plugin, configuration examples etc. This part will be visible on the page at
