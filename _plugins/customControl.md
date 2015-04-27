@@ -11,7 +11,7 @@ source: https://github.com/Salandora/octoprint-customControl
 archive: https://github.com/Salandora/octoprint-customControl/archive/master.zip
 tags:
 - administration
-- helper
+- ui
 compatibility:
   octoprint:
   - 1.2.0
