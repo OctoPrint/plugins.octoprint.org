@@ -15,7 +15,12 @@ layout: null
     {% for plugin in sorted_plugins limit:10 %}
       <item>
         <title>{{ plugin.title | xml_escape }}</title>
-        <description>{{ plugin.description | xml_escape }}</description>
+        <description>
+          <![CDATA[
+            {{ plugin.description | xml_escape }}{% if plugin.featuredimage %}
+            <p><img src="{% include canonic_url url=plugin.featuredimage external=true %}"></p>{% endif %}
+          ]]>
+        </description>
         <pubDate>{% include plugin_date_rfc822 date=plugin.date %}</pubDate>
         <link>{{ plugin.url | prepend: site.baseurl | prepend: site.url }}</link>
         <guid isPermaLink="true">{{ plugin.url | prepend: site.baseurl | prepend: site.url }}</guid>
