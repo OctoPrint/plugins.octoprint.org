@@ -24,7 +24,7 @@ layout: default
       {% if page.archive %}
       <dl class="installation">
         <dt>Installation</dt>
-        <dd><pre>pip install {{ page.archive }}</pre></dd>
+        <dd><pre>pip install {% if page.follow_dependency_links %}--process-dependency-links {% endif %}{{ page.archive }}</pre></dd>
       </dl>
       {% endif %}
       {% if page.tags %}
