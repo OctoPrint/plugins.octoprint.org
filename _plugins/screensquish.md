@@ -26,7 +26,6 @@ featuredimage: /assets/img/plugins/screensquish/squishsample.png
 compatibility:
   octoprint:
   - 1.2.0
-  os:
 ---
 Bootstrap 2 "responsive" UI, a single column on your phone
 
