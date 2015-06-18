@@ -10,7 +10,6 @@ script:
 branches:
   only:
   - gh-pages
-  - /pages-(.*)/
 
 env:
   global:
