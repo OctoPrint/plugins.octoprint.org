@@ -3,7 +3,8 @@ layout: page
 title: Search
 ---
 
-<script type="text/javascript"><![CDATA[
+<script type="text/javascript">
+//<![CDATA[
     $(function() {
         $("#search-query").lunrSearch({
             indexUrl: "../search.json",
@@ -17,10 +18,12 @@ title: Search
             ]
         })
     });
-]]></script>
+//]]>
+</script>
 
 {% raw %}
-<script id="search-results-template" type="text/mustache"><![CDATA[
+<script id="search-results-template" type="text/mustache">
+{{! <![CDATA[ }}
     {{#entries}}
       <li>
         <h3><a href="{{url}}">{{title}}</a></h3>
@@ -29,7 +32,8 @@ title: Search
         </p>
       </li>
     {{/entries}}
-]]></script>
+{{! ]]> }}
+</script>
 {% endraw %}
 
 {% include search.html %}

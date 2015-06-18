@@ -16,7 +16,7 @@ title: Plugins by Tag
 
 <i class="icon-tag"></i>
 {% for tag in uniq_tags %}
-  {% include plugin_tag tag=tag %}
+  {% unless tag == "" %}{% include plugin_tag tag=tag %}{% endunless %}
 {% endfor %}
 
 {% for tag in uniq_tags %}
