@@ -4,7 +4,7 @@ rvm:
 
 script:
 - bundle exec jekyll build
-- bundle exec htmlproof ./_site --only-4xx --check-favicon --check-html --file-ignore ./site/search/index.html
+- bundle exec htmlproof ./_site --only-4xx --check-favicon --check-html --file-ignore \./site/search/index.html
 - bundle exec jsonlint ./_site/plugins.json
 
 branches:
