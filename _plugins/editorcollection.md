@@ -1,6 +1,6 @@
 ---
 layout: plugin
-id: editorCollection
+id: editorcollection
 title: Editor Collection
 description: This plugin is for putting Salandora's editor plugins onto one page
 author: Marc Hannappel (Salandora)
