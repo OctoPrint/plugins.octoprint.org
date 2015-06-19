@@ -1,6 +1,6 @@
 ---
 layout: plugin
-id: systemCommandEditor
+id: systemcommandeditor
 title: System Command Editor
 description: This plugin makes System Commands editable through the OctoPrint WebUI
 author: Marc Hannappel (Salandora)
