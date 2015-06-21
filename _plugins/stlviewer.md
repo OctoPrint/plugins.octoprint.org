@@ -20,11 +20,11 @@ tags:
 - stl
 
 screenshots:
-- url: assets/img/plugins/stlviewer/screenshot.jpg
+- url: /assets/img/plugins/stlviewer/screenshot.jpg
   alt: STL Viewer
   caption: STL Viewer
 
-featuredimage: assets/img/plugins/stlviewer/screenshot.jpg
+featuredimage: /assets/img/plugins/stlviewer/screenshot.jpg
 
 compatibility:
   octoprint:
