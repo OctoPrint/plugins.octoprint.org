@@ -23,7 +23,7 @@ layout: default
     <div class="span4">
       {% if page.archive %}
       <dl class="installation">
-        <dt>Installation</dt>
+        <dt>Installation <a href="/help/installation/" class="icon-question-sign"></a></dt>
         <dd><pre>pip install {% if page.follow_dependency_links %}--process-dependency-links {% endif %}{{ page.archive }}</pre></dd>
       </dl>
       {% endif %}
