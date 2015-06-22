@@ -21,21 +21,31 @@ editing it accordingly:
  
         ---
         layout: plugin
+        
         id: your plugin's identifier
         title: your plugin's name
         description: short description of your plugin
         author: your name
         license: your plugin's license
-        date: today's date in format YYYY-MM-DD, e.g. 2015-04-21
+        
+        # today's date in format YYYY-MM-DD, e.g.
+        date: 2015-06-22
+        
         homepage: your plugin's homepage
         source: your plugin's source repository
         archive: archive link to install your plugin via pip
+        
+        # set this to true if your plugin uses the dependency_links setup parameter to include
+        # library versions not yet published on PyPi. SHOULD ONLY BE USED IF THERE IS NO OTHER OPTION!
+        follow_dependency_links: false
+        
         tags:
         - a list
         - of tags
         - that apply
         - to your plugin
         - (take a look at the existing plugins for what makes sense here)
+
         screenshots: 
         - url: url of a screenshot
           alt: alt-text of a screenshot
@@ -44,27 +54,44 @@ editing it accordingly:
           alt: alt-text of another screenshot
           caption: caption of another screenshot
         - ...
+
         featuredimage: url of a featured image for your plugin
+
         compatibility:
+          # list of compatible versions, for example 1.2.0. If left empty no specific version requirement will be assumed
           octoprint:
-          - list of compatible versions
-          - for example
           - 1.2.0
+
+          # list of compatible operating systems, valid values are linux, windows, macos, leaving empty defaults to all
           os:
-          - list of compatible oerating systems
-          - possible values are linux, windows, macos, leaving empty defaults to all
+          - linux
+          - windows
+          - macos
         ---
         
         Longer description of your plugin, configuration examples etc. This part will be visible on the page at
         plugins.octoprint.org/plugin/<your plugin identifier>/
     
+    ---
+    
+    **Note:** If you used the [OctoPrint cookiecutter template](https://github.com/OctoPrint/cookiecutter-octoprint-plugin) for your
+    plugin as suggested in the [Getting Started guide](http://docs.octoprint.org/en/master/plugins/gettingstarted.html#growing-up-how-to-make-it-distributable), 
+    it created a pre-filled file for you under `extras/<your plugin's identifier>.md` you just have to complete. Then 
+    copy it to `_plugins/<your plugin's identifier>`.
+    
+    ---
+    
     If you are unsure how things should look take a look at the existing plugins.
     
     You may add screenshots to `assets/img/plugins/<your plugin's identifier>/` (you'll need to create
-    this folder). You can then reference them as `/assets/img/plugins/<your plugin's identifier>/your_image.png`.
+    this folder). You can then reference them as `/assets/img/plugins/<your plugin's identifier>/your_image.png` (the
+    leading `/` here is important!).
+    
+    The image you define as `featuredimage` will be included in the plugin repository's RSS feed and plugins.json file. 
+    Future versions of the plugin manager might also display it within OctoPrint.
     
     **Important**: Make sure `your plugin's identifier` is the same you will register your plugin
-    under with OctoPrint! So if you entered `my_awesome_plugin` for `plugin_identifier` in [the Plugin Skeleton](https://github.com/OctoPrint/OctoPrint-PluginSkeleton)
+    under with OctoPrint! So if you entered `my_awesome_plugin` for `plugin_identifier` in [cookiecutter](https://github.com/OctoPrint/cookiecutter-octoprint-plugin)
     make sure to use that exactly like that here too.
  5. Ideally, you'll test that your plugin gets listed correctly and the plugin page looks
     as expected. For this you'll need to install [Jekyll](http://jekyllrb.com/), which is what [Github Pages](https://pages.github.com/) and hence
