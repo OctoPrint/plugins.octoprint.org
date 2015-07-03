@@ -6,6 +6,7 @@ script:
 - bundle exec jekyll build
 - bundle exec htmlproof ./_site --only-4xx --check-favicon --check-html --file-ignore "/\.\/_site\/search\/index\.html/"
 - bundle exec jsonlint ./_site/plugins.json
+- bundle exec jsonlint ./_site/search.json
 
 branches:
   only:
