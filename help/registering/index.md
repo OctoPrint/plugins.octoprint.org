@@ -35,6 +35,10 @@ editing it accordingly:
         source: your plugin's source repository
         archive: archive link to install your plugin via pip
         
+        # set this to true if your plugin uses the dependency_links setup parameter to include
+        # library versions not yet published on PyPi. SHOULD ONLY BE USED IF THERE IS NO OTHER OPTION!
+        follow_dependency_links: false
+        
         tags:
         - a list
         - of tags

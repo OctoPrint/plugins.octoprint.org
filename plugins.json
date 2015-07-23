@@ -8,7 +8,8 @@ layout: null
     "published": "{{ plugin.date }}",
     "title": "{{ plugin.title }}",
     "description": "{{ plugin.description }}",
-    "archive": "{{ plugin.archive }}",
+    "archive": "{{ plugin.archive }}",{% if plugin.follow_dependency_links %}
+    "follow_dependency_links": {{ plugin.follow_dependency_links }},{% endif %}
     "author": "{{ plugin.author }}",
     "homepage": "{{ plugin.homepage }}",
     "page": "{{ plugin.url | prepend: site.baseurl | prepend: site.external }}",
