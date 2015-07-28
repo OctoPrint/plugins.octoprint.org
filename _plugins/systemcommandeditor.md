@@ -9,6 +9,12 @@ date: 2015-06-03
 homepage: https://github.com/Salandora/OctoPrint-SystemCommandEditor
 source: https://github.com/Salandora/OctoPrint-SystemCommandEditor
 archive: https://github.com/Salandora/OctoPrint-SystemCommandEditor/archive/master.zip
+screenshots:
+- url: /assets/img/plugins/systemCommandEditor/img1.png
+  alt: Settings
+- url: /assets/img/plugins/systemCommandEditor/img2.png
+  alt: Dialog
+featuredimage: /assets/img/plugins/systemCommandEditor/img1.png
 tags:
 - administration
 - ui
