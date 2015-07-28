@@ -22,7 +22,9 @@ tags:
 
 screenshots:
 - url: /assets/img/plugins/eeprom_repetier/img1.png
+  alt: Settings
 - url: /assets/img/plugins/eeprom_repetier/img2.png
+  alt: Settings
 
 featuredimage: /assets/img/plugins/eeprom_repetier/img2.png
 
