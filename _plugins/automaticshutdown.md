@@ -38,9 +38,6 @@ compatibility:
   - macos
 ---
 
-Longer description of your plugin, configuration examples etc. This part will be visible on the page at
-http://plugins.octoprint.org/plugin/automaticshutdown/
-
 This OctoPrint plugin enables the system to be automatically shut down after a print is finished.
 The user can enable automatic shutdown for each print by using a checkbox in the sidebar.
 Once the print is finished, a popup will appear with a countdown which lets the user abort the shutdown.
