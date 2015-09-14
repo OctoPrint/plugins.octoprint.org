@@ -31,7 +31,7 @@ screenshots:
 - url: /assets/img/plugins/stats/img4.png
   alt: Settings
 
-featuredimage: /assets/img/plugins/eeprom_marlin/img1.png
+featuredimage: /assets/img/plugins/stats/img1.png
 
 compatibility:
   octoprint:
