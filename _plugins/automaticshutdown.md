@@ -2,12 +2,12 @@
 layout: plugin
 
 id: automaticshutdown
-title: OctoPrint-AutomaticShutdown
+title: AutomaticShutdown
 description: Plugin to enable automatic system shutdown after finishing a print job
 author: Nicanor Romero Venier
 license: AGPLv3
 
-date: 2015-08-27
+date: 2015-09-22
 
 homepage: https://github.com/OctoPrint/OctoPrint-AutomaticShutdown
 source: https://github.com/OctoPrint/OctoPrint-AutomaticShutdown
