@@ -21,8 +21,8 @@ tags:
 
 screenshots:
 - url: /assets/img/plugins/displayz/displayz.png
-  alt: Screenshot
-  caption: Screenshot of the Plugin
+  alt: Screenshot of DisplayZ plugin
+  caption: Screenshot of the plugin
 
 featuredimage: /assets/img/plugins/displayz/displayz.png
 
@@ -46,4 +46,4 @@ at all in case of prints from SD cards.
 However, people demanded to get this piece of  information back, inaccurate or
 not, so here it is as plugin.
 
-![](/assets/img/plugins/displayz/displayz.png)
+![Screenshot of DisplayZ plugin](/assets/img/plugins/displayz/displayz.png)
