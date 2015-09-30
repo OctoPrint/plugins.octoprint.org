@@ -1,30 +1,42 @@
 ---
 layout: plugin
+
 id: octoplug
 title: OctoPlug
-description: Plugin for OctoPrint that turns on an Edimax SP-1101W SmartPlug at a certain layer for active cooling with external power supply.
-homepage: https://github.com/tobbi007/OctoPrint-OctoPlug
-source: https://github.com/tobbi007/OctoPrint-OctoPlug
+description: Plugin for OctoPrint that turns on an Edimax SP-1101W SmartPlug at a certain layer.
 author: Tobias Viertmann
 license: MIT
-archive: https://github.com/tobbi007/OctoPrint-OctoPlug/archive/master.zip
+
 date: 2015-09-30
+
+homepage: https://github.com/tobbi007/OctoPrint-OctoPlug
+source: https://github.com/tobbi007/OctoPrint-OctoPlug
+archive: https://github.com/tobbi007/OctoPrint-OctoPlug
+
+follow_dependency_links: false
+
 tags:
 - fan
 - power
 - powerplug
 - remote
+
 screenshots:
--url: /assets/img/plugins/octoplug/powerplug.png
- alt: Edimax SP-1101W
- caption: Edimax SP-1101W
--url: /assets/img/plugins/octoplug/config.png
- alt: OctoPlug Config
- caption: OctoPlug Config
+- url: /assets/img/plugins/octoplug/powerplug.png
+  alt: Edimax SP-1101W
+  caption: Edimax SP-1101W
+- url: /assets/img/plugins/octoplug/config.png
+  alt: OctoPlug Config
+  caption: OctoPlug Config
+  
 featuredimage: /assets/img/plugins/octoplug/powerplug.png
+
 compatibility:
+  # list of compatible versions, for example 1.2.0. If left empty no specific version requirement will be assumed
   octoprint:
-  - 1.2.0
+  - 1.2.5
+
+  # list of compatible operating systems, valid values are linux, windows, macos, leaving empty defaults to all
   os:
   - linux
   - windows
