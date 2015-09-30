@@ -11,7 +11,7 @@ date: 2015-09-30
 
 homepage: https://github.com/tobbi007/OctoPrint-OctoPlug
 source: https://github.com/tobbi007/OctoPrint-OctoPlug
-archive: https://github.com/tobbi007/OctoPrint-OctoPlug
+archive: https://github.com/tobbi007/OctoPrint-OctoPlug/archive/master.zip
 
 follow_dependency_links: false
 
