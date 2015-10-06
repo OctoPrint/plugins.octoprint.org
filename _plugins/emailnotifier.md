@@ -35,4 +35,4 @@ compatibility:
 
 ---
     
-Recieve email notifications when OctoPrint jobs are complete.
+Receive email notifications when OctoPrint jobs are complete.
