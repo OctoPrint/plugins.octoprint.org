@@ -34,9 +34,3 @@ You can easly access all the options in the settings under customControl.
 Right-Click on a Control or the Green box to open a context menu.
 
 By using the container elements you can easly position the controls where you want.
-
-### Pictures
-![Settings](/assets/img/plugins/customControl/img1.png)
-![Dialog](/assets/img/plugins/customControl/img2.png)
-![Settings](/assets/img/plugins/customControl/img3.png)
-![Dialog](/assets/img/plugins/customControl/img4.png)

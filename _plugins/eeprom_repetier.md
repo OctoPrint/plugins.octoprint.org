@@ -39,7 +39,3 @@ compatibility:
 ---
 
 This plugin is designed to get, change and save the values in the EEPROM of your Repetier Firmware based Machine
-
-### Pictures
-![Settings](/assets/img/plugins/eeprom_repetier/img1.png)
-![Settings](/assets/img/plugins/eeprom_repetier/img2.png)

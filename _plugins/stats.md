@@ -45,8 +45,3 @@ compatibility:
 
 This plugin is designed to show statistics of your printer and estimate power usage in kWh.
 
-### Pictures
-![Tab](/assets/img/plugins/stats/img1.png)
-![Tab](/assets/img/plugins/stats/img2.png)
-![Tab](/assets/img/plugins/stats/img3.png)
-![Settings](/assets/img/plugins/stats/img4.png)

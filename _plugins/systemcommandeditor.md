@@ -30,6 +30,3 @@ You can Access all option in the settings under "Plugins -> System Command Edito
 
 Right Click on a Control or the Green Box to open a context menu.
 
-### Pictures
-![Settings](/assets/img/plugins/systemCommandEditor/img1.png)
-![Dialog](/assets/img/plugins/systemCommandEditor/img2.png)

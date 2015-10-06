@@ -42,6 +42,3 @@ A plugin that sends `M117` commands to the printer to display the progress
 of the print job being currently streamed. The message to display can be
 configured (some placeholders included). By default, an ASCII progress bar
 is rendered with the percentage of the job's progress.
-
-![Example of operation](/assets/img/plugins/displayprogress/example.jpg)
-

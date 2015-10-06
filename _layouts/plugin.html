@@ -47,6 +47,16 @@ layout: default
         {{ page.description }}
       </p>
       {{ content }}
+
+      {% if page.screenshots %}
+        <h2>Pictures</h2>
+        {% for screenshot in page.screenshots %}
+        <figure>
+          {% capture screenie %}{% include canonic_url url=screenshot.url %}{% endcapture %}
+          <a href="{{ screenie }}" data-lightbox="{{ page.id }}" data-title="{{ screenshot.caption }}"><img src="{{ screenie }}" alt="{{ screenshot.alt }}" title="{{ screenshot.caption }}"></a>
+        </figure>
+        {% endfor %}
+      {% endif %}
     </article>
 
     <div class="span4">
@@ -106,21 +116,6 @@ layout: default
       <dl class="license">
         <dt>License</dt>
         <dd>{{ page.license }}</dd>
-      </dl>
-      {% endif %}
-      {% if page.screenshots %}
-      <dl class="screenshots">
-        <dt>Screenshots</dt>
-        <dd>
-          <ul class="thumbnails">
-            {% for screenshot in page.screenshots %}
-            <li class="span12">
-              {% capture screenie %}{% include canonic_url url=screenshot.url %}{% endcapture %}
-              <a href="{{ screenie }}" data-lightbox="{{ page.id }}" data-title="{{ screenshot.caption }}"><img src="{{ screenie }}" alt="{{ screenshot.alt }}" title="{{ screenshot.caption }}"></a>
-            </li>
-            {% endfor %}
-          </ul>
-        </dd>
       </dl>
       {% endif %}
     </div>

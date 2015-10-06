@@ -39,7 +39,3 @@ compatibility:
 ---
 
 This plugin is designed to get, change and save the values in the EEPROM of your Marlin Firmware based Machine
-
-### Pictures
-![Settings](/assets/img/plugins/eeprom_marlin/img1.png)
-![Settings](/assets/img/plugins/eeprom_marlin/img2.png)

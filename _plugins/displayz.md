@@ -45,5 +45,3 @@ at all in case of prints from SD cards.
 
 However, people demanded to get this piece of  information back, inaccurate or
 not, so here it is as plugin.
-
-![Screenshot of DisplayZ plugin](/assets/img/plugins/displayz/displayz.png)

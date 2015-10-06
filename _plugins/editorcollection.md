@@ -23,6 +23,3 @@ compatibility:
 ---
     
 This plugin moves the Editor's from Salandora onto a single Page.
-
-### Pictures
-![Settings](/assets/img/plugins/editorCollection/img1.png)

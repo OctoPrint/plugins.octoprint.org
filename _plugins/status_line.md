@@ -15,6 +15,11 @@ archive: https://github.com/AmedeeBulle/StatusLine/archive/master.zip
 
 follow_dependency_links: false
 
+screenshots:
+- alt: SiteBar
+  url: https://raw.githubusercontent.com/AmedeeBulle/StatusLine/master/status_line.png
+featured_image: https://raw.githubusercontent.com/AmedeeBulle/StatusLine/master/status_line.png
+
 tags:
 - ui
 
@@ -25,5 +30,3 @@ compatibility:
 ---
 
 (Very) simple plugin to which displays the M117 command (Display Message) in the SideBar.
-
-![SiteBar](https://raw.githubusercontent.com/AmedeeBulle/StatusLine/master/status_line.png)

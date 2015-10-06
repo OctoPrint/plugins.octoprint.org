@@ -12,6 +12,9 @@ date: 2015-04-23
 tags:
 - printer
 - protocol
+screenshots:
+- alt: GPX
+  url: https://markwal.github.io/OctoPrint/gpx.png
 featuredimage: https://markwal.github.io/OctoPrint/gpx.png
 compatibility:
   octoprint:
@@ -47,6 +50,3 @@ metal, but its steps per mm is Replicator 1.
 ###Caveats and Known Issues
 Please see the [README](https://github.com/markwal/OctoPrint-GPX/blob/master/README.md)
 on github for the latest info.
-
-###Pic
-![GPX](https://markwal.github.io/OctoPrint/gpx.png)

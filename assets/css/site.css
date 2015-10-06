@@ -5951,6 +5951,9 @@ h6 a {
   word-wrap: break-word;
   white-space: pre-wrap;
 }
+.plugin-content article figure {
+  margin: 10px 0;
+}
 footer {
   background-color: #0c6b00;
   background-image: -moz-linear-gradient(top, #0d8400, #0b4600);
