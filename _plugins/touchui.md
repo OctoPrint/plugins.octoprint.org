@@ -6,7 +6,7 @@ title: TouchUI
 description: A touch friendly interface for Mobile and TFT touch modules
 author: Paul de Vries
 license: AGPLv3
-date: 2015-10-04
+date: 2015-10-10
 
 homepage: https://billyblaze.github.io/OctoPrint-TouchUI
 source: https://github.com/BillyBlaze/OctoPrint-TouchUI
