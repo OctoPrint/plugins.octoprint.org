@@ -9,7 +9,6 @@ date: 2015-07-23
 homepage: https://github.com/OctoPrint/OctoPrint-Pushbullet
 source: https://github.com/OctoPrint/OctoPrint-Pushbullet
 archive: https://github.com/OctoPrint/OctoPrint-Pushbullet/archive/master.zip
-follow_dependency_links: true
 tags: 
 - notification
 screenshots:
