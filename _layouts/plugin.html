@@ -82,7 +82,7 @@ layout: default
         <dd>
           <ul>
             {% if page.compatibility contains "octoprint" %}
-            <li>OctoPrint: {% for ver in page.compatibility.octoprint %}{{ ver }}{% unless forloop.last %}, {% endunless %}{% endfor %}</li>
+            <li>OctoPrint: {% for ver in page.compatibility.octoprint %}{{ ver | xml_escape }}{% unless forloop.last %}, {% endunless %}{% endfor %}</li>
             {% else %}
             <li>OctoPrint: all versions</li>
             {% endif %}
@@ -97,7 +97,7 @@ layout: default
       {% if page.author %}
       <dl class="author">
         <dt>Author</dt>
-        <dd>{{ page.author }}</dd>
+        <dd>{{ page.author | xml_escape }}</dd>
       </dl>
       {% endif %}
       {% if page.homepage %}
@@ -115,7 +115,7 @@ layout: default
       {% if page.license %}
       <dl class="license">
         <dt>License</dt>
-        <dd>{{ page.license }}</dd>
+        <dd>{{ page.license | xml_escape }}</dd>
       </dl>
       {% endif %}
     </div>
