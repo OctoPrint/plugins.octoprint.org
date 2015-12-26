@@ -30,6 +30,10 @@ screenshots:
   alt: Settings for plugin
   caption: Configurable settings for plugin
 
+- url: /assets/img/plugins/slack/settings2.png
+  alt: More settings for plugin
+  caption: Configurable event messages
+
 featuredimage: /assets/img/plugins/slack/slack.png
 
 compatibility:
@@ -39,3 +43,11 @@ compatibility:
 
 ---
 Send messages to your group's Slack chat when printing events happen! You need to set up an [Incoming Webhook](https://my.slack.com/services/new/incoming-webhook) integration on the Slack side to use this.
+
+Features
+--------
+
+* Select which events you want to trigger a chat notification for
+* Customizable messages for each event
+* Customize bot icon and username in Slack chat
+* Sends elapsed time of print after finished
