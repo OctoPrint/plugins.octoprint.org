@@ -13,6 +13,7 @@ github_username:  OctoPrint
 exclude: [vendor]
 
 # Build settings
+highlighter: rouge
 markdown: kramdown
 
 collections:
