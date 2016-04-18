@@ -8,6 +8,11 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </a>
+      <div class="pull-right">
+        <ul class="nav social-navbar">
+          <li><a href="http://octoprint.org/support-octoprint/" title="Support OctoPrint!" target="_blank"><img src="{{ BASE_PATH }}/assets/img/patreon.png" style="height: 18px; margin-top: -4px"></a></li>
+        </ul>
+      </div>
       <div class="nav-collapse collapse">
         <ul class="nav">
           <li{% if page.url == '/by_name/index.html' %} class="active"{% endif %}><a href="{{ '/by_name/' | prepend: site.baseurl }}">by Name</a></li>
@@ -22,9 +27,6 @@
             </ul>
           </li>
         </ul>
-      </div>
-      <div class="pull-right visible-desktop">
-        <a class="brand bqlogo" href="http://www.bq.com"><img src="/assets/img/bq-30x30-allwhite.png" alt="BQ logo"></a>
       </div>
     </div>
   </div>
