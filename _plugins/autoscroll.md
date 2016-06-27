@@ -6,7 +6,7 @@ title: Autoscroll
 description: Turn on/off terminal autoscroll when scrolling up/down
 author: ovidiu
 license: AGPLv3
-date: 2016-01-19
+date: 2016-06-27
 
 homepage: https://github.com/MoonshineSG/OctoPrint-Autoscroll
 source: https://github.com/MoonshineSG/OctoPrint-Autoscroll
