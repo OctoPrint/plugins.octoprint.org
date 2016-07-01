@@ -48,8 +48,4 @@ The status 0/1 depends on the type of sensor, and it might be reversed if using 
 A build using an optical switch can be found at [http://www.thingiverse.com/thing:1646220](http://www.thingiverse.com/thing:1646220)
 
 Note: Needs RPi.GPIO version greater than 0.6.0 to allow access to GPIO for non root and `chmod a+rw /dev/gpiomem`.
-<<<<<<< HEAD
-This requires a fairly up to date system.
-=======
 This requires a failry up to date system.
->>>>>>> OctoPrint/gh-pages
