@@ -26,10 +26,9 @@ compatibility:
   os:
   - linux
 ---
-
 Pause print on GPIO filament runout sensor
 
-The following need to be added to the config.yaml:
+The following needs to be added to the config.yaml:
 
 ```
   octoprint_filament:
@@ -44,7 +43,7 @@ An API is available to check the filament sensor status via a GET method to `/pl
 - `{status: "0"}` if the sensor is OFF (filament not present)
 - `{status: "1"}` if the sensor is ON (filament present)
 
-The status 0/1 depends on the type of sensor, and it might be reverse if using a normaly closed switch.
+The status 0/1 depends on the type of sensor, and it might be reversed if using a normally closed switch.
 
 A build using an optical switch can be found at [http://www.thingiverse.com/thing:1646220](http://www.thingiverse.com/thing:1646220)
 
