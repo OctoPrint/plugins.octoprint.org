@@ -20,8 +20,10 @@ tags:
 compatibility:
   # list of compatible versions, for example 1.2.0. If left empty no specific version requirement will be assumed
   octoprint:
-  - 1.2.6
+  - 1.3.0
 
 ---
 
 Inject GCODE at specified layers to allow multi color printing based on a regular expression
+
+**Note:** Currently only compatible with the development version of OctoPrint (1.3.0dev, ``devel`` branch).
