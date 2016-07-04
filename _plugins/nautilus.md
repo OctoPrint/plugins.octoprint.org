@@ -27,15 +27,15 @@ compatibility:
 
 
 screenshots:
-- url: /assets/img/plugins/marlin/img1.png
+- url: /assets/img/plugins/nautilus/img1.png
   alt: Information
-- url: /assets/img/plugins/marlin/img2.png
+- url: /assets/img/plugins/nautilus/img2.png
   alt: Printer
-- url: /assets/img/plugins/marlin/img3.png
+- url: /assets/img/plugins/nautilus/img3.png
   alt: Movement
-- url: /assets/img/plugins/marlin/img4.png
+- url: /assets/img/plugins/nautilus/img4.png
   alt: Offset
-- url: /assets/img/plugins/marlin/img5.png
+- url: /assets/img/plugins/nautilus/img5.png
   alt: Camera
 
 featuredimage: /assets/img/plugins/marlin/img1.gif
