@@ -16,12 +16,11 @@ follow_dependency_links: false
 tags:
 - color
 - filament change
-- devel only
 
 compatibility:
   # list of compatible versions, for example 1.2.0. If left empty no specific version requirement will be assumed
   octoprint:
-  - 1.3.0
+  - 1.2.6
 
 ---
 
