@@ -1,6 +1,6 @@
 ---
 layout: plugin
-id: gpx
+id: GPX
 title: GPX
 description: Use OctoPrint with s3g/x3g printers (like FlashForge and older MakerBot)
 archive: https://markwal.github.io/OctoPrint/OctoPrint-GPX.tar.gz
@@ -12,6 +12,9 @@ date: 2015-04-23
 tags:
 - printer
 - protocol
+screenshots:
+- alt: GPX
+  url: https://markwal.github.io/OctoPrint/gpx.png
 featuredimage: https://markwal.github.io/OctoPrint/gpx.png
 compatibility:
   octoprint:
@@ -29,19 +32,21 @@ gcode and x3g on the fly to make the printer appear to OctoPrint as if it speaks
 gcode.
 
 ###Configuration
-After installing, you need to tell gpx about your printer.  The easiest way is to
-copy the gpx.ini you've been using with your slicer to the octoprint plugin folder.
-There's a sample gpx.ini included in the plugin that you can edit if you like.
+After installing, you need to tell gpx about your printer. In OctoPrint, GPX
+adds a settings panel. Two settings are important to set: the type of
+printer and the gcode flavor.
 
-    mkdir ~/.octoprint/plugins
-    cp gpx.ini ~/.octoprint/plugins
+The type of printer determines the steps per mm. Gcode is generally in
+millimeters and x3g is in stepper motor steps.
 
-It's my intention to allow most of those settings to be set via OctoPrint settings
-UI, but haven't got there yet.
+Gcode flavor means the flavor that your slicer produces. Makerbot Desktop and
+RepG only produce MakerBot flavor. Slic3r produces either (you can choose in
+its settings) and Cura produces RepRap flavor.
+
+If you have a MakerBot clone then you have a Replicator 1 or Replicator 1 Dual
+clone. Your printer might look more like a Replicator 2 because it is black and
+metal, but its steps per mm is Replicator 1.
 
 ###Caveats and Known Issues
 Please see the [README](https://github.com/markwal/OctoPrint-GPX/blob/master/README.md)
 on github for the latest info.
-
-###Pic
-![GPX](https://markwal.github.io/OctoPrint/gpx.png)

@@ -9,6 +9,16 @@ date: 2015-04-26
 homepage: https://github.com/Salandora/octoprint-customControl
 source: https://github.com/Salandora/octoprint-customControl
 archive: https://github.com/Salandora/octoprint-customControl/archive/master.zip
+screenshots:
+- url: /assets/img/plugins/customControl/img1.png
+  alt: Settings
+- url: /assets/img/plugins/customControl/img2.png
+  alt: Dialog
+- url: /assets/img/plugins/customControl/img3.png
+  alt: Settings
+- url: /assets/img/plugins/customControl/img4.png
+  alt: Dialog
+featuredimage: /assets/img/plugins/customControl/img4.png
 tags:
 - administration
 - ui

@@ -9,7 +9,7 @@
 "title": "{{ plugin.title }}",
 "description": "{{ plugin.description }}",
 "author": "{{ plugin.author }}",
-"content": "{{ plugin.content | strip_html | strip_newlines | remove: '"' }}",
+"content": "{{ plugin.content | strip_html | strip_newlines | remove: '"' | escape | remove: "\" }}",
 "tags": {% if plugin.tags %}{{ plugin.tags | jsonify }}{% endif %}{% unless plugin.tags %}[]{% endunless %}
 }{% unless forloop.last %},{% endunless %}
 {% endfor %}]
