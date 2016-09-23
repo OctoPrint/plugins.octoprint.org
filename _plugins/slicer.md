@@ -42,4 +42,6 @@ compatibility:
   - macos
 ---
     
-A full-blown GUI-based slicer. Rotate and scale model; set layer height and other critical parameters.
+It currently only support common slicing settings such as hotend temperature, layer height, etc. More advanced settings will be upcoming soon.
+
+Also it has been tested only with Cura. But it shouldn't be too hard to make it work for Slic3r. Let me know if you can lend a hand!
