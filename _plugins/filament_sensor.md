@@ -31,7 +31,8 @@ Pause print on GPIO filament runout sensor
 The following needs to be added to the config.yaml:
 
 ```
-  octoprint_filament:
+plugins:
+  filament:
     pin: XX
     bounce: 400
 ```
