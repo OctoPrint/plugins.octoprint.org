@@ -3,7 +3,7 @@ layout: plugin
 
 id: nautilus
 title: Nautilus - mobile shell for OctoPrint
-description: OctoPrint simplified interface optimized for mobile devices
+description: OctoPrint simplified interface optimized for iOS devices
 author: ovidiu
 license: AGPLv3
 date: 2016-07-04
@@ -14,16 +14,14 @@ archive: https://github.com/MoonshineSG/OctoPrint-Mobile/archive/master.zip
 follow_dependency_links: false
 
 tags:
-- mobile
 - iOS
 - iphone
 - ipad
-- responsive
 
 compatibility:
   # list of compatible versions, for example 1.2.0. If left empty no specific version requirement will be assumed
   octoprint:
-  - 1.3.0 dev
+  - 1.3.0
 
 
 screenshots:
@@ -44,14 +42,14 @@ featuredimage: /assets/img/plugins/marlin/img1.gif
 
 OctoPrint simplified interface optimized for iOS devices. 
 
-The iOS app is needed to force landscape, maintains the API key and handles the server connection. 
+The iOS app will force landscape, maintain the API key and handle the server connection.
 
 Bonus feature: shake to refresh.
 
 
 The iOS app is available on [apple appstore](https://itunes.apple.com/us/app/id1125992543).
 
-As long as octoprint is available over the internet, the UI changes to full screen webcam for pure monitoring. 
+As long as OctoPrint is available over the internet, the UI changes to full screen webcam for pure monitoring. 
 
 For notifications via [Prowl](https://www.prowlapp.com/), change settings by manually editing `config.yaml` under "plugins"
 
