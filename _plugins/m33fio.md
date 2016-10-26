@@ -3,11 +3,11 @@ layout: plugin
 
 id: m33fio
 title: M33 Fio
-description: Makes OctoPrint fully compatible with the Micro 3D printer
+description: Allows viewing uploaded models, using a Micro 3D printer, modifying a slicer profile and model before slicing, uploading OBJs and other 3D file formats, hosting a webcam stream, and much more
 author: donovan6000
 license: GPLv3
 
-date: 2016-01-11
+date: 2016-10-25
 
 homepage: https://github.com/donovan6000/M33-Fio
 source: https://github.com/donovan6000/M33-Fio
@@ -16,26 +16,27 @@ archive: https://github.com/donovan6000/M33-Fio/archive/master.zip
 follow_dependency_links: false
 
 tags:
-- micro 3d
 - m33 fio
+- micro 3d
 - helper
+- ui
 
 screenshots:
-- url: /assets/img/plugins/m33fio/controls.png
-  alt: Controls
-  caption: Controls
-- url: /assets/img/plugins/m33fio/settings.png
-  alt: Settings
-  caption: Settings
 - url: /assets/img/plugins/m33fio/model_editor.png
   alt: Model Editor
   caption: Model Editor
+- url: /assets/img/plugins/m33fio/profile_editor.png
+  alt: Profile Editor
+  caption: Profile Editor
+- url: /assets/img/plugins/m33fio/model_viewer.png
+  alt: Model Viewer
+  caption: Model Viewer
 
-featuredimage: /assets/img/plugins/m33fio/controls.png
+featuredimage: /assets/img/plugins/m33fio/model_editor.png
 
 compatibility:
   octoprint:
-  - 1.2.6
+  - 1.2.0
 
   os:
   - linux
@@ -43,4 +44,15 @@ compatibility:
   - macos
 ---
 
-M33 Fio provides a complete, platform independent alternative to the printer's official software. It implements all the necessary controls and settings to fully utilize all of the printer's functionality, and it expands on some of OctoPrint's existing capabilities to make them more suitable for the Micro 3D printer.
+M33 Fio extends OctoPrint's capabilities to include the following features:
+
+- Adds a model viewer tab to OctoPrint's interface where any uploaded model can be viewed
+- Allows importing OBJ, M3D, AMF, VRML, COLLADA, and 3MF files into OctoPrint
+- Updates OctoPrint's list of available serial ports in real time
+- Includes an OctoPrint instance manager that can create and terminate OctoPrint instances which allows easily running multiple printers on the same host
+- Adds support for the Micro 3D printer
+- Wraps groups of buttons in OctoPrint's controls tab into sections that can be collapsed and expanded
+- Capable of hosting a webcam stream and configuring OctoPrint to use it
+- Disables the hosts sleep functionality when printing
+- Includes a slicer profile editor that allows customizing everything in the selected slicer profile before slicing
+- Includes a model editor that allows modifying a model before slicing and can perform operations like moving, rotating, scaling, cutting, merging, cloning, and importing other models into the scene
