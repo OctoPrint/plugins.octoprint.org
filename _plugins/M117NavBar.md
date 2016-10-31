@@ -8,11 +8,11 @@ author: jneilliii
 license: AGPLv3
     
 # today's date in format YYYY-MM-DD, e.g.
-date: 2016-08-06
+date: 2016-10-27
     
 homepage: https://github.com/jneilliii/OctoPrint-M117NavBar
 source: https://github.com/jneilliii/OctoPrint-M117NavBar
-archive: https://github.com/jneilliii/OctoPrint-M117NavBar
+archive: https://github.com/jneilliii/OctoPrint-M117NavBar/archive/master.zip
     
 # set this to true if your plugin uses the dependency_links setup parameter to include
 # library versions not yet published on PyPi. SHOULD ONLY BE USED IF THERE IS NO OTHER OPTION!
@@ -39,4 +39,4 @@ compatibility:
   - linux
 ---
     
-This plugin utilizes the _plugin_manager.send_plugin_message and onDataUpdaterPluginMessage to communicate between server and client. It will display M117 gcode content in the header.
+This plugin utilizes the ``_plugin_manager.send_plugin_message`` and ``onDataUpdaterPluginMessage`` to communicate between server and client. It will display M117 gcode content in the header.
