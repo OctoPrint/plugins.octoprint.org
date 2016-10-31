@@ -12,7 +12,7 @@ date: 2016-10-27
     
 homepage: https://github.com/jneilliii/OctoPrint-M117PopUp
 source: https://github.com/jneilliii/OctoPrint-M117PopUp
-archive: https://github.com/jneilliii/OctoPrint-M117PopUp
+archive: https://github.com/jneilliii/OctoPrint-M117PopUp/archive/master.zip
     
 # set this to true if your plugin uses the dependency_links setup parameter to include
 # library versions not yet published on PyPi. SHOULD ONLY BE USED IF THERE IS NO OTHER OPTION!
