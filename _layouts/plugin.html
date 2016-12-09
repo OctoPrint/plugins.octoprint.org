@@ -43,6 +43,12 @@ layout: default
   </div>
   <div class="content plugin-content row-fluid">
     <article class="post-content span8">
+      {% if page.disabled %}
+      <div class="alert alert-danger">
+        {{ page.disabled }}
+      </div>
+      {% endif %}
+
       <p class="lead">
         {{ page.description }}
       </p>
@@ -63,7 +69,11 @@ layout: default
       {% if page.archive %}
       <dl class="installation">
         <dt>Installation <a href="/help/installation/" class="icon-question-sign"></a></dt>
+        {% if page.disabled %}
+        <dd><pre><s>pip install {% if page.follow_dependency_links %}--process-dependency-links {% endif %}{{ page.archive }}</s></pre><small>Currently not recommended</small></dd>
+        {% else %}
         <dd><pre>pip install {% if page.follow_dependency_links %}--process-dependency-links {% endif %}{{ page.archive }}</pre></dd>
+        {% endif %}
       </dl>
       {% endif %}
       {% if page.tags %}
