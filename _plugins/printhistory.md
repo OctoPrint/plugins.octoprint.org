@@ -14,7 +14,7 @@ compatibility:
   octoprint:
   - 1.2.0
 
-disabled: There are reports of a performance issue with this plugin. Until this
+disabled: There are [reports of a performance issue](https://github.com/imrahil/OctoPrint-PrintHistory/issues/31) with this plugin. Until this
   is resolved it is not recommended to install it. The plugin manager in OctoPrint
   will also mark it as incompatible for that reason.
 

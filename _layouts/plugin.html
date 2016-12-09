@@ -43,11 +43,7 @@ layout: default
   </div>
   <div class="content plugin-content row-fluid">
     <article class="post-content span8">
-      {% if page.disabled %}
-      <div class="alert alert-danger">
-        {{ page.disabled }}
-      </div>
-      {% endif %}
+      {% if page.disabled %}<div class="alert alert-danger">{{ page.disabled | markdownify }}</div>{% endif %}
 
       <p class="lead">
         {{ page.description }}
