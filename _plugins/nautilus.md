@@ -6,7 +6,7 @@ title: Nautilus - mobile shell for OctoPrint
 description: OctoPrint simplified interface optimized for iOS devices
 author: ovidiu
 license: AGPLv3
-date: 2016-07-04
+date: 2016-10-27
 
 homepage: https://github.com/MoonshineSG/OctoPrint-Mobile/wiki
 source: https://github.com/MoonshineSG/OctoPrint-Mobile
