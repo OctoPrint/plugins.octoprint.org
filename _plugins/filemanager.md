@@ -7,7 +7,7 @@ description: A simple filemanager for OctoPrint
 author: Marc Hannappel (Salandora)
 license: AGPLv3
 
-date: 2015-11-30
+date: 2016-12-09
 
 homepage: https://github.com/Salandora/OctoPrint-FileManager
 source: https://github.com/Salandora/OctoPrint-FileManager
