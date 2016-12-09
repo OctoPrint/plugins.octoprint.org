@@ -33,6 +33,8 @@ screenshots:
 - url: /assets/img/plugins/filemanager/img2.png
   alt: Multi select
 
+featuredimage: /assets/img/plugins/filemanager/img1.png
+
 ---
 
 A simple file manager.
