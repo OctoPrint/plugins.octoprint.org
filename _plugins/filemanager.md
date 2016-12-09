@@ -26,10 +26,13 @@ compatibility:
   - linux
   - windows
   - macos
+
+screenshots:
+- url: /assets/img/plugins/filemanager/img1.png
+  alt: FileManager
+- url: /assets/img/plugins/filemanager/img2.png
+  alt: Multi select
+
 ---
 
 A simple file manager.
-
-### Pictures
-![FileManager](/assets/img/plugins/fileManager/img1.png)
-![Multi select](/assets/img/plugins/fileManager/img2.png)
