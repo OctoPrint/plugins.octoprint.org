@@ -40,20 +40,9 @@ featuredimage: /assets/img/plugins/nautilus/img1.gif
   
 ---
 
-OctoPrint simplified interface optimized for iOS devices. 
 
-The iOS app will force landscape, maintain the API key and handle the server connection.
+A simplified UI replacement for OctoPrint that has been optimised for iOS devices. 
 
-Bonus feature: shake to refresh.
-
-
-The iOS app is available on [apple appstore](https://itunes.apple.com/us/app/id1125992543).
-
-As long as OctoPrint is available over the internet, the UI changes to full screen webcam for pure monitoring. 
-
-
-The plugin configuration file `settings.ini` (residing under the plugin data folder - `.octoprint/data/nautilus`) provides the gcode sequences for most of the functions provided. Make sure they are configured properly for your machine. [Read more](https://github.com/MoonshineSG/OctoPrint-Mobile/wiki/settings.ini)
-
-Some supplementary, non-core switch functions depend on a additional plugin which can be install separatly from [https://github.com/MoonshineSG/OctoPrint-Switch/archive/master.zip](https://github.com/MoonshineSG/OctoPrint-Switch/archive/master.zip). If the Switch plugin is not detected, the respective buttons are not shown and the printer is assumed to be powered on.
+The plugin requires the Nautilus iOS app which is available on [Apple AppStore](https://itunes.apple.com/us/app/id1125992543). 
 
 [Read more...](https://github.com/MoonshineSG/OctoPrint-Mobile/wiki)
