@@ -8,7 +8,7 @@ author: Richard Bteman
 license: AGPLv3
     
 # today's date in format YYYY-MM-DD, e.g.
-date: 2016-12-10
+date: 2017-01-10
     
 homepage: https://github.com/taxilian/OctoPrint-Twilio
 source: https://github.com/taxilian/OctoPrint-Twilio
