@@ -3,7 +3,7 @@ layout: plugin
 
 id: pushover
 title: Pushover
-description: A plugin that send a notification with Pushover when the job is done
+description: A plugin that send a notification with Pushover when the job is done or is failed
 author: Thijs Bekke
 license: AGPLv3
 
@@ -21,7 +21,7 @@ tags:
 screenshots:
 - url: /assets/img/plugins/pushover/settings.png
   alt: Settings
-  caption: You can configure a couple of settings via Octoprint's settings. Change the sound or priority.
+  caption: You can configure a couple of settings via Octoprint's settings. Set your user key, change the sound, priority and test your settings.
 - url: /assets/img/plugins/pushover/pushover.png
   alt: Pushover
   caption: An examplatory push notification in the Pushover webclient
@@ -39,7 +39,7 @@ compatibility:
 
 This plugin adds support for [Pushover notifications](https://pushover.net/) to OctoPrint.
 
-When your job is finished OctoPrint will send a notification to Pushover. You can configure the sound or priority of the message.
+When your job is finished or is failed OctoPrint will send a notification to Pushover. You can configure the sound or priority of the messages.
 
 
 
