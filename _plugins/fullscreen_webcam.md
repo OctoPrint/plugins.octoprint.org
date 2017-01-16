@@ -6,7 +6,7 @@ title: Fullscreen Webcam
 description: Open the webcam feed in fullscreen mode with extra details about the printjob
 author: Paul de Vries
 license: AGPLv3
-date: 2016-01-01
+date: 2016-01-16
 
 homepage: https://github.com/BillyBlaze/OctoPrint-FullScreen
 source: https://github.com/BillyBlaze/OctoPrint-FullScreen
