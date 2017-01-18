@@ -34,7 +34,7 @@ featuredimage: https://billyblaze.github.io/OctoPrint-TouchUI/images/touchuisamp
 compatibility:
   # list of compatible versions, for example 1.2.0. If left empty no specific version requirement will be assumed
   octoprint:
-  - 1.2.6+
+  - 1.2.6
 ---
 This plugin will transform the OctoPrint layout into a Mobile/TFT friendly layout. With larger buttons and a responsive layout down to the smallest resolution possible. It will mimic pointer events as touch, so you can hook up those touchscreens. It also supports a virtual keyboard.
 
