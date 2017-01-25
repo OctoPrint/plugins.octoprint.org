@@ -21,11 +21,11 @@ tags:
 - notification
 
 screenshots:
-- url: /assets/img/plugins/freemobilenotifier/freemobilenotifier.jpg
+- url: /assets/img/plugins/freemobilenotifier/freemobilenotifier.png
   alt: Settings dialog and SMS notification screenshot
   caption: Configure notification recipient, login, pass key and message.
 
-featuredimage: /assets/img/plugins/freemobilenotifier/freemobilenotifier.jpg
+featuredimage: /assets/img/plugins/freemobilenotifier/freemobilenotifier.png
 
 
 compatibility:
