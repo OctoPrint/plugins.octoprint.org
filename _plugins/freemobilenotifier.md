@@ -2,16 +2,16 @@
 layout: plugin
 
 id: freemobilenotifier
-title: OctoPrint-FreeMobile-Notifier
+title: OctoPrint_FreeMobile-Notifier
 description: Octoprint plugin for print completion notifications using Free (Free is a French telecommunications company)
 author: Antoine CAVARD
 license: AGPLv3
 
 date: 2017-01-25
 
-homepage: https://github.com/Pinaute/OctoPrint-FreeMobile-Notifier
-source: https://github.com/Pinaute/OctoPrint-FreeMobile-Notifier
-archive: https://github.com/Pinaute/OctoPrint-FreeMobile-Notifier/archive/master.zip
+homepage: https://github.com/Pinaute/OctoPrint_FreeMobile-Notifier
+source: https://github.com/Pinaute/OctoPrint_FreeMobile-Notifier
+archive: https://github.com/Pinaute/OctoPrint_FreeMobile-Notifier/archive/master.zip
 
 # TODO set this to true if your plugin uses the dependency_links setup parameter to include
 # library versions not yet published on PyPi. SHOULD ONLY BE USED IF THERE IS NO OTHER OPTION!
