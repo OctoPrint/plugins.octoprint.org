@@ -3,7 +3,7 @@ layout: plugin
     
 id: slicer
 title: Full-featured Slicer
-description: A full-blown GUI-based slicer. Rotate and scale model; set layer height and other slicing parameters.
+description: A full-blown GUI-based slicer. Rotate and scale model; slice multiple STL files at a time; set layer height and other slicing settings.
 author: Kenneth Jiang
 license: AGPLv3
     
@@ -47,4 +47,6 @@ Slicer plugin offers useful features that OctoPrint's built-in slicer doesn't ha
 - Rotate, scale, and move STL models.
 - Slice multiple STLs at a time.
 - Auto-arrange models into optimized layout (experimental).
+- Slice based on Cura profiles you upload to OctoPrint.
+- Customizable slicing settings, including Basic (layer height, bed temperature ...) and Advanced (print speed, start/end G-code ...).
 - More is coming...
