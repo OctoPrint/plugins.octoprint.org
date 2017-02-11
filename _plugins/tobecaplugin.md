@@ -15,4 +15,8 @@ compatibility:
   octoprint:
   - 1.2.16
 ---
+Ajout d'un onglet Tobeca avec les commandes :
 
+- Autotune PID
+- Modification Z-Probe-Offset
+- Home XYZ
