@@ -47,4 +47,4 @@ Features:
 - Allow other people to submit jobs
 - Payment system (coming soon)
 
-To find out more, go to https://lanilabs.com
+To find out more, go to [lanilabs.com](https://lanilabs.com)
