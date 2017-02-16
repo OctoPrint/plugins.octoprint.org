@@ -15,8 +15,9 @@ compatibility:
   octoprint:
   - 1.2.16
 ---
-Ajout d'un onglet Tobeca avec les commandes :
+Adding a Tobeca (French 3D Printer) tab with commands:
 
-- Autotune PID
-- Modification Z-Probe-Offset
-- Home XYZ
+- Autotune PID : Sending the M303 Gcode with selecting tool, temperature  (parameter C=8)
+- Z-Probe-Offset : Sending the M851 Gcode with selecting the value
+- Home XYZ : Sending the G28 Gcode, because Home Z is harzardous with Z-Probe
+                        
