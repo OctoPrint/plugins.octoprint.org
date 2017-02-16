@@ -8,7 +8,7 @@ author: Michael Rybka
 license: None
     
 # today's date in format YYYY-MM-DD, e.g.
-date: 2017-02-09
+date: 2017-02-15
     
 homepage: https://lanilabs.com
 source: https://github.com/mikerybka/OctoPrint-Lani
@@ -37,4 +37,14 @@ compatibility:
     
 This plugin allows people using Lani to control their OctoPrint printers alongside their other devices.
 Lani is an order management system specifically designed for 3D printing. You can manage users, payment and
-print jobs on all of your printers. To find out more, go to https://lanilabs.com
+print jobs on all of your printers.
+
+Features:
+- Control multiple instances of OctoPrint remotely
+- Report on status to any device with internet
+- Be controlled by a manager anywhere
+- Create reports on usage, sales, ROI
+- Allow other people to submit jobs
+- Payment system (coming soon)
+
+To find out more, go to [lanilabs.com](https://lanilabs.com)
