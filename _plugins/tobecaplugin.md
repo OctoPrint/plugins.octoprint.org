@@ -2,13 +2,13 @@
 layout: plugin
 id: tobecaplugin
 title: Tobeca Plugin
-description: Plugin for OctoPrint that add commands.
+description: Plugin for OctoPrint that adds a special tab with commands for the Tobeca 3d printer.
 homepage: https://github.com/tobeca/OctoPrint-TobecaPlugin
 source: https://github.com/tobeca/OctoPrint-TobecaPlugin
 author: Saymtech
 license: AGPLv3
 archive: 
-date: 2017-02-11
+date: 2017-02-16
 tags:
 - printing
 compatibility:
