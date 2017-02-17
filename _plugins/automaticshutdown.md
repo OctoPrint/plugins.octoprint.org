@@ -37,10 +37,6 @@ compatibility:
   - windows
   - macos
 
-disabled: The original author does no longer maintain the plugin and it currently
-  contains bugs. Installation is not recommended until a new maintainer has been
-  found and the bugs have been fixed.
-
 ---
 
 This OctoPrint plugin enables the system to be automatically shut down after a print is finished.
