@@ -8,7 +8,7 @@ homepage: https://github.com/kantlivelong/OctoPrint-GCodeSystemCommands
 source: https://github.com/kantlivelong/OctoPrint-GCodeSystemCommands
 author: Shawn Bruce
 license: AGPLv3
-featuredimage: https://github.com/kantlivelong/OctoPrint-GCodeSystemCommands/raw/master/gcodesystemcommands_settings.png?raw=true
+featuredimage: /assets/img/plugins/gcodesystemcommands/gcodesystemcommands_settings.png
 date: 2017-03-14
 tags:
 - gcode
