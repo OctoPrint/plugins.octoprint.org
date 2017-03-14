@@ -8,7 +8,7 @@ homepage: https://github.com/kantlivelong/OctoPrint-PSUControl
 source: https://github.com/kantlivelong/OctoPrint-PSUControl
 author: Shawn Bruce
 license: AGPLv3
-featuredimage: https://github.com/kantlivelong/OctoPrint-PSUControl/raw/master/psucontrol_navbar_settings.png?raw=true
+featuredimage: /assets/img/plugins/psucontrol/psucontrol_navbar_settings.png
 date: 2017-01-25
 tags:
 - ui
@@ -20,7 +20,6 @@ screenshots:
 - url: /assets/img/plugins/psucontrol/psucontrol_navbar_settings.png
   alt: PSU Control screenshot
   caption: PSU Control screenshot
-featuredimage: /assets/img/plugins/psucontrol/psucontrol_navbar_settings.png
 compatibility:
   octoprint:
   - 1.2.0
