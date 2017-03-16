@@ -42,8 +42,8 @@ screenshots:
 featuredimage: /assets/img/plugins/enclosure/screenshot.png 
 
 compatibility:
+  octoprint:
   - 1.2.0
-
   os:
   - linux
 ---
