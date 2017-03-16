@@ -9,9 +9,9 @@ license: AGPLv3
 
 date: 2017-03-15
 
-homepage: https://github.com/vitormhenirque/OctoPrint-Enclosure
-source: https://github.com/vitormhenirque/OctoPrint-Enclosure
-archive: https://github.com/vitormhenirque/OctoPrint-Enclosure/archive/master.zip
+homepage: https://github.com/vitormhenrique/OctoPrint-Enclosure
+source: https://github.com/vitormhenrique/OctoPrint-Enclosure
+archive: https://github.com/vitormhenrique/OctoPrint-Enclosure/archive/master.zip
 
 follow_dependency_links: false
 
