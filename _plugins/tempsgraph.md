@@ -37,7 +37,7 @@ compatibility:
 
 ---
 
-This plugin adds some functionaly to the temperature graph :
+This plugin adds some features to the temperature graph :
 * exact values on hover
 * zooming
 * panning
