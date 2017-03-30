@@ -5,8 +5,8 @@ layout: default
     <div class="container">
         <div class="row">
             <div class="span12">
-                <h1>{{ page.title }}</h1>
-                {% if page.tagline %}<p>{{ page.tagline }}</p>{% endif %}
+                <h1>{{ page.title | strip_html | strip_newlines | escape }}</h1>
+                {% if page.tagline %}<p>{{ page.tagline | strip_html | strip_newlines | escape }}</p>{% endif %}
             </div>
         </div>
     </div>

@@ -20,6 +20,7 @@ tags:
 
 screenshots:
 - url: /assets/img/plugins/cyborgtheme/cyborgtheme.png
+  alt: Screenshot
 
 featuredimage: /assets/img/plugins/cyborgtheme/cyborgtheme.png
 

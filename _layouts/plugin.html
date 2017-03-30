@@ -25,7 +25,7 @@ layout: default
   <div class="container">
     <div class="row">
       <div class="span12">
-        <h1>{{ page.title }}</h1>
+        <h1>{{ page.title | strip_html | strip_newlines | escape }}</h1>
       </div>
     </div>
   </div>
@@ -34,11 +34,11 @@ layout: default
 <div class="container">
   <div class="row-fluid">
     {% if prev_plugin %}
-    <small class="pull-left"><a href="{{ prev_plugin.url | prepend: site.baseurl }}"><i class="icon-double-angle-left"></i>&nbsp;{{ prev_plugin.title }}</a></small>
+    <small class="pull-left"><a href="{{ prev_plugin.url | prepend: site.baseurl }}"><i class="icon-double-angle-left"></i>&nbsp;{{ prev_plugin.title | strip_html | strip_newlines | escape }}</a></small>
     {% endif %}
     &nbsp;
     {% if next_plugin %}
-    <small class="pull-right"><a href="{{ next_plugin.url | prepend: site.baseurl }}">{{ next_plugin.title }}&nbsp;<i class="icon-double-angle-right"></i></a></small>
+    <small class="pull-right"><a href="{{ next_plugin.url | prepend: site.baseurl }}">{{ next_plugin.title | strip_html | strip_newlines | escape }}&nbsp;<i class="icon-double-angle-right"></i></a></small>
     {% endif %}
   </div>
   <div class="content plugin-content row-fluid">
@@ -46,7 +46,7 @@ layout: default
       {% if page.disabled %}<div class="alert alert-danger">{{ page.disabled | markdownify }}</div>{% endif %}
 
       <p class="lead">
-        {{ page.description }}
+        {{ page.description | strip_html | escape }}
       </p>
       {{ content }}
 
@@ -55,7 +55,7 @@ layout: default
         {% for screenshot in page.screenshots %}
         <figure>
           {% capture screenie %}{% include canonic_url url=screenshot.url %}{% endcapture %}
-          <a href="{{ screenie }}" data-lightbox="{{ page.id }}" data-title="{{ screenshot.caption }}"><img src="{{ screenie }}" alt="{{ screenshot.alt }}" title="{{ screenshot.caption }}"></a>
+          <a href="{{ screenie | strip_html | strip_newlines | escape }}" data-lightbox="{{ page.id | strip_html | strip_newlines | escape }}" data-title="{{ screenshot.caption | strip_html | strip_newlines | escape }}"><img src="{{ screenie | strip_html | strip_newlines | escape }}" alt="{% if screenshot.alt %}{{ screenshot.alt | strip_html | strip_newlines | escape }}{% else %}{% if screenshot.caption %}{{ screenshot.caption | strip_html | strip_newlines | escape }}{% else %}{{ screenie | strip_html | strip_newlines | escape }}{% endif %}{% endif %}" title="{{ screenshot.caption | strip_html | strip_newlines | escape }}"></a>
         </figure>
         {% endfor %}
       {% endif %}
@@ -66,9 +66,9 @@ layout: default
       <dl class="installation">
         <dt>Installation <a href="/help/installation/" class="icon-question-sign"></a></dt>
         {% if page.disabled %}
-        <dd><pre><s>pip install {% if page.follow_dependency_links %}--process-dependency-links {% endif %}{{ page.archive }}</s></pre><small>Currently not recommended</small></dd>
+        <dd><pre><s>pip install {% if page.follow_dependency_links %}--process-dependency-links {% endif %}"{{ page.archive | strip_html | strip_newlines | escape }}"</s></pre><small>Currently not recommended</small></dd>
         {% else %}
-        <dd><pre>pip install {% if page.follow_dependency_links %}--process-dependency-links {% endif %}{{ page.archive }}</pre></dd>
+        <dd><pre>pip install {% if page.follow_dependency_links %}--process-dependency-links {% endif %}"{{ page.archive | escape | escape | strip_newlines }}"</pre></dd>
         {% endif %}
       </dl>
       {% endif %}
@@ -88,7 +88,7 @@ layout: default
         <dd>
           <ul>
             {% if page.compatibility contains "octoprint" %}
-            <li>OctoPrint: {% for ver in page.compatibility.octoprint %}{{ ver | xml_escape }}{% unless forloop.last %}, {% endunless %}{% endfor %}</li>
+            <li>OctoPrint: {% for ver in page.compatibility.octoprint %}{{ ver | strip_html | strip_newlines | escape }}{% unless forloop.last %}, {% endunless %}{% endfor %}</li>
             {% else %}
             <li>OctoPrint: all versions</li>
             {% endif %}
@@ -103,25 +103,25 @@ layout: default
       {% if page.author %}
       <dl class="author">
         <dt>Author</dt>
-        <dd>{{ page.author | xml_escape }}</dd>
+        <dd>{{ page.author | strip_html | strip_newlines | escape }}</dd>
       </dl>
       {% endif %}
       {% if page.homepage %}
       <dl class="homepage">
         <dt>Homepage</dt>
-        <dd><a href="{{ page.homepage }}" target="_blank">{{ page.homepage }}</a></dd>
+        <dd><a href="{{ page.homepage | strip_html | strip_newlines | escape }}" target="_blank">{{ page.homepage | strip_html | strip_newlines | escape }}</a></dd>
       </dl>
       {% endif %}
       {% if page.source %}
       <dl class="source">
         <dt>Source</dt>
-        <dd><a href="{{ page.source }}" target="_blank">{{ page.source }}</a></dd>
+        <dd><a href="{{ page.source | strip_html | strip_newlines | escape }}" target="_blank">{{ page.source | strip_html | strip_newlines | escape }}</a></dd>
       </dl>
       {% endif %}
       {% if page.license %}
       <dl class="license">
         <dt>License</dt>
-        <dd>{{ page.license | xml_escape }}</dd>
+        <dd>{{ page.license | strip_html | strip_newlines | escape }}</dd>
       </dl>
       {% endif %}
     </div>
