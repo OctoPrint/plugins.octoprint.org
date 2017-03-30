@@ -1,6 +1,6 @@
 language: ruby
 rvm:
-- 2.2
+- 2.3.3
 
 script:
 - bundle exec jekyll build
@@ -14,3 +14,6 @@ branches:
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES
+
+exclude: [vendor]
+sudo: false
