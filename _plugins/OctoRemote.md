@@ -33,7 +33,7 @@ screenshots:
 - url: /assets/img/plugins/OctoRemote/Hardware1.JPG
   alt: Arduino with Keypad
   caption: Necessary Components for Version1 Hardware
-- url: /assets/img/plugins/OctoRemote/SettingsScreenshot.PNG
+- url: /assets/img/plugins/OctoRemote/SettingScreenshot.PNG
   alt: Screenshot of the OctoRemote settings page
   caption: OctoRemote default settings
 - url: /assets/img/plugins/OctoRemote/Fritzing.PNG
