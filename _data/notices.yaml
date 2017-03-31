@@ -1,5 +1,6 @@
 #- plugin: identifier of affected plugin, mandatory
 #  versions: list of affected versions (e.g. ["0.1.0"]), optional (all versions if left out)
+#  octoversions: affected OctoPrint versions (e.g. [">=1.2.9,<1.3.0",">=1.3.2"])
 #  date: YYYY-MM-DD hh:mm:ss ZZZ, mandatory, used for "ignore"
 #  text: notice text (only text, no html, no markdown), mandatory
 #  link: "Read more" link target, optional
