@@ -7,6 +7,7 @@ script:
 - bundle exec htmlproofer ./_site --only-4xx --check-favicon --check-html --file-ignore "/\.\/_site\/search\/index\.html/"
 - bundle exec jsonlint ./_site/plugins.json
 - bundle exec jsonlint ./_site/search.json
+- bundle exec jsonlint ./_site/notices.json
 
 branches:
   only:
