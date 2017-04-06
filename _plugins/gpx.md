@@ -17,8 +17,6 @@ screenshots:
   url: https://markwal.github.io/OctoPrint/gpx.png
 featuredimage: https://markwal.github.io/OctoPrint/gpx.png
 compatibility:
-  octoprint:
-  - 1.2.0
   os:
   - linux
 ---

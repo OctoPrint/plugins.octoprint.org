@@ -29,10 +29,6 @@ featuredimage: /assets/img/plugins/displayz/displayz.png
 compatibility:
   octoprint:
   - 1.2.0
-  os:
-  - linux
-  - windows
-  - macos
 ---
 
 OctoPrint's state sidebar display panel used to display the current Z height

@@ -29,15 +29,6 @@ screenshots:
   caption: Settings dialog of the autocalibration plugin.
 
 featuredimage: /assets/img/plugins/autocalibration/screenshot.png
-
-compatibility:
-  octoprint:
-  - 1.2.0
-
-  os:
-  - linux
-  - windows
-  - macos
 ---
     
 This plugin calibrates your printers [backlash](https://en.wikipedia.org/wiki/Backlash_%28engineering%29) for the X, Y or Z-axis.

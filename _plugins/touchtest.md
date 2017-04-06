@@ -29,10 +29,6 @@ screenshots:
 
 featuredimage: https://cloud.githubusercontent.com/assets/494334/23596279/dfd73e88-01dd-11e7-862d-46ca012149af.PNG
 
-compatibility:
-  octoprint: []
-  os: []
-
 ---
 
 Touch Test plugin for OctoPrint adds a new sidebar panel, essential for manual bed leveling.

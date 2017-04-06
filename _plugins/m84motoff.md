@@ -23,16 +23,6 @@ tags:
 - disable stepper hold
 - M84
 
-
-compatibility:
-  octoprint:
-  - 1.2.0
-
-
-  os:
-  - linux
-  - windows
-  - macos
 ---
     
 A plugin to intercept the gcode command M18 during the queueing stage and rewrite it as M84 before sending it to the printer (for compatibility with the Repetier line of firmware).

@@ -18,10 +18,6 @@ tags:
 - upload
 - filemanagement
 
-compatibility:
-  # list of compatible versions, for example 1.2.0. If left empty no specific version requirement will be assumed
-  octoprint:
-  - 1.2.0
 ---
 
 The Autoselect Plugin will automatically select newly uploaded files for

@@ -18,9 +18,6 @@ screenshots:
 - url: /assets/img/plugins/cost/screenshot.png
   alt: Screenshot.
   caption: Sample view.
-compatibility:
-  octoprint:
-  - 1.2.0
 ---
 
 This plugin will display the estimated cost of the print based on filament cost per meter, and

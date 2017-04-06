@@ -21,10 +21,8 @@ screenshots:
   alt: PSU Control screenshot
   caption: PSU Control screenshot
 compatibility:
-  octoprint:
-  - 1.2.0
   os:
-  - linux
+  - nix
 ---
 
 See <https://github.com/kantlivelong/OctoPrint-PSUControl> for information on configuration.

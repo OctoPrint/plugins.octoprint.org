@@ -28,14 +28,6 @@ screenshots:
 
 featuredimage: /assets/img/plugins/eeprom_repetier/img2.png
 
-compatibility:
-  octoprint:
-  - 1.2.0
-
-  os:
-  - linux
-  - windows
-  - macos
 ---
 
 This plugin is designed to get, change and save the values in the EEPROM of your Repetier Firmware based Machine

@@ -22,11 +22,6 @@ compatibility:
   octoprint:
   - 1.3.0
 
-  os:
-  - linux
-  - windows
-  - macos
-
 screenshots:
 - url: /assets/img/plugins/filemanager/img1.png
   alt: FileManager

@@ -23,10 +23,6 @@ featured_image: https://raw.githubusercontent.com/AmedeeBulle/StatusLine/master/
 tags:
 - ui
 
-compatibility:
-  octoprint:
-  - 1.2.0
-
 ---
 
 (Very) simple plugin to which displays the M117 command (Display Message) in the SideBar.

@@ -42,10 +42,8 @@ screenshots:
 featuredimage: /assets/img/plugins/enclosure/ScreenShot.png
 
 compatibility:
-  octoprint:
-  - 1.2.0
   os:
-  - linux
+  - nix
 ---
 
 This plugin is intended to control your printer enclosure using raspberry pi GPIO (At the moment this plugin only support raspberry pi).

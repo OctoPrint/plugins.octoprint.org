@@ -39,14 +39,6 @@ disabled: There's a compatibility issue between this plugin and OctoPrint 1.3.2+
     on how to install the fixed version. Until the fix has been merged into the plugin by the maintainer and a new version
     has been released, this plugin will stay disabled on the repository.
 
-compatibility:
-  octoprint:
-  - 1.2.0
-
-  os:
-  - linux
-  - windows
-  - macos
 ---
 
 M33 Fio extends OctoPrint's capabilities to include the following features:

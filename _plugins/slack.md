@@ -36,11 +36,6 @@ screenshots:
 
 featuredimage: /assets/img/plugins/slack/slack.png
 
-compatibility:
-  # list of compatible versions, for example 1.2.0. If left empty no specific version requirement will be assumed
-  octoprint:
-  - 1.2.0
-
 ---
 Send messages to your group's Slack chat when printing events happen! You need to set up an [Incoming Webhook](https://my.slack.com/services/new/incoming-webhook) integration on the Slack side to use this.
 

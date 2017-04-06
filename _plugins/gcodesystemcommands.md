@@ -18,13 +18,6 @@ screenshots:
   alt: GCODE System Commands screenshot
   caption: GCODE System Commands screenshot
 featuredimage: /assets/img/plugins/gcodesystemcommands/gcodesystemcommands_settings.png
-compatibility:
-  octoprint:
-  - 1.2.0
-  os:
-  - windows
-  - linux
-  - macos
 ---
 
 See <https://github.com/kantlivelong/OctoPrint-GCodeSystemCommands> for information on configuration.

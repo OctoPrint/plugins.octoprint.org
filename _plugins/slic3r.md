@@ -22,14 +22,6 @@ tags:
 
 featuredimage: /assets/img/plugins/slic3r/logo.png
 
-compatibility:
-  octoprint:
-  - 1.2.0
-
-  os:
-  - linux
-  - windows
-  - macos
 ---
 
 # Slic3r plugin for OctoPrint

@@ -24,9 +24,6 @@ featuredimage: /assets/img/plugins/customControl/img4.png
 tags:
 - administration
 - ui
-compatibility:
-  octoprint:
-  - 1.2.0
 
 ---
     

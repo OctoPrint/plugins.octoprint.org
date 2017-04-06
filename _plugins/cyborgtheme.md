@@ -24,15 +24,6 @@ screenshots:
 
 featuredimage: /assets/img/plugins/cyborgtheme/cyborgtheme.png
 
-compatibility:
-  octoprint:
-  - 1.2.0
-
-
-  os:
-  - linux
-  - windows
-  - macos
 ---
     
 A dark theme using the Cyborg bootswatch theme https://bootswatch.com/2/cyborg/

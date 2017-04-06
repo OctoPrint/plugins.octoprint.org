@@ -24,7 +24,7 @@ compatibility:
   - 1.2.6
 
   os:
-  - linux
+  - nix
 ---
 Pause print on GPIO filament runout sensor
 

@@ -15,7 +15,7 @@ layout: null
     "page": "{{ plugin.url | prepend: site.baseurl | prepend: site.external }}",
     "compatibility": {% if plugin.compatibility %}{
         {% if plugin.compatibility.octoprint %}"octoprint": {{ plugin.compatibility.octoprint | jsonify }},{% endif %}
-        "os": {% if plugin.disabled %}["disabled"]{% else %}{% if plugin.compatibility.os %}{{ plugin.compatibility.os | jsonify }}{% else %}["windows", "linux", "macos"]{% endif %}{% endif %}
+        "os": {% if plugin.disabled %}["disabled"]{% else %}{% if plugin.compatibility.os %}{% include os_compat_json entries=plugin.compatibility.os %}{% else %}{{ site.data.compat.os.default | jsonify }}{% endif %}{% endif %}
     }{% else %}{"octoprint": [], "os": []}{% endif %},
     "license": {{ plugin.license | strip_html | strip_newlines | jsonify }}{% if plugin.featuredimage %},
     "image": "{% include canonic_url url=plugin.featuredimage external=true %}"{% endif %}{% if plugin.disabled %},

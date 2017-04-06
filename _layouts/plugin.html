@@ -88,12 +88,12 @@ layout: default
         <dd>
           <ul>
             {% if page.compatibility contains "octoprint" %}
-            <li>OctoPrint: {% for ver in page.compatibility.octoprint %}{{ ver | strip_html | strip_newlines | escape }}{% unless forloop.last %}, {% endunless %}{% endfor %}</li>
+            <li>OctoPrint: {% include octoprint_compat_human entries=page.compatibility.octoprint %}</li>
             {% else %}
             <li>OctoPrint: all versions</li>
             {% endif %}
-            {% if page.compatibility contains "os" %}
-            <li>Operating Systems: {% for os in page.compatibility.os %}{% if os == "windows" %}Windows{% endif %}{% if os == "linux" %}Linux{% endif %}{% if os == "macos" %}MacOS{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}</li>
+            {% if page.compatibility.os %}
+            <li>Operating Systems: {% include os_compat_human entries=page.compatibility.os %}</li>
             {% else %}
             <li>Operating Systems: all</li>
             {% endif %}

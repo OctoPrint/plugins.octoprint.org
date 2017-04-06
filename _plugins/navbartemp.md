@@ -12,9 +12,6 @@ featuredimage: https://github.com/imrahil/OctoPrint-NavbarTemp/raw/master/navbar
 date: 2015-04-17
 tags:
 - ui
-compatibility:
-  octoprint:
-  - 1.2.0
 ---
 
 ![NavbarTemp](https://github.com/imrahil/OctoPrint-NavbarTemp/raw/master/navbar.png?raw=true)
