@@ -79,7 +79,7 @@ editing it accordingly:
 
       # List of compatible operating systems
       #
-      # Valid values:
+      # Possible values:
       #
       # - windows
       # - linux

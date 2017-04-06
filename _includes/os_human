@@ -1,1 +1,1 @@
-{% if site.data.compat.os.name[include.os] %}{{ site.data.compat.os.name[include.os] }}{% else %}{{ include.os }}{% endif %}
+{% assign value = include.os %}{% assign prefix = "" %}{% assign first = value | slice: 0 %}{% if first == "!" %}{% assign value = include.os | remove_first: "!" %}{% assign prefix = "not " %}{% endif %}{{ prefix }}{% if site.data.compat.os.name[value] %}{{ site.data.compat.os.name[value] }}{% else %}{{ value }}{% endif %}
