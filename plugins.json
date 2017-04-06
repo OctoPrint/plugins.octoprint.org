@@ -14,8 +14,8 @@ layout: null
     "homepage": {{ plugin.homepage | jsonify }},
     "page": "{{ plugin.url | prepend: site.baseurl | prepend: site.external }}",
     "compatibility": {% if plugin.compatibility %}{
-        {% if plugin.compatibility.octoprint %}"octoprint": {{ plugin.compatibility.octoprint | jsonify }},{% endif %}
-        "os": {% if plugin.disabled %}["disabled"]{% else %}{% if plugin.compatibility.os %}{% include os_compat_json entries=plugin.compatibility.os %}{% else %}{{ site.data.compat.os.default | jsonify }}{% endif %}{% endif %}
+        "octoprint": {% if plugin.compatibility.octoprint %}{{ plugin.compatibility.octoprint | jsonify }}{% else %}[]{% endif %},
+        "os": {% if plugin.disabled %}["disabled"]{% else %}{% if plugin.compatibility.os %}{% include os_compat_json entries=plugin.compatibility.os %}{% else %}[]{% endif %}{% endif %}
     }{% else %}{"octoprint": [], "os": []}{% endif %},
     "license": {{ plugin.license | strip_html | strip_newlines | jsonify }}{% if plugin.featuredimage %},
     "image": "{% include canonic_url url=plugin.featuredimage external=true %}"{% endif %}{% if plugin.disabled %},
