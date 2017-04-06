@@ -12,7 +12,7 @@ date: 2016-04-26
     
 homepage: http://wiki.thing-printer.com/index.php?title=Main_Page
 source: https://github.com/eliasbakken/octoprint_redeem
-archive:
+archive: https://github.com/eliasbakken/octoprint_redeem/archive/master.zip
     
 # set this to true if your plugin uses the dependency_links setup parameter to include
 # library versions not yet published on PyPi. SHOULD ONLY BE USED IF THERE IS NO OTHER OPTION!
