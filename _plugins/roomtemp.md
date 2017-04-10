@@ -32,7 +32,7 @@ This plugin displays room temperature on navbar via a ds18b20 sensor connected t
 
 1 - Connecting your ds18b20 sensor to the Pi:
 
-![Connection](https://github.com/l00ma/OctoPrint-roomTemp/raw/master/raspberry-pi-ds18b20-connections.png?raw=true) 
+![Connection](https://raw.githubusercontent.com/l00ma/OctoPrint-roomTemp/master/raspberry-pi-ds18b20-connections.png)
 
 2 - Then connect to your Octopi via ssh.
 
@@ -52,4 +52,4 @@ This plugin displays room temperature on navbar via a ds18b20 sensor connected t
 
 7 - Enjoy !!
 
-![RoomTemp](https://github.com/l00ma/OctoPrint-roomTemp/raw/master/RoomTemp.png?raw=true) 
+![RoomTemp](https://raw.githubusercontent.com/l00ma/OctoPrint-roomTemp/master/RoomTemp.png)
