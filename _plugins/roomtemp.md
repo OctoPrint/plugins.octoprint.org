@@ -8,7 +8,7 @@ homepage: https://github.com/l00ma/OctoPrint-roomTemp
 source: https://github.com/l00ma/OctoPrint-roomTemp
 author: Frederic Moutin
 license: AGPLv3
-featuredimage: https://github.com/l00ma/OctoPrint-roomTemp/raw/master/RoomTemp.png?raw=true
+featuredimage: https://raw.githubusercontent.com/l00ma/OctoPrint-roomTemp/master/RoomTemp.png
 date: 2017-03-02
 tags:
 - ui
