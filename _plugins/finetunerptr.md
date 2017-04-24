@@ -7,7 +7,7 @@ description: Control important maintainance and calibration settings easy access
 author: Andreas Bruckmann
 license: AGPLv3
 
-date: 23.04.2017
+date: 2017-04-23
 
 homepage: https://github.com/xyzaxyz/OctoPrint-Finetunerptr
 source: https://github.com/xyzaxyz/OctoPrint-Finetunerptr
