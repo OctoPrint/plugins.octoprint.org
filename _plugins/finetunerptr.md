@@ -3,7 +3,7 @@ layout: plugin
 
 id: finetunerptr
 title: OctoPrint-Finetunerptr
-description: Control important maintainance and calibration settings easy accessible from a dropdown-button in the navbar.
+description: Control important maintenance and calibration settings easy accessible from a dropdown-button in the navbar.
 author: Andreas Bruckmann
 license: AGPLv3
 
@@ -33,12 +33,7 @@ screenshots:
 
 featuredimage: /assets/img/plugins/finetunerptr/OctoPrint-FineTuneRptr.png
 
-compatibility:
-
-  os:
-  - Repetier Firmware
-
 ---
 
 Clean and structured UI for Repetier-Firmware based printers. 
-Helps you in maintainance situations as it keeps the most important tools always accessible.
+Helps you in maintenance situations as it keeps the most important tools always accessible.
