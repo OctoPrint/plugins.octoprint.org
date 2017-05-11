@@ -1,3 +1,10 @@
+---
+layout: plugin
+
+id: octoprint-grbl-plugin
+title: Grbl support for OctoPrint
+description: Support Grbl style GCODE for using CNCs and Laser engravers with OctoPrint.
+author: mic159
 license: MIT
 
 # today's date in format YYYY-MM-DD, e.g.
@@ -21,8 +28,6 @@ compatibility:
   - 1.3.0
 
 ---
-
-Support Grbl style GCODE for using CNCs and Laser engravers with OctoPrint.
 
 This plugin modifies the gcode sent and recieved to translate what is needed.
 
