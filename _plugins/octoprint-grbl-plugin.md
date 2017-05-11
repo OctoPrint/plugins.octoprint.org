@@ -27,6 +27,9 @@ compatibility:
   octoprint:
   - 1.3.0
 
+screenshots:
+- url: /assets/img/plugins/grbl/Grbl_logo.png
+
 ---
 
 This plugin modifies the gcode sent and recieved to translate what is needed.
