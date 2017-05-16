@@ -5,3 +5,9 @@
 #  text: notice text (only text, no html, no markdown), mandatory
 #  link: "Read more" link target, optional
 #  important: true or false, use sparingly, optional (assumed false)
+- plugin: autoselect
+  versions: ["0.1.0"]
+  date: 2017-05-16 12:30:00 +0200
+  text: Version 0.2.0 of this plugin is available, but your version 0.1.0 does not yet support updating automatically.
+    Please re-install the plugin from the repository to update. More details can be found at the "Read more..." below.
+  link: https://github.com/OctoPrint/OctoPrint-Autoselect/releases/tag/0.2.0
