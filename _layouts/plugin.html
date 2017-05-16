@@ -76,7 +76,14 @@ layout: default
       <dl class="tags">
         <dt>Tags</dt>
         <dd>
-          {% assign tags = (page.tags | sort) %}
+          {% assign plugin_tags = "" | split: "/" %}
+          {% for tag in page.tags %}
+            {% assign preprocessed = tag | strip | downcase %}
+            {% unless preprocessed == "" %}
+              {% assign plugin_tags = plugin_tags | push: preprocessed %}
+            {% endunless %}
+          {% endfor %}
+          {% assign tags = plugin_tags | sort %}
           {% for tag in tags %}
           {% include plugin_tag tag=tag %}
           {% endfor %}
