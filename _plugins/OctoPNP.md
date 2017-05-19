@@ -33,7 +33,7 @@ screenshots:
   alt: screenshot of OctoPNP settings dialog.
   caption: Camera supported interactive calibration in the settings dialog.
 
-featuredimage: /assets/img/plugins/autocalibration/screenshot.png
+featuredimage: /assets/img/plugins/OctoPNP/screenshot.png
 ---
 
 OctoPNP is an extension that allows Octoprint to control printers and similar devices with additional hardware for handling of SMD-parts (and potentially arbitrary objects). It currently requires the following hardware extensions:
