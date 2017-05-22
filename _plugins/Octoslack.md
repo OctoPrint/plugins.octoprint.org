@@ -38,6 +38,9 @@ screenshots:
 
 featuredimage: /assets/img/plugins/Octoprint/Octoslack-PrintProgress_SlackOnly.png
 
+disabled: Temporarily disabled while waiting on feedback from the author
+  about a potential issue.
+
 ---
 
 
