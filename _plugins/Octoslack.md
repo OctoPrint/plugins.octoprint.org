@@ -5,7 +5,7 @@ id: Octoslack
 title: Octoslack
 description: An OctoPrint plugin for monitoring your printer and prints via Slack or Mattermost
 author: Chris Fraschetti
-license: Apache2
+license: MIT
 
 # today's date in format YYYY-MM-DD, e.g.
 date: 2017-05-20
