@@ -8,7 +8,7 @@ author: mic159
 license: MIT
 
 # today's date in format YYYY-MM-DD, e.g.
-date: 2017-06-03
+date: 2017-05-11
 
 homepage: https://github.com/mic159/octoprint-grbl-plugin
 source: https://github.com/mic159/octoprint-grbl-plugin
