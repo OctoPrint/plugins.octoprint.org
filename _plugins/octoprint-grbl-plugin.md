@@ -8,11 +8,11 @@ author: mic159
 license: MIT
 
 # today's date in format YYYY-MM-DD, e.g.
-date: 2017-05-11
+date: 2017-06-03
 
 homepage: https://github.com/mic159/octoprint-grbl-plugin
 source: https://github.com/mic159/octoprint-grbl-plugin
-archive: https://github.com/mic159/octoprint-grbl-plugin/archive/1.0.0.zip
+archive: https://pypi.python.org/packages/26/7d/85dea16ac65ef3bd97f6b7c78865c7bfe245f3a91fc14ae1e71e7d749abf/octoprint-grbl-plugin-1.0.1.tar.gz
 
 tags:
 - grbl
