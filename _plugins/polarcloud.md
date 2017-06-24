@@ -26,14 +26,17 @@ screenshots:
 - url: /assets/img/plugins/polarcloud/polarcloud.png
   alt: Screenshot of PolarCloud monitoring a printer
   caption: Screenshot of PolarCloud monitoring a printer
+- url: /assets/img/plugins/polarcloud/polarcloudifttt.png
+  alt: Screenshot of some of the Polar3D IFTTT applets
+  caption: Screenshot of some of the Polar3D IFTTT applets (there are many more)
 
 featuredimage: /assets/img/plugins/polarcloud/polarcloud.png
 
 ---
 ## Easily Monitor Your Prints from Anywhere
 
-The Polar Cloud at https://polar3d.com is accessible from anywhere, inside or
-outside of the printer's local network.
+The Polar Cloud at [polar3d.com](https://polar3d.com) is accessible from
+anywhere, inside or outside of the printer's local network.
 
 ## Print Queue
 
@@ -53,9 +56,10 @@ members, and send them to your printer.
 ## IFTTT
 
 Polar Cloud is an IFTTT service, so you can easily set things up to happen when
-various events happen with your printer connected to Polar Cloud.
+various events happen with your printer connected to Polar Cloud. See [Polar3D's
+IFTTT Applets](https://ifttt.com/polar3d)
 
-## Getting Started
+## README - Getting Started
 
 There's a few steps to get up and running (beyond installing the plugin).
 Please read the additional info in the [README](https://github.com/markwal/OctoPrint-PolarCloud/blob/master/README.md)
