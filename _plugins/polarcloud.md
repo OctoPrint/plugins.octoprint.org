@@ -2,7 +2,7 @@
 layout: plugin
 
 id: polarcloud
-title: OctoPrint-PolarCloud (Beta)
+title: PolarCloud (Beta)
 description: Connects OctoPrint to the PolarCloud so you can easily monitor and control outside of your local network
 author: Mark Walker
 license: AGPLv3
