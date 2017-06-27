@@ -32,6 +32,10 @@ screenshots:
 
 featuredimage: /assets/img/plugins/polarcloud/polarcloud.png
 
+compatibility:
+  octoprint:
+  - 1.3.4
+
 ---
 ## Easily Monitor Your Prints from Anywhere
 
