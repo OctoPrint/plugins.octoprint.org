@@ -8,7 +8,7 @@ author: Kenneth Jiang
 license: AGPLv3
 
 # today's date in format YYYY-MM-DD, e.g.
-date: 2017-06-26
+date: 2017-07-01
 
 homepage: https://github.com/kennethjiang/OctoPrint-Anywhere
 source: https://github.com/kennethjiang/OctoPrint-Anywhere
