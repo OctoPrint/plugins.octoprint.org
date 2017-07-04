@@ -86,8 +86,7 @@ compatibility:
 
 ## Monitor and control your 3D printer from ANYWHERE
 
-Built on nascent IoT platfrom [Anywhere](https://www.getanywhere.io), OctoPrint Anywhere extends
-your control beyond the local network.
+OctoPrint Anywhere extends your control beyond the local network.
 
 * Get webcam feed on your smart phone (Only when you are checking. There is no network traffic when the page is open in background).
 * Get real-time feed on temperatures and print job.
