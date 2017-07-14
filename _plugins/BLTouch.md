@@ -7,7 +7,7 @@ description: Simple plugin to add BLTouch controls to the Control tab.
 author: jneilliii
 license: AGPLv3
 
-date: 2017-01-10
+date: 2017-07-14
 
 homepage: https://github.com/jneilliii/OctoPrint-BLTouch
 source: https://github.com/jneilliii/OctoPrint-BLTouch
