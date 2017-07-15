@@ -16,9 +16,21 @@ exclude: ["vendor", ".rvmrc", ".rbenv-version", "README.md", "Rakefile", "change
 highlighter: rouge
 markdown: kramdown
 
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+
 collections:
   plugins:
     output: true
 
     # if you ever change this, also change the /plugins/ and / stripping routine in plugins.json!
     permalink: /plugins/:path/
+
+exclude:
+- CNAME
+- Gemfile
+- Gemfile.lock
+- vendor
+- "*.iml"

@@ -1,11 +1,13 @@
 language: ruby
 rvm:
-- 2.2
+- 2.3.3
 
 script:
 - bundle exec jekyll build
+- bundle exec htmlproofer ./_site --only-4xx --check-favicon --check-html --file-ignore "/\.\/_site\/search\/index\.html/"
 - bundle exec jsonlint ./_site/plugins.json
 - bundle exec jsonlint ./_site/search.json
+- bundle exec jsonlint ./_site/notices.json
 
 branches:
   only:
@@ -14,3 +16,6 @@ branches:
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES
+
+exclude: [vendor]
+sudo: false

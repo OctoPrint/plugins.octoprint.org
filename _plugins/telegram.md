@@ -42,9 +42,6 @@ featuredimage: /assets/img/plugins/telegram/features3.png
 compatibility:
   octoprint:
   - 1.2.9
-
-  # list of compatible operating systems, valid values are linux, windows, macos, leaving empty defaults to all
-  os:
 ---
 
 This plugin integrates Telegram Messenger into Octoprint.

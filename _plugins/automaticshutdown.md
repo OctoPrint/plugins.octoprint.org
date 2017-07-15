@@ -31,11 +31,6 @@ compatibility:
   octoprint:
   - 1.2.5
 
-  # list of compatible operating systems, valid values are linux, windows, macos, leaving empty defaults to all
-  os:
-  - linux
-  - windows
-  - macos
 ---
 
 This OctoPrint plugin enables the system to be automatically shut down after a print is finished.

@@ -1,3 +1,6 @@
+---
+layout: compress
+---
 <!DOCTYPE html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -6,9 +9,9 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html"> <!--<![endif]-->
 <head>
     <meta charset="utf-8" />
-    <title>{{ page.title }}</title>
-    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
-    <meta name="author" content="{{ site.author.name }}">
+    <title>{{ page.title | strip_html | strip_newlines | escape }}</title>
+    {% if page.description %}<meta name="description" content="{{ page.description | strip_html | strip_newlines | escape }}">{% endif %}
+    {% if page.author %}<meta name="author" content="{{ page.author | strip_html | strip_newlines | escape }}">{% endif %}
 
     <!--[if lt IE 9]>
     <script src="/assets/js/html5shim.js"></script>
@@ -29,8 +32,37 @@
     <!-- Le RSS feed -->
     <link rel="alternate" type="application/rss+xml" title="OctoPrint Plugin Repository: New Plugins" href="{{ '/feed.xml' | prepend: site.baseurl }}">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>
+    <!-- Le social media meta data -->
+    {% capture thetitle %}{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}{% endcapture %}
+    {% capture thedescription %}{% if page.excerpt %}{{ page.excerpt | strip_html }}{% else %}{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}{% endif %}{% endcapture %}
+    {% if page.featuredimage %}
+        {% capture theimage %}{{ site.external }}{{ BASE_PATH }}{{ page.featuredimage }}{% endcapture %}
+        {% capture thecard %}{{ site.external }}{{ BASE_PATH }}{{ page.card }}{% endcapture %}
+    {% else %}
+        {% capture theimage %}{{ site.external }}{{ BASE_PATH }}/assets/img/repo-600x400.png{% endcapture %}
+        {% capture thecard %}{{ site.external }}{{ BASE_PATH }}/assets/img/octoprint-avatar-240x240.png{% endcapture %}
+    {% endif %}
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@{{ site.twitter_username }}" />
+    <meta name="twitter:title" content="{{ thetitle }}" />
+    <meta name="twitter:description" content="{{ thedescription }}" />
+    <meta name="twitter:image" content="{{ thecard }}" />
+
+    <meta property="og:title" content="{{ thetitle }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="{{ theimage }}" />
+    <meta property="og:description" content="{{ thedescription }}" />
+    <meta property="og:site_name" content="{{ site.title }}" />
+    <meta property="og:url" content="{{ page.url | prepend: BASE_PATH | prepend: site.external }}" />
+
+    <meta itemscope itemtype="http://schema.org/WebPage" />
+    <meta itemprop="headline" content="{{ thetitle }}" />
+    <meta itemprop="description" content="{{ thedescription }}" />
+    <meta itemprop="image" content="{{ theimage }}" />
+
+    <script src="/assets/js/jquery-1.9.1.min.js"></script>
+    <script src="/assets/js/underscore.min.js"></script>
 </head>
 
 <body>

@@ -5,19 +5,20 @@ layout: null
 {% for plugin in site.plugins %}{% unless forloop.first %},{% endunless %}
   {
     "id": "{{ plugin.id | remove_first: '/plugins/' | remove: '/' }}",
-    "published": "{{ plugin.date }}",
-    "title": "{{ plugin.title }}",
-    "description": "{{ plugin.description }}",
-    "archive": "{{ plugin.archive }}",{% if plugin.follow_dependency_links %}
+    "published": {{ plugin.date | strip_html | strip_newlines | jsonify }},
+    "title": {{ plugin.title | strip_html | strip_newlines | jsonify }},
+    "description": {{ plugin.description | strip_html | strip_newlines | jsonify }},
+    "archive": {{ plugin.archive | jsonify }},{% if plugin.follow_dependency_links %}
     "follow_dependency_links": {{ plugin.follow_dependency_links }},{% endif %}
-    "author": "{{ plugin.author }}",
-    "homepage": "{{ plugin.homepage }}",
+    "author": {{ plugin.author | strip_html | strip_newlines | jsonify }},
+    "homepage": {{ plugin.homepage | jsonify }},
     "page": "{{ plugin.url | prepend: site.baseurl | prepend: site.external }}",
     "compatibility": {% if plugin.compatibility %}{
-        {% if plugin.compatibility.octoprint %}"octoprint": {{ plugin.compatibility.octoprint | jsonify }},{% endif %}
-        "os": {% if plugin.disabled %}["disabled"]{% else %}{% if plugin.compatibility.os %}{{ plugin.compatibility.os | jsonify }}{% else %}["windows", "linux", "macos"]{% endif %}{% endif %}
+        "octoprint": {% if plugin.compatibility.octoprint %}{{ plugin.compatibility.octoprint | jsonify }}{% else %}[]{% endif %},
+        "os": {% if plugin.disabled %}["disabled"]{% else %}{% if plugin.compatibility.os %}{% include os_compat_json entries=plugin.compatibility.os %}{% else %}[]{% endif %}{% endif %}
     }{% else %}{"octoprint": [], "os": []}{% endif %},
-    "license": "{{ plugin.license }}"{% if plugin.featuredimage %},
-    "image": "{% include canonic_url url=plugin.featuredimage external=true %}"{% endif %}
+    "license": {{ plugin.license | strip_html | strip_newlines | jsonify }}{% if plugin.featuredimage %},
+    "image": "{% include canonic_url url=plugin.featuredimage external=true %}"{% endif %}{% if plugin.disabled %},
+    "disabled": {{ plugin.disabled | markdownify | jsonify }}{% endif %}
   }{% endfor %}
 ]

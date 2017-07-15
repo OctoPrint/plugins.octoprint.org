@@ -6,10 +6,10 @@
 "id": "{{ plugin.id }}",
 "url": "{{ plugin.url | prepend: site.baseurl }}",
 "date": "{{ plugin.date }}",
-"title": "{{ plugin.title }}",
-"description": "{{ plugin.description }}",
-"author": "{{ plugin.author }}",
-"content": "{{ plugin.content | strip_html | strip_newlines | remove: '"' | escape | remove: "\" }}",
+"title": {{ plugin.title | strip_html | strip_newlines | jsonify }},
+"description": {{ plugin.description | strip_html | strip_newlines | jsonify }},
+"author": {{ plugin.author | strip_html | strip_newlines | jsonify  }},
+"content": {{ plugin.content | strip_html | strip_newlines | jsonify }},
 "tags": {% if plugin.tags %}{{ plugin.tags | jsonify }}{% endif %}{% unless plugin.tags %}[]{% endunless %}
 }{% unless forloop.last %},{% endunless %}
 {% endfor %}]

@@ -18,9 +18,6 @@ featuredimage: /assets/img/plugins/systemCommandEditor/img1.png
 tags:
 - administration
 - ui
-compatibility:
-  octoprint:
-  - 1.2.0
 
 ---
     

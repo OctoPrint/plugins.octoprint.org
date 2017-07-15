@@ -25,10 +25,6 @@ screenshots:
   caption: STL Viewer
 
 featuredimage: /assets/img/plugins/stlviewer/screenshot.jpg
-
-compatibility:
-  octoprint:
-  - 1.2.0
 ---
 
 The STL Viewer plugin is a simple STL Viewer tab for OctoPrint. Viewer control is derived from [jsc3d](https://code.google.com/p/jsc3d/).

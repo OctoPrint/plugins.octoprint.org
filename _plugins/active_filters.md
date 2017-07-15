@@ -23,10 +23,6 @@ compatibility:
   octoprint:
   - 1.2.6
 
-  # list of compatible operating systems, valid values are linux, windows, macos, leaving empty defaults to all
-  browsers:
-  - any browser that supports "localStorage"
-  
 ---
 This plugin will save the status, active/inactive, of the regex filters in the terminal tab. 
 The save is done local, so if you access OctoPrint on multiple computers, the settings, might vary.  

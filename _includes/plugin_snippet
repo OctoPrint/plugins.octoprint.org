@@ -3,6 +3,14 @@
 <p>
   {{ plugin.description }}
 </p>
+{% assign plugin_tags = "" | split: "/" %}
 {% for tag in plugin.tags %}
-{% include plugin_tag tag=tag %}
+  {% assign preprocessed = tag | strip | downcase %}
+  {% unless preprocessed == "" %}
+    {% assign plugin_tags = plugin_tags | push: preprocessed %}
+  {% endunless %}
+{% endfor %}
+{% assign plugin_tags = plugin_tags | sort | uniq %}
+{% for tag in plugin_tags %}
+  {% include plugin_tag tag=tag %}
 {% endfor %}

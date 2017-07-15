@@ -11,9 +11,6 @@ license: AGPLv3
 date: 2015-05-22
 tags:
 - ui
-compatibility:
-  octoprint:
-  - 1.2.0
 ---
 
 The default video streamer in the OctoPi image is mjpg-streamer. It works by

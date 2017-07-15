@@ -23,7 +23,7 @@ compatibility:
   - 1.2.6
 
   os:
-  - linux
+  - nix
 ---
 Pause printing when the 3D printer runs out of filament.
 

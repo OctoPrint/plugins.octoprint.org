@@ -33,14 +33,6 @@ screenshots:
 
 featuredimage: /assets/img/plugins/stats/img1.png
 
-compatibility:
-  octoprint:
-  - 1.2.0
-
-  os:
-  - linux
-  - windows
-  - macos
 ---
 
 This plugin is designed to show statistics of your printer and estimate power usage in kWh.
