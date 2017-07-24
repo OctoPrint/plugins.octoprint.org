@@ -38,7 +38,7 @@ screenshots:
 featuredimage: /assets/img/plugins/simpleemergencystop/emergencystopsign.png
 
 ---
-A simple plugin that adds an emergency stop buton on NavBar.
+A simple plugin that adds an emergency stop button on NavBar.
 
 
 
