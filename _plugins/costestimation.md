@@ -20,6 +20,9 @@ screenshots:
 - url: /assets/img/plugins/costestimation/costestimation.png
   alt: Cost
   caption: Sample view of estimated print cost in the sidebar
+- url: /assets/img/plugins/costestimation/costestimation.png
+  alt: FilamentManager
+  caption: Dialog to manage filament profiles
 - url: /assets/img/plugins/costestimation/costestimation_settings.png
   alt: Settings
   caption: Settings dialog to configure the print cost
@@ -27,6 +30,8 @@ screenshots:
 
 This OctoPrint plugin displays the estimated print cost for the loaded model. The print cost includes the price for the used filament and the operating cost for the printer.
 
-The cost for the filament is calculated from the price per gramm and the provided volume needed for the print.
-
-The operating cost is calculated from the power consumtion of the printer, the price per kWh and the estimated print time of the model.
+**Features**
+- Calculation based on the provided length or volume
+- Customizable currency symbol
+- Support for filament profiles
+- Support for multiple extruders
