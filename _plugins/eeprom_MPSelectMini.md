@@ -22,10 +22,10 @@ tags:
 - helper
 
 screenshots:
-- url: /assets/img/plugins/eeprom_mpselectmini/img.png
+- url: /assets/img/plugins/eeprom_mpselectmini/screen.png
   alt: Settings
 
-featuredimage: /assets/img/plugins/eeprom_mpselectmini/img.png
+featuredimage: /assets/img/plugins/eeprom_mpselectmini/screen.png
 
 ---
 
