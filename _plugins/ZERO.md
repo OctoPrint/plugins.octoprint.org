@@ -19,14 +19,14 @@ archive: https://github.com/gkolozof/archive/master.zip
 follow_dependency_links: false
 
 tags:
-- 0.0.3 
+- 0.1.1
 
 screenshots:
-- url: /assets/img/OctoPrint-ZERO.jpg
-  alt: Configures compiling and install FirmWare
+- url: /assets/img/plugins/ZERO/OctoPrint-ZERO.png
+  alt: After configuring compill and install the FirmWare
   caption: Configures compiling and install FirmWare for any 3D printer in 1 Min.
 
-featuredimage: /assets/img/ZERO.jpg
+featuredimage: /assets/img/ZERO.png
 
 # You only need the following if your plugin requires specific OctoPrint versions or
 # specific operating systems to function - you can safely remove the whole
