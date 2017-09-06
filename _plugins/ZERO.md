@@ -3,7 +3,7 @@ layout: plugin
 
 id: ZERO
 title: OctoPrint-ZERO
-description: Configures compiling and install FirmWare for any 3D printer in 1 Min.
+description: Configures compiling and install FirmWare for any 3D printer 30 Sec.
 author: Giorgio Kolozof
 license: AGPLv3
 
