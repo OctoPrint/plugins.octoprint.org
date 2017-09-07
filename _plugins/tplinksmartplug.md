@@ -3,7 +3,7 @@ layout: plugin
     
 id: tplinksmartplug
 title: OctoPrint-TPLinkSmartplug
-description: Plugin to send M117 gcode messages to the web interface.
+description: Plugin to control TP-Link Smartplug devices from OctoPrint web interface.
 author: jneilliii
 license: AGPLv3
     
