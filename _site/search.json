@@ -1,0 +1,927 @@
+{
+  "docs": [
+{
+"id": "/plugins/mqtt",
+"url": "/plugins/mqtt/",
+"date": "2015-04-11 00:00:00 +0300",
+"title": "MQTT",
+"description": "Adds support for subscribing and publishing to MQTT topics.",
+"author": "Gina Häußge",
+"content": "This is an OctoPrint Plugin that adds support for MQTT to OctoPrint.See the plugin’s README for details on configuration and usage.",
+"tags": ["mqtt","helper","notification"]
+},
+
+{
+"id": "/plugins/growl",
+"url": "/plugins/growl/",
+"date": "2015-04-14 00:00:00 +0300",
+"title": "Growl",
+"description": "Get Growl notifications from your OctoPrint installation.",
+"author": "Gina Häußge",
+"content": "The Growl plugin for OctoPrint allows to send notifications about certain printing events to a Growl instance on yourlocal network. Right now it sends notifications for the following events:  Printjob started  Printjob done  File uploaded (optional)  Timelapse done (optional)Please note that it’s a work in progress.ConfigurationYou’ll have to configure the host your Growl service is running on (which is probably not the same machine that your OctoPrint installation is running on), the port it is listening on and - if you secured your growl instance againstnotifications from the network with a password - also the password needed to connect to it.You can do all this via the settings dialog under “Plugins &gt; Growl”. If you have your OctoPrint installation’s bundled discovery plugin also configured with pybonjour support you’ll also be able to see all the Growl instances on your local network that OctoPrint was able to discover there.By default only the notifications for “Printjob started” and “Printjob done” are enabled. If you also want to get notification about the other events, you’ll have to tell Growl. OctoPrint will send them all, but your local Growlinstance needs to be told to also display them. You can do this in the configuration of your Growl service. For example,this is how it looks in Growl for Windows:",
+"tags": ["notification"]
+},
+
+{
+"id": "/plugins/actiontrigger",
+"url": "/plugins/actiontrigger/",
+"date": "2015-04-17 00:00:00 +0300",
+"title": "Action Trigger Plugin",
+"description": "Plugin for OctoPrint that handles serial commands sent out by the printer.",
+"author": "Pim Rutgers",
+"content": "  Its gun do some serial trigger handling yoPlugin for OctoPrint that handles serial commands send out by the printer. These action triggers should be manually added to your firmware if you want to use this add-on.  Basic handler code is:// action:somevariablePlugin reacts to two different situations, door open/close and filament detection.action:door_openaction:door_closedaction:door_open will pause the print and home the X-axis. Pop-up dialog will notify the user, they can decide to accept the pop-up and use the controls. Closing the door will trigger action:door_closed resume the print and close the dialogaction:filamentThis trigger will pause the print and home the X and Y axis, giving the user the opportunity to change out the filament. The print needs to be resumed manually through the UI.",
+"tags": ["printing"]
+},
+
+{
+"id": "/plugins/navbartemp",
+"url": "/plugins/navbartemp/",
+"date": "2015-04-17 00:00:00 +0300",
+"title": "Navbar Temp",
+"description": "Display temperatures on navbar",
+"author": "Jarek Szczepanski",
+"content": "For Raspberry Pi users it’s possible to display internal temperature (configurable via settings dialog):",
+"tags": ["ui"]
+},
+
+{
+"id": "/plugins/printhistory",
+"url": "/plugins/printhistory/",
+"date": "2015-04-22 00:00:00 +0300",
+"title": "Print History",
+"description": "Saves filename, print time and filament usage for each print",
+"author": "Jarek Szczepanski",
+"content": "",
+"tags": []
+},
+
+{
+"id": "/plugins/gpx",
+"url": "/plugins/gpx/",
+"date": "2015-04-23 00:00:00 +0300",
+"title": "GPX",
+"description": "Use OctoPrint with s3g/x3g printers (like FlashForge and older MakerBot)",
+"author": "Mark Walker",
+"content": "GPX was created by Dr. Henry Thomas in April 2013.  It is a post processingutility that converts gcode into x3g files for printing on MakerBots or theirclones.This plugin wraps the serial communication layer and uses GPX to translate betweengcode and x3g on the fly to make the printer appear to OctoPrint as if it speaksgcode.###ConfigurationAfter installing, you need to tell gpx about your printer. In OctoPrint, GPXadds a settings panel. Two settings are important to set: the type ofprinter and the gcode flavor.The type of printer determines the steps per mm. Gcode is generally inmillimeters and x3g is in stepper motor steps.Gcode flavor means the flavor that your slicer produces. Makerbot Desktop andRepG only produce MakerBot flavor. Slic3r produces either (you can choose inits settings) and Cura produces RepRap flavor.If you have a MakerBot clone then you have a Replicator 1 or Replicator 1 Dualclone. Your printer might look more like a Replicator 2 because it is black andmetal, but its steps per mm is Replicator 1.###Caveats and Known IssuesPlease see the READMEon github for the latest info.",
+"tags": ["printer","protocol"]
+},
+
+{
+"id": "/plugins/customControl",
+"url": "/plugins/customControl/",
+"date": "2015-04-26 00:00:00 +0300",
+"title": "Custom Control Editor",
+"description": "Makes custom controls editable via the settings dialog",
+"author": "Marc Hannappel (Salandora)",
+"content": "This plugin helps you create, edit and delete your custom controls.You can easily access all the options in the settings under “Custom Control Editor”.Right click on a control or the green box to open a context menu.By using the container elements you can easily position the controls where you want.",
+"tags": ["administration","ui"]
+},
+
+{
+"id": "/plugins/octoglow",
+"url": "/plugins/octoglow/",
+"date": "2015-05-12 00:00:00 +0300",
+"title": "OctoGlow",
+"description": "Display OctoPrint status on a PiGlow board.",
+"author": "Dan Malec",
+"content": "The OctoGlow plugin for OctoPrint displays status on a Pimoroni PiGlow attached to a Raspberry Pi.  It displays animations for the following events:  Printer connected  Printjob started  Printjob progress updated  Printjob done  Printjob cancelled  Printjob failedConfigurationThe PiGlow board requires i2c to be enabled on the Raspberry Pi.  Please follow the Pimoroni guide on enabling i2c on the Raspberry Pi.Additionally, the pi user must be added to the i2c group in order to allow OctoPrint to send commands to the PiGlow without needing root privileges:sudo adduser pi i2c",
+"tags": ["notification"]
+},
+
+{
+"id": "/plugins/snapstream",
+"url": "/plugins/snapstream/",
+"date": "2015-05-22 00:00:00 +0300",
+"title": "SnapStream",
+"description": "Emulate webcam streaming by showing a sequence of snapshots",
+"author": "Mark Walker",
+"content": "The default video streamer in the OctoPi image is mjpg-streamer. It works byfairly simply stitching the jpeg images from the webcam into a stream that canbe displayed by the browser. You may want to avoid this stitching and just havejavascript display the jpg images every few hundred milliseconds instead.A couple of reasons might be:      You want to use a browser that doesn’t support mjpeg streams (IE).        You want to reduce your bandwidth and cpu usage on your host.  You can reduce bandwidth and cpu usage by reducing the frame rate onmjpg-streamer, but perhaps the plugin is even lighter weight, try it out onyour hardware and see.SettingsThe plugin has a couple of settings you can change:      Frames per second.    The plugin uses javascript to update the snapshot so the frames are really limited by the browsers ability/willingness to call a timer interval function. Probably best to stay in the slow, reliable, but choppy end of things: 1, 2 or 4 or something like that.        Fallback mode only.    The plugin only takes over and uses snapshots when the stream fails to load.  ",
+"tags": ["ui"]
+},
+
+{
+"id": "/plugins/systemcommandeditor",
+"url": "/plugins/systemcommandeditor/",
+"date": "2015-06-03 00:00:00 +0300",
+"title": "System Command Editor",
+"description": "This plugin makes System Commands editable through the OctoPrint WebUI",
+"author": "Marc Hannappel (Salandora)",
+"content": "This plugin helps you create, edit and delete System commands.You can Access all option in the settings under “Plugins -&gt; System Command Editor”Right Click on a Control or the Green Box to open a context menu.",
+"tags": ["administration","ui"]
+},
+
+{
+"id": "/plugins/editorcollection",
+"url": "/plugins/editorcollection/",
+"date": "2015-06-04 00:00:00 +0300",
+"title": "Editor Collection",
+"description": "This plugin is for putting Salandora's editor plugins onto one page",
+"author": "Marc Hannappel (Salandora)",
+"content": "This plugin moves the Editor’s from Salandora onto a single Page.",
+"tags": ["administration","ui"]
+},
+
+{
+"id": "/plugins/screensquish",
+"url": "/plugins/screensquish/",
+"date": "2015-06-17 00:00:00 +0300",
+"title": "ScreenSquish",
+"description": "Scalable UI that does some old fashioned (v2) bootstrap responsive and some collapse etc.",
+"author": "Mark Walker",
+"content": "Bootstrap 2 “responsive” UI, a single column on your phoneThis is a little plugin that adds an HTML element here, changes some css there ina tweaky way to have the default OctoPrint UI reflow (or squish) for smallerscreen sizes.There are more epic UIs in the works elsewhere, but you can use this plugin untilsomething better comes along.Since it does tweak the current UI that will likely change, it disables itselfon any new version of OctoPrint. My plan is to keep it up to date within a fewdays or even ahead of any official release until such time as it is no longerneeded because of an alternate UI plugin or because bootstrap 3 happened.Go ahead and give it a try and if you don’t like it you can always disable it oruninstall from OctoPrint’s plugin manager.",
+"tags": ["mobile","ui"]
+},
+
+{
+"id": "/plugins/stlviewer",
+"url": "/plugins/stlviewer/",
+"date": "2015-06-20 00:00:00 +0300",
+"title": "STL Viewer",
+"description": "Simple stl viewer tab from uploaded files.",
+"author": "jneilliii",
+"content": "The STL Viewer plugin is a simple STL Viewer tab for OctoPrint. Viewer control is derived from jsc3d.",
+"tags": ["tab","stl"]
+},
+
+{
+"id": "/plugins/commandsplitter",
+"url": "/plugins/commandsplitter/",
+"date": "2015-06-21 00:00:00 +0300",
+"title": "CommandSplitter",
+"description": "Splits multiple commands on one line in GCODE files into multiple lines",
+"author": "Gina Häußge",
+"content": "This is a small GCODE preprocessor that makes sure that uploaded GCODE file contain only one command per line.GCODE allows putting multiple commands on one line, separated by a : (colon). Since it is currently a bitunclear how firmware should process such lines with regards to included line numbers or checksums, in order toavoid any confusion this plugin can be used to make sure that all such multi-command-lines in uploaded GCODE filesare split into multiple lines first.ExampleIf an uploaded GCODE file contains these lines:G28 X0 Y0 : G28 Z0 ; home all axes; this is a comment with a colon : in the middleM117 Hello there \\:)this plugin will turn them into these lines:G28 X0 Y0G28 Z0; home all axes; this is a comment with a colon in the middleM117 Hello there \\:)Note that it will touch neither colons in comments nor escaped ones. Be careful though, it is currently not completelyclear if all firmwares support escaping the colon as shown above. Better not use any : within your commands if possible.",
+"tags": ["gcode","preprocessing"]
+},
+
+{
+"id": "/plugins/requestspinner",
+"url": "/plugins/requestspinner/",
+"date": "2015-06-21 00:00:00 +0300",
+"title": "RequestSpinner",
+"description": "Shows a little spinner in the web frontend when background requests are active",
+"author": "Gina Häußge",
+"content": "The Request Spinner Plugin puts a little spinner icon in the lower left corner of the OctoPrint web interface wheneverthere are active background requests via AJAX in progress. That provides a bit of feedback about how long your actionstake to get processed by your server and gives you some more indication if stuff is actually happening or not.",
+"tags": ["ui","ajax"]
+},
+
+{
+"id": "/plugins/autoselect",
+"url": "/plugins/autoselect/",
+"date": "2015-06-27 00:00:00 +0300",
+"title": "Autoselect",
+"description": "Automatically selects freshly uploaded files for printing if no print job is currently active.",
+"author": "Gina Häußge",
+"content": "The Autoselect Plugin will automatically select newly uploaded files forprinting if there is an active connection to a printer and currently no printjob running.",
+"tags": ["ux","upload","filemanagement"]
+},
+
+{
+"id": "/plugins/status_line",
+"url": "/plugins/status_line/",
+"date": "2015-07-04 00:00:00 +0300",
+"title": "StatusLine",
+"description": "Display M117 (Display Message) in the SideBar",
+"author": "Philippe Vanhaesendonck",
+"content": "(Very) simple plugin to which displays the M117 command (Display Message) in the SideBar.",
+"tags": ["ui"]
+},
+
+{
+"id": "/plugins/yamlpatcher",
+"url": "/plugins/yamlpatcher/",
+"date": "2015-07-07 00:00:00 +0300",
+"title": "Yamlpatcher",
+"description": "Allows patching up config.yaml through the web interface",
+"author": "Gina Häußge",
+"content": "The OctoPrint Yamlpatcher Plugin allows patching OctoPrint’s config.yamlthrough a new dialog within OctoPrint’s settings, using easily shareablepatch strings.This allows applying configuration changes that are not easily achievable throughthe UI even for users who don’t feel comfortable manually editing a YAMLconfiguration file. And for those that do feel comfortable with YAML, it isalso is a very fast way to make quick adjustments to configuration settings forwhich no UI inputs exist, e.g. development settings.Before allowing to apply the patch string, the plugin will present the userwith a preview of the changes that will take place, visualizing both addedand removed entries within config.yaml.UsagePaste a valid patch string into the input field below, then hit the “Preview” button. Make sure the changes look like they should (if a screenshot of a preview was provided along side the patch string, compare!). If they do, hit “Apply”. Then restart your server.Patch formatSee the documentation.",
+"tags": ["admin","config"]
+},
+
+{
+"id": "/plugins/octobullet",
+"url": "/plugins/octobullet/",
+"date": "2015-07-23 00:00:00 +0300",
+"title": "Pushbullet",
+"description": "Pushes notifications about finished print jobs via Pushbullet",
+"author": "Gina Häußge",
+"content": "This plugin adds support for Pushbullet notifications to OctoPrint.At the current state OctoPrint will send a notification when a print job finishes. If a webcam is available, an imageof the print result will be captured and included in the notification.",
+"tags": ["notification"]
+},
+
+{
+"id": "/plugins/eeprom_repetier",
+"url": "/plugins/eeprom_repetier/",
+"date": "2015-07-28 00:00:00 +0300",
+"title": "EEPROM Repetier Editor",
+"description": "Makes it possible to change the EEPROM values of Repetier Firmware through OctoPrint",
+"author": "Marc Hannappel (Salandora)",
+"content": "This plugin is designed to get, change and save the values in the EEPROM of your Repetier Firmware based Machine",
+"tags": ["repetier","helper"]
+},
+
+{
+"id": "/plugins/displayprogress",
+"url": "/plugins/displayprogress/",
+"date": "2015-08-03 00:00:00 +0300",
+"title": "DisplayProgress",
+"description": "Displays the print progress on the printer's display",
+"author": "Gina Häußge",
+"content": "A plugin that sends M117 commands to the printer to display the progressof the print job being currently streamed. The message to display can beconfigured (some placeholders included). By default, an ASCII progress baris rendered with the percentage of the job’s progress.",
+"tags": ["printer","display","lcd","progress"]
+},
+
+{
+"id": "/plugins/eeprom_marlin",
+"url": "/plugins/eeprom_marlin/",
+"date": "2015-08-30 00:00:00 +0300",
+"title": "EEPROM Marlin Editor",
+"description": "Makes it possible to change the EEPROM values of Marlin Firmware through OctoPrint",
+"author": "Anderson Silva",
+"content": "This plugin is designed to get, change and save the values in the EEPROM of your Marlin Firmware based Machine",
+"tags": ["marlin","helper"]
+},
+
+{
+"id": "/plugins/stats",
+"url": "/plugins/stats/",
+"date": "2015-09-13 00:00:00 +0300",
+"title": "Printer Statistics",
+"description": "Statistics of your 3D Printer",
+"author": "Anderson Silva",
+"content": "This plugin is designed to show statistics of your printer and estimate power usage in kWh.",
+"tags": ["stats","power","usage"]
+},
+
+{
+"id": "/plugins/automaticshutdown",
+"url": "/plugins/automaticshutdown/",
+"date": "2015-09-22 00:00:00 +0300",
+"title": "AutomaticShutdown",
+"description": "Plugin to enable automatic system shutdown after finishing a print job",
+"author": "Nicanor Romero Venier",
+"content": "This OctoPrint plugin enables the system to be automatically shut down after a print is finished.The user can enable automatic shutdown for each print by using a checkbox in the sidebar.Once the print is finished, a popup will appear with a countdown which lets the user abort the shutdown.",
+"tags": ["automatic","shutdown"]
+},
+
+{
+"id": "/plugins/displayz",
+"url": "/plugins/displayz/",
+"date": "2015-09-22 00:00:00 +0300",
+"title": "DisplayZ",
+"description": "Brings back the current Z display in the state sidebar panel",
+"author": "Gina Häußge",
+"content": "OctoPrint’s state sidebar display panel used to display the current Z heightof the printer’s nozzle.That information is sadly inaccurate - it stems not from actual position informationfrom the printer’s firmware but instead from an attempt at tracking the heightinformation by OctoPrint, which can lag behind, be inaccurate or not work at all in case of prints from SD cards.However, people demanded to get this piece of  information back, inaccurate ornot, so here it is as plugin.",
+"tags": ["ui","addon"]
+},
+
+{
+"id": "/plugins/emailnotifier",
+"url": "/plugins/emailnotifier/",
+"date": "2015-09-23 00:00:00 +0300",
+"title": "Email Notifier",
+"description": "Recieve email notifications when OctoPrint jobs are complete.",
+"author": "Jim DeVona",
+"content": "Receive email notifications when OctoPrint jobs are complete.",
+"tags": ["notification"]
+},
+
+{
+"id": "/plugins/portlister",
+"url": "/plugins/portlister/",
+"date": "2015-10-08 00:00:00 +0300",
+"title": "PortLister",
+"description": "Refreshes the port list in the browser when a printer shows up",
+"author": "Mark Walker",
+"content": "Automatically notice when a new port is available for connecting.Have you noticed that if you load up the OctoPrint web page when your printer isoff, the printer’s port isn’t in the list?  Then when you turn on the printeryou have to refresh the page to make it show up?  This plugin fixes that.It watches for the device to appear (when you turn it on) and then notifies allthe web clients to refresh the list of ports.It also (if you have autoconnect turned on), will automatically connect to theprinter (if the new port is the same as the one you’ve selected in connectionsettings) after a reasonable (long) delay to wait for the printer to actuallycome on.  The default delay is 20 secs.  It’s settable in config.yaml, ifanybody uses this plugin besides me, I could be talked into a settings page.",
+"tags": ["printer","automatic"]
+},
+
+{
+"id": "/plugins/touchui",
+"url": "/plugins/touchui/",
+"date": "2015-10-10 00:00:00 +0300",
+"title": "TouchUI",
+"description": "A touch friendly interface for Mobile and TFT touch modules",
+"author": "Paul de Vries",
+"content": "This plugin will transform the OctoPrint layout into a Mobile/TFT friendly layout. With larger buttons and a responsive layout down to the smallest resolution possible. It will mimic pointer events as touch, so you can hook up those touchscreens. It also supports a virtual keyboard.All these settings are set client-side, so we won’t interfere with other clients. All settings are stored in your localstorage or as a delicious cookie. You can find the TouchUI settings in a dedicated modal. Remember they’re stored on your device, so if you login with your desktop computer you won’t get the touch interface.  TouchscreensRead more about setting up a touchscreen on our Wiki.ConfigurationThe interface will automatically start when your browser is smaller then 980 pixels in width or if you’re browsing with a touch device. You can turn this manually on and off in the TouchUI settings modal. Alternatively you can force TouchUI to load by adding #touch on the end of your URL.Read more configuration options on our Wiki.  CustomizationYou can change 4 main colors of the interface with the power of LESS. If you would like to change more colors, then you’re free to add your own LESS file. Read more about this and the variables on our wiki.",
+"tags": ["ui","touchscreen","mobile"]
+},
+
+{
+"id": "/plugins/slack",
+"url": "/plugins/slack/",
+"date": "2015-10-28 00:00:00 +0200",
+"title": "Slack",
+"description": "Send message to Slack chat when printing events happen",
+"author": "Richard Joyce",
+"content": "Send messages to your group’s Slack chat when printing events happen! You need to set up an Incoming Webhook integration on the Slack side to use this.Features  Select which events you want to trigger a chat notification for  Customizable messages for each event  Customize bot icon and username in Slack chat  Sends elapsed time of print after finished",
+"tags": ["notification"]
+},
+
+{
+"id": "/plugins/autocalibration",
+"url": "/plugins/autocalibration/",
+"date": "2015-11-09 00:00:00 +0200",
+"title": "Autocalibration",
+"description": "Calibrates your printers backlash for the X, Y or Z-axis.",
+"author": "Florens Wasserfall (Platsch)",
+"content": "This plugin calibrates your printers backlash for the X, Y or Z-axis.How does it work?Make sure your printer is running and connected to OctoPrint before you start the calibration process. The axis moves to home to find the endstop and then slowly away from the endstop to find the point where the backlash is compensated by the moving pulley. Do not interrupt the process, otherwise the backlash would remain 0 regardless of the original value and original extruder offsets are not restored!Requirements and Pitfalls  The Firmware must be Repetier based with active EEPROM-option.SetupInstall via the bundled Plugin Manageror manually using this URL:pip install https://github.com/platsch/OctoPrint-Autocalibration/archive/master.zipThis work is based on the OctoPrint-EEprom-Repetier plugin by Salandora.",
+"tags": ["repetier","calibration","backlash"]
+},
+
+{
+"id": "/plugins/updatefix127",
+"url": "/plugins/updatefix127/",
+"date": "2015-12-07 00:00:00 +0200",
+"title": "Updatefix 1.2.7",
+"description": "Fixes an issue in OctoPrint 1.2.7 that prevents updating",
+"author": "Gina Häußge",
+"content": "This plugin fixes an issue in OctoPrint 1.2.7’s software updater, causing updatesof OctoPrint itself to fail.The plugin monkey-patches the bug causing this issue with the same fix that ispresent in 1.2.8, but only for the affected version 1.2.7.Once version 1.2.8 (which ships with the fix) is detected, the plugin uninstallsitself during startup utilizing the plugin manager.How does it work?After installing the plugin and restarting, the plugin will check if you arerunning OctoPrint version 1.2.7 or 1.2.8.If you are running 1.2.7, it will apply the necessary fix to the loaded class of the Software Update Plugin during start-up of the server (via so called monkey patching). Once your server has started you may then update as usual.If the plugin detects version 1.2.8 as running, it will uninstall itselfand restart the server (since it’s not necessary any more).If you are running neither 1.2.7 nor 1.2.8, the plugin will not do anythingbut change its name and description to hint at the fact that it should be uninstalled.Usually the process will look like the following:  You are running 1.2.7.  You install the plugin and are prompted to restart the server.  You restart the server.  You perform the update to 1.2.8. The server is restarted.  The plugin detects you are now running 1.2.8. It uninstalls itself andrestarts the server.  You have a clean 1.2.8 install.",
+"tags": ["fix"]
+},
+
+{
+"id": "/plugins/eeprom_marlin_printrbot",
+"url": "/plugins/eeprom_marlin_printrbot/",
+"date": "2015-12-26 00:00:00 +0200",
+"title": "EEPROM Printrbot variant of Marlin Editor",
+"description": "Makes it possible to change the EEPROM values of Printrbot variant of Marlin Firmware through OctoPrint",
+"author": "Ryan Neufeld",
+"content": "This plugin is designed to get, change and save the values in the EEPROM of your Printrbot variant of Marlin Firmware based Machine",
+"tags": ["marlin","helper"]
+},
+
+{
+"id": "/plugins/active_filters",
+"url": "/plugins/active_filters/",
+"date": "2016-01-01 00:00:00 +0200",
+"title": "Active Filters",
+"description": "Save terminal filters status",
+"author": "ovidiu",
+"content": "This plugin will save the status, active/inactive, of the regex filters in the terminal tab. The save is done local, so if you access OctoPrint on multiple computers, the settings, might vary.",
+"tags": ["filters","regex","terminal"]
+},
+
+{
+"id": "/plugins/title_status",
+"url": "/plugins/title_status/",
+"date": "2016-01-18 00:00:00 +0200",
+"title": "Title Status",
+"description": "Show printers status in window title",
+"author": "ovidiu",
+"content": "Shows the status of the printer (offline, operational, connecting, paused, error… ) in the title of the browser as  Connecting…  Paused…  ERROR !!            = Offline        △ = Printing  ? = Unknown",
+"tags": ["title","status"]
+},
+
+{
+"id": "/plugins/telegram",
+"url": "/plugins/telegram/",
+"date": "2016-02-25 00:00:00 +0200",
+"title": "OctoPrint-Telegram",
+"description": "A plugin to send and react on messages before, during and after a print via Telegram Messenger.",
+"author": "Fabian Schlenz",
+"content": "This plugin integrates Telegram Messenger into Octoprint.You can receive automatic notifications with webcam images before and after a print -and even during a print at customizable heights or after a certain time (e.g. after every5mm of height OR after 10 minutes - whatever happend first).You can also control Octoprint via messages. Send /status to receive the current status,/abort to abort the currently running print or /help to receive a list of available commands.Please have a look at the documentation at github to learn how to register a Telegram bot. This is a needed step in order to make this plugin work.If you have any questions or problems feel free to contact me via Telegram: @fabianonline.",
+"tags": ["notification","mobile","progress","control"]
+},
+
+{
+"id": "/plugins/pushover",
+"url": "/plugins/pushover/",
+"date": "2016-04-13 00:00:00 +0300",
+"title": "Pushover",
+"description": "A plugin that send a notification with Pushover when the job is done or is failed",
+"author": "Thijs Bekke",
+"content": "This plugin adds support for Pushover notifications to OctoPrint.When your job is finished or is failed OctoPrint will send a notification to Pushover. You can configure the sound or priority of the messages.",
+"tags": ["notification"]
+},
+
+{
+"id": "/plugins/redeem",
+"url": "/plugins/redeem/",
+"date": "2016-04-26 00:00:00 +0300",
+"title": "OctoPrint Redeem",
+"description": "Control Redeems configuration",
+"author": "Elias Bakken",
+"content": "The OctoPrint Redeem plugin enables choosing printer configuration for Redeem directly from OctoPrint. Redeem is the firmware for Replicape, and although it can be configured on the command line, it might be better to simply download the configuration file, edit it on a local computer and upload it. All of this can be done directly form the settings window using this plugin.",
+"tags": ["redeem","replicape","firmware","control"]
+},
+
+{
+"id": "/plugins/cost",
+"url": "/plugins/cost/",
+"date": "2016-06-11 00:00:00 +0300",
+"title": "Cost estimator",
+"description": "When a file is loaded to be printed, it will display the estimated cost of printing.",
+"author": "Jan Szumiec",
+"content": "This plugin will display the estimated cost of the print based on filament cost per meter, andexpected printing time.These variables can be set via settings from an admin account. Estimating how much a meter offilament costs, is trivial. For hourly running costs, refer to your printer’s manual, or usea power meter to estimate power consumption in kWh and then simply multiply by the cost of1kWh as billed to you by your electricity provider.",
+"tags": ["helper","cost"]
+},
+
+{
+"id": "/plugins/autoscroll",
+"url": "/plugins/autoscroll/",
+"date": "2016-06-27 00:00:00 +0300",
+"title": "Autoscroll",
+"description": "Turn on/off terminal autoscroll when scrolling up/down",
+"author": "ovidiu",
+"content": "Turn on/off terminal autoscroll when scrolling up/down  turns autoscroll off when scrolling up (rename button to “Now”)  turns autoscroll on when “Now” is pressed or scrolled to the endBehaviour similar to “Console” application, the OSX log viewer.",
+"tags": ["terminal","autoscroll"]
+},
+
+{
+"id": "/plugins/filament_sensor",
+"url": "/plugins/filament_sensor/",
+"date": "2016-06-29 00:00:00 +0300",
+"title": "Filament Sensor",
+"description": "Use a filament sensor to pause printing when filament runs out.",
+"author": "ovidiu",
+"content": "Pause print on GPIO filament runout sensorThe following needs to be added to the config.yaml:plugins:  filament:    pin: XX    bounce: 400where XX represent the GPIO pin where your sensor is connected.An API is available to check the filament sensor status via a GET method to /plugin/filament/status which returns a JSON  {status: \"-1\"} if the sensor is not setup  {status: \"0\"} if the sensor is OFF (filament not present)  {status: \"1\"} if the sensor is ON (filament present)The status 0/1 depends on the type of sensor, and it might be reversed if using a normally closed switch.A build using an optical switch can be found at http://www.thingiverse.com/thing:1646220Note: Needs RPi.GPIO version greater than 0.6.0 to allow access to GPIO for non root and chmod a+rw /dev/gpiomem.This requires a failry up to date system.",
+"tags": ["filament","sensor","api"]
+},
+
+{
+"id": "/plugins/multi_colors",
+"url": "/plugins/multi_colors/",
+"date": "2016-06-29 00:00:00 +0300",
+"title": "Multi Colors",
+"description": "Inject GCODE at specified layers to allow multi color printing",
+"author": "ovidiu",
+"content": "Inject GCODE at specified layers to allow multi color printing based on a regular expressionNote: Currently only compatible with the development version of OctoPrint (1.3.0dev, devel branch).",
+"tags": ["color","filament change"]
+},
+
+{
+"id": "/plugins/gcodebar",
+"url": "/plugins/gcodebar/",
+"date": "2016-09-01 00:00:00 +0300",
+"title": "GCodeBar",
+"description": "Send GCode from the sidebar",
+"author": "Markus Towara",
+"content": "GcodeBarPlugin for Octoprint to allow sending GCode commands from the sidebar.Features:  Hooks into the Terminal Tab and uses same history (scrollable with up / down keys)  Send multiple commands seperated by semicolons  User needs to be logged in and connected to printer to send commandsSetupInstall via the bundled Plugin Manageror manually using this URL:https://github.com/mtowara/OctoPrint-Gcodebar/archive/master.zip",
+"tags": ["gcode","control","sidebar"]
+},
+
+{
+"id": "/plugins/detailedprogress",
+"url": "/plugins/detailedprogress/",
+"date": "2016-09-02 00:00:00 +0300",
+"title": "Detailed Progress",
+"description": "Displays detailed progress on the LCD screen",
+"author": "Dattas Moonchaser",
+"content": "A plugin that sends M117 commands to the printer to display the progress of the print job being currently streamed. The message to display can be configured (some placeholders included).By default, It rotates the display every 10 seconds with the following information:  Percentage of the job’s progress  ETL - Estimated time left  ETA - Estimated time of completion",
+"tags": ["display","lcd","printer","progress"]
+},
+
+{
+"id": "/plugins/slicer",
+"url": "/plugins/slicer/",
+"date": "2016-09-22 00:00:00 +0300",
+"title": "Full-featured Slicer",
+"description": "A full-blown GUI-based slicer. Rotate and scale model; slice multiple STL files at a time; set layer height and other slicing settings.",
+"author": "Kenneth Jiang",
+"content": "Slicer plugin offers useful features that OctoPrint’s built-in slicer doesn’t have:  Rotate, scale, and move STL models.  Slice multiple STLs at a time. Split 1 STL into unconnected parts.  Circular print bed support (do you have a delta printer?).  High-light overhang areas. Automatically orient the model for better result (“lay flat”).  Slice based on Cura profiles you upload to OctoPrint.  Customizable slicing settings, including Basic (layer height, bed temperature …) and Advanced (print speed, start/end G-code …).  Slic3r support (when Slic3r plugin is installed).  More is coming…",
+"tags": ["slicer","gcode","stl"]
+},
+
+{
+"id": "/plugins/m33fio",
+"url": "/plugins/m33fio/",
+"date": "2016-10-25 00:00:00 +0300",
+"title": "M33 Fio",
+"description": "Allows viewing uploaded models, using a Micro 3D printer, modifying a slicer profile and model before slicing, uploading OBJs and other 3D file formats, hosting a webcam stream, and much more",
+"author": "donovan6000",
+"content": "M33 Fio extends OctoPrint’s capabilities to include the following features:  Adds a model viewer tab to OctoPrint’s interface where any uploaded model can be viewed  Allows importing OBJ, M3D, AMF, VRML, COLLADA, and 3MF files into OctoPrint  Updates OctoPrint’s list of available serial ports in real time  Includes an OctoPrint instance manager that can create and terminate OctoPrint instances which allows easily running multiple printers on the same host  Adds support for the Micro 3D printer  Wraps groups of buttons in OctoPrint’s controls tab into sections that can be collapsed and expanded  Capable of hosting a webcam stream and configuring OctoPrint to use it  Disables the hosts sleep functionality when printing  Includes a slicer profile editor that allows customizing everything in the selected slicer profile before slicing  Includes a model editor that allows modifying a model before slicing and can perform operations like moving, rotating, scaling, cutting, merging, cloning, and importing other models into the scene",
+"tags": ["m33 fio","micro 3d","helper","ui"]
+},
+
+{
+"id": "/plugins/M117NavBar",
+"url": "/plugins/M117NavBar/",
+"date": "2016-10-27 00:00:00 +0300",
+"title": "OctoPrint-M117NavBar",
+"description": "Plugin to send M117 gcode messages to the top navbar of OctoPrint.",
+"author": "jneilliii",
+"content": "This plugin utilizes the _plugin_manager.send_plugin_message and onDataUpdaterPluginMessage to communicate between server and client. It will display M117 gcode content in the header.",
+"tags": ["M117","gcode"]
+},
+
+{
+"id": "/plugins/M117PopUp",
+"url": "/plugins/M117PopUp/",
+"date": "2016-10-27 00:00:00 +0300",
+"title": "OctoPrint-M117PopUp",
+"description": "Plugin to send M117 gcode messages to the web interface.",
+"author": "jneilliii",
+"content": "This plugin utilizes the _plugin_manager.send_plugin_message and onDataUpdaterPluginMessage to communicate between server and client. It utilizes OctoPrint’s built in alerting system to pop up the messages being sent via M117 gcode command.",
+"tags": ["M117","gcode"]
+},
+
+{
+"id": "/plugins/nautilus",
+"url": "/plugins/nautilus/",
+"date": "2016-10-27 00:00:00 +0300",
+"title": "Nautilus - mobile shell for OctoPrint",
+"description": "Customised user interface, that has been optimised for iOS devices.",
+"author": "ovidiu",
+"content": "A customised user interface for OctoPrint, that has been optimised for iOS devices.The plugin requires the Nautilus iOS app which is available on Apple AppStore.Starting with version 2 of the iOS application, support for multiple printers can be added via in-app purchase.  Multi-printer configuration is supported only on devices with iCloud enabled.Read more…",
+"tags": ["iOS","iphone","ipad"]
+},
+
+{
+"id": "/plugins/filemanager",
+"url": "/plugins/filemanager/",
+"date": "2016-12-09 00:00:00 +0200",
+"title": "FileManager",
+"description": "A simple filemanager for OctoPrint",
+"author": "Marc Hannappel (Salandora)",
+"content": "A simple file manager.",
+"tags": ["ui"]
+},
+
+{
+"id": "/plugins/filament_sensor_reloaded",
+"url": "/plugins/filament_sensor_reloaded/",
+"date": "2017-01-06 00:00:00 +0200",
+"title": "Filament Sensor Reloaded",
+"description": "Use a filament sensor to pause printing when filament runs out.",
+"author": "kontakt",
+"content": "Pause printing when the 3D printer runs out of filament.Designed as an overhaul and upgrade of the Filament Sensor plugin by MoonshineSG, this plugin is simpler to use and configure.",
+"tags": ["filament","sensor"]
+},
+
+{
+"id": "/plugins/smsnotifier",
+"url": "/plugins/smsnotifier/",
+"date": "2017-01-10 00:00:00 +0200",
+"title": "SMS Notifier (with Twilio)",
+"description": "Recieve SMS notifications when OctoPrint jobs are complete.",
+"author": "Richard Bteman",
+"content": "Recieve email notifications when OctoPrint jobs are complete.",
+"tags": ["notification"]
+},
+
+{
+"id": "/plugins/fullscreen_webcam",
+"url": "/plugins/fullscreen_webcam/",
+"date": "2017-01-16 00:00:00 +0200",
+"title": "Fullscreen Webcam",
+"description": "Open the webcam feed in fullscreen mode with extra details about the printjob",
+"author": "Paul de Vries",
+"content": "This plugin will allow you to open the webcam feed in fullscreen mode by double clicking the image. It will show a bar at the bottom of the image with information about print time, remaining time, temperatures and a pause button.",
+"tags": ["ui","display","webcam"]
+},
+
+{
+"id": "/plugins/freemobilenotifier",
+"url": "/plugins/freemobilenotifier/",
+"date": "2017-01-25 00:00:00 +0200",
+"title": "OctoPrint_FreeMobile-Notifier",
+"description": "Octoprint plugin for print completion notifications using Free (Free is a French telecommunications company)",
+"author": "Antoine CAVARD",
+"content": "Receive SMS notifications when OctoPrint jobs are complete.",
+"tags": ["notification"]
+},
+
+{
+"id": "/plugins/psucontrol",
+"url": "/plugins/psucontrol/",
+"date": "2017-01-25 00:00:00 +0200",
+"title": "PSU Control",
+"description": "Control ATX/AUX power supply",
+"author": "Shawn Bruce",
+"content": "See https://github.com/kantlivelong/OctoPrint-PSUControl for information on configuration.",
+"tags": ["ui","power","atx","psu","control"]
+},
+
+{
+"id": "/plugins/slic3r",
+"url": "/plugins/slic3r/",
+"date": "2017-02-07 00:00:00 +0200",
+"title": "OctoPrint-Slic3r",
+"description": "Adds support for slicing via Slic3r from within OctoPrint",
+"author": "Javier Martínez Arrieta, Eyal Soha",
+"content": "Slic3r plugin for OctoPrintWARNINGThis plugin has been successfully tested for the following cases:  Linux: Slic3r’s stable versions 1.1.7 and 1.2.9 (tests done under a Raspberry Pi 2, but it should work for other Linux distributions).  Windows: Slic3r works for version 1.2.9, not doing it for version 1.1.7.SetupIn order to install the plugin, go to Settings -&gt; Plugin Manager and click on ‘Get more…’:You’ll see an option to add it from an URL. Add https://github.com/OctoPrint/OctoPrint-Slic3r/archive/master.zip an click on ‘Install’ button.At this moment, the plugin will be installed, but Slic3r must be downloaded and configured, which can be done following these steps:      If OctoPrint is running under a Raspberry Pi, you can use the following script to install Slic3r (unfortunately precompiled packages do not work for RPI’s architecture). For that purpose, copy the following code in a file (i.e. slic3r_install.sh).         #!/bin/sh   echo \"Shell script created by Javier Martínez Arrieta for Slic3r installation\\n\" #Ask the user for a version echo \"Please indicate which version you desire to be installed (e.g. 1.1.7)\" read version echo \"The installation of Slic3r takes a long time. PLease be patient\" cd $HOME echo \"Installing required libraries and dependencies...\" sudo apt-get install git libboost-system-dev libboost-thread-dev git-core build-essential libgtk2.0-dev libwxgtk2.8-dev libwx-perl libmodule-build-perl libnet-dbus-perl cpanminus libextutils-cbuilder-perl gcc-4.7 g++-4.7 libwx-perl libperl-dev sudo cpanm AAR/Boost-Geometry-Utils-0.06.tar.gz Math::Clipper Math::ConvexHull Math::ConvexHull::MonotoneChain Math::Geometry::Voronoi Math::PlanePath Moo IO::Scalar Class::XSAccessor Growl::GNTP XML::SAX::ExpatXS PAR::Packer echo \"Cloning Slic3r repository...\" git clone https://github.com/alexrj/Slic3r.git cd Slic3r git checkout $version echo \"Building and testing Scli3r...\" sudo perl Build.PL echo \"If everything was installed properly,you should be able to run Slic3r with the command ./slic3r.pl\"            Save the file and allow execution giving permission. Using a terminal, it would be chmod +x slic3r_install.sh (or the name given to the file).     chmod +x slic3r_install.sh        Now that you have permission to execute it, type ./slic3r_install.sh and press ‘Enter’. If it is the first time executing the installer, take into account that it can take about 30 minutes or even more.     ./slic3r_install.sh        At the beggining of the installation, you will be asked which version should be installed (available versions at http://slic3r.org/download)            If you get an out of memory error it’s because Raspberry Pi doesn’t have enough swap memory to build Slic3r by default. You will need to increase the swap size. To do this, run sudo nano /etc/dphys-swapfile and set CONF_SWAPSIZE=1000 then save and reboot. After reboot, run free -h and confirm that total swap size is around 1000MB.        Execute OctoPrint and go to Settings (or restart when you are asked after installing the plugin). Slic3r should appear in Plugins list:            In ‘General’, you should put the following path for the executable (supposing the execution of the script, the path would be /home/pi/Slic3r/slic3r.pl). Note: If running in Windows, write the path to slic3r-console:            Before importing the profile, you have to export a file with the Slic3r’s configuration. For that purpose, open Slic3r, and select File-&gt; Export Config…            Save the file with the desired name (e.g. config.ini):            Once done, in ‘Profiles’ click ‘Import Profile…’ button:            Click on ‘Browse…’ and search for the profile. Once done, save with the name and identifier wished by clicking ‘Confirm’:            Click ‘Save’ to confirm Slic3r settings:            Now you can slice your stl files:      ",
+"tags": ["slic3r","gcode","stl"]
+},
+
+{
+"id": "/plugins/lani",
+"url": "/plugins/lani/",
+"date": "2017-02-15 00:00:00 +0200",
+"title": "Lani",
+"description": "Lani integration for OctoPrint",
+"author": "Michael Rybka",
+"content": "This plugin allows people using Lani to control their OctoPrint printers alongside their other devices.Lani is an order management system specifically designed for 3D printing. You can manage users, payment andprint jobs on all of your printers.Features:  Control multiple instances of OctoPrint remotely  Report on status to any device with internet  Be controlled by a manager anywhere  Create reports on usage, sales, ROI  Allow other people to submit jobs  Payment system (coming soon)To find out more, go to lanilabs.com",
+"tags": ["ui","administration","notification"]
+},
+
+{
+"id": "/plugins/tobecaplugin",
+"url": "/plugins/tobecaplugin/",
+"date": "2017-02-16 00:00:00 +0200",
+"title": "Tobeca Plugin",
+"description": "Plugin for OctoPrint that adds a special tab with commands for the Tobeca 3d printer.",
+"author": "Saymtech",
+"content": "Adding a Tobeca (French 3D Printer) tab with commands:  Autotune PID : Sending the M303 Gcode with selecting tool, temperature  (parameter C=8)  Z-Probe-Offset : Sending the M851 Gcode with selecting the value  Home XYZ : Sending the G28 Gcode, because Home Z is harzardous with Z-Probe",
+"tags": ["printing"]
+},
+
+{
+"id": "/plugins/roomtemp",
+"url": "/plugins/roomtemp/",
+"date": "2017-03-02 00:00:00 +0200",
+"title": "Room Temperature",
+"description": "Display room temperature on navbar",
+"author": "Frederic Moutin",
+"content": "Plugin that displays room temperature on navbarBased on OctoPrint-NavbarTemp by imrahil (https://github.com/imrahil/OctoPrint-NavbarTemp)This plugin displays room temperature on navbar via a ds18b20 sensor connected to pin n°4 of your raspberry PiSetup:1 - Connect your ds18b20 sensor to your Pi (see Howto below)2 - Install the roomTemp plugin using Plugin ManagerHowto: Connecting your ds18b20 sensor1 - Connecting your ds18b20 sensor to the Pi:2 - Then connect to your Octopi via ssh.3 - we first need to open up the boot config file, this can be done by running the following command:\tsudo nano /boot/config.txt4 - At the bottom of this file enter the following.\tdtoverlay=w1-gpio5 - Once done save &amp; exit by pressing ctrl x and then y.6 - Now reboot the Pi by running the following command.\tsudo reboot7 - Enjoy !!",
+"tags": ["ui"]
+},
+
+{
+"id": "/plugins/touchtest",
+"url": "/plugins/touchtest/",
+"date": "2017-03-05 00:00:00 +0200",
+"title": "Touchtest Bed Leveling",
+"description": "A simple tool to move the extruder to different touch points around the perimeter of the print bed. Useful for bed leveling.",
+"author": "Daniel Miller",
+"content": "Touch Test plugin for OctoPrint adds a new sidebar panel, essential for manual bed leveling.A simple 3x3 grid of buttons allows the user to move the printhead to all 4 corners and edges of the printbed, where you can perfotm “the paper test”.More info at: https://github.com/Peaches491/OctoPrint-Touchtest",
+"tags": ["ui","control","calibration","leveling","sidebar"]
+},
+
+{
+"id": "/plugins/ledstripcontrol",
+"url": "/plugins/ledstripcontrol/",
+"date": "2017-03-10 00:00:00 +0200",
+"title": "LEDStripControl",
+"description": "Control RGB LED Strips via your Raspberry Pi and GCode.",
+"author": "Uriah Welcome",
+"content": "OctoPrint Plugin that intercepts M150 GCode commands and controls local GPIOs on your Pi.Implements the M150 command syntax from the latest Marlin.M150: Set Status LED Color - Use R-U-B for R-G-BM150 R255       ; Turn LED redM150 R255 U127  ; Turn LED orangeM150            ; Turn LED offM150 R U B      ; Turn LED white",
+"tags": ["raspberry pi","led","rgb","gcode"]
+},
+
+{
+"id": "/plugins/gcodesystemcommands",
+"url": "/plugins/gcodesystemcommands/",
+"date": "2017-03-14 00:00:00 +0200",
+"title": "GCODE System Commands",
+"description": "Define G-Code commands that execute local system commands",
+"author": "Shawn Bruce",
+"content": "See https://github.com/kantlivelong/OctoPrint-GCodeSystemCommands for information on configuration.",
+"tags": ["gcode","command"]
+},
+
+{
+"id": "/plugins/enclosure",
+"url": "/plugins/enclosure/",
+"date": "2017-03-15 00:00:00 +0200",
+"title": "OctoPrint-Enclosure",
+"description": "Control printer environment (Temperature control / Lights / Fans and Filament Sensor) using Raspberry Pi GPIO",
+"author": "Vitor Henrique",
+"content": "This plugin is intended to control your printer enclosure using raspberry pi GPIO (At the moment this plugin only support raspberry pi).You can control lights, fans, heaters and filament sensors of your enclosure. To use the heater you need to have a temperature sensor added to your enclosure connected to your raspberry pi.This plugin can support DHT11, DHT22, AM2302 and DS18B20 temperature sensors.You can use relays connected to the raspberry pi to control my heaters, fan and lights.For heating my enclosure I got a $15 lasko inside my encosure. I opened it and added a relay to the mains wire.Check the github page for instructions on how to configure the plugin.",
+"tags": ["filament","sensor","temperature","humidity","control","fan","lights","DHT22","DHT11","AM2302","DS18B20"]
+},
+
+{
+"id": "/plugins/cyborgtheme",
+"url": "/plugins/cyborgtheme/",
+"date": "2017-03-16 00:00:00 +0200",
+"title": "Cyborg Theme",
+"description": "A dark theme for OctoPrint",
+"author": "ntoff",
+"content": "A dark theme using the Cyborg bootswatch theme https://bootswatch.com/2/cyborg/",
+"tags": ["theme"]
+},
+
+{
+"id": "/plugins/m84motoff",
+"url": "/plugins/m84motoff/",
+"date": "2017-03-21 00:00:00 +0200",
+"title": "M84 Motors Off",
+"description": "Changes the \"Motors Off\" command from M18 to M84 for compatibility with Repetier Firmware.",
+"author": "ntoff",
+"content": "A plugin to intercept the gcode command M18 during the queueing stage and rewrite it as M84 before sending it to the printer (for compatibility with the Repetier line of firmware).Note: Because this plugin intercepts the code during the queueing stage, that also includes manual gcode entry. Entering M18 in the terminal tab will also result in it being send to the printer as M84.",
+"tags": ["repetier firmware","repetier","motors off","disable motors","disable stepper hold","M84"]
+},
+
+{
+"id": "/plugins/OctoRemote",
+"url": "/plugins/OctoRemote/",
+"date": "2017-03-29 00:00:00 +0300",
+"title": "OctoPrint-Octoremote",
+"description": "Control your 3D-Printer with an Arduino and a Keypad or a custom remote",
+"author": "Pascal Krumme",
+"content": "OctoRemote enables you to perform all usual printer movements with a simple keypress. Current version implements moving the X-, Y- and Z-Axis, homing and controlling up to four extruders.Movement distance of the extruders can also be controlled via the keypad. An embedded version of the remote controller is in the making and will be released soon.",
+"tags": ["printing","remote","arduino","genuino","control","keypad","remotecontrol","ui"]
+},
+
+{
+"id": "/plugins/tempsgraph",
+"url": "/plugins/tempsgraph/",
+"date": "2017-03-29 00:00:00 +0300",
+"title": "OctoPrint-Tempsgraph",
+"description": "Replaces the temperature graph with an interactive and zoomable one",
+"author": "Robin Vanhove",
+"content": "This plugin adds some features to the temperature graph :  exact values on hover  zooming  panning  exportUsage :  hover over the graph to show date and temperatures under the cursor  drag to zoom  shift + drag to pan  double click to reset axes / autoscale",
+"tags": ["interactive graph","temperature plot","zoom","ui"]
+},
+
+{
+"id": "/plugins/temperaturefailesafe",
+"url": "/plugins/temperaturefailesafe/",
+"date": "2017-04-14 00:00:00 +0300",
+"title": "TemperatureFailsafe",
+"description": "Execute shell commands when temperatures violate thresholds",
+"author": "Uriah Welcome",
+"content": "OctoPrint Plugin that executes shell commands on temperature violations.",
+"tags": ["raspberry pi","temperature"]
+},
+
+{
+"id": "/plugins/finetunerptr",
+"url": "/plugins/finetunerptr/",
+"date": "2017-04-23 00:00:00 +0300",
+"title": "OctoPrint-Finetunerptr",
+"description": "Control important maintenance and calibration settings easy accessible from a dropdown-button in the navbar.",
+"author": "Andreas Bruckmann",
+"content": "Clean and structured UI for Repetier-Firmware based printers. Helps you in maintenance situations as it keeps the most important tools always accessible.",
+"tags": ["repetier","repetier firmware","maintenance","control","calibration","helper","ui","ux","administration"]
+},
+
+{
+"id": "/plugins/octoprint-grbl-plugin",
+"url": "/plugins/octoprint-grbl-plugin/",
+"date": "2017-05-11 00:00:00 +0300",
+"title": "Grbl support for OctoPrint",
+"description": "Support Grbl style GCODE for using CNCs and Laser engravers with OctoPrint.",
+"author": "mic159",
+"content": "This plugin modifies the gcode sent and recieved to translate what is needed.NOTE Additional configuration required:  Serial Connection &gt; Advanced options &gt; “Hello” command = M5  Features &gt; Send a checksum with the command &gt; Never",
+"tags": ["grbl","CNC","Laser","GCODE","protocol"]
+},
+
+{
+"id": "/plugins/OctoPNP",
+"url": "/plugins/OctoPNP/",
+"date": "2017-05-19 00:00:00 +0300",
+"title": "OctoPNP",
+"description": "OctoPrint plugin for camera based pick 'n place operations",
+"author": "Florens Wasserfall",
+"content": "OctoPNP is an extension that allows Octoprint to control printers and similar devices with additional hardware for handling of SMD-parts (and potentially arbitrary objects). It currently requires the following hardware extensions:  A Tray consisting of a grid of boxes to store SMD parts in a defined position  A head camera to locate the exact part position on the tray  A (second) bed camera to precisely align the parts during the placing operation  A vacuum nozzle to grip partsOpenCV is used for the image processing part to measure exact positions and rotations of objects for accurate placing.For details and documentation please refer to the project’s github repository.This plugin is developed during a research project for integrated printing of electronics (wires and SMD-components) with FDM-printers.The development branch of the Slic3r extensions for routing circuits in a 3D-object by importing EAGLE schematics can be found at https://github.com/platsch/Slic3r/tree/electronics.",
+"tags": ["pick and place","printer","control","camera","external objects"]
+},
+
+{
+"id": "/plugins/Octoslack",
+"url": "/plugins/Octoslack/",
+"date": "2017-05-20 00:00:00 +0300",
+"title": "Octoslack",
+"description": "An OctoPrint plugin for monitoring your printer and prints via Slack or Mattermost",
+"author": "Chris Fraschetti",
+"content": "An OctoPrint plugin for monitoring your printer and prints via Slack or MattermostFeatures  Support for both Slack and Mattermost  Monitor both print status as well as printer connectivity status  Slack+Mattermost WebHooks and Slack API Token  Respond to Slack commands to check print status or cancel/pause/resume a print          Requires use of the Slack API Token        Customizable messages  Support for posting to one more channels as well as event level channel overrides  Support for inclusion of RasPi temperature, bed temperature, nozzle temperates, and nozzle height  Custom bot name/icon/emoji  Optional inclusion of printer snapshot images with each message          Support for snapshot hosting on either Amazon S3 or Imgur (with album support)        Support for additional snapshot images from IP camerasSupported Events  Print started  Print failed  Print cancelled  Print paused  Print resumed  Print finished  Print progress  Timelapse render started  Timelapse render finished  Timelapse render failed  OctoPrint error  OctoPrint started  OctoPrint stopped  Printer connecting  Printer connected  Printer disconnecting  Printer disconnected",
+"tags": ["slack","mattermost","notification","progress","mobile"]
+},
+
+{
+"id": "/plugins/actioncommands",
+"url": "/plugins/actioncommands/",
+"date": "2017-06-30 00:00:00 +0300",
+"title": "Action Commands",
+"description": "Adds handling for user-definable action commands.",
+"author": "Ben Lye",
+"content": "Adds handling for custom action commands to OctoPrint. Action commands are sent from the RepRap machine in the form //action:command.The plugin allows OctoPrint to execute a system command or send G-code to the printer in response to an action command.UsageAs of the latest Marlin bugfix-1.1.x version, the command M118 can be used to echo output to serial, meaning that M118 //action:dostuff would cause this plugin to try to handle the dostuff command when //action:dostuff was echoed back on the serial console.A future application of the plugin would be to add actions in the RepRap machine’s firmware so that hosts could respond.  For example, when Marlin is killed because something is wrong it would echo //action:poweroff and the attached OctoPrint instance could use this action command to trigger the printer’s power outlet to switch off.Action Command References  OctoPrint Documentation  RepRap Wiki",
+"tags": ["action","actions","commands","action command"]
+},
+
+{
+"id": "/plugins/anywhere",
+"url": "/plugins/anywhere/",
+"date": "2017-07-01 00:00:00 +0300",
+"title": "OctoPrint Anywhere",
+"description": "Monitor and control your 3D printers from anywhere, on your phone.",
+"author": "Kenneth Jiang",
+"content": "Monitor and control your 3D printer from ANYWHEREOctoPrint Anywhere extends your control beyond the local network.  Get webcam feed on your smart phone (Only when you are checking. There is no network traffic when the page is open in background).  Get real-time feed on temperatures and print job.  Pause or cancel print job.  Display the IP address of your OctoPrint on your phone.  Check status of all your 3D printers on the same page at a glance.  Many more to come…",
+"tags": ["remote","webcam","job","control","monitor","phone","network"]
+},
+
+{
+"id": "/plugins/BLTouch",
+"url": "/plugins/BLTouch/",
+"date": "2017-07-14 00:00:00 +0300",
+"title": "OctoPrint-BLTouch",
+"description": "Simple plugin to add BLTouch controls to the Control tab.",
+"author": "jneilliii",
+"content": "Simple plugin to add BLTouch controls to the Control tab.http://plugins.octoprint.org/plugin/BLTouch/",
+"tags": ["BLTouch"]
+},
+
+{
+"id": "/plugins/polarcloud",
+"url": "/plugins/polarcloud/",
+"date": "2017-07-14 00:00:00 +0300",
+"title": "Polar Cloud",
+"description": "Connects OctoPrint to the Polar Cloud so you can easily monitor and control OctoPrint outside of your local network",
+"author": "Mark Walker",
+"content": "Easily Monitor Your Prints from AnywhereThe Polar Cloud at polar3d.com is accessible fromanywhere, inside or outside of the printer’s local network.Print QueueYou can prepare multiple prints, queue them up and send them one by one to yourprinterManage Multiple PrintersYou can connect more than one printer to your Polar Cloud account and managethem all from one place.Object LibraryYou can upload your objects to Polar Cloud, share them with other cloudmembers, and send them to your printer.IFTTTPolar Cloud is an IFTTT service, so you can easily set things up to happen whenvarious events happen with your printer connected to Polar Cloud. See Polar3D’sIFTTT AppletsREADME - Getting StartedThere’s a few extra command line steps to support timelapses in the PolarCloud. You can get started without them though. Please read the additional infoin the README",
+"tags": ["cloud","remote access","polarcloud"]
+},
+
+{
+"id": "/plugins/costestimation",
+"url": "/plugins/costestimation/",
+"date": "2017-07-16 00:00:00 +0300",
+"title": "CostEstimation",
+"description": "Displays the estimated print cost for the loaded model",
+"author": "Sven Lohrmann",
+"content": "This OctoPrint plugin displays the estimated print cost for the loaded model. The print cost includes the price for the used filament and the operating cost for the printer.The Filament Manager Plugin is required. Make sure it is installed.Features  Calculation based on the provided filament length  Customizable currency symbol  Hide cost if not logged in (optional)  Support for multiple extruders  Support for filament profiles with Filament Manager Plugin",
+"tags": ["cost","ui"]
+},
+
+{
+"id": "/plugins/YouTubeLive",
+"url": "/plugins/YouTubeLive/",
+"date": "2017-07-23 00:00:00 +0300",
+"title": "OctoPrint-YouTubeLive",
+"description": "Simple plugin to add a YouTube Live tab to OctoPrint.",
+"author": "jneilliii",
+"content": "Simple plugin to add a YouTube Live Stream tab to OctoPrint. For configuration and additional details please see homepage.http://plugins.octoprint.org/plugin/YouTubeLive",
+"tags": ["YouTube","Live Stream"]
+},
+
+{
+"id": "/plugins/simpleemergencystop",
+"url": "/plugins/simpleemergencystop/",
+"date": "2017-07-23 00:00:00 +0300",
+"title": "Simple Emergency Stop",
+"description": "Add an emergency stop buton on NavBar!",
+"author": "Sebastien Clement",
+"content": "A simple plugin that adds an emergency stop button on NavBar.",
+"tags": ["ui","action","command","control","gcode","emergency","stop"]
+},
+
+{
+"id": "/plugins/eeprom_MPSelectMini",
+"url": "/plugins/eeprom_MPSelectMini/",
+"date": "2017-08-13 00:00:00 +0300",
+"title": "EEPROM Editor for Monoprice Select Mini",
+"description": "Makes it possible to change the EEPROM values of the Monoprice Select Mini or Malyan M200 Firmware through OctoPrint",
+"author": "Brian Ruhmann",
+"content": "This plugin is designed to get, change and save the values in the EEPROM of your Monoprice Select Mini or Malyan M200 3D Printer.",
+"tags": ["malyan","eeprom","monoprice","helper"]
+},
+
+{
+"id": "/plugins/Hangprinter",
+"url": "/plugins/Hangprinter/",
+"date": "2017-08-20 00:00:00 +0300",
+"title": "OctoPrint-Hangprinter",
+"description": "This plugin provides some useful hangprinter control elements. It can be used for setting up and calibration of a Hangprinter.",
+"author": "Mario Lukas",
+"content": "The controls can be used to unwind all gears seperatly. The bottom form can be used to enter the measurements for the hangprinter setup. By pressing the “calculate values” Button, all values are calculated. Pressing the “set values to EEPROM” will save the values in the EEPROM of the printer. Keep in mind that EEPROM option is not activated in the Hangprinter Marlin Firmware by default. You need to enable this Option.http://plugins.octoprint.org/plugin/hangprinter/",
+"tags": ["Hanprinter","controls","calibration","ui"]
+},
+
+{
+"id": "/plugins/filamentmanager",
+"url": "/plugins/filamentmanager/",
+"date": "2017-08-22 00:00:00 +0300",
+"title": "FilamentManager",
+"description": "This OctoPrint plugin helps to manage your filament spools",
+"author": "Sven Lohrmann",
+"content": "This OctoPrint plugin helps to manage your filament spools.Additional features  Replacing filament volume with weight in sidebar  Filament odometer to keep track of remaining filament on spool  Enable warning if print exceeds remaining filament on spool",
+"tags": ["ui","filament","manager"]
+},
+
+{
+"id": "/plugins/filetypes",
+"url": "/plugins/filetypes/",
+"date": "2017-08-23 00:00:00 +0300",
+"title": "Filetypes",
+"description": "Let you select file types visible in upload dialog",
+"author": "thelongrunsmoke",
+"content": "Small and simple plugin. Now you can specify what kind of files you want to see in upload dialog.",
+"tags": ["stl","gcode","ui","upload"]
+},
+
+{
+"id": "/plugins/custombackground",
+"url": "/plugins/custombackground/",
+"date": "2017-08-27 00:00:00 +0300",
+"title": "OctoPrint-CustomBackground",
+"description": "Plugin to change the background image on the temperature graph.",
+"author": "jneilliii",
+"content": "OctoPrint plugin to change the background image on the temperature graph.",
+"tags": ["background","image","temperature_graph"]
+},
+
+{
+"id": "/plugins/ZERO",
+"url": "/plugins/ZERO/",
+"date": "2017-09-02 00:00:00 +0300",
+"title": "OctoPrint-ZERO",
+"description": "Configures compiling and install FirmWare for any 3D printer 30 in Sec.",
+"author": "Giorgio Kolozof",
+"content": "Configures compiling and install FirmWare for any 3D printer in 30 Sec.plugins.octoprint.org/plugin/ZERO/",
+"tags": ["0.1.1"]
+}
+]
+}
