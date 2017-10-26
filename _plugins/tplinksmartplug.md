@@ -7,8 +7,6 @@ description: Plugin to control TP-Link Smartplug devices from OctoPrint web inte
 author: jneilliii
 license: AGPLv3
 
-disabled: There are reports that this plugin is causing severe frontend issues in its current version.
-    
 # today's date in format YYYY-MM-DD, e.g.
 date: 2017-09-03
     

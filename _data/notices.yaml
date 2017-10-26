@@ -11,11 +11,4 @@
   text: Version 0.2.0 of this plugin is available, but your version 0.1.0 does not yet support updating automatically.
     Please re-install the plugin from the repository to update. More details can be found at the "Read more..." link below.
   link: https://github.com/OctoPrint/OctoPrint-Autoselect/releases/tag/0.2.0
-- plugin: tplinksmartplug
-  versions: ["0.1.0", "0.2.0", "0.3.0", "0.3.1", "0.4.0", "0.5.0"]
-  date: 2017-10-24 11:00:00 +0200
-  text: Do not upgrade this plugin to the available version 0.7.1 yet. That version contains a severe bug
-    that will render your UI non-functional. Wait until a fixed version is released. You can follow the development
-    at the "Read more..." link below.
-  link: https://github.com/jneilliii/OctoPrint-TPLinkSmartplug/issues/19
-  important: true
+
