@@ -27,7 +27,7 @@ screenshots:
   caption: Gcode editor window
 - ...
 
-featuredimage: assets/img/plugins/GcodeEditor/edit_gcode.png
+featuredimage: /assets/img/plugins/GcodeEditor/edit_gcode.png
 
 compatibility:
 
