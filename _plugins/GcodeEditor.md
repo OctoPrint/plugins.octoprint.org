@@ -25,7 +25,6 @@ screenshots:
 - url: /assets/img/plugins/GcodeEditor/edit_gcode2.png
   alt: Edit window
   caption: Gcode editor window
-- ...
 
 featuredimage: /assets/img/plugins/GcodeEditor/edit_gcode.png
 
