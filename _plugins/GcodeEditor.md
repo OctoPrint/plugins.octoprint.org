@@ -7,7 +7,7 @@ description: Edit gcode that's been uploaded to OctoPrint
 author: ieatacid
 license: AGPLv3
 
-date: 2017-10-28
+date: 2017-11-01
 
 homepage: https://github.com/ieatacid/OctoPrint-GcodeEditor
 source: https://github.com/ieatacid/OctoPrint-GcodeEditor
@@ -27,17 +27,6 @@ screenshots:
   caption: Gcode editor window
 
 featuredimage: /assets/img/plugins/GcodeEditor/edit_gcode.png
-
-compatibility:
-
-  octoprint:
-  - 1.2.0
-
-  os:
-  - linux
-  - windows
-  - macos
-  - freebsd
 
 ---
 
