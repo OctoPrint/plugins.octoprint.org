@@ -57,7 +57,7 @@ An OctoPrint plugin for monitoring your printer and prints via Slack or Mattermo
      - Support for snapshot hosting on either Amazon S3 or Imgur (with album support)
  - Support for additional snapshot images from IP cameras
 
- # Supported Events #
+# Supported Events #
  - Print started
  - Print failed
  - Print cancelled
