@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-{% assign sorted_plugins = (site.plugins | sort: 'title') %}
+{% assign sorted_plugins = site.plugins | sort: 'title' %}
 {% assign found_plugin = false %}
 {% assign prev_plugin = false %}
 {% assign next_plugin = false %}

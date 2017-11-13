@@ -10,7 +10,7 @@ title: OctoPrint Plugin Repository
       <small class="pull-right"><a href="{% include canonic_url url='/feed.xml' %}"><i class="icon-rss"></i> RSS Feed</a></small>
     </div>
     <ul>
-      {% assign sorted_plugins = (site.plugins | sort: 'date', 'last' | reverse) %}
+      {% assign sorted_plugins = site.plugins | sort: 'date', 'last' | reverse %}
       {% for plugin in sorted_plugins limit:10 %}
       <li>{% include plugin_snippet plugin=plugin %}</li>
       {% endfor %}
