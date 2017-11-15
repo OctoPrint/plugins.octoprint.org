@@ -63,6 +63,26 @@ layout: compress
 
     <script src="/assets/js/jquery-1.9.1.min.js"></script>
     <script src="/assets/js/underscore.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/cookieconsent.min.css" />
+    <script src="/assets/js/cookieconsent.min.js"></script>
+    <script>
+        window.addEventListener("load", function(){
+            window.cookieconsent.initialise({
+                "position": "bottom",
+                "theme": "edgeless",
+                "palette": {
+                    "popup": {
+                        "background": "#000000",
+                        "link": "#10a800"
+                    },
+                    "button": {
+                        "background": "#0b7500"
+                    }
+                }
+            })
+        });
+    </script>
 </head>
 
 <body>
