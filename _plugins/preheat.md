@@ -7,7 +7,7 @@ description: Automatically heat printhead to the printing temperature of the cur
 author: Marian Kleineberg
 license: MIT
 
-date: 2017-11-19
+date: 2017-11-21
 
 homepage: https://github.com/marian42/octoprint-preheat
 source: https://github.com/marian42/octoprint-preheat
@@ -20,7 +20,11 @@ tags:
 - api
 - temperature
 
-featuredimage: /assets/img/preheat/preheat.png
+featuredimage: /assets/img/plugins/preheat/preheat.png
+
+screenshots:
+- url: /assets/img/plugins/preheat/preheat.png
+  alt: Screenshot
 
 # You only need the following if your plugin requires specific OctoPrint versions or
 # specific operating systems to function - you can safely remove the whole
