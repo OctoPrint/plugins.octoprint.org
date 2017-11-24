@@ -20,7 +20,7 @@ archive: https://github.com/gkolozof/archive/master.zip
 follow_dependency_links: false
 
 tags:
-- 0.3.0
+- 0.3.3
 
 screenshots:
 - url: /assets/img/plugins/ZERO/OctoPrint-ZERO.png
@@ -46,8 +46,25 @@ compatibility:
 
 ---
 
-Configures compiling and install FirmWare for any 3D printer in 30 Sec.
+Configures compiling and install FirmWare for 3D printer in 30 Sec.
+ 3D printer compatibility:
+  - CARTESIAN (Prusa,Mendel,Taz,etc)
+  - DELTA (Rostock/Max,Kossel,Cerberus,etc)
+  - H-Bot/Core
+  - Morgan SCARA
+  - Makerarm SCARA
+  - Wanhao Duplicator 
+  - Anycubic Linear Plus
+  - etc
+ 
 plugins.octoprint.org/plugin/ZERO/
+
+All step
+
+ 1) Configure FW from site
+ 2) Download FW for local backup (If you do not want to wait, you can stop the download)
+ 3) Automatically starting FW UPDATE Arduino
+ 4) Report procedure status
 
 GIT: https://github.com/gkolozof/OctoPrint-ZERO/archive/master.zip
 Project: OctoPrint ZERO
