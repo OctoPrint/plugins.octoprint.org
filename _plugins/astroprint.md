@@ -25,26 +25,26 @@ tags:
 - design management
 
 screenshots:
-- url: /assets/img/astroprint/astroprint-hero.jpg
+- url: /assets/img/plugins/astroprint/astroprint-hero.jpg
   alt: AstroPrint Platform
   caption: Connect your OctoPrint Device to the AstroPrint Software Suite
-- url: /assets/img/astroprint/astroprint-plugin.png
+- url: /assets/img/plugins/astroprint/astroprint-plugin.png
   alt: AstroPrint Plugin
   caption: View of the AstroPrint Plugin on OctoPrint
-- url: /assets/img/astroprint/astroprint-monitor.png
+- url: /assets/img/plugins/astroprint/astroprint-monitor.png
   alt: AstroPrint Monitor
   caption: Monitor your OctoPrint-enabled 3D printer remotely from the AstroPrint Cloud
-- url: /assets/img/astroprint/start-print.png
+- url: /assets/img/plugins/astroprint/start-print.png
   alt: Start a Print
   caption: Start a print from your AstroPrint Cloud on your OctoPi device
-- url: /assets/img/astroprint/apm-monitor-crop.gif
+- url: /assets/img/plugins/astroprint/apm-monitor-crop.gif
   alt: Remote Monitoring
   caption: Monitor your OctoPrint Device from anywhere with the FREE AstroPrint App
-- url: /assets/img/astroprint/apm-thing-crop.gif
+- url: /assets/img/plugins/astroprint/apm-thing-crop.gif
   alt: Print from your phone
   caption: Find and print cool designs right from your phone
 
-featuredimage: /assets/img/astroprint/astroprint-hero.jpg.jpg
+featuredimage: /assets/img/plugins/astroprint/astroprint-hero.jpg.jpg
 
 compatibility:
   octoprint:
