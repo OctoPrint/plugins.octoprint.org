@@ -33,14 +33,14 @@ title: Plugin blacklist
                 {% if p %}
                 <a href="{{ p.url }}">{{ p.title }}</a>
                 {% else %}
-                <code>{{ item.plugin }}</code>
+                <code>{{ item.plugin | xml_escape }}</code>
                 {% endif %}
             </td>
             <td class="blacklist-versions">
-                {% if item.versions %}{{ item.versions | join: ", " }}{% else %}all{% endif %}
+                {% if item.versions %}{{ item.versions | join: ", " | xml_escape }}{% else %}all{% endif %}
             </td>
             <td class="blacklist-octoversions">
-                {% if item.octoversions %}{{ item.octoversions | join: ", " }}{% else %}all{% endif %}
+                {% if item.octoversions %}{{ item.octoversions | join: ", " | xml_escape }}{% else %}all{% endif %}
             </td>
         </tr>
         {% endfor %}
