@@ -45,3 +45,5 @@ compatibility:
 Adds a nice big emergency stop button that (by default) sends M112 to the printer in the case of an emergency. If your printer uses a different E-Stop command, there's a settings page entry to allow changing the command sent.
 
 Please do be aware that this button is no substitute for human interaction in the case of a real emergency. How your printer responds to M112 depends entirely on its firmware.
+
+**Please see the** [README](https://github.com/ntoff/OctoPrint-Estop/blob/master/README.md#position) **or the** [FAQ](https://github.com/ntoff/OctoPrint-Estop/wiki/FAQ) **for more details on how to move the plugin to the top of the sidebar.**
