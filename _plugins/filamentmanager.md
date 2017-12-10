@@ -3,7 +3,7 @@ layout: plugin
 
 id: filamentmanager
 title: FilamentManager
-description: This OctoPrint plugin helps to manage your filament spools
+description: Filament Manager for OctoPrint
 author: Sven Lohrmann
 license: AGPLv3
 date: 2017-08-22
@@ -12,7 +12,7 @@ source: https://github.com/malnvenshorn/OctoPrint-FilamentManager
 archive: https://github.com/malnvenshorn/OctoPrint-FilamentManager/archive/master.zip
 compatibility:
   octoprint:
-  - 1.2.14
+  - 1.3.6
 tags:
 - ui
 - filament
@@ -34,8 +34,12 @@ screenshots:
 
 This OctoPrint plugin helps to manage your filament spools.
 
-#### Additional features
+#### Features
 
-- Replacing filament volume with weight in sidebar
-- Filament odometer to keep track of remaining filament on spool
-- Enable warning if print exceeds remaining filament on spool
+* Replacing filament volume with weight in sidebar
+* Software odometer to measure used filament
+* Warn if print exceeds remaining filament on spool
+* Assign temperature offset to spools
+* Automatically pause print if filament runs out
+* Import & export of spool inventory
+* Support for PostgreSQL as database for multiple instances
