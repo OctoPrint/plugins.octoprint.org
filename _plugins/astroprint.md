@@ -7,7 +7,7 @@ description: Wirelessly manage and monitor your OctoPi powered printer from the 
 author: AstroPrint
 license: AGPLv3
 
-date: 2017-11-28
+date: 2017-12-15
 
 homepage: https://github.com/AstroPrint/OctoPrint-AstroPrint/blob/master/README.md
 source: https://github.com/AstroPrint/OctoPrint-AstroPrint
@@ -44,7 +44,7 @@ screenshots:
   alt: Print from your phone
   caption: Find and print cool designs right from your phone
 
-featuredimage: /assets/img/plugins/astroprint/astroprint-hero.jpg.jpg
+featuredimage: /assets/img/plugins/astroprint/astroprint-hero.jpg
 
 compatibility:
   octoprint:
