@@ -6,7 +6,7 @@ title: OctoPrint-TPLinkSmartplug
 description: Plugin to control TP-Link Smartplug devices from OctoPrint web interface.
 author: jneilliii
 license: AGPLv3
-    
+
 # today's date in format YYYY-MM-DD, e.g.
 date: 2017-09-03
     

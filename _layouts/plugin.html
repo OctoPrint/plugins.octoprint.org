@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-{% assign sorted_plugins = (site.plugins | sort: 'title') %}
+{% assign sorted_plugins = site.plugins | sort: 'title' %}
 {% assign found_plugin = false %}
 {% assign prev_plugin = false %}
 {% assign next_plugin = false %}
@@ -62,6 +62,11 @@ layout: default
     </article>
 
     <div class="span4">
+      <dl class="adbox">
+        <dd class="ad">
+          {% include adsnippet.html %}
+        </dd>
+      </dl>
       {% if page.archive %}
       <dl class="installation">
         <dt>Installation <a href="/help/installation/" class="icon-question-sign"></a></dt>

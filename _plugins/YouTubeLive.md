@@ -30,6 +30,5 @@ featuredimage: /assets/img/plugins/YouTubeLive/tab_screenshot.jpg
 
 ---
 
-Simple plugin to add a YouTube Live Stream tab to OctoPrint. For configuration and additional details please see homepage.
-
-http://plugins.octoprint.org/plugin/YouTubeLive
+Simple plugin to add a YouTube Live Stream tab to OctoPrint. For configuration and additional details please see 
+[the homepage](https://github.com/jneilliii/OctoPrint-YouTubeLive).
