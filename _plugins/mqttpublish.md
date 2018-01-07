@@ -27,6 +27,7 @@ screenshots:
 - ...
 
 featuredimage: /asetts/img/plugins/mqttpublish/navbar.png
+
 ---
 
 This plugin simply adds buttons to the navbar of OctoPrint to send configured MQTT commands to the MQTT server configured in the [MQTT Plugin](https://plugins.octoprint.org/plugins/mqtt/).

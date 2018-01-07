@@ -32,6 +32,7 @@ screenshots:
   caption: Tasmota-MQTT Relay Editor
 
 featuredimage: /assets/img/plugins/tasmota-mqtt/navbar.png
+
 ---
 
 This plugin allows the control of [Tasmota](https://github.com/arendst/Sonoff-Tasmota) devices from within OctoPrint via [MQTT](https://github.com/arendst/Sonoff-Tasmota/wiki/MQTT-Overview#mqtt-overview) commands.
