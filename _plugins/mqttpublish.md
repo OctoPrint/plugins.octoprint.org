@@ -1,7 +1,7 @@
 ---
 layout: plugin
 
-id: tasmota-mqtt
+id: mqttpublish
 title: OctoPrint-MQTTPublish
 description: Add buttons to navbar to publish messages to MQTT server.
 author: jneilliii
