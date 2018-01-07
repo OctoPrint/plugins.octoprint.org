@@ -24,7 +24,6 @@ screenshots:
 - url: /asetts/img/plugins/mqttpublish/settingspng
   alt: MQTTPublish Settings
   caption: MQTTPublish Settings Dialog
-- ...
 
 featuredimage: /asetts/img/plugins/mqttpublish/navbar.png
 
