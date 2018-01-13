@@ -34,20 +34,20 @@ screenshots:
 featuredimage: /assets/img/plugins/atxpihat/screenshot1.png
 
 compatibility:
-	octoprint:
-	- 1.3.6
-	os:
-	- linux
+   octoprint: 
+   - 1.3.6
+   os:
+   - linux
 
 ---
 
 ## Software support for the ATXPiHat expansion board.
 
 Board Features include:
-	ATX power on/off
-	LED strip control
-	EPO - emergency power off
-	Cooling fan monitor
-	12v/amp monitoring and control
-	And a lot more.
+     ATX power on/off
+     LED strip control
+     EPO - emergency power off
+     Cooling fan monitor
+     12v/amp monitoring and control
+     And a lot more.
 
