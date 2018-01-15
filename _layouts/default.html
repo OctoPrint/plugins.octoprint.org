@@ -33,8 +33,8 @@ layout: compress
     <link rel="alternate" type="application/rss+xml" title="OctoPrint Plugin Repository: New Plugins" href="{{ '/feed.xml' | prepend: site.baseurl }}">
 
     <!-- Le social media meta data -->
-    {% capture thetitle %}{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}{% endcapture %}
-    {% capture thedescription %}{% if page.excerpt %}{{ page.excerpt | strip_html }}{% else %}{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}{% endif %}{% endcapture %}
+    {% capture thetitle %}{% if page.title %}{{ page.title | xml_escape }}{% else %}{{ site.title }}{% endif %}{% endcapture %}
+    {% capture thedescription %}{% if page.excerpt %}{{ page.excerpt | strip_html | xml_escape }}{% else %}{% if page.description %}{{ page.description | xml_escape }}{% else %}{{ site.description }}{% endif %}{% endif %}{% endcapture %}
     {% if page.featuredimage %}
         {% capture theimage %}{{ site.external }}{{ BASE_PATH }}{{ page.featuredimage }}{% endcapture %}
         {% capture thecard %}{{ site.external }}{{ BASE_PATH }}{{ page.card }}{% endcapture %}
