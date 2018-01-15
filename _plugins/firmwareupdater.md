@@ -8,7 +8,7 @@ author: Gina Häußge and Ben Lye, based on work by Nicanor Romero Venier
 license: AGPLv3
 
 # today's date in format YYYY-MM-DD, e.g.
-date: 2018-01-06
+date: 2018-01-15
 
 homepage: https://github.com/OctoPrint/OctoPrint-FirmwareUpdater
 source: https://github.com/OctoPrint/OctoPrint-FirmwareUpdater
