@@ -35,6 +35,9 @@ title: Plugin blacklist
                 {% else %}
                 <code>{{ item.plugin | xml_escape }}</code>
                 {% endif %}
+                {% if item.reason %}
+                <div class="blacklist-reason">{{ item.reason | markdownify }}</div>
+                {% endif %}
             </td>
             <td class="blacklist-versions">
                 {% if item.versions %}{{ item.versions | join: ", " | xml_escape }}{% else %}all{% endif %}

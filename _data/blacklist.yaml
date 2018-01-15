@@ -1,9 +1,11 @@
 #- plugin: identifier of affected plugin, mandatory
 #  versions: list of affected versions (e.g. ["0.1.0"]), optional (all versions if left out)
 #  octoversions: affected OctoPrint versions (e.g. [">=1.2.9,<1.3.0",">=1.3.2"], all versions if left out)
+#  reason: Human readble reason for blacklisting, may contain Markdown
 - plugin: tplinksmartplug
   versions:
   - 0.7.0
   - 0.7.1
   octoversions:
   - "<1.3.6"
+  reason: "[Issue that can render the UI completely non-functional](https://github.com/jneilliii/OctoPrint-TPLinkSmartplug/issues/19)."
