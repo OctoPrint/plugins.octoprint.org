@@ -6,7 +6,7 @@ title: WebcamTab
 description: Moves the webcam stream from the controls into its own tab
 author: Sven Lohrmann
 license: AGPLv3
-date: 2018-01-13
+date: 2018-01-16
 homepage: https://github.com/malnvenshorn/OctoPrint-WebcamTab
 source: https://github.com/malnvenshorn/OctoPrint-WebcamTab
 archive: https://github.com/malnvenshorn/OctoPrint-WebcamTab/archive/master.zip
