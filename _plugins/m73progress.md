@@ -7,7 +7,7 @@ description: A plugin to update the built-in progress bar on your printer's LCD.
 author: Cesar Vandevelde
 license: AGPLv3
 
-date: 2018-01-07
+date: 2018-01-16
 
 homepage: https://github.com/cesarvandevelde/OctoPrint-M73Progress
 source: https://github.com/cesarvandevelde/OctoPrint-M73Progress
