@@ -1,5 +1,5 @@
 ---
-layout: compress
+layout: none
 ---
 <!DOCTYPE html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
@@ -67,6 +67,12 @@ layout: compress
     <link rel="stylesheet" type="text/css" href="/assets/css/cookieconsent.min.css" />
     <script src="/assets/js/cookieconsent.min.js"></script>
     <script>
+        if (!String.prototype.startsWith) {
+            String.prototype.startsWith = function(search, pos) {
+            return this.substr(!pos || pos < 0 ? 0 : +pos, search.length) === search;
+            };
+        }
+
         window.addEventListener("load", function(){
             window.cookieconsent.initialise({
                 "position": "bottom",
@@ -82,6 +88,17 @@ layout: compress
                 }
             })
         });
+
+        /**
+         * Make sure octoprint.github.io stuff gets rewritten to plugins.octoprint.org.
+         * See https://github.com/OctoPrint/plugins.octoprint.org/issues/146.
+         */
+        var githubio = "octoprint.github.io/plugins.octoprint.org";
+        var url = window.location.href;
+        if (url && (url.startsWith("http://" + githubio) || url.startsWith("https://" + githubio))) {
+            url = url.replace(githubio, "plugins.octoprint.org");
+            window.location.replace(url);
+        }
     </script>
 </head>
 
