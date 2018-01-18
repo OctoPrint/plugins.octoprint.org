@@ -7,7 +7,7 @@ description: Plugin to control Tasmota devices via MQTT protocol.
 author: jneilliii
 license: AGPLv3
 
-date: 2018-01-06
+date: 2018-01-17
 
 homepage: https://github.com/jneilliii/OctoPrint-TasmotaMQTT
 source: https://github.com/jneilliii/OctoPrint-TasmotaMQTT
@@ -21,17 +21,17 @@ tags:
 - power
 
 screenshots:
-- url: /assets/img/plugins/tasmota-mqtt/navbar.png
+- url: /assets/img/plugins/tasmota_mqtt/navbar.png
   alt: Navbar
   caption: Buttons on navigation bar
-- url: /assets/img/plugins/tasmota-mqtt/settings.png
+- url: /assets/img/plugins/tasmota_mqtt/settings.png
   alt: Settings
   caption: Tasmota-MQTT Settings
-- url: /assets/img/plugins/tasmota-mqtt/relay_editor.png
+- url: /assets/img/plugins/tasmota_mqtt/relay_editor.png
   alt: Relay Editor
   caption: Tasmota-MQTT Relay Editor
 
-featuredimage: /assets/img/plugins/tasmota-mqtt/navbar.png
+featuredimage: /assets/img/plugins/tasmota_mqtt/navbar.png
 
 ---
 

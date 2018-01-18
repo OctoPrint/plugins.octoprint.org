@@ -7,7 +7,7 @@ description: Make the navbar float/stick to the top of the page.
 author: jneilliii
 license: AGPLv3
 
-date: 2018-01-07
+date: 2018-01-17
 
 homepage: https://github.com/jneilliii/OctoPrint-FloatingNavbar
 source: https://github.com/jneilliii/OctoPrint-FloatingNavbar
@@ -18,11 +18,11 @@ tags:
 - NavBar
 
 screenshots:
-- url: /asetts/img/plugins/floatingnavbar/screenshot.png
+- url: /assets/img/plugins/floatingnavbar/screenshot.png
   alt: Floating Navbar
   caption: Floating Navbar
 
-featuredimage: /asetts/img/plugins/floatingnavbar/screenshot.png
+featuredimage: /assets/img/plugins/floatingnavbar/screenshot.png
 
 ---
 

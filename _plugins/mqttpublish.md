@@ -7,7 +7,7 @@ description: Add buttons to navbar to publish messages to MQTT server.
 author: jneilliii
 license: AGPLv3
 
-date: 2018-01-06
+date: 2018-01-17
 
 homepage: https://github.com/jneilliii/OctoPrint-MQTTPublish
 source: https://github.com/jneilliii/OctoPrint-MQTTPublish
@@ -18,14 +18,14 @@ tags:
 - NavBar
 
 screenshots:
-- url: /asetts/img/plugins/mqttpublish/navbar.png
+- url: /assets/img/plugins/mqttpublish/navbar.png
   alt: NavBar buttons
   caption: NavBar Buttons
-- url: /asetts/img/plugins/mqttpublish/settingspng
+- url: /assets/img/plugins/mqttpublish/settings.png
   alt: MQTTPublish Settings
   caption: MQTTPublish Settings Dialog
 
-featuredimage: /asetts/img/plugins/mqttpublish/navbar.png
+featuredimage: /assets/img/plugins/mqttpublish/navbar.png
 
 ---
 
