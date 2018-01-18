@@ -10,8 +10,6 @@ url: "http://plugins.octoprint.org" # the base hostname & protocol for your site
 twitter_username: OctoPrint3D
 github_username:  OctoPrint
 
-exclude: ["vendor", ".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "node_modules"]
-
 # Build settings
 highlighter: rouge
 markdown: kramdown
@@ -34,3 +32,6 @@ exclude:
 - Gemfile.lock
 - vendor
 - "*.iml"
+- .rvmrc
+- .rbenv-version
+- node_modules
