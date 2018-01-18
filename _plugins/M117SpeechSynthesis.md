@@ -7,7 +7,7 @@ description: Plugin to speak aloud M117 gcode messages via the web ui.
 author: jneilliii
 license: AGPLv3
     
-date: 2018-01-17
+date: 2018-01-18
     
 homepage: https://github.com/jneilliii/OctoPrint-M117SpeechSynthesis
 source: https://github.com/jneilliii/OctoPrint-M117SpeechSynthesis
