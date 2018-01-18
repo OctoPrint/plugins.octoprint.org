@@ -37,7 +37,7 @@ featuredimage: /assets/img/plugins/firmwareupdater/firmwareupdater.png
         }
 </style>
 
-Works with boards with `Atmega1284p` and `Atmega2560` MCUs using `arduino` or `wiring` programmers.
+Works with boards with `Atmega1280`, `Atmega1284p`, and `Atmega2560` MCUs using `arduino`, `usbasp`, or `wiring` programmers.
 
 More boards can be added, please request additions via a [Github issue](https://github.com/OctoPrint/OctoPrint-FirmwareUpdater/issues).
 
