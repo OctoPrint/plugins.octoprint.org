@@ -3,11 +3,11 @@ layout: plugin
 
 id: taborder
 title: OctoPrint-TabOrder
-description: Simple plugin to control sonoff devices that have been flashed with TabOrder.
+description: Simple plugin to allow the ordering of tabs within OctoPrint.
 author: jneilliii
 license: AGPLv3
 
-date: 2017-11-24
+date: 2018-01-22
 
 homepage: https://github.com/jneilliii/OctoPrint-TabOrder
 source: https://github.com/jneilliii/OctoPrint-TabOrder
