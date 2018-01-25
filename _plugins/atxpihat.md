@@ -8,7 +8,7 @@ author: Brian Anichowski
 license: Creative Commons
 
 # today's date in format YYYY-MM-DD, e.g.
-date: 2018-01-13
+date: 2018-01-25
 
 homepage: https://www.baprojectworkshop.com
 source: https://github.com/banichow/OctoPrint-Atxpihat
