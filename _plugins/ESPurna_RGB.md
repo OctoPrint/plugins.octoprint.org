@@ -2,7 +2,7 @@
 layout: plugin
 
 id: ESPurna_RGB
-title: Espurna RGB
+title: ESPurna RGB
 description: Controll Epurna RGB LED device wirelessly
 author: Imon Daneshmand
 license: AGPLv3
