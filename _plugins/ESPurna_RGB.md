@@ -3,7 +3,7 @@ layout: plugin
 
 id: ESPurna_RGB
 title: ESPurna RGB
-description: Controll Epurna RGB LED device wirelessly
+description: Control ESPurna RGB LED device wirelessly
 author: Imon Daneshmand
 license: AGPLv3
 
@@ -19,11 +19,18 @@ tags:
 - rgbw
 - rgbww
 - led
-- conroller
+- controller
 - espurna
 - wifi
 - wireless
 - network
+
+screenshots:
+- url: /assets/img/plugins/ESPurna_RGB/screenshot1.png
+  alt: ESPurna RGB Settings Page
+  caption: ESPurna RGB Settings Page
+
+featuredimage: /assets/img/plugins/ESPurna_RGB/screenshot1.png
 
 compatibility:
   octoprint:
@@ -31,7 +38,7 @@ compatibility:
 
 ---
 
-OctoPrint plugin for controling Epurna RGB LED device via REST API over the network using M150 GCODE
+OctoPrint plugin for controlling ESPurna RGB LED device via REST API over the network using M150 GCODE
 
         M150: Set Status LED Color - Use R-U-B for R-G-B
         M150 R255       ; Turn LED red
