@@ -9,25 +9,27 @@ license: AGPLv3
 
 
 # today's date in format YYYY-MM-DD, e.g.
-date: 2017-09-2
+date: 2018-2-6
 
 homepage: https://github.com/gkolozof/
 source: https://github.com/gkolozof/OctoPrint-ZERO.git
-archive: https://github.com/gkolozof/archive/master.zip
+archive: https://github.com/gkolozof/OctoPrint-ZERO/archive/master.zip
 
 # Set this to true if your plugin uses the dependency_links setup parameter to include
 # library versions not yet published on pypi. SHOULD ONLY BE USED IF THERE IS NO OTHER OPTION!
 follow_dependency_links: false
 
 tags:
-- 0.4.9
+- 3D printer firmware configurator
+- automatic firmware update
+- kimba configurator- marlin
 
 screenshots:
 - url: /assets/img/plugins/ZERO/OctoPrint-ZERO.png
   alt: After configuring, compiling and install the FirmWare automatically
   caption: Configures compiling and install FirmWare for any 3D printer in 30 Sec.
 
-featuredimage: /assets/img/ZERO.png
+featuredimage: https://github.com/gkolozof/plugins.octoprint.org-1/blob/gh-pages/assets/img/OctoPrint-ZERO.png
 
 # You only need the following if your plugin requires specific OctoPrint versions or
 # specific operating systems to function - you can safely remove the whole
@@ -36,13 +38,13 @@ featuredimage: /assets/img/ZERO.png
 compatibility:
 
   octoprint:
-  - 1.2.4 or higher
-
+  - 1.2.4 
 
   os:
-  - Linux
-  - MacOs
-  - Win 7 and UP
+  - linux
+  - windows
+  - macos
+  - freebsd
 
 ---
 
