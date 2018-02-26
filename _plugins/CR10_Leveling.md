@@ -6,7 +6,7 @@ title: CR-10 Leveling
 description: Adds CR-10 leveling buttons to the controls tab
 author: electr0sheep
 license: AGPLv3
-date: 2018-02-23
+date: 2018-02-26
 homepage: https://github.com/electr0sheep/OctoPrint-Cr10_leveling
 source: https://github.com/electr0sheep/OctoPrint-Cr10_leveling
 archive: https://github.com/electr0sheep/OctoPrint-Cr10_leveling/archive/master.zip
@@ -14,9 +14,9 @@ tags:
 - ui
 - cr10
 screenshots:
-- url: /assets/img/plugins/CR10Leveling/img1.png
+- url: /assets/img/plugins/CR10_Leveling/img1.png
   alt: Control
-featuredimage: /assets/img/plugins/CR10Leveling/img1.png
+featuredimage: /assets/img/plugins/CR10_Leveling/img1.png
 
 ---
 
