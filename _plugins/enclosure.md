@@ -29,7 +29,7 @@ tags:
 - DS18B20
 
 screenshots:
-- url: /assets/img/plugins/enclosure/screenshot.png 
+- url: /assets/img/plugins/enclosure/ScreenShot.png
   alt: OctoPrint enclosure main screen.
   caption: OctoPrint enclosure main screen.
 - url: /assets/img/plugins/enclosure/ScreenShot_Settings_1.png 
@@ -39,13 +39,11 @@ screenshots:
   alt: OctoPrint enclosure setting screen.
   caption: OctoPrint enclosure setting screen.
 
-featuredimage: /assets/img/plugins/enclosure/screenshot.png 
+featuredimage: /assets/img/plugins/enclosure/ScreenShot.png
 
 compatibility:
-  - 1.2.0
-
   os:
-  - linux
+  - nix
 ---
 
 This plugin is intended to control your printer enclosure using raspberry pi GPIO (At the moment this plugin only support raspberry pi).

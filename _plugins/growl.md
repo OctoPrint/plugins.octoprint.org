@@ -18,9 +18,6 @@ featuredimage: /assets/img/plugins/growl/notification.png
 date: 2015-04-14
 tags: 
 - notification
-compatibility:
-  octoprint:
-  - 1.2.0
 ---
 
 The Growl plugin for OctoPrint allows to send notifications about certain printing events to a Growl instance on your

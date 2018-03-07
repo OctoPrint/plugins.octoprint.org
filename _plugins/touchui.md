@@ -35,20 +35,21 @@ compatibility:
   # list of compatible versions, for example 1.2.0. If left empty no specific version requirement will be assumed
   octoprint:
   - 1.2.6
-
-  # list of compatible operating systems, valid values are linux, windows, macos, leaving empty defaults to all
-  browsers:
-  - Iceweavel
-  - Chrome 44+
-  - Firefox 40+
-  - IE Edge
-  - Safari (mobile)
-  - Chrome (mobile)
 ---
-This plugin will transform the OctoPrint layout into a Mobile/TFT friendly layout. With larger buttons and a responsive layout down to the smallest resolution possible. It will mimick pointer events as touch, so you can hook up those touchscreens. It also supports a virtual keyboard.
 
-All these settings are set clientside, so we won't interfere with other clients. All settings are stored in a delicious cookie for up to a year. You can find the `TouchUI settings` in a dedicated modal. Remember they're stored on your device, so if you login with your desktop computer you won't get the touch interface.
+This plugin will transform the OctoPrint layout into a Mobile/TFT friendly layout. With larger buttons and a responsive layout down to the smallest resolution possible. It will mimic pointer events as touch, so you can hook up those touchscreens. It also supports a virtual keyboard.
 
-From v0.2.0 the interface will automatically start while loading OctoPrint. This will only start if the browser is smaller then 980 pixels in width or if you're browsing with a touch device. You can turn this off in the `Settings` modal under `TouchUI`.
+All these settings are set client-side, so we won't interfere with other clients. All settings are stored in your localstorage or as a delicious cookie. You can find the `TouchUI settings` in a dedicated modal. Remember they're stored on your device, so if you login with your desktop computer you won't get the touch interface.
 
-![TouchUI Interface](https://billyblaze.github.io/OctoPrint-TouchUI/images/touchui.gif)
+![TouchUI Interface](https://billyblaze.github.io/OctoPrint-TouchUI/images/touchui-v030.gif)
+
+- **Touchscreens**  
+Read more about [setting up a touchscreen](https://github.com/BillyBlaze/OctoPrint-TouchUI/wiki/Setup#raspberrypi--touchscreen) on our Wiki.
+
+## Configuration
+The interface will automatically start when your browser is smaller then 980 pixels in width or if you're browsing with a touch device. You can turn this manually on and off in the ``TouchUI settings`` modal. Alternatively you can force TouchUI to load by adding ``#touch`` on the end of your URL.
+
+Read more [configuration options](https://github.com/BillyBlaze/OctoPrint-TouchUI/wiki/Configuration) on our Wiki.
+
+- **Customization**  
+You can change 4 main colors of the interface with the power of LESS. If you would like to change more colors, then you're free to add your own LESS file. [Read more about this and the variables](https://github.com/BillyBlaze/OctoPrint-TouchUI/wiki/Customize:-Use-your-own-file) on our wiki.

@@ -1,33 +1,38 @@
 ---
-layout: page
+layout: plugin_list
 title: Plugins by Tag
 ---
 
-{% capture all_tags %}{% for plugin in site.plugins %}{% assign added = false %}{% for tag in plugin.tags %}{% assign stripped_tag = tag | strip %}{% unless stripped_tag == "" %}{% assign added = true %}{{ stripped_tag }}{% unless forloop.last %},{% endunless %}{% endunless %}{% endfor %}{% if added %}{% unless forloop.last %},{% endunless %}{% endif %}{% endfor %}{% endcapture %}
-
-{% assign tags = all_tags | split:"," | uniq | sort %}
-{% assign uniq_tags = "" %}
-{% for tag in tags %}
-  {% unless uniq_tags contains tag %}
-    {% capture tags_temp %}{{ uniq_tags | join:"," }},{{ tag }}{% endcapture %}
-    {% assign uniq_tags = (tags_temp | split:",") %}
-  {% endunless %}
+{% assign all_tags = "" | split: "/" %}
+{% for plugin in site.plugins %}
+  {% for tag in plugin.tags %}
+    {% assign preprocessed = tag | strip | downcase %}
+    {% unless preprocessed == "" %}
+      {% assign all_tags = all_tags | push: preprocessed %}
+    {% endunless %}
+  {% endfor %}
 {% endfor %}
+{% assign all_tags = all_tags | uniq | sort %}
 
 <i class="icon-tag"></i>
-{% for tag in uniq_tags %}
+{% for tag in all_tags %}
   {% unless tag == "" %}{% include plugin_tag tag=tag %}{% endunless %}
 {% endfor %}
 
-{% for tag in uniq_tags %}
+{% for tag in all_tags %}
 {% unless tag == "" %}
 <h2 id="tag-{{ tag | slugify }}">{{ tag }}</h2>
 
 <ul>
   {% for plugin in site.plugins %}
-  {% if plugin.tags contains tag %}
-  <li>{% include plugin_snippet plugin=plugin %}</li>
-  {% endif %}
+    {% assign plugin_tags = "" | split: "/" %}
+    {% for tag in plugin.tags %}
+      {% assign lower_tag = tag | downcase %}
+      {% assign plugin_tags = plugin_tags | push: lower_tag %}
+    {% endfor %}
+    {% if plugin_tags contains tag %}
+    <li>{% include plugin_snippet plugin=plugin %}</li>
+    {% endif %}
   {% endfor %}
 </ul>
 {% endunless %}

@@ -16,9 +16,6 @@ screenshots:
   alt: Example progress indicator
   caption: Example progress indicator for a print job in progress
 featuredimage: /assets/img/plugins/octoglow/progress.png
-compatibility:
-  octoprint:
-  - 1.2.0
 ---
 
 The OctoGlow plugin for OctoPrint displays status on a [Pimoroni PiGlow](http://shop.pimoroni.com/products/piglow) attached to a Raspberry Pi.  It displays animations for the following events:

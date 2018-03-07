@@ -11,9 +11,6 @@ archive: https://github.com/Booli/OctoPrint-ActionTriggerPlugin/archive/master.z
 date: 2015-04-17
 tags:
 - printing
-compatibility:
-  octoprint:
-  - 1.2.0
 ---
 
 > Its gun do some serial trigger handling yo

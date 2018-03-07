@@ -19,10 +19,6 @@ tags:
 - gcode
 - preprocessing
 
-compatibility:
-  # list of compatible versions, for example 1.2.0. If left empty no specific version requirement will be assumed
-  octoprint:
-  - 1.2.0
 ---
 
 This is a small GCODE preprocessor that makes sure that uploaded GCODE file contain only one command per line.

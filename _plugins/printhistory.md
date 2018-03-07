@@ -10,9 +10,6 @@ author: Jarek Szczepanski
 license: AGPLv3
 featuredimage: https://github.com/imrahil/OctoPrint-PrintHistory/raw/master/printhistory.png?raw=true
 date: 2015-04-22
-compatibility:
-  octoprint:
-  - 1.2.0
 
 ---
 

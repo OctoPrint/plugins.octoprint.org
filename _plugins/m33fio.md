@@ -34,14 +34,6 @@ screenshots:
 
 featuredimage: /assets/img/plugins/m33fio/model_editor.png
 
-compatibility:
-  octoprint:
-  - 1.2.0
-
-  os:
-  - linux
-  - windows
-  - macos
 ---
 
 M33 Fio extends OctoPrint's capabilities to include the following features:

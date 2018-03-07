@@ -29,12 +29,6 @@ screenshots:
 
 featuredimage: /assets/img/plugins/pushover/pushover.png
 
-compatibility:
-
-  octoprint:
-  - 1.2.0
-
-
 ---
 
 This plugin adds support for [Pushover notifications](https://pushover.net/) to OctoPrint.

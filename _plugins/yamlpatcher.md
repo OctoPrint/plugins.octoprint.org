@@ -28,10 +28,6 @@ screenshots:
   caption: Supports merging YAML dictionaries
 
 featuredimage: http://i.imgur.com/Xs1xGHu.png
-
-compatibility:
-  octoprint:
-  - 1.2.0
 ---
 
 The OctoPrint Yamlpatcher Plugin allows patching OctoPrint's [`config.yaml`](http://docs.octoprint.org/en/master/configuration/config_yaml.html)

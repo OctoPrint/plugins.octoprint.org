@@ -25,10 +25,6 @@ screenshots:
   caption: The request spinner in action
 
 featuredimage: /assets/img/plugins/requestspinner/requestspinner.png
-
-compatibility:
-  octoprint:
-  - 1.2.0
 ---
 
 The Request Spinner Plugin puts a little spinner icon in the lower left corner of the OctoPrint web interface whenever
