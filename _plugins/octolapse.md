@@ -6,7 +6,7 @@ title: Octolapse
 description: Create a stabilized timelapse of your 3D prints.  Highly customizable, loads of presets, lots of fun.
 author: Brad Hochgesang
 license: AGPL-3.0
-date: 2018-03-22
+date: 2018-03-24
 
 homepage: https://formerlurker.github.io/Octolapse/
 source: https://github.com/FormerLurker/Octolapse/
@@ -88,7 +88,7 @@ Use caution and never leave your printer unattended.
 * **Control the bitrate** of your video.
 * **Flip and rotate** your videos.
 ## To make good timelapses, you need good snapshots
-* Slow camera or low framerate?  Octolapse allows you to **set a snapshot delay** before taking a snapshot to allow your camera enough time to get a clear image.
+* Slow camera or low frame rate?  Octolapse allows you to **set a snapshot delay** before taking a snapshot to allow your camera enough time to get a clear image.
 * **Control your camera settings** including: contrast, brightness, focus, white balance, pan, tilt, zoom, and much more.  You can apply your custom settings before each print.
 
 ## More Octolapses
