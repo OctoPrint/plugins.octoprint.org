@@ -11,13 +11,19 @@ homepage: https://github.com/electr0sheep/OctoPrint-Cr10_leveling
 source: https://github.com/electr0sheep/OctoPrint-Cr10_leveling
 archive: https://github.com/electr0sheep/OctoPrint-Cr10_leveling/archive/master.zip
 tags:
-- ui
 - cr10
+- leveling
 screenshots:
-- url: /assets/img/plugins/CR10_Leveling/img1.png
-  alt: Control
-featuredimage: /assets/img/plugins/CR10_Leveling/img1.png
+- url: /assets/img/plugins/CR10Leveling/control.png
+  alt: Control Tab
+- url: /assets/img/plugins/CR10Leveling/settings.png
+  alt: Settings
+featuredimage: /assets/img/plugins/CR10Leveling/control.png
 
 ---
 
-This plugins adds leveling controls for your CR-10 to the Control tab.
+This plugin adds buttons to apply heat to the bed and nozzle, and move the
+printing head to each of the four corners of the bed, as well as the center of
+the bed.
+
+The coordinates and temperatures can all be customized in the plugin's settings.
