@@ -19,9 +19,16 @@ editing it accordingly.
     additional system packages, services or the like. If your plugin needs additional steps like this to function,
     add a wizard dialog that prompts the user to do these things, do <em>not</em> do them automatically.
     
-  * If your plugin interacts with external services it does so over secured connections with a valid certificate only 
+    Exception: Fetching additional Python dependencies from the Python Package Index through `plugin_requires` in your 
+    `setup.py` is fine.
+    
+  * If your plugin interacts with external services it will do so over secured connections with a valid certificate only 
     (`https://someservice.com` instead of `http://130.47.11.15`). This also includes embedding any kinds of iframes in 
     the web interface. Also include this kind of information in the plugin's long description (see below)!
+
+  * If your plugin requires the use of external services, and those services are unreachable (say for example a user's 
+    internet is down or the OctoPrint instance runs offline in general), your plugin must fail in a way that does 
+    not cause OctoPrint to malfunction.
 
   * If your plugin contains any kind of tracking code, e.g. for anonymous user statistics to help with 
     development, use an *opt-in* mechanism for this. Also include this kind of information in the plugin's long 
