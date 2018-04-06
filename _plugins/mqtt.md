@@ -16,6 +16,9 @@ screenshots:
 - url: /assets/img/plugins/mqtt/mqtt_spy_example.png
   alt: MQTT messages in MQTT-spy
   caption: Example messages in MQTT-spy
+compatibility:
+  octoprint:
+  - 1.3.5
 date: 2015-04-11
 ---
 
