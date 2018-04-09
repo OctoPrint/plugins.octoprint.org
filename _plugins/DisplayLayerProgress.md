@@ -23,21 +23,17 @@ tags:
 - layer
 
 screenshots:
-- url: /assets/img/plugins/detailedprogress/example-percent.jpg
-  alt: Example of percentage
-  caption: Example of percentage
-- url: /assets/img/plugins/detailedprogress/example-etl.jpg
-  alt: Example of estimated time left
-  caption: Example of estimated time left
-- url: /assets/img/plugins/detailedprogress/example-eta.jpg
-  alt: Example of estimated time of completition
-  caption: Example of estimated time of completition
+- url: /assets/img/plugins/DisplayLayerProgress/example-navbar-display.jpg
+  alt: Example of NavBar Display
+  caption: Example of NavBar Display
+- url: /assets/img/plugins/DisplayLayerProgress/example-printer-display.jpg
+  alt: Example of Printer Display
+  caption: Example of Printer Display
 
-featuredimage: /assets/img/plugins/detailedprogress/example-eta.jpg
+
+featuredimage: /assets/img/plugins/DisplayLayerProgress/example-navbar-display.jpg
 
 ---
-
-TODO add screenshots
 
 A OctoPrint-Plugin that sends the current progress of a print via M117 command to the printer-display and also to the top navigation bar.
 It shows the percentage, the current layer and the total layer count:
