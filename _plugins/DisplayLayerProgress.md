@@ -2,7 +2,7 @@
 layout: plugin
 
 id: DisplayLayerProgress
-title: Display 
+title: DisplayLayerProgress 
 description: Displays the current processing layer and the percentage in "Printer-Display" and in top "NavBar"
 author: Olli
 license: AGPLv3
