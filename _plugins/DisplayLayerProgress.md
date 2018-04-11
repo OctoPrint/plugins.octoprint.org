@@ -41,7 +41,11 @@ It shows the percentage, the current layer and the total layer count:
 - Printer Display: 50% 60/120
 - NavBar: Progress: 50% Layer: 60/120
 
-ATTENTION: The layer information output only works with Cura generated G-Code, because Cura insert the layer information (layer, layerCount) as comments in the file.
+**ATTENTION:** 
+- The layer information output only works with Cura generated G-Code, because Cura insert the layer information (layer, layerCount) as comments in the file.
+- If the layer-comments couldn't found, only the percentage will be displayed
+- You need to upload your G-Code after installation of the plugin again (if you want to reuse already stored models in OctoPrint), because while uploading the G-Code is modfied
 
-For implementation details please visit the homepage.
+
+For implementation details please visit the [homepage]({{ page.homepage | absolute_url }}).
 
