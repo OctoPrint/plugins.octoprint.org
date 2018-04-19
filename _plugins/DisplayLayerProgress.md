@@ -29,6 +29,12 @@ screenshots:
 - url: /assets/img/plugins/DisplayLayerProgress/example-printer-display.jpg
   alt: Example of Printer Display
   caption: Example of Printer Display
+- url: /assets/img/plugins/DisplayLayerProgress/example-statebar.jpg
+  alt: Example of State Bar output
+  caption: Example of State Bar output
+- url: /assets/img/plugins/DisplayLayerProgress/settings.jpg
+  alt: Plugin Settings
+  caption: Plugin Settings
 
 
 featuredimage: /assets/img/plugins/DisplayLayerProgress/example-navbar-display.jpg
