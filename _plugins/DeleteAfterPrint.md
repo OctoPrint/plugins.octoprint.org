@@ -31,6 +31,6 @@ featuredimage: https://raw.githubusercontent.com/OllisGit/OctoPrint-DeleteAfterP
 
 Delete automatically the Print-Model after successful print. If the print fails, the deletion is not executed.
 
-The user can enable automatic shutdown for each print by using a checkbox in the sidebar.
+The user can enable automatic deletion for each print by using a checkbox in the sidebar.
 
 For implementation details please visit the [homepage]({{ page.homepage | absolute_url }}).
