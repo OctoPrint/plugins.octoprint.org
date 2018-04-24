@@ -30,6 +30,6 @@ compatibility:
 
 Simple plugin to show Orange Pi (running armbian) SOC temperature in the navbar.
 
-Some code ~~inspired by~~ stealed from @ntoff [OctoPrint-NavbarTemp](https://github.com/ntoff/OctoPrint-NavbarTemp) fork.
+Some code ~~inspired by~~ stolen from @ntoff [OctoPrint-NavbarTemp](https://github.com/ntoff/OctoPrint-NavbarTemp) fork.
 
 ![screenshot](/assets/img/plugins/opitemp/opitemp.png)
