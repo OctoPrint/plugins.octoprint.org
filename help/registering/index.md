@@ -182,6 +182,20 @@ If all is in the green, follow these steps:
         expect from it is to simply include some screenshots that show exactly that. A picture is worth more than a
         thousand words as they say. If your plugin doesn't visually modify OctoPrint in any way, please include that 
         fact in the long description.
+        
+      * **Do not directly embed third party screenshots/widgets/iframes!** Thanks to the EU's 
+        [GDPR](https://en.wikipedia.org/wiki/General_Data_Protection_Regulation) this could cause us severe 
+        legal problems. If you want to embed a YouTube video showing off your plugin, use the provided ``youtube.html``
+        include:
+        
+        ```
+        {% raw %}{% include youtube.html vid="<youtube video id>" preview="<preview image, '/assets/img/...'>" %}{% endraw %}
+        ```
+        
+        That will make sure that no connection to YouTube is done without the user's consent. You can fetch the
+        preview image of your video at ``https://i.ytimg.com/vi/<youtube video id>/maxresdefault.jpg`` or with the 
+        ``fetch_yt_preview`` bash script included in the repository. If you use the latter you can leave out the
+        ``preview`` parameter to the include.
 
     If you are unsure about how something should be structured take a look at the existing plugins or 
     [ask on the forum](https://discourse.octoprint.org/c/development).
