@@ -65,7 +65,7 @@ Please note that some settings may need to be adjusted depending on your slicer 
 <div style="text-align:center">
     <br/>
     <div>
-        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/er0VCYen1MY" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+        {% include youtube.html vid="er0VCYen1MY" %}
     </div>
     <div>
         <a href="https://www.thingiverse.com/thing:570288" alt="Link to the model from this video" title="view model on thingiverse" target="_blank">
@@ -105,7 +105,7 @@ Use caution and never leave your printer unattended.
 ## More Octolapses
 <div style="text-align:center">
     <div>
-        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/dYbWfBCLNbI" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+        {% include youtube.html vid="dYbWfBCLNbI" %}
     </div>
     <div>
         <a href="https://www.thingiverse.com/thing:919475" alt="Link to the model from this video" title="view model on thingiverse" target="_blank">
@@ -117,7 +117,7 @@ Use caution and never leave your printer unattended.
 
 <div style="text-align:center">
     <div>
-        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/4kEHbRrp2Jk" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+        {% include youtube.html vid="4kEHbRrp2Jk" %}
     </div>
     <div>
         <a href="https://www.thingiverse.com/thing:2531838" alt="Link to the model from this video" title="view model on thingiverse" target="_blank">
@@ -128,7 +128,7 @@ Use caution and never leave your printer unattended.
 </div>
 <div style="text-align:center">
     <div>
-        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Ra5Jjq-nJfA" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+        {% include youtube.html vid="Ra5Jjq-nJfA" %}
     </div>
     <div>
         <a href="https://www.thingiverse.com/thing:763622" alt="Link to the model from this video" title="view model on thingiverse" target="_blank">
