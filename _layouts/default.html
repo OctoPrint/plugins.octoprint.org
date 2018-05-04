@@ -126,15 +126,32 @@ layout: none
 <script src="/assets/js/yt-with-consent.js"></script>
 
 <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    var gaBaseProperty = 'UA-62479257';
+    var gaProperty = gaBaseProperty + '-2';
 
-    ga('create', 'UA-62479257-2', 'auto');
-    ga('set', 'anonymizeIp', true);
-    ga('send', 'pageview');
+    // opt out
+    var disableStr = 'ga-disable-' + gaProperty;
+    var disableCookie = 'ga-disable-' + gaBaseProperty;
+    function gaOptout() {
+        document.cookie = disableCookie + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/; domain=octoprint.org';
+        window[disableStr] = true;
+        alert("Google Analytics ist jetzt deaktiviert! / Google Analytics is now deactivated!")
+    }
 
+    // tracking code
+    if (document.cookie.indexOf(disableCookie + '=true') > -1) {
+        window[disableStr] = true;
+    } else {
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', gaProperty, 'auto');
+        ga('require', 'autotrack');
+        ga('set', 'anonymizeIp', true);
+        ga('send', 'pageview');
+    }
 </script>
 
 </body>
