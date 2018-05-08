@@ -26,7 +26,7 @@ screenshots:
 - url: https://github.com/OllisGit/OctoPrint-DisplayLayerProgress/raw/master/screenshots/navbar.jpg
   alt: Example of NavBar Display
   caption: Example of NavBar Display
-- url: /assets/img/plugins/DisplayLayerProgress/example-printer-display.jpg
+- url: https://github.com/OllisGit/OctoPrint-DisplayLayerProgress/raw/master/screenshots/example-printer-display.jpg
   alt: Example of Printer Display
   caption: Example of Printer Display
 - url: https://github.com/OllisGit/OctoPrint-DisplayLayerProgress/raw/master/screenshots/printerDisplay_popup.jpg
