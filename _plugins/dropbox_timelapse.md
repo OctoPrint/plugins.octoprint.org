@@ -7,7 +7,7 @@ description: Automatically upload rendered timelapses to Dropbox. Can also delet
 author: Justin Slay
 license: AGPLv3
 
-date: 2018-05-06
+date: 2018-05-10
 
 homepage: https://github.com/jslay88/OctoPrint-Dropbox-Timelapse
 source: https://github.com/jslay88/OctoPrint-Dropbox-Timelapse
