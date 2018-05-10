@@ -18,7 +18,9 @@ layout: null
         <description>
           <![CDATA[
             {{ plugin.description | xml_escape }}{% if plugin.featuredimage %}
-            <p><img src="{% include canonic_url url=plugin.featuredimage external=true %}"></p>{% endif %}
+            <p><img src="{% include canonic_url url=plugin.featuredimage external=true %}"></p>{% else %}
+            <p><img src="{{ site.external }}{{ BASE_PATH }}/assets/img/repo-600x400.png"></p>
+            {% endif %}
           ]]>
         </description>
         <pubDate>{% include plugin_date_rfc822 date=plugin.date %}</pubDate>
