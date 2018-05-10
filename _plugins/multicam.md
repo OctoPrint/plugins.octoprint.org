@@ -20,8 +20,16 @@ tags:
 - ui
 - control
 
+screenshots:
+- url: /assets/img/plugins/multicam/Octoprint_MultiCam_Control.png
+  alt: MultiCam Control Tab
+  caption: MultiCam Control Tab
+- url: /assets/img/plugins/multicam/Octoprint_MultiCam_Settings.png
+  alt: MultiCam Settings
+  caption: MultiCam Settings
+
 ---
 
-Extents the Control tab to include a webcam section with buttons that you can configure in the settings to switch between multiple webcam feeds.
+It is recommended to setup a second RPi (potentially with [MotionEyeOS](https://github.com/ccrisan/motioneyeos)) to setup webcams from. Attaching more than one webcam to your octoprint device could result in high proccess use causing issues with your prints. You may also have to invest in a usb hub to power your webcams as RPi's tend to have low votage issues when they are plugged in directly to the Rpi. [This Link](https://elinux.org/RPi_Powered_USB_Hubs) has a good list of USB hubs that are support by Raspberry.
 
 Future updates will include the more options to show different types of streams, as well as the abilitly to show more than one stream at a time.
