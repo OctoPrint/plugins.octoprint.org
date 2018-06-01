@@ -12,6 +12,7 @@ layout: none
     <title>{{ page.title | strip_html | strip_newlines | escape }}</title>
     {% if page.description %}<meta name="description" content="{{ page.description | strip_html | strip_newlines | escape }}">{% endif %}
     {% if page.author %}<meta name="author" content="{{ page.author | strip_html | strip_newlines | escape }}">{% endif %}
+    <meta name="referrer" content="same-origin">
 
     <!--[if lt IE 9]>
     <script src="/assets/js/html5shim.js"></script>
