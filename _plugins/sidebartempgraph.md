@@ -31,6 +31,4 @@ Small plugin that adds a temperature graph to the side bar.
 **Note:** To change the location of the graph within the side bar install [OctoPrint-SidebarOrder](https://github.com/zoombahh/OctoPrint-SidebarOrder) plugin.
 
 ## Support My Efforts
-I programmed this plugin for fun and do my best effort to support those that have issues with it, please return the favor and support me.
-
-[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://paypal.me/jneilliii)
+I, jneilliii, programmed this plugin for fun and do my best effort to support those that have issues with it, please return the favor and [support me](https://paypal.me/jneilliii).
