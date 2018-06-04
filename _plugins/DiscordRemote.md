@@ -8,7 +8,7 @@ author: Cameron Cross, originally by Benjamin Chanudet
 license: MIT
 
 # TODO
-date: 2018-05-17
+date: 2018-06-04
 
 homepage: https://github.com/cameroncros/OctoPrint-DiscordRemote
 source: https://github.com/cameroncros/OctoPrint-DiscordRemote
