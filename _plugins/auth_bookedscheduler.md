@@ -3,7 +3,7 @@ layout: plugin
 
 id: auth_bookedscheduler
 title: Auth Booked Scheduler
-description: Auto collapse the files accordion.
+description: Authentication via Booked Scheduler
 author: Luca Zimmermann
 license: AGPLv3
 
