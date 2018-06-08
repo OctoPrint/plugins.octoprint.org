@@ -7,7 +7,7 @@ description: Plugin to display temperature graph in the side bar.
 author: jneilliii
 license: AGPLv3
 
-date: 2018-06-01
+date: 2018-06-05
 
 homepage: https://github.com/jneilliii/OctoPrint-SideBarTempGraph
 source: https://github.com/jneilliii/OctoPrint-SideBarTempGraph
