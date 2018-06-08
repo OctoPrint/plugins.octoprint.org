@@ -19,14 +19,6 @@ tags:
 - smartplug
 - power
 
-screenshots:
-- url: /assets/img/plugins/tasmota/screenshot.png
-  alt: Screenshot
-  caption: Navbar screenshot
-- url: /assets/img/plugins/tasmota/settings.png
-  alt: Settings
-  caption: Settings screenshot
-
 featuredimage: /assets/img/plugins/tasmota/screenshot.png
 
 compatibility:
@@ -41,13 +33,22 @@ compatibility:
   - freebsd
 
 ---
+
+# Tasmota
+
 This plugin is to control ITead Sonoff devices that have been flashed with [Sonoff-Tasmota](https://github.com/arendst/Sonoff-Tasmota) via web calls.
 
-## Configuration
+## Screenshots
 
-Once installed go into settings and enter the ip address for your TP-Link Smartplug device. Adjust additional settings as needed.
+![screenshot](/assets/img/plugins/tasmota/screenshot.png)
 
-## Settings Explained
+## Settings
+
+![settings](/assets/img/plugins/tasmota/settings.png)
+
+Once installed go into settings and enter the ip address for your Tasmota device. Adjust additional settings as needed.
+
+![settings](/assets/img/plugins/tasmota/tasmota_editor.png)
 
 - **Device**
   - The ip or hostname of sonoff device.
@@ -68,3 +69,18 @@ Once installed go into settings and enter the ip address for your TP-Link Smartp
   - When checked will run system command configured in **System Command On** setting after a delay in seconds configured in **System Command On Delay**.
 - **Cmd Off**
   - When checked will run system command configured in **System Command Off** setting after a delay in seconds configured in **System Command Off Delay**.
+  
+## Get Help
+
+If you experience issues with this plugin or need assistance please use the issue tracker at the plugin's Homepage linked on the right.
+
+### Additional Plugins
+
+Check out my other plugins [here](https://plugins.octoprint.org/by_author/#jneilliii)
+
+### Support My Efforts
+I, jneilliii, programmed this plugin for fun and do my best effort to support those that have issues with it, please return the favor and leave me a tip if you find this plugin helpful.
+
+[![paypal](/assets/img/plugins/tasmota/paypal-with-text.png)](https://paypal.me/jneilliii)
+
+<small>No paypal.me? Send funds via PayPal to jneilliii&#64;gmail&#46;com</small>
