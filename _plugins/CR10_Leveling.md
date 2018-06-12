@@ -14,11 +14,11 @@ tags:
 - leveling
 - bed level
 screenshots:
-- url: /assets/img/plugins/CR10Leveling/control.png
+- url: /assets/img/plugins/BedLeveling/control.png
   alt: Control Tab
-- url: /assets/img/plugins/CR10Leveling/settings.png
+- url: /assets/img/plugins/BedLeveling/settings.png
   alt: Settings
-featuredimage: /assets/img/plugins/CR10Leveling/control.png
+featuredimage: /assets/img/plugins/BedLeveling/control.png
 
 ---
 
