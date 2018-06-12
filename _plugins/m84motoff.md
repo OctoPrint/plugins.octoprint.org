@@ -25,6 +25,6 @@ tags:
 
 ---
     
-A plugin to intercept the gcode command M18 during the queueing stage and rewrite it as M84 before sending it to the printer (for compatibility with the Repetier line of firmware).
+A plugin to intercept the gcode command ```M18``` during the queueing stage and rewrite it as ```M84``` before sending it to the printer (for compatibility with the Repetier line of firmware).
 
-Note: Because this plugin intercepts the code during the queueing stage, that also includes manual gcode entry. Entering M18 in the terminal tab will also result in it being send to the printer as M84.
+Note: Because this plugin intercepts the code during the queueing stage, that also includes manual gcode entry. Entering ```M18``` in the terminal tab will also result in it being send to the printer as ```M84```, and as this plugin works in OctoPrint's server back end, no visible UI changes or settings are present.
