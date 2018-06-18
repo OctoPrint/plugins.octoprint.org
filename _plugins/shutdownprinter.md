@@ -7,7 +7,7 @@ description: Plugin for shutdown printer after finishing a print job
 author: devildant
 license: AGPLv3
 
-date: 2018-06-16
+date: 2018-06-18
 
 homepage: https://github.com/devildant/OctoPrint-ShutdownPrinter
 source: https://github.com/devildant/OctoPrint-ShutdownPrinter
