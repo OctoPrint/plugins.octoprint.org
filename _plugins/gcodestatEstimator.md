@@ -6,7 +6,7 @@ title: GcodeStat Estimator
 description: uses data put in to g-code by gcodestat to estimate time to finish print
 author: Bogdan Kecman
 license: unlicence
-date: 2018-05-18
+date: 2018-07-05
 homepage: https://github.com/arhi/OctoPrint-gcodestatEstimator
 source: https://github.com/arhi/OctoPrint-gcodestatEstimator
 archive: https://github.com/arhi/OctoPrint-gcodestatEstimator/archive/master.zip
