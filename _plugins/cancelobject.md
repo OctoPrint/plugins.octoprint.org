@@ -32,4 +32,4 @@ featuredimage: /assets/img/plugins/cancelobject/cancelobject.png
 
 This plugin allows the user cancel single objects during a print while
 allowing the remaining objects to print normally. Instructions for use with compatible slicers
-is provided on GitHub Homepage.
+is provided on the plugin's GitHub Homepage.
