@@ -30,7 +30,6 @@ featuredimage: /assets/img/plugins/cancelobject/cancelobject.png
 
 ---
 
-This plugin allows the user cancel single objects (or groups of objects) during a print while
-allowing the remaining objects to print normally. Currently, this functionality is limited to gcode
-sliced with Simplify3D using a unique process for each object (or group of objects). Regular expression
-settings will allow this to be used with other slicers if/when they include object-specific comments in gcode.
+This plugin allows the user cancel single objects during a print while
+allowing the remaining objects to print normally. Instructions for use with compatible slicers
+is provided on the plugin's GitHub Homepage.
