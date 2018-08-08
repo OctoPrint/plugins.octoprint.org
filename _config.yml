@@ -3,14 +3,12 @@ title: OctoPrint Plugin Repository
 short_title: Plugin Repo
 email: contact@octoprint.org
 description: The official OctoPrint Plugin Repository
-external: "http://plugins.octoprint.org"
+external: "https://plugins.octoprint.org"
 #external: "http://localhost:4000"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://plugins.octoprint.org" # the base hostname & protocol for your site
 twitter_username: OctoPrint3D
 github_username:  OctoPrint
-
-exclude: ["vendor", ".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "node_modules"]
 
 # Build settings
 highlighter: rouge
@@ -28,9 +26,15 @@ collections:
     # if you ever change this, also change the /plugins/ and / stripping routine in plugins.json!
     permalink: /plugins/:path/
 
+carbon: //cdn.carbonads.com/carbon.js?serve=CK7DT237&placement=pluginsoctoprintorg
+
 exclude:
 - CNAME
 - Gemfile
 - Gemfile.lock
 - vendor
 - "*.iml"
+- .rvmrc
+- .rbenv-version
+- node_modules
+- fetch_yt_preview

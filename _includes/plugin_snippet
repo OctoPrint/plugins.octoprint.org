@@ -1,5 +1,5 @@
 {% assign plugin = include.plugin %}
-<h3><a class="post-link" href="{{ plugin.url | prepend: site.baseurl }}">{{ plugin.title }}</a> {% if plugin.date %}<small>{% include plugin_date date=plugin.date %}</small>{% endif %}</h3>
+<h3><a class="post-link" href="{{ plugin.url | prepend: site.baseurl }}">{{ plugin.title }}</a> {% if plugin.date %}<small class="post-date">{% include plugin_date date=plugin.date %}</small>{% endif %}</h3>
 <p>
   {{ plugin.description }}
 </p>
