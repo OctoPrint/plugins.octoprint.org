@@ -62,7 +62,7 @@ A list of things that you can do:
 * Add active heaters on your enclosure and keep the temperature nice and high for large ABS
 * Use custom Gcode to control rapsberry pi GPIO
 * Use custom Gcode to control neopixel
-* Use custom Gcode to control enclosure temperaure
+* Use custom Gcode to control enclosure temperature
 * PWM controlled outputs
 * PWM controlled outputs based on temperature sensor
 * Active cooling for good PLA printing
