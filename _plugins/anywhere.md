@@ -155,7 +155,7 @@ OctoPrint Anywhere streams the webcam feed, bed/nozzle temperature, and other cr
     </div>
 </div>
 <div class="row">
-    <img src="/assets/img/plugins/anywhere/setup_screenshot3.png" alt="Step 4"/>
+    <img src="/assets/img/plugins/anywhere/setup_screenshot3.jpg" alt="Step 4"/>
     <div style='text-align: center; margin: 8px 0px 48px 0px;'>
         <i>Step 4</i>
     </div>
@@ -167,7 +167,7 @@ OctoPrint Anywhere streams the webcam feed, bed/nozzle temperature, and other cr
     </div>
 </div>
 <div class="row">
-    <img src="/assets/img/plugins/anywhere/setup_screenshot5.png" alt="Step 6"/>
+    <img src="/assets/img/plugins/anywhere/setup_screenshot5.jpg" alt="Step 6"/>
     <div style='text-align: center; margin: 8px 0px 48px 0px;'>
         <i>Step 6</i>
     </div>
