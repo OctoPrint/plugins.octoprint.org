@@ -3,7 +3,7 @@ layout: plugin
 
 id: anywhere
 title: OctoPrint Anywhere
-description: Remote monitoring and control of your 3D printers. From ANYWHERE. On your phone. No more port forwarding or VPN.
+description: Remote monitoring and control of your 3D printers. ANYWHERE. ON YOUR PHONE. No more port forwarding or VPN.
 author: Kenneth Jiang
 license: AGPLv3
 
@@ -75,9 +75,9 @@ compatibility:
 
 ## Why OctoPrint Anywhere?
 
-**Do you want to have a quick glance at the realtime webcam feed of your running print while you are at work or grocery-shopping?**
+Do you want to have a quick glance at the realtime webcam feed of your running print while you are at work or grocery-shopping?
 
-**Do you wish you had an easy way to remotely adjust the temperature, cancel or pause the print in case things go wrong, all from your phone?**
+Do you wish you had an easy way to remotely adjust the temperature, cancel or pause the print in case things go wrong, all from your phone?
 
 **If so, OctoPrint Anywhere is for you.**
 
@@ -100,13 +100,13 @@ OctoPrint Anywhere streams the webcam feed, bed/nozzle temperature, and other cr
 <div class="row">
     <div class="span6">
         <img src="/assets/img/plugins/anywhere/screenshot1.png" alt="Webcam Feed"/>
-        <div style='text-align: center; margin: 8px 0px 16px 0px;'>
+        <div style='text-align: center; margin: 8px 0px 24px 0px;'>
             <i>Webcam Feed</i>
         </div>
     </div>
     <div class="span6">
         <img src="/assets/img/plugins/anywhere/screenshot2.png" alt="Print Status Control"/>
-        <div style='text-align: center; margin: 8px 0px 16px 0px;'>
+        <div style='text-align: center; margin: 8px 0px 24px 0px;'>
             <i>Print Status Control</i>
         </div>
     </div>
@@ -114,13 +114,13 @@ OctoPrint Anywhere streams the webcam feed, bed/nozzle temperature, and other cr
 <div class="row">
     <div class="span6">
         <img src="/assets/img/plugins/anywhere/screenshot3.png" alt="Webcam Sharing"/>
-        <div style='text-align: center; margin: 8px 0px 16px 0px;'>
+        <div style='text-align: center; margin: 8px 0px 24px 0px;'>
             <i>Webcam Sharing</i>
         </div>
     </div>
     <div class="span6">
         <img src="/assets/img/plugins/anywhere/screenshot5.png" alt="Temperature Adjustment"/>
-        <div style='text-align: center; margin: 8px 0px 16px 0px;'>
+        <div style='text-align: center; margin: 8px 0px 24px 0px;'>
             <i>Temperature Adjustment</i>
         </div>
     </div>
@@ -128,18 +128,49 @@ OctoPrint Anywhere streams the webcam feed, bed/nozzle temperature, and other cr
 <div class="row">
     <div class="span12">
         <img src="/assets/img/plugins/anywhere/screenshot4.png" alt="On iPad or Laptop"/>
-        <div style='text-align: center; margin: 8px 0px 16px 0px;'>
+        <div style='text-align: center; margin: 8px 0px 24px 0px;'>
             <i>On iPad or Laptop</i>
         </div>
     </div>
 </div>
 
-## Installation And Setup
+## Installation And Setup In 6 Easy Steps
 
 <div class="row">
-        <img src="/assets/img/plugins/anywhere/setup_screenshot0.png" alt="On iPad or Laptop"/>
-        <img src="/assets/img/plugins/anywhere/setup_screenshot1.png" alt="On iPad or Laptop"/>
-        <img src="/assets/img/plugins/anywhere/setup_screenshot2.png" alt="On iPad or Laptop"/>
-        <img src="/assets/img/plugins/anywhere/setup_screenshot3.png" alt="On iPad or Laptop"/>
-        <img src="/assets/img/plugins/anywhere/setup_screenshot4.png" alt="On iPad or Laptop"/>
+    <img src="/assets/img/plugins/anywhere/setup_screenshot0.png" alt="Step 1"/>
+    <div style='text-align: center; margin: 8px 0px 48px 0px;'>
+        <i>Step 1</i>
+    </div>
 </div>
+<div class="row">
+    <img src="/assets/img/plugins/anywhere/setup_screenshot1.png" alt="Step 2"/>
+    <div style='text-align: center; margin: 8px 0px 48px 0px;'>
+        <i>Step 2</i>
+    </div>
+</div>
+<div class="row">
+    <img src="/assets/img/plugins/anywhere/setup_screenshot2.png" alt="Step 3"/>
+    <div style='text-align: center; margin: 8px 0px 48px 0px;'>
+        <i>Step 3</i>
+    </div>
+</div>
+<div class="row">
+    <img src="/assets/img/plugins/anywhere/setup_screenshot3.png" alt="Step 4"/>
+    <div style='text-align: center; margin: 8px 0px 48px 0px;'>
+        <i>Step 4</i>
+    </div>
+</div>
+<div class="row">
+    <img src="/assets/img/plugins/anywhere/setup_screenshot4.png" alt="Step 5"/>
+    <div style='text-align: center; margin: 8px 0px 48px 0px;'>
+        <i>Step 5</i>
+    </div>
+</div>
+<div class="row">
+    <img src="/assets/img/plugins/anywhere/setup_screenshot5.png" alt="Step 6"/>
+    <div style='text-align: center; margin: 8px 0px 48px 0px;'>
+        <i>Step 6</i>
+    </div>
+</div>
+
+Questions? Comments? [Email k@getanywhere.io](mailto:k@getanywhere.io)
