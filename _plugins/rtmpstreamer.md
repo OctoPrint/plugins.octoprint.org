@@ -7,7 +7,7 @@ description: Simple plugin to add a YouTube Live tab to OctoPrint.
 author: jneilliii
 license: AGPLv3
 
-date: 2017-07-23
+date: 2017-08-13
 
 homepage: https://github.com/jneilliii/OctoPrint-RTMPStreamer
 source: https://github.com/jneilliii/OctoPrint-RTMPStreamer
