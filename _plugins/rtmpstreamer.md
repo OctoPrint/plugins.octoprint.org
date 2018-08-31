@@ -3,7 +3,7 @@ layout: plugin
 
 id: rtmpstreamer
 title: OctoPrint-RTMPStreamer
-description: Simple plugin to add a YouTube Live tab to OctoPrint.
+description: Plugin that reencodes the mjpg stream provided by octopi/mjpgstreamer/yawcam and posts to any RTMP stream server (ie Twitch) and adds a tab that will allow for wathing configured stream assuming there is a webpage url that allows that type of connection.
 author: jneilliii
 license: AGPLv3
 
