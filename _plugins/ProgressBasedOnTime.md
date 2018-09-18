@@ -7,7 +7,7 @@ description: Replace file based progression by time based progression
 author: Celogeek
 license: AGPLv3
 
-date: 2018-09-01
+date: 2018-09-18
 
 homepage: https://github.com/celogeek/OctoPrint-ProgressBasedOnTime
 source: https://github.com/celogeek/OctoPrint-ProgressBasedOnTime
