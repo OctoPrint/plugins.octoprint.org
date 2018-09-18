@@ -7,7 +7,7 @@ description: Plugin to control Belkin Wemo devices from OctoPrint web interface.
 author: jneilliii
 license: AGPLv3
 
-date: 2018-09-15
+date: 2018-09-18
     
 homepage: https://github.com/jneilliii/OctoPrint-WemoSwitch
 source: https://github.com/jneilliii/OctoPrint-WemoSwitch
