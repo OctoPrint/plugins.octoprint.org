@@ -7,7 +7,7 @@ description: Plugin that overrides OctoPrint ETA to values from last M73 gcode s
 author: Jakub Furman
 license: AGPLv3
 
-date: 2018-09-05
+date: 2018-09-18
 
 homepage: https://github.com/sysadminsh/OctoPrint-M73ETAOverride
 source: https://github.com/sysadminsh/OctoPrint-M73ETAOverride
