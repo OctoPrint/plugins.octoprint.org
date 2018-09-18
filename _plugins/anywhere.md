@@ -3,7 +3,7 @@ layout: plugin
 
 id: anywhere
 title: OctoPrint Anywhere
-description: Remote monitoring and control of your 3D printers. ANYWHERE. ON YOUR PHONE. No more port forwarding or VPN.
+description: Remote monitoring and control of your 3D printers over the internet. ANYWHERE. ON YOUR PHONE. No more port forwarding or VPN.
 author: Kenneth Jiang
 license: AGPLv3
 
@@ -21,6 +21,7 @@ archive: https://github.com/kennethjiang/OctoPrint-Anywhere/archive/master.zip
 tags:
 - remote
 - monitor
+- monitoring
 - phone
 - control
 - webcam
@@ -75,13 +76,13 @@ compatibility:
 
 ## Why OctoPrint Anywhere?
 
-Do you want to have a quick glance at the realtime webcam feed of your running print while you are at work or grocery-shopping?
+Do you want to have a quick glance at the realtime webcam feed of your running print while you are at work, grocery-shopping, or from any place with internet access?
 
 Do you wish you had an easy way to remotely adjust the temperature, cancel or pause the print in case things go wrong, all from your phone?
 
 **If so, OctoPrint Anywhere is for you.**
 
-OctoPrint Anywhere streams the webcam feed, bed/nozzle temperature, and other critical status from your 3D printer to your phone via the cloud. Now you don't have to be on the same WiFi network as the OctoPrint to monitor and control your 3D printer. No more messing with your router to set up port forwarding (a security risk too) or VPN.
+OctoPrint Anywhere streams the webcam feed, bed/nozzle temperature, and other critical status from your 3D printer to your phone via the internet. Now you don't have to be on the same WiFi network as the OctoPrint to monitor and control your 3D printer. No more messing with your router to set up port forwarding (a security risk too) or VPN.
 
 ## Highlights of OctoPrint Anywhere
 
