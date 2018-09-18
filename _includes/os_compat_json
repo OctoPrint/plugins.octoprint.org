@@ -1,1 +1,0 @@
-[{% for os in include.entries %}{% if site.data.compat.os.map[os] %}{% for mapped in site.data.compat.os.map[os] %}{{ mapped | jsonify }}{% unless forloop.last %},{% endunless %}{% endfor %}{% else %}{{ os | jsonify }}{% endif %}{% unless forloop.last %},{% endunless %}{% endfor %}]

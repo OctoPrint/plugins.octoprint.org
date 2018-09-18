@@ -1,1 +1,0 @@
-{% for version in include.entries %}{% if version == "1.2.0" and forloop.length == 1%}all versions{% else %}{% include octoprint_human version=version %}{% unless forloop.last %}, {% endunless %}{% endif %}{% endfor %}

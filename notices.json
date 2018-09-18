@@ -1,6 +1,0 @@
----
-layout: null
----
-[
-{% for notice in site.data.notices %}{% unless forloop.first %},{% endunless %}{{ notice | jsonify }}{% endfor %}
-]

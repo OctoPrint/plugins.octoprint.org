@@ -1,1 +1,0 @@
-{% if include.version contains "=" or include.version contains ">" or include.version contains "<" %}{{ include.version | strip_html | strip_newlines | escape }}{% else %}{{ include.version | strip_html | strip_newlines | escape }}+{% endif %}

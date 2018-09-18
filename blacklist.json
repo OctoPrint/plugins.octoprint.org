@@ -1,6 +1,0 @@
----
-layout: null
----
-[
-{% for item in site.data.blacklist %}{% unless forloop.first %},{% endunless %}{{ item | jsonify }}{% endfor %}
-]
