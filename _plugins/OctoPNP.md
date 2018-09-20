@@ -47,6 +47,6 @@ OpenCV is used for the image processing part to measure exact positions and rota
 
 For details and documentation please refer to the project's github [repository](https://github.com/platsch/OctoPNP).
 
-This plugin is developed during a research [project](https://tams.informatik.uni-hamburg.de/research/3d-printing/conductive_printing/index.php) for integrated printing of electronics (wires and SMD-components) with FDM-printers.
+This plugin is developed during a research project for integrated printing of electronics (wires and SMD-components) with FDM-printers.
 
 The development branch of the Slic3r extensions for routing circuits in a 3D-object by importing EAGLE schematics can be found at [https://github.com/platsch/Slic3r/tree/electronics](https://github.com/platsch/Slic3r/tree/electronics).
