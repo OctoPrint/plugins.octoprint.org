@@ -18,6 +18,8 @@ tags:
 - upload
 - filemanagement
 
+up_for_adoption: https://github.com/OctoPrint/OctoPrint-Autoselect/issues/6
+
 ---
 
 The Autoselect Plugin will automatically select newly uploaded files for

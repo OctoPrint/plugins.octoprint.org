@@ -44,6 +44,7 @@ layout: default
   <div class="content plugin-content row-fluid">
     <article class="post-content span8">
       {% if page.disabled %}<div class="alert alert-danger"><h3>This plugin is currently marked as disabled</h3>{{ page.disabled | markdownify }}</div>{% endif %}
+      {% if page.up_for_adoption %}<div class="alert"><h3>This plugin is up for adoption</h3>The current maintainer of this plugin is looking for someone to take over maintenance. <a href="{{ page.up_for_adoption }}" target="_blank" rel="noopener noreferrer">Learn more...</a></div>{% endif %}
 
       <p class="lead">
         {{ page.description | strip_html | escape }}

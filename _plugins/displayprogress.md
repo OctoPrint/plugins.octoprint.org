@@ -26,6 +26,8 @@ screenshots:
 
 featuredimage: /assets/img/plugins/displayprogress/example.jpg
 
+up_for_adoption: https://github.com/OctoPrint/OctoPrint-DisplayProgress/issues/10
+
 ---
 
 A plugin that sends `M117` commands to the printer to display the progress

@@ -18,6 +18,9 @@ featuredimage: /assets/img/plugins/growl/notification.png
 date: 2015-04-14
 tags: 
 - notification
+
+up_for_adoption: https://github.com/OctoPrint/OctoPrint-Growl/issues/7
+
 ---
 
 The Growl plugin for OctoPrint allows to send notifications about certain printing events to a Growl instance on your
@@ -27,8 +30,6 @@ local network. Right now it sends notifications for the following events:
   * Printjob done
   * File uploaded (optional)
   * Timelapse done (optional)
- 
-Please note that it's a work in progress.
 
 ## Configuration
 

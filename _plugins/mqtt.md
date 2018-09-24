@@ -20,6 +20,9 @@ compatibility:
   octoprint:
   - 1.3.5
 date: 2015-04-11
+
+up_for_adoption: https://github.com/OctoPrint/OctoPrint-MQTT/issues/47
+
 ---
 
 This is an OctoPrint Plugin that adds support for [MQTT](http://mqtt.org/) to OctoPrint.

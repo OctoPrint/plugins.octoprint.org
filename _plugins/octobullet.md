@@ -22,10 +22,12 @@ featuredimage: /assets/img/plugins/octobullet/example_push.png
 compatibility:
   octoprint:
   - 1.2.4
+  
+up_for_adoption: https://github.com/OctoPrint/OctoPrint-Pushbullet/issues/24
+  
 ---
 
 This plugin adds support for [Pushbullet notifications](https://www.pushbullet.com/) to OctoPrint.
 
 At the current state OctoPrint will send a notification when a print job finishes. If a webcam is available, an image
 of the print result will be captured and included in the notification.
-
