@@ -4,7 +4,7 @@ layout: plugin
 id: autoselect
 title: Autoselect
 description: Automatically selects freshly uploaded files for printing if no print job is currently active.
-author: Gina Häußge
+author: Jubaleth, Gina Häußge
 license: AGPLv3
 
 date: 2015-06-27
@@ -17,8 +17,6 @@ tags:
 - ux
 - upload
 - filemanagement
-
-up_for_adoption: https://github.com/OctoPrint/OctoPrint-Autoselect/issues/6
 
 ---
 
