@@ -4,7 +4,7 @@ layout: plugin
 id: displayprogress
 title: DisplayProgress
 description: Displays the print progress on the printer's display
-author: Gina Häußge
+author: jneilliii, Gina Häußge
 license: AGPLv3
 
 date: 2015-08-03
@@ -25,8 +25,6 @@ screenshots:
   caption: Example of operation
 
 featuredimage: /assets/img/plugins/displayprogress/example.jpg
-
-up_for_adoption: https://github.com/OctoPrint/OctoPrint-DisplayProgress/issues/10
 
 ---
 
