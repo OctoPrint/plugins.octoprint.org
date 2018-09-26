@@ -8,7 +8,7 @@ author: Jacob Paniagua
 license: AGPLv3
 
 # today's date in format YYYY-MM-DD, e.g.
-date: 2018-09-10
+date: 2018-09-26
 
 homepage: https://github.com/MrBreadWater/project-kronos-data-collector
 source: https://github.com/MrBreadWater/project-kronos-data-collector
