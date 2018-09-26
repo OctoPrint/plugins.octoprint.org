@@ -28,13 +28,13 @@ tags:
 
 ---
 
-#Project Kronos
+# Project Kronos
 
 Project Kronos is an effort to create a webcam-based Neural Network to classify snapshots from a 3D Printer as "Failed" or "Successful". 
 This will be implemented in real-time as an Octoprint plugin to automatically pause the printer and alert the user of the potential error.
 
 
-#The Project Kronos Data Collector
+# The Project Kronos Data Collector
 
 As you may know, training a neural network requires a massive amount of data to create a complete model that can accurately classify an input. 
 In this case, Project Kronos will need thousands, possibly hundreds of thousands, of images to train the model with. 
