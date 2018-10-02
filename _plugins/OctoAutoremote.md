@@ -36,7 +36,7 @@ A simple plugin to send messages to the Android app [AutoRemote](https://play.go
 
 ## Setup
 
-Install via the bundled [Plugin Manager](https://github.com/foosel/OctoPrint/wiki/Plugin:-Plugin-Manager)
+Install via the bundled [Plugin Manager](http://docs.octoprint.org/en/master/bundledplugins/pluginmanager.html)
 via this URL:
 
     https://github.com/trunzoc/Octoprint_Autoremote/archive/master.zip
