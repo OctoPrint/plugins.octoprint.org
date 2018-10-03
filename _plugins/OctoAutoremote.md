@@ -12,7 +12,7 @@ date: 2018-09-28
 
 homepage: https://github.com/trunzoc/Octoprint_AutoRemote
 source: https://github.com/trunzoc/Octoprint_AutoRemote
-archive: https://github.com/trunzoc/Octoprint_AutoRemote
+archive: https://github.com/trunzoc/Octoprint_Autoremote/archive/master.zip
 
 # Set this to true if your plugin uses the dependency_links setup parameter to include
 # library versions not yet published on pypi. SHOULD ONLY BE USED IF THERE IS NO OTHER OPTION!
