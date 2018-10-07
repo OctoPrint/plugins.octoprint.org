@@ -80,9 +80,6 @@ compatibility:
 
   os:
   - linux
-  - windows
-  - macos
-  - freebsd
 
 ---
 
