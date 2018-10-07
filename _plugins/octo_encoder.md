@@ -21,7 +21,13 @@ archive: https://github.com/Akex2/Octo_Filament_Encoder/archive/master.zip
 
 # TODO
 tags:
-- notification
+- action
+- automatic
+- commands
+- control
+- filament
+- monitoring
+- encoder
 
 # TODO
 screenshots:
