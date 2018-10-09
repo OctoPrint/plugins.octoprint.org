@@ -3,7 +3,7 @@ layout: plugin
 
 id: ABL_Expert
 title: Auto bed leveling expert
-description: Add features for auto bed leveling and z probe handling on Marlin printers
+description: Marlin auto bed leveling control, mesh correction, and z probe handling
 author: razer
 license: AGPLv3
 date: 2018-10-04
