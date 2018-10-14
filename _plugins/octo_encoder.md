@@ -7,8 +7,7 @@ description: filament checker with encoder
 author: Alex
 license: AGPLv3
 
-# TODO
-date: 2018-05-10
+date: 2018-10-07
 
 homepage: https://github.com/Akex2/Octo_Filament_Encoder
 source: https://github.com/Akex2/Octo_Filament_Encoder
@@ -21,7 +20,13 @@ archive: https://github.com/Akex2/Octo_Filament_Encoder/archive/master.zip
 
 # TODO
 tags:
-- notification
+- action
+- automatic
+- commands
+- control
+- filament
+- monitoring
+- encoder
 
 # TODO
 screenshots:
@@ -74,9 +79,6 @@ compatibility:
 
   os:
   - linux
-  - windows
-  - macos
-  - freebsd
 
 ---
 
