@@ -3,7 +3,7 @@ layout: plugin
 id: GPX
 title: GPX
 description: Use OctoPrint with s3g/x3g printers (like FlashForge and older MakerBot)
-archive: https://markwal.github.io/OctoPrint/OctoPrint-GPX.tar.gz
+archive: https://markwal.github.io/octoprint-download/OctoPrint-GPX.tar.gz
 homepage: https://github.com/markwal/OctoPrint-GPX
 source: https://github.com/markwal/OctoPrint-GPX
 author: Mark Walker
@@ -14,8 +14,8 @@ tags:
 - protocol
 screenshots:
 - alt: GPX
-  url: https://markwal.github.io/OctoPrint/gpx.png
-featuredimage: https://markwal.github.io/OctoPrint/gpx.png
+  url: https://markwal.github.io/octoprint-download/gpx.png
+featuredimage: https://markwal.github.io/octoprint-download/gpx.png
 compatibility:
   os:
   - linux

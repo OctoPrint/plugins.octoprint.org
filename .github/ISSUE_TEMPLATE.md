@@ -1,3 +1,5 @@
+READ FIRST, THEN DELETE:
+
 What kinds of issues you should report here:
 
   * missing or broken homepage, source or download URLs

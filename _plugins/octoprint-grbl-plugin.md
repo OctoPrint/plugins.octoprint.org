@@ -12,7 +12,7 @@ date: 2017-05-11
 
 homepage: https://github.com/mic159/octoprint-grbl-plugin
 source: https://github.com/mic159/octoprint-grbl-plugin
-archive: https://github.com/mic159/octoprint-grbl-plugin/archive/1.0.0.zip
+archive: https://github.com/mic159/octoprint-grbl-plugin/archive/master.zip
 
 tags:
 - grbl

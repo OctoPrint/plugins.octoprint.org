@@ -1,10 +1,10 @@
 ---
-layout: page
+layout: plugin_list
 title: Plugins by Name
 ---
 
 <ul>
-  {% assign sorted_plugins = (site.plugins | sort: 'title') %}
+  {% assign sorted_plugins = site.plugins | sort: 'title' %}
   {% for plugin in sorted_plugins %}
     <li>{% include plugin_snippet plugin=plugin %}</li>
   {% endfor %}

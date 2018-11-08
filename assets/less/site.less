@@ -9,21 +9,12 @@
     }
 };
 
-@import url(https://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic);
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
+@import "webfonts.less";
 
 @import "mixins.less";
 @import "variables.less";
 
-@bqIcofontPath: "../font";
-@font-face {
-  font-family:'bqreaders_icofont';
-  src: url('@{bqIcofontPath}/bqreaders_icofont.eot');
-  src: url('@{bqIcofontPath}/bqreaders_icofont.eot?#iefix') format('embedded-opentype'),
-       url('@{bqIcofontPath}/bqreaders_icofont.woff') format('woff'), 
-       url('@{bqIcofontPath}/bqreaders_icofont.ttf') format('truetype'),
-       url('@{bqIcofontPath}/bqreaders_icofont.svg#bqreaders_icofont') format('svg'); 
-}
+@import "yt-with-consent.less";
 
 .responsive-full-width {
   @media (max-width: 767px) {
@@ -51,12 +42,20 @@ body, html {
     }
   }
 
-  .bqlogo {
-    padding: 5px 0;
+  .social-navbar {
+    margin-top: -2px;
+    font-size: 150%;
+    li {
+      margin-left: 10px;
+    }
   }
 }
 
 .navbar .nav > li > a { padding: 12px 10px 9px; }
+
+.octo-heart {
+  color: red;
+}
 
 h1 {
   font-family: @serifFontFamily;
@@ -72,6 +71,10 @@ h1, h2, h3, h4, h5, h6 {
   a {
     color: @textColor;
   }
+}
+
+.post-date {
+  white-space: nowrap;
 }
 
 .page-header {
@@ -119,6 +122,13 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.plugin-list {
+  .ad {
+    text-align: center;
+    margin: 2em 0 0;
+  }
+}
+
 .plugin-content {
   dl {
     dd {
@@ -133,6 +143,15 @@ h1, h2, h3, h4, h5, h6 {
     dd pre {
       word-wrap: break-word;
       white-space: pre-wrap;
+    }
+  }
+
+  dl.adbox {
+    margin-top: 0;
+
+    .ad {
+      text-align: center;
+      margin: 0;
     }
   }
 
@@ -152,12 +171,12 @@ footer {
   padding-bottom: 60px;
   .responsive-full-width;
 
-  height: 170px;
+  height: 190px;
   @media (min-width: 768px) and (max-width: 979px) {
-    height: 210px;
+    height: 230px;
   }
   @media (max-width: 767px) {
-    height: 400px;
+    height: 350px;
   }
   margin-top: -266px;
 
@@ -192,3 +211,86 @@ footer {
 }
 
 .navbar-search .search-query { line-height: inherit; }
+
+.blacklist-table {
+  .blacklist-plugin {
+    width: 50%;
+  }
+  .blacklist-versions,
+  .blacklist-octoversions {
+    width: 25%;
+    text-align: center;
+  }
+
+  .blacklist-reason {
+    p:first-child::before {
+      content: 'Reason: ';
+      font-weight: bold;
+    }
+  }
+}
+
+// Carbon ads
+
+#carbonads {
+  display: inline-block;
+
+  overflow: hidden;
+  padding: 0;
+  font-family: Verdana, "Helvetica Neue", Helvetica, sans-serif;
+  line-height: 1.5;
+
+  width: @adwidth;
+  max-height: @adheight;
+
+  span {
+    position: relative;
+    display: block;
+    overflow: hidden;
+  }
+
+  .carbon-img {
+    float: left;
+    margin-right: @admargin;
+  }
+
+  .carbon-text {
+    display: block;
+    float: left;
+    max-width: @adcolumn;
+    text-align: left;
+    font-size: .8em;
+    color: #333;
+  }
+
+  .carbon-poweredby {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: .5em;
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: 1px;
+    color: #333;
+  }
+}
+
+// Responsive iframes
+
+.responsive_iframe {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+
+  div.yt-with-consent,
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
