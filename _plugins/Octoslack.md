@@ -54,7 +54,10 @@ An OctoPrint plugin for monitoring your printer and prints via Slack or Mattermo
  - Support for inclusion of RasPi temperature, bed temperature, nozzle temperates, and nozzle height
  - Custom bot name/icon/emoji
  - Optional inclusion of printer snapshot images with each message
-     - Support for snapshot hosting on either Amazon S3 or Imgur (with album support)
+     - Support for snapshot hosting via Amazon S3, Minio, Imgur (with album support), or Slack attachments
+     - Slack attachments requires use of the Slack API Token
+ - Optional upload of rendered timelapse video to configured hosting service
+     - Excluding Imgur which does not support video uploads
  - Support for additional snapshot images from IP cameras
 
 # Supported Events #
