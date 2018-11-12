@@ -7,7 +7,7 @@ description: Plugin to control Tuya based Smartplug devices from OctoPrint web i
 author: ziirish
 license: AGPLv3
 
-date: 2018-11-05
+date: 2018-11-12
     
 homepage: https://github.com/ziirish/OctoPrint-TuyaSmartplug
 source: https://github.com/ziirish/OctoPrint-TuyaSmartplug
