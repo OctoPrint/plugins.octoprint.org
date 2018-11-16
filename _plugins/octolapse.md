@@ -6,7 +6,7 @@ title: Octolapse
 description: Create a stabilized timelapse of your 3D prints.  Highly customizable, loads of presets, lots of fun.  Requires OctoPrint 1.3.9 or higher.
 author: Brad Hochgesang
 license: AGPL-3.0
-date: 2018-11-15
+date: 2018-03-24
 
 homepage: https://formerlurker.github.io/Octolapse/
 source: https://github.com/FormerLurker/Octolapse/
@@ -91,7 +91,7 @@ If you are upgrading from [v0.3.1](https://github.com/FormerLurker/Octolapse/rel
 * Control the number of **rendering threads** to reduce rendering time.
 ## To make good timelapses, you need good snapshots
 * Slow camera or low frame rate?  Octolapse allows you to **set a snapshot delay** before taking a snapshot to allow your camera enough time to get a clear image.
-* **Control your camera settings** when using [mjegstreamer](https://sourceforge.net/projects/mjpg-streamer/) including: contrast, brightness, focus, white balance, pan, tilt, zoom, and much more.  You can apply your custom settings before each print.
+* **Control your camera settings** when using [mjpg-streamer](https://sourceforge.net/projects/mjpg-streamer/) including: contrast, brightness, focus, white balance, pan, tilt, zoom, and much more.  You can apply your custom settings before each print.
 * **Rotate, flip, and transpose your snapshots**
 * Use custom camera scripts to **trigger a DSLR**, post-process images, configure your camera, turn lighting on and off, control **GPIO**, or practically anything you can think of!  Five script types are available.
 * Use **Multiple cameras** to create multiple timelapses.
