@@ -21,8 +21,8 @@ tags:
 - marlin
 
 screenshots:
-- url: https://framagit.org/razer/Octoprint_ABL_Expert/blob/master/screenshots/2.png
-- url: https://framagit.org/razer/Octoprint_ABL_Expert/blob/master/screenshots/1.png
+- url: https://framagit.org/razer/Octoprint_ABL_Expert/raw/master/screenshots/2.png
+- url: https://framagit.org/razer/Octoprint_ABL_Expert/raw/master/screenshots/1.png
 
 compatibility:
   octoprint:
