@@ -10,6 +10,4 @@
   - "<1.3.6"
   reason: "[Issue that can render the UI completely non-functional](https://github.com/jneilliii/OctoPrint-TPLinkSmartplug/issues/19)."
 - plugin: roomtemp
-  octoversions:
-  - "<1.3.10rc3"
   reason: "[Issue that can break the server startup](https://github.com/l00ma/OctoPrint-roomTemp/issues/16)."
