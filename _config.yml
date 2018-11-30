@@ -38,3 +38,6 @@ exclude:
 - .rbenv-version
 - node_modules
 - fetch_yt_preview
+
+plugins:
+- jekyll-redirect-from

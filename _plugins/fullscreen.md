@@ -25,5 +25,7 @@ screenshots:
 
 featuredimage: /assets/img/plugins/fullscreen_webcam/main.jpg
 
+redirect_from: "/plugins/fullscreen_webcam/"
+
 ---
 This plugin will allow you to open the webcam feed in fullscreen mode by double clicking the image. It will show a bar at the bottom of the image with information about print time, remaining time, temperatures and a pause button.
