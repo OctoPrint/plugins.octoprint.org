@@ -7,7 +7,7 @@ description: Octoprint plugin for print completion notifications using Signal.
 author: Andrew Erickson
 license: AGPLv3
 
-date: 2018-12-01
+date: 2018-12-04
 
 homepage: https://github.com/aerickson/OctoPrint_Signal-Notifier
 source: https://github.com/aerickson/OctoPrint_Signal-Notifier
