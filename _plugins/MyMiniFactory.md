@@ -18,7 +18,7 @@ tags:
 - Remote
 
 screenshots:
-- url: /assets/img/plugins/myminifactory_tab.png
+- url: /assets/img/plugins/MyMiniFactory/myminifactory_tab.png
   alt: MyMiniFactory Tab
   caption: MyMiniFactory
 
