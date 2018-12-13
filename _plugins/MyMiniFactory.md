@@ -18,9 +18,21 @@ tags:
 - Remote
 
 screenshots:
-- url: /assets/img/plugins/MyMiniFactory/myminifactory_tab.png
+- url: /assets/img/plugins/MyMiniFactory/myminifactory_plugin_tab.png
   alt: MyMiniFactory Tab
-  caption: MyMiniFactory
+  caption: MyMiniFactory Plugin Tab
+- url: /assets/img/plugins/MyMiniFactory/myminifactory_plugin_settings.png
+  alt: MyMiniFactory Plugin Settings
+  caption: MyMiniFactory Plugin Settings
+- url: /assets/img/plugins/MyMiniFactory/myminifactory_app_printer_connect.png
+  alt: MyMiniFactory Mobile App Connect Printer
+  caption: MyMiniFactory Mobile App Connect Printer
+- url: /assets/img/plugins/MyMiniFactory/myminifactory_app_print_preview.png
+  alt: MyMiniFactory Mobile App Print Preview
+  caption: MyMiniFactory Mobile App Print Preview
+- url: /assets/img/plugins/MyMiniFactory/myminifactory_app_printer_queue.png
+  alt: MyMiniFactory Mobile App Print Queue
+  caption: MyMiniFactory Mobile App Print Queue
 
 featuredimage: /assets/img/plugins/MyMiniFactory/myminifactory_logo_128.png
 
