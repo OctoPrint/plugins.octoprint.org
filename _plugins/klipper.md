@@ -16,7 +16,10 @@ archive: https://github.com/mmone/OctoPrintKlipper/archive/master.zip
 follow_dependency_links: false
 
 tags:
-- klipper, firmware, control, monitor
+- klipper
+- firmware
+- control
+- monitor
 
 screenshots:
 - url: /assets/img/plugins/klipper/message-log.png
