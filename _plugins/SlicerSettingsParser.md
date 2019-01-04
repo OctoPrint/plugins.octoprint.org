@@ -22,7 +22,7 @@ tags:
 
 **NOTE: Only supports Slic3r and Simplify3D currently; suggest more in issues; contributions welcome!**
 
-*Note: this plugin has not been test with versions under 1.3.10; they may not work!*
+*Note: this plugin has not been tested with versions under 1.3.10; they may not work!*
 
 *This plugin is useless without another plugin to use the metadata. Those can be found [here](/by_tag/#tag-slicer-settings).*
 
