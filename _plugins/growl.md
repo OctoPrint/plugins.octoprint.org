@@ -44,7 +44,7 @@ you'll also be able to see all the Growl instances on your local network that Oc
 
 By default only the notifications for "Printjob started" and "Printjob done" are enabled. If you also want to get 
 notification about the other events, you'll have to **tell Growl**. OctoPrint will send them all, but your local Growl
-instance needs to be told to also display them. You can do this in the configuration of your Growl service. For example,
-this is how it looks in [Growl for Windows](http://www.growlforwindows.com/gfw/):
+instance needs to be told to also display them. You can do this in the configuration of your Growl service. This
+is how it might look:
 
 ![Growl Plugin: Example of granular notification configuration in Growl for Windows]({% include canonic_url url="/assets/img/plugins/growl/win_config.png" %})
