@@ -12,7 +12,7 @@ date: 2019-01-28
 
 homepage: https://github.com/n3bojs4/octoprint-LCD1602
 source: https://github.com/n3bojs4/octoprint-LCD1602
-archive: archive link to install your plugin via pip, e.g. from github: https://github.com/n3bojs4/OctoPrint-Lcd1602/archive/master.zip
+archive: https://github.com/n3bojs4/OctoPrint-Lcd1602/archive/master.zip
 
 # Set this to true if your plugin uses the dependency_links setup parameter to include
 # library versions not yet published on pypi. SHOULD ONLY BE USED IF THERE IS NO OTHER OPTION!
