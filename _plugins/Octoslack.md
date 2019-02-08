@@ -24,6 +24,20 @@ tags:
 - notification
 - progress
 - mobile
+- monitor
+- monitoring
+- remote monitoring
+- filament runout
+- s3
+- imgur 
+- gcode
+- camera
+- webcam
+- eta
+- finish time
+- print time
+- snapshots
+- status
 
 screenshots:
 - url: /assets/img/plugins/Octoprint/Octoslack-PrintStarted.png
@@ -70,7 +84,8 @@ An OctoPrint plugin for monitoring your printer and prints via Slack or Mattermo
  - Print progress (% complete)
  - Print progress (time interval)
  - Print progress (Z height change)
- - G-code sent to printer
+ - G-code sent to the printer
+ - G-code received from the printer (including filament runout messages)
  - Timelapse render started
  - Timelapse render finished
  - Timelapse render failed
