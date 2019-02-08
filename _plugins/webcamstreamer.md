@@ -7,7 +7,7 @@ description: Plugin that re-encodes the webcam and streams it to streaming sites
 author: Adi Linden
 license: AGPLv3
 
-date: 2019-01-26
+date: 2019-02-08
 
 homepage: https://github.com/adilinden-oss/octoprint-webcamstreamer
 source: https://github.com/adilinden-oss/octoprint-webcamstreamer
