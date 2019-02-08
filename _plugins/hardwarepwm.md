@@ -7,7 +7,7 @@ description: Plugin for true hardware PWM on the Raspberry Pi
 author: Dario Rostirolla
 license: AGPLv3
 
-date: 2019-02-01
+date: 2019-02-08
 
 homepage: https://github.com/pastapojken/OctoPrint-Hardwarepwm
 source: https://github.com/pastapojken/OctoPrint-Hardwarepwm
