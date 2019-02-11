@@ -41,7 +41,7 @@ editing it accordingly.
     and points to your plugin's repository.
   
 Be aware that plugins that don't follow the above will not be allowed to register on the repository. If you have any questions
-about any of these points, feel free to get in touch [on the forum](https://discourse.octoprint.org/c/development).
+about any of these points, feel free to get in touch [on the forum](https://community.octoprint.org/c/development).
 
 ---
 
@@ -198,7 +198,7 @@ If all is in the green, follow these steps:
         ``preview`` parameter to the include.
 
     If you are unsure about how something should be structured take a look at the existing plugins or 
-    [ask on the forum](https://discourse.octoprint.org/c/development).
+    [ask on the forum](https://community.octoprint.org/c/development).
 
  4. Ideally, you'll test that your plugin gets listed correctly and the plugin page looks
     as expected. For this you'll need to install [Jekyll](http://jekyllrb.com/), which is what [Github Pages](https://pages.github.com/) and hence
