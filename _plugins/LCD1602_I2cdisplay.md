@@ -3,7 +3,8 @@ layout: plugin
 
 id: LCD1602_I2cdisplay
 title: octoprint-LCD1602
-description: This plug-in allows you to control a 16X2 lcd display (hd44780 connected to port I2C) to display the octoprint status. It is useful for people like me who have a printer without a display. It indicates on which port the printer is connected, the progress of printing. It also displays the remaining print time (thanks to a simple method).
+description: This plug-in allows you to control a 16X2 lcd display (hd44780 connected to port I2C) to display the octoprint status. It is useful for people like me who have a printer without a display. It indicates on which port the printer is connected, the progress of printing. It also displays the remaining print time (thanks to a simple method). See https://github.com/n3bojs4/octoprint-LCD1602/blob/master/CHANGELOG.md for more details.
+
 author: n3bojs4
 license: AGPLv3
 
