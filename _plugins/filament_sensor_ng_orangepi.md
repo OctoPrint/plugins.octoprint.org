@@ -6,7 +6,7 @@ title: FilamentSensor OrangePi
 description: A filament monitor that pauses the print when your filament runs out and lets you restart it.
 author: Deadly667
 license: GPLv3
-date: 2019-02-09
+date: 2019-02-18
 
 homepage: https://github.com/deadly667/Octoprint-Filament-Sensor-ng-OrangePi
 source: https://github.com/deadly667/Octoprint-Filament-Sensor-ng-OrangePi
