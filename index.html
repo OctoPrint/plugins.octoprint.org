@@ -3,9 +3,9 @@ layout: plugin_list
 title: OctoPrint Plugin Repository
 ---
 
-<h2><i class="icon-asterisk"></i> Most recently added plugins</h2>
+<h2><i class="fa fa-asterisk"></i> Most recently added plugins</h2>
 <div>
-  <small class="pull-right"><a href="{% include canonic_url url='/feed.xml' %}"><i class="icon-rss"></i> RSS Feed</a></small>
+  <small class="pull-right"><a href="{% include canonic_url url='/feed.xml' %}"><i class="fa fa-rss"></i> RSS Feed</a></small>
 </div>
 <ul>
   {% assign sorted_plugins = site.plugins | sort: 'date', 'last' | reverse %}
