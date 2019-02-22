@@ -15,7 +15,7 @@ archive: https://github.com/markwal/OctoPrint-PolarCloud/archive/master.zip
 
 # Set this to true if your plugin uses the dependency_links setup parameter to include
 # library versions not yet published on PyPi. SHOULD ONLY BE USED IF THERE IS NO OTHER OPTION!
-follow_dependency_links: true
+follow_dependency_links: false
 
 tags:
 - cloud
