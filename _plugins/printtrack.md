@@ -33,15 +33,15 @@ tags:
 
 # TODO
 screenshots:
-- url: /assets/img/plugins/printrack/printrack_settings.png
+- url: /assets/img/plugins/printtrack/printtrack_settings.png
   alt: screenshot showing the options menu of customizability
   caption: The settings that can be changed as of version 1.0.2
-- url: /assets/img/plugins/printrack/printrack_title.png
+- url: /assets/img/plugins/printtrack/printtrack_title.png
   alt: screenshot of the title bar replacement
   caption: The title of your octoprint window being changed to the status of the printer
 
 # TODO
-featuredimage: /assets/img/plugins/printrack/printrack_title.png
+featuredimage: /assets/img/plugins/printtrack/printtrack_title.png
 
 # TODO
 # You only need the following if your plugin requires specific OctoPrint versions or
