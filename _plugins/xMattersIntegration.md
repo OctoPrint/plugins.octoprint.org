@@ -8,7 +8,7 @@ author: svv2014
 license: AGPLv3
 
 # today's date in format YYYY-MM-DD, e.g.
-date: 2019-03-01
+date: 2019-03-04
 
 homepage: https://github.com/svv2014/OctoPrint-xMatters-integration
 source: https://github.com/svv2014/OctoPrint-xMatters-integration
