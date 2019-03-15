@@ -87,7 +87,7 @@ compatibility:
 <div class="row">
   <div class="span9 offset1" style="display: flex;">
     <div style="display: flex; flex-flow: column; align-items: center; justify-content: space-between; padding: 0 24px;">
-      <img style="max-width: 75px; max-height: 75px; margin-bottom: 16px; vertical-align: middle;" src="/assets/img/plugins/thespaghettidetective_beta/webcam.png">
+      <img style="max-width: 75px; max-height: 75px; margin-bottom: 16px; vertical-align: middle;" alt="Webcam" src="/assets/img/plugins/thespaghettidetective_beta/webcam.png">
       <i class="fas fa-arrow-down fa-3x" style="color: #6c757d;"></i>
     </div>
     <div>
@@ -100,7 +100,7 @@ compatibility:
 <div class="row">
   <div class="span9 offset1" style="display: flex;">
     <div style="display: flex; flex-flow: column; align-items: center; justify-content: space-between; padding: 0 24px;">
-      <img style="max-width: 75px; max-height: 75px; margin: 16px 0px; vertical-align: middle;" src="/assets/img/plugins/thespaghettidetective_beta/gauge.png">
+      <img style="max-width: 75px; max-height: 75px; margin: 16px 0px; vertical-align: middle;" alt="Gauge" src="/assets/img/plugins/thespaghettidetective_beta/gauge.png">
       <i class="fas fa-arrow-down fa-3x" style="color: #6c757d;"></i>
     </div>
     <div style="margin-top: 16px;">
@@ -112,7 +112,7 @@ compatibility:
 <div class="row">
   <div class="span9 offset1" style="display: flex;">
     <div style="display: flex; flex-flow: column; align-items: center; justify-content: space-between; padding: 0 24px;">
-      <img style="max-width: 75px; max-height: 75px; margin: 16px 0px; vertical-align: middle;" src="/assets/img/plugins/thespaghettidetective_beta/icon_sms.png">
+      <img style="max-width: 75px; max-height: 75px; margin: 16px 0px; vertical-align: middle;" alt="Alert" src="/assets/img/plugins/thespaghettidetective_beta/icon_sms.png">
       <i class="fas fa-arrow-down fa-3x" style="color: #6c757d;"></i>
     </div>
     <div style="margin-top: 4px;">
@@ -125,7 +125,7 @@ compatibility:
 <div class="row">
   <div class="span9 offset1" style="display: flex;">
     <div style="display: flex; flex-flow: column; align-items: center; justify-content: space-between; padding: 0 24px;">
-      <img style="max-width: 75px; max-height: 75px; margin: 16px 0px; vertical-align: middle;" src="/assets/img/plugins/thespaghettidetective_beta/save.png">
+      <img style="max-width: 75px; max-height: 75px; margin: 16px 0px; vertical-align: middle;" alt="Save" src="/assets/img/plugins/thespaghettidetective_beta/save.png">
     </div>
     <div style="margin-top: 2px;">
       <h4>Save</h4>
