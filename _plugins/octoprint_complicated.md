@@ -1,7 +1,7 @@
 ---
 layout: plugin
 
-id: complicated
+id: octoprint_complicated
 title: OctoPrint-Complicated
 description: Display Print Progress on your Apple Watch using the Complicated iOS App
 author: Mike Lyons
