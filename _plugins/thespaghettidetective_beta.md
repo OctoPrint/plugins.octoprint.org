@@ -147,7 +147,7 @@ If you run into any difficulties, check out the [Setup Guide](https://thespaghet
 
 Yes and No.
 
-* First and foremost, The Spaghetti Detective is an [open source project](https://github.com/TheSpaghettiDetective). You can always grab the code and run the server yourself. Commercial use of the source code is restricted.
+* First and foremost, The Spaghetti Detective is an [open source project](https://github.com/TheSpaghettiDetective). You can always grab the code and run the server yourself.
 * If you want to skip the hassle of setting up the server, you can use The Spaghetti Detective cloud, which will be free to all beta testers during beta testing.
 * After we come out of beta, you can choose to stay as a free account with limited service, or upgrade to a paid account if you want unrestricted access and features. Check out [how the future pricing will look like](https://www.thespaghettidetective.com/#pricing).
 
