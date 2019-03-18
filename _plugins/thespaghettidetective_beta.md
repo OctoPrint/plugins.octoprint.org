@@ -12,7 +12,7 @@ date: 2019-03-18
 
 homepage: https://www.thespaghettidetective.com
 source: https://github.com/TheSpaghettiDetective/OctoPrint-TheSpaghettiDetective
-archive: https://github.com/TheSpaghettiDetective/TheSpaghettiDetective/archive/beta.zip
+archive: https://github.com/TheSpaghettiDetective/OctoPrint-TheSpaghettiDetective/archive/beta.zip
 
 # TODO
 # Set this to true if your plugin uses the dependency_links setup parameter to include
