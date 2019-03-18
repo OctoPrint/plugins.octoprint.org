@@ -8,7 +8,7 @@ author: The Spaghetti Detective Team
 license: AGPLv3
 
 # TODO
-date: 2019-03-15
+date: 2019-03-18
 
 homepage: https://www.thespaghettidetective.com
 source: https://github.com/TheSpaghettiDetective/OctoPrint-TheSpaghettiDetective
@@ -137,7 +137,7 @@ compatibility:
 
 ## Install and setup
 
-Setting up The Spaghetti Detective is quite striaghtforward. Just install this plugin and follow the steps on the wizard screen and you will be all set.
+Setting up The Spaghetti Detective is quite straightforward. Just install this plugin and follow the steps on the wizard screen and you will be all set.
 
 ![wizard](/assets/img/plugins/thespaghettidetective_beta/plugin_wizard.png "The Spaghetti Detective Set up Wizard")
 
