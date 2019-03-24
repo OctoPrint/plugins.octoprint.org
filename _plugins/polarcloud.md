@@ -29,9 +29,6 @@ screenshots:
 - url: /assets/img/plugins/polarcloud/multipleprinters.png
   alt: Screenshot of Polar Cloud monitoring multiple printers
   caption: Screenshot of Polar Cloud monitoring a printer
-- url: /assets/img/plugins/polarcloud/polarcloudifttt.png
-  alt: Screenshot of some of the Polar3D IFTTT applets
-  caption: Screenshot of some of the Polar3D IFTTT applets (there are many more)
 
 featuredimage: /assets/img/plugins/polarcloud/polarcloud.png
 
@@ -59,12 +56,6 @@ them all from one place.
 
 You can upload your objects to Polar Cloud, share them with other cloud
 members, and send them to your printer.
-
-### IFTTT
-
-Polar Cloud is an IFTTT service, so you can easily set things up to happen when
-various events happen with your printer connected to Polar Cloud. See [Polar3D's
-IFTTT Applets](https://ifttt.com/polar3d)
 
 ### README - Getting Started
 
