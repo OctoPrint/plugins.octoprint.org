@@ -18,7 +18,11 @@ archive: https://github.com/aerickson/OctoPrint_RepeatingCommand/archive/master.
 follow_dependency_links: false
 
 tags:
-- notification
+- events
+- control
+- integration
+- command
+- automation
 
 screenshots:
 - url: /assets/img/plugins/repeatingcommand/settings.png
