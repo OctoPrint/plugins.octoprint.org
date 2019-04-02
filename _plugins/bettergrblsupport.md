@@ -24,7 +24,7 @@ screenshots:
 - url: /assets/img/plugins/bettergrblsupport/better_grbl_support_main.png
   alt: Main UI
   caption: Main UI
-- url: /assets/img/bettergrblsupport/better_grbl_support_settings.png
+- url: /assets/img/plugins/bettergrblsupport/better_grbl_support_settings.png
   alt: Plugin Settings
   caption: Plugin Settings
 - ...
