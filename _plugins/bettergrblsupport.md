@@ -3,7 +3,7 @@ layout: plugin
 
 id: bettergrblsupport
 title: Better Grbl Support
-description: Provides core and UI functionality GRBL based engravers and CNC machines
+description: Provides core functionality and UI integration for GRBL based engravers and CNC machines
 author: Shell M. Shrader
 license: Apache 2.0
 
@@ -19,7 +19,6 @@ tags:
 - engraver
 - cnc
 
-# TODO
 screenshots:
 - url: /assets/img/plugins/bettergrblsupport/better_grbl_support_main.png
   alt: Main UI
@@ -38,9 +37,9 @@ compatibility:
 
   # List of compatible versions
   #
-  # A single version number will be interpretated as a minimum version requirement,
+  # A single version number will be interpreted as a minimum version requirement,
   # e.g. "1.3.1" will show the plugin as compatible to OctoPrint versions 1.3.1 and up.
-  # More sophisticated version requirements can be modelled too by using PEP440
+  # More sophisticated version requirements can be modeled too by using PEP440
   # compatible version specifiers.
   #
   # You can also remove the whole "octoprint" block. Removing it will default to all
@@ -69,6 +68,8 @@ compatibility:
 
 ---
 
+![grbl](https://raw.githubusercontent.com/gnea/gnea-Media/master/Grbl%20Logo/Grbl%20Logo%20250px.png)
+
 This plugin was inspired by mic159's Grbl Support plugin (https://plugins.octoprint.org/plugins/octoprint-grbl-plugin/).  His plugin gets you 90% of the way there for adding Grbl support to Octoprint but had a couple limitations and lacked some bells and whistles from a UI and configuration perspective.
 
 **Better Grbl Support** utilizes mic159's gcode receiver parser (with significant modifications) and does much, much more:
@@ -77,13 +78,13 @@ This plugin was inspired by mic159's Grbl Support plugin (https://plugins.octopr
 * Execute bounding box (framing) routines based on origin location and supplied dimensions
 * Computes selected file dimensions and pre-populates framing length/width fields
 * Click on the webcam image to enlarge it to its native resolution
-* Updates Grbl state data automatically (State / X location / Y location / Speed / Power), even whle printing!
+* Updates State / X / Y / Speed / Power dynamically, even while printing!
 * Weak Laser Toggle, Sleep, Reset, and Unlock buttons conveniently placed within the Grbl Control tab
 * Rewrites Octoprint's annoying hardcoded M115 (Hello) queries as M5 requests
 * Rewrites M105 (temperature updates) as Grbl status updates
 * Suppresses M110 (reset line #) requests
 * Rewrites M400 (Finish moves) using Grbl Dwell
-* Reswrites M114 (current position) using Grbl Positioning
+* Rewrites M114 (current position) using Grbl Positioning
 * Implements M999 for reseting Grbl (^X)
 * Hides the Octoprint Control, Temperature and GCode Viewer tabs
 * Optionally adds Laser Commands and State sections to the Control tab
@@ -105,7 +106,7 @@ or manually using this URL:
 
 ## Configuration
 
-There are some meaningful caveots regarding the installation and configuration of this plugin.  If you use it in a multi-printer / profile environment it will very likely cause problems for your other profiles as it makes **GLOBAL** configration changes behind the scenes.  A future version may resolve this, but understand that currently multi-profile installations are not currently supported.
+There are some meaningful caveats regarding the installation and configuration of this plugin.  If you use it in a multi-printer / profile environment it will very likely cause problems for your other profiles as it makes **GLOBAL** configuration changes behind the scenes.  A future version may resolve this, but understand that currently multi-profile installations are not currently supported.
 
 Furthermore, a number of global configuration changes are made blindly and I have no way of reverting these changes.  Be prepared to manually edit your config.yaml and/or manually revert global settings if you uninstall / disable this plugin to restore your Octoprint installation to its prior state.
 
@@ -121,4 +122,3 @@ Pay special attention to the following config.yaml configuration parameters:
 * serial / helloCommand
 * plugins / _disabled / printer_safety_check
 * appearance / components / disabled / tab
-
