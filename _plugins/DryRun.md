@@ -7,7 +7,7 @@ description: Print without heating/extruding.
 author: Olli
 license: AGPLv3
 
-date: 2019-03-25
+date: 2019-04-02
 
 homepage: https://github.com/OllisGit/OctoPrint-DryRun
 source: https://github.com/OllisGit/OctoPrint-DryRun
