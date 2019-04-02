@@ -27,7 +27,6 @@ screenshots:
 - url: /assets/img/plugins/bettergrblsupport/better_grbl_support_settings.png
   alt: Plugin Settings
   caption: Plugin Settings
-- ...
 
 featuredimage: /assets/img/plugins/bettergrblsupport/Grbl_logo.png
 
