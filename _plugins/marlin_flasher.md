@@ -7,7 +7,7 @@ description: Plugin that allows you to flash your printer to the latest Marlin (
 author: Renaud Gaspard
 license: MIT
 
-date: 2019-03-19
+date: 2019-04-02
 
 homepage: https://github.com/Renaud11232/OctoPrint-Marlin-Flasher
 source: https://github.com/Renaud11232/OctoPrint-Marlin-Flasher
