@@ -78,8 +78,8 @@ This plugin was inspired by mic159's Grbl Support plugin (https://plugins.octopr
 * Execute bounding box (framing) routines based on origin location and supplied dimensions
 * Computes selected file dimensions and pre-populates framing length/width fields
 * Click on the webcam image to enlarge it to its native resolution
-* Updates State / X / Y / Speed / Power dynamically, even while printing!
-* Weak Laser Toggle, Sleep, Reset, and Unlock buttons conveniently placed within the Grbl Control tab
+* Visually ppdates State / X / Y / Speed / Power dynamically, even while printing!
+* Weak Laser Toggle, Sleep, Reset, and Unlock buttons in the Grbl Control tab
 * Rewrites Octoprint's annoying hardcoded M115 (Hello) queries as M5 requests
 * Rewrites M105 (temperature updates) as Grbl status updates
 * Suppresses M110 (reset line #) requests
@@ -93,7 +93,7 @@ This plugin was inspired by mic159's Grbl Support plugin (https://plugins.octopr
 * Automatically disables Model Size Detection
 * Automatically disables sending checksums
 * Automatically disables the Printer Safety Check plugin
-* Most configuration options are configurable via Plugin Settings
+* Most configuration options are accessible via Plugin Settings
 
 ## Setup
 
@@ -102,7 +102,7 @@ or manually using this URL:
 
     https://github.com/synman/OctoPrint-Bettergrblsupport/archive/master.zip
 
-**NOTE:** Installing this pluging directly from the URL above ensures you always have the latest version, but this comes with risk.  I do not follow a traditional gitflow which means commits to the master branch may not be fully tested and could cause unforeseen issues. Proceed at your own risk.  
+**NOTE:** Installing this plugin directly from the URL above ensures you always have the latest version, but this comes with risk.  I do not follow a traditional gitflow which means commits to the master branch may not be fully tested and could cause unforeseen issues. Proceed at your own risk.  
 
 ## Configuration
 
