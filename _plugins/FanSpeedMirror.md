@@ -21,17 +21,17 @@ tags:
 - Controls
 
 # TODO
-screenshots:
-- url: url of a screenshot, /assets/img/...
-  alt: alt-text of a screenshot
-  caption: caption of a screenshot
-- url: url of another screenshot, /assets/img/...
-  alt: alt-text of another screenshot
-  caption: caption of another screenshot
-- ...
+#screenshots:
+#- url: url of a screenshot, /assets/img/...
+#  alt: alt-text of a screenshot
+#  caption: caption of a screenshot
+#- url: url of another screenshot, /assets/img/...
+#  alt: alt-text of another screenshot
+#  caption: caption of another screenshot
+#- ...
 
 # TODO
-featuredimage: url of a featured image for your plugin, /assets/img/...
+#featuredimage: url of a featured image for your plugin, /assets/img/...
 
 ---
 
