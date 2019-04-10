@@ -3,7 +3,7 @@ layout: plugin
 
 id: firmwareupdater
 title: Firmware Updater
-description: Flash pre-compiled firmware images to the printer from OctoPrint.
+description: Flash pre-compiled firmware images from OctoPrint
 author: Gina Häußge and Ben Lye, based on work by Nicanor Romero Venier
 license: AGPLv3
 
@@ -18,50 +18,31 @@ tags:
 - firmware
 - avrdude
 - firmware updater
+- flashing
+- arduino
+- due
+- bossac
 
 screenshots:
-- url: /assets/img/plugins/firmwareupdater/firmwareupdater.png
+- url: /assets/img/plugins/firmwareupdater/firmware-updater.png
   alt: Firmware Updater
   caption: Firmware Updater
-- url: /assets/img/plugins/firmwareupdater/firmwareupdater-settings.png
-  alt: Firmware Updater Settings
-  caption: Firmware Updater Settings
+- url: /assets/img/plugins/firmwareupdater/avrdude-config.png
+  alt: Avrdude Configuration Options
+  caption: Avrdude Configuration Options
+- url: /assets/img/plugins/firmwareupdater/bossac-config.png
+  alt: Bossac Configuration Options
+  caption: Bossac Configuration Options
+- url: /assets/img/plugins/firmwareupdater/post-flash-config.png
+  alt: Post-flash Configuration Options
+  caption: Post-flash Configuration Options
 
-featuredimage: /assets/img/plugins/firmwareupdater/firmwareupdater.png
+featuredimage: /assets/img/plugins/firmwareupdater/firmware-updater.png
 
 ---
-<style>
-.tablelines table, .tablelines td, .tablelines th {
-        border: 1px solid gray;
-				 padding: 5px;
-        }
-</style>
-
-Works with boards with `Atmega1280`, `Atmega1284p`, and `Atmega2560` MCUs using `arduino`, `usbasp`, or `wiring` programmers.
+## About
+Allows you to flash pre-compiled firmware images to boards with Atmel AVR family 8-bit MCUs (`Atmega1280`, `Atmega1284p`, and `Atmega2560`, e.g. RAMPS, Anet, etc.), and Atmel SAM family 32-bit MCUs (e.g. `Arduino DUE`).
 
 More boards can be added, please request additions via a [Github issue](https://github.com/OctoPrint/OctoPrint-FirmwareUpdater/issues).
 
-### Requirements
-AVRDUDE needs to be installed on the server where OctoPrint is running.
-
-#### Raspberry Pi
-```
-sudo apt-get update
-sudo apt-get install avrdude
-```
-
-### Configuration
-The plugin needs the following configuration:
-
-* Path to avrdude (typically `/usr/bin/avrdude`)
-* Path to avrdude configuration file (optional)
-* AVR MCU Type
-* AVR Programmer Type
-
-Typical MCU/programmer combinations are:
-
-| AVR MCU | Programmer |
-| --- | --- |
-| Atmega1284p | arduino |
-| Atmega2560 | wiring |
-{: .tablelines}
+Full documentation is available on the [plugin's homepage](https://github.com/OctoPrint/OctoPrint-FirmwareUpdater).
