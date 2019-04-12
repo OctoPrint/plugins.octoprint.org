@@ -24,7 +24,7 @@ tags:
 - auto-rotate
 
 
-screenshots: https://raw.githubusercontent.com/ChristophSchranz/Tweaker-3/master/auto-rotation.png
+featuredimage: /assets/img/plugins/preprintservice/tweaker.png
 
 compatibility:
 
