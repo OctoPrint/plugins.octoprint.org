@@ -8,7 +8,7 @@ author: Brad Morgan
 license: AGPLv3
 
 # TODO
-date: 2019-04-08
+date: 2019-04-13
 
 homepage: https://github.com/b-morgan/OctoPrint-FanSpeedMirror
 source: https://github.com/b-morgan/OctoPrint-FanSpeedMirror
