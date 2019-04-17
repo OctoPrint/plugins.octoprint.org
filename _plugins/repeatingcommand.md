@@ -7,7 +7,7 @@ description: Octoprint plugin for running a command at an interval during prints
 author: Andrew Erickson
 license: AGPLv3
 
-date: 2019-03-29
+date: 2019-04-16
 
 homepage: https://github.com/aerickson/OctoPrint_RepeatingCommand
 source: https://github.com/aerickson/OctoPrint_RepeatingCommand
