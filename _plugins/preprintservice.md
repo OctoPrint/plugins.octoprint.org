@@ -41,12 +41,11 @@ compatibility:
 # OctoPrint-PrePrintService
 
 This plugin supports your 3D printing workflow by featuring an **auto-rotation** and **slicing** service.
-As both tasks are very computation-intensive, they can optionally be outsourced to 
-external docker containers.
+As both tasks are very computation-intensive, they can optionally be outsourced.
 
 ## Workflow
 
-The full workflow can be deployed either on a single machine or the octoprint server connected
+The full workflow can be deployed either on a single machine or on the octoprint server connected
 to a printer plus a server.
 
 ![Workflow](/assets/img/plugins/preprintservice/workflow.png)
@@ -56,7 +55,7 @@ The following steps will be done:
 1. Slice a model using the PrePrint server Plugin.
 2. The model will be auto-rotated for a proper 3D print.
 3. The auto-rotated model will be sent back to the octoprint server.
-4. The optimized model will be sliced using [slic3r](https://slic3r.org/).
+4. The optimized model will be sliced using [Slic3r](https://slic3r.org/).
 5. The final machine code wil be sent back to the octoprint server.
 6. The printing can be started.
 
