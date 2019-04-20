@@ -109,7 +109,7 @@ Optional: The `docker-compose.yml` is also configured to run in a given docker s
     docker stack deploy --compose-file docker-compose.yml preprintservice
 
 
-The service is available [localhost:2304/tweak](http://localhost:2304/tweak) 
+The service is available on [localhost:2304/tweak](http://localhost:2304/tweak) 
 (from the hosting node), 
 where a simple UI is provided for testing the PrePrint Service.
 Use `docker-compose down` to stop the service. (If you ever wish ;)
