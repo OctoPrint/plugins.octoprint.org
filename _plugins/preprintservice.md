@@ -7,7 +7,7 @@ description: This plugin supports your 3D printing routine by featuring **auto-r
 author: Christoph Schranz
 license: AGPLv3
 
-date: 2019-04-12
+date: 2019-05-12
 
 homepage: https://github.com/christophschranz/OctoPrint-PrePrintService
 source: https://github.com/christophschranz/OctoPrint-PrePrintService
