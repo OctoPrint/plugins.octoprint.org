@@ -11,7 +11,7 @@ date: 2019-04-02
 
 homepage: https://github.com/OllisGit/OctoPrint-DryRun
 source: https://github.com/OllisGit/OctoPrint-DryRun
-archive: https://github.com/OllisGit/OctoPrint-DryRun/archive/master.zip
+archive: https://github.com/OllisGit/OctoPrint-DryRun/releases/latest/download/master.zip
 
 # Set this to true if your plugin uses the dependency_links setup parameter to include
 # library versions not yet published on PyPi. SHOULD ONLY BE USED IF THERE IS NO OTHER OPTION!
