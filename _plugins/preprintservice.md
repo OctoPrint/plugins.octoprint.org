@@ -66,7 +66,7 @@ Each step is optional and can be set in the settings.
 1. One server node that is connected to your 3D printer, like a raspberry pi.
 1. One server node for pre-processing, which has at least 2GHz CPU frequency. If the node connected
    to the printer is strong enough, one server suffices.
-1. Install [Docker](https://www.docker.com/community-edition#/download) version **1.10.0+**
+1. Install [Docker](https://hub.docker.com/search/?type=edition&offering=community) version **1.10.0+**
    on the more powerful node.
 2. Install [Docker Compose](https://docs.docker.com/compose/install/) version **1.6.0+**
    on the more powerful node.
