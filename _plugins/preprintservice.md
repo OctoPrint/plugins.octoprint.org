@@ -29,7 +29,7 @@ featuredimage: /assets/img/plugins/preprintservice/workflow.png
 compatibility:
 
   octoprint:
-  - 1.3
+  - 1.3.0
 
   os:
   - linux
@@ -70,8 +70,7 @@ Each step is optional and can be set in the settings.
 2. One server node for pre-processing, which has at least 2GHz CPU frequency. If the node connected
    to the printer is strong enough, one server suffices.
 3. Optional: Install [Docker](https://www.docker.com/community-edition#/download) version **1.10.0+**
-   and [Docker Compose](https://docs.docker.com/compose/install/) version **1.6.0+**
-   on the more powerful node.
+   and [Docker Compose](https://docs.docker.com/compose/install/) version **1.6.0+** on the more powerful node.
    
    
 ## Setup
