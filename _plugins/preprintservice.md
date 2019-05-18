@@ -40,8 +40,7 @@ compatibility:
 
 # OctoPrint-PrePrintService
 
-This service supports your 3D printing workflow by utilizing **auto-rotation** 
-and **slicing** functionality.
+This service supports your 3D printing workflow by providing **auto-rotation** and **slicing** functionality.
 
 The PrePrint Service is based on:
 * The **auto-rotation** software for FDM 3D printing [Tweaker-3](https://github.com/ChristophSchranz/Tweaker-3)
