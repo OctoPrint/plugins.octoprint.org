@@ -3,8 +3,7 @@ layout: plugin
 
 id: preprintservice
 title: OctoPrint-PrePrintService
-description: This service supports your 3D printing workflow by utilizing auto-rotation 
-and slicing functionality.
+description: This service supports your 3D printing workflow by providing auto-rotation and slicing functionality.
 author: Christoph Schranz
 license: AGPLv3
 
