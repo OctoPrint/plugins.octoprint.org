@@ -11,7 +11,7 @@ date: 2018-04-09
 
 homepage: https://github.com/OllisGit/OctoPrint-DisplayLayerProgress
 source: https://github.com/OllisGit/OctoPrint-DisplayLayerProgress
-archive: https://github.com/OllisGit/OctoPrint-DisplayLayerProgress/archive/master.zip
+archive: https://github.com/OllisGit/OctoPrint-DisplayLayerProgress/releases/latest/download/master.zip
 
 follow_dependency_links: false
 
