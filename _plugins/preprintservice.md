@@ -7,7 +7,7 @@ description: This service supports your 3D printing workflow by providing auto-r
 author: Christoph Schranz
 license: AGPLv3
 
-date: 2019-05-18
+date: 2019-05-12
 
 homepage: https://github.com/christophschranz/OctoPrint-PrePrintService
 source: https://github.com/christophschranz/OctoPrint-PrePrintService
