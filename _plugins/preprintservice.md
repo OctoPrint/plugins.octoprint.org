@@ -13,7 +13,6 @@ homepage: https://github.com/christophschranz/OctoPrint-PrePrintService
 source: https://github.com/christophschranz/OctoPrint-PrePrintService
 archive: https://github.com/christophschranz/OctoPrint-PrePrintService/archive/master.zip
 
-
 follow_dependency_links: false
 
 tags:
