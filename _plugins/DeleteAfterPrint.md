@@ -11,7 +11,7 @@ date: 2018-04-20
 
 homepage: https://github.com/OllisGit/OctoPrint-DeleteAfterPrint
 source: https://github.com/OllisGit/OctoPrint-DeleteAfterPrint
-archive: https://github.com/OllisGit/OctoPrint-DeleteAfterPrint/archive/master.zip
+archive: https://github.com/OllisGit/OctoPrint-DeleteAfterPrint/releases/latest/download/master.zip
 
 # Set this to true if your plugin uses the dependency_links setup parameter to include
 # library versions not yet published on PyPi. SHOULD ONLY BE USED IF THERE IS NO OTHER OPTION!
