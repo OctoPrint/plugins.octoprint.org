@@ -27,7 +27,7 @@ screenshots:
   alt: Plugin settings
   caption: Customize allowed file extensions
 
-featuredimage: /assets/img/uploadanything/settings.png
+featuredimage: /assets/img/plugins/uploadanything/settings.png
 
 # You only need the following if your plugin requires specific OctoPrint versions or
 # specific operating systems to function - you can safely remove the whole
