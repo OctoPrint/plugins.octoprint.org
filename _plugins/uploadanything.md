@@ -23,7 +23,7 @@ tags:
 - upload
 
 screenshots:
-- url: /assets/img/uploadanything/settings.png
+- url: /assets/img/plugins/uploadanything/settings.png
   alt: Plugin settings
   caption: Customize allowed file extensions
 
