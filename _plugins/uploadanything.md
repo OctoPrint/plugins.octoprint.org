@@ -8,7 +8,7 @@ author: Roberto Lo Giacco
 license: Apache License 2.0
 
 # today's date in format YYYY-MM-DD, e.g.
-date: 2019-05-25
+date: 2019-05-28
 
 homepage: https://github.com/rlogiacco/UploadAnything
 source: https://github.com/rlogiacco/UploadAnything
