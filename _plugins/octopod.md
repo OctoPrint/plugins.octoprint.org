@@ -7,19 +7,12 @@ description: OctoPrint plugin for OctoPod
 author: Gaston Dombiak
 license: Apache-2.0
 
-# TODO
 date: 2019-05-28
 
 homepage: https://github.com/gdombiak/OctoPrint-OctoPod
 source: https://github.com/gdombiak/OctoPrint-OctoPod
 archive: https://github.com/gdombiak/OctoPrint-OctoPod/archive/master.zip
 
-# TODO
-# Set this to true if your plugin uses the dependency_links setup parameter to include
-# library versions not yet published on PyPi. SHOULD ONLY BE USED IF THERE IS NO OTHER OPTION!
-#follow_dependency_links: false
-
-# TODO
 tags:
 - octopod
 - bed temperature
@@ -27,7 +20,6 @@ tags:
 - iOS
 - notifications
 
-# TODO
 screenshots:
 - url: /assets/img/plugins/octopod/settings.png
   alt: Configure Notifications
@@ -39,7 +31,6 @@ screenshots:
   alt: Bed Cooled Down
   caption: Bed Cooled Down
 
-# TODO
 featuredimage: /assets/img/plugins/octopod/print_finished.jpg
 
 ---
