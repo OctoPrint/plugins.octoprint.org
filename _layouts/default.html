@@ -14,6 +14,7 @@ layout: none
     {% if page.author %}<meta name="author" content="{{ page.author | strip_html | strip_newlines | escape }}">{% endif %}
     <meta name="referrer" content="same-origin">
     <meta name="google-site-verification" content="0EFsbaNygJcEinKPmzP-hTf0Ju6wDIpJxO5zvQtOQT0" />
+    <meta name="build-revision" content="{{ site.github.build_revision }}" />
 
     <!--[if lt IE 9]>
     <script src="/assets/js/html5shim.js"></script>
