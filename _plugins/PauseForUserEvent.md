@@ -2,7 +2,7 @@
 layout: plugin
 id: PauseForUserEvent
 title: PauseForUserEvent
-description: Adds a new event 'paused_for_user' when the printer needs manual intervention (signalled by sending "echo:busy: paused for user")
+description: Adds a new event 'paused_for_user' when the printer needs manual intervention
 author: Thomas Arthofer
 license: AGPLv3
 homepage: https://github.com/zeroflow/OctoPrint-PauseForUserEvent
