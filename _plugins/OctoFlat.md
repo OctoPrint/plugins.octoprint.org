@@ -8,7 +8,7 @@ author: Joseph Geis
 license: MIT
 
 # TODO
-date: 2019-06-01
+date: 2019-06-03
 
 homepage: https://github.com/juniorRubyist/OctoPrint-OctoFlat
 source: https://github.com/juniorRubyist/OctoPrint-OctoFlat
