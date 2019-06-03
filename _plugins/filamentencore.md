@@ -7,7 +7,7 @@ description: OctoPrint plug-in that detects when printer is out of filament
 author: Dragos Costache
 license: AGPLv3
 
-date: 2019-05-31
+date: 2019-06-03
 
 homepage: https://github.com/draagc/OctoPrint-FilamentEncore
 source: https://github.com/draagc/OctoPrint-FilamentEncore
