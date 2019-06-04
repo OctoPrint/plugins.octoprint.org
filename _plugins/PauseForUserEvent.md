@@ -15,7 +15,7 @@ tags:
 - event
 compatibility:
   octoprint:
-  - 1.3.5
+  - 1.3.11 
 date: 2019-06-03
 
 ---
