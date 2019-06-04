@@ -70,11 +70,32 @@ layout: default
       </dl>
       {% if page.archive %}
       <dl class="installation">
-        <dt>Installation <a href="/help/installation/" class="fa fa-question-sign"></a></dt>
+        <dt>Installation <a href="/help/installation/" class="fas fa-question-circle"></a></dt>
         {% if page.disabled %}
-        <dd><pre><s>pip install {% if page.follow_dependency_links %}--process-dependency-links {% endif %}"{{ page.archive | strip_html | strip_newlines | escape }}"</s></pre><small>Currently not recommended</small></dd>
+        <dd>
+          URL:
+          <pre><s>{{ page.archive | escape | escape | strip_newlines }}</s></pre>
+          <small>Currently not recommended</small>
+          {% if page.follow_dependency_links %}<small>Needs "Use --process-dependency-links with pip install" to be checked.</small>{% endif %}
+        </dd>
         {% else %}
-        <dd><pre>pip install {% if page.follow_dependency_links %}--process-dependency-links {% endif %}"{{ page.archive | escape | escape | strip_newlines }}"</pre></dd>
+        <dd>
+          URL:
+          <pre>{{ page.archive | escape | escape | strip_newlines }}</pre>
+          {% if page.follow_dependency_links %}<small>Needs "Use --process-dependency-links with pip install" to be checked.</small>{% endif %}
+        </dd>
+        {% endif %}
+        {% if page.disabled %}
+        <dd>
+          Command line:
+          <pre><s>pip install {% if page.follow_dependency_links %}--process-dependency-links {% endif %}"{{ page.archive | strip_html | strip_newlines | escape }}"</s></pre>
+          <small>Currently not recommended</small>
+        </dd>
+        {% else %}
+        <dd>
+          Command line:
+          <pre>pip install {% if page.follow_dependency_links %}--process-dependency-links {% endif %}"{{ page.archive | escape | escape | strip_newlines }}"</pre>
+        </dd>
         {% endif %}
       </dl>
       {% endif %}
