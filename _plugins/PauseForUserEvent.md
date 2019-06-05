@@ -1,7 +1,7 @@
 ---
 layout: plugin
-id: PauseForUserEvent
-title: PauseForUserEvent
+id: pause_for_user_event
+title: PauseForUser Event
 description: Adds a new event 'paused_for_user' when the printer needs manual intervention
 author: Thomas Arthofer
 license: AGPLv3
