@@ -28,7 +28,6 @@ screenshots:
 - url: /assets/img/plugins/PrinterAlerts/settings.png
   alt: The settings page, allowing configurable alert urgency, auto-closing, and spoken alerts
   caption: the settings page
-- ...
 
 featuredimage: /assets/img/plugins/PrinterAlerts/screenshot.png
 
