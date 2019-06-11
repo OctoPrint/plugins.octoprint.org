@@ -3,7 +3,6 @@ rvm:
 - 2.3.3
 
 script:
-- "test ! \"$TRAVIS_EVENT_TYPE\" = \"cron\" || test $(curl -H \"Accept: application/vnd.github.v3+json\" https://api.github.com/repos/OctoPrint/plugins.octoprint.org/commits/gh-pages | grep -m1 sha | grep -Po 'sha\": \"[^\"]*' | cut -c 8-) = $(curl https://plugins.octoprint.org/ | grep build-revision | grep -Po 'content=\"[^\"]*' | cut -c 10-)"
 - bundle exec jekyll build
 - bundle exec jsonlint ./_site/plugins.json
 - bundle exec jsonlint ./_site/search.json
