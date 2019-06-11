@@ -16,7 +16,7 @@ tags:
 compatibility:
   octoprint:
   - 1.3.11 
-date: 2019-06-03
+date: 2019-06-11
 
 ---
 
