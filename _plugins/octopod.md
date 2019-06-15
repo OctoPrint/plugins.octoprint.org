@@ -27,9 +27,12 @@ screenshots:
 - url: /assets/img/plugins/octopod/print_finished.jpg
   alt: Print Finished
   caption: Print Finished
-- url: /assets/img/plugins/octopod/bed_cooled.jpg
-  alt: Bed Cooled Down
-  caption: Bed Cooled Down
+- url: /assets/img/plugins/octopod/bed_warmed.jpg
+  alt: Bed Warmed Up
+  caption: Bed Warmed Up
+- url: /assets/img/plugins/octopod/mmu_notification.png
+  alt: MMU Notification
+  caption: MMU Requires User Assistance
 
 featuredimage: /assets/img/plugins/octopod/print_finished.jpg
 
@@ -42,6 +45,7 @@ cameras are not connected to OctoPrint you can still make use of them
 * bed has cooled down enough so you can remove your print
 * bed has warmed up to target temperature for a specified period so you can start
 printing knowing that bed's material won't expand anymore
+* MMU requires user assistance (requires Prusa firmware)
 
 If you are using the free and open source [OctoPod](https://itunes.apple.com/us/app/octopod-for-octoprint/id1412557625?mt=8)
 to control your printer from any iOS device then this plugin is a great addition. If you
