@@ -19,6 +19,7 @@ tags:
 - print finished
 - iOS
 - notifications
+- mmu
 
 screenshots:
 - url: /assets/img/plugins/octopod/settings.png
