@@ -24,6 +24,8 @@ tags:
 - pushbullet
 - pushover
 - rocket chat
+- matrix
+- riot
 - notification
 - progress
 - mobile
