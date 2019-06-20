@@ -64,7 +64,7 @@ screenshots:
 - url: /assets/img/plugins/Octoslack/Octoslack-RocketChat-PrintStarted.png
   alt: Rocket.Chat - Print started
   caption: Rocket.Chat - Print started
-- url: /assets/img/plugins/Octoslack/Octoslack-MatrixPrintStarted.png
+- url: /assets/img/plugins/Octoslack/Octoslack-Matrix-PrintStarted.png
   alt: Matrix/Riot.im - Print started
   caption: Matrix/Riot.im - Print started
 
