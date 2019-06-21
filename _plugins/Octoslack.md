@@ -97,6 +97,7 @@ An OctoPrint plugin for monitoring your printer and prints via Slack, Mattermost
 # Supported Events #
  - Print started
  - Print failed
+ - Print cancelling
  - Print cancelled
  - Print paused
  - Print resumed
@@ -109,6 +110,8 @@ An OctoPrint plugin for monitoring your printer and prints via Slack, Mattermost
  - Timelapse render started
  - Timelapse render finished
  - Timelapse render failed
+ - File analysis started
+ - File analysis finished
  - OctoPrint error
  - OctoPrint started
  - OctoPrint stopped
