@@ -5,7 +5,7 @@ id:WHUTYTY
 title: Gcode chaoclate
 description: Modify the gcode to optimize the print path
 author: YTY
-license: your plugin's license
+license: my_awesome_plugin
 
 # today's date in format YYYY-MM-DD, e.g.
 date: 2019-07-30
