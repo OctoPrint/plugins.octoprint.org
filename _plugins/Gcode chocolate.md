@@ -5,7 +5,7 @@ id:WHUTYTY
 title: Gcode chaoclate
 description: Modify the gcode to optimize the print path
 author: YTY
-license: my_awesome_plugin
+license: AGPLv3
 
 # today's date in format YYYY-MM-DD, e.g.
 date: 2019-07-30
@@ -53,7 +53,7 @@ compatibility:
   # OctoPrint versions being supported.
 
   octoprint:
-  - 1.2.0
+  - 1.3.11
 
   # List of compatible operating systems
   #
