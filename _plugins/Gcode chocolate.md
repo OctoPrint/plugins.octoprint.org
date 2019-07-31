@@ -2,7 +2,7 @@
 layout: plugin
 
 id: Gcode-chocolate
-title: Gcode chocolate
+title: Gcode-chocolate
 description: Modify the gcode to optimize the print path
 author: YTY
 license: AGPLv3
