@@ -1,8 +1,8 @@
 ---
 layout: plugin
 
-id: Gcode-chocolate
-title: Gcode-chocolate
+id: Gcodechocolate
+title: Gcodechocolate
 description: Modify the gcode to optimize the print path
 author: YTY
 license: AGPLv3
@@ -12,7 +12,7 @@ date: 2019-07-30
 
 homepage: https://github.com/WHUTYTY/plugins.octoprint.org.git
 source: https://github.com/WHUTYTY/plugins.octoprint.org.git
-archive:https://raw.githubusercontent.com/WHUTYTY/plugins.octoprint.org/gh-pages/_plugins/Gcode-chocolate.zip
+archive:https://github.com/WHUTYTY/OctoPrint-Gcodechocolate/archive/master.zip
 
 # Set this to true if your plugin uses the dependency_links setup parameter to include
 # library versions not yet published on pypi. SHOULD ONLY BE USED IF THERE IS NO OTHER OPTION!
@@ -83,4 +83,4 @@ Longer description of your plugin, configuration examples etc. This part will be
 plugins.octoprint.org/plugin/<your plugin identifier>/
     
 Use Markdown for formatting.
-manually using this URL:https://raw.githubusercontent.com/WHUTYTY/plugins.octoprint.org/gh-pages/_plugins/Gcode-chocolate.zip
+manually using this URL:https://github.com/WHUTYTY/OctoPrint-Gcodechocolate/archive/master.zip
