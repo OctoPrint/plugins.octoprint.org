@@ -1,7 +1,7 @@
 ---
 layout: plugin
 
-id:Gcode-chocolate
+id: Gcode-chocolate
 title: Gcode chocolate
 description: Modify the gcode to optimize the print path
 author: YTY
@@ -16,7 +16,7 @@ archive:https://raw.githubusercontent.com/WHUTYTY/plugins.octoprint.org/gh-pages
 
 # Set this to true if your plugin uses the dependency_links setup parameter to include
 # library versions not yet published on pypi. SHOULD ONLY BE USED IF THERE IS NO OTHER OPTION!
-#follow_dependency_links: false
+follow_dependency_links: ture
 
 tags:
 - a list
