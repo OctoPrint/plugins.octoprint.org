@@ -7,7 +7,7 @@ script:
 - bundle exec jsonlint ./_site/plugins.json
 - bundle exec jsonlint ./_site/search.json
 - bundle exec jsonlint ./_site/notices.json
-- bundle exec htmlproofer ./_site --only-4xx --check-favicon --check-html --url-ignore "/ifttt\.com\/polar3d/","/patreon\.com\/join\/FormerLurker/" --file-ignore "/\.\/_site\/search\/index\.html/","/\.\/_site\/by_(author|tag|date|name)\/index\.html/" --log-level ':debug'
+- bundle exec htmlproofer ./_site --only-4xx --check-favicon --check-html --url-ignore "/ifttt\.com\/polar3d/","/patreon\.com\/join\/FormerLurker/","/tams\.informatik\.uni-hamburg\.de\/research\/3d-printing\/conductive_printing\/index\.html/" --file-ignore "/\.\/_site\/search\/index\.php/","/\.\/_site\/by_(author|tag|date|name)\/index\.html/" --log-level ':debug'
 
 branches:
   only:
