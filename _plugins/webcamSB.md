@@ -27,15 +27,15 @@ tags:
 
 # TODO
 screenshots:
-- url: /assets/img/screen1.png
+- url: /assets/img/plugins/webcamSB/screen1.png
   alt: Screenshot control
   caption: Screenchot with terminal
-- url: /assets/img/screen2.png
+- url: /assets/img/plugins/webcamSB/screen2.png
   alt: Screenshot settings
   caption: Screenshot of settings
 
 # TODO
-featuredimage: /assets/img/featured.png
+featuredimage: /assets/img/plugins/webcamSB/featured.png
 
 # TODO
 # You only need the following if your plugin requires specific OctoPrint versions or
