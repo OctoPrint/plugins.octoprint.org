@@ -8,7 +8,7 @@ author: Luis Magar Brunner
 license: AGPLv3
 
 # TODO
-date: 2019-08-17
+date: 2019-09-04
 
 homepage: https://github.com/quanticchaos/OctoPrint-Webcamsb
 source: https://github.com/quanticchaos/OctoPrint-Webcamsb
@@ -28,11 +28,9 @@ tags:
 # TODO
 screenshots:
 - url: /assets/img/plugins/webcamSB/screen1.png
-  alt: Screenshot control
-  caption: Screenchot with terminal
-- url: /assets/img/plugins/webcamSB/screen2.png
   alt: Screenshot settings
   caption: Screenshot of settings
+
 
 # TODO
 featuredimage: /assets/img/plugins/webcamSB/featured.png
@@ -82,5 +80,7 @@ compatibility:
 
 ---
 
-**TODO**: Longer description of your plugin, configuration examples etc. This part will be visible on the page at
-http://plugins.octoprint.org/plugin/webcamSB/
+This plugin adds a webcam stream viewer to the sidebar of Octoprint so you can keep an eye on your print at any moment.
+You can click on the viewer to maximize the view.
+You can flip the image in the configuration (even if left blank to use the default stream).
+You can configure up to four streams (IP cam recommended when using multiple streams).
