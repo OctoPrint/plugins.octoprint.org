@@ -48,7 +48,7 @@ or manually using this URL:
 ## Configuration
 
 ### Makerkeys
-A unique API key for IFTTT. Go [here](https://ifttt.com/services/maker_webhooks/settings) and look for the URL. The last part (after the `/use/`) is the makerkey. You can put multiple makerkeys, seperated by newlines, here.
+A unique API key for IFTTT. Go [here](https://ifttt.com/maker_webhooks) and click on "Documentation". On the documentation page it will tell you your key: "Your key is: ...". You can put multiple makerkeys, seperated by newlines, here.
 
 ### Default prefixes
 Default prefixes for the triggers. If you have an event `MyEvent` and prefixes `prefix1-` and `prefix2-`, it will, by default make the triggers `prefix1-MyEvent` and `prefix2-MyEvent`. Seperate the prefixes with newlines.
