@@ -11,7 +11,7 @@ date: 2019-09-05
 
 homepage: https://github.com/Skiepp/GCodeSuperLaserController
 source: https://github.com/Skiepp/GCodeSuperLaserController
-archive: https://github.com/Skiepp/GC
+archive: https://github.com/Skiepp/GCodeSuperLaserController/archive/master.zip
 
 tags:
 - gcode
