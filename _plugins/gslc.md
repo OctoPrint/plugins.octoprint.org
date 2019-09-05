@@ -7,7 +7,7 @@ description: A plugin for Laser engraving add
 author: Skiepp
 license: Apache License 2.0
 
-date: 2019-08-24
+date: 2019-09-05
 
 homepage: https://github.com/Skiepp/GCodeSuperLaserController
 source: https://github.com/Skiepp/GCodeSuperLaserController
