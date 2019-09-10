@@ -7,7 +7,7 @@ description: A dashboard tab for Octoprint
 author: Stefan Cohen
 license: AGPLv3
 
-date: 2019-09-11
+date: 2019-09-10
 
 homepage: https://github.com/StefanCohen/OctoPrint-Dashboard
 source: https://github.com/StefanCohen/OctoPrint-Dashboard
@@ -20,22 +20,22 @@ tags:
 - progress
 
 screenshots:
-- url: https://github.com/StefanCohen/OctoPrint-Dashboard/blob/master/screenshot.png
+- url: https://github.com/StefanCohen/OctoPrint-Dashboard/raw/master/screenshot.png
   alt: screenshot
   caption: caption of a screenshot
-- url: https://github.com/StefanCohen/OctoPrint-Dashboard/blob/master/screenshot-theme.png
+- url: https://github.com/StefanCohen/OctoPrint-Dashboard/raw/master/screenshot-theme.png
   alt: screenshot
   caption: themed screenshot
-- url: https://github.com/StefanCohen/OctoPrint-Dashboard/blob/master/screenshot-theme2.png
+- url: https://github.com/StefanCohen/OctoPrint-Dashboard/raw/master/screenshot-theme2.png
   alt: screenshot
   caption: themed screenshot
 
-featuredimage: https://github.com/StefanCohen/OctoPrint-Dashboard/blob/master/screenshot.png
+featuredimage: https://github.com/StefanCohen/OctoPrint-Dashboard/raw/master/screenshot.png
 
 ---
 This plugin adds a  dashboard tab in Octoprint that displays the most relevant info regarding the state of the printer and any on-going print job.
 
-![Screenshot](https://github.com/StefanCohen/OctoPrint-Dashboard/blob/master/screenshot.png)
+![Screenshot](https://github.com/StefanCohen/OctoPrint-Dashboard/raw/master/screenshot.png)
 
 ## Features
 
@@ -54,7 +54,7 @@ This plugin adds a  dashboard tab in Octoprint that displays the most relevant i
 * Uses GCode analysis provided by [DisplayLayerProgress](https://plugins.octoprint.org/plugins/DisplayLayerProgress/) to get more accurate layer and fan data
 * Theme friendly:
 
-![Screenshot](https://github.com/StefanCohen/OctoPrint-Dashboard/blob/master/screenshot-theme.png)
+![Screenshot](https://github.com/StefanCohen/OctoPrint-Dashboard/raw/master/screenshot-theme.png)
 
 
 For installation and configuration details, please visit the [dashboard github page](https://github.com/StefanCohen/OctoPrint-Dashboard) 
