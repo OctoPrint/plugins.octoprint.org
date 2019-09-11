@@ -7,7 +7,7 @@ description: OctoPrint plugin for OctoVox Amazon Alexa Integration
 author: John Ruzick
 license: AGPLv3
 
-date: 2019-08-16
+date: 2019-09-11
 
 homepage: https://github.com/johnnyruz/OctoPrint-OctoVox
 source: https://github.com/johnnyruz/OctoPrint-OctoVox
