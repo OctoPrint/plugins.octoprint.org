@@ -8,7 +8,7 @@ description: Plugin starts a countdown timer after login and if the timer is cou
 author: Olli
 license: AGPLv3
 
-date: 2019-09-30
+date: 2019-10-03
 
 homepage: https://github.com/OllisGit/OctoPrint-AutoLogout
 source: https://github.com/OllisGit/OctoPrint-AutoLogout
