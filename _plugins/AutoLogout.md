@@ -28,7 +28,7 @@ screenshots:
 - url: https://github.com/OllisGit/Octoprint-AutoLogout/raw/master/screenshots/plugin-settings.png
   alt: Plugin Settings
   caption: Plugin Settings  
-featuredimage: https://github.com/OllisGit/Octoprint-AutostartPrint/raw/master/screenshots/plugin-settings.png
+featuredimage: https://github.com/OllisGit/Octoprint-AutoLogout/raw/master/screenshots/plugin-settings.png
 
 ---
 
