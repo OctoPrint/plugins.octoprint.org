@@ -7,7 +7,7 @@ description: Plugin to control Orvibo S20 Smart Plug from the OctoPrint web inte
 author: cprasmu
 license: AGPLv3
 
-date: 2019-09-29
+date: 2019-10-03
     
 homepage: https://github.com/cprasmu/OctoPrint-OrviboS20
 source: https://github.com/cprasmu/OctoPrint-OrviboS20
