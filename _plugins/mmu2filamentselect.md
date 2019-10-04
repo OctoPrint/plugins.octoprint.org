@@ -36,7 +36,7 @@ featuredimage: /assets/img/plugins/mmu2filamentselect/octoprusa.png
 
 ---
 
-![logo]("/assets/img/plugins/mmu2filamentselect/octoprusa.png")
+![logo](/assets/img/plugins/mmu2filamentselect/octoprusa.png)
 
 This plugin shows a dialog to select the filament when a print on a Prusa printer with MMU2 is startet in single mode.
 
