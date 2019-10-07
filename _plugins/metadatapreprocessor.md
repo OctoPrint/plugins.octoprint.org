@@ -65,5 +65,5 @@ If you want to supply arguments, e.g. `--g90-extruder`, you need to write a wrap
 ```
 #!/bin/bash
 
-~/scripts/gcode_metadata/venv/bin/analysis --g90-extruder "$@"
+~/.Slic3r/utils/gcode_metadata/venv/bin/analysis --g90-extruder "$@"
 ```
