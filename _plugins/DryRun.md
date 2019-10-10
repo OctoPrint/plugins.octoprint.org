@@ -31,6 +31,14 @@ featuredimage: dryrun-activated
 
 A Octoprint-Plugin that allows to execute a print without heating your bed or nozzle, turning on any fans, or extruding any filament.
 
+#### Support my Efforts
+
+This plugin, as well as my [other plugins](https://github.com/OllisGit/) were developed in my spare time.
+If you like it, I would be thankful about a cup of coffee :) 
+
+[![More coffee, more code](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2BJP2XFEKNG9J&source=url)
+
+## Details
 The implementation is based on the "test-mode" from [Octolapse](https://github.com/FormerLurker/Octolapse/)
 
 For implementation details please visit the [homepage]({{ page.homepage | absolute_url }}).

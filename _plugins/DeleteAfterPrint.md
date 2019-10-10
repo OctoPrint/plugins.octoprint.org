@@ -36,6 +36,14 @@ Delete/Move automatically the Print-Model:
 * after successful print. If the print fails, the deletion is not executed!
 * after predefined days
 
+#### Support my Efforts
+
+This plugin, as well as my [other plugins](https://github.com/OllisGit/) were developed in my spare time.
+If you like it, I would be thankful about a cup of coffee :) 
+
+[![More coffee, more code](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2BJP2XFEKNG9J&source=url)
+
+## Details
 The user can enable automatic deletion/movement after each print by using a checkbox in the sidebar.
 
 If you want to delete/move files after a couple of days, use the Plugin-Settings. Deletion/Movement is done while opening OctoPrint.
