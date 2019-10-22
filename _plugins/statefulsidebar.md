@@ -17,6 +17,8 @@ tags:
 - Sidebar
 - Collapsed
 - Stateful
+compatibility:
+  python: ">=2.7,<4"
 ---
 
 ## Get Help

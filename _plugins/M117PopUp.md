@@ -19,6 +19,9 @@ tags:
 - M117
 - gcode
 
+compatibility:
+  python: ">=2.7,<4"
+
 featuredimage: /assets/img/plugins/M117PopUp/screenshot_1.png
 
 ---

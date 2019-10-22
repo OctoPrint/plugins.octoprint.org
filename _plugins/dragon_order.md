@@ -19,6 +19,9 @@ tags:
 - Sidebar
 - Tabs
 - UI
+
+compatibility:
+  python: ">=2.7,<4"
 ---
 # OctoPrint-DragonOrder
 
