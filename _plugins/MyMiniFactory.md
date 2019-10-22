@@ -39,6 +39,7 @@ featuredimage: /assets/img/plugins/MyMiniFactory/myminifactory_logo_128.png
 compatibility:
   octoprint:
   - 1.2.0
+  python: ">=2.7,<4"
 
 ---
 

@@ -18,6 +18,9 @@ follow_dependency_links: false
 tags:
 - ip
 
+compatibility:
+  python: ">=2.7,<4"
+
 featuredimage: /assets/img/plugins/ipOnConnect/screenshot.jpg
 
 ---

@@ -22,6 +22,9 @@ tags:
 - voice
 - accessibility
 
+compatibility:
+  python: ">=2.7,<4"
+
 featuredimage: /assets/img/plugins/M117SpeechSynthesis/settings.png
 
 ---

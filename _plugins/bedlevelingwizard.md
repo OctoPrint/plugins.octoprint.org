@@ -16,6 +16,9 @@ archive: https://github.com/jneilliii/OctoPrint-BedLevelingWizard/archive/master
 tags:
 - manual bed leveling
 - bed leveling
+
+compatibility:
+  python: ">=2.7,<4"
 ---
 
 # Bed Leveling Wizard
