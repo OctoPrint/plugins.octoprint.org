@@ -17,21 +17,21 @@ tags:
 - usb
 
 screenshots:
-- url: /assets/img/plugin/filamentstorage/main.png
+- url: /assets/img/plugins/filamentstorage/main.png
   alt: Main screen  
   caption: Main View  
-- url: /assets/img/plugin/filamentstorage/settings.png
+- url: /assets/img/plugins/filamentstorage/settings.png
   alt: Settings screen  
   caption: Settings View  
-- url: /assets/img/plugin/filamentstorage/tab_connected.png
+- url: /assets/img/plugins/filamentstorage/tab_connected.png
   alt: Tab when connected  
   caption: Tab when connected  
-- url: /assets/img/plugin/filamentstorage/tab_disconnected.png
+- url: /assets/img/plugins/filamentstorage/tab_disconnected.png
   alt: Tab when disconnected  
   caption: Tab when disconnected
 
 
-featuredimage: /assets/img/plugin/filamentstorage/main.png
+featuredimage: /assets/img/plugins/filamentstorage/main.png
 
 ---
 
