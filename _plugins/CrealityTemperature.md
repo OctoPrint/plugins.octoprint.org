@@ -11,7 +11,7 @@ date: 201-10-26
 
 homepage: https://github.com/RomainOdeval/OctoPrint-CrealityTemperature/
 source: https://github.com/RomainOdeval/OctoPrint-CrealityTemperature/
-archive: archive link to install your plugin via pip, e.g. from github: https://github.com/username/repository/archive/master.zip
+archive: https://github.com/RomainOdeval/OctoPrint-CrealityTemperature/releases/latest/download/master.zip
 
 # Set this to true if your plugin uses the dependency_links setup parameter to include
 # library versions not yet published on pypi. SHOULD ONLY BE USED IF THERE IS NO OTHER OPTION!
@@ -22,15 +22,8 @@ tags:
 - temperature
 
 screenshots:
-- url: url of a screenshot, /assets/img/...
-  alt: alt-text of a screenshot
-  caption: caption of a screenshot
-- url: url of another screenshot, /assets/img/...
-  alt: alt-text of another screenshot
-  caption: caption of another screenshot
-- ...
 
-featuredimage: url of a featured image for your plugin, /assets/img/...
+featuredimage: 
 
 compatibility:
   octoprint:
