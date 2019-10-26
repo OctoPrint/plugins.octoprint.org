@@ -9,8 +9,8 @@ license: AGPLv3
 
 date: 201-10-26
 
-homepage: your plugin's homepage
-source: your plugin's source repository
+homepage: https://github.com/RomainOdeval/OctoPrint-CrealityTemperature/
+source: https://github.com/RomainOdeval/OctoPrint-CrealityTemperature/
 archive: archive link to install your plugin via pip, e.g. from github: https://github.com/username/repository/archive/master.zip
 
 # Set this to true if your plugin uses the dependency_links setup parameter to include
