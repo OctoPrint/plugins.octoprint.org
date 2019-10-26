@@ -4,7 +4,7 @@ layout: plugin
 id: CrealityTemperature
 title: Creality Temperature Fix
 description: Fix to parse correctly temperatures from Creality printer
-author: Jean-Christophe Heger, Romain Odeval
+author: Romain Odeval, Jean-Christophe Heger
 license: AGPLv3
 
 date: 201-10-26
