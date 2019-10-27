@@ -37,7 +37,7 @@ compatibility:
 ---
 
 Fix to parse correctly temperatures from Creality printers.
-Originally created by Jean-Christophe Heger on https://community.octoprint.org/t/temperature-info-not-parsed-correctly/3557/11
+Originally created by Jean-Christophe Heger on https://community.octoprint.org/t/temperature-info-not-parsed-correctly/3557/12
 
 Tested on :
 * CR-10S Pro
