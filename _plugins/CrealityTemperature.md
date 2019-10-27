@@ -7,7 +7,7 @@ description: Fix to parse correctly temperatures from Creality printer
 author: Romain Odeval, Jean-Christophe Heger
 license: AGPLv3
 
-date: 201-10-26
+date: 2019-10-26
 
 homepage: https://github.com/RomainOdeval/OctoPrint-CrealityTemperature/
 source: https://github.com/RomainOdeval/OctoPrint-CrealityTemperature/
