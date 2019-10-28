@@ -22,10 +22,10 @@ compatibility:
 - python: ">=2.7,<4"
 
 screenshots:
-- url: /assets/img/plugins/thingiverse/thingiverse_screenshot.jpg
+- url: /assets/img/plugins/thingiverse/thingiverse_tab.jpg
   alt: Thingiverse Tab
   caption: ThingiverseTab
-- url: /assets/img/plugins/thingiverse/thingiverse_screenshot.jpg
+- url: /assets/img/plugins/thingiverse/thingiverse_settings.jpg
   alt: Thingiverse Settings
   caption: ThingiverseSettings
   
