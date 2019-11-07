@@ -8,7 +8,7 @@ author: The Spaghetti Detective Team
 license: AGPLv3
 
 # TODO
-date: 2019-11-05
+date: 2019-11-08
 
 homepage: https://www.thespaghettidetective.com
 source: https://github.com/TheSpaghettiDetective/OctoPrint-TheSpaghettiDetective
