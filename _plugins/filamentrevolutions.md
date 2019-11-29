@@ -6,7 +6,7 @@ title: Filament Sensor Revolutions
 description: Use 1 or 2 filament sensors to pause printing or send GCode commands when filament runs out or is jammed.
 author: RomRider
 license: AGPLv3
-date: 2019-11-20
+date: 2019-11-29
 
 homepage: https://github.com/RomRider/Octoprint-Filament-Revolutions
 source: https://github.com/RomRider/Octoprint-Filament-Revolutions
