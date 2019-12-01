@@ -2,7 +2,7 @@
 layout: plugin
 
 id: resource_monitor
-title: OctoPrint-Resource-Monitor
+title: Resource Monitor
 description: A plugin to view the current CPU, RAM, disk and network usage on your system
 author: Renaud Gaspard
 license: MIT
