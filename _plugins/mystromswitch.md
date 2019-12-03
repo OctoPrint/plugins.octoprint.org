@@ -8,7 +8,7 @@ author: David Zingg
 license: AGPLv3
 
 # today's date in format YYYY-MM-DD, e.g.
-date: 2019-11-27
+date: 2019-12-03
 
 homepage: https://github.com/da4id/OctoPrint-MyStromSwitch
 source: https://github.com/da4id/OctoPrint-MyStromSwitch
