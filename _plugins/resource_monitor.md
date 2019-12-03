@@ -7,7 +7,7 @@ description: A plugin to view the current CPU, RAM, disk and network usage on yo
 author: Renaud Gaspard
 license: MIT
 
-date: 2019-12-01
+date: 2019-12-03
 
 homepage: https://github.com/Renaud11232/OctoPrint-Resource-Monitor
 source: https://github.com/Renaud11232/OctoPrint-Resource-Monitor
