@@ -73,6 +73,12 @@ compatibility:
   - freebsd
 
 ---
+<style type="text/css" rel="stylesheet">
+a.link { color: #007bff; }
+a.link:hover { color: #0062cc; }
+</style>
+
+<p style="color: red; font-weight: bolder">Please note: OctoPrint Anywhere will be succeeded by <a class="link" href="https://plugins.octoprint.org/plugins/thespaghettidetective/">The Spaghetti Detective</a>, a faster and more powerful remote monitoring tool that automatically detects print failures using AI.</p>
 
 ## Why OctoPrint Anywhere?
 
