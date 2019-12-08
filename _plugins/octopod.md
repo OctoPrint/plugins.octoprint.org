@@ -21,6 +21,9 @@ tags:
 - notifications
 - mmu
 
+compatibility:
+  python: ">=2.7,<4"
+
 screenshots:
 - url: /assets/img/plugins/octopod/settings.png
   alt: Configure Notifications
@@ -40,13 +43,15 @@ featuredimage: /assets/img/plugins/octopod/print_finished.jpg
 ---
 
 This plugin sends immediate push notifications to your iOS devices when:
-* your print has finished. Notifications include a snapshot of your camera. If you
-have multiple cameras then you can include a snapshot of any of them. Even if the
-cameras are not connected to OctoPrint you can still make use of them
-* bed has cooled down enough so you can remove your print
-* bed has warmed up to target temperature for a specified period so you can start
-printing knowing that bed's material won't expand anymore
-* MMU requires user assistance (requires Prusa firmware)
+1. Print finished (includes camera snapshot)
+1. Bed warmed up to target temp for a period of time. Helps get smooth first layers
+1. Bed cooled down below specified threshold. Ideal to easily remove prints from bed
+1. Extruder cooled down below specified threshold. Ideal to know when to turn printer off
+1. Printer paused for user. This may happen when running out of filament or when doing manual multi color printing (M600) 
+1. [Palette 2 / Pro](https://www.mosaicmfg.com/products/palette-2) encountered a problem while printing
+1. [MMU](https://shop.prusa3d.com/en/upgrades/183-original-prusa-i3-mk25smk3s-multi-material-2s-upgrade-kit-mmu2s.html#) requires user assistance (requires Prusa firmware)
+1. Firmware errors. Get security alerts like thermal runaway, probing failed, min temp error, max temp error, etc.
+
 
 If you are using the free and open source [OctoPod](https://itunes.apple.com/us/app/octopod-for-octoprint/id1412557625?mt=8)
 to control your printer from any iOS device then this plugin is a great addition. If you
