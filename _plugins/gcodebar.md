@@ -7,7 +7,7 @@ description: Send GCode from the sidebar
 author: Markus Towara
 license: AGPLv3
 
-date: 2019-12-12
+date: 2016-09-01
 
 homepage: https://github.com/mtowara/OctoPrint-Gcodebar
 source: https://github.com/mtowara/OctoPrint-Gcodebar
