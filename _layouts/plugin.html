@@ -131,6 +131,11 @@ layout: default
             {% else %}
             <li>Operating Systems: all</li>
             {% endif %}
+            {% if page.compatibility.python %}
+            <li>Python: {{ page.compatibility.python }}</li>
+            {% else %}
+            <li>Python: >=2.7,<3</li>
+            {% endif %}
           </ul>
         </dd>
       </dl>
