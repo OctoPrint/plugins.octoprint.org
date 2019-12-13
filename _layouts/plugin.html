@@ -132,9 +132,9 @@ layout: default
             <li>Operating Systems: all</li>
             {% endif %}
             {% if page.compatibility.python %}
-            <li>Python: {{ page.compatibility.python }}</li>
+            <li>Python: {{ page.compatibility.python | strip_html | strip_newlines | escape }}</li>
             {% else %}
-            <li>Python: >=2.7,<3</li>
+            <li>Python: &gt;=2.7,&lt;3</li>
             {% endif %}
           </ul>
         </dd>
