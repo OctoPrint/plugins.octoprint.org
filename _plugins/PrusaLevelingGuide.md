@@ -7,7 +7,7 @@ description: Plugin that helps walk you through adjusting the Prusa MK3 heatbed 
 author: Scott Rini
 license: AGPLv3
 
-date: 2019-12-12
+date: 2019-12-18
 
 homepage: https://github.com/scottrini/OctoPrint-PrusaLevelingGuide
 source: https://github.com/scottrini/OctoPrint-PrusaLevelingGuide
@@ -30,6 +30,9 @@ screenshots:
   alt: Heatbed view
   caption: Heatbed view
 featuredimage: /assets/img/plugins/PrusaLevelingGuide/bed.png
+
+compatibility:
+  python: ">=2.7,<4"
 
 ---
 
