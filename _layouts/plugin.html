@@ -68,6 +68,12 @@ layout: default
           {% include adsnippet.html %}
         </dd>
       </dl>
+      {% if page.date %}
+      <dl class="date">
+        <dt>Since</dt>
+        <dd>{{ page.date | strip_html | strip_newlines | escape | date_to_string}}</dd>
+      </dl>
+      {% endif %}
       {% if page.archive %}
       <dl class="installation">
         <dt>Installation <a href="/help/installation/" class="fas fa-question-circle"></a></dt>
