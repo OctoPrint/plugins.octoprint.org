@@ -20,13 +20,15 @@ tags:
 - lcd
 - display
 
-# TODO
 screenshots:
 - url: /assets/img/plugins/m73progress/m73progress.jpg
   alt: Working LCD progress bar while printing from OctoPrint!
   caption: Working LCD progress bar while printing from OctoPrint!
 
 featuredimage: /assets/img/plugins/m73progress/m73progress.jpg
+
+compatibility:
+  python: ">=2.7,<4"
 
 ---
 
@@ -50,3 +52,22 @@ not enabled by default. You can enable it by uncommenting line 576 in
 // Add an 'M73' G-code to set the current percentage
 #define LCD_SET_PROGRESS_MANUALLY
 ```
+
+## Configuration
+
+The plugin should work as-is. Once enabled, the plugin will automatically inject
+M73 commands in the printer's serial stream. There are two options to fine-tune
+the plugin's behavior, available through the `M73 Progress` tab in OctoPrint
+settings.
+
+* `Output time left`: Sends the estimated time remaining using the R parameter.
+  This is only supported by certain firmwares (e.g. Marlin 2.0 and Prusa
+  firmware). This option is enabled by default; most firmwares will just ignore
+  this extra parameter if not supported.
+
+* `Use time estimate`: By default, the plugin uses OctoPrint's built-in progress
+  estimate, which is based on the progress inside a G-code file. In some cases,
+  a better progress estimate can be calculated from the time elapsed and the
+  time remaining: `P = elapsed / (elapsed + remaining)`. This option is
+  particularly useful for
+  [PrintTimeGenius](https://github.com/eyal0/OctoPrint-PrintTimeGenius) users.
