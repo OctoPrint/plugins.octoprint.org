@@ -25,6 +25,8 @@ screenshots:
 compatibility:
   octoprint:
   - 1.3.1
+  python:
+  - ">=2.7,<4"
 ---
 
 Ever accidentally preheat your hotend or bed and then forget to start a print? Then this is the plugin for you.
