@@ -40,7 +40,7 @@ featuredimage: https://github.com/entrippy/OctoPrint-OctoHue/blob/master/Setting
 
 compatibility:
   
-  python: ">=2.7,<3"
+  python: ">=2.7,<4"
 
 ---
 
