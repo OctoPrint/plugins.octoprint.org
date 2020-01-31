@@ -8,7 +8,7 @@ author: Simon Beckett
 license: AGPLv3
 
 # TODO
-date: 2020-01-25
+date: 2020-01-31
 
 homepage: https://github.com/entrippy/OctoPrint-OctoHue
 source: https://github.com/entrippy/OctoPrint-OctoHue
