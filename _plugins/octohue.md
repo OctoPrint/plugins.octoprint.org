@@ -26,7 +26,7 @@ tags:
 - Automation
 
 screenshots:
-- url: https://github.com/entrippy/OctoPrint-OctoHue/blob/master/Settings-Screenshot.png
+- url: https://raw.githubusercontent.com/entrippy/OctoPrint-OctoHue/master/Settings-Screenshot.png
   alt: OctoHue Settings
   caption: OctoHue's settings showing status colour customisation options
 
