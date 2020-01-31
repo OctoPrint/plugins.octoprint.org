@@ -7,7 +7,7 @@ description: Show progress percentage in document title
 author: pwnbus
 license: AGPLv3
 
-date: 2020-01-15
+date: 2020-01-31
 
 homepage: https://github.com/pwnbus/OctoPrint-Progress-Title
 source: https://github.com/pwnbus/OctoPrint-Progress-Title
@@ -18,7 +18,7 @@ tags:
 - title
 
 compatibility:
-- python: ">=2.7,<4"
+  python: ">=2.7,<4"
 
 screenshots:
 - url: /assets/img/plugins/progress_title/title.png
