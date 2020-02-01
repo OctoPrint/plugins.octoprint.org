@@ -26,12 +26,13 @@ tags:
 - Automation
 
 screenshots:
-- url: https://raw.githubusercontent.com/entrippy/OctoPrint-OctoHue/master/Settings-Screenshot.png
+- url: /assets/img/plugins/octohue/Settings-Screenshot.png
   alt: OctoHue Settings
   caption: OctoHue's settings showing status colour customisation options
 
 
-featuredimage: https://github.com/entrippy/OctoPrint-OctoHue/blob/master/Settings-Screenshot.png
+featuredimage: /assets/img/plugins/octohue/Featured-Image.png
+
 
 # TODO
 # You only need the following if your plugin requires specific OctoPrint versions or
@@ -52,9 +53,10 @@ Illuminate your print job and signal its status using a Philips Hue light.
 * Light on and off in coordination with the connection between Octoprint and your printer
 * Configure "Connected" light colour using colour picker or HTML hex colour codes
 * Customisable default brightness
-* Available Statuses:
-  * Connected - White (Customisable)
-  * Error - Red (Currently hard coded)
+* Available Customisable Statuses:
+  * Connected -  Default White
+  * Print Finished - Default Green
+  * Error - Default Red
 
 See the TODO list at the end of this page for features on the roadmap
 
