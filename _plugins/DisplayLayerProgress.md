@@ -3,7 +3,7 @@ layout: plugin
 
 id: DisplayLayerProgress
 title: DisplayLayerProgress 
-description: Displays the current processing layer and the percentage in "Printer-Display" and in top "NavBar"
+description: Displays the Layer, Progress and other data on "Printer-Display", "NavBar", "BrowserTab-Title" and in the Browser as a simulated "Printer-Display"
 author: Olli
 license: AGPLv3
 
@@ -23,6 +23,9 @@ tags:
 - layer
 
 screenshots:
+- url: https://github.com/OllisGit/OctoPrint-DisplayLayerProgress/raw/master/screenshots/browser-title-tab.png
+  alt: Example of Browser Tab Title
+  caption: Example of Browser Tab Title
 - url: https://github.com/OllisGit/OctoPrint-DisplayLayerProgress/raw/master/screenshots/navbar.jpg
   alt: Example of NavBar Display
   caption: Example of NavBar Display
@@ -47,10 +50,11 @@ featuredimage: https://github.com/OllisGit/OctoPrint-DisplayLayerProgress/raw/ma
 A OctoPrint-Plugin that sends the current Layer-Informations, the Progress and other data of a print via M117 command to the printer-display and also to the top navigation bar.
 A new feature is the "Desktop Printer-Display", which shows all M117 messages in a Desktop PopUp.
 
-It shows the **percentage, the current layer, total layer count, current height and total height**:
+It shows the **progress, estimatedEndTime, printTimeLeft, currentLayer, totalLayerCount, last/average layerDuration, currentHeight, totalHeight, feedrate and fanspeed**:
 
-- Printer Display: 50% L=60/120 H=23mm/47mm  
-- NavBar: Layer: 60 / 120 Height: 23mm of 47mm
+- Printer Display: ```50% L=60/120 H=23mm/47mm```  
+- NavBar: Layer: ```60 / 120 Height: 23mm of 47mm```
+- Browser TabTitle: ```12% end: 19:32```
 
 *Output pattern is adjustable. Please visit the [homepage]({{ page.homepage | absolute_url }}) for more informations!*
 
@@ -59,7 +63,7 @@ It shows the **percentage, the current layer, total layer count, current height 
 This plugin, as well as my [other plugins](https://github.com/OllisGit/) were developed in my spare time.
 If you like it, I would be thankful about a cup of coffee :) 
 
-[![More coffee, more code](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2BJP2XFEKNG9J&source=url)
+[![More coffee, more code](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6SW5R6ZUKLB5E&source=url)
 
 **ATTENTION:** 
 - The layer information works only when the slicer adds "layer-indicator" to the g-code (CURA-Example as comments like ```;LAYER:10```). Then these indicators are parsed via a regular-expression.
