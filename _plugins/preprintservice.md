@@ -59,7 +59,7 @@ and [Octoprint Connection](https://github.com/Ultimaker/Cura/wiki/Plugin-Directo
 The full workflow can be deployed either on a single machine or more generally
  on two separated nodes as described below:
 
-![Workflow](/extras/workflow.png)
+![Workflow](/assets/img/plugins/preprintservice/workflow.png)
 
 The following steps will be done:
 
@@ -115,7 +115,7 @@ The service is available on [localhost:2304/tweak](http://localhost:2304/tweak)
 where a simple UI is provided for testing the PrePrint Service.
 Use `docker-compose down` to stop the service. (If you ever wish :wink: )
 
-![PrePrint Service](/extras/PrePrintService.png)
+![PrePrint Service](/assets/img/plugins/preprintservice/PrePrintService.png)
 
 
 ## Configuration
@@ -123,7 +123,7 @@ Use `docker-compose down` to stop the service. (If you ever wish :wink: )
 Configure the plugin in the settings and make sure the url for the PrePrint service is set
 correct:
 
-![settings](/extras/settings3.png)
+![settings](/assets/img/plugins/preprintservice/settings3.png)
 
 Note that the **octoprint URL must not be localhost**, as the `tweak-service` is deployed in
 a docker network where it is unable to locate it's hosts local network.
