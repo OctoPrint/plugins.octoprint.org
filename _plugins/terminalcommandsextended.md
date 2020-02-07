@@ -7,7 +7,7 @@ description: Plugin that adds custom gcode command buttons to the Terminal tab.
 author: jneilliii
 license: AGPLv3
 
-date: 2020-02-01
+date: 2020-02-07
 
 homepage: https://github.com/jneilliii/OctoPrint-TerminalCommandsExtended
 source: https://github.com/jneilliii/OctoPrint-TerminalCommandsExtended
