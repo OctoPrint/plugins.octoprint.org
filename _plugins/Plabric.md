@@ -62,4 +62,4 @@ You can find the steps accessing to plugin options:
 
 ## Support
 
-Do you have any doubt or trouble installing the plugin? Contact us at [contact@plabric.com](contact@plabric.com)
+Do you have any doubt or trouble installing the plugin? Contact us at [contact@plabric.com](mailto:contact@plabric.com)
