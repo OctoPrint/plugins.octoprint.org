@@ -30,6 +30,5 @@ compatibility:
   os:
   - linux
   - freebsd
-
-python: ">=2.7,<4"
+  python: ">=2.7,<4"
 ---
