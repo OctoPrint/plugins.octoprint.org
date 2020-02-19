@@ -34,11 +34,11 @@ layout: default
 <div class="container">
   <div class="row-fluid">
     {% if prev_plugin %}
-    <small class="pull-left"><a href="{{ prev_plugin.url | prepend: site.baseurl }}"><i class="icon-double-angle-left"></i>&nbsp;{{ prev_plugin.title | strip_html | strip_newlines | escape }}</a></small>
+    <small class="pull-left"><a href="{{ prev_plugin.url | prepend: site.baseurl }}"><i class="fa fa-double-angle-left"></i>&nbsp;{{ prev_plugin.title | strip_html | strip_newlines | escape }}</a></small>
     {% endif %}
     &nbsp;
     {% if next_plugin %}
-    <small class="pull-right"><a href="{{ next_plugin.url | prepend: site.baseurl }}">{{ next_plugin.title | strip_html | strip_newlines | escape }}&nbsp;<i class="icon-double-angle-right"></i></a></small>
+    <small class="pull-right"><a href="{{ next_plugin.url | prepend: site.baseurl }}">{{ next_plugin.title | strip_html | strip_newlines | escape }}&nbsp;<i class="fa fa-double-angle-right"></i></a></small>
     {% endif %}
   </div>
   <div class="content plugin-content row-fluid">
@@ -70,12 +70,39 @@ layout: default
       </dl>
       {% if page.archive %}
       <dl class="installation">
-        <dt>Installation <a href="/help/installation/" class="icon-question-sign"></a></dt>
+        <dt>Installation <a href="/help/installation/" class="fas fa-question-circle"></a></dt>
         {% if page.disabled %}
-        <dd><pre><s>pip install {% if page.follow_dependency_links %}--process-dependency-links {% endif %}"{{ page.archive | strip_html | strip_newlines | escape }}"</s></pre><small>Currently not recommended</small></dd>
+        <dd>
+          URL:
+          <pre><s>{{ page.archive | escape | escape | strip_newlines }}</s></pre>
+          <small>Currently not recommended</small>
+          {% if page.follow_dependency_links %}<small>Needs "Use --process-dependency-links with pip install" to be checked.</small>{% endif %}
+        </dd>
         {% else %}
-        <dd><pre>pip install {% if page.follow_dependency_links %}--process-dependency-links {% endif %}"{{ page.archive | escape | escape | strip_newlines }}"</pre></dd>
+        <dd>
+          URL:
+          <pre>{{ page.archive | escape | escape | strip_newlines }}</pre>
+          {% if page.follow_dependency_links %}<small>Needs "Use --process-dependency-links with pip install" to be checked.</small>{% endif %}
+        </dd>
         {% endif %}
+        {% if page.disabled %}
+        <dd>
+          Command line:
+          <pre><s>pip install {% if page.follow_dependency_links %}--process-dependency-links {% endif %}"{{ page.archive | strip_html | strip_newlines | escape }}"</s></pre>
+          <small>Currently not recommended</small>
+        </dd>
+        {% else %}
+        <dd>
+          Command line:
+          <pre>pip install {% if page.follow_dependency_links %}--process-dependency-links {% endif %}"{{ page.archive | escape | escape | strip_newlines }}"</pre>
+        </dd>
+        {% endif %}
+      </dl>
+      {% endif %}
+      {% if page.date %}
+      <dl class="date">
+        <dt>Registration date</dt>
+        <dd>{{ page.date | strip_html | strip_newlines | escape | date_to_string}}</dd>
       </dl>
       {% endif %}
       {% if page.tags %}
@@ -109,6 +136,11 @@ layout: default
             <li>Operating Systems: {% include os_compat_human entries=page.compatibility.os %}</li>
             {% else %}
             <li>Operating Systems: all</li>
+            {% endif %}
+            {% if page.compatibility.python %}
+            <li>Python: {{ page.compatibility.python | strip_html | strip_newlines | escape }}</li>
+            {% else %}
+            <li>Python: &gt;=2.7,&lt;3</li>
             {% endif %}
           </ul>
         </dd>

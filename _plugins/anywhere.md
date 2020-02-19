@@ -73,6 +73,7 @@ compatibility:
   - freebsd
 
 ---
+<p style="color: red; font-weight: bolder">Please note: OctoPrint Anywhere will be succeeded by <a class="link" style="color: #007bff;" href="https://plugins.octoprint.org/plugins/thespaghettidetective/">The Spaghetti Detective</a>, a faster and more powerful remote monitoring tool. It also detects print failures using AI. We strongly urge you to install that plugin instead.</p>
 
 ## Why OctoPrint Anywhere?
 

@@ -12,7 +12,7 @@ title: Plugins by Author
 {% endfor %}
 {% assign all_authors = all_authors | uniq | sort_natural %}
 
-<i class="icon-user"></i>
+<i class="fa fa-user"></i>
 {% for author in all_authors %}
   {% unless author == "" %}{% include plugin_author author=author %}{% endunless %}
 {% endfor %}

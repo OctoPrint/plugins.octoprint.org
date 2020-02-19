@@ -19,6 +19,9 @@ tags:
 - tab
 - stl
 
+compatibility:
+  python: ">=2.7,<4"
+
 featuredimage: /assets/img/plugins/stlviewer/screenshot.jpg
 
 ---
