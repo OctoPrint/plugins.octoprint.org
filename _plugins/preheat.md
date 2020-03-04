@@ -3,7 +3,7 @@ layout: plugin
 
 id: preheat
 title: Preheat Button
-description: Automatically heat printhead to the printing temperature of the current gcode file
+description: Automatically heat nozzle and bed to the printing temperature of the current gcode file
 author: Marian Kleineberg
 license: MIT
 
@@ -32,6 +32,6 @@ screenshots:
 
 ---
 
-This plugin adds a preheat button to preheat the nozzle to the printing temperature of the selected gcode file.
+This plugin adds a preheat button to preheat the nozzle and bed to the printing temperature of the selected gcode file.
 This can be done manually but this plugin makes it more convenient.
 If the target temperature is not zero, the button will instead turn off nozzle heating (cooldown).
