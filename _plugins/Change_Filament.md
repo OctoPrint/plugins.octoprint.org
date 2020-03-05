@@ -24,6 +24,9 @@ screenshots:
   alt: Change Filament Settings
   caption: Change Filament Settings
 
+compatibility:
+  python: ">=2.7,<4"
+
 featuredimage: /assets/img/plugins/Change_Filament/cf_buttons.png
 
 ---
