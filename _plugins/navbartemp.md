@@ -50,7 +50,7 @@ of command.
 Example:
 ![NavbarTemp](https://github.com/imrahil/OctoPrint-NavbarTemp/blob/master/images/custom_cmd_cfg1.png?raw=true) 
 
-![NavbarTemp](https://github.com/imrahil/OctoPrint-NavbarTemp/blob/master/images/images/custom_cmd_bar1.png?raw=true) 
+![NavbarTemp](https://github.com/imrahil/OctoPrint-NavbarTemp/blob/master/images/custom_cmd_bar1.png?raw=true) 
 
 
 ## Change notes:
