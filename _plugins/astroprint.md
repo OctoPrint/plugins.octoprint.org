@@ -23,6 +23,7 @@ tags:
 - remote access
 - video streaming
 - design management
+- fleet management
 
 screenshots:
 - url: /assets/img/plugins/astroprint/astroprint-hero.jpg
@@ -75,17 +76,13 @@ You can follow the instructions in this [README](https://github.com/AstroPrint/O
 
 Use the free [AstroPrint Mobile](https://www.astroprint.com/products/p/astroprint-mobile) app (iOS & Android) to connect to your OctoPi.  You can connect from anywhere: local network, out-of-network wifi, or via your phone's data network.  The Mobile app lets you monitor prints, start/stop prints, search and print from Thingiverse, check out your printing stats, save files in the cloud, slice files in the cloud, and more.
 
-## AstroPrint Desktop
-
-You can access your OctoPi from [AstroPrint Desktop](https://www.astroprint.com/products/p/astroprint-desktop) software as well.  At the time of this writing, we only offer cloud connected functionality.  Local Network functionality will be released soon.  After plating, duplicating, resizing, slicing, etc on AstroPrint Desktop, you can print wirelessly to any of (or all of) your OctoPi, and monitor the progress of the print.
-
 ## AstroPrint.com Web Portal
 
 In addition to using Mobile and Desktop, you'll be able to access your OctoPi from any web enabled device by logging in at [AstroPrint.com](https://www.astroprint.com).  You can also access 3rd party applications here to do things like:  Cloud based file repair, print queuing, and more.
 
 ## Other Applications
 
-Via AstroPrint APIs, some developers are adding the ability to print from their apps directly to 3D printers.  You'll be able to print directly to your printer from websites like the [NIH 3D Print Exchange](https://3dprint.nih.gov/), [Watertight](https://watertight.com/), and [3DaGoGo](https://www.3dagogo.com).  You’ll also be able to print-from-app from apps like [Toy Maker](https://toymaker.astroprint.com).
+Via AstroPrint APIs, some developers are adding the ability to print from their apps directly to 3D printers.  You'll be able to print directly to your printer from websites like the [NIH 3D Print Exchange](https://3dprint.nih.gov/), [3DaGoGo](https://www.3dagogo.com) and [TinkerCad](https://www.tinkercad.com).  You’ll also be able to print-from-app from apps like [Toy Maker](https://toymaker.astroprint.com).
 
 
 Happy Printing!<br>
