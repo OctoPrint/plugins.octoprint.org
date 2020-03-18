@@ -6,7 +6,7 @@ title: Add GCODE like HUE commands to OctoPrint
 description: Illuminate your print job and signal its status using a Philips Hue light. Enter a GCODE equivalent anywhere you want.
 author: LMS0815
 license: AGPLv3
-date: 2020-02-11
+date: 2020-03-18
 
 homepage: https://github.com/LMS0815/OctoPrint-hueCommands
 source: https://github.com/LMS0815/OctoPrint-hueCommands
