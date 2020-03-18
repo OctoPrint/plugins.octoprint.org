@@ -23,9 +23,9 @@ tags:
 - gcode
 
 screenshots:
-- url: https://raw.githubusercontent.com/LMS0815/OctoPrint-hueCommands/master/screenshots/huecommands_logging.png
+- url: https://raw.githubusercontent.com/LMS0815/OctoPrint-hueCommands/master/screenshots/huecommands_settings.png
 
-featuredimage: https://raw.githubusercontent.com/LMS0815/OctoPrint-hueCommands/master/screenshots/huecommands_logging.png
+featuredimage: https://raw.githubusercontent.com/LMS0815/OctoPrint-hueCommands/master/screenshots/huecommands_settings.png
 
 compatibility:
   octoprint:
