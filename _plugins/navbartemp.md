@@ -14,7 +14,7 @@ tags:
 - ui
 ---
 
-![NavbarTemp](https://github.com/imrahil/OctoPrint-NavbarTemp/raw/master/navbar.png?raw=true)
+![NavbarTemp](https://raw.githubusercontent.com/imrahil/OctoPrint-NavbarTemp/master/images/navbar.png)
 
 For Raspberry Pi users it's possible to display internal temperature (configurable via settings dialog):
-![NavbarTempRaspi](https://github.com/imrahil/OctoPrint-NavbarTemp/raw/master/navbar_raspi.png?raw=true)
+![NavbarTempRaspi](https://raw.githubusercontent.com/imrahil/OctoPrint-NavbarTemp/master/images/navbar_raspi.png)
