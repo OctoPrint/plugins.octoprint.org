@@ -34,7 +34,8 @@ screenshots:
 
 featuredimage: /assets/img/plugins/m33fio/model_editor.png
 
-disabled: This plugin has been abandoned by its author and it is no longer being maintained.
+disabled: This plugin has been abandoned by its author and it is no longer being maintained. See [this ticket](https://github.com/OctoPrint/plugins.octoprint.org/issues/411) 
+  on the plugin repository issue tracker.
 
 ---
 
