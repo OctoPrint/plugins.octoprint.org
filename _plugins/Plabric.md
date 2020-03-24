@@ -40,6 +40,8 @@ Manage and control your 3D printer anywhere without port forwarding or VPN.
 
 Plabric plugin allows you to link your 3D printer with Plabric app. Discover all features on https://plabric.com
 
+For the moment, video stream is only available on x86_64 and armv7l (Raspberry) linux systems.
+
 ## How to install
 
 Check our tutorial: [Install Plabric](https://plabric.com/connect)
