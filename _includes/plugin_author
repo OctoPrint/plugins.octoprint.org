@@ -1,0 +1,1 @@
+<a class="label" href="{{ '/by_author/' | prepend: site.baseurl }}#{{ include.author | slugify }}">{{ include.author }}</a>

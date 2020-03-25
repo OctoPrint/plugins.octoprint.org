@@ -28,6 +28,7 @@ compatibility:
   - 1.3.1
   os:
   - linux
+  python: ">=2.7,<4"
 ---
 
 OctoPrint Plugin that executes shell commands on temperature violations.

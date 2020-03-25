@@ -1,0 +1,31 @@
+---
+layout: plugin_list
+title: Plugins by Author
+---
+
+{% assign all_authors = "" | split: "/" %}
+{% for plugin in site.plugins %}
+  {% assign preprocessed = plugin.author %}
+  {% unless preprocessed == "" %}
+    {% assign all_authors = all_authors | push: preprocessed %}
+  {% endunless %}
+{% endfor %}
+{% assign all_authors = all_authors | uniq | sort_natural %}
+
+<i class="fa fa-user"></i>
+{% for author in all_authors %}
+  {% unless author == "" %}{% include plugin_author author=author %}{% endunless %}
+{% endfor %}
+
+{% for author in all_authors %}
+  {% unless author == "" %}
+  <h2 id="{{ author | slugify }}">{{ author }}</h2>
+  <ul>
+  {% for plugin in site.plugins %}
+    {% if author == plugin.author  %}
+      <li>{% include plugin_snippet plugin=plugin %}</li>
+    {% endif %}
+  {% endfor %}
+  </ul>
+  {% endunless %}
+{% endfor %}  

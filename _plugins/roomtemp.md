@@ -15,6 +15,9 @@ tags:
 compatibility:
   octoprint:
   - 1.3.1
+  
+disabled: This plugin can cause severe server issues in its current form.
+  
 ---
 
 # Plugin that displays room temperature on navbar

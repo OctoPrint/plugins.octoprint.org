@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: plugin_list
 title: Plugins by Tag
 ---
 
@@ -14,7 +14,7 @@ title: Plugins by Tag
 {% endfor %}
 {% assign all_tags = all_tags | uniq | sort %}
 
-<i class="icon-tag"></i>
+<i class="fa fa-tag"></i>
 {% for tag in all_tags %}
   {% unless tag == "" %}{% include plugin_tag tag=tag %}{% endunless %}
 {% endfor %}

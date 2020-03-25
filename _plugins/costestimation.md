@@ -25,8 +25,12 @@ screenshots:
   caption: Settings dialog to configure the print cost
 ---
 
-This OctoPrint plugin displays the estimated print cost for the loaded model. The print cost includes the price for the used filament and the operating cost for the printer.
+This OctoPrint plugin displays the estimated print cost for the loaded model. The print cost includes the price for the used filament the maintenance and operating cost for the printer as well as the depreciation of the printer.
 
-The cost for the filament is calculated from the price per gramm and the provided volume needed for the print.
+#### Features
 
-The operating cost is calculated from the power consumtion of the printer, the price per kWh and the estimated print time of the model.
+- Calculation based on the provided filament length
+- Customizable currency symbol
+- Hide cost if not logged in (optional)
+- Support for multiple extruders
+- Support for filament profiles with [Filament Manager Plugin](/plugins/filamentmanager)

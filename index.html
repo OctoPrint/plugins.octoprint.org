@@ -1,47 +1,19 @@
 ---
-layout: page
+layout: plugin_list
 title: OctoPrint Plugin Repository
 ---
 
-<div class="row-liquid">
-  <div class="span8">
-    <h2><i class="icon-asterisk"></i> Most recently added plugins</h2>
-    <div>
-      <small class="pull-right"><a href="{% include canonic_url url='/feed.xml' %}"><i class="icon-rss"></i> RSS Feed</a></small>
-    </div>
-    <ul>
-      {% assign sorted_plugins = (site.plugins | sort: 'date', 'last' | reverse) %}
-      {% for plugin in sorted_plugins limit:10 %}
-      <li>{% include plugin_snippet plugin=plugin %}</li>
-      {% endfor %}
-    </ul>
-    <div>
-      <a href="{{ '/by_date/' | prepend: site.baseurl }}">More...</a>
-    </div>
-  </div>
-  <div class="span4">
-    <h2><i class="icon-search"></i> Search</h2>
-
-    {% include search.html %}
-
-    <h2><i class="icon-lightbulb"></i> Help</h2>
-
-    <p>
-      You are a user of OctoPrint and want to to know <strong>how to install</strong> any of the plugins listed here? <a href="{{ '/help/installation/' | prepend: site.baseurl }}">Take a look at this guide</a>.
-    </p>
-    <p>
-      You are a plugin author and want to <strong>register your new plugin</strong> to be listed here? <a href="{{ '/help/registering/' | prepend: site.baseurl }}">Take a look at this guide</a>.
-    </p>
-    <p>
-      You are interested in <strong>writing your own plugin</strong> and don't know how to start? <a href="http://docs.octoprint.org/en/master/plugins/gettingstarted.html">Take a look at the plugin tutorial</a>.
-    </p>
-    <p>
-      <strong>Something is wrong with this repository?</strong> If something appears to be broken, please <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues">report it</a> or <a href="https://github.com/OctoPrint/plugins.octoprint.org/pulls">send a PR to fix it =)</a>. Thanks!
-    </p>
-
-    <h2><i class="icon-bar-chart"></i> Stats</h2>
-
-    There are currently {{ site.plugins | size }} plugins listed in this repository.
-
-  </div>
+<h2><i class="fa fa-asterisk"></i> Most recently added plugins</h2>
+<div>
+  <small class="pull-right"><a href="{% include canonic_url url='/feed.xml' %}"><i class="fa fa-rss"></i> RSS Feed</a></small>
 </div>
+<ul>
+  {% assign sorted_plugins = site.plugins | sort: 'date', 'last' | reverse %}
+  {% for plugin in sorted_plugins limit:10 %}
+  <li>{% include plugin_snippet plugin=plugin %}</li>
+  {% endfor %}
+</ul>
+<div>
+  <a href="{{ '/by_date/' | prepend: site.baseurl }}">More...</a>
+</div>
+

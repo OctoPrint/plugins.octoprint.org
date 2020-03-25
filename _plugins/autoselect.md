@@ -4,7 +4,7 @@ layout: plugin
 id: autoselect
 title: Autoselect
 description: Automatically selects freshly uploaded files for printing if no print job is currently active.
-author: Gina Häußge
+author: Jubaleth, Gina Häußge
 license: AGPLv3
 
 date: 2015-06-27

@@ -44,6 +44,10 @@ Before allowing to apply the patch string, the plugin will present the user
 with a preview of the changes that will take place, visualizing both added
 and removed entries within `config.yaml`.
 
+> ⚠ **Note**
+>
+> This plugin primarily targets developers, not endusers. It is not actively maintained since it does what is needed from it for regular OctoPrint development activities. If someone wants to make it more versatile and add more or fix existing functionality, feel free to get in touch about adoption on the [community forums](https://community.octoprint.org/c/plugins) about it.
+
 ## Usage
 
 Paste a valid patch string into the input field below, then hit the "Preview" button. Make sure the changes look like they should (if a screenshot of a preview was provided along side the patch string, compare!). If they do, hit "Apply". Then restart your server.
