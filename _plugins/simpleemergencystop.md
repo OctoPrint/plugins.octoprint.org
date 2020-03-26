@@ -46,7 +46,7 @@ A simple plugin that adds an emergency stop button on NavBar.
 
 You can chose between 2 type of button, the [big one](https://github.com/Sebclem/OctoPrint-SimpleEmergencyStop/blob/1.0.0/images/big.jpeg), or [little one](https://github.com/Sebclem/OctoPrint-SimpleEmergencyStop/blob/1.0.0/images/small.jpeg).
 
-If you need more information, you find the project [Github Page here](https://github.com/Sebclem/OctoPrint-SimpleEmergencyStop).
+If you need more information, you can find the project's [Github Page here](https://github.com/Sebclem/OctoPrint-SimpleEmergencyStop).
 
 
 
