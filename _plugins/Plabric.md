@@ -7,7 +7,7 @@ description: Manage and control your 3D printer anywhere without port forwarding
 author: Plabric
 license: AGPLv3
 
-date: 2020-02-10
+date: 2020-03-26
 
 homepage: https://plabric.com
 source: https://github.com/plabric/Octoprint-Plabric
