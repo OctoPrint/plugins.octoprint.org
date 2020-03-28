@@ -29,6 +29,9 @@ screenshots:
 - url: /assets/img/plugins/resource_monitor/cpu.png
   alt: CPU
   caption: Processor usage
+- url: /assets/img/plugins/resource_monitor/temp.png
+  alt: Temperature
+  caption: CPU Temperature
 - url: /assets/img/plugins/resource_monitor/memory.png
   alt: Memory
   caption: Memory usage
@@ -50,6 +53,8 @@ compatibility:
   - windows
   - macos
   - freebsd
+
+  python: ">=2.7,<4"
 
 ---
 
