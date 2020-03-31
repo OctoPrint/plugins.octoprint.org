@@ -30,6 +30,9 @@ screenshots:
   
 featuredimage: https://raw.githubusercontent.com/OllisGit/OctoPrint-DeleteAfterPrint/master/screenshots/sidebar.jpg
 
+compatibility:
+  python: ">=2.7,<4"
+
 ---
 
 Delete/Move automatically the Print-Model: 
