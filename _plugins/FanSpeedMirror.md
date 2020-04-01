@@ -46,6 +46,7 @@ featuredimage: url of a featured image for your plugin, /assets/img/...
 # "compatibility" block if this is not the case.
 
 compatibility:
+  python: ">=2.7,<4
 
   # List of compatible versions
   #
