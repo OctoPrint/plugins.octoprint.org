@@ -37,6 +37,8 @@ compatibility:
   - macos
   - freebsd
 
+  python: ">=2.7,<4"
+
 ---
 
 A small [OctoPrint](https://github.com/foosel/OctoPrint) plugin to change the looks of OctoPrint!
