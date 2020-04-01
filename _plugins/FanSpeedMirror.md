@@ -8,7 +8,7 @@ author: Brad Morgan
 license: AGPLv3
 
 # TODO
-date: today's date in format YYYY-MM-DD, e.g. 2015-04-21
+date: 2020-04-01
 
 homepage: https://github.com/b-morgan/OctoPrint-FanSpeedMirror
 source: https://github.com/b-morgan/OctoPrint-FanSpeedMirror
