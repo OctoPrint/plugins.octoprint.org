@@ -7,7 +7,7 @@ description: Checks installed plugins for Python 3 compatibility based on their 
 author: jneilliii
 license: AGPLv3
 
-date: 2020-03-28
+date: 2020-03-31
 
 homepage: https://github.com/jneilliii/OctoPrint-Python3PluginCompatibilityCheck
 source: https://github.com/jneilliii/OctoPrint-Python3PluginCompatibilityCheck
@@ -15,12 +15,7 @@ archive: https://github.com/jneilliii/OctoPrint-Python3PluginCompatibilityCheck/
 
 compatibility:
   octoprint:
-  - 1.2.0
-  os:
-  - linux
-  - windows
-  - macos
-  - freebsd  
+  - 1.3.11
   python: ">=2.7,<3"
 
 ---
