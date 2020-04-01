@@ -13,12 +13,14 @@ homepage: https://github.com/paukstelis/OctoPrint-Cancelobject
 source: https://github.com/paukstelis/OctoPrint-Cancelobject
 archive: https://github.com/paukstelis/OctoPrint-Cancelobject/archive/master.zip
 
-
 tags:
 - server
 - control
 - navbar
 - ui
+
+compatibility:
+  python: ">=2.7,<4"
 
 screenshots:
 - url: /assets/img/plugins/cancelobject/cancelobject.png
