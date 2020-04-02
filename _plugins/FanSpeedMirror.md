@@ -34,7 +34,7 @@ tags:
 #featuredimage: url of a featured image for your plugin, /assets/img/...
 
 compatibility:
-  python: ">=2.7,<4
+  python: ">=2.7,<4"
 
 ---
 
