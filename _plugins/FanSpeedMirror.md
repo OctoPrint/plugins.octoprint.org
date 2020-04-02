@@ -33,6 +33,9 @@ tags:
 # TODO
 #featuredimage: url of a featured image for your plugin, /assets/img/...
 
+compatibility:
+  python: ">=2.7,<4
+
 ---
 
 Mirror the parameter(s) of GCode commands M106, M107 to scripts on the OctoPrint host
