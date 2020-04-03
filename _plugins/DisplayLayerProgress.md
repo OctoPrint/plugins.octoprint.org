@@ -22,6 +22,12 @@ tags:
 - progress
 - layer
 
+compatibility:
+  python: ">=2.7,<4"
+  octoprint:
+  - 1.3.10
+  - 1.4.0
+  
 screenshots:
 - url: https://github.com/OllisGit/OctoPrint-DisplayLayerProgress/raw/master/screenshots/browser-title-tab.png
   alt: Example of Browser Tab Title
