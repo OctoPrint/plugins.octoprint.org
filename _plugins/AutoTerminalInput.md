@@ -3,7 +3,7 @@ layout: plugin
 
 id: AutoTerminalInput
 title: Auto Terminal Input
-description: Automatically focuses the command input wehn switching to the Terminal tab in OctoPrint.
+description: Automatically focuses the command input when switching to the Terminal tab in OctoPrint.
 author: jneilliii
 license: AGPLv3
 
