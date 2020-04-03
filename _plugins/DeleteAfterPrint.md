@@ -20,6 +20,12 @@ archive: https://github.com/OllisGit/OctoPrint-DeleteAfterPrint/releases/latest/
 tags:
 - printer
 
+compatibility:
+  python: ">=2.7,<4"
+  octoprint:
+  - 1.3.10
+  - 1.4.0
+  
 screenshots:
 - url: https://raw.githubusercontent.com/OllisGit/OctoPrint-DeleteAfterPrint/master/screenshots/sidebar.jpg
   alt: sidebar
@@ -30,8 +36,6 @@ screenshots:
   
 featuredimage: https://raw.githubusercontent.com/OllisGit/OctoPrint-DeleteAfterPrint/master/screenshots/sidebar.jpg
 
-compatibility:
-  python: ">=2.7,<4"
 
 ---
 
