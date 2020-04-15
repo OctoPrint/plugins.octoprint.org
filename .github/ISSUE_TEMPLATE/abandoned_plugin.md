@@ -1,7 +1,7 @@
 ---
 name: Abandoned plugin
 about: Use this to report plugins that have been confirmed as abandoned
-title: [Abandoned Plugin]
+title: '[Abandoned Plugin]'
 labels:
   - abandoned plugin
 ---

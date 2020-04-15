@@ -1,7 +1,7 @@
 ---
 name: Feature request
 about: Use this to request new features for the plugin repository (NOT ANY PLUGINS!)
-title: [Feature Request]
+title: '[Feature Request]'
 labels:
   - enhancement
 ---
