@@ -172,8 +172,16 @@ layout: default
       <dl class="issue">
         <dt>Something wrong with this listing?</dt>
         <dd>
-          <p>If there is something wrong with this listing, please <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues">report it</a>.</p>
-          <p>Only use this for problems with this listing - report <em>bugs in the plugin itself</em> to the plugin's author!</p>
+          <p>
+            If there is something wrong with this listing (broken links & images etc), please
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=bug&template=listing_error.md&title=%5BListing+Error%5D+{{ page.title | strip_html | strip_newlines | cgi_escape }}">report it here</a>.
+          </p>
+          <p>
+            If this plugin has been <em>confirmed</em> as abandoned by its maintainer, please
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=abandoned+plugin&template=abandoned_plugin.md&title=%5BAbandoned+Plugin%5D+{{ page.title | strip_html | strip_newlines | cgi_escape }}">report it here</a>.
+          </p>
+          <p>
+            Report bugs or feature requests for the plugin to the plugin author{% if page.homepage %} (e.g. on the plugin's <a href="">homepage</a>){% endif %} please, not here!</p>
         </dd>
       </dl>
     </div>
