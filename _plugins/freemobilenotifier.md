@@ -7,7 +7,7 @@ description: Octoprint plugin for print completion notifications using Free (Fre
 author: Antoine CAVARD
 license: AGPLv3
 
-date: 2017-01-25
+date: 2020-04-17
 
 homepage: https://github.com/Pinaute/OctoPrint_FreeMobile-Notifier
 source: https://github.com/Pinaute/OctoPrint_FreeMobile-Notifier
@@ -27,6 +27,9 @@ screenshots:
 
 featuredimage: /assets/img/plugins/freemobilenotifier/freemobilenotifier.png
 
+compatibility:
+  python: ">=2.7,<4"
+  
 ---
 
 Receive SMS notifications when OctoPrint jobs are complete.
