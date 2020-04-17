@@ -7,7 +7,7 @@ description: Octoprint plugin for print completion notifications using Free (Fre
 author: Antoine CAVARD
 license: AGPLv3
 
-date: 2020-04-17
+date: 2017-01-25
 
 homepage: https://github.com/Pinaute/OctoPrint_FreeMobile-Notifier
 source: https://github.com/Pinaute/OctoPrint_FreeMobile-Notifier
