@@ -1,10 +1,10 @@
 ---
-name: Suspicious plugin
+name: Suspicious plugin activity
 about: Use this to report plugins that are doing something malicious and/or undocumented (e.g. 
   crypto mining, suspicious network connections, unannounced tracking without opt-in, ...)
-title: '[Suspicious Plugin] <insert name of plugin here>'
+title: '[Suspicious Plugin Activity] <insert name of plugin here>'
 labels:
-  - suspicious plugin
+  - suspicious plugin activity
 ---
 
 <!--
