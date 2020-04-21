@@ -212,17 +212,22 @@ footer {
 
 .navbar-search .search-query { line-height: inherit; }
 
-.blacklist-table {
-  .blacklist-plugin {
+.blacklist-table,
+.notice-table {
+  .blacklist-plugin,
+  .notice-plugin {
     width: 50%;
   }
   .blacklist-versions,
-  .blacklist-octoversions {
+  .blacklist-octoversions,
+  .notice-versions,
+  .notice-octoversions {
     width: 25%;
     text-align: center;
   }
 
-  .blacklist-reason {
+  .blacklist-reason,
+  .notice-text {
     p:first-child::before {
       content: 'Reason: ';
       font-weight: bold;
