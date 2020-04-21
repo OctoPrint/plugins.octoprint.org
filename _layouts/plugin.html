@@ -170,18 +170,24 @@ layout: default
       </dl>
       {% endif %}
       <dl class="issue">
-        <dt>Something wrong with this listing?</dt>
+        <dt>Something wrong here?</dt>
         <dd>
           <p>
-            If there is something wrong with this listing (broken links & images etc), please
+            If there is <strong>something wrong with this listing</strong> (broken links & images etc), please
             <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=bug&template=listing_error.md&title=%5BListing+Error%5D+{{ page.title | strip_html | strip_newlines | cgi_escape }}">report it here</a>.
           </p>
           <p>
-            If this plugin has been <em>confirmed</em> as abandoned by its maintainer, please
+            If this plugin <strong>has been <em>confirmed</em> as abandoned</strong> by its maintainer, please
             <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=abandoned+plugin&template=abandoned_plugin.md&title=%5BAbandoned+Plugin%5D+{{ page.title | strip_html | strip_newlines | cgi_escape }}">report it here</a>.
           </p>
           <p>
-            Report bugs or feature requests for the plugin to the plugin author{% if page.homepage %} (e.g. on the plugin's <a href="">homepage</a>){% endif %} please, not here!</p>
+            If this plugin is <strong>doing something suspicious</strong> (e.g. weird network activity, unannounced tracking, ...) and
+            the maintainer is not cooperating in getting to the bottom of that, please
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=suspicious+plugin&template=suspicious_plugin.md&title=%5BSuspicious+Plugin%5D+{{ page.title | strip_html | strip_newlines | cgi_escape }}">report the plugin as suspicious here</a>.
+          </p>
+          <p>
+            Report bugs or feature requests for the plugin to the plugin author{% if page.homepage %} (e.g. on the plugin's <a href="{{ page.homepage }}">homepage</a>){% endif %} please, not here!
+          </p>
         </dd>
       </dl>
     </div>
