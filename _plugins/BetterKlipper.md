@@ -20,31 +20,23 @@ tags:
 - firmware
 - control
 - monitor
+- updated
 
 screenshots:
-- url: /assets/img/plugins/klipper/message-log.png
+- url: /assets/img/plugins/BetterKlipper/log.png
   alt: Main Tab and Message Log
   caption: Main Tab and Message Log
-- url: /assets/img/plugins/klipper/bed-leveling.png
-  alt: Assisted Bed Leveling
-  caption: Assisted Bed Leveling
-- url: /assets/img/plugins/klipper/pid-tuning.png
-  alt: PID Tuning
-  caption: PID Tuning
-- url: /assets/img/plugins/klipper/offset.png
-  alt: Coordinate Offset
-  caption: Coordinate Offset
-- url: /assets/img/plugins/klipper/settings.png
+- url: /assets/img/plugins/BetterKlipper/settings.png
   alt: Plugin Settings
   caption: Plugin Settings
-- url: /assets/img/plugins/klipper/klipper-config.png
+- url: /assets/img/plugins/BetterKlipper/config.png
   alt: Klipper Configuratin
   caption: Klipper Configuration
-- url: /assets/img/plugins/klipper/performance-graph.png
+- url: /assets/img/plugins/BetterKlipper/performance.png
   alt: Performance Graph
   caption: Performance Graph
   
-featuredimage: /assets/img/plugins/klipper/message-log.png
+featuredimage: /assets/img/plugins/BetterKlipper/log.png
 
 compatibility:
 
