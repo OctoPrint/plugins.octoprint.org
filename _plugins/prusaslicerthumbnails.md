@@ -31,7 +31,7 @@ featuredimage: /assets/img/plugins/prusaslicerthumbnails/screenshot_thumbnail.pn
 
 This plugin will extract the embedded thumbnails from PrusaSlicer gcode files where the printer's profile ini file has the thumbnail option configured. This is default behavior for the Prusa Mini printer profile. 
 
-The thumbnail image extracted will always be the last resolution provided in the thumbnail setting. So for example the Prusa Mini setting is `thumbnail=16x16,220x124` so the thumbnail that will be extracted will be 220x124 pixels as seen in the screenshots below. See the Configuration section below for additional details.
+The thumbnail image extracted will always be the last resolution provided in the thumbnail setting. So for example the Prusa Mini setting is `thumbnails = 16x16,220x124` so the thumbnail that will be extracted will be 220x124 pixels as seen in the screenshots below. See the Configuration section below for additional details.
 
 The preview thumbnail can be shown in OctoPrint from the files list by clicking the newly added image button.
 
@@ -49,7 +49,7 @@ If enabled in settings the thumbnail can also be embedded as an inline thumbnail
 
 Since PrusaSlicer only enables thumbnails by default for the Prusa Mini you may need to manually update your configuration files. Those can be found by selecting Show Configuration Folder from the Help menu of the application and then inside the printers sub-folder you'll find your printer profiles. 
 
-Open your desired printer profile in your favorite text editor and find the `thumbnail=` section and add the resolution that you would like to include in your sliced files, and therefore visible by this plugin. For example `thumbnail=16x16,220x124` will be the equivalent of the Prusa Mini as described above.
+Open your desired printer profile in your favorite text editor and find the `thumbnails =` section and add the resolution that you would like to include in your sliced files, and therefore visible by this plugin. For example `thumbnails = 16x16,220x124` will be the equivalent of the Prusa Mini as described above.
 
 **Warning**: the higher the resolution of the thumbnail you enter in this setting the larger your gcode file will be when sliced.
 
