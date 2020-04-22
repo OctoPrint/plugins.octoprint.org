@@ -41,13 +41,19 @@ The thumbnail will open in a modal window.
 
 ![thumbnail](/assets/img/plugins/prusaslicerthumbnails/screenshot_thumbnail.png)
 
-If enabled in settings the thumbnail can also be embedded as an inline thumbnail within the file list itself. If you use this option it's highly recommended to use Themify to make the file list taller and/or adjust the thumbnail's size.  The image selector for this in Themeify should be `div.row-fluid.inline_prusa_thumbnail > img` but I haven't yet tested personally.
+If enabled in settings the thumbnail can also be embedded as an inline thumbnail within the file list itself. If you use this option it's highly recommended to use Themeify to make the file list taller and/or adjust the thumbnail's size.
+
+| Selector                                            | CSS_Rule   | Value            |
+|-----------------------------------------------------|------------|------------------|
+| #files > div > div.gcode_files > div.scroll-wrapper | min-height | 800px !important |
 
 ![thumbnail](/assets/img/plugins/prusaslicerthumbnails/screenshot_inline_thumbnail.png)
 
 ## Configuration
 
-Since PrusaSlicer only enables thumbnails by default for the Prusa Mini you may need to manually update your configuration files. Those can be found by selecting Show Configuration Folder from the Help menu of the application and then inside the printers sub-folder you'll find your printer profiles. 
+Since PrusaSlicer only enables thumbnails by default for the Prusa Mini you may need to manually update your configuration files. Those can be found by selecting `Show Configuration Folder` from the Help menu of the application and then inside the printers sub-folder you'll find your printer profiles. 
+
+**Note:** If you don't see your printer's ini file in the printers sub-folder; you are probably using one of the bundled Prusa Printer profiles (ie MK3S). If so you may need to create a copy of this printer profile to be able to have an ini file to edit. To do this in PrusaSlicer go to the Printer Settings tab and Click the save button next to the printer list and give it a new name. Alternatively, push Prusa Research to update their bundled profiles to match the Mini by commenting in the issue posted on their repository [here](https://github.com/prusa3d/PrusaSlicer/issues/3488).
 
 Open your desired printer profile in your favorite text editor and find the `thumbnails =` section and add the resolution that you would like to include in your sliced files, and therefore visible by this plugin. For example `thumbnails = 16x16,220x124` will be the equivalent of the Prusa Mini as described above.
 
