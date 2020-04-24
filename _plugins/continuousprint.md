@@ -35,4 +35,4 @@ Easy plugin to allow queuing of code files which when started will automatically
 
 ## Screenshot
 
-![screenshot](/assets/img/plugins/BLTouch/screenshot.png)
+![screenshot](/assets/img/plugins/continuousprint/screenshot.png)
