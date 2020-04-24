@@ -24,6 +24,9 @@ tags:
 
 featuredimage: /assets/img/plugins/continuousprint/screenshot.png
 
+compatibility:
+  python: ">=2.7,<4"
+
 ---
 
 # Continuous Print
