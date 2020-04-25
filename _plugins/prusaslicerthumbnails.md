@@ -57,6 +57,8 @@ Since PrusaSlicer only enables thumbnails by default for the Prusa Mini you may 
 
 Open your desired printer profile in your favorite text editor and find the `thumbnails =` section and add the resolution that you would like to include in your sliced files, and therefore visible by this plugin. For example `thumbnails = 16x16,220x124` will be the equivalent of the Prusa Mini as described above.
 
+**Note:** Once you've made your changes you will need to restart PrusaSlicer in order for the changes to be used and embed the thumbnails in the exported gcode files.
+
 **Warning**: the higher the resolution of the thumbnail you enter in this setting the larger your gcode file will be when sliced.
 
 ## Get Help
