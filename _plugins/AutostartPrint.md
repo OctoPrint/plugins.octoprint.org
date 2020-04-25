@@ -20,6 +20,12 @@ archive: https://github.com/OllisGit/OctoPrint-AutostartPrint/releases/latest/do
 tags:
 - printer
 
+compatibility:
+  python: ">=2.7,<4"
+  octoprint:
+  - 1.3.10
+  - 1.4.0
+  - 
 screenshots:
 - url: https://github.com/OllisGit/Octoprint-AutostartPrint/raw/master/screenshots/plugin-settings.png
   alt: Plugin Settings
