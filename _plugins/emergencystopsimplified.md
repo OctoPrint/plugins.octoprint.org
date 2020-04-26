@@ -21,7 +21,7 @@ tags:
 - simplified
 - simple
 - trigger
-- buttom
+- button
 
 screenshots:
   
