@@ -7,7 +7,7 @@ description: An essential plugin if you print remotely. Monitor and control your
 author: The Spaghetti Detective Team
 license: AGPLv3
 
-note: This plugin contains usage tracking ([YouTube and Sentry](https://github.com/TheSpaghettiDetective/OctoPrint-TheSpaghettiDetective/issues/51)) that currently cannot be disabled. A version that fixes this is being in the works by the authors.
+note: This plugin contains usage tracking ([YouTube and Sentry](https://github.com/OctoPrint/plugins.octoprint.org/issues/438)) that currently cannot be disabled. A version that fixes this is being in the works by the authors.
 
 # TODO
 date: 2019-11-07
