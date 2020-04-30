@@ -23,9 +23,9 @@ tags:
 - notification
 
 screenshots:
-- url: https://galaxy.darwincloud.com/Apps/fs/22/OctoPrint/Webhooks%20Plugin/Featured.png
+- url: /assets/img/plugins/webhooks/Featured.png
 
-featuredimage: https://galaxy.darwincloud.com/Apps/fs/22/OctoPrint/Webhooks%20Plugin/Featured.png
+featuredimage: /assets/img/plugins/webhooks/Featured.png
 
 compatibility:
   python: ">=2.7,<4"
