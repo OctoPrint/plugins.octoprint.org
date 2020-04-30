@@ -25,6 +25,8 @@ compatibility:
 
   os:
   - linux
+  
+  python: ">=2.7,<4"
 
 ---
 
