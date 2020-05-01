@@ -39,6 +39,10 @@ editing it accordingly.
   * If your plugin makes use of the [`octoprint.plugin.softwareupdate.check_config` hook](http://docs.octoprint.org/en/master/bundledplugins/softwareupdate.html#octoprint-plugin-softwareupdate-check-config) 
     so that it may be updated through OctoPrint on a new release (highly recommended!) make sure that that hook's handler uses your plugin's identifier 
     and points to your plugin's repository.
+    
+  * Your plugin is compatible to Python 3. Python 2 is EOL. OctoPrint 1.4.0 does support Python 2 and Python 3, plugins
+    will be expected to do so as well (or at least support Python 3) during a transition period of roughly a year after
+    the release of OctoPrint 1.4.0 to allow a migration of the whole ecosystem. Read more on how to test this [in this forum post](https://community.octoprint.org/t/towards-python-3-and-octoprint-1-4-0/12382).
   
 Be aware that plugins that don't follow the above will not be allowed to register on the repository. If you have any questions
 about any of these points, feel free to get in touch [on the forum](https://community.octoprint.org/c/development).
@@ -122,7 +126,7 @@ If all is in the green, follow these steps:
       # OctoPrint versions being supported.
 
       octoprint:
-      - 1.2.0
+      - 1.3.0
 
       # List of compatible operating systems
       #
@@ -147,6 +151,17 @@ If all is in the green, follow these steps:
       - macos
       - freebsd
 
+      # Compatible Python version
+      #
+      # Plugins should aim for compatibility for Python 2 and 3 for now, in which case the value should be ">=2.7,<4".
+      #
+      # Plugins that only wish to support Python 3 should set it to ">=3,<4". 
+      #
+      # If your plugin only supports Python 2 (worst case, not recommended for newly developed plugins since Python 2
+      # is EOL), leave at ">=2.7,<3"
+      
+      python: ">=2.7,<3"
+      
     ---
 
     Longer description of your plugin, configuration examples etc. This part will be visible on the page at
@@ -177,6 +192,10 @@ If all is in the green, follow these steps:
       * Use the **long description** to really explain what your plugin does. Don't just repeat the short description here.
         If your plugin has additional requirements (e.g. specific hardware or software), include that here and also
         explain how to get those. Use [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) for formatting.
+        
+      * Make sure you **your plugin is Python 3 compatible and mark it as such** using the ``compatibility.python``
+        property. Newly registered plugins will be expected to be compatible *at least* to Python 3, ideally to
+        *both Python 2 and 3* during a transition period of roughly a year after release of OctoPrint 1.4.0.
 
       * **Include screenshots and a featured image!** The best way to show users what your plugin does and what they may 
         expect from it is to simply include some screenshots that show exactly that. A picture is worth more than a

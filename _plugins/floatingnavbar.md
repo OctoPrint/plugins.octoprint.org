@@ -17,6 +17,9 @@ tags:
 - MQTT
 - NavBar
 
+compatibility:
+  python: ">=2.7,<4"
+
 featuredimage: /assets/img/plugins/floatingnavbar/screenshot.png
 
 ---

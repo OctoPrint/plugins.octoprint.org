@@ -5,7 +5,8 @@
       <a href="javascript:void(0)" class="btn btn-burger btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><i class="fas fa-bars"></i></a>
       <div class="pull-right">
         <ul class="nav social-navbar">
-          <li><a href="https://octoprint.org/support-octoprint/" title="Support OctoPrint!" target="_blank"><i class="fa fa-heart octo-heart"></i></a></li>
+          <li><a href="https://octoprint.org/merch/" title="Get some merchandise!" target="_blank"><i class="fa fa-shopping-basket"></i></a></li>
+          <li><a href="https://octoprint.org/support-octoprint/" title="Support OctoPrint!" data-event-category="supportlink" data-event-action="navigation" target="_blank"><i class="fas fa-donate"></i></a></li>
         </ul>
       </div>
       <div class="nav-collapse collapse">
@@ -23,7 +24,13 @@
               <li><a href="http://docs.octoprint.org/en/master/plugins/gettingstarted.html">The Plugin Tutorial</a></li>
             </ul>
           </li>
-          <li{% if page.url == '/blacklist/' %} class="active"{% endif %}><a href="{{ '/blacklist/' | prepend: site.base.url }}">Blacklist</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">Lists <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="{{ '/blacklist/' | prepend: site.baseurl }}">Blacklist</a></li>
+              <li><a href="{{ '/notices/' | prepend: site.baseurl }}">Notices</a></li>
+            </ul>
+          </li>
         </ul>
       </div>
     </div>

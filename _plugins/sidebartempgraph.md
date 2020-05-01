@@ -19,6 +19,9 @@ tags:
 - temperature
 - graph
 
+compatibility:
+  python: ">=2.7,<4"
+
 featuredimage: /assets/img/plugins/sidebartempgraph/screenshot.png
 
 ---

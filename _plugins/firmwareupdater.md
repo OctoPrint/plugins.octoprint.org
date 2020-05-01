@@ -23,6 +23,9 @@ tags:
 - due
 - bossac
 
+compatibility:
+  python: ">=2.7,<4"
+
 screenshots:
 - url: /assets/img/plugins/firmwareupdater/firmware-updater.png
   alt: Firmware Updater

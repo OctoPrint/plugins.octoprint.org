@@ -25,6 +25,9 @@ screenshots:
 
 featuredimage: /assets/img/plugins/MultipleUpload/open_files.png
 
+compatibility:
+  python: ">=2.7,<4"
+
 ---
 
 This plugin allows you to upload multiple files at once.  You can select multiple files like you normally do on your computer: click and drag, shift-click, etc.

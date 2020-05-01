@@ -34,4 +34,11 @@ featuredimage: https://github.com/OllisGit/Octoprint-AutostartPrint/raw/master/s
 
 The Plugin starts a print job after the Printer is connected (e.g. after powering up). It selects the newest uploaded file for print.
 
+#### Support my Efforts
+
+This plugin, as well as my [other plugins](https://github.com/OllisGit/) were developed in my spare time.
+If you like it, I would be thankful about a cup of coffee :) 
+
+[![More coffee, more code](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6SW5R6ZUKLB5E&source=url)
+
 For implementation details please visit the [homepage]({{ page.homepage | absolute_url }}).

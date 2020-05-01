@@ -20,6 +20,9 @@ tags:
 - mqtt
 - power
 
+compatibility:
+  python: ">=2.7,<4"
+
 featuredimage: /assets/img/plugins/tasmota_mqtt/navbar.png
 
 ---

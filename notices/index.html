@@ -1,0 +1,53 @@
+---
+layout: page
+title: Plugin notices
+---
+
+<p>
+    Since version 1.3.3 OctoPrint supports centralized plugin notices that can be displayed to users that have
+    specific plugins/plugin versions installed. This is used by the official plugin repository to notify about
+    issues or changes in the plugins that require action of the user.
+</p>
+<p>
+    Displaying the notices is implemented by the bundled Plugin Manager inside OctoPrint.
+</p>
+<p>
+    The notices are hosted here on <code>plugins.octoprint.org</code> as a <a href="/notices.json">JSON file</a>
+    and currently contain the following entries:
+</p>
+<table class="table notice-table">
+    <thead>
+        <tr>
+            <th class="notice-plugin">Plugin</th>
+            <th class="notice-versions">Affected Plugin Versions</th>
+            <th class="notice-octoversions">Affected OctoPrint Versions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for item in site.data.notices %}
+        <tr>
+            <td class="notice-plugin">
+                {% assign id = item.plugin | prepend: "/plugins/" %}
+                {% assign p = site.plugins | where: "id", id | first %}
+                {% if p %}
+                <a href="{{ p.url }}">{{ p.title }}</a>
+                {% else %}
+                <code>{{ item.plugin | xml_escape }}</code>
+                {% endif %}
+                {% if item.text %}
+                <div class="notice-text">{{ item.text | markdownify }}</div>
+                {% endif %}
+                {% if item.link %}
+                <div class="notice-link"><a href="{{ item.link }}" target="_blank">Read more...</a></div>
+                {% endif %}
+            </td>
+            <td class="notice-versions">
+                {% if item.versions %}{{ item.versions | join: ", " | xml_escape }}{% else %}all{% endif %}
+            </td>
+            <td class="notice-octoversions">
+                {% if item.octoversions %}{{ item.octoversions | join: ", " | xml_escape }}{% else %}all{% endif %}
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>

@@ -33,6 +33,9 @@ screenshots:
 
 featuredimage: /assets/img/plugins/stats/img1.png
 
+disabled: The plugin has a dependency that only supports Python 3 now, however it isn't yet marked as Python 3 compatible
+    itself, rendering it uninstallable without code modifications. See [this ticket](https://github.com/OctoPrint/plugins.octoprint.org/issues/434).
+
 ---
 
 This plugin is designed to show statistics of your printer and estimate power usage in kWh.

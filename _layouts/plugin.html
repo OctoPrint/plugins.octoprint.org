@@ -45,6 +45,7 @@ layout: default
     <article class="post-content span8">
       {% if page.disabled %}<div class="alert alert-danger"><h3>This plugin is currently marked as disabled</h3>{{ page.disabled | markdownify }}</div>{% endif %}
       {% if page.up_for_adoption %}<div class="alert"><h3>This plugin is up for adoption</h3>The current maintainer of this plugin is looking for someone to take over maintenance. <a href="{{ page.up_for_adoption }}" target="_blank" rel="noopener noreferrer">Learn more...</a></div>{% endif %}
+      {% if page.note %}<div class="alert"><h3>Please note</h3>{{ page.note | markdownify }}</div>{% endif %}
 
       <p class="lead">
         {{ page.description | strip_html | escape }}
@@ -99,6 +100,12 @@ layout: default
         {% endif %}
       </dl>
       {% endif %}
+      {% if page.date %}
+      <dl class="date">
+        <dt>Registration date</dt>
+        <dd>{{ page.date | strip_html | strip_newlines | escape | date_to_string}}</dd>
+      </dl>
+      {% endif %}
       {% if page.tags %}
       <dl class="tags">
         <dt>Tags</dt>
@@ -131,6 +138,11 @@ layout: default
             {% else %}
             <li>Operating Systems: all</li>
             {% endif %}
+            {% if page.compatibility.python %}
+            <li>Python: {{ page.compatibility.python | strip_html | strip_newlines | escape }}</li>
+            {% else %}
+            <li>Python: &gt;=2.7,&lt;3</li>
+            {% endif %}
           </ul>
         </dd>
       </dl>
@@ -159,10 +171,24 @@ layout: default
       </dl>
       {% endif %}
       <dl class="issue">
-        <dt>Something wrong with this listing?</dt>
+        <dt>Something wrong here?</dt>
         <dd>
-          <p>If there is something wrong with this listing, please <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues">report it</a>.</p>
-          <p>Only use this for problems with this listing - report <em>bugs in the plugin itself</em> to the plugin's author!</p>
+          <p>
+            If there is <strong>something wrong with this listing</strong> (broken links & images etc), please
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=bug&template=listing_error.md&title=%5BListing+Error%5D+{{ page.title | strip_html | strip_newlines | cgi_escape }}">report it here</a>.
+          </p>
+          <p>
+            If this plugin <strong>has been <em>confirmed</em> as abandoned</strong> by its maintainer, please
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=abandoned+plugin&template=abandoned_plugin.md&title=%5BAbandoned+Plugin%5D+{{ page.title | strip_html | strip_newlines | cgi_escape }}">report it here</a>.
+          </p>
+          <p>
+            If this plugin is <strong>doing something suspicious</strong> (e.g. weird network activity, unannounced tracking, ...) and
+            the maintainer is not cooperating in getting to the bottom of that, please
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=suspicious+plugin+activity&template=suspicious_plugin_activity.md&title=%5BSuspicious+Plugin+Activity%5D+{{ page.title | strip_html | strip_newlines | cgi_escape }}">report the plugin as suspicious here</a>.
+          </p>
+          <p>
+            Report bugs or feature requests for the plugin to the plugin author{% if page.homepage %} (e.g. on the plugin's <a href="{{ page.homepage }}">homepage</a>){% endif %} please, not here!
+          </p>
         </dd>
       </dl>
     </div>

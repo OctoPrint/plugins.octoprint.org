@@ -37,8 +37,12 @@ compatibility:
   - macos
   - freebsd
 
+  python: ">=2.7,<4"
+
 ---
 
 A small [OctoPrint](https://github.com/foosel/OctoPrint) plugin to change the looks of OctoPrint!
-Currently supports a beautiful Dark Theme inspired by Discord's color [palette](https://discordapp.com/branding). More configuration and themes are planned.
+Features a beautiful Dark Theme inspired by Discord's color [palette](https://discordapp.com/branding), along with a handful of others thanks to the awesome contributors.
+
+Also features customization of individual elements. With the advanced-customization scheme you can modify the appearance to your heart's desire directly from the settings-dialog!
 

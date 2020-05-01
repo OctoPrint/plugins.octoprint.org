@@ -43,6 +43,7 @@ compatibility:
   - macos
   - freebsd
 
+  python: ">=2.7,<4"
 ---
 This plugin is to control switches through Domoticz via web calls.
 

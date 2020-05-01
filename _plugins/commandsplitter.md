@@ -19,6 +19,9 @@ tags:
 - gcode
 - preprocessing
 
+compatibility:
+  python: ">=2.7,<4"
+
 ---
 
 This is a small GCODE preprocessor that makes sure that uploaded GCODE file contain only one command per line.
