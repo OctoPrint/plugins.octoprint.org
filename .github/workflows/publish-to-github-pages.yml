@@ -1,0 +1,29 @@
+name: Publish to Github Pages
+
+on:
+  push:
+    branches:
+      - gh-pages
+
+jobs:
+  build-and-publish:
+    name: Publish to Github Pages
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: 🔨 Build page
+        run: |
+          docker run \
+          -v ${{ github.workspace }}:/srv/jekyll \
+          jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future"
+
+      - name: 🚀 Deploy page
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: master
+          publish_dir: ./_site
+          enable_jekyll: false
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
