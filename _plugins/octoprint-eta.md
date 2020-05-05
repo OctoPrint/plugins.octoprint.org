@@ -37,6 +37,8 @@ compatibility:
   - macos
   - freebsd
 
+abandoned: https://github.com/OctoPrint/plugins.octoprint.org/issues/466
+
 ---
 
 Display estimated time of finish for current print (Estimated Time of Arrival). Day of finish is displayed only when current print will not finish today.
