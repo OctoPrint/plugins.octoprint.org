@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en" xmlns="http://www.w3.org/1999/html"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+    <title>CuraEngine Legacy</title>
+    <meta name="description" content="Plugin for slicing via the legacy version of CuraEngine from within OctoPrint, unbundled from OctoPrint starting with version 1.3.11">
+    <meta name="author" content="Gina Häußge">
+    <meta name="referrer" content="same-origin">
+    <meta name="google-site-verification" content="0EFsbaNygJcEinKPmzP-hTf0Ju6wDIpJxO5zvQtOQT0" />
+    <meta name="build-revision" content="dcd643e9ea2a753318428b65a5e32b1466fcfcb3" />
+    <meta name="build-date" content="2020-05-05 07:26:12-05:00" />
+
+    <!--[if lt IE 9]>
+    <script src="/assets/js/html5shim.js"></script>
+    <![endif]-->
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Le styles -->
+    <link rel="stylesheet" href="/assets/css/site.css?_=1588681572">
+    <link rel="stylesheet" href="/assets/css/bootstrap-responsive.css?_=1588681572">
+    <link rel="stylesheet" href="/assets/css/fontawesome-all.min.css?_=1588681572">
+    <link rel="stylesheet" href="/assets/css/prettify.css?_=1588681572">
+    <link rel="stylesheet" href="/assets/css/lightbox.css?_=1588681572">
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="/assets/img/tentacle-32x32.png">
+
+    <!-- Le RSS feed -->
+    <link rel="alternate" type="application/rss+xml" title="OctoPrint Plugin Repository: New Plugins" href="/feed.xml">
+
+    <!-- Le social media meta data -->
+    
+    
+    
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@OctoPrint3D" />
+    <meta name="twitter:title" content="CuraEngine Legacy" />
+    <meta name="twitter:description" content="The CuraEngine Legacy Plugin allows slicing of STL files uploaded to OctoPrint directly via the legacy version of CuraEngine (up to and including 
+version 15.04.x). It was bundled with OctoPrint up until version 1.3.10.
+
+" />
+    <meta name="twitter:image" content="https://plugins.octoprint.org/assets/img/octoprint-avatar-240x240.png" />
+
+    <meta property="og:title" content="CuraEngine Legacy" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://plugins.octoprint.org/assets/img/repo-600x400.png" />
+    <meta property="og:description" content="The CuraEngine Legacy Plugin allows slicing of STL files uploaded to OctoPrint directly via the legacy version of CuraEngine (up to and including 
+version 15.04.x). It was bundled with OctoPrint up until version 1.3.10.
+
+" />
+    <meta property="og:site_name" content="OctoPrint Plugin Repository" />
+    <meta property="og:url" content="https://plugins.octoprint.org/plugins/curalegacy/" />
+
+    <meta itemscope itemtype="http://schema.org/WebPage" />
+    <meta itemprop="headline" content="CuraEngine Legacy" />
+    <meta itemprop="description" content="The CuraEngine Legacy Plugin allows slicing of STL files uploaded to OctoPrint directly via the legacy version of CuraEngine (up to and including 
+version 15.04.x). It was bundled with OctoPrint up until version 1.3.10.
+
+" />
+    <meta itemprop="image" content="https://plugins.octoprint.org/assets/img/repo-600x400.png" />
+
+    <script src="/assets/js/jquery-1.9.1.min.js"></script>
+    <script src="/assets/js/underscore.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/cookieconsent.min.css" />
+    <script src="/assets/js/cookieconsent.min.js"></script>
+    <script>
+        if (!String.prototype.startsWith) {
+            String.prototype.startsWith = function(search, pos) {
+            return this.substr(!pos || pos < 0 ? 0 : +pos, search.length) === search;
+            };
+        }
+
+        window.addEventListener("load", function(){
+            window.cookieconsent.initialise({
+                "position": "bottom",
+                "theme": "edgeless",
+                "palette": {
+                    "popup": {
+                        "background": "#000000",
+                        "link": "#10a800"
+                    },
+                    "button": {
+                        "background": "#0b7500"
+                    }
+                }
+            })
+        });
+
+        /**
+         * Make sure octoprint.github.io stuff gets rewritten to plugins.octoprint.org.
+         * See https://github.com/OctoPrint/plugins.octoprint.org/issues/146.
+         */
+        var githubio = "octoprint.github.io/plugins.octoprint.org";
+        var url = window.location.href;
+        if (url && (url.startsWith("http://" + githubio) || url.startsWith("https://" + githubio))) {
+            url = url.replace(githubio, "plugins.octoprint.org");
+            window.location.replace(url);
+        }
+    </script>
+</head>
+
+<body>
+
+<div class="navbar navbar-inverse navbar-static-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand" href="/"><img src="/assets/img/tentacle-20x20.png" alt="Tentacle logo" class="tentacle"> Plugin Repo</a>
+      <a href="javascript:void(0)" class="btn btn-burger btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><i class="fas fa-bars"></i></a>
+      <div class="pull-right">
+        <ul class="nav social-navbar">
+          <li><a href="https://octoprint.org/merch/" title="Get some merchandise!" target="_blank"><i class="fa fa-shopping-basket"></i></a></li>
+          <li><a href="https://octoprint.org/support-octoprint/" title="Support OctoPrint!" data-event-category="supportlink" data-event-action="navigation" target="_blank"><i class="fas fa-donate"></i></a></li>
+        </ul>
+      </div>
+      <div class="nav-collapse collapse">
+        <ul class="nav">
+          <li><a href="/by_name/">by Name</a></li>
+          <li><a href="/by_date/">by Date</a></li>
+          <li><a href="/by_tag/">by Tag</a></li>
+          <li><a href="/by_author/">by Author</a></li>
+          <li><form class="navbar-search pull-right" action="/search/" method="get"><input type="text" class="input-medium search-query" placeholder="Enter search &amp; hit enter..." name="q"></form></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">Help <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="/help/installation/">Installing Plugins</a></li>
+              <li><a href="/help/registering/">Registering Plugins</a></li>
+              <li><a href="http://docs.octoprint.org/en/master/plugins/gettingstarted.html">The Plugin Tutorial</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">Lists <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="/blacklist/">Blacklist</a></li>
+              <li><a href="/notices/">Notices</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="wrap">
+    <div id="main">
+    
+
+
+
+
+
+
+<div class="page-header">
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+        <h1>CuraEngine Legacy</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row-fluid">
+    
+    <small class="pull-left"><a href="/plugins/CrealityTemperature/"><i class="fa fa-double-angle-left"></i>&nbsp;Creality Temperature Fix</a></small>
+    
+    &nbsp;
+    
+    <small class="pull-right"><a href="/plugins/customControl/">Custom Control Editor&nbsp;<i class="fa fa-double-angle-right"></i></a></small>
+    
+  </div>
+  <div class="content plugin-content row-fluid">
+    <article class="post-content span8">
+      
+      
+      
+
+      <p class="lead">
+        Plugin for slicing via the legacy version of CuraEngine from within OctoPrint, unbundled from OctoPrint starting with version 1.3.11
+      </p>
+      <p>The CuraEngine Legacy Plugin allows slicing of STL files uploaded to OctoPrint directly via the legacy version of CuraEngine (<strong>up to and including 
+version 15.04.x</strong>). It was bundled with OctoPrint up until version 1.3.10.</p>
+
+<blockquote>
+  <p>📝 <strong>Note</strong></p>
+
+  <p>Versions of CuraEngine later than 15.04.x have changed their calling parameters in such a way that this 
+plugin is not compatible to it. For this reason, please use only CuraEngine versions up to and including 15.04, 
+as available in the <code class="language-plaintext highlighter-rouge">legacy</code> branch of the CuraEngine repository on Github.</p>
+</blockquote>
+
+<p>The plugin offers a settings module that allows configuring the path to the CuraEngine Legacy executable to use, as well as 
+importing and managing slicing profiles to be used. Please note that the CuraEngine Legacy plugin will use the printer parameters 
+you configured within OctoPrint (meaning bed size and extruder count and offsets) for slicing.</p>
+
+<h2 id="setup">Setup</h2>
+
+<p>Install via the bundled <a href="https://github.com/foosel/OctoPrint/wiki/Plugin:-Plugin-Manager">Plugin Manager</a>
+or manually using this URL:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://github.com/OctoPrint/OctoPrint-CuraEngineLegacy/archive/master.zip
+</code></pre></div></div>
+
+<h3 id="first-steps">First Steps</h3>
+
+<p>Before you can slice from within OctoPrint, you’ll need to</p>
+
+<ol>
+  <li>Install CuraEngine Legacy</li>
+  <li>Configure the path to CuraEngine Legacy within OctoPrint</li>
+  <li>Export a slicing profile from Cura &lt;15.04.x and import it within OctoPrint</li>
+</ol>
+
+<p>OctoPi ships with steps 1 and 2 already done, you only need to supply one or more slicing 
+profiles to get going :)</p>
+
+<p>If you are coming from an OctoPrint version prior to 1.3.11 and already had the then still bundled version of this plugin
+configured, your configuration &amp; profiles will be migrated.</p>
+
+<h3 id="installing-curaengine-legacy">Installing CuraEngine Legacy</h3>
+
+<p>You’ll need a build of <code class="language-plaintext highlighter-rouge">legacy</code> branch of <a href="http://github.com/Ultimaker/CuraEngine">CuraEngine</a> in order to be able to 
+use the Cura Legacy OctoPrint plugin. You can find the <code class="language-plaintext highlighter-rouge">legacy</code> branch <a href="https://github.com/ultimaker/curaengine/tree/legacy">here</a>.</p>
+
+<h4 id="compiling-for-raspbian">Compiling for Raspbian</h4>
+
+<p>Building on Raspbian Jessie and later is as easy as:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get -y install gcc-4.7 g++-4.7
+git clone -b legacy https://github.com/Ultimaker/CuraEngine.git
+cd CuraEngine
+make
+</code></pre></div></div>
+
+<p>After this has completed, you’ll find your shiny new build of CuraEngine in the build folder (full path for above 
+example: <code class="language-plaintext highlighter-rouge">~/CuraEngine/build/CuraEngine</code>).</p>
+
+<h3 id="using-cura-profiles">Using Cura Profiles</h3>
+
+<p>The CuraEngine Legacy Plugin supports importing your existing profiles for CuraEngine Legacy <strong>up to and including Cura 15.04.x</strong>. Newer CuraEngine 
+releases (e.g. 15.06 or 2.x) use a different internal format that will not work with the Cura Legacy Plugin.</p>
+
+<p>You can find downloads of Cura 15.04.x for Windows, Mac and Linux on <a href="https://ultimaker.com/en/products/cura-software/list">Ultimaker’s download page</a>.</p>
+
+<p>In order to export a slicing profile from the legacy Cura desktop UI, open it, set up your profile, then click on “File” and 
+there on “Save Profile”. You can import the .ini-file this creates via the “Import Profile” button in the CuraEngine Legacy Settings 
+within OctoPrint.</p>
+
+<h2 id="configuration">Configuration</h2>
+
+<p>The Cura plugin needs to be configured with the full path to your copy of the CuraEngine Legacy executable that it’s supposed 
+to use. You can do this either via the CuraEngine Legacy plugin settings dialog or by manually configuring the path to the 
+executable via <code class="language-plaintext highlighter-rouge">config.yaml</code>, example:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">plugins</span><span class="pi">:</span>
+  <span class="na">curalegacy</span><span class="pi">:</span>
+    <span class="na">cura_engine</span><span class="pi">:</span> <span class="s">/path/to/CuraEngine</span>
+</code></pre></div></div>
+
+
+      
+    </article>
+
+    <div class="span4">
+      <dl class="adbox">
+        <dd class="ad">
+          <script>
+    if (!window["carbon-disable"]) {
+        (function() {
+            var po = document.createElement("script");
+            po.type = "text/javascript";
+            po.async = true;
+            po.src  = "//cdn.carbonads.com/carbon.js?serve=CK7DT237&placement=pluginsoctoprintorg";
+            po.id = "_carbonads_js";
+            var s = document.currentScript;
+            s.parentNode.insertBefore(po, s);
+        })();
+    }
+</script>
+        </dd>
+      </dl>
+      
+      <dl class="installation">
+        <dt>Installation <a href="/help/installation/" class="fas fa-question-circle"></a></dt>
+        
+        <dd>
+          URL:
+          <pre>https://github.com/OctoPrint/OctoPrint-CuraLegacy/archive/master.zip</pre>
+          
+        </dd>
+        
+        
+        <dd>
+          Command line:
+          <pre>pip install "https://github.com/OctoPrint/OctoPrint-CuraLegacy/archive/master.zip"</pre>
+        </dd>
+        
+      </dl>
+      
+      
+      <dl class="date">
+        <dt>Registration date</dt>
+        <dd>28 Mar 2019</dd>
+      </dl>
+      
+      
+      <dl class="tags">
+        <dt>Tags</dt>
+        <dd>
+          
+          
+          
+          
+          <a class="label" href="/by_tag/#tag-cura">cura</a>
+          
+          <a class="label" href="/by_tag/#tag-cura-engine">cura engine</a>
+          
+          <a class="label" href="/by_tag/#tag-cura-legacy">cura legacy</a>
+          
+          <a class="label" href="/by_tag/#tag-gcode">gcode</a>
+          
+          <a class="label" href="/by_tag/#tag-slicer">slicer</a>
+          
+          <a class="label" href="/by_tag/#tag-stl">stl</a>
+          
+        </dd>
+      </dl>
+      
+      <dl class="compatibility">
+        <dt>Compatibility Information</dt>
+        <dd>
+          <ul>
+            
+            <li>OctoPrint: all versions</li>
+            
+            
+            <li>Operating Systems: all</li>
+            
+            
+            <li>Python: &gt;=2.7,&lt;4</li>
+            
+          </ul>
+        </dd>
+      </dl>
+      
+      <dl class="author">
+        <dt>Author</dt>
+        <dd>Gina Häußge</dd>
+      </dl>
+      
+      
+      <dl class="homepage">
+        <dt>Homepage</dt>
+        <dd><a href="https://github.com/OctoPrint/OctoPrint-CuraLegacy" target="_blank">https://github.com/OctoPrint/OctoPrint-CuraLegacy</a></dd>
+      </dl>
+      
+      
+      <dl class="source">
+        <dt>Source</dt>
+        <dd><a href="https://github.com/OctoPrint/OctoPrint-CuraLegacy" target="_blank">https://github.com/OctoPrint/OctoPrint-CuraLegacy</a></dd>
+      </dl>
+      
+      
+      <dl class="license">
+        <dt>License</dt>
+        <dd>AGPLv3</dd>
+      </dl>
+      
+      <dl class="issue">
+        <dt>Something wrong here?</dt>
+        <dd>
+          <p>
+            If there is <strong>something wrong with this listing</strong> (broken links & images etc), please
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=bug&template=listing_error.md&title=%5BListing+Error%5D+CuraEngine+Legacy">report it here</a>.
+          </p>
+          <p>
+            If this plugin <strong>has been <em>confirmed</em> as abandoned</strong> by its maintainer, please
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=abandoned+plugin&template=abandoned_plugin.md&title=%5BAbandoned+Plugin%5D+CuraEngine+Legacy">report it here</a>.
+          </p>
+          <p>
+            If this plugin is <strong>doing something suspicious</strong> (e.g. weird network activity, unannounced tracking, ...) and
+            the maintainer is not cooperating in getting to the bottom of that, please
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=suspicious+plugin+activity&template=suspicious_plugin_activity.md&title=%5BSuspicious+Plugin+Activity%5D+CuraEngine+Legacy">report the plugin as suspicious here</a>.
+          </p>
+          <p>
+            Report bugs or feature requests for the plugin to the plugin author (e.g. on the plugin's <a href="https://github.com/OctoPrint/OctoPrint-CuraLegacy">homepage</a>) please, not here!
+          </p>
+        </dd>
+      </dl>
+    </div>
+
+  </div>
+</div>
+
+
+    </div>
+</div>
+
+      <footer>
+          <div class="container">
+              <div class="row">
+                  <div class="span4">
+                      <h2>On the web</h2>
+                      <ul class="fa-ul">
+                          <li><span class="fa-li"><i class="fas fa-users fa-fw"></i></span><a href="https://community.octoprint.org">Community Forum</a></li>
+                          <li><span class="fa-li"><i class="fas fa-comments fa-fw"></i></span><a href="irc://chat.freenode.net/octoprint" target="_blank">#octoprint on freenode</a> (<a href="https://chat.octoprint.org">Webchat</a>, <a href="https://freenode.logbot.info/octoprint">Logs</a>)</li>
+                          <li><span class="fa-li"><i class="fab fa-twitter fa-fw"></i></span><a href="https://twitter.com/OctoPrint3D" target="_blank">@OctoPrint3D</a></li>
+                          <li><span class="fa-li"><i class="fab fa-facebook-f fa-fw"></i></span><a href="https://facebook.com/OctoPrint" target="_blank">OctoPrint</a></li>
+                          <li><span class="fa-li"><i class="fab fa-youtube fa-fw"></i></span><a href="https://www.youtube.com/c/OctoPrint3D" target="_blank">OctoPrint</a></li>
+                          <li><span class="fa-li"><i class="fas fa-tachometer-alt fa-fw"></i></span><a href="https://status.octoprint.org" target="_blank">Site Status</a></li>
+                          <li><span class="fa-li"><i class="fas fa-gavel fa-fw"></i></span><a href="https://octoprint.org/imprint/" rel="nofollow">Legal Notice</a></li>
+                          <li><span class="fa-li"><i class="fas fa-gavel fa-fw"></i></span><a href="https://octoprint.org/privacy/" rel="nofollow">Privacy Policy</a></li>
+                      </ul>
+                  </div>
+                  <div class="span4">
+                      <h2>Recently Added</h2>
+                      <ul>
+                          
+                          
+                          <li>
+                              <a class="post-link" href="/plugins/smartpreheat/">Smart Preheat</a>
+                          </li>
+                          
+                          <li>
+                              <a class="post-link" href="/plugins/printoid/">OctoPrint-Printoid</a>
+                          </li>
+                          
+                          <li>
+                              <a class="post-link" href="/plugins/webhooks/">OctoPrint-Webhooks</a>
+                          </li>
+                          
+                          <li>
+                              <a class="post-link" href="/plugins/emergencystopsimplified/">Emergency Stop Simplified</a>
+                          </li>
+                          
+                          <li>
+                              <a class="post-link" href="/plugins/TemperatureLegendMover/">TemperatureLegendMover</a>
+                          </li>
+                          
+                      </ul>
+                  </div>
+                  <div class="span4 hidden-phone">
+                      <a href="http://octoprint.org"><img src="/assets/img/logo-footer.png" alt="Octopus logo" class="pull-right"></a>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="span12 text-center legal">
+                      <small>"OctoPrint" is a <a href="http://octoprint.org/trademark-rules/">registered trademark</a></small>
+                  </div>
+              </div>
+          </div>
+      </footer>
+
+
+<script src="/assets/js/prettify.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+<script src="/assets/js/lunr.min.js"></script>
+<script src="/assets/js/mustache.js"></script>
+<script src="/assets/js/URI.min.js"></script>
+<script src="/assets/js/date.format.js"></script>
+<script src="/assets/js/jquery.lunr.search.js"></script>
+<script src="/assets/js/lightbox.min.js"></script>
+<script src="/assets/js/site.js"></script>
+<script src="/assets/js/autotrack.js"></script>
+<script src="/assets/js/yt-with-consent.js"></script>
+
+<script>
+    var gaBaseProperty = 'UA-62479257';
+    var gaProperty = gaBaseProperty + '-2';
+
+    // opt out
+    var disableStr = 'ga-disable-' + gaProperty;
+    var disableCookie = 'ga-disable-' + gaBaseProperty;
+    function gaOptout() {
+        document.cookie = disableCookie + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/; domain=octoprint.org';
+        window[disableStr] = true;
+        alert("Google Analytics ist jetzt deaktiviert! / Google Analytics is now deactivated!")
+    }
+
+    // tracking code
+    if (document.cookie.indexOf(disableCookie + '=true') > -1) {
+        window[disableStr] = true;
+    } else {
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', gaProperty, 'auto');
+        ga('require', 'autotrack');
+        ga('set', 'anonymizeIp', true);
+        ga('send', 'pageview');
+    }
+</script>
+
+</body>
+</html>

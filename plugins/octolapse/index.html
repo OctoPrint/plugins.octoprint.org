@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en" xmlns="http://www.w3.org/1999/html"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+    <title>Octolapse</title>
+    <meta name="description" content="Create a stabilized timelapse of your 3D prints.  Highly customizable, loads of presets, lots of fun.  Requires OctoPrint 1.3.9 or higher.">
+    <meta name="author" content="Brad Hochgesang">
+    <meta name="referrer" content="same-origin">
+    <meta name="google-site-verification" content="0EFsbaNygJcEinKPmzP-hTf0Ju6wDIpJxO5zvQtOQT0" />
+    <meta name="build-revision" content="dcd643e9ea2a753318428b65a5e32b1466fcfcb3" />
+    <meta name="build-date" content="2020-05-05 07:26:12-05:00" />
+
+    <!--[if lt IE 9]>
+    <script src="/assets/js/html5shim.js"></script>
+    <![endif]-->
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Le styles -->
+    <link rel="stylesheet" href="/assets/css/site.css?_=1588681572">
+    <link rel="stylesheet" href="/assets/css/bootstrap-responsive.css?_=1588681572">
+    <link rel="stylesheet" href="/assets/css/fontawesome-all.min.css?_=1588681572">
+    <link rel="stylesheet" href="/assets/css/prettify.css?_=1588681572">
+    <link rel="stylesheet" href="/assets/css/lightbox.css?_=1588681572">
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="/assets/img/tentacle-32x32.png">
+
+    <!-- Le RSS feed -->
+    <link rel="alternate" type="application/rss+xml" title="OctoPrint Plugin Repository: New Plugins" href="/feed.xml">
+
+    <!-- Le social media meta data -->
+    
+    
+    
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@OctoPrint3D" />
+    <meta name="twitter:title" content="Octolapse" />
+    <meta name="twitter:description" content="Octolapse
+
+" />
+    <meta name="twitter:image" content="https://plugins.octoprint.org" />
+
+    <meta property="og:title" content="Octolapse" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://plugins.octoprint.org/assets/img/plugins/octolapse/tab_mini.png" />
+    <meta property="og:description" content="Octolapse
+
+" />
+    <meta property="og:site_name" content="OctoPrint Plugin Repository" />
+    <meta property="og:url" content="https://plugins.octoprint.org/plugins/octolapse/" />
+
+    <meta itemscope itemtype="http://schema.org/WebPage" />
+    <meta itemprop="headline" content="Octolapse" />
+    <meta itemprop="description" content="Octolapse
+
+" />
+    <meta itemprop="image" content="https://plugins.octoprint.org/assets/img/plugins/octolapse/tab_mini.png" />
+
+    <script src="/assets/js/jquery-1.9.1.min.js"></script>
+    <script src="/assets/js/underscore.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/cookieconsent.min.css" />
+    <script src="/assets/js/cookieconsent.min.js"></script>
+    <script>
+        if (!String.prototype.startsWith) {
+            String.prototype.startsWith = function(search, pos) {
+            return this.substr(!pos || pos < 0 ? 0 : +pos, search.length) === search;
+            };
+        }
+
+        window.addEventListener("load", function(){
+            window.cookieconsent.initialise({
+                "position": "bottom",
+                "theme": "edgeless",
+                "palette": {
+                    "popup": {
+                        "background": "#000000",
+                        "link": "#10a800"
+                    },
+                    "button": {
+                        "background": "#0b7500"
+                    }
+                }
+            })
+        });
+
+        /**
+         * Make sure octoprint.github.io stuff gets rewritten to plugins.octoprint.org.
+         * See https://github.com/OctoPrint/plugins.octoprint.org/issues/146.
+         */
+        var githubio = "octoprint.github.io/plugins.octoprint.org";
+        var url = window.location.href;
+        if (url && (url.startsWith("http://" + githubio) || url.startsWith("https://" + githubio))) {
+            url = url.replace(githubio, "plugins.octoprint.org");
+            window.location.replace(url);
+        }
+    </script>
+</head>
+
+<body>
+
+<div class="navbar navbar-inverse navbar-static-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand" href="/"><img src="/assets/img/tentacle-20x20.png" alt="Tentacle logo" class="tentacle"> Plugin Repo</a>
+      <a href="javascript:void(0)" class="btn btn-burger btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><i class="fas fa-bars"></i></a>
+      <div class="pull-right">
+        <ul class="nav social-navbar">
+          <li><a href="https://octoprint.org/merch/" title="Get some merchandise!" target="_blank"><i class="fa fa-shopping-basket"></i></a></li>
+          <li><a href="https://octoprint.org/support-octoprint/" title="Support OctoPrint!" data-event-category="supportlink" data-event-action="navigation" target="_blank"><i class="fas fa-donate"></i></a></li>
+        </ul>
+      </div>
+      <div class="nav-collapse collapse">
+        <ul class="nav">
+          <li><a href="/by_name/">by Name</a></li>
+          <li><a href="/by_date/">by Date</a></li>
+          <li><a href="/by_tag/">by Tag</a></li>
+          <li><a href="/by_author/">by Author</a></li>
+          <li><form class="navbar-search pull-right" action="/search/" method="get"><input type="text" class="input-medium search-query" placeholder="Enter search &amp; hit enter..." name="q"></form></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">Help <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="/help/installation/">Installing Plugins</a></li>
+              <li><a href="/help/registering/">Registering Plugins</a></li>
+              <li><a href="http://docs.octoprint.org/en/master/plugins/gettingstarted.html">The Plugin Tutorial</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">Lists <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="/blacklist/">Blacklist</a></li>
+              <li><a href="/notices/">Notices</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="wrap">
+    <div id="main">
+    
+
+
+
+
+
+
+<div class="page-header">
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+        <h1>Octolapse</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row-fluid">
+    
+    <small class="pull-left"><a href="/plugins/signalnotifier/"><i class="fa fa-double-angle-left"></i>&nbsp;OctoPrint_Signal-Notifier</a></small>
+    
+    &nbsp;
+    
+    <small class="pull-right"><a href="/plugins/Octoslack/">Octoslack&nbsp;<i class="fa fa-double-angle-right"></i></a></small>
+    
+  </div>
+  <div class="content plugin-content row-fluid">
+    <article class="post-content span8">
+      
+      
+      
+
+      <p class="lead">
+        Create a stabilized timelapse of your 3D prints.  Highly customizable, loads of presets, lots of fun.  Requires OctoPrint 1.3.9 or higher.
+      </p>
+      <h1 id="octolapse">Octolapse</h1>
+
+<div style="text-align:center">
+    <img src="/assets/img/plugins/octolapse/tab_mini.png" alt="Octolapse Tab" />
+    <div>
+        <i>The Octolapse Tab</i>
+    </div>
+    <br />
+</div>
+
+<p><strong><em>Octolapse is provided without warranties of any kind.  By installing Octolapse you agree to accept all liability for any damage caused directly or indirectly by Octolapse.  Use caution and never leave your printer unattended.</em></strong></p>
+
+<p>Octolapse is designed to make stabilized timelapses of your prints with as little hassle as possible, and it’s extremely configurable.  Now you can create a silky smooth timelapse without a custom camera mount, no GCode customizations required.</p>
+
+<p>Octolapse moves the print bed and extruder into position before taking each snapshot, giving you a crisp image in every frame.  Snapshots can be taken at each layer change, at specific height increments, after a period of time has elapsed, or when certain GCodes are detected.</p>
+
+<p><a href="https://www.patreon.com/join/FormerLurker">Please support my work by becoming a patron.</a></p>
+
+<p><strong>Important</strong>:  <em>Octolapse requires OctoPrint v1.3.9 or higher and some features require OctoPrint v1.3.10rc1 or above.</em>  You can check your OctoPrint version by looking in the lower left hand corner of your OctoPrint server home page.</p>
+
+<h1 id="recent-changes">Recent Changes</h1>
+<p>If you are upgrading from <a href="https://github.com/FormerLurker/Octolapse/releases/tag/v0.3.1">v0.3.1</a>, please read the <a href="https://github.com/FormerLurker/Octolapse/releases/tag/v0.3.4">v0.3.4 release notes</a>, a lot has changed.  If you’ve had trouble running Octolapse in the past, you just might want to try it again!</p>
+
+<h1 id="what-octolapse-does">What Octolapse Does</h1>
+
+<div style="text-align:center">
+    <br />
+    <div>
+        <div class="responsive_iframe">
+	<div class="yt-with-consent" data-vid="er0VCYen1MY"></div>
+</div>
+
+    </div>
+    <div>
+        <a href="https://www.thingiverse.com/thing:570288" alt="Link to the model from this video" title="view model on thingiverse" target="_blank">
+            <i>A timelapse of a double spiral vase made with Octolapse</i>
+        </a>
+    </div>
+    <br />
+</div>
+<h2 id="octolapse-was-designed-with-print-quality-in-mind">Octolapse was designed with print quality in mind</h2>
+<ul>
+  <li><strong>Continuous tracking</strong> of the X,Y, and Z axes.  Octolapse knows where your extruder and bed will be at all times.</li>
+  <li><strong>Extruder state detection</strong> enables Octolapse to choose a good time take a snapshot, minimizing defects.</li>
+  <li>Choose from dozens of existing <strong>presets,</strong> or use a <strong>custom configuration</strong> to maximize quality for your specific application.</li>
+  <li>Customizable <strong>Z-Hop and retract detection</strong> to reduce stringing, maximizing quality.</li>
+  <li><strong>Configurable stabilizations</strong> allow you complete control of the X and Y position of each snapshot.  You can choose a position as close to or as far away from your part as you wish.</li>
+  <li><strong>Minimal impact on print time and print quality.</strong>  Octolapse normally takes between one and three seconds to take a snapshot.  It even reports exactly how much time it’s using after each snapshot!</li>
+  <li>Use <strong>High Quality Mode</strong> to prevent snapshots over exterior perimeters using the new fully customizable <strong>Feature Detection</strong>.</li>
+  <li>Allow or prevent snapshots in certain areas with <strong>snapshot position restrictions.</strong>  This can be used to prevent snapshots over critical areas of your print or a delicate part.</li>
+  <li>If you have a multi-material printer, you can even <strong>restrict snapshots movements to your wipe tower</strong>, virtually eliminating any quality considerations!</li>
+  <li>Octolapse can <strong>calculate intersections</strong> between the printer path and any snapshot position restriction, allowing a snapshot even in the middle of an extrusion.</li>
+  <li><strong>Stop the timelapse whenever you want!</strong>  If things go awry, you can prevent Octolapse from taking any further snapshots for the rest of the print.  It will wait to render any snapshots that were already taken until after the print has finished.</li>
+  <li>Use <strong>test mode</strong> to try out your timelapse settings without heating your bed or nozzle, turning on any fans, or extruding any filament.  This saves time and plastic.  It’s also very useful for development and testing.
+    <h2 id="octolapse-was-also-designed-to-make-great-timelapses">Octolapse was also designed to make great timelapses</h2>
+  </li>
+  <li><strong>Synchronize your timelapses</strong> with OctoPrint’s built in plugin, keeping all of your videos in one place.</li>
+  <li>Choose between <strong>fixed frame rate</strong> or <strong>fixed length rendering.</strong>  Octolapse will automatically adjust the frame rate to match any desired length.  You can even set a minimum or maximum acceptable frame rate.</li>
+  <li>Add <strong>pre or post roll frames</strong> (not videos yet, sorry) to your snapshot preventing an abrupt start or finish.</li>
+  <li>Choose from several output formats including <strong>MP4 (libxvid and H.264), AVI, FLV, VOB, GIF, and MPEG.</strong>  <em>More coming soon, suggestions welcome.</em>  <em>Note: *OctoPrint 1.3.10 is required to synchronize some formats with the built-in timelapse plugin.*</em></li>
+  <li><strong>Control the bitrate</strong> of your video.</li>
+  <li>Add a <strong>Custom Watermark</strong> to your video.</li>
+  <li>Add <strong>Text Overlays</strong> to your video using replacement tokens.  Control the position, color, font and more!</li>
+  <li>Control the number of <strong>rendering threads</strong> to reduce rendering time.
+    <h2 id="to-make-good-timelapses-you-need-good-snapshots">To make good timelapses, you need good snapshots</h2>
+  </li>
+  <li>Slow camera or low frame rate?  Octolapse allows you to <strong>set a snapshot delay</strong> before taking a snapshot to allow your camera enough time to get a clear image.</li>
+  <li><strong>Control your camera settings</strong> when using <a href="https://sourceforge.net/projects/mjpg-streamer/">mjpg-streamer</a> including: contrast, brightness, focus, white balance, pan, tilt, zoom, and much more.  You can apply your custom settings before each print.</li>
+  <li><strong>Rotate, flip, and transpose your snapshots</strong></li>
+  <li>Use custom camera scripts to <strong>trigger a DSLR</strong>, post-process images, configure your camera, turn lighting on and off, control <strong>GPIO</strong>, or practically anything you can think of!  Five script types are available.</li>
+  <li>Use <strong>Multiple cameras</strong> to create multiple timelapses.</li>
+  <li>Send gcode to your printer when it’s time to take a snapshot via the new <strong>Gcode Camera Type</strong>.  Supports for the <strong>M240</strong> gcode!
+    <h2 id="simplified-setup-and-better-compatibility">Simplified Setup and Better Compatibility</h2>
+  </li>
+  <li>Select your <strong>slicer type</strong> to simplify printer setup by making the setting names and units match your slicer!  Cura, Simplify 3d and Slic3r PE are fully supported.</li>
+  <li>Enhanced and <strong>simplified error reporting</strong> and informational panels.</li>
+  <li>All settings include links to the <strong>Octolapse Wiki</strong>, so you can get to the documentation quickly if you have questions.</li>
+  <li>Octolapse now works with <strong>Themeify</strong>.</li>
+</ul>
+
+<h1 id="installation">Installation</h1>
+
+<p><a href="https://github.com/FormerLurker/Octolapse/wiki/Installation">Read the installation instructions.</a></p>
+
+<p>After installation, <a href="https://github.com/FormerLurker/Octolapse/wiki">checkout the project’s wiki pages</a>.  It never hurts to know more about what you’re doing!</p>
+
+<h1 id="usage">Usage</h1>
+<p><a href="https://github.com/FormerLurker/Octolapse/wiki/Usage">Learn how to start your first print here.</a>  It’s a good idea to read about the settings before using Octolapse.  I also recommend you <a href="https://youtu.be/sDyg9lMqMG8">watch this brief tutorial</a>, which explains how to configure your printer profile for use with the new <strong>High Quality</strong> snapshot profile.</p>
+
+<h1 id="known-printer-support">Known Printer Support</h1>
+
+<p>Octolapse is still in Beta but has been confirmed to work on several printers:</p>
+
+<ul>
+  <li>Genuine Prusa - Mk2, Mk2S, Mk2 w Multi Material, Mk3</li>
+  <li>Anet A8 - Beta - User Submitted</li>
+  <li>Anycube I3 Mega - Beta - User Submitted</li>
+  <li>CR-10 - Beta - User Submitted</li>
+  <li>Dagoma Neva - Beta - User Submitted</li>
+  <li>Irapid Black - Beta - User Submitted</li>
+  <li>Monoprice Maker Select v2/Wanhao Duplicator i3 - Beta - User Submitted - Requires OctoPrint 1.3.7rc3 or above</li>
+</ul>
+
+<p>Please note that some settings may need to be adjusted depending on your slicer settings.</p>
+
+<h2 id="more-octolapses">More Octolapses</h2>
+<div style="text-align:center">
+    <div>
+        <div class="responsive_iframe">
+	<div class="yt-with-consent" data-vid="uBeVbDJKHw0"></div>
+</div>
+
+    </div>
+    <div>
+        <a href="https://www.youtube.com/channel/UCXRcs5H7Om8YbaNbaM5iOdg" alt="Link to WildRose builds channel" target="_blank">
+            <i>A user generated compilation created by WildRose Builds.  Support this channel and please subscribe!</i>
+        </a>
+    </div>
+    <br />
+</div>
+
+<div style="text-align:center">
+    <div>
+        <div class="responsive_iframe">
+	<div class="yt-with-consent" data-vid="dYbWfBCLNbI"></div>
+</div>
+
+    </div>
+    <div>
+        <a href="https://www.thingiverse.com/thing:919475" alt="Link to the model from this video" title="view model on thingiverse" target="_blank">
+            <i>The Milennium Falcon</i>
+        </a>
+    </div>
+    <br />
+</div>
+
+<div style="text-align:center">
+    <div>
+        <div class="responsive_iframe">
+	<div class="yt-with-consent" data-vid="4kEHbRrp2Jk"></div>
+</div>
+
+    </div>
+    <div>
+        <a href="https://www.thingiverse.com/thing:2531838" alt="Link to the model from this video" title="view model on thingiverse" target="_blank">
+            <i>The Moon - Animated X Axis</i>
+        </a>
+    </div>
+    <br />
+</div>
+<div style="text-align:center">
+    <div>
+        <div class="responsive_iframe">
+	<div class="yt-with-consent" data-vid="Ra5Jjq-nJfA"></div>
+</div>
+
+    </div>
+    <div>
+        <a href="https://www.thingiverse.com/thing:763622" alt="Link to the model from this video" title="view model on thingiverse" target="_blank">
+            <i>The obligatory benchy</i>
+        </a>
+    </div>
+    <br />
+</div>
+
+<h2 id="history-of-octolapse">History of Octolapse</h2>
+<p>I got the idea for Octolapse when I attempted to manually make a <a href="https://youtu.be/xZlP4vpAKNc">stabilized timelapse</a> by hand editing my GCode files.  To accomplish this I used the excellent and simple <a href="https://github.com/kantlivelong/OctoPrint-GCodesystemCommands">GCode System Commands</a> plugin.  The timelapse worked great, but it required a lot of effort which I didn’t want to put in every time.  I received several requests for instructions on how to create a stabilized timelapse, so I decided to give plugin development a go.  I’ve never done one before (or programmed python or knockout or anything open source), but figured I could contribute something good to the community.  This is my “thank you” to all of the makers out there who have contributed your time and effort!</p>
+
+<h2 id="report-problems">Report Problems</h2>
+<p>If you think you have found a bug in Octolapse, please create an issue on the official github.com page <a href="https://github.com/FormerLurker/Octolapse/issues/new">here</a>.  In order to have your issue handled properly and quickly, please completely</p>
+
+<h2 id="license">License</h2>
+<p>View the <a href="https://github.com/FormerLurker/Octolapse/blob/master/LICENSE">Octolapse license</a>.</p>
+
+<hr />
+
+<p><em>Copyright (C) 2017  Brad Hochgesang - FormerLurker@pm.me</em></p>
+
+
+      
+    </article>
+
+    <div class="span4">
+      <dl class="adbox">
+        <dd class="ad">
+          <script>
+    if (!window["carbon-disable"]) {
+        (function() {
+            var po = document.createElement("script");
+            po.type = "text/javascript";
+            po.async = true;
+            po.src  = "//cdn.carbonads.com/carbon.js?serve=CK7DT237&placement=pluginsoctoprintorg";
+            po.id = "_carbonads_js";
+            var s = document.currentScript;
+            s.parentNode.insertBefore(po, s);
+        })();
+    }
+</script>
+        </dd>
+      </dl>
+      
+      <dl class="installation">
+        <dt>Installation <a href="/help/installation/" class="fas fa-question-circle"></a></dt>
+        
+        <dd>
+          URL:
+          <pre>https://github.com/FormerLurker/Octolapse/archive/v0.3.4.zip</pre>
+          
+        </dd>
+        
+        
+        <dd>
+          Command line:
+          <pre>pip install "https://github.com/FormerLurker/Octolapse/archive/v0.3.4.zip"</pre>
+        </dd>
+        
+      </dl>
+      
+      
+      <dl class="date">
+        <dt>Registration date</dt>
+        <dd>24 Mar 2018</dd>
+      </dl>
+      
+      
+      <dl class="tags">
+        <dt>Tags</dt>
+        <dd>
+          
+          
+          
+          
+          <a class="label" href="/by_tag/#tag-timelapse">timelapse</a>
+          
+        </dd>
+      </dl>
+      
+      <dl class="compatibility">
+        <dt>Compatibility Information</dt>
+        <dd>
+          <ul>
+            
+            <li>OctoPrint: 1.3.9+</li>
+            
+            
+            <li>Operating Systems: Linux, Windows, Mac OS X, FreeBSD</li>
+            
+            
+            <li>Python: &gt;=2.7,&lt;3</li>
+            
+          </ul>
+        </dd>
+      </dl>
+      
+      <dl class="author">
+        <dt>Author</dt>
+        <dd>Brad Hochgesang</dd>
+      </dl>
+      
+      
+      <dl class="homepage">
+        <dt>Homepage</dt>
+        <dd><a href="https://formerlurker.github.io/Octolapse/" target="_blank">https://formerlurker.github.io/Octolapse/</a></dd>
+      </dl>
+      
+      
+      <dl class="source">
+        <dt>Source</dt>
+        <dd><a href="https://github.com/FormerLurker/Octolapse/" target="_blank">https://github.com/FormerLurker/Octolapse/</a></dd>
+      </dl>
+      
+      
+      <dl class="license">
+        <dt>License</dt>
+        <dd>AGPL-3.0</dd>
+      </dl>
+      
+      <dl class="issue">
+        <dt>Something wrong here?</dt>
+        <dd>
+          <p>
+            If there is <strong>something wrong with this listing</strong> (broken links & images etc), please
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=bug&template=listing_error.md&title=%5BListing+Error%5D+Octolapse">report it here</a>.
+          </p>
+          <p>
+            If this plugin <strong>has been <em>confirmed</em> as abandoned</strong> by its maintainer, please
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=abandoned+plugin&template=abandoned_plugin.md&title=%5BAbandoned+Plugin%5D+Octolapse">report it here</a>.
+          </p>
+          <p>
+            If this plugin is <strong>doing something suspicious</strong> (e.g. weird network activity, unannounced tracking, ...) and
+            the maintainer is not cooperating in getting to the bottom of that, please
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=suspicious+plugin+activity&template=suspicious_plugin_activity.md&title=%5BSuspicious+Plugin+Activity%5D+Octolapse">report the plugin as suspicious here</a>.
+          </p>
+          <p>
+            Report bugs or feature requests for the plugin to the plugin author (e.g. on the plugin's <a href="https://formerlurker.github.io/Octolapse/">homepage</a>) please, not here!
+          </p>
+        </dd>
+      </dl>
+    </div>
+
+  </div>
+</div>
+
+
+    </div>
+</div>
+
+      <footer>
+          <div class="container">
+              <div class="row">
+                  <div class="span4">
+                      <h2>On the web</h2>
+                      <ul class="fa-ul">
+                          <li><span class="fa-li"><i class="fas fa-users fa-fw"></i></span><a href="https://community.octoprint.org">Community Forum</a></li>
+                          <li><span class="fa-li"><i class="fas fa-comments fa-fw"></i></span><a href="irc://chat.freenode.net/octoprint" target="_blank">#octoprint on freenode</a> (<a href="https://chat.octoprint.org">Webchat</a>, <a href="https://freenode.logbot.info/octoprint">Logs</a>)</li>
+                          <li><span class="fa-li"><i class="fab fa-twitter fa-fw"></i></span><a href="https://twitter.com/OctoPrint3D" target="_blank">@OctoPrint3D</a></li>
+                          <li><span class="fa-li"><i class="fab fa-facebook-f fa-fw"></i></span><a href="https://facebook.com/OctoPrint" target="_blank">OctoPrint</a></li>
+                          <li><span class="fa-li"><i class="fab fa-youtube fa-fw"></i></span><a href="https://www.youtube.com/c/OctoPrint3D" target="_blank">OctoPrint</a></li>
+                          <li><span class="fa-li"><i class="fas fa-tachometer-alt fa-fw"></i></span><a href="https://status.octoprint.org" target="_blank">Site Status</a></li>
+                          <li><span class="fa-li"><i class="fas fa-gavel fa-fw"></i></span><a href="https://octoprint.org/imprint/" rel="nofollow">Legal Notice</a></li>
+                          <li><span class="fa-li"><i class="fas fa-gavel fa-fw"></i></span><a href="https://octoprint.org/privacy/" rel="nofollow">Privacy Policy</a></li>
+                      </ul>
+                  </div>
+                  <div class="span4">
+                      <h2>Recently Added</h2>
+                      <ul>
+                          
+                          
+                          <li>
+                              <a class="post-link" href="/plugins/smartpreheat/">Smart Preheat</a>
+                          </li>
+                          
+                          <li>
+                              <a class="post-link" href="/plugins/printoid/">OctoPrint-Printoid</a>
+                          </li>
+                          
+                          <li>
+                              <a class="post-link" href="/plugins/webhooks/">OctoPrint-Webhooks</a>
+                          </li>
+                          
+                          <li>
+                              <a class="post-link" href="/plugins/emergencystopsimplified/">Emergency Stop Simplified</a>
+                          </li>
+                          
+                          <li>
+                              <a class="post-link" href="/plugins/TemperatureLegendMover/">TemperatureLegendMover</a>
+                          </li>
+                          
+                      </ul>
+                  </div>
+                  <div class="span4 hidden-phone">
+                      <a href="http://octoprint.org"><img src="/assets/img/logo-footer.png" alt="Octopus logo" class="pull-right"></a>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="span12 text-center legal">
+                      <small>"OctoPrint" is a <a href="http://octoprint.org/trademark-rules/">registered trademark</a></small>
+                  </div>
+              </div>
+          </div>
+      </footer>
+
+
+<script src="/assets/js/prettify.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+<script src="/assets/js/lunr.min.js"></script>
+<script src="/assets/js/mustache.js"></script>
+<script src="/assets/js/URI.min.js"></script>
+<script src="/assets/js/date.format.js"></script>
+<script src="/assets/js/jquery.lunr.search.js"></script>
+<script src="/assets/js/lightbox.min.js"></script>
+<script src="/assets/js/site.js"></script>
+<script src="/assets/js/autotrack.js"></script>
+<script src="/assets/js/yt-with-consent.js"></script>
+
+<script>
+    var gaBaseProperty = 'UA-62479257';
+    var gaProperty = gaBaseProperty + '-2';
+
+    // opt out
+    var disableStr = 'ga-disable-' + gaProperty;
+    var disableCookie = 'ga-disable-' + gaBaseProperty;
+    function gaOptout() {
+        document.cookie = disableCookie + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/; domain=octoprint.org';
+        window[disableStr] = true;
+        alert("Google Analytics ist jetzt deaktiviert! / Google Analytics is now deactivated!")
+    }
+
+    // tracking code
+    if (document.cookie.indexOf(disableCookie + '=true') > -1) {
+        window[disableStr] = true;
+    } else {
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', gaProperty, 'auto');
+        ga('require', 'autotrack');
+        ga('set', 'anonymizeIp', true);
+        ga('send', 'pageview');
+    }
+</script>
+
+</body>
+</html>

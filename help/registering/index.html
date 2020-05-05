@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en" xmlns="http://www.w3.org/1999/html"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+    <title>Registering a new plugin</title>
+    
+    
+    <meta name="referrer" content="same-origin">
+    <meta name="google-site-verification" content="0EFsbaNygJcEinKPmzP-hTf0Ju6wDIpJxO5zvQtOQT0" />
+    <meta name="build-revision" content="dcd643e9ea2a753318428b65a5e32b1466fcfcb3" />
+    <meta name="build-date" content="2020-05-05 07:26:12-05:00" />
+
+    <!--[if lt IE 9]>
+    <script src="/assets/js/html5shim.js"></script>
+    <![endif]-->
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Le styles -->
+    <link rel="stylesheet" href="/assets/css/site.css?_=1588681572">
+    <link rel="stylesheet" href="/assets/css/bootstrap-responsive.css?_=1588681572">
+    <link rel="stylesheet" href="/assets/css/fontawesome-all.min.css?_=1588681572">
+    <link rel="stylesheet" href="/assets/css/prettify.css?_=1588681572">
+    <link rel="stylesheet" href="/assets/css/lightbox.css?_=1588681572">
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="/assets/img/tentacle-32x32.png">
+
+    <!-- Le RSS feed -->
+    <link rel="alternate" type="application/rss+xml" title="OctoPrint Plugin Repository: New Plugins" href="/feed.xml">
+
+    <!-- Le social media meta data -->
+    
+    
+    
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@OctoPrint3D" />
+    <meta name="twitter:title" content="Registering a new plugin" />
+    <meta name="twitter:description" content="The official OctoPrint Plugin Repository" />
+    <meta name="twitter:image" content="https://plugins.octoprint.org/assets/img/octoprint-avatar-240x240.png" />
+
+    <meta property="og:title" content="Registering a new plugin" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://plugins.octoprint.org/assets/img/repo-600x400.png" />
+    <meta property="og:description" content="The official OctoPrint Plugin Repository" />
+    <meta property="og:site_name" content="OctoPrint Plugin Repository" />
+    <meta property="og:url" content="https://plugins.octoprint.org/help/registering/" />
+
+    <meta itemscope itemtype="http://schema.org/WebPage" />
+    <meta itemprop="headline" content="Registering a new plugin" />
+    <meta itemprop="description" content="The official OctoPrint Plugin Repository" />
+    <meta itemprop="image" content="https://plugins.octoprint.org/assets/img/repo-600x400.png" />
+
+    <script src="/assets/js/jquery-1.9.1.min.js"></script>
+    <script src="/assets/js/underscore.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/cookieconsent.min.css" />
+    <script src="/assets/js/cookieconsent.min.js"></script>
+    <script>
+        if (!String.prototype.startsWith) {
+            String.prototype.startsWith = function(search, pos) {
+            return this.substr(!pos || pos < 0 ? 0 : +pos, search.length) === search;
+            };
+        }
+
+        window.addEventListener("load", function(){
+            window.cookieconsent.initialise({
+                "position": "bottom",
+                "theme": "edgeless",
+                "palette": {
+                    "popup": {
+                        "background": "#000000",
+                        "link": "#10a800"
+                    },
+                    "button": {
+                        "background": "#0b7500"
+                    }
+                }
+            })
+        });
+
+        /**
+         * Make sure octoprint.github.io stuff gets rewritten to plugins.octoprint.org.
+         * See https://github.com/OctoPrint/plugins.octoprint.org/issues/146.
+         */
+        var githubio = "octoprint.github.io/plugins.octoprint.org";
+        var url = window.location.href;
+        if (url && (url.startsWith("http://" + githubio) || url.startsWith("https://" + githubio))) {
+            url = url.replace(githubio, "plugins.octoprint.org");
+            window.location.replace(url);
+        }
+    </script>
+</head>
+
+<body>
+
+<div class="navbar navbar-inverse navbar-static-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand" href="/"><img src="/assets/img/tentacle-20x20.png" alt="Tentacle logo" class="tentacle"> Plugin Repo</a>
+      <a href="javascript:void(0)" class="btn btn-burger btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><i class="fas fa-bars"></i></a>
+      <div class="pull-right">
+        <ul class="nav social-navbar">
+          <li><a href="https://octoprint.org/merch/" title="Get some merchandise!" target="_blank"><i class="fa fa-shopping-basket"></i></a></li>
+          <li><a href="https://octoprint.org/support-octoprint/" title="Support OctoPrint!" data-event-category="supportlink" data-event-action="navigation" target="_blank"><i class="fas fa-donate"></i></a></li>
+        </ul>
+      </div>
+      <div class="nav-collapse collapse">
+        <ul class="nav">
+          <li><a href="/by_name/">by Name</a></li>
+          <li><a href="/by_date/">by Date</a></li>
+          <li><a href="/by_tag/">by Tag</a></li>
+          <li><a href="/by_author/">by Author</a></li>
+          <li><form class="navbar-search pull-right" action="/search/" method="get"><input type="text" class="input-medium search-query" placeholder="Enter search &amp; hit enter..." name="q"></form></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">Help <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="/help/installation/">Installing Plugins</a></li>
+              <li><a href="/help/registering/">Registering Plugins</a></li>
+              <li><a href="http://docs.octoprint.org/en/master/plugins/gettingstarted.html">The Plugin Tutorial</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">Lists <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="/blacklist/">Blacklist</a></li>
+              <li><a href="/notices/">Notices</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="wrap">
+    <div id="main">
+    <div class="page-header">
+    <div class="container">
+        <div class="row">
+            <div class="span12">
+                <h1>Registering a new plugin</h1>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="content row-fluid">
+        <div class="span12">
+            <p>The OctoPrint Plugin Repository is hosted on <a href="https://pages.github.com/">Github Pages</a>.
+You can register new plugins by forking <a href="https://github.com/OctoPrint/plugins.octoprint.org">the source</a> and just 
+editing it accordingly.</p>
+
+<hr />
+
+<p><strong>Before registering your plugin, please check the following:</strong></p>
+
+<ul>
+  <li>
+    <p>Your plugin doesn’t have any additional code in its <code>setup.py</code> that would run directly on
+plugin installation, or any additional code in its <code>__init__.py</code> that would run outside of 
+OctoPrint’s plugin framework just by loading it.</p>
+  </li>
+  <li>
+    <p>Your plugin doesn’t attempt to modify the user’s system without their knowledge, e.g. by trying to install
+additional system packages, services or the like. If your plugin needs additional steps like this to function,
+add a wizard dialog that prompts the user to do these things, do <em>not</em> do them automatically.</p>
+
+    <p>Exception: Fetching additional Python dependencies from the Python Package Index through <code class="language-plaintext highlighter-rouge">plugin_requires</code> in your 
+<code class="language-plaintext highlighter-rouge">setup.py</code> is fine.</p>
+  </li>
+  <li>
+    <p>If your plugin interacts with external services it will do so over secured connections with a valid certificate only 
+(<code class="language-plaintext highlighter-rouge">https://someservice.com</code> instead of <code class="language-plaintext highlighter-rouge">http://130.47.11.15</code>). This also includes embedding any kinds of iframes in 
+the web interface. Also include this kind of information in the plugin’s long description (see below)!</p>
+  </li>
+  <li>
+    <p>If your plugin requires the use of external services, and those services are unreachable (say for example a user’s 
+internet is down or the OctoPrint instance runs offline in general), your plugin must fail in a way that does 
+not cause OctoPrint to malfunction.</p>
+  </li>
+  <li>
+    <p>If your plugin contains any kind of tracking code, e.g. for anonymous user statistics to help with 
+development, use an <em>opt-in</em> mechanism for this. Also include this kind of information in the plugin’s long 
+description (see below)!</p>
+
+    <p>The privacy of your users always takes precedence over your need for usage data!</p>
+  </li>
+  <li>
+    <p>If your plugin makes use of the <a href="http://docs.octoprint.org/en/master/bundledplugins/softwareupdate.html#octoprint-plugin-softwareupdate-check-config"><code class="language-plaintext highlighter-rouge">octoprint.plugin.softwareupdate.check_config</code> hook</a> 
+so that it may be updated through OctoPrint on a new release (highly recommended!) make sure that that hook’s handler uses your plugin’s identifier 
+and points to your plugin’s repository.</p>
+  </li>
+  <li>
+    <p>Your plugin is compatible to Python 3. Python 2 is EOL. OctoPrint 1.4.0 does support Python 2 and Python 3, plugins
+will be expected to do so as well (or at least support Python 3) during a transition period of roughly a year after
+the release of OctoPrint 1.4.0 to allow a migration of the whole ecosystem. Read more on how to test this <a href="https://community.octoprint.org/t/towards-python-3-and-octoprint-1-4-0/12382">in this forum post</a>.</p>
+  </li>
+</ul>
+
+<p>Be aware that plugins that don’t follow the above will not be allowed to register on the repository. If you have any questions
+about any of these points, feel free to get in touch <a href="https://community.octoprint.org/c/development">on the forum</a>.</p>
+
+<hr />
+
+<p>If all is in the green, follow these steps:</p>
+
+<ol>
+  <li>
+    <p><a href="https://github.com/OctoPrint/plugins.octoprint.org">Fork the <code class="language-plaintext highlighter-rouge">OctoPrint/plugins.octoprint.org</code> repository on Github</a>
+to your own account.</p>
+  </li>
+  <li>
+    <p>Clone the repository to your computer and change into it:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone git@github.com:&lt;your account&gt;/plugins.octoprint.org
+cd plugins.octoprint.org
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Create a new file in the <code class="language-plaintext highlighter-rouge">_plugins</code> folder called <code class="language-plaintext highlighter-rouge">&lt;your plugin's identifier&gt;.md</code>.</p>
+
+    <div class="alert alert-danger">
+    <strong>Important:</strong> Make sure <code>your plugin's identifier</code> is the same you will register your plugin under with OctoPrint! So if you 
+    used <code>my_awesome_plugin</code> as <code>plugin_identifier</code> during plugin creation
+    make sure to use that exactly like that here too. Take also care of upper vs. lower case here, <code>MY_awesOmE_PlUGIN</code> 
+    is not the same as <code>my_awesome_plugin</code>.
+</div>
+
+    <p>Use this template:</p>
+
+    <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">layout</span><span class="pi">:</span> <span class="s">plugin</span>
+
+<span class="na">id</span><span class="pi">:</span> <span class="s">your plugin's identifier</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s">your plugin's name</span>
+<span class="na">description</span><span class="pi">:</span> <span class="s">short description of your plugin</span>
+<span class="na">author</span><span class="pi">:</span> <span class="s">your name</span>
+<span class="na">license</span><span class="pi">:</span> <span class="s">your plugin's license</span>
+
+<span class="c1"># today's date in format YYYY-MM-DD, e.g.</span>
+<span class="na">date</span><span class="pi">:</span> <span class="s">2015-06-22</span>
+
+<span class="na">homepage</span><span class="pi">:</span> <span class="s">your plugin's homepage</span>
+<span class="na">source</span><span class="pi">:</span> <span class="s">your plugin's source repository</span>
+<span class="na">archive</span><span class="pi">:</span> <span class="s">archive link to install your plugin via pip, e.g. from github</span><span class="pi">:</span> <span class="s">https://github.com/username/repository/archive/master.zip</span>
+
+<span class="c1"># Set this to true if your plugin uses the dependency_links setup parameter to include</span>
+<span class="c1"># library versions not yet published on pypi. SHOULD ONLY BE USED IF THERE IS NO OTHER OPTION!</span>
+<span class="c1">#follow_dependency_links: false</span>
+
+<span class="na">tags</span><span class="pi">:</span>
+<span class="pi">-</span> <span class="s">a list</span>
+<span class="pi">-</span> <span class="s">of tags</span>
+<span class="pi">-</span> <span class="s">that apply</span>
+<span class="pi">-</span> <span class="s">to your plugin</span>
+<span class="pi">-</span> <span class="s">(take a look at the existing plugins for what makes sense here)</span>
+
+<span class="na">screenshots</span><span class="pi">:</span>
+<span class="pi">-</span> <span class="na">url</span><span class="pi">:</span> <span class="s">url of a screenshot, /assets/img/...</span>
+  <span class="na">alt</span><span class="pi">:</span> <span class="s">alt-text of a screenshot</span>
+  <span class="na">caption</span><span class="pi">:</span> <span class="s">caption of a screenshot</span>
+<span class="pi">-</span> <span class="na">url</span><span class="pi">:</span> <span class="s">url of another screenshot, /assets/img/...</span>
+  <span class="na">alt</span><span class="pi">:</span> <span class="s">alt-text of another screenshot</span>
+  <span class="na">caption</span><span class="pi">:</span> <span class="s">caption of another screenshot</span>
+<span class="pi">-</span> <span class="s">...</span>
+
+<span class="na">featuredimage</span><span class="pi">:</span> <span class="s">url of a featured image for your plugin, /assets/img/...</span>
+
+<span class="c1"># You only need the following if your plugin requires specific OctoPrint versions or</span>
+<span class="c1"># specific operating systems to function - you can safely remove the whole</span>
+<span class="c1"># "compatibility" block if this is not the case.</span>
+
+<span class="na">compatibility</span><span class="pi">:</span>
+
+  <span class="c1"># List of compatible versions</span>
+  <span class="c1">#</span>
+  <span class="c1"># A single version number will be interpretated as a minimum version requirement,</span>
+  <span class="c1"># e.g. "1.3.1" will show the plugin as compatible to OctoPrint versions 1.3.1 and up.</span>
+  <span class="c1"># More sophisticated version requirements can be modelled too by using PEP440</span>
+  <span class="c1"># compatible version specifiers.</span>
+  <span class="c1">#</span>
+  <span class="c1"># You can also remove the whole "octoprint" block. Removing it will default to all</span>
+  <span class="c1"># OctoPrint versions being supported.</span>
+
+  <span class="na">octoprint</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">1.3.0</span>
+
+  <span class="c1"># List of compatible operating systems</span>
+  <span class="c1">#</span>
+  <span class="c1"># Possible values:</span>
+  <span class="c1">#</span>
+  <span class="c1"># - windows</span>
+  <span class="c1"># - linux</span>
+  <span class="c1"># - macos</span>
+  <span class="c1"># - freebsd</span>
+  <span class="c1">#</span>
+  <span class="c1"># There are also two OS groups defined that get expanded on usage:</span>
+  <span class="c1">#</span>
+  <span class="c1"># - posix: linux, macos and freebsd</span>
+  <span class="c1"># - nix: linux and freebsd</span>
+  <span class="c1">#</span>
+  <span class="c1"># You can also remove the whole "os" block. Removing it will default to all</span>
+  <span class="c1"># operating systems being supported.</span>
+
+  <span class="na">os</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">linux</span>
+  <span class="pi">-</span> <span class="s">windows</span>
+  <span class="pi">-</span> <span class="s">macos</span>
+  <span class="pi">-</span> <span class="s">freebsd</span>
+
+  <span class="c1"># Compatible Python version</span>
+  <span class="c1">#</span>
+  <span class="c1"># Plugins should aim for compatibility for Python 2 and 3 for now, in which case the value should be "&gt;=2.7,&lt;4".</span>
+  <span class="c1">#</span>
+  <span class="c1"># Plugins that only wish to support Python 3 should set it to "&gt;=3,&lt;4". </span>
+  <span class="c1">#</span>
+  <span class="c1"># If your plugin only supports Python 2 (worst case, not recommended for newly developed plugins since Python 2</span>
+  <span class="c1"># is EOL), leave at "&gt;=2.7,&lt;3"</span>
+      
+  <span class="na">python</span><span class="pi">:</span> <span class="s2">"</span><span class="s">&gt;=2.7,&lt;3"</span>
+      
+<span class="nn">---</span>
+
+Longer description of your plugin, configuration examples etc. This part will be visible on the page at
+plugins.octoprint.org/plugin/<span class="nt">&lt;your</span> <span class="na">plugin</span> <span class="na">identifier</span><span class="nt">&gt;</span>/
+    
+Use Markdown for formatting.
+</code></pre></div>    </div>
+
+    <div class="alert">
+    <strong>Note:</strong> If you used <code>octoprint dev plugin:new</code> or the <a href="https://github.com/OctoPrint/cookiecutter-octoprint-plugin">OctoPrint cookiecutter template</a> for your
+    plugin as suggested in the <a href="http://docs.octoprint.org/en/master/plugins/gettingstarted.html#growing-up-how-to-make-it-distributable">Getting Started guide</a>, 
+    it created a pre-filled file for you under <code>extras/&lt;your plugin's identifier&gt;.md</code> you just have to complete. Then 
+    copy it to <code>_plugins/&lt;your plugin's identifier&gt;</code>.
+</div>
+
+    <p>You may add screenshots to <code class="language-plaintext highlighter-rouge">assets/img/plugins/&lt;your plugin's identifier&gt;/</code> (you’ll need to create
+this folder). You can then reference them as <code class="language-plaintext highlighter-rouge">/assets/img/plugins/&lt;your plugin's identifier&gt;/your_image.png</code> (the
+leading <code class="language-plaintext highlighter-rouge">/</code> here is important!).</p>
+
+    <p>The image you define as <code class="language-plaintext highlighter-rouge">featuredimage</code> will be included in the plugin repository’s RSS feed and plugins.json file. 
+Future versions of the plugin manager might also display it within OctoPrint.</p>
+
+    <p><strong>Some general guidelines:</strong></p>
+
+    <ul>
+      <li>
+        <p>Your <strong>short description</strong> should give a user scrolling through the repository a quick idea of what your plugin provides.
+Don’t write a novel here, but if possible be a bit more verbose than just basically repeating your plugin’s name.</p>
+      </li>
+      <li>
+        <p>Use the <strong>long description</strong> to really explain what your plugin does. Don’t just repeat the short description here.
+If your plugin has additional requirements (e.g. specific hardware or software), include that here and also
+explain how to get those. Use <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown</a> for formatting.</p>
+      </li>
+      <li>
+        <p>Make sure you <strong>your plugin is Python 3 compatible and mark it as such</strong> using the <code class="language-plaintext highlighter-rouge">compatibility.python</code>
+property. Newly registered plugins will be expected to be compatible <em>at least</em> to Python 3, ideally to
+<em>both Python 2 and 3</em> during a transition period of roughly a year after release of OctoPrint 1.4.0.</p>
+      </li>
+      <li>
+        <p><strong>Include screenshots and a featured image!</strong> The best way to show users what your plugin does and what they may 
+expect from it is to simply include some screenshots that show exactly that. A picture is worth more than a
+thousand words as they say. If your plugin doesn’t visually modify OctoPrint in any way, please include that 
+fact in the long description.</p>
+      </li>
+      <li>
+        <p><strong>Do not directly embed third party screenshots/widgets/iframes!</strong> Thanks to the EU’s 
+<a href="https://en.wikipedia.org/wiki/General_Data_Protection_Regulation">GDPR</a> this could cause us severe 
+legal problems. If you want to embed a YouTube video showing off your plugin, use the provided <code class="language-plaintext highlighter-rouge">youtube.html</code>
+include:</p>
+
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% include youtube.html vid="&lt;youtube video id&gt;" preview="&lt;preview image, '/assets/img/...'&gt;" %}
+</code></pre></div>        </div>
+
+        <p>That will make sure that no connection to YouTube is done without the user’s consent. You can fetch the
+preview image of your video at <code class="language-plaintext highlighter-rouge">https://i.ytimg.com/vi/&lt;youtube video id&gt;/maxresdefault.jpg</code> or with the 
+<code class="language-plaintext highlighter-rouge">fetch_yt_preview</code> bash script included in the repository. If you use the latter you can leave out the
+<code class="language-plaintext highlighter-rouge">preview</code> parameter to the include.</p>
+      </li>
+    </ul>
+
+    <p>If you are unsure about how something should be structured take a look at the existing plugins or 
+<a href="https://community.octoprint.org/c/development">ask on the forum</a>.</p>
+  </li>
+  <li>
+    <p>Ideally, you’ll test that your plugin gets listed correctly and the plugin page looks
+as expected. For this you’ll need to install <a href="http://jekyllrb.com/">Jekyll</a>, which is what <a href="https://pages.github.com/">Github Pages</a> and hence
+the plugin repository uses for rendering the static repository from the source files. Make sure you have at least <a href="https://www.ruby-lang.org/en/">Ruby 2.0</a>
+installed.</p>
+
+    <p>Github offers <a href="https://help.github.com/articles/using-jekyll-with-pages/">a nice setup guide</a> that makes sure you 
+have the exact versions of everything you need to run.</p>
+
+    <div class="alert">
+    <strong>Note:</strong> If you want to install Jekyll on Windows, you might want to give <a href="http://jekyll-windows.juthilo.com/">this step-by-step guide</a>
+    a look. You might run into some issues with the <code>hitimes</code> gem since at the time of writing this it hasn't yet
+    been adapted to the changes introduced in Ruby 2.2. If this is the case, take a look <a href="http://stackoverflow.com/questions/28985481/hitimes-require-error-when-running-jekyll-serve-on-windows-8-1">here</a>.
+</div>
+
+    <p>After installing Jekyll, a simple</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle exec jekyll serve
+</code></pre></div>    </div>
+
+    <p>will start up a server listening on <a href="http://localhost:4000">localhost:4000</a> serving the whole page.
+Make sure your plugin shows up there under “Recently added” and the other listing types and that it page
+looks as you expected.</p>
+  </li>
+  <li>
+    <p>Commit your changes:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add _plugins/&lt;your plugin's identifier&gt;.md
+git add assets/img/plugins/&lt;your plugin's identifier&gt;
+git commit
+</code></pre></div>    </div>
+
+    <p>Please use a meaningful commit message (e.g. “Added plugin &lt;your plugin’s identifier”).</p>
+  </li>
+  <li>
+    <p>Push your changes to your fork on Github:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git push
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Create a pull request on Github against the original repository.</p>
+
+    <p>Note that a Continous Integration server is configured that will test your PR to make sure the site still builds and the generated
+feeds of the plugin repository are still valid. If something turns out to be amiss here, you can find out what’s up by clicking on the
+red “X” marking the build of your PR as failed.</p>
+  </li>
+  <li>
+    <p>Once your pull request is merged, your plugin will be listed. Congratulations! 🎉</p>
+  </li>
+</ol>
+
+        </div>
+    </div>
+</div>
+
+    </div>
+</div>
+
+      <footer>
+          <div class="container">
+              <div class="row">
+                  <div class="span4">
+                      <h2>On the web</h2>
+                      <ul class="fa-ul">
+                          <li><span class="fa-li"><i class="fas fa-users fa-fw"></i></span><a href="https://community.octoprint.org">Community Forum</a></li>
+                          <li><span class="fa-li"><i class="fas fa-comments fa-fw"></i></span><a href="irc://chat.freenode.net/octoprint" target="_blank">#octoprint on freenode</a> (<a href="https://chat.octoprint.org">Webchat</a>, <a href="https://freenode.logbot.info/octoprint">Logs</a>)</li>
+                          <li><span class="fa-li"><i class="fab fa-twitter fa-fw"></i></span><a href="https://twitter.com/OctoPrint3D" target="_blank">@OctoPrint3D</a></li>
+                          <li><span class="fa-li"><i class="fab fa-facebook-f fa-fw"></i></span><a href="https://facebook.com/OctoPrint" target="_blank">OctoPrint</a></li>
+                          <li><span class="fa-li"><i class="fab fa-youtube fa-fw"></i></span><a href="https://www.youtube.com/c/OctoPrint3D" target="_blank">OctoPrint</a></li>
+                          <li><span class="fa-li"><i class="fas fa-tachometer-alt fa-fw"></i></span><a href="https://status.octoprint.org" target="_blank">Site Status</a></li>
+                          <li><span class="fa-li"><i class="fas fa-gavel fa-fw"></i></span><a href="https://octoprint.org/imprint/" rel="nofollow">Legal Notice</a></li>
+                          <li><span class="fa-li"><i class="fas fa-gavel fa-fw"></i></span><a href="https://octoprint.org/privacy/" rel="nofollow">Privacy Policy</a></li>
+                      </ul>
+                  </div>
+                  <div class="span4">
+                      <h2>Recently Added</h2>
+                      <ul>
+                          
+                          
+                          <li>
+                              <a class="post-link" href="/plugins/smartpreheat/">Smart Preheat</a>
+                          </li>
+                          
+                          <li>
+                              <a class="post-link" href="/plugins/printoid/">OctoPrint-Printoid</a>
+                          </li>
+                          
+                          <li>
+                              <a class="post-link" href="/plugins/webhooks/">OctoPrint-Webhooks</a>
+                          </li>
+                          
+                          <li>
+                              <a class="post-link" href="/plugins/emergencystopsimplified/">Emergency Stop Simplified</a>
+                          </li>
+                          
+                          <li>
+                              <a class="post-link" href="/plugins/TemperatureLegendMover/">TemperatureLegendMover</a>
+                          </li>
+                          
+                      </ul>
+                  </div>
+                  <div class="span4 hidden-phone">
+                      <a href="http://octoprint.org"><img src="/assets/img/logo-footer.png" alt="Octopus logo" class="pull-right"></a>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="span12 text-center legal">
+                      <small>"OctoPrint" is a <a href="http://octoprint.org/trademark-rules/">registered trademark</a></small>
+                  </div>
+              </div>
+          </div>
+      </footer>
+
+
+<script src="/assets/js/prettify.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+<script src="/assets/js/lunr.min.js"></script>
+<script src="/assets/js/mustache.js"></script>
+<script src="/assets/js/URI.min.js"></script>
+<script src="/assets/js/date.format.js"></script>
+<script src="/assets/js/jquery.lunr.search.js"></script>
+<script src="/assets/js/lightbox.min.js"></script>
+<script src="/assets/js/site.js"></script>
+<script src="/assets/js/autotrack.js"></script>
+<script src="/assets/js/yt-with-consent.js"></script>
+
+<script>
+    var gaBaseProperty = 'UA-62479257';
+    var gaProperty = gaBaseProperty + '-2';
+
+    // opt out
+    var disableStr = 'ga-disable-' + gaProperty;
+    var disableCookie = 'ga-disable-' + gaBaseProperty;
+    function gaOptout() {
+        document.cookie = disableCookie + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/; domain=octoprint.org';
+        window[disableStr] = true;
+        alert("Google Analytics ist jetzt deaktiviert! / Google Analytics is now deactivated!")
+    }
+
+    // tracking code
+    if (document.cookie.indexOf(disableCookie + '=true') > -1) {
+        window[disableStr] = true;
+    } else {
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', gaProperty, 'auto');
+        ga('require', 'autotrack');
+        ga('set', 'anonymizeIp', true);
+        ga('send', 'pageview');
+    }
+</script>
+
+</body>
+</html>

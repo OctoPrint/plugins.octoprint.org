@@ -1,0 +1,5104 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en" xmlns="http://www.w3.org/1999/html"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+    <title>Plugins by Name</title>
+    
+    
+    <meta name="referrer" content="same-origin">
+    <meta name="google-site-verification" content="0EFsbaNygJcEinKPmzP-hTf0Ju6wDIpJxO5zvQtOQT0" />
+    <meta name="build-revision" content="dcd643e9ea2a753318428b65a5e32b1466fcfcb3" />
+    <meta name="build-date" content="2020-05-05 07:26:12-05:00" />
+
+    <!--[if lt IE 9]>
+    <script src="/assets/js/html5shim.js"></script>
+    <![endif]-->
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Le styles -->
+    <link rel="stylesheet" href="/assets/css/site.css?_=1588681572">
+    <link rel="stylesheet" href="/assets/css/bootstrap-responsive.css?_=1588681572">
+    <link rel="stylesheet" href="/assets/css/fontawesome-all.min.css?_=1588681572">
+    <link rel="stylesheet" href="/assets/css/prettify.css?_=1588681572">
+    <link rel="stylesheet" href="/assets/css/lightbox.css?_=1588681572">
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="/assets/img/tentacle-32x32.png">
+
+    <!-- Le RSS feed -->
+    <link rel="alternate" type="application/rss+xml" title="OctoPrint Plugin Repository: New Plugins" href="/feed.xml">
+
+    <!-- Le social media meta data -->
+    
+    
+    
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@OctoPrint3D" />
+    <meta name="twitter:title" content="Plugins by Name" />
+    <meta name="twitter:description" content="The official OctoPrint Plugin Repository" />
+    <meta name="twitter:image" content="https://plugins.octoprint.org/assets/img/octoprint-avatar-240x240.png" />
+
+    <meta property="og:title" content="Plugins by Name" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://plugins.octoprint.org/assets/img/repo-600x400.png" />
+    <meta property="og:description" content="The official OctoPrint Plugin Repository" />
+    <meta property="og:site_name" content="OctoPrint Plugin Repository" />
+    <meta property="og:url" content="https://plugins.octoprint.org/by_name/" />
+
+    <meta itemscope itemtype="http://schema.org/WebPage" />
+    <meta itemprop="headline" content="Plugins by Name" />
+    <meta itemprop="description" content="The official OctoPrint Plugin Repository" />
+    <meta itemprop="image" content="https://plugins.octoprint.org/assets/img/repo-600x400.png" />
+
+    <script src="/assets/js/jquery-1.9.1.min.js"></script>
+    <script src="/assets/js/underscore.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/cookieconsent.min.css" />
+    <script src="/assets/js/cookieconsent.min.js"></script>
+    <script>
+        if (!String.prototype.startsWith) {
+            String.prototype.startsWith = function(search, pos) {
+            return this.substr(!pos || pos < 0 ? 0 : +pos, search.length) === search;
+            };
+        }
+
+        window.addEventListener("load", function(){
+            window.cookieconsent.initialise({
+                "position": "bottom",
+                "theme": "edgeless",
+                "palette": {
+                    "popup": {
+                        "background": "#000000",
+                        "link": "#10a800"
+                    },
+                    "button": {
+                        "background": "#0b7500"
+                    }
+                }
+            })
+        });
+
+        /**
+         * Make sure octoprint.github.io stuff gets rewritten to plugins.octoprint.org.
+         * See https://github.com/OctoPrint/plugins.octoprint.org/issues/146.
+         */
+        var githubio = "octoprint.github.io/plugins.octoprint.org";
+        var url = window.location.href;
+        if (url && (url.startsWith("http://" + githubio) || url.startsWith("https://" + githubio))) {
+            url = url.replace(githubio, "plugins.octoprint.org");
+            window.location.replace(url);
+        }
+    </script>
+</head>
+
+<body>
+
+<div class="navbar navbar-inverse navbar-static-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand" href="/"><img src="/assets/img/tentacle-20x20.png" alt="Tentacle logo" class="tentacle"> Plugin Repo</a>
+      <a href="javascript:void(0)" class="btn btn-burger btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><i class="fas fa-bars"></i></a>
+      <div class="pull-right">
+        <ul class="nav social-navbar">
+          <li><a href="https://octoprint.org/merch/" title="Get some merchandise!" target="_blank"><i class="fa fa-shopping-basket"></i></a></li>
+          <li><a href="https://octoprint.org/support-octoprint/" title="Support OctoPrint!" data-event-category="supportlink" data-event-action="navigation" target="_blank"><i class="fas fa-donate"></i></a></li>
+        </ul>
+      </div>
+      <div class="nav-collapse collapse">
+        <ul class="nav">
+          <li class="active"><a href="/by_name/">by Name</a></li>
+          <li><a href="/by_date/">by Date</a></li>
+          <li><a href="/by_tag/">by Tag</a></li>
+          <li><a href="/by_author/">by Author</a></li>
+          <li><form class="navbar-search pull-right" action="/search/" method="get"><input type="text" class="input-medium search-query" placeholder="Enter search &amp; hit enter..." name="q"></form></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">Help <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="/help/installation/">Installing Plugins</a></li>
+              <li><a href="/help/registering/">Registering Plugins</a></li>
+              <li><a href="http://docs.octoprint.org/en/master/plugins/gettingstarted.html">The Plugin Tutorial</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">Lists <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="/blacklist/">Blacklist</a></li>
+              <li><a href="/notices/">Notices</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="wrap">
+    <div id="main">
+    <div class="page-header">
+    <div class="container">
+        <div class="row">
+            <div class="span12">
+                <h1>Plugins by Name</h1>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="content row-fluid">
+        <div class="span12">
+            <div class="plugin-list row-liquid">
+  <div class="span8">
+      <ul>
+  
+  
+    <li>
+<h3><a class="post-link" href="/plugins/atxpihat/">ATXPiHat</a> <small class="post-date">
+
+
+  25 Jan 2018
+
+</small></h3>
+<p>
+  Software support for the ATXPiHat
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-atx">atx</a>
+
+  <a class="label" href="/by_tag/#tag-control">control</a>
+
+  <a class="label" href="/by_tag/#tag-emergency">emergency</a>
+
+  <a class="label" href="/by_tag/#tag-epo">epo</a>
+
+  <a class="label" href="/by_tag/#tag-fan">fan</a>
+
+  <a class="label" href="/by_tag/#tag-led">led</a>
+
+  <a class="label" href="/by_tag/#tag-monitor">monitor</a>
+
+  <a class="label" href="/by_tag/#tag-psu">psu</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/actioncommands/">Action Commands</a> <small class="post-date">
+
+
+  30 Jun 2017
+
+</small></h3>
+<p>
+  Adds handling for user-definable action commands.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-action">action</a>
+
+  <a class="label" href="/by_tag/#tag-action-command">action command</a>
+
+  <a class="label" href="/by_tag/#tag-actions">actions</a>
+
+  <a class="label" href="/by_tag/#tag-commands">commands</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/actiontrigger/">Action Trigger Plugin</a> <small class="post-date">
+
+
+  17 Apr 2015
+
+</small></h3>
+<p>
+  Plugin for OctoPrint that handles serial commands sent out by the printer.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-printing">printing</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/active_filters/">Active Filters</a> <small class="post-date">
+
+
+  01 Jan 2016
+
+</small></h3>
+<p>
+  Save terminal filters status
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-filters">filters</a>
+
+  <a class="label" href="/by_tag/#tag-regex">regex</a>
+
+  <a class="label" href="/by_tag/#tag-terminal">terminal</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/active_filters_extended/">Active Filters Extended</a> <small class="post-date">
+
+
+  17 Nov 2018
+
+</small></h3>
+<p>
+  Makes the enabled terminal filters persistent between browser reloads and from different connecting clients.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-filters">filters</a>
+
+  <a class="label" href="/by_tag/#tag-regex">regex</a>
+
+  <a class="label" href="/by_tag/#tag-terminal">terminal</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/OctoPrint-hueCommands/">Add GCODE like HUE commands to OctoPrint</a> <small class="post-date">
+
+
+  18 Mar 2020
+
+</small></h3>
+<p>
+  Illuminate your print job and signal its status using a Philips Hue light. Enter a GCODE equivalent anywhere you want.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-automation">automation</a>
+
+  <a class="label" href="/by_tag/#tag-gcode">gcode</a>
+
+  <a class="label" href="/by_tag/#tag-hue">hue</a>
+
+  <a class="label" href="/by_tag/#tag-lights">lights</a>
+
+  <a class="label" href="/by_tag/#tag-philips">philips</a>
+
+  <a class="label" href="/by_tag/#tag-philips-hue">philips hue</a>
+
+  <a class="label" href="/by_tag/#tag-status">status</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/astroprint/">AstroPrint Cloud</a> <small class="post-date">
+
+
+  15 Dec 2017
+
+</small></h3>
+<p>
+  Wirelessly manage and monitor your OctoPi powered printer from the AstroPrint Platform (AP Mobile Apps, AP Desktop Software, & AP Web Portal).
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-cloud-printing">cloud printing</a>
+
+  <a class="label" href="/by_tag/#tag-design-management">design management</a>
+
+  <a class="label" href="/by_tag/#tag-fleet-management">fleet management</a>
+
+  <a class="label" href="/by_tag/#tag-remote-access">remote access</a>
+
+  <a class="label" href="/by_tag/#tag-remote-monitoring">remote monitoring</a>
+
+  <a class="label" href="/by_tag/#tag-video-streaming">video streaming</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/auth_bookedscheduler/">Auth Booked Scheduler</a> <small class="post-date">
+
+
+  05 Jun 2018
+
+</small></h3>
+<p>
+  Authentication via Booked Scheduler
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-authentication">authentication</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/AutoTerminalInput/">Auto Terminal Input</a> <small class="post-date">
+
+
+  01 Apr 2020
+
+</small></h3>
+<p>
+  Automatically focuses the command input when switching to the Terminal tab in OctoPrint.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-terminal">terminal</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/ABL_Expert/">Auto bed leveling expert</a> <small class="post-date">
+
+
+  04 Oct 2018
+
+</small></h3>
+<p>
+  Marlin auto bed leveling control, mesh correction, and z probe handling
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-abl">abl</a>
+
+  <a class="label" href="/by_tag/#tag-auto-bed-leveling">auto bed leveling</a>
+
+  <a class="label" href="/by_tag/#tag-bilinear">bilinear</a>
+
+  <a class="label" href="/by_tag/#tag-leveling">leveling</a>
+
+  <a class="label" href="/by_tag/#tag-marlin">marlin</a>
+
+  <a class="label" href="/by_tag/#tag-probe">probe</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/AutoLogout/">AutoLogout</a> <small class="post-date">
+
+
+  03 Oct 2019
+
+</small></h3>
+<p>
+  Plugin starts a countdown timer after login and if the timer is count to zero, the user is automatically logged out.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-printer">printer</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/autocalibration/">Autocalibration</a> <small class="post-date">
+
+
+  09 Nov 2015
+
+</small></h3>
+<p>
+  Calibrates your printers backlash for the X, Y or Z-axis.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-backlash">backlash</a>
+
+  <a class="label" href="/by_tag/#tag-calibration">calibration</a>
+
+  <a class="label" href="/by_tag/#tag-repetier">repetier</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/automaticshutdown/">AutomaticShutdown</a> <small class="post-date">
+
+
+  22 Sep 2015
+
+</small></h3>
+<p>
+  Plugin to enable automatic system shutdown after finishing a print job
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-automatic">automatic</a>
+
+  <a class="label" href="/by_tag/#tag-shutdown">shutdown</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/autoscroll/">Autoscroll</a> <small class="post-date">
+
+
+  27 Jun 2016
+
+</small></h3>
+<p>
+  Turn on/off terminal autoscroll when scrolling up/down
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-autoscroll">autoscroll</a>
+
+  <a class="label" href="/by_tag/#tag-terminal">terminal</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/autoselect/">Autoselect</a> <small class="post-date">
+
+
+  27 Jun 2015
+
+</small></h3>
+<p>
+  Automatically selects freshly uploaded files for printing if no print job is currently active.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-filemanagement">filemanagement</a>
+
+  <a class="label" href="/by_tag/#tag-upload">upload</a>
+
+  <a class="label" href="/by_tag/#tag-ux">ux</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/AutostartPrint/">AutostartPrint</a> <small class="post-date">
+
+
+  23 Sep 2019
+
+</small></h3>
+<p>
+  Autostart a print job after conneting.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-printer">printer</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/bedlevelvisualizer/">Bed Level Visualizer</a> <small class="post-date">
+
+
+  14 Apr 2018
+
+</small></h3>
+<p>
+  Displays 3D mesh of bed topography report.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-bed-level">bed level</a>
+
+  <a class="label" href="/by_tag/#tag-graph">graph</a>
+
+  <a class="label" href="/by_tag/#tag-mesh">mesh</a>
+
+  <a class="label" href="/by_tag/#tag-tab">tab</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/bettergrblsupport/">Better Grbl Support</a> <small class="post-date">
+
+
+  01 Apr 2019
+
+</small></h3>
+<p>
+  Provides core functionality and UI integration for GRBL based engravers and CNC machines
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-cnc">cnc</a>
+
+  <a class="label" href="/by_tag/#tag-engraver">engraver</a>
+
+  <a class="label" href="/by_tag/#tag-grbl">grbl</a>
+
+  <a class="label" href="/by_tag/#tag-laser">laser</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/CR10_Leveling/">CR-10 Leveling</a> <small class="post-date">
+
+
+  26 Feb 2018
+
+</small></h3>
+<p>
+  Adds CR-10 leveling buttons to the controls tab
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-cr10">cr10</a>
+
+  <a class="label" href="/by_tag/#tag-leveling">leveling</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/Change_Filament/">Change_Filament</a> <small class="post-date">
+
+
+  29 May 2019
+
+</small></h3>
+<p>
+  Facilitates changing filament (backs out old, loads new)
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-filament">filament</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/commandsplitter/">CommandSplitter</a> <small class="post-date">
+
+
+  21 Jun 2015
+
+</small></h3>
+<p>
+  Splits multiple commands on one line in GCODE files into multiple lines
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-gcode">gcode</a>
+
+  <a class="label" href="/by_tag/#tag-preprocessing">preprocessing</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/continuousprint/">Continuous Print</a> <small class="post-date">
+
+
+  24 Apr 2020
+
+</small></h3>
+<p>
+  Allows the queueing and automatic print and clearing of the queue
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-continuous-print">continuous print</a>
+
+  <a class="label" href="/by_tag/#tag-queueing">queueing</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/cost/">Cost estimator</a> <small class="post-date">
+
+
+  11 Jun 2016
+
+</small></h3>
+<p>
+  When a file is loaded to be printed, it will display the estimated cost of printing.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-cost">cost</a>
+
+  <a class="label" href="/by_tag/#tag-helper">helper</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/costestimation/">CostEstimation</a> <small class="post-date">
+
+
+  16 Jul 2017
+
+</small></h3>
+<p>
+  Displays the estimated print cost for the loaded model
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-cost">cost</a>
+
+  <a class="label" href="/by_tag/#tag-ui">ui</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/CrealityTemperature/">Creality Temperature Fix</a> <small class="post-date">
+
+
+  28 Oct 2019
+
+</small></h3>
+<p>
+  Fix to parse correctly temperatures from Creality printer
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-creality">creality</a>
+
+  <a class="label" href="/by_tag/#tag-temperature">temperature</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/curalegacy/">CuraEngine Legacy</a> <small class="post-date">
+
+
+  28 Mar 2019
+
+</small></h3>
+<p>
+  Plugin for slicing via the legacy version of CuraEngine from within OctoPrint, unbundled from OctoPrint starting with version 1.3.11
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-cura">cura</a>
+
+  <a class="label" href="/by_tag/#tag-cura-engine">cura engine</a>
+
+  <a class="label" href="/by_tag/#tag-cura-legacy">cura legacy</a>
+
+  <a class="label" href="/by_tag/#tag-gcode">gcode</a>
+
+  <a class="label" href="/by_tag/#tag-slicer">slicer</a>
+
+  <a class="label" href="/by_tag/#tag-stl">stl</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/customControl/">Custom Control Editor</a> <small class="post-date">
+
+
+  26 Apr 2015
+
+</small></h3>
+<p>
+  Makes custom controls editable via the settings dialog
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-administration">administration</a>
+
+  <a class="label" href="/by_tag/#tag-ui">ui</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/DeleteAfterPrint/">DeleteMoveAfterPrint</a> <small class="post-date">
+
+
+  20 Apr 2018
+
+</small></h3>
+<p>
+  Deletes/Move automaticaly the Print-Model
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-printer">printer</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/detailedprogress/">Detailed Progress</a> <small class="post-date">
+
+
+  02 Sep 2016
+
+</small></h3>
+<p>
+  Displays detailed progress on the LCD screen
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-display">display</a>
+
+  <a class="label" href="/by_tag/#tag-lcd">lcd</a>
+
+  <a class="label" href="/by_tag/#tag-printer">printer</a>
+
+  <a class="label" href="/by_tag/#tag-progress">progress</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/DisplayLayerProgress/">DisplayLayerProgress</a> <small class="post-date">
+
+
+  09 Apr 2018
+
+</small></h3>
+<p>
+  Displays the Layer, Progress and other data on "Printer-Display", "NavBar", "BrowserTab-Title" and in the Browser as a simulated "Printer-Display"
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-display">display</a>
+
+  <a class="label" href="/by_tag/#tag-layer">layer</a>
+
+  <a class="label" href="/by_tag/#tag-lcd">lcd</a>
+
+  <a class="label" href="/by_tag/#tag-printer">printer</a>
+
+  <a class="label" href="/by_tag/#tag-progress">progress</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/displayprogress/">DisplayProgress</a> <small class="post-date">
+
+
+  03 Aug 2015
+
+</small></h3>
+<p>
+  Displays the print progress on the printer's display
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-display">display</a>
+
+  <a class="label" href="/by_tag/#tag-lcd">lcd</a>
+
+  <a class="label" href="/by_tag/#tag-printer">printer</a>
+
+  <a class="label" href="/by_tag/#tag-progress">progress</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/displayz/">DisplayZ</a> <small class="post-date">
+
+
+  22 Sep 2015
+
+</small></h3>
+<p>
+  Brings back the current Z display in the state sidebar panel
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-addon">addon</a>
+
+  <a class="label" href="/by_tag/#tag-ui">ui</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/DryRun/">DryRun</a> <small class="post-date">
+
+
+  02 Apr 2019
+
+</small></h3>
+<p>
+  Print without heating/extruding.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-printer">printer</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/eeprom_MPSelectMini/">EEPROM Editor for Monoprice Select Mini</a> <small class="post-date">
+
+
+  13 Aug 2017
+
+</small></h3>
+<p>
+  Makes it possible to change the EEPROM values of the Monoprice Select Mini or Malyan M200 Firmware through OctoPrint
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-eeprom">eeprom</a>
+
+  <a class="label" href="/by_tag/#tag-helper">helper</a>
+
+  <a class="label" href="/by_tag/#tag-malyan">malyan</a>
+
+  <a class="label" href="/by_tag/#tag-monoprice">monoprice</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/eeprom_marlin/">EEPROM Marlin Editor</a> <small class="post-date">
+
+
+  30 Aug 2015
+
+</small></h3>
+<p>
+  Makes it possible to change the EEPROM values of Marlin Firmware through OctoPrint
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-helper">helper</a>
+
+  <a class="label" href="/by_tag/#tag-marlin">marlin</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/eeprom_marlin_printrbot/">EEPROM Printrbot variant of Marlin Editor</a> <small class="post-date">
+
+
+  26 Dec 2015
+
+</small></h3>
+<p>
+  Makes it possible to change the EEPROM values of Printrbot variant of Marlin Firmware through OctoPrint
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-helper">helper</a>
+
+  <a class="label" href="/by_tag/#tag-marlin">marlin</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/eeprom_repetier/">EEPROM Repetier Editor</a> <small class="post-date">
+
+
+  28 Jul 2015
+
+</small></h3>
+<p>
+  Makes it possible to change the EEPROM values of Repetier Firmware through OctoPrint
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-helper">helper</a>
+
+  <a class="label" href="/by_tag/#tag-repetier">repetier</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/ESPurna_RGB/">ESPurna RGB</a> <small class="post-date">
+
+
+  30 Jan 2018
+
+</small></h3>
+<p>
+  Control ESPurna RGB LED device wirelessly
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-controller">controller</a>
+
+  <a class="label" href="/by_tag/#tag-espurna">espurna</a>
+
+  <a class="label" href="/by_tag/#tag-led">led</a>
+
+  <a class="label" href="/by_tag/#tag-network">network</a>
+
+  <a class="label" href="/by_tag/#tag-rgb">rgb</a>
+
+  <a class="label" href="/by_tag/#tag-rgbw">rgbw</a>
+
+  <a class="label" href="/by_tag/#tag-rgbww">rgbww</a>
+
+  <a class="label" href="/by_tag/#tag-wifi">wifi</a>
+
+  <a class="label" href="/by_tag/#tag-wireless">wireless</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/editorcollection/">Editor Collection</a> <small class="post-date">
+
+
+  04 Jun 2015
+
+</small></h3>
+<p>
+  This plugin is for putting Salandora's editor plugins onto one page
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-administration">administration</a>
+
+  <a class="label" href="/by_tag/#tag-ui">ui</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/emergencystopsimplified/">Emergency Stop Simplified</a> <small class="post-date">
+
+
+  26 Apr 2020
+
+</small></h3>
+<p>
+  This plugin reacts to a switch or button, if triggered (switch open) it issues M112 command to printer.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-button">button</a>
+
+  <a class="label" href="/by_tag/#tag-emergency">emergency</a>
+
+  <a class="label" href="/by_tag/#tag-simple">simple</a>
+
+  <a class="label" href="/by_tag/#tag-simplified">simplified</a>
+
+  <a class="label" href="/by_tag/#tag-stop">stop</a>
+
+  <a class="label" href="/by_tag/#tag-trigger">trigger</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/excluderegion/">Exclude Region</a> <small class="post-date">
+
+
+  05 Jul 2018
+
+</small></h3>
+<p>
+  Adds the ability to prevent printing within rectangular or circular regions of the currently active gcode file
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-exclude">exclude</a>
+
+  <a class="label" href="/by_tag/#tag-gcode">gcode</a>
+
+  <a class="label" href="/by_tag/#tag-region">region</a>
+
+  <a class="label" href="/by_tag/#tag-ui">ui</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/filament_sensor/">Filament Sensor</a> <small class="post-date">
+
+
+  29 Jun 2016
+
+</small></h3>
+<p>
+  Use a filament sensor to pause printing when filament runs out.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-api">api</a>
+
+  <a class="label" href="/by_tag/#tag-filament">filament</a>
+
+  <a class="label" href="/by_tag/#tag-sensor">sensor</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/filamentencore/">Filament Sensor Encore</a> <small class="post-date">
+
+
+  03 Jun 2019
+
+</small></h3>
+<p>
+  OctoPrint plug-in that detects when printer is out of filament
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-filament">filament</a>
+
+  <a class="label" href="/by_tag/#tag-sensor">sensor</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/filament_sensor_ng/">Filament Sensor NG</a> <small class="post-date">
+
+
+  17 Sep 2018
+
+</small></h3>
+<p>
+  A filament monitor that pauses the print when your filament runs out and lets you restart it.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-filament">filament</a>
+
+  <a class="label" href="/by_tag/#tag-sensor">sensor</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/filament_sensor_reloaded/">Filament Sensor Reloaded</a> <small class="post-date">
+
+
+  06 Jan 2017
+
+</small></h3>
+<p>
+  Use a filament sensor to pause printing when filament runs out.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-filament">filament</a>
+
+  <a class="label" href="/by_tag/#tag-sensor">sensor</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/filamentrevolutions/">Filament Sensor Revolutions</a> <small class="post-date">
+
+
+  29 Nov 2019
+
+</small></h3>
+<p>
+  Use 1 or 2 filament sensors to pause printing or send GCode commands when filament runs out or is jammed.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-filament">filament</a>
+
+  <a class="label" href="/by_tag/#tag-sensor">sensor</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/filamentsensorsimplified/">Filament Sensor Simplified</a> <small class="post-date">
+
+
+  23 Apr 2020
+
+</small></h3>
+<p>
+  This plugin reacts to filament sensor output. If triggered it issues M600 X0 Y0 command to printer.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-filament">filament</a>
+
+  <a class="label" href="/by_tag/#tag-runout">runout</a>
+
+  <a class="label" href="/by_tag/#tag-sensor">sensor</a>
+
+  <a class="label" href="/by_tag/#tag-simple">simple</a>
+
+  <a class="label" href="/by_tag/#tag-simplified">simplified</a>
+
+  <a class="label" href="/by_tag/#tag-trigger">trigger</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/filamentmanager/">FilamentManager</a> <small class="post-date">
+
+
+  22 Aug 2017
+
+</small></h3>
+<p>
+  Filament Manager for OctoPrint
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-filament">filament</a>
+
+  <a class="label" href="/by_tag/#tag-manager">manager</a>
+
+  <a class="label" href="/by_tag/#tag-ui">ui</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/filament_sensor_ng_orangepi/">FilamentSensor OrangePi</a> <small class="post-date">
+
+
+  18 Feb 2019
+
+</small></h3>
+<p>
+  A filament monitor that pauses the print when your filament runs out and lets you restart it.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-filament">filament</a>
+
+  <a class="label" href="/by_tag/#tag-orangepi">orangepi</a>
+
+  <a class="label" href="/by_tag/#tag-sensor">sensor</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/filemanager/">FileManager</a> <small class="post-date">
+
+
+  09 Dec 2016
+
+</small></h3>
+<p>
+  A simple filemanager for OctoPrint
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-files">files</a>
+
+  <a class="label" href="/by_tag/#tag-ui">ui</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/filetypes/">Filetypes</a> <small class="post-date">
+
+
+  23 Aug 2017
+
+</small></h3>
+<p>
+  Let you select file types visible in upload dialog
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-gcode">gcode</a>
+
+  <a class="label" href="/by_tag/#tag-stl">stl</a>
+
+  <a class="label" href="/by_tag/#tag-ui">ui</a>
+
+  <a class="label" href="/by_tag/#tag-upload">upload</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/firmwareupdater/">Firmware Updater</a> <small class="post-date">
+
+
+  15 Jan 2018
+
+</small></h3>
+<p>
+  Flash pre-compiled firmware images from OctoPrint
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-arduino">arduino</a>
+
+  <a class="label" href="/by_tag/#tag-avrdude">avrdude</a>
+
+  <a class="label" href="/by_tag/#tag-bossac">bossac</a>
+
+  <a class="label" href="/by_tag/#tag-due">due</a>
+
+  <a class="label" href="/by_tag/#tag-firmware">firmware</a>
+
+  <a class="label" href="/by_tag/#tag-firmware-updater">firmware updater</a>
+
+  <a class="label" href="/by_tag/#tag-flashing">flashing</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/fixcbdfirmware/">Fix CBD Firmware</a> <small class="post-date">
+
+
+  25 Mar 2020
+
+</small></h3>
+<p>
+  Fixes communication with a broken firmware making its rounds that identifies as "CBD make it"
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-anycubic">anycubic</a>
+
+  <a class="label" href="/by_tag/#tag-broken-firmware">broken firmware</a>
+
+  <a class="label" href="/by_tag/#tag-cbd">cbd</a>
+
+  <a class="label" href="/by_tag/#tag-communication">communication</a>
+
+  <a class="label" href="/by_tag/#tag-firmware">firmware</a>
+
+  <a class="label" href="/by_tag/#tag-qidi-tech">qidi tech</a>
+
+  <a class="label" href="/by_tag/#tag-tronxy">tronxy</a>
+
+  <a class="label" href="/by_tag/#tag-workaround">workaround</a>
+
+  <a class="label" href="/by_tag/#tag-xinkebot">xinkebot</a>
+
+  <a class="label" href="/by_tag/#tag-zwlf">zwlf</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/FriendlyNeighborhoodBeeper/">Friendly Neighborhood Beeper</a> <small class="post-date">
+
+
+  25 Apr 2020
+
+</small></h3>
+<p>
+  Beeps after completion/failure of a print, but only during the specified hours
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-beep">beep</a>
+
+  <a class="label" href="/by_tag/#tag-control">control</a>
+
+  <a class="label" href="/by_tag/#tag-notification">notification</a>
+
+  <a class="label" href="/by_tag/#tag-print-finished">print finished</a>
+
+  <a class="label" href="/by_tag/#tag-simple">simple</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/slicer/">Full-featured Slicer</a> <small class="post-date">
+
+
+  22 Sep 2016
+
+</small></h3>
+<p>
+  A full-blown GUI-based slicer. Rotate and scale model; slice multiple STL files at a time; set layer height and other slicing settings.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-gcode">gcode</a>
+
+  <a class="label" href="/by_tag/#tag-slicer">slicer</a>
+
+  <a class="label" href="/by_tag/#tag-stl">stl</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/fullscreen/">Fullscreen Webcam</a> <small class="post-date">
+
+
+  16 Jan 2017
+
+</small></h3>
+<p>
+  Open the webcam feed in fullscreen mode with extra details about the printjob
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-display">display</a>
+
+  <a class="label" href="/by_tag/#tag-ui">ui</a>
+
+  <a class="label" href="/by_tag/#tag-webcam">webcam</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/gcodesystemcommands/">GCODE System Commands</a> <small class="post-date">
+
+
+  14 Mar 2017
+
+</small></h3>
+<p>
+  Define G-Code commands that execute local system commands
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-command">command</a>
+
+  <a class="label" href="/by_tag/#tag-gcode">gcode</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/gcodebar/">GCodeBar</a> <small class="post-date">
+
+
+  01 Sep 2016
+
+</small></h3>
+<p>
+  Send GCode from the sidebar
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-control">control</a>
+
+  <a class="label" href="/by_tag/#tag-gcode">gcode</a>
+
+  <a class="label" href="/by_tag/#tag-sidebar">sidebar</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/gpx/">GPX</a> <small class="post-date">
+
+
+  23 Apr 2015
+
+</small></h3>
+<p>
+  Use OctoPrint with s3g/x3g printers (like FlashForge and older MakerBot)
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-printer">printer</a>
+
+  <a class="label" href="/by_tag/#tag-protocol">protocol</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/GcodeEditor/">GcodeEditor</a> <small class="post-date">
+
+
+  01 Nov 2017
+
+</small></h3>
+<p>
+  Edit gcode that's been uploaded to OctoPrint
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-editor">editor</a>
+
+  <a class="label" href="/by_tag/#tag-filemanagement">filemanagement</a>
+
+  <a class="label" href="/by_tag/#tag-gcode">gcode</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/gcodestatEstimator/">GcodeStat Estimator</a> <small class="post-date">
+
+
+  05 Jul 2018
+
+</small></h3>
+<p>
+  uses data put in to g-code by gcodestat to estimate time to finish print
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-estimation">estimation</a>
+
+  <a class="label" href="/by_tag/#tag-estimator">estimator</a>
+
+  <a class="label" href="/by_tag/#tag-helper">helper</a>
+
+  <a class="label" href="/by_tag/#tag-print-time">print time</a>
+
+  <a class="label" href="/by_tag/#tag-time">time</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/gslc/">GcodeSuperLaserController</a> <small class="post-date">
+
+
+  05 Sep 2019
+
+</small></h3>
+<p>
+  A plugin for Laser engraving add
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-engraver">engraver</a>
+
+  <a class="label" href="/by_tag/#tag-gcode">gcode</a>
+
+  <a class="label" href="/by_tag/#tag-laser">laser</a>
+
+  <a class="label" href="/by_tag/#tag-marlin">marlin</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/octoprint-grbl-plugin/">Grbl support for OctoPrint</a> <small class="post-date">
+
+
+  11 May 2017
+
+</small></h3>
+<p>
+  Support Grbl style GCODE for using CNCs and Laser engravers with OctoPrint.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-cnc">cnc</a>
+
+  <a class="label" href="/by_tag/#tag-gcode">gcode</a>
+
+  <a class="label" href="/by_tag/#tag-grbl">grbl</a>
+
+  <a class="label" href="/by_tag/#tag-laser">laser</a>
+
+  <a class="label" href="/by_tag/#tag-protocol">protocol</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/growl/">Growl</a> <small class="post-date">
+
+
+  14 Apr 2015
+
+</small></h3>
+<p>
+  Get Growl notifications from your OctoPrint installation.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-notification">notification</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/heatertimeout/">HeaterTimeout</a> <small class="post-date">
+
+
+  25 Sep 2017
+
+</small></h3>
+<p>
+  Automatically shut off heaters if no print has been started.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-temperature">temperature</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/ledstripcontrol/">LEDStripControl</a> <small class="post-date">
+
+
+  10 Mar 2017
+
+</small></h3>
+<p>
+  Control RGB LED Strips via your Raspberry Pi and GCode.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-gcode">gcode</a>
+
+  <a class="label" href="/by_tag/#tag-led">led</a>
+
+  <a class="label" href="/by_tag/#tag-raspberry-pi">raspberry pi</a>
+
+  <a class="label" href="/by_tag/#tag-rgb">rgb</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/layerdisplay/">LayerDisplay</a> <small class="post-date">
+
+
+  15 Jul 2018
+
+</small></h3>
+<p>
+  Displays the current layer and total layers for a print job.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-display">display</a>
+
+  <a class="label" href="/by_tag/#tag-layer">layer</a>
+
+  <a class="label" href="/by_tag/#tag-progress">progress</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/m33fio/">M33 Fio</a> <small class="post-date">
+
+
+  25 Oct 2016
+
+</small></h3>
+<p>
+  Allows viewing uploaded models, using a Micro 3D printer, modifying a slicer profile and model before slicing, uploading OBJs and other 3D file formats, hosting a webcam stream, and much more
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-helper">helper</a>
+
+  <a class="label" href="/by_tag/#tag-m33-fio">m33 fio</a>
+
+  <a class="label" href="/by_tag/#tag-micro-3d">micro 3d</a>
+
+  <a class="label" href="/by_tag/#tag-ui">ui</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/m73etaoverride/">M73 ETA Override</a> <small class="post-date">
+
+
+  18 Sep 2018
+
+</small></h3>
+<p>
+  Plugin that overrides OctoPrint ETA to values from last M73 gcode sent to the printer
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-estimation">estimation</a>
+
+  <a class="label" href="/by_tag/#tag-eta">eta</a>
+
+  <a class="label" href="/by_tag/#tag-m73">m73</a>
+
+  <a class="label" href="/by_tag/#tag-progress">progress</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/m73progress/">M73 Progress</a> <small class="post-date">
+
+
+  16 Jan 2018
+
+</small></h3>
+<p>
+  A plugin to update the built-in progress bar on your printer's LCD.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-display">display</a>
+
+  <a class="label" href="/by_tag/#tag-lcd">lcd</a>
+
+  <a class="label" href="/by_tag/#tag-progress">progress</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/mqtt/">MQTT</a> <small class="post-date">
+
+
+  11 Apr 2015
+
+</small></h3>
+<p>
+  Adds support for subscribing and publishing to MQTT topics.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-helper">helper</a>
+
+  <a class="label" href="/by_tag/#tag-mqtt">mqtt</a>
+
+  <a class="label" href="/by_tag/#tag-notification">notification</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/malyan_connection_fix/">Malyan/Monoprice Connection Fix</a> <small class="post-date">
+
+
+  07 Feb 2018
+
+</small></h3>
+<p>
+  Fixes connection issues with Malyan/Monoprice printers
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-connection">connection</a>
+
+  <a class="label" href="/by_tag/#tag-fix">fix</a>
+
+  <a class="label" href="/by_tag/#tag-malyan">malyan</a>
+
+  <a class="label" href="/by_tag/#tag-malyan-m100">malyan m100</a>
+
+  <a class="label" href="/by_tag/#tag-malyan-m200">malyan m200</a>
+
+  <a class="label" href="/by_tag/#tag-monoprice">monoprice</a>
+
+  <a class="label" href="/by_tag/#tag-monoprice-mini-delta">monoprice mini delta</a>
+
+  <a class="label" href="/by_tag/#tag-monoprice-select-mini">monoprice select mini</a>
+
+  <a class="label" href="/by_tag/#tag-turnigy">turnigy</a>
+
+  <a class="label" href="/by_tag/#tag-turnigy-fabrikator-2">turnigy fabrikator 2</a>
+
+  <a class="label" href="/by_tag/#tag-turnigy-fabrikator-ii">turnigy fabrikator ii</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/marlin_flasher/">Marlin Flasher</a> <small class="post-date">
+
+
+  02 Apr 2019
+
+</small></h3>
+<p>
+  Plugin that allows you to flash your printer to the latest Marlin version
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-arduino">arduino</a>
+
+  <a class="label" href="/by_tag/#tag-firmware">firmware</a>
+
+  <a class="label" href="/by_tag/#tag-flasher">flasher</a>
+
+  <a class="label" href="/by_tag/#tag-marlin">marlin</a>
+
+  <a class="label" href="/by_tag/#tag-platformio">platformio</a>
+
+  <a class="label" href="/by_tag/#tag-updater">updater</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/metadatapreprocessor/">MetadataPreprocessor</a> <small class="post-date">
+
+
+  03 Oct 2019
+
+</small></h3>
+<p>
+  Plugin to speed up the gcode analysis in OctoPrint
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-gcode">gcode</a>
+
+  <a class="label" href="/by_tag/#tag-metadata">metadata</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/multi_colors/">Multi Colors</a> <small class="post-date">
+
+
+  29 Jun 2016
+
+</small></h3>
+<p>
+  Inject GCODE at specified layers to allow multi color printing
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-color">color</a>
+
+  <a class="label" href="/by_tag/#tag-filament-change">filament change</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/multicam/">MultiCam</a> <small class="post-date">
+
+
+  09 May 2018
+
+</small></h3>
+<p>
+  Extends the Control tab of OctoPrint, allowing the ability to switch between multiple webcam feeds.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-control">control</a>
+
+  <a class="label" href="/by_tag/#tag-display">display</a>
+
+  <a class="label" href="/by_tag/#tag-ui">ui</a>
+
+  <a class="label" href="/by_tag/#tag-webcam">webcam</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/nautilus/">Nautilus - mobile shell for OctoPrint</a> <small class="post-date">
+
+
+  27 Oct 2016
+
+</small></h3>
+<p>
+  Customised user interface, that has been optimised for iOS devices.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-ios">ios</a>
+
+  <a class="label" href="/by_tag/#tag-ipad">ipad</a>
+
+  <a class="label" href="/by_tag/#tag-iphone">iphone</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/navbartemp/">Navbar Temp</a> <small class="post-date">
+
+
+  17 Apr 2015
+
+</small></h3>
+<p>
+  Display temperatures on navbar
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-heater">heater</a>
+
+  <a class="label" href="/by_tag/#tag-navbar">navbar</a>
+
+  <a class="label" href="/by_tag/#tag-temp">temp</a>
+
+  <a class="label" href="/by_tag/#tag-temperature">temperature</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/octoglow/">OctoGlow</a> <small class="post-date">
+
+
+  12 May 2015
+
+</small></h3>
+<p>
+  Display OctoPrint status on a PiGlow board.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-notification">notification</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/octohue/">OctoHue</a> <small class="post-date">
+
+
+  31 Jan 2020
+
+</small></h3>
+<p>
+  Hue lighting control for Octoprint - Illuminate your printer and signal its status using Phillips Hue lights
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-automation">automation</a>
+
+  <a class="label" href="/by_tag/#tag-hue">hue</a>
+
+  <a class="label" href="/by_tag/#tag-lights">lights</a>
+
+  <a class="label" href="/by_tag/#tag-philips-hue">philips hue</a>
+
+  <a class="label" href="/by_tag/#tag-status">status</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/klipper/">OctoKlipper</a> <small class="post-date">
+
+
+  21 Aug 2018
+
+</small></h3>
+<p>
+  A plugin for a better integration of Klipper into OctoPrint.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-control">control</a>
+
+  <a class="label" href="/by_tag/#tag-firmware">firmware</a>
+
+  <a class="label" href="/by_tag/#tag-klipper">klipper</a>
+
+  <a class="label" href="/by_tag/#tag-monitor">monitor</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/OctoPNP/">OctoPNP</a> <small class="post-date">
+
+
+  19 May 2017
+
+</small></h3>
+<p>
+  OctoPrint plugin for camera based pick 'n place operations
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-camera">camera</a>
+
+  <a class="label" href="/by_tag/#tag-control">control</a>
+
+  <a class="label" href="/by_tag/#tag-external-objects">external objects</a>
+
+  <a class="label" href="/by_tag/#tag-pick-and-place">pick and place</a>
+
+  <a class="label" href="/by_tag/#tag-printer">printer</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/anywhere/">OctoPrint Anywhere</a> <small class="post-date">
+
+
+  01 Jul 2017
+
+</small></h3>
+<p>
+  Remote monitoring and control of your 3D printers over the internet. ANYWHERE. ON YOUR PHONE. No more port forwarding or VPN.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-control">control</a>
+
+  <a class="label" href="/by_tag/#tag-internet">internet</a>
+
+  <a class="label" href="/by_tag/#tag-monitor">monitor</a>
+
+  <a class="label" href="/by_tag/#tag-monitoring">monitoring</a>
+
+  <a class="label" href="/by_tag/#tag-phone">phone</a>
+
+  <a class="label" href="/by_tag/#tag-port-forwarding">port forwarding</a>
+
+  <a class="label" href="/by_tag/#tag-remote">remote</a>
+
+  <a class="label" href="/by_tag/#tag-webcam">webcam</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/redeem/">OctoPrint Redeem</a> <small class="post-date">
+
+
+  26 Apr 2016
+
+</small></h3>
+<p>
+  Control Redeems configuration
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-control">control</a>
+
+  <a class="label" href="/by_tag/#tag-firmware">firmware</a>
+
+  <a class="label" href="/by_tag/#tag-redeem">redeem</a>
+
+  <a class="label" href="/by_tag/#tag-replicape">replicape</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/BLTouch/">OctoPrint-BLTouch</a> <small class="post-date">
+
+
+  14 Jul 2017
+
+</small></h3>
+<p>
+  Simple plugin to add BLTouch controls to the Control tab.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-bltouch">bltouch</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/bedlevelingwizard/">OctoPrint-BedLevelingWizard</a> <small class="post-date">
+
+
+  16 Jul 2018
+
+</small></h3>
+<p>
+  Plugin to aid in the process of manually leveling your bed.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-bed-leveling">bed leveling</a>
+
+  <a class="label" href="/by_tag/#tag-manual-bed-leveling">manual bed leveling</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/BetterHeaterTimeout/">OctoPrint-BetterHeaterTimeout</a> <small class="post-date">
+
+
+  02 Jan 2019
+
+</small></h3>
+<p>
+  Turns off heaters after specified time being on and unused
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-custom-event">custom event</a>
+
+  <a class="label" href="/by_tag/#tag-heater">heater</a>
+
+  <a class="label" href="/by_tag/#tag-heater-timeout">heater timeout</a>
+
+  <a class="label" href="/by_tag/#tag-temperature">temperature</a>
+
+  <a class="label" href="/by_tag/#tag-timeout">timeout</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/cancelobject/">OctoPrint-Cancelobject</a> <small class="post-date">
+
+
+  08 Jun 2018
+
+</small></h3>
+<p>
+  Cancel single objects during a print based on gcode comment lines
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-control">control</a>
+
+  <a class="label" href="/by_tag/#tag-navbar">navbar</a>
+
+  <a class="label" href="/by_tag/#tag-server">server</a>
+
+  <a class="label" href="/by_tag/#tag-ui">ui</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/octoprint_complicated/">OctoPrint-Complicated</a> <small class="post-date">
+
+
+  23 Apr 2019
+
+</small></h3>
+<p>
+  Display Print Progress on your Apple Watch using the Complicated iOS App
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-apple-watch">apple watch</a>
+
+  <a class="label" href="/by_tag/#tag-ios">ios</a>
+
+  <a class="label" href="/by_tag/#tag-progress">progress</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/custombackground/">OctoPrint-CustomBackground</a> <small class="post-date">
+
+
+  27 Aug 2017
+
+</small></h3>
+<p>
+  Plugin to change the background image on the temperature graph.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-background">background</a>
+
+  <a class="label" href="/by_tag/#tag-image">image</a>
+
+  <a class="label" href="/by_tag/#tag-temperature-graph">temperature_graph</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/dashboard/">OctoPrint-Dashboard</a> <small class="post-date">
+
+
+  10 Sep 2019
+
+</small></h3>
+<p>
+  A dashboard tab for Octoprint
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-dashboard">dashboard</a>
+
+  <a class="label" href="/by_tag/#tag-overview">overview</a>
+
+  <a class="label" href="/by_tag/#tag-progress">progress</a>
+
+  <a class="label" href="/by_tag/#tag-status">status</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/DiscordRemote/">OctoPrint-DiscordRemote</a> <small class="post-date">
+
+
+  04 Jun 2018
+
+</small></h3>
+<p>
+  Discord bot for OctoPrint
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-control">control</a>
+
+  <a class="label" href="/by_tag/#tag-discord">discord</a>
+
+  <a class="label" href="/by_tag/#tag-notifications">notifications</a>
+
+  <a class="label" href="/by_tag/#tag-remote">remote</a>
+
+  <a class="label" href="/by_tag/#tag-snapshots">snapshots</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/octoprint-eta/">OctoPrint-Display-ETA</a> <small class="post-date">
+
+
+  19 Dec 2017
+
+</small></h3>
+<p>
+  Show finish time (ETA time) for current print.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-eta">eta</a>
+
+  <a class="label" href="/by_tag/#tag-finish-time">finish time</a>
+
+  <a class="label" href="/by_tag/#tag-time">time</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/domoticz/">OctoPrint-Domoticz</a> <small class="post-date">
+
+
+  07 Jul 2018
+
+</small></h3>
+<p>
+  Simple plugin to control light switches via Domoticz server.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-domoticz">domoticz</a>
+
+  <a class="label" href="/by_tag/#tag-power">power</a>
+
+  <a class="label" href="/by_tag/#tag-smartplug">smartplug</a>
+
+  <a class="label" href="/by_tag/#tag-switch">switch</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/dragon_order/">OctoPrint-DragonOrder</a> <small class="post-date">
+
+
+  18 Nov 2018
+
+</small></h3>
+<p>
+  Plugin that allows the re-ordering of navbar, sidebar, and tabs by dragging them into desired location within the UI.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-draggable">draggable</a>
+
+  <a class="label" href="/by_tag/#tag-navbar">navbar</a>
+
+  <a class="label" href="/by_tag/#tag-sidebar">sidebar</a>
+
+  <a class="label" href="/by_tag/#tag-tabs">tabs</a>
+
+  <a class="label" href="/by_tag/#tag-ui">ui</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/dropbox_timelapse/">OctoPrint-Dropbox-Timelapse</a> <small class="post-date">
+
+
+  10 May 2018
+
+</small></h3>
+<p>
+  Automatically upload rendered timelapses to Dropbox. Can also delete after upload to save space on the Raspberry Pi SD Card.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-dropbox">dropbox</a>
+
+  <a class="label" href="/by_tag/#tag-timelapse">timelapse</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/enclosure/">OctoPrint-Enclosure</a> <small class="post-date">
+
+
+  15 Mar 2017
+
+</small></h3>
+<p>
+  Control printer environment (Temperature control / Lights / Fans and Filament Sensor) using Raspberry Pi GPIO
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-am2302">am2302</a>
+
+  <a class="label" href="/by_tag/#tag-bme280">bme280</a>
+
+  <a class="label" href="/by_tag/#tag-control">control</a>
+
+  <a class="label" href="/by_tag/#tag-dht11">dht11</a>
+
+  <a class="label" href="/by_tag/#tag-dht22">dht22</a>
+
+  <a class="label" href="/by_tag/#tag-ds18b20">ds18b20</a>
+
+  <a class="label" href="/by_tag/#tag-fan">fan</a>
+
+  <a class="label" href="/by_tag/#tag-filament">filament</a>
+
+  <a class="label" href="/by_tag/#tag-gcode">gcode</a>
+
+  <a class="label" href="/by_tag/#tag-humidity">humidity</a>
+
+  <a class="label" href="/by_tag/#tag-lights">lights</a>
+
+  <a class="label" href="/by_tag/#tag-neopixel">neopixel</a>
+
+  <a class="label" href="/by_tag/#tag-sensor">sensor</a>
+
+  <a class="label" href="/by_tag/#tag-si7021">si7021</a>
+
+  <a class="label" href="/by_tag/#tag-temperature">temperature</a>
+
+  <a class="label" href="/by_tag/#tag-tmp102">tmp102</a>
+
+  <a class="label" href="/by_tag/#tag-ws2812b">ws2812b</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/FanSpeedMirror/">OctoPrint-FanSpeedMirror</a> <small class="post-date">
+
+
+  13 Apr 2019
+
+</small></h3>
+<p>
+  Mirror the parameter(s) of GCode commands M106, M107 to scripts on the OctoPrint host
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-controls">controls</a>
+
+  <a class="label" href="/by_tag/#tag-ui">ui</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/filamentstorage/">OctoPrint-Filamentstorage</a> <small class="post-date">
+
+
+  25 Oct 2019
+
+</small></h3>
+<p>
+  Plugin for OpenSource Filament Storage Containers that report Temp, Humidity, and scale values over USB.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-filament">filament</a>
+
+  <a class="label" href="/by_tag/#tag-usb">usb</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/finetunerptr/">OctoPrint-Finetunerptr</a> <small class="post-date">
+
+
+  23 Apr 2017
+
+</small></h3>
+<p>
+  Control important maintenance and calibration settings easy accessible from a dropdown-button in the navbar.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-administration">administration</a>
+
+  <a class="label" href="/by_tag/#tag-calibration">calibration</a>
+
+  <a class="label" href="/by_tag/#tag-control">control</a>
+
+  <a class="label" href="/by_tag/#tag-helper">helper</a>
+
+  <a class="label" href="/by_tag/#tag-maintenance">maintenance</a>
+
+  <a class="label" href="/by_tag/#tag-repetier">repetier</a>
+
+  <a class="label" href="/by_tag/#tag-repetier-firmware">repetier firmware</a>
+
+  <a class="label" href="/by_tag/#tag-ui">ui</a>
+
+  <a class="label" href="/by_tag/#tag-ux">ux</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/floatingnavbar/">OctoPrint-FloatingNavbar</a> <small class="post-date">
+
+
+  17 Jan 2018
+
+</small></h3>
+<p>
+  Make the navbar float/stick to the top of the page.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-mqtt">mqtt</a>
+
+  <a class="label" href="/by_tag/#tag-navbar">navbar</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/gitfiles/">OctoPrint-GitFiles</a> <small class="post-date">
+
+
+  29 Sep 2018
+
+</small></h3>
+<p>
+  Use a github repository for keeping your OctoPrint Files collection up-to-date.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-change-management">change management</a>
+
+  <a class="label" href="/by_tag/#tag-file-manager">file manager</a>
+
+  <a class="label" href="/by_tag/#tag-git">git</a>
+
+  <a class="label" href="/by_tag/#tag-github">github</a>
+
+  <a class="label" href="/by_tag/#tag-source-control">source control</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/Hangprinter/">OctoPrint-Hangprinter</a> <small class="post-date">
+
+
+  20 Aug 2017
+
+</small></h3>
+<p>
+  This plugin provides some useful hangprinter control elements. It can be used for setting up and calibration of a Hangprinter.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-calibration">calibration</a>
+
+  <a class="label" href="/by_tag/#tag-controls">controls</a>
+
+  <a class="label" href="/by_tag/#tag-hanprinter">hanprinter</a>
+
+  <a class="label" href="/by_tag/#tag-ui">ui</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/hardwarepwm/">OctoPrint-Hardwarepwm</a> <small class="post-date">
+
+
+  08 Feb 2019
+
+</small></h3>
+<p>
+  Plugin for true hardware PWM on the Raspberry Pi
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-control">control</a>
+
+  <a class="label" href="/by_tag/#tag-hardware-pwm">hardware pwm</a>
+
+  <a class="label" href="/by_tag/#tag-leds">leds</a>
+
+  <a class="label" href="/by_tag/#tag-pwm">pwm</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/IFTTT/">OctoPrint-IFTTT</a> <small class="post-date">
+
+
+  29 Dec 2018
+
+</small></h3>
+<p>
+  Connects OctoPrint events to IFTTT
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-ifttt">ifttt</a>
+
+  <a class="label" href="/by_tag/#tag-iot">iot</a>
+
+  <a class="label" href="/by_tag/#tag-notification">notification</a>
+
+  <a class="label" href="/by_tag/#tag-tp-link">tp-link</a>
+
+  <a class="label" href="/by_tag/#tag-tplink">tplink</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/influxdb/">OctoPrint-InfluxDB</a> <small class="post-date">
+
+
+  02 Nov 2019
+
+</small></h3>
+<p>
+  Writes temperatures and events to an Influx database.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-data">data</a>
+
+  <a class="label" href="/by_tag/#tag-events">events</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/M117NavBar/">OctoPrint-M117NavBar</a> <small class="post-date">
+
+
+  27 Oct 2016
+
+</small></h3>
+<p>
+  Plugin to send M117 gcode messages to the top navbar of OctoPrint.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-gcode">gcode</a>
+
+  <a class="label" href="/by_tag/#tag-m117">m117</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/M117PopUp/">OctoPrint-M117PopUp</a> <small class="post-date">
+
+
+  27 Oct 2016
+
+</small></h3>
+<p>
+  Plugin to send M117 gcode messages to the web interface.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-gcode">gcode</a>
+
+  <a class="label" href="/by_tag/#tag-m117">m117</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/M117SpeechSynthesis/">OctoPrint-M117SpeechSynthesis</a> <small class="post-date">
+
+
+  18 Jan 2018
+
+</small></h3>
+<p>
+  Plugin to speak aloud M117 gcode messages via the web ui.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-accessibility">accessibility</a>
+
+  <a class="label" href="/by_tag/#tag-gcode">gcode</a>
+
+  <a class="label" href="/by_tag/#tag-m117">m117</a>
+
+  <a class="label" href="/by_tag/#tag-speech">speech</a>
+
+  <a class="label" href="/by_tag/#tag-voice">voice</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/mqttpublish/">OctoPrint-MQTTPublish</a> <small class="post-date">
+
+
+  17 Jan 2018
+
+</small></h3>
+<p>
+  Add buttons to navbar to publish messages to MQTT server.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-mqtt">mqtt</a>
+
+  <a class="label" href="/by_tag/#tag-navbar">navbar</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/mmu2filamentselect/">OctoPrint-Mmu2filamentselect</a> <small class="post-date">
+
+
+  04 Oct 2019
+
+</small></h3>
+<p>
+  Select the filament for Prusa MMU2 when printing in single mode.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-filament">filament</a>
+
+  <a class="label" href="/by_tag/#tag-gcode">gcode</a>
+
+  <a class="label" href="/by_tag/#tag-mmu2">mmu2</a>
+
+  <a class="label" href="/by_tag/#tag-notification">notification</a>
+
+  <a class="label" href="/by_tag/#tag-prusa">prusa</a>
+
+  <a class="label" href="/by_tag/#tag-prusa-mmu2">prusa mmu2</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/MultipleUpload/">OctoPrint-MultipleUpload</a> <small class="post-date">
+
+
+  17 Jul 2018
+
+</small></h3>
+<p>
+  Allow uploading multiple files at once
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-file-upload">file upload</a>
+
+  <a class="label" href="/by_tag/#tag-multiple">multiple</a>
+
+  <a class="label" href="/by_tag/#tag-upload">upload</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/MyMiniFactory/">OctoPrint-MyMiniFactory</a> <small class="post-date">
+
+
+  11 Dec 2018
+
+</small></h3>
+<p>
+  Plugin to integrate with MyMiniFactory and enable click and print functionality.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-myminifactory">myminifactory</a>
+
+  <a class="label" href="/by_tag/#tag-remote">remote</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/mystromswitch/">OctoPrint-MyStromSwitch</a> <small class="post-date">
+
+
+  03 Dec 2019
+
+</small></h3>
+<p>
+  Plugin to integrate myStrom Switch into your OctoPrint installation
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-mystrom">mystrom</a>
+
+  <a class="label" href="/by_tag/#tag-relay">relay</a>
+
+  <a class="label" href="/by_tag/#tag-switch">switch</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/nexmonotifier/">OctoPrint-Nexmonotifier</a> <small class="post-date">
+
+
+  02 Oct 2018
+
+</small></h3>
+<p>
+  Octoprint plugin for print completion notifications using Nexmo SMS gateway
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-notification">notification</a>
+
+  <a class="label" href="/by_tag/#tag-sms">sms</a>
+
+  <a class="label" href="/by_tag/#tag-text-message">text message</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/OctoFlat/">OctoPrint-OctoFlat</a> <small class="post-date">
+
+
+  03 Jun 2019
+
+</small></h3>
+<p>
+  A flat theme for OctoPrint.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-theme">theme</a>
+
+  <a class="label" href="/by_tag/#tag-tweak">tweak</a>
+
+  <a class="label" href="/by_tag/#tag-ui">ui</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/octopod/">OctoPrint-OctoPod</a> <small class="post-date">
+
+
+  28 May 2019
+
+</small></h3>
+<p>
+  OctoPrint plugin for OctoPod
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-bed-temperature">bed temperature</a>
+
+  <a class="label" href="/by_tag/#tag-ios">ios</a>
+
+  <a class="label" href="/by_tag/#tag-mmu">mmu</a>
+
+  <a class="label" href="/by_tag/#tag-notifications">notifications</a>
+
+  <a class="label" href="/by_tag/#tag-octopod">octopod</a>
+
+  <a class="label" href="/by_tag/#tag-print-finished">print finished</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/octovox/">OctoPrint-OctoVox</a> <small class="post-date">
+
+
+  11 Sep 2019
+
+</small></h3>
+<p>
+  OctoPrint plugin for OctoVox Amazon Alexa Integration
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-alexa">alexa</a>
+
+  <a class="label" href="/by_tag/#tag-amazon-echo">amazon echo</a>
+
+  <a class="label" href="/by_tag/#tag-octovox">octovox</a>
+
+  <a class="label" href="/by_tag/#tag-printer-status">printer status</a>
+
+  <a class="label" href="/by_tag/#tag-printer-temperature">printer temperature</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/octorant/">OctoPrint-Octorant</a> <small class="post-date">
+
+
+  11 Mar 2018
+
+</small></h3>
+<p>
+  Discord plugin for OctoPrint
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-discord">discord</a>
+
+  <a class="label" href="/by_tag/#tag-notifications">notifications</a>
+
+  <a class="label" href="/by_tag/#tag-snapshots">snapshots</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/OctoRemote/">OctoPrint-Octoremote</a> <small class="post-date">
+
+
+  29 Mar 2017
+
+</small></h3>
+<p>
+  Control your 3D-Printer with an Arduino and a Keypad or a custom remote
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-arduino">arduino</a>
+
+  <a class="label" href="/by_tag/#tag-control">control</a>
+
+  <a class="label" href="/by_tag/#tag-genuino">genuino</a>
+
+  <a class="label" href="/by_tag/#tag-keypad">keypad</a>
+
+  <a class="label" href="/by_tag/#tag-printing">printing</a>
+
+  <a class="label" href="/by_tag/#tag-remote">remote</a>
+
+  <a class="label" href="/by_tag/#tag-remotecontrol">remotecontrol</a>
+
+  <a class="label" href="/by_tag/#tag-ui">ui</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/orvibos20/">OctoPrint-OrviboS20</a> <small class="post-date">
+
+
+  03 Oct 2019
+
+</small></h3>
+<p>
+  Plugin to control Orvibo S20 Smart Plug from the OctoPrint web interface.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-orvibo">orvibo</a>
+
+  <a class="label" href="/by_tag/#tag-power">power</a>
+
+  <a class="label" href="/by_tag/#tag-s20">s20</a>
+
+  <a class="label" href="/by_tag/#tag-smartplug">smartplug</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/preprintservice/">OctoPrint-PrePrintService</a> <small class="post-date">
+
+
+  12 May 2019
+
+</small></h3>
+<p>
+  This service supports your 3D printing workflow by providing auto-rotation and slicing functionality.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-auto-rotate">auto-rotate</a>
+
+  <a class="label" href="/by_tag/#tag-gcode">gcode</a>
+
+  <a class="label" href="/by_tag/#tag-orientation">orientation</a>
+
+  <a class="label" href="/by_tag/#tag-slic3r">slic3r</a>
+
+  <a class="label" href="/by_tag/#tag-slicing">slicing</a>
+
+  <a class="label" href="/by_tag/#tag-stl">stl</a>
+
+  <a class="label" href="/by_tag/#tag-tweak">tweak</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/PrintTimeGenius/">OctoPrint-PrintTimeGenius</a> <small class="post-date">
+
+
+  12 Jul 2018
+
+</small></h3>
+<p>
+  Use a gcode pre-analysis to provide better print time estimation
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-analysis">analysis</a>
+
+  <a class="label" href="/by_tag/#tag-estimation">estimation</a>
+
+  <a class="label" href="/by_tag/#tag-estimator">estimator</a>
+
+  <a class="label" href="/by_tag/#tag-helper">helper</a>
+
+  <a class="label" href="/by_tag/#tag-print-time">print time</a>
+
+  <a class="label" href="/by_tag/#tag-time">time</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/printtrack/">OctoPrint-PrintTrack</a> <small class="post-date">
+
+
+  25 Feb 2019
+
+</small></h3>
+<p>
+  Keep track of your printer and prints with some simple additions & customizability.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-connection">connection</a>
+
+  <a class="label" href="/by_tag/#tag-monitor">monitor</a>
+
+  <a class="label" href="/by_tag/#tag-monitoring">monitoring</a>
+
+  <a class="label" href="/by_tag/#tag-notification">notification</a>
+
+  <a class="label" href="/by_tag/#tag-notifications">notifications</a>
+
+  <a class="label" href="/by_tag/#tag-progress">progress</a>
+
+  <a class="label" href="/by_tag/#tag-remote-monitoring">remote monitoring</a>
+
+  <a class="label" href="/by_tag/#tag-status">status</a>
+
+  <a class="label" href="/by_tag/#tag-title">title</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/PrinterAlerts/">OctoPrint-PrinterAlerts</a> <small class="post-date">
+
+
+  08 Jun 2019
+
+</small></h3>
+<p>
+  Alert the user when their printer is waiting for interaction.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-alert">alert</a>
+
+  <a class="label" href="/by_tag/#tag-multimaterial">multimaterial</a>
+
+  <a class="label" href="/by_tag/#tag-notification">notification</a>
+
+  <a class="label" href="/by_tag/#tag-printer">printer</a>
+
+  <a class="label" href="/by_tag/#tag-waiting">waiting</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/printoid/">OctoPrint-Printoid</a> <small class="post-date">
+
+
+  30 Apr 2020
+
+</small></h3>
+<p>
+  Notifications plugin for Printoid (Android app for OctoPrint)
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-android">android</a>
+
+  <a class="label" href="/by_tag/#tag-bed-temperature">bed temperature</a>
+
+  <a class="label" href="/by_tag/#tag-notifications">notifications</a>
+
+  <a class="label" href="/by_tag/#tag-print-finished">print finished</a>
+
+  <a class="label" href="/by_tag/#tag-printoid">printoid</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/ProgressBasedOnTime/">OctoPrint-ProgressBasedOnTime</a> <small class="post-date">
+
+
+  18 Sep 2018
+
+</small></h3>
+<p>
+  Replace file based progression by time based progression
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-analysis">analysis</a>
+
+  <a class="label" href="/by_tag/#tag-estimation">estimation</a>
+
+  <a class="label" href="/by_tag/#tag-estimator">estimator</a>
+
+  <a class="label" href="/by_tag/#tag-print-time">print time</a>
+
+  <a class="label" href="/by_tag/#tag-progress">progress</a>
+
+  <a class="label" href="/by_tag/#tag-time">time</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/pushjet/">OctoPrint-Pushjet</a> <small class="post-date">
+
+
+  09 Sep 2017
+
+</small></h3>
+<p>
+  A plugin to send notifications with Pushjet when the job is done or is failed
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-notification">notification</a>
+
+  <a class="label" href="/by_tag/#tag-pushjet">pushjet</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/rtmpstreamer/">OctoPrint-RTMPStreamer</a> <small class="post-date">
+
+
+  13 Aug 2018
+
+</small></h3>
+<p>
+  Plugin that reencodes the mjpg stream provided by octopi/mjpgstreamer/yawcam and posts to any RTMP stream server (ie Twitch) and adds a tab that will allow for wathing configured stream assuming there is a webpage url that allows that type of connection.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-live-stream">live stream</a>
+
+  <a class="label" href="/by_tag/#tag-rtmp">rtmp</a>
+
+  <a class="label" href="/by_tag/#tag-twitch">twitch</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/RepetierInformer/">OctoPrint-RepetierInformer</a> <small class="post-date">
+
+
+  18 Sep 2017
+
+</small></h3>
+<p>
+  Send notices to the Repetier-Informer app.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-notification">notification</a>
+
+  <a class="label" href="/by_tag/#tag-push">push</a>
+
+  <a class="label" href="/by_tag/#tag-repetier">repetier</a>
+
+  <a class="label" href="/by_tag/#tag-repetier-host">repetier-host</a>
+
+  <a class="label" href="/by_tag/#tag-repetier-informer">repetier-informer</a>
+
+  <a class="label" href="/by_tag/#tag-repetier-server">repetier-server</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/sidebartempgraph/">OctoPrint-SideBarTempGraph</a> <small class="post-date">
+
+
+  05 Jun 2018
+
+</small></h3>
+<p>
+  Plugin to display temperature graph in the side bar.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-graph">graph</a>
+
+  <a class="label" href="/by_tag/#tag-side-bar">side bar</a>
+
+  <a class="label" href="/by_tag/#tag-sidebar">sidebar</a>
+
+  <a class="label" href="/by_tag/#tag-temperature">temperature</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/slic3r/">OctoPrint-Slic3r</a> <small class="post-date">
+
+
+  07 Feb 2017
+
+</small></h3>
+<p>
+  Adds support for slicing via Slic3r from within OctoPrint
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-gcode">gcode</a>
+
+  <a class="label" href="/by_tag/#tag-slic3r">slic3r</a>
+
+  <a class="label" href="/by_tag/#tag-stl">stl</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/SlicerSettingsParser/">OctoPrint-SlicerSettingsParser</a> <small class="post-date">
+
+
+  22 Dec 2018
+
+</small></h3>
+<p>
+  Plugin to analyze gcode for slicer settings comments and add additional metadata of such settings.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-analysis">analysis</a>
+
+  <a class="label" href="/by_tag/#tag-gcode">gcode</a>
+
+  <a class="label" href="/by_tag/#tag-slicer-settings">slicer settings</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/SlicerSettingsTab/">OctoPrint-SlicerSettingsTab</a> <small class="post-date">
+
+
+  22 Dec 2018
+
+</small></h3>
+<p>
+  Adds tab which displays slicer settings of selected gcode file.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-analysis">analysis</a>
+
+  <a class="label" href="/by_tag/#tag-gcode">gcode</a>
+
+  <a class="label" href="/by_tag/#tag-slicer-settings">slicer settings</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/tplinksmartplug/">OctoPrint-TPLinkSmartplug</a> <small class="post-date">
+
+
+  03 Sep 2017
+
+</small></h3>
+<p>
+  Plugin to control TP-Link Smartplug devices from OctoPrint web interface.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-power">power</a>
+
+  <a class="label" href="/by_tag/#tag-smartplug">smartplug</a>
+
+  <a class="label" href="/by_tag/#tag-tp-link">tp-link</a>
+
+  <a class="label" href="/by_tag/#tag-tplink">tplink</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/taborder/">OctoPrint-TabOrder</a> <small class="post-date">
+
+
+  22 Jan 2018
+
+</small></h3>
+<p>
+  Simple plugin to allow the ordering of tabs within OctoPrint.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-sort">sort</a>
+
+  <a class="label" href="/by_tag/#tag-tab">tab</a>
+
+  <a class="label" href="/by_tag/#tag-ui">ui</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/tasmota/">OctoPrint-Tasmota</a> <small class="post-date">
+
+
+  24 Nov 2017
+
+</small></h3>
+<p>
+  Simple plugin to control sonoff devices that have been flashed with Tasmota.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-power">power</a>
+
+  <a class="label" href="/by_tag/#tag-smartplug">smartplug</a>
+
+  <a class="label" href="/by_tag/#tag-sonoff">sonoff</a>
+
+  <a class="label" href="/by_tag/#tag-tasmota">tasmota</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/tasmota_mqtt/">OctoPrint-TasmotaMQTT</a> <small class="post-date">
+
+
+  17 Jan 2018
+
+</small></h3>
+<p>
+  Plugin to control Tasmota devices via MQTT protocol.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-mqtt">mqtt</a>
+
+  <a class="label" href="/by_tag/#tag-power">power</a>
+
+  <a class="label" href="/by_tag/#tag-tasmota">tasmota</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/telegram/">OctoPrint-Telegram</a> <small class="post-date">
+
+
+  25 Feb 2016
+
+</small></h3>
+<p>
+  A plugin to send and react on messages before, during and after a print via Telegram Messenger.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-control">control</a>
+
+  <a class="label" href="/by_tag/#tag-mobile">mobile</a>
+
+  <a class="label" href="/by_tag/#tag-notification">notification</a>
+
+  <a class="label" href="/by_tag/#tag-progress">progress</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/tempsgraph/">OctoPrint-Tempsgraph</a> <small class="post-date">
+
+
+  29 Mar 2017
+
+</small></h3>
+<p>
+  Replaces the temperature graph with an interactive and zoomable one
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-interactive-graph">interactive graph</a>
+
+  <a class="label" href="/by_tag/#tag-temperature-plot">temperature plot</a>
+
+  <a class="label" href="/by_tag/#tag-ui">ui</a>
+
+  <a class="label" href="/by_tag/#tag-zoom">zoom</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/TerminalCommands/">OctoPrint-TerminalCommands</a> <small class="post-date">
+
+
+  31 Dec 2017
+
+</small></h3>
+<p>
+  Lets you add custom G-code command buttons to OctoPrint's Terminal view tab
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-command">command</a>
+
+  <a class="label" href="/by_tag/#tag-commands">commands</a>
+
+  <a class="label" href="/by_tag/#tag-gcode">gcode</a>
+
+  <a class="label" href="/by_tag/#tag-terminal">terminal</a>
+
+  <a class="label" href="/by_tag/#tag-ui">ui</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/thingiverse/">OctoPrint-Thingiverse</a> <small class="post-date">
+
+
+  28 Oct 2019
+
+</small></h3>
+<p>
+  This plugin creates a new tab where Thingiverse website is embedded.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-embedded-website">embedded website</a>
+
+  <a class="label" href="/by_tag/#tag-thingiverse">thingiverse</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/tuyasmartplug/">OctoPrint-TuyaSmartplug</a> <small class="post-date">
+
+
+  12 Nov 2018
+
+</small></h3>
+<p>
+  Plugin to control Tuya based Smartplug devices from OctoPrint web interface.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-power">power</a>
+
+  <a class="label" href="/by_tag/#tag-smartplug">smartplug</a>
+
+  <a class="label" href="/by_tag/#tag-tuya">tuya</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/webcamstreamer/">OctoPrint-WebcamStreamer</a> <small class="post-date">
+
+
+  08 Feb 2019
+
+</small></h3>
+<p>
+  Plugin that re-encodes the webcam and streams it to streaming sites like YouTube Live or Twitch.Tv
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-stream">stream</a>
+
+  <a class="label" href="/by_tag/#tag-webcam">webcam</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/webcamSB/">OctoPrint-Webcamsb</a> <small class="post-date">
+
+
+  04 Sep 2019
+
+</small></h3>
+<p>
+  Sidebar webcam viewer
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-sidebar">sidebar</a>
+
+  <a class="label" href="/by_tag/#tag-stream">stream</a>
+
+  <a class="label" href="/by_tag/#tag-webcam">webcam</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/webhooks/">OctoPrint-Webhooks</a> <small class="post-date">
+
+
+  29 Apr 2020
+
+</small></h3>
+<p>
+  This allows you to send a webhook to any URL when events happen on OctoPrint.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-api">api</a>
+
+  <a class="label" href="/by_tag/#tag-color-change">color change</a>
+
+  <a class="label" href="/by_tag/#tag-events">events</a>
+
+  <a class="label" href="/by_tag/#tag-notification">notification</a>
+
+  <a class="label" href="/by_tag/#tag-prusa">prusa</a>
+
+  <a class="label" href="/by_tag/#tag-url">url</a>
+
+  <a class="label" href="/by_tag/#tag-webhook">webhook</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/wemoswitch/">OctoPrint-WemoSwitch</a> <small class="post-date">
+
+
+  18 Sep 2018
+
+</small></h3>
+<p>
+  Plugin to control Belkin Wemo devices from OctoPrint web interface.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-belkin">belkin</a>
+
+  <a class="label" href="/by_tag/#tag-power">power</a>
+
+  <a class="label" href="/by_tag/#tag-smartplug">smartplug</a>
+
+  <a class="label" href="/by_tag/#tag-wemo">wemo</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/YouTubeLive/">OctoPrint-YouTubeLive</a> <small class="post-date">
+
+
+  23 Jul 2017
+
+</small></h3>
+<p>
+  Simple plugin to add a YouTube Live tab to OctoPrint.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-live-stream">live stream</a>
+
+  <a class="label" href="/by_tag/#tag-youtube">youtube</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/ipOnConnect/">OctoPrint-ipOnConnect</a> <small class="post-date">
+
+
+  04 May 2018
+
+</small></h3>
+<p>
+  Simple plugin to display the ip address of connected OctoPrint instance on the control panel using M117 command.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-ip">ip</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/OctoAutoremote/">OctoPrint_AutoRemote</a> <small class="post-date">
+
+
+  28 Sep 2018
+
+</small></h3>
+<p>
+  A quick Autoremote/Tasker plugin for OctoPrint
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-android">android</a>
+
+  <a class="label" href="/by_tag/#tag-autoapps">autoapps</a>
+
+  <a class="label" href="/by_tag/#tag-autoremote">autoremote</a>
+
+  <a class="label" href="/by_tag/#tag-tasker">tasker</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/freemobilenotifier/">OctoPrint_FreeMobile-Notifier</a> <small class="post-date">
+
+
+  25 Jan 2017
+
+</small></h3>
+<p>
+  Octoprint plugin for print completion notifications using Free (Free is a French telecommunications company)
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-notification">notification</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/repeatingcommand/">OctoPrint_RepeatingCommand</a> <small class="post-date">
+
+
+  16 Apr 2019
+
+</small></h3>
+<p>
+  Octoprint plugin for running a command at an interval during prints.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-automation">automation</a>
+
+  <a class="label" href="/by_tag/#tag-command">command</a>
+
+  <a class="label" href="/by_tag/#tag-control">control</a>
+
+  <a class="label" href="/by_tag/#tag-events">events</a>
+
+  <a class="label" href="/by_tag/#tag-integration">integration</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/signalnotifier/">OctoPrint_Signal-Notifier</a> <small class="post-date">
+
+
+  04 Dec 2018
+
+</small></h3>
+<p>
+  Print completion notifications using Signal. Requires signal-cli.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-notification">notification</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/octolapse/">Octolapse</a> <small class="post-date">
+
+
+  24 Mar 2018
+
+</small></h3>
+<p>
+  Create a stabilized timelapse of your 3D prints.  Highly customizable, loads of presets, lots of fun.  Requires OctoPrint 1.3.9 or higher.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-timelapse">timelapse</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/Octoslack/">Octoslack</a> <small class="post-date">
+
+
+  20 May 2017
+
+</small></h3>
+<p>
+  An OctoPrint plugin for monitoring your printer and prints via Slack, Mattermost, Pushbullet, Pushover, or Rocket.Chat
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-camera">camera</a>
+
+  <a class="label" href="/by_tag/#tag-eta">eta</a>
+
+  <a class="label" href="/by_tag/#tag-filament-runout">filament runout</a>
+
+  <a class="label" href="/by_tag/#tag-finish-time">finish time</a>
+
+  <a class="label" href="/by_tag/#tag-gcode">gcode</a>
+
+  <a class="label" href="/by_tag/#tag-imgur">imgur</a>
+
+  <a class="label" href="/by_tag/#tag-matrix">matrix</a>
+
+  <a class="label" href="/by_tag/#tag-mattermost">mattermost</a>
+
+  <a class="label" href="/by_tag/#tag-minio">minio</a>
+
+  <a class="label" href="/by_tag/#tag-mobile">mobile</a>
+
+  <a class="label" href="/by_tag/#tag-monitor">monitor</a>
+
+  <a class="label" href="/by_tag/#tag-monitoring">monitoring</a>
+
+  <a class="label" href="/by_tag/#tag-notification">notification</a>
+
+  <a class="label" href="/by_tag/#tag-print-time">print time</a>
+
+  <a class="label" href="/by_tag/#tag-progress">progress</a>
+
+  <a class="label" href="/by_tag/#tag-pushbullet">pushbullet</a>
+
+  <a class="label" href="/by_tag/#tag-pushover">pushover</a>
+
+  <a class="label" href="/by_tag/#tag-remote-monitoring">remote monitoring</a>
+
+  <a class="label" href="/by_tag/#tag-riot">riot</a>
+
+  <a class="label" href="/by_tag/#tag-rocket-chat">rocket chat</a>
+
+  <a class="label" href="/by_tag/#tag-s3">s3</a>
+
+  <a class="label" href="/by_tag/#tag-slack">slack</a>
+
+  <a class="label" href="/by_tag/#tag-snapshots">snapshots</a>
+
+  <a class="label" href="/by_tag/#tag-status">status</a>
+
+  <a class="label" href="/by_tag/#tag-webcam">webcam</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/opitemp/">OpiTemp</a> <small class="post-date">
+
+
+  23 Apr 2018
+
+</small></h3>
+<p>
+  Orange Pi temperature in the navbar.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-ui">ui</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/PCA9685LEDStripControl/">PCA9685 LED Strip Control</a> <small class="post-date">
+
+
+  07 May 2019
+
+</small></h3>
+<p>
+  OctoPrint plugin for controling RGB LED Strips via PCA9685 over I2C
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-gcode">gcode</a>
+
+  <a class="label" href="/by_tag/#tag-hardware-pwm">hardware pwm</a>
+
+  <a class="label" href="/by_tag/#tag-i2c">i2c</a>
+
+  <a class="label" href="/by_tag/#tag-led">led</a>
+
+  <a class="label" href="/by_tag/#tag-pca9685">pca9685</a>
+
+  <a class="label" href="/by_tag/#tag-pwm">pwm</a>
+
+  <a class="label" href="/by_tag/#tag-raspberry-pi">raspberry pi</a>
+
+  <a class="label" href="/by_tag/#tag-rgb">rgb</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/psucontrol/">PSU Control</a> <small class="post-date">
+
+
+  25 Jan 2017
+
+</small></h3>
+<p>
+  Control ATX/AUX power supply
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-atx">atx</a>
+
+  <a class="label" href="/by_tag/#tag-control">control</a>
+
+  <a class="label" href="/by_tag/#tag-power">power</a>
+
+  <a class="label" href="/by_tag/#tag-psu">psu</a>
+
+  <a class="label" href="/by_tag/#tag-ui">ui</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/PauseForUserEvent/">PauseForUser Event</a> <small class="post-date">
+
+
+  11 Jun 2019
+
+</small></h3>
+<p>
+  Adds a new event 'paused_for_user' when the printer needs manual intervention
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-event">event</a>
+
+  <a class="label" href="/by_tag/#tag-notification">notification</a>
+
+  <a class="label" href="/by_tag/#tag-paused-for-user">paused for user</a>
+
+  <a class="label" href="/by_tag/#tag-prusa-mmu2">prusa mmu2</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/Plabric/">Plabric</a> <small class="post-date">
+
+
+  26 Mar 2020
+
+</small></h3>
+<p>
+  Manage and control your 3D printer anywhere without port forwarding or VPN.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-cloud-printing">cloud printing</a>
+
+  <a class="label" href="/by_tag/#tag-control">control</a>
+
+  <a class="label" href="/by_tag/#tag-manage">manage</a>
+
+  <a class="label" href="/by_tag/#tag-phone">phone</a>
+
+  <a class="label" href="/by_tag/#tag-remote">remote</a>
+
+  <a class="label" href="/by_tag/#tag-remote-access">remote access</a>
+
+  <a class="label" href="/by_tag/#tag-webcam-stream">webcam stream</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/polarcloud/">Polar Cloud</a> <small class="post-date">
+
+
+  14 Jul 2017
+
+</small></h3>
+<p>
+  Connects OctoPrint to the Polar Cloud so you can easily monitor and control OctoPrint outside of your local network
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-cloud">cloud</a>
+
+  <a class="label" href="/by_tag/#tag-polarcloud">polarcloud</a>
+
+  <a class="label" href="/by_tag/#tag-remote-access">remote access</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/portlister/">PortLister</a> <small class="post-date">
+
+
+  08 Oct 2015
+
+</small></h3>
+<p>
+  Refreshes the port list in the browser when a printer shows up
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-automatic">automatic</a>
+
+  <a class="label" href="/by_tag/#tag-printer">printer</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/preheat/">Preheat Button</a> <small class="post-date">
+
+
+  21 Nov 2017
+
+</small></h3>
+<p>
+  Automatically heat nozzle and bed to the printing temperature of the current gcode file
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-api">api</a>
+
+  <a class="label" href="/by_tag/#tag-temperature">temperature</a>
+
+  <a class="label" href="/by_tag/#tag-ui">ui</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/stats/">Printer Statistics</a> <small class="post-date">
+
+
+  13 Sep 2015
+
+</small></h3>
+<p>
+  Statistics of your 3D Printer
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-power">power</a>
+
+  <a class="label" href="/by_tag/#tag-stats">stats</a>
+
+  <a class="label" href="/by_tag/#tag-usage">usage</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/progress_title/">Progress Title</a> <small class="post-date">
+
+
+  31 Jan 2020
+
+</small></h3>
+<p>
+  Show progress percentage in document title
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-progress">progress</a>
+
+  <a class="label" href="/by_tag/#tag-title">title</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/kronos_data_collector/">Project Kronos Data Collector</a> <small class="post-date">
+
+
+  26 Sep 2018
+
+</small></h3>
+<p>
+  Help build the Project Kronos print-failure autodetection neural network
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-data">data</a>
+
+  <a class="label" href="/by_tag/#tag-dataset">dataset</a>
+
+  <a class="label" href="/by_tag/#tag-kronos">kronos</a>
+
+  <a class="label" href="/by_tag/#tag-network">network</a>
+
+  <a class="label" href="/by_tag/#tag-neural">neural</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/prometheus_exporter/">Prometheus Exporter</a> <small class="post-date">
+
+
+  09 Dec 2019
+
+</small></h3>
+<p>
+  A plugin for prometheus compatible metrics endpoint
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-grafana">grafana</a>
+
+  <a class="label" href="/by_tag/#tag-monitor">monitor</a>
+
+  <a class="label" href="/by_tag/#tag-monitoring">monitoring</a>
+
+  <a class="label" href="/by_tag/#tag-prometheus">prometheus</a>
+
+  <a class="label" href="/by_tag/#tag-status">status</a>
+
+  <a class="label" href="/by_tag/#tag-usage">usage</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/prusaetaoverride/">Prusa (M73 response) ETA Override</a> <small class="post-date">
+
+
+  25 Aug 2019
+
+</small></h3>
+<p>
+  Plugin that overrides OctoPrint ETA to values from last M73 gcode response received from printer
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-estimation">estimation</a>
+
+  <a class="label" href="/by_tag/#tag-eta">eta</a>
+
+  <a class="label" href="/by_tag/#tag-m73">m73</a>
+
+  <a class="label" href="/by_tag/#tag-progress">progress</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/PrusaLevelingGuide/">Prusa Leveling Guide</a> <small class="post-date">
+
+
+  18 Dec 2019
+
+</small></h3>
+<p>
+  Plugin that helps walk you through adjusting the Prusa MK3 heatbed using the nylock mod
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-bed-level">bed level</a>
+
+  <a class="label" href="/by_tag/#tag-mesh">mesh</a>
+
+  <a class="label" href="/by_tag/#tag-nylock">nylock</a>
+
+  <a class="label" href="/by_tag/#tag-prusa">prusa</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/prusaslicerthumbnails/">PrusaSlicer Thumbnails</a> <small class="post-date">
+
+
+  22 Apr 2020
+
+</small></h3>
+<p>
+  Extracts embedded thumbnails from PrusaSlicer gcode files.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-preview">preview</a>
+
+  <a class="label" href="/by_tag/#tag-prusaslicer">prusaslicer</a>
+
+  <a class="label" href="/by_tag/#tag-thumbnail">thumbnail</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/octobullet/">Pushbullet</a> <small class="post-date">
+
+
+  23 Jul 2015
+
+</small></h3>
+<p>
+  Pushes notifications about finished print jobs via Pushbullet
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-notification">notification</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/pushover/">Pushover</a> <small class="post-date">
+
+
+  13 Apr 2016
+
+</small></h3>
+<p>
+  A plugin that send a notification with Pushover when the job is done or is failed
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-notification">notification</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/Python3PluginCompatibilityCheck/">Python 3 Check</a> <small class="post-date">
+
+
+  31 Mar 2020
+
+</small></h3>
+<p>
+  Checks installed plugins for Python 3 compatibility based on their entry in Plugin Repository.
+</p>
+
+
+
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/rgb_status/">RGB Status</a> <small class="post-date">
+
+
+  27 Feb 2019
+
+</small></h3>
+<p>
+  Adds RGB LED support to OctoPrint with the ability to choose colors and effects based on the current status of your printer
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-addressable-led">addressable led</a>
+
+  <a class="label" href="/by_tag/#tag-effects">effects</a>
+
+  <a class="label" href="/by_tag/#tag-progress">progress</a>
+
+  <a class="label" href="/by_tag/#tag-rgb-led">rgb led</a>
+
+  <a class="label" href="/by_tag/#tag-ws2811">ws2811</a>
+
+  <a class="label" href="/by_tag/#tag-ws2812">ws2812</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/remove_ttys_ports/">Remove /dev/ttyS* Ports (port auto detection fix)</a> <small class="post-date">
+
+
+  23 Mar 2020
+
+</small></h3>
+<p>
+  Removes any matched /dev/ttyS* ports from the serial port list again and thus works around autodetection issues with 1.4.0 on systems with such ports
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-auto-detection">auto detection</a>
+
+  <a class="label" href="/by_tag/#tag-autodetection">autodetection</a>
+
+  <a class="label" href="/by_tag/#tag-fix">fix</a>
+
+  <a class="label" href="/by_tag/#tag-port">port</a>
+
+  <a class="label" href="/by_tag/#tag-serial-port">serial port</a>
+
+  <a class="label" href="/by_tag/#tag-workaround">workaround</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/requestspinner/">RequestSpinner</a> <small class="post-date">
+
+
+  21 Jun 2015
+
+</small></h3>
+<p>
+  Shows a little spinner in the web frontend when background requests are active
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-ajax">ajax</a>
+
+  <a class="label" href="/by_tag/#tag-ui">ui</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/resource_monitor/">Resource Monitor</a> <small class="post-date">
+
+
+  03 Dec 2019
+
+</small></h3>
+<p>
+  A plugin to view the current CPU, RAM, disk and network usage on your system
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-cpu">cpu</a>
+
+  <a class="label" href="/by_tag/#tag-disk">disk</a>
+
+  <a class="label" href="/by_tag/#tag-memory">memory</a>
+
+  <a class="label" href="/by_tag/#tag-monitor">monitor</a>
+
+  <a class="label" href="/by_tag/#tag-network">network</a>
+
+  <a class="label" href="/by_tag/#tag-processor">processor</a>
+
+  <a class="label" href="/by_tag/#tag-resource">resource</a>
+
+  <a class="label" href="/by_tag/#tag-usage">usage</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/roomtemp/">Room Temperature</a> <small class="post-date">
+
+
+  02 Mar 2017
+
+</small></h3>
+<p>
+  Display room temperature on navbar
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-ui">ui</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/smsnotifier/">SMS Notifier (with Twilio)</a> <small class="post-date">
+
+
+  10 Jan 2017
+
+</small></h3>
+<p>
+  Recieve SMS notifications when OctoPrint jobs are complete.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-notification">notification</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/stlviewer/">STL Viewer</a> <small class="post-date">
+
+
+  20 Jun 2015
+
+</small></h3>
+<p>
+  Simple stl viewer tab from uploaded files.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-stl">stl</a>
+
+  <a class="label" href="/by_tag/#tag-tab">tab</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/screensquish/">ScreenSquish</a> <small class="post-date">
+
+
+  17 Jun 2015
+
+</small></h3>
+<p>
+  Scalable UI that does some old fashioned (v2) bootstrap responsive and some collapse etc.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-mobile">mobile</a>
+
+  <a class="label" href="/by_tag/#tag-ui">ui</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/shutdownprinter/">ShutdownPrinter</a> <small class="post-date">
+
+
+  18 Jun 2018
+
+</small></h3>
+<p>
+  Plugin for shutdown printer after finishing a print job
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-shutdown">shutdown</a>
+
+  <a class="label" href="/by_tag/#tag-shutdown-printer">shutdown printer</a>
+
+  <a class="label" href="/by_tag/#tag-tplink">tplink</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/simpleemergencystop/">Simple Emergency Stop</a> <small class="post-date">
+
+
+  23 Jul 2017
+
+</small></h3>
+<p>
+  Add an emergency stop buton on NavBar!
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-action">action</a>
+
+  <a class="label" href="/by_tag/#tag-command">command</a>
+
+  <a class="label" href="/by_tag/#tag-control">control</a>
+
+  <a class="label" href="/by_tag/#tag-emergency">emergency</a>
+
+  <a class="label" href="/by_tag/#tag-gcode">gcode</a>
+
+  <a class="label" href="/by_tag/#tag-stop">stop</a>
+
+  <a class="label" href="/by_tag/#tag-ui">ui</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/slack/">Slack</a> <small class="post-date">
+
+
+  28 Oct 2015
+
+</small></h3>
+<p>
+  Send message to Slack chat when printing events happen
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-notification">notification</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/smartpreheat/">Smart Preheat</a> <small class="post-date">
+
+
+  02 May 2020
+
+</small></h3>
+<p>
+  Parses GCode files and provides variables that can be accessed in GCode scripts. Reduces heatup time and allows for preheating before bed leveling.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-preheat">preheat</a>
+
+  <a class="label" href="/by_tag/#tag-temperature">temperature</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/snapstream/">SnapStream</a> <small class="post-date">
+
+
+  22 May 2015
+
+</small></h3>
+<p>
+  Emulate webcam streaming by showing a sequence of snapshots
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-ui">ui</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/statefulsidebar/">Stateful Sidebar</a> <small class="post-date">
+
+
+  16 Jul 2018
+
+</small></h3>
+<p>
+  Plugin that monitors and stores the state of sidebar collapsed panels and restores that state upon next visit to OctoPrint.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-collapsed">collapsed</a>
+
+  <a class="label" href="/by_tag/#tag-sidebar">sidebar</a>
+
+  <a class="label" href="/by_tag/#tag-stateful">stateful</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/status_line/">StatusLine</a> <small class="post-date">
+
+
+  04 Jul 2015
+
+</small></h3>
+<p>
+  Display M117 (Display Message) in the SideBar
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-ui">ui</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/systemcommandeditor/">System Command Editor</a> <small class="post-date">
+
+
+  03 Jun 2015
+
+</small></h3>
+<p>
+  This plugin makes System Commands editable through the OctoPrint WebUI
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-administration">administration</a>
+
+  <a class="label" href="/by_tag/#tag-ui">ui</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/temperaturefailesafe/">TemperatureFailsafe</a> <small class="post-date">
+
+
+  14 Apr 2017
+
+</small></h3>
+<p>
+  Execute shell commands when temperatures violate thresholds
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-raspberry-pi">raspberry pi</a>
+
+  <a class="label" href="/by_tag/#tag-temperature">temperature</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/TemperatureLegendMover/">TemperatureLegendMover</a> <small class="post-date">
+
+
+  26 Apr 2020
+
+</small></h3>
+<p>
+  Move the Temperature-Legend into a specific corner
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-legend">legend</a>
+
+  <a class="label" href="/by_tag/#tag-temperature">temperature</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/terminalcommandsextended/">Terminal Commands Extended</a> <small class="post-date">
+
+
+  07 Feb 2020
+
+</small></h3>
+<p>
+  Plugin that adds custom gcode command buttons to the Terminal tab.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-commands">commands</a>
+
+  <a class="label" href="/by_tag/#tag-gcode">gcode</a>
+
+  <a class="label" href="/by_tag/#tag-terminal-tab">terminal tab</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/thespaghettidetective/">The Spaghetti Detective</a> <small class="post-date">
+
+
+  07 Nov 2019
+
+</small></h3>
+<p>
+  An essential plugin if you print remotely. Monitor and control your printer over the internet. No port-forwarding or VPN is needed. Best part? AI-based failure detection!
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-ai">ai</a>
+
+  <a class="label" href="/by_tag/#tag-control">control</a>
+
+  <a class="label" href="/by_tag/#tag-internet">internet</a>
+
+  <a class="label" href="/by_tag/#tag-machine-learning">machine learning</a>
+
+  <a class="label" href="/by_tag/#tag-monitor">monitor</a>
+
+  <a class="label" href="/by_tag/#tag-monitoring">monitoring</a>
+
+  <a class="label" href="/by_tag/#tag-phone">phone</a>
+
+  <a class="label" href="/by_tag/#tag-port-forwarding">port forwarding</a>
+
+  <a class="label" href="/by_tag/#tag-remote">remote</a>
+
+  <a class="label" href="/by_tag/#tag-webcam">webcam</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/themeify/">Themeify</a> <small class="post-date">
+
+
+  11 Nov 2017
+
+</small></h3>
+<p>
+  Beautiful themes for octoprint
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-dark">dark</a>
+
+  <a class="label" href="/by_tag/#tag-style">style</a>
+
+  <a class="label" href="/by_tag/#tag-styling">styling</a>
+
+  <a class="label" href="/by_tag/#tag-theme">theme</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/title_status/">Title Status</a> <small class="post-date">
+
+
+  18 Jan 2016
+
+</small></h3>
+<p>
+  Show printers status in window title
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-status">status</a>
+
+  <a class="label" href="/by_tag/#tag-title">title</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/tobecaplugin/">Tobeca Plugin</a> <small class="post-date">
+
+
+  16 Feb 2017
+
+</small></h3>
+<p>
+  Plugin for OctoPrint that adds a special tab with commands for the Tobeca 3d printer.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-printing">printing</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/touchui/">TouchUI</a> <small class="post-date">
+
+
+  10 Oct 2015
+
+</small></h3>
+<p>
+  A touch friendly interface for Mobile and TFT touch modules
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-mobile">mobile</a>
+
+  <a class="label" href="/by_tag/#tag-touchscreen">touchscreen</a>
+
+  <a class="label" href="/by_tag/#tag-ui">ui</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/touchtest/">Touchtest Bed Leveling</a> <small class="post-date">
+
+
+  05 Mar 2017
+
+</small></h3>
+<p>
+  A simple tool to move the extruder to different touch points around the perimeter of the print bed. Useful for bed leveling.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-calibration">calibration</a>
+
+  <a class="label" href="/by_tag/#tag-control">control</a>
+
+  <a class="label" href="/by_tag/#tag-leveling">leveling</a>
+
+  <a class="label" href="/by_tag/#tag-sidebar">sidebar</a>
+
+  <a class="label" href="/by_tag/#tag-ui">ui</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/UltimakerFormatPackage/">Ultimaker Format Package</a> <small class="post-date">
+
+
+  16 Nov 2019
+
+</small></h3>
+<p>
+  This plugin adds support for Ultimaker Format Package (.ufp) files.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-cura">cura</a>
+
+  <a class="label" href="/by_tag/#tag-ufp">ufp</a>
+
+  <a class="label" href="/by_tag/#tag-ultimaker-format-package">ultimaker format package</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/updatefix127/">Updatefix 1.2.7</a> <small class="post-date">
+
+
+  07 Dec 2015
+
+</small></h3>
+<p>
+  Fixes an issue in OctoPrint 1.2.7 that prevents updating
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-fix">fix</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/uploadanything/">Upload Anything</a> <small class="post-date">
+
+
+  28 May 2019
+
+</small></h3>
+<p>
+  Allows custom file types to be uploaded via the web interface
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-file-upload">file upload</a>
+
+  <a class="label" href="/by_tag/#tag-upload">upload</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/webcamtab/">WebcamTab</a> <small class="post-date">
+
+
+  16 Jan 2018
+
+</small></h3>
+<p>
+  Moves the webcam stream from the controls into its own tab
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-ui">ui</a>
+
+  <a class="label" href="/by_tag/#tag-webcam">webcam</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/yamlpatcher/">Yamlpatcher</a> <small class="post-date">
+
+
+  07 Jul 2015
+
+</small></h3>
+<p>
+  Allows patching up config.yaml through the web interface
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-admin">admin</a>
+
+  <a class="label" href="/by_tag/#tag-config">config</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/LCD1602_I2cdisplay/">octoprint-LCD1602</a> <small class="post-date">
+
+
+  28 Jan 2019
+
+</small></h3>
+<p>
+  This plug-in allows you to control a 16X2 lcd display (hd44780 connected to port I2C) to display the octoprint status. It is useful for people like me who have a printer without a display. It indicates on which port the printer is connected, the progress of printing. It also displays the remaining print time (thanks to a simple method). See https://github.com/n3bojs4/octoprint-LCD1602/blob/master/CHANGELOG.md for more details.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-display">display</a>
+
+  <a class="label" href="/by_tag/#tag-events">events</a>
+
+  <a class="label" href="/by_tag/#tag-loading-bar">loading bar</a>
+
+</li>
+  
+    <li>
+<h3><a class="post-link" href="/plugins/xMattersIntegration/">xMatters Integration</a> <small class="post-date">
+
+
+  04 Mar 2019
+
+</small></h3>
+<p>
+  Event notifications using xMatters
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-events">events</a>
+
+  <a class="label" href="/by_tag/#tag-monitoring">monitoring</a>
+
+  <a class="label" href="/by_tag/#tag-notifications">notifications</a>
+
+  <a class="label" href="/by_tag/#tag-xmatters">xmatters</a>
+
+</li>
+  
+</ul>
+
+  </div>
+  <div class="span4">
+    <h2><i class="fa fa-search"></i> Search</h2>
+
+    <form class="form-search" action="/search/" method="get" style="text-align: center">
+    <input type="search" id="search-query" class="search-query" placeholder="Enter search term &amp; hit enter..." name="q">
+</form>
+
+    <h2><i class="far fa-lightbulb"></i> Help</h2>
+
+    <p>
+      You are a user of OctoPrint and want to to know <strong>how to install</strong> any of the plugins listed here? <a href="/help/installation/">Take a look at this guide</a>.
+    </p>
+    <p>
+      You are a plugin author and want to <strong>register your new plugin</strong> to be listed here? <a href="/help/registering/">Take a look at this guide</a>.
+    </p>
+    <p>
+      You are interested in <strong>writing your own plugin</strong> and don't know how to start? <a href="http://docs.octoprint.org/en/master/plugins/gettingstarted.html">Take a look at the plugin tutorial</a>.
+    </p>
+    <p>
+      <strong>Something is wrong with this repository?</strong> If something appears to be broken, please <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues">report it</a> or <a href="https://github.com/OctoPrint/plugins.octoprint.org/pulls">send a PR to fix it =)</a>. Thanks!
+    </p>
+
+    <h2><i class="fa fa-chart-line"></i> Stats</h2>
+
+    
+    
+    
+
+    <p>
+      There are currently <strong>205</strong> plugins listed in this repository of which <strong>79 (38%)</strong> are marked as Python 3 compatible.
+    </p>
+
+    <div class="ad">
+      <script>
+    if (!window["carbon-disable"] && !window.matchMedia("(max-width: 767px)").matches) {
+        (function() {
+            var po = document.createElement("script");
+            po.type = "text/javascript";
+            po.async = true;
+            po.src  = "//cdn.carbonads.com/carbon.js?serve=CK7DT237&placement=pluginsoctoprintorg";
+            po.id = "_carbonads_js";
+            var s = document.currentScript;
+            s.parentNode.insertBefore(po, s);
+        })();
+    }
+</script>
+    </div>
+  </div>
+</div>
+
+        </div>
+    </div>
+</div>
+
+    </div>
+</div>
+
+      <footer>
+          <div class="container">
+              <div class="row">
+                  <div class="span4">
+                      <h2>On the web</h2>
+                      <ul class="fa-ul">
+                          <li><span class="fa-li"><i class="fas fa-users fa-fw"></i></span><a href="https://community.octoprint.org">Community Forum</a></li>
+                          <li><span class="fa-li"><i class="fas fa-comments fa-fw"></i></span><a href="irc://chat.freenode.net/octoprint" target="_blank">#octoprint on freenode</a> (<a href="https://chat.octoprint.org">Webchat</a>, <a href="https://freenode.logbot.info/octoprint">Logs</a>)</li>
+                          <li><span class="fa-li"><i class="fab fa-twitter fa-fw"></i></span><a href="https://twitter.com/OctoPrint3D" target="_blank">@OctoPrint3D</a></li>
+                          <li><span class="fa-li"><i class="fab fa-facebook-f fa-fw"></i></span><a href="https://facebook.com/OctoPrint" target="_blank">OctoPrint</a></li>
+                          <li><span class="fa-li"><i class="fab fa-youtube fa-fw"></i></span><a href="https://www.youtube.com/c/OctoPrint3D" target="_blank">OctoPrint</a></li>
+                          <li><span class="fa-li"><i class="fas fa-tachometer-alt fa-fw"></i></span><a href="https://status.octoprint.org" target="_blank">Site Status</a></li>
+                          <li><span class="fa-li"><i class="fas fa-gavel fa-fw"></i></span><a href="https://octoprint.org/imprint/" rel="nofollow">Legal Notice</a></li>
+                          <li><span class="fa-li"><i class="fas fa-gavel fa-fw"></i></span><a href="https://octoprint.org/privacy/" rel="nofollow">Privacy Policy</a></li>
+                      </ul>
+                  </div>
+                  <div class="span4">
+                      <h2>Recently Added</h2>
+                      <ul>
+                          
+                          
+                          <li>
+                              <a class="post-link" href="/plugins/smartpreheat/">Smart Preheat</a>
+                          </li>
+                          
+                          <li>
+                              <a class="post-link" href="/plugins/printoid/">OctoPrint-Printoid</a>
+                          </li>
+                          
+                          <li>
+                              <a class="post-link" href="/plugins/webhooks/">OctoPrint-Webhooks</a>
+                          </li>
+                          
+                          <li>
+                              <a class="post-link" href="/plugins/emergencystopsimplified/">Emergency Stop Simplified</a>
+                          </li>
+                          
+                          <li>
+                              <a class="post-link" href="/plugins/TemperatureLegendMover/">TemperatureLegendMover</a>
+                          </li>
+                          
+                      </ul>
+                  </div>
+                  <div class="span4 hidden-phone">
+                      <a href="http://octoprint.org"><img src="/assets/img/logo-footer.png" alt="Octopus logo" class="pull-right"></a>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="span12 text-center legal">
+                      <small>"OctoPrint" is a <a href="http://octoprint.org/trademark-rules/">registered trademark</a></small>
+                  </div>
+              </div>
+          </div>
+      </footer>
+
+
+<script src="/assets/js/prettify.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+<script src="/assets/js/lunr.min.js"></script>
+<script src="/assets/js/mustache.js"></script>
+<script src="/assets/js/URI.min.js"></script>
+<script src="/assets/js/date.format.js"></script>
+<script src="/assets/js/jquery.lunr.search.js"></script>
+<script src="/assets/js/lightbox.min.js"></script>
+<script src="/assets/js/site.js"></script>
+<script src="/assets/js/autotrack.js"></script>
+<script src="/assets/js/yt-with-consent.js"></script>
+
+<script>
+    var gaBaseProperty = 'UA-62479257';
+    var gaProperty = gaBaseProperty + '-2';
+
+    // opt out
+    var disableStr = 'ga-disable-' + gaProperty;
+    var disableCookie = 'ga-disable-' + gaBaseProperty;
+    function gaOptout() {
+        document.cookie = disableCookie + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/; domain=octoprint.org';
+        window[disableStr] = true;
+        alert("Google Analytics ist jetzt deaktiviert! / Google Analytics is now deactivated!")
+    }
+
+    // tracking code
+    if (document.cookie.indexOf(disableCookie + '=true') > -1) {
+        window[disableStr] = true;
+    } else {
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', gaProperty, 'auto');
+        ga('require', 'autotrack');
+        ga('set', 'anonymizeIp', true);
+        ga('send', 'pageview');
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en" xmlns="http://www.w3.org/1999/html"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+    <title>The Spaghetti Detective</title>
+    <meta name="description" content="An essential plugin if you print remotely. Monitor and control your printer over the internet. No port-forwarding or VPN is needed. Best part? AI-based failure detection!">
+    <meta name="author" content="The Spaghetti Detective Team">
+    <meta name="referrer" content="same-origin">
+    <meta name="google-site-verification" content="0EFsbaNygJcEinKPmzP-hTf0Ju6wDIpJxO5zvQtOQT0" />
+    <meta name="build-revision" content="dcd643e9ea2a753318428b65a5e32b1466fcfcb3" />
+    <meta name="build-date" content="2020-05-05 07:26:12-05:00" />
+
+    <!--[if lt IE 9]>
+    <script src="/assets/js/html5shim.js"></script>
+    <![endif]-->
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Le styles -->
+    <link rel="stylesheet" href="/assets/css/site.css?_=1588681572">
+    <link rel="stylesheet" href="/assets/css/bootstrap-responsive.css?_=1588681572">
+    <link rel="stylesheet" href="/assets/css/fontawesome-all.min.css?_=1588681572">
+    <link rel="stylesheet" href="/assets/css/prettify.css?_=1588681572">
+    <link rel="stylesheet" href="/assets/css/lightbox.css?_=1588681572">
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="/assets/img/tentacle-32x32.png">
+
+    <!-- Le RSS feed -->
+    <link rel="alternate" type="application/rss+xml" title="OctoPrint Plugin Repository: New Plugins" href="/feed.xml">
+
+    <!-- Le social media meta data -->
+    
+    
+    
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@OctoPrint3D" />
+    <meta name="twitter:title" content="The Spaghetti Detective" />
+    <meta name="twitter:description" content="Can’t sleep well whenever your 3D printer is printing at night? Always worried that your print may fail when you are not home?
+
+" />
+    <meta name="twitter:image" content="https://plugins.octoprint.org" />
+
+    <meta property="og:title" content="The Spaghetti Detective" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://plugins.octoprint.org/assets/img/plugins/thespaghettidetective/video_preview1.png" />
+    <meta property="og:description" content="Can’t sleep well whenever your 3D printer is printing at night? Always worried that your print may fail when you are not home?
+
+" />
+    <meta property="og:site_name" content="OctoPrint Plugin Repository" />
+    <meta property="og:url" content="https://plugins.octoprint.org/plugins/thespaghettidetective/" />
+
+    <meta itemscope itemtype="http://schema.org/WebPage" />
+    <meta itemprop="headline" content="The Spaghetti Detective" />
+    <meta itemprop="description" content="Can’t sleep well whenever your 3D printer is printing at night? Always worried that your print may fail when you are not home?
+
+" />
+    <meta itemprop="image" content="https://plugins.octoprint.org/assets/img/plugins/thespaghettidetective/video_preview1.png" />
+
+    <script src="/assets/js/jquery-1.9.1.min.js"></script>
+    <script src="/assets/js/underscore.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/cookieconsent.min.css" />
+    <script src="/assets/js/cookieconsent.min.js"></script>
+    <script>
+        if (!String.prototype.startsWith) {
+            String.prototype.startsWith = function(search, pos) {
+            return this.substr(!pos || pos < 0 ? 0 : +pos, search.length) === search;
+            };
+        }
+
+        window.addEventListener("load", function(){
+            window.cookieconsent.initialise({
+                "position": "bottom",
+                "theme": "edgeless",
+                "palette": {
+                    "popup": {
+                        "background": "#000000",
+                        "link": "#10a800"
+                    },
+                    "button": {
+                        "background": "#0b7500"
+                    }
+                }
+            })
+        });
+
+        /**
+         * Make sure octoprint.github.io stuff gets rewritten to plugins.octoprint.org.
+         * See https://github.com/OctoPrint/plugins.octoprint.org/issues/146.
+         */
+        var githubio = "octoprint.github.io/plugins.octoprint.org";
+        var url = window.location.href;
+        if (url && (url.startsWith("http://" + githubio) || url.startsWith("https://" + githubio))) {
+            url = url.replace(githubio, "plugins.octoprint.org");
+            window.location.replace(url);
+        }
+    </script>
+</head>
+
+<body>
+
+<div class="navbar navbar-inverse navbar-static-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand" href="/"><img src="/assets/img/tentacle-20x20.png" alt="Tentacle logo" class="tentacle"> Plugin Repo</a>
+      <a href="javascript:void(0)" class="btn btn-burger btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><i class="fas fa-bars"></i></a>
+      <div class="pull-right">
+        <ul class="nav social-navbar">
+          <li><a href="https://octoprint.org/merch/" title="Get some merchandise!" target="_blank"><i class="fa fa-shopping-basket"></i></a></li>
+          <li><a href="https://octoprint.org/support-octoprint/" title="Support OctoPrint!" data-event-category="supportlink" data-event-action="navigation" target="_blank"><i class="fas fa-donate"></i></a></li>
+        </ul>
+      </div>
+      <div class="nav-collapse collapse">
+        <ul class="nav">
+          <li><a href="/by_name/">by Name</a></li>
+          <li><a href="/by_date/">by Date</a></li>
+          <li><a href="/by_tag/">by Tag</a></li>
+          <li><a href="/by_author/">by Author</a></li>
+          <li><form class="navbar-search pull-right" action="/search/" method="get"><input type="text" class="input-medium search-query" placeholder="Enter search &amp; hit enter..." name="q"></form></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">Help <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="/help/installation/">Installing Plugins</a></li>
+              <li><a href="/help/registering/">Registering Plugins</a></li>
+              <li><a href="http://docs.octoprint.org/en/master/plugins/gettingstarted.html">The Plugin Tutorial</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">Lists <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="/blacklist/">Blacklist</a></li>
+              <li><a href="/notices/">Notices</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="wrap">
+    <div id="main">
+    
+
+
+
+
+
+
+<div class="page-header">
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+        <h1>The Spaghetti Detective</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row-fluid">
+    
+    <small class="pull-left"><a href="/plugins/terminalcommandsextended/"><i class="fa fa-double-angle-left"></i>&nbsp;Terminal Commands Extended</a></small>
+    
+    &nbsp;
+    
+    <small class="pull-right"><a href="/plugins/themeify/">Themeify&nbsp;<i class="fa fa-double-angle-right"></i></a></small>
+    
+  </div>
+  <div class="content plugin-content row-fluid">
+    <article class="post-content span8">
+      
+      
+      
+
+      <p class="lead">
+        An essential plugin if you print remotely. Monitor and control your printer over the internet. No port-forwarding or VPN is needed. Best part? AI-based failure detection!
+      </p>
+      <p><strong>Can’t sleep well whenever your 3D printer is printing at night? Always worried that your print may fail when you are not home?</strong></p>
+
+<p><a href="https://www.thespaghettidetective.com">The Spaghetti Detective</a> constantly watches your prints when you are not. It uses AI (Deep Learning) to analyze webcam images in the background and alerts you when your print shows the signs of failing.</p>
+
+<p>It also comes with a host of other features so that you can <strong>print remotely with a peace of mind even when you are not home</strong>.</p>
+
+<ul>
+  <li>
+    <p>Remote webcam access. No port-forwarding or VPN required.</p>
+  </li>
+  <li>
+    <p>Remote control of your printer. Pause or cancel print at any time. Check and set heater temperatures or turn them off.</p>
+  </li>
+  <li>
+    <p>Easy share of your webcam streaming or time-lapses with your friend (ETA Dec. 2019).</p>
+  </li>
+</ul>
+
+<div class="responsive_iframe">
+	<div class="yt-with-consent" data-vid="ZpDw9mNBngU" data-preview="'/assets/img/plugins/thespaghettidetective/video_preview1.png'"></div>
+</div>
+
+<p><br /></p>
+
+<h2 id="sounds-cool-but-does-this-ai-thing-really-work">Sounds cool! But does this AI thing really work?</h2>
+
+<p>The Spaghetti Detective is still at early stage so it doesn’t always get it right. But many beta testers have already written to us and told us “hey it worked!”. Here are a few time-lapses from our users:</p>
+
+<div class="responsive_iframe">
+	<div class="yt-with-consent" data-vid="znI9_Vs6X9c" data-preview="'/assets/img/plugins/thespaghettidetective/video_preview2.png'"></div>
+</div>
+
+<p>From beta tester <strong>Torsten</strong></p>
+
+<div class="responsive_iframe">
+	<div class="yt-with-consent" data-vid="btNtCFfFYk0" data-preview="'/assets/img/plugins/thespaghettidetective/video_preview3.png'"></div>
+</div>
+
+<p>From beta tester <strong>Lila</strong></p>
+
+<p>If you can’t have enough spaghetti (pun intended), head to our <a href="https://app.thespaghettidetective.com/publictimelapses/">Spaghetti Gallery</a> for more time-lapses.</p>
+
+<h2 id="how-about-webcam-streaming">How about webcam streaming?</h2>
+
+<p>Glad that you asked! The Spaghetti Detective has a shiny new feature - webcam streaming in 25 frames per second (Pro subscriber only)! Check out this video and be amazed about how smooth the webcam streaming is!</p>
+
+<div class="responsive_iframe">
+	<div class="yt-with-consent" data-vid="UgGzcuX6Z1A" data-preview="'/assets/img/plugins/thespaghettidetective/streaming.png'"></div>
+</div>
+
+<h2 id="install-and-setup">Install and setup</h2>
+
+<p>Setting up The Spaghetti Detective is quite straightforward. Just install this plugin and follow the steps on the wizard screen and you will be all set.</p>
+
+<p>If you run into any difficulties, check out the <a href="https://www.thespaghettidetective.com/docs/octoprint-plugin-setup/">Setup Guide</a>.</p>
+
+<p><img src="/assets/img/plugins/thespaghettidetective/plugin_wizard.png" alt="wizard" title="The Spaghetti Detective Set up Wizard" /></p>
+
+<h2 id="does-it-cost-anything">Does it cost anything?</h2>
+
+<p>Yes and No.</p>
+
+<ul>
+  <li>First and foremost, The Spaghetti Detective is an <a href="https://github.com/TheSpaghettiDetective">open source project</a>. You can always grab the code and run the server yourself.</li>
+  <li>If you want to skip the hassle and risk of setting up the server and exposing it to internet, you can use The Spaghetti Detective cloud. You can have a free account with limited service, or upgrade to a paid account for a couple coffees a month if you want unrestricted access and features. Check out the <a href="https://app.thespaghettidetective.com/ent/pricing/">pricing</a>.</li>
+</ul>
+
+<hr />
+
+<p><em>Questions? Comments? Run into problems? <a href="mailto:support@thespaghettidetective.com">Reach out to us</a>.</em></p>
+
+<p><em>Support us by liking us or following us on social media:</em>  <a href="https://www.facebook.com/pg/thespaghettidetective/posts/"><i class="fab fa-facebook fa-2x" style="color: rgb(121, 53, 241);"></i></a> <a href="https://www.youtube.com/channel/UCbAJcR6t5lrdZ1JXjPPRjGA/featured?view_as=subscriber"><i class="fab fa-youtube-square fa-2x" style="color: rgb(121, 53, 241);"></i></a> <a href="https://twitter.com/thespaghettispy"><i class="fab fa-twitter-square fa-2x" style="color: rgb(121, 53, 241);"></i></a></p>
+
+
+      
+    </article>
+
+    <div class="span4">
+      <dl class="adbox">
+        <dd class="ad">
+          <script>
+    if (!window["carbon-disable"]) {
+        (function() {
+            var po = document.createElement("script");
+            po.type = "text/javascript";
+            po.async = true;
+            po.src  = "//cdn.carbonads.com/carbon.js?serve=CK7DT237&placement=pluginsoctoprintorg";
+            po.id = "_carbonads_js";
+            var s = document.currentScript;
+            s.parentNode.insertBefore(po, s);
+        })();
+    }
+</script>
+        </dd>
+      </dl>
+      
+      <dl class="installation">
+        <dt>Installation <a href="/help/installation/" class="fas fa-question-circle"></a></dt>
+        
+        <dd>
+          URL:
+          <pre>https://github.com/TheSpaghettiDetective/OctoPrint-TheSpaghettiDetective/archive/master.zip</pre>
+          
+        </dd>
+        
+        
+        <dd>
+          Command line:
+          <pre>pip install "https://github.com/TheSpaghettiDetective/OctoPrint-TheSpaghettiDetective/archive/master.zip"</pre>
+        </dd>
+        
+      </dl>
+      
+      
+      <dl class="date">
+        <dt>Registration date</dt>
+        <dd>07 Nov 2019</dd>
+      </dl>
+      
+      
+      <dl class="tags">
+        <dt>Tags</dt>
+        <dd>
+          
+          
+          
+          
+          <a class="label" href="/by_tag/#tag-ai">ai</a>
+          
+          <a class="label" href="/by_tag/#tag-control">control</a>
+          
+          <a class="label" href="/by_tag/#tag-internet">internet</a>
+          
+          <a class="label" href="/by_tag/#tag-machine-learning">machine learning</a>
+          
+          <a class="label" href="/by_tag/#tag-monitor">monitor</a>
+          
+          <a class="label" href="/by_tag/#tag-monitoring">monitoring</a>
+          
+          <a class="label" href="/by_tag/#tag-phone">phone</a>
+          
+          <a class="label" href="/by_tag/#tag-port-forwarding">port forwarding</a>
+          
+          <a class="label" href="/by_tag/#tag-remote">remote</a>
+          
+          <a class="label" href="/by_tag/#tag-webcam">webcam</a>
+          
+        </dd>
+      </dl>
+      
+      <dl class="compatibility">
+        <dt>Compatibility Information</dt>
+        <dd>
+          <ul>
+            
+            <li>OctoPrint: 1.3.2+</li>
+            
+            
+            <li>Operating Systems: Linux, Windows, Mac OS X, FreeBSD</li>
+            
+            
+            <li>Python: &gt;=2.7,&lt;3</li>
+            
+          </ul>
+        </dd>
+      </dl>
+      
+      <dl class="author">
+        <dt>Author</dt>
+        <dd>The Spaghetti Detective Team</dd>
+      </dl>
+      
+      
+      <dl class="homepage">
+        <dt>Homepage</dt>
+        <dd><a href="https://www.thespaghettidetective.com" target="_blank">https://www.thespaghettidetective.com</a></dd>
+      </dl>
+      
+      
+      <dl class="source">
+        <dt>Source</dt>
+        <dd><a href="https://github.com/TheSpaghettiDetective/OctoPrint-TheSpaghettiDetective" target="_blank">https://github.com/TheSpaghettiDetective/OctoPrint-TheSpaghettiDetective</a></dd>
+      </dl>
+      
+      
+      <dl class="license">
+        <dt>License</dt>
+        <dd>AGPLv3</dd>
+      </dl>
+      
+      <dl class="issue">
+        <dt>Something wrong here?</dt>
+        <dd>
+          <p>
+            If there is <strong>something wrong with this listing</strong> (broken links & images etc), please
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=bug&template=listing_error.md&title=%5BListing+Error%5D+The+Spaghetti+Detective">report it here</a>.
+          </p>
+          <p>
+            If this plugin <strong>has been <em>confirmed</em> as abandoned</strong> by its maintainer, please
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=abandoned+plugin&template=abandoned_plugin.md&title=%5BAbandoned+Plugin%5D+The+Spaghetti+Detective">report it here</a>.
+          </p>
+          <p>
+            If this plugin is <strong>doing something suspicious</strong> (e.g. weird network activity, unannounced tracking, ...) and
+            the maintainer is not cooperating in getting to the bottom of that, please
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=suspicious+plugin+activity&template=suspicious_plugin_activity.md&title=%5BSuspicious+Plugin+Activity%5D+The+Spaghetti+Detective">report the plugin as suspicious here</a>.
+          </p>
+          <p>
+            Report bugs or feature requests for the plugin to the plugin author (e.g. on the plugin's <a href="https://www.thespaghettidetective.com">homepage</a>) please, not here!
+          </p>
+        </dd>
+      </dl>
+    </div>
+
+  </div>
+</div>
+
+
+    </div>
+</div>
+
+      <footer>
+          <div class="container">
+              <div class="row">
+                  <div class="span4">
+                      <h2>On the web</h2>
+                      <ul class="fa-ul">
+                          <li><span class="fa-li"><i class="fas fa-users fa-fw"></i></span><a href="https://community.octoprint.org">Community Forum</a></li>
+                          <li><span class="fa-li"><i class="fas fa-comments fa-fw"></i></span><a href="irc://chat.freenode.net/octoprint" target="_blank">#octoprint on freenode</a> (<a href="https://chat.octoprint.org">Webchat</a>, <a href="https://freenode.logbot.info/octoprint">Logs</a>)</li>
+                          <li><span class="fa-li"><i class="fab fa-twitter fa-fw"></i></span><a href="https://twitter.com/OctoPrint3D" target="_blank">@OctoPrint3D</a></li>
+                          <li><span class="fa-li"><i class="fab fa-facebook-f fa-fw"></i></span><a href="https://facebook.com/OctoPrint" target="_blank">OctoPrint</a></li>
+                          <li><span class="fa-li"><i class="fab fa-youtube fa-fw"></i></span><a href="https://www.youtube.com/c/OctoPrint3D" target="_blank">OctoPrint</a></li>
+                          <li><span class="fa-li"><i class="fas fa-tachometer-alt fa-fw"></i></span><a href="https://status.octoprint.org" target="_blank">Site Status</a></li>
+                          <li><span class="fa-li"><i class="fas fa-gavel fa-fw"></i></span><a href="https://octoprint.org/imprint/" rel="nofollow">Legal Notice</a></li>
+                          <li><span class="fa-li"><i class="fas fa-gavel fa-fw"></i></span><a href="https://octoprint.org/privacy/" rel="nofollow">Privacy Policy</a></li>
+                      </ul>
+                  </div>
+                  <div class="span4">
+                      <h2>Recently Added</h2>
+                      <ul>
+                          
+                          
+                          <li>
+                              <a class="post-link" href="/plugins/smartpreheat/">Smart Preheat</a>
+                          </li>
+                          
+                          <li>
+                              <a class="post-link" href="/plugins/printoid/">OctoPrint-Printoid</a>
+                          </li>
+                          
+                          <li>
+                              <a class="post-link" href="/plugins/webhooks/">OctoPrint-Webhooks</a>
+                          </li>
+                          
+                          <li>
+                              <a class="post-link" href="/plugins/emergencystopsimplified/">Emergency Stop Simplified</a>
+                          </li>
+                          
+                          <li>
+                              <a class="post-link" href="/plugins/TemperatureLegendMover/">TemperatureLegendMover</a>
+                          </li>
+                          
+                      </ul>
+                  </div>
+                  <div class="span4 hidden-phone">
+                      <a href="http://octoprint.org"><img src="/assets/img/logo-footer.png" alt="Octopus logo" class="pull-right"></a>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="span12 text-center legal">
+                      <small>"OctoPrint" is a <a href="http://octoprint.org/trademark-rules/">registered trademark</a></small>
+                  </div>
+              </div>
+          </div>
+      </footer>
+
+
+<script src="/assets/js/prettify.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+<script src="/assets/js/lunr.min.js"></script>
+<script src="/assets/js/mustache.js"></script>
+<script src="/assets/js/URI.min.js"></script>
+<script src="/assets/js/date.format.js"></script>
+<script src="/assets/js/jquery.lunr.search.js"></script>
+<script src="/assets/js/lightbox.min.js"></script>
+<script src="/assets/js/site.js"></script>
+<script src="/assets/js/autotrack.js"></script>
+<script src="/assets/js/yt-with-consent.js"></script>
+
+<script>
+    var gaBaseProperty = 'UA-62479257';
+    var gaProperty = gaBaseProperty + '-2';
+
+    // opt out
+    var disableStr = 'ga-disable-' + gaProperty;
+    var disableCookie = 'ga-disable-' + gaBaseProperty;
+    function gaOptout() {
+        document.cookie = disableCookie + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/; domain=octoprint.org';
+        window[disableStr] = true;
+        alert("Google Analytics ist jetzt deaktiviert! / Google Analytics is now deactivated!")
+    }
+
+    // tracking code
+    if (document.cookie.indexOf(disableCookie + '=true') > -1) {
+        window[disableStr] = true;
+    } else {
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', gaProperty, 'auto');
+        ga('require', 'autotrack');
+        ga('set', 'anonymizeIp', true);
+        ga('send', 'pageview');
+    }
+</script>
+
+</body>
+</html>

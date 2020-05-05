@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en" xmlns="http://www.w3.org/1999/html"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+    <title>xMatters Integration</title>
+    <meta name="description" content="Event notifications using xMatters">
+    <meta name="author" content="svv2014">
+    <meta name="referrer" content="same-origin">
+    <meta name="google-site-verification" content="0EFsbaNygJcEinKPmzP-hTf0Ju6wDIpJxO5zvQtOQT0" />
+    <meta name="build-revision" content="dcd643e9ea2a753318428b65a5e32b1466fcfcb3" />
+    <meta name="build-date" content="2020-05-05 07:26:12-05:00" />
+
+    <!--[if lt IE 9]>
+    <script src="/assets/js/html5shim.js"></script>
+    <![endif]-->
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Le styles -->
+    <link rel="stylesheet" href="/assets/css/site.css?_=1588681572">
+    <link rel="stylesheet" href="/assets/css/bootstrap-responsive.css?_=1588681572">
+    <link rel="stylesheet" href="/assets/css/fontawesome-all.min.css?_=1588681572">
+    <link rel="stylesheet" href="/assets/css/prettify.css?_=1588681572">
+    <link rel="stylesheet" href="/assets/css/lightbox.css?_=1588681572">
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="/assets/img/tentacle-32x32.png">
+
+    <!-- Le RSS feed -->
+    <link rel="alternate" type="application/rss+xml" title="OctoPrint Plugin Repository: New Plugins" href="/feed.xml">
+
+    <!-- Le social media meta data -->
+    
+    
+    
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@OctoPrint3D" />
+    <meta name="twitter:title" content="xMatters Integration" />
+    <meta name="twitter:description" content="The plugin allows OctoPrint to send notifications on events using xMatters.
+
+" />
+    <meta name="twitter:image" content="https://plugins.octoprint.org" />
+
+    <meta property="og:title" content="xMatters Integration" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://plugins.octoprint.org/assets/img/plugins/xMattersIntegration/settings.png" />
+    <meta property="og:description" content="The plugin allows OctoPrint to send notifications on events using xMatters.
+
+" />
+    <meta property="og:site_name" content="OctoPrint Plugin Repository" />
+    <meta property="og:url" content="https://plugins.octoprint.org/plugins/xMattersIntegration/" />
+
+    <meta itemscope itemtype="http://schema.org/WebPage" />
+    <meta itemprop="headline" content="xMatters Integration" />
+    <meta itemprop="description" content="The plugin allows OctoPrint to send notifications on events using xMatters.
+
+" />
+    <meta itemprop="image" content="https://plugins.octoprint.org/assets/img/plugins/xMattersIntegration/settings.png" />
+
+    <script src="/assets/js/jquery-1.9.1.min.js"></script>
+    <script src="/assets/js/underscore.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/cookieconsent.min.css" />
+    <script src="/assets/js/cookieconsent.min.js"></script>
+    <script>
+        if (!String.prototype.startsWith) {
+            String.prototype.startsWith = function(search, pos) {
+            return this.substr(!pos || pos < 0 ? 0 : +pos, search.length) === search;
+            };
+        }
+
+        window.addEventListener("load", function(){
+            window.cookieconsent.initialise({
+                "position": "bottom",
+                "theme": "edgeless",
+                "palette": {
+                    "popup": {
+                        "background": "#000000",
+                        "link": "#10a800"
+                    },
+                    "button": {
+                        "background": "#0b7500"
+                    }
+                }
+            })
+        });
+
+        /**
+         * Make sure octoprint.github.io stuff gets rewritten to plugins.octoprint.org.
+         * See https://github.com/OctoPrint/plugins.octoprint.org/issues/146.
+         */
+        var githubio = "octoprint.github.io/plugins.octoprint.org";
+        var url = window.location.href;
+        if (url && (url.startsWith("http://" + githubio) || url.startsWith("https://" + githubio))) {
+            url = url.replace(githubio, "plugins.octoprint.org");
+            window.location.replace(url);
+        }
+    </script>
+</head>
+
+<body>
+
+<div class="navbar navbar-inverse navbar-static-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand" href="/"><img src="/assets/img/tentacle-20x20.png" alt="Tentacle logo" class="tentacle"> Plugin Repo</a>
+      <a href="javascript:void(0)" class="btn btn-burger btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><i class="fas fa-bars"></i></a>
+      <div class="pull-right">
+        <ul class="nav social-navbar">
+          <li><a href="https://octoprint.org/merch/" title="Get some merchandise!" target="_blank"><i class="fa fa-shopping-basket"></i></a></li>
+          <li><a href="https://octoprint.org/support-octoprint/" title="Support OctoPrint!" data-event-category="supportlink" data-event-action="navigation" target="_blank"><i class="fas fa-donate"></i></a></li>
+        </ul>
+      </div>
+      <div class="nav-collapse collapse">
+        <ul class="nav">
+          <li><a href="/by_name/">by Name</a></li>
+          <li><a href="/by_date/">by Date</a></li>
+          <li><a href="/by_tag/">by Tag</a></li>
+          <li><a href="/by_author/">by Author</a></li>
+          <li><form class="navbar-search pull-right" action="/search/" method="get"><input type="text" class="input-medium search-query" placeholder="Enter search &amp; hit enter..." name="q"></form></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">Help <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="/help/installation/">Installing Plugins</a></li>
+              <li><a href="/help/registering/">Registering Plugins</a></li>
+              <li><a href="http://docs.octoprint.org/en/master/plugins/gettingstarted.html">The Plugin Tutorial</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">Lists <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="/blacklist/">Blacklist</a></li>
+              <li><a href="/notices/">Notices</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="wrap">
+    <div id="main">
+    
+
+
+
+
+
+
+<div class="page-header">
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+        <h1>xMatters Integration</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row-fluid">
+    
+    <small class="pull-left"><a href="/plugins/LCD1602_I2cdisplay/"><i class="fa fa-double-angle-left"></i>&nbsp;octoprint-LCD1602</a></small>
+    
+    &nbsp;
+    
+  </div>
+  <div class="content plugin-content row-fluid">
+    <article class="post-content span8">
+      
+      
+      
+
+      <p class="lead">
+        Event notifications using xMatters
+      </p>
+      <p>The plugin allows OctoPrint to send notifications on events using <a href="https://www.xmatters.com/">xMatters</a>.</p>
+
+<h2 id="setup">Setup</h2>
+
+<h3 id="xmatter-integration-setup">xMatter integration setup</h3>
+
+<ul>
+  <li>Open your xMatters page</li>
+  <li>go to page: Developer &gt; Communication Plans</li>
+  <li>Import zip file from <a href="https://github.com/svv2014/OctoPrint-xMatters-integration/tree/master/xMatters">xMatters/OctoPrintIntegration.zip</a>
+    <ul>
+      <li>this will create communication plan for integration</li>
+    </ul>
+  </li>
+  <li>On communication plan press <code class="language-plaintext highlighter-rouge">Edit</code> and choose <code class="language-plaintext highlighter-rouge">Integration Builder</code></li>
+  <li>You should see one configured <code class="language-plaintext highlighter-rouge">Inbound integration</code>
+    <ul>
+      <li>Note if <code class="language-plaintext highlighter-rouge">Inbound integrations</code> configuration was not imported you may need to create once with <code class="language-plaintext highlighter-rouge">authentication method</code> equals to <code class="language-plaintext highlighter-rouge">API key</code>.</li>
+    </ul>
+  </li>
+  <li>Open this configuration and at the bottom you will find all needed credentials</li>
+</ul>
+
+<h3 id="configuration">Configuration</h3>
+
+<ul>
+  <li>Take <code class="language-plaintext highlighter-rouge">API Key</code>, <code class="language-plaintext highlighter-rouge">Secret</code>, <code class="language-plaintext highlighter-rouge">Integration URL</code> from xMatters integration and set it in plugin configuration
+    <ul>
+      <li>Note: for <code class="language-plaintext highlighter-rouge">recipients</code> field use comma separated user id</li>
+    </ul>
+  </li>
+  <li>Choose events you interested in and enjoy.</li>
+</ul>
+
+
+      
+        <h2>Pictures</h2>
+        
+        <figure>
+          
+          <a href="/assets/img/plugins/xMattersIntegration/settings.png" data-lightbox="/plugins/xMattersIntegration" data-title="plugin settings"><img src="/assets/img/plugins/xMattersIntegration/settings.png" alt="plugin settings" title="plugin settings"></a>
+        </figure>
+        
+      
+    </article>
+
+    <div class="span4">
+      <dl class="adbox">
+        <dd class="ad">
+          <script>
+    if (!window["carbon-disable"]) {
+        (function() {
+            var po = document.createElement("script");
+            po.type = "text/javascript";
+            po.async = true;
+            po.src  = "//cdn.carbonads.com/carbon.js?serve=CK7DT237&placement=pluginsoctoprintorg";
+            po.id = "_carbonads_js";
+            var s = document.currentScript;
+            s.parentNode.insertBefore(po, s);
+        })();
+    }
+</script>
+        </dd>
+      </dl>
+      
+      <dl class="installation">
+        <dt>Installation <a href="/help/installation/" class="fas fa-question-circle"></a></dt>
+        
+        <dd>
+          URL:
+          <pre>https://github.com/svv2014/OctoPrint-Xmatters-integration/archive/master.zip</pre>
+          
+        </dd>
+        
+        
+        <dd>
+          Command line:
+          <pre>pip install "https://github.com/svv2014/OctoPrint-Xmatters-integration/archive/master.zip"</pre>
+        </dd>
+        
+      </dl>
+      
+      
+      <dl class="date">
+        <dt>Registration date</dt>
+        <dd>04 Mar 2019</dd>
+      </dl>
+      
+      
+      <dl class="tags">
+        <dt>Tags</dt>
+        <dd>
+          
+          
+          
+          
+          <a class="label" href="/by_tag/#tag-events">events</a>
+          
+          <a class="label" href="/by_tag/#tag-monitoring">monitoring</a>
+          
+          <a class="label" href="/by_tag/#tag-notifications">notifications</a>
+          
+          <a class="label" href="/by_tag/#tag-xmatters">xmatters</a>
+          
+        </dd>
+      </dl>
+      
+      <dl class="compatibility">
+        <dt>Compatibility Information</dt>
+        <dd>
+          <ul>
+            
+            <li>OctoPrint: all versions</li>
+            
+            
+            <li>Operating Systems: all</li>
+            
+            
+            <li>Python: &gt;=2.7,&lt;3</li>
+            
+          </ul>
+        </dd>
+      </dl>
+      
+      <dl class="author">
+        <dt>Author</dt>
+        <dd>svv2014</dd>
+      </dl>
+      
+      
+      <dl class="homepage">
+        <dt>Homepage</dt>
+        <dd><a href="https://github.com/svv2014/OctoPrint-xMatters-integration" target="_blank">https://github.com/svv2014/OctoPrint-xMatters-integration</a></dd>
+      </dl>
+      
+      
+      <dl class="source">
+        <dt>Source</dt>
+        <dd><a href="https://github.com/svv2014/OctoPrint-xMatters-integration" target="_blank">https://github.com/svv2014/OctoPrint-xMatters-integration</a></dd>
+      </dl>
+      
+      
+      <dl class="license">
+        <dt>License</dt>
+        <dd>AGPLv3</dd>
+      </dl>
+      
+      <dl class="issue">
+        <dt>Something wrong here?</dt>
+        <dd>
+          <p>
+            If there is <strong>something wrong with this listing</strong> (broken links & images etc), please
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=bug&template=listing_error.md&title=%5BListing+Error%5D+xMatters+Integration">report it here</a>.
+          </p>
+          <p>
+            If this plugin <strong>has been <em>confirmed</em> as abandoned</strong> by its maintainer, please
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=abandoned+plugin&template=abandoned_plugin.md&title=%5BAbandoned+Plugin%5D+xMatters+Integration">report it here</a>.
+          </p>
+          <p>
+            If this plugin is <strong>doing something suspicious</strong> (e.g. weird network activity, unannounced tracking, ...) and
+            the maintainer is not cooperating in getting to the bottom of that, please
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=suspicious+plugin+activity&template=suspicious_plugin_activity.md&title=%5BSuspicious+Plugin+Activity%5D+xMatters+Integration">report the plugin as suspicious here</a>.
+          </p>
+          <p>
+            Report bugs or feature requests for the plugin to the plugin author (e.g. on the plugin's <a href="https://github.com/svv2014/OctoPrint-xMatters-integration">homepage</a>) please, not here!
+          </p>
+        </dd>
+      </dl>
+    </div>
+
+  </div>
+</div>
+
+
+    </div>
+</div>
+
+      <footer>
+          <div class="container">
+              <div class="row">
+                  <div class="span4">
+                      <h2>On the web</h2>
+                      <ul class="fa-ul">
+                          <li><span class="fa-li"><i class="fas fa-users fa-fw"></i></span><a href="https://community.octoprint.org">Community Forum</a></li>
+                          <li><span class="fa-li"><i class="fas fa-comments fa-fw"></i></span><a href="irc://chat.freenode.net/octoprint" target="_blank">#octoprint on freenode</a> (<a href="https://chat.octoprint.org">Webchat</a>, <a href="https://freenode.logbot.info/octoprint">Logs</a>)</li>
+                          <li><span class="fa-li"><i class="fab fa-twitter fa-fw"></i></span><a href="https://twitter.com/OctoPrint3D" target="_blank">@OctoPrint3D</a></li>
+                          <li><span class="fa-li"><i class="fab fa-facebook-f fa-fw"></i></span><a href="https://facebook.com/OctoPrint" target="_blank">OctoPrint</a></li>
+                          <li><span class="fa-li"><i class="fab fa-youtube fa-fw"></i></span><a href="https://www.youtube.com/c/OctoPrint3D" target="_blank">OctoPrint</a></li>
+                          <li><span class="fa-li"><i class="fas fa-tachometer-alt fa-fw"></i></span><a href="https://status.octoprint.org" target="_blank">Site Status</a></li>
+                          <li><span class="fa-li"><i class="fas fa-gavel fa-fw"></i></span><a href="https://octoprint.org/imprint/" rel="nofollow">Legal Notice</a></li>
+                          <li><span class="fa-li"><i class="fas fa-gavel fa-fw"></i></span><a href="https://octoprint.org/privacy/" rel="nofollow">Privacy Policy</a></li>
+                      </ul>
+                  </div>
+                  <div class="span4">
+                      <h2>Recently Added</h2>
+                      <ul>
+                          
+                          
+                          <li>
+                              <a class="post-link" href="/plugins/smartpreheat/">Smart Preheat</a>
+                          </li>
+                          
+                          <li>
+                              <a class="post-link" href="/plugins/printoid/">OctoPrint-Printoid</a>
+                          </li>
+                          
+                          <li>
+                              <a class="post-link" href="/plugins/webhooks/">OctoPrint-Webhooks</a>
+                          </li>
+                          
+                          <li>
+                              <a class="post-link" href="/plugins/emergencystopsimplified/">Emergency Stop Simplified</a>
+                          </li>
+                          
+                          <li>
+                              <a class="post-link" href="/plugins/TemperatureLegendMover/">TemperatureLegendMover</a>
+                          </li>
+                          
+                      </ul>
+                  </div>
+                  <div class="span4 hidden-phone">
+                      <a href="http://octoprint.org"><img src="/assets/img/logo-footer.png" alt="Octopus logo" class="pull-right"></a>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="span12 text-center legal">
+                      <small>"OctoPrint" is a <a href="http://octoprint.org/trademark-rules/">registered trademark</a></small>
+                  </div>
+              </div>
+          </div>
+      </footer>
+
+
+<script src="/assets/js/prettify.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+<script src="/assets/js/lunr.min.js"></script>
+<script src="/assets/js/mustache.js"></script>
+<script src="/assets/js/URI.min.js"></script>
+<script src="/assets/js/date.format.js"></script>
+<script src="/assets/js/jquery.lunr.search.js"></script>
+<script src="/assets/js/lightbox.min.js"></script>
+<script src="/assets/js/site.js"></script>
+<script src="/assets/js/autotrack.js"></script>
+<script src="/assets/js/yt-with-consent.js"></script>
+
+<script>
+    var gaBaseProperty = 'UA-62479257';
+    var gaProperty = gaBaseProperty + '-2';
+
+    // opt out
+    var disableStr = 'ga-disable-' + gaProperty;
+    var disableCookie = 'ga-disable-' + gaBaseProperty;
+    function gaOptout() {
+        document.cookie = disableCookie + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/; domain=octoprint.org';
+        window[disableStr] = true;
+        alert("Google Analytics ist jetzt deaktiviert! / Google Analytics is now deactivated!")
+    }
+
+    // tracking code
+    if (document.cookie.indexOf(disableCookie + '=true') > -1) {
+        window[disableStr] = true;
+    } else {
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', gaProperty, 'auto');
+        ga('require', 'autotrack');
+        ga('set', 'anonymizeIp', true);
+        ga('send', 'pageview');
+    }
+</script>
+
+</body>
+</html>

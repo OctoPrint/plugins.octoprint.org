@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>OctoPrint Plugin Repository</title>
+    <description>The official OctoPrint Plugin Repository</description>
+    <link>http://plugins.octoprint.org/</link>
+    <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 05 May 2020 07:26:12 -0500</pubDate>
+    <lastBuildDate>Tue, 05 May 2020 07:26:12 -0500</lastBuildDate>
+    <generator>Jekyll v3.8.5</generator>
+    
+    
+      <item>
+        <title>Smart Preheat</title>
+        <description>
+          <![CDATA[
+            Parses GCode files and provides variables that can be accessed in GCode scripts. Reduces heatup time and allows for preheating before bed leveling.
+            <p><img src="https://raw.githubusercontent.com/kantlivelong/OctoPrint-SmartPreheat/master/extra/screenshots/beforePrintStarted.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Sat, 02 May 2020 00:00:00 -0500
+</pubDate>
+        <link>http://plugins.octoprint.org/plugins/smartpreheat/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">http://plugins.octoprint.org/plugins/smartpreheat/</guid>
+        
+        <category>preheat</category>
+        
+        <category>temperature</category>
+        
+      </item>
+    
+      <item>
+        <title>OctoPrint-Printoid</title>
+        <description>
+          <![CDATA[
+            Notifications plugin for Printoid (Android app for OctoPrint)
+            <p><img src="https://plugins.octoprint.org/assets/img/repo-600x400.png"></p>
+            
+          ]]>
+        </description>
+        <pubDate>
+Thu, 30 Apr 2020 00:00:00 -0500
+</pubDate>
+        <link>http://plugins.octoprint.org/plugins/printoid/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">http://plugins.octoprint.org/plugins/printoid/</guid>
+        
+        <category>printoid</category>
+        
+        <category>bed temperature</category>
+        
+        <category>print finished</category>
+        
+        <category>Android</category>
+        
+        <category>notifications</category>
+        
+      </item>
+    
+      <item>
+        <title>OctoPrint-Webhooks</title>
+        <description>
+          <![CDATA[
+            This allows you to send a webhook to any URL when events happen on OctoPrint.
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/webhooks/Featured.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Wed, 29 Apr 2020 00:00:00 -0500
+</pubDate>
+        <link>http://plugins.octoprint.org/plugins/webhooks/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">http://plugins.octoprint.org/plugins/webhooks/</guid>
+        
+        <category>webhook</category>
+        
+        <category>api</category>
+        
+        <category>url</category>
+        
+        <category>events</category>
+        
+        <category>prusa</category>
+        
+        <category>color change</category>
+        
+        <category>notification</category>
+        
+      </item>
+    
+      <item>
+        <title>Emergency Stop Simplified</title>
+        <description>
+          <![CDATA[
+            This plugin reacts to a switch or button, if triggered (switch open) it issues M112 command to printer.
+            <p><img src="https://plugins.octoprint.org/assets/img/repo-600x400.png"></p>
+            
+          ]]>
+        </description>
+        <pubDate>
+Sun, 26 Apr 2020 00:00:00 -0500
+</pubDate>
+        <link>http://plugins.octoprint.org/plugins/emergencystopsimplified/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">http://plugins.octoprint.org/plugins/emergencystopsimplified/</guid>
+        
+        <category>emergency</category>
+        
+        <category>stop</category>
+        
+        <category>simplified</category>
+        
+        <category>simple</category>
+        
+        <category>trigger</category>
+        
+        <category>button</category>
+        
+      </item>
+    
+      <item>
+        <title>TemperatureLegendMover</title>
+        <description>
+          <![CDATA[
+            Move the Temperature-Legend into a specific corner
+            <p><img src="https://github.com/OllisGit/OctoPrint-TemperatureLegendMover/raw/master/screenshots/temperature-legend.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Sun, 26 Apr 2020 00:00:00 -0500
+</pubDate>
+        <link>http://plugins.octoprint.org/plugins/TemperatureLegendMover/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">http://plugins.octoprint.org/plugins/TemperatureLegendMover/</guid>
+        
+        <category>temperature</category>
+        
+        <category>legend</category>
+        
+      </item>
+    
+      <item>
+        <title>Friendly Neighborhood Beeper</title>
+        <description>
+          <![CDATA[
+            Beeps after completion/failure of a print, but only during the specified hours
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/FriendlyBeeper/settings.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Sat, 25 Apr 2020 00:00:00 -0500
+</pubDate>
+        <link>http://plugins.octoprint.org/plugins/FriendlyNeighborhoodBeeper/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">http://plugins.octoprint.org/plugins/FriendlyNeighborhoodBeeper/</guid>
+        
+        <category>notification</category>
+        
+        <category>beep</category>
+        
+        <category>print finished</category>
+        
+        <category>simple</category>
+        
+        <category>control</category>
+        
+      </item>
+    
+      <item>
+        <title>Continuous Print</title>
+        <description>
+          <![CDATA[
+            Allows the queueing and automatic print and clearing of the queue
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/continuousprint/screenshot.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Fri, 24 Apr 2020 00:00:00 -0500
+</pubDate>
+        <link>http://plugins.octoprint.org/plugins/continuousprint/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">http://plugins.octoprint.org/plugins/continuousprint/</guid>
+        
+        <category>continuous print</category>
+        
+        <category>queueing</category>
+        
+      </item>
+    
+      <item>
+        <title>Filament Sensor Simplified</title>
+        <description>
+          <![CDATA[
+            This plugin reacts to filament sensor output. If triggered it issues M600 X0 Y0 command to printer.
+            <p><img src="https://github.com/LuckyX182/Filament_sensor_simplified/raw/master/screenshots/settings.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Thu, 23 Apr 2020 00:00:00 -0500
+</pubDate>
+        <link>http://plugins.octoprint.org/plugins/filamentsensorsimplified/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">http://plugins.octoprint.org/plugins/filamentsensorsimplified/</guid>
+        
+        <category>filament</category>
+        
+        <category>sensor</category>
+        
+        <category>simplified</category>
+        
+        <category>simple</category>
+        
+        <category>trigger</category>
+        
+        <category>runout</category>
+        
+      </item>
+    
+      <item>
+        <title>PrusaSlicer Thumbnails</title>
+        <description>
+          <![CDATA[
+            Extracts embedded thumbnails from PrusaSlicer gcode files.
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/prusaslicerthumbnails/screenshot_thumbnail.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Wed, 22 Apr 2020 00:00:00 -0500
+</pubDate>
+        <link>http://plugins.octoprint.org/plugins/prusaslicerthumbnails/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">http://plugins.octoprint.org/plugins/prusaslicerthumbnails/</guid>
+        
+        <category>thumbnail</category>
+        
+        <category>preview</category>
+        
+        <category>PrusaSlicer</category>
+        
+      </item>
+    
+      <item>
+        <title>Auto Terminal Input</title>
+        <description>
+          <![CDATA[
+            Automatically focuses the command input when switching to the Terminal tab in OctoPrint.
+            <p><img src="https://plugins.octoprint.org/assets/img/repo-600x400.png"></p>
+            
+          ]]>
+        </description>
+        <pubDate>
+Wed, 01 Apr 2020 00:00:00 -0500
+</pubDate>
+        <link>http://plugins.octoprint.org/plugins/AutoTerminalInput/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">http://plugins.octoprint.org/plugins/AutoTerminalInput/</guid>
+        
+        <category>terminal</category>
+        
+      </item>
+    
+  </channel>
+</rss>

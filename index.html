@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en" xmlns="http://www.w3.org/1999/html"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+    <title>OctoPrint Plugin Repository</title>
+    
+    
+    <meta name="referrer" content="same-origin">
+    <meta name="google-site-verification" content="0EFsbaNygJcEinKPmzP-hTf0Ju6wDIpJxO5zvQtOQT0" />
+    <meta name="build-revision" content="dcd643e9ea2a753318428b65a5e32b1466fcfcb3" />
+    <meta name="build-date" content="2020-05-05 07:26:12-05:00" />
+
+    <!--[if lt IE 9]>
+    <script src="/assets/js/html5shim.js"></script>
+    <![endif]-->
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Le styles -->
+    <link rel="stylesheet" href="/assets/css/site.css?_=1588681572">
+    <link rel="stylesheet" href="/assets/css/bootstrap-responsive.css?_=1588681572">
+    <link rel="stylesheet" href="/assets/css/fontawesome-all.min.css?_=1588681572">
+    <link rel="stylesheet" href="/assets/css/prettify.css?_=1588681572">
+    <link rel="stylesheet" href="/assets/css/lightbox.css?_=1588681572">
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="/assets/img/tentacle-32x32.png">
+
+    <!-- Le RSS feed -->
+    <link rel="alternate" type="application/rss+xml" title="OctoPrint Plugin Repository: New Plugins" href="/feed.xml">
+
+    <!-- Le social media meta data -->
+    
+    
+    
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@OctoPrint3D" />
+    <meta name="twitter:title" content="OctoPrint Plugin Repository" />
+    <meta name="twitter:description" content="The official OctoPrint Plugin Repository" />
+    <meta name="twitter:image" content="https://plugins.octoprint.org/assets/img/octoprint-avatar-240x240.png" />
+
+    <meta property="og:title" content="OctoPrint Plugin Repository" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://plugins.octoprint.org/assets/img/repo-600x400.png" />
+    <meta property="og:description" content="The official OctoPrint Plugin Repository" />
+    <meta property="og:site_name" content="OctoPrint Plugin Repository" />
+    <meta property="og:url" content="https://plugins.octoprint.org/" />
+
+    <meta itemscope itemtype="http://schema.org/WebPage" />
+    <meta itemprop="headline" content="OctoPrint Plugin Repository" />
+    <meta itemprop="description" content="The official OctoPrint Plugin Repository" />
+    <meta itemprop="image" content="https://plugins.octoprint.org/assets/img/repo-600x400.png" />
+
+    <script src="/assets/js/jquery-1.9.1.min.js"></script>
+    <script src="/assets/js/underscore.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/cookieconsent.min.css" />
+    <script src="/assets/js/cookieconsent.min.js"></script>
+    <script>
+        if (!String.prototype.startsWith) {
+            String.prototype.startsWith = function(search, pos) {
+            return this.substr(!pos || pos < 0 ? 0 : +pos, search.length) === search;
+            };
+        }
+
+        window.addEventListener("load", function(){
+            window.cookieconsent.initialise({
+                "position": "bottom",
+                "theme": "edgeless",
+                "palette": {
+                    "popup": {
+                        "background": "#000000",
+                        "link": "#10a800"
+                    },
+                    "button": {
+                        "background": "#0b7500"
+                    }
+                }
+            })
+        });
+
+        /**
+         * Make sure octoprint.github.io stuff gets rewritten to plugins.octoprint.org.
+         * See https://github.com/OctoPrint/plugins.octoprint.org/issues/146.
+         */
+        var githubio = "octoprint.github.io/plugins.octoprint.org";
+        var url = window.location.href;
+        if (url && (url.startsWith("http://" + githubio) || url.startsWith("https://" + githubio))) {
+            url = url.replace(githubio, "plugins.octoprint.org");
+            window.location.replace(url);
+        }
+    </script>
+</head>
+
+<body>
+
+<div class="navbar navbar-inverse navbar-static-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand" href="/"><img src="/assets/img/tentacle-20x20.png" alt="Tentacle logo" class="tentacle"> Plugin Repo</a>
+      <a href="javascript:void(0)" class="btn btn-burger btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><i class="fas fa-bars"></i></a>
+      <div class="pull-right">
+        <ul class="nav social-navbar">
+          <li><a href="https://octoprint.org/merch/" title="Get some merchandise!" target="_blank"><i class="fa fa-shopping-basket"></i></a></li>
+          <li><a href="https://octoprint.org/support-octoprint/" title="Support OctoPrint!" data-event-category="supportlink" data-event-action="navigation" target="_blank"><i class="fas fa-donate"></i></a></li>
+        </ul>
+      </div>
+      <div class="nav-collapse collapse">
+        <ul class="nav">
+          <li><a href="/by_name/">by Name</a></li>
+          <li><a href="/by_date/">by Date</a></li>
+          <li><a href="/by_tag/">by Tag</a></li>
+          <li><a href="/by_author/">by Author</a></li>
+          <li><form class="navbar-search pull-right" action="/search/" method="get"><input type="text" class="input-medium search-query" placeholder="Enter search &amp; hit enter..." name="q"></form></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">Help <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="/help/installation/">Installing Plugins</a></li>
+              <li><a href="/help/registering/">Registering Plugins</a></li>
+              <li><a href="http://docs.octoprint.org/en/master/plugins/gettingstarted.html">The Plugin Tutorial</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">Lists <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="/blacklist/">Blacklist</a></li>
+              <li><a href="/notices/">Notices</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="wrap">
+    <div id="main">
+    <div class="page-header">
+    <div class="container">
+        <div class="row">
+            <div class="span12">
+                <h1>OctoPrint Plugin Repository</h1>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="content row-fluid">
+        <div class="span12">
+            <div class="plugin-list row-liquid">
+  <div class="span8">
+      <h2><i class="fa fa-asterisk"></i> Most recently added plugins</h2>
+<div>
+  <small class="pull-right"><a href="/feed.xml"><i class="fa fa-rss"></i> RSS Feed</a></small>
+</div>
+<ul>
+  
+  
+  <li>
+<h3><a class="post-link" href="/plugins/smartpreheat/">Smart Preheat</a> <small class="post-date">
+
+
+  02 May 2020
+
+</small></h3>
+<p>
+  Parses GCode files and provides variables that can be accessed in GCode scripts. Reduces heatup time and allows for preheating before bed leveling.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-preheat">preheat</a>
+
+  <a class="label" href="/by_tag/#tag-temperature">temperature</a>
+
+</li>
+  
+  <li>
+<h3><a class="post-link" href="/plugins/printoid/">OctoPrint-Printoid</a> <small class="post-date">
+
+
+  30 Apr 2020
+
+</small></h3>
+<p>
+  Notifications plugin for Printoid (Android app for OctoPrint)
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-android">android</a>
+
+  <a class="label" href="/by_tag/#tag-bed-temperature">bed temperature</a>
+
+  <a class="label" href="/by_tag/#tag-notifications">notifications</a>
+
+  <a class="label" href="/by_tag/#tag-print-finished">print finished</a>
+
+  <a class="label" href="/by_tag/#tag-printoid">printoid</a>
+
+</li>
+  
+  <li>
+<h3><a class="post-link" href="/plugins/webhooks/">OctoPrint-Webhooks</a> <small class="post-date">
+
+
+  29 Apr 2020
+
+</small></h3>
+<p>
+  This allows you to send a webhook to any URL when events happen on OctoPrint.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-api">api</a>
+
+  <a class="label" href="/by_tag/#tag-color-change">color change</a>
+
+  <a class="label" href="/by_tag/#tag-events">events</a>
+
+  <a class="label" href="/by_tag/#tag-notification">notification</a>
+
+  <a class="label" href="/by_tag/#tag-prusa">prusa</a>
+
+  <a class="label" href="/by_tag/#tag-url">url</a>
+
+  <a class="label" href="/by_tag/#tag-webhook">webhook</a>
+
+</li>
+  
+  <li>
+<h3><a class="post-link" href="/plugins/emergencystopsimplified/">Emergency Stop Simplified</a> <small class="post-date">
+
+
+  26 Apr 2020
+
+</small></h3>
+<p>
+  This plugin reacts to a switch or button, if triggered (switch open) it issues M112 command to printer.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-button">button</a>
+
+  <a class="label" href="/by_tag/#tag-emergency">emergency</a>
+
+  <a class="label" href="/by_tag/#tag-simple">simple</a>
+
+  <a class="label" href="/by_tag/#tag-simplified">simplified</a>
+
+  <a class="label" href="/by_tag/#tag-stop">stop</a>
+
+  <a class="label" href="/by_tag/#tag-trigger">trigger</a>
+
+</li>
+  
+  <li>
+<h3><a class="post-link" href="/plugins/TemperatureLegendMover/">TemperatureLegendMover</a> <small class="post-date">
+
+
+  26 Apr 2020
+
+</small></h3>
+<p>
+  Move the Temperature-Legend into a specific corner
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-legend">legend</a>
+
+  <a class="label" href="/by_tag/#tag-temperature">temperature</a>
+
+</li>
+  
+  <li>
+<h3><a class="post-link" href="/plugins/FriendlyNeighborhoodBeeper/">Friendly Neighborhood Beeper</a> <small class="post-date">
+
+
+  25 Apr 2020
+
+</small></h3>
+<p>
+  Beeps after completion/failure of a print, but only during the specified hours
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-beep">beep</a>
+
+  <a class="label" href="/by_tag/#tag-control">control</a>
+
+  <a class="label" href="/by_tag/#tag-notification">notification</a>
+
+  <a class="label" href="/by_tag/#tag-print-finished">print finished</a>
+
+  <a class="label" href="/by_tag/#tag-simple">simple</a>
+
+</li>
+  
+  <li>
+<h3><a class="post-link" href="/plugins/continuousprint/">Continuous Print</a> <small class="post-date">
+
+
+  24 Apr 2020
+
+</small></h3>
+<p>
+  Allows the queueing and automatic print and clearing of the queue
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-continuous-print">continuous print</a>
+
+  <a class="label" href="/by_tag/#tag-queueing">queueing</a>
+
+</li>
+  
+  <li>
+<h3><a class="post-link" href="/plugins/filamentsensorsimplified/">Filament Sensor Simplified</a> <small class="post-date">
+
+
+  23 Apr 2020
+
+</small></h3>
+<p>
+  This plugin reacts to filament sensor output. If triggered it issues M600 X0 Y0 command to printer.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-filament">filament</a>
+
+  <a class="label" href="/by_tag/#tag-runout">runout</a>
+
+  <a class="label" href="/by_tag/#tag-sensor">sensor</a>
+
+  <a class="label" href="/by_tag/#tag-simple">simple</a>
+
+  <a class="label" href="/by_tag/#tag-simplified">simplified</a>
+
+  <a class="label" href="/by_tag/#tag-trigger">trigger</a>
+
+</li>
+  
+  <li>
+<h3><a class="post-link" href="/plugins/prusaslicerthumbnails/">PrusaSlicer Thumbnails</a> <small class="post-date">
+
+
+  22 Apr 2020
+
+</small></h3>
+<p>
+  Extracts embedded thumbnails from PrusaSlicer gcode files.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-preview">preview</a>
+
+  <a class="label" href="/by_tag/#tag-prusaslicer">prusaslicer</a>
+
+  <a class="label" href="/by_tag/#tag-thumbnail">thumbnail</a>
+
+</li>
+  
+  <li>
+<h3><a class="post-link" href="/plugins/AutoTerminalInput/">Auto Terminal Input</a> <small class="post-date">
+
+
+  01 Apr 2020
+
+</small></h3>
+<p>
+  Automatically focuses the command input when switching to the Terminal tab in OctoPrint.
+</p>
+
+
+
+
+  <a class="label" href="/by_tag/#tag-terminal">terminal</a>
+
+</li>
+  
+</ul>
+<div>
+  <a href="/by_date/">More...</a>
+</div>
+
+
+  </div>
+  <div class="span4">
+    <h2><i class="fa fa-search"></i> Search</h2>
+
+    <form class="form-search" action="/search/" method="get" style="text-align: center">
+    <input type="search" id="search-query" class="search-query" placeholder="Enter search term &amp; hit enter..." name="q">
+</form>
+
+    <h2><i class="far fa-lightbulb"></i> Help</h2>
+
+    <p>
+      You are a user of OctoPrint and want to to know <strong>how to install</strong> any of the plugins listed here? <a href="/help/installation/">Take a look at this guide</a>.
+    </p>
+    <p>
+      You are a plugin author and want to <strong>register your new plugin</strong> to be listed here? <a href="/help/registering/">Take a look at this guide</a>.
+    </p>
+    <p>
+      You are interested in <strong>writing your own plugin</strong> and don't know how to start? <a href="http://docs.octoprint.org/en/master/plugins/gettingstarted.html">Take a look at the plugin tutorial</a>.
+    </p>
+    <p>
+      <strong>Something is wrong with this repository?</strong> If something appears to be broken, please <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues">report it</a> or <a href="https://github.com/OctoPrint/plugins.octoprint.org/pulls">send a PR to fix it =)</a>. Thanks!
+    </p>
+
+    <h2><i class="fa fa-chart-line"></i> Stats</h2>
+
+    
+    
+    
+
+    <p>
+      There are currently <strong>205</strong> plugins listed in this repository of which <strong>79 (38%)</strong> are marked as Python 3 compatible.
+    </p>
+
+    <div class="ad">
+      <script>
+    if (!window["carbon-disable"] && !window.matchMedia("(max-width: 767px)").matches) {
+        (function() {
+            var po = document.createElement("script");
+            po.type = "text/javascript";
+            po.async = true;
+            po.src  = "//cdn.carbonads.com/carbon.js?serve=CK7DT237&placement=pluginsoctoprintorg";
+            po.id = "_carbonads_js";
+            var s = document.currentScript;
+            s.parentNode.insertBefore(po, s);
+        })();
+    }
+</script>
+    </div>
+  </div>
+</div>
+
+        </div>
+    </div>
+</div>
+
+    </div>
+</div>
+
+      <footer>
+          <div class="container">
+              <div class="row">
+                  <div class="span4">
+                      <h2>On the web</h2>
+                      <ul class="fa-ul">
+                          <li><span class="fa-li"><i class="fas fa-users fa-fw"></i></span><a href="https://community.octoprint.org">Community Forum</a></li>
+                          <li><span class="fa-li"><i class="fas fa-comments fa-fw"></i></span><a href="irc://chat.freenode.net/octoprint" target="_blank">#octoprint on freenode</a> (<a href="https://chat.octoprint.org">Webchat</a>, <a href="https://freenode.logbot.info/octoprint">Logs</a>)</li>
+                          <li><span class="fa-li"><i class="fab fa-twitter fa-fw"></i></span><a href="https://twitter.com/OctoPrint3D" target="_blank">@OctoPrint3D</a></li>
+                          <li><span class="fa-li"><i class="fab fa-facebook-f fa-fw"></i></span><a href="https://facebook.com/OctoPrint" target="_blank">OctoPrint</a></li>
+                          <li><span class="fa-li"><i class="fab fa-youtube fa-fw"></i></span><a href="https://www.youtube.com/c/OctoPrint3D" target="_blank">OctoPrint</a></li>
+                          <li><span class="fa-li"><i class="fas fa-tachometer-alt fa-fw"></i></span><a href="https://status.octoprint.org" target="_blank">Site Status</a></li>
+                          <li><span class="fa-li"><i class="fas fa-gavel fa-fw"></i></span><a href="https://octoprint.org/imprint/" rel="nofollow">Legal Notice</a></li>
+                          <li><span class="fa-li"><i class="fas fa-gavel fa-fw"></i></span><a href="https://octoprint.org/privacy/" rel="nofollow">Privacy Policy</a></li>
+                      </ul>
+                  </div>
+                  <div class="span4">
+                      <h2>Recently Added</h2>
+                      <ul>
+                          
+                          
+                          <li>
+                              <a class="post-link" href="/plugins/smartpreheat/">Smart Preheat</a>
+                          </li>
+                          
+                          <li>
+                              <a class="post-link" href="/plugins/printoid/">OctoPrint-Printoid</a>
+                          </li>
+                          
+                          <li>
+                              <a class="post-link" href="/plugins/webhooks/">OctoPrint-Webhooks</a>
+                          </li>
+                          
+                          <li>
+                              <a class="post-link" href="/plugins/emergencystopsimplified/">Emergency Stop Simplified</a>
+                          </li>
+                          
+                          <li>
+                              <a class="post-link" href="/plugins/TemperatureLegendMover/">TemperatureLegendMover</a>
+                          </li>
+                          
+                      </ul>
+                  </div>
+                  <div class="span4 hidden-phone">
+                      <a href="http://octoprint.org"><img src="/assets/img/logo-footer.png" alt="Octopus logo" class="pull-right"></a>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="span12 text-center legal">
+                      <small>"OctoPrint" is a <a href="http://octoprint.org/trademark-rules/">registered trademark</a></small>
+                  </div>
+              </div>
+          </div>
+      </footer>
+
+
+<script src="/assets/js/prettify.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+<script src="/assets/js/lunr.min.js"></script>
+<script src="/assets/js/mustache.js"></script>
+<script src="/assets/js/URI.min.js"></script>
+<script src="/assets/js/date.format.js"></script>
+<script src="/assets/js/jquery.lunr.search.js"></script>
+<script src="/assets/js/lightbox.min.js"></script>
+<script src="/assets/js/site.js"></script>
+<script src="/assets/js/autotrack.js"></script>
+<script src="/assets/js/yt-with-consent.js"></script>
+
+<script>
+    var gaBaseProperty = 'UA-62479257';
+    var gaProperty = gaBaseProperty + '-2';
+
+    // opt out
+    var disableStr = 'ga-disable-' + gaProperty;
+    var disableCookie = 'ga-disable-' + gaBaseProperty;
+    function gaOptout() {
+        document.cookie = disableCookie + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/; domain=octoprint.org';
+        window[disableStr] = true;
+        alert("Google Analytics ist jetzt deaktiviert! / Google Analytics is now deactivated!")
+    }
+
+    // tracking code
+    if (document.cookie.indexOf(disableCookie + '=true') > -1) {
+        window[disableStr] = true;
+    } else {
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', gaProperty, 'auto');
+        ga('require', 'autotrack');
+        ga('set', 'anonymizeIp', true);
+        ga('send', 'pageview');
+    }
+</script>
+
+</body>
+</html>
