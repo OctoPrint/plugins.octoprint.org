@@ -8,7 +8,7 @@ author: Xiao Jin
 license: AGPLv3
 
 # today's date in format YYYY-MM-DD, e.g.
-date: 2020-04-28
+date: 2020-05-07
 
 homepage: https://github.com/xia0/OctoPrint-TerminalResponse
 source: https://github.com/xia0/OctoPrint-TerminalResponse
