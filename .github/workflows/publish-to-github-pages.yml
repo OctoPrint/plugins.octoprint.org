@@ -1,6 +1,8 @@
 name: Publish to Github Pages
 
 on:
+  schedule:
+    - cron: '0 */12 * * *'
   push:
     branches:
       - gh-pages
@@ -27,3 +29,11 @@ jobs:
           enable_jekyll: false
           user_name: 'github-actions[bot]'
           user_email: 'github-actions[bot]@users.noreply.github.com'
+          
+      - name: 📧 Discord failure notification
+        if: failure()
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.discord_webhook }}
+        uses: Ilshidur/action-discord@master
+        with:
+          args: '🚫 Page build for plugins.octoprint.org failed'
