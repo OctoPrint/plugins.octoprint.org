@@ -5,10 +5,44 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>http://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 07 May 2020 05:06:38 -0500</pubDate>
-    <lastBuildDate>Thu, 07 May 2020 05:06:38 -0500</lastBuildDate>
+    <pubDate>Fri, 08 May 2020 08:01:05 -0500</pubDate>
+    <lastBuildDate>Fri, 08 May 2020 08:01:05 -0500</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
+    
+      <item>
+        <title>Terminal Response</title>
+        <description>
+          <![CDATA[
+            Monitors terminal for a regular expression and allows you to respond with your own commands.
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/terminalresponse/01.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Thu, 07 May 2020 00:00:00 -0500
+</pubDate>
+        <link>http://plugins.octoprint.org/plugins/terminalresponse/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">http://plugins.octoprint.org/plugins/terminalresponse/</guid>
+        
+        <category>regex</category>
+        
+        <category>regular</category>
+        
+        <category>expressions</category>
+        
+        <category>gcode</category>
+        
+        <category>command</category>
+        
+        <category>commands</category>
+        
+        <category>terminal</category>
+        
+        <category>monitor</category>
+        
+        <category>send</category>
+        
+      </item>
     
       <item>
         <title>Smart Preheat</title>
@@ -229,25 +263,6 @@ Wed, 22 Apr 2020 00:00:00 -0500
         <category>preview</category>
         
         <category>PrusaSlicer</category>
-        
-      </item>
-    
-      <item>
-        <title>Auto Terminal Input</title>
-        <description>
-          <![CDATA[
-            Automatically focuses the command input when switching to the Terminal tab in OctoPrint.
-            <p><img src="https://plugins.octoprint.org/assets/img/repo-600x400.png"></p>
-            
-          ]]>
-        </description>
-        <pubDate>
-Wed, 01 Apr 2020 00:00:00 -0500
-</pubDate>
-        <link>http://plugins.octoprint.org/plugins/AutoTerminalInput/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">http://plugins.octoprint.org/plugins/AutoTerminalInput/</guid>
-        
-        <category>terminal</category>
         
       </item>
     

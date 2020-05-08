@@ -2253,6 +2253,17 @@
 "author": "Shawn Bruce",
 "content": "See https://github.com/kantlivelong/OctoPrint-SmartPreheat for more information.",
 "tags": ["preheat","temperature"]
+},
+
+{
+"id": "/plugins/terminalresponse",
+"url": "/plugins/terminalresponse/",
+"date": "2020-05-07 00:00:00 -0500",
+"title": "Terminal Response",
+"description": "Monitors terminal for a regular expression and allows you to respond with your own commands.",
+"author": "Xiao Jin",
+"content": "This plugin will monitor the terminal for regular expressions that you define. You can use parentheses to extract values from matches. You can then define commands to run in response to your regex matches and substitute the matches values to your liking.",
+"tags": ["regex","regular","expressions","gcode","command","commands","terminal","monitor","send"]
 }
 ]
 }

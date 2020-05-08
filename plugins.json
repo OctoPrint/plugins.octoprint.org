@@ -3400,5 +3400,23 @@
     },
     "license": "AGPLv3",
     "image": "https://raw.githubusercontent.com/kantlivelong/OctoPrint-SmartPreheat/master/extra/screenshots/beforePrintStarted.png"
+  },
+
+  {
+    "id": "terminalresponse",
+    "published": "2020-05-07 00:00:00 -0500",
+    "title": "Terminal Response",
+    "description": "Monitors terminal for a regular expression and allows you to respond with your own commands.",
+    "archive": "https://github.com/xia0/OctoPrint-TerminalResponse/archive/master.zip",
+    "author": "Xiao Jin",
+    "homepage": "https://github.com/xia0/OctoPrint-TerminalResponse",
+    "page": "https://plugins.octoprint.org/plugins/terminalresponse/",
+    "compatibility": {
+        "octoprint": ["1.3.0"],
+        "os": ["linux","windows","macos","freebsd"],
+        "python": ">=2.7,<4"
+    },
+    "license": "AGPLv3",
+    "image": "https://plugins.octoprint.org/assets/img/plugins/terminalresponse/01.png"
   }
 ]

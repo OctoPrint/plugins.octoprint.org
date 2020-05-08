@@ -6,9 +6,9 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html"> <!--<![endif]-->
 <head>
     <meta charset="utf-8" />
-    <title>EEPROM Marlin Editor</title>
-    <meta name="description" content="Makes it possible to change the EEPROM values of Marlin Firmware through OctoPrint">
-    <meta name="author" content="Anderson Silva">
+    <title>Terminal Response</title>
+    <meta name="description" content="Monitors terminal for a regular expression and allows you to respond with your own commands.">
+    <meta name="author" content="Xiao Jin">
     <meta name="referrer" content="same-origin">
     <meta name="google-site-verification" content="0EFsbaNygJcEinKPmzP-hTf0Ju6wDIpJxO5zvQtOQT0" />
     <meta name="build-revision" content="1474ba25fcc5edaa8583b2c13d4459eedae0f82c" />
@@ -41,24 +41,24 @@
 
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@OctoPrint3D" />
-    <meta name="twitter:title" content="EEPROM Marlin Editor" />
-    <meta name="twitter:description" content="This plugin is designed to get, change and save the values in the EEPROM of your Marlin Firmware based Machine
+    <meta name="twitter:title" content="Terminal Response" />
+    <meta name="twitter:description" content="This plugin will monitor the terminal for regular expressions that you define. You can use parentheses to extract values from matches. You can then define commands to run in response to your regex matches and substitute the matches values to your liking.
 " />
     <meta name="twitter:image" content="https://plugins.octoprint.org" />
 
-    <meta property="og:title" content="EEPROM Marlin Editor" />
+    <meta property="og:title" content="Terminal Response" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://plugins.octoprint.org/assets/img/plugins/eeprom_marlin/img2.png" />
-    <meta property="og:description" content="This plugin is designed to get, change and save the values in the EEPROM of your Marlin Firmware based Machine
+    <meta property="og:image" content="https://plugins.octoprint.org/assets/img/plugins/terminalresponse/01.png" />
+    <meta property="og:description" content="This plugin will monitor the terminal for regular expressions that you define. You can use parentheses to extract values from matches. You can then define commands to run in response to your regex matches and substitute the matches values to your liking.
 " />
     <meta property="og:site_name" content="OctoPrint Plugin Repository" />
-    <meta property="og:url" content="https://plugins.octoprint.org/plugins/eeprom_marlin/" />
+    <meta property="og:url" content="https://plugins.octoprint.org/plugins/terminalresponse/" />
 
     <meta itemscope itemtype="http://schema.org/WebPage" />
-    <meta itemprop="headline" content="EEPROM Marlin Editor" />
-    <meta itemprop="description" content="This plugin is designed to get, change and save the values in the EEPROM of your Marlin Firmware based Machine
+    <meta itemprop="headline" content="Terminal Response" />
+    <meta itemprop="description" content="This plugin will monitor the terminal for regular expressions that you define. You can use parentheses to extract values from matches. You can then define commands to run in response to your regex matches and substitute the matches values to your liking.
 " />
-    <meta itemprop="image" content="https://plugins.octoprint.org/assets/img/plugins/eeprom_marlin/img2.png" />
+    <meta itemprop="image" content="https://plugins.octoprint.org/assets/img/plugins/terminalresponse/01.png" />
 
     <script src="/assets/js/jquery-1.9.1.min.js"></script>
     <script src="/assets/js/underscore.min.js"></script>
@@ -156,7 +156,7 @@
   <div class="container">
     <div class="row">
       <div class="span12">
-        <h1>EEPROM Marlin Editor</h1>
+        <h1>Terminal Response</h1>
       </div>
     </div>
   </div>
@@ -165,11 +165,11 @@
 <div class="container">
   <div class="row-fluid">
     
-    <small class="pull-left"><a href="/plugins/eeprom_MPSelectMini/"><i class="fa fa-double-angle-left"></i>&nbsp;EEPROM Editor for Monoprice Select Mini</a></small>
+    <small class="pull-left"><a href="/plugins/terminalcommandsextended/"><i class="fa fa-double-angle-left"></i>&nbsp;Terminal Commands Extended</a></small>
     
     &nbsp;
     
-    <small class="pull-right"><a href="/plugins/eeprom_marlin_printrbot/">EEPROM Printrbot variant of Marlin Editor&nbsp;<i class="fa fa-double-angle-right"></i></a></small>
+    <small class="pull-right"><a href="/plugins/thespaghettidetective/">The Spaghetti Detective&nbsp;<i class="fa fa-double-angle-right"></i></a></small>
     
   </div>
   <div class="content plugin-content row-fluid">
@@ -180,9 +180,9 @@
       
 
       <p class="lead">
-        Makes it possible to change the EEPROM values of Marlin Firmware through OctoPrint
+        Monitors terminal for a regular expression and allows you to respond with your own commands.
       </p>
-      <p>This plugin is designed to get, change and save the values in the EEPROM of your Marlin Firmware based Machine</p>
+      <p>This plugin will monitor the terminal for regular expressions that you define. You can use parentheses to extract values from matches. You can then define commands to run in response to your regex matches and substitute the matches values to your liking.</p>
 
 
       
@@ -190,12 +190,7 @@
         
         <figure>
           
-          <a href="/assets/img/plugins/eeprom_marlin/img1.png" data-lightbox="/plugins/eeprom_marlin" data-title=""><img src="/assets/img/plugins/eeprom_marlin/img1.png" alt="Settings" title=""></a>
-        </figure>
-        
-        <figure>
-          
-          <a href="/assets/img/plugins/eeprom_marlin/img2.png" data-lightbox="/plugins/eeprom_marlin" data-title=""><img src="/assets/img/plugins/eeprom_marlin/img2.png" alt="Settings" title=""></a>
+          <a href="https://github.com/xia0/OctoPrint-TerminalResponse/raw/master/screenshots/01.png" data-lightbox="/plugins/terminalresponse" data-title="Plugin settings"><img src="https://github.com/xia0/OctoPrint-TerminalResponse/raw/master/screenshots/01.png" alt="Plugin settings" title="Plugin settings"></a>
         </figure>
         
       
@@ -225,14 +220,14 @@
         
         <dd>
           URL:
-          <pre>https://github.com/amsbr/OctoPrint-EEprom-Marlin/archive/master.zip</pre>
+          <pre>https://github.com/xia0/OctoPrint-TerminalResponse/archive/master.zip</pre>
           
         </dd>
         
         
         <dd>
           Command line:
-          <pre>pip install "https://github.com/amsbr/OctoPrint-EEprom-Marlin/archive/master.zip"</pre>
+          <pre>pip install "https://github.com/xia0/OctoPrint-TerminalResponse/archive/master.zip"</pre>
         </dd>
         
       </dl>
@@ -240,7 +235,7 @@
       
       <dl class="date">
         <dt>Registration date</dt>
-        <dd>30 Aug 2015</dd>
+        <dd>07 May 2020</dd>
       </dl>
       
       
@@ -251,9 +246,23 @@
           
           
           
-          <a class="label" href="/by_tag/#tag-helper">helper</a>
+          <a class="label" href="/by_tag/#tag-command">command</a>
           
-          <a class="label" href="/by_tag/#tag-marlin">marlin</a>
+          <a class="label" href="/by_tag/#tag-commands">commands</a>
+          
+          <a class="label" href="/by_tag/#tag-expressions">expressions</a>
+          
+          <a class="label" href="/by_tag/#tag-gcode">gcode</a>
+          
+          <a class="label" href="/by_tag/#tag-monitor">monitor</a>
+          
+          <a class="label" href="/by_tag/#tag-regex">regex</a>
+          
+          <a class="label" href="/by_tag/#tag-regular">regular</a>
+          
+          <a class="label" href="/by_tag/#tag-send">send</a>
+          
+          <a class="label" href="/by_tag/#tag-terminal">terminal</a>
           
         </dd>
       </dl>
@@ -263,13 +272,13 @@
         <dd>
           <ul>
             
-            <li>OctoPrint: all versions</li>
+            <li>OctoPrint: 1.3.0+</li>
             
             
-            <li>Operating Systems: all</li>
+            <li>Operating Systems: Linux, Windows, Mac OS X, FreeBSD</li>
             
             
-            <li>Python: &gt;=2.7,&lt;3</li>
+            <li>Python: &gt;=2.7,&lt;4</li>
             
           </ul>
         </dd>
@@ -277,19 +286,19 @@
       
       <dl class="author">
         <dt>Author</dt>
-        <dd>Anderson Silva</dd>
+        <dd>Xiao Jin</dd>
       </dl>
       
       
       <dl class="homepage">
         <dt>Homepage</dt>
-        <dd><a href="https://github.com/amsbr/OctoPrint-EEprom-Marlin" target="_blank">https://github.com/amsbr/OctoPrint-EEprom-Marlin</a></dd>
+        <dd><a href="https://github.com/xia0/OctoPrint-TerminalResponse" target="_blank">https://github.com/xia0/OctoPrint-TerminalResponse</a></dd>
       </dl>
       
       
       <dl class="source">
         <dt>Source</dt>
-        <dd><a href="https://github.com/amsbr/OctoPrint-EEprom-Marlin" target="_blank">https://github.com/amsbr/OctoPrint-EEprom-Marlin</a></dd>
+        <dd><a href="https://github.com/xia0/OctoPrint-TerminalResponse" target="_blank">https://github.com/xia0/OctoPrint-TerminalResponse</a></dd>
       </dl>
       
       
@@ -303,19 +312,19 @@
         <dd>
           <p>
             If there is <strong>something wrong with this listing</strong> (broken links & images etc), please
-            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=bug&template=listing_error.md&title=%5BListing+Error%5D+EEPROM+Marlin+Editor">report it here</a>.
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=bug&template=listing_error.md&title=%5BListing+Error%5D+Terminal+Response">report it here</a>.
           </p>
           <p>
             If this plugin <strong>has been <em>confirmed</em> as abandoned</strong> by its maintainer, please
-            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=abandoned+plugin&template=abandoned_plugin.md&title=%5BAbandoned+Plugin%5D+EEPROM+Marlin+Editor">report it here</a>.
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=abandoned+plugin&template=abandoned_plugin.md&title=%5BAbandoned+Plugin%5D+Terminal+Response">report it here</a>.
           </p>
           <p>
             If this plugin is <strong>doing something suspicious</strong> (e.g. weird network activity, unannounced tracking, ...) and
             the maintainer is not cooperating in getting to the bottom of that, please
-            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=suspicious+plugin+activity&template=suspicious_plugin_activity.md&title=%5BSuspicious+Plugin+Activity%5D+EEPROM+Marlin+Editor">report the plugin as suspicious here</a>.
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=suspicious+plugin+activity&template=suspicious_plugin_activity.md&title=%5BSuspicious+Plugin+Activity%5D+Terminal+Response">report the plugin as suspicious here</a>.
           </p>
           <p>
-            Report bugs or feature requests for the plugin to the plugin author (e.g. on the plugin's <a href="https://github.com/amsbr/OctoPrint-EEprom-Marlin">homepage</a>) please, not here!
+            Report bugs or feature requests for the plugin to the plugin author (e.g. on the plugin's <a href="https://github.com/xia0/OctoPrint-TerminalResponse">homepage</a>) please, not here!
           </p>
         </dd>
       </dl>
