@@ -37,6 +37,8 @@ compatibility:
   - macos
   - freebsd
 
+  python: ">=2.7,<4"
+
 ---
 
 Display estimated time of finish for current print (Estimated Time of Arrival). Day of finish is displayed only when current print will not finish today.
