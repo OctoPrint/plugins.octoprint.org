@@ -3380,7 +3380,11 @@
     "author": "Anthony Stéphan",
     "homepage": "https://github.com/anthonyst91/OctoPrint-Printoid",
     "page": "https://plugins.octoprint.org/plugins/printoid/",
-    "compatibility": {"octoprint": [], "os": [], "python": ">=2.7,<3"},
+    "compatibility": {
+        "octoprint": [],
+        "os": [],
+        "python": ">=2.7,<4"
+    },
     "license": "Apache-2.0"
   },
 
