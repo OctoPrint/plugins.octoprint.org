@@ -20,6 +20,9 @@ tags:
 - Android
 - notifications
 
+compatibility:
+  python: ">=2.7,<4"
+
 screenshots:
 - url: /assets/img/plugins/printoid/notif_progress_10.png
   alt: Notification on print progress
