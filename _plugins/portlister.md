@@ -20,6 +20,7 @@ tags:
 - automatic
 
 compatibility:
+  python: ">=2.7,<4"
   os:
   - nix
 
