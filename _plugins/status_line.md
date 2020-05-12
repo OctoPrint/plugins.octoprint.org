@@ -23,6 +23,11 @@ featured_image: https://raw.githubusercontent.com/AmedeeBulle/StatusLine/master/
 tags:
 - ui
 
+compatibility:
+  # list of compatible versions, for example 1.2.0. If left empty no specific version requirement will be assumed
+  octoprint: 1.2.0
+  python: ">=2.7,<4"
+
 ---
 
 (Very) simple plugin to which displays the M117 command (Display Message) in the SideBar.
