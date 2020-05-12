@@ -2268,9 +2268,9 @@
     "homepage": "https://github.com/aerickson/OctoPrint_Signal-Notifier",
     "page": "https://plugins.octoprint.org/plugins/signalnotifier/",
     "compatibility": {
-        "octoprint": ["1.2.0"],
+        "octoprint": "1.2.0",
         "os": [],
-        "python": ">=2.7,<3"
+        "python": ">=2.7,<4"
     },
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/signalnotifier/signalnotifier.png"
