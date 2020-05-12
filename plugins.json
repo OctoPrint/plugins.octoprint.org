@@ -251,7 +251,11 @@
     "author": "Philippe Vanhaesendonck",
     "homepage": "https://github.com/AmedeeBulle/StatusLine",
     "page": "https://plugins.octoprint.org/plugins/status_line/",
-    "compatibility": {"octoprint": [], "os": [], "python": ">=2.7,<3"},
+    "compatibility": {
+        "octoprint": "1.2.0",
+        "os": [],
+        "python": ">=2.7,<4"
+    },
     "license": "AGPLv3"
   },
 
