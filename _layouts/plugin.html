@@ -1,6 +1,8 @@
 ---
 layout: default
 ---
+{% assign plugin_id = page.id | remove_first: '/plugins/' | remove: '/' | downcase %}
+{% assign plugin_stats = site.data.plugin_stats[plugin_id] %}
 {% assign sorted_plugins = site.plugins | sort: 'title' %}
 {% assign found_plugin = false %}
 {% assign prev_plugin = false %}
@@ -105,6 +107,12 @@ layout: default
       <dl class="date">
         <dt>Registration date</dt>
         <dd>{{ page.date | strip_html | strip_newlines | escape | date_to_string}}</dd>
+      </dl>
+      {% endif %}
+      {% if plugin_stats.instances %}
+      <dl class="installations">
+        <dt>Active Installations</dt>
+        <dd>Installed on at least <strong>{% include format_number number=plugin_stats.instances %}</strong> instances</dd>
       </dl>
       {% endif %}
       {% if page.tags %}

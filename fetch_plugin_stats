@@ -1,0 +1,2 @@
+#!/bin/bash
+curl -o./_data/plugin_stats.json https://data.octoprint.org/export/plugin_stats.json
