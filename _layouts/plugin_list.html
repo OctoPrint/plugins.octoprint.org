@@ -42,6 +42,40 @@ layout: page
       There are currently <strong>{{ plugin_counter }}</strong> plugins listed in this repository of which <strong>{{ python3_counter }} ({{ python3_counter | times:100 | divided_by:plugin_counter | round }}%)</strong> are marked as Python 3 compatible.
     </p>
 
+    {% if site.data.plugin_stats %}
+    <dl class="most_popular">
+      <dt>Most popular plugins (Top 10)</dt>
+      <dd>
+        <ol>
+          {% assign counter = 0 %}
+          {% for plugin in site.data.plugin_stats %}
+            {% unless counter > 9 %}{% capture throwaway %}
+              {% assign key = plugin[0] %}
+              {% assign id = key | prepend: "/plugins/" %}
+              {% assign data = plugin[1] %}
+              {% assign found_plugin = false %}
+              {% for plugin in site.plugins %}
+                {% unless found_plugin %}
+                  {% assign lower_id = plugin.id | downcase %}
+                  {% if lower_id == id %}
+                    {% assign found_plugin = plugin %}
+                  {% endif %}
+                {% endunless %}
+              {% endfor %}{% endcapture %}
+              {% if found_plugin %}
+                {% assign counter = counter | plus: 1 %}
+                <li>
+                  <a href="{{ found_plugin.url | prepend: site.baseurl }}">{{ found_plugin.title }}</a><br>
+                  <small class="muted">over {% include format_number number=data.instances %} installations</small>
+                </li>
+              {% endif %}
+            {% endunless %}
+          {% endfor %}
+        </ol>
+      </dd>
+    </dl>
+    {% endif %}
+
     <div class="ad">
       {% include adsnippet_desktop.html %}
     </div>
