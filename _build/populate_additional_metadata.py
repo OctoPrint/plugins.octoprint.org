@@ -81,7 +81,6 @@ def process_plugin_file(path, incl_stats=True, incl_github=True):
 		frontmatter.dump(data, f)
 
 if __name__ == "__main__":
-	count = 0
 	plugin_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "_plugins")
 	with os.scandir(plugin_dir) as it:
 		for entry in it:
@@ -91,8 +90,4 @@ if __name__ == "__main__":
 			process_plugin_file(entry.path,
 			                    incl_github=GITHUB_CREDENTIALS is not None)
 			print("")
-			time.sleep(1)
-
-			count += 1
-			#if count > 9:
-			#	break
+			time.sleep(.2)
