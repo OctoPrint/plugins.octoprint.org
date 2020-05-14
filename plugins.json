@@ -1,8 +1,6 @@
 [
 
 
-
-
   {
     "id": "mqtt",
     "published": "2015-04-11 00:00:00 -0500",
@@ -19,11 +17,9 @@
     },
     "license": "AGPLv3",
     "stats": {
-        "installations": 1745
+        "installations": 1743
     }
   },
-
-
 
   {
     "id": "growl",
@@ -42,8 +38,6 @@
     }
   },
 
-
-
   {
     "id": "actiontrigger",
     "published": "2015-04-17 00:00:00 -0500",
@@ -56,11 +50,9 @@
     "compatibility": {"octoprint": [], "os": [], "python": ">=2.7,<3"},
     "license": "AGPLv3",
     "stats": {
-        "installations": 359
+        "installations": 358
     }
   },
-
-
 
   {
     "id": "navbartemp",
@@ -79,11 +71,9 @@
     "license": "AGPLv3",
     "image": "https://github.com/imrahil/OctoPrint-NavbarTemp/blob/master/images/navbar.png?raw=true",
     "stats": {
-        "installations": 12951
+        "installations": 12952
     }
   },
-
-
 
   {
     "id": "gpx",
@@ -102,11 +92,9 @@
     "license": "AGPLv3",
     "image": "https://markwal.github.io/octoprint-download/gpx.png",
     "stats": {
-        "installations": 673
+        "installations": 672
     }
   },
-
-
 
   {
     "id": "customControl",
@@ -125,11 +113,9 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/customControl/img4.png",
     "stats": {
-        "installations": 2819
+        "installations": 2820
     }
   },
-
-
 
   {
     "id": "octoglow",
@@ -148,8 +134,6 @@
     }
   },
 
-
-
   {
     "id": "snapstream",
     "published": "2015-05-22 00:00:00 -0500",
@@ -165,8 +149,6 @@
         "installations": 147
     }
   },
-
-
 
   {
     "id": "systemcommandeditor",
@@ -185,11 +167,9 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/systemCommandEditor/img1.png",
     "stats": {
-        "installations": 1407
+        "installations": 1402
     }
   },
-
-
 
   {
     "id": "editorcollection",
@@ -208,8 +188,6 @@
     }
   },
 
-
-
   {
     "id": "screensquish",
     "published": "2015-06-17 00:00:00 -0500",
@@ -223,11 +201,9 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/screensquish/squishsample.png",
     "stats": {
-        "installations": 169
+        "installations": 168
     }
   },
-
-
 
   {
     "id": "stlviewer",
@@ -246,11 +222,9 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/stlviewer/screenshot.jpg",
     "stats": {
-        "installations": 2223
+        "installations": 2222
     }
   },
-
-
 
   {
     "id": "commandsplitter",
@@ -268,11 +242,9 @@
     },
     "license": "AGPLv3",
     "stats": {
-        "installations": 88
+        "installations": 87
     }
   },
-
-
 
   {
     "id": "requestspinner",
@@ -295,8 +267,6 @@
     }
   },
 
-
-
   {
     "id": "autoselect",
     "published": "2015-06-27 00:00:00 -0500",
@@ -313,11 +283,9 @@
     },
     "license": "AGPLv3",
     "stats": {
-        "installations": 1922
+        "installations": 1923
     }
   },
-
-
 
   {
     "id": "status_line",
@@ -335,11 +303,9 @@
     },
     "license": "AGPLv3",
     "stats": {
-        "installations": 404
+        "installations": 403
     }
   },
-
-
 
   {
     "id": "yamlpatcher",
@@ -358,8 +324,6 @@
     }
   },
 
-
-
   {
     "id": "octobullet",
     "published": "2015-07-23 00:00:00 -0500",
@@ -377,11 +341,9 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/octobullet/example_push.png",
     "stats": {
-        "installations": 883
+        "installations": 881
     }
   },
-
-
 
   {
     "id": "eeprom_repetier",
@@ -396,11 +358,9 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/eeprom_repetier/img2.png",
     "stats": {
-        "installations": 522
+        "installations": 520
     }
   },
-
-
 
   {
     "id": "displayprogress",
@@ -415,11 +375,9 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/displayprogress/example.jpg",
     "stats": {
-        "installations": 2843
+        "installations": 2840
     }
   },
-
-
 
   {
     "id": "eeprom_marlin",
@@ -434,11 +392,9 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/eeprom_marlin/img2.png",
     "stats": {
-        "installations": 6174
+        "installations": 6177
     }
   },
-
-
 
   {
     "id": "stats",
@@ -454,11 +410,9 @@
     "image": "https://plugins.octoprint.org/assets/img/plugins/stats/img1.png",
     "disabled": "<p>The plugin has a dependency that only supports Python 3 now, however it isn’t yet marked as Python 3 compatible itself, rendering it uninstallable without code modifications. See <a href=\"https://github.com/OctoPrint/plugins.octoprint.org/issues/434\">this ticket</a>.</p>\n",
     "stats": {
-        "installations": 1940
+        "installations": 1937
     }
   },
-
-
 
   {
     "id": "automaticshutdown",
@@ -477,11 +431,9 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/automaticshutdown/sidebar.png",
     "stats": {
-        "installations": 2574
+        "installations": 2575
     }
   },
-
-
 
   {
     "id": "displayz",
@@ -500,11 +452,9 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/displayz/displayz.png",
     "stats": {
-        "installations": 3303
+        "installations": 3299
     }
   },
-
-
 
   {
     "id": "portlister",
@@ -526,8 +476,6 @@
     }
   },
 
-
-
   {
     "id": "touchui",
     "published": "2015-10-10 00:00:00 -0500",
@@ -545,11 +493,9 @@
     "license": "AGPLv3",
     "image": "https://billyblaze.github.io/OctoPrint-TouchUI/images/touchuisample.png",
     "stats": {
-        "installations": 8221
+        "installations": 8219
     }
   },
-
-
 
   {
     "id": "slack",
@@ -568,8 +514,6 @@
     }
   },
 
-
-
   {
     "id": "autocalibration",
     "published": "2015-11-09 00:00:00 -0600",
@@ -583,11 +527,9 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/autocalibration/screenshot.png",
     "stats": {
-        "installations": 1349
+        "installations": 1344
     }
   },
-
-
 
   {
     "id": "updatefix127",
@@ -609,8 +551,6 @@
     }
   },
 
-
-
   {
     "id": "eeprom_marlin_printrbot",
     "published": "2015-12-26 00:00:00 -0600",
@@ -626,8 +566,6 @@
         "installations": 221
     }
   },
-
-
 
   {
     "id": "active_filters",
@@ -645,11 +583,9 @@
     },
     "license": "AGPLv3",
     "stats": {
-        "installations": 384
+        "installations": 383
     }
   },
-
-
 
   {
     "id": "title_status",
@@ -667,11 +603,9 @@
     },
     "license": "AGPLv3",
     "stats": {
-        "installations": 649
+        "installations": 646
     }
   },
-
-
 
   {
     "id": "telegram",
@@ -690,11 +624,9 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/telegram/features3.png",
     "stats": {
-        "installations": 4954
+        "installations": 4943
     }
   },
-
-
 
   {
     "id": "pushover",
@@ -709,11 +641,9 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/pushover/pushover.png",
     "stats": {
-        "installations": 946
+        "installations": 945
     }
   },
-
-
 
   {
     "id": "redeem",
@@ -736,8 +666,6 @@
     }
   },
 
-
-
   {
     "id": "cost",
     "published": "2016-06-11 00:00:00 -0500",
@@ -753,8 +681,6 @@
         "installations": 3135
     }
   },
-
-
 
   {
     "id": "autoscroll",
@@ -772,11 +698,9 @@
     },
     "license": "AGPLv3",
     "stats": {
-        "installations": 3968
+        "installations": 3965
     }
   },
-
-
 
   {
     "id": "filament_sensor",
@@ -792,10 +716,11 @@
         "os": ["linux","freebsd"],
         "python": ">=2.7,<3"
     },
-    "license": "AGPLv3"
+    "license": "AGPLv3",
+    "stats": {
+        "installations": 800
+    }
   },
-
-
 
   {
     "id": "multi_colors",
@@ -816,8 +741,6 @@
         "installations": 1235
     }
   },
-
-
 
   {
     "id": "gcodebar",
@@ -840,8 +763,6 @@
     }
   },
 
-
-
   {
     "id": "detailedprogress",
     "published": "2016-09-02 00:00:00 -0500",
@@ -855,11 +776,9 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/detailedprogress/example-eta.jpg",
     "stats": {
-        "installations": 6017
+        "installations": 6010
     }
   },
-
-
 
   {
     "id": "slicer",
@@ -878,11 +797,9 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/slicer/screenshot1.png",
     "stats": {
-        "installations": 2979
+        "installations": 2980
     }
   },
-
-
 
   {
     "id": "m33fio",
@@ -902,8 +819,6 @@
     }
   },
 
-
-
   {
     "id": "M117NavBar",
     "published": "2016-10-27 00:00:00 -0500",
@@ -921,11 +836,9 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/M117NavBar/screenshot.png",
     "stats": {
-        "installations": 285
+        "installations": 283
     }
   },
-
-
 
   {
     "id": "M117PopUp",
@@ -948,8 +861,6 @@
     }
   },
 
-
-
   {
     "id": "nautilus",
     "published": "2016-10-27 00:00:00 -0500",
@@ -967,11 +878,9 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/nautilus/img1.gif",
     "stats": {
-        "installations": 433
+        "installations": 434
     }
   },
-
-
 
   {
     "id": "filemanager",
@@ -990,11 +899,9 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/filemanager/img1.png",
     "stats": {
-        "installations": 5908
+        "installations": 5906
     }
   },
-
-
 
   {
     "id": "filament_sensor_reloaded",
@@ -1010,10 +917,11 @@
         "os": ["linux","freebsd"],
         "python": ">=2.7,<3"
     },
-    "license": "AGPLv3"
+    "license": "AGPLv3",
+    "stats": {
+        "installations": 1143
+    }
   },
-
-
 
   {
     "id": "smsnotifier",
@@ -1032,11 +940,9 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/smsnotifier/smsnotifier.png",
     "stats": {
-        "installations": 639
+        "installations": 637
     }
   },
-
-
 
   {
     "id": "fullscreen",
@@ -1055,11 +961,9 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/fullscreen_webcam/main.jpg",
     "stats": {
-        "installations": 11069
+        "installations": 0
     }
   },
-
-
 
   {
     "id": "freemobilenotifier",
@@ -1082,8 +986,6 @@
     }
   },
 
-
-
   {
     "id": "psucontrol",
     "published": "2017-01-25 00:00:00 -0600",
@@ -1101,11 +1003,9 @@
     "license": "AGPLv3",
     "image": "https://raw.githubusercontent.com/kantlivelong/OctoPrint-PSUControl/master/psucontrol_navbar_settings.png",
     "stats": {
-        "installations": 4878
+        "installations": 4869
     }
   },
-
-
 
   {
     "id": "slic3r",
@@ -1120,11 +1020,9 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/slic3r/logo.png",
     "stats": {
-        "installations": 1635
+        "installations": 1632
     }
   },
-
-
 
   {
     "id": "tobecaplugin",
@@ -1145,8 +1043,6 @@
         "installations": 13
     }
   },
-
-
 
   {
     "id": "roomtemp",
@@ -1170,8 +1066,6 @@
     }
   },
 
-
-
   {
     "id": "touchtest",
     "published": "2017-03-05 00:00:00 -0600",
@@ -1189,8 +1083,6 @@
     }
   },
 
-
-
   {
     "id": "ledstripcontrol",
     "published": "2017-03-10 00:00:00 -0600",
@@ -1207,11 +1099,9 @@
     },
     "license": "Apache 2",
     "stats": {
-        "installations": 850
+        "installations": 851
     }
   },
-
-
 
   {
     "id": "gcodesystemcommands",
@@ -1230,8 +1120,6 @@
     }
   },
 
-
-
   {
     "id": "enclosure",
     "published": "2017-03-15 00:00:00 -0500",
@@ -1249,11 +1137,9 @@
     "license": "GPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/enclosure/Plugin_Temperature_Control.png",
     "stats": {
-        "installations": 4007
+        "installations": 4002
     }
   },
-
-
 
   {
     "id": "OctoRemote",
@@ -1268,11 +1154,9 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/OctoRemote/Hardware1.JPG",
     "stats": {
-        "installations": 150
+        "installations": 149
     }
   },
-
-
 
   {
     "id": "tempsgraph",
@@ -1291,11 +1175,9 @@
     "license": "MIT",
     "image": "https://plugins.octoprint.org/assets/img/plugins/tempsgraph/zoom.png",
     "stats": {
-        "installations": 1807
+        "installations": 1803
     }
   },
-
-
 
   {
     "id": "temperaturefailesafe",
@@ -1311,10 +1193,11 @@
         "os": ["linux"],
         "python": ">=2.7,<4"
     },
-    "license": "Apache 2"
+    "license": "Apache 2",
+    "stats": {
+        "installations": 1264
+    }
   },
-
-
 
   {
     "id": "finetunerptr",
@@ -1327,10 +1210,11 @@
     "page": "https://plugins.octoprint.org/plugins/finetunerptr/",
     "compatibility": {"octoprint": [], "os": [], "python": ">=2.7,<3"},
     "license": "AGPLv3",
-    "image": "https://plugins.octoprint.org/assets/img/plugins/finetunerptr/OctoPrint-FineTuneRptr.png"
+    "image": "https://plugins.octoprint.org/assets/img/plugins/finetunerptr/OctoPrint-FineTuneRptr.png",
+    "stats": {
+        "installations": 0
+    }
   },
-
-
 
   {
     "id": "octoprint-grbl-plugin",
@@ -1353,8 +1237,6 @@
     }
   },
 
-
-
   {
     "id": "OctoPNP",
     "published": "2017-05-19 00:00:00 -0500",
@@ -1372,8 +1254,6 @@
     }
   },
 
-
-
   {
     "id": "Octoslack",
     "published": "2017-05-20 00:00:00 -0500",
@@ -1387,11 +1267,9 @@
     "license": "MIT",
     "image": "https://plugins.octoprint.org/assets/img/plugins/Octoslack/Octoslack-PrintProgress_SlackOnly.png",
     "stats": {
-        "installations": 680
+        "installations": 681
     }
   },
-
-
 
   {
     "id": "actioncommands",
@@ -1410,11 +1288,9 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/actioncommands/settings.png",
     "stats": {
-        "installations": 1529
+        "installations": 1530
     }
   },
-
-
 
   {
     "id": "anywhere",
@@ -1433,11 +1309,9 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/anywhere/screenshot1.png",
     "stats": {
-        "installations": 6532
+        "installations": 6525
     }
   },
-
-
 
   {
     "id": "BLTouch",
@@ -1456,11 +1330,9 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/BLTouch/screenshot.png",
     "stats": {
-        "installations": 5754
+        "installations": 5761
     }
   },
-
-
 
   {
     "id": "polarcloud",
@@ -1479,11 +1351,9 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/polarcloud/polarcloud.png",
     "stats": {
-        "installations": 1251
+        "installations": 1253
     }
   },
-
-
 
   {
     "id": "costestimation",
@@ -1501,11 +1371,9 @@
     },
     "license": "AGPLv3",
     "stats": {
-        "installations": 3028
+        "installations": 3026
     }
   },
-
-
 
   {
     "id": "YouTubeLive",
@@ -1520,11 +1388,9 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/YouTubeLive/tab_screenshot.jpg",
     "stats": {
-        "installations": 439
+        "installations": 436
     }
   },
-
-
 
   {
     "id": "simpleemergencystop",
@@ -1543,11 +1409,9 @@
     "license": "MIT",
     "image": "https://plugins.octoprint.org/assets/img/plugins/simpleemergencystop/emergencystopsign.png",
     "stats": {
-        "installations": 7313
+        "installations": 7312
     }
   },
-
-
 
   {
     "id": "eeprom_MPSelectMini",
@@ -1562,11 +1426,9 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/eeprom_mpselectmini/screen.png",
     "stats": {
-        "installations": 262
+        "installations": 261
     }
   },
-
-
 
   {
     "id": "Hangprinter",
@@ -1585,8 +1447,6 @@
     }
   },
 
-
-
   {
     "id": "filamentmanager",
     "published": "2017-08-22 00:00:00 -0500",
@@ -1603,11 +1463,9 @@
     },
     "license": "AGPLv3",
     "stats": {
-        "installations": 4525
+        "installations": 4528
     }
   },
-
-
 
   {
     "id": "filetypes",
@@ -1626,8 +1484,6 @@
     }
   },
 
-
-
   {
     "id": "custombackground",
     "published": "2017-08-27 00:00:00 -0500",
@@ -1645,11 +1501,9 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/CustomBackground/screenshot.png",
     "stats": {
-        "installations": 1413
+        "installations": 1415
     }
   },
-
-
 
   {
     "id": "tplinksmartplug",
@@ -1668,11 +1522,9 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/TPLinkSmartplug/screenshot_on.png",
     "stats": {
-        "installations": 2737
+        "installations": 2738
     }
   },
-
-
 
   {
     "id": "pushjet",
@@ -1691,8 +1543,6 @@
     }
   },
 
-
-
   {
     "id": "RepetierInformer",
     "published": "2017-09-18 00:00:00 -0500",
@@ -1710,8 +1560,6 @@
     }
   },
 
-
-
   {
     "id": "heatertimeout",
     "published": "2017-09-25 00:00:00 -0500",
@@ -1728,11 +1576,9 @@
     },
     "license": "Apache 2",
     "stats": {
-        "installations": 5393
+        "installations": 5397
     }
   },
-
-
 
   {
     "id": "GcodeEditor",
@@ -1747,11 +1593,9 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/GcodeEditor/edit_gcode.png",
     "stats": {
-        "installations": 5479
+        "installations": 5476
     }
   },
-
-
 
   {
     "id": "themeify",
@@ -1774,8 +1618,6 @@
     }
   },
 
-
-
   {
     "id": "preheat",
     "published": "2017-11-21 00:00:00 -0600",
@@ -1793,11 +1635,9 @@
     "license": "MIT",
     "image": "https://plugins.octoprint.org/assets/img/plugins/preheat/preheat.png",
     "stats": {
-        "installations": 5918
+        "installations": 5912
     }
   },
-
-
 
   {
     "id": "tasmota",
@@ -1816,11 +1656,9 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/tasmota/screenshot.png",
     "stats": {
-        "installations": 774
+        "installations": 771
     }
   },
-
-
 
   {
     "id": "astroprint",
@@ -1839,11 +1677,9 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/astroprint/astroprint-hero.jpg",
     "stats": {
-        "installations": 4015
+        "installations": 4014
     }
   },
-
-
 
   {
     "id": "octoprint-eta",
@@ -1860,10 +1696,11 @@
         "python": ">=2.7,<3"
     },
     "license": "AGPLv3",
-    "image": "https://plugins.octoprint.org/assets/img/plugins/octoprint_eta/screenshot.png"
+    "image": "https://plugins.octoprint.org/assets/img/plugins/octoprint_eta/screenshot.png",
+    "stats": {
+        "installations": 0
+    }
   },
-
-
 
   {
     "id": "TerminalCommands",
@@ -1882,11 +1719,9 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/TerminalCommands/terminal_tab.png",
     "stats": {
-        "installations": 1506
+        "installations": 1505
     }
   },
-
-
 
   {
     "id": "firmwareupdater",
@@ -1905,11 +1740,9 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/firmwareupdater/firmware-updater.png",
     "stats": {
-        "installations": 11148
+        "installations": 11142
     }
   },
-
-
 
   {
     "id": "m73progress",
@@ -1928,11 +1761,9 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/m73progress/m73progress.jpg",
     "stats": {
-        "installations": 1767
+        "installations": 1769
     }
   },
-
-
 
   {
     "id": "webcamtab",
@@ -1950,11 +1781,9 @@
     },
     "license": "AGPLv3",
     "stats": {
-        "installations": 3847
+        "installations": 3842
     }
   },
-
-
 
   {
     "id": "floatingnavbar",
@@ -1973,11 +1802,9 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/floatingnavbar/screenshot.png",
     "stats": {
-        "installations": 6478
+        "installations": 6480
     }
   },
-
-
 
   {
     "id": "mqttpublish",
@@ -2000,8 +1827,6 @@
     }
   },
 
-
-
   {
     "id": "tasmota_mqtt",
     "published": "2018-01-17 00:00:00 -0600",
@@ -2019,11 +1844,9 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/tasmota_mqtt/navbar.png",
     "stats": {
-        "installations": 303
+        "installations": 301
     }
   },
-
-
 
   {
     "id": "M117SpeechSynthesis",
@@ -2046,8 +1869,6 @@
     }
   },
 
-
-
   {
     "id": "taborder",
     "published": "2018-01-22 00:00:00 -0600",
@@ -2065,11 +1886,9 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/taborder/settings.png",
     "stats": {
-        "installations": 4775
+        "installations": 4768
     }
   },
-
-
 
   {
     "id": "atxpihat",
@@ -2093,8 +1912,6 @@
     }
   },
 
-
-
   {
     "id": "ESPurna_RGB",
     "published": "2018-01-30 00:00:00 -0600",
@@ -2116,8 +1933,6 @@
     }
   },
 
-
-
   {
     "id": "malyan_connection_fix",
     "published": "2018-02-07 00:00:00 -0600",
@@ -2134,11 +1949,9 @@
     },
     "license": "AGPLv3",
     "stats": {
-        "installations": 1268
+        "installations": 1265
     }
   },
-
-
 
   {
     "id": "CR10_Leveling",
@@ -2153,11 +1966,9 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/CR10Leveling/control.png",
     "stats": {
-        "installations": 1430
+        "installations": 1429
     }
   },
-
-
 
   {
     "id": "octorant",
@@ -2172,11 +1983,9 @@
     "license": "MIT",
     "image": "https://plugins.octoprint.org/assets/img/plugins/octorant/featured.jpg",
     "stats": {
-        "installations": 390
+        "installations": 392
     }
   },
-
-
 
   {
     "id": "octolapse",
@@ -2195,11 +2004,9 @@
     "license": "AGPL-3.0",
     "image": "https://plugins.octoprint.org/assets/img/plugins/octolapse/tab_mini.png",
     "stats": {
-        "installations": 15621
+        "installations": 15642
     }
   },
-
-
 
   {
     "id": "DisplayLayerProgress",
@@ -2218,11 +2025,9 @@
     "license": "AGPLv3",
     "image": "https://github.com/OllisGit/OctoPrint-DisplayLayerProgress/raw/master/screenshots/navbar.jpg",
     "stats": {
-        "installations": 10998
+        "installations": 10995
     }
   },
-
-
 
   {
     "id": "bedlevelvisualizer",
@@ -2241,11 +2046,9 @@
     "license": "MIT License",
     "image": "https://plugins.octoprint.org/assets/img/plugins/bedlevelvisualizer/screenshot.png",
     "stats": {
-        "installations": 15807
+        "installations": 15808
     }
   },
-
-
 
   {
     "id": "DeleteAfterPrint",
@@ -2264,11 +2067,9 @@
     "license": "AGPLv3",
     "image": "https://raw.githubusercontent.com/OllisGit/OctoPrint-DeleteAfterPrint/master/screenshots/sidebar.jpg",
     "stats": {
-        "installations": 806
+        "installations": 804
     }
   },
-
-
 
   {
     "id": "opitemp",
@@ -2287,11 +2088,9 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/opitemp/opitemp.png",
     "stats": {
-        "installations": 463
+        "installations": 461
     }
   },
-
-
 
   {
     "id": "ipOnConnect",
@@ -2314,8 +2113,6 @@
     }
   },
 
-
-
   {
     "id": "multicam",
     "published": "2018-05-09 00:00:00 -0500",
@@ -2331,8 +2128,6 @@
         "installations": 2576
     }
   },
-
-
 
   {
     "id": "dropbox_timelapse",
@@ -2350,11 +2145,9 @@
     },
     "license": "AGPLv3",
     "stats": {
-        "installations": 623
+        "installations": 624
     }
   },
-
-
 
   {
     "id": "DiscordRemote",
@@ -2369,11 +2162,9 @@
     "license": "MIT",
     "image": "https://plugins.octoprint.org/assets/img/DiscordRemote/featured.jpg",
     "stats": {
-        "installations": 690
+        "installations": 688
     }
   },
-
-
 
   {
     "id": "auth_bookedscheduler",
@@ -2395,8 +2186,6 @@
     }
   },
 
-
-
   {
     "id": "sidebartempgraph",
     "published": "2018-06-05 00:00:00 -0500",
@@ -2414,11 +2203,9 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/sidebartempgraph/screenshot.png",
     "stats": {
-        "installations": 1005
+        "installations": 1003
     }
   },
-
-
 
   {
     "id": "cancelobject",
@@ -2437,11 +2224,9 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/cancelobject/cancelobject.png",
     "stats": {
-        "installations": 5967
+        "installations": 5973
     }
   },
-
-
 
   {
     "id": "shutdownprinter",
@@ -2456,11 +2241,9 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/shutdownprinter/sidebar.JPG",
     "stats": {
-        "installations": 1031
+        "installations": 1029
     }
   },
-
-
 
   {
     "id": "excluderegion",
@@ -2479,11 +2262,9 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/excluderegion/excluderegion-gcode-viewer.png",
     "stats": {
-        "installations": 5532
+        "installations": 5538
     }
   },
-
-
 
   {
     "id": "gcodestatEstimator",
@@ -2501,11 +2282,9 @@
     },
     "license": "unlicence",
     "stats": {
-        "installations": 601
+        "installations": 600
     }
   },
-
-
 
   {
     "id": "domoticz",
@@ -2528,8 +2307,6 @@
     }
   },
 
-
-
   {
     "id": "PrintTimeGenius",
     "published": "2018-07-12 00:00:00 -0500",
@@ -2547,11 +2324,9 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/PrintTimeGenius/precise.png",
     "stats": {
-        "installations": 12033
+        "installations": 12030
     }
   },
-
-
 
   {
     "id": "layerdisplay",
@@ -2566,11 +2341,9 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/layerdisplay/layerdisplay.png",
     "stats": {
-        "installations": 2891
+        "installations": 2886
     }
   },
-
-
 
   {
     "id": "bedlevelingwizard",
@@ -2588,11 +2361,9 @@
     },
     "license": "AGPLv3",
     "stats": {
-        "installations": 3314
+        "installations": 3310
     }
   },
-
-
 
   {
     "id": "statefulsidebar",
@@ -2614,8 +2385,6 @@
     }
   },
 
-
-
   {
     "id": "MultipleUpload",
     "published": "2018-07-17 00:00:00 -0500",
@@ -2633,11 +2402,9 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/MultipleUpload/open_files.png",
     "stats": {
-        "installations": 1194
+        "installations": 1195
     }
   },
-
-
 
   {
     "id": "rtmpstreamer",
@@ -2652,11 +2419,9 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/rtmpstreamer/tab_screenshot.jpg",
     "stats": {
-        "installations": 342
+        "installations": 343
     }
   },
-
-
 
   {
     "id": "klipper",
@@ -2675,11 +2440,9 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/klipper/message-log.png",
     "stats": {
-        "installations": 2559
+        "installations": 2557
     }
   },
-
-
 
   {
     "id": "filament_sensor_ng",
@@ -2695,10 +2458,11 @@
         "os": ["linux","freebsd"],
         "python": ">=2.7,<3"
     },
-    "license": "GPLv3"
+    "license": "GPLv3",
+    "stats": {
+        "installations": 504
+    }
   },
-
-
 
   {
     "id": "ProgressBasedOnTime",
@@ -2720,8 +2484,6 @@
     }
   },
 
-
-
   {
     "id": "m73etaoverride",
     "published": "2018-09-18 00:00:00 -0500",
@@ -2734,11 +2496,9 @@
     "compatibility": {"octoprint": [], "os": [], "python": ">=2.7,<3"},
     "license": "AGPLv3",
     "stats": {
-        "installations": 704
+        "installations": 706
     }
   },
-
-
 
   {
     "id": "wemoswitch",
@@ -2757,11 +2517,9 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/wemoswitch/screenshot_on.png",
     "stats": {
-        "installations": 395
+        "installations": 397
     }
   },
-
-
 
   {
     "id": "kronos_data_collector",
@@ -2775,11 +2533,9 @@
     "compatibility": {"octoprint": [], "os": [], "python": ">=2.7,<3"},
     "license": "AGPLv3",
     "stats": {
-        "installations": 116
+        "installations": 0
     }
   },
-
-
 
   {
     "id": "OctoAutoremote",
@@ -2794,11 +2550,9 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/OctoAutoremote/settings.png",
     "stats": {
-        "installations": 61
+        "installations": 60
     }
   },
-
-
 
   {
     "id": "gitfiles",
@@ -2821,8 +2575,6 @@
     }
   },
 
-
-
   {
     "id": "nexmonotifier",
     "published": "2018-10-02 00:00:00 -0500",
@@ -2844,8 +2596,6 @@
     }
   },
 
-
-
   {
     "id": "ABL_Expert",
     "published": "2018-10-04 00:00:00 -0500",
@@ -2862,11 +2612,9 @@
     },
     "license": "AGPLv3",
     "stats": {
-        "installations": 4841
+        "installations": 4846
     }
   },
-
-
 
   {
     "id": "tuyasmartplug",
@@ -2881,11 +2629,9 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/TuyaSmartplug/screenshot.png",
     "stats": {
-        "installations": 158
+        "installations": 159
     }
   },
-
-
 
   {
     "id": "active_filters_extended",
@@ -2907,8 +2653,6 @@
     }
   },
 
-
-
   {
     "id": "dragon_order",
     "published": "2018-11-18 00:00:00 -0600",
@@ -2925,11 +2669,9 @@
     },
     "license": "AGPLv3",
     "stats": {
-        "installations": 1984
+        "installations": 1983
     }
   },
-
-
 
   {
     "id": "signalnotifier",
@@ -2952,8 +2694,6 @@
     }
   },
 
-
-
   {
     "id": "MyMiniFactory",
     "published": "2018-12-11 00:00:00 -0600",
@@ -2975,8 +2715,6 @@
     }
   },
 
-
-
   {
     "id": "SlicerSettingsParser",
     "published": "2018-12-22 00:00:00 -0600",
@@ -2992,8 +2730,6 @@
         "installations": 776
     }
   },
-
-
 
   {
     "id": "SlicerSettingsTab",
@@ -3012,11 +2748,9 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/SlicerSettingsTab/main.png",
     "stats": {
-        "installations": 1157
+        "installations": 1156
     }
   },
-
-
 
   {
     "id": "IFTTT",
@@ -3030,11 +2764,9 @@
     "compatibility": {"octoprint": [], "os": [], "python": ">=2.7,<3"},
     "license": "AGPLv3",
     "stats": {
-        "installations": 1948
+        "installations": 1946
     }
   },
-
-
 
   {
     "id": "BetterHeaterTimeout",
@@ -3049,11 +2781,9 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/BetterHeaterTimeout/timedout.png",
     "stats": {
-        "installations": 2325
+        "installations": 2330
     }
   },
-
-
 
   {
     "id": "LCD1602_I2cdisplay",
@@ -3070,10 +2800,11 @@
         "python": ">=2.7,<3"
     },
     "license": "AGPLv3",
-    "image": "https://plugins.octoprint.org/assets/img/plugins/LCD1602_I2cdisplay/progress.jpg"
+    "image": "https://plugins.octoprint.org/assets/img/plugins/LCD1602_I2cdisplay/progress.jpg",
+    "stats": {
+        "installations": 0
+    }
   },
-
-
 
   {
     "id": "hardwarepwm",
@@ -3096,8 +2827,6 @@
     }
   },
 
-
-
   {
     "id": "webcamstreamer",
     "published": "2019-02-08 00:00:00 -0600",
@@ -3111,11 +2840,9 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/webcamstreamer/screenshot_tab.png",
     "stats": {
-        "installations": 1168
+        "installations": 1170
     }
   },
-
-
 
   {
     "id": "filament_sensor_ng_orangepi",
@@ -3137,8 +2864,6 @@
     }
   },
 
-
-
   {
     "id": "printtrack",
     "published": "2019-02-25 00:00:00 -0600",
@@ -3156,11 +2881,9 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/printtrack/printtrack_title.png",
     "stats": {
-        "installations": 403
+        "installations": 402
     }
   },
-
-
 
   {
     "id": "rgb_status",
@@ -3179,11 +2902,9 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/rgb_status/featured.png",
     "stats": {
-        "installations": 538
+        "installations": 536
     }
   },
-
-
 
   {
     "id": "xMattersIntegration",
@@ -3206,8 +2927,6 @@
     }
   },
 
-
-
   {
     "id": "curalegacy",
     "published": "2019-03-28 00:00:00 -0500",
@@ -3224,11 +2943,9 @@
     },
     "license": "AGPLv3",
     "stats": {
-        "installations": 3008
+        "installations": 3006
     }
   },
-
-
 
   {
     "id": "bettergrblsupport",
@@ -3247,11 +2964,9 @@
     "license": "Apache 2.0",
     "image": "https://plugins.octoprint.org/assets/img/plugins/bettergrblsupport/Grbl_logo.png",
     "stats": {
-        "installations": 142
+        "installations": 141
     }
   },
-
-
 
   {
     "id": "DryRun",
@@ -3266,11 +2981,9 @@
     "license": "AGPLv3",
     "image": "dryrun-activated",
     "stats": {
-        "installations": 831
+        "installations": 830
     }
   },
-
-
 
   {
     "id": "marlin_flasher",
@@ -3289,11 +3002,9 @@
     "license": "MIT",
     "image": "https://plugins.octoprint.org/assets/img/plugins/marlin_flasher/arduino_flash.png",
     "stats": {
-        "installations": 1647
+        "installations": 1641
     }
   },
-
-
 
   {
     "id": "FanSpeedMirror",
@@ -3311,11 +3022,9 @@
     },
     "license": "AGPLv3",
     "stats": {
-        "installations": 610
+        "installations": 612
     }
   },
-
-
 
   {
     "id": "repeatingcommand",
@@ -3338,8 +3047,6 @@
     }
   },
 
-
-
   {
     "id": "octoprint_complicated",
     "published": "2019-04-23 00:00:00 -0500",
@@ -3357,11 +3064,9 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/octoprint_complicated/demo.png",
     "stats": {
-        "installations": 367
+        "installations": 369
     }
   },
-
-
 
   {
     "id": "PCA9685LEDStripControl",
@@ -3384,8 +3089,6 @@
     }
   },
 
-
-
   {
     "id": "preprintservice",
     "published": "2019-05-12 00:00:00 -0500",
@@ -3407,8 +3110,6 @@
     }
   },
 
-
-
   {
     "id": "octopod",
     "published": "2019-05-28 00:00:00 -0500",
@@ -3426,11 +3127,9 @@
     "license": "Apache-2.0",
     "image": "https://plugins.octoprint.org/assets/img/plugins/octopod/print_finished.jpg",
     "stats": {
-        "installations": 2841
+        "installations": 2842
     }
   },
-
-
 
   {
     "id": "uploadanything",
@@ -3449,11 +3148,9 @@
     "license": "Apache License 2.0",
     "image": "https://plugins.octoprint.org/assets/img/plugins/uploadanything/settings.png",
     "stats": {
-        "installations": 359
+        "installations": 358
     }
   },
-
-
 
   {
     "id": "Change_Filament",
@@ -3472,11 +3169,9 @@
     "license": "bsd-3-clause",
     "image": "https://plugins.octoprint.org/assets/img/plugins/Change_Filament/cf_buttons.png",
     "stats": {
-        "installations": 4471
+        "installations": 4475
     }
   },
-
-
 
   {
     "id": "OctoFlat",
@@ -3491,11 +3186,9 @@
     "license": "MIT",
     "image": "https://raw.githubusercontent.com/juniorRubyist/OctoPrint-OctoFlat/master/assets/octoprint_1.png",
     "stats": {
-        "installations": 676
+        "installations": 675
     }
   },
-
-
 
   {
     "id": "filamentencore",
@@ -3518,8 +3211,6 @@
     }
   },
 
-
-
   {
     "id": "PrinterAlerts",
     "published": "2019-06-08 00:00:00 -0500",
@@ -3537,8 +3228,6 @@
     }
   },
 
-
-
   {
     "id": "PauseForUserEvent",
     "published": "2019-06-11 00:00:00 -0500",
@@ -3553,10 +3242,11 @@
         "os": [],
         "python": ">=2.7,<3"
     },
-    "license": "AGPLv3"
+    "license": "AGPLv3",
+    "stats": {
+        "installations": 362
+    }
   },
-
-
 
   {
     "id": "prusaetaoverride",
@@ -3573,8 +3263,6 @@
         "installations": 1131
     }
   },
-
-
 
   {
     "id": "webcamSB",
@@ -3593,11 +3281,9 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/webcamSB/featured.png",
     "stats": {
-        "installations": 1904
+        "installations": 1901
     }
   },
-
-
 
   {
     "id": "gslc",
@@ -3619,8 +3305,6 @@
     }
   },
 
-
-
   {
     "id": "dashboard",
     "published": "2019-09-10 00:00:00 -0500",
@@ -3638,11 +3322,9 @@
     "license": "AGPLv3",
     "image": "https://github.com/StefanCohen/OctoPrint-Dashboard/raw/master/screenshot.png",
     "stats": {
-        "installations": 7662
+        "installations": 7656
     }
   },
-
-
 
   {
     "id": "octovox",
@@ -3657,11 +3339,9 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/octovox/alexa_response.png",
     "stats": {
-        "installations": 648
+        "installations": 647
     }
   },
-
-
 
   {
     "id": "AutostartPrint",
@@ -3684,8 +3364,6 @@
     }
   },
 
-
-
   {
     "id": "AutoLogout",
     "published": "2019-10-03 00:00:00 -0500",
@@ -3707,8 +3385,6 @@
     }
   },
 
-
-
   {
     "id": "metadatapreprocessor",
     "published": "2019-10-03 00:00:00 -0500",
@@ -3724,8 +3400,6 @@
         "installations": 404
     }
   },
-
-
 
   {
     "id": "orvibos20",
@@ -3744,8 +3418,6 @@
     }
   },
 
-
-
   {
     "id": "mmu2filamentselect",
     "published": "2019-10-04 00:00:00 -0500",
@@ -3759,11 +3431,9 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/mmu2filamentselect/octoprusa.png",
     "stats": {
-        "installations": 843
+        "installations": 844
     }
   },
-
-
 
   {
     "id": "filamentstorage",
@@ -3782,8 +3452,6 @@
     }
   },
 
-
-
   {
     "id": "CrealityTemperature",
     "published": "2019-10-28 00:00:00 -0500",
@@ -3800,11 +3468,9 @@
     },
     "license": "AGPLv3",
     "stats": {
-        "installations": 1550
+        "installations": 1549
     }
   },
-
-
 
   {
     "id": "thingiverse",
@@ -3822,11 +3488,9 @@
     },
     "license": "AGPLv3",
     "stats": {
-        "installations": 1726
+        "installations": 1721
     }
   },
-
-
 
   {
     "id": "influxdb",
@@ -3849,8 +3513,6 @@
     }
   },
 
-
-
   {
     "id": "thespaghettidetective",
     "published": "2019-11-07 00:00:00 -0600",
@@ -3868,11 +3530,9 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/thespaghettidetective/video_preview1.png",
     "stats": {
-        "installations": 8107
+        "installations": 8117
     }
   },
-
-
 
   {
     "id": "UltimakerFormatPackage",
@@ -3895,8 +3555,6 @@
     }
   },
 
-
-
   {
     "id": "filamentrevolutions",
     "published": "2019-11-29 00:00:00 -0600",
@@ -3913,11 +3571,9 @@
     },
     "license": "AGPLv3",
     "stats": {
-        "installations": 354
+        "installations": 353
     }
   },
-
-
 
   {
     "id": "mystromswitch",
@@ -3940,8 +3596,6 @@
     }
   },
 
-
-
   {
     "id": "resource_monitor",
     "published": "2019-12-03 00:00:00 -0600",
@@ -3959,11 +3613,9 @@
     "license": "MIT",
     "image": "https://plugins.octoprint.org/assets/img/plugins/resource_monitor/cpu.png",
     "stats": {
-        "installations": 4244
+        "installations": 4238
     }
   },
-
-
 
   {
     "id": "prometheus_exporter",
@@ -3980,8 +3632,6 @@
         "installations": 96
     }
   },
-
-
 
   {
     "id": "PrusaLevelingGuide",
@@ -4000,11 +3650,9 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/PrusaLevelingGuide/bed.png",
     "stats": {
-        "installations": 1754
+        "installations": 1755
     }
   },
-
-
 
   {
     "id": "octohue",
@@ -4023,11 +3671,9 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/octohue/Featured-Image.png",
     "stats": {
-        "installations": 555
+        "installations": 554
     }
   },
-
-
 
   {
     "id": "progress_title",
@@ -4046,11 +3692,9 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/progress_title/title.png",
     "stats": {
-        "installations": 1486
+        "installations": 1485
     }
   },
-
-
 
   {
     "id": "terminalcommandsextended",
@@ -4069,11 +3713,9 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/terminalcommandsextended/screenshot_tab.png",
     "stats": {
-        "installations": 1012
+        "installations": 1013
     }
   },
-
-
 
   {
     "id": "OctoPrint-hueCommands",
@@ -4090,10 +3732,11 @@
         "python": ">=2.7,<3"
     },
     "license": "AGPLv3",
-    "image": "https://raw.githubusercontent.com/LMS0815/OctoPrint-hueCommands/master/screenshots/huecommands_settings.png"
+    "image": "https://raw.githubusercontent.com/LMS0815/OctoPrint-hueCommands/master/screenshots/huecommands_settings.png",
+    "stats": {
+        "installations": 54
+    }
   },
-
-
 
   {
     "id": "remove_ttys_ports",
@@ -4115,8 +3758,6 @@
     }
   },
 
-
-
   {
     "id": "fixcbdfirmware",
     "published": "2020-03-25 00:00:00 -0500",
@@ -4137,8 +3778,6 @@
     }
   },
 
-
-
   {
     "id": "Plabric",
     "published": "2020-03-26 00:00:00 -0500",
@@ -4155,11 +3794,9 @@
     },
     "license": "AGPLv3",
     "stats": {
-        "installations": 1364
+        "installations": 1363
     }
   },
-
-
 
   {
     "id": "Python3PluginCompatibilityCheck",
@@ -4177,11 +3814,9 @@
     },
     "license": "AGPLv3",
     "stats": {
-        "installations": 892
+        "installations": 891
     }
   },
-
-
 
   {
     "id": "AutoTerminalInput",
@@ -4199,11 +3834,9 @@
     },
     "license": "AGPLv3",
     "stats": {
-        "installations": 497
+        "installations": 498
     }
   },
-
-
 
   {
     "id": "prusaslicerthumbnails",
@@ -4222,11 +3855,9 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/prusaslicerthumbnails/screenshot_thumbnail.png",
     "stats": {
-        "installations": 2359
+        "installations": 2362
     }
   },
-
-
 
   {
     "id": "filamentsensorsimplified",
@@ -4245,11 +3876,9 @@
     "license": "AGPLv3",
     "image": "https://github.com/LuckyX182/Filament_sensor_simplified/raw/master/screenshots/settings.png",
     "stats": {
-        "installations": 194
+        "installations": 195
     }
   },
-
-
 
   {
     "id": "continuousprint",
@@ -4268,11 +3897,9 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/continuousprint/screenshot.png",
     "stats": {
-        "installations": 463
+        "installations": 464
     }
   },
-
-
 
   {
     "id": "FriendlyNeighborhoodBeeper",
@@ -4289,10 +3916,11 @@
         "python": ">=2.7,<4"
     },
     "license": "AGPLv3",
-    "image": "https://plugins.octoprint.org/assets/img/plugins/FriendlyBeeper/settings.png"
+    "image": "https://plugins.octoprint.org/assets/img/plugins/FriendlyBeeper/settings.png",
+    "stats": {
+        "installations": 563
+    }
   },
-
-
 
   {
     "id": "TemperatureLegendMover",
@@ -4311,11 +3939,9 @@
     "license": "AGPLv3",
     "image": "https://github.com/OllisGit/OctoPrint-TemperatureLegendMover/raw/master/screenshots/temperature-legend.png",
     "stats": {
-        "installations": 214
+        "installations": 215
     }
   },
-
-
 
   {
     "id": "emergencystopsimplified",
@@ -4333,11 +3959,9 @@
     },
     "license": "AGPLv3",
     "stats": {
-        "installations": 516
+        "installations": 518
     }
   },
-
-
 
   {
     "id": "webhooks",
@@ -4360,8 +3984,6 @@
     }
   },
 
-
-
   {
     "id": "printoid",
     "published": "2020-04-30 00:00:00 -0500",
@@ -4378,11 +4000,9 @@
     },
     "license": "Apache-2.0",
     "stats": {
-        "installations": 1570
+        "installations": 1575
     }
   },
-
-
 
   {
     "id": "smartpreheat",
@@ -4401,11 +4021,9 @@
     "license": "AGPLv3",
     "image": "https://raw.githubusercontent.com/kantlivelong/OctoPrint-SmartPreheat/master/extra/screenshots/beforePrintStarted.png",
     "stats": {
-        "installations": 1498
+        "installations": 1506
     }
   },
-
-
 
   {
     "id": "terminalresponse",
@@ -4424,7 +4042,7 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/terminalresponse/01.png",
     "stats": {
-        "installations": 49
+        "installations": 50
     }
   }
 ]
