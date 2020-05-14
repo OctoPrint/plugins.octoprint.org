@@ -14,15 +14,29 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: ⬇ Fetch plugin stats data
+      - name: 🐍 Set up Python 3.7
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.7"
+
+      - name: 🏗 Enrich metadata
         run: |
-          bash ./fetch_plugin_stats
+          pip install -r _build/requirements.txt
+          python ./_build/populate_additional_metadata.py
+        env:
+          GITHUB_CREDENTIALS: {{ secrets.metadata_credentials }}
 
       - name: 🔨 Build page
         run: |
           docker run \
           -v ${{ github.workspace }}:/srv/jekyll \
           jekyll/builder:3.8.6 /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future"
+
+      - name: 🕵️‍♂️ Validate page
+        run: |
+          docker run \
+          -v ${{ github.workspace }}:/data \
+          cytopia/jsonlint _site/plugins.json
 
       - name: 🚀 Deploy page
         uses: peaceiris/actions-gh-pages@v3

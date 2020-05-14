@@ -4,8 +4,6 @@ layout: null
 [
 {% for plugin in site.plugins %}{% unless forloop.first %},{% endunless %}
 {% capture description %}{{ plugin.description }}{% if plugin.note %} // Please note: {{ plugin.note | markdownify }}{% endif %}{% endcapture %}
-{% assign plugin_id = plugin.id | remove_first: '/plugins/' | remove: '/' | downcase %}
-{% assign plugin_stats = site.data.plugin_stats[plugin_id] %}
   {
     "id": "{{ plugin.id | remove_first: '/plugins/' | remove: '/' }}",
     "published": {{ plugin.date | strip_html | strip_newlines | jsonify }},
@@ -23,9 +21,9 @@ layout: null
     }{% else %}{"octoprint": [], "os": [], "python": ">=2.7,<3"}{% endif %},
     "license": {{ plugin.license | strip_html | strip_newlines | jsonify }}{% if plugin.featuredimage %},
     "image": "{% include canonic_url url=plugin.featuredimage external=true %}"{% endif %}{% if plugin.disabled %},
-    "disabled": {{ plugin.disabled | markdownify | jsonify }}{% endif %}{% if plugin_stats %},
+    "disabled": {{ plugin.disabled | markdownify | jsonify }}{% endif %}{% if plugin.stats.installations %},
     "stats": {
-        "installations": {{ plugin_stats.instances }}
+        "installations": {{ plugin.stats.installations }}
     }{% endif %}
   }{% endfor %}
 ]

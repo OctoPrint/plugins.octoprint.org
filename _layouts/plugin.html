@@ -1,8 +1,6 @@
 ---
 layout: default
 ---
-{% assign plugin_id = page.id | remove_first: '/plugins/' | remove: '/' | downcase %}
-{% assign plugin_stats = site.data.plugin_stats[plugin_id] %}
 {% assign sorted_plugins = site.plugins | sort: 'title' %}
 {% assign found_plugin = false %}
 {% assign prev_plugin = false %}
@@ -109,10 +107,22 @@ layout: default
         <dd>{{ page.date | strip_html | strip_newlines | escape | date_to_string}}</dd>
       </dl>
       {% endif %}
-      {% if plugin_stats.instances %}
+      {% if page.stats.installations %}
       <dl class="installations">
         <dt>Active Installations</dt>
-        <dd>Installed on at least <strong>{% include format_number number=plugin_stats.instances %}</strong> instances</dd>
+        <dd>Installed on at least <strong>{% include format_number number=page.stats.installations %}</strong> instances</dd>
+      </dl>
+      {% endif %}
+      {% if page.github %}
+      <dl class="github">
+        <dt>Github stats</dt>
+        <dd>
+          <ul>
+            <li>Last update: {{ page.github.last_push | date: "%-d %B %Y" }}</li>
+            <li>Stars: {{ page.github.stars }}</li>
+            <li>Open Issues: {{ page.github.issues }}</li>
+          </ul>
+        </dd>
       </dl>
       {% endif %}
       {% if page.tags %}
