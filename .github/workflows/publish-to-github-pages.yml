@@ -24,7 +24,7 @@ jobs:
           pip install -r _build/requirements.txt
           python ./_build/populate_additional_metadata.py
         env:
-          GITHUB_CREDENTIALS: {{ secrets.metadata_credentials }}
+          GITHUB_CREDENTIALS: ${{ secrets.metadata_credentials }}
 
       - name: 🔨 Build page
         run: |
