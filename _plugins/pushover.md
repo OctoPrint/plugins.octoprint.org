@@ -7,7 +7,7 @@ description: A plugin that send a notification with Pushover when the job is don
 author: Thijs Bekke
 license: AGPLv3
 
-date: 2020-05-17
+date: 2016-04-13
 
 homepage: https://github.com/thijsbekke/OctoPrint-Pushover/
 source: https://github.com/thijsbekke/OctoPrint-Pushover/
