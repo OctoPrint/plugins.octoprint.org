@@ -29,3 +29,8 @@
     repository of the old maintainer. Please re-install the plugin from the repository to update. The release notes
     of the version by the new maintainer can be found at the "Read more..." link below.
   link: https://github.com/tpmullan/OctoPrint-DetailedProgress/releases/tag/0.2.3
+- plugin: octoprint_eta
+  date: 2020-05-18 14:50:00Z
+  text: This plugin seems to have been abandoned by its original author, but a new maintainer has stepped up to maintain a fork
+    which you might want to manually install. If so, please uninstall "OctoPrint-Display-ETA" and then install "OctoPrint-Display-ETA" from the repository.
+  link: https://github.com/OctoPrint/plugins.octoprint.org/issues/466

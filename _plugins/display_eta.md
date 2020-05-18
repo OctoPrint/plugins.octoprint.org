@@ -1,17 +1,17 @@
 ---
 layout: plugin
 
-id: display-eta
+id: display_eta
 title: OctoPrint-Display-ETA
-description: Show finish time (ETA time) for current print.
-author: Pablo Ventura
+description: Show finish time (ETA) for current print.
+author: AlexVerrico, originally by Pablo Ventura
 license: AGPLv3
 
 date: 2017-12-19
 
-homepage: https://github.com/pablogventura/Octoprint-ETA
-source: https://github.com/pablogventura/Octoprint-ETA
-archive: https://github.com/pablogventura/Octoprint-ETA/archive/master.zip
+homepage: https://github.com/AlexVerrico/Octoprint-Display-ETA
+source: https://github.com/AlexVerrico/Octoprint-Display-ETA
+archive: https://github.com/AlexVerrico/Octoprint-Display-ETA/archive/master.zip
 
 tags:
 - time
@@ -19,11 +19,11 @@ tags:
 - finish time
 
 screenshots:
-- url: /assets/img/plugins/octoprint_eta/screenshot.png
-  alt: alt-text of a screenshot
+- url: /assets/img/plugins/display_eta/screenshot.png
+  alt: ETA time for current print.
   caption: ETA time for current print.
 
-featuredimage: /assets/img/plugins/octoprint_eta/screenshot.png
+featuredimage: /assets/img/plugins/display_eta/screenshot.png
 
 
 compatibility:
@@ -37,13 +37,13 @@ compatibility:
   - macos
   - freebsd
 
-abandoned: https://github.com/OctoPrint/plugins.octoprint.org/issues/466
+  python: ">=2.7,<4"
 
 ---
 
 Display estimated time of finish for current print (Estimated Time of Arrival). Day of finish is displayed only when current print will not finish today.
 
-![alt text](/assets/img/plugins/octoprint_eta/screenshot.png)
+![ETA time for current print](/assets/img/plugins/display_eta/screenshot.png)
 
 ## Setup
 
