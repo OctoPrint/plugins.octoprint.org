@@ -107,6 +107,24 @@ layout: default
         <dd>{{ page.date | strip_html | strip_newlines | escape | date_to_string}}</dd>
       </dl>
       {% endif %}
+      {% if page.stats.installations %}
+      <dl class="installations">
+        <dt>Active Installations</dt>
+        <dd>Installed on at least <strong>{% include format_number number=page.stats.installations %}</strong> instances</dd>
+      </dl>
+      {% endif %}
+      {% if page.github %}
+      <dl class="github">
+        <dt>Github stats</dt>
+        <dd>
+          <ul>
+            <li>Last update: {{ page.github.last_push | date: "%-d %B %Y" }}</li>
+            <li>Stars: {{ page.github.stars }}</li>
+            <li>Open Issues: {{ page.github.issues }}</li>
+          </ul>
+        </dd>
+      </dl>
+      {% endif %}
       {% if page.tags %}
       <dl class="tags">
         <dt>Tags</dt>
