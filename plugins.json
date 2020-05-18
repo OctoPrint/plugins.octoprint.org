@@ -637,7 +637,11 @@
     "author": "Thijs Bekke",
     "homepage": "https://github.com/thijsbekke/OctoPrint-Pushover/",
     "page": "https://plugins.octoprint.org/plugins/pushover/",
-    "compatibility": {"octoprint": [], "os": [], "python": ">=2.7,<3"},
+    "compatibility": {
+        "octoprint": [],
+        "os": [],
+        "python": ">=2.7,<4"
+    },
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/pushover/pushover.png",
     "stats": {

@@ -11,8 +11,8 @@
     <meta name="author" content="Thijs Bekke">
     <meta name="referrer" content="same-origin">
     <meta name="google-site-verification" content="0EFsbaNygJcEinKPmzP-hTf0Ju6wDIpJxO5zvQtOQT0" />
-    <meta name="build-revision" content="59f998cccf9c33bfb6e49e40a77e7bc6488248a2" />
-    <meta name="build-date" content="2020-05-18 03:46:53-05:00" />
+    <meta name="build-revision" content="7c5d264a6b611e98ce5423c59e053cdc60784656" />
+    <meta name="build-date" content="2020-05-18 03:52:36-05:00" />
 
     <!--[if lt IE 9]>
     <script src="/assets/js/html5shim.js"></script>
@@ -22,11 +22,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Le styles -->
-    <link rel="stylesheet" href="/assets/css/site.css?_=1589791613">
-    <link rel="stylesheet" href="/assets/css/bootstrap-responsive.css?_=1589791613">
-    <link rel="stylesheet" href="/assets/css/fontawesome-all.min.css?_=1589791613">
-    <link rel="stylesheet" href="/assets/css/prettify.css?_=1589791613">
-    <link rel="stylesheet" href="/assets/css/lightbox.css?_=1589791613">
+    <link rel="stylesheet" href="/assets/css/site.css?_=1589791956">
+    <link rel="stylesheet" href="/assets/css/bootstrap-responsive.css?_=1589791956">
+    <link rel="stylesheet" href="/assets/css/fontawesome-all.min.css?_=1589791956">
+    <link rel="stylesheet" href="/assets/css/prettify.css?_=1589791956">
+    <link rel="stylesheet" href="/assets/css/lightbox.css?_=1589791956">
 
     <!-- Le fav and touch icons -->
     <link rel="shortcut icon" href="/assets/img/tentacle-32x32.png">
@@ -189,6 +189,25 @@
 
 <p>When your job is finished or is failed OctoPrint will send a notification to Pushover. You can configure the sound or priority of the messages.</p>
 
+<p>This plugin supports the following features/events</p>
+
+<ul>
+  <li>Send notifications on an interval (percent or time)</li>
+  <li>Include a capture of your camera with your notifications</li>
+  <li>Temperature reached</li>
+  <li>Print done</li>
+  <li>After first couple of layer</li>
+  <li>Print Failed</li>
+  <li>Print Started</li>
+  <li>Printer is Waiting</li>
+  <li>Printer Shutdown</li>
+  <li>Print Paused</li>
+  <li>Alert Event (M300)</li>
+  <li>Panic Event (M112)</li>
+  <li>Error Event</li>
+  <li>Limit to specific devices</li>
+</ul>
+
 
       
         <h2>Pictures</h2>
@@ -276,6 +295,8 @@
           
           <a class="label" href="/by_tag/#tag-notification">notification</a>
           
+          <a class="label" href="/by_tag/#tag-pushover">pushover</a>
+          
         </dd>
       </dl>
       
@@ -290,7 +311,7 @@
             <li>Operating Systems: all</li>
             
             
-            <li>Python: &gt;=2.7,&lt;3</li>
+            <li>Python: &gt;=2.7,&lt;4</li>
             
           </ul>
         </dd>
