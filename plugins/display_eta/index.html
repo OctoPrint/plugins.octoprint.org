@@ -7,12 +7,12 @@
 <head>
     <meta charset="utf-8" />
     <title>OctoPrint-Display-ETA</title>
-    <meta name="description" content="Show finish time (ETA time) for current print.">
-    <meta name="author" content="Pablo Ventura">
+    <meta name="description" content="Show finish time (ETA) for current print.">
+    <meta name="author" content="AlexVerrico, originally by Pablo Ventura">
     <meta name="referrer" content="same-origin">
     <meta name="google-site-verification" content="0EFsbaNygJcEinKPmzP-hTf0Ju6wDIpJxO5zvQtOQT0" />
-    <meta name="build-revision" content="7c5d264a6b611e98ce5423c59e053cdc60784656" />
-    <meta name="build-date" content="2020-05-18 07:06:59-05:00" />
+    <meta name="build-revision" content="4a7c611254c73798f19876b0e4d0e93ecd43cc20" />
+    <meta name="build-date" content="2020-05-18 10:02:31-05:00" />
 
     <!--[if lt IE 9]>
     <script src="/assets/js/html5shim.js"></script>
@@ -22,11 +22,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Le styles -->
-    <link rel="stylesheet" href="/assets/css/site.css?_=1589803619">
-    <link rel="stylesheet" href="/assets/css/bootstrap-responsive.css?_=1589803619">
-    <link rel="stylesheet" href="/assets/css/fontawesome-all.min.css?_=1589803619">
-    <link rel="stylesheet" href="/assets/css/prettify.css?_=1589803619">
-    <link rel="stylesheet" href="/assets/css/lightbox.css?_=1589803619">
+    <link rel="stylesheet" href="/assets/css/site.css?_=1589814151">
+    <link rel="stylesheet" href="/assets/css/bootstrap-responsive.css?_=1589814151">
+    <link rel="stylesheet" href="/assets/css/fontawesome-all.min.css?_=1589814151">
+    <link rel="stylesheet" href="/assets/css/prettify.css?_=1589814151">
+    <link rel="stylesheet" href="/assets/css/lightbox.css?_=1589814151">
 
     <!-- Le fav and touch icons -->
     <link rel="shortcut icon" href="/assets/img/tentacle-32x32.png">
@@ -49,19 +49,19 @@
 
     <meta property="og:title" content="OctoPrint-Display-ETA" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://plugins.octoprint.org/assets/img/plugins/octoprint_eta/screenshot.png" />
+    <meta property="og:image" content="https://plugins.octoprint.org/assets/img/plugins/display_eta/screenshot.png" />
     <meta property="og:description" content="Display estimated time of finish for current print (Estimated Time of Arrival). Day of finish is displayed only when current print will not finish today.
 
 " />
     <meta property="og:site_name" content="OctoPrint Plugin Repository" />
-    <meta property="og:url" content="https://plugins.octoprint.org/plugins/octoprint-eta/" />
+    <meta property="og:url" content="https://plugins.octoprint.org/plugins/display_eta/" />
 
     <meta itemscope itemtype="http://schema.org/WebPage" />
     <meta itemprop="headline" content="OctoPrint-Display-ETA" />
     <meta itemprop="description" content="Display estimated time of finish for current print (Estimated Time of Arrival). Day of finish is displayed only when current print will not finish today.
 
 " />
-    <meta itemprop="image" content="https://plugins.octoprint.org/assets/img/plugins/octoprint_eta/screenshot.png" />
+    <meta itemprop="image" content="https://plugins.octoprint.org/assets/img/plugins/display_eta/screenshot.png" />
 
     <script src="/assets/js/jquery-1.9.1.min.js"></script>
     <script src="/assets/js/underscore.min.js"></script>
@@ -179,15 +179,15 @@
     <article class="post-content span8">
       
       
-      <div class="alert"><h3>This plugin has been abandoned</h3>The current maintainer of this plugin seems to have abandoned it. If you want to take over its maintainenance, please get in touch <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/466" target="_blank" rel="noopener noreferrer">here...</a></div>
+      
       
 
       <p class="lead">
-        Show finish time (ETA time) for current print.
+        Show finish time (ETA) for current print.
       </p>
       <p>Display estimated time of finish for current print (Estimated Time of Arrival). Day of finish is displayed only when current print will not finish today.</p>
 
-<p><img src="/assets/img/plugins/octoprint_eta/screenshot.png" alt="alt text" /></p>
+<p><img src="/assets/img/plugins/display_eta/screenshot.png" alt="ETA time for current print" /></p>
 
 <h2 id="setup">Setup</h2>
 
@@ -200,7 +200,7 @@ In Debian the following commands are made “sudo dpkg-reconfigure tzdata”, th
         
         <figure>
           
-          <a href="/assets/img/plugins/octoprint_eta/screenshot.png" data-lightbox="/plugins/octoprint-eta" data-title="ETA time for current print."><img src="/assets/img/plugins/octoprint_eta/screenshot.png" alt="alt-text of a screenshot" title="ETA time for current print."></a>
+          <a href="/assets/img/plugins/display_eta/screenshot.png" data-lightbox="/plugins/display_eta" data-title="ETA time for current print."><img src="/assets/img/plugins/display_eta/screenshot.png" alt="ETA time for current print." title="ETA time for current print."></a>
         </figure>
         
       
@@ -230,14 +230,14 @@ In Debian the following commands are made “sudo dpkg-reconfigure tzdata”, th
         
         <dd>
           URL:
-          <pre>https://github.com/pablogventura/Octoprint-ETA/archive/master.zip</pre>
+          <pre>https://github.com/AlexVerrico/Octoprint-Display-ETA/archive/master.zip</pre>
           
         </dd>
         
         
         <dd>
           Command line:
-          <pre>pip install "https://github.com/pablogventura/Octoprint-ETA/archive/master.zip"</pre>
+          <pre>pip install "https://github.com/AlexVerrico/Octoprint-Display-ETA/archive/master.zip"</pre>
         </dd>
         
       </dl>
@@ -259,9 +259,9 @@ In Debian the following commands are made “sudo dpkg-reconfigure tzdata”, th
         <dt>Github stats</dt>
         <dd>
           <ul>
-            <li>Last update: 28 December 2018</li>
-            <li>Stars: 3</li>
-            <li>Open Issues: 11</li>
+            <li>Last update: 8 May 2020</li>
+            <li>Stars: 0</li>
+            <li>Open Issues: 0</li>
           </ul>
         </dd>
       </dl>
@@ -294,7 +294,7 @@ In Debian the following commands are made “sudo dpkg-reconfigure tzdata”, th
             <li>Operating Systems: Linux, Windows, Mac OS X, FreeBSD</li>
             
             
-            <li>Python: &gt;=2.7,&lt;3</li>
+            <li>Python: &gt;=2.7,&lt;4</li>
             
           </ul>
         </dd>
@@ -302,19 +302,19 @@ In Debian the following commands are made “sudo dpkg-reconfigure tzdata”, th
       
       <dl class="author">
         <dt>Author</dt>
-        <dd>Pablo Ventura</dd>
+        <dd>AlexVerrico, originally by Pablo Ventura</dd>
       </dl>
       
       
       <dl class="homepage">
         <dt>Homepage</dt>
-        <dd><a href="https://github.com/pablogventura/Octoprint-ETA" target="_blank">https://github.com/pablogventura/Octoprint-ETA</a></dd>
+        <dd><a href="https://github.com/AlexVerrico/Octoprint-Display-ETA" target="_blank">https://github.com/AlexVerrico/Octoprint-Display-ETA</a></dd>
       </dl>
       
       
       <dl class="source">
         <dt>Source</dt>
-        <dd><a href="https://github.com/pablogventura/Octoprint-ETA" target="_blank">https://github.com/pablogventura/Octoprint-ETA</a></dd>
+        <dd><a href="https://github.com/AlexVerrico/Octoprint-Display-ETA" target="_blank">https://github.com/AlexVerrico/Octoprint-Display-ETA</a></dd>
       </dl>
       
       
@@ -340,7 +340,7 @@ In Debian the following commands are made “sudo dpkg-reconfigure tzdata”, th
             <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=suspicious+plugin+activity&template=suspicious_plugin_activity.md&title=%5BSuspicious+Plugin+Activity%5D+OctoPrint-Display-ETA">report the plugin as suspicious here</a>.
           </p>
           <p>
-            Report bugs or feature requests for the plugin to the plugin author (e.g. on the plugin's <a href="https://github.com/pablogventura/Octoprint-ETA">homepage</a>) please, not here!
+            Report bugs or feature requests for the plugin to the plugin author (e.g. on the plugin's <a href="https://github.com/AlexVerrico/Octoprint-Display-ETA">homepage</a>) please, not here!
           </p>
         </dd>
       </dl>
