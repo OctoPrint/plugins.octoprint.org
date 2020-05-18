@@ -6,9 +6,9 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html"> <!--<![endif]-->
 <head>
     <meta charset="utf-8" />
-    <title>MQTT</title>
-    <meta name="description" content="Adds support for subscribing and publishing to MQTT topics.">
-    <meta name="author" content="Franziska Kunsmann, Gina Häußge">
+    <title>Flashforge/Dremel/PowerSpec Printer Support</title>
+    <meta name="description" content="Enable OctoPrint to connect to certain FlashForge, Dremel and PowerSpec printers.">
+    <meta name="author" content="Mrnt">
     <meta name="referrer" content="same-origin">
     <meta name="google-site-verification" content="0EFsbaNygJcEinKPmzP-hTf0Ju6wDIpJxO5zvQtOQT0" />
     <meta name="build-revision" content="022b5f809cff60a24906fe7411341ec5f9d33d48" />
@@ -41,24 +41,30 @@
 
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@OctoPrint3D" />
-    <meta name="twitter:title" content="MQTT" />
-    <meta name="twitter:description" content="This is an OctoPrint Plugin that adds support for MQTT to OctoPrint.
+    <meta name="twitter:title" content="Flashforge/Dremel/PowerSpec Printer Support" />
+    <meta name="twitter:description" content="The plugin allows control of some FlashForge, Dremel and PowerSpec printers
+(such as the FlashForge Finder, Dreamer, etc) that connect via USB and do not
+appear as a serial port under OctoPrint.
 
 " />
     <meta name="twitter:image" content="https://plugins.octoprint.org/assets/img/octoprint-avatar-240x240.png" />
 
-    <meta property="og:title" content="MQTT" />
+    <meta property="og:title" content="Flashforge/Dremel/PowerSpec Printer Support" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://plugins.octoprint.org/assets/img/repo-600x400.png" />
-    <meta property="og:description" content="This is an OctoPrint Plugin that adds support for MQTT to OctoPrint.
+    <meta property="og:description" content="The plugin allows control of some FlashForge, Dremel and PowerSpec printers
+(such as the FlashForge Finder, Dreamer, etc) that connect via USB and do not
+appear as a serial port under OctoPrint.
 
 " />
     <meta property="og:site_name" content="OctoPrint Plugin Repository" />
-    <meta property="og:url" content="https://plugins.octoprint.org/plugins/mqtt/" />
+    <meta property="og:url" content="https://plugins.octoprint.org/plugins/FlashForge/" />
 
     <meta itemscope itemtype="http://schema.org/WebPage" />
-    <meta itemprop="headline" content="MQTT" />
-    <meta itemprop="description" content="This is an OctoPrint Plugin that adds support for MQTT to OctoPrint.
+    <meta itemprop="headline" content="Flashforge/Dremel/PowerSpec Printer Support" />
+    <meta itemprop="description" content="The plugin allows control of some FlashForge, Dremel and PowerSpec printers
+(such as the FlashForge Finder, Dreamer, etc) that connect via USB and do not
+appear as a serial port under OctoPrint.
 
 " />
     <meta itemprop="image" content="https://plugins.octoprint.org/assets/img/repo-600x400.png" />
@@ -159,7 +165,7 @@
   <div class="container">
     <div class="row">
       <div class="span12">
-        <h1>MQTT</h1>
+        <h1>Flashforge/Dremel/PowerSpec Printer Support</h1>
       </div>
     </div>
   </div>
@@ -168,11 +174,11 @@
 <div class="container">
   <div class="row-fluid">
     
-    <small class="pull-left"><a href="/plugins/m73progress/"><i class="fa fa-double-angle-left"></i>&nbsp;M73 Progress</a></small>
+    <small class="pull-left"><a href="/plugins/fixcbdfirmware/"><i class="fa fa-double-angle-left"></i>&nbsp;Fix CBD Firmware</a></small>
     
     &nbsp;
     
-    <small class="pull-right"><a href="/plugins/malyan_connection_fix/">Malyan/Monoprice Connection Fix&nbsp;<i class="fa fa-double-angle-right"></i></a></small>
+    <small class="pull-right"><a href="/plugins/FriendlyNeighborhoodBeeper/">Friendly Neighborhood Beeper&nbsp;<i class="fa fa-double-angle-right"></i></a></small>
     
   </div>
   <div class="content plugin-content row-fluid">
@@ -183,21 +189,28 @@
       
 
       <p class="lead">
-        Adds support for subscribing and publishing to MQTT topics.
+        Enable OctoPrint to connect to certain FlashForge, Dremel and PowerSpec printers.
       </p>
-      <p>This is an OctoPrint Plugin that adds support for <a href="http://mqtt.org/">MQTT</a> to OctoPrint.</p>
+      <p>The plugin allows control of some FlashForge, Dremel and PowerSpec printers
+(such as the FlashForge Finder, Dreamer, etc) that connect via USB and do not
+appear as a serial port under OctoPrint.</p>
 
-<p>See the plugin’s <a href="https://github.com/OctoPrint/OctoPrint-MQTT">README</a> for details on configuration and usage.</p>
+<h2 id="important">IMPORTANT</h2>
+<p>For details of which printers are supported and <strong>the level of functionality</strong>
+see the <a href="https://github.com/Mrnt/OctoPrint-FlashForge/blob/master/README.md">homepage</a>
+<br /></p>
+<hr />
+
+<p><br /></p>
+
+<h3 id="support-additional-development">Support Additional Development</h3>
+<p>This plugin was/is developed by painstakingly reverse engineering the communication
+between FlashPrint and FlashForge printers and much trial and error. If you find it
+useful and/or want to see continued development, please consider making a donation.</p>
+
+<p><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=S4TNWVKFLPL5C&amp;source=url"><img src="/assets/img/plugins/flashforge/paypal-donate.png" alt="More chocolate, more code" /></a></p>
 
 
-      
-        <h2>Pictures</h2>
-        
-        <figure>
-          
-          <a href="/assets/img/plugins/mqtt/mqtt_spy_example.png" data-lightbox="/plugins/mqtt" data-title="Example messages in MQTT-spy"><img src="/assets/img/plugins/mqtt/mqtt_spy_example.png" alt="MQTT messages in MQTT-spy" title="Example messages in MQTT-spy"></a>
-        </figure>
-        
       
     </article>
 
@@ -225,14 +238,14 @@
         
         <dd>
           URL:
-          <pre>https://github.com/OctoPrint/OctoPrint-MQTT/archive/master.zip</pre>
+          <pre>https://github.com/Mrnt/OctoPrint-FlashForge/archive/master.zip</pre>
           
         </dd>
         
         
         <dd>
           Command line:
-          <pre>pip install "https://github.com/OctoPrint/OctoPrint-MQTT/archive/master.zip"</pre>
+          <pre>pip install "https://github.com/Mrnt/OctoPrint-FlashForge/archive/master.zip"</pre>
         </dd>
         
       </dl>
@@ -240,13 +253,13 @@
       
       <dl class="date">
         <dt>Registration date</dt>
-        <dd>11 Apr 2015</dd>
+        <dd>18 May 2020</dd>
       </dl>
       
       
       <dl class="installations">
         <dt>Active Installations</dt>
-        <dd>Installed on at least <strong>1.73k</strong> instances</dd>
+        <dd>Installed on at least <strong>20</strong> instances</dd>
       </dl>
       
       
@@ -254,9 +267,9 @@
         <dt>Github stats</dt>
         <dd>
           <ul>
-            <li>Last update: 9 May 2020</li>
-            <li>Stars: 66</li>
-            <li>Open Issues: 15</li>
+            <li>Last update: 17 May 2020</li>
+            <li>Stars: 19</li>
+            <li>Open Issues: 10</li>
           </ul>
         </dd>
       </dl>
@@ -269,11 +282,11 @@
           
           
           
-          <a class="label" href="/by_tag/#tag-helper">helper</a>
+          <a class="label" href="/by_tag/#tag-dremel">dremel</a>
           
-          <a class="label" href="/by_tag/#tag-mqtt">mqtt</a>
+          <a class="label" href="/by_tag/#tag-flashforge">flashforge</a>
           
-          <a class="label" href="/by_tag/#tag-notification">notification</a>
+          <a class="label" href="/by_tag/#tag-powerspec">powerspec</a>
           
         </dd>
       </dl>
@@ -283,13 +296,13 @@
         <dd>
           <ul>
             
-            <li>OctoPrint: 1.3.5+</li>
+            <li>OctoPrint: 1.3.0+</li>
             
             
-            <li>Operating Systems: all</li>
+            <li>Operating Systems: Linux, Windows, Mac OS X, FreeBSD</li>
             
             
-            <li>Python: &gt;=2.7,&lt;3</li>
+            <li>Python: &gt;=2.7,&lt;4</li>
             
           </ul>
         </dd>
@@ -297,19 +310,19 @@
       
       <dl class="author">
         <dt>Author</dt>
-        <dd>Franziska Kunsmann, Gina Häußge</dd>
+        <dd>Mrnt</dd>
       </dl>
       
       
       <dl class="homepage">
         <dt>Homepage</dt>
-        <dd><a href="https://github.com/OctoPrint/OctoPrint-MQTT" target="_blank">https://github.com/OctoPrint/OctoPrint-MQTT</a></dd>
+        <dd><a href="https://github.com/Mrnt/OctoPrint-FlashForge" target="_blank">https://github.com/Mrnt/OctoPrint-FlashForge</a></dd>
       </dl>
       
       
       <dl class="source">
         <dt>Source</dt>
-        <dd><a href="https://github.com/OctoPrint/OctoPrint-MQTT" target="_blank">https://github.com/OctoPrint/OctoPrint-MQTT</a></dd>
+        <dd><a href="https://github.com/Mrnt/OctoPrint-FlashForge" target="_blank">https://github.com/Mrnt/OctoPrint-FlashForge</a></dd>
       </dl>
       
       
@@ -323,19 +336,19 @@
         <dd>
           <p>
             If there is <strong>something wrong with this listing</strong> (broken links & images etc), please
-            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=bug&template=listing_error.md&title=%5BListing+Error%5D+MQTT">report it here</a>.
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=bug&template=listing_error.md&title=%5BListing+Error%5D+Flashforge%2FDremel%2FPowerSpec+Printer+Support">report it here</a>.
           </p>
           <p>
             If this plugin <strong>has been <em>confirmed</em> as abandoned</strong> by its maintainer, please
-            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=abandoned+plugin&template=abandoned_plugin.md&title=%5BAbandoned+Plugin%5D+MQTT">report it here</a>.
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=abandoned+plugin&template=abandoned_plugin.md&title=%5BAbandoned+Plugin%5D+Flashforge%2FDremel%2FPowerSpec+Printer+Support">report it here</a>.
           </p>
           <p>
             If this plugin is <strong>doing something suspicious</strong> (e.g. weird network activity, unannounced tracking, ...) and
             the maintainer is not cooperating in getting to the bottom of that, please
-            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=suspicious+plugin+activity&template=suspicious_plugin_activity.md&title=%5BSuspicious+Plugin+Activity%5D+MQTT">report the plugin as suspicious here</a>.
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=suspicious+plugin+activity&template=suspicious_plugin_activity.md&title=%5BSuspicious+Plugin+Activity%5D+Flashforge%2FDremel%2FPowerSpec+Printer+Support">report the plugin as suspicious here</a>.
           </p>
           <p>
-            Report bugs or feature requests for the plugin to the plugin author (e.g. on the plugin's <a href="https://github.com/OctoPrint/OctoPrint-MQTT">homepage</a>) please, not here!
+            Report bugs or feature requests for the plugin to the plugin author (e.g. on the plugin's <a href="https://github.com/Mrnt/OctoPrint-FlashForge">homepage</a>) please, not here!
           </p>
         </dd>
       </dl>

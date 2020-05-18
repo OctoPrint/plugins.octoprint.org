@@ -5,10 +5,33 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>http://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 18 May 2020 11:16:44 -0500</pubDate>
-    <lastBuildDate>Mon, 18 May 2020 11:16:44 -0500</lastBuildDate>
+    <pubDate>Mon, 18 May 2020 17:56:35 -0500</pubDate>
+    <lastBuildDate>Mon, 18 May 2020 17:56:35 -0500</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
+    
+      <item>
+        <title>Flashforge/Dremel/PowerSpec Printer Support</title>
+        <description>
+          <![CDATA[
+            Enable OctoPrint to connect to certain FlashForge, Dremel and PowerSpec printers.
+            <p><img src="https://plugins.octoprint.org/assets/img/repo-600x400.png"></p>
+            
+          ]]>
+        </description>
+        <pubDate>
+Mon, 18 May 2020 00:00:00 -0500
+</pubDate>
+        <link>http://plugins.octoprint.org/plugins/FlashForge/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">http://plugins.octoprint.org/plugins/FlashForge/</guid>
+        
+        <category>FlashForge</category>
+        
+        <category>Dremel</category>
+        
+        <category>PowerSpec</category>
+        
+      </item>
     
       <item>
         <title>Terminal Response</title>
@@ -241,28 +264,6 @@ Thu, 23 Apr 2020 00:00:00 -0500
         <category>trigger</category>
         
         <category>runout</category>
-        
-      </item>
-    
-      <item>
-        <title>PrusaSlicer Thumbnails</title>
-        <description>
-          <![CDATA[
-            Extracts embedded thumbnails from PrusaSlicer gcode files.
-            <p><img src="https://plugins.octoprint.org/assets/img/plugins/prusaslicerthumbnails/screenshot_thumbnail.png"></p>
-          ]]>
-        </description>
-        <pubDate>
-Wed, 22 Apr 2020 00:00:00 -0500
-</pubDate>
-        <link>http://plugins.octoprint.org/plugins/prusaslicerthumbnails/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">http://plugins.octoprint.org/plugins/prusaslicerthumbnails/</guid>
-        
-        <category>thumbnail</category>
-        
-        <category>preview</category>
-        
-        <category>PrusaSlicer</category>
         
       </item>
     

@@ -2264,6 +2264,17 @@
 "author": "Xiao Jin",
 "content": "This plugin will monitor the terminal for regular expressions that you define. You can use parentheses to extract values from matches. You can then define commands to run in response to your regex matches and substitute the matches values to your liking.",
 "tags": ["regex","regular","expressions","gcode","command","commands","terminal","monitor","send"]
+},
+
+{
+"id": "/plugins/FlashForge",
+"url": "/plugins/FlashForge/",
+"date": "2020-05-18 00:00:00 -0500",
+"title": "Flashforge/Dremel/PowerSpec Printer Support",
+"description": "Enable OctoPrint to connect to certain FlashForge, Dremel and PowerSpec printers.",
+"author": "Mrnt",
+"content": "The plugin allows control of some FlashForge, Dremel and PowerSpec printers(such as the FlashForge Finder, Dreamer, etc) that connect via USB and do notappear as a serial port under OctoPrint.IMPORTANTFor details of which printers are supported and the level of functionalitysee the homepageSupport Additional DevelopmentThis plugin was/is developed by painstakingly reverse engineering the communicationbetween FlashPrint and FlashForge printers and much trial and error. If you find ituseful and/or want to see continued development, please consider making a donation.",
+"tags": ["FlashForge","Dremel","PowerSpec"]
 }
 ]
 }
