@@ -46,20 +46,20 @@ layout: page
       There are currently <strong>{{ plugin_counter }}</strong> plugins listed in this repository of which <strong>{{ python3_counter }} ({{ python3_counter | times:100 | divided_by:plugin_counter | round }}%)</strong> are marked as Python 3 compatible.
     </p>
 
-    <dl class="most_popular">
-      <dt>Most popular plugins (Top 10)</dt>
-      <dd>
-        <ol>
-          {% assign sorted_plugins = site.plugins | sort: "stats.installations" | reverse %}
-          {% for plugin in sorted_plugins limit: 10 %}
-          <li>
-            <a href="{{ plugin.url | prepend: site.baseurl }}">{{ plugin.title }}</a><br>
-            <small class="muted">over {% include format_number number=plugin.stats.installations %} installations</small>
-          </li>
-          {% endfor %}
-        </ol>
-      </dd>
-    </dl>
+    {% assign sorted_plugins = site.plugins | where_exp: "plugin", "plugin.stats.installations" | sort: "stats.installations" | reverse %}
+    {% assign sorted_plugins_size = sorted_plugins | size %}
+    {% if sorted_plugins_size > 0 %}
+    <h3>Top 10</h3>
+    <ol>
+      {% for plugin in sorted_plugins limit: 10 %}
+      <li>
+        <a href="{{ plugin.url | prepend: site.baseurl }}">{{ plugin.title }}</a><br>
+        <small class="muted">over {% include format_number number=plugin.stats.installations %} installations</small>
+      </li>
+      {% endfor %}
+    </ol>
+    <small>Based on anonymous usage data of the past 30 days.</small>
+    {% endif %}
 
   </div>
 </div>
