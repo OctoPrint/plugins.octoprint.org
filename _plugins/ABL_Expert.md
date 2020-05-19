@@ -10,7 +10,7 @@ date: 2018-10-04
 
 homepage: https://framagit.org/razer/Octoprint_ABL_Expert
 source: https://framagit.org/razer/Octoprint_ABL_Expert
-archive: https://framagit.org/razer/Octoprint_ABL_Expert/-/archive/0.5/Octoprint_ABL_Expert-0.5.zip
+archive: https://framagit.org/razer/Octoprint_ABL_Expert/-/archive/0.6/Octoprint_ABL_Expert-0.6.zip
 
 tags:
 - probe
