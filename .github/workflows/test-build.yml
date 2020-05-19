@@ -4,9 +4,9 @@ on:
   push:
     branches:
       - gh-pages
-  #pull_request:
-  #  branches:
-  #    - gh-pages
+  pull_request:
+    branches:
+      - gh-pages
 
 jobs:
   test-build:
@@ -26,3 +26,15 @@ jobs:
           docker run \
           -v ${{ github.workspace }}:/json \
           peterdavehello/jsonlint jsonlint -q /json/_site/plugins.json
+
+      - name: 🕵️‍♂️ Validate notices.json
+        run: |
+          docker run \
+          -v ${{ github.workspace }}:/json \
+          peterdavehello/jsonlint jsonlint -q /json/_site/notices.json
+
+      - name: 🕵️‍♂️ Validate search.json
+        run: |
+          docker run \
+          -v ${{ github.workspace }}:/json \
+          peterdavehello/jsonlint jsonlint -q /json/_site/search.json
