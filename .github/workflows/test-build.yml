@@ -15,6 +15,12 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: 🔨 Build page
+        run: |
+          docker run \
+          -v ${{ github.workspace }}:/srv/jekyll \
+          jekyll/builder:3.8.6 /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future"
+
       - name: 🕵️‍♂️ Validate plugins.json
         run: |
           docker run \
