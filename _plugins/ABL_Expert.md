@@ -3,7 +3,7 @@ layout: plugin
 
 id: ABL_Expert
 title: Auto bed leveling expert
-description: Marlin auto bed leveling control, mesh correction, and z probe handling
+description: Marlin auto bed leveling control, mesh correction, and z probe handling. This plugin needs some features enabled in your firmware to work. Please read https://framagit.org/razer/Octoprint_ABL_Expert/-/blob/master/README.md for more information
 author: razer
 license: AGPLv3
 date: 2018-10-04
