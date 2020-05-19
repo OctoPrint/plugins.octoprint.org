@@ -23,7 +23,8 @@ layout: null
     "image": "{% include canonic_url url=plugin.featuredimage external=true %}"{% endif %}{% if plugin.disabled %},
     "disabled": {{ plugin.disabled | markdownify | jsonify }}{% endif %}{% if plugin.stats.installations %},
     "stats": {
-        "installations": {{ plugin.stats.installations }}
+        "installations": {{ plugin.stats.installations }},
+        "install_events": {{ plugin.stats.install_events }}
     }{% endif %}
   }{% endfor %}
 ]

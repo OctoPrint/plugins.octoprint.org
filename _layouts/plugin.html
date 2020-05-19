@@ -113,6 +113,12 @@ layout: default
         <dd>Installed on at least <strong>{% include format_number number=page.stats.installations %}</strong> instances</dd>
       </dl>
       {% endif %}
+      {% if page.stats.installations %}
+      <dl class="install_events">
+        <dt>New installs the past 30 days</dt>
+        <dd>At least <strong>{% include format_number number=page.stats.install_events %}</strong> new installations</dd>
+      </dl>
+      {% endif %}
       {% if page.github %}
       <dl class="github">
         <dt>Github stats</dt>

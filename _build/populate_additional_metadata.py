@@ -49,13 +49,15 @@ def process_plugin_file(path, incl_stats=True, incl_github=True):
 		stats = plugin_stats(data["id"].lower())
 		if stats is not None:
 			print("Enriching {} with stats...".format(plugin_id))
-			data["stats"] = dict(installations=stats["instances"])
+			data["stats"] = dict(installations=stats["instances"],
+			                     install_events=stats.get("install_events"))
 			if "versions" in stats:
 				data["stats"]["versions"] = dict()
 				for version in stats["versions"]:
 					data["stats"]["versions"][version] = stats["versions"][version]["instances"]
 		else:
-			data["stats"] = dict(installations=0)
+			data["stats"] = dict(installations=0,
+			                     install_events=0)
 
 	if incl_github:
 		user = repo = None
