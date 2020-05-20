@@ -26,6 +26,9 @@ screenshots:
 
 featuredimage: /assets/img/plugins/displayprogress/example.jpg
 
+compatibility:
+  python: ">=2.7,<4"
+
 ---
 
 A plugin that sends `M117` commands to the printer to display the progress
