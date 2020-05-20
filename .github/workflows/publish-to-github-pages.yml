@@ -23,7 +23,7 @@ jobs:
           python-version: "3.7"
 
       - name: 🏗 Enrich metadata
-        if: ${{ github.repository == 'OctoPrint/plugins.octoprint.org' && github.event_name != "pull_request" }}
+        if: github.repository == 'OctoPrint/plugins.octoprint.org' && github.event_name != 'pull_request'
         run: |
           pip install -r _build/requirements.txt
           python ./_build/populate_additional_metadata.py
@@ -55,7 +55,7 @@ jobs:
           peterdavehello/jsonlint jsonlint -q /json/_site/search.json
 
       - name: 🚀 Deploy page
-        if: ${{ github.repository == 'OctoPrint/plugins.octoprint.org' && github.event_name != "pull_request" }}
+        if: github.repository == 'OctoPrint/plugins.octoprint.org' && github.event_name != 'pull_request'
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
@@ -66,7 +66,7 @@ jobs:
           user_email: 'github-actions[bot]@users.noreply.github.com'
    
       - name: 📧 Discord success notification
-        if: ${{ github.repository == 'OctoPrint/plugins.octoprint.org' && github.event_name != "pull_request" }}
+        if: github.repository == 'OctoPrint/plugins.octoprint.org' && github.event_name != 'pull_request'
         env:
           DISCORD_WEBHOOK: ${{ secrets.discord_webhook }}
         uses: Ilshidur/action-discord@master
@@ -74,7 +74,7 @@ jobs:
           args: '☑️ Page build for plugins.octoprint.org was successful'   
    
       - name: 📧 Discord failure notification
-        if: ${{ failure() && github.repository == 'OctoPrint/plugins.octoprint.org' && github.event_name != "pull_request" }}
+        if: failure() && github.repository == 'OctoPrint/plugins.octoprint.org' && github.event_name != 'pull_request'
         env:
           DISCORD_WEBHOOK: ${{ secrets.discord_webhook }}
         uses: Ilshidur/action-discord@master
