@@ -371,7 +371,11 @@
     "author": "jneilliii, Gina Häußge",
     "homepage": "https://github.com/OctoPrint/OctoPrint-DisplayProgress",
     "page": "https://plugins.octoprint.org/plugins/displayprogress/",
-    "compatibility": {"octoprint": [], "os": [], "python": ">=2.7,<3"},
+    "compatibility": {
+        "octoprint": [],
+        "os": [],
+        "python": ">=2.7,<4"
+    },
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/displayprogress/example.jpg",
     "stats": {
