@@ -6,9 +6,9 @@ on:
   push:
     branches:
       - gh-pages
-  #pull_request:
-  #  branches:
-  #    - gh-pages
+  pull_request:
+    branches:
+      - gh-pages
 
 jobs:
   build-validate-and-publish:
