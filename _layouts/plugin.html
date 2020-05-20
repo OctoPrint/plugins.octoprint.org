@@ -174,7 +174,7 @@ layout: default
       {% if page.author %}
       <dl class="author">
         <dt>Author</dt>
-        <dd>{{ page.author | strip_html | strip_newlines | escape }}</dd>
+        <dd>{% include plugin_author author=page.author nolabel='true'%}</dd>
       </dl>
       {% endif %}
       {% if page.homepage %}
