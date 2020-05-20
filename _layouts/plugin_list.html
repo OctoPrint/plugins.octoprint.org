@@ -48,38 +48,38 @@ layout: page
 
     {% assign shown_usage = false %}
 
-    {% assign sorted_plugins = site.plugins | where_exp: "plugin", "plugin.stats.installations" | sort: "stats.installations" | reverse %}
+    {% assign sorted_plugins = site.plugins | where_exp: "plugin", "plugin.stats.month.instances" | sort: "stats.month.instances" | reverse %}
     {% assign sorted_plugins_size = sorted_plugins | size %}
     {% if sorted_plugins_size > 0 %}
     {% assign shown_usage = true %}
-    <h3>Top 10</h3>
+    <h3>Top 10 of the month</h3>
     <ol>
       {% for plugin in sorted_plugins limit: 10 %}
       <li>
         <a href="{{ plugin.url | prepend: site.baseurl }}">{{ plugin.title }}</a><br>
-        <small class="muted">over {% include format_number number=plugin.stats.installations %} installations</small>
+        <small class="muted">over {% include format_number number=plugin.stats.month.instances %} instances</small>
       </li>
       {% endfor %}
     </ol>
     {% endif %}
 
-    {% assign sorted_plugins = site.plugins | where_exp: "plugin", "plugin.stats.install_events" | sort: "stats.install_events" | reverse %}
+    {% assign sorted_plugins = site.plugins | where_exp: "plugin", "plugin.stats.week.install_events" | sort: "stats.week.install_events" | reverse %}
     {% assign sorted_plugins_size = sorted_plugins | size %}
     {% if sorted_plugins_size > 0 %}
     {% assign shown_usage = true %}
-    <h3>Trending</h3>
+    <h3>Trending this week</h3>
     <ol>
       {% for plugin in sorted_plugins limit: 5 %}
       <li>
         <a href="{{ plugin.url | prepend: site.baseurl }}">{{ plugin.title }}</a><br>
-        <small class="muted">over {% include format_number number=plugin.stats.install_events %} fresh installs</small>
+        <small class="muted">over {% include format_number number=plugin.stats.week.install_events %} new installs</small>
       </li>
       {% endfor %}
     </ol>
     {% endif %}
 
     {% if shown_usage %}
-    <small>Based on anonymous usage data of the past 30 days.</small>
+    <small><em>Based on anonymous usage data.</em></small>
     {% endif %}
 
   </div>

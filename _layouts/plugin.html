@@ -107,16 +107,16 @@ layout: default
         <dd>{{ page.date | strip_html | strip_newlines | escape | date_to_string}}</dd>
       </dl>
       {% endif %}
-      {% if page.stats.installations %}
+      {% if page.stats.month.instances %}
       <dl class="installations">
-        <dt>Active Installations</dt>
-        <dd>Installed on at least <strong>{% include format_number number=page.stats.installations %}</strong> instances</dd>
+        <dt>Active instances the past month</dt>
+        <dd>Installed on at least <strong>{% include format_number number=page.stats.month.instances %}</strong> instances</dd>
       </dl>
       {% endif %}
-      {% if page.stats.installations %}
+      {% if page.stats.week.install_events %}
       <dl class="install_events">
-        <dt>New installs the past 30 days</dt>
-        <dd>At least <strong>{% include format_number number=page.stats.install_events %}</strong> new installations</dd>
+        <dt>New installs the past week</dt>
+        <dd>At least <strong>{% include format_number number=page.stats.week.install_events %}</strong> new installations</dd>
       </dl>
       {% endif %}
       {% if page.github %}

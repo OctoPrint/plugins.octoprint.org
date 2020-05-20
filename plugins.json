@@ -21,9 +21,12 @@ layout: null
     }{% else %}{"octoprint": [], "os": [], "python": ">=2.7,<3"}{% endif %},
     "license": {{ plugin.license | strip_html | strip_newlines | jsonify }}{% if plugin.featuredimage %},
     "image": "{% include canonic_url url=plugin.featuredimage external=true %}"{% endif %}{% if plugin.disabled %},
-    "disabled": {{ plugin.disabled | markdownify | jsonify }}{% endif %}{% if plugin.stats.installations %},
+    "disabled": {{ plugin.disabled | markdownify | jsonify }}{% endif %},
     "stats": {
-        "installations": {{ plugin.stats.installations }}
-    }{% endif %}
+        "instances_month": {% if plugin.stats.month.instances %}{{ plugin.stats.month.instances }}{% else %}0{% endif %},
+        "install_events_month": {% if plugin.stats.month.install_events %}{{ plugin.stats.month.install_events }}{% else %}0{% endif %},
+        "instances_week": {% if plugin.stats.week.instances %}{{ plugin.stats.week.instances }}{% else %}0{% endif %},
+        "install_events_week": {% if plugin.stats.week.install_events %}{{ plugin.stats.week.install_events }}{% else %}0{% endif %}
+}
   }{% endfor %}
 ]
