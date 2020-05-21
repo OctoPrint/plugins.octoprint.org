@@ -15,6 +15,8 @@ PLUGINSTATS_7D_URL = "https://data.octoprint.org/export/plugin_stats_7d.json"
 PLUGINSTATS_30D_URL = "https://data.octoprint.org/export/plugin_stats_30d.json"
 
 GITHUBREPO_URL = "https://api.github.com/repos/{user}/{repo}"
+# GitHub limit the response size. You need to do "page-calls" to receive all values. Max-Default: 100
+GITHUB_MAX_PAGESIZE = 100
 
 _plugin_stats_7d = None
 _plugin_stats_30d = None
@@ -44,10 +46,28 @@ def github_data(user, repo):
 	                    headers={"Accept":"application/vnd.github.v3+json"})
 	repodata = resp.json()
 
-	return dict(stars=repodata.get("stargazers_count"),
-	            watchers=repodata.get("watchers_count"),
-	            issues=repodata.get("open_issues_count"),
-	            last_push=datetime.fromisoformat(repodata.get("pushed_at").replace("Z", "+00:00")))
+	githubStats = dict( repo="{}/{}".format(user, repo),
+						stars=repodata.get("stargazers_count"),
+						watchers=repodata.get("watchers_count"),
+						issues=repodata.get("open_issues_count"),
+						last_push=datetime.fromisoformat(repodata.get("pushed_at").replace("Z", "+00:00")).strftime("%Y-%m-%d %H:%M:%S %z")
+						)
+
+	resp = requests.get(GITHUBREPO_URL.format(user=user, repo=repo) + "/releases?per_page=" + str(GITHUB_MAX_PAGESIZE),
+						auth=auth,
+						headers={"Accept": "application/vnd.github.v3+json"})
+	repodata = resp.json()
+
+	releaseCount = len(repodata)
+	if (releaseCount > 0):
+		print("No releases present!")
+		releases = str(releaseCount) if (releaseCount < GITHUB_MAX_PAGESIZE) else str(GITHUB_MAX_PAGESIZE)+"+"
+
+		githubStats.update( latest_release = repodata[0].get("name"),
+							latest_release_url = repodata[0].get("html_url"),
+							releases = releases)
+
+	return githubStats
 
 def process_plugin_file(path, incl_stats=True, incl_github=True):
 	data = frontmatter.load(path)
@@ -95,11 +115,7 @@ def process_plugin_file(path, incl_stats=True, incl_github=True):
 			github = github_data(user, repo)
 			if github:
 				print("Enriching {} with github data...".format(path))
-				data["github"] = dict(repo="{}/{}".format(user, repo),
-				                      stars=github["stars"],
-				                      watchers=github["watchers"],
-				                      issues=github["issues"],
-				                      last_push=github["last_push"].strftime("%Y-%m-%d %H:%M:%S %z"))
+				data ["github"] = github
 
 	with open(path, "wb") as f:
 		frontmatter.dump(data, f)
