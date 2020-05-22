@@ -58,7 +58,7 @@ jobs:
         if: github.repository == 'OctoPrint/plugins.octoprint.org' && github.event_name != 'pull_request'
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.metadata_credentials }}
           publish_branch: master
           publish_dir: ./_site
           enable_jekyll: false
