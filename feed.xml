@@ -5,10 +5,32 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>http://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 21 May 2020 19:11:45 -0500</pubDate>
-    <lastBuildDate>Thu, 21 May 2020 19:11:45 -0500</lastBuildDate>
+    <pubDate>Thu, 21 May 2020 19:37:01 -0500</pubDate>
+    <lastBuildDate>Thu, 21 May 2020 19:37:01 -0500</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
+    
+      <item>
+        <title>Multi Line Terminal</title>
+        <description>
+          <![CDATA[
+            Makes the terminal input a multi line text area.
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/multilineterminal/screenshot.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Thu, 21 May 2020 00:00:00 -0500
+</pubDate>
+        <link>http://plugins.octoprint.org/plugins/multilineterminal/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">http://plugins.octoprint.org/plugins/multilineterminal/</guid>
+        
+        <category>terminal</category>
+        
+        <category>input</category>
+        
+        <category>gcode</category>
+        
+      </item>
     
       <item>
         <title>Flashforge/Dremel/PowerSpec Printer Support</title>
@@ -236,34 +258,6 @@ Fri, 24 Apr 2020 00:00:00 -0500
         <category>continuous print</category>
         
         <category>queueing</category>
-        
-      </item>
-    
-      <item>
-        <title>Filament Sensor Simplified</title>
-        <description>
-          <![CDATA[
-            This plugin reacts to filament sensor output. If triggered it issues M600 X0 Y0 command to printer.
-            <p><img src="https://github.com/LuckyX182/Filament_sensor_simplified/raw/master/screenshots/settings.png"></p>
-          ]]>
-        </description>
-        <pubDate>
-Thu, 23 Apr 2020 00:00:00 -0500
-</pubDate>
-        <link>http://plugins.octoprint.org/plugins/filamentsensorsimplified/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">http://plugins.octoprint.org/plugins/filamentsensorsimplified/</guid>
-        
-        <category>filament</category>
-        
-        <category>sensor</category>
-        
-        <category>simplified</category>
-        
-        <category>simple</category>
-        
-        <category>trigger</category>
-        
-        <category>runout</category>
         
       </item>
     

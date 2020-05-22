@@ -4693,5 +4693,29 @@
         "instances_week": 15,
         "install_events_week": 2
 }
+  },
+
+  {
+    "id": "multilineterminal",
+    "published": "2020-05-21 00:00:00 -0500",
+    "title": "Multi Line Terminal",
+    "description": "Makes the terminal input a multi line text area.",
+    "archive": "https://github.com/jneilliii/OctoPrint-MultiLineTerminal/archive/master.zip",
+    "author": "jneilliii",
+    "homepage": "https://github.com/jneilliii/OctoPrint-MultiLineTerminal",
+    "page": "https://plugins.octoprint.org/plugins/multilineterminal/",
+    "compatibility": {
+        "octoprint": ["1.2.0"],
+        "os": ["linux","windows","macos","freebsd"],
+        "python": ">=2.7,<4"
+    },
+    "license": "AGPLv3",
+    "image": "https://plugins.octoprint.org/assets/img/plugins/multilineterminal/screenshot.png",
+    "stats": {
+        "instances_month": 2,
+        "install_events_month": 1,
+        "instances_week": 0,
+        "install_events_week": 0
+}
   }
 ]
