@@ -5,8 +5,8 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>http://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 22 May 2020 07:07:52 -0500</pubDate>
-    <lastBuildDate>Fri, 22 May 2020 07:07:52 -0500</lastBuildDate>
+    <pubDate>Sat, 23 May 2020 01:44:22 -0500</pubDate>
+    <lastBuildDate>Sat, 23 May 2020 01:44:22 -0500</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
     
@@ -29,6 +29,28 @@ Thu, 21 May 2020 00:00:00 -0500
         <category>input</category>
         
         <category>gcode</category>
+        
+      </item>
+    
+      <item>
+        <title>Easy Servo</title>
+        <description>
+          <![CDATA[
+            Plugin to control two servos attached to a camera gimbal to control motion.
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/EasyServo/screenshot_easyservo.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Thu, 21 May 2020 00:00:00 -0500
+</pubDate>
+        <link>http://plugins.octoprint.org/plugins/EasyServo/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">http://plugins.octoprint.org/plugins/EasyServo/</guid>
+        
+        <category>GPIO</category>
+        
+        <category>servos</category>
+        
+        <category>PWM</category>
         
       </item>
     
@@ -238,26 +260,6 @@ Sat, 25 Apr 2020 00:00:00 -0500
         <category>simple</category>
         
         <category>control</category>
-        
-      </item>
-    
-      <item>
-        <title>Continuous Print</title>
-        <description>
-          <![CDATA[
-            Allows the queueing and automatic print and clearing of the queue
-            <p><img src="https://plugins.octoprint.org/assets/img/plugins/continuousprint/screenshot.png"></p>
-          ]]>
-        </description>
-        <pubDate>
-Fri, 24 Apr 2020 00:00:00 -0500
-</pubDate>
-        <link>http://plugins.octoprint.org/plugins/continuousprint/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">http://plugins.octoprint.org/plugins/continuousprint/</guid>
-        
-        <category>continuous print</category>
-        
-        <category>queueing</category>
         
       </item>
     

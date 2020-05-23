@@ -2278,6 +2278,17 @@
 },
 
 {
+"id": "/plugins/EasyServo",
+"url": "/plugins/EasyServo/",
+"date": "2020-05-21 00:00:00 -0500",
+"title": "Easy Servo",
+"description": "Plugin to control two servos attached to a camera gimbal to control motion.",
+"author": "iFrostizz, jneilliii",
+"content": "Easy ServoHere is a simple plugin to control two servos using the OctoPrint Control tab. It has been programmed in conjuction with a camera gimbal mount design I published on Thingiverse here.It utilizes a custom @EASYSERVO &lt;GPIO NUMBER&gt; &lt;RELATIVE ANGLE DIFFERENCE&gt; command that can be incorporated within your slicer to automatically move while printing.Example: @EASYSERVO 12 10 will move the servo attached to GPIO 12 10 degrees in the positive direction from the current position. @EASYSERVO 13 -10 will move the servo attached to GPIO 13 10 degrees in the negative direction from the current position.Note: The servos will initialize at 90 degrees on OctoPrint start up and is limited to a 90 degree rotation in either direction.Pre-Installation RequirementsPlease follow the instructions here in order for this plugin to properly operate. Without these steps the plugin will not be able to control the GPIO pins on your Pi and as a result the servos will not move.SettingsThe plugin supports the ability to configure the GPIO number used for controlling the servos for the X and Y axes.DisclaimerAlthough I, iFrostizz, use this plugin and it works for me without issues, I take no resposiblity for any damage caused by using this plugin or connecting servos to your Pi. Please make sure to do your reseach and understand the dangers and please be careful.",
+"tags": ["GPIO","servos","PWM"]
+},
+
+{
 "id": "/plugins/multilineterminal",
 "url": "/plugins/multilineterminal/",
 "date": "2020-05-21 00:00:00 -0500",
