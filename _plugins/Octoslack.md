@@ -49,6 +49,9 @@ tags:
 - alert
 - gcode
 
+compatibility:
+  python: ">=2.7,<4"
+
 screenshots:
 - url: /assets/img/plugins/Octoslack/Octoslack-PrintStarted.png
   alt: Slack/Mattermost - Print started
