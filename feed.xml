@@ -5,10 +5,32 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>http://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 24 May 2020 11:42:22 -0500</pubDate>
-    <lastBuildDate>Sun, 24 May 2020 11:42:22 -0500</lastBuildDate>
+    <pubDate>Sun, 24 May 2020 12:57:05 -0500</pubDate>
+    <lastBuildDate>Sun, 24 May 2020 12:57:05 -0500</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
+    
+      <item>
+        <title>Ikea Tradfri</title>
+        <description>
+          <![CDATA[
+            Control Ikea Tradfri outlet
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/ikea_tradfri/navbar.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Sun, 24 May 2020 00:00:00 -0500
+</pubDate>
+        <link>http://plugins.octoprint.org/plugins/ikea_tradfri/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">http://plugins.octoprint.org/plugins/ikea_tradfri/</guid>
+        
+        <category>ikea</category>
+        
+        <category>tradfri</category>
+        
+        <category>outlet</category>
+        
+      </item>
     
       <item>
         <title>Multi Line Terminal</title>
@@ -234,32 +256,6 @@ Sun, 26 Apr 2020 00:00:00 -0500
         <category>temperature</category>
         
         <category>legend</category>
-        
-      </item>
-    
-      <item>
-        <title>Friendly Neighborhood Beeper</title>
-        <description>
-          <![CDATA[
-            Beeps after completion/failure of a print, but only during the specified hours
-            <p><img src="https://plugins.octoprint.org/assets/img/plugins/FriendlyBeeper/settings.png"></p>
-          ]]>
-        </description>
-        <pubDate>
-Sat, 25 Apr 2020 00:00:00 -0500
-</pubDate>
-        <link>http://plugins.octoprint.org/plugins/FriendlyNeighborhoodBeeper/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">http://plugins.octoprint.org/plugins/FriendlyNeighborhoodBeeper/</guid>
-        
-        <category>notification</category>
-        
-        <category>beep</category>
-        
-        <category>print finished</category>
-        
-        <category>simple</category>
-        
-        <category>control</category>
         
       </item>
     
