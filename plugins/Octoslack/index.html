@@ -7,12 +7,12 @@
 <head>
     <meta charset="utf-8" />
     <title>Octoslack</title>
-    <meta name="description" content="An OctoPrint plugin for monitoring your printer and prints via Slack, Mattermost, Pushbullet, Pushover, or Rocket.Chat">
+    <meta name="description" content="An OctoPrint plugin for monitoring your printer and prints via Slack, Mattermost, Pushbullet, Pushover, Rocket.Chat, Discord, Riot/Matrix, or Microsoft Teams">
     <meta name="author" content="Chris Fraschetti">
     <meta name="referrer" content="same-origin">
     <meta name="google-site-verification" content="0EFsbaNygJcEinKPmzP-hTf0Ju6wDIpJxO5zvQtOQT0" />
-    <meta name="build-revision" content="ee219b89aba0aba18b9b5b2cc2a3f5692d8e366c" />
-    <meta name="build-date" content="2020-05-24 07:11:23-05:00" />
+    <meta name="build-revision" content="72c1b6ef095f6ff69d7f068e517a2ac601558434" />
+    <meta name="build-date" content="2020-05-24 11:42:22-05:00" />
 
     <!--[if lt IE 9]>
     <script src="/assets/js/html5shim.js"></script>
@@ -22,11 +22,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Le styles -->
-    <link rel="stylesheet" href="/assets/css/site.css?_=1590322283">
-    <link rel="stylesheet" href="/assets/css/bootstrap-responsive.css?_=1590322283">
-    <link rel="stylesheet" href="/assets/css/fontawesome-all.min.css?_=1590322283">
-    <link rel="stylesheet" href="/assets/css/prettify.css?_=1590322283">
-    <link rel="stylesheet" href="/assets/css/lightbox.css?_=1590322283">
+    <link rel="stylesheet" href="/assets/css/site.css?_=1590338542">
+    <link rel="stylesheet" href="/assets/css/bootstrap-responsive.css?_=1590338542">
+    <link rel="stylesheet" href="/assets/css/fontawesome-all.min.css?_=1590338542">
+    <link rel="stylesheet" href="/assets/css/prettify.css?_=1590338542">
+    <link rel="stylesheet" href="/assets/css/lightbox.css?_=1590338542">
 
     <!-- Le fav and touch icons -->
     <link rel="shortcut icon" href="/assets/img/tentacle-32x32.png">
@@ -183,18 +183,18 @@
       
 
       <p class="lead">
-        An OctoPrint plugin for monitoring your printer and prints via Slack, Mattermost, Pushbullet, Pushover, or Rocket.Chat
+        An OctoPrint plugin for monitoring your printer and prints via Slack, Mattermost, Pushbullet, Pushover, Rocket.Chat, Discord, Riot/Matrix, or Microsoft Teams
       </p>
       <p>An OctoPrint plugin for monitoring your printer and prints via Slack, Mattermost, Pushbullet, Pushover, Rocket.Chat, or Riot/Matrix</p>
 
 <h1 id="features">Features</h1>
 <ul>
-  <li>Support for Slack, Mattermost, Pushbullet, Pushover, Rocket.Chat, &amp; Matrix based platforms (e.g. Riot)</li>
+  <li>Support for Slack, Mattermost, Pushbullet, Pushover, Rocket.Chat, Discord, Matrix based platforms (e.g. Riot), &amp; Microsoft Teams</li>
   <li>Monitor both print status as well as printer connectivity status</li>
   <li>Respond to Slack commands to check print status or cancel/pause/resume a print
     <ul>
       <li>Each command can be individually enabled/disbaled or flagged as restricted which limits the command(s) to specific users</li>
-      <li>Requires use of the Slack API Token</li>
+      <li>Requires use of the Slack App Bot Token</li>
     </ul>
   </li>
   <li>Customizable messages
@@ -208,18 +208,18 @@
   <li>Support for local system command execution</li>
   <li>Slack bot name/icon/emoji customizations
     <ul>
-      <li>Requires use of the Slack API Token</li>
+      <li>Requires use of the Slack App Bot Token</li>
     </ul>
   </li>
   <li>Optional inclusion of printer snapshot images with each message
     <ul>
-      <li>Support for snapshot hosting via Amazon S3, Minio, Imgur (with album support), Slack attachments, Pushover, Pushbullet, Rocket.Chat, or Matrix</li>
-      <li>Slack attachments requires use of the Slack API Token</li>
+      <li>Support for snapshot hosting via Amazon S3, Minio, Imgur (with album support), Slack attachments, Pushover, Pushbullet, Rocket.Chat, Discord, or Matrix</li>
+      <li>Slack attachments requires use of the Slack App Bot Token</li>
     </ul>
   </li>
   <li>Optional upload of rendered timelapse video to configured hosting service
     <ul>
-      <li>Currently excludes Imgur, Pushover, Rocket.Chat, &amp; Matrix</li>
+      <li>Currently excludes Imgur, Pushover, Rocket.Chat, Discord, &amp; Matrix</li>
     </ul>
   </li>
   <li>Support for additional snapshot images from IP cameras</li>
@@ -240,7 +240,7 @@
   <li>G-code sent to the printer</li>
   <li>G-code received from the printer (including filament runout messages)</li>
   <li>Timelapse render started</li>
-  <li>Timelapse render finished</li>
+  <li>Timelapse render finished (including Octolapse timelapses)</li>
   <li>Timelapse render failed</li>
   <li>File analysis started</li>
   <li>File analysis finished</li>
@@ -345,7 +345,7 @@
       
       <dl class="installations">
         <dt>Active instances the past month</dt>
-        <dd>Installed on at least <strong>659</strong> instances</dd>
+        <dd>Installed on at least <strong>658</strong> instances</dd>
       </dl>
       
       
@@ -365,7 +365,7 @@
             
             <li>Last update: 24 May 2020</li>
             <li>Stars: 37</li>
-            <li>Open Issues: 26</li>
+            <li>Open Issues: 17</li>
           </ul>
         </dd>
       </dl>
@@ -378,7 +378,11 @@
           
           
           
+          <a class="label" href="/by_tag/#tag-alert">alert</a>
+          
           <a class="label" href="/by_tag/#tag-camera">camera</a>
+          
+          <a class="label" href="/by_tag/#tag-discord">discord</a>
           
           <a class="label" href="/by_tag/#tag-eta">eta</a>
           
@@ -388,11 +392,15 @@
           
           <a class="label" href="/by_tag/#tag-gcode">gcode</a>
           
+          <a class="label" href="/by_tag/#tag-gcode">gcode</a>
+          
           <a class="label" href="/by_tag/#tag-imgur">imgur</a>
           
           <a class="label" href="/by_tag/#tag-matrix">matrix</a>
           
           <a class="label" href="/by_tag/#tag-mattermost">mattermost</a>
+          
+          <a class="label" href="/by_tag/#tag-microsoft-teams">microsoft teams</a>
           
           <a class="label" href="/by_tag/#tag-minio">minio</a>
           
@@ -442,7 +450,7 @@
             <li>Operating Systems: all</li>
             
             
-            <li>Python: &gt;=2.7,&lt;3</li>
+            <li>Python: &gt;=2.7,&lt;4</li>
             
           </ul>
         </dd>
