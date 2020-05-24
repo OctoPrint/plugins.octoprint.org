@@ -11,7 +11,7 @@ date: 2020-05-21
 
 homepage: https://github.com/iFrostizz/OctoPrint-EasyServo
 source: https://github.com/iFrostizz/OctoPrint-EasyServo
-archive: https://github.com/iFrostizz/EasyServo/archive/master.zip
+archive: https://github.com/iFrostizz/OctoPrint-EasyServo/archive/master.zip
 
 tags:
 - GPIO
@@ -43,7 +43,7 @@ Example: `@EASYSERVO 12 10` will move the servo attached to GPIO 12 10 degrees i
 
 ## Pre-Installation Requirements
 
-Please follow the instructions [here](https://github.com/jneilliii/OctoPrint-EasyServo#pre-installation-requirements) in order for this plugin to properly operate. Without these steps the plugin will not be able to control the GPIO pins on your Pi and as a result the servos will not move.
+Please follow the instructions [here](https://github.com/iFrostizz/OctoPrint-EasyServo#pre-installation-requirements) in order for this plugin to properly operate. Without these steps the plugin will not be able to control the GPIO pins on your Pi and as a result the servos will not move.
 
 ## Settings
 
@@ -54,5 +54,3 @@ The plugin supports the ability to configure the GPIO number used for controllin
 ### Disclaimer
 
 Although I, iFrostizz, use this plugin and it works for me without issues, I take no resposiblity for any damage caused by using this plugin or connecting servos to your Pi. Please make sure to do your reseach and understand the dangers and please be careful.
-
-
