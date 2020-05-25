@@ -124,15 +124,15 @@ layout: default
         <dt>Github stats</dt>
         <dd>
           <ul>
-            {% if page.github.releases %}
+            {% if page.github.releases > 0 %}
             <li>Latest Release: <a href="{{ page.github.latest_release_url | strip_html | strip_newlines | escape }}" target="_blank">{{ page.github.latest_release | strip_html | strip_newlines | escape }}</a></li>
-            <li>Release Date: {{ page.github.latest_release_date | date: "%-d %B %Y"}}</li>
+            <li>Release Date: {{ page.github.latest_release_date | date_to_string}}</li>
             <li>Releases: {{ page.github.releases }}</li>
             {% endif %}
             <li>Stars: {{ page.github.stars }}</li>
             <li>Open Issues: {{ page.github.open_issues }}</li>
             <li>Closed Issues: {{ page.github.closed_issues }}</li>
-            <li>Last update: {{ page.github.last_push | date: "%-d %B %Y" }}</li>
+            <li>Last update: {{ page.github.last_push | date_to_string }}</li>
           </ul>
         </dd>
       </dl>
