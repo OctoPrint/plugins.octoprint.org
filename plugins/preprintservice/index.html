@@ -12,7 +12,7 @@
     <meta name="referrer" content="same-origin">
     <meta name="google-site-verification" content="0EFsbaNygJcEinKPmzP-hTf0Ju6wDIpJxO5zvQtOQT0" />
     <meta name="build-revision" content="4a5864b40957117bd7b95f2a0b472ed2392ea920" />
-    <meta name="build-date" content="2020-05-25 07:11:43-05:00" />
+    <meta name="build-date" content="2020-05-25 19:17:49-05:00" />
 
     <!--[if lt IE 9]>
     <script src="/assets/js/html5shim.js"></script>
@@ -22,11 +22,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Le styles -->
-    <link rel="stylesheet" href="/assets/css/site.css?_=1590408703">
-    <link rel="stylesheet" href="/assets/css/bootstrap-responsive.css?_=1590408703">
-    <link rel="stylesheet" href="/assets/css/fontawesome-all.min.css?_=1590408703">
-    <link rel="stylesheet" href="/assets/css/prettify.css?_=1590408703">
-    <link rel="stylesheet" href="/assets/css/lightbox.css?_=1590408703">
+    <link rel="stylesheet" href="/assets/css/site.css?_=1590452269">
+    <link rel="stylesheet" href="/assets/css/bootstrap-responsive.css?_=1590452269">
+    <link rel="stylesheet" href="/assets/css/fontawesome-all.min.css?_=1590452269">
+    <link rel="stylesheet" href="/assets/css/prettify.css?_=1590452269">
+    <link rel="stylesheet" href="/assets/css/lightbox.css?_=1590452269">
 
     <!-- Le fav and touch icons -->
     <link rel="shortcut icon" href="/assets/img/tentacle-32x32.png">
@@ -343,19 +343,19 @@ and track the logs. The following two lines are expected:</p>
 <span class="n">output_path</span> <span class="o">=</span> <span class="s">'gcode_name.gcode'</span>
 
 <span class="c1"># Auto-rotate file without slicing
-</span><span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">files</span><span class="o">=</span><span class="p">{</span><span class="s">'model'</span><span class="p">:</span> <span class="nb">open</span><span class="p">(</span><span class="n">model_path</span><span class="p">,</span> <span class="s">'rb'</span><span class="p">)},</span>
+</span><span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="n">post</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">files</span><span class="o">=</span><span class="p">{</span><span class="s">'model'</span><span class="p">:</span> <span class="nb">open</span><span class="p">(</span><span class="n">model_path</span><span class="p">,</span> <span class="s">'rb'</span><span class="p">)},</span>
                   <span class="n">data</span><span class="o">=</span><span class="p">{</span><span class="s">"tweak_actions"</span><span class="p">:</span> <span class="s">"tweak"</span><span class="p">})</span>
 
 <span class="c1"># Only slice the model to a gcode
-</span><span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">files</span><span class="o">=</span><span class="p">{</span><span class="s">'model'</span><span class="p">:</span> <span class="nb">open</span><span class="p">(</span><span class="n">model_path</span><span class="p">,</span> <span class="s">'rb'</span><span class="p">),</span>
+</span><span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="n">post</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">files</span><span class="o">=</span><span class="p">{</span><span class="s">'model'</span><span class="p">:</span> <span class="nb">open</span><span class="p">(</span><span class="n">model_path</span><span class="p">,</span> <span class="s">'rb'</span><span class="p">),</span>
                               <span class="s">'profile'</span><span class="p">:</span> <span class="nb">open</span><span class="p">(</span><span class="n">profile_path</span><span class="p">,</span> <span class="s">'rb'</span><span class="p">)},</span>
                 <span class="n">data</span><span class="o">=</span><span class="p">{</span><span class="s">"machinecode_name"</span><span class="p">:</span> <span class="n">output_path</span><span class="p">,</span>
                         <span class="s">"tweak_actions"</span><span class="p">:</span> <span class="s">"slice"</span><span class="p">})</span>
 <span class="c1"># Auto-rotate and slice the model file
-</span><span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">files</span><span class="o">=</span><span class="p">{</span><span class="s">'model'</span><span class="p">:</span> <span class="nb">open</span><span class="p">(</span><span class="n">model_path</span><span class="p">,</span> <span class="s">'rb'</span><span class="p">),</span> <span class="s">'profile'</span><span class="p">:</span> <span class="nb">open</span><span class="p">(</span><span class="n">profile_path</span><span class="p">,</span> <span class="s">'rb'</span><span class="p">)},</span>
+</span><span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="n">post</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">files</span><span class="o">=</span><span class="p">{</span><span class="s">'model'</span><span class="p">:</span> <span class="nb">open</span><span class="p">(</span><span class="n">model_path</span><span class="p">,</span> <span class="s">'rb'</span><span class="p">),</span> <span class="s">'profile'</span><span class="p">:</span> <span class="nb">open</span><span class="p">(</span><span class="n">profile_path</span><span class="p">,</span> <span class="s">'rb'</span><span class="p">)},</span>
                   <span class="n">data</span><span class="o">=</span><span class="p">{</span><span class="s">"machinecode_name"</span><span class="p">:</span> <span class="n">output_path</span><span class="p">,</span> <span class="s">"tweak_actions"</span><span class="p">:</span> <span class="s">"tweak slice"</span><span class="p">})</span>
-<span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">status_code</span><span class="p">)</span>
-<span class="nb">object</span> <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">text</span>
+<span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="p">.</span><span class="n">status_code</span><span class="p">)</span>
+<span class="nb">object</span> <span class="o">=</span> <span class="n">r</span><span class="p">.</span><span class="n">text</span>
 </code></pre></div></div>
 
 <p>The resulting object, either a tweaked stl file or a gcode file is
@@ -373,9 +373,9 @@ For example, you can test the file upload API like this:</p>
 <span class="n">files</span> <span class="o">=</span> <span class="p">{</span><span class="s">'file'</span><span class="p">:</span> <span class="nb">open</span><span class="p">(</span><span class="n">model_path</span><span class="p">,</span> <span class="s">'rb'</span><span class="p">)}</span>
 
 <span class="c1"># Upload a file using Octoprint's API
-</span><span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="n">url</span><span class="p">,</span> <span class="n">files</span><span class="o">=</span><span class="n">files</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">status_code</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">(),</span> <span class="n">indent</span><span class="o">=</span><span class="mi">2</span><span class="p">))</span>
+</span><span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="n">post</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="n">url</span><span class="p">,</span> <span class="n">files</span><span class="o">=</span><span class="n">files</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="p">.</span><span class="n">status_code</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">json</span><span class="p">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">r</span><span class="p">.</span><span class="n">json</span><span class="p">(),</span> <span class="n">indent</span><span class="o">=</span><span class="mi">2</span><span class="p">))</span>
 </code></pre></div></div>
 
 <p>I hope this workflow for 3D print preprocessing helps you!</p>
@@ -439,13 +439,13 @@ If you like it, I would be thankful about a cup of coffee :)</p>
       
       <dl class="installations">
         <dt>Active instances the past month</dt>
-        <dd>Installed on at least <strong>107</strong> instances</dd>
+        <dd>Installed on at least <strong>109</strong> instances</dd>
       </dl>
       
       
       <dl class="install_events">
         <dt>New installs the past week</dt>
-        <dd>At least <strong>11</strong> new installations</dd>
+        <dd>At least <strong>10</strong> new installations</dd>
       </dl>
       
       
