@@ -2308,6 +2308,17 @@
 "author": "Mathieu \"ralmn\" HIREL",
 "content": "Turn on your printer with Ikea Tradfri Outlet.Requierements  Ikea Tradfri Gateway  Ikea Tradfri OutletSetupInstall libcoapYou need libcoap for communicate with your Ikea Gateway.git clone --recursive https://github.com/obgm/libcoap.gitcd libcoapgit checkout dtlsgit submodule update --init --recursive./autogen.sh./configure --disable-documentation --disable-shared --without-debug CFLAGS=\"-D COAP_DEBUG_FD=stderr\"makemake installInstall pluginInstall manually using this URL:https://github.com/ralmn/OctoPrint-Ikea-tradfri/archive/master.zipConfiguration  Indicate your gateway ip and your security code (found under your gateway)  Save  Select your outlet  Save",
 "tags": ["ikea","tradfri","outlet"]
+},
+
+{
+"id": "/plugins/CooldownNotification",
+"url": "/plugins/CooldownNotification/",
+"date": "2020-05-26 00:00:00 -0500",
+"title": "CooldownNotification",
+"description": "A plugin to execute gcode commands when the print bed cools to a certain temperature",
+"author": "George McCauley",
+"content": "CooldownNotificationThis plugin is designed to execute gcode commands when the print bed cools to a certain temperature.The intended usage is to utilize the M300 gcode to alert that the bed has cooled and it’s safe to remove prints printed in PETG.Settings",
+"tags": ["gcode","heated bed","notification","cooldown"]
 }
 ]
 }

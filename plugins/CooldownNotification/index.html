@@ -6,9 +6,9 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html"> <!--<![endif]-->
 <head>
     <meta charset="utf-8" />
-    <title>OctoPrint-TPLinkSmartplug</title>
-    <meta name="description" content="Plugin to control TP-Link Smartplug devices from OctoPrint web interface.">
-    <meta name="author" content="jneilliii">
+    <title>CooldownNotification</title>
+    <meta name="description" content="A plugin to execute gcode commands when the print bed cools to a certain temperature">
+    <meta name="author" content="George McCauley">
     <meta name="referrer" content="same-origin">
     <meta name="google-site-verification" content="0EFsbaNygJcEinKPmzP-hTf0Ju6wDIpJxO5zvQtOQT0" />
     <meta name="build-revision" content="e6bbaca3a5423f29f832451e1c9df1b07e2ebc46" />
@@ -41,33 +41,27 @@
 
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@OctoPrint3D" />
-    <meta name="twitter:title" content="OctoPrint-TPLinkSmartplug" />
-    <meta name="twitter:description" content="TP-Link Smartplug
-
-Work inspired by OctoPrint-PSUControl and TP-Link WiFi SmartPlug Client, this plugin controls a TP-Link Smartplug via OctoPrint’s nav bar.
+    <meta name="twitter:title" content="CooldownNotification" />
+    <meta name="twitter:description" content="CooldownNotification
 
 " />
     <meta name="twitter:image" content="https://plugins.octoprint.org" />
 
-    <meta property="og:title" content="OctoPrint-TPLinkSmartplug" />
+    <meta property="og:title" content="CooldownNotification" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://plugins.octoprint.org/assets/img/plugins/TPLinkSmartplug/screenshot_on.png" />
-    <meta property="og:description" content="TP-Link Smartplug
-
-Work inspired by OctoPrint-PSUControl and TP-Link WiFi SmartPlug Client, this plugin controls a TP-Link Smartplug via OctoPrint’s nav bar.
+    <meta property="og:image" content="https://plugins.octoprint.org/assets/img/plugins/CooldownNotification/settings.png" />
+    <meta property="og:description" content="CooldownNotification
 
 " />
     <meta property="og:site_name" content="OctoPrint Plugin Repository" />
-    <meta property="og:url" content="https://plugins.octoprint.org/plugins/tplinksmartplug/" />
+    <meta property="og:url" content="https://plugins.octoprint.org/plugins/CooldownNotification/" />
 
     <meta itemscope itemtype="http://schema.org/WebPage" />
-    <meta itemprop="headline" content="OctoPrint-TPLinkSmartplug" />
-    <meta itemprop="description" content="TP-Link Smartplug
-
-Work inspired by OctoPrint-PSUControl and TP-Link WiFi SmartPlug Client, this plugin controls a TP-Link Smartplug via OctoPrint’s nav bar.
+    <meta itemprop="headline" content="CooldownNotification" />
+    <meta itemprop="description" content="CooldownNotification
 
 " />
-    <meta itemprop="image" content="https://plugins.octoprint.org/assets/img/plugins/TPLinkSmartplug/screenshot_on.png" />
+    <meta itemprop="image" content="https://plugins.octoprint.org/assets/img/plugins/CooldownNotification/settings.png" />
 
     <script src="/assets/js/jquery-1.9.1.min.js"></script>
     <script src="/assets/js/underscore.min.js"></script>
@@ -165,7 +159,7 @@ Work inspired by OctoPrint-PSUControl and TP-Link WiFi SmartPlug Client, this pl
   <div class="container">
     <div class="row">
       <div class="span12">
-        <h1>OctoPrint-TPLinkSmartplug</h1>
+        <h1>CooldownNotification</h1>
       </div>
     </div>
   </div>
@@ -174,11 +168,11 @@ Work inspired by OctoPrint-PSUControl and TP-Link WiFi SmartPlug Client, this pl
 <div class="container">
   <div class="row-fluid">
     
-    <small class="pull-left"><a href="/plugins/SlicerSettingsTab/"><i class="fa fa-double-angle-left"></i>&nbsp;OctoPrint-SlicerSettingsTab</a></small>
+    <small class="pull-left"><a href="/plugins/continuousprint/"><i class="fa fa-double-angle-left"></i>&nbsp;Continuous Print</a></small>
     
     &nbsp;
     
-    <small class="pull-right"><a href="/plugins/taborder/">OctoPrint-TabOrder&nbsp;<i class="fa fa-double-angle-right"></i></a></small>
+    <small class="pull-right"><a href="/plugins/cost/">Cost estimator&nbsp;<i class="fa fa-double-angle-right"></i></a></small>
     
   </div>
   <div class="content plugin-content row-fluid">
@@ -189,91 +183,17 @@ Work inspired by OctoPrint-PSUControl and TP-Link WiFi SmartPlug Client, this pl
       
 
       <p class="lead">
-        Plugin to control TP-Link Smartplug devices from OctoPrint web interface.
+        A plugin to execute gcode commands when the print bed cools to a certain temperature
       </p>
-      <h1 id="tp-link-smartplug">TP-Link Smartplug</h1>
+      <h1 id="cooldownnotification">CooldownNotification</h1>
 
-<p>Work inspired by <a href="https://github.com/kantlivelong/OctoPrint-PSUControl">OctoPrint-PSUControl</a> and <a href="https://github.com/softScheck/tplink-smartplug">TP-Link WiFi SmartPlug Client</a>, this plugin controls a TP-Link Smartplug via OctoPrint’s nav bar.</p>
+<p>This plugin is designed to execute gcode commands when the print bed cools to a certain temperature.</p>
 
-<h2 id="screenshots">Screenshots</h2>
-
-<p><img src="/assets/img/plugins/TPLinkSmartplug/screenshot_on.png" alt="on" /></p>
-
-<p><img src="/assets/img/plugins/TPLinkSmartplug/screenshot_off.png" alt="off" /></p>
+<p>The intended usage is to utilize the M300 gcode to alert that the bed has cooled and it’s safe to remove prints printed in PETG.</p>
 
 <h2 id="settings">Settings</h2>
 
-<p><img src="/assets/img/plugins/TPLinkSmartplug/settings.png" alt="screenshot" /></p>
-
-<p>Once installed go into settings and enter the ip address for your TP-Link Smartplug device. Adjust additional settings as needed.</p>
-
-<p><img src="/assets/img/plugins/TPLinkSmartplug/smartplug_editor.png" alt="screenshot" /></p>
-
-<ul>
-  <li><strong>IP</strong>
-    <ul>
-      <li>IP or hostname of plug to control.</li>
-    </ul>
-  </li>
-  <li><strong>Label</strong>
-    <ul>
-      <li>Label to use for title attribute on hover over button in navbar.</li>
-    </ul>
-  </li>
-  <li><strong>Icon Class</strong>
-    <ul>
-      <li>Class name from <a href="http://fontawesome.io/3.2.1/cheatsheet/">fontawesome</a> to use for icon on button.</li>
-    </ul>
-  </li>
-  <li><strong>Warn</strong>
-    <ul>
-      <li>The left checkbox will always warn when checked.</li>
-      <li>The right checkbox will only warn when printer is printing.</li>
-    </ul>
-  </li>
-  <li><strong>GCODE</strong>
-    <ul>
-      <li>When checked this will enable the processing of M80 and M81 commands from gcode to power on/off plug.  Syntax for gcode command is M80/M81 followed by hostname/ip.  For example if your plug is 192.168.1.2 your gcode command would be <strong>M80 192.168.1.2</strong></li>
-    </ul>
-  </li>
-  <li><strong>postConnect</strong>
-    <ul>
-      <li>Automatically connect to printer after plug is powered on.</li>
-      <li>Will wait for number of seconds configured in <strong>Auto Connect Delay</strong> setting prior to attempting connection to printer.</li>
-    </ul>
-  </li>
-  <li><strong>preDisconnect</strong>
-    <ul>
-      <li>Automatically disconnect printer prior to powering off the plug.</li>
-      <li>Will wait for number of seconds configured in <strong>Auto Disconnect Delay</strong> prior to powering off the plug.</li>
-    </ul>
-  </li>
-  <li><strong>Cmd On</strong>
-    <ul>
-      <li>When checked will run system command configured in <strong>System Command On</strong> setting after a delay in seconds configured in <strong>System Command On Delay</strong>.</li>
-    </ul>
-  </li>
-  <li><strong>Cmd Off</strong>
-    <ul>
-      <li>When checked will run system command configured in <strong>System Command Off</strong> setting after a delay in seconds configured in <strong>System Command Off Delay</strong>.</li>
-    </ul>
-  </li>
-</ul>
-
-<h2 id="get-help">Get Help</h2>
-
-<p>If you experience issues with this plugin or need assistance please use the issue tracker at the plugin’s Homepage linked on the right.</p>
-
-<h3 id="additional-plugins">Additional Plugins</h3>
-
-<p>Check out my other plugins <a href="https://plugins.octoprint.org/by_author/#jneilliii">here</a></p>
-
-<h3 id="support-my-efforts">Support My Efforts</h3>
-<p>I, jneilliii, programmed this plugin for fun and do my best effort to support those that have issues with it, please return the favor and leave me a tip or become a Patron if you find this plugin helpful and want me to continue future development.</p>
-
-<p><a href="https://www.patreon.com/jneilliii"><img src="/assets/img/plugins/TPLinkSmartplug/patreon-with-text-new.png" alt="Patreon" /></a> <a href="https://paypal.me/jneilliii"><img src="/assets/img/plugins/TPLinkSmartplug/paypal-with-text.png" alt="paypal" /></a></p>
-
-<p><small>No paypal.me? Send funds via PayPal to jneilliii@gmail.com</small></p>
+<p><img src="/assets/img/plugins/CooldownNotification/settings.png" alt="CooldownNotification Settings" /></p>
 
 
       
@@ -303,14 +223,14 @@ Work inspired by OctoPrint-PSUControl and TP-Link WiFi SmartPlug Client, this pl
         
         <dd>
           URL:
-          <pre>https://github.com/jneilliii/OctoPrint-TPLinkSmartplug/archive/master.zip</pre>
+          <pre>https://github.com/gmccauley/OctoPrint-CooldownNotification/archive/master.zip</pre>
           
         </dd>
         
         
         <dd>
           Command line:
-          <pre>pip install "https://github.com/jneilliii/OctoPrint-TPLinkSmartplug/archive/master.zip"</pre>
+          <pre>pip install "https://github.com/gmccauley/OctoPrint-CooldownNotification/archive/master.zip"</pre>
         </dd>
         
       </dl>
@@ -318,19 +238,19 @@ Work inspired by OctoPrint-PSUControl and TP-Link WiFi SmartPlug Client, this pl
       
       <dl class="date">
         <dt>Registration date</dt>
-        <dd>03 Sep 2017</dd>
+        <dd>26 May 2020</dd>
       </dl>
       
       
       <dl class="installations">
         <dt>Active instances the past month</dt>
-        <dd>Installed on at least <strong>2.88k</strong> instances</dd>
+        <dd>Installed on at least <strong>1</strong> instances</dd>
       </dl>
       
       
       <dl class="install_events">
         <dt>New installs the past week</dt>
-        <dd>At least <strong>147</strong> new installations</dd>
+        <dd>At least <strong>0</strong> new installations</dd>
       </dl>
       
       
@@ -339,12 +259,12 @@ Work inspired by OctoPrint-PSUControl and TP-Link WiFi SmartPlug Client, this pl
         <dd>
           <ul>
             
-            <li>Latest Release: <a href="https://github.com/jneilliii/OctoPrint-TPLinkSmartplug/releases/tag/0.9.20" target="_blank">0.9.20</a></li>
-            <li>Releases: 30</li>
+            <li>Latest Release: <a href="https://github.com/gmccauley/OctoPrint-CooldownNotification/releases/tag/v0.1.0" target="_blank">v0.1.0 - 26 May 2020</a></li>
+            <li>Releases: 1</li>
             
-            <li>Last update: 3 May 2020</li>
-            <li>Stars: 49</li>
-            <li>Open Issues: 17</li>
+            <li>Last update: 27 May 2020</li>
+            <li>Stars: 0</li>
+            <li>Open Issues: 0</li>
           </ul>
         </dd>
       </dl>
@@ -357,13 +277,13 @@ Work inspired by OctoPrint-PSUControl and TP-Link WiFi SmartPlug Client, this pl
           
           
           
-          <a class="label" href="/by_tag/#tag-power">power</a>
+          <a class="label" href="/by_tag/#tag-cooldown">cooldown</a>
           
-          <a class="label" href="/by_tag/#tag-smartplug">smartplug</a>
+          <a class="label" href="/by_tag/#tag-gcode">gcode</a>
           
-          <a class="label" href="/by_tag/#tag-tp-link">tp-link</a>
+          <a class="label" href="/by_tag/#tag-heated-bed">heated bed</a>
           
-          <a class="label" href="/by_tag/#tag-tplink">tplink</a>
+          <a class="label" href="/by_tag/#tag-notification">notification</a>
           
         </dd>
       </dl>
@@ -373,13 +293,13 @@ Work inspired by OctoPrint-PSUControl and TP-Link WiFi SmartPlug Client, this pl
         <dd>
           <ul>
             
-            <li>OctoPrint: all versions</li>
+            <li>OctoPrint: 1.4.0+</li>
             
             
-            <li>Operating Systems: all</li>
+            <li>Operating Systems: Linux, Windows, Mac OS X, FreeBSD</li>
             
             
-            <li>Python: &gt;=2.7,&lt;4</li>
+            <li>Python: &gt;=3,&lt;4</li>
             
           </ul>
         </dd>
@@ -388,20 +308,20 @@ Work inspired by OctoPrint-PSUControl and TP-Link WiFi SmartPlug Client, this pl
       <dl class="author">
         <dt>Author</dt>
         <dd>
-<a href="/by_author/#jneilliii">jneilliii</a>
+<a href="/by_author/#george-mccauley">George McCauley</a>
 </dd>
       </dl>
       
       
       <dl class="homepage">
         <dt>Homepage</dt>
-        <dd><a href="https://github.com/jneilliii/OctoPrint-TPLinkSmartplug" target="_blank">https://github.com/jneilliii/OctoPrint-TPLinkSmartplug</a></dd>
+        <dd><a href="https://github.com/gmccauley/OctoPrint-CooldownNotification" target="_blank">https://github.com/gmccauley/OctoPrint-CooldownNotification</a></dd>
       </dl>
       
       
       <dl class="source">
         <dt>Source</dt>
-        <dd><a href="https://github.com/jneilliii/OctoPrint-TPLinkSmartplug" target="_blank">https://github.com/jneilliii/OctoPrint-TPLinkSmartplug</a></dd>
+        <dd><a href="https://github.com/gmccauley/OctoPrint-CooldownNotification" target="_blank">https://github.com/gmccauley/OctoPrint-CooldownNotification</a></dd>
       </dl>
       
       
@@ -415,19 +335,19 @@ Work inspired by OctoPrint-PSUControl and TP-Link WiFi SmartPlug Client, this pl
         <dd>
           <p>
             If there is <strong>something wrong with this listing</strong> (broken links & images etc), please
-            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=bug&template=listing_error.md&title=%5BListing+Error%5D+OctoPrint-TPLinkSmartplug">report it here</a>.
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=bug&template=listing_error.md&title=%5BListing+Error%5D+CooldownNotification">report it here</a>.
           </p>
           <p>
             If this plugin <strong>has been <em>confirmed</em> as abandoned</strong> by its maintainer, please
-            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=abandoned+plugin&template=abandoned_plugin.md&title=%5BAbandoned+Plugin%5D+OctoPrint-TPLinkSmartplug">report it here</a>.
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=abandoned+plugin&template=abandoned_plugin.md&title=%5BAbandoned+Plugin%5D+CooldownNotification">report it here</a>.
           </p>
           <p>
             If this plugin is <strong>doing something suspicious</strong> (e.g. weird network activity, unannounced tracking, ...) and
             the maintainer is not cooperating in getting to the bottom of that, please
-            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=suspicious+plugin+activity&template=suspicious_plugin_activity.md&title=%5BSuspicious+Plugin+Activity%5D+OctoPrint-TPLinkSmartplug">report the plugin as suspicious here</a>.
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=suspicious+plugin+activity&template=suspicious_plugin_activity.md&title=%5BSuspicious+Plugin+Activity%5D+CooldownNotification">report the plugin as suspicious here</a>.
           </p>
           <p>
-            Report bugs or feature requests for the plugin to the plugin author (e.g. on the plugin's <a href="https://github.com/jneilliii/OctoPrint-TPLinkSmartplug">homepage</a>) please, not here!
+            Report bugs or feature requests for the plugin to the plugin author (e.g. on the plugin's <a href="https://github.com/gmccauley/OctoPrint-CooldownNotification">homepage</a>) please, not here!
           </p>
         </dd>
       </dl>

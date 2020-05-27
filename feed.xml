@@ -5,10 +5,34 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>http://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 26 May 2020 19:18:21 -0500</pubDate>
-    <lastBuildDate>Tue, 26 May 2020 19:18:21 -0500</lastBuildDate>
+    <pubDate>Tue, 26 May 2020 23:54:14 -0500</pubDate>
+    <lastBuildDate>Tue, 26 May 2020 23:54:14 -0500</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
     
+    
+      <item>
+        <title>CooldownNotification</title>
+        <description>
+          <![CDATA[
+            A plugin to execute gcode commands when the print bed cools to a certain temperature
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/CooldownNotification/settings.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Tue, 26 May 2020 00:00:00 -0500
+</pubDate>
+        <link>http://plugins.octoprint.org/plugins/CooldownNotification/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">http://plugins.octoprint.org/plugins/CooldownNotification/</guid>
+        
+        <category>gcode</category>
+        
+        <category>heated bed</category>
+        
+        <category>notification</category>
+        
+        <category>cooldown</category>
+        
+      </item>
     
       <item>
         <title>Ikea Tradfri</title>
@@ -236,26 +260,6 @@ Sun, 26 Apr 2020 00:00:00 -0500
         <category>trigger</category>
         
         <category>button</category>
-        
-      </item>
-    
-      <item>
-        <title>TemperatureLegendMover</title>
-        <description>
-          <![CDATA[
-            Move the Temperature-Legend into a specific corner
-            <p><img src="https://github.com/OllisGit/OctoPrint-TemperatureLegendMover/raw/master/screenshots/temperature-legend.png"></p>
-          ]]>
-        </description>
-        <pubDate>
-Sun, 26 Apr 2020 00:00:00 -0500
-</pubDate>
-        <link>http://plugins.octoprint.org/plugins/TemperatureLegendMover/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">http://plugins.octoprint.org/plugins/TemperatureLegendMover/</guid>
-        
-        <category>temperature</category>
-        
-        <category>legend</category>
         
       </item>
     
