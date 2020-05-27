@@ -54,5 +54,3 @@ The plugin supports the ability to configure the GPIO number used for controllin
 ### Disclaimer
 
 Although I, iFrostizz, use this plugin and it works for me without issues, I take no resposiblity for any damage caused by using this plugin or connecting servos to your Pi. Please make sure to do your reseach and understand the dangers and please be careful.
-
-
