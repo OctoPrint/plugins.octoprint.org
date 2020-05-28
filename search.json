@@ -2306,7 +2306,7 @@
 "title": "Ikea Tradfri",
 "description": "Control Ikea Tradfri outlet",
 "author": "Mathieu \"ralmn\" HIREL",
-"content": "Turn on your printer with Ikea Tradfri Outlet.Requierements  Ikea Tradfri Gateway  Ikea Tradfri OutletSetupInstall libcoapYou need libcoap for communicate with your Ikea Gateway.git clone --recursive https://github.com/obgm/libcoap.gitcd libcoapgit checkout dtlsgit submodule update --init --recursive./autogen.sh./configure --disable-documentation --disable-shared --without-debug CFLAGS=\"-D COAP_DEBUG_FD=stderr\"makemake installInstall pluginInstall manually using this URL:https://github.com/ralmn/OctoPrint-Ikea-tradfri/archive/master.zipConfiguration  Indicate your gateway ip and your security code (found under your gateway)  Save  Select your outlet  Save",
+"content": "OctoPrint-Ikea-tradfriTurn on your printer with Ikea Tradfri Outlet.Requirements  Ikea Tradfri Gateway  Ikea Tradfri OutletSetupInstall libcoapYou need libcoap to communicate with your Ikea Gateway.Requirements : autoconf automake libtool (sudo apt install autoconf automake libtool)git clone --recursive https://github.com/obgm/libcoap.gitcd libcoapgit checkout dtlsgit submodule update --init --recursive./autogen.sh./configure --disable-documentation --disable-shared --without-debug CFLAGS=\"-D COAP_DEBUG_FD=stderr\"makesudo make installInstall pluginInstall manually using this URL:https://github.com/ralmn/OctoPrint-Ikea-tradfri/archive/master.zipConfigurationFollow setup wizard or go to OctoPrint settings:  Indicate your gateway ip and your security code (found under your gateway)  Save  Select your outlet  Save",
 "tags": ["ikea","tradfri","outlet"]
 },
 
