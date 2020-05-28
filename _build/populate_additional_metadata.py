@@ -9,40 +9,16 @@ import time
 
 from datetime import datetime
 
-GITHUB_CREDENTIALS = os.environ.get("GITHUB_CREDENTIALS", None)
+GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", None)
 
 PLUGINSTATS_7D_URL = "https://data.octoprint.org/export/plugin_stats_7d.json"
 PLUGINSTATS_30D_URL = "https://data.octoprint.org/export/plugin_stats_30d.json"
 
+GITHUB_PREFIX = "https://github.com/"
 GITHUB_GRAPHQL_URL = "https://api.github.com/graphql"
-
-_plugin_stats_7d = None
-_plugin_stats_30d = None
-
-def plugin_stats_7d(plugin):
-	global _plugin_stats_7d
-	if _plugin_stats_7d is None:
-		resp = requests.get(PLUGINSTATS_7D_URL)
-		_plugin_stats_7d = resp.json()
-	return _plugin_stats_7d.get(plugin)
-
-def plugin_stats_30d(plugin):
-	global _plugin_stats_30d
-	if _plugin_stats_30d is None:
-		resp = requests.get(PLUGINSTATS_30D_URL)
-		_plugin_stats_30d = resp.json()
-	return _plugin_stats_30d.get(plugin)
-
-def github_data(user, repo):
-	if GITHUB_CREDENTIALS is not None:
-		auth = "token "  + GITHUB_CREDENTIALS
-	else:
-		print("No GitHub-Statistic, because no Token provided")
-		return dict()
-
-	graphQLQuery = """
+GITHUB_GRAPHQL_QUERY = """
 query {
-  repository(owner: \"""" +  user + """\", name: \"""" + repo + """\") {
+  repository(owner: \"{{user}}\", name: \"{{repo}}\") {
     openIssues: issues(states: OPEN) {
       totalCount
     },
@@ -81,48 +57,82 @@ query {
   }
 }"""
 
-	requested_url = GITHUB_GRAPHQL_URL
+def to_date(date_str):
+	return datetime.fromisoformat(date_str.replace("Z", "+00:00")).strftime("%Y-%m-%d %H:%M:%S %z")
 
-	response = requests.post(requested_url,
-	                    	headers={
-									"Content-Type": "application/json; charset=utf-8",
-									"Authorization": auth
-							},
-							json={'query': graphQLQuery} )
+_plugin_stats_7d = None
+_plugin_stats_30d = None
 
-	print_response_by_error(requested_url, response)
-	response_json = response.json()
+def plugin_stats_7d(plugin):
+	global _plugin_stats_7d
+	if _plugin_stats_7d is None:
+		resp = requests.get(PLUGINSTATS_7D_URL)
+		_plugin_stats_7d = resp.json()
+	return _plugin_stats_7d.get(plugin)
 
-	github_statistics = dict()
-	if (len(response_json) == 0):
-		print("No JSON-Response available from github-api")
-		return github_statistics
+def plugin_stats_30d(plugin):
+	global _plugin_stats_30d
+	if _plugin_stats_30d is None:
+		resp = requests.get(PLUGINSTATS_30D_URL)
+		_plugin_stats_30d = resp.json()
+	return _plugin_stats_30d.get(plugin)
 
-	repositoryValues = response_json.get("data").get("repository")
-	github_statistics.update(open_issues = repositoryValues.get("openIssues").get("totalCount"))
-	github_statistics.update(closed_issues = repositoryValues.get("closedIssues").get("totalCount"))
-	releaseCount = repositoryValues.get("releasesCount").get("totalCount")
-	github_statistics.update(releases = releaseCount)
-	github_statistics.update(watchers = repositoryValues.get("watchers").get("totalCount"))
-	github_statistics.update(stars = repositoryValues.get("stargazers").get("totalCount"))
-	lastPush = repositoryValues.get("lastPush").get("target").get("history").get("edges")[0].get("node").get("committedDate")
-	github_statistics.update(last_push = lastPush)
 
-	if (releaseCount > 0):
-		latestRelease = repositoryValues.get("lastRelease").get("nodes")[0]
-		github_statistics.update(latest_release = latestRelease.get("name"))
-		github_statistics.update(latest_release_date = latestRelease.get("publishedAt"))
-		github_statistics.update(latest_release_url = latestRelease.get("url"))
+def github_data(user, repo):
+	if GITHUB_TOKEN is not None:
+		auth = "token "  + GITHUB_TOKEN
+	else:
+		return dict()
 
-	return github_statistics
+	graph_ql_query = GITHUB_GRAPHQL_QUERY\
+		.replace("{{user}}", user)\
+		.replace("{{repo}}", repo)
 
-def print_response_by_error(requestedURL, response):
-	httpStatus = response.status_code
-	if (httpStatus != 200):
-		responseText = response.text
-		print("Error for URL '" + requestedURL + "'")
-		print("  Response-Status:'" + str(httpStatus) + "', Text:'" + responseText + "'")
+	response = requests.post(GITHUB_GRAPHQL_URL,
+	                         headers={"Content-Type": "application/json; charset=utf-8",
+	                                  "Authorization": auth},
+	                         json={'query': graph_ql_query} )
 
+	if response.status_code != 200:
+		print("!! Error while querying Github API")
+		print("!!   Status: {}".format(response.status_code))
+		print("!!   Body: {}".format(response.text))
+		return dict()
+
+	data = response.json()
+	if not data:
+		print("!! No data available from Github API")
+		return dict()
+
+	repository_values = data["data"]["repository"]
+	release_count = repository_values["releasesCount"]["totalCount"]
+	result = dict(repo="{}/{}".format(user, repo),
+	              open_issues=repository_values["openIssues"]["totalCount"],
+	              closed_issues=repository_values["closedIssues"]["totalCount"],
+	              releases=release_count,
+	              watchers=repository_values["watchers"]["totalCount"],
+	              stars=repository_values["stargazers"]["totalCount"],
+	              last_push=to_date(repository_values["lastPush"]["target"]["history"]["edges"][0]["node"]["committedDate"]))
+
+	if release_count:
+		latest_release = repository_values["lastRelease"]["nodes"][0]
+		result.update(latest_release = latest_release["name"],
+		              latest_release_date=to_date(latest_release["publishedAt"]),
+		              latest_release_url=latest_release["url"])
+
+	return result
+
+def extract_github_repo(url):
+	if url is None or not url.startswith(GITHUB_PREFIX):
+		return None, None
+
+	r = requests.get(url)
+	url = r.url
+	if not url.startswith(GITHUB_PREFIX):
+		return None, None
+
+	parts = url[len(GITHUB_PREFIX):].split("/")
+	return parts[0], parts[1]
 
 def process_plugin_file(path, incl_stats=True, incl_github=True):
 	data = frontmatter.load(path)
@@ -157,13 +167,10 @@ def process_plugin_file(path, incl_stats=True, incl_github=True):
 			data["stats"]["month"] = build_stats(stats30d)
 
 	if incl_github:
-		user = repo = None
 		if "github" in data and "repo" in data["github"]:
 			user, repo = data["github"]["repo"].split("/")
-		elif data.get("source", "").startswith("https://github.com/"):
-			parts = data["source"][len("https://github.com/"):].split("/")
-			user = parts[0]
-			repo = parts[1]
+		else:
+			user, repo = extract_github_repo(data.get("source"))
 
 		if user and repo:
 			print("  Loading github repo information for plugin {}: {}/{}".format(plugin_id, user, repo))
@@ -182,6 +189,6 @@ if __name__ == "__main__":
 			if not entry.is_file() or not entry.name.endswith(".md"):
 				continue
 			process_plugin_file(entry.path,
-			                    incl_github=GITHUB_CREDENTIALS is not None)
+			                    incl_github=GITHUB_TOKEN is not None)
 			print("")
 			time.sleep(.2)
