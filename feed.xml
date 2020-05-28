@@ -5,10 +5,30 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>http://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 28 May 2020 16:05:36 -0500</pubDate>
-    <lastBuildDate>Thu, 28 May 2020 16:05:36 -0500</lastBuildDate>
+    <pubDate>Thu, 28 May 2020 17:39:06 -0500</pubDate>
+    <lastBuildDate>Thu, 28 May 2020 17:39:06 -0500</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
     
+    
+      <item>
+        <title>PrintJobHistory</title>
+        <description>
+          <![CDATA[
+            The OctoPrint-Plugin stores all print-job informations of a print in a database.
+            <p><img src="https://github.com/OllisGit/OctoPrint-PrintJobHistory/raw/master/screenshots/editPrintJob-dialog.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Thu, 28 May 2020 00:00:00 -0500
+</pubDate>
+        <link>http://plugins.octoprint.org/plugins/PrintJobHistory/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">http://plugins.octoprint.org/plugins/PrintJobHistory/</guid>
+        
+        <category>printer</category>
+        
+        <category>history</category>
+        
+      </item>
     
       <item>
         <title>CooldownNotification</title>
@@ -231,35 +251,6 @@ Wed, 29 Apr 2020 00:00:00 -0500
         <category>color change</category>
         
         <category>notification</category>
-        
-      </item>
-    
-      <item>
-        <title>Emergency Stop Simplified</title>
-        <description>
-          <![CDATA[
-            This plugin reacts to a switch or button, if triggered (switch open) it issues M112 command to printer.
-            <p><img src="https://plugins.octoprint.org/assets/img/repo-600x400.png"></p>
-            
-          ]]>
-        </description>
-        <pubDate>
-Sun, 26 Apr 2020 00:00:00 -0500
-</pubDate>
-        <link>http://plugins.octoprint.org/plugins/emergencystopsimplified/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">http://plugins.octoprint.org/plugins/emergencystopsimplified/</guid>
-        
-        <category>emergency</category>
-        
-        <category>stop</category>
-        
-        <category>simplified</category>
-        
-        <category>simple</category>
-        
-        <category>trigger</category>
-        
-        <category>button</category>
         
       </item>
     

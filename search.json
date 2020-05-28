@@ -2319,6 +2319,17 @@
 "author": "George McCauley",
 "content": "CooldownNotificationThis plugin is designed to execute gcode commands when the print bed cools to a certain temperature.The intended usage is to utilize the M300 gcode to alert that the bed has cooled and it’s safe to remove prints printed in PETG.Settings",
 "tags": ["gcode","heated bed","notification","cooldown"]
+},
+
+{
+"id": "/plugins/PrintJobHistory",
+"url": "/plugins/PrintJobHistory/",
+"date": "2020-05-28 00:00:00 -0500",
+"title": "PrintJobHistory",
+"description": "The OctoPrint-Plugin stores all print-job informations of a print in a database.",
+"author": "Olli",
+"content": "Print Job History-Plugin collects a lot of attributes from OctoPrint itself, like Start/End-Time, Username any many more. But it also grabs informations from other plugins: Thumbnail, Layer-Information, Filament usage…For a full overview of the latest feature set and planed features, please visit the Git Hub HomepageSupport my EffortsThis plugin, as well as my other plugins were developed in my spare time.If you like it, I would be thankful about a cup of coffee :)",
+"tags": ["printer","history"]
 }
 ]
 }

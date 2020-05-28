@@ -6,9 +6,9 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html"> <!--<![endif]-->
 <head>
     <meta charset="utf-8" />
-    <title>OctoPrint-FanSpeedMirror</title>
-    <meta name="description" content="Mirror the parameter(s) of GCode commands M106, M107 to scripts on the OctoPrint host">
-    <meta name="author" content="Brad Morgan">
+    <title>PrintJobHistory</title>
+    <meta name="description" content="The OctoPrint-Plugin stores all print-job informations of a print in a database.">
+    <meta name="author" content="Olli">
     <meta name="referrer" content="same-origin">
     <meta name="google-site-verification" content="0EFsbaNygJcEinKPmzP-hTf0Ju6wDIpJxO5zvQtOQT0" />
     <meta name="build-revision" content="3ccf99d3eb89c72ec4bf7c8cfd5c5d0db21773c5" />
@@ -41,30 +41,27 @@
 
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@OctoPrint3D" />
-    <meta name="twitter:title" content="OctoPrint-FanSpeedMirror" />
-    <meta name="twitter:description" content="Mirror the parameter(s) of GCode commands M106, M107 to scripts on the OctoPrint host
-Example bash scripts and a test gcode file are in extras
+    <meta name="twitter:title" content="PrintJobHistory" />
+    <meta name="twitter:description" content="Print Job History-Plugin collects a lot of attributes from OctoPrint itself, like Start/End-Time, Username any many more. But it also grabs informations from other plugins: Thumbnail, Layer-Information, Filament usage…
 
 " />
-    <meta name="twitter:image" content="https://plugins.octoprint.org/assets/img/octoprint-avatar-240x240.png" />
+    <meta name="twitter:image" content="https://plugins.octoprint.org" />
 
-    <meta property="og:title" content="OctoPrint-FanSpeedMirror" />
+    <meta property="og:title" content="PrintJobHistory" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://plugins.octoprint.org/assets/img/repo-600x400.png" />
-    <meta property="og:description" content="Mirror the parameter(s) of GCode commands M106, M107 to scripts on the OctoPrint host
-Example bash scripts and a test gcode file are in extras
+    <meta property="og:image" content="https://plugins.octoprint.orghttps://github.com/OllisGit/OctoPrint-PrintJobHistory/raw/master/screenshots/editPrintJob-dialog.png" />
+    <meta property="og:description" content="Print Job History-Plugin collects a lot of attributes from OctoPrint itself, like Start/End-Time, Username any many more. But it also grabs informations from other plugins: Thumbnail, Layer-Information, Filament usage…
 
 " />
     <meta property="og:site_name" content="OctoPrint Plugin Repository" />
-    <meta property="og:url" content="https://plugins.octoprint.org/plugins/FanSpeedMirror/" />
+    <meta property="og:url" content="https://plugins.octoprint.org/plugins/PrintJobHistory/" />
 
     <meta itemscope itemtype="http://schema.org/WebPage" />
-    <meta itemprop="headline" content="OctoPrint-FanSpeedMirror" />
-    <meta itemprop="description" content="Mirror the parameter(s) of GCode commands M106, M107 to scripts on the OctoPrint host
-Example bash scripts and a test gcode file are in extras
+    <meta itemprop="headline" content="PrintJobHistory" />
+    <meta itemprop="description" content="Print Job History-Plugin collects a lot of attributes from OctoPrint itself, like Start/End-Time, Username any many more. But it also grabs informations from other plugins: Thumbnail, Layer-Information, Filament usage…
 
 " />
-    <meta itemprop="image" content="https://plugins.octoprint.org/assets/img/repo-600x400.png" />
+    <meta itemprop="image" content="https://plugins.octoprint.orghttps://github.com/OllisGit/OctoPrint-PrintJobHistory/raw/master/screenshots/editPrintJob-dialog.png" />
 
     <script src="/assets/js/jquery-1.9.1.min.js"></script>
     <script src="/assets/js/underscore.min.js"></script>
@@ -162,7 +159,7 @@ Example bash scripts and a test gcode file are in extras
   <div class="container">
     <div class="row">
       <div class="span12">
-        <h1>OctoPrint-FanSpeedMirror</h1>
+        <h1>PrintJobHistory</h1>
       </div>
     </div>
   </div>
@@ -171,11 +168,11 @@ Example bash scripts and a test gcode file are in extras
 <div class="container">
   <div class="row-fluid">
     
-    <small class="pull-left"><a href="/plugins/enclosure/"><i class="fa fa-double-angle-left"></i>&nbsp;OctoPrint-Enclosure</a></small>
+    <small class="pull-left"><a href="/plugins/preheat/"><i class="fa fa-double-angle-left"></i>&nbsp;Preheat Button</a></small>
     
     &nbsp;
     
-    <small class="pull-right"><a href="/plugins/filamentstorage/">OctoPrint-Filamentstorage&nbsp;<i class="fa fa-double-angle-right"></i></a></small>
+    <small class="pull-right"><a href="/plugins/stats/">Printer Statistics&nbsp;<i class="fa fa-double-angle-right"></i></a></small>
     
   </div>
   <div class="content plugin-content row-fluid">
@@ -186,14 +183,43 @@ Example bash scripts and a test gcode file are in extras
       
 
       <p class="lead">
-        Mirror the parameter(s) of GCode commands M106, M107 to scripts on the OctoPrint host
+        The OctoPrint-Plugin stores all print-job informations of a print in a database.
       </p>
-      <p>Mirror the parameter(s) of GCode commands M106, M107 to scripts on the OctoPrint host
-Example bash scripts and a test gcode file are in extras</p>
+      <p>Print Job History-Plugin collects a lot of attributes from OctoPrint itself, like Start/End-Time, Username any many more. But it also grabs informations from other plugins: Thumbnail, Layer-Information, Filament usage…</p>
 
-<p>http://plugins.octoprint.org/plugin/FanSpeedMirror/</p>
+<p>For a full overview of the latest feature set and planed features, please visit the <a href="https://github.com/OllisGit/OctoPrint-PrintJobHistory">Git Hub Homepage</a></p>
+
+<h4 id="support-my-efforts">Support my Efforts</h4>
+
+<p>This plugin, as well as my <a href="https://github.com/OllisGit/">other plugins</a> were developed in my spare time.
+If you like it, I would be thankful about a cup of coffee :)</p>
+
+<p><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=6SW5R6ZUKLB5E&amp;source=url"><img src="https://img.shields.io/badge/Donate-PayPal-green.svg" alt="More coffee, more code" /></a></p>
 
 
+      
+        <h2>Pictures</h2>
+        
+        <figure>
+          
+          <a href="https://github.com/OllisGit/OctoPrint-PrintJobHistory/raw/master/screenshots/plugin-tab.png" data-lightbox="/plugins/PrintJobHistory" data-title="History Overview Tab"><img src="https://github.com/OllisGit/OctoPrint-PrintJobHistory/raw/master/screenshots/plugin-tab.png" alt="History Overview Tab" title="History Overview Tab"></a>
+        </figure>
+        
+        <figure>
+          
+          <a href="https://github.com/OllisGit/OctoPrint-PrintJobHistory/raw/master/screenshots/editPrintJob-dialog.png" data-lightbox="/plugins/PrintJobHistory" data-title="Edit of a Print Job Item"><img src="https://github.com/OllisGit/OctoPrint-PrintJobHistory/raw/master/screenshots/editPrintJob-dialog.png" alt="Edit of a Print Job Item" title="Edit of a Print Job Item"></a>
+        </figure>
+        
+        <figure>
+          
+          <a href="https://github.com/OllisGit/OctoPrint-PrintJobHistory/raw/master/screenshots/plugin-settings.png" data-lightbox="/plugins/PrintJobHistory" data-title="Plugin Settings"><img src="https://github.com/OllisGit/OctoPrint-PrintJobHistory/raw/master/screenshots/plugin-settings.png" alt="Plugin Settings" title="Plugin Settings"></a>
+        </figure>
+        
+        <figure>
+          
+          <a href="https://github.com/OllisGit/OctoPrint-PrintJobHistory/raw/master/screenshots/missingPlugins-dialog.png" data-lightbox="/plugins/PrintJobHistory" data-title="Optional Plugin Dependencies"><img src="https://github.com/OllisGit/OctoPrint-PrintJobHistory/raw/master/screenshots/missingPlugins-dialog.png" alt="Optional Plugin Dependencies" title="Optional Plugin Dependencies"></a>
+        </figure>
+        
       
     </article>
 
@@ -221,14 +247,14 @@ Example bash scripts and a test gcode file are in extras</p>
         
         <dd>
           URL:
-          <pre>https://github.com/b-morgan/OctoPrint-FanSpeedMirror/archive/master.zip</pre>
+          <pre>https://github.com/OllisGit/OctoPrint-PrintJobHistory/releases/latest/download/master.zip</pre>
           
         </dd>
         
         
         <dd>
           Command line:
-          <pre>pip install "https://github.com/b-morgan/OctoPrint-FanSpeedMirror/archive/master.zip"</pre>
+          <pre>pip install "https://github.com/OllisGit/OctoPrint-PrintJobHistory/releases/latest/download/master.zip"</pre>
         </dd>
         
       </dl>
@@ -236,13 +262,13 @@ Example bash scripts and a test gcode file are in extras</p>
       
       <dl class="date">
         <dt>Registration date</dt>
-        <dd>13 Apr 2019</dd>
+        <dd>28 May 2020</dd>
       </dl>
       
       
       <dl class="installations">
         <dt>Active instances the past month</dt>
-        <dd>Installed on at least <strong>651</strong> instances</dd>
+        <dd>Installed on at least <strong>246</strong> instances</dd>
       </dl>
       
       
@@ -258,14 +284,14 @@ Example bash scripts and a test gcode file are in extras</p>
           <ul>
             
             <li>
-              Latest Release: <a href="https://github.com/b-morgan/OctoPrint-FanSpeedMirror/releases/tag/1.3.1" target="_blank"></a><br>
-              <small>released on 03 Apr 2020</small>
+              Latest Release: <a href="https://github.com/OllisGit/OctoPrint-PrintJobHistory/releases/tag/1.0.0" target="_blank">V1.0.0</a><br>
+              <small>released on 28 May 2020</small>
             </li>
-            <li>Releases: 4</li>
+            <li>Releases: 8</li>
             
-            <li>Stars: 3</li>
-            <li>Issues: 0 open, 1 closed</li>
-            <li>Last push: 03 Apr 2020</li>
+            <li>Stars: 53</li>
+            <li>Issues: 13 open, 23 closed</li>
+            <li>Last push: 28 May 2020</li>
           </ul>
         </dd>
       </dl>
@@ -278,9 +304,9 @@ Example bash scripts and a test gcode file are in extras</p>
           
           
           
-          <a class="label" href="/by_tag/#tag-controls">controls</a>
+          <a class="label" href="/by_tag/#tag-history">history</a>
           
-          <a class="label" href="/by_tag/#tag-ui">ui</a>
+          <a class="label" href="/by_tag/#tag-printer">printer</a>
           
         </dd>
       </dl>
@@ -290,7 +316,7 @@ Example bash scripts and a test gcode file are in extras</p>
         <dd>
           <ul>
             
-            <li>OctoPrint: all versions</li>
+            <li>OctoPrint: 1.3.10+, 1.4.0+</li>
             
             
             <li>Operating Systems: all</li>
@@ -305,20 +331,20 @@ Example bash scripts and a test gcode file are in extras</p>
       <dl class="author">
         <dt>Author</dt>
         <dd>
-<a href="/by_author/#brad-morgan">Brad Morgan</a>
+<a href="/by_author/#olli">Olli</a>
 </dd>
       </dl>
       
       
       <dl class="homepage">
         <dt>Homepage</dt>
-        <dd><a href="https://github.com/b-morgan/OctoPrint-FanSpeedMirror" target="_blank">https://github.com/b-morgan/OctoPrint-FanSpeedMirror</a></dd>
+        <dd><a href="https://github.com/OllisGit/OctoPrint-PrintJobHistory" target="_blank">https://github.com/OllisGit/OctoPrint-PrintJobHistory</a></dd>
       </dl>
       
       
       <dl class="source">
         <dt>Source</dt>
-        <dd><a href="https://github.com/b-morgan/OctoPrint-FanSpeedMirror" target="_blank">https://github.com/b-morgan/OctoPrint-FanSpeedMirror</a></dd>
+        <dd><a href="https://github.com/OllisGit/OctoPrint-PrintJobHistory" target="_blank">https://github.com/OllisGit/OctoPrint-PrintJobHistory</a></dd>
       </dl>
       
       
@@ -332,19 +358,19 @@ Example bash scripts and a test gcode file are in extras</p>
         <dd>
           <p>
             If there is <strong>something wrong with this listing</strong> (broken links & images etc), please
-            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=bug&template=listing_error.md&title=%5BListing+Error%5D+OctoPrint-FanSpeedMirror">report it here</a>.
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=bug&template=listing_error.md&title=%5BListing+Error%5D+PrintJobHistory">report it here</a>.
           </p>
           <p>
             If this plugin <strong>has been <em>confirmed</em> as abandoned</strong> by its maintainer, please
-            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=abandoned+plugin&template=abandoned_plugin.md&title=%5BAbandoned+Plugin%5D+OctoPrint-FanSpeedMirror">report it here</a>.
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=abandoned+plugin&template=abandoned_plugin.md&title=%5BAbandoned+Plugin%5D+PrintJobHistory">report it here</a>.
           </p>
           <p>
             If this plugin is <strong>doing something suspicious</strong> (e.g. weird network activity, unannounced tracking, ...) and
             the maintainer is not cooperating in getting to the bottom of that, please
-            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=suspicious+plugin+activity&template=suspicious_plugin_activity.md&title=%5BSuspicious+Plugin+Activity%5D+OctoPrint-FanSpeedMirror">report the plugin as suspicious here</a>.
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=suspicious+plugin+activity&template=suspicious_plugin_activity.md&title=%5BSuspicious+Plugin+Activity%5D+PrintJobHistory">report the plugin as suspicious here</a>.
           </p>
           <p>
-            Report bugs or feature requests for the plugin to the plugin author (e.g. on the plugin's <a href="https://github.com/b-morgan/OctoPrint-FanSpeedMirror">homepage</a>) please, not here!
+            Report bugs or feature requests for the plugin to the plugin author (e.g. on the plugin's <a href="https://github.com/OllisGit/OctoPrint-PrintJobHistory">homepage</a>) please, not here!
           </p>
         </dd>
       </dl>
