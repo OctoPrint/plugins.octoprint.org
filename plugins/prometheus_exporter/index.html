@@ -11,8 +11,8 @@
     <meta name="author" content="Gergo Torcsvari">
     <meta name="referrer" content="same-origin">
     <meta name="google-site-verification" content="0EFsbaNygJcEinKPmzP-hTf0Ju6wDIpJxO5zvQtOQT0" />
-    <meta name="build-revision" content="3ccf99d3eb89c72ec4bf7c8cfd5c5d0db21773c5" />
-    <meta name="build-date" content="2020-05-30 07:11:04-05:00" />
+    <meta name="build-revision" content="76dacd1bcd14eaf09ce8758ecef4ef9d5d23bb29" />
+    <meta name="build-date" content="2020-05-30 12:28:49-05:00" />
 
     <!--[if lt IE 9]>
     <script src="/assets/js/html5shim.js"></script>
@@ -22,11 +22,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Le styles -->
-    <link rel="stylesheet" href="/assets/css/site.css?_=1590840664">
-    <link rel="stylesheet" href="/assets/css/bootstrap-responsive.css?_=1590840664">
-    <link rel="stylesheet" href="/assets/css/fontawesome-all.min.css?_=1590840664">
-    <link rel="stylesheet" href="/assets/css/prettify.css?_=1590840664">
-    <link rel="stylesheet" href="/assets/css/lightbox.css?_=1590840664">
+    <link rel="stylesheet" href="/assets/css/site.css?_=1590859729">
+    <link rel="stylesheet" href="/assets/css/bootstrap-responsive.css?_=1590859729">
+    <link rel="stylesheet" href="/assets/css/fontawesome-all.min.css?_=1590859729">
+    <link rel="stylesheet" href="/assets/css/prettify.css?_=1590859729">
+    <link rel="stylesheet" href="/assets/css/lightbox.css?_=1590859729">
 
     <!-- Le fav and touch icons -->
     <link rel="shortcut icon" href="/assets/img/tentacle-32x32.png">
@@ -208,6 +208,12 @@ Later on, you can use data vizualisation tools (for example <a href="https://gra
   <li>timelaps count - as counter</li>
   <li>print progress - as gauge with path label</li>
   <li>slice progress - as gauge with path label</li>
+  <li>print total time - as counter</li>
+  <li>last print time - as gauge</li>
+  <li>fan speed - as gauge</li>
+  <li>extrusion total - as counter</li>
+  <li>x, y and z travel - as a counter</li>
+  <li>last print extrusion - as gauge</li>
 </ul>
 
 <p>All of the metrics are prefixed as <code class="language-plaintext highlighter-rouge">octoprint_</code> for easier identification.</p>
@@ -221,6 +227,18 @@ Later on, you can use data vizualisation tools (for example <a href="https://gra
     static_configs:
       - targets: ['octoprint:80']
 </code></pre></div></div>
+
+<p>If you have authentication enabled use this version:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> - job_name: 'octoprint'
+    scrape_interval: 5s
+    metrics_path: '/plugin/prometheus_exporter/metrics'
+    params:
+      apikey: ['__OCTOPRINT_APIKEY__']
+    static_configs:
+      - targets: ['octoprint:80']
+</code></pre></div></div>
+
+<p>For example grafana dashboard please visit <a href="https://github.com/tg44/OctoPrint-Prometheus-Exporter/tree/master/extras">the github repo</a>.</p>
 
 
       
@@ -287,8 +305,8 @@ Later on, you can use data vizualisation tools (for example <a href="https://gra
           <ul>
             
             <li>Stars: 9</li>
-            <li>Issues: 2 open, 7 closed</li>
-            <li>Last push: 03 May 2020</li>
+            <li>Issues: 1 open, 8 closed</li>
+            <li>Last push: 30 May 2020</li>
           </ul>
         </dd>
       </dl>
@@ -327,7 +345,7 @@ Later on, you can use data vizualisation tools (for example <a href="https://gra
             <li>Operating Systems: all</li>
             
             
-            <li>Python: &gt;=2.7,&lt;3</li>
+            <li>Python: &gt;=2.7,&lt;4</li>
             
           </ul>
         </dd>
