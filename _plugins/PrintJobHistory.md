@@ -48,7 +48,7 @@ featuredimage: https://github.com/OllisGit/OctoPrint-PrintJobHistory/raw/master/
 
 ---
 
-Print Job History-Plugin collects a lot of attributes from OctoPrint itself, like Start/End-Time, Username any many more. But it also grabs informations from other plugins: Thumbnail, Layer-Information, Filament usage...
+Print Job History-Plugin collects a lot of attributes from OctoPrint itself, like **Filename, Start/End-Time, Status, Username, Slicer-Settings** any many more. But it also grabs informations from other plugins: **Thumbnail, Layer-Information, Filament usage**...
 
 For a full overview of the latest feature set and planed features, please visit the [Git Hub Homepage]({{ page.homepage | absolute_url }})
 
