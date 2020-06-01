@@ -2330,6 +2330,17 @@
 "author": "Olli",
 "content": "Print Job History-Plugin collects a lot of attributes from OctoPrint itself, like Filename, Start/End-Time, Status, Username, Slicer-Settings and many more. But it also grabs informations from other plugins: Thumbnail, Layer-Information, Filament usage…For a full overview of the latest feature set and planed features, please visit the Git Hub HomepageSupport my EffortsThis plugin, as well as my other plugins were developed in my spare time.If you like it, I would be thankful about a cup of coffee :)",
 "tags": ["printer","history"]
+},
+
+{
+"id": "/plugins/lametric",
+"url": "/plugins/lametric/",
+"date": "2020-06-01 00:00:00 -0500",
+"title": "Lametric",
+"description": "Display progress of your Octoprint instance on your LaMetric.",
+"author": "Thijs Bekke",
+"content": "This plugin adds support for your LaMetric to OctoPrint.When you start printing OctoPrint will send the current temperature or progress to your LaMetric.The following notifications will be send to your LaMetric:  Temperature of Tool and Bed  Percentage complete  Job is Failed  Job is completed",
+"tags": ["notification","notifications","lametric"]
 }
 ]
 }

@@ -5,10 +5,32 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>http://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 01 Jun 2020 07:10:36 -0500</pubDate>
-    <lastBuildDate>Mon, 01 Jun 2020 07:10:36 -0500</lastBuildDate>
+    <pubDate>Mon, 01 Jun 2020 14:06:55 -0500</pubDate>
+    <lastBuildDate>Mon, 01 Jun 2020 14:06:55 -0500</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
     
+    
+      <item>
+        <title>Lametric</title>
+        <description>
+          <![CDATA[
+            Display progress of your Octoprint instance on your LaMetric.
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/lametric/screenshot_1.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Mon, 01 Jun 2020 00:00:00 -0500
+</pubDate>
+        <link>http://plugins.octoprint.org/plugins/lametric/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">http://plugins.octoprint.org/plugins/lametric/</guid>
+        
+        <category>notification</category>
+        
+        <category>notifications</category>
+        
+        <category>lametric</category>
+        
+      </item>
     
       <item>
         <title>PrintJobHistory</title>
@@ -221,36 +243,6 @@ Thu, 30 Apr 2020 00:00:00 -0500
         <category>Android</category>
         
         <category>notifications</category>
-        
-      </item>
-    
-      <item>
-        <title>OctoPrint-Webhooks</title>
-        <description>
-          <![CDATA[
-            This allows you to send a webhook to any URL when events happen on OctoPrint.
-            <p><img src="https://plugins.octoprint.org/assets/img/plugins/webhooks/Featured.png"></p>
-          ]]>
-        </description>
-        <pubDate>
-Wed, 29 Apr 2020 00:00:00 -0500
-</pubDate>
-        <link>http://plugins.octoprint.org/plugins/webhooks/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">http://plugins.octoprint.org/plugins/webhooks/</guid>
-        
-        <category>webhook</category>
-        
-        <category>api</category>
-        
-        <category>url</category>
-        
-        <category>events</category>
-        
-        <category>prusa</category>
-        
-        <category>color change</category>
-        
-        <category>notification</category>
         
       </item>
     
