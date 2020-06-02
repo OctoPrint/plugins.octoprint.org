@@ -5,8 +5,8 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>http://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 01 Jun 2020 22:51:12 -0500</pubDate>
-    <lastBuildDate>Mon, 01 Jun 2020 22:51:12 -0500</lastBuildDate>
+    <pubDate>Mon, 01 Jun 2020 22:54:30 -0500</pubDate>
+    <lastBuildDate>Mon, 01 Jun 2020 22:54:30 -0500</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
     
     
@@ -29,6 +29,27 @@ Mon, 01 Jun 2020 00:00:00 -0500
         <category>notifications</category>
         
         <category>lametric</category>
+        
+      </item>
+    
+      <item>
+        <title>MQTT Subscribe</title>
+        <description>
+          <![CDATA[
+            This plugin allows controlling OctoPrint via MQTT messages.
+            <p><img src="https://plugins.octoprint.org/assets/img/repo-600x400.png"></p>
+            
+          ]]>
+        </description>
+        <pubDate>
+Fri, 29 May 2020 00:00:00 -0500
+</pubDate>
+        <link>http://plugins.octoprint.org/plugins/mqttsubscribe/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">http://plugins.octoprint.org/plugins/mqttsubscribe/</guid>
+        
+        <category>MQTT</category>
+        
+        <category>control</category>
         
       </item>
     
@@ -216,33 +237,6 @@ Sat, 02 May 2020 00:00:00 -0500
         <category>preheat</category>
         
         <category>temperature</category>
-        
-      </item>
-    
-      <item>
-        <title>OctoPrint-Printoid</title>
-        <description>
-          <![CDATA[
-            Notifications plugin for Printoid (Android app for OctoPrint)
-            <p><img src="https://plugins.octoprint.org/assets/img/repo-600x400.png"></p>
-            
-          ]]>
-        </description>
-        <pubDate>
-Thu, 30 Apr 2020 00:00:00 -0500
-</pubDate>
-        <link>http://plugins.octoprint.org/plugins/printoid/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">http://plugins.octoprint.org/plugins/printoid/</guid>
-        
-        <category>printoid</category>
-        
-        <category>bed temperature</category>
-        
-        <category>print finished</category>
-        
-        <category>Android</category>
-        
-        <category>notifications</category>
         
       </item>
     
