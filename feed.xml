@@ -5,10 +5,39 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>http://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 02 Jun 2020 07:11:26 -0500</pubDate>
-    <lastBuildDate>Tue, 02 Jun 2020 07:11:26 -0500</lastBuildDate>
+    <pubDate>Tue, 02 Jun 2020 13:05:22 -0500</pubDate>
+    <lastBuildDate>Tue, 02 Jun 2020 13:05:22 -0500</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
     
+    
+      <item>
+        <title>Set And Wait</title>
+        <description>
+          <![CDATA[
+            This OctoPrint plugin implements Set And Wait commands M109 &amp; M190 into OctoPrint and sends their non-blocking counterparts to the controller.
+            <p><img src="https://plugins.octoprint.org/assets/img/repo-600x400.png"></p>
+            
+          ]]>
+        </description>
+        <pubDate>
+Tue, 02 Jun 2020 00:00:00 -0500
+</pubDate>
+        <link>http://plugins.octoprint.org/plugins/setandwait/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">http://plugins.octoprint.org/plugins/setandwait/</guid>
+        
+        <category>m109</category>
+        
+        <category>m190</category>
+        
+        <category>heating</category>
+        
+        <category>smoothieware</category>
+        
+        <category>cancel</category>
+        
+        <category>klipper</category>
+        
+      </item>
     
       <item>
         <title>Lametric</title>
@@ -217,26 +246,6 @@ Thu, 07 May 2020 00:00:00 -0500
         <category>monitor</category>
         
         <category>send</category>
-        
-      </item>
-    
-      <item>
-        <title>Smart Preheat</title>
-        <description>
-          <![CDATA[
-            Parses GCode files and provides variables that can be accessed in GCode scripts. Reduces heatup time and allows for preheating before bed leveling.
-            <p><img src="https://raw.githubusercontent.com/kantlivelong/OctoPrint-SmartPreheat/master/extra/screenshots/beforePrintStarted.png"></p>
-          ]]>
-        </description>
-        <pubDate>
-Sat, 02 May 2020 00:00:00 -0500
-</pubDate>
-        <link>http://plugins.octoprint.org/plugins/smartpreheat/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">http://plugins.octoprint.org/plugins/smartpreheat/</guid>
-        
-        <category>preheat</category>
-        
-        <category>temperature</category>
         
       </item>
     

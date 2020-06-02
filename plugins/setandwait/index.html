@@ -6,9 +6,9 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html"> <!--<![endif]-->
 <head>
     <meta charset="utf-8" />
-    <title>Detailed Progress</title>
-    <meta name="description" content="Displays detailed progress on the LCD screen">
-    <meta name="author" content="tpmullan">
+    <title>Set And Wait</title>
+    <meta name="description" content="This OctoPrint plugin implements Set And Wait commands M109 &amp; M190 into OctoPrint and sends their non-blocking counterparts to the controller.">
+    <meta name="author" content="Shawn Bruce">
     <meta name="referrer" content="same-origin">
     <meta name="google-site-verification" content="0EFsbaNygJcEinKPmzP-hTf0Ju6wDIpJxO5zvQtOQT0" />
     <meta name="build-revision" content="3b24dd745e09a85f88e72b972f73a0aa81b02cfc" />
@@ -41,27 +41,42 @@
 
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@OctoPrint3D" />
-    <meta name="twitter:title" content="Detailed Progress" />
-    <meta name="twitter:description" content="A plugin that sends M117 commands to the printer to display the progress of the print job being currently streamed. The message to display can be configured (some placeholders included).
+    <meta name="twitter:title" content="Set And Wait" />
+    <meta name="twitter:description" content="Benefits:
+
+  Prints can be canceled during the heating phase without waiting for the temperature to be reached.
+  Fixes an issue where Smoothieware only reports temperatures for the probe being heated which in turn causes gaps on the OctoPrint temperature graph for other probes.
+  Works around odd behavior in Klipper where setting the temperature to a lower value will result in waiting for the heater to cool instead of simply continuting (S being treated as R). See KevinOConnor/klipper#1108
+
 
 " />
-    <meta name="twitter:image" content="https://plugins.octoprint.org" />
+    <meta name="twitter:image" content="https://plugins.octoprint.org/assets/img/octoprint-avatar-240x240.png" />
 
-    <meta property="og:title" content="Detailed Progress" />
+    <meta property="og:title" content="Set And Wait" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://plugins.octoprint.org/assets/img/plugins/detailedprogress/example-eta.jpg" />
-    <meta property="og:description" content="A plugin that sends M117 commands to the printer to display the progress of the print job being currently streamed. The message to display can be configured (some placeholders included).
+    <meta property="og:image" content="https://plugins.octoprint.org/assets/img/repo-600x400.png" />
+    <meta property="og:description" content="Benefits:
+
+  Prints can be canceled during the heating phase without waiting for the temperature to be reached.
+  Fixes an issue where Smoothieware only reports temperatures for the probe being heated which in turn causes gaps on the OctoPrint temperature graph for other probes.
+  Works around odd behavior in Klipper where setting the temperature to a lower value will result in waiting for the heater to cool instead of simply continuting (S being treated as R). See KevinOConnor/klipper#1108
+
 
 " />
     <meta property="og:site_name" content="OctoPrint Plugin Repository" />
-    <meta property="og:url" content="https://plugins.octoprint.org/plugins/detailedprogress/" />
+    <meta property="og:url" content="https://plugins.octoprint.org/plugins/setandwait/" />
 
     <meta itemscope itemtype="http://schema.org/WebPage" />
-    <meta itemprop="headline" content="Detailed Progress" />
-    <meta itemprop="description" content="A plugin that sends M117 commands to the printer to display the progress of the print job being currently streamed. The message to display can be configured (some placeholders included).
+    <meta itemprop="headline" content="Set And Wait" />
+    <meta itemprop="description" content="Benefits:
+
+  Prints can be canceled during the heating phase without waiting for the temperature to be reached.
+  Fixes an issue where Smoothieware only reports temperatures for the probe being heated which in turn causes gaps on the OctoPrint temperature graph for other probes.
+  Works around odd behavior in Klipper where setting the temperature to a lower value will result in waiting for the heater to cool instead of simply continuting (S being treated as R). See KevinOConnor/klipper#1108
+
 
 " />
-    <meta itemprop="image" content="https://plugins.octoprint.org/assets/img/plugins/detailedprogress/example-eta.jpg" />
+    <meta itemprop="image" content="https://plugins.octoprint.org/assets/img/repo-600x400.png" />
 
     <script src="/assets/js/jquery-1.9.1.min.js"></script>
     <script src="/assets/js/underscore.min.js"></script>
@@ -159,7 +174,7 @@
   <div class="container">
     <div class="row">
       <div class="span12">
-        <h1>Detailed Progress</h1>
+        <h1>Set And Wait</h1>
       </div>
     </div>
   </div>
@@ -168,11 +183,11 @@
 <div class="container">
   <div class="row-fluid">
     
-    <small class="pull-left"><a href="/plugins/DeleteAfterPrint/"><i class="fa fa-double-angle-left"></i>&nbsp;DeleteMoveAfterPrint</a></small>
+    <small class="pull-left"><a href="/plugins/screensquish/"><i class="fa fa-double-angle-left"></i>&nbsp;ScreenSquish</a></small>
     
     &nbsp;
     
-    <small class="pull-right"><a href="/plugins/DisplayLayerProgress/">DisplayLayerProgress&nbsp;<i class="fa fa-double-angle-right"></i></a></small>
+    <small class="pull-right"><a href="/plugins/shutdownprinter/">ShutdownPrinter&nbsp;<i class="fa fa-double-angle-right"></i></a></small>
     
   </div>
   <div class="content plugin-content row-fluid">
@@ -183,37 +198,18 @@
       
 
       <p class="lead">
-        Displays detailed progress on the LCD screen
+        This OctoPrint plugin implements Set And Wait commands M109 &amp; M190 into OctoPrint and sends their non-blocking counterparts to the controller.
       </p>
-      <p>A plugin that sends M117 commands to the printer to display the progress of the print job being currently streamed. The message to display can be configured (some placeholders included).</p>
-
-<p>By default, It rotates the display every 10 seconds with the following information:</p>
-
+      <h5 id="benefits">Benefits:</h5>
 <ul>
-  <li>Percentage of the job’s progress</li>
-  <li>ETL - Estimated time left</li>
-  <li>ETA - Estimated time of completion</li>
+  <li>Prints can be canceled during the heating phase without waiting for the temperature to be reached.</li>
+  <li>Fixes an issue where Smoothieware only reports temperatures for the probe being heated which in turn causes gaps on the OctoPrint temperature graph for other probes.</li>
+  <li>Works around odd behavior in Klipper where setting the temperature to a lower value will result in waiting for the heater to cool instead of simply continuting (S being treated as R). See <a href="https://github.com/KevinOConnor/klipper/issues/1108">KevinOConnor/klipper#1108</a></li>
 </ul>
 
+<p>See <a href="https://github.com/kantlivelong/OctoPrint-SetAndWait">https://github.com/kantlivelong/OctoPrint-SetAndWait</a> for information.</p>
 
-      
-        <h2>Pictures</h2>
-        
-        <figure>
-          
-          <a href="/assets/img/plugins/detailedprogress/example-percent.jpg" data-lightbox="/plugins/detailedprogress" data-title="Example of percentage"><img src="/assets/img/plugins/detailedprogress/example-percent.jpg" alt="Example of percentage" title="Example of percentage"></a>
-        </figure>
-        
-        <figure>
-          
-          <a href="/assets/img/plugins/detailedprogress/example-etl.jpg" data-lightbox="/plugins/detailedprogress" data-title="Example of estimated time left"><img src="/assets/img/plugins/detailedprogress/example-etl.jpg" alt="Example of estimated time left" title="Example of estimated time left"></a>
-        </figure>
-        
-        <figure>
-          
-          <a href="/assets/img/plugins/detailedprogress/example-eta.jpg" data-lightbox="/plugins/detailedprogress" data-title="Example of estimated time of completition"><img src="/assets/img/plugins/detailedprogress/example-eta.jpg" alt="Example of estimated time of completition" title="Example of estimated time of completition"></a>
-        </figure>
-        
+
       
     </article>
 
@@ -241,14 +237,14 @@
         
         <dd>
           URL:
-          <pre>https://github.com/tpmullan/OctoPrint-DetailedProgress/archive/master.zip</pre>
+          <pre>https://github.com/kantlivelong/OctoPrint-SetAndWait/archive/master.zip</pre>
           
         </dd>
         
         
         <dd>
           Command line:
-          <pre>pip install "https://github.com/tpmullan/OctoPrint-DetailedProgress/archive/master.zip"</pre>
+          <pre>pip install "https://github.com/kantlivelong/OctoPrint-SetAndWait/archive/master.zip"</pre>
         </dd>
         
       </dl>
@@ -256,19 +252,19 @@
       
       <dl class="date">
         <dt>Registration date</dt>
-        <dd>02 Sep 2016</dd>
+        <dd>02 Jun 2020</dd>
       </dl>
       
       
       <dl class="installations">
         <dt>Active instances the past month</dt>
-        <dd>Installed on at least <strong>6.07k</strong> instances</dd>
+        <dd>Installed on at least <strong>6</strong> instances</dd>
       </dl>
       
       
       <dl class="install_events">
         <dt>New installs the past week</dt>
-        <dd>At least <strong>338</strong> new installations</dd>
+        <dd>At least <strong>2</strong> new installations</dd>
       </dl>
       
       
@@ -278,14 +274,14 @@
           <ul>
             
             <li>
-              Latest Release: <a href="https://github.com/tpmullan/OctoPrint-DetailedProgress/releases/tag/0.2.5" target="_blank">0.2.5</a><br>
-              <small>released on 22 May 2020</small>
+              Latest Release: <a href="https://github.com/kantlivelong/OctoPrint-SetAndWait/releases/tag/0.0.1" target="_blank">0.0.1</a><br>
+              <small>released on 01 Jun 2020</small>
             </li>
-            <li>Releases: 3</li>
+            <li>Releases: 1</li>
             
-            <li>Stars: 10</li>
-            <li>Issues: 3 open, 8 closed</li>
-            <li>Last push: 22 May 2020</li>
+            <li>Stars: 0</li>
+            <li>Issues: 0 open, 0 closed</li>
+            <li>Last push: 01 Jun 2020</li>
           </ul>
         </dd>
       </dl>
@@ -298,13 +294,17 @@
           
           
           
-          <a class="label" href="/by_tag/#tag-display">display</a>
+          <a class="label" href="/by_tag/#tag-cancel">cancel</a>
           
-          <a class="label" href="/by_tag/#tag-lcd">lcd</a>
+          <a class="label" href="/by_tag/#tag-heating">heating</a>
           
-          <a class="label" href="/by_tag/#tag-printer">printer</a>
+          <a class="label" href="/by_tag/#tag-klipper">klipper</a>
           
-          <a class="label" href="/by_tag/#tag-progress">progress</a>
+          <a class="label" href="/by_tag/#tag-m109">m109</a>
+          
+          <a class="label" href="/by_tag/#tag-m190">m190</a>
+          
+          <a class="label" href="/by_tag/#tag-smoothieware">smoothieware</a>
           
         </dd>
       </dl>
@@ -317,10 +317,10 @@
             <li>OctoPrint: all versions</li>
             
             
-            <li>Operating Systems: all</li>
+            <li>Operating Systems: Linux, FreeBSD, Mac OS XWindows</li>
             
             
-            <li>Python: &gt;=2.7,&lt;3</li>
+            <li>Python: &gt;=2.7,&lt;4</li>
             
           </ul>
         </dd>
@@ -329,20 +329,20 @@
       <dl class="author">
         <dt>Author</dt>
         <dd>
-<a href="/by_author/#tpmullan">tpmullan</a>
+<a href="/by_author/#shawn-bruce">Shawn Bruce</a>
 </dd>
       </dl>
       
       
       <dl class="homepage">
         <dt>Homepage</dt>
-        <dd><a href="https://github.com/tpmullan/OctoPrint-DetailedProgress" target="_blank">https://github.com/tpmullan/OctoPrint-DetailedProgress</a></dd>
+        <dd><a href="https://github.com/kantlivelong/OctoPrint-SetAndWait" target="_blank">https://github.com/kantlivelong/OctoPrint-SetAndWait</a></dd>
       </dl>
       
       
       <dl class="source">
         <dt>Source</dt>
-        <dd><a href="https://github.com/tpmullan/OctoPrint-DetailedProgress" target="_blank">https://github.com/tpmullan/OctoPrint-DetailedProgress</a></dd>
+        <dd><a href="https://github.com/kantlivelong/OctoPrint-SetAndWait" target="_blank">https://github.com/kantlivelong/OctoPrint-SetAndWait</a></dd>
       </dl>
       
       
@@ -356,19 +356,19 @@
         <dd>
           <p>
             If there is <strong>something wrong with this listing</strong> (broken links & images etc), please
-            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=bug&template=listing_error.md&title=%5BListing+Error%5D+Detailed+Progress">report it here</a>.
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=bug&template=listing_error.md&title=%5BListing+Error%5D+Set+And+Wait">report it here</a>.
           </p>
           <p>
             If this plugin <strong>has been <em>confirmed</em> as abandoned</strong> by its maintainer, please
-            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=abandoned+plugin&template=abandoned_plugin.md&title=%5BAbandoned+Plugin%5D+Detailed+Progress">report it here</a>.
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=abandoned+plugin&template=abandoned_plugin.md&title=%5BAbandoned+Plugin%5D+Set+And+Wait">report it here</a>.
           </p>
           <p>
             If this plugin is <strong>doing something suspicious</strong> (e.g. weird network activity, unannounced tracking, ...) and
             the maintainer is not cooperating in getting to the bottom of that, please
-            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=suspicious+plugin+activity&template=suspicious_plugin_activity.md&title=%5BSuspicious+Plugin+Activity%5D+Detailed+Progress">report the plugin as suspicious here</a>.
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=suspicious+plugin+activity&template=suspicious_plugin_activity.md&title=%5BSuspicious+Plugin+Activity%5D+Set+And+Wait">report the plugin as suspicious here</a>.
           </p>
           <p>
-            Report bugs or feature requests for the plugin to the plugin author (e.g. on the plugin's <a href="https://github.com/tpmullan/OctoPrint-DetailedProgress">homepage</a>) please, not here!
+            Report bugs or feature requests for the plugin to the plugin author (e.g. on the plugin's <a href="https://github.com/kantlivelong/OctoPrint-SetAndWait">homepage</a>) please, not here!
           </p>
         </dd>
       </dl>
