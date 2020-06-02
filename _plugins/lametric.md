@@ -3,7 +3,7 @@ layout: plugin
 
 id: lametric
 title: Lametric
-description: Display progress of your Octoprint instance on your LaMetric.
+description: Display progress of your Octoprint instance on your LaMetric smart clock.
 author: Thijs Bekke
 license: AGPLv3
 
@@ -27,6 +27,9 @@ screenshots:
 - url: /assets/img/plugins/lametric/settings.png
   alt: Settings
   caption: You must configure two settings so that OctoPrint can communicate to your LaMetric. An API key and Host/Ip of you LaMetric
+- url: /assets/img/plugins/lametric/screenshot_1.png
+  alt: LaMetric
+  caption: An example of the notification on your LaMetric
 - url: /assets/img/plugins/lametric/screenshot_2.png
   alt: LaMetric
   caption: An example of the notification on your LaMetric
@@ -35,7 +38,7 @@ featuredimage: /assets/img/plugins/lametric/screenshot_1.png
 
 ---
 
-This plugin adds support for your [LaMetric](https://lametric.com/) to OctoPrint.
+This plugin adds support for your [LaMetric smart clock (LaMetric time)](https://lametric.com/) to OctoPrint.
 
 When you start printing OctoPrint will send the current temperature or progress to your LaMetric.
 
