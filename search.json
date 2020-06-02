@@ -2348,9 +2348,9 @@
 "url": "/plugins/lametric/",
 "date": "2020-06-01 00:00:00 -0500",
 "title": "Lametric",
-"description": "Display progress of your Octoprint instance on your LaMetric.",
+"description": "Display progress of your Octoprint instance on your LaMetric smart clock.",
 "author": "Thijs Bekke",
-"content": "This plugin adds support for your LaMetric to OctoPrint.When you start printing OctoPrint will send the current temperature or progress to your LaMetric.The following notifications will be send to your LaMetric:  Temperature of Tool and Bed  Percentage complete  Job is Failed  Job is completed",
+"content": "This plugin adds support for your LaMetric smart clock (LaMetric time) to OctoPrint.When you start printing OctoPrint will send the current temperature or progress to your LaMetric.The following notifications will be send to your LaMetric:  Temperature of Tool and Bed  Percentage complete  Job is Failed  Job is completed",
 "tags": ["notification","notifications","lametric"]
 },
 
