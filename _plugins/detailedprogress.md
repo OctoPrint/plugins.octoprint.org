@@ -34,6 +34,9 @@ screenshots:
 
 featuredimage: /assets/img/plugins/detailedprogress/example-eta.jpg
 
+compatibility:
+  python: ">=2.7,<4"
+
 ---
 
 A plugin that sends M117 commands to the printer to display the progress of the print job being currently streamed. The message to display can be configured (some placeholders included).
