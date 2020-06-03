@@ -5,10 +5,28 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>http://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 03 Jun 2020 14:01:08 -0500</pubDate>
-    <lastBuildDate>Wed, 03 Jun 2020 14:01:08 -0500</lastBuildDate>
+    <pubDate>Wed, 03 Jun 2020 14:03:02 -0500</pubDate>
+    <lastBuildDate>Wed, 03 Jun 2020 14:03:02 -0500</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
     
+    
+      <item>
+        <title>Webcam Iframe</title>
+        <description>
+          <![CDATA[
+            Simple plugin that replaces the webcam image on the control tab with an iframe that loads the webcam url from the default settings.
+            <p><img src="https://plugins.octoprint.org/assets/img/webcam_iframe"></p>
+          ]]>
+        </description>
+        <pubDate>
+Tue, 02 Jun 2020 00:00:00 -0500
+</pubDate>
+        <link>http://plugins.octoprint.org/plugins/webcam_iframe/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">http://plugins.octoprint.org/plugins/webcam_iframe/</guid>
+        
+        <category>webcam</category>
+        
+      </item>
     
       <item>
         <title>Sticky Pad</title>
@@ -209,29 +227,6 @@ Thu, 21 May 2020 00:00:00 -0500
         <category>servos</category>
         
         <category>PWM</category>
-        
-      </item>
-    
-      <item>
-        <title>Flashforge/Dremel/PowerSpec Printer Support</title>
-        <description>
-          <![CDATA[
-            Enable OctoPrint to connect to certain FlashForge, Dremel and PowerSpec printers.
-            <p><img src="https://plugins.octoprint.org/assets/img/repo-600x400.png"></p>
-            
-          ]]>
-        </description>
-        <pubDate>
-Mon, 18 May 2020 00:00:00 -0500
-</pubDate>
-        <link>http://plugins.octoprint.org/plugins/FlashForge/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">http://plugins.octoprint.org/plugins/FlashForge/</guid>
-        
-        <category>FlashForge</category>
-        
-        <category>Dremel</category>
-        
-        <category>PowerSpec</category>
         
       </item>
     

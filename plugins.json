@@ -4923,5 +4923,29 @@
         "instances_week": 2,
         "install_events_week": 1
 }
+  },
+
+  {
+    "id": "webcam_iframe",
+    "published": "2020-06-02 00:00:00 -0500",
+    "title": "Webcam Iframe",
+    "description": "Simple plugin that replaces the webcam image on the control tab with an iframe that loads the webcam url from the default settings.",
+    "archive": "https://github.com/jneilliii/OctoPrint-WebcamIframe/archive/master.zip",
+    "author": "jneilliii",
+    "homepage": "https://github.com/jneilliii/OctoPrint-WebcamIframe",
+    "page": "https://plugins.octoprint.org/plugins/webcam_iframe/",
+    "compatibility": {
+        "octoprint": ["1.2.0"],
+        "os": ["linux","windows","macos","freebsd"],
+        "python": ">=2.7,<4"
+    },
+    "license": "AGPLv3",
+    "image": "https://plugins.octoprint.org/assets/img/webcam_iframe",
+    "stats": {
+        "instances_month": 41,
+        "install_events_month": 21,
+        "instances_week": 27,
+        "install_events_week": 7
+}
   }
 ]
