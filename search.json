@@ -2363,6 +2363,17 @@
 "author": "Shawn Bruce",
 "content": "Benefits:  Prints can be canceled during the heating phase without waiting for the temperature to be reached.  Fixes an issue where Smoothieware only reports temperatures for the probe being heated which in turn causes gaps on the OctoPrint temperature graph for other probes.  Works around odd behavior in Klipper where setting the temperature to a lower value will result in waiting for the heater to cool instead of simply continuting (S being treated as R). See KevinOConnor/klipper#1108See https://github.com/kantlivelong/OctoPrint-SetAndWait for information.",
 "tags": ["m109","m190","heating","smoothieware","cancel","klipper"]
+},
+
+{
+"id": "/plugins/stickypad",
+"url": "/plugins/stickypad/",
+"date": "2020-06-02 00:00:00 -0500",
+"title": "Sticky Pad",
+"description": "This plugin adds a persistent sticky pad to the web interface for keeping random notes.",
+"author": "jneilliii",
+"content": "Sticky PadThis plugin adds a persistent sticky pad to the web interface for keeping random notes.Get HelpIf you experience issues with this plugin or need assistance please use the issue tracker at the plugin’s Homepage linked on the right.Additional PluginsCheck out my other plugins hereSupport My EffortsI, jneilliii, programmed this plugin for fun and do my best effort to support those that have issues with it, please return the favor and leave me a tip or become a Patron if you find this plugin helpful and want me to continue future development. No paypal.me? Send funds via PayPal to jneilliii@gmail.com",
+"tags": ["notes","reminders"]
 }
 ]
 }

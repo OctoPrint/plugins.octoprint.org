@@ -5,10 +5,30 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>http://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 03 Jun 2020 07:24:28 -0500</pubDate>
-    <lastBuildDate>Wed, 03 Jun 2020 07:24:28 -0500</lastBuildDate>
+    <pubDate>Wed, 03 Jun 2020 14:01:08 -0500</pubDate>
+    <lastBuildDate>Wed, 03 Jun 2020 14:01:08 -0500</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
     
+    
+      <item>
+        <title>Sticky Pad</title>
+        <description>
+          <![CDATA[
+            This plugin adds a persistent sticky pad to the web interface for keeping random notes.
+            <p><img src="https://plugins.octoprint.org/assets/img/stickypad/screenshot.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Tue, 02 Jun 2020 00:00:00 -0500
+</pubDate>
+        <link>http://plugins.octoprint.org/plugins/stickypad/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">http://plugins.octoprint.org/plugins/stickypad/</guid>
+        
+        <category>notes</category>
+        
+        <category>reminders</category>
+        
+      </item>
     
       <item>
         <title>Set And Wait</title>
@@ -212,40 +232,6 @@ Mon, 18 May 2020 00:00:00 -0500
         <category>Dremel</category>
         
         <category>PowerSpec</category>
-        
-      </item>
-    
-      <item>
-        <title>Terminal Response</title>
-        <description>
-          <![CDATA[
-            Monitors terminal for a regular expression and allows you to respond with your own commands.
-            <p><img src="https://plugins.octoprint.org/assets/img/plugins/terminalresponse/01.png"></p>
-          ]]>
-        </description>
-        <pubDate>
-Thu, 07 May 2020 00:00:00 -0500
-</pubDate>
-        <link>http://plugins.octoprint.org/plugins/terminalresponse/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">http://plugins.octoprint.org/plugins/terminalresponse/</guid>
-        
-        <category>regex</category>
-        
-        <category>regular</category>
-        
-        <category>expressions</category>
-        
-        <category>gcode</category>
-        
-        <category>command</category>
-        
-        <category>commands</category>
-        
-        <category>terminal</category>
-        
-        <category>monitor</category>
-        
-        <category>send</category>
         
       </item>
     
