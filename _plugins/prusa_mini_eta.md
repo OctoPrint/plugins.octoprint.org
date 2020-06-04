@@ -1,7 +1,7 @@
 ---
 layout: plugin
 
-id: prusa-mini-eta
+id: prusa_mini_eta
 title: OctoPrint-Prusa-Mini-ETA
 description: Prusa Mini ETA detection from the gcode files prepared by the Prusa Slicer.
 author: Michal Duda
