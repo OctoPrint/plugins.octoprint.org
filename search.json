@@ -2385,6 +2385,17 @@
 "author": "jneilliii",
 "content": "Webcam IframeSimple plugin that replaces the webcam image on the control tab with an iframe that loads the webcam url from the default settings.ConfigurationSet your webcam stream url to the address of a web page to load within the iframe that replaces the default image on the control tab. For example, for a twitch url you can use something like https://player.twitch.tv/?channel=jneilliii&amp;muted=trueGet HelpIf you experience issues with this plugin or need assistance please use the issue tracker at the plugin’s Homepage linked on the right.Additional PluginsCheck out my other plugins hereSupport My EffortsI, jneilliii, programmed this plugin for fun and do my best effort to support those that have issues with it, please return the favor and leave me a tip or become a Patron if you find this plugin helpful and want me to continue future development. No paypal.me? Send funds via PayPal to jneilliii@gmail.com",
 "tags": ["webcam"]
+},
+
+{
+"id": "/plugins/restorelevelingafterg28",
+"url": "/plugins/restorelevelingafterg28/",
+"date": "2020-06-03 00:00:00 -0500",
+"title": "Restore Leveling After G28",
+"description": "Automatically keeps bed leveling on after G28 (Auto Home).",
+"author": "Xennis",
+"content": "Marlin code G28 disables bed leveling. The plugin restores the prior state:  Before the G28 command a M420 V is send to check if leveling is enabled or not.  If leveling was enabled: After the G28 command a M420 S1 is send to enable leveling.That same behaviour can be enabled in the Marlin firmware via RESTORE_LEVELING_AFTER_G28.SetupInstall via the bundled Plugin Manageror manually using this URL:https://github.com/Xennis/OctoPrint-RestoreLevelingAfterG28/archive/master.zipConfigurationThe plugin has no configuration and does not adjust the UI.",
+"tags": ["leveling","bed leveling","marlin"]
 }
 ]
 }

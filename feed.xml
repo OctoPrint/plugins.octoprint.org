@@ -5,10 +5,33 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>http://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 04 Jun 2020 07:11:12 -0500</pubDate>
-    <lastBuildDate>Thu, 04 Jun 2020 07:11:12 -0500</lastBuildDate>
+    <pubDate>Fri, 05 Jun 2020 03:18:39 -0500</pubDate>
+    <lastBuildDate>Fri, 05 Jun 2020 03:18:39 -0500</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
     
+    
+      <item>
+        <title>Restore Leveling After G28</title>
+        <description>
+          <![CDATA[
+            Automatically keeps bed leveling on after G28 (Auto Home).
+            <p><img src="https://plugins.octoprint.org/assets/img/repo-600x400.png"></p>
+            
+          ]]>
+        </description>
+        <pubDate>
+Wed, 03 Jun 2020 00:00:00 -0500
+</pubDate>
+        <link>http://plugins.octoprint.org/plugins/restorelevelingafterg28/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">http://plugins.octoprint.org/plugins/restorelevelingafterg28/</guid>
+        
+        <category>leveling</category>
+        
+        <category>bed leveling</category>
+        
+        <category>marlin</category>
+        
+      </item>
     
       <item>
         <title>Webcam Iframe</title>
@@ -205,28 +228,6 @@ Thu, 21 May 2020 00:00:00 -0500
         <category>input</category>
         
         <category>gcode</category>
-        
-      </item>
-    
-      <item>
-        <title>Easy Servo</title>
-        <description>
-          <![CDATA[
-            Plugin to control two servos attached to a camera gimbal to control motion.
-            <p><img src="https://plugins.octoprint.org/assets/img/plugins/EasyServo/screenshot_easyservo.png"></p>
-          ]]>
-        </description>
-        <pubDate>
-Thu, 21 May 2020 00:00:00 -0500
-</pubDate>
-        <link>http://plugins.octoprint.org/plugins/EasyServo/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">http://plugins.octoprint.org/plugins/EasyServo/</guid>
-        
-        <category>GPIO</category>
-        
-        <category>servos</category>
-        
-        <category>PWM</category>
         
       </item>
     

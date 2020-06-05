@@ -6,9 +6,9 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html"> <!--<![endif]-->
 <head>
     <meta charset="utf-8" />
-    <title>Navbar Temp</title>
-    <meta name="description" content="Display temperatures on navbar">
-    <meta name="author" content="Jarek Szczepanski &amp; Cosik">
+    <title>Restore Leveling After G28</title>
+    <meta name="description" content="Automatically keeps bed leveling on after G28 (Auto Home).">
+    <meta name="author" content="Xennis">
     <meta name="referrer" content="same-origin">
     <meta name="google-site-verification" content="0EFsbaNygJcEinKPmzP-hTf0Ju6wDIpJxO5zvQtOQT0" />
     <meta name="build-revision" content="113bd55a7fc4ae6c359e3665962dd7568ac31163" />
@@ -41,27 +41,27 @@
 
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@OctoPrint3D" />
-    <meta name="twitter:title" content="Navbar Temp" />
-    <meta name="twitter:description" content="Plugin for OctoPrint - displays temperatures on navbar
+    <meta name="twitter:title" content="Restore Leveling After G28" />
+    <meta name="twitter:description" content="Marlin code G28 disables bed leveling. The plugin restores the prior state:
 
 " />
-    <meta name="twitter:image" content="https://plugins.octoprint.org" />
+    <meta name="twitter:image" content="https://plugins.octoprint.org/assets/img/octoprint-avatar-240x240.png" />
 
-    <meta property="og:title" content="Navbar Temp" />
+    <meta property="og:title" content="Restore Leveling After G28" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://plugins.octoprint.orghttps://github.com/imrahil/OctoPrint-NavbarTemp/blob/master/images/navbar.png?raw=true" />
-    <meta property="og:description" content="Plugin for OctoPrint - displays temperatures on navbar
+    <meta property="og:image" content="https://plugins.octoprint.org/assets/img/repo-600x400.png" />
+    <meta property="og:description" content="Marlin code G28 disables bed leveling. The plugin restores the prior state:
 
 " />
     <meta property="og:site_name" content="OctoPrint Plugin Repository" />
-    <meta property="og:url" content="https://plugins.octoprint.org/plugins/navbartemp/" />
+    <meta property="og:url" content="https://plugins.octoprint.org/plugins/restorelevelingafterg28/" />
 
     <meta itemscope itemtype="http://schema.org/WebPage" />
-    <meta itemprop="headline" content="Navbar Temp" />
-    <meta itemprop="description" content="Plugin for OctoPrint - displays temperatures on navbar
+    <meta itemprop="headline" content="Restore Leveling After G28" />
+    <meta itemprop="description" content="Marlin code G28 disables bed leveling. The plugin restores the prior state:
 
 " />
-    <meta itemprop="image" content="https://plugins.octoprint.orghttps://github.com/imrahil/OctoPrint-NavbarTemp/blob/master/images/navbar.png?raw=true" />
+    <meta itemprop="image" content="https://plugins.octoprint.org/assets/img/repo-600x400.png" />
 
     <script src="/assets/js/jquery-1.9.1.min.js"></script>
     <script src="/assets/js/underscore.min.js"></script>
@@ -159,7 +159,7 @@
   <div class="container">
     <div class="row">
       <div class="span12">
-        <h1>Navbar Temp</h1>
+        <h1>Restore Leveling After G28</h1>
       </div>
     </div>
   </div>
@@ -168,11 +168,11 @@
 <div class="container">
   <div class="row-fluid">
     
-    <small class="pull-left"><a href="/plugins/nautilus/"><i class="fa fa-double-angle-left"></i>&nbsp;Nautilus - mobile shell for OctoPrint</a></small>
+    <small class="pull-left"><a href="/plugins/resource_monitor/"><i class="fa fa-double-angle-left"></i>&nbsp;Resource Monitor</a></small>
     
     &nbsp;
     
-    <small class="pull-right"><a href="/plugins/octoglow/">OctoGlow&nbsp;<i class="fa fa-double-angle-right"></i></a></small>
+    <small class="pull-right"><a href="/plugins/roomtemp/">Room Temperature&nbsp;<i class="fa fa-double-angle-right"></i></a></small>
     
   </div>
   <div class="content plugin-content row-fluid">
@@ -183,43 +183,28 @@
       
 
       <p class="lead">
-        Display temperatures on navbar
+        Automatically keeps bed leveling on after G28 (Auto Home).
       </p>
-      <h1 id="plugin-for-octoprint---displays-temperatures-on-navbar">Plugin for OctoPrint - displays temperatures on navbar</h1>
+      <p>Marlin code <code class="language-plaintext highlighter-rouge">G28</code> disables bed leveling. The plugin restores the prior state:</p>
 
-<p><img src="https://github.com/imrahil/OctoPrint-NavbarTemp/blob/master/images/navbar.png?raw=true" alt="NavbarTemp" /></p>
+<ul>
+  <li>Before the <code class="language-plaintext highlighter-rouge">G28</code> command a <code class="language-plaintext highlighter-rouge">M420 V</code> is send to check if leveling is enabled or not.</li>
+  <li>If leveling was enabled: After the <code class="language-plaintext highlighter-rouge">G28</code> command a <code class="language-plaintext highlighter-rouge">M420 S1</code> is send to enable leveling.</li>
+</ul>
+
+<p>That same behaviour can be enabled in the Marlin firmware via <code class="language-plaintext highlighter-rouge">RESTORE_LEVELING_AFTER_G28</code>.</p>
 
 <h2 id="setup">Setup</h2>
 
-<p>Install the plugin using Plugin Manager from Settings</p>
+<p>Install via the bundled <a href="https://docs.octoprint.org/en/master/bundledplugins/pluginmanager.html">Plugin Manager</a>
+or manually using this URL:</p>
 
-<h2 id="need-new-platform-support">Need new platform support?</h2>
-<p>If you need support for additional platform, please inform us and add such information:</p>
-<ul>
-  <li>How to read temperature</li>
-  <li>How to define platform type</li>
-</ul>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://github.com/Xennis/OctoPrint-RestoreLevelingAfterG28/archive/master.zip
+</code></pre></div></div>
 
-<p>And be ready for testing.</p>
+<h2 id="configuration">Configuration</h2>
 
-<h2 id="custom-command">Custom command</h2>
-<p>Plugin is supporting up to one custom command, in navbar will be displayed raw output 
-of command.
-Example:
-<img src="https://github.com/imrahil/OctoPrint-NavbarTemp/blob/master/images/custom_cmd_cfg1.png?raw=true" alt="NavbarTemp" /></p>
-
-<p><img src="https://github.com/imrahil/OctoPrint-NavbarTemp/blob/master/images/custom_cmd_bar1.png?raw=true" alt="NavbarTemp" /></p>
-
-<h2 id="change-notes">Change notes:</h2>
-<p>v 0.13</p>
-<ul>
-  <li>added support for custom commands</li>
-</ul>
-
-<p>v 0.11</p>
-<ul>
-  <li>added support for all platforms running under Armbian</li>
-</ul>
+<p>The plugin has no configuration and does not adjust the UI.</p>
 
 
       
@@ -249,14 +234,14 @@ Example:
         
         <dd>
           URL:
-          <pre>https://github.com/imrahil/OctoPrint-NavbarTemp/archive/master.zip</pre>
+          <pre>https://github.com/Xennis/OctoPrint-RestoreLevelingAfterG28/archive/master.zip</pre>
           
         </dd>
         
         
         <dd>
           Command line:
-          <pre>pip install "https://github.com/imrahil/OctoPrint-NavbarTemp/archive/master.zip"</pre>
+          <pre>pip install "https://github.com/Xennis/OctoPrint-RestoreLevelingAfterG28/archive/master.zip"</pre>
         </dd>
         
       </dl>
@@ -264,19 +249,19 @@ Example:
       
       <dl class="date">
         <dt>Registration date</dt>
-        <dd>17 Apr 2015</dd>
+        <dd>03 Jun 2020</dd>
       </dl>
       
       
       <dl class="installations">
         <dt>Active instances the past month</dt>
-        <dd>Installed on at least <strong>13.38k</strong> instances</dd>
+        <dd>Installed on at least <strong>1</strong> instances</dd>
       </dl>
       
       
       <dl class="install_events">
         <dt>New installs the past week</dt>
-        <dd>At least <strong>458</strong> new installations</dd>
+        <dd>At least <strong>1</strong> new installations</dd>
       </dl>
       
       
@@ -286,14 +271,14 @@ Example:
           <ul>
             
             <li>
-              Latest Release: <a href="https://github.com/imrahil/OctoPrint-NavbarTemp/releases/tag/0.14" target="_blank">0.14 Milestone release</a><br>
-              <small>released on 07 May 2020</small>
+              Latest Release: <a href="https://github.com/Xennis/OctoPrint-RestoreLevelingAfterG28/releases/tag/1.0.0" target="_blank">1.0.0</a><br>
+              <small>released on 04 Jun 2020</small>
             </li>
-            <li>Releases: 10</li>
+            <li>Releases: 1</li>
             
-            <li>Stars: 29</li>
-            <li>Issues: 16 open, 42 closed</li>
-            <li>Last push: 07 May 2020</li>
+            <li>Stars: 0</li>
+            <li>Issues: 0 open, 0 closed</li>
+            <li>Last push: 04 Jun 2020</li>
           </ul>
         </dd>
       </dl>
@@ -306,13 +291,11 @@ Example:
           
           
           
-          <a class="label" href="/by_tag/#tag-heater">heater</a>
+          <a class="label" href="/by_tag/#tag-bed-leveling">bed leveling</a>
           
-          <a class="label" href="/by_tag/#tag-navbar">navbar</a>
+          <a class="label" href="/by_tag/#tag-leveling">leveling</a>
           
-          <a class="label" href="/by_tag/#tag-temp">temp</a>
-          
-          <a class="label" href="/by_tag/#tag-temperature">temperature</a>
+          <a class="label" href="/by_tag/#tag-marlin">marlin</a>
           
         </dd>
       </dl>
@@ -337,26 +320,26 @@ Example:
       <dl class="author">
         <dt>Author</dt>
         <dd>
-<a href="/by_author/#jarek-szczepanski-cosik">Jarek Szczepanski & Cosik</a>
+<a href="/by_author/#xennis">Xennis</a>
 </dd>
       </dl>
       
       
       <dl class="homepage">
         <dt>Homepage</dt>
-        <dd><a href="https://github.com/imrahil/OctoPrint-NavbarTemp" target="_blank">https://github.com/imrahil/OctoPrint-NavbarTemp</a></dd>
+        <dd><a href="https://github.com/Xennis/OctoPrint-RestoreLevelingAfterG28" target="_blank">https://github.com/Xennis/OctoPrint-RestoreLevelingAfterG28</a></dd>
       </dl>
       
       
       <dl class="source">
         <dt>Source</dt>
-        <dd><a href="https://github.com/imrahil/OctoPrint-NavbarTemp" target="_blank">https://github.com/imrahil/OctoPrint-NavbarTemp</a></dd>
+        <dd><a href="https://github.com/Xennis/OctoPrint-RestoreLevelingAfterG28" target="_blank">https://github.com/Xennis/OctoPrint-RestoreLevelingAfterG28</a></dd>
       </dl>
       
       
       <dl class="license">
         <dt>License</dt>
-        <dd>AGPLv3</dd>
+        <dd>MIT</dd>
       </dl>
       
       <dl class="issue">
@@ -364,19 +347,19 @@ Example:
         <dd>
           <p>
             If there is <strong>something wrong with this listing</strong> (broken links & images etc), please
-            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=bug&template=listing_error.md&title=%5BListing+Error%5D+Navbar+Temp">report it here</a>.
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=bug&template=listing_error.md&title=%5BListing+Error%5D+Restore+Leveling+After+G28">report it here</a>.
           </p>
           <p>
             If this plugin <strong>has been <em>confirmed</em> as abandoned</strong> by its maintainer, please
-            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=abandoned+plugin&template=abandoned_plugin.md&title=%5BAbandoned+Plugin%5D+Navbar+Temp">report it here</a>.
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=abandoned+plugin&template=abandoned_plugin.md&title=%5BAbandoned+Plugin%5D+Restore+Leveling+After+G28">report it here</a>.
           </p>
           <p>
             If this plugin is <strong>doing something suspicious</strong> (e.g. weird network activity, unannounced tracking, ...) and
             the maintainer is not cooperating in getting to the bottom of that, please
-            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=suspicious+plugin+activity&template=suspicious_plugin_activity.md&title=%5BSuspicious+Plugin+Activity%5D+Navbar+Temp">report the plugin as suspicious here</a>.
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=suspicious+plugin+activity&template=suspicious_plugin_activity.md&title=%5BSuspicious+Plugin+Activity%5D+Restore+Leveling+After+G28">report the plugin as suspicious here</a>.
           </p>
           <p>
-            Report bugs or feature requests for the plugin to the plugin author (e.g. on the plugin's <a href="https://github.com/imrahil/OctoPrint-NavbarTemp">homepage</a>) please, not here!
+            Report bugs or feature requests for the plugin to the plugin author (e.g. on the plugin's <a href="https://github.com/Xennis/OctoPrint-RestoreLevelingAfterG28">homepage</a>) please, not here!
           </p>
         </dd>
       </dl>
