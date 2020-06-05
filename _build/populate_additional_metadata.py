@@ -77,7 +77,6 @@ def plugin_stats_30d(plugin):
 		_plugin_stats_30d = resp.json()
 	return _plugin_stats_30d.get(plugin)
 
-
 def github_data(user, repo):
 	if GITHUB_TOKEN is not None:
 		auth = "token "  + GITHUB_TOKEN
@@ -104,23 +103,27 @@ def github_data(user, repo):
 		print("!! No data available from Github API")
 		return dict()
 
-	repository_values = data["data"]["repository"]
-	release_count = repository_values["releasesCount"]["totalCount"]
-	result = dict(repo="{}/{}".format(user, repo),
-	              open_issues=repository_values["openIssues"]["totalCount"],
-	              closed_issues=repository_values["closedIssues"]["totalCount"],
-	              releases=release_count,
-	              watchers=repository_values["watchers"]["totalCount"],
-	              stars=repository_values["stargazers"]["totalCount"],
-	              last_push=to_date(repository_values["lastPush"]["target"]["history"]["edges"][0]["node"]["committedDate"]))
+	try:
+		repository_values = data["data"]["repository"]
+		release_count = repository_values["releasesCount"]["totalCount"]
+		result = dict(repo="{}/{}".format(user, repo),
+		              open_issues=repository_values["openIssues"]["totalCount"],
+		              closed_issues=repository_values["closedIssues"]["totalCount"],
+		              releases=release_count,
+		              watchers=repository_values["watchers"]["totalCount"],
+		              stars=repository_values["stargazers"]["totalCount"],
+		              last_push=to_date(repository_values["lastPush"]["target"]["history"]["edges"][0]["node"]["committedDate"]))
 
-	if release_count:
-		latest_release = repository_values["lastRelease"]["nodes"][0]
-		result.update(latest_release = latest_release["name"],
-		              latest_release_date=to_date(latest_release["publishedAt"]),
-		              latest_release_url=latest_release["url"])
+		if release_count:
+			latest_release = repository_values["lastRelease"]["nodes"][0]
+			result.update(latest_release = latest_release["name"],
+			              latest_release_date=to_date(latest_release["publishedAt"]),
+			              latest_release_url=latest_release["url"])
 
-	return result
+		return result
+	except:
+		print("!! Incomplete data from Github API")
+		return dict()
 
 def extract_github_repo(url):
 	if url is None or not url.startswith(GITHUB_PREFIX):
@@ -177,7 +180,7 @@ def process_plugin_file(path, incl_stats=True, incl_github=True):
 			github = github_data(user, repo)
 			if github:
 				print("  Enriching {} with github data...".format(plugin_id))
-				data ["github"] = github
+				data["github"] = github
 
 	with open(path, "wb") as f:
 		frontmatter.dump(data, f)
