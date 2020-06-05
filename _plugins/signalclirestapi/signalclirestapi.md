@@ -2,12 +2,12 @@
 layout: plugin
 
 id: signalclirestapi
-title: OctoPrint-Signalclirestapi
-description: Another Signal Messenger Integration based on the signal-cli-rest-api docker image with support for Signal Messenger groups and print progress.
+title: Signalclirestapi
+description: Another Signal Messenger Integration based on the signal-cli-rest-api docker image. Supports Signal Messenger groups and print progress.
 author: Bernhard B.
 license: AGPLv3
 
-date: 2020-05-28 
+date: 2020-06-05 
 
 homepage: https://github.com/bbernhard/OctoPrint-Signalclirestapi
 source: https://github.com/bbernhard/OctoPrint-Signalclirestapi
@@ -97,13 +97,11 @@ compatibility:
 
 ---
 
-Another Signal Messenger Integration for Octoprint.
-
 # Features 
 
 * Support for Signal Messenger groups: 
   
-  It's possible to create a Signal Messenger group for every print job. That way, all the messages and webcam snapshots are nicely grouped. 
+  It's possible to create a Signal Messenger group for every print job. That way, all the messages and webcam snapshots are nicely grouped together. 
 
 * Support for Print Progress:
   
@@ -111,7 +109,7 @@ Another Signal Messenger Integration for Octoprint.
 
 * Support for all Print Events: 
   
-  The plugin supports the Print Started, Print Failed, Print Cancelled, Print Paused, Print Resumed, Print Done events.
+  The plugin supports the `Print Started`, `Print Failed`, `Print Cancelled`, `Print Paused`, `Print Resumed`, `Print Done` events.
 
 * Support for signal-cli-rest-api: 
   
