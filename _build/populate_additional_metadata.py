@@ -6,6 +6,7 @@ import frontmatter
 
 import os
 import time
+import traceback
 
 from datetime import datetime
 
@@ -87,23 +88,23 @@ def github_data(user, repo):
 		.replace("{{user}}", user)\
 		.replace("{{repo}}", repo)
 
-	response = requests.post(GITHUB_GRAPHQL_URL,
-	                         headers={"Content-Type": "application/json; charset=utf-8",
-	                                  "Authorization": auth},
-	                         json={'query': graph_ql_query} )
-
-	if response.status_code != 200:
-		print("!! Error while querying Github API")
-		print("!!   Status: {}".format(response.status_code))
-		print("!!   Body: {}".format(response.text))
-		return dict()
-
-	data = response.json()
-	if not data:
-		print("!! No data available from Github API")
-		return dict()
-
 	try:
+		response = requests.post(GITHUB_GRAPHQL_URL,
+		                         headers={"Content-Type": "application/json; charset=utf-8",
+		                                  "Authorization": auth},
+		                         json={'query': graph_ql_query})
+
+		if response.status_code != 200:
+			print("!! Error while querying Github API")
+			print("!!   Status: {}".format(response.status_code))
+			print("!!   Body: {}".format(response.text))
+			return dict()
+
+		data = response.json()
+		if not data:
+			print("!! No data available from Github API")
+			return dict()
+
 		repository_values = data["data"]["repository"]
 		release_count = repository_values["releasesCount"]["totalCount"]
 		result = dict(repo="{}/{}".format(user, repo),
@@ -122,7 +123,8 @@ def github_data(user, repo):
 
 		return result
 	except:
-		print("!! Incomplete data from Github API")
+		print("!! Error while reading and parsing data from Github API")
+		traceback.print_exc()
 		return dict()
 
 def extract_github_repo(url):
