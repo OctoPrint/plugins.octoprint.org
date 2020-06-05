@@ -5,10 +5,38 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>http://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 05 Jun 2020 03:18:39 -0500</pubDate>
-    <lastBuildDate>Fri, 05 Jun 2020 03:18:39 -0500</lastBuildDate>
+    <pubDate>Fri, 05 Jun 2020 04:06:54 -0500</pubDate>
+    <lastBuildDate>Fri, 05 Jun 2020 04:06:54 -0500</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
     
+    
+      <item>
+        <title>OctoPrint-Prusa-Mini-ETA</title>
+        <description>
+          <![CDATA[
+            Prusa Mini ETA detection from the gcode files prepared by the Prusa Slicer.
+            <p><img src="https://github.com/vookimedlo/OctoPrint-Prusa-Mini-ETA/raw/master/assets/img/Print-Time-Left.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Thu, 04 Jun 2020 00:00:00 -0500
+</pubDate>
+        <link>http://plugins.octoprint.org/plugins/prusa_mini_eta/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">http://plugins.octoprint.org/plugins/prusa_mini_eta/</guid>
+        
+        <category>estimation</category>
+        
+        <category>eta</category>
+        
+        <category>progress</category>
+        
+        <category>prusa</category>
+        
+        <category>prusa mini</category>
+        
+        <category>prusaslicer</category>
+        
+      </item>
     
       <item>
         <title>Restore Leveling After G28</title>
@@ -206,28 +234,6 @@ Sun, 24 May 2020 00:00:00 -0500
         <category>tradfri</category>
         
         <category>outlet</category>
-        
-      </item>
-    
-      <item>
-        <title>Multi Line Terminal</title>
-        <description>
-          <![CDATA[
-            Makes the terminal input a multi line text area.
-            <p><img src="https://plugins.octoprint.org/assets/img/plugins/multilineterminal/screenshot.png"></p>
-          ]]>
-        </description>
-        <pubDate>
-Thu, 21 May 2020 00:00:00 -0500
-</pubDate>
-        <link>http://plugins.octoprint.org/plugins/multilineterminal/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">http://plugins.octoprint.org/plugins/multilineterminal/</guid>
-        
-        <category>terminal</category>
-        
-        <category>input</category>
-        
-        <category>gcode</category>
         
       </item>
     
