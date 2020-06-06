@@ -5,10 +5,28 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>http://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 06 Jun 2020 07:11:27 -0500</pubDate>
-    <lastBuildDate>Sat, 06 Jun 2020 07:11:27 -0500</lastBuildDate>
+    <pubDate>Sat, 06 Jun 2020 16:31:03 -0500</pubDate>
+    <lastBuildDate>Sat, 06 Jun 2020 16:31:03 -0500</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
     
+    
+      <item>
+        <title>Signalclirestapi</title>
+        <description>
+          <![CDATA[
+            Another Signal Messenger Integration based on the signal-cli-rest-api docker image. Supports Signal Messenger groups and print progress.
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/signalclirestapi/config1.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Sat, 06 Jun 2020 00:00:00 -0500
+</pubDate>
+        <link>http://plugins.octoprint.org/plugins/signalclirestapi/signalclirestapi/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">http://plugins.octoprint.org/plugins/signalclirestapi/signalclirestapi/</guid>
+        
+        <category>notification</category>
+        
+      </item>
     
       <item>
         <title>OctoPrint-Prusa-Mini-ETA</title>
@@ -212,28 +230,6 @@ Tue, 26 May 2020 00:00:00 -0500
         <category>notification</category>
         
         <category>cooldown</category>
-        
-      </item>
-    
-      <item>
-        <title>Ikea Tradfri</title>
-        <description>
-          <![CDATA[
-            Control Ikea Tradfri outlet
-            <p><img src="https://plugins.octoprint.org/assets/img/plugins/ikea_tradfri/navbar.png"></p>
-          ]]>
-        </description>
-        <pubDate>
-Sun, 24 May 2020 00:00:00 -0500
-</pubDate>
-        <link>http://plugins.octoprint.org/plugins/ikea_tradfri/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">http://plugins.octoprint.org/plugins/ikea_tradfri/</guid>
-        
-        <category>ikea</category>
-        
-        <category>tradfri</category>
-        
-        <category>outlet</category>
         
       </item>
     
