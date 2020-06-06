@@ -7,7 +7,7 @@ description: Another Signal Messenger Integration based on the signal-cli-rest-a
 author: Bernhard B.
 license: AGPLv3
 
-date: 2020-06-05 
+date: 2020-06-06 
 
 homepage: https://github.com/bbernhard/OctoPrint-Signalclirestapi
 source: https://github.com/bbernhard/OctoPrint-Signalclirestapi
@@ -114,3 +114,7 @@ compatibility:
 * Support for signal-cli-rest-api: 
   
   The [signal-cli-rest-api](https://github.com/bbernhard/signal-cli-rest-api) is a small REST API wrapper around the awesome [signal-cli](https://github.com/AsamK/signal-cli) commandline tool. The main advantage is, that you don't need to run `signal-cli` on the same host as your Octoprint instance. That's especially useful, if you use other services in your home network (like [Home Assistant](https://www.home-assistant.io/)) that also send Signal Messenger notifications.
+
+# Installation
+
+This plugin requires the `signal-cli-rest-api` docker container. **Without the docker container, the plugin won't work!** The following [document](https://github.com/bbernhard/OctoPrint-Signalclirestapi) describes how to set up the docker container and register your phone number. 
