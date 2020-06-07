@@ -5,8 +5,8 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>http://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 06 Jun 2020 19:18:36 -0500</pubDate>
-    <lastBuildDate>Sat, 06 Jun 2020 19:18:36 -0500</lastBuildDate>
+    <pubDate>Sun, 07 Jun 2020 04:34:39 -0500</pubDate>
+    <lastBuildDate>Sun, 07 Jun 2020 04:34:39 -0500</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
     
     
@@ -53,6 +53,26 @@ Thu, 04 Jun 2020 00:00:00 -0500
         <category>prusa mini</category>
         
         <category>prusaslicer</category>
+        
+      </item>
+    
+      <item>
+        <title>OctoPrint-WideScreen</title>
+        <description>
+          <![CDATA[
+            Plugin that adds a right sidebar panel and moves configured panels from left sidebar to the right sidebar.
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/widescreen/screenshot.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Wed, 03 Jun 2020 00:00:00 -0500
+</pubDate>
+        <link>http://plugins.octoprint.org/plugins/widescreen/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">http://plugins.octoprint.org/plugins/widescreen/</guid>
+        
+        <category>sidebar</category>
+        
+        <category>widescreen</category>
         
       </item>
     
@@ -206,30 +226,6 @@ Thu, 28 May 2020 00:00:00 -0500
         <category>printer</category>
         
         <category>history</category>
-        
-      </item>
-    
-      <item>
-        <title>CooldownNotification</title>
-        <description>
-          <![CDATA[
-            A plugin to execute gcode commands when the print bed cools to a certain temperature
-            <p><img src="https://plugins.octoprint.org/assets/img/plugins/CooldownNotification/settings.png"></p>
-          ]]>
-        </description>
-        <pubDate>
-Tue, 26 May 2020 00:00:00 -0500
-</pubDate>
-        <link>http://plugins.octoprint.org/plugins/CooldownNotification/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">http://plugins.octoprint.org/plugins/CooldownNotification/</guid>
-        
-        <category>gcode</category>
-        
-        <category>heated bed</category>
-        
-        <category>notification</category>
-        
-        <category>cooldown</category>
         
       </item>
     
