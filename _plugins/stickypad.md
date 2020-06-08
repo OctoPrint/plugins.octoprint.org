@@ -17,7 +17,7 @@ tags:
 - notes
 - reminders
 
-featuredimage: /assets/img/stickypad/screenshot.png
+featuredimage: /assets/img/plugins/stickypad/screenshot.png
 
 compatibility:
   octoprint:
@@ -34,7 +34,7 @@ compatibility:
 
 This plugin adds a persistent sticky pad to the web interface for keeping random notes.
 
-![screenshot](/assets/img/stickypad/screenshot.png)
+![screenshot](/assets/img/plugins/stickypad/screenshot.png)
 
 ## Get Help
 
