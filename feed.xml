@@ -5,8 +5,8 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>http://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 07 Jun 2020 20:39:46 -0500</pubDate>
-    <lastBuildDate>Sun, 07 Jun 2020 20:39:46 -0500</lastBuildDate>
+    <pubDate>Mon, 08 Jun 2020 01:15:28 -0500</pubDate>
+    <lastBuildDate>Mon, 08 Jun 2020 01:15:28 -0500</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
     
     
@@ -167,6 +167,28 @@ Tue, 02 Jun 2020 00:00:00 -0500
       </item>
     
       <item>
+        <title>M300 Player</title>
+        <description>
+          <![CDATA[
+            Plugin that will play M300 beeps in the web interface.
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/M300Player/screenshot.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Tue, 02 Jun 2020 00:00:00 -0500
+</pubDate>
+        <link>http://plugins.octoprint.org/plugins/M300Player/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">http://plugins.octoprint.org/plugins/M300Player/</guid>
+        
+        <category>M300</category>
+        
+        <category>notifications</category>
+        
+        <category>music</category>
+        
+      </item>
+    
+      <item>
         <title>Lametric</title>
         <description>
           <![CDATA[
@@ -206,26 +228,6 @@ Fri, 29 May 2020 00:00:00 -0500
         <category>MQTT</category>
         
         <category>control</category>
-        
-      </item>
-    
-      <item>
-        <title>PrintJobHistory</title>
-        <description>
-          <![CDATA[
-            The OctoPrint-Plugin stores all print-job informations of a print in a database.
-            <p><img src="https://github.com/OllisGit/OctoPrint-PrintJobHistory/raw/master/screenshots/editPrintJob-dialog.png"></p>
-          ]]>
-        </description>
-        <pubDate>
-Thu, 28 May 2020 00:00:00 -0500
-</pubDate>
-        <link>http://plugins.octoprint.org/plugins/PrintJobHistory/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">http://plugins.octoprint.org/plugins/PrintJobHistory/</guid>
-        
-        <category>printer</category>
-        
-        <category>history</category>
         
       </item>
     
