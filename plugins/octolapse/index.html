@@ -7,12 +7,12 @@
 <head>
     <meta charset="utf-8" />
     <title>Octolapse</title>
-    <meta name="description" content="Create a stabilized timelapse of your 3D prints.  Highly customizable, loads of presets, lots of fun.  Requires OctoPrint 1.3.9 or higher.">
+    <meta name="description" content="Create a stabilized timelapse of your 3D prints.  Highly customizable, loads of presets, lots of fun.  Requires OctoPrint 1.3.9 or higher.  Python 3 users MUST install the Python 3 Development package before installation.">
     <meta name="author" content="Brad Hochgesang">
     <meta name="referrer" content="same-origin">
     <meta name="google-site-verification" content="0EFsbaNygJcEinKPmzP-hTf0Ju6wDIpJxO5zvQtOQT0" />
-    <meta name="build-revision" content="625ee8396d9e72d2accf2c457c01ff3061b124d8" />
-    <meta name="build-date" content="2020-06-07 19:17:31-05:00" />
+    <meta name="build-revision" content="6bbc69810b8cc3d31fa8bc5ad1f46b04a5d9f889" />
+    <meta name="build-date" content="2020-06-07 20:39:46-05:00" />
 
     <!--[if lt IE 9]>
     <script src="/assets/js/html5shim.js"></script>
@@ -22,11 +22,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Le styles -->
-    <link rel="stylesheet" href="/assets/css/site.css?_=1591575451">
-    <link rel="stylesheet" href="/assets/css/bootstrap-responsive.css?_=1591575451">
-    <link rel="stylesheet" href="/assets/css/fontawesome-all.min.css?_=1591575451">
-    <link rel="stylesheet" href="/assets/css/prettify.css?_=1591575451">
-    <link rel="stylesheet" href="/assets/css/lightbox.css?_=1591575451">
+    <link rel="stylesheet" href="/assets/css/site.css?_=1591580386">
+    <link rel="stylesheet" href="/assets/css/bootstrap-responsive.css?_=1591580386">
+    <link rel="stylesheet" href="/assets/css/fontawesome-all.min.css?_=1591580386">
+    <link rel="stylesheet" href="/assets/css/prettify.css?_=1591580386">
+    <link rel="stylesheet" href="/assets/css/lightbox.css?_=1591580386">
 
     <!-- Le fav and touch icons -->
     <link rel="shortcut icon" href="/assets/img/tentacle-32x32.png">
@@ -183,185 +183,300 @@
       
 
       <p class="lead">
-        Create a stabilized timelapse of your 3D prints.  Highly customizable, loads of presets, lots of fun.  Requires OctoPrint 1.3.9 or higher.
+        Create a stabilized timelapse of your 3D prints.  Highly customizable, loads of presets, lots of fun.  Requires OctoPrint 1.3.9 or higher.  Python 3 users MUST install the Python 3 Development package before installation.
       </p>
       <h1 id="octolapse">Octolapse</h1>
 
-<div style="text-align:center">
-    <img src="/assets/img/plugins/octolapse/tab_mini.png" alt="Octolapse Tab" />
-    <div>
-        <i>The Octolapse Tab</i>
-    </div>
-    <br />
-</div>
+<figure style="text-align:center">
+    <a href="https://github.com/FormerLurker/Octolapse/wiki/V0.4---Octolapse-Tab" title="Get more information about this feature from the Octolapse Wiki">
+        <img src="http://plugins.octoprint.org/assets/img/plugins/octolapse/tab_mini.png" alt="The Octolapse Tab" />
+    </a>
+    <figcaption>
+        <a href="https://github.com/FormerLurker/Octolapse/wiki/V0.4---Octolapse-Tab">
+            The New and Improved Octolapse Tab
+        </a>
+    </figcaption>
+</figure>
 
-<p><strong><em>Octolapse is provided without warranties of any kind.  By installing Octolapse you agree to accept all liability for any damage caused directly or indirectly by Octolapse.  Use caution and never leave your printer unattended.</em></strong></p>
+<p><strong><em>Octolapse is provided without warranties of any kind.  By installing Octolapse you agree to accept all liability for any damage caused directly or indirectly by Octolapse.  Use caution, and never leave your printer unattended.</em></strong></p>
+
+<h2 id="what-octolapse-does">What Octolapse Does</h2>
 
 <p>Octolapse is designed to make stabilized timelapses of your prints with as little hassle as possible, and it’s extremely configurable.  Now you can create a silky smooth timelapse without a custom camera mount, no GCode customizations required.</p>
-
-<p>Octolapse moves the print bed and extruder into position before taking each snapshot, giving you a crisp image in every frame.  Snapshots can be taken at each layer change, at specific height increments, after a period of time has elapsed, or when certain GCodes are detected.</p>
-
-<p><a href="https://www.patreon.com/join/FormerLurker">Please support my work by becoming a patron.</a></p>
-
-<p><strong>Important</strong>:  <em>Octolapse requires OctoPrint v1.3.9 or higher and some features require OctoPrint v1.3.10rc1 or above.</em>  You can check your OctoPrint version by looking in the lower left hand corner of your OctoPrint server home page.</p>
-
-<h1 id="recent-changes">Recent Changes</h1>
-<p>If you are upgrading from <a href="https://github.com/FormerLurker/Octolapse/releases/tag/v0.3.1">v0.3.1</a>, please read the <a href="https://github.com/FormerLurker/Octolapse/releases/tag/v0.3.4">v0.3.4 release notes</a>, a lot has changed.  If you’ve had trouble running Octolapse in the past, you just might want to try it again!</p>
-
-<h1 id="what-octolapse-does">What Octolapse Does</h1>
-
-<div style="text-align:center">
-    <br />
-    <div>
-        <div class="responsive_iframe">
+<figure style="text-align:center">
+    <div class="responsive_iframe">
 	<div class="yt-with-consent" data-vid="er0VCYen1MY"></div>
 </div>
 
-    </div>
-    <div>
+    <figcaption>
         <a href="https://www.thingiverse.com/thing:570288" alt="Link to the model from this video" title="view model on thingiverse" target="_blank">
-            <i>A timelapse of a double spiral vase made with Octolapse</i>
+            A Timelapse of a Double Spiral Vase Made with Octolapse
         </a>
-    </div>
-    <br />
+    </figcaption>
+</figure>
+
+<p>Octolapse moves the print bed and extruder into position before taking each snapshot, giving you a crisp image in every frame.  Snapshots can be taken at each layer change, at specific height increments, after a period of time has elapsed, or when certain GCodes are detected.</p>
+
+<p><strong>Important</strong>:  <em>Octolapse requires OctoPrint v1.3.9 or higher, and some features require OctoPrint v1.3.10rc1 or above.</em>  You can check your OctoPrint version by looking in the lower left hand corner of your OctoPrint server home page.  <strong>Python 3 users must install the Python 3 Development Package</strong>. See <a href="https://github.com/FormerLurker/Octolapse/wiki/V0.4---Installing-and-Upgrading-Octolapse#prerequisites">this guide</a> for details.</p>
+
+<h2 id="getting-started">Getting Started</h2>
+
+<p>Be sure to <a href="https://github.com/FormerLurker/Octolapse/wiki/V0.4---Getting-Started">read the Getting Started guide</a> on the <a href="https://github.com/FormerLurker/Octolapse/wiki">Octolapse Wiki</a>.  This will save you a lot of hassle and allow you to unlock some of the best features of Octolapse.</p>
+
+<figure style="text-align:center">
+    <div class="responsive_iframe">
+	<div class="yt-with-consent" data-vid="vP6KQ1hBK1g"></div>
 </div>
-<h2 id="octolapse-was-designed-with-print-quality-in-mind">Octolapse was designed with print quality in mind</h2>
-<ul>
-  <li><strong>Continuous tracking</strong> of the X,Y, and Z axes.  Octolapse knows where your extruder and bed will be at all times.</li>
-  <li><strong>Extruder state detection</strong> enables Octolapse to choose a good time take a snapshot, minimizing defects.</li>
-  <li>Choose from dozens of existing <strong>presets,</strong> or use a <strong>custom configuration</strong> to maximize quality for your specific application.</li>
-  <li>Customizable <strong>Z-Hop and retract detection</strong> to reduce stringing, maximizing quality.</li>
-  <li><strong>Configurable stabilizations</strong> allow you complete control of the X and Y position of each snapshot.  You can choose a position as close to or as far away from your part as you wish.</li>
-  <li><strong>Minimal impact on print time and print quality.</strong>  Octolapse normally takes between one and three seconds to take a snapshot.  It even reports exactly how much time it’s using after each snapshot!</li>
-  <li>Use <strong>High Quality Mode</strong> to prevent snapshots over exterior perimeters using the new fully customizable <strong>Feature Detection</strong>.</li>
-  <li>Allow or prevent snapshots in certain areas with <strong>snapshot position restrictions.</strong>  This can be used to prevent snapshots over critical areas of your print or a delicate part.</li>
-  <li>If you have a multi-material printer, you can even <strong>restrict snapshots movements to your wipe tower</strong>, virtually eliminating any quality considerations!</li>
-  <li>Octolapse can <strong>calculate intersections</strong> between the printer path and any snapshot position restriction, allowing a snapshot even in the middle of an extrusion.</li>
-  <li><strong>Stop the timelapse whenever you want!</strong>  If things go awry, you can prevent Octolapse from taking any further snapshots for the rest of the print.  It will wait to render any snapshots that were already taken until after the print has finished.</li>
-  <li>Use <strong>test mode</strong> to try out your timelapse settings without heating your bed or nozzle, turning on any fans, or extruding any filament.  This saves time and plastic.  It’s also very useful for development and testing.
-    <h2 id="octolapse-was-also-designed-to-make-great-timelapses">Octolapse was also designed to make great timelapses</h2>
-  </li>
-  <li><strong>Synchronize your timelapses</strong> with OctoPrint’s built in plugin, keeping all of your videos in one place.</li>
-  <li>Choose between <strong>fixed frame rate</strong> or <strong>fixed length rendering.</strong>  Octolapse will automatically adjust the frame rate to match any desired length.  You can even set a minimum or maximum acceptable frame rate.</li>
-  <li>Add <strong>pre or post roll frames</strong> (not videos yet, sorry) to your snapshot preventing an abrupt start or finish.</li>
-  <li>Choose from several output formats including <strong>MP4 (libxvid and H.264), AVI, FLV, VOB, GIF, and MPEG.</strong>  <em>More coming soon, suggestions welcome.</em>  <em>Note: *OctoPrint 1.3.10 is required to synchronize some formats with the built-in timelapse plugin.*</em></li>
-  <li><strong>Control the bitrate</strong> of your video.</li>
-  <li>Add a <strong>Custom Watermark</strong> to your video.</li>
-  <li>Add <strong>Text Overlays</strong> to your video using replacement tokens.  Control the position, color, font and more!</li>
-  <li>Control the number of <strong>rendering threads</strong> to reduce rendering time.
-    <h2 id="to-make-good-timelapses-you-need-good-snapshots">To make good timelapses, you need good snapshots</h2>
-  </li>
-  <li>Slow camera or low frame rate?  Octolapse allows you to <strong>set a snapshot delay</strong> before taking a snapshot to allow your camera enough time to get a clear image.</li>
-  <li><strong>Control your camera settings</strong> when using <a href="https://sourceforge.net/projects/mjpg-streamer/">mjpg-streamer</a> including: contrast, brightness, focus, white balance, pan, tilt, zoom, and much more.  You can apply your custom settings before each print.</li>
-  <li><strong>Rotate, flip, and transpose your snapshots</strong></li>
-  <li>Use custom camera scripts to <strong>trigger a DSLR</strong>, post-process images, configure your camera, turn lighting on and off, control <strong>GPIO</strong>, or practically anything you can think of!  Five script types are available.</li>
-  <li>Use <strong>Multiple cameras</strong> to create multiple timelapses.</li>
-  <li>Send gcode to your printer when it’s time to take a snapshot via the new <strong>Gcode Camera Type</strong>.  Supports for the <strong>M240</strong> gcode!
-    <h2 id="simplified-setup-and-better-compatibility">Simplified Setup and Better Compatibility</h2>
-  </li>
-  <li>Select your <strong>slicer type</strong> to simplify printer setup by making the setting names and units match your slicer!  Cura, Simplify 3d and Slic3r PE are fully supported.</li>
-  <li>Enhanced and <strong>simplified error reporting</strong> and informational panels.</li>
-  <li>All settings include links to the <strong>Octolapse Wiki</strong>, so you can get to the documentation quickly if you have questions.</li>
-  <li>Octolapse now works with <strong>Themeify</strong>.</li>
-</ul>
 
-<h1 id="installation">Installation</h1>
+    <figcaption>
+        <a href="https://www.youtube.com/watch?v=vP6KQ1hBK1g" title="Watch on Youtube" target="_blank">
+            View the Getting Started Guide Companion Video
+        </a>
+    </figcaption>
+</figure>
 
-<p><a href="https://github.com/FormerLurker/Octolapse/wiki/Installation">Read the installation instructions.</a></p>
+<h2 id="recent-changes">Recent Changes</h2>
 
-<p>After installation, <a href="https://github.com/FormerLurker/Octolapse/wiki">checkout the project’s wiki pages</a>.  It never hurts to know more about what you’re doing!</p>
+<p>A <strong>lot</strong> has changed since the last release (v0.3.4).  Over <strong>18</strong> months of development and over 600 commits went into this newest version.  If you’ve had trouble installing or running Octolapse in the past, you just might want to try it again!</p>
 
-<h1 id="usage">Usage</h1>
-<p><a href="https://github.com/FormerLurker/Octolapse/wiki/Usage">Learn how to start your first print here.</a>  It’s a good idea to read about the settings before using Octolapse.  I also recommend you <a href="https://youtu.be/sDyg9lMqMG8">watch this brief tutorial</a>, which explains how to configure your printer profile for use with the new <strong>High Quality</strong> snapshot profile.</p>
+<p>I have been focusing on 3 items for V0.4:</p>
 
-<h1 id="known-printer-support">Known Printer Support</h1>
+<ol>
+  <li><strong>Print Quality</strong> - This is my #<strong>1</strong> concern, and a ton of effort has gone into reducing artifacts.</li>
+  <li><strong>Print Time</strong> - Lots of folks have complained about the print time impact of Octolapse, and this is a totally legitimate concern.  This has been handled by adding new <em>Smart</em> triggers that minimize travel distance.  In fact, the new <em>Smart - Snap To Print</em> trigger <em>completely eliminates</em> travel moves from the stabilization!</li>
+  <li><strong>Simplify Setup</strong> - Prior to V0.4, Octolapse was much more difficult to configure, especially for beginners.  Incorrect setup leads to poor print quality as well as extreme frustration.  This sad situation has been improved (but not completely solved) in several ways, including automatic slicer settings extraction and profile import/export/update functionality.</li>
+</ol>
 
-<p>Octolapse is still in Beta but has been confirmed to work on several printers:</p>
+<h2 id="highlights-of-v04">Highlights of V0.4</h2>
 
-<ul>
-  <li>Genuine Prusa - Mk2, Mk2S, Mk2 w Multi Material, Mk3</li>
-  <li>Anet A8 - Beta - User Submitted</li>
-  <li>Anycube I3 Mega - Beta - User Submitted</li>
-  <li>CR-10 - Beta - User Submitted</li>
-  <li>Dagoma Neva - Beta - User Submitted</li>
-  <li>Irapid Black - Beta - User Submitted</li>
-  <li>Monoprice Maker Select v2/Wanhao Duplicator i3 - Beta - User Submitted - Requires OctoPrint 1.3.7rc3 or above</li>
-</ul>
+<h3 id="python-3-and-octoprint-140-support">Python 3 and Octoprint 1.4.0 Support</h3>
 
-<p>Please note that some settings may need to be adjusted depending on your slicer settings.</p>
+<p>Octolapse now runs on the newest versions of Python and is still backwards compatible with Python 2.7.  Additionally, Octolapse runs on the newest version of OctoPrint.</p>
+
+<h3 id="automatic-slicer-settings-detection">Automatic Slicer Settings Detection</h3>
+
+<p>Octolapse can now extract all the required slicer settings directly from your GCode file.  You no longer need to copy your slicer settings into Octolapse before every print.  This is my favorite new feature!</p>
+
+<figure style="text-align:center">
+    <a href="https://github.com/FormerLurker/Octolapse/wiki/V0.4---Automatic-Slicer-Configuration" title="Get more information about this feature from the Octolapse Wiki" target="_blank">
+        <img src="http://plugins.octoprint.org/assets/img/plugins/octolapse/automatic_slicer_settings.png" alt="Automatic Slicer Settings Configuration" />
+    </a>
+    <figcaption>
+        <a href="https://github.com/FormerLurker/Octolapse/wiki/V0.4---Automatic-Slicer-Configuration" title="Get more information about this feature from the Octolapse Wiki" target="_blank">
+            Automatic Slicer Settings Configuration
+        </a>
+    </figcaption>
+</figure>
+
+<h3 id="smart-triggers">Smart Triggers</h3>
+
+<p>The new smart triggers read your entire Gcode file before starting a print, giving them a lot more information to make better decisions.  They automatically detect print features and prefer to take snapshots over infill, wipe towers, or interior perimeters, and they avoid taking snapshots (where possible) over exterior perimeters.  They also try to start snapshots as close to the stabilization point as possible, reducing travel.  This all adds up to improvements in quality and a reduction in print time.  Plus, you will get to see a preview of your timelapse <strong>before</strong> your print starts.  Octolapse will inform you of potential problems <em>and</em> will help you to fix them.  If you don’t like what you see, you can cancel the print and change your settings, which will save you time and effort.</p>
+
+<figure style="text-align:center">
+    <a href="https://github.com/FormerLurker/Octolapse/wiki/V0.4---Getting-Started#snapshot-plan-preview" title="Get more information about this feature from the Octolapse Wiki" target="_blank">
+        <img src="http://plugins.octoprint.org/assets/img/plugins/octolapse/snapshot_plan_preview.png" alt="Smart Trigger Snapshot Plan Preview" />
+    </a>
+    <figcaption>
+        <a href="https://github.com/FormerLurker/Octolapse/wiki/V0.4---Getting-Started#snapshot-plan-preview" title="Get more information about this feature from the Octolapse Wiki" target="_blank">
+            Smart Trigger Snapshot Plan Preview
+        </a>
+    </figcaption>
+</figure>
+
+<h3 id="improved-interface">Improved Interface</h3>
+
+<p>Thanks to UX advice from <a href="https://github.com/derek73">Derek73</a>, the Octolapse tab has been greatly improved.  Highlights include:  a larger snapshot preview, shortcuts to the Octolapse settings pages, video and image file browsers, rendering progress, unfinished rendering recovery, new and improved informational panels, and a more intuitive design.</p>
+
+<figure style="text-align:center">
+    <a href="https://github.com/FormerLurker/Octolapse/wiki/V0.4---Octolapse-Tab" title="Get more information about this feature from the Octolapse Wiki" target="_blank">
+        <img src="http://plugins.octoprint.org/assets/img/plugins/octolapse/tab_full.png" alt="Improved UX" />
+    </a>
+    <figcaption>
+        <a href="https://github.com/FormerLurker/Octolapse/wiki/V0.4---Octolapse-Tab" title="Get more information about this feature from the Octolapse Wiki" target="_blank">
+            Improved UX
+        </a>
+    </figcaption>
+</figure>
+
+<h3 id="importexportdownload-and-automatically-update-settings">Import/Export/Download and Automatically Update Settings</h3>
+
+<p>Octolapse now has its own <a href="https://github.com/FormerLurker/Octolapse-Profiles">profile repository</a>!  Access a library of pre-configured profiles and download, customize, and share your settings with the world!  You can export and import individual profiles or all of your Octolapse settings.  If newer settings are available from the repository, Octolapse will notify you and can automatically update any of the pre-configured profiles.</p>
+
+<figure style="text-align:center">
+    <a href="https://github.com/FormerLurker/Octolapse/wiki/V0.4---Profiles#importing-profiles-from-the-octolapse-profile-repository" title="Get more information about this feature from the Octolapse Wiki" target="_blank">
+        <img src="http://plugins.octoprint.org/assets/img/plugins/octolapse/import_profiles_from_repository_make.png" alt="Import Profiles from the Repository" />
+    </a>
+    <figcaption>
+        <a href="https://github.com/FormerLurker/Octolapse/wiki/V0.4---Profiles#importing-profiles-from-the-octolapse-profile-repository" title="Get more information about this feature from the Octolapse Wiki" target="_blank">
+            Import Profiles from the Repository
+        </a>
+    </figcaption>
+</figure>
+
+<h3 id="enhanced-rendering-capabilities">Enhanced Rendering Capabilities</h3>
+<p>Now you can see detailed rendering progress and retry or alter renderings that never finished.  I added beta support for the H.265 codec (most Raspberry Pis don’t have the memory for this though).  I added new rendering overlay tokens, text outlining, and a default font for simplified setup.</p>
+
+<figure style="text-align:center">
+    <a href="https://github.com/FormerLurker/Octolapse/wiki/V0.4---Getting-Started#rendering" title="Get more information about this feature from the Octolapse Wiki" target="_blank">
+        <img src="http://plugins.octoprint.org/assets/img/plugins/octolapse/renderings_in_process.png" alt="Renderings In Process" />
+    </a>
+    <figcaption>
+        <a href="https://github.com/FormerLurker/Octolapse/wiki/V0.4---Getting-Started#rendering" title="Get more information about this feature from the Octolapse Wiki" target="_blank">
+            Renderings in Process
+        </a>
+    </figcaption>
+</figure>
+
+<h3 id="browse-videos-and-image-archives">Browse Videos and Image Archives</h3>
+<p>I’ve finally added native file browsers to Octolapse!  Now you can download, sort, or delete timelapses, all without leaving the Octolapse tab.  If you enable the new <strong>archive images</strong> feature, you can also download snapshot images or re-render them using different settings.  I’ve even added the ability to upload images into Octolapse!</p>
+
+<figure style="text-align:center">
+    <a href="https://github.com/FormerLurker/Octolapse/wiki/V0.4---Getting-Started#download-and-view-your-timelapse" title="Get more information about this feature from the Octolapse Wiki" target="_blank">
+        <img src="http://plugins.octoprint.org/assets/img/plugins/octolapse/videos_and_images.png" alt="Videos and Images Browser" />
+    </a>
+    <figcaption>
+        <a href="https://github.com/FormerLurker/Octolapse/wiki/V0.4---Getting-Started#download-and-view-your-timelapse" alt="Videos and Images Browser" title="Get more information about this feature from the Octolapse Wiki" target="_blank">
+            Videos and Images Browser
+        </a>
+    </figcaption>
+</figure>
+
+<h3 id="better-camera-controls">Better Camera Controls</h3>
+<p>Octolapse already included the ability to control camera settings like focus, exposure, and white balance.  In the new version, Octolapse detects your camera’s capabilities and renders a control page dynamically.  Octolapse even has enhanced custom control pages for some cameras (like the Raspberry Pi cameras and many Logitech models).  You can now watch your image change in real time as you adjust the settings.  You can even stabilize your extruder to make adjusting the focus a snap!  <strong>Requires mjpg-streamer.  Not compatible with <a href="https://plugins.octoprint.org/plugins/anywhere/"><em>Octoprint Anywhere</em></a> or <a href="https://plugins.octoprint.org/plugins/thespaghettidetective/"><em>The Spaghetti Detective</em></a></strong>.</p>
+
+<figure style="text-align:center">
+    <a href="https://github.com/FormerLurker/octolapse/wiki/V0.4---Enabling-Camera-Controls" title="Get more information about this feature from the Octolapse Wiki" target="_blank">
+        <img src="http://plugins.octoprint.org/assets/img/plugins/octolapse/custom_image_controls.png" alt="Custom Image Controls" />
+    </a>
+    <figcaption>
+        <a href="https://github.com/FormerLurker/octolapse/wiki/V0.4---Enabling-Camera-Controls" title="Get more information about this feature from the Octolapse Wiki" target="_blank">
+            Custom Image Controls
+        </a>
+    </figcaption>
+</figure>
+
+<h3 id="integrated-help-system">Integrated Help System</h3>
+<p>Octolapse now provides documentation for every single setting, and it’s all built-in.  Get your questions answered quickly by clicking on the help links (blue question marks).  Many error popups now also have a help button explaining what the problem is and how to fix it.  I’ve also added <a href="https://github.com/warner/python-versioneer">versioneer</a>, including a link within the Octolapse tab that points directly to the release notes or commit specific to the version you have installed.</p>
+
+<figure style="text-align:center">
+  <img src="http://plugins.octoprint.org/assets/img/plugins/octolapse/get_help_print_start_errors.png" alt="Help With Common Print Start Issues" />
+  <figcaption>Help with Common Print Start Issues</figcaption>
+</figure>
+
+<figure style="text-align:center">
+  <img src="http://plugins.octoprint.org/assets/img/plugins/octolapse/print_quality_warnings.png" alt="Automatic Detection of Print Quality Issues, With Help" />
+  <figcaption>Automatic Detection of Print Quality Issues, with Help</figcaption>
+</figure>
+
+<figure style="text-align:center">
+  <img src="http://plugins.octoprint.org/assets/img/plugins/octolapse/integrated_help_links.png" alt="Integrated Help Links" />
+  <figcaption>Integrated Help Links</figcaption>
+</figure>
+
+<h3 id="improved-camera-scripts-and-tests">Improved Camera Scripts and Tests</h3>
+<p>Before and After snapshot Gcode scripts allow you to run custom Gcode before and/or after every snapshot.  A new <em>After Print Ends</em> script is now available.  All bash/bat scripts now have test buttons making it much easier to test your custom scripts.</p>
+
+<figure style="text-align:center">
+  <img src="http://plugins.octoprint.org/assets/img/plugins/octolapse/better_camera_scripts.png" alt="Additional Camera Scripts and Tests" />
+  <figcaption>Additional Camera Scripts and Tests</figcaption>
+</figure>
+
+<h3 id="new-octolapse-commands">New @OCTOLAPSE Commands</h3>
+<p>Now you can use Gcode to tell Octolapse when to take snapshots.  Prevent Octolapse from taking snapshots within your start/end Gcode with the new <code class="language-plaintext highlighter-rouge">@OCTOLAPSE STOP-SNAPSHOTS</code> and <code class="language-plaintext highlighter-rouge">@OCTOLAPSE START-SNAPSHOTS</code> commands.  You can also use the new <code class="language-plaintext highlighter-rouge">@OCTOLAPSE TAKE-SNAPSHOT</code> command to trigger a snapshot when using one of the GCode triggers.</p>
+
+<h3 id="alpha-support-for-multi-materialmulti-extruder-printers">Alpha Support for Multi-Material/Multi-Extruder Printers</h3>
+
+<p>Octolapse now supports per-extruder/material slicer settings and offsets.  It’s even compatible with the <em>Automatic Slicer Settings Detection</em> feature.  This is an <em>Alpha</em> feature, so it is probably a bit rough since I don’t actually own a multi-extruder printer.</p>
+
+<h3 id="better-logging">Better Logging</h3>
+
+<p>I’ve added a custom module based logging system that should help with debugging.  You can also clear and download logs right from your <em>Logging</em> profile.  Exceptions are now logged automatically.  This enhancement is really for me, but I thought I’d mention it here.</p>
+
+<h3 id="more-efficient-parsing-and-processing">More Efficient Parsing and Processing</h3>
+
+<p>In order to make the new <em>Smart</em> triggers as fast as possible and to reduce the CPU load, I’ve created a new GCode parser and position processor entirely in C++.  This has increased performance by several orders of magnitude, especially when using the new <em>Smart</em> triggers.</p>
+
+<h3 id="faster-snapshots">Faster Snapshots</h3>
+
+<p>Octolapse now captures snapshots more quickly and performs all image manipulations on a background thread.  This reduces print time and improves quality.</p>
+
+<h3 id="g2g3-arc-support">G2/G3 (Arc) Support</h3>
+
+<p>Octolapse now supports Arc commands.  Now you can use the <a href="https://github.com/FormerLurker/ArcWelderPlugin">Arc Welder</a> plugin with Octolapse.</p>
+
+<h2 id="support-octolapse-development">Support Octolapse Development</h2>
+
+<p>Please consider supporting my work by becoming a <a href="https://www.patreon.com/join/FormerLurker">patron</a>, a <a href="https://github.com/sponsors/FormerLurker">Github Sponsor</a>, or by sending me beer money via <a href="https://paypal.me/formerlurker">PayPal</a>.  Almost all of the donations go towards offsetting the cost of development, which is substantial. Plus, it always makes my day!  If you cannot afford to leave a tip or just don’t want to, that is fine too! Octolapse is <a href="https://raw.githubusercontent.com/FormerLurker/Octolapse/master/LICENSE">free and open source</a> after all.</p>
 
 <h2 id="more-octolapses">More Octolapses</h2>
-<div style="text-align:center">
-    <div>
-        <div class="responsive_iframe">
+
+<figure style="text-align:center">
+    <div class="responsive_iframe">
 	<div class="yt-with-consent" data-vid="uBeVbDJKHw0"></div>
 </div>
 
-    </div>
-    <div>
-        <a href="https://www.youtube.com/channel/UCXRcs5H7Om8YbaNbaM5iOdg" alt="Link to WildRose builds channel" target="_blank">
-            <i>A user generated compilation created by WildRose Builds.  Support this channel and please subscribe!</i>
+    <figcaption>
+        <a href="https://www.youtube.com/channel/UCXRcs5H7Om8YbaNbaM5iOdg" title="Open WildRose Builds Youtube Channel" target="_blank">
+            A user-generated compilation created by WildRose Builds.  Support this channel, and please subscribe!
         </a>
-    </div>
-    <br />
-</div>
+    </figcaption>
+</figure>
 
-<div style="text-align:center">
-    <div>
-        <div class="responsive_iframe">
+<figure style="text-align:center">
+    <div class="responsive_iframe">
 	<div class="yt-with-consent" data-vid="dYbWfBCLNbI"></div>
 </div>
 
-    </div>
-    <div>
-        <a href="https://www.thingiverse.com/thing:919475" alt="Link to the model from this video" title="view model on thingiverse" target="_blank">
-            <i>The Milennium Falcon</i>
+    <figcaption>
+        <a href="https://www.thingiverse.com/thing:919475" target="_blank">
+            The 'Fillenium Malcon'
         </a>
-    </div>
-    <br />
-</div>
+    </figcaption>
+</figure>
 
-<div style="text-align:center">
-    <div>
-        <div class="responsive_iframe">
+<figure style="text-align:center">
+    <div class="responsive_iframe">
 	<div class="yt-with-consent" data-vid="4kEHbRrp2Jk"></div>
 </div>
 
-    </div>
-    <div>
-        <a href="https://www.thingiverse.com/thing:2531838" alt="Link to the model from this video" title="view model on thingiverse" target="_blank">
-            <i>The Moon - Animated X Axis</i>
+    <figcaption>
+        <a href="https://www.thingiverse.com/thing:2531838" title="view model on thingiverse" target="_blank">
+            The Moon - Animated X Axis
         </a>
-    </div>
-    <br />
-</div>
-<div style="text-align:center">
-    <div>
-        <div class="responsive_iframe">
+    </figcaption>
+</figure>
+
+<figure style="text-align:center">
+    <div class="responsive_iframe">
 	<div class="yt-with-consent" data-vid="Ra5Jjq-nJfA"></div>
 </div>
 
-    </div>
-    <div>
+    <figcaption>
         <a href="https://www.thingiverse.com/thing:763622" alt="Link to the model from this video" title="view model on thingiverse" target="_blank">
-            <i>The obligatory benchy</i>
+            The Obligatory Benchy
         </a>
-    </div>
-    <br />
-</div>
+    </figcaption>
+</figure>
 
 <h2 id="history-of-octolapse">History of Octolapse</h2>
-<p>I got the idea for Octolapse when I attempted to manually make a <a href="https://youtu.be/xZlP4vpAKNc">stabilized timelapse</a> by hand editing my GCode files.  To accomplish this I used the excellent and simple <a href="https://github.com/kantlivelong/OctoPrint-GCodesystemCommands">GCode System Commands</a> plugin.  The timelapse worked great, but it required a lot of effort which I didn’t want to put in every time.  I received several requests for instructions on how to create a stabilized timelapse, so I decided to give plugin development a go.  I’ve never done one before (or programmed python or knockout or anything open source), but figured I could contribute something good to the community.  This is my “thank you” to all of the makers out there who have contributed your time and effort!</p>
 
-<h2 id="report-problems">Report Problems</h2>
-<p>If you think you have found a bug in Octolapse, please create an issue on the official github.com page <a href="https://github.com/FormerLurker/Octolapse/issues/new">here</a>.  In order to have your issue handled properly and quickly, please completely</p>
+<p>I got the idea for Octolapse when I attempted to manually make a <a href="https://youtu.be/xZlP4vpAKNc">stabilized timelapse</a> by hand-editing my GCode files.  To accomplish this I used the excellent and simple <a href="https://github.com/kantlivelong/OctoPrint-GCodesystemCommands">GCode System Commands</a> plugin.  The timelapse worked great, but it required a lot of effort which I didn’t want to put in every time.  I received several requests for instructions on how to create a stabilized timelapse, so I decided to give plugin development a go.  At the time I had never written any OctoPrint plugins (or programmed Python or Knockout or anything open source), but I figured I could contribute something good to the community.</p>
+
+<p>On January 20, 2018, I released the  alpha version of Octolapse, and on March 24, 2018, I released the plugin on the <a href="https://plugins.octoprint.org">OctoPrint Plugin Repository</a>.  Octolapse grew up pretty quickly, and on November 15, 2018, I released V0.3.4.  Over a year and a half and 640+ commits later, I finally completed V0.4.0, which is a major rewrite of the software and includes all of the features discussed above.  It took a long time to get here.</p>
+
+<p>Octolapse is my “thank you” to all of the makers out there who have contributed time and effort to this hobby.  I hope that Octolapse can spread information about the 3D printing hobby by attracting a few new users.</p>
+
+<h2 id="report-problems-and-suggest-improvements">Report Problems and Suggest Improvements</h2>
+
+<p>If you think you have found a bug in Octolapse, please <a href="https://github.com/FormerLurker/Octolapse/wiki/V0.4---Reporting-An-Issue">see this guide for reporting issues</a>.  Maybe you have an idea for a cool new feature?  Find out how to let me know about your idea <a href="https://github.com/FormerLurker/Octolapse/wiki/V0.4---Request-A-New-Feature">here</a>.</p>
 
 <h2 id="license">License</h2>
+
 <p>View the <a href="https://github.com/FormerLurker/Octolapse/blob/master/LICENSE">Octolapse license</a>.</p>
 
 <hr />
 
-<p><em>Copyright (C) 2017  Brad Hochgesang - FormerLurker@pm.me</em></p>
+<p><em>Copyright (C) 2020  Brad Hochgesang - FormerLurker@pm.me</em></p>
 
 
       
@@ -391,14 +506,14 @@
         
         <dd>
           URL:
-          <pre>https://github.com/FormerLurker/Octolapse/archive/v0.3.4.zip</pre>
+          <pre>https://github.com/FormerLurker/Octolapse/archive/v0.4.0.zip</pre>
           
         </dd>
         
         
         <dd>
           Command line:
-          <pre>pip install "https://github.com/FormerLurker/Octolapse/archive/v0.3.4.zip"</pre>
+          <pre>pip install "https://github.com/FormerLurker/Octolapse/archive/v0.4.0.zip"</pre>
         </dd>
         
       </dl>
@@ -418,7 +533,7 @@
       
       <dl class="install_events">
         <dt>New installs the past week</dt>
-        <dd>At least <strong>728</strong> new installations</dd>
+        <dd>At least <strong>731</strong> new installations</dd>
       </dl>
       
       
@@ -464,7 +579,7 @@
             <li>Operating Systems: Linux, Windows, Mac OS X, FreeBSD</li>
             
             
-            <li>Python: &gt;=2.7,&lt;3</li>
+            <li>Python: &gt;=2.7,&lt;4</li>
             
           </ul>
         </dd>
