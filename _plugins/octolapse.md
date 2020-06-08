@@ -3,7 +3,7 @@ layout: plugin
 
 id: octolapse
 title: Octolapse
-description: Create a stabilized timelapse of your 3D prints.  Highly customizable, loads of presets, lots of fun.  Requires OctoPrint 1.3.9 or higher.
+description: Create a stabilized timelapse of your 3D prints.  Highly customizable, loads of presets, lots of fun.  Requires OctoPrint 1.3.9 or higher.  Python 3 users MUST install the Python 3 Development package before installation.
 author: Brad Hochgesang
 license: AGPL-3.0
 date: 2018-03-24
@@ -60,7 +60,7 @@ Octolapse is designed to make stabilized timelapses of your prints with as littl
 
 Octolapse moves the print bed and extruder into position before taking each snapshot, giving you a crisp image in every frame.  Snapshots can be taken at each layer change, at specific height increments, after a period of time has elapsed, or when certain GCodes are detected.
 
-**Important**:  *Octolapse requires OctoPrint v1.3.9 or higher, and some features require OctoPrint v1.3.10rc1 or above.*  You can check your OctoPrint version by looking in the lower left hand corner of your OctoPrint server home page.
+**Important**:  *Octolapse requires OctoPrint v1.3.9 or higher, and some features require OctoPrint v1.3.10rc1 or above.*  You can check your OctoPrint version by looking in the lower left hand corner of your OctoPrint server home page.  **Python 3 users must install the Python 3 Development Package**. See [this guide](https://github.com/FormerLurker/Octolapse/wiki/V0.4---Installing-and-Upgrading-Octolapse#prerequisites) for details.
 
 ## Getting Started
 
