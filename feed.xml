@@ -5,10 +5,36 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>http://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 11 Jun 2020 07:11:40 -0500</pubDate>
-    <lastBuildDate>Thu, 11 Jun 2020 07:11:40 -0500</lastBuildDate>
+    <pubDate>Thu, 11 Jun 2020 12:15:20 -0500</pubDate>
+    <lastBuildDate>Thu, 11 Jun 2020 12:15:20 -0500</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
     
+    
+      <item>
+        <title>OctoPrint-Smuff</title>
+        <description>
+          <![CDATA[
+            A plugin for controlling tool changes on the SMuFF from OctoPrint as published on Thingiverse https://www.thingiverse.com/thing:3431438
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/SMuFF/SMuFF_V5.jpg"></p>
+          ]]>
+        </description>
+        <pubDate>
+Thu, 11 Jun 2020 00:00:00 -0500
+</pubDate>
+        <link>http://plugins.octoprint.org/plugins/SMuFF/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">http://plugins.octoprint.org/plugins/SMuFF/</guid>
+        
+        <category>SMuFF</category>
+        
+        <category>MMU</category>
+        
+        <category>Tool changer</category>
+        
+        <category>Multi material</category>
+        
+        <category>Marlin 2.0</category>
+        
+      </item>
     
       <item>
         <title>Signalclirestapi</title>
@@ -207,27 +233,6 @@ Mon, 01 Jun 2020 00:00:00 -0500
         <category>notifications</category>
         
         <category>lametric</category>
-        
-      </item>
-    
-      <item>
-        <title>MQTT Subscribe</title>
-        <description>
-          <![CDATA[
-            This plugin allows controlling OctoPrint via MQTT messages.
-            <p><img src="https://plugins.octoprint.org/assets/img/repo-600x400.png"></p>
-            
-          ]]>
-        </description>
-        <pubDate>
-Fri, 29 May 2020 00:00:00 -0500
-</pubDate>
-        <link>http://plugins.octoprint.org/plugins/mqttsubscribe/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">http://plugins.octoprint.org/plugins/mqttsubscribe/</guid>
-        
-        <category>MQTT</category>
-        
-        <category>control</category>
         
       </item>
     

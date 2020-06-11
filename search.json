@@ -2440,6 +2440,17 @@
 "author": "Bernhard B.",
 "content": "Features      Support for Signal Messenger groups:    It’s possible to create a Signal Messenger group for every print job. That way, all the messages and webcam snapshots are nicely grouped together.        Support for Print Progress:    If enabled, a message will be sent when the print job progress reaches 20%, 40, 80%.        Support for all Print Events:    The plugin supports the Print Started, Print Failed, Print Cancelled, Print Paused, Print Resumed, Print Done events.        Support for signal-cli-rest-api:    The signal-cli-rest-api is a small REST API wrapper around the awesome signal-cli commandline tool. The main advantage is, that you don’t need to run signal-cli on the same host as your Octoprint instance. That’s especially useful, if you use other services in your home network (like Home Assistant) that also send Signal Messenger notifications.  InstallationThis plugin requires the signal-cli-rest-api docker container. Without the docker container, the plugin won’t work! The following document describes how to set up the docker container and register your phone number.",
 "tags": ["notification"]
+},
+
+{
+"id": "/plugins/SMuFF",
+"url": "/plugins/SMuFF/",
+"date": "2020-06-11 00:00:00 -0500",
+"title": "OctoPrint-Smuff",
+"description": "A plugin for controlling tool changes on the SMuFF from OctoPrint as published on Thingiverse https://www.thingiverse.com/thing:3431438",
+"author": "Technik Gegg",
+"content": "This is a plugin for OctoPrint which handles tool changes for the SMuFF (as published on Thingiverse).This plugin runs in the background and tracks tool changes (Tx) via the octoprint.comm.protocol.gcode.queuing hook of OctoPrint.When triggered, it’ll send the according command to the SMuFF via the Raspberry’s second onboard UART ttyS0.For further information on how to configure your Raspberry Pi, please visit this Github repository.",
+"tags": ["SMuFF","MMU","Tool changer","Multi material","Marlin 2.0"]
 }
 ]
 }
