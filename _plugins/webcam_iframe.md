@@ -16,7 +16,7 @@ archive: https://github.com/jneilliii/OctoPrint-WebcamIframe/archive/master.zip
 tags:
 - webcam
 
-featuredimage: /assets/img/webcam_iframe
+featuredimage: /assets/img/plugins/webcam_iframe/screenshot.png
 
 compatibility:
   octoprint:
@@ -33,7 +33,7 @@ compatibility:
 
 Simple plugin that replaces the webcam image on the control tab with an iframe that loads the webcam url from the default settings.
 
-![screenshot](screenshot.png)
+![screenshot](/assets/img/plugins/webcam_iframe/screenshot.png)
 
 ## Configuration
 
