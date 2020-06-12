@@ -5,8 +5,9 @@ import requests
 import frontmatter
 
 import os
-import time
+import sys
 import traceback
+import concurrent.futures
 
 from datetime import datetime
 
@@ -61,24 +62,19 @@ query {
 def to_date(date_str):
 	return datetime.fromisoformat(date_str.replace("Z", "+00:00")).strftime("%Y-%m-%d %H:%M:%S %z")
 
-_plugin_stats_7d = None
-_plugin_stats_30d = None
+_plugin_stats_7d = dict()
+_plugin_stats_30d = dict()
 
-def plugin_stats_7d(plugin):
-	global _plugin_stats_7d
-	if _plugin_stats_7d is None:
-		resp = requests.get(PLUGINSTATS_7D_URL)
-		_plugin_stats_7d = resp.json()
-	return _plugin_stats_7d.get(plugin)
+def prefetch_plugin_stats():
+	global _plugin_stats_7d, _plugin_stats_30d
 
-def plugin_stats_30d(plugin):
-	global _plugin_stats_30d
-	if _plugin_stats_30d is None:
-		resp = requests.get(PLUGINSTATS_30D_URL)
-		_plugin_stats_30d = resp.json()
-	return _plugin_stats_30d.get(plugin)
+	resp = requests.get(PLUGINSTATS_7D_URL)
+	_plugin_stats_7d = resp.json()
 
-def github_data(user, repo):
+	resp = requests.get(PLUGINSTATS_30D_URL)
+	_plugin_stats_30d = resp.json()
+
+def github_data(user, repo, out=print):
 	if GITHUB_TOKEN is not None:
 		auth = "token "  + GITHUB_TOKEN
 	else:
@@ -95,14 +91,12 @@ def github_data(user, repo):
 		                         json={'query': graph_ql_query})
 
 		if response.status_code != 200:
-			print("!! Error while querying Github API")
-			print("!!   Status: {}".format(response.status_code))
-			print("!!   Body: {}".format(response.text))
+			out("!! Error while querying Github API for {}/{}, status: {}, body: {}".format(user, repo, response.status_code, response.text), file=sys.stderr)
 			return dict()
 
 		data = response.json()
 		if not data:
-			print("!! No data available from Github API")
+			out("!! No data available from Github API for {}/{}".format(user, repo), file=sys.stderr)
 			return dict()
 
 		repository_values = data["data"]["repository"]
@@ -123,7 +117,7 @@ def github_data(user, repo):
 
 		return result
 	except:
-		print("!! Error while reading and parsing data from Github API")
+		out("!! Error while reading and parsing data from Github API for {}/{}".format(user, repo), file=sys.stderr)
 		traceback.print_exc()
 		return dict()
 
@@ -140,10 +134,14 @@ def extract_github_repo(url):
 	return parts[0], parts[1]
 
 def process_plugin_file(path, incl_stats=True, incl_github=True):
+	result = []
+	def out(line, *args, **kwargs):
+		result.append(line)
+
 	data = frontmatter.load(path)
 	plugin_id = data["id"]
 
-	print("Processing plugin {} at path {}".format(plugin_id, path))
+	out("Processing plugin {} at path {}".format(plugin_id, path))
 
 	if incl_stats:
 		def build_stats(stats):
@@ -161,14 +159,14 @@ def process_plugin_file(path, incl_stats=True, incl_github=True):
 		                 "month": dict(instances=0,
 		                               install_events=0)}
 
-		stats7d = plugin_stats_7d(data["id"].lower())
+		stats7d = _plugin_stats_7d.get(data["id"].lower())
 		if stats7d is not None:
-			print("  Enriching {} with stats for week...".format(plugin_id))
+			out("  Enriching {} with stats for week...".format(plugin_id))
 			data["stats"]["week"] = build_stats(stats7d)
 
-		stats30d = plugin_stats_30d(data["id"].lower())
+		stats30d = _plugin_stats_30d.get(data["id"].lower())
 		if stats30d is not None:
-			print("  Enriching {} with stats for month...".format(plugin_id))
+			out("  Enriching {} with stats for month...".format(plugin_id))
 			data["stats"]["month"] = build_stats(stats30d)
 
 	if incl_github:
@@ -178,22 +176,35 @@ def process_plugin_file(path, incl_stats=True, incl_github=True):
 			user, repo = extract_github_repo(data.get("source"))
 
 		if user and repo:
-			print("  Loading github repo information for plugin {}: {}/{}".format(plugin_id, user, repo))
+			out("  Loading github repo information for plugin {}: {}/{}".format(plugin_id, user, repo))
 			github = github_data(user, repo)
 			if github:
-				print("  Enriching {} with github data...".format(plugin_id))
+				out("  Enriching {} with github data...".format(plugin_id))
 				data["github"] = github
 
 	with open(path, "wb") as f:
 		frontmatter.dump(data, f)
 
+	return "\n".join(result)
+
 if __name__ == "__main__":
+	executor = concurrent.futures.ThreadPoolExecutor(max_workers=5)
+	prefetch_plugin_stats()
+
+	futures_to_name = dict()
+
 	plugin_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "_plugins")
 	with os.scandir(plugin_dir) as it:
 		for entry in it:
 			if not entry.is_file() or not entry.name.endswith(".md"):
 				continue
-			process_plugin_file(entry.path,
-			                    incl_github=GITHUB_TOKEN is not None)
+			future = executor.submit(process_plugin_file, entry.path, incl_github=GITHUB_TOKEN is not None)
+			futures_to_name[future] = entry.name
+
+	for future in concurrent.futures.as_completed(futures_to_name):
+		name = futures_to_name[future]
+		try:
+			print(future.result())
 			print("")
-			time.sleep(.2)
+		except Exception as exc:
+			print("{} generated an exception: {}".format(name, exc))
