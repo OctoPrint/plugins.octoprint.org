@@ -54,13 +54,13 @@ jobs:
           -v ${{ github.workspace }}:/json \
           peterdavehello/jsonlint jsonlint -q /json/_site/search.json
 
-      - name: 🕵️‍♂️ Run link check
-        id: lc
-        uses: peter-evans/link-checker@v1
-        with:
-          args: -v -r -d ./_site/ ./_site/
-      - name: 🕵️‍♂️ Evaluate link check
-        run: exit ${{ steps.lc.outputs.exit_code }}
+      #- name: 🕵️‍♂️ Run link check
+      #  id: lc
+      #  uses: peter-evans/link-checker@v1
+      #  with:
+      #    args: -v -r -d ./_site/ ./_site/
+      #- name: 🕵️‍♂️ Evaluate link check
+      #  run: exit ${{ steps.lc.outputs.exit_code }}
 
       - name: 🚀 Deploy page
         if: github.repository == 'OctoPrint/plugins.octoprint.org' && github.event_name != 'pull_request'
