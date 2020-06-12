@@ -5,10 +5,32 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>http://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 12 Jun 2020 07:12:11 -0500</pubDate>
-    <lastBuildDate>Fri, 12 Jun 2020 07:12:11 -0500</lastBuildDate>
+    <pubDate>Fri, 12 Jun 2020 08:19:21 -0500</pubDate>
+    <lastBuildDate>Fri, 12 Jun 2020 08:19:21 -0500</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
     
+    
+      <item>
+        <title>Consolidate Temp Control</title>
+        <description>
+          <![CDATA[
+            This plugin consolidates the temperature and control tabs into one.
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/conslidate_temp_control/screenshot.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Fri, 12 Jun 2020 00:00:00 -0500
+</pubDate>
+        <link>http://plugins.octoprint.org/plugins/consolidate_temp_control/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">http://plugins.octoprint.org/plugins/consolidate_temp_control/</guid>
+        
+        <category>temperature</category>
+        
+        <category>control</category>
+        
+        <category>widescreen</category>
+        
+      </item>
     
       <item>
         <title>OctoPrint-Smuff</title>
@@ -211,28 +233,6 @@ Tue, 02 Jun 2020 00:00:00 -0500
         <category>notifications</category>
         
         <category>music</category>
-        
-      </item>
-    
-      <item>
-        <title>Lametric</title>
-        <description>
-          <![CDATA[
-            Display progress of your Octoprint instance on your LaMetric smart clock.
-            <p><img src="https://plugins.octoprint.org/assets/img/plugins/lametric/screenshot_1.png"></p>
-          ]]>
-        </description>
-        <pubDate>
-Mon, 01 Jun 2020 00:00:00 -0500
-</pubDate>
-        <link>http://plugins.octoprint.org/plugins/lametric/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">http://plugins.octoprint.org/plugins/lametric/</guid>
-        
-        <category>notification</category>
-        
-        <category>notifications</category>
-        
-        <category>lametric</category>
         
       </item>
     
