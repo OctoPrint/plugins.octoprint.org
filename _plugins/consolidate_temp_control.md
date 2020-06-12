@@ -7,7 +7,7 @@ description: This plugin consolidates the temperature and control tabs into one.
 author: jneilliii
 license: AGPLv3
 
-date: 2020-06-06
+date: 2020-06-12
 
 homepage: https://github.com/jneilliii/OctoPrint-ConsolidateTempControl
 source: https://github.com/jneilliii/OctoPrint-ConsolidateTempControl
