@@ -37,6 +37,8 @@ compatibility:
   os:
   - linux
 
+  python: ">=2.7,<4"
+
 ---
 
 # OctoPrint-Rgb_status
