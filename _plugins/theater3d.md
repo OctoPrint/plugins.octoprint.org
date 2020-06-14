@@ -8,7 +8,7 @@ author: Princton Brennan
 license: AGPLv3
 
 # today's date in format YYYY-MM-DD, e.g.
-date: 2020-01-05
+date: 2020-06-13
 
 homepage: https://github.com/NerdboyQ/OctoPrint-Theater3d
 source: https://github.com/NerdboyQ/OctoPrint-Theater3d.git
