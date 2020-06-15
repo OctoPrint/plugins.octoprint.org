@@ -13,7 +13,7 @@ source: https://framagit.org/razer/octoprint_z_probe_offset
 archive: https://framagit.org/razer/octoprint_z_probe_offset/-/archive/latest/octoprint_z_probe_offset-latest.zip
 
 screenshots:
-- url: https://framagit.org/razer/octoprint_z_probe_offset/blob/master/screenshots/z_probe_offset_control.png
+- url: /assets/img/plugins/z_probe_offset/z_probe_offset_control.png
 
 tags:
 - probe
