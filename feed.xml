@@ -5,10 +5,34 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>http://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 15 Jun 2020 07:08:20 -0500</pubDate>
-    <lastBuildDate>Mon, 15 Jun 2020 07:08:20 -0500</lastBuildDate>
+    <pubDate>Mon, 15 Jun 2020 11:10:12 -0500</pubDate>
+    <lastBuildDate>Mon, 15 Jun 2020 11:10:12 -0500</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
     
+    
+      <item>
+        <title>HomeAssistant Discovery</title>
+        <description>
+          <![CDATA[
+            Automatically add your OctoPrint server to Home Assistant with MQTT
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/homeassistant/hassio.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Sun, 14 Jun 2020 00:00:00 -0500
+</pubDate>
+        <link>http://plugins.octoprint.org/plugins/homeassistant/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">http://plugins.octoprint.org/plugins/homeassistant/</guid>
+        
+        <category>notification</category>
+        
+        <category>iot</category>
+        
+        <category>automation</category>
+        
+        <category>mqtt</category>
+        
+      </item>
     
       <item>
         <title>Consolidate Temp Control</title>
@@ -211,28 +235,6 @@ Tue, 02 Jun 2020 00:00:00 -0500
         <category>cancel</category>
         
         <category>klipper</category>
-        
-      </item>
-    
-      <item>
-        <title>M300 Player</title>
-        <description>
-          <![CDATA[
-            Plugin that will play M300 beeps in the web interface.
-            <p><img src="https://plugins.octoprint.org/assets/img/plugins/M300Player/screenshot.png"></p>
-          ]]>
-        </description>
-        <pubDate>
-Tue, 02 Jun 2020 00:00:00 -0500
-</pubDate>
-        <link>http://plugins.octoprint.org/plugins/M300Player/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">http://plugins.octoprint.org/plugins/M300Player/</guid>
-        
-        <category>M300</category>
-        
-        <category>notifications</category>
-        
-        <category>music</category>
         
       </item>
     

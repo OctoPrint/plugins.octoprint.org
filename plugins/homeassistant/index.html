@@ -6,9 +6,9 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html"> <!--<![endif]-->
 <head>
     <meta charset="utf-8" />
-    <title>Flashforge/Dremel/PowerSpec Printer Support</title>
-    <meta name="description" content="Enable OctoPrint to connect to certain FlashForge, Dremel and PowerSpec printers.">
-    <meta name="author" content="Mrnt">
+    <title>HomeAssistant Discovery</title>
+    <meta name="description" content="Automatically add your OctoPrint server to Home Assistant with MQTT">
+    <meta name="author" content="Clifford Roche">
     <meta name="referrer" content="same-origin">
     <meta name="google-site-verification" content="0EFsbaNygJcEinKPmzP-hTf0Ju6wDIpJxO5zvQtOQT0" />
     <meta name="build-revision" content="9343f2de639504add6bffddb575eea37cf6683b3" />
@@ -41,33 +41,27 @@
 
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@OctoPrint3D" />
-    <meta name="twitter:title" content="Flashforge/Dremel/PowerSpec Printer Support" />
-    <meta name="twitter:description" content="The plugin allows control of some FlashForge, Dremel and PowerSpec printers
-(such as the FlashForge Finder, Dreamer, etc) that connect via USB and do not
-appear as a serial port under OctoPrint.
+    <meta name="twitter:title" content="HomeAssistant Discovery" />
+    <meta name="twitter:description" content="Enable MQTT based discovery of your OctoPrint server with Home Assistant.
 
 " />
-    <meta name="twitter:image" content="https://plugins.octoprint.org/assets/img/octoprint-avatar-240x240.png" />
+    <meta name="twitter:image" content="https://plugins.octoprint.org" />
 
-    <meta property="og:title" content="Flashforge/Dremel/PowerSpec Printer Support" />
+    <meta property="og:title" content="HomeAssistant Discovery" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://plugins.octoprint.org/assets/img/repo-600x400.png" />
-    <meta property="og:description" content="The plugin allows control of some FlashForge, Dremel and PowerSpec printers
-(such as the FlashForge Finder, Dreamer, etc) that connect via USB and do not
-appear as a serial port under OctoPrint.
+    <meta property="og:image" content="https://plugins.octoprint.org/assets/img/plugins/homeassistant/hassio.png" />
+    <meta property="og:description" content="Enable MQTT based discovery of your OctoPrint server with Home Assistant.
 
 " />
     <meta property="og:site_name" content="OctoPrint Plugin Repository" />
-    <meta property="og:url" content="https://plugins.octoprint.org/plugins/FlashForge/" />
+    <meta property="og:url" content="https://plugins.octoprint.org/plugins/homeassistant/" />
 
     <meta itemscope itemtype="http://schema.org/WebPage" />
-    <meta itemprop="headline" content="Flashforge/Dremel/PowerSpec Printer Support" />
-    <meta itemprop="description" content="The plugin allows control of some FlashForge, Dremel and PowerSpec printers
-(such as the FlashForge Finder, Dreamer, etc) that connect via USB and do not
-appear as a serial port under OctoPrint.
+    <meta itemprop="headline" content="HomeAssistant Discovery" />
+    <meta itemprop="description" content="Enable MQTT based discovery of your OctoPrint server with Home Assistant.
 
 " />
-    <meta itemprop="image" content="https://plugins.octoprint.org/assets/img/repo-600x400.png" />
+    <meta itemprop="image" content="https://plugins.octoprint.org/assets/img/plugins/homeassistant/hassio.png" />
 
     <script src="/assets/js/jquery-1.9.1.min.js"></script>
     <script src="/assets/js/underscore.min.js"></script>
@@ -165,7 +159,7 @@ appear as a serial port under OctoPrint.
   <div class="container">
     <div class="row">
       <div class="span12">
-        <h1>Flashforge/Dremel/PowerSpec Printer Support</h1>
+        <h1>HomeAssistant Discovery</h1>
       </div>
     </div>
   </div>
@@ -174,11 +168,11 @@ appear as a serial port under OctoPrint.
 <div class="container">
   <div class="row-fluid">
     
-    <small class="pull-left"><a href="/plugins/fixcbdfirmware/"><i class="fa fa-double-angle-left"></i>&nbsp;Fix CBD Firmware</a></small>
+    <small class="pull-left"><a href="/plugins/heatertimeout/"><i class="fa fa-double-angle-left"></i>&nbsp;HeaterTimeout</a></small>
     
     &nbsp;
     
-    <small class="pull-right"><a href="/plugins/FriendlyNeighborhoodBeeper/">Friendly Neighborhood Beeper&nbsp;<i class="fa fa-double-angle-right"></i></a></small>
+    <small class="pull-right"><a href="/plugins/ikea_tradfri/">Ikea Tradfri&nbsp;<i class="fa fa-double-angle-right"></i></a></small>
     
   </div>
   <div class="content plugin-content row-fluid">
@@ -189,28 +183,21 @@ appear as a serial port under OctoPrint.
       
 
       <p class="lead">
-        Enable OctoPrint to connect to certain FlashForge, Dremel and PowerSpec printers.
+        Automatically add your OctoPrint server to Home Assistant with MQTT
       </p>
-      <p>The plugin allows control of some FlashForge, Dremel and PowerSpec printers
-(such as the FlashForge Finder, Dreamer, etc) that connect via USB and do not
-appear as a serial port under OctoPrint.</p>
+      <p>Enable MQTT based discovery of your OctoPrint server with Home Assistant.</p>
 
-<h2 id="important">IMPORTANT</h2>
-<p>For details of which printers are supported and <strong>the level of functionality</strong>
-see the <a href="https://github.com/Mrnt/OctoPrint-FlashForge/blob/master/README.md">homepage</a>
-<br /></p>
-<hr />
-
-<p><br /></p>
-
-<h3 id="support-additional-development">Support Additional Development</h3>
-<p>This plugin was/is developed by painstakingly reverse engineering the communication
-between FlashPrint and FlashForge printers and much trial and error. If you find it
-useful and/or want to see continued development, please consider making a donation.</p>
-
-<p><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=S4TNWVKFLPL5C&amp;source=url"><img src="/assets/img/plugins/flashforge/paypal-donate.png" alt="More chocolate, more code" /></a></p>
+<p>You will also need the OctoPrint-MQTT plugin installed and configured to connected to your Home Assistant MQTT service, and MQTT discovery enabled (should be the default). With these, by using the OctoPrint-HomeAssistant plugin your OctoPrint instance will automatically register a device and several sensors to follow your printer status, printing and slicing progress.</p>
 
 
+      
+        <h2>Pictures</h2>
+        
+        <figure>
+          
+          <a href="/assets/img/plugins/homeassistant/hassio.png" data-lightbox="/plugins/homeassistant" data-title="HomeAssistant Device"><img src="/assets/img/plugins/homeassistant/hassio.png" alt="HomeAssistant Device" title="HomeAssistant Device"></a>
+        </figure>
+        
       
     </article>
 
@@ -238,14 +225,14 @@ useful and/or want to see continued development, please consider making a donati
         
         <dd>
           URL:
-          <pre>https://github.com/Mrnt/OctoPrint-FlashForge/archive/master.zip</pre>
+          <pre>https://github.com/cmroche/OctoPrint-HomeAssistant/archive/master.zip</pre>
           
         </dd>
         
         
         <dd>
           Command line:
-          <pre>pip install "https://github.com/Mrnt/OctoPrint-FlashForge/archive/master.zip"</pre>
+          <pre>pip install "https://github.com/cmroche/OctoPrint-HomeAssistant/archive/master.zip"</pre>
         </dd>
         
       </dl>
@@ -253,19 +240,19 @@ useful and/or want to see continued development, please consider making a donati
       
       <dl class="date">
         <dt>Registration date</dt>
-        <dd>18 May 2020</dd>
+        <dd>14 Jun 2020</dd>
       </dl>
       
       
       <dl class="installations">
         <dt>Active instances the past month</dt>
-        <dd>Installed on at least <strong>112</strong> instances</dd>
+        <dd>Installed on at least <strong>2</strong> instances</dd>
       </dl>
       
       
       <dl class="install_events">
         <dt>New installs the past week</dt>
-        <dd>At least <strong>15</strong> new installations</dd>
+        <dd>At least <strong>3</strong> new installations</dd>
       </dl>
       
       
@@ -274,15 +261,9 @@ useful and/or want to see continued development, please consider making a donati
         <dd>
           <ul>
             
-            <li>
-              Latest Release: <a href="https://github.com/Mrnt/OctoPrint-FlashForge/releases/tag/0.1.18" target="_blank">0.1.18</a><br>
-              <small>released on 15 May 2020</small>
-            </li>
-            <li>Releases: 12</li>
-            
-            <li>Stars: 25</li>
-            <li>Issues: 12 open, 8 closed</li>
-            <li>Last push: 23 May 2020</li>
+            <li>Stars: 0</li>
+            <li>Issues: 0 open, 0 closed</li>
+            <li>Last push: 15 Jun 2020</li>
           </ul>
         </dd>
       </dl>
@@ -295,11 +276,13 @@ useful and/or want to see continued development, please consider making a donati
           
           
           
-          <a class="label" href="/by_tag/#tag-dremel">dremel</a>
+          <a class="label" href="/by_tag/#tag-automation">automation</a>
           
-          <a class="label" href="/by_tag/#tag-flashforge">flashforge</a>
+          <a class="label" href="/by_tag/#tag-iot">iot</a>
           
-          <a class="label" href="/by_tag/#tag-powerspec">powerspec</a>
+          <a class="label" href="/by_tag/#tag-mqtt">mqtt</a>
+          
+          <a class="label" href="/by_tag/#tag-notification">notification</a>
           
         </dd>
       </dl>
@@ -309,13 +292,13 @@ useful and/or want to see continued development, please consider making a donati
         <dd>
           <ul>
             
-            <li>OctoPrint: 1.3.0+</li>
+            <li>OctoPrint: all versions</li>
             
             
-            <li>Operating Systems: Linux, Windows, Mac OS X, FreeBSD</li>
+            <li>Operating Systems: all</li>
             
             
-            <li>Python: &gt;=2.7,&lt;4</li>
+            <li>Python: &gt;=2.7,&lt;3</li>
             
           </ul>
         </dd>
@@ -324,20 +307,20 @@ useful and/or want to see continued development, please consider making a donati
       <dl class="author">
         <dt>Author</dt>
         <dd>
-<a href="/by_author/#mrnt">Mrnt</a>
+<a href="/by_author/#clifford-roche">Clifford Roche</a>
 </dd>
       </dl>
       
       
       <dl class="homepage">
         <dt>Homepage</dt>
-        <dd><a href="https://github.com/Mrnt/OctoPrint-FlashForge" target="_blank">https://github.com/Mrnt/OctoPrint-FlashForge</a></dd>
+        <dd><a href="https://github.com/cmroche/OctoPrint-HomeAssistant" target="_blank">https://github.com/cmroche/OctoPrint-HomeAssistant</a></dd>
       </dl>
       
       
       <dl class="source">
         <dt>Source</dt>
-        <dd><a href="https://github.com/Mrnt/OctoPrint-FlashForge" target="_blank">https://github.com/Mrnt/OctoPrint-FlashForge</a></dd>
+        <dd><a href="https://github.com/cmroche/OctoPrint-HomeAssistant" target="_blank">https://github.com/cmroche/OctoPrint-HomeAssistant</a></dd>
       </dl>
       
       
@@ -351,19 +334,19 @@ useful and/or want to see continued development, please consider making a donati
         <dd>
           <p>
             If there is <strong>something wrong with this listing</strong> (broken links & images etc), please
-            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=bug&template=listing_error.md&title=%5BListing+Error%5D+Flashforge%2FDremel%2FPowerSpec+Printer+Support">report it here</a>.
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=bug&template=listing_error.md&title=%5BListing+Error%5D+HomeAssistant+Discovery">report it here</a>.
           </p>
           <p>
             If this plugin <strong>has been <em>confirmed</em> as abandoned</strong> by its maintainer, please
-            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=abandoned+plugin&template=abandoned_plugin.md&title=%5BAbandoned+Plugin%5D+Flashforge%2FDremel%2FPowerSpec+Printer+Support">report it here</a>.
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=abandoned+plugin&template=abandoned_plugin.md&title=%5BAbandoned+Plugin%5D+HomeAssistant+Discovery">report it here</a>.
           </p>
           <p>
             If this plugin is <strong>doing something suspicious</strong> (e.g. weird network activity, unannounced tracking, ...) and
             the maintainer is not cooperating in getting to the bottom of that, please
-            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=suspicious+plugin+activity&template=suspicious_plugin_activity.md&title=%5BSuspicious+Plugin+Activity%5D+Flashforge%2FDremel%2FPowerSpec+Printer+Support">report the plugin as suspicious here</a>.
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=suspicious+plugin+activity&template=suspicious_plugin_activity.md&title=%5BSuspicious+Plugin+Activity%5D+HomeAssistant+Discovery">report the plugin as suspicious here</a>.
           </p>
           <p>
-            Report bugs or feature requests for the plugin to the plugin author (e.g. on the plugin's <a href="https://github.com/Mrnt/OctoPrint-FlashForge">homepage</a>) please, not here!
+            Report bugs or feature requests for the plugin to the plugin author (e.g. on the plugin's <a href="https://github.com/cmroche/OctoPrint-HomeAssistant">homepage</a>) please, not here!
           </p>
         </dd>
       </dl>
