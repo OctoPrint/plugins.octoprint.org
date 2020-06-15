@@ -26,3 +26,11 @@ compatibility:
   - freebsd
   python: ">=2.7,<4"
 ---
+
+# Z Probe Offset Control
+
+Add input to the control tab for z probe offset value change.
+Needs Marlin firmware (1.x or 2.x) with z probe capability enabled.
+Warning: this plugin is on its early stage of developpement. Use with caution and please report any issues on the git repository. Improvement suggestions are welcome as well.
+
+![screenshot](/assets/img/plugins/z_probe_offset/z_probe_offset_control.png)
