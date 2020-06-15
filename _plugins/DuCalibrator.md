@@ -42,3 +42,9 @@ An [OctoPrint](https://octoprint.org/) Plugin for performing micro calibration i
 * 3D visualization of probed points and estimated points after proposed calibration
 
 ![Screenshot](/assets/img/plugins/DuCalibrator/screenshot.png)
+
+## Demo
+
+{% include youtube.html vid="kTJlOl7_X2M" preview="'/assets/img/plugins/DuCalibrator/screenshot.png'" %}
+
+Watch it in full screen
