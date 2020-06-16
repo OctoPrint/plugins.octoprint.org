@@ -10,6 +10,7 @@ import traceback
 import concurrent.futures
 import base64
 import ast
+import functools
 
 from datetime import datetime
 
@@ -152,16 +153,21 @@ def extract_plugin_control_properties(user, repo, out=print):
 
 	result = dict()
 
-	url = GITHUB_REST_URL + "/search/code?q=__plugin_pythoncompat__+repo:{user}/{repo}+in:file+filename:__init__.py".format(user=user, repo=repo)
+	url = GITHUB_REST_URL + "/search/code?q=(__plugin_implementation__+OR+__plugin_hooks__)+repo:{user}/{repo}+in:file+filename:__init__.py".format(user=user, repo=repo)
 	r = requests.get(url, headers=headers)
 	data = r.json()
 
-	if data["total_count"] != 1:
-		out("!! Got more than one result for __init__.py in {}/{}, can't extract plugin properties".format(user, repo))
+	paths = set()
+	for item in data["items"]:
+		paths.add((item["url"], item["path"]))
+
+	if len(paths) != 1:
+		out("!! Got none or more than one result for __init__.py in {}/{}, can't extract plugin properties : {!r}".format(user, repo, paths))
 		return result
 
-	url = data["items"][0]["url"]
-	path = data["items"][0]["path"]
+	url, path = paths.pop()
+
+	out("Found path of __init__.py: {}".format(path))
 
 	r = requests.get(url, headers=headers)
 	data = r.json()
@@ -199,8 +205,8 @@ def extract_plugin_control_properties(user, repo, out=print):
 
 def process_plugin_file(path, incl_stats=True, incl_github=True):
 	result = []
-	def out(line, *args, **kwargs):
-		result.append(line)
+	def out(line, prefix="", *args, **kwargs):
+		result.append("{}{}".format(prefix, line))
 
 	data = frontmatter.load(path)
 	plugin_id = data["id"]
@@ -241,7 +247,7 @@ def process_plugin_file(path, incl_stats=True, incl_github=True):
 
 		if user and repo:
 			out("  Loading github repo information for plugin {}: {}/{}".format(plugin_id, user, repo))
-			github = github_data(user, repo)
+			github = github_data(user, repo, out=functools.partial(out, prefix="    "))
 			if github:
 				out("  Enriching {} with github data...".format(plugin_id))
 				data["github"] = github
@@ -249,7 +255,7 @@ def process_plugin_file(path, incl_stats=True, incl_github=True):
 			if "compatibility" not in data or "python" not in data["compatibility"]:
 				# let's try to determine python compatibility from the actual plugin
 				out("  Extracting plugin control properties for plugin {} from {}/{}".format(plugin_id, user, repo))
-				properties = extract_plugin_control_properties(user, repo, out=out)
+				properties = extract_plugin_control_properties(user, repo, out=functools.partial(out, prefix="    "))
 				if "__plugin_pythoncompat__" in properties:
 					if "compatibility" not in data:
 						data["compatibility"] = dict()
