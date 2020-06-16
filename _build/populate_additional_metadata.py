@@ -120,13 +120,16 @@ def github_data(user, repo, out=print):
 			              latest_release_date=to_date(latest_release["publishedAt"]),
 			              latest_release_url=latest_release["url"])
 
+		out("~~ Ratelimit: {}/{}".format(response.headers.get("X-Ratelimit-Remaining", "?"),
+		                                 response.headers.get("X-Ratelimit-Limit", "?")))
+
 		return result
 	except:
 		out("!! Error while reading and parsing data from Github API for {}/{}".format(user, repo), file=sys.stderr)
 		traceback.print_exc()
 		return dict()
 
-def extract_github_repo(url):
+def extract_github_repo(url, out=print):
 	if url is None or not url.startswith(GITHUB_PREFIX):
 		return None, None
 
@@ -136,10 +139,19 @@ def extract_github_repo(url):
 	else:
 		headers = None
 
-	r = requests.get(url, headers=headers)
+	try:
+		r = requests.get(url, headers=headers)
+		r.raise_for_status()
+		out("~~ Ratelimit: {}/{}".format(r.headers.get("X-Ratelimit-Remaining", "?"),
+		                                 r.headers.get("X-Ratelimit-Limit", "?")))
+	except Exception as exc:
+		out("!! Error while fetching source URL: {}".format(exc))
+		return None, None
+
 	url = r.url
 	if not url.startswith(GITHUB_PREFIX):
 		return None, None
+
 
 	parts = url[len(GITHUB_PREFIX):].split("/")
 	return parts[0], parts[1]
@@ -154,11 +166,19 @@ def extract_plugin_control_properties(user, repo, out=print):
 	result = dict()
 
 	url = GITHUB_REST_URL + "/search/code?q=(__plugin_implementation__+OR+__plugin_hooks__)+repo:{user}/{repo}+in:file+filename:__init__.py".format(user=user, repo=repo)
-	r = requests.get(url, headers=headers)
+	try:
+		r = requests.get(url, headers=headers)
+		r.raise_for_status()
+		out("~~ Ratelimit: {}/{}".format(r.headers.get("X-Ratelimit-Remaining", "?"),
+		                                 r.headers.get("X-Ratelimit-Limit", "?")))
+	except Exception as ex:
+		out("!! Got an error while trying to search for __init__.py on {}/{}: {}".format(user, repo, ex))
+		return result
+
 	data = r.json()
 
 	if "items" not in data:
-		out("!! Got no results for __init__.py in {}/{}, can't extract plugin properties".format(user, repo))
+		out("!! Got no results for __init__.py in {}/{}, can't extract plugin properties: {}, {!r}".format(user, repo, r.status_code, data))
 		return result
 
 	paths = set()
@@ -173,7 +193,15 @@ def extract_plugin_control_properties(user, repo, out=print):
 
 	out("Found path of __init__.py: {}".format(path))
 
-	r = requests.get(url, headers=headers)
+	try:
+		r = requests.get(url, headers=headers)
+		r.raise_for_status()
+		out("~~ Ratelimit: {}/{}".format(r.headers.get("X-Ratelimit-Remaining", "?"),
+		                                 r.headers.get("X-Ratelimit-Limit", "?")))
+	except Exception as exc:
+		out("!! Got an error while trying to read contents of __init__.py from {}/{}:{}: {}".format(user, repo, path, exc))
+		return result
+
 	data = r.json()
 
 	try:
@@ -247,7 +275,7 @@ def process_plugin_file(path, incl_stats=True, incl_github=True):
 		if "github" in data and "repo" in data["github"]:
 			user, repo = data["github"]["repo"].split("/")
 		else:
-			user, repo = extract_github_repo(data.get("source"))
+			user, repo = extract_github_repo(data.get("source"), out=functools.partial(out, prefix="    "))
 
 		if user and repo:
 			out("  Loading github repo information for plugin {}: {}/{}".format(plugin_id, user, repo))
