@@ -157,12 +157,16 @@ def extract_plugin_control_properties(user, repo, out=print):
 	r = requests.get(url, headers=headers)
 	data = r.json()
 
+	if "items" not in data:
+		out("!! Got no results for __init__.py in {}/{}, can't extract plugin properties".format(user, repo))
+		return result
+
 	paths = set()
 	for item in data["items"]:
 		paths.add((item["url"], item["path"]))
 
 	if len(paths) != 1:
-		out("!! Got none or more than one result for __init__.py in {}/{}, can't extract plugin properties : {!r}".format(user, repo, paths))
+		out("!! Got none or more than one result for __init__.py in {}/{}, can't extract plugin properties: {!r}".format(user, repo, paths))
 		return result
 
 	url, path = paths.pop()
