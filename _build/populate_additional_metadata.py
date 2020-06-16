@@ -221,12 +221,16 @@ def extract_plugin_control_properties(user, repo, out=print):
 		out("!! Got an error while trying to build AST for setup.py from {}/{}:setup.py: {}".format(user, repo, exc))
 		return dict()
 
-	props = extract_assignments(root, "plugin_package")
-	if "plugin_package" not in props:
-		out("!! Could not extract plugin package from {}/{}:setup.py".format(user, repo))
-		return dict()
+	props = extract_assignments(root, "plugin_identifier", "plugin_package")
 
-	package = props["plugin_package"]
+	package = props.get("plugin_package")
+	if package is None:
+		if "plugin_identifier" in props:
+			package = "octoprint_{}".format(props["plugin_identifier"])
+		else:
+			out("!! Could not extract plugin package from {}/{}:setup.py".format(user, repo))
+			return dict()
+
 	path = "{}/__init__.py".format(package)
 	out("__init__.py should be at {}/{}:{}".format(user, repo, path))
 
