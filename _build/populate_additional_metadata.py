@@ -8,6 +8,8 @@ import os
 import sys
 import traceback
 import concurrent.futures
+import base64
+import ast
 
 from datetime import datetime
 
@@ -58,6 +60,8 @@ query {
     }
   }
 }"""
+
+GITHUB_REST_URL = "https://api.github.com"
 
 def to_date(date_str):
 	return datetime.fromisoformat(date_str.replace("Z", "+00:00")).strftime("%Y-%m-%d %H:%M:%S %z")
@@ -125,13 +129,73 @@ def extract_github_repo(url):
 	if url is None or not url.startswith(GITHUB_PREFIX):
 		return None, None
 
-	r = requests.get(url)
+	if GITHUB_TOKEN is not None:
+		auth = "token " + GITHUB_TOKEN
+		headers = {"Authorization": auth}
+	else:
+		headers = None
+
+	r = requests.get(url, headers=headers)
 	url = r.url
 	if not url.startswith(GITHUB_PREFIX):
 		return None, None
 
 	parts = url[len(GITHUB_PREFIX):].split("/")
 	return parts[0], parts[1]
+
+def extract_plugin_control_properties(user, repo, out=print):
+	if GITHUB_TOKEN is not None:
+		auth = "token " + GITHUB_TOKEN
+		headers = {"Authorization": auth}
+	else:
+		headers = None
+
+	result = dict()
+
+	url = GITHUB_REST_URL + "/search/code?q=__plugin_pythoncompat__+repo:{user}/{repo}+in:file+filename:__init__.py".format(user=user, repo=repo)
+	r = requests.get(url, headers=headers)
+	data = r.json()
+
+	if data["total_count"] != 1:
+		out("!! Got more than one result for __init__.py in {}/{}, can't extract plugin properties".format(user, repo))
+		return result
+
+	url = data["items"][0]["url"]
+	path = data["items"][0]["path"]
+
+	r = requests.get(url, headers=headers)
+	data = r.json()
+
+	try:
+		content = base64.b64decode(data.get("content", ""))
+		root = ast.parse(content, "__init__.py")
+	except Exception as exc:
+		# invalid
+		out("!! Got an error while trying to build AST for __init__.py from {}/{}:{}: {}".format(user, repo, path, exc))
+		return result
+
+	assignments = list(filter(lambda x: isinstance(x, ast.Assign) and x.targets,
+	                          root.body))
+
+	def extract_target_ids(node):
+		return list(map(lambda x: x.id,
+		                filter(lambda x: isinstance(x, ast.Name), node.targets)))
+
+	for key in ("__plugin_pythoncompat__",):
+		for a in reversed(assignments):
+			targets = extract_target_ids(a)
+			if key in targets:
+				if isinstance(a.value, ast.Str):
+					result[key] = a.value.s
+
+				elif isinstance(a.value, ast.Call) and hasattr(a.value, "func") \
+						and a.value.func.id == "gettext" and a.value.args \
+						and isinstance(a.value.args[0], ast.Str):
+					result[key] = a.value.args[0].s
+
+				break
+
+	return result
 
 def process_plugin_file(path, incl_stats=True, incl_github=True):
 	result = []
@@ -182,6 +246,15 @@ def process_plugin_file(path, incl_stats=True, incl_github=True):
 				out("  Enriching {} with github data...".format(plugin_id))
 				data["github"] = github
 
+			if "compatibility" not in data or "python" not in data["compatibility"]:
+				# let's try to determine python compatibility from the actual plugin
+				out("  Extracting plugin control properties for plugin {} from {}/{}".format(plugin_id, user, repo))
+				properties = extract_plugin_control_properties(user, repo, out=out)
+				if "__plugin_pythoncompat__" in properties:
+					if "compatibility" not in data:
+						data["compatibility"] = dict()
+					data["compatibility"]["python"] = properties["__plugin_pythoncompat__"]
+
 	with open(path, "wb") as f:
 		frontmatter.dump(data, f)
 
@@ -191,6 +264,10 @@ if __name__ == "__main__":
 	executor = concurrent.futures.ThreadPoolExecutor(max_workers=5)
 	prefetch_plugin_stats()
 
+	filtered = None
+	if len(sys.argv) > 1:
+		filtered = sys.argv[1:]
+
 	futures_to_name = dict()
 
 	plugin_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "_plugins")
@@ -198,7 +275,9 @@ if __name__ == "__main__":
 		for entry in it:
 			if not entry.is_file() or not entry.name.endswith(".md"):
 				continue
-			future = executor.submit(process_plugin_file, entry.path, incl_github=GITHUB_TOKEN is not None)
+			if filtered and entry.name[:-3] not in filtered:
+				continue
+			future = executor.submit(process_plugin_file, entry.path)
 			futures_to_name[future] = entry.name
 
 	for future in concurrent.futures.as_completed(futures_to_name):
