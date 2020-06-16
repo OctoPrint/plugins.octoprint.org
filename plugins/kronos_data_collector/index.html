@@ -11,8 +11,8 @@
     <meta name="author" content="Jacob Paniagua">
     <meta name="referrer" content="same-origin">
     <meta name="google-site-verification" content="0EFsbaNygJcEinKPmzP-hTf0Ju6wDIpJxO5zvQtOQT0" />
-    <meta name="build-revision" content="9b816de9eb1e8910b2f4568c7b13d491c1014ec1" />
-    <meta name="build-date" content="2020-06-16 05:59:56-05:00" />
+    <meta name="build-revision" content="9fa1fec44def2258a940a24ddd88703e2d35562e" />
+    <meta name="build-date" content="2020-06-16 07:08:27-05:00" />
 
     <!--[if lt IE 9]>
     <script src="/assets/js/html5shim.js"></script>
@@ -22,11 +22,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Le styles -->
-    <link rel="stylesheet" href="/assets/css/site.css?_=1592305196">
-    <link rel="stylesheet" href="/assets/css/bootstrap-responsive.css?_=1592305196">
-    <link rel="stylesheet" href="/assets/css/fontawesome-all.min.css?_=1592305196">
-    <link rel="stylesheet" href="/assets/css/prettify.css?_=1592305196">
-    <link rel="stylesheet" href="/assets/css/lightbox.css?_=1592305196">
+    <link rel="stylesheet" href="/assets/css/site.css?_=1592309307">
+    <link rel="stylesheet" href="/assets/css/bootstrap-responsive.css?_=1592309307">
+    <link rel="stylesheet" href="/assets/css/fontawesome-all.min.css?_=1592309307">
+    <link rel="stylesheet" href="/assets/css/prettify.css?_=1592309307">
+    <link rel="stylesheet" href="/assets/css/lightbox.css?_=1592309307">
 
     <!-- Le fav and touch icons -->
     <link rel="shortcut icon" href="/assets/img/tentacle-32x32.png">
@@ -44,6 +44,16 @@
     <meta name="twitter:title" content="Project Kronos Data Collector" />
     <meta name="twitter:description" content="Project Kronos
 
+Project Kronos is an effort to create a webcam-based Neural Network to classify snapshots from a 3D Printer as “Failed” or “Successful”. 
+This will be implemented in real-time as an Octoprint plugin to automatically pause the printer and alert the user of the potential error.
+
+The Project Kronos Data Collector
+
+As you may know, training a neural network requires a massive amount of data to create a complete model that can accurately classify an input. 
+In this case, Project Kronos will need thousands, possibly hundreds of thousands, of images to train the model with. 
+While there are plenty of timelapses and succesful print photos available on the internet, it’s very hard to find any failed prints. 
+The point of this plugin is to allow users to automatically upload images and timelapses of their prints in the background, helping to create Project Kronos.
+Everything is done in the background, never bothering the user with pop-ups or the like. It can, of course, be easily disabled within the plugin settings.
 " />
     <meta name="twitter:image" content="https://plugins.octoprint.org/assets/img/octoprint-avatar-240x240.png" />
 
@@ -52,6 +62,16 @@
     <meta property="og:image" content="https://plugins.octoprint.org/assets/img/repo-600x400.png" />
     <meta property="og:description" content="Project Kronos
 
+Project Kronos is an effort to create a webcam-based Neural Network to classify snapshots from a 3D Printer as “Failed” or “Successful”. 
+This will be implemented in real-time as an Octoprint plugin to automatically pause the printer and alert the user of the potential error.
+
+The Project Kronos Data Collector
+
+As you may know, training a neural network requires a massive amount of data to create a complete model that can accurately classify an input. 
+In this case, Project Kronos will need thousands, possibly hundreds of thousands, of images to train the model with. 
+While there are plenty of timelapses and succesful print photos available on the internet, it’s very hard to find any failed prints. 
+The point of this plugin is to allow users to automatically upload images and timelapses of their prints in the background, helping to create Project Kronos.
+Everything is done in the background, never bothering the user with pop-ups or the like. It can, of course, be easily disabled within the plugin settings.
 " />
     <meta property="og:site_name" content="OctoPrint Plugin Repository" />
     <meta property="og:url" content="https://plugins.octoprint.org/plugins/kronos_data_collector/" />
@@ -60,6 +80,16 @@
     <meta itemprop="headline" content="Project Kronos Data Collector" />
     <meta itemprop="description" content="Project Kronos
 
+Project Kronos is an effort to create a webcam-based Neural Network to classify snapshots from a 3D Printer as “Failed” or “Successful”. 
+This will be implemented in real-time as an Octoprint plugin to automatically pause the printer and alert the user of the potential error.
+
+The Project Kronos Data Collector
+
+As you may know, training a neural network requires a massive amount of data to create a complete model that can accurately classify an input. 
+In this case, Project Kronos will need thousands, possibly hundreds of thousands, of images to train the model with. 
+While there are plenty of timelapses and succesful print photos available on the internet, it’s very hard to find any failed prints. 
+The point of this plugin is to allow users to automatically upload images and timelapses of their prints in the background, helping to create Project Kronos.
+Everything is done in the background, never bothering the user with pop-ups or the like. It can, of course, be easily disabled within the plugin settings.
 " />
     <meta itemprop="image" content="https://plugins.octoprint.org/assets/img/repo-600x400.png" />
 
@@ -245,35 +275,7 @@ Everything is done in the background, never bothering the user with pop-ups or t
       </dl>
       
       
-      <dl class="installations">
-        <dt>Active instances the past month</dt>
-        <dd>Installed on at least <strong>0</strong> instances</dd>
-      </dl>
       
-      
-      <dl class="install_events">
-        <dt>New installs the past week</dt>
-        <dd>At least <strong>0</strong> new installations</dd>
-      </dl>
-      
-      
-      <dl class="github">
-        <dt>Github stats</dt>
-        <dd>
-          <ul>
-            
-            <li>
-              Latest Release: <a href="https://github.com/MrBreadWater/project-kronos-data-collector/releases/tag/1.3.5" target="_blank">Bug Fixes &amp; Style Update</a><br>
-              <small>released on 26 Apr 2020</small>
-            </li>
-            <li>Releases: 13</li>
-            
-            <li>Stars: 13</li>
-            <li>Issues: 2 open, 8 closed</li>
-            <li>Last push: 27 Apr 2020</li>
-          </ul>
-        </dd>
-      </dl>
       
       
       <dl class="tags">
