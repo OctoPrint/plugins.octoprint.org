@@ -67,6 +67,30 @@ GITHUB_REST_URL = "https://api.github.com"
 def to_date(date_str):
 	return datetime.fromisoformat(date_str.replace("Z", "+00:00")).strftime("%Y-%m-%d %H:%M:%S %z")
 
+def extract_assignments(root, *keys):
+	assignments = list(filter(lambda x: isinstance(x, ast.Assign) and x.targets,
+	                          root.body))
+
+	def extract_target_ids(node):
+		return list(map(lambda x: x.id,
+		                filter(lambda x: isinstance(x, ast.Name), node.targets)))
+
+	result = dict()
+	for key in keys:
+		for a in reversed(assignments):
+			targets = extract_target_ids(a)
+			if key in targets:
+				if isinstance(a.value, ast.Str):
+					result[key] = a.value.s
+
+				elif isinstance(a.value, ast.Call) and hasattr(a.value, "func") \
+						and a.value.func.id == "gettext" and a.value.args \
+						and isinstance(a.value.args[0], ast.Str):
+					result[key] = a.value.args[0].s
+
+				break
+	return result
+
 _plugin_stats_7d = dict()
 _plugin_stats_30d = dict()
 
@@ -82,7 +106,10 @@ def prefetch_plugin_stats():
 def github_data(user, repo, out=print):
 	if GITHUB_TOKEN is not None:
 		auth = "token "  + GITHUB_TOKEN
+		headers = {"Content-Type": "application/json; charset=utf-8",
+		           "Authorization": auth}
 	else:
+		# GraphQL API does only work with a token
 		return dict()
 
 	graph_ql_query = GITHUB_GRAPHQL_QUERY\
@@ -91,9 +118,11 @@ def github_data(user, repo, out=print):
 
 	try:
 		response = requests.post(GITHUB_GRAPHQL_URL,
-		                         headers={"Content-Type": "application/json; charset=utf-8",
-		                                  "Authorization": auth},
+		                         headers=headers,
 		                         json={'query': graph_ql_query})
+		out("~~ Ratelimit: {}/{}".format(response.headers.get("X-Ratelimit-Remaining", "?"),
+		                                 response.headers.get("X-Ratelimit-Limit", "?")))
+		response.raise_for_status()
 
 		if response.status_code != 200:
 			out("!! Error while querying Github API for {}/{}, status: {}, body: {}".format(user, repo, response.status_code, response.text), file=sys.stderr)
@@ -120,9 +149,6 @@ def github_data(user, repo, out=print):
 			              latest_release_date=to_date(latest_release["publishedAt"]),
 			              latest_release_url=latest_release["url"])
 
-		out("~~ Ratelimit: {}/{}".format(response.headers.get("X-Ratelimit-Remaining", "?"),
-		                                 response.headers.get("X-Ratelimit-Limit", "?")))
-
 		return result
 	except:
 		out("!! Error while reading and parsing data from Github API for {}/{}".format(user, repo), file=sys.stderr)
@@ -142,8 +168,6 @@ def extract_github_repo(url, out=print):
 	try:
 		r = requests.get(url, headers=headers)
 		r.raise_for_status()
-		out("~~ Ratelimit: {}/{}".format(r.headers.get("X-Ratelimit-Remaining", "?"),
-		                                 r.headers.get("X-Ratelimit-Limit", "?")))
 	except Exception as exc:
 		out("!! Error while fetching source URL: {}".format(exc))
 		return None, None
@@ -151,7 +175,6 @@ def extract_github_repo(url, out=print):
 	url = r.url
 	if not url.startswith(GITHUB_PREFIX):
 		return None, None
-
 
 	parts = url[len(GITHUB_PREFIX):].split("/")
 	return parts[0], parts[1]
@@ -163,77 +186,62 @@ def extract_plugin_control_properties(user, repo, out=print):
 	else:
 		headers = None
 
-	result = dict()
+	def get_content(path):
+		url = GITHUB_REST_URL + "/repos/{}/{}/contents/{}".format(user, repo, path)
+		try:
+			r = requests.get(url, headers=headers)
+			out("~~ Ratelimit: {}/{}".format(r.headers.get("X-Ratelimit-Remaining", "?"),
+			                                 r.headers.get("X-Ratelimit-Limit", "?")))
+			r.raise_for_status()
+		except Exception as exc:
+			out("!! Could not fetch contents for {}/{}:{}: {}".format(user, repo, path, exc))
+			return None
 
-	url = GITHUB_REST_URL + "/search/code?q=(__plugin_implementation__+OR+__plugin_hooks__)+repo:{user}/{repo}+in:file+filename:__init__.py".format(user=user, repo=repo)
-	try:
-		r = requests.get(url, headers=headers)
-		r.raise_for_status()
-		out("~~ Ratelimit: {}/{}".format(r.headers.get("X-Ratelimit-Remaining", "?"),
-		                                 r.headers.get("X-Ratelimit-Limit", "?")))
-	except Exception as ex:
-		out("!! Got an error while trying to search for __init__.py on {}/{}: {}".format(user, repo, ex))
-		return result
+		data = r.json()
+		if "content" not in data:
+			out("!! Could not fetch contents for {}/{}:{}".format(user, repo, path))
+			return None
 
-	data = r.json()
+		try:
+			content = base64.b64decode(data["content"])
+		except Exception as exc:
+			out("!! Could not fetch contents for {}/{}:{}: {}".format(user, repo, path, exc))
+			return None
 
-	if "items" not in data:
-		out("!! Got no results for __init__.py in {}/{}, can't extract plugin properties: {}, {!r}".format(user, repo, r.status_code, data))
-		return result
+		return content
 
-	paths = set()
-	for item in data["items"]:
-		paths.add((item["url"], item["path"]))
-
-	if len(paths) != 1:
-		out("!! Got none or more than one result for __init__.py in {}/{}, can't extract plugin properties: {!r}".format(user, repo, paths))
-		return result
-
-	url, path = paths.pop()
-
-	out("Found path of __init__.py: {}".format(path))
+	content_setup_py = get_content("setup.py")
+	if not content_setup_py:
+		return dict()
 
 	try:
-		r = requests.get(url, headers=headers)
-		r.raise_for_status()
-		out("~~ Ratelimit: {}/{}".format(r.headers.get("X-Ratelimit-Remaining", "?"),
-		                                 r.headers.get("X-Ratelimit-Limit", "?")))
+		root = ast.parse(content_setup_py, "setup.py")
 	except Exception as exc:
-		out("!! Got an error while trying to read contents of __init__.py from {}/{}:{}: {}".format(user, repo, path, exc))
-		return result
+		# invalid
+		out("!! Got an error while trying to build AST for setup.py from {}/{}:setup.py: {}".format(user, repo, exc))
+		return dict()
 
-	data = r.json()
+	props = extract_assignments(root, "plugin_package")
+	if "plugin_package" not in props:
+		out("!! Could not extract plugin package from {}/{}:setup.py".format(user, repo))
+		return dict()
+
+	package = props["plugin_package"]
+	path = "{}/__init__.py".format(package)
+	out("__init__.py should be at {}/{}:{}".format(user, repo, path))
+
+	content_init_py = get_content(path)
+	if not content_init_py:
+		return dict()
 
 	try:
-		content = base64.b64decode(data.get("content", ""))
-		root = ast.parse(content, "__init__.py")
+		root = ast.parse(content_init_py, path)
 	except Exception as exc:
 		# invalid
 		out("!! Got an error while trying to build AST for __init__.py from {}/{}:{}: {}".format(user, repo, path, exc))
-		return result
+		return dict()
 
-	assignments = list(filter(lambda x: isinstance(x, ast.Assign) and x.targets,
-	                          root.body))
-
-	def extract_target_ids(node):
-		return list(map(lambda x: x.id,
-		                filter(lambda x: isinstance(x, ast.Name), node.targets)))
-
-	for key in ("__plugin_pythoncompat__",):
-		for a in reversed(assignments):
-			targets = extract_target_ids(a)
-			if key in targets:
-				if isinstance(a.value, ast.Str):
-					result[key] = a.value.s
-
-				elif isinstance(a.value, ast.Call) and hasattr(a.value, "func") \
-						and a.value.func.id == "gettext" and a.value.args \
-						and isinstance(a.value.args[0], ast.Str):
-					result[key] = a.value.args[0].s
-
-				break
-
-	return result
+	return extract_assignments(root, "__plugin_pythoncompat__")
 
 def process_plugin_file(path, incl_stats=True, incl_github=True):
 	result = []
@@ -275,6 +283,7 @@ def process_plugin_file(path, incl_stats=True, incl_github=True):
 		if "github" in data and "repo" in data["github"]:
 			user, repo = data["github"]["repo"].split("/")
 		else:
+			out("  Looking up github repo")
 			user, repo = extract_github_repo(data.get("source"), out=functools.partial(out, prefix="    "))
 
 		if user and repo:
@@ -292,6 +301,7 @@ def process_plugin_file(path, incl_stats=True, incl_github=True):
 					if "compatibility" not in data:
 						data["compatibility"] = dict()
 					data["compatibility"]["python"] = properties["__plugin_pythoncompat__"]
+					out("  Added python compatibility info from source")
 
 	with open(path, "wb") as f:
 		frontmatter.dump(data, f)
