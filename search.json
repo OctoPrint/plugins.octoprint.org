@@ -2473,6 +2473,17 @@
 "author": "Clifford Roche",
 "content": "Enable MQTT based discovery of your OctoPrint server with Home Assistant.You will also need the OctoPrint-MQTT plugin installed and configured to connected to your Home Assistant MQTT service, and MQTT discovery enabled (should be the default). With these, by using the OctoPrint-HomeAssistant plugin your OctoPrint instance will automatically register a device and several sensors to follow your printer status, printing and slicing progress.",
 "tags": ["notification","iot","automation","mqtt"]
+},
+
+{
+"id": "/plugins/z_probe_offset",
+"url": "/plugins/z_probe_offset/",
+"date": "",
+"title": "",
+"description": "",
+"author": "",
+"content": "Z Probe Offset ControlAdd input to the control tab for z probe offset value change.Needs Marlin firmware (1.x or 2.x) with z probe capability enabled.Warning: this plugin is on its early stage of developpement. Use with caution and please report any issues on the git repository. Improvement suggestions are welcome as well.",
+"tags": []
 }
 ]
 }

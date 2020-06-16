@@ -5,10 +5,27 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>http://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 16 Jun 2020 08:33:35 -0500</pubDate>
-    <lastBuildDate>Tue, 16 Jun 2020 08:33:35 -0500</lastBuildDate>
+    <pubDate>Tue, 16 Jun 2020 11:31:39 -0500</pubDate>
+    <lastBuildDate>Tue, 16 Jun 2020 11:31:39 -0500</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
     
+    
+      <item>
+        <title></title>
+        <description>
+          <![CDATA[
+            
+            <p><img src="https://plugins.octoprint.org/assets/img/repo-600x400.png"></p>
+            
+          ]]>
+        </description>
+        <pubDate>
+Tue, 16 Jun 2020 00:00:00 -0500
+</pubDate>
+        <link>http://plugins.octoprint.org/plugins/z_probe_offset/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">http://plugins.octoprint.org/plugins/z_probe_offset/</guid>
+        
+      </item>
     
       <item>
         <title>HomeAssistant Discovery</title>
@@ -206,35 +223,6 @@ Tue, 02 Jun 2020 00:00:00 -0500
         <category>notes</category>
         
         <category>reminders</category>
-        
-      </item>
-    
-      <item>
-        <title>Set And Wait</title>
-        <description>
-          <![CDATA[
-            This OctoPrint plugin implements Set And Wait commands M109 &amp; M190 into OctoPrint and sends their non-blocking counterparts to the controller.
-            <p><img src="https://plugins.octoprint.org/assets/img/repo-600x400.png"></p>
-            
-          ]]>
-        </description>
-        <pubDate>
-Tue, 02 Jun 2020 00:00:00 -0500
-</pubDate>
-        <link>http://plugins.octoprint.org/plugins/setandwait/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">http://plugins.octoprint.org/plugins/setandwait/</guid>
-        
-        <category>m109</category>
-        
-        <category>m190</category>
-        
-        <category>heating</category>
-        
-        <category>smoothieware</category>
-        
-        <category>cancel</category>
-        
-        <category>klipper</category>
         
       </item>
     
