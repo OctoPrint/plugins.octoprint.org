@@ -5,25 +5,28 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>http://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 16 Jun 2020 11:31:39 -0500</pubDate>
-    <lastBuildDate>Tue, 16 Jun 2020 11:31:39 -0500</lastBuildDate>
+    <pubDate>Tue, 16 Jun 2020 12:00:57 -0500</pubDate>
+    <lastBuildDate>Tue, 16 Jun 2020 12:00:57 -0500</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
     
     
       <item>
-        <title></title>
+        <title>Z Probe Offset Control</title>
         <description>
           <![CDATA[
-            
-            <p><img src="https://plugins.octoprint.org/assets/img/repo-600x400.png"></p>
-            
+            Control the z probe offset on marlin based printers. Warning: this plugin is on its early stage of developpement. Use with caution and please report any issues on the git repository. Improvement suggestions are welcome as well.
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/z_probe_offset/z_probe_offset_control.png"></p>
           ]]>
         </description>
         <pubDate>
-Tue, 16 Jun 2020 00:00:00 -0500
+Sun, 14 Jun 2020 00:00:00 -0500
 </pubDate>
         <link>http://plugins.octoprint.org/plugins/z_probe_offset/?utm_source=rss&amp;utm_medium=feed</link>
         <guid isPermaLink="true">http://plugins.octoprint.org/plugins/z_probe_offset/</guid>
+        
+        <category>probe</category>
+        
+        <category>marlin</category>
         
       </item>
     

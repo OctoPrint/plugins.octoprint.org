@@ -5182,20 +5182,25 @@
 
   {
     "id": "z_probe_offset",
-    "published": "",
-    "title": "",
-    "description": "",
-    "archive": null,
-    "author": "",
-    "homepage": null,
+    "published": "2020-06-14 00:00:00 -0500",
+    "title": "Z Probe Offset Control",
+    "description": "Control the z probe offset on marlin based printers. Warning: this plugin is on its early stage of developpement. Use with caution and please report any issues on the git repository. Improvement suggestions are welcome as well.",
+    "archive": "https://framagit.org/razer/octoprint_z_probe_offset/-/archive/latest/octoprint_z_probe_offset-latest.zip",
+    "author": "razer",
+    "homepage": "https://framagit.org/razer/octoprint_z_probe_offset",
     "page": "https://plugins.octoprint.org/plugins/z_probe_offset/",
-    "compatibility": {"octoprint": [], "os": [], "python": ">=2.7,<3"},
-    "license": "",
+    "compatibility": {
+        "octoprint": ["1.3.9"],
+        "os": ["linux","freebsd"],
+        "python": ">=2.7,<4"
+    },
+    "license": "AGPLv3",
+    "image": "https://plugins.octoprint.org/assets/img/plugins/z_probe_offset/z_probe_offset_control.png",
     "stats": {
-        "instances_month": 0,
-        "install_events_month": 0,
-        "instances_week": 0,
-        "install_events_week": 0
+        "instances_month": 2,
+        "install_events_month": 2,
+        "instances_week": 2,
+        "install_events_week": 2
 }
   }
 ]
