@@ -30,7 +30,10 @@ screenshots:
   caption: HomeAssistant Device
 
 featuredimage: /assets/img/plugins/homeassistant/hassio.png
-      
+
+compatibility:
+  python: ">=2.7,<4"
+
 ---
 
 Enable MQTT based discovery of your OctoPrint server with Home Assistant.
