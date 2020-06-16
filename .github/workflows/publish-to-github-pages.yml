@@ -54,6 +54,12 @@ jobs:
           -v ${{ github.workspace }}:/json \
           peterdavehello/jsonlint jsonlint -q /json/_site/search.json
 
+      - name: 🕵️‍♂️ Run link check
+        run: |
+          docker run \
+          -v ${{ github.workspace }}/_site:/mounted-site \
+          mtlynch/htmlproofer /mounted-site --only-4xx --check-favicon --check-html --url-ignore "!ifttt\.com/polar3d!","!patreon\.com/join/FormerLurker!","!tams\.informatik\.uni-hamburg\.de/research/3d-printing/conductive_printing/index\.html!","!reprap\.org/wiki/G-code!" --file-ignore "!/mounted-site/search/index\.php!","!/mounted-site/by_(author|tag|date|name)/index\.html!" --log-level ':debug'
+
       #- name: 🕵️‍♂️ Run link check
       #  id: lc
       #  uses: peter-evans/link-checker@v1
