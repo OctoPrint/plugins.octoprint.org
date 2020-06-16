@@ -525,10 +525,10 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/displayz/displayz.png",
     "stats": {
-        "instances_month": 0,
-        "install_events_month": 0,
-        "instances_week": 0,
-        "install_events_week": 0
+        "instances_month": 3195,
+        "install_events_month": 392,
+        "instances_week": 2518,
+        "install_events_week": 105
 }
   },
 
@@ -2462,11 +2462,7 @@
     "author": "Michael Morris",
     "homepage": "https://github.com/mikedmor/OctoPrint_MultiCam",
     "page": "https://plugins.octoprint.org/plugins/multicam/",
-    "compatibility": {
-        "octoprint": [],
-        "os": [],
-        "python": ">=2.7,<4"
-    },
+    "compatibility": {"octoprint": [], "os": [], "python": ">=2.7,<3"},
     "license": "AGPLv3",
     "stats": {
         "instances_month": 2532,
@@ -3720,9 +3716,9 @@
     "license": "AGPLv3",
     "disabled": "<p>There has been a report of OctoPrint crashing on resume. Disabled until this issue has been clarified. See <a href=\"https://github.com/foosel/OctoPrint/issues/3213\">foosel/OctoPrint#3213</a> and <a href=\"https://github.com/draagc/OctoPrint-FilamentEncore/issues/3\">draagc/OctoPrint-FilamentEncore#3</a>.</p>\n",
     "stats": {
-        "instances_month": 80,
+        "instances_month": 0,
         "install_events_month": 0,
-        "instances_week": 57,
+        "instances_week": 0,
         "install_events_week": 0
 }
   },
@@ -5053,14 +5049,14 @@
   },
 
   {
-    "id": "signalclirestapisignalclirestapi",
+    "id": "signalclirestapi",
     "published": "2020-06-06 00:00:00 -0500",
     "title": "Signalclirestapi",
     "description": "Another Signal Messenger Integration based on the signal-cli-rest-api docker image. Supports Signal Messenger groups and print progress.",
     "archive": "https://github.com/bbernhard/OctoPrint-Signalclirestapi/archive/master.zip",
     "author": "Bernhard B.",
     "homepage": "https://github.com/bbernhard/OctoPrint-Signalclirestapi",
-    "page": "https://plugins.octoprint.org/plugins/signalclirestapi/signalclirestapi/",
+    "page": "https://plugins.octoprint.org/plugins/signalclirestapi/",
     "compatibility": {
         "octoprint": ["1.2.0"],
         "os": ["linux","windows","macos","freebsd"],
@@ -5069,10 +5065,10 @@
     "license": "AGPLv3",
     "image": "https://plugins.octoprint.org/assets/img/plugins/signalclirestapi/config1.png",
     "stats": {
-        "instances_month": 0,
-        "install_events_month": 0,
-        "instances_week": 0,
-        "install_events_week": 0
+        "instances_month": 46,
+        "install_events_month": 48,
+        "instances_week": 41,
+        "install_events_week": 22
 }
   },
 
