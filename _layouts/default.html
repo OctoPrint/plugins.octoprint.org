@@ -14,22 +14,20 @@ layout: none
     {% if page.author %}<meta name="author" content="{{ page.author | strip_html | strip_newlines | escape }}">{% endif %}
     <meta name="referrer" content="same-origin">
     <meta name="google-site-verification" content="0EFsbaNygJcEinKPmzP-hTf0Ju6wDIpJxO5zvQtOQT0" />
-    <meta name="build-revision" content="{{ site.github.build_revision }}" />
-    <meta name="build-date" content="{{ site.time | date: '%Y-%m-%d %H:%M:%S%:z' }}" />
 
     <!--[if lt IE 9]>
-    <script src="/assets/js/html5shim.js"></script>
+    <script src="{% js js/html5shim %}"></script>
     <![endif]-->
 
     <!-- Enable responsive viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Le styles -->
-    <link rel="stylesheet" href="/assets/css/site.css?_={{ site.time | date: '%s' }}">
-    <link rel="stylesheet" href="/assets/css/bootstrap-responsive.css?_={{ site.time | date: '%s' }}">
-    <link rel="stylesheet" href="/assets/css/fontawesome-all.min.css?_={{ site.time | date: '%s' }}">
-    <link rel="stylesheet" href="/assets/css/prettify.css?_={{ site.time | date: '%s' }}">
-    <link rel="stylesheet" href="/assets/css/lightbox.css?_={{ site.time | date: '%s' }}">
+    {% css css/site.css %}
+    {% css css/bootstrap-responsive.css %}
+    {% css css/fontawesome-all.min.css %}
+    {% css css/prettify.css %}
+    {% css css/lightbox.css %}
 
     <!-- Le fav and touch icons -->
     <link rel="shortcut icon" href="/assets/img/tentacle-32x32.png">
@@ -66,11 +64,11 @@ layout: none
     <meta itemprop="description" content="{{ thedescription }}" />
     <meta itemprop="image" content="{{ theimage }}" />
 
-    <script src="/assets/js/jquery-1.9.1.min.js"></script>
-    <script src="/assets/js/underscore.min.js"></script>
+    {% js js/jquery-1.9.1.min.js %}
+    {% js js/underscore.min.js %}
 
-    <link rel="stylesheet" type="text/css" href="/assets/css/cookieconsent.min.css" />
-    <script src="/assets/js/cookieconsent.min.js"></script>
+    {% css css/cookieconsent.min.css %}
+    {% js js/cookieconsent.min.js %}
     <script>
         if (!String.prototype.startsWith) {
             String.prototype.startsWith = function(search, pos) {
@@ -119,17 +117,17 @@ layout: none
 
 {% include footer.html %}
 
-<script src="/assets/js/prettify.js"></script>
-<script src="/assets/js/bootstrap.min.js"></script>
-<script src="/assets/js/lunr.min.js"></script>
-<script src="/assets/js/mustache.js"></script>
-<script src="/assets/js/URI.min.js"></script>
-<script src="/assets/js/date.format.js"></script>
-<script src="/assets/js/jquery.lunr.search.js"></script>
-<script src="/assets/js/lightbox.min.js"></script>
-<script src="/assets/js/site.js"></script>
-<script src="/assets/js/autotrack.js"></script>
-<script src="/assets/js/yt-with-consent.js"></script>
+{% js js/prettify.js %}
+{% js js/bootstrap.min.js %}
+{% js js/lunr.min.js %}
+{% js js/mustache.js %}
+{% js js/URI.min.js %}
+{% js js/date.format.js %}
+{% js js/jquery.lunr.search.js %}
+{% js js/lightbox.min.js %}
+{% js js/site.js %}
+{% js js/autotrack.js %}
+{% js js/yt-with-consent.js %}
 
 <script>
     var gaBaseProperty = 'UA-62479257';
