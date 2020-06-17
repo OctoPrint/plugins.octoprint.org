@@ -19,6 +19,11 @@ jobs:
         with:
           path: src
 
+      - uses: actions/checkout@v2
+        with:
+          path: live
+          ref: master
+
       - name: 🐍 Set up Python 3.7
         uses: actions/setup-python@v2
         with:
@@ -45,23 +50,32 @@ jobs:
           -v ${{ github.workspace }}/bundle:/usr/local/bundle \
           jekyll/builder:3.8.6 /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future --strict_front_matter"
 
+      - name: 🔄 Prepare live copy
+        run: |
+          rm -rf live/* || true
+          touch live/.nojekyll
+          cp -r src/_site/* live
+
+          cd live
+          git diff
+
       - name: 🕵️‍♂️ Validate plugins.json
         run: |
           docker run \
-          -v ${{ github.workspace }}/src:/json \
-          peterdavehello/jsonlint jsonlint -q /json/_site/plugins.json
+          -v ${{ github.workspace }}/live:/json \
+          peterdavehello/jsonlint jsonlint -q /json/plugins.json
 
       - name: 🕵️‍♂️ Validate notices.json
         run: |
           docker run \
-          -v ${{ github.workspace }}/src:/json \
-          peterdavehello/jsonlint jsonlint -q /json/_site/notices.json
+          -v ${{ github.workspace }}/live:/json \
+          peterdavehello/jsonlint jsonlint -q /json/notices.json
 
       - name: 🕵️‍♂️ Validate search.json
         run: |
           docker run \
-          -v ${{ github.workspace }}/src:/json \
-          peterdavehello/jsonlint jsonlint -q /json/_site/search.json
+          -v ${{ github.workspace }}/live:/json \
+          peterdavehello/jsonlint jsonlint -q /json/search.json
 
       #- name: 🕵️‍♂️ Run link check
       #  run: |
@@ -77,17 +91,16 @@ jobs:
       #- name: 🕵️‍♂️ Evaluate link check
       #  run: exit ${{ steps.lc.outputs.exit_code }}
 
-      - name: 🚀 Deploy page
+      - name: 🚀 Commit & deploy
         if: github.repository == 'OctoPrint/plugins.octoprint.org' && github.event_name != 'pull_request'
-        uses: peaceiris/actions-gh-pages@v3
+        uses: EndBug/add-and-commit@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: master
-          publish_dir: ./src/_site
-          enable_jekyll: false
-          user_name: 'github-actions[bot]'
-          user_email: 'github-actions[bot]@users.noreply.github.com'
-   
+          cwd: "live"
+          ref: "master"
+          message: "deploy: ${GITHUB_SHA}"
+          author_name: 'github-actions[bot]'
+          author_email: 'github-actions[bot]@users.noreply.github.com'
+
       - name: 📧 Discord success notification
         if: github.repository == 'OctoPrint/plugins.octoprint.org' && github.event_name != 'pull_request'
         env:
