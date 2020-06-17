@@ -62,7 +62,7 @@ jobs:
           cd live
           git diff --name-only
           changed=($(git diff --name-only))
-          json=`printf '%s\n' "${changed[@]}" | jq -R . | jq -s -s .`
+          json=`printf '%s\n' "${changed[@]}" | jq -R . | jq -c -s .`
           echo "::set-output name=files::$json"
 
       - name: 🕵️‍♂️ Validate plugins.json
