@@ -48,7 +48,7 @@ jobs:
           docker run \
           -v ${{ github.workspace }}/src:/srv/jekyll \
           -v ${{ github.workspace }}/bundle:/usr/local/bundle \
-          jekyll/builder:3.8.6 /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future --strict_front_matter"
+          jekyll/builder:3.8.6 /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --trace --future --strict_front_matter"
 
       - name: 🔄 Prepare live copy
         run: |
