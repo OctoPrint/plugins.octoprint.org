@@ -56,22 +56,31 @@ jobs:
           touch live/.nojekyll
           cp -r src/_site/* live
 
+      - name: 🔎 Determine changed files
+        id: changed
+        run: |
           cd live
-          git diff
+          git diff --name-only
+          changed=($(git diff --name-only))
+          json=`printf '%s\n' "${changed[@]}" | jq -R . | jq -s -s .`
+          echo "::set-output name=files::$json"
 
       - name: 🕵️‍♂️ Validate plugins.json
+        if: contains( fromJSON( steps.changed.outputs.files ), 'plugins.json' )
         run: |
           docker run \
           -v ${{ github.workspace }}/live:/json \
           peterdavehello/jsonlint jsonlint -q /json/plugins.json
 
       - name: 🕵️‍♂️ Validate notices.json
+        if: contains( fromJSON( steps.changed.outputs.files ), 'notices.json' )
         run: |
           docker run \
           -v ${{ github.workspace }}/live:/json \
           peterdavehello/jsonlint jsonlint -q /json/notices.json
 
       - name: 🕵️‍♂️ Validate search.json
+        if: contains( fromJSON( steps.changed.outputs.files ), 'search.json' )
         run: |
           docker run \
           -v ${{ github.workspace }}/live:/json \
