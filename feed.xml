@@ -5,8 +5,8 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>https://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 17 Jun 2020 07:07:28 -0500</pubDate>
-    <lastBuildDate>Wed, 17 Jun 2020 07:07:28 -0500</lastBuildDate>
+    <pubDate>Wed, 17 Jun 2020 18:53:43 -0500</pubDate>
+    <lastBuildDate>Wed, 17 Jun 2020 18:53:43 -0500</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
     
     
@@ -51,6 +51,24 @@ Sun, 14 Jun 2020 00:00:00 -0500
         <category>automation</category>
         
         <category>mqtt</category>
+        
+      </item>
+    
+      <item>
+        <title>Simple Filament Change Buttons</title>
+        <description>
+          <![CDATA[
+            Simply adds some buttons to send the filament load/unload/change commands for Marlin, so you don't have to use the LCD menu
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/Simple_Filament_Change_Buttons/sfc_buttons.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Fri, 12 Jun 2020 00:00:00 -0500
+</pubDate>
+        <link>https://plugins.octoprint.org/plugins/simple_filament_change_buttons/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/simple_filament_change_buttons/</guid>
+        
+        <category>filament</category>
         
       </item>
     
@@ -206,26 +224,6 @@ Tue, 02 Jun 2020 00:00:00 -0500
         <guid isPermaLink="true">https://plugins.octoprint.org/plugins/webcam_iframe/</guid>
         
         <category>webcam</category>
-        
-      </item>
-    
-      <item>
-        <title>Sticky Pad</title>
-        <description>
-          <![CDATA[
-            This plugin adds a persistent sticky pad to the web interface for keeping random notes.
-            <p><img src="https://plugins.octoprint.org/assets/img/plugins/stickypad/screenshot.png"></p>
-          ]]>
-        </description>
-        <pubDate>
-Tue, 02 Jun 2020 00:00:00 -0500
-</pubDate>
-        <link>https://plugins.octoprint.org/plugins/stickypad/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/stickypad/</guid>
-        
-        <category>notes</category>
-        
-        <category>reminders</category>
         
       </item>
     

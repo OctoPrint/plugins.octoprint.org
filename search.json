@@ -2465,6 +2465,17 @@
 },
 
 {
+"id": "/plugins/simple_filament_change_buttons",
+"url": "/plugins/simple_filament_change_buttons/",
+"date": "2020-06-12 00:00:00 -0500",
+"title": "Simple Filament Change Buttons",
+"description": "Simply adds some buttons to send the filament load/unload/change commands for Marlin, so you don't have to use the LCD menu",
+"author": "Gareth Martin",
+"content": "Simple Filament Change ButtonsThis plugin simply adds some buttons to send the filament load/unload/change commands for Marlin, so you don’t have to use the LCD menu.UseTo use automated filament change (M600):  Click Change Filament to automatically park the head and then unload filament.  When new filament is ready to load, click the LCD button or the Resume button in Octoprint.To manually unload/load (M702/M701):  Make sure the nozzle is heated  On the Control tab, click Unload to unload the old filament  Feed in the new filament to the extruder gear. Then click Load to load the new filamentConfigurationEnable ADVANCED_PAUSE_FEATURE in your Marlin firmware, along with PARK_HEAD_ON_PAUSE and FILAMENT_LOAD_UNLOAD_GCODES. I also recommend having EMERGENCY_PARSER enabled.",
+"tags": ["filament"]
+},
+
+{
 "id": "/plugins/homeassistant",
 "url": "/plugins/homeassistant/",
 "date": "2020-06-14 00:00:00 -0500",
