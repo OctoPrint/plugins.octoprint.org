@@ -16,18 +16,18 @@ layout: none
     <meta name="google-site-verification" content="0EFsbaNygJcEinKPmzP-hTf0Ju6wDIpJxO5zvQtOQT0" />
 
     <!--[if lt IE 9]>
-    <script src="{% js js/html5shim %}"></script>
+    <script src="{% asset js/html5shim %}"></script>
     <![endif]-->
 
     <!-- Enable responsive viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Le styles -->
-    {% css css/site.css %}
-    {% css css/bootstrap-responsive.css %}
-    {% css css/fontawesome-all.min.css %}
-    {% css css/prettify.css %}
-    {% css css/lightbox.css %}
+    {% asset css/site.css %}
+    {% asset css/bootstrap-responsive.css %}
+    {% asset css/fontawesome-all.min.css %}
+    {% asset css/prettify.css %}
+    {% asset css/lightbox.css %}
 
     <!-- Le fav and touch icons -->
     <link rel="shortcut icon" href="/assets/img/tentacle-32x32.png">
@@ -64,11 +64,11 @@ layout: none
     <meta itemprop="description" content="{{ thedescription }}" />
     <meta itemprop="image" content="{{ theimage }}" />
 
-    {% js js/jquery-1.9.1.min.js %}
-    {% js js/underscore.min.js %}
+    {% asset js/jquery-1.9.1.min.js %}
+    {% asset js/underscore.min.js %}
 
-    {% css css/cookieconsent.min.css %}
-    {% js js/cookieconsent.min.js %}
+    {% asset css/cookieconsent.min.css %}
+    {% asset js/cookieconsent.min.js %}
     <script>
         if (!String.prototype.startsWith) {
             String.prototype.startsWith = function(search, pos) {
@@ -117,17 +117,17 @@ layout: none
 
 {% include footer.html %}
 
-{% js js/prettify.js %}
-{% js js/bootstrap.min.js %}
-{% js js/lunr.min.js %}
-{% js js/mustache.js %}
-{% js js/URI.min.js %}
-{% js js/date.format.js %}
-{% js js/jquery.lunr.search.js %}
-{% js js/lightbox.min.js %}
-{% js js/site.js %}
-{% js js/autotrack.js %}
-{% js js/yt-with-consent.js %}
+{% asset js/prettify.js %}
+{% asset js/bootstrap.min.js %}
+{% asset js/lunr.min.js %}
+{% asset js/mustache.js %}
+{% asset js/URI.min.js %}
+{% asset js/date.format.js %}
+{% asset js/jquery.lunr.search.js %}
+{% asset js/lightbox.min.js %}
+{% asset js/site.js %}
+{% asset js/autotrack.js %}
+{% asset js/yt-with-consent.js %}
 
 <script>
     var gaBaseProperty = 'UA-62479257';
