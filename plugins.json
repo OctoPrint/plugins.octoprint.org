@@ -26,10 +26,10 @@ layout: null
         "github": { {% if plugin.github.releases > 0%}
             "latest_release": {
                 "name": {{ plugin.github.latest_release | jsonify }},
-                "date": {{ plugin.github.latest_release_date | date_to_string | jsonify }}
+                "date": {{ plugin.github.latest_release_date | jsonify }}
             },
             "releases": {{ plugin.github.releases }},{% endif %}
-            "last_push": {{ plugin.github.last_push | date_to_string | jsonify }},
+            "last_push": {{ plugin.github.last_push | jsonify }},
             "stars": {{ plugin.github.stars }},
             "issues": {
                 "open": {{ plugin.github.open_issues }},
