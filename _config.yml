@@ -40,6 +40,7 @@ exclude:
 - README.md
 - .github
 - .asset-cache
+- _build
 
 plugins:
 - jekyll-redirect-from
