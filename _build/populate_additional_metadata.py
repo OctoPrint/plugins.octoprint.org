@@ -37,7 +37,9 @@ query {
        nodes {
         name,
         publishedAt,
-        url
+        url,
+        tagName,
+        isPrerelease
       }
     },
     lastPush: defaultBranchRef {
@@ -124,10 +126,6 @@ def github_data(user, repo, out=print):
 		                                 response.headers.get("X-Ratelimit-Limit", "?")))
 		response.raise_for_status()
 
-		if response.status_code != 200:
-			out("!! Error while querying Github API for {}/{}, status: {}, body: {}".format(user, repo, response.status_code, response.text), file=sys.stderr)
-			return dict()
-
 		data = response.json()
 		if not data:
 			out("!! No data available from Github API for {}/{}".format(user, repo), file=sys.stderr)
@@ -145,9 +143,32 @@ def github_data(user, repo, out=print):
 
 		if release_count:
 			latest_release = repository_values["lastRelease"]["nodes"][0]
-			result.update(latest_release = latest_release["name"],
-			              latest_release_date=to_date(latest_release["publishedAt"]),
-			              latest_release_url=latest_release["url"])
+			if not latest_release["isPrerelease"]:
+				result.update(latest_release = latest_release["name"],
+				              latest_release_date=to_date(latest_release["publishedAt"]),
+				              latest_release_url=latest_release["url"],
+				              latest_release_tag=latest_release["tagName"])
+
+			else:
+				# latest release available via graphql is a prerelease, we need to use the REST API to get
+				# the latest full release as we can't (yet) filter for that on the graphql API
+				out("Latest release from GraphQL API is a prerelease, fetching latest via REST API")
+
+				try:
+					url = GITHUB_REST_URL + "/repos/{}/{}/releases/latest".format(user, repo)
+					r = requests.get(url, headers=headers)
+					out("~~ Ratelimit: {}/{}".format(r.headers.get("X-Ratelimit-Remaining", "?"),
+					                                 r.headers.get("X-Ratelimit-Limit", "?")))
+					r.raise_for_status()
+
+					release = r.json()
+					result.update(latest_release = release["name"],
+					              latest_release_date = to_date(release["published_at"]),
+					              latest_release_url = release["html_url"],
+					              latest_release_tag = release["tag_name"])
+				except:
+					out("!! Error while retrieving latest release info from Github API for {}/{}".format(user, repo), file=sys.stderr)
+
 
 		return result
 	except:
