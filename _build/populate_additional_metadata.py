@@ -191,11 +191,16 @@ def extract_github_repo(url, out=print):
 		r.raise_for_status()
 	except Exception as exc:
 		out("!! Error while fetching source URL: {}".format(exc))
-		return None, None
-
-	url = r.url
-	if not url.startswith(GITHUB_PREFIX):
-		return None, None
+		if isinstance(exc, requests.HTTPError) and exc.response.status_code == 500:
+			# looks like a github hiccup, we hope for the best that this repo wasn't moved at some point and just
+			# use the existing URL for further processing
+			pass
+		else:
+			return None, None
+	else:
+		url = r.url
+		if not url.startswith(GITHUB_PREFIX):
+			return None, None
 
 	parts = url[len(GITHUB_PREFIX):].split("/")
 	return parts[0], parts[1]
