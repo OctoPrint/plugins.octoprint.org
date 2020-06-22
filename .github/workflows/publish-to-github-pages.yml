@@ -29,9 +29,10 @@ jobs:
         with:
           python-version: "3.7"
       
-      - name: 🔃 Refresh youtube thumbnails
+      - name: 📺 Refresh youtube thumbnails
         run: |
           cd src
+          chmod +x fetch_yt_preview
           ./fetch_yt_preview
 
       - name: 🏗 Enrich metadata
