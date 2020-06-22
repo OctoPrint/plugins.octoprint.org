@@ -28,6 +28,11 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: "3.7"
+      
+      - name: 🔃 Refresh youtube thumbnails
+        run: |
+          cd src
+          ./fetch_yt_preview
 
       - name: 🏗 Enrich metadata
         if: github.repository == 'OctoPrint/plugins.octoprint.org' && github.event_name != 'pull_request'
