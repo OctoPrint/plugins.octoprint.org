@@ -2,9 +2,9 @@
 layout: plugin
 
 id: thespaghettidetective
-title: The Spaghetti Detective
-description: An essential plugin if you print remotely. Monitor and control your printer over the internet. No port-forwarding or VPN is needed. Best part? AI-based failure detection!
-author: The Spaghetti Detective Team
+title: Access Anywhere - The Spaghetti Detective
+description: Monitor and control your printer anywhere over the internet, on your phone! No port-forwarding or VPN is needed. Best part? AI-based failure detection!
+author: TSD Team
 license: AGPLv3
 
 # TODO
@@ -85,13 +85,17 @@ compatibility:
 
 It also comes with a host of other features so that you can **print remotely with a peace of mind even when you are not home**.
 
-* Remote webcam access. No port-forwarding or VPN required.
+* Remote webcam access. No port-forwarding or VPN required (merged from [OctoPrint Anywhere](https://plugins.octoprint.org/plugins/anywhere/)).
 
-* Remote control of your printer. Pause or cancel print at any time. Check and set heater temperatures or turn them off.
+* Full remote control of your printer. Pause or cancel print. Check and set heater temperatures or turn them off. Move print head.
 
-* Easy share of your webcam streaming or time-lapses with your friend (ETA Dec. 2019).
+* Upload G-Code files and start a print remotely.
 
-{% include youtube.html vid="ZpDw9mNBngU" preview="'/assets/img/plugins/thespaghettidetective/video_preview1.png'" %}
+* Easy share of your webcam streaming or time-lapses with your friend.
+
+* Alert and print job notification (when a print is done or cancelled) via email, Telegram, PushBullet, and Slack.
+
+{% include youtube.html vid="VRoV9Z1C1yM" preview="'/assets/img/plugins/thespaghettidetective/video_preview1.png'" %}
 
 <br />
 
