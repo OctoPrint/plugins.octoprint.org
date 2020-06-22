@@ -23,7 +23,7 @@ tags:
 compatibility:
   python: ">=2.7,<4"
 
-featuredimage: /assets/img/plugins/conslidate_temp_control/screenshot.png
+featuredimage: /assets/img/plugins/consolidate_temp_control/screenshot.png
 
 ---
 
@@ -31,9 +31,9 @@ featuredimage: /assets/img/plugins/conslidate_temp_control/screenshot.png
 
 Based on foosel's original [Proof of Concept](https://github.com/foosel/OctoPrint-ConsolidateTempControl/), this plugin consolidates the temperature and control tabs into one. Modifications to foosel's original source includes making the layout vertical as in the original or horizontal (default setting) to be more compatible with widescreen displays. Also implemented hack to hide original Temperature and Control tabs from view and ordering.
 
-![Screenshot](/assets/img/plugins/conslidate_temp_control/screenshot.png)
+![Screenshot](/assets/img/plugins/consolidate_temp_control/screenshot.png)
 
-![Screenshot](/assets/img/plugins/conslidate_temp_control/screenshot_settings.png)
+![Screenshot](/assets/img/plugins/consolidate_temp_control/screenshot_settings.png)
 
 ## Known Issues
   - Occasionaly the webcam stream isn't detected.  Swapping tabs or refreshing the page usually brings it back.
