@@ -80,7 +80,7 @@ or manually using this URL:
 
 ## Usage
 ### Instance configuration
-After installation restart OctoPrint, and go to the Settings tab. You should see a new tab named 3D Geeks, go ahead and click that tab. You should be presented with a QR Code.
+After installation restart OctoPrint, and go to Settings. You should see a new section in plugins named 3D Geeks, go to that section and you should be presented with a QR Code.
 
 On your Android powered device open the 3D Geeks app, go to:
 ```
