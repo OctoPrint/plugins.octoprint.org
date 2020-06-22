@@ -88,11 +88,11 @@ Settings > OctoPrint settings
 ```
 Press the `+`-Icon in the bottom-right hand corner.
 
-Press the scan icon, scan the QR code you're being presented. If everything goes well all the nesecary fields will be filled in automatically for you. You can now press Test connection for a quick test of the connection to your OctoPrint instance.
+Press the scan icon, scan the QR code you're being presented. If everything goes well all the necessary fields will be filled in automatically for you. You can now press Test connection for a quick test of the connection to your OctoPrint instance.
 
 NOTE: Be sure you're Android device is connected to the same network as your OctoPrint instance, as they communicate through the local network. When the test succeeds you can press Create. Your OctoPrint instance is now saved and can receive files from 3D Geeks.
 
-NOTE: You can create as much OctoPrint instances as you desire. When uploading a file, the app will ask you which instance to upload to.
+NOTE: You can create as many OctoPrint instances as you desire. When uploading a file, the app will ask you which instance to upload to.
 
 ### Push notifications
 Enable remote notifications from within the app. And press the `Send test notification`-button from the 3D Geeks OctoPrint settings. If everything is filled in correctly you should receive a test notification on your phone.
