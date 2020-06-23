@@ -5,10 +5,40 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>https://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 23 Jun 2020 07:08:01 -0500</pubDate>
-    <lastBuildDate>Tue, 23 Jun 2020 07:08:01 -0500</lastBuildDate>
+    <pubDate>Tue, 23 Jun 2020 08:39:54 -0500</pubDate>
+    <lastBuildDate>Tue, 23 Jun 2020 08:39:54 -0500</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
     
+    
+      <item>
+        <title>Ngrok Tunnel</title>
+        <description>
+          <![CDATA[
+            A plugin to securely access your OctoPrint instance remotely through ngrok
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/ngrok/ngrok_navbar.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Tue, 23 Jun 2020 00:00:00 -0500
+</pubDate>
+        <link>https://plugins.octoprint.org/plugins/ngrok/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/ngrok/</guid>
+        
+        <category>remote access</category>
+        
+        <category>authentication</category>
+        
+        <category>security</category>
+        
+        <category>password</category>
+        
+        <category>ngrok</category>
+        
+        <category>tunnel</category>
+        
+        <category>ssl</category>
+        
+      </item>
     
       <item>
         <title>OctoPrint-3DGeeks</title>
@@ -211,29 +241,6 @@ Wed, 03 Jun 2020 00:00:00 -0500
         <category>sidebar</category>
         
         <category>widescreen</category>
-        
-      </item>
-    
-      <item>
-        <title>Restore Leveling After G28</title>
-        <description>
-          <![CDATA[
-            Automatically keeps bed leveling on after G28 (Auto Home).
-            <p><img src="https://plugins.octoprint.org/assets/img/repo-600x400.png"></p>
-            
-          ]]>
-        </description>
-        <pubDate>
-Wed, 03 Jun 2020 00:00:00 -0500
-</pubDate>
-        <link>https://plugins.octoprint.org/plugins/restorelevelingafterg28/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/restorelevelingafterg28/</guid>
-        
-        <category>leveling</category>
-        
-        <category>bed leveling</category>
-        
-        <category>marlin</category>
         
       </item>
     

@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en" xmlns="http://www.w3.org/1999/html"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+    <title>Ngrok Tunnel</title>
+    <meta name="description" content="A plugin to securely access your OctoPrint instance remotely through ngrok">
+    <meta name="author" content="fieldOfView">
+    <meta name="referrer" content="same-origin">
+    <meta name="google-site-verification" content="0EFsbaNygJcEinKPmzP-hTf0Ju6wDIpJxO5zvQtOQT0" />
+
+    <!--[if lt IE 9]>
+    <script src="<script type="text/javascript" src="/assets/js/html5shim-d55410eeb0d1e50b9558b594560e362529c60f3d70f808efe63dc16137b0226a.js" integrity="sha256-1VQQ7rDR5QuVWLWUVg42JSnGDz1w+Ajv5j3BYTewImo=" crossorigin="anonymous"></script>"></script>
+    <![endif]-->
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Le styles -->
+    <link rel="stylesheet" type="text/css" integrity="sha256-YSuwA4Zm6mvDc5zylQnaIRPqqFtBGKIaTt2oYhu0Bek=" crossorigin="anonymous" href="/assets/css/site-612bb0038666ea6bc3739cf29509da2113eaa85b4118a21a4edda8621bb405e9.css">
+    <link rel="stylesheet" type="text/css" integrity="sha256-x3oF7W99Cf9z5EnLxwuL7SMnZsNzcRha8NMy4dSpyzw=" crossorigin="anonymous" href="/assets/css/bootstrap-responsive-c77a05ed6f7d09ff73e449cbc70b8bed232766c37371185af0d332e1d4a9cb3c.css">
+    <link rel="stylesheet" type="text/css" integrity="sha256-UMPDOdo7o8O/MGBQHShitNB5Tg+kq6pYRLdKnRb1lpc=" crossorigin="anonymous" href="/assets/css/fontawesome-all.min-50c3c339da3ba3c3bf3060501d2862b4d0794e0fa4abaa5844b74a9d16f59697.css">
+    <link rel="stylesheet" type="text/css" integrity="sha256-MN+CcDlRKORo1cBysj7J+O9yZYIPfnRSUfm3A7wZYqk=" crossorigin="anonymous" href="/assets/css/prettify-30df8270395128e468d5c072b23ec9f8ef7265820f7e745251f9b703bc1962a9.css">
+    <link rel="stylesheet" type="text/css" integrity="sha256-TLVyIEah2gVphVpS0v1nAEPJmvi1zI6sCZvLAWqFzkg=" crossorigin="anonymous" href="/assets/css/lightbox-4cb5722046a1da0569855a52d2fd670043c99af8b5cc8eac099bcb016a85ce48.css">
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="/assets/img/tentacle-32x32.png">
+
+    <!-- Le RSS feed -->
+    <link rel="alternate" type="application/rss+xml" title="OctoPrint Plugin Repository: New Plugins" href="/feed.xml">
+
+    <!-- Le social media meta data -->
+    
+    
+    
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@OctoPrint3D" />
+    <meta name="twitter:title" content="Ngrok Tunnel" />
+    <meta name="twitter:description" content="This plugin creates a secure tunnel to access OctoPrint remotely. It provides a more secure alternative to using port forwarding to expose your OctoPrint instance to the internet.
+
+" />
+    <meta name="twitter:image" content="https://plugins.octoprint.org" />
+
+    <meta property="og:title" content="Ngrok Tunnel" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://plugins.octoprint.org/assets/img/plugins/ngrok/ngrok_navbar.png" />
+    <meta property="og:description" content="This plugin creates a secure tunnel to access OctoPrint remotely. It provides a more secure alternative to using port forwarding to expose your OctoPrint instance to the internet.
+
+" />
+    <meta property="og:site_name" content="OctoPrint Plugin Repository" />
+    <meta property="og:url" content="https://plugins.octoprint.org/plugins/ngrok/" />
+
+    <meta itemscope itemtype="http://schema.org/WebPage" />
+    <meta itemprop="headline" content="Ngrok Tunnel" />
+    <meta itemprop="description" content="This plugin creates a secure tunnel to access OctoPrint remotely. It provides a more secure alternative to using port forwarding to expose your OctoPrint instance to the internet.
+
+" />
+    <meta itemprop="image" content="https://plugins.octoprint.org/assets/img/plugins/ngrok/ngrok_navbar.png" />
+
+    <script type="text/javascript" src="/assets/js/jquery-1.9.1.min-4b58dfeb119b2dd15f54e0a074cf8eb63204c8b03d45056e0b514e042f36aa44.js" integrity="sha256-S1jf6xGbLdFfVOCgdM+OtjIEyLA9RQVuC1FOBC82qkQ=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/assets/js/underscore.min-42d8fad13bc28fc726775196ec9ab953febf9bde175c5845128361c953fa17f4.js" integrity="sha256-Qtj60TvCj8cmd1GW7Jq5U/6/m94XXFhFEoNhyVP6F/Q=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" integrity="sha256-tL+YHnbnFQmHWvz19K2J5tmzvLpB+iD8aiYibV4WK9E=" crossorigin="anonymous" href="/assets/css/cookieconsent.min-b4bf981e76e71509875afcf5f4ad89e6d9b3bcba41fa20fc6a26226d5e162bd1.css">
+    <script type="text/javascript" src="/assets/js/cookieconsent.min-e8aac0b7a7c3e3c17c621bf5bb24c098a602e4ad0c2867598f40d5ee49eca425.js" integrity="sha256-6KrAt6fD48F8Yhv1uyTAmKYC5K0MKGdZj0DV7knspCU=" crossorigin="anonymous"></script>
+    <script>
+        if (!String.prototype.startsWith) {
+            String.prototype.startsWith = function(search, pos) {
+            return this.substr(!pos || pos < 0 ? 0 : +pos, search.length) === search;
+            };
+        }
+
+        window.addEventListener("load", function(){
+            window.cookieconsent.initialise({
+                "position": "bottom",
+                "theme": "edgeless",
+                "palette": {
+                    "popup": {
+                        "background": "#000000",
+                        "link": "#10a800"
+                    },
+                    "button": {
+                        "background": "#0b7500"
+                    }
+                }
+            })
+        });
+
+        /**
+         * Make sure octoprint.github.io stuff gets rewritten to plugins.octoprint.org.
+         * See https://github.com/OctoPrint/plugins.octoprint.org/issues/146.
+         */
+        var githubio = "octoprint.github.io/plugins.octoprint.org";
+        var url = window.location.href;
+        if (url && (url.startsWith("http://" + githubio) || url.startsWith("https://" + githubio))) {
+            url = url.replace(githubio, "plugins.octoprint.org");
+            window.location.replace(url);
+        }
+    </script>
+</head>
+
+<body>
+
+<div class="navbar navbar-inverse navbar-static-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand" href="/"><img src="/assets/img/tentacle-20x20.png" alt="Tentacle logo" class="tentacle"> Plugin Repo</a>
+      <a href="javascript:void(0)" class="btn btn-burger btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><i class="fas fa-bars"></i></a>
+      <div class="pull-right">
+        <ul class="nav social-navbar">
+          <li><a href="https://octoprint.org/merch/" title="Get some merchandise!" target="_blank"><i class="fa fa-shopping-basket"></i></a></li>
+          <li><a href="https://octoprint.org/support-octoprint/" title="Support OctoPrint!" data-event-category="supportlink" data-event-action="navigation" target="_blank"><i class="fas fa-donate"></i></a></li>
+        </ul>
+      </div>
+      <div class="nav-collapse collapse">
+        <ul class="nav">
+          <li><a href="/by_name/">by Name</a></li>
+          <li><a href="/by_date/">by Date</a></li>
+          <li><a href="/by_tag/">by Tag</a></li>
+          <li><a href="/by_author/">by Author</a></li>
+          <li><form class="navbar-search pull-right" action="/search/" method="get"><input type="text" class="input-medium search-query" placeholder="Enter search &amp; hit enter..." name="q"></form></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">Help <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="/help/installation/">Installing Plugins</a></li>
+              <li><a href="/help/registering/">Registering Plugins</a></li>
+              <li><a href="http://docs.octoprint.org/en/master/plugins/gettingstarted.html">The Plugin Tutorial</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">Lists <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="/blacklist/">Blacklist</a></li>
+              <li><a href="/notices/">Notices</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="wrap">
+    <div id="main">
+    
+
+
+
+
+
+
+<div class="page-header">
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+        <h1>Ngrok Tunnel</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row-fluid">
+    
+    <small class="pull-left"><a href="/plugins/navbartemp/"><i class="fa fa-double-angle-left"></i>&nbsp;Navbar Temp</a></small>
+    
+    &nbsp;
+    
+    <small class="pull-right"><a href="/plugins/octoglow/">OctoGlow&nbsp;<i class="fa fa-double-angle-right"></i></a></small>
+    
+  </div>
+  <div class="content plugin-content row-fluid">
+    <article class="post-content span8">
+      
+      
+      
+      
+
+      <p class="lead">
+        A plugin to securely access your OctoPrint instance remotely through ngrok
+      </p>
+      <p>This plugin creates a secure tunnel to access OctoPrint remotely. It provides a more secure alternative to using port forwarding to expose your OctoPrint instance to the internet.</p>
+
+<p>Forwarding a port and setting up a dynamic dns record unfortunately remains a popular way to make an OctoPrint instance accessible through the internet. This is very insecure (especially when not using HTTPS with a proper certificate), and requires changes to the local network (static IP for the OctoPrint instance, configuration changes to the router). The truly safe way to access an OctoPrint instance is to use a VPN, but this is hard to set up and properly configure.</p>
+
+<p>The OctoPrint Ngrok Tunnel plugin sets up a secure tunnel to your OctoPrint instance via the <a href="https://ngrok.com">ngrok</a> service. The tunnel is encrypted with SSL and proper certificates (even if your OctoPrint instance is not accessible via HTTPS locally), and is further protected with Basic Authentication (username and password) out of the box.</p>
+
+<p>There is no configuration of the local network necessary, and there are no ports to open or forward. No certificates to set up, and no changes to make to HAProxy. Just full access to your OctoPrint instance, including both the web interface and the API, from anywhere in the world. With the standard OctoPi confguration, you even get a working webcam stream remotely (if your home internet connection can keep up with the demands of streaming mjpeg).</p>
+
+<p>You only need to sign up for a free account at <a href="https://ngrok.com">ngrok.com</a>. There is one caveat: with a free account, you get assigned a random subdomain of ngrok.com, and this subdomain changes each time OctoPrint gets restarted. The tunnel address is shown within the OctoPrint interface, but it can also be looked up in the <a href="https://dashboard.ngrok.com/status/tunnels">ngrok service dashboard</a>. With a paid ngrok account, you can configure a static subdomain to use. A paid plan gives you additional features, such as using more than one tunnel (printer) and creating an IP whitelist to limit who can access the tunnel.</p>
+
+<h2 id="configuration">Configuration</h2>
+
+<p>The Ngrok Tunnel plugin can be configured via the OctoPrint settings panel.</p>
+
+<p>The ngrok <strong>auth token</strong> is used to authenticate you on the ngrok service and can be found by logging in to the <a href="https://dashboard.ngrok.com/auth/your-authtoken">ngrok dashboard</a>. Though not strictly required for an ngrok tunnel, the plugin requires you to set up Basic Authentication on the tunnel in addition to the access control already set up on your OctoPrint instance. Any username and password combination can be chosen, but it is recommended to use a different username and password than your OctoPrint credentials. If you wish, you <em>can</em> use the same username and password you use for logging in to OctoPrint and have the login to the tunnel automatically log you in to OctoPrint too.</p>
+
+<h2 id="disclaimer">Disclaimer</h2>
+
+<p>The authors of the plugin have no affiliation with <a href="https://ngrok.com">ngrok</a>. The plugin uses <a href="https://github.com/alexdlaird/pyngrok">pyngrok</a> by Alex Laird to setup and manage ngrok tunnels.</p>
+
+<p>Security is a serious topic, especially when there’s a 3d printer involved. This plugin is provided “as is”, without warranty of any kind. In no event shall the authors be liable for any claim, damages or other liability arising from, out of or in connection with the plugin or the use or other dealings in the plugin.</p>
+
+
+      
+        <h2>Pictures</h2>
+        
+        <figure>
+          
+          <a href="/assets/img/plugins/ngrok/ngrok_navbar.png" data-lightbox="/plugins/ngrok" data-title="The Ngrok Tunnel navbar item has shortcuts to the tunnel as well as settings and the ngrok dashboard."><img src="/assets/img/plugins/ngrok/ngrok_navbar.png" alt="Ngrok Tunnel navbar" title="The Ngrok Tunnel navbar item has shortcuts to the tunnel as well as settings and the ngrok dashboard."></a>
+        </figure>
+        
+        <figure>
+          
+          <a href="/assets/img/plugins/ngrok/ngrok_settings.png" data-lightbox="/plugins/ngrok" data-title="The Ngrok Tunnel settings page shows the status of the connection with ngrok."><img src="/assets/img/plugins/ngrok/ngrok_settings.png" alt="Ngrok Tunnel settings" title="The Ngrok Tunnel settings page shows the status of the connection with ngrok."></a>
+        </figure>
+        
+        <figure>
+          
+          <a href="/assets/img/plugins/ngrok/ngrok_dashboard.png" data-lightbox="/plugins/ngrok" data-title="The ngrok dashboard is where you get the authtoken, and where you find the url of the active tunnel."><img src="/assets/img/plugins/ngrok/ngrok_dashboard.png" alt="ngrok dashboard" title="The ngrok dashboard is where you get the authtoken, and where you find the url of the active tunnel."></a>
+        </figure>
+        
+      
+    </article>
+
+    <div class="span4">
+      <dl class="adbox">
+        <dd class="ad">
+          <script>
+    if (!window["carbon-disable"]) {
+        (function() {
+            var po = document.createElement("script");
+            po.type = "text/javascript";
+            po.async = true;
+            po.src  = "//cdn.carbonads.com/carbon.js?serve=CK7DT237&placement=pluginsoctoprintorg";
+            po.id = "_carbonads_js";
+            var s = document.currentScript;
+            s.parentNode.insertBefore(po, s);
+        })();
+    }
+</script>
+        </dd>
+      </dl>
+      
+      <dl class="installation">
+        <dt>Installation <a href="/help/installation/" class="fas fa-question-circle"></a></dt>
+        
+        <dd>
+          URL:
+          <pre>https://github.com/fieldOfView/OctoPrint-ngrok/archive/master.zip</pre>
+          
+        </dd>
+        
+        
+        <dd>
+          Command line:
+          <pre>pip install "https://github.com/fieldOfView/OctoPrint-ngrok/archive/master.zip"</pre>
+        </dd>
+        
+      </dl>
+      
+      
+      <dl class="date">
+        <dt>Registration date</dt>
+        <dd>23 Jun 2020</dd>
+      </dl>
+      
+      
+      <dl class="installations">
+        <dt>Active instances the past month</dt>
+        <dd>Installed on at least <strong>4</strong> instances</dd>
+      </dl>
+      
+      
+      <dl class="install_events">
+        <dt>New installs the past week</dt>
+        <dd>At least <strong>2</strong> new installations</dd>
+      </dl>
+      
+      
+      <dl class="github">
+        <dt>Github stats</dt>
+        <dd>
+          <ul>
+            
+            <li>
+              Latest Release: <a href="https://github.com/fieldOfView/OctoPrint-ngrok/releases/tag/0.1.0" target="_blank"></a><br>
+              <small>released on 23 Jun 2020</small>
+            </li>
+            <li>Releases: 1</li>
+            
+            <li>Stars: 0</li>
+            <li>Issues: 0 open, 0 closed</li>
+            <li>Last push: 23 Jun 2020</li>
+          </ul>
+        </dd>
+      </dl>
+      
+      
+      <dl class="tags">
+        <dt>Tags</dt>
+        <dd>
+          
+          
+          
+          
+          <a class="label" href="/by_tag/#tag-authentication">authentication</a>
+          
+          <a class="label" href="/by_tag/#tag-ngrok">ngrok</a>
+          
+          <a class="label" href="/by_tag/#tag-password">password</a>
+          
+          <a class="label" href="/by_tag/#tag-remote-access">remote access</a>
+          
+          <a class="label" href="/by_tag/#tag-security">security</a>
+          
+          <a class="label" href="/by_tag/#tag-ssl">ssl</a>
+          
+          <a class="label" href="/by_tag/#tag-tunnel">tunnel</a>
+          
+        </dd>
+      </dl>
+      
+      <dl class="compatibility">
+        <dt>Compatibility Information</dt>
+        <dd>
+          <ul>
+            
+            <li>OctoPrint: all versions</li>
+            
+            
+            <li>Operating Systems: Linux, Windows, Mac OS X</li>
+            
+            
+            <li>Python: &gt;=2.7,&lt;4</li>
+            
+          </ul>
+        </dd>
+      </dl>
+      
+      <dl class="author">
+        <dt>Author</dt>
+        <dd>
+<a href="/by_author/#fieldofview">fieldOfView</a>
+</dd>
+      </dl>
+      
+      
+      <dl class="homepage">
+        <dt>Homepage</dt>
+        <dd><a href="https://github.com/fieldOfView/OctoPrint-ngrok" target="_blank">https://github.com/fieldOfView/OctoPrint-ngrok</a></dd>
+      </dl>
+      
+      
+      <dl class="source">
+        <dt>Source</dt>
+        <dd><a href="https://github.com/fieldOfView/OctoPrint-ngrok" target="_blank">https://github.com/fieldOfView/OctoPrint-ngrok</a></dd>
+      </dl>
+      
+      
+      <dl class="license">
+        <dt>License</dt>
+        <dd>AGPLv3</dd>
+      </dl>
+      
+      <dl class="issue">
+        <dt>Something wrong here?</dt>
+        <dd>
+          <p>
+            If there is <strong>something wrong with this listing</strong> (broken links & images etc), please
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=bug&template=listing_error.md&title=%5BListing+Error%5D+Ngrok+Tunnel">report it here</a>.
+          </p>
+          <p>
+            If this plugin <strong>has been <em>confirmed</em> as abandoned</strong> by its maintainer, please
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=abandoned+plugin&template=abandoned_plugin.md&title=%5BAbandoned+Plugin%5D+Ngrok+Tunnel">report it here</a>.
+          </p>
+          <p>
+            If this plugin is <strong>doing something suspicious</strong> (e.g. weird network activity, unannounced tracking, ...) and
+            the maintainer is not cooperating in getting to the bottom of that, please
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=suspicious+plugin+activity&template=suspicious_plugin_activity.md&title=%5BSuspicious+Plugin+Activity%5D+Ngrok+Tunnel">report the plugin as suspicious here</a>.
+          </p>
+          <p>
+            Report bugs or feature requests for the plugin to the plugin author (e.g. on the plugin's <a href="https://github.com/fieldOfView/OctoPrint-ngrok">homepage</a>) please, not here!
+          </p>
+        </dd>
+      </dl>
+    </div>
+
+  </div>
+</div>
+
+    </div>
+</div>
+
+      <footer>
+          <div class="container">
+              <div class="row">
+                  <div class="span4">
+                      <h2>On the web</h2>
+                      <ul class="fa-ul">
+                          <li><span class="fa-li"><i class="fas fa-users fa-fw"></i></span><a href="https://community.octoprint.org">Community Forum</a></li>
+                          <li><span class="fa-li"><i class="fab fa-discord fa-fw"></i></span><a href="https://discord.octoprint.org" target="_blank">Discord</a></li>
+                          <li><span class="fa-li"><i class="fab fa-twitter fa-fw"></i></span><a href="https://twitter.com/OctoPrint3D" target="_blank">Twitter</a></li>
+                          <li><span class="fa-li"><i class="fab fa-facebook-f fa-fw"></i></span><a href="https://facebook.com/OctoPrint" target="_blank">Facebook</a></li>
+                          <li><span class="fa-li"><i class="fab fa-youtube fa-fw"></i></span><a href="https://www.youtube.com/c/OctoPrint3D" target="_blank">YouTube</a></li>
+                          <li><span class="fa-li"><i class="fas fa-tachometer-alt fa-fw"></i></span><a href="https://status.octoprint.org" target="_blank">Site Status</a></li>
+                          <li><span class="fa-li"><i class="fas fa-gavel fa-fw"></i></span><a href="https://octoprint.org/imprint/" rel="nofollow">Legal Notice</a></li>
+                          <li><span class="fa-li"><i class="fas fa-gavel fa-fw"></i></span><a href="https://octoprint.org/privacy/" rel="nofollow">Privacy Policy</a></li>
+                      </ul>
+                  </div>
+                  <div class="span4">
+                      <h2>Recently Added</h2>
+                      <ul>
+                          
+                          
+                          <li>
+                              <a class="post-link" href="/plugins/ngrok/">Ngrok Tunnel</a>
+                          </li>
+                          
+                          <li>
+                              <a class="post-link" href="/plugins/geeks3d/">OctoPrint-3DGeeks</a>
+                          </li>
+                          
+                          <li>
+                              <a class="post-link" href="/plugins/z_probe_offset/">Z Probe Offset Control</a>
+                          </li>
+                          
+                          <li>
+                              <a class="post-link" href="/plugins/homeassistant/">HomeAssistant Discovery</a>
+                          </li>
+                          
+                          <li>
+                              <a class="post-link" href="/plugins/simple_filament_change_buttons/">Simple Filament Change Buttons</a>
+                          </li>
+                          
+                      </ul>
+                  </div>
+                  <div class="span4 hidden-phone">
+                      <a href="http://octoprint.org"><img src="/assets/img/logo-footer.png" alt="Octopus logo" class="pull-right"></a>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="span12 text-center legal">
+                      <small>"OctoPrint" is a <a href="http://octoprint.org/trademark-rules/">registered trademark</a></small>
+                  </div>
+              </div>
+          </div>
+      </footer>
+
+
+<script type="text/javascript" src="/assets/js/prettify-a2ae206579112903445f0c0d4b98f31ab901db28e8873dc7c81ce40a06372745.js" integrity="sha256-oq4gZXkRKQNEXwwNS5jzGrkB2yjohz3HyBzkCgY3J0U=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/assets/js/bootstrap.min-f5651a6e18f88581d9be3cf06328fede9e112943c9ec037b4c2c1dc623d9429b.js" integrity="sha256-9WUabhj4hYHZvjzwYyj+3p4RKUPJ7AN7TCwdxiPZQps=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/assets/js/lunr.min-a639270160a101546ac6c6373b24d7422b4a37bdb938d8eaa5ec3ebefdd343f8.js" integrity="sha256-pjknAWChAVRqxsY3OyTXQitKN725ONjqpew+vv3TQ/g=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/assets/js/mustache-9a85a65d19dc9967bca5e7bb155e1f822b42740fd2ee04f3a1fd73da4ce3cad8.js" integrity="sha256-moWmXRncmWe8pee7FV4fgitCdA/S7gTzof1z2kzjytg=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/assets/js/URI.min-569c0cdd34d9826a0e5b1ab3ead135e14c06281a71de90aa8e2aea35e8c9db75.js" integrity="sha256-VpwM3TTZgmoOWxqz6tE14UwGKBpx3pCqjirqNejJ23U=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/assets/js/date.format-7f5d1885a0cf226d38cb313b8cd4397e02c8fe8fd1cc2004c2eb949ada1bdaf5.js" integrity="sha256-f10YhaDPIm04yzE7jNQ5fgLI/o/RzCAEwuuUmtob2vU=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/assets/js/jquery.lunr.search-145b1699bf8e6b3e590f15ea32ffdb5440b017717fc8da8924e09cc9c7715378.js" integrity="sha256-FFsWmb+Oaz5ZDxXqMv/bVECwF3F/yNqJJOCcycdxU3g=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/assets/js/lightbox.min-40fdcc195c5982250c8901f2c160e15342941a311faf6372c04117c0d9c44bc7.js" integrity="sha256-QP3MGVxZgiUMiQHywWDhU0KUGjEfr2NywEEXwNnES8c=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/assets/js/site-9cd3c1f2763a9bba048afaa1d65885869520587e0f536ffb0bf93598428371fd.js" integrity="sha256-nNPB8nY6m7oEivqh1liFhpUgWH4PU2/7C/k1mEKDcf0=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/assets/js/autotrack-2e10f5ef468c4b20088ec964a113acbad1f15d1baf4074a5255fd03c204bf37f.js" integrity="sha256-LhD170aMSyAIjslkoROsutHxXRuvQHSlJV/QPCBL838=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/assets/js/yt-with-consent-93662d2c310d0341065cd518f3d448995e3b7e44c87151bce9449b14846a5b6e.js" integrity="sha256-k2YtLDENA0EGXNUY89RImV47fkTIcVG86USbFIRqW24=" crossorigin="anonymous"></script>
+
+<script>
+    var gaBaseProperty = 'UA-62479257';
+    var gaProperty = gaBaseProperty + '-2';
+
+    // opt out
+    var disableStr = 'ga-disable-' + gaProperty;
+    var disableCookie = 'ga-disable-' + gaBaseProperty;
+    function gaOptout() {
+        document.cookie = disableCookie + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/; domain=octoprint.org';
+        window[disableStr] = true;
+        alert("Google Analytics ist jetzt deaktiviert! / Google Analytics is now deactivated!")
+    }
+
+    // tracking code
+    if (document.cookie.indexOf(disableCookie + '=true') > -1) {
+        window[disableStr] = true;
+    } else {
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', gaProperty, 'auto');
+        ga('require', 'autotrack');
+        ga('set', 'anonymizeIp', true);
+        ga('send', 'pageview');
+    }
+</script>
+
+</body>
+</html>
