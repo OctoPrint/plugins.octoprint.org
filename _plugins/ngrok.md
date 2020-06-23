@@ -49,7 +49,7 @@ This plugin creates a secure tunnel to access OctoPrint remotely. It provides a 
 
 Forwarding a port and setting up a dynamic dns record unfortunately remains a popular way to make an OctoPrint instance accessible through the internet. This is very insecure (especially when not using HTTPS with a proper certificate), and requires changes to the local network (static IP for the OctoPrint instance, configuration changes to the router). The truly safe way to access an OctoPrint instance is to use a VPN, but this is hard to set up and properly configure.
 
-The OctoPrint Ngrok Tunnel plugin sets up a secure tunnel to your OctoPrint instance via the [ngrok](https://grok.com) service. The tunnel is encrypted with SSL and proper certificates (even if your OctoPrint instance is not accessible via HTTPS locally), and is further protected with Basic Authentication (username and password) out of the box.
+The OctoPrint Ngrok Tunnel plugin sets up a secure tunnel to your OctoPrint instance via the [ngrok](https://ngrok.com) service. The tunnel is encrypted with SSL and proper certificates (even if your OctoPrint instance is not accessible via HTTPS locally), and is further protected with Basic Authentication (username and password) out of the box.
 
 There is no configuration of the local network necessary, and there are no ports to open or forward. No certificates to set up, and no changes to make to HAProxy. Just full access to your OctoPrint instance, including both the web interface and the API, from anywhere in the world. With the standard OctoPi confguration, you even get a working webcam stream remotely (if your home internet connection can keep up with the demands of streaming mjpeg).
 
