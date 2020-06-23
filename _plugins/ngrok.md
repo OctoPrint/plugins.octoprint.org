@@ -43,6 +43,9 @@ compatibility:
   - macos
   
   python: ">=2.7,<4"
+  
+  octoprint: 
+  - 1.4.0
 
 ---
 This plugin creates a secure tunnel to access OctoPrint remotely. It provides a more secure alternative to using port forwarding to expose your OctoPrint instance to the internet.
