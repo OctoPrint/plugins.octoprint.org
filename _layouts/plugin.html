@@ -126,7 +126,7 @@ layout: default
           <ul>
             {% if page.github.releases > 0 %}
             <li>
-              Latest Release: <a href="{{ page.github.latest_release_url | strip_html | strip_newlines | escape }}" target="_blank">{{ plugin.github.latest_release_tag | strip_html | strip_newlines | escape }}</a><br>
+              Latest Release: <a href="{{ page.github.latest_release_url | strip_html | strip_newlines | escape }}" target="_blank">{{ page.github.latest_release_tag | strip_html | strip_newlines | escape }}</a><br>
               <small>released on {{ page.github.latest_release_date | date_to_string}}</small>
             </li>
             <li>Releases: {% include format_number number=page.github.releases %}</li>
