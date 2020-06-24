@@ -107,6 +107,37 @@ layout: default
         <dd>{{ page.date | strip_html | strip_newlines | escape | date_to_string}}</dd>
       </dl>
       {% endif %}
+      {% if page.stats.month.instances %}
+      <dl class="installations">
+        <dt>Active instances the past month</dt>
+        <dd>Installed on at least <strong>{% include format_number number=page.stats.month.instances %}</strong> instances</dd>
+      </dl>
+      {% endif %}
+      {% if page.stats.week.install_events %}
+      <dl class="install_events">
+        <dt>New installs the past week</dt>
+        <dd>At least <strong>{% include format_number number=page.stats.week.install_events %}</strong> new installations</dd>
+      </dl>
+      {% endif %}
+      {% if page.github %}
+      <dl class="github">
+        <dt>Github stats</dt>
+        <dd>
+          <ul>
+            {% if page.github.releases > 0 %}
+            <li>
+              Latest Release: <a href="{{ page.github.latest_release_url | strip_html | strip_newlines | escape }}" target="_blank">{{ page.github.latest_release | strip_html | strip_newlines | escape }}</a><br>
+              <small>released on {{ page.github.latest_release_date | date_to_string}}</small>
+            </li>
+            <li>Releases: {% include format_number number=page.github.releases %}</li>
+            {% endif %}
+            <li>Stars: {% include format_number number=page.github.stars %}</li>
+            <li>Issues: {% include format_number number=page.github.open_issues %} open, {% include format_number number=page.github.closed_issues %} closed</li>
+            <li>Last push: {{ page.github.last_push | date_to_string }}</li>
+          </ul>
+        </dd>
+      </dl>
+      {% endif %}
       {% if page.tags %}
       <dl class="tags">
         <dt>Tags</dt>
@@ -150,7 +181,7 @@ layout: default
       {% if page.author %}
       <dl class="author">
         <dt>Author</dt>
-        <dd>{{ page.author | strip_html | strip_newlines | escape }}</dd>
+        <dd>{% include plugin_author author=page.author nolabel='true'%}</dd>
       </dl>
       {% endif %}
       {% if page.homepage %}
@@ -196,4 +227,3 @@ layout: default
 
   </div>
 </div>
-

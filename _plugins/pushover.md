@@ -17,6 +17,10 @@ follow_dependency_links: false
 
 tags:
 - notification
+- pushover
+
+compatibility:
+  python: ">=2.7,<4"
 
 screenshots:
 - url: /assets/img/plugins/pushover/settings.png
@@ -35,5 +39,20 @@ This plugin adds support for [Pushover notifications](https://pushover.net/) to 
 
 When your job is finished or is failed OctoPrint will send a notification to Pushover. You can configure the sound or priority of the messages.
 
+This plugin supports the following features/events
 
+* Send notifications on an interval (percent or time)
+* Include a capture of your camera with your notifications
+* Temperature reached
+* Print done
+* After first couple of layer
+* Print Failed
+* Print Started
+* Printer is Waiting
+* Printer Shutdown
+* Print Paused
+* Alert Event (M300)
+* Panic Event (M112)
+* Error Event
+* Limit to specific devices 
 

@@ -19,6 +19,7 @@ screenshots:
 compatibility:
   octoprint:
   - 1.3.5
+  python: ">=2.7,<4"
 date: 2015-04-11
 
 ---
