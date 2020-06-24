@@ -31,7 +31,7 @@ screenshots:
   alt: Askin to change the filament
   caption: Ask to change filament - M600
 
-featuredimage: url of a featured image for your plugin, /assets/img/...
+featuredimage: /assets/img/plugins/RewriteM600/M600-in-action.png
 
 # You only need the following if your plugin requires specific OctoPrint versions or
 # specific operating systems to function - you can safely remove the whole
@@ -84,7 +84,7 @@ compatibility:
   # If your plugin only supports Python 2 (worst case, not recommended for newly developed plugins since Python 2
   # is EOL), leave at ">=2.7,<3"
       
-  python: ">=2.7,<3"
+  python: ">=2.7,<4"
       
 ---
 # This plugin implement M600 with out Marlin support.
