@@ -2509,6 +2509,17 @@
 },
 
 {
+"id": "/plugins/RewriteM600",
+"url": "/plugins/RewriteM600/",
+"date": "2020-06-23 00:00:00 -0500",
+"title": "Rewrite M600 - For M600 Unsupported",
+"description": "Implement M600 for pinters that can't support M600 by default (TFT with out marlin mode support, like Artilelry X1 and Genius)",
+"author": "Gustavo Cevallos",
+"content": "This plugin implement M600 with out Marlin support.Implement M600 for pinters that can’t support M600 by default (TFT with out Marlin Mode support, like Artilelry X1 and Genius). You can use M600, is going to stop wait until you change and press resume. If you have a TFT 28 (Like the Artillery) i would recomend you to check Rawr TFT Firmware to implement M600 direct in the TFT and do not need Octoprint.",
+"tags": ["filament","simplified","trigger","color change","hook","M600"]
+},
+
+{
 "id": "/plugins/ngrok",
 "url": "/plugins/ngrok/",
 "date": "2020-06-23 00:00:00 -0500",
