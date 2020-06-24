@@ -7,7 +7,7 @@ description: An OctoPrint Plugin for performing micro calibration in linear delt
 author: Fabio Santos
 license: AGPLv3
 
-date: 2020-06-14
+date: 2020-06-24
 
 homepage: https://github.com/Fabi0San/DuCalibrator
 source: https://github.com/Fabi0San/DuCalibrator
