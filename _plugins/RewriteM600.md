@@ -12,7 +12,7 @@ date: 2020-06-23
 
 homepage: https://github.com/wgcv/RewriteM600
 source: https://github.com/wgcv/RewriteM600
-archive: https://github.com/wgcv/RewriteM600t/archive/master.zip
+archive: https://github.com/wgcv/RewriteM600/archive/master.zip
 
 # Set this to true if your plugin uses the dependency_links setup parameter to include
 # library versions not yet published on pypi. SHOULD ONLY BE USED IF THERE IS NO OTHER OPTION!
@@ -30,6 +30,9 @@ screenshots:
 - url: /assets/img/plugins/RewriteM600/M600-in-action.png
   alt: Askin to change the filament
   caption: Ask to change filament - M600
+- url: /assets/img/plugins/RewriteM600/M600-Result.jpg
+  alt: Result
+  caption: The Calibration Cat with M600 - 2 Colors
 
 featuredimage: /assets/img/plugins/RewriteM600/M600-in-action.png
 
