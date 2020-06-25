@@ -7,7 +7,7 @@ description: Brings back the current Z display in the state sidebar panel
 author: Gina Häußge
 license: AGPLv3
 
-date: 2020-06-25
+date: 2015-09-22
 
 homepage: https://github.com/foosel/OctoPrint-DisplayZ
 source: https://github.com/foosel/OctoPrint-DisplayZ
