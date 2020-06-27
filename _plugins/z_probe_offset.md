@@ -3,7 +3,7 @@ layout: plugin
 
 id: z_probe_offset
 title: Z Probe Offset Control
-description: "Control the z probe offset on marlin based printers. Warning: this plugin is on its early stage of developpement. Use with caution and please report any issues on the git repository. Improvement suggestions are welcome as well."
+description: "Add input to the control view for editing the z probe offset on marlin based printers"
 author: razer
 license: AGPLv3
 
@@ -30,8 +30,17 @@ compatibility:
 
 # Z Probe Offset Control
 
-Add input to the control tab for z probe offset value change.
-Needs Marlin firmware (1.x or 2.x) with z probe capability enabled.
+Add input to the control view for editing the z probe offset on marlin based printers.
+
+Needs Marlin firmware with z probe capability enabled.
+
+Currently, firmwares that have been tested are:
+ - Stock Marlin v1.x and v2.x
+ - Creality3D Marlin fork (Ver 1.70.0 BL)
+ - Prusa Marlin fork (Prusa-Firmware 3.9.0)
+
 Warning: this plugin is on its early stage of developpement. Use with caution and please report any issues on the git repository. Improvement suggestions are welcome as well.
+
+If your firmware is a marlin derivate and is not listed as tested, [please report it as a working one](https://framagit.org/razer/octoprint_z_probe_offset/-/issues) in order to add it to the list, or [report any issues](https://framagit.org/razer/octoprint_z_probe_offset/-/issues)
 
 ![screenshot](/assets/img/plugins/z_probe_offset/z_probe_offset_control.png)
