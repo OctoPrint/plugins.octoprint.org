@@ -8,7 +8,7 @@ author: Alex Verrico
 license: AGPLv3
 
 # TODO
-date: 2020-06-24
+date: 2020-06-28
 
 homepage: https://github.com/AlexVerrico/Octoprint-ThermalRunaway
 source: https://github.com/AlexVerrico/Octoprint-ThermalRunaway
