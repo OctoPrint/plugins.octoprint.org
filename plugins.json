@@ -8522,6 +8522,45 @@
     },
 
     {
+        "id": "ThermalRunaway",
+        "published": "2020-06-28 00:00:00 -0500",
+        "title": "Thermal Runaway",
+        "description": "An Octoprint Plugin to provide some basic Thermal Runaway protection",
+        "archive": "https://github.com/AlexVerrico/Octoprint-ThermalRunaway/archive/master.zip",
+        "author": "Alex Verrico",
+        "homepage": "https://github.com/AlexVerrico/Octoprint-ThermalRunaway",
+        "page": "https://plugins.octoprint.org/plugins/ThermalRunaway/",
+        "compatibility": {
+            "octoprint": [],
+            "os": [],
+            "python": ">=3,<4"
+        },
+        "license": "AGPLv3",
+        "image": "https://plugins.octoprint.org/assets/img/plugins/ThermalRunaway/ThermalRunaway-config.png",
+        "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "Version 1.0.0",
+                "date": "2020-06-24 03:51:46 +0000",
+                "tag": "1.0.0"
+            },
+            "releases": 2,
+            "last_push": "2020-06-24 03:59:25 +0000",
+            "stars": 1,
+            "issues": {
+                "open": 0,
+                "closed": 0
+            }
+        },
+        "stats": {
+            "instances_month": 0,
+            "install_events_month": 0,
+            "instances_week": 0,
+            "install_events_week": 0
+        }
+    },
+
+    {
         "id": "macro",
         "published": "2020-06-28 00:00:00 -0500",
         "title": "Sidebar Macros",
