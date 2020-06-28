@@ -5,7 +5,7 @@ email: contact@octoprint.org
 description: The official OctoPrint Plugin Repository
 external: "https://plugins.octoprint.org"
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://plugins.octoprint.org" # the base hostname & protocol for your site
+url: "https://plugins.octoprint.org" # the base hostname & protocol for your site
 twitter_username: OctoPrint3D
 github_username: OctoPrint
 
@@ -37,11 +37,26 @@ exclude:
 - .rbenv-version
 - node_modules
 - fetch_yt_preview
+- README.md
+- .github
+- .asset-cache
+- _build
 
 plugins:
 - jekyll-redirect-from
+- jekyll-assets
+
+assets:
+  digest: true
+  compress:
+    css: false
+    js: false
+  assets:
+    - "**.css"
+    - "**.js"
+  sources:
+    - "_assets"
 
 twitterlink: https://twitter.com/OctoPrint3D
 facebooklink: https://facebook.com/OctoPrint
-gpluslink: https://plus.google.com/+OctoprintOrg/posts
 youtubelink: https://www.youtube.com/c/OctoPrint3D

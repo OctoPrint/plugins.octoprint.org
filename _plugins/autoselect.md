@@ -18,6 +18,9 @@ tags:
 - upload
 - filemanagement
 
+compatibility:
+  python: ">=2.7,<4"
+
 ---
 
 The Autoselect Plugin will automatically select newly uploaded files for

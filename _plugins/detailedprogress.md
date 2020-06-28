@@ -4,14 +4,14 @@ layout: plugin
 id: detailedprogress
 title: Detailed Progress
 description: Displays detailed progress on the LCD screen
-author: Dattas Moonchaser
+author: tpmullan
 license: AGPLv3
 
 date: 2016-09-02
 
-homepage: https://github.com/dattas/OctoPrint-DetailedProgress
-source: https://github.com/dattas/OctoPrint-DetailedProgress
-archive: https://github.com/dattas/OctoPrint-DetailedProgress/archive/master.zip
+homepage: https://github.com/tpmullan/OctoPrint-DetailedProgress
+source: https://github.com/tpmullan/OctoPrint-DetailedProgress
+archive: https://github.com/tpmullan/OctoPrint-DetailedProgress/archive/master.zip
 
 follow_dependency_links: false
 
@@ -33,6 +33,9 @@ screenshots:
   caption: Example of estimated time of completition
 
 featuredimage: /assets/img/plugins/detailedprogress/example-eta.jpg
+
+compatibility:
+  python: ">=2.7,<4"
 
 ---
 

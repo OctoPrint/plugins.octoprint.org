@@ -30,6 +30,9 @@ screenshots:
 - url: /assets/img/plugins/filamentmanager/filamentmanager_settings.png
   alt: Settings
   caption: Settings dialog to manage the filament
+
+abandoned: https://github.com/OctoPrint/plugins.octoprint.org/issues/471
+
 ---
 
 This OctoPrint plugin helps to manage your filament spools.
