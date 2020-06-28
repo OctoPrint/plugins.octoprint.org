@@ -5,10 +5,34 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>https://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 28 Jun 2020 07:07:47 -0500</pubDate>
-    <lastBuildDate>Sun, 28 Jun 2020 07:07:47 -0500</lastBuildDate>
+    <pubDate>Sun, 28 Jun 2020 09:11:29 -0500</pubDate>
+    <lastBuildDate>Sun, 28 Jun 2020 09:11:29 -0500</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
     
+    
+      <item>
+        <title>Sidebar Macros</title>
+        <description>
+          <![CDATA[
+            Plugin for Octoprint to add macros list in sidebar
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/macro/main.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Sun, 28 Jun 2020 00:00:00 -0500
+</pubDate>
+        <link>https://plugins.octoprint.org/plugins/macro/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/macro/</guid>
+        
+        <category>sidebar</category>
+        
+        <category>macros</category>
+        
+        <category>helpers</category>
+        
+        <category>gcode</category>
+        
+      </item>
     
       <item>
         <title>Delta Micro Calibrator</title>
@@ -227,24 +251,6 @@ Thu, 11 Jun 2020 00:00:00 -0500
         <category>Multi material</category>
         
         <category>Marlin 2.0</category>
-        
-      </item>
-    
-      <item>
-        <title>Signalclirestapi</title>
-        <description>
-          <![CDATA[
-            Another Signal Messenger Integration based on the signal-cli-rest-api docker image. Supports Signal Messenger groups and print progress.
-            <p><img src="https://plugins.octoprint.org/assets/img/plugins/signalclirestapi/config1.png"></p>
-          ]]>
-        </description>
-        <pubDate>
-Sat, 06 Jun 2020 00:00:00 -0500
-</pubDate>
-        <link>https://plugins.octoprint.org/plugins/signalclirestapi/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/signalclirestapi/</guid>
-        
-        <category>notification</category>
         
       </item>
     

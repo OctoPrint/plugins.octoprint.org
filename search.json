@@ -2539,6 +2539,17 @@
 "author": "Fabio Santos",
 "content": "Delta Micro Calibrator “ΔµCalibrator”An OctoPrint Plugin for performing micro calibration in linear delta machines.READMEKey features:  Automatic probing  Calibrates up to 18 geometry parameters  3D visualization of probed points and estimated points after proposed calibrationDemo\tWatch it in full screen",
 "tags": ["delta","calibration","3d","visualization"]
+},
+
+{
+"id": "/plugins/macro",
+"url": "/plugins/macro/",
+"date": "2020-06-28 00:00:00 -0500",
+"title": "Sidebar Macros",
+"description": "Plugin for Octoprint to add macros list in sidebar",
+"author": "Mikhail Poluboyarinov",
+"content": "Adds feature to create various gcode macros and display them in sidebar menu",
+"tags": ["sidebar","macros","helpers","gcode"]
 }
 ]
 }
