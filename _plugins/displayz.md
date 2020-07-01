@@ -30,7 +30,6 @@ compatibility:
   python: ">=2.7,<4"
   octoprint:
   - 1.2.0
-  python: ">=2.7,<4"
   
 abandoned: https://github.com/foosel/OctoPrint-DisplayZ/issues/7
   
