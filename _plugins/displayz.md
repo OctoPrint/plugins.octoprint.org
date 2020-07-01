@@ -29,6 +29,7 @@ featuredimage: /assets/img/plugins/displayz/displayz.png
 compatibility:
   octoprint:
   - 1.2.0
+  python: ">=2.7,<4"
 ---
 
 OctoPrint's state sidebar display panel used to display the current Z height
