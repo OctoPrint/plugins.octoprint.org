@@ -27,6 +27,7 @@ screenshots:
 featuredimage: /assets/img/plugins/displayz/displayz.png
 
 compatibility:
+  python: ">=2.7,<4"
   octoprint:
   - 1.2.0
   python: ">=2.7,<4"
