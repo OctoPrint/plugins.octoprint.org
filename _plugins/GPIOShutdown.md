@@ -7,11 +7,11 @@ description: A plugin that shutdown the Rasperry Pi if you connect ground to one
 author: Farhad Malekpour
 license: AGPLv3
 
-date: 2020-07-02
+date: 2020-07-03
 
-homepage: https://github.com/LuckyX182/Filament_sensor_simplified
-source: https://github.com/LuckyX182/Filament_sensor_simplified
-archive: https://github.com/LuckyX182/Filament_sensor_simplified/archive/master.zip
+homepage: https://github.com/fmalekpour/OctoPrint-Gpioshutdown
+source: https://github.com/fmalekpour/OctoPrint-Gpioshutdown
+archive: https://github.com/fmalekpour/OctoPrint-Gpioshutdown/archive/master.zip
 
 follow_dependency_links: false
 
