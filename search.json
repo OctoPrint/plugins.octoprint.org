@@ -2561,6 +2561,17 @@
 "author": "Mikhail Poluboyarinov",
 "content": "Adds feature to create various gcode macros and display them in sidebar menu",
 "tags": ["sidebar","macros","helpers","gcode"]
+},
+
+{
+"id": "/plugins/swapxy",
+"url": "/plugins/swapxy/",
+"date": "2020-07-02 00:00:00 -0500",
+"title": "SwapXY",
+"description": "Swap the X and Y axes used by the jog controls",
+"author": "Andy Castille ",
+"content": "SetupAs long as the plugin is enabled, the jog buttons for X and Y willdrive the other axis instead.To drive one or both of these axes in the opposite direction (negative/positive), enable the reverse option for that axis.ConfigThese options can also be changed from the web UI settings window.Default config:plugins:    swapxy:        reverse:            X: false            Y: falseDeveloped by Wolfram Manufacturing",
+"tags": ["controls","ui"]
 }
 ]
 }

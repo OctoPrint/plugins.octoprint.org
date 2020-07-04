@@ -8615,5 +8615,30 @@
             "instances_week": 308,
             "install_events_week": 308
         }
+    },
+
+    {
+        "id": "swapxy",
+        "published": "2020-07-02 00:00:00 -0500",
+        "title": "SwapXY",
+        "description": "Swap the X and Y axes used by the jog controls",
+        "archive": "https://gitlab.com/wolframmfg/octoprint-swapxy/-/archive/main/octoprint-swapxy-main.zip",
+        "author": "Andy Castille ",
+        "homepage": "https://gitlab.com/wolframmfg/octoprint-swapxy",
+        "page": "https://plugins.octoprint.org/plugins/swapxy/",
+        "compatibility": {
+            "octoprint": [],
+            "os": [],
+            "python": ">=2.7,<4"
+        },
+        "license": "GPLv3",
+        "image": "https://plugins.octoprint.org/assets/img/plugins/swapxy/swapxy_controls.png",
+        "abandoned": false,
+        "stats": {
+            "instances_month": 2,
+            "install_events_month": 1,
+            "instances_week": 1,
+            "install_events_week": 0
+        }
     }
 ]
