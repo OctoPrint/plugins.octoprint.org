@@ -22,6 +22,9 @@ screenshots:
   caption: Configuration
 
 featuredimage: /assets/img/plugins/swapxy/swapxy_controls.png
+
+python: ">=2.7,<4"
+
 ---
 
 ## Setup
