@@ -23,7 +23,8 @@ screenshots:
 
 featuredimage: /assets/img/plugins/swapxy/swapxy_controls.png
 
-python: ">=2.7,<4"
+compatibility:
+  python: ">=2.7,<4"
 
 ---
 
