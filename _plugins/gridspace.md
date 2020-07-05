@@ -27,11 +27,11 @@ tags:
 - print spooler
 
 screenshots:
-- url: assets/img/plugins/gridspace/Kiri-In-OctoPrint.png
-  alt: Kiri:Moto Tab in OctoPrint
-  caption: Kiri:Moto Tab in OctoPrint
+- url: /assets/img/plugins/gridspace/Kiri-In-OctoPrint.png
+  alt: "Kiri:Moto Tab in OctoPrint"
+  caption: "Kiri:Moto Tab in OctoPrint"
 
-featuredimage: assets/img/plugins/gridspace/Kiri-In-OctoPrint.png
+featuredimage: /assets/img/plugins/gridspace/Kiri-In-OctoPrint.png
 
 compatibility:
 
