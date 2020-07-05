@@ -2572,6 +2572,17 @@
 "author": "Andy Castille ",
 "content": "SetupAs long as the plugin is enabled, the jog buttons for X and Y willdrive the other axis instead.To drive one or both of these axes in the opposite direction (negative/positive), enable the reverse option for that axis.ConfigThese options can also be changed from the web UI settings window.Default config:plugins:    swapxy:        reverse:            X: false            Y: falseDeveloped by Wolfram Manufacturing",
 "tags": ["controls","ui"]
+},
+
+{
+"id": "/plugins/gridspace",
+"url": "/plugins/gridspace/",
+"date": "2020-07-04 00:00:00 -0500",
+"title": "OctoPrint-GridSpace",
+"description": "Allows for direct printing from GridSpace's Kiri:Moto slicer",
+"author": "Stewart Allen",
+"content": "This plugin allows for direct printing from GridSpace’s Kiri:Moto slicerto any OctoPrint servers on your local network with zero configuration.It also adds an iframe tab to OctoPrint’s interface that embeds theKiri:Moto web-based slicer. In addition to being a full-blown slicer,Kiri:Moto includes gcode visualization.",
+"tags": ["gcode","spooler","browser","network","slicer","slicer print","remote print","print export","print spooler"]
 }
 ]
 }
