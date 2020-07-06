@@ -81,9 +81,9 @@ compatibility:
   # If your plugin only supports Python 2 (worst case, not recommended for newly developed plugins since Python 2
   # is EOL), leave at ">=2.7,<3"
   
-  python: ">=2.7,<3"
+  python: ">=2.7,<4"
 
 ---
-
-**TODO**: Longer description of your plugin, configuration examples etc. This part will be visible on the page at
+This plugin allow you to control led directly with a custom ui control. It send M150 command to the printer, which can be intercepted by Octoprint with plugins like PCA9685LedStrip.
+You can click and drag the color you want or validate every color to avoid flooding the printer.
 http://plugins.octoprint.org/plugin/M150Control/
