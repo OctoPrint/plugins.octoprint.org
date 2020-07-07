@@ -8643,6 +8643,45 @@
     },
 
     {
+        "id": "GPIOShutdown",
+        "published": "2020-07-03 00:00:00 -0500",
+        "title": "GPIO Shutdown",
+        "description": "A plugin that shutdown the Rasperry Pi if you connect ground to one of the selected GPIO ports.",
+        "archive": "https://github.com/fmalekpour/OctoPrint-Gpioshutdown/archive/master.zip",
+        "author": "Farhad Malekpour",
+        "homepage": "https://github.com/fmalekpour/OctoPrint-Gpioshutdown",
+        "page": "https://plugins.octoprint.org/plugins/GPIOShutdown/",
+        "compatibility": {
+            "octoprint": ["1.3.0"],
+            "os": ["linux"],
+            "python": ">=2.7,<4"
+        },
+        "license": "AGPLv3",
+        "image": "https://github.com/fmalekpour/OctoPrint-Gpioshutdown/blob/master/screenshots/screen01.jpg",
+        "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "",
+                "date": "2020-07-03 03:22:55 +0000",
+                "tag": "1.0.1"
+            },
+            "releases": 1,
+            "last_push": "2020-07-03 03:22:08 +0000",
+            "stars": 0,
+            "issues": {
+                "open": 0,
+                "closed": 0
+            }
+        },
+        "stats": {
+            "instances_month": 0,
+            "install_events_month": 0,
+            "instances_week": 0,
+            "install_events_week": 0
+        }
+    },
+
+    {
         "id": "M150Control",
         "published": "2020-07-03 00:00:00 -0500",
         "title": "OctoPrint-M150control",
@@ -8657,6 +8696,7 @@
             "python": ">=2.7,<4"
         },
         "license": "AGPLv3",
+        "image": "https://plugins.octoprint.org/assets/img/plugins/M150Control/screenshot.jpg",
         "abandoned": false,
         "github": { 
             "last_push": "2020-07-06 14:03:26 +0000",

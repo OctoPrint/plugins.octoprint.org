@@ -5,8 +5,8 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>https://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 07 Jul 2020 10:48:57 -0500</pubDate>
-    <lastBuildDate>Tue, 07 Jul 2020 10:48:57 -0500</lastBuildDate>
+    <pubDate>Tue, 07 Jul 2020 10:59:17 -0500</pubDate>
+    <lastBuildDate>Tue, 07 Jul 2020 10:59:17 -0500</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
     
     
@@ -49,8 +49,7 @@ Sat, 04 Jul 2020 00:00:00 -0500
         <description>
           <![CDATA[
             Send M150 control through the UI
-            <p><img src="https://plugins.octoprint.org/assets/img/repo-600x400.png"></p>
-            
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/M150Control/screenshot.jpg"></p>
           ]]>
         </description>
         <pubDate>
@@ -64,6 +63,30 @@ Fri, 03 Jul 2020 00:00:00 -0500
         <category>color</category>
         
         <category>LED</category>
+        
+      </item>
+    
+      <item>
+        <title>GPIO Shutdown</title>
+        <description>
+          <![CDATA[
+            A plugin that shutdown the Rasperry Pi if you connect ground to one of the selected GPIO ports.
+            <p><img src="https://github.com/fmalekpour/OctoPrint-Gpioshutdown/blob/master/screenshots/screen01.jpg"></p>
+          ]]>
+        </description>
+        <pubDate>
+Fri, 03 Jul 2020 00:00:00 -0500
+</pubDate>
+        <link>https://plugins.octoprint.org/plugins/GPIOShutdown/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/GPIOShutdown/</guid>
+        
+        <category>GPIO</category>
+        
+        <category>shutdown</category>
+        
+        <category>system ready</category>
+        
+        <category>ready to run</category>
         
       </item>
     
@@ -240,26 +263,6 @@ Mon, 22 Jun 2020 00:00:00 -0500
         <category>Android</category>
         
         <category>notifications</category>
-        
-      </item>
-    
-      <item>
-        <title>Z Probe Offset Control</title>
-        <description>
-          <![CDATA[
-            Add input to the control view for editing the z probe offset on marlin based printers
-            <p><img src="https://plugins.octoprint.org/assets/img/plugins/z_probe_offset/z_probe_offset_control.png"></p>
-          ]]>
-        </description>
-        <pubDate>
-Sun, 14 Jun 2020 00:00:00 -0500
-</pubDate>
-        <link>https://plugins.octoprint.org/plugins/z_probe_offset/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/z_probe_offset/</guid>
-        
-        <category>probe</category>
-        
-        <category>marlin</category>
         
       </item>
     
