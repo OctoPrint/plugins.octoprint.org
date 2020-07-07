@@ -24,10 +24,10 @@ tags:
 - LED
 
 screenshots:
-- url: assets/img/plugins/M150Control/screenshot.jpeg
+- url: /assets/img/plugins/M150Control/screenshot.jpg
   caption: Main control
   alt: M150 control screenshot  
-featuredimage:
+featuredimage: /assets/img/plugins/M150Control/screenshot.jpg
 
 # TODO
 # You only need the following if your plugin requires specific OctoPrint versions or
