@@ -2575,6 +2575,17 @@
 },
 
 {
+"id": "/plugins/M150Control",
+"url": "/plugins/M150Control/",
+"date": "2020-07-03 00:00:00 -0500",
+"title": "OctoPrint-M150control",
+"description": "Send M150 control through the UI",
+"author": "Jean-Philippe Alexandre",
+"content": "This plugin allow you to control led directly with a custom ui control. It send M150 command to the printer, which can be intercepted by Octoprint with plugins like PCA9685LedStrip.You can click and drag the color you want or validate every color to avoid flooding the printer.http://plugins.octoprint.org/plugin/M150Control/",
+"tags": ["M150","color","LED"]
+},
+
+{
 "id": "/plugins/gridspace",
 "url": "/plugins/gridspace/",
 "date": "2020-07-04 00:00:00 -0500",
