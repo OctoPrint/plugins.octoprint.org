@@ -2605,6 +2605,17 @@
 "author": "Stewart Allen",
 "content": "This plugin allows for direct printing from GridSpace’s Kiri:Moto slicerto any OctoPrint servers on your local network with zero configuration.It also adds an iframe tab to OctoPrint’s interface that embeds theKiri:Moto web-based slicer. In addition to being a full-blown slicer,Kiri:Moto includes gcode visualization.",
 "tags": ["gcode","spooler","browser","network","slicer","slicer print","remote print","print export","print spooler"]
+},
+
+{
+"id": "/plugins/ArduCamFocus",
+"url": "/plugins/ArduCamFocus/",
+"date": "2020-07-11 00:00:00 -0500",
+"title": "ArduCamFocus",
+"description": "Plugin to control ArduCam with motorized focus control on octopi",
+"author": "moof, jneilliii",
+"content": "ArduCamFocusHere is a simple plugin to control an ArduCam motorized focus camera using the OctoPrint Control tab. It uses I2C and it is expected the user followed the ArduCam installation instructions and enabled I2C support.It utilizes these custom commands from your slicer to adjust focus while printing:  @ARDUCAMFOCUS &lt;RELATIVE-FOCUS&gt; to adjust focus   @ARDUCAMFOCUSSET &lt;ABS-FOCUS&gt; to specify an absolute focus. This command is handy to reset the focus when starting a new print after a power failure.Example: @ARDUCAMFOCUSSET 100 will move the focus to 100.Pre-Installation RequirementsPlease follow the instructions here in order for this plugin to properly operate. Without these steps the plugin will not be able to control the I2C camera on your Pi and as a result the focus will not change.SettingsThis plugin has no configurable settings.DisclaimerAlthough I use this plugin and it works for me without issues, I take no resposiblity for any damage caused by using this plugin. Your camera version, i2c address, or system configuration may be different from mine.  Please make sure to do your reseach and understand the dangers and please be careful.",
+"tags": ["ArduCam","camera","focus"]
 }
 ]
 }

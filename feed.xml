@@ -5,10 +5,32 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>https://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 11 Jul 2020 07:09:12 -0500</pubDate>
-    <lastBuildDate>Sat, 11 Jul 2020 07:09:12 -0500</lastBuildDate>
+    <pubDate>Sat, 11 Jul 2020 17:31:53 -0500</pubDate>
+    <lastBuildDate>Sat, 11 Jul 2020 17:31:53 -0500</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
     
+    
+      <item>
+        <title>ArduCamFocus</title>
+        <description>
+          <![CDATA[
+            Plugin to control ArduCam with motorized focus control on octopi
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/ArduCamFocus/ControlScreenShot.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Sat, 11 Jul 2020 00:00:00 -0500
+</pubDate>
+        <link>https://plugins.octoprint.org/plugins/ArduCamFocus/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/ArduCamFocus/</guid>
+        
+        <category>ArduCam</category>
+        
+        <category>camera</category>
+        
+        <category>focus</category>
+        
+      </item>
     
       <item>
         <title>OctoPrint-GridSpace</title>
@@ -235,34 +257,6 @@ Tue, 23 Jun 2020 00:00:00 -0500
         <category>hook</category>
         
         <category>M600</category>
-        
-      </item>
-    
-      <item>
-        <title>OctoPrint-3DGeeks</title>
-        <description>
-          <![CDATA[
-            Companion plugin for 3D Geeks (Android &amp; iOS App)
-            <p><img src="https://plugins.octoprint.org/assets/img/plugins/geeks3d/featured.png"></p>
-          ]]>
-        </description>
-        <pubDate>
-Mon, 22 Jun 2020 00:00:00 -0500
-</pubDate>
-        <link>https://plugins.octoprint.org/plugins/geeks3d/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/geeks3d/</guid>
-        
-        <category>3dgeeks</category>
-        
-        <category>push</category>
-        
-        <category>print finished</category>
-        
-        <category>print started</category>
-        
-        <category>Android</category>
-        
-        <category>notifications</category>
         
       </item>
     
