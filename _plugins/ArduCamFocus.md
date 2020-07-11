@@ -7,7 +7,7 @@ description: Plugin to control ArduCam with motorized focus control on octopi
 author: moof, jneilliii
 license: AGPLv3
 
-date: 2020-07-04
+date: 2020-07-11
 
 homepage: https://github.com/moof-src/ArduCamFocus
 source: https://github.com/moof-src/ArduCamFocus
