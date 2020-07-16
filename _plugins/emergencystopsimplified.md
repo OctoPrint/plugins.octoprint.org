@@ -23,10 +23,6 @@ tags:
 - trigger
 - button
 
-screenshots:
-  
-featuredimage: 
-
 compatibility:
   python: ">=2.7,<4"
 

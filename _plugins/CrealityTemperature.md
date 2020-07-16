@@ -21,10 +21,6 @@ tags:
 - creality
 - temperature
 
-screenshots:
-
-featuredimage: 
-
 compatibility:
   octoprint:
   - 1.3.0
