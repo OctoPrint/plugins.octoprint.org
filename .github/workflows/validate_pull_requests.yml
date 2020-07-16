@@ -23,7 +23,7 @@ jobs:
           pip install -r ./src/_build/requirements.txt
 
       - name: ✔ Validate
-        run:
+        run: |
           echo "Validating changed plugin files between ${{ github.event.pull_request.base.sha }} and ${{ github.event.pull_request.head.sha }}"
 
           cd src
