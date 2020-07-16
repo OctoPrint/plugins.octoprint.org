@@ -33,7 +33,7 @@ screenshots:
   alt: Smart Multi Filament Feeder 
   caption: The SMuFF V5
 
-featuredimage: /assets/img/plugins/SMuFF/SMuFF_V5.jpg
+featuredimage: /assets/img/plugins/SMuFF/SMuFF-V5.jpg
 
 # You only need the following if your plugin requires specific OctoPrint versions or
 # specific operating systems to function - you can safely remove the whole

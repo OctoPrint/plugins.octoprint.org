@@ -28,12 +28,6 @@ def Version(v):
 	except:
 		raise Invalid("version {} is not a valid PEP440 version specifier".format(v))
 
-def Path(v):
-	if not isinstance(v, str):
-		raise Invalid("path {!r} is not a string".format(v))
-	if not v.startswith("/assets/img/plugins/"):
-		raise Invalid("path {} must start with /assets/img/plugins/".format(v))
-
 def ImageLocation(v):
 	if not isinstance(v, str):
 		raise Invalid("image location {!r} is not a string".format(v))
@@ -44,6 +38,10 @@ def ImageLocation(v):
 	except Invalid:
 		if not v.startswith("/assets/img/plugins/"):
 			raise Invalid("image location '{}' must either be an URL or a path starting with /assets/img/plugins/".format(v))
+
+		image_path = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", v[1:]))
+		if not os.path.exists(image_path):
+			raise Invalid("image location '{}' doesn't exist on disk ({})".format(v, image_path))
 
 ScreenshotDef = Schema({
 	Required("url"): ImageLocation,
