@@ -27,6 +27,8 @@ jobs:
           echo "Validating changed plugin files between ${{ github.event.pull_request.base.sha }} and ${{ github.event.pull_request.head.sha }}"
 
           cd src
+          git diff-tree --no-commit-id --name-status -r ${{ github.event.pull_request.base.sha }} ${{ github.event.pull_request.head.sha }}
+
           while read modifier file; do
             if [[ $file == "_plugins/*" ]] && [[ $file == "*.md" ]]; then
               if [ $modifier == "M" ]; then
