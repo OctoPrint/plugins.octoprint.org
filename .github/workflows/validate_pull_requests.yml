@@ -30,13 +30,13 @@ jobs:
           git diff-tree --no-commit-id --name-status -r ${{ github.event.pull_request.base.sha }} ${{ github.event.pull_request.head.sha }}
 
           while read modifier file; do
-            if [[ $file == "_plugins/*" ]] && [[ $file == "*.md" ]]; then
-              if [ $modifier == "M" ]; then
+            if [[ $file == _plugins/* ]] && [[ $file == *.md ]]; then
+              if [ "$modifier" == "M" ]; then
                 echo "MODIFIED: $file"
-                python validate_front_matter.py ../$file --debug --date-unchanged=${{ github.event.pull_request.base.sha }}
-              elif [ $modifier == "A" ]; then
+                python validate_front_matter.py "../$file" --debug --date-unchanged=${{ github.event.pull_request.base.sha }}
+              elif [ "$modifier" == "A" ]; then
                 echo "ADDED: $file"
-                python validate_front_matter.py ../$file --debug
+                python validate_front_matter.py "../$file" --debug
               fi
             fi
           done < <(git diff-tree --no-commit-id --name-status -r ${{ github.event.pull_request.base.sha }} ${{ github.event.pull_request.head.sha }} | xargs -n2 )
