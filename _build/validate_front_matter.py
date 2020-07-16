@@ -6,6 +6,7 @@ import colorama
 import datetime
 import pkg_resources
 import click
+import subprocess
 
 from voluptuous import Schema, Invalid, Required, Optional, Any, All, Length, Range, Url
 
@@ -83,20 +84,52 @@ SCHEMA = Schema({
 	Optional("redirect_from"): NonEmptyString
 })
 
+def validate_schema(data):
+	SCHEMA(data)
 
-def validate(path):
+def validate_id_match(data, path):
+	if data["id"] != os.path.basename(path)[:-3]:
+		raise ValueError("id {} for {} does not match file name".format(data["id"], path))
+
+def validate_date_unchanged(data, path, cwd, sha):
+	gitpath = path[len(cwd) + 1:]
+	if sys.platform == "win32":
+		gitpath = gitpath.replace("\\", "/")
+
+	try:
+		output = subprocess.check_output("git show {}:{}".format(sha, gitpath), encoding="utf-8")
+		if not output:
+			raise ValueError("could not read prior version")
+	except subprocess.CalledProcessError:
+		return
+
+	old_metadata, old_content = frontmatter.parse(output)
+	if data["date"] != old_metadata.get("date"):
+		raise ValueError("date must not be changed after initial registration")
+
+def validate(cwd, path, id_match=False, date_unchanged=False):
 	with codecs.open(path, mode="r", encoding="utf-8") as f:
 		metadata, content = frontmatter.parse(f.read())
 	SCHEMA(metadata)
 
+	if id_match:
+		validate_id_match(metadata, path)
+
+	if date_unchanged and path.startswith(cwd):
+		validate_date_unchanged(metadata, path, cwd, date_unchanged)
 
 @click.command()
 @click.option("--debug", is_flag=True)
+@click.option("--id-match", "id_match", is_flag=True)
+@click.option("--date-unchanged", "date_unchanged", help="Provide git committish with which to compare")
 @click.argument("paths", nargs=-1)
-def main(paths, debug):
+def main(paths, debug, id_match, date_unchanged):
 	count = 0
 	fails = 0
 
+	paths = list(map(os.path.abspath, paths))
+
+	cwd = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 	plugin_dir = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "_plugins"))
 	with os.scandir(plugin_dir) as it:
 		for entry in it:
@@ -108,7 +141,9 @@ def main(paths, debug):
 				continue
 
 			try:
-				validate(path)
+				validate(cwd, path,
+				         id_match=id_match,
+				         date_unchanged=date_unchanged)
 			except Exception as exc:
 				print("{}: ".format(path), end="")
 				print(colorama.Fore.RED + colorama.Style.BRIGHT + "FAIL")
