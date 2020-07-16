@@ -97,7 +97,9 @@ def validate_date_unchanged(data, path, cwd, sha):
 		gitpath = gitpath.replace("\\", "/")
 
 	try:
-		output = subprocess.check_output("git show {}:{}".format(sha, gitpath), encoding="utf-8")
+		output = subprocess.check_output(["git",
+		                                  "show",
+		                                  "{}:{}".format(sha, gitpath)], encoding="utf-8")
 		if not output:
 			raise ValueError("could not read prior version")
 	except subprocess.CalledProcessError:
