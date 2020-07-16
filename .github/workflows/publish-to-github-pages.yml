@@ -29,17 +29,24 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: "3.7"
-      
+
+      - name: 🐍 Install requirements
+        run: |
+          pip install -r ./src/_build/requirements.txt
+
       - name: 📺 Refresh youtube thumbnails
         run: |
           cd src
           chmod +x fetch_yt_preview
-          ./fetch_yt_preview
+          ./fetch_yt_preview'
+
+      - name: ✔ Validate metadata
+        run: |
+          python ./src/_build/validate_front_matter.py --debug
 
       - name: 🏗 Enrich metadata
         if: github.repository == 'OctoPrint/plugins.octoprint.org' && github.event_name != 'pull_request'
         run: |
-          pip install -r ./src/_build/requirements.txt
           python ./src/_build/populate_additional_metadata.py
         env:
           GITHUB_TOKEN: ${{ secrets.metadata_token }}
