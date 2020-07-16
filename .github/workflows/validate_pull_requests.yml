@@ -11,7 +11,7 @@ jobs:
         with:
           path: src
           ref: ${{ github.event.pull_request.head.sha }}
-          depth: 0
+          fetch-depth: 0
 
       - name: 🐍 Set up Python 3.7
         uses: actions/setup-python@v2
