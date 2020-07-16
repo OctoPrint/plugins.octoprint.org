@@ -38,7 +38,7 @@ jobs:
         run: |
           cd src
           chmod +x fetch_yt_preview
-          ./fetch_yt_preview'
+          ./fetch_yt_preview
 
       - name: ✔ Validate metadata
         run: |
