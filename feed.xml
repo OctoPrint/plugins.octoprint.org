@@ -5,10 +5,36 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>https://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 16 Jul 2020 12:30:31 -0500</pubDate>
-    <lastBuildDate>Thu, 16 Jul 2020 12:30:31 -0500</lastBuildDate>
+    <pubDate>Thu, 16 Jul 2020 16:57:23 -0500</pubDate>
+    <lastBuildDate>Thu, 16 Jul 2020 16:57:23 -0500</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
     
+    
+      <item>
+        <title>OctoPrint-Cooldownfan</title>
+        <description>
+          <![CDATA[
+            Turn on the cooldown fan after prining finished
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/cooldownfan/cool-down-fan-config-screen.jpg"></p>
+          ]]>
+        </description>
+        <pubDate>
+Thu, 16 Jul 2020 00:00:00 -0500
+</pubDate>
+        <link>https://plugins.octoprint.org/plugins/GPIOCoolDownFan/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/GPIOCoolDownFan/</guid>
+        
+        <category>GPIO</category>
+        
+        <category>Cool down</category>
+        
+        <category>Fan</category>
+        
+        <category>External Fan</category>
+        
+        <category>Cool Down Fan</category>
+        
+      </item>
     
       <item>
         <title>ArduCamFocus</title>
@@ -229,34 +255,6 @@ Tue, 23 Jun 2020 00:00:00 -0500
         <category>tunnel</category>
         
         <category>ssl</category>
-        
-      </item>
-    
-      <item>
-        <title>Rewrite M600 - For M600 Unsupported</title>
-        <description>
-          <![CDATA[
-            Implement M600 for pinters that can't support M600 by default (TFT with out marlin mode support, like Artilelry X1 and Genius)
-            <p><img src="https://plugins.octoprint.org/assets/img/plugins/RewriteM600/M600-in-action.png"></p>
-          ]]>
-        </description>
-        <pubDate>
-Tue, 23 Jun 2020 00:00:00 -0500
-</pubDate>
-        <link>https://plugins.octoprint.org/plugins/RewriteM600/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/RewriteM600/</guid>
-        
-        <category>filament</category>
-        
-        <category>simplified</category>
-        
-        <category>trigger</category>
-        
-        <category>color change</category>
-        
-        <category>hook</category>
-        
-        <category>M600</category>
         
       </item>
     

@@ -2616,6 +2616,17 @@
 "author": "moof, jneilliii",
 "content": "ArduCamFocusHere is a simple plugin to control an ArduCam motorized focus camera using the OctoPrint Control tab. It uses I2C and it is expected the user followed the ArduCam installation instructions and enabled I2C support.It utilizes these custom commands from your slicer to adjust focus while printing:  @ARDUCAMFOCUS &lt;RELATIVE-FOCUS&gt; to adjust focus   @ARDUCAMFOCUSSET &lt;ABS-FOCUS&gt; to specify an absolute focus. This command is handy to reset the focus when starting a new print after a power failure.Example: @ARDUCAMFOCUSSET 100 will move the focus to 100.Pre-Installation RequirementsPlease follow the instructions here in order for this plugin to properly operate. Without these steps the plugin will not be able to control the I2C camera on your Pi and as a result the focus will not change.SettingsThis plugin has no configurable settings.DisclaimerAlthough I use this plugin and it works for me without issues, I take no resposiblity for any damage caused by using this plugin. Your camera version, i2c address, or system configuration may be different from mine.  Please make sure to do your reseach and understand the dangers and please be careful.",
 "tags": ["ArduCam","camera","focus"]
+},
+
+{
+"id": "/plugins/GPIOCoolDownFan",
+"url": "/plugins/GPIOCoolDownFan/",
+"date": "2020-07-16 00:00:00 -0500",
+"title": "OctoPrint-Cooldownfan",
+"description": "Turn on the cooldown fan after prining finished",
+"author": "Farhad Malekpour",
+"content": "DescriptionAt the end of printing, I had to wait a long time for hotbed to cool down in order to remove the print. So I attached two large fan to top of the printer, connected them to a relay module and signalled it from GPIO on Raspberry Pi. This plugin controlls the relay module and turns ON the fan for defined amount of time at the end of printing.SetupInstall via the bundled Plugin Manageror manually using this URL:https://github.com/fmalekpour/OctoPrint-Cooldownfan/archive/master.zipConfigurationIn web interface, install the plugin and reload if necessary, then click on GPIO Shutdown, you will have:  Pin Cooldown: Which Raspberry Pi GPIO pin (BCM Mode) your cooldown fan relay or mosfet is attached to.  Run time: When printing finished, run the external cooldown fan for this amount of time.  Normal State: State of the GPIO pin when fan is OFF.In configuration screen, there are two buttons (Fan ON and Fan OFF) to test the fan functionality.You can find the GPIO pin number assignments at Raspberry Pi GPIO Pinout.Support meThis plugin was developed in my spare time.If you find it useful and like it Buy me a beer, cheers :)",
+"tags": ["GPIO","Cool down","Fan","External Fan","Cool Down Fan"]
 }
 ]
 }
