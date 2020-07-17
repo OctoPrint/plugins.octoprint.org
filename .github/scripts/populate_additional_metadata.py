@@ -348,7 +348,7 @@ if __name__ == "__main__":
 
 	futures_to_name = dict()
 
-	plugin_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "_plugins")
+	plugin_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "_plugins")
 	with os.scandir(plugin_dir) as it:
 		for entry in it:
 			if not entry.is_file() or not entry.name.endswith(".md"):
