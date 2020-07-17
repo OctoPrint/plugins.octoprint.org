@@ -178,6 +178,8 @@ def main(paths, debug=False, id_match=False, internal_assets=False, date_unchang
 				paths.append(entry.path)
 
 	for path in paths:
+		path = os.path.abspath(path)
+
 		try:
 			warnings = validate(cwd, path,
 			                    id_match=id_match,
