@@ -32,22 +32,22 @@ jobs:
 
       - name: 🐍 Install requirements
         run: |
-          pip install -r ./src/_build/requirements.txt
+          pip install -r ./src/.github/scripts/requirements.txt
 
       - name: 📺 Refresh youtube thumbnails
         run: |
-          cd src
+          cd src/.github/scripts
           chmod +x fetch_yt_preview
           ./fetch_yt_preview
 
-      - name: ✔ Validate metadata
+      - name: 🕵️‍♂ Validate front matter
         run: |
-          python ./src/_build/validate_front_matter.py --debug
+          python ./src/.github/scripts/validate_front_matter.py --action-output --check-internal-assets
 
-      - name: 🏗 Enrich metadata
+      - name: 🏗 Enrich front matter
         if: github.repository == 'OctoPrint/plugins.octoprint.org' && github.event_name != 'pull_request'
         run: |
-          python ./src/_build/populate_additional_metadata.py
+          python ./src/.github/scripts/populate_additional_metadata.py
         env:
           GITHUB_TOKEN: ${{ secrets.metadata_token }}
 
