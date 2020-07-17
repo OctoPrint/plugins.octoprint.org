@@ -35,7 +35,7 @@ screenshots:
   caption: Customize the text Octorant sends to your channel
 
 # Featured image
-featuredimage: /assets/img/DiscordRemote/featured.jpg
+featuredimage: /assets/img/plugins/DiscordRemote/featured.jpg
 
 ---
 

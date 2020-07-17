@@ -23,7 +23,6 @@ compatibility:
 
   os:
   - linux
-  - raspbian
 
 ---
 

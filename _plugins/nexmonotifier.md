@@ -32,9 +32,6 @@ screenshots:
   caption: Configure notification recipient, secret, api key and message.
 
 # TODO
-featuredimage: url of a featured image for your plugin, /assets/img/...
-
-# TODO
 # You only need the following if your plugin requires specific OctoPrint versions or
 # specific operating systems to function - you can safely remove the whole
 # "compatibility" block if this is not the case.

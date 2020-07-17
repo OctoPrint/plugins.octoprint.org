@@ -23,10 +23,6 @@ tags:
 - Dremel
 - PowerSpec
 
-screenshots:
-
-featuredimage:
-
 # You only need the following if your plugin requires specific OctoPrint versions or
 # specific operating systems to function - you can safely remove the whole
 # "compatibility" block if this is not the case.

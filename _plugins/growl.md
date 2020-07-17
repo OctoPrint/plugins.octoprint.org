@@ -19,6 +19,8 @@ date: 2015-04-14
 tags: 
 - notification
 
+license: AGPLv3
+
 up_for_adoption: https://github.com/OctoPrint/OctoPrint-Growl/issues/7
 
 ---

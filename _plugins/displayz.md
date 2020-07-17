@@ -31,8 +31,6 @@ compatibility:
   octoprint:
   - 1.2.0
   
-abandoned: https://github.com/foosel/OctoPrint-DisplayZ/issues/7
-  
 ---
 
 OctoPrint's state sidebar display panel used to display the current Z height

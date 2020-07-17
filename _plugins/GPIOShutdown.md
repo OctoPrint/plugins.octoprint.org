@@ -22,11 +22,11 @@ tags:
 - ready to run
 
 screenshots:
-- url: https://github.com/fmalekpour/OctoPrint-Gpioshutdown/blob/master/screenshots/screen01.jpg
+- url: https://raw.githubusercontent.com/fmalekpour/OctoPrint-Gpioshutdown/master/screenshots/screen01.jpg
   alt: Configuration Screen
   caption: Configuration Screen
   
-featuredimage: https://github.com/fmalekpour/OctoPrint-Gpioshutdown/blob/master/screenshots/screen01.jpg
+featuredimage: https://raw.githubusercontent.com/fmalekpour/OctoPrint-Gpioshutdown/master/screenshots/screen01.jpg
 
 compatibility:
   python: ">=2.7,<4"

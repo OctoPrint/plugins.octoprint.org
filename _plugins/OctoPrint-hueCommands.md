@@ -30,8 +30,6 @@ featuredimage: https://raw.githubusercontent.com/LMS0815/OctoPrint-hueCommands/m
 compatibility:
   octoprint:
   - 1.3.9
-  os:
-  - all
+  python: ">=2.7,<4"
 
-python: ">=2.7,<4"
 ---

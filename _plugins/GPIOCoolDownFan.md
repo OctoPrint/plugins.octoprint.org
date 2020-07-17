@@ -3,6 +3,7 @@ layout: plugin
 
 id: cooldownfan
 title: OctoPrint-Cooldownfan
+
 description: Turn on the cooldown fan after printing finished
 author: Farhad Malekpour
 license: AGPLv3

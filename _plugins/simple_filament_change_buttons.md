@@ -21,7 +21,7 @@ screenshots:
   alt: Screenshot showing Park/Unload/Load/Change buttons
   caption: Filament Change Buttons
 
-featuredimage: /assets/img/plugins/Simple_Filament_Change_Buttons/sfc_buttons.png
+featuredimage: /assets/img/plugins/simple_filament_change_buttons/sfc_buttons.png
 
 ---
 

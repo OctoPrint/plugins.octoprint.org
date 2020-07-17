@@ -31,7 +31,7 @@ screenshots:
   alt: dryrun-activated
   caption: dryrun-activated
   
-featuredimage: dryrun-activated
+featuredimage: https://github.com/OllisGit/OctoPrint-DryRun/raw/master/screenshots/StateAndNavBar.jpg
 
 ---
 
