@@ -113,8 +113,7 @@ def validate_image_urls(data, path):
 def validate_id_match(data, path):
 	filename = os.path.basename(path)[:-3]
 	if data["id"] != filename:
-		raise ValueError("id '{}' does not match file name '{}.md'".format(data["id"], filename))
-
+		return ["id '{}' does not match file name '{}.md' @ data['id']".format(data["id"], filename)]
 	return []
 
 def validate_date_unchanged(data, path, cwd, sha):
@@ -133,7 +132,7 @@ def validate_date_unchanged(data, path, cwd, sha):
 
 	old_metadata, old_content = frontmatter.parse(output)
 	if data["date"] != old_metadata.get("date"):
-		raise ValueError("date must not be changed after initial registration")
+		raise ValueError("date must not be changed after initial registration @ data['date']")
 
 	return []
 
