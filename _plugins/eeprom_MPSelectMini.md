@@ -7,13 +7,16 @@ description: Makes it possible to change the EEPROM values of the Monoprice Sele
 author: Brian Ruhmann
 license: AGPLv3
 
-date: 2017-08-13
+date: 2020-07-18
 
 homepage: https://github.com/bruhmann/OctoPrint-EEprom-MPSelectMini
 source: https://github.com/bruhmann/OctoPrint-EEprom-MPSelectMini
 archive: https://github.com/bruhmann/OctoPrint-EEprom-MPSelectMini/archive/master.zip
 
 follow_dependency_links: false
+
+compatibility:
+  python: ">=2.7,<4"
 
 tags:
 - malyan
