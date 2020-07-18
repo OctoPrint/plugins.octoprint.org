@@ -21,6 +21,9 @@ tags:
 - monoprice
 - helper
 
+compatibility:
+  python: ">=2.7,<4"
+
 screenshots:
 - url: /assets/img/plugins/eeprom_mpselectmini/screen.png
   alt: Settings
