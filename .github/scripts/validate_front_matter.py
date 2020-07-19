@@ -116,15 +116,16 @@ def validate_id_match(data, path):
 		return ["id '{}' does not match file name '{}.md' @ data['id']".format(data["id"], filename)]
 	return []
 
-def validate_date_unchanged(data, path, cwd, sha):
-	gitpath = path[len(cwd) + 1:]
+def validate_date_unchanged(data, path, src, sha, debug=False):
+	gitpath = path[len(src) + 1:]
 	if sys.platform == "win32":
 		gitpath = gitpath.replace("\\", "/")
 
+	command = ["git", "show", "{}:{}".format(sha, gitpath)]
+	if debug:
+		print("Running {}".format(" ".join(command)))
 	try:
-		output = subprocess.check_output(["git",
-		                                  "show",
-		                                  "{}:{}".format(sha, gitpath)], encoding="utf-8")
+		output = subprocess.check_output(command, encoding="utf-8")
 		if not output:
 			raise ValueError("could not read prior version")
 	except subprocess.CalledProcessError:
@@ -136,7 +137,7 @@ def validate_date_unchanged(data, path, cwd, sha):
 
 	return []
 
-def validate(cwd, path, id_match=False, internal_assets=False, date_unchanged=False):
+def validate(src, path, id_match=False, internal_assets=False, date_unchanged=False, debug=False):
 	with codecs.open(path, mode="r", encoding="utf-8") as f:
 		metadata, content = frontmatter.parse(f.read())
 
@@ -150,24 +151,31 @@ def validate(cwd, path, id_match=False, internal_assets=False, date_unchanged=Fa
 	if internal_assets:
 		warnings += validate_image_urls(metadata, path)
 
-	if date_unchanged and path.startswith(cwd):
-		warnings += validate_date_unchanged(metadata, path, cwd, date_unchanged)
+	if date_unchanged:
+		if path.startswith(src):
+			warnings += validate_date_unchanged(metadata, path, src, date_unchanged, debug=debug)
+		else:
+			print("Can't check for unchanged date, {} is not in {}".format(path, src))
 
 	return warnings
 
 @click.command()
 @click.option("--debug", is_flag=True)
+@click.option("--src", "src")
 @click.option("--check-id-match", "id_match", is_flag=True)
 @click.option("--check-internal-assets", "internal_assets", is_flag=True)
 @click.option("--check-date-unchanged", "date_unchanged", help="Provide git committish with which to compare")
 @click.option("--action-output", "action_output", is_flag=True)
 @click.argument("paths", nargs=-1)
-def main(paths, debug=False, id_match=False, internal_assets=False, date_unchanged=None, action_output=False):
+def main(paths, debug=False, src=None, id_match=False, internal_assets=False, date_unchanged=None, action_output=False):
 	count = 0
 	fails = 0
 
-	cwd = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))
-	plugin_dir = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "_plugins"))
+	if src is None:
+		src = os.getcwd()
+	
+	src = os.path.abspath(src)
+	plugin_dir = os.path.join(src, "_plugins")
 
 	if not len(paths):
 		paths = []
@@ -181,10 +189,11 @@ def main(paths, debug=False, id_match=False, internal_assets=False, date_unchang
 		path = os.path.abspath(path)
 
 		try:
-			warnings = validate(cwd, path,
+			warnings = validate(src, path,
 			                    id_match=id_match,
 			                    internal_assets=internal_assets,
-			                    date_unchanged=date_unchanged)
+			                    date_unchanged=date_unchanged,
+			                    debug=debug)
 		except Exception as exc:
 			print("{}: ".format(path), end="")
 			print(colorama.Fore.RED + colorama.Style.BRIGHT + "FAIL")

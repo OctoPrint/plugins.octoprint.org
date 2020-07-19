@@ -13,6 +13,11 @@ jobs:
           ref: ${{ github.event.pull_request.head.sha }}
           fetch-depth: 0
 
+      - uses: actions/checkout@v2
+        with:
+          path: current
+          ref: gh-pages
+
       - name: 🐍 Set up Python 3.7
         uses: actions/setup-python@v2
         with:
@@ -20,7 +25,7 @@ jobs:
 
       - name: 🐍 Install requirements
         run: |
-          pip install -r ./src/.github/scripts/requirements.txt
+          pip install -r ./current/.github/scripts/requirements.txt
 
       - name: 🕵️‍♂ Validate front matter
         run: |
@@ -33,10 +38,10 @@ jobs:
             if [[ $file == _plugins/* ]] && [[ $file == *.md ]]; then
               if [ "$modifier" == "M" ]; then
                 echo "MODIFIED: $file"
-                python .github/scripts/validate_front_matter.py "$file" --debug --check-date-unchanged=${{ github.event.pull_request.base.sha }} --action-output
+                python ../current/.github/scripts/validate_front_matter.py "$file" --debug --check-date-unchanged=${{ github.event.pull_request.base.sha }} --action-output
               elif [ "$modifier" == "A" ]; then
                 echo "ADDED: $file"
-                python .github/scripts/validate_front_matter.py "$file" --debug --check-internal-assets --check-id-match --action-output
+                python ../current/.github/scripts/validate_front_matter.py "$file" --debug --check-internal-assets --check-id-match --action-output
               fi
             fi
           done < <(git diff-tree --no-commit-id --name-status -r ${{ github.event.pull_request.base.sha }} ${{ github.event.pull_request.head.sha }} | xargs -n2 )
