@@ -42,7 +42,8 @@ jobs:
 
       - name: 🕵️‍♂ Validate front matter
         run: |
-          python ./src/.github/scripts/validate_front_matter.py --action-output
+          cd src
+          python .github/scripts/validate_front_matter.py --action-output
 
       - name: 🏗 Enrich front matter
         if: github.repository == 'OctoPrint/plugins.octoprint.org' && github.event_name != 'pull_request'
