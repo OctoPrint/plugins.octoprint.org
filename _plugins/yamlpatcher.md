@@ -7,7 +7,7 @@ description: Allows patching up config.yaml through the web interface
 author: Gina Häußge
 license: AGPLv3
 
-date: 2015-07-08
+date: 2015-07-09
 
 homepage: https://github.com/OctoPrint/OctoPrint-Yamlpatcher
 source: https://github.com/OctoPrint/OctoPrint-Yamlpatcher
