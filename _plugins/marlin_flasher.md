@@ -55,6 +55,8 @@ compatibility:
   - macos
   - freebsd
 
+  python: ">=2.7,<4"
+
 ---
 
 Adds the ability to easily update your Arduino and Platform.io based printer firmware with just a few clicks directly through OctoPrint.
