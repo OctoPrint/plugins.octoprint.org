@@ -199,7 +199,7 @@ def main(paths, debug=False, src=None, id_match=False, internal_assets=False, da
 			print(colorama.Fore.RED + colorama.Style.BRIGHT + "FAIL")
 
 			if action_output:
-				print("::error file={}::{}".format(path[len(cwd) + 1:], str(exc)))
+				print("::error file={}::{}".format(path[len(src) + 1:], str(exc)))
 			else:
 				print("  " + str(exc))
 
@@ -212,7 +212,7 @@ def main(paths, debug=False, src=None, id_match=False, internal_assets=False, da
 
 					for warning in warnings:
 						if action_output:
-							print("::warning file={}::{}".format(path[len(cwd) + 1:], warning))
+							print("::warning file={}::{}".format(path[len(src) + 1:], warning))
 						else:
 							print("  " + warning)
 
