@@ -23,7 +23,7 @@ layout: null
         "image": "{% include canonic_url url=plugin.featuredimage external=true %}",{% endif %}{% if plugin.disabled %}
         "disabled": {{ plugin.disabled | markdownify | jsonify }},{% endif %}
         "abandoned": {% if plugin.abandoned %}true{% else %}false{% endif %},{% if plugin.github %}
-        "github": { {% if plugin.github.releases > 0%}
+        "github": { {% if plugin.github.latest_release_tag %}
             "latest_release": {
                 "name": {{ plugin.github.latest_release | jsonify }},
                 "date": {{ plugin.github.latest_release_date | jsonify }},

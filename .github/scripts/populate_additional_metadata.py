@@ -166,9 +166,12 @@ def github_data(user, repo, out=print):
 					              latest_release_date = to_date(release["published_at"]),
 					              latest_release_url = release["html_url"],
 					              latest_release_tag = release["tag_name"])
-				except:
-					out("!! Error while retrieving latest release info from Github API for {}/{}".format(user, repo), file=sys.stderr)
-
+				except Exception as exc:
+					if hasattr(exc, "status_code") and exc.status_code != 404:
+						out("!! Error while retrieving latest release info from Github API for {}/{}, setting release count to 0: {}".format(user, repo, exc), file=sys.stderr)
+					else:
+						out("No latest public release available, setting release count to 0")
+					result.update(releases=0)
 
 		return result
 	except:
