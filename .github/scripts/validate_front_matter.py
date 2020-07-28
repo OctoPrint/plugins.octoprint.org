@@ -33,11 +33,12 @@ def ImageLocation(v):
 		raise Invalid("image location {!r} is not a string".format(v))
 	if len(v) == 0:
 		raise Invalid("image location must be a non empty string")
-	try:
-		Url()(v)
-	except Invalid:
-		if not v.startswith("/assets/img/plugins/"):
-			raise Invalid("image location '{}' must either be an URL or a path starting with /assets/img/plugins/".format(v))
+
+	if not v.startswith("/assets/img/plugins/"):
+		try:
+			Url()(v)
+		except Invalid:
+			raise Invalid("image location '{}' must either be an URL or a path starting with '/assets/img/plugins/'".format(v))
 
 ScreenshotDef = Schema({
 	Required("url"): ImageLocation,
@@ -106,12 +107,8 @@ def validate_image_urls(data, path):
 
 	filename = os.path.basename(path)[:-3]
 	def check_url(loc, url):
-		try:
-			Url(url)
-		except Invalid:
-			return
-		else:
-			message = "image is hosted externally, should be moved to /assets/img/plugins/{} @ {}".format(filename, loc)
+		if not url.startswith("/assets/img/plugins/"):
+			message = "image '{}' is hosted externally, should be moved to /assets/img/plugins/{} @ {}".format(url, filename, loc)
 			warnings.append(message)
 
 	if "screenshots" in data:
