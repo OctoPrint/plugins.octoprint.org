@@ -125,6 +125,12 @@ def validate_image_urls(data, path):
 
 	return warnings
 
+def validate_screenshots_present(data):
+	warnings = []
+	if "featuredimage" in data and (not "screenshots" in data or len(data["screenshots"]) == 0):
+		warnings.append("featured image defined but no screenshots included @ data['featuredimage']")
+	return warnings
+
 def validate_id_match(data, path):
 	filename = os.path.basename(path)[:-3]
 	if data["id"] != filename:
@@ -152,7 +158,8 @@ def validate_date_unchanged(data, path, src, sha, debug=False):
 
 	return []
 
-def validate(src, path, id_match=False, internal_assets=False, date_unchanged=False, debug=False):
+def validate(src, path, id_match=False, internal_assets=False, date_unchanged=False,
+             screenshots_present=False, debug=False):
 	with codecs.open(path, mode="r", encoding="utf-8") as f:
 		metadata, content = frontmatter.parse(f.read())
 
@@ -166,6 +173,9 @@ def validate(src, path, id_match=False, internal_assets=False, date_unchanged=Fa
 
 	if internal_assets:
 		warnings += validate_image_urls(metadata, path)
+
+	if screenshots_present:
+		warnings += validate_screenshots_present(metadata)
 
 	if date_unchanged:
 		if path.startswith(src):
@@ -181,11 +191,14 @@ def validate(src, path, id_match=False, internal_assets=False, date_unchanged=Fa
 @click.option("--check-id-match", "id_match", is_flag=True)
 @click.option("--check-internal-assets", "internal_assets", is_flag=True)
 @click.option("--check-date-unchanged", "date_unchanged", help="Provide git committish with which to compare")
+@click.option("--check-screenshots-present", "screenshots_present", is_flag=True)
 @click.option("--action-output", "action_output", is_flag=True)
 @click.argument("paths", nargs=-1)
-def main(paths, debug=False, src=None, id_match=False, internal_assets=False, date_unchanged=None, action_output=False):
+def main(paths, debug=False, src=None, id_match=False, internal_assets=False, date_unchanged=None,
+         screenshots_present=False, action_output=False):
 	count = 0
 	fails = 0
+	warns = 0
 
 	if src is None:
 		src = os.getcwd()
@@ -209,6 +222,7 @@ def main(paths, debug=False, src=None, id_match=False, internal_assets=False, da
 			                    id_match=id_match,
 			                    internal_assets=internal_assets,
 			                    date_unchanged=date_unchanged,
+			                    screenshots_present=screenshots_present,
 			                    debug=debug)
 		except Exception as exc:
 			print("{}: ".format(path), end="")
@@ -232,16 +246,19 @@ def main(paths, debug=False, src=None, id_match=False, internal_assets=False, da
 						else:
 							print("  " + warning)
 
+					warns += 1
 				else:
 					print(colorama.Fore.GREEN + colorama.Style.BRIGHT + "PASS")
 
+
 		count += 1
 
-	print("Validated {} files, {} passes, {} fails".format(count, count - fails, fails))
+	print("Validated {} files, {} passes ({} with warnings), {} fails".format(count, count - fails, warns, fails))
 	if action_output:
 		print("::set-output name=files::{}".format(count))
 		print("::set-output name=passes::{}".format(count - fails))
 		print("::set-output name=fails::{}".format(fails))
+		print("::set-output name=warns::{}".format(warns))
 
 	if fails != 0:
 		sys.exit(-1)
