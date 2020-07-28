@@ -5,10 +5,36 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>https://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 28 Jul 2020 07:10:00 -0500</pubDate>
-    <lastBuildDate>Tue, 28 Jul 2020 07:10:00 -0500</lastBuildDate>
+    <pubDate>Tue, 28 Jul 2020 09:18:44 -0500</pubDate>
+    <lastBuildDate>Tue, 28 Jul 2020 09:18:44 -0500</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
     
+    
+      <item>
+        <title>OctoPrint-MarlinBft</title>
+        <description>
+          <![CDATA[
+            Upload files using Marlin Binary File Transfer Mark II
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/marlinbft/marlinbft-feature.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Sun, 26 Jul 2020 00:00:00 -0500
+</pubDate>
+        <link>https://plugins.octoprint.org/plugins/marlinbft/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/marlinbft/</guid>
+        
+        <category>marlin</category>
+        
+        <category>file</category>
+        
+        <category>transfer</category>
+        
+        <category>firmware.bin</category>
+        
+        <category>binary</category>
+        
+      </item>
     
       <item>
         <title>OctoPrint-Cooldownfan</title>
@@ -225,36 +251,6 @@ Wed, 24 Jun 2020 00:00:00 -0500
         <category>3d</category>
         
         <category>visualization</category>
-        
-      </item>
-    
-      <item>
-        <title>Ngrok Tunnel</title>
-        <description>
-          <![CDATA[
-            A plugin to securely access your OctoPrint instance remotely through ngrok
-            <p><img src="https://plugins.octoprint.org/assets/img/plugins/ngrok/ngrok_navbar.png"></p>
-          ]]>
-        </description>
-        <pubDate>
-Tue, 23 Jun 2020 00:00:00 -0500
-</pubDate>
-        <link>https://plugins.octoprint.org/plugins/ngrok/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/ngrok/</guid>
-        
-        <category>remote access</category>
-        
-        <category>authentication</category>
-        
-        <category>security</category>
-        
-        <category>password</category>
-        
-        <category>ngrok</category>
-        
-        <category>tunnel</category>
-        
-        <category>ssl</category>
         
       </item>
     
