@@ -5,10 +5,40 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>https://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 28 Jul 2020 09:18:44 -0500</pubDate>
-    <lastBuildDate>Tue, 28 Jul 2020 09:18:44 -0500</lastBuildDate>
+    <pubDate>Tue, 28 Jul 2020 11:46:26 -0500</pubDate>
+    <lastBuildDate>Tue, 28 Jul 2020 11:46:26 -0500</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
     
+    
+      <item>
+        <title>WS281x LED Status</title>
+        <description>
+          <![CDATA[
+            Add some WS281x type RGB LEDs to your printer for a quick status update
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/ws281x_led_status/settings_overview.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Tue, 28 Jul 2020 00:00:00 -0500
+</pubDate>
+        <link>https://plugins.octoprint.org/plugins/ws281x_led_status/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/ws281x_led_status/</guid>
+        
+        <category>rgb led</category>
+        
+        <category>status</category>
+        
+        <category>progress</category>
+        
+        <category>neopixel</category>
+        
+        <category>ws281x</category>
+        
+        <category>ws2811</category>
+        
+        <category>ws2812</category>
+        
+      </item>
     
       <item>
         <title>OctoPrint-MarlinBft</title>
@@ -227,30 +257,6 @@ Sun, 28 Jun 2020 00:00:00 -0500
         <category>temperature</category>
         
         <category>temp</category>
-        
-      </item>
-    
-      <item>
-        <title>Delta Micro Calibrator</title>
-        <description>
-          <![CDATA[
-            An OctoPrint Plugin for performing micro calibration in linear delta machines.
-            <p><img src="https://plugins.octoprint.org/assets/img/plugins/DuCalibrator/screenshot.png"></p>
-          ]]>
-        </description>
-        <pubDate>
-Wed, 24 Jun 2020 00:00:00 -0500
-</pubDate>
-        <link>https://plugins.octoprint.org/plugins/DuCalibrator/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/DuCalibrator/</guid>
-        
-        <category>delta</category>
-        
-        <category>calibration</category>
-        
-        <category>3d</category>
-        
-        <category>visualization</category>
         
       </item>
     
