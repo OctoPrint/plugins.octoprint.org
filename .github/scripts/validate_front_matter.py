@@ -39,10 +39,6 @@ def ImageLocation(v):
 		if not v.startswith("/assets/img/plugins/"):
 			raise Invalid("image location '{}' must either be an URL or a path starting with /assets/img/plugins/".format(v))
 
-		image_path = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", v[1:]))
-		if not os.path.exists(image_path):
-			raise Invalid("image location '{}' doesn't exist on disk ({})".format(v, image_path))
-
 ScreenshotDef = Schema({
 	Required("url"): ImageLocation,
 	Optional("alt"): NonEmptyString,
@@ -84,6 +80,25 @@ SCHEMA = Schema({
 
 def validate_schema(data):
 	SCHEMA(data)
+	return []
+
+def validate_image_paths(data, src):
+	def check_url(url):
+		try:
+			Url(url)
+		except Invalid:
+			# image url is a path
+			image_path = os.path.abspath(os.path.join(src, v[1:]))
+			if not os.path.exists(image_path):
+				raise Invalid("image location '{}' doesn't exist on disk ({})".format(v, image_path))
+
+	if "screenshots" in data:
+		for entry in data["screenshots"]:
+			check_url(entry["url"])
+
+	if "featuredimage" in data:
+		check_url(data["featuredimage"])
+
 	return []
 
 def validate_image_urls(data, path):
@@ -144,6 +159,7 @@ def validate(src, path, id_match=False, internal_assets=False, date_unchanged=Fa
 	warnings = []
 
 	warnings += validate_schema(metadata)
+	warnings += validate_image_paths(metadata, src)
 
 	if id_match:
 		warnings += validate_id_match(metadata, path)
