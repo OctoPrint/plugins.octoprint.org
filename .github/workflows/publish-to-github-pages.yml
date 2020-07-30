@@ -9,6 +9,7 @@ on:
   pull_request:
     branches:
       - gh-pages
+  workflow_dispatch:
 
 jobs:
   build-validate-and-publish:
@@ -28,18 +29,26 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: "3.7"
-      
+
+      - name: 🐍 Install requirements
+        run: |
+          pip install -r ./src/.github/scripts/requirements.txt
+
       - name: 📺 Refresh youtube thumbnails
         run: |
           cd src
-          chmod +x fetch_yt_preview
-          ./fetch_yt_preview
+          chmod +x .github/scripts/fetch_yt_preview
+          .github/scripts/fetch_yt_preview
 
-      - name: 🏗 Enrich metadata
+      - name: 🕵️‍♂ Validate front matter
+        run: |
+          cd src
+          python .github/scripts/validate_front_matter.py --action-output
+
+      - name: 🏗 Enrich front matter
         if: github.repository == 'OctoPrint/plugins.octoprint.org' && github.event_name != 'pull_request'
         run: |
-          pip install -r ./src/_build/requirements.txt
-          python ./src/_build/populate_additional_metadata.py
+          python ./src/.github/scripts/populate_additional_metadata.py
         env:
           GITHUB_TOKEN: ${{ secrets.metadata_token }}
 

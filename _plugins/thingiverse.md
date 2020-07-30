@@ -18,8 +18,9 @@ tags:
 - embedded website
 
 compatibility:
-- octoprint: 1.2.0
-- python: ">=2.7,<4"
+  octoprint: 
+    - 1.2.0
+  python: ">=2.7,<4"
 
 screenshots:
 - url: /assets/img/plugins/thingiverse/thingiverse_tab.jpg
