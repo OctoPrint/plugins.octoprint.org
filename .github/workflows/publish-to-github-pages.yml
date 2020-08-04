@@ -129,7 +129,7 @@ jobs:
         if: github.repository == 'OctoPrint/plugins.octoprint.org' && github.event_name != 'pull_request'
         env:
           DISCORD_WEBHOOK: ${{ secrets.discord_webhook }}
-        uses: Ilshidur/action-discord@fbd91a9
+        uses: Ilshidur/action-discord@master
         with:
           args: '☑️ Page build for plugins.octoprint.org was successful'
    
@@ -137,6 +137,6 @@ jobs:
         if: failure() && github.repository == 'OctoPrint/plugins.octoprint.org' && github.event_name != 'pull_request'
         env:
           DISCORD_WEBHOOK: ${{ secrets.discord_webhook }}
-        uses: Ilshidur/action-discord@fbd91a9
+        uses: Ilshidur/action-discord@master
         with:
           args: '🚫 Page build for plugins.octoprint.org failed'
