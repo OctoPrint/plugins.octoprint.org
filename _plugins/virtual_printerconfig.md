@@ -1,7 +1,7 @@
 ---
 layout: plugin
 
-id: vp_settings
+id: virtual_printerconfig
 title: Virtual Printer Settings
 description: Add configurable settings to the Virtual Printer plugin under OctoPrint's settings
 author: Charlie
@@ -21,11 +21,11 @@ tags:
 
 # TODO
 screenshots:
-- url: /assets/img/plugins/vp_settings/settings.png
+- url: /assets/img/plugins/virtual_printerconfig/settings.png
   alt: settings screenshot
   caption: Screenshot of settings interface
 
-featuredimage: /assets/img/plugins/vp_settings/settings.png
+featuredimage: /assets/img/plugins/virtual_printerconfig/settings.png
 
 
 compatibility:
