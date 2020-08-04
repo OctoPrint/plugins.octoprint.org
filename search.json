@@ -2649,6 +2649,17 @@
 "author": "Charlie Powell",
 "content": "Supporting effects for various printing states as well as print and heating progress,you will always know what your printer is doing without needing to look at the web interface all the time.Configurable options include turning on and off each event, customising the effect and colours, tracking print and heatup progress, enable a timer so you can have the LEDs on at certain times and a button in the navbar to turn them on and offConfiguration optionsSee here for details of the various configuration options available for the plugin, and have a look at the screenshots belowGet helpPlease open an issue on the Github Repository if you run into a bug, or if you just have a general question post on the OctoPrint community forum and tag me @Charlie_Powell and I’ll try and respond.Setting up SPISee here for details of how to setup SPI so you can use your LEDs. There is also a configuration wizard that will do this for you on the first install, if you ask it nicely.Wiring your LEDsSee here for details of how to wire your LED strips to a Raspberry Pi.",
 "tags": ["rgb led","status","progress","neopixel","ws281x","ws2811","ws2812"]
+},
+
+{
+"id": "/plugins/virtual_printerconfig",
+"url": "/plugins/virtual_printerconfig/",
+"date": "2020-08-04 00:00:00 -0500",
+"title": "Virtual Printer Settings",
+"description": "Add configurable settings to the Virtual Printer plugin under OctoPrint's settings",
+"author": "Charlie",
+"content": "Add easily configurable and well organised settings for OctoPrint’s virtual printer.Overrides the default template which only has an enabling checkbox.Very useful if you are developing plugins, or even core OctoPrint. No more digging deep into config.yaml and hoping you typed the settings correctly!Note that this plugin is only compatible with OctoPrint 1.4.1 and higher.",
+"tags": ["development","settings","virtual printer"]
 }
 ]
 }

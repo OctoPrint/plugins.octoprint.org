@@ -8903,5 +8903,44 @@
             "instances_week": 136,
             "install_events_week": 136
         }
+    },
+
+    {
+        "id": "virtual_printerconfig",
+        "published": "2020-08-04 00:00:00 -0500",
+        "title": "Virtual Printer Settings",
+        "description": "Add configurable settings to the Virtual Printer plugin under OctoPrint's settings",
+        "archive": "https://github.com/cp2004/OctoPrint-VirtualPrinterSettings/archive/master.zip",
+        "author": "Charlie",
+        "homepage": "https://github.com/cp2004/OctoPrint-VirtualPrinterSettings",
+        "page": "https://plugins.octoprint.org/plugins/virtual_printerconfig/",
+        "compatibility": {
+            "octoprint": ["1.4.1"],
+            "os": ["linux","windows","macos","freebsd"],
+            "python": ">=2.7,<4"
+        },
+        "license": "AGPLv3",
+        "image": "https://plugins.octoprint.org/assets/img/plugins/virtual_printerconfig/settings.png",
+        "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "V0.1.3 Fix replaces binding  (Again...)",
+                "date": "2020-08-04 12:14:06 +0000",
+                "tag": "0.1.3"
+            },
+            "releases": 3,
+            "last_push": "2020-08-04 12:11:56 +0000",
+            "stars": 0,
+            "issues": {
+                "open": 0,
+                "closed": 0
+            }
+        },
+        "stats": {
+            "instances_month": 0,
+            "install_events_month": 0,
+            "instances_week": 0,
+            "install_events_week": 0
+        }
     }
 ]

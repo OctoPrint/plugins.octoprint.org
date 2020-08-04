@@ -5,10 +5,32 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>https://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 04 Aug 2020 07:10:53 -0500</pubDate>
-    <lastBuildDate>Tue, 04 Aug 2020 07:10:53 -0500</lastBuildDate>
+    <pubDate>Tue, 04 Aug 2020 07:30:22 -0500</pubDate>
+    <lastBuildDate>Tue, 04 Aug 2020 07:30:22 -0500</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
     
+    
+      <item>
+        <title>Virtual Printer Settings</title>
+        <description>
+          <![CDATA[
+            Add configurable settings to the Virtual Printer plugin under OctoPrint's settings
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/virtual_printerconfig/settings.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Tue, 04 Aug 2020 00:00:00 -0500
+</pubDate>
+        <link>https://plugins.octoprint.org/plugins/virtual_printerconfig/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/virtual_printerconfig/</guid>
+        
+        <category>development</category>
+        
+        <category>settings</category>
+        
+        <category>virtual printer</category>
+        
+      </item>
     
       <item>
         <title>WS281x LED Status</title>
@@ -235,28 +257,6 @@ Sun, 28 Jun 2020 00:00:00 -0500
         <category>helpers</category>
         
         <category>gcode</category>
-        
-      </item>
-    
-      <item>
-        <title>Thermal Runaway</title>
-        <description>
-          <![CDATA[
-            An Octoprint Plugin to provide some basic Thermal Runaway protection
-            <p><img src="https://plugins.octoprint.org/assets/img/plugins/ThermalRunaway/ThermalRunaway-config.png"></p>
-          ]]>
-        </description>
-        <pubDate>
-Sun, 28 Jun 2020 00:00:00 -0500
-</pubDate>
-        <link>https://plugins.octoprint.org/plugins/ThermalRunaway/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/ThermalRunaway/</guid>
-        
-        <category>thermal runaway</category>
-        
-        <category>temperature</category>
-        
-        <category>temp</category>
         
       </item>
     
