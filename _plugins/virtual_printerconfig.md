@@ -7,8 +7,7 @@ description: Add configurable settings to the Virtual Printer plugin under OctoP
 author: Charlie
 license: AGPLv3
 
-# TODO
-date: 2020-07-31
+date: 2020-08-04
 
 homepage: https://github.com/cp2004/OctoPrint-VirtualPrinterSettings
 source: https://github.com/cp2004/OctoPrint-VirtualPrinterSettings
