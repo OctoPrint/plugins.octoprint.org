@@ -15,12 +15,15 @@ jobs:
 
             if (context.payload.issue.title.match(/\[abandoned plugin\]/i)) {
               labels.push('abandoned plugin');
+              labels.push('needs review');
             }
             if (context.payload.issue.title.match(/\[suspicious plugin activity\]/i)) {
               labels.push('suspicious plugin activity');
+              labels.push('needs review');
             }
             if (context.payload.issue.title.match(/\[listing error\]/i)) {
               labels.push('listing error');
+              labels.push('needs review');
             }
 
             if (labels.length > 0) {
