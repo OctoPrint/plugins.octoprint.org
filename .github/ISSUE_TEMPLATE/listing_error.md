@@ -3,7 +3,7 @@ name: Listing error
 about: Use this to report errors in a plugin list (broken images, broken links, incorrect compatibility information, NOT BUGS IN THE PLUGIN)
 title: '[Listing Error] <insert name of plugin here>'
 labels:
-  - bug
+  - listing error
 ---
 
 <!--

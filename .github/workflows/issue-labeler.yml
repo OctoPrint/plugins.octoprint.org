@@ -1,0 +1,32 @@
+on:
+  issues:
+    types: [opened, edited]
+
+jobs:
+  apply-label:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v2
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            let labels = [];
+
+            if (context.issue.title.match(/\[abandoned plugin\]/i)) {
+              labels.push('abandoned plugin');
+            }
+            if (context.issue.title.match(/\[suspicious plugin activity\]/i)) {
+              labels.push('suspicious plugin activity');
+            }
+            if (context.issue.title.match(/\[listing error\]/i)) {
+              labels.push('listing error');
+            }
+
+            if (labels.length > 0) {
+              github.issues.addLabels({
+                issue_number: context.issue.number,
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                labels: labels
+              })
+            }
