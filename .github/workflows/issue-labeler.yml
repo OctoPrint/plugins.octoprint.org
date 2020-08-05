@@ -13,13 +13,13 @@ jobs:
           script: |
             let labels = [];
 
-            if (context.payload.title.match(/\[abandoned plugin\]/i)) {
+            if (context.payload.issue.title.match(/\[abandoned plugin\]/i)) {
               labels.push('abandoned plugin');
             }
-            if (context.payload.title.match(/\[suspicious plugin activity\]/i)) {
+            if (context.payload.issue.title.match(/\[suspicious plugin activity\]/i)) {
               labels.push('suspicious plugin activity');
             }
-            if (context.payload.title.match(/\[listing error\]/i)) {
+            if (context.payload.issue.title.match(/\[listing error\]/i)) {
               labels.push('listing error');
             }
 
