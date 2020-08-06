@@ -7,7 +7,7 @@ description: Combines configured tabs into a single tab as draggable and resizab
 author: jneilliii
 license: AGPLv3
 
-date: 2020-07-26
+date: 2020-08-06
 
 homepage: https://github.com/jneilliii/OctoPrint-ConsolidatedTabs
 source: https://github.com/jneilliii/OctoPrint-ConsolidatedTabs
