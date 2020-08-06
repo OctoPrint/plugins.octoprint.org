@@ -5,10 +5,30 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>https://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 06 Aug 2020 07:11:13 -0500</pubDate>
-    <lastBuildDate>Thu, 06 Aug 2020 07:11:13 -0500</lastBuildDate>
+    <pubDate>Thu, 06 Aug 2020 10:06:06 -0500</pubDate>
+    <lastBuildDate>Thu, 06 Aug 2020 10:06:06 -0500</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
     
+    
+      <item>
+        <title>Consolidated Tabs</title>
+        <description>
+          <![CDATA[
+            Combines configured tabs into a single tab as draggable and resizable panels.
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/consolidatedtabs/screenshot_tab.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Thu, 06 Aug 2020 00:00:00 -0500
+</pubDate>
+        <link>https://plugins.octoprint.org/plugins/consolidatedtabs/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/consolidatedtabs/</guid>
+        
+        <category>tab</category>
+        
+        <category>widescreen</category>
+        
+      </item>
     
       <item>
         <title>Virtual Printer Settings</title>
@@ -233,30 +253,6 @@ Thu, 02 Jul 2020 00:00:00 -0500
         <category>controls</category>
         
         <category>ui</category>
-        
-      </item>
-    
-      <item>
-        <title>Sidebar Macros</title>
-        <description>
-          <![CDATA[
-            Plugin for Octoprint to add macros list in sidebar
-            <p><img src="https://plugins.octoprint.org/assets/img/plugins/macro/main.png"></p>
-          ]]>
-        </description>
-        <pubDate>
-Sun, 28 Jun 2020 00:00:00 -0500
-</pubDate>
-        <link>https://plugins.octoprint.org/plugins/macro/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/macro/</guid>
-        
-        <category>sidebar</category>
-        
-        <category>macros</category>
-        
-        <category>helpers</category>
-        
-        <category>gcode</category>
         
       </item>
     
