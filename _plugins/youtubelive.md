@@ -2,7 +2,7 @@
 layout: plugin
 
 id: youtubelive
-title: OctoPrint-YouTubeLive
+title: YouTube Live
 description: Simple plugin to add a YouTube Live tab to OctoPrint.
 author: jneilliii
 license: AGPLv3
@@ -20,11 +20,11 @@ tags:
 - Live Stream
 
 screenshots:
-- url: /assets/img/plugins/YouTubeLive/tab_screenshot.jpg
+- url: /assets/img/plugins/youtubelive/tab_screenshot.jpg
   alt: YouTubeLive
   caption: YouTubeLive
 
-featuredimage: /assets/img/plugins/YouTubeLive/tab_screenshot.jpg
+featuredimage: /assets/img/plugins/youtubelive/tab_screenshot.jpg
 
 ---
 
@@ -36,7 +36,7 @@ Plugin that adds a YouTube Live tab to OctoPrint with the capability of starting
 
 ## Screenshots
 
-![screenshot](/assets/img/plugins/YouTubeLive/tab_screenshot.jpg)
+![screenshot](/assets/img/plugins/youtubelive/tab_screenshot.jpg)
 
 ## Prerequisites
 
@@ -44,7 +44,7 @@ In order to stream please follow the instructions [here](https://github.com/jnei
 
 ## Settings
 
-![screenshot](/assets/img/plugins/YouTubeLive/settings_screenshot.jpg)
+![screenshot](/assets/img/plugins/youtubelive/settings_screenshot.jpg)
 
 Once installed enter your YouTube's channel id ([Advanced Account Settings](https://www.youtube.com/account_advanced)) and your YouTube stream id ([YouTube Live Dashboard](https://www.youtube.com/live_dashboard)) into the YouTube Live plugin settings.
 
@@ -59,6 +59,6 @@ Check out my other plugins [here](https://plugins.octoprint.org/by_author/#jneil
 ### Support My Efforts
 I, jneilliii, programmed this plugin for fun and do my best effort to support those that have issues with it, please return the favor and leave me a tip or become a Patron if you find this plugin helpful and want me to continue future development.
 
-[![Patreon](/assets/img/plugins/YouTubeLive/patreon-with-text-new.png)](https://www.patreon.com/jneilliii) [![paypal](/assets/img/plugins/YouTubeLive/paypal-with-text.png)](https://paypal.me/jneilliii)
+[![Patreon](/assets/img/plugins/youtubelive/patreon-with-text-new.png)](https://www.patreon.com/jneilliii) [![paypal](/assets/img/plugins/youtubelive/paypal-with-text.png)](https://paypal.me/jneilliii)
 
 <small>No paypal.me? Send funds via PayPal to jneilliii&#64;gmail&#46;com</small>
