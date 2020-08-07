@@ -782,17 +782,6 @@
 },
 
 {
-"id": "/plugins/YouTubeLive",
-"url": "/plugins/YouTubeLive/",
-"date": "2017-07-23 00:00:00 -0500",
-"title": "OctoPrint-YouTubeLive",
-"description": "Simple plugin to add a YouTube Live tab to OctoPrint.",
-"author": "jneilliii",
-"content": "YouTube LivePlugin that adds a YouTube Live tab to OctoPrint with the capability of starting and stopping a live stream that is created by reencoding the mjpg stream configured in OctoPrint’s Webcam &amp; Timelapse settings.Note: OctoPrint’s webcam stream requires using a full url path with an ip address, ie http://192.168.1.2:8080/?action=streamScreenshotsPrerequisitesIn order to stream please follow the instructions here.  If you are just wanting to watch a stream enter the channel id in settings, no other prerequisites required.SettingsOnce installed enter your YouTube’s channel id (Advanced Account Settings) and your YouTube stream id (YouTube Live Dashboard) into the YouTube Live plugin settings.Get HelpIf you experience issues with this plugin or need assistance please use the issue tracker at the plugin’s Homepage linked on the right.Additional PluginsCheck out my other plugins hereSupport My EffortsI, jneilliii, programmed this plugin for fun and do my best effort to support those that have issues with it, please return the favor and leave me a tip or become a Patron if you find this plugin helpful and want me to continue future development. No paypal.me? Send funds via PayPal to jneilliii@gmail.com",
-"tags": ["YouTube","Live Stream"]
-},
-
-{
 "id": "/plugins/simpleemergencystop",
 "url": "/plugins/simpleemergencystop/",
 "date": "2017-07-23 00:00:00 -0500",
@@ -801,6 +790,17 @@
 "author": "Sebastien Clement (SebClem)",
 "content": "AboutA simple plugin that adds an emergency stop button on NavBar.You can chose between 2 type of button, the big one, or little one.If you need more information, you can find the project’s Github Page here.",
 "tags": ["ui","action","command","control","gcode","emergency","stop"]
+},
+
+{
+"id": "/plugins/youtubelive",
+"url": "/plugins/youtubelive/",
+"date": "2017-07-23 00:00:00 -0500",
+"title": "YouTube Live",
+"description": "Simple plugin to add a YouTube Live tab to OctoPrint.",
+"author": "jneilliii",
+"content": "YouTube LivePlugin that adds a YouTube Live tab to OctoPrint with the capability of starting and stopping a live stream that is created by reencoding the mjpg stream configured in OctoPrint’s Webcam &amp; Timelapse settings.Note: OctoPrint’s webcam stream requires using a full url path with an ip address, ie http://192.168.1.2:8080/?action=streamScreenshotsPrerequisitesIn order to stream please follow the instructions here.  If you are just wanting to watch a stream enter the channel id in settings, no other prerequisites required.SettingsOnce installed enter your YouTube’s channel id (Advanced Account Settings) and your YouTube stream id (YouTube Live Dashboard) into the YouTube Live plugin settings.Get HelpIf you experience issues with this plugin or need assistance please use the issue tracker at the plugin’s Homepage linked on the right.Additional PluginsCheck out my other plugins hereSupport My EffortsI, jneilliii, programmed this plugin for fun and do my best effort to support those that have issues with it, please return the favor and leave me a tip or become a Patron if you find this plugin helpful and want me to continue future development. No paypal.me? Send funds via PayPal to jneilliii@gmail.com",
+"tags": ["YouTube","Live Stream"]
 },
 
 {
