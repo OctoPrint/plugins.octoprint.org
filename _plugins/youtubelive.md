@@ -1,7 +1,7 @@
 ---
 layout: plugin
 
-id: YouTubeLive
+id: youtubelive
 title: OctoPrint-YouTubeLive
 description: Simple plugin to add a YouTube Live tab to OctoPrint.
 author: jneilliii
