@@ -5,10 +5,32 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>https://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 12 Aug 2020 07:11:04 -0500</pubDate>
-    <lastBuildDate>Wed, 12 Aug 2020 07:11:04 -0500</lastBuildDate>
+    <pubDate>Wed, 12 Aug 2020 11:00:23 -0500</pubDate>
+    <lastBuildDate>Wed, 12 Aug 2020 11:00:23 -0500</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
+    
+      <item>
+        <title>OctoPrint-Octotweet</title>
+        <description>
+          <![CDATA[
+            Twitter plugin for OctoPrint
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/octotweet/twitter.jpg"></p>
+          ]]>
+        </description>
+        <pubDate>
+Sat, 08 Aug 2020 00:00:00 -0500
+</pubDate>
+        <link>https://plugins.octoprint.org/plugins/octotweet/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/octotweet/</guid>
+        
+        <category>twitter</category>
+        
+        <category>notifications</category>
+        
+        <category>snapshots</category>
+        
+      </item>
     
       <item>
         <title>Consolidated Tabs</title>
@@ -233,26 +255,6 @@ Fri, 03 Jul 2020 00:00:00 -0500
         <category>system ready</category>
         
         <category>ready to run</category>
-        
-      </item>
-    
-      <item>
-        <title>SwapXY</title>
-        <description>
-          <![CDATA[
-            Swap the X and Y axes used by the jog controls
-            <p><img src="https://plugins.octoprint.org/assets/img/plugins/swapxy/swapxy_controls.png"></p>
-          ]]>
-        </description>
-        <pubDate>
-Thu, 02 Jul 2020 00:00:00 -0500
-</pubDate>
-        <link>https://plugins.octoprint.org/plugins/swapxy/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/swapxy/</guid>
-        
-        <category>controls</category>
-        
-        <category>ui</category>
         
       </item>
     
