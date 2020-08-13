@@ -7,7 +7,7 @@ description: This plugin creates a new tab where Thingiverse website is embedded
 author: stefancandrea
 license: AGPLv3
 
-date: 2020-08-13
+date: 2019-10-28
 
 homepage: https://github.com/stefancandrea/OctoPrint-Thingiverse/
 source: https://github.com/stefancandrea/OctoPrint-Thingiverse/
