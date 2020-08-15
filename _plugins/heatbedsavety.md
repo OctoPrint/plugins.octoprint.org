@@ -32,13 +32,9 @@ screenshots:
 
 compatibility:
   octoprint:
-  - 1.3.6+
+  - 1.3.6
 
-  os:
-  - all
- 
-  python:
-  - ">=2.7,<4"
+  python: ">=2.7,<4"
 
 ---
 
