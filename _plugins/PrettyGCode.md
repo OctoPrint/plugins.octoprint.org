@@ -43,9 +43,10 @@ This plugin adds a 3D GCode visualizer tab in Octoprint. It displays colored lin
 * Sync progress to print job
 * Full screen and tabbed interface
 * Uses Dashboard plugin from [Dashboard github page](https://github.com/StefanCohen/OctoPrint-Dashboard) when installed
+* Customize the UI via CSS injection (see Instructions on tab in OctoPrint)
 
 
 ![Screenshot](https://raw.githubusercontent.com/Kragrathea/OctoPrint-PrettyGCode/master/Screenshots/PrettyGcode-Screen3.jpg)
 
 
-For installation and configuration details, please visit the [PrettyGCode github page](https://github.com/Kragrathea/OctoPrint-PrettyGCode) 
+For and configuration details, please see the instructions on the PrettyGcode tab in OctoPrint. Report bugs via the [PrettyGCode github page](https://github.com/Kragrathea/OctoPrint-PrettyGCode). 
