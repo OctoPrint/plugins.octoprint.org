@@ -7,7 +7,7 @@ description: A pretty GCode visualizer for Octoprint
 author: Kragrathea
 license: AGPLv3
 
-date: 2020-04-30
+date: 2020-08-16
 
 homepage: https://github.com/Kragrathea/OctoPrint-PrettyGCode
 source: https://github.com/Kragrathea/OctoPrint-PrettyGCode
@@ -45,7 +45,7 @@ This plugin adds a 3D GCode visualizer tab in Octoprint. It displays colored lin
 * Uses Dashboard plugin from [Dashboard github page](https://github.com/StefanCohen/OctoPrint-Dashboard) when installed
 
 
-![Screenshot](https://github.com/Kragrathea/OctoPrint-PrettyGCode/raw/master/screenshot-theme.png)
+![Screenshot](https://raw.githubusercontent.com/Kragrathea/OctoPrint-PrettyGCode/master/Screenshots/PrettyGcode-Screen3.jpg)
 
 
 For installation and configuration details, please visit the [PrettyGCode github page](https://github.com/Kragrathea/OctoPrint-PrettyGCode) 
