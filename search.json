@@ -2685,6 +2685,17 @@
 },
 
 {
+"id": "/plugins/heatbedsavety",
+"url": "/plugins/heatbedsavety/",
+"date": "2020-08-14 00:00:00 -0500",
+"title": "OctoPrint-HeatBedSavety",
+"description": "HighPower HeatBedSavety Plugin",
+"author": "linux-paul",
+"content": "This plugin is able to control a relais in serial connection to a solid state relais of a high power heatbes solution.Solid state relais some times getting shorted when they are damaged and will heat up to ~200°C out of conrtol of the printer.This plugin cut the solid state from power when a configured temperature is reached or an error is thrown by the printer.In some countries, not everybody is allowed to create or change 230V/130V electrical cicuits.In this case you’ll do the changes !! AT YOUR OWN RISK !! and no insurence will pay a damage.",
+"tags": ["heat","bed","heatbed"]
+},
+
+{
 "id": "/plugins/ophom",
 "url": "/plugins/ophom/",
 "date": "2020-08-16 00:00:00 -0500",

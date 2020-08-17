@@ -5,8 +5,8 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>https://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 17 Aug 2020 07:11:05 -0500</pubDate>
-    <lastBuildDate>Mon, 17 Aug 2020 07:11:05 -0500</lastBuildDate>
+    <pubDate>Mon, 17 Aug 2020 07:32:44 -0500</pubDate>
+    <lastBuildDate>Mon, 17 Aug 2020 07:32:44 -0500</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
     
@@ -34,6 +34,29 @@ Sun, 16 Aug 2020 00:00:00 -0500
         <category>power manage</category>
         
         <category>philips</category>
+        
+      </item>
+    
+      <item>
+        <title>OctoPrint-HeatBedSavety</title>
+        <description>
+          <![CDATA[
+            HighPower HeatBedSavety Plugin
+            <p><img src="https://plugins.octoprint.org/assets/img/repo-600x400.png"></p>
+            
+          ]]>
+        </description>
+        <pubDate>
+Fri, 14 Aug 2020 00:00:00 -0500
+</pubDate>
+        <link>https://plugins.octoprint.org/plugins/heatbedsavety/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/heatbedsavety/</guid>
+        
+        <category>heat</category>
+        
+        <category>bed</category>
+        
+        <category>heatbed</category>
         
       </item>
     
@@ -236,28 +259,6 @@ Sat, 04 Jul 2020 00:00:00 -0500
         <category>print export</category>
         
         <category>print spooler</category>
-        
-      </item>
-    
-      <item>
-        <title>OctoPrint-M150control</title>
-        <description>
-          <![CDATA[
-            Send M150 control through the UI
-            <p><img src="https://plugins.octoprint.org/assets/img/plugins/M150Control/screenshot.jpg"></p>
-          ]]>
-        </description>
-        <pubDate>
-Fri, 03 Jul 2020 00:00:00 -0500
-</pubDate>
-        <link>https://plugins.octoprint.org/plugins/M150Control/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/M150Control/</guid>
-        
-        <category>M150</category>
-        
-        <category>color</category>
-        
-        <category>LED</category>
         
       </item>
     
