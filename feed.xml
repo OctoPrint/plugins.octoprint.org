@@ -5,10 +5,37 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>https://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 16 Aug 2020 19:21:40 -0500</pubDate>
-    <lastBuildDate>Sun, 16 Aug 2020 19:21:40 -0500</lastBuildDate>
+    <pubDate>Sun, 16 Aug 2020 23:27:41 -0500</pubDate>
+    <lastBuildDate>Sun, 16 Aug 2020 23:27:41 -0500</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
+    
+      <item>
+        <title>Ophom</title>
+        <description>
+          <![CDATA[
+            Octoprint Philips Hue Outlet Manager
+            <p><img src="https://plugins.octoprint.org/assets/img/repo-600x400.png"></p>
+            
+          ]]>
+        </description>
+        <pubDate>
+Sun, 16 Aug 2020 00:00:00 -0500
+</pubDate>
+        <link>https://plugins.octoprint.org/plugins/ophom/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/ophom/</guid>
+        
+        <category>hue</category>
+        
+        <category>outlet</category>
+        
+        <category>auto off</category>
+        
+        <category>power manage</category>
+        
+        <category>philips</category>
+        
+      </item>
     
       <item>
         <title>OctoPrint-Octotweet</title>
@@ -231,30 +258,6 @@ Fri, 03 Jul 2020 00:00:00 -0500
         <category>color</category>
         
         <category>LED</category>
-        
-      </item>
-    
-      <item>
-        <title>GPIO Shutdown</title>
-        <description>
-          <![CDATA[
-            A plugin that shutdown the Rasperry Pi if you connect ground to one of the selected GPIO ports.
-            <p><img src="https://raw.githubusercontent.com/fmalekpour/OctoPrint-Gpioshutdown/master/screenshots/screen01.jpg"></p>
-          ]]>
-        </description>
-        <pubDate>
-Fri, 03 Jul 2020 00:00:00 -0500
-</pubDate>
-        <link>https://plugins.octoprint.org/plugins/GPIOShutdown/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/GPIOShutdown/</guid>
-        
-        <category>GPIO</category>
-        
-        <category>shutdown</category>
-        
-        <category>system ready</category>
-        
-        <category>ready to run</category>
         
       </item>
     
