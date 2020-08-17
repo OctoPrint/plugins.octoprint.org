@@ -2704,6 +2704,17 @@
 "author": "Stéphane Z.",
 "content": "OphomSwitch the Philips Hue socket on or off to which your printer is connectedYou can set an automatic switch-off to a minimum temperature of your choiceℹ️ Follow this instruction if your USB plug is powering your motherboard printConfigurationAfter the installation go to the plugin configuration and follow the guide.",
 "tags": ["hue","outlet","auto off","power manage","philips"]
+},
+
+{
+"id": "/plugins/PrettyGCode",
+"url": "/plugins/PrettyGCode/",
+"date": "2020-08-17 00:00:00 -0500",
+"title": "OctoPrint-PrettyGCode",
+"description": "A pretty GCode visualizer for Octoprint",
+"author": "Kragrathea",
+"content": "This plugin adds a 3D GCode visualizer tab in Octoprint. It displays colored lines to give you some idea what the printer is doing and animates progress during printing.Features  3D Gcode visualizer  Sync progress to print job  Full screen and tabbed interface  Uses Dashboard plugin from Dashboard github page when installed  Customize the UI via CSS injection (see Instructions on tab in OctoPrint)For and configuration details, please see the instructions on the PrettyGcode tab in OctoPrint. Report bugs via the PrettyGCode github page.",
+"tags": ["Gcode","visualizer","WebGL","progress"]
 }
 ]
 }
