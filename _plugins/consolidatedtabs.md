@@ -41,7 +41,7 @@ This plugin will allow you to combine the selected tabs into a single tab as dra
 
 ## Settings
 
-![screenshot settings](screenshot_settings.png)
+![screenshot settings](/assets/img/plugins/consolidatedtabs/screenshot_settings.png)
 
 - **Combined Tabs Order:** all the tabs that will be combined into one tab as a panel.
 - **Uncombined Tabs:** tabs that have not been combined and will remain as their own tab.
