@@ -189,20 +189,48 @@
 
 <p><img src="/assets/img/plugins/consolidatedtabs/screenshot_tab.png" alt="screenshot tab" /></p>
 
-<p><strong>Note:</strong> Initial positioning and sizing can be a little tricky due to the snapping feature between panels. You may have to move/resize and refresh the page a couple of times to get everything perfectly aligned. Once you’re happy with the positions and sizes you should not have to mess with them again.</p>
+<p><strong>Note:</strong> Initial positioning and sizing can be difficult due to the relative positioning of the panels. You may have to drag/resize and refresh the page a couple of times to get everything perfectly aligned. See <a href="#Tips">Tips</a> for more information.</p>
 
 <h2 id="settings">Settings</h2>
 
-<p><img src="/assets/img/plugins/consolidatedtabs/screenshot_settings.png" alt="screenshot settings" /></p>
+<p><img src="screenshot_settings.png" alt="screenshot settings" /></p>
 
 <ul>
-  <li>Combined Tabs Order: all the tabs that will be combined into one tab as draggable and resizable panels.</li>
-  <li>Uncombined Tabs: tabs that have not been combined and will remain as their own tab.</li>
-  <li>Resize Navbar: whether to resize the width of the top navbar to 100% or not.</li>
-  <li>Remove Tab Name: don’t show the name of the consolidated tab, only possible if all tabs are combined.</li>
-  <li>Overall width: width to set the overall page container, useful for widescreen displays.</li>
-  <li>Clear All Positions and Sizes: use the buttons to clear any position or size customizations, helpful when panels get moved off screen.</li>
+  <li><strong>Combined Tabs Order:</strong> all the tabs that will be combined into one tab as a panel.</li>
+  <li><strong>Uncombined Tabs:</strong> tabs that have not been combined and will remain as their own tab.</li>
+  <li><strong>Resize Navbar:</strong> whether to resize the width of the top navbar to 100% or not.</li>
+  <li><strong>Remove Tab Name:</strong> don’t show the name of the consolidated tab, only possible if all tabs are combined.</li>
+  <li><strong>Use Full Width of Browser:</strong> If enabled the tab area will be sized to fit the entire width of the browser and the sidebar will be moved to the left.</li>
+  <li><strong>Clear All Positions and Sizes:</strong> use the buttons to clear all position or size customizations, helpful when panels get moved off screen.</li>
 </ul>
+
+<h2 id="tips">Tips</h2>
+
+<ul>
+  <li>
+    <p>The name of the tab will match what is configured in OctoPrint’s <code class="language-plaintext highlighter-rouge">Title</code> appearance setting.</p>
+  </li>
+  <li>
+    <p>The best way to get your panels sized and positioned is to order them in the plugin’s settings first in the order that you want the panels to be in the consolidated tab. The panels will wrap from left to right and top to bottom based on that order.</p>
+  </li>
+  <li>Hold down the shift key on your keyboard and click anywhere on a panel (typically in blank space or on header) to activate it. Once activated you can let go of the shift key.
+    <ul>
+      <li>Move panels by clicking and dragging the panel header.</li>
+      <li>Resize panels by clicking and dragging the edges of the panel.</li>
+      <li>Once finished click any panel to deactivate the currently active panel.</li>
+    </ul>
+  </li>
+  <li>
+    <p>Each panel is positioned relative to the panel that precedes it in settings, and as a result resizing a panel will cause the other panels to move, and potentially wrap if they extend past the containing tab.</p>
+  </li>
+  <li>There are circumstances in which a panel may jump out of view while dragging/resizing panels. If this happens you can use the <code class="language-plaintext highlighter-rouge">Clear Positions</code> button in the plugin’s settings to make all the panels realign to each other.</li>
+</ul>
+
+<h2 id="themeify">Themeify</h2>
+
+<p>If using Themeify you will want to add extra settings to your Advanced options. These are the relevant css selectors that you will need to adjust.</p>
+
+<p><img src="/assets/img/plugins/consolidatedtabs/screenshot_themeify.png" alt="screenshot themeify" /></p>
 
 <h2 id="to-do">To-Do</h2>
 <ul class="task-list">
@@ -273,13 +301,13 @@
       
       <dl class="installations">
         <dt>Active instances the past month</dt>
-        <dd>Installed on at least <strong>1.4k</strong> instances</dd>
+        <dd>Installed on at least <strong>1.42k</strong> instances</dd>
       </dl>
       
       
       <dl class="install_events">
         <dt>New installs the past week</dt>
-        <dd>At least <strong>418</strong> new installations</dd>
+        <dd>At least <strong>411</strong> new installations</dd>
       </dl>
       
       
@@ -289,14 +317,14 @@
           <ul>
             
             <li>
-              Latest Release: <a href="https://github.com/jneilliii/OctoPrint-ConsolidatedTabs/releases/tag/0.0.8" target="_blank">0.0.8</a><br>
-              <small>released on 15 Aug 2020</small>
+              Latest Release: <a href="https://github.com/jneilliii/OctoPrint-ConsolidatedTabs/releases/tag/0.0.9" target="_blank">0.0.9</a><br>
+              <small>released on 19 Aug 2020</small>
             </li>
-            <li>Releases: 8</li>
+            <li>Releases: 9</li>
             
             <li>Stars: 5</li>
-            <li>Issues: 11 open, 6 closed</li>
-            <li>Last push: 15 Aug 2020</li>
+            <li>Issues: 6 open, 12 closed</li>
+            <li>Last push: 19 Aug 2020</li>
           </ul>
         </dd>
       </dl>
