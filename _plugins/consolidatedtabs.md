@@ -37,7 +37,7 @@ This plugin will allow you to combine the selected tabs into a single tab as dra
 
 ![screenshot tab](/assets/img/plugins/consolidatedtabs/screenshot_tab.png)
 
-**Note:** Initial positioning and sizing can be difficult due to the relative positioning of the panels. You may have to drag/resize and refresh the page a couple of times to get everything perfectly aligned. See [Tips](#Tips) for more information.
+**Note:** Initial positioning and sizing can be difficult due to the relative positioning of the panels. You may have to drag/resize and refresh the page a couple of times to get everything perfectly aligned. See **Tips** below for more information.
 
 ## Settings
 
@@ -72,7 +72,7 @@ If using Themeify you will want to add extra settings to your Advanced options. 
 ![screenshot themeify](/assets/img/plugins/consolidatedtabs/screenshot_themeify.png)
 
 ## To-Do
-* [ ] Figure out how to get rid of the extra whitespace at the bottom of the page after panels are positioned.
+[ ]  Figure out how to get rid of the extra whitespace at the bottom of the page after panels are positioned.
 
 ## Get Help
 
