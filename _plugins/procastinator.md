@@ -5,10 +5,9 @@ id: procastinator
 title: Procastinator
 description: Puts printjobs on hold until a certain time
 author: Juergen Pabel
-license: AGPLv2
+license: AGPLv3
 
-# today's date in format YYYY-MM-DD, e.g.
-date: 2015-06-22
+date: 2020-08-21
 
 homepage: https://github.com/juergenpabel/OctoPrint-Procastinator
 source: https://github.com/juergenpabel/OctoPrint-Procastinator
@@ -37,13 +36,7 @@ featuredimage: /assets/img/plugins/procastinator/settings.png
 
 compatibility:
   octoprint:
-  - 1.4.0
-
-  os:
-  - linux
-  - windows
-  - macos
-  - freebsd
+  - 1.4.2
 
   python: ">=2.7,<4"
       
