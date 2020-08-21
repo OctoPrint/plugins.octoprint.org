@@ -5,10 +5,38 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>https://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 21 Aug 2020 07:12:36 -0500</pubDate>
-    <lastBuildDate>Fri, 21 Aug 2020 07:12:36 -0500</lastBuildDate>
+    <pubDate>Fri, 21 Aug 2020 14:56:28 -0500</pubDate>
+    <lastBuildDate>Fri, 21 Aug 2020 14:56:28 -0500</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
+    
+      <item>
+        <title>Procastinator</title>
+        <description>
+          <![CDATA[
+            Puts printjobs on hold until a certain time
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/procastinator/settings.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Fri, 21 Aug 2020 00:00:00 -0500
+</pubDate>
+        <link>https://plugins.octoprint.org/plugins/procastinator/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/procastinator/</guid>
+        
+        <category>schedule</category>
+        
+        <category>scheduling</category>
+        
+        <category>delay</category>
+        
+        <category>pause</category>
+        
+        <category>wait</category>
+        
+        <category>procastinator</category>
+        
+      </item>
     
       <item>
         <title>OctoPrint-PrettyGCode</title>
@@ -227,28 +255,6 @@ Thu, 16 Jul 2020 00:00:00 -0500
         <category>External Fan</category>
         
         <category>Cool Down Fan</category>
-        
-      </item>
-    
-      <item>
-        <title>ArduCamFocus</title>
-        <description>
-          <![CDATA[
-            Plugin to control ArduCam with motorized focus control on octopi
-            <p><img src="https://plugins.octoprint.org/assets/img/plugins/ArduCamFocus/ControlScreenShot.png"></p>
-          ]]>
-        </description>
-        <pubDate>
-Sat, 11 Jul 2020 00:00:00 -0500
-</pubDate>
-        <link>https://plugins.octoprint.org/plugins/ArduCamFocus/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/ArduCamFocus/</guid>
-        
-        <category>ArduCam</category>
-        
-        <category>camera</category>
-        
-        <category>focus</category>
         
       </item>
     

@@ -2715,6 +2715,17 @@
 "author": "Kragrathea",
 "content": "This plugin adds a 3D GCode visualizer tab in Octoprint. It displays colored lines to give you some idea what the printer is doing and animates progress during printing.Features  3D Gcode visualizer  Sync progress to print job  Full screen and tabbed interface  Uses Dashboard plugin from Dashboard github page when installed  Customize the UI via CSS injection (see Instructions on tab in OctoPrint)For and configuration details, please see the instructions on the PrettyGcode tab in OctoPrint. Report bugs via the PrettyGCode github page.",
 "tags": ["Gcode","visualizer","WebGL","progress"]
+},
+
+{
+"id": "/plugins/procastinator",
+"url": "/plugins/procastinator/",
+"date": "2020-08-21 00:00:00 -0500",
+"title": "Procastinator",
+"description": "Puts printjobs on hold until a certain time",
+"author": "Juergen Pabel",
+"content": "Ever wanted to start a printjob sometime later? Instead of scheduliing a printjob by other means(cron &amp; curl via API), this plugin allows for a printjob to be started and immediately put on holduntil a given time (or immediately, if so desired).This might be useful if you want to start a printjob in the middle of the night (while sleeping)or even just a little later on (without the risk of forgetting to actually start the printjob later on).The plugin is configurable as to:  a time window during which a printjob is put on hold (like only in the evening)  5 options as for times when to actually start the printjobIf a printjob is started during the configured time window then it is immediately put on hold and theuser is shown a dialog for selecting the time at which the job is to be continued (the first option isalways “NOW”, just in case).",
+"tags": ["schedule","scheduling","delay","pause","wait","procastinator"]
 }
 ]
 }
