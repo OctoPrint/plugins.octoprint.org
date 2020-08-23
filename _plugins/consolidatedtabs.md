@@ -33,21 +33,24 @@ compatibility:
 
 # Consolidated Tabs
 
-This plugin will allow you to combine the selected tabs into a single tab as draggable and resizable panels.
+This plugin will allow you to combine the selected tabs into a single tab as draggable and resizable panels. Click the screenshot below to see an exmple YouTube video.
 
-![screenshot tab](/assets/img/plugins/consolidatedtabs/screenshot_tab.png)
+{% include youtube.html vid="<youtube video id>" preview="<preview image, '/assets/img/plugins/consolidatedtabs/screenshot_tab.png'>" %}
 
 **Note:** Initial positioning and sizing can be difficult due to the relative positioning of the panels. You may have to drag/resize and refresh the page a couple of times to get everything perfectly aligned. See **Tips** below for more information.
 
 ## Settings
 
-![screenshot settings](/assets/img/plugins/consolidatedtabs/screenshot_settings.png)
+Click the screenshot below to open a YouTube video demonstrating setting up Consolidated Tabs.
 
+{% include youtube.html vid="<youtube video id>" preview="<preview image, '/assets/img/plugins/consolidatedtabs/screenshot_settings.png'>" %}
+
+- **Snap to Edges While Dragging:** if enabled panels will snap to the edges of other panels while dragging.
 - **Combined Tabs Order:** all the tabs that will be combined into one tab as a panel.
 - **Uncombined Tabs:** tabs that have not been combined and will remain as their own tab.
 - **Resize Navbar:** whether to resize the width of the top navbar to 100% or not.
 - **Remove Tab Name:** don't show the name of the consolidated tab, only possible if all tabs are combined.
-- **Use Full Width of Browser:** If enabled the tab area will be sized to fit the entire width of the browser and the sidebar will be moved to the left.
+- **Use Full Width of Browser:** if enabled the tab area will be sized to fit the entire width of the browser and the sidebar will be moved to the left.
 - **Clear All Positions and Sizes:** use the buttons to clear all position or size customizations, helpful when panels get moved off screen.
 
 ## Tips
