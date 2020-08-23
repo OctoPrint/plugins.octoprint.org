@@ -7,7 +7,7 @@ description: The OctoPrint-Plugin manages all spool informations and stores it i
 author: Olli
 license: AGPLv3
 
-date: 2020-08-19
+date: 2020-08-23
 
 homepage: https://github.com/OllisGit/OctoPrint-SpoolManager
 source: https://github.com/OllisGit/OctoPrint-SpoolManager
