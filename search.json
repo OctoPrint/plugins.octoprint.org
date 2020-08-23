@@ -2726,6 +2726,17 @@
 "author": "Juergen Pabel",
 "content": "Ever wanted to start a printjob sometime later? Instead of scheduliing a printjob by other means(cron &amp; curl via API), this plugin allows for a printjob to be started and immediately put on holduntil a given time (or immediately, if so desired).This might be useful if you want to start a printjob in the middle of the night (while sleeping)or even just a little later on (without the risk of forgetting to actually start the printjob later on).The plugin is configurable as to:  a time window during which a printjob is put on hold (like only in the evening)  5 options as for times when to actually start the printjobIf a printjob is started during the configured time window then it is immediately put on hold and theuser is shown a dialog for selecting the time at which the job is to be continued (the first option isalways “NOW”, just in case).",
 "tags": ["schedule","scheduling","delay","pause","wait","procastinator"]
+},
+
+{
+"id": "/plugins/SpoolManager",
+"url": "/plugins/SpoolManager/",
+"date": "2020-08-23 00:00:00 -0500",
+"title": "SpoolManager",
+"description": "The OctoPrint-Plugin manages all spool informations and stores it in a database.",
+"author": "Olli",
+"content": "SpoolManager offers the possibility to save many properties of a Spool in a database. Like: material, color, weight, length, purchase-info, last/first-usage, …For a full overview of the latest feature set and planed features, please visit the Git Hub HomepageSupport my EffortsThis plugin, as well as my other plugins were developed in my spare time.If you like it, I would be thankful about a cup of coffee :)",
+"tags": ["printer","spool","filament"]
 }
 ]
 }
