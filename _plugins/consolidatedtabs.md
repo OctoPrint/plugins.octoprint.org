@@ -35,7 +35,7 @@ compatibility:
 
 This plugin will allow you to combine the selected tabs into a single tab as draggable and resizable panels. Click the screenshot below to see an exmple YouTube video.
 
-{% include youtube.html vid="<youtube video id>" preview="<preview image, '/assets/img/plugins/consolidatedtabs/screenshot_tab.png'>" %}
+{% include youtube.html vid="fd2xVNUORg8" preview="/assets/img/plugins/consolidatedtabs/screenshot_tab.png" %}
 
 **Note:** Initial positioning and sizing can be difficult due to the relative positioning of the panels. You may have to drag/resize and refresh the page a couple of times to get everything perfectly aligned. See **Tips** below for more information.
 
@@ -43,7 +43,7 @@ This plugin will allow you to combine the selected tabs into a single tab as dra
 
 Click the screenshot below to open a YouTube video demonstrating setting up Consolidated Tabs.
 
-{% include youtube.html vid="<youtube video id>" preview="<preview image, '/assets/img/plugins/consolidatedtabs/screenshot_settings.png'>" %}
+{% include youtube.html vid="rrzeOJF2u4A" preview="/assets/img/plugins/consolidatedtabs/screenshot_settings.png" %}
 
 - **Snap to Edges While Dragging:** if enabled panels will snap to the edges of other panels while dragging.
 - **Combined Tabs Order:** all the tabs that will be combined into one tab as a panel.
