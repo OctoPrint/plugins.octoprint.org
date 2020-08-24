@@ -39,7 +39,7 @@ Currently, firmwares that have been tested are:
  - Creality3D Marlin fork (Ver 1.70.0 BL)
  - Prusa Marlin fork (Prusa-Firmware 3.9.0)
 
-Warning: this plugin is on its early stage of developpement. Use with caution and please report any issues on the git repository. Improvement suggestions are welcome as well.
+Note:
 
 If your firmware is a marlin derivate and is not listed as tested, [please report it as a working one](https://framagit.org/razer/octoprint_z_probe_offset/-/issues) in order to add it to the list, or [report any issues](https://framagit.org/razer/octoprint_z_probe_offset/-/issues)
 
