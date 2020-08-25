@@ -33,7 +33,7 @@ compatibility:
 
 # Consolidated Tabs
 
-This plugin will allow you to combine the selected tabs into a single tab as draggable and resizable panels. Click the screenshot below to see an exmple YouTube video.
+This plugin will allow you to combine the selected tabs into a single tab as draggable and resizable panels. Click the screenshot below to see an example YouTube video.
 
 {% include youtube.html vid="fd2xVNUORg8" preview="/assets/img/plugins/consolidatedtabs/screenshot_tab.png" %}
 
@@ -57,7 +57,7 @@ Click the screenshot below to open a YouTube video demonstrating setting up Cons
 
 - The name of the tab will match what is configured in OctoPrint's `Title` appearance setting.
 
-- The best way to get your panels sized and positioned is to order them in the plugin's settings first in the order that you want the panels to be in the consolidated tab. The panels will wrap from left to right and top to bottom based on that order.
+- The best way to get your panels sized and positioned is to order them in the plugin's settings first in the order that you want the panels to be in the consolidated tab. The panels will wrap from left to right and top to bottom in that order.
 
 - Hold down the shift key on your keyboard and click anywhere on a panel (typically in blank space or on header) to activate it. Once activated you can let go of the shift key.
   - Move panels by clicking and dragging the panel header.
