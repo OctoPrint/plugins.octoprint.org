@@ -43,7 +43,7 @@ featuredimage: /assets/img/plugins/octotweet/twitter.jpg
 # Octoprint-OctoTweet 1.0.0
 
 OctoTweet is a plugin allowing Octoprint to send notifications to Twitter.
-This is a fork of the amazing pluggin [Octorant](https://plugins.octoprint.org/plugins/octorant/) by @bchanudet.
+This is a fork of the amazing plugin [Octorant](https://plugins.octoprint.org/plugins/octorant/) by @bchanudet.
 
 ![twitter result](/assets/img/plugins/octotweet/twitter.jpg)
 
@@ -56,32 +56,32 @@ https://github.com/jpg32/OctoPrint-Octotweet/archive/master.zip
 ### Create Twitter App 
 Login with your Twitter account on [developer.twitter.com](https://developer.twitter.com/en).
 
-Clic on *App* and then on *Create an app*:
+Click on *App* and then on *Create an app*:
 ![screen twitter setup 1](/assets/img/plugins/octotweet/twitter_setup_1.JPG)
 
 Select *Student*:
 ![screen twitter setup 2](/assets/img/plugins/octotweet/twitter_setup_2.JPG)
 
-Follow steps to complete the subscription of Twitter's Developer Program:
+Follow steps to complete the subscription to Twitter's Developer Program:
 ![screen twitter setup 3](/assets/img/plugins/octotweet/twitter_setup_3.JPG)
 
 Now you can create a new app:  
 ![screen twitter setup 4](/assets/img/plugins/octotweet/twitter_setup_4.JPG)
 
-The next step show you yours API Key & API secret keys:
+The next step show you your API Key & API secret keys:
 ![screen twitter setup 4](/assets/img/plugins/octotweet/twitter_setup_5.JPG)
 
-Put them on Octoprint-Octotweet:  
+Copy them to the OctoTweet plugin configuration:  
 ![screen octoprint 1](/assets/img/plugins/octotweet//octoprint_1.JPG)
 
 Edit app's permissions:
 ![screen twitter setup 6](/assets/img/plugins/octotweet/twitter_setup_6.JPG)
 ![screen twitter setup 7](/assets/img/plugins/octotweet/twitter_setup_7.JPG)
 
-Go to *Key and tokens* :
+Go to *Keys and tokens* :
 ![screen twitter setup 8](/assets/img/plugins/octotweet/twitter_setup_8.JPG)
 
-Generate *Acces Token & Secret*:
+Generate *Access Token & Secret*:
 ![screen twitter setup 11](/assets/img/plugins/octotweet/twitter_setup_11.JPG)
 
 Copy generated tokens to Octoprint :
@@ -107,7 +107,7 @@ Octotweet allows you to launch scripts everytime a message is sent:
 - Before sending: perfect for turning some LED on to ensure the webcam will always have enough light when taking the snapshot.
 - After sending: perfect for turning the same LED off :smiley:.
 
-Script configuration was deliberately made a little harder, as running scripts exposes much more the host computer. You can find more indications on the [wiki](https://github.com/bchanudet/OctoPrint-Octorant/wiki/Launching-scripts).
+Script configuration was deliberately made a little harder, as running scripts exposes much more on the host computer. You can find more indications on the [wiki](https://github.com/bchanudet/OctoPrint-Octorant/wiki/Launching-scripts).
 
 ## Message format
 
