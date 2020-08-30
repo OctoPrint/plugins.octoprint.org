@@ -26,25 +26,33 @@ compatibility:
   - 1.4.0
   
 screenshots:
-- url: https://github.com/OllisGit/OctoPrint-PrintJobHistory/raw/master/screenshots/plugin-tab.png
+- url: /assets/img/plugins/PrintJobHistory/plugin-tab.png
   alt: History Overview Tab 
   caption: History Overview Tab
 
-- url: https://github.com/OllisGit/OctoPrint-PrintJobHistory/raw/master/screenshots/editPrintJob-dialog.png
+- url: /assets/img/plugins/PrintJobHistory/editPrintJob-dialog.png
   alt: Edit of a Print Job Item
   caption: Edit of a Print Job Item
 
+- url: /assets/img/plugins/PrintJobHistory/editPrintJob-changeStatus-dialog.png
+  alt: Change print status
+  caption: Change print status
 
-- url: https://github.com/OllisGit/OctoPrint-PrintJobHistory/raw/master/screenshots/plugin-settings.png
+- url: /assets/img/plugins/PrintJobHistory/statistics-dialog.png
+  alt: Print Statistics
+  caption: Print Statistics
+
+
+- url: /assets/img/plugins/PrintJobHistory/plugin-settings.png
   alt: Plugin Settings
   caption: Plugin Settings
 
-- url: https://github.com/OllisGit/OctoPrint-PrintJobHistory/raw/master/screenshots/missingPlugins-dialog.png
+- url: /assets/img/plugins/PrintJobHistory/missingPlugins-dialog.png
   alt: Optional Plugin Dependencies
   caption: Optional Plugin Dependencies
 
 
-featuredimage: https://github.com/OllisGit/OctoPrint-PrintJobHistory/raw/master/screenshots/editPrintJob-dialog.png
+featuredimage: /assets/img/plugins/PrintJobHistory/editPrintJob-dialog.png
 
 ---
 
@@ -58,7 +66,7 @@ For a full overview of the latest feature set and planed features, please visit 
 This plugin, as well as my [other plugins](https://github.com/OllisGit/) were developed in my spare time.
 If you like it, I would be thankful about a cup of coffee :) 
 
-[![More coffee, more code](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6SW5R6ZUKLB5E&source=url)
+[![paypal](/assets/img/plugins/SpoolManager/paypal-with-text.png)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6SW5R6ZUKLB5E&source=url)
 
 
 
