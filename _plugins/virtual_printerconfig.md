@@ -4,7 +4,7 @@ layout: plugin
 id: virtual_printerconfig
 title: Virtual Printer Settings
 description: Add configurable settings to the Virtual Printer plugin under OctoPrint's settings
-author: Charlie
+author: Charlie Powell
 license: AGPLv3
 
 date: 2020-08-04
