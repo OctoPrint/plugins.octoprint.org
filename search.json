@@ -2645,10 +2645,10 @@
 "url": "/plugins/ws281x_led_status/",
 "date": "2020-07-28 00:00:00 -0500",
 "title": "WS281x LED Status",
-"description": "Add some WS281x type RGB LEDs to your printer for a quick status update",
+"description": "Add some WS281x type RGB LEDs to your printer for a quick status update!",
 "author": "Charlie Powell",
-"content": "Supporting effects for various printing states as well as print and heating progress,you will always know what your printer is doing without needing to look at the web interface all the time.Configurable options include turning on and off each event, customising the effect and colours, tracking print and heatup progress, enable a timer so you can have the LEDs on at certain times and a button in the navbar to turn them on and offConfiguration optionsSee here for details of the various configuration options available for the plugin, and have a look at the screenshots belowGet helpPlease open an issue on the Github Repository if you run into a bug, or if you just have a general question post on the OctoPrint community forum and tag me @Charlie_Powell and I’ll try and respond.Setting up SPISee here for details of how to setup SPI so you can use your LEDs. There is also a configuration wizard that will do this for you on the first install, if you ask it nicely.Wiring your LEDsSee here for details of how to wire your LED strips to a Raspberry Pi.",
-"tags": ["rgb led","status","progress","neopixel","ws281x","ws2811","ws2812"]
+"content": "A highly configurable plugin for supporting WS2811, WS2812 and SK6812 LEDs attached to your Raspberry Pi.With lots of effects to choose from, you can customise the plugin to do things exactly as you want them, to display the status from your 3D printer from a simple strip of LEDsFeatures include:  Reacting to printing events  Tracking heating &amp; printing progress  Intercepting M150 commands  Quick on/off button from the navbar  ‘Torch’ button  A timer to turn the LEDs on or off at certain times  Easy to use but highly configurable settings interface, you can turn pretty much anything on or off.  LED Strip test  Power calculator  … and more!For the most up-to-date feature list, please checkout the plugin’s homepage as well as the wiki for more information.SetupSetting up the plugin couldn’t be easier! There are 3 main steps, with the heavy lifting done for you via a configuration wizard:  Wiring your LEDs  Configuring SPI  Configuring plugin settingsFor a full setup guide, with detailed instructions for each step, please see the page on the wikiGetting helpYou may want to check the wiki, to see if your question has been answered there. Still got questions? Get in touch:  Open an issue with the question template  Find me on the OctoPrint Discord @cp2004  Find me on the Community Forums @Charlie_PowellReporting problemsWhilst I don’t like bugs, I want to hear about them! Let me know by opening an issue on GithubSupport my work!I created this plugin in my spare time, so if you have enjoyed using it then please support it’s development!",
+"tags": ["rgb led","led","status","progress","neopixel","ws281x","ws2811","ws2812","sk6812"]
 },
 
 {
@@ -2657,7 +2657,7 @@
 "date": "2020-08-04 00:00:00 -0500",
 "title": "Virtual Printer Settings",
 "description": "Add configurable settings to the Virtual Printer plugin under OctoPrint's settings",
-"author": "Charlie",
+"author": "Charlie Powell",
 "content": "Add easily configurable and well organised settings for OctoPrint’s virtual printer.Overrides the default template which only has an enabling checkbox.Very useful if you are developing plugins, or even core OctoPrint. No more digging deep into config.yaml and hoping you typed the settings correctly!Note that this plugin is only compatible with OctoPrint 1.4.1 and higher.",
 "tags": ["development","settings","virtual printer"]
 },

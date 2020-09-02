@@ -7,7 +7,7 @@
 <head>
     <meta charset="utf-8" />
     <title>WS281x LED Status</title>
-    <meta name="description" content="Add some WS281x type RGB LEDs to your printer for a quick status update">
+    <meta name="description" content="Add some WS281x type RGB LEDs to your printer for a quick status update!">
     <meta name="author" content="Charlie Powell">
     <meta name="referrer" content="same-origin">
     <meta name="google-site-verification" content="0EFsbaNygJcEinKPmzP-hTf0Ju6wDIpJxO5zvQtOQT0" />
@@ -40,17 +40,15 @@
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@OctoPrint3D" />
     <meta name="twitter:title" content="WS281x LED Status" />
-    <meta name="twitter:description" content="Supporting effects for various printing states as well as print and heating progress,
-you will always know what your printer is doing without needing to look at the web interface all the time.
+    <meta name="twitter:description" content="
 
 " />
     <meta name="twitter:image" content="https://plugins.octoprint.org" />
 
     <meta property="og:title" content="WS281x LED Status" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://plugins.octoprint.org/assets/img/plugins/ws281x_led_status/settings_overview.png" />
-    <meta property="og:description" content="Supporting effects for various printing states as well as print and heating progress,
-you will always know what your printer is doing without needing to look at the web interface all the time.
+    <meta property="og:image" content="https://plugins.octoprint.org/assets/img/plugins/ws281x_led_status/ws281x_settings.png" />
+    <meta property="og:description" content="
 
 " />
     <meta property="og:site_name" content="OctoPrint Plugin Repository" />
@@ -58,11 +56,10 @@ you will always know what your printer is doing without needing to look at the w
 
     <meta itemscope itemtype="http://schema.org/WebPage" />
     <meta itemprop="headline" content="WS281x LED Status" />
-    <meta itemprop="description" content="Supporting effects for various printing states as well as print and heating progress,
-you will always know what your printer is doing without needing to look at the web interface all the time.
+    <meta itemprop="description" content="
 
 " />
-    <meta itemprop="image" content="https://plugins.octoprint.org/assets/img/plugins/ws281x_led_status/settings_overview.png" />
+    <meta itemprop="image" content="https://plugins.octoprint.org/assets/img/plugins/ws281x_led_status/ws281x_settings.png" />
 
     <script type="text/javascript" src="/assets/js/jquery-1.9.1.min-4b58dfeb119b2dd15f54e0a074cf8eb63204c8b03d45056e0b514e042f36aa44.js" integrity="sha256-S1jf6xGbLdFfVOCgdM+OtjIEyLA9RQVuC1FOBC82qkQ=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="/assets/js/underscore.min-42d8fad13bc28fc726775196ec9ab953febf9bde175c5845128361c953fa17f4.js" integrity="sha256-Qtj60TvCj8cmd1GW7Jq5U/6/m94XXFhFEoNhyVP6F/Q=" crossorigin="anonymous"></script>
@@ -184,24 +181,55 @@ you will always know what your printer is doing without needing to look at the w
       
 
       <p class="lead">
-        Add some WS281x type RGB LEDs to your printer for a quick status update
+        Add some WS281x type RGB LEDs to your printer for a quick status update!
       </p>
-      <p>Supporting effects for various printing states as well as print and heating progress,
-you will always know what your printer is doing without needing to look at the web interface all the time.</p>
+      <p><img src="/assets/img/plugins/ws281x_led_status/rainbow.gif" alt="rainbow effect" /></p>
 
-<p>Configurable options include turning on and off each event, customising the effect and colours, tracking print and heatup progress, enable a timer so you can have the LEDs on at certain times and a button in the navbar to turn them on and off</p>
+<p>A highly configurable plugin for supporting WS2811, WS2812 and SK6812 LEDs attached to your Raspberry Pi.</p>
 
-<h3 id="configuration-options">Configuration options</h3>
-<p><a href="https://github.com/cp2004/OctoPrint-WS281x_LED_Status/wiki/Configuration-options">See here</a> for details of the various configuration options available for the plugin, and have a look at the screenshots below</p>
+<p>With lots of effects to choose from, you can customise the plugin to do things <em>exactly</em> as you want them, to display the status from your 3D printer from a simple strip of LEDs</p>
 
-<h3 id="get-help">Get help</h3>
-<p>Please open an issue on the <a href="https://github.com/cp2004/OctoPrint-WS281x_LED_Status">Github Repository</a> if you run into a bug, or if you just have a general question post on the <a href="https://community.octoprint.org">OctoPrint community forum</a> and tag me <a href="https://community.octoprint.org">@Charlie_Powell</a> and I’ll try and respond.</p>
+<p>Features include:</p>
+<ul>
+  <li>Reacting to printing events</li>
+  <li>Tracking heating &amp; printing progress</li>
+  <li>Intercepting M150 commands</li>
+  <li>Quick on/off button from the navbar</li>
+  <li>‘Torch’ button</li>
+  <li>A timer to turn the LEDs on or off at certain times</li>
+  <li>Easy to use but highly configurable settings interface, you can turn pretty much anything on or off.</li>
+  <li>LED Strip test</li>
+  <li>Power calculator</li>
+  <li>… and more!</li>
+</ul>
 
-<h3 id="setting-up-spi">Setting up SPI</h3>
-<p><a href="https://github.com/cp2004/OctoPrint-WS281x_LED_Status/wiki/SPI-Setup-Running-without-root">See here</a> for details of how to setup SPI so you can use your LEDs. There is also a configuration wizard that will do this for you on the first install, if you ask it nicely.</p>
+<p>For the most up-to-date feature list, please checkout the <a href="https://github.com/cp2004/OctoPrint-WS281x_LED_Status">plugin’s homepage</a> as well as the <a href="https://github.com/cp2004/OctoPrint-WS281x_LED_Status/wiki">wiki</a> for more information.</p>
 
-<h3 id="wiring-your-leds">Wiring your LEDs</h3>
-<p><a href="https://github.com/cp2004/OctoPrint-WS281x_LED_Status/wiki/Wiring-LEDS-to-your-Raspberry-Pi">See here</a> for details of how to wire your LED strips to a Raspberry Pi.</p>
+<p><img src="/assets/img/plugins/ws281x_led_status/color_wipe.gif" alt="rainbow effect" /></p>
+
+<h2 id="setup">Setup</h2>
+<p>Setting up the plugin couldn’t be easier! There are 3 main steps, with the heavy lifting done for you via a configuration wizard:</p>
+<ul>
+  <li>Wiring your LEDs</li>
+  <li>Configuring SPI</li>
+  <li>Configuring plugin settings</li>
+</ul>
+
+<p>For a full setup guide, with detailed instructions for each step, please see the <a href="https://github.com/cp2004/OctoPrint-WS281x_LED_Status/wiki/Setup-Guide">page on the wiki</a></p>
+
+<h3 id="getting-help">Getting help</h3>
+<p>You may want to <a href="https://github.com/cp2004/OctoPrint-WS281x_LED_Status/wiki">check the wiki</a>, to see if your question has been answered there. Still got questions? Get in touch:</p>
+<ul>
+  <li>Open an issue with the <a href="https://github.com/cp2004/OctoPrint-WS281x_LED_Status/issues/new?assignees=&amp;labels=type%3A+question&amp;template=question.md&amp;title=">question template</a></li>
+  <li>Find me on the <a href="https://discord.octoprint.org">OctoPrint Discord</a> @cp2004</li>
+  <li>Find me on the <a href="https://community.octoprint.org">Community Forums</a> @Charlie_Powell</li>
+</ul>
+
+<h3 id="reporting-problems">Reporting problems</h3>
+<p>Whilst I don’t like bugs, I want to hear about them! Let me know by <a href="https://github.com/cp2004/OctoPrint-WS281x_LED_Status/issues/new?assignees=&amp;labels=type%3A+potential+bug&amp;template=bug_report.md&amp;title=%5BBug%5D">opening an issue on Github</a></p>
+
+<h1 id="support-my-work">Support my work!</h1>
+<p>I created this plugin in my spare time, so if you have enjoyed using it then please <a href="https://github.com/sponsors/cp2004">support it’s development!</a></p>
 
 
       
@@ -209,17 +237,12 @@ you will always know what your printer is doing without needing to look at the w
         
         <figure>
           
-          <a href="/assets/img/plugins/ws281x_led_status/settings_overview.png" data-lightbox="/plugins/ws281x_led_status" data-title="Settings Overview Screenshot"><img src="/assets/img/plugins/ws281x_led_status/settings_overview.png" alt="settings-overview-screenshot" title="Settings Overview Screenshot"></a>
+          <a href="/assets/img/plugins/ws281x_led_status/ws281x_settings.png" data-lightbox="/plugins/ws281x_led_status" data-title="Settings Overview Screenshot"><img src="/assets/img/plugins/ws281x_led_status/ws281x_settings.png" alt="settings-overview-screenshot" title="Settings Overview Screenshot"></a>
         </figure>
         
         <figure>
           
-          <a href="/assets/img/plugins/ws281x_led_status/printing_effects.png" data-lightbox="/plugins/ws281x_led_status" data-title="Printing Settings Screenshot"><img src="/assets/img/plugins/ws281x_led_status/printing_effects.png" alt="settings-printing-screenshot" title="Printing Settings Screenshot"></a>
-        </figure>
-        
-        <figure>
-          
-          <a href="/assets/img/plugins/ws281x_led_status/wizard.png" data-lightbox="/plugins/ws281x_led_status" data-title="Setup Wizard Screenshot"><img src="/assets/img/plugins/ws281x_led_status/wizard.png" alt="setup-wizard-screenshot" title="Setup Wizard Screenshot"></a>
+          <a href="/assets/img/plugins/ws281x_led_status/ws281x_wizard.png" data-lightbox="/plugins/ws281x_led_status" data-title="Setup Wizard Screenshot"><img src="/assets/img/plugins/ws281x_led_status/ws281x_wizard.png" alt="setup-wizard-screenshot" title="Setup Wizard Screenshot"></a>
         </figure>
         
       
@@ -270,13 +293,13 @@ you will always know what your printer is doing without needing to look at the w
       
       <dl class="installations">
         <dt>Active instances the past month</dt>
-        <dd>Installed on at least <strong>270</strong> instances</dd>
+        <dd>Installed on at least <strong>274</strong> instances</dd>
       </dl>
       
       
       <dl class="install_events">
         <dt>New installs the past week</dt>
-        <dd>At least <strong>33</strong> new installations</dd>
+        <dd>At least <strong>35</strong> new installations</dd>
       </dl>
       
       
@@ -292,8 +315,8 @@ you will always know what your printer is doing without needing to look at the w
             <li>Releases: 12</li>
             
             <li>Stars: 10</li>
-            <li>Issues: 10 open, 16 closed</li>
-            <li>Last push: 31 Aug 2020</li>
+            <li>Issues: 10 open, 17 closed</li>
+            <li>Last push: 02 Sep 2020</li>
           </ul>
         </dd>
       </dl>
@@ -306,11 +329,15 @@ you will always know what your printer is doing without needing to look at the w
           
           
           
+          <a class="label" href="/by_tag/#tag-led">led</a>
+          
           <a class="label" href="/by_tag/#tag-neopixel">neopixel</a>
           
           <a class="label" href="/by_tag/#tag-progress">progress</a>
           
           <a class="label" href="/by_tag/#tag-rgb-led">rgb led</a>
+          
+          <a class="label" href="/by_tag/#tag-sk6812">sk6812</a>
           
           <a class="label" href="/by_tag/#tag-status">status</a>
           
