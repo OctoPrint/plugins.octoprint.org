@@ -3,7 +3,7 @@ layout: plugin
 
 id: ws281x_led_status
 title: WS281x LED Status
-description: Add some WS281x type RGB LEDs to your printer for a quick status update
+description: Add some WS281x type RGB LEDs to your printer for a quick status update!
 author: Charlie Powell
 license: AGPLv3
 
@@ -17,25 +17,24 @@ follow_dependency_links: false
 
 tags:
 - rgb led
+- led
 - status
 - progress
 - neopixel
 - ws281x
 - ws2811
 - ws2812
+- sk6812
 
 screenshots:
-- url: /assets/img/plugins/ws281x_led_status/settings_overview.png
+- url: /assets/img/plugins/ws281x_led_status/ws281x_settings.png
   alt: settings-overview-screenshot
   caption: Settings Overview Screenshot
-- url: /assets/img/plugins/ws281x_led_status/printing_effects.png
-  alt: settings-printing-screenshot
-  caption: Printing Settings Screenshot
-- url: /assets/img/plugins/ws281x_led_status/wizard.png
+- url: /assets/img/plugins/ws281x_led_status/ws281x_wizard.png
   alt: setup-wizard-screenshot
   caption: Setup Wizard Screenshot
 
-featuredimage: /assets/img/plugins/ws281x_led_status/settings_overview.png
+featuredimage: /assets/img/plugins/ws281x_led_status/ws281x_settings.png
 
 compatibility:
 
@@ -49,21 +48,47 @@ compatibility:
 
 ---
 
-Supporting effects for various printing states as well as print and heating progress,
-you will always know what your printer is doing without needing to look at the web interface all the time.
+![rainbow effect](/assets/img/plugins/ws281x_led_status/rainbow.gif)
 
-Configurable options include turning on and off each event, customising the effect and colours, tracking print and heatup progress, enable a timer so you can have the LEDs on at certain times and a button in the navbar to turn them on and off
+A highly configurable plugin for supporting WS2811, WS2812 and SK6812 LEDs attached to your Raspberry Pi.
 
-### Configuration options
-[See here](https://github.com/cp2004/OctoPrint-WS281x_LED_Status/wiki/Configuration-options) for details of the various configuration options available for the plugin, and have a look at the screenshots below
+With lots of effects to choose from, you can customise the plugin to do things *exactly* as you want them, to display the status from your 3D printer from a simple strip of LEDs
 
-### Get help
-Please open an issue on the [Github Repository](https://github.com/cp2004/OctoPrint-WS281x_LED_Status) if you run into a bug, or if you just have a general question post on the [OctoPrint community forum](https://community.octoprint.org) and tag me [@Charlie_Powell](https://community.octoprint.org) and I'll try and respond.
+Features include:
+* Reacting to printing events
+* Tracking heating & printing progress
+* Intercepting M150 commands
+* Quick on/off button from the navbar
+* 'Torch' button
+* A timer to turn the LEDs on or off at certain times
+* Easy to use but highly configurable settings interface, you can turn pretty much anything on or off.
+* LED Strip test
+* Power calculator
+* ... and more!
 
-### Setting up SPI
-[See here](https://github.com/cp2004/OctoPrint-WS281x_LED_Status/wiki/SPI-Setup-Running-without-root) for details of how to setup SPI so you can use your LEDs. There is also a configuration wizard that will do this for you on the first install, if you ask it nicely.
+For the most up-to-date feature list, please checkout the [plugin's homepage]({{ page.homepage }}) as well as the [wiki]({{ page.homepage }}/wiki) for more information.
 
-### Wiring your LEDs
-[See here](https://github.com/cp2004/OctoPrint-WS281x_LED_Status/wiki/Wiring-LEDS-to-your-Raspberry-Pi) for details of how to wire your LED strips to a Raspberry Pi.
+![rainbow effect](/assets/img/plugins/ws281x_led_status/color_wipe.gif)
+
+## Setup
+Setting up the plugin couldn't be easier! There are 3 main steps, with the heavy lifting done for you via a configuration wizard:
+* Wiring your LEDs
+* Configuring SPI
+* Configuring plugin settings
+
+For a full setup guide, with detailed instructions for each step, please see the [page on the wiki]({{ page.homepage }}/wiki/Setup-Guide)
+
+### Getting help
+You may want to [check the wiki]({{ page.homepage }}/wiki), to see if your question has been answered there. Still got questions? Get in touch:
+* Open an issue with the [question template](https://github.com/cp2004/OctoPrint-WS281x_LED_Status/issues/new?assignees=&labels=type%3A+question&template=question.md&title=)
+* Find me on the [OctoPrint Discord](https://discord.octoprint.org) @cp2004
+* Find me on the [Community Forums](https://community.octoprint.org) @Charlie_Powell
+
+### Reporting problems
+Whilst I don't like bugs, I want to hear about them! Let me know by [opening an issue on Github](https://github.com/cp2004/OctoPrint-WS281x_LED_Status/issues/new?assignees=&labels=type%3A+potential+bug&template=bug_report.md&title=%5BBug%5D)
+
+
+# Support my work!
+I created this plugin in my spare time, so if you have enjoyed using it then please [support it's development!](https://github.com/sponsors/cp2004)
 
 
