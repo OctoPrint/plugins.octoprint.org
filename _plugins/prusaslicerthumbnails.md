@@ -53,6 +53,10 @@ If enabled in settings the thumbnail can also be embedded as an inline thumbnail
 
 Since PrusaSlicer only enables thumbnails by default for the Prusa Mini you may need to manually update your configuration files. Those can be found by selecting `Show Configuration Folder` from the Help menu of the application and then inside the printers sub-folder you'll find your printer profiles. 
 
+**Update:** [SuperSlicer](https://github.com/supermerill/SuperSlicer), an advanced fork of PrusaSlicer, now has image options in the Printer Settings as of version 2.2.53, big shout out to the team there. You must enable expert mode in order to see it. This plugin will use the `big` reoslution configured.
+
+![SuperSlicer](/assets/img/plugins/prusaslicerthumbnails/screenshot_superslicer.png)
+
 **Note:** If you don't see your printer's ini file in the printers sub-folder; you are probably using one of the bundled Prusa Printer profiles (ie MK3S). If so you may need to create a copy of this printer profile to be able to have an ini file to edit. To do this in PrusaSlicer go to the Printer Settings tab and Click the save button next to the printer list and give it a new name. Alternatively, push Prusa Research to update their bundled profiles to match the Mini by commenting in the issue posted on their repository [here](https://github.com/prusa3d/PrusaSlicer/issues/3488).
 
 Open your desired printer profile in your favorite text editor and find the `thumbnails =` section and add the resolution that you would like to include in your sliced files, and therefore visible by this plugin. For example `thumbnails = 16x16,220x124` will be the equivalent of the Prusa Mini as described above.

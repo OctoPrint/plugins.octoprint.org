@@ -87,8 +87,8 @@ compatibility:
 
 # Ophom
 
-Switch the Philips Hue socket on or off to which your printer is connected  
-You can set an automatic switch-off to a minimum temperature of your choice
+Switch a Philips Hue that your printer is connected to _ON_ or _OFF_ 
+You can set an automatic switch-off based on a minimum temperature
 
 ![Ophom Configuration](/assets/img/plugins/ophom/paired.png)  
 
@@ -97,7 +97,7 @@ You can set an automatic switch-off to a minimum temperature of your choice
 
 ## Configuration
 
-After the installation go to the plugin configuration and follow the guide.
+After the installation go to the plugin configuration screen and follow the guide.
 
 ![Ophom Bridge Pairing](/assets/img/plugins/ophom/pairing.png)
 
