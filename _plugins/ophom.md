@@ -89,7 +89,7 @@ compatibility:
 
 ### Automatic Shudown
 
-Switch a Philips Hue that your printer is connected to _ON_ or _OFF_ 
+Switch a Philips Hue that your printer is connected to _ON_ or _OFF_.  
 You can set an automatic switch-off based on a minimum temperature.
 
 The Philips Hue bridge have an internal clock. Ophom can create à delayed power off for a conventional shutdown of the system (eg: Raspberry Pi powered by printer PSU)
