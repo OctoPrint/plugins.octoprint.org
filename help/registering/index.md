@@ -42,7 +42,7 @@ editing it accordingly.
     
   * Your plugin is compatible to Python 3. Python 2 is EOL. OctoPrint 1.4.0 does support Python 2 and Python 3, plugins
     will be expected to do so as well (or at least support Python 3) during a transition period of roughly a year after
-    the release of OctoPrint 1.4.0 to allow a migration of the whole ecosystem.
+    the release of OctoPrint 1.4.0 to allow a migration of the whole ecosystem. Read more on how to test this [in this forum post](https://community.octoprint.org/t/towards-python-3-and-octoprint-1-4-0/12382).
   
 Be aware that plugins that don't follow the above will not be allowed to register on the repository. If you have any questions
 about any of these points, feel free to get in touch [on the forum](https://community.octoprint.org/c/development).

@@ -1,15 +1,9 @@
 READ FIRST, THEN DELETE:
 
-What kinds of issues you should report here:
+Do not report any kinds of issues with or request any kind of features for
+the plugins listed in this repository - report that to the plugin author instead!
 
-  * missing or broken homepage, source or download URLs
-  * broken images
-  * incorrect compatibility information
-  * ... in short, anything related to the data on plugins.octoprint.org
-
-What you should not report here:
-
-  * Any kinds of issues with the plugins themselves - report those
-    to the plugin author instead!
+Use the provided issue templates if possible, only create a free form issue if 
+none of the existing categories fit at all.
 
 Thanks :)

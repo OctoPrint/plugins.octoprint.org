@@ -21,6 +21,9 @@ tags:
 - gcode
 - stl
 
+compatibility:
+  python: ">=2.7,<4"
+
 ---
 
 The CuraEngine Legacy Plugin allows slicing of STL files uploaded to OctoPrint directly via the legacy version of CuraEngine (**up to and including 

@@ -3,23 +3,45 @@ layout: null
 ---
 [
 {% for plugin in site.plugins %}{% unless forloop.first %},{% endunless %}
-  {
-    "id": "{{ plugin.id | remove_first: '/plugins/' | remove: '/' }}",
-    "published": {{ plugin.date | strip_html | strip_newlines | jsonify }},
-    "title": {{ plugin.title | strip_html | strip_newlines | jsonify }},
-    "description": {{ plugin.description | strip_html | strip_newlines | jsonify }},
-    "archive": {{ plugin.archive | jsonify }},{% if plugin.follow_dependency_links %}
-    "follow_dependency_links": {{ plugin.follow_dependency_links }},{% endif %}
-    "author": {{ plugin.author | strip_html | strip_newlines | jsonify }},
-    "homepage": {{ plugin.homepage | jsonify }},
-    "page": "{{ plugin.url | prepend: site.baseurl | prepend: site.external }}",
-    "compatibility": {% if plugin.compatibility %}{
-        "octoprint": {% if plugin.compatibility.octoprint %}{{ plugin.compatibility.octoprint | jsonify }}{% else %}[]{% endif %},
-        "os": {% if plugin.disabled %}["disabled"]{% else %}{% if plugin.compatibility.os %}{% include os_compat_json entries=plugin.compatibility.os %}{% else %}[]{% endif %}{% endif %},
-        "python": {% if plugin.compatibility.python %}{{ plugin.compatibility.python | jsonify }}{% else %}">=2.7,<3"{% endif %}
-    }{% else %}{"octoprint": [], "os": [], "python": ">=2.7,<3"}{% endif %},
-    "license": {{ plugin.license | strip_html | strip_newlines | jsonify }}{% if plugin.featuredimage %},
-    "image": "{% include canonic_url url=plugin.featuredimage external=true %}"{% endif %}{% if plugin.disabled %},
-    "disabled": {{ plugin.disabled | markdownify | jsonify }}{% endif %}
-  }{% endfor %}
+{% capture description %}{{ plugin.description }}{% if plugin.note %} // Please note: {{ plugin.note | markdownify }}{% endif %}{% endcapture %}
+    {
+        "id": "{{ plugin.id | remove_first: '/plugins/' | remove: '/' }}",
+        "published": {{ plugin.date | strip_html | strip_newlines | jsonify }},
+        "title": {{ plugin.title | strip_html | strip_newlines | jsonify }},
+        "description": {{ description | strip_html | strip_newlines | jsonify }},
+        "archive": {{ plugin.archive | jsonify }},{% if plugin.follow_dependency_links %}
+        "follow_dependency_links": {{ plugin.follow_dependency_links }},{% endif %}
+        "author": {{ plugin.author | strip_html | strip_newlines | jsonify }},
+        "homepage": {{ plugin.homepage | jsonify }},
+        "page": "{{ plugin.url | prepend: site.baseurl | prepend: site.external }}",
+        "compatibility": {% if plugin.compatibility %}{
+            "octoprint": {% if plugin.compatibility.octoprint %}{{ plugin.compatibility.octoprint | jsonify }}{% else %}[]{% endif %},
+            "os": {% if plugin.disabled %}["disabled"]{% else %}{% if plugin.compatibility.os %}{% include os_compat_json entries=plugin.compatibility.os %}{% else %}[]{% endif %}{% endif %},
+            "python": {% if plugin.compatibility.python %}{{ plugin.compatibility.python | jsonify }}{% else %}">=2.7,<3"{% endif %}
+        }{% else %}{"octoprint": [], "os": [], "python": ">=2.7,<3"}{% endif %},
+        "license": {{ plugin.license | strip_html | strip_newlines | jsonify }},{% if plugin.featuredimage %}
+        "image": "{% include canonic_url url=plugin.featuredimage external=true %}",{% endif %}{% if plugin.disabled %}
+        "disabled": {{ plugin.disabled | markdownify | jsonify }},{% endif %}
+        "abandoned": {% if plugin.abandoned %}true{% else %}false{% endif %},{% if plugin.github %}
+        "github": { {% if plugin.github.latest_release_tag %}
+            "latest_release": {
+                "name": {{ plugin.github.latest_release | jsonify }},
+                "date": {{ plugin.github.latest_release_date | jsonify }},
+                "tag": {{ plugin.github.latest_release_tag | jsonify }}
+            },
+            "releases": {{ plugin.github.releases }},{% endif %}
+            "last_push": {{ plugin.github.last_push | jsonify }},
+            "stars": {{ plugin.github.stars }},
+            "issues": {
+                "open": {{ plugin.github.open_issues }},
+                "closed": {{ plugin.github.closed_issues }}
+            }
+        },{% endif %}
+        "stats": {
+            "instances_month": {% if plugin.stats.month.instances %}{{ plugin.stats.month.instances }}{% else %}0{% endif %},
+            "install_events_month": {% if plugin.stats.month.install_events %}{{ plugin.stats.month.install_events }}{% else %}0{% endif %},
+            "instances_week": {% if plugin.stats.week.instances %}{{ plugin.stats.week.instances }}{% else %}0{% endif %},
+            "install_events_week": {% if plugin.stats.week.install_events %}{{ plugin.stats.week.install_events }}{% else %}0{% endif %}
+        }
+    }{% endfor %}
 ]

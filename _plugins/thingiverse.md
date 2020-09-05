@@ -18,8 +18,7 @@ tags:
 - embedded website
 
 compatibility:
-- octoprint: 1.2.0
-- python: ">=2.7,<4"
+  python: ">=2.7,<4"
 
 screenshots:
 - url: /assets/img/plugins/thingiverse/thingiverse_tab.jpg
@@ -32,6 +31,18 @@ screenshots:
 ---
 
 # OctoPrint-Thingiverse
+
+**UPDATE 2020.08.13**
+
+The plugin will no longer work. This is left here as a reminder for someone who will build a new Octoprint Thingiverse Plugin directly from the Thingiverse API.
+This is why the plugin doesn't work anymore, and the Thingiverse team does not allow me to run this plugin inside an iframe, because then have an API.
+
+So maybe if someone has time and is willing to build such a thing, that will be great.
+
+This repository is open for everyone, for then mentioned task.
+
+
+**Description**
 
 This plugin adds the ability to browse Thingiverse website from OctoPrint. 
 A lot of people use Thingiverse website for their 3D model portfolio, but they need 

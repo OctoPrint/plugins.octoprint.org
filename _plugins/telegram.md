@@ -11,7 +11,7 @@ date: 2016-02-25
 
 homepage: https://github.com/fabianonline/OctoPrint-Telegram
 source: https://github.com/fabianonline/OctoPrint-Telegram
-archive: https://github.com/fabianonline/OctoPrint-Telegram/archive/stable.zip
+archive: https://github.com/fabianonline/OctoPrint-Telegram/archive/master.zip
 
 # TODO set this to true if your plugin uses the dependency_links setup parameter to include
 # library versions not yet published on PyPi. SHOULD ONLY BE USED IF THERE IS NO OTHER OPTION!

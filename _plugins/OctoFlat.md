@@ -7,6 +7,9 @@ description: A flat theme for OctoPrint.
 author: Joseph Geis
 license: MIT
 
+compatibility:
+  python: ">=2.7,<4"
+
 # TODO
 date: 2019-06-03
 

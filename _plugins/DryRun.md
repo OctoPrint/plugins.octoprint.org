@@ -20,12 +20,18 @@ archive: https://github.com/OllisGit/OctoPrint-DryRun/releases/latest/download/m
 tags:
 - printer
 
+compatibility:
+  python: ">=2.7,<4"
+  octoprint:
+  - 1.3.10
+  - 1.4.0
+  
 screenshots:
 - url: https://github.com/OllisGit/OctoPrint-DryRun/raw/master/screenshots/StateAndNavBar.jpg
   alt: dryrun-activated
   caption: dryrun-activated
   
-featuredimage: dryrun-activated
+featuredimage: https://github.com/OllisGit/OctoPrint-DryRun/raw/master/screenshots/StateAndNavBar.jpg
 
 ---
 
@@ -36,7 +42,7 @@ A Octoprint-Plugin that allows to execute a print without heating your bed or no
 This plugin, as well as my [other plugins](https://github.com/OllisGit/) were developed in my spare time.
 If you like it, I would be thankful about a cup of coffee :) 
 
-[![More coffee, more code](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2BJP2XFEKNG9J&source=url)
+[![More coffee, more code](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6SW5R6ZUKLB5E&source=url)
 
 ## Details
 The implementation is based on the "test-mode" from [Octolapse](https://github.com/FormerLurker/Octolapse/)

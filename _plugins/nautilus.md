@@ -42,7 +42,7 @@ screenshots:
 - url: /assets/img/plugins/nautilus/8.png
   alt: Camera
 
-featuredimage: /assets/img/plugins/nautilus/img1.gif
+featuredimage: /assets/img/plugins/nautilus/0.gif
   
 ---
 

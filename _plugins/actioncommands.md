@@ -20,6 +20,9 @@ tags:
 - commands
 - action command
 
+compatibility:
+  python: ">=2.7,<4"
+
 screenshots:
 - url: /assets/img/plugins/actioncommands/settings.png
   alt: Action Commands Settings

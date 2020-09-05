@@ -16,11 +16,16 @@ archive: https://github.com/Salandora/OctoPrint-FileManager/archive/master.zip
 follow_dependency_links: false
 
 tags:
-  - ui
+- ui
+- files
 
 compatibility:
   octoprint:
   - 1.3.0
+  os:
+  - linux
+  - windows
+  python: ">=2.7,<4"
 
 screenshots:
 - url: /assets/img/plugins/filemanager/img1.png
