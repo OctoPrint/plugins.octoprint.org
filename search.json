@@ -2737,6 +2737,17 @@
 "author": "Olli",
 "content": "SpoolManager offers the possibility to save many properties of a Spool in a database. Like: material, color, weight, length, purchase-info, last/first-usage, …For a full overview of the latest feature set and planed features, please visit the Git Hub HomepageSupport my EffortsThis plugin, as well as my other plugins were developed in my spare time.If you like it, I would be thankful about a cup of coffee :)",
 "tags": ["printer","spool","filament"]
+},
+
+{
+"id": "/plugins/ender3v2tempfix",
+"url": "/plugins/ender3v2tempfix/",
+"date": "2020-09-07 00:00:00 -0500",
+"title": "Ender-3 v2 Temperature Fix",
+"description": "Fixes the temperature reporting from the Creality Ender-3 v2 printer",
+"author": "Albert MN. @ SimplyPrint, b-morgan",
+"content": "Fix to correctly parse temperatures received from the Creality Ender-3 v2 printer.Originally created by b-morgan Heger at https://community.octoprint.org/t/temperature-reporting-now-working-with-new-ender-3-v2/21053Tested on multiple Ender-3 v2 printers, firmware version 1.0.1",
+"tags": ["creality","ender-3 v2","temperature"]
 }
 ]
 }
