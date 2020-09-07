@@ -9211,43 +9211,5 @@
             "instances_week": 1116,
             "install_events_week": 0
         }
-    },
-
-    {
-        "id": "ender3v2tempfix",
-        "published": "2020-09-07 00:00:00 -0500",
-        "title": "your plugin's name",
-        "description": "Fixes the temperature reporting from the Creality Ender-3 v2 printer",
-        "archive": "https://github.com/SimplyPrint/OctoPrint-Ender3V2TempFix/archive/master.zip",
-        "author": "Albert MN. @ SimplyPrint, b-morgan",
-        "homepage": "https://github.com/SimplyPrint/OctoPrint-Ender3V2TempFix",
-        "page": "https://plugins.octoprint.org/plugins/ender3v2tempfix/",
-        "compatibility": {
-            "octoprint": [],
-            "os": ["linux","windows","macos","freebsd"],
-            "python": ">=2.7,<3"
-        },
-        "license": "MIT",
-        "abandoned": false,
-        "github": { 
-            "latest_release": {
-                "name": "0.0.2",
-                "date": "2020-09-07 17:15:59 +0000",
-                "tag": "0.0.2"
-            },
-            "releases": 1,
-            "last_push": "2020-09-07 17:15:34 +0000",
-            "stars": 0,
-            "issues": {
-                "open": 0,
-                "closed": 0
-            }
-        },
-        "stats": {
-            "instances_month": 101,
-            "install_events_month": 1,
-            "instances_week": 95,
-            "install_events_week": 1
-        }
     }
 ]
