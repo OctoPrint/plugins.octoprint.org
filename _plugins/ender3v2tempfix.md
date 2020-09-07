@@ -2,7 +2,7 @@
 layout: plugin
 
 id: ender3v2tempfix
-title: your plugin's name
+title: Ender-3 v2 Temperature Fix
 description: Fixes the temperature reporting from the Creality Ender-3 v2 printer
 author: Albert MN. @ SimplyPrint, b-morgan
 license: MIT
