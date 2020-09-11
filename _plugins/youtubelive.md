@@ -26,6 +26,8 @@ screenshots:
 
 featuredimage: /assets/img/plugins/youtubelive/tab_screenshot.jpg
 
+compatibility:
+  python: ">=2.7,<4"
 ---
 
 # YouTube Live
