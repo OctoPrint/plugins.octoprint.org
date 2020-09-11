@@ -40,8 +40,7 @@
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@OctoPrint3D" />
     <meta name="twitter:title" content="Ender-3 v2 Temperature Fix" />
-    <meta name="twitter:description" content="Fix to correctly parse temperatures received from the Creality Ender-3 v2 printer.
-Originally created by b-morgan Heger at https://community.octoprint.org/t/temperature-reporting-now-working-with-new-ender-3-v2/21053
+    <meta name="twitter:description" content="Fixes the double temperature reporting from the Creality Ender-3 v2 printer described in this OctoPrint forum topic.
 
 " />
     <meta name="twitter:image" content="https://plugins.octoprint.org/assets/img/octoprint-avatar-240x240.png" />
@@ -49,8 +48,7 @@ Originally created by b-morgan Heger at https://community.octoprint.org/t/temper
     <meta property="og:title" content="Ender-3 v2 Temperature Fix" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://plugins.octoprint.org/assets/img/repo-600x400.png" />
-    <meta property="og:description" content="Fix to correctly parse temperatures received from the Creality Ender-3 v2 printer.
-Originally created by b-morgan Heger at https://community.octoprint.org/t/temperature-reporting-now-working-with-new-ender-3-v2/21053
+    <meta property="og:description" content="Fixes the double temperature reporting from the Creality Ender-3 v2 printer described in this OctoPrint forum topic.
 
 " />
     <meta property="og:site_name" content="OctoPrint Plugin Repository" />
@@ -58,8 +56,7 @@ Originally created by b-morgan Heger at https://community.octoprint.org/t/temper
 
     <meta itemscope itemtype="http://schema.org/WebPage" />
     <meta itemprop="headline" content="Ender-3 v2 Temperature Fix" />
-    <meta itemprop="description" content="Fix to correctly parse temperatures received from the Creality Ender-3 v2 printer.
-Originally created by b-morgan Heger at https://community.octoprint.org/t/temperature-reporting-now-working-with-new-ender-3-v2/21053
+    <meta itemprop="description" content="Fixes the double temperature reporting from the Creality Ender-3 v2 printer described in this OctoPrint forum topic.
 
 " />
     <meta itemprop="image" content="https://plugins.octoprint.org/assets/img/repo-600x400.png" />
@@ -186,10 +183,22 @@ Originally created by b-morgan Heger at https://community.octoprint.org/t/temper
       <p class="lead">
         Fixes the temperature reporting from the Creality Ender-3 v2 printer
       </p>
-      <p>Fix to correctly parse temperatures received from the Creality Ender-3 v2 printer.
-Originally created by b-morgan Heger at https://community.octoprint.org/t/temperature-reporting-now-working-with-new-ender-3-v2/21053</p>
+      <p>Fixes the double temperature reporting from the Creality Ender-3 v2 printer described in <a href="https://community.octoprint.org/t/octoprint-doesnt-show-a-temperature-graph-for-my-creality-printer/23901">this OctoPrint forum topic</a>.</p>
 
-<p>Tested on multiple Ender-3 v2 printers, firmware version 1.0.1</p>
+<p>Some of the newer Creality firmware has an issue where, when reporting its temperature, it writes everything twice.
+Example; _should report tool; 27.76, bed; 39.35</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>TT::27.7627.76  //0.000.00  BB::39.3539.35  //0.000.00  @@::00  BB@@::00
+</code></pre></div></div>
+
+<p>This plugin turns the input into the correct format, like this;</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>T:23.84 /0.00 B:24.05 /0.00 @:0 B@:0
+</code></pre></div></div>
+
+<p><strong>This fix is confirmed to work for the following printers:</strong></p>
+<ul>
+  <li>Creality Ender-3 Pro v2</li>
+  <li>Creality CR-6 SE</li>
+</ul>
 
 
       
@@ -240,13 +249,13 @@ Originally created by b-morgan Heger at https://community.octoprint.org/t/temper
       
       <dl class="installations">
         <dt>Active instances the past month</dt>
-        <dd>Installed on at least <strong>448</strong> instances</dd>
+        <dd>Installed on at least <strong>450</strong> instances</dd>
       </dl>
       
       
       <dl class="install_events">
         <dt>New installs the past week</dt>
-        <dd>At least <strong>391</strong> new installations</dd>
+        <dd>At least <strong>393</strong> new installations</dd>
       </dl>
       
       
@@ -261,8 +270,8 @@ Originally created by b-morgan Heger at https://community.octoprint.org/t/temper
             </li>
             <li>Releases: 2</li>
             
-            <li>Stars: 1</li>
-            <li>Issues: 3 open, 1 closed</li>
+            <li>Stars: 2</li>
+            <li>Issues: 0 open, 4 closed</li>
             <li>Last push: 11 Sep 2020</li>
           </ul>
         </dd>
@@ -296,7 +305,7 @@ Originally created by b-morgan Heger at https://community.octoprint.org/t/temper
             <li>Operating Systems: Linux, Windows, Mac OS X, FreeBSD</li>
             
             
-            <li>Python: &gt;=2.7,&lt;3</li>
+            <li>Python: &gt;=2.7,&lt;4</li>
             
           </ul>
         </dd>
