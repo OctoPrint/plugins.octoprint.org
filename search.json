@@ -831,7 +831,7 @@
 "date": "2017-08-22 00:00:00 -0500",
 "title": "FilamentManager",
 "description": "Filament Manager for OctoPrint",
-"author": "Sven Lohrmann",
+"author": "Sven Lohrmann, Olli",
 "content": "This OctoPrint plugin helps to manage your filament spools.Features  Replacing filament volume with weight in sidebar  Software odometer to measure used filament  Warn if print exceeds remaining filament on spool  Assign temperature offset to spools  Automatically pause print if filament runs out  Import &amp; export of spool inventory  Support for PostgreSQL as database for multiple instances",
 "tags": ["ui","filament","manager"]
 },
