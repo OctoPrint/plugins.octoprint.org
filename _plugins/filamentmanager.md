@@ -4,15 +4,18 @@ layout: plugin
 id: filamentmanager
 title: FilamentManager
 description: Filament Manager for OctoPrint
-author: Sven Lohrmann
+author: Sven Lohrmann, Olli
 license: AGPLv3
 date: 2017-08-22
-homepage: https://github.com/malnvenshorn/OctoPrint-FilamentManager
-source: https://github.com/malnvenshorn/OctoPrint-FilamentManager
-archive: https://github.com/malnvenshorn/OctoPrint-FilamentManager/archive/master.zip
+homepage: https://github.com/OllisGit/OctoPrint-FilamentManager
+source: https://github.com/OllisGit/OctoPrint-FilamentManager
+archive: https://github.com/OllisGit/OctoPrint-FilamentManager/releases/latest/download/master.zip
 compatibility:
+  python: ">=2.7,<4"
   octoprint:
-  - 1.3.6
+  - 1.3.6 
+  - 1.4.0
+
 tags:
 - ui
 - filament
@@ -31,7 +34,6 @@ screenshots:
   alt: Settings
   caption: Settings dialog to manage the filament
 
-abandoned: https://github.com/OctoPrint/plugins.octoprint.org/issues/471
 
 ---
 
