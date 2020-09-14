@@ -40,3 +40,10 @@
   text: Version 0.2.2 of this plugin is available, but your version does not yet support updating automatically.
     Please re-install the plugin from the repository to update. More details can be found at the "Read more..." link below.
   link: https://github.com/OctoPrint/OctoPrint-CommandSplitter/releases/tag/0.2.2
+- plugin: filamentmanager
+  versions: ["0.1.0", "0.1.1", "0.2.0", "0.2.1", "0.2.2", "0.3.0", "0.4.0", "0.4.1", "0.5.0", "0.5.1", "0.5.2", "0.5.3"]
+  date: 2020-09-14 08:45:00Z
+  text: Version 1.6.0 of this plugin is available from a new maintainer, but your version still looks for updates at the
+    repository of the old maintainer. Please re-install the plugin from the repository to update, keeping your
+    settings. The release notes of the version by the new maintainer can be found at the "Read more..." link below.
+  link: https://github.com/OllisGit/OctoPrint-FilamentManager/releases/tag/1.6.0
