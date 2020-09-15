@@ -33,6 +33,7 @@ screenshots:
 featuredimage: /assets/img/plugins/polarcloud/polarcloud.png
 
 compatibility:
+  python: ">=2.7,<4"
   octoprint:
   - 1.3.4
 

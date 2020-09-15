@@ -7,6 +7,8 @@ description: Scalable UI that does some old fashioned (v2) bootstrap responsive 
 author: Mark Walker
 license: AGPLv3
 date: 2015-06-17
+compatibility:
+  python: ">=2.7,<4"
 
 homepage: https://github.com/markwal/OctoPrint-ScreenSquish
 source: https://github.com/markwal/OctoPrint-ScreenSquish
