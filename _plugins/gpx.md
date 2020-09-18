@@ -17,6 +17,7 @@ screenshots:
   url: https://markwal.github.io/octoprint-download/gpx.png
 featuredimage: https://markwal.github.io/octoprint-download/gpx.png
 compatibility:
+  python: ">=2.7,<4"
   os:
   - linux
 ---
