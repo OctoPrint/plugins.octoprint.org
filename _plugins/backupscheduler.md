@@ -12,7 +12,7 @@ archive: https://github.com/jneilliii/OctoPrint-BackupScheduler/archive/master.z
 tags:
 - backup
 - schedule
-featuredimage: /assets/img/backupscheduler/screenshot_settings.png
+featuredimage: /assets/img/plugins/backupscheduler/screenshot_settings.png
 compatibility:
   octoprint:
   - 1.3.10
@@ -32,7 +32,7 @@ This plugin allows you to schedule OctoPrint backups at regular configured inter
 
 ## Settings
 
-![screenshot](/assets/img/backupscheduler/screenshot_settings.png)
+![screenshot](/assets/img/plugins/backupscheduler/screenshot_settings.png)
 
 ## Get Help
 
