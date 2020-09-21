@@ -21,8 +21,6 @@ tags:
 
 license: AGPLv3
 
-up_for_adoption: https://github.com/OctoPrint/OctoPrint-Growl/issues/7
-
 abandoned: https://github.com/OctoPrint/plugins.octoprint.org/issues/624
 ---
 
