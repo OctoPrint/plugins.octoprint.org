@@ -18,6 +18,8 @@ archive: https://github.com/nukeem/continuousprint/archive/master.zip
 # library versions not yet published on pypi. SHOULD ONLY BE USED IF THERE IS NO OTHER OPTION!
 #follow_dependency_links: false
 
+abandoned: https://github.com/OctoPrint/plugins.octoprint.org/issues/622
+
 tags:
 - continuous print
 - queueing

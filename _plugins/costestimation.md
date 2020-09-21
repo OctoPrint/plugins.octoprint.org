@@ -23,6 +23,9 @@ screenshots:
 - url: /assets/img/plugins/costestimation/costestimation_settings.png
   alt: Settings
   caption: Settings dialog to configure the print cost
+
+abandoned: https://github.com/OctoPrint/plugins.octoprint.org/issues/623
+  
 ---
 
 This OctoPrint plugin displays the estimated print cost for the loaded model. The print cost includes the price for the used filament the maintenance and operating cost for the printer as well as the depreciation of the printer.
