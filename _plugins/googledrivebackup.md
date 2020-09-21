@@ -5,7 +5,7 @@ title: Google Drive Backup
 description: This plugin will automatically save a copy of your OctoPrint backup to Google Drive upon completion.
 author: jneilliii
 license: MIT
-date: 2020-09-19
+date: 2020-09-21
 homepage: https://github.com/jneilliii/OctoPrint-GoogleDriveBackup
 source: https://github.com/jneilliii/OctoPrint-GoogleDriveBackup
 archive: https://github.com/jneilliii/OctoPrint-GoogleDriveBackup/archive/master.zip
