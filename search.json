@@ -1590,7 +1590,7 @@
 "date": "2019-02-08 00:00:00 -0600",
 "title": "OctoPrint-Hardwarepwm",
 "description": "Plugin for true hardware PWM on the Raspberry Pi",
-"author": "Dario Rostirolla",
+"author": "Daria Rostirolla",
 "content": "Plugin that uses the PIGPIO library for hardware PWM, thus creating a flicker free pwm signal for LED strip dimming. Requires you to install pigpio through apt-get and to start/enable the pigpiod daemon.",
 "tags": ["hardware pwm","control","pwm","leds"]
 },
