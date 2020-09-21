@@ -23,6 +23,7 @@ license: AGPLv3
 
 up_for_adoption: https://github.com/OctoPrint/OctoPrint-Growl/issues/7
 
+abandoned: https://github.com/OctoPrint/plugins.octoprint.org/issues/624
 ---
 
 The Growl plugin for OctoPrint allows to send notifications about certain printing events to a Growl instance on your
