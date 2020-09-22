@@ -5,10 +5,34 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>https://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 22 Sep 2020 10:38:50 -0500</pubDate>
-    <lastBuildDate>Tue, 22 Sep 2020 10:38:50 -0500</lastBuildDate>
+    <pubDate>Tue, 22 Sep 2020 10:59:29 -0500</pubDate>
+    <lastBuildDate>Tue, 22 Sep 2020 10:59:29 -0500</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
+    
+      <item>
+        <title>Terminal Messaging</title>
+        <description>
+          <![CDATA[
+            Adds styling to the terminal tab that makes it easier to see where a message is from.
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/terminalmessaging/screenshot.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Tue, 22 Sep 2020 00:00:00 -0500
+</pubDate>
+        <link>https://plugins.octoprint.org/plugins/terminalmessaging/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/terminalmessaging/</guid>
+        
+        <category>terminal</category>
+        
+        <category>ui</category>
+        
+        <category>style</category>
+        
+        <category>gcode</category>
+        
+      </item>
     
       <item>
         <title>Google Drive Backup</title>
@@ -218,26 +242,6 @@ Sat, 08 Aug 2020 00:00:00 -0500
         <category>notifications</category>
         
         <category>snapshots</category>
-        
-      </item>
-    
-      <item>
-        <title>Consolidated Tabs</title>
-        <description>
-          <![CDATA[
-            Combines configured tabs into a single tab as draggable and resizable panels.
-            <p><img src="https://plugins.octoprint.org/assets/img/plugins/consolidatedtabs/screenshot_tab.png"></p>
-          ]]>
-        </description>
-        <pubDate>
-Thu, 06 Aug 2020 00:00:00 -0500
-</pubDate>
-        <link>https://plugins.octoprint.org/plugins/consolidatedtabs/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/consolidatedtabs/</guid>
-        
-        <category>tab</category>
-        
-        <category>widescreen</category>
         
       </item>
     

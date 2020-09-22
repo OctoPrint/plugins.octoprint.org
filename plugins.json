@@ -5382,7 +5382,7 @@
             "last_push": "2019-02-16 18:03:35 +0000",
             "stars": 12,
             "issues": {
-                "open": 23,
+                "open": 24,
                 "closed": 6
             }
         },
@@ -9316,6 +9316,45 @@
             "install_events_month": 18,
             "instances_week": 18,
             "install_events_week": 18
+        }
+    },
+
+    {
+        "id": "terminalmessaging",
+        "published": "2020-09-22 00:00:00 -0500",
+        "title": "Terminal Messaging",
+        "description": "Adds styling to the terminal tab that makes it easier to see where a message is from.",
+        "archive": "https://github.com/jeffeb3/OctoPrint-TerminalMessaging/archive/master.zip",
+        "author": "jeffeb3",
+        "homepage": "https://github.com/jeffeb3/OctoPrint-TerminalMessaging",
+        "page": "https://plugins.octoprint.org/plugins/terminalmessaging/",
+        "compatibility": {
+            "octoprint": [],
+            "os": [],
+            "python": ">=2.7,<4"
+        },
+        "license": "MIT",
+        "image": "https://plugins.octoprint.org/assets/img/plugins/terminalmessaging/screenshot.png",
+        "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "v0.0.1 release",
+                "date": "2020-09-22 15:53:44 +0000",
+                "tag": "0.0.1"
+            },
+            "releases": 1,
+            "last_push": "2020-09-22 15:53:13 +0000",
+            "stars": 1,
+            "issues": {
+                "open": 0,
+                "closed": 0
+            }
+        },
+        "stats": {
+            "instances_month": 4,
+            "install_events_month": 0,
+            "instances_week": 3,
+            "install_events_week": 0
         }
     }
 ]
