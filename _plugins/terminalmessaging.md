@@ -73,7 +73,7 @@ compatibility:
   # If your plugin only supports Python 2 (worst case, not recommended for newly developed plugins since Python 2
   # is EOL), leave at ">=2.7,<3"
 
-  python: ">=2.7,<3"
+  python: ">=2.7,<4"
 
 ---
 
@@ -92,13 +92,6 @@ UI.
 This plugin is very small, and just edits the css of the elements in the terminal for readability.
 
 Enjoy!
-
-## Setup
-
-Install via the bundled [Plugin Manager](https://github.com/foosel/OctoPrint/wiki/Plugin:-Plugin-Manager)
-or manually using this URL:
-
-    https://github.com/jeffeb3/OctoPrint-TerminalMessaging/archive/master.zip
 
 ### Special Thanks
 
