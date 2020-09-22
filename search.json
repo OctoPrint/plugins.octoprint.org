@@ -2759,6 +2759,17 @@
 "author": "jneilliii",
 "content": "Backup SchedulerThis plugin allows you to schedule OctoPrint backups at regular configured intervals.WARNING: This plugin currently does not monitor your disk usage or limit/reduce your backup count in any way.SettingsGet HelpIf you experience issues with this plugin or need assistance please use the issue tracker at the plugin’s Homepage linked on the right.Additional PluginsCheck out my other plugins hereSupport My EffortsI, jneilliii, programmed this plugin for fun and do my best effort to support those that have issues with it, please return the favor and leave me a tip or become a Patron if you find this plugin helpful and want me to continue future development. No paypal.me? Send funds via PayPal to jneilliii@gmail.com",
 "tags": ["backup","schedule"]
+},
+
+{
+"id": "/plugins/googledrivebackup",
+"url": "/plugins/googledrivebackup/",
+"date": "2020-09-21 00:00:00 -0500",
+"title": "Google Drive Backup",
+"description": "This plugin will automatically save a copy of your OctoPrint backup to Google Drive upon completion.",
+"author": "jneilliii",
+"content": "Google Drive BackupThis plugin will automatically upload a backup upon completion to your authorized Google Drive. In order for the plugin to work properly you will have to create a Google OAuth App to authorize access. To create your own Google OAuth app please follow the directions outlined in the Prerequisites.ConfigurationOnce the Prerequisite are met and you have downloaded your client_secrets.json file follow the steps here to authorize the plugin to your newly created OAuth app.Get HelpIf you experience issues with this plugin or need assistance please use the issue tracker at the plugin’s Homepage linked on the right.Additional PluginsCheck out my other plugins hereSupport My EffortsI, jneilliii, programmed this plugin for fun and do my best effort to support those that have issues with it, please return the favor and leave me a tip or become a Patron if you find this plugin helpful and want me to continue future development. No paypal.me? Send funds via PayPal to jneilliii@gmail.com",
+"tags": ["Google Drive","Backup","OAuth"]
 }
 ]
 }
