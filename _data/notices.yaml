@@ -57,3 +57,8 @@
     repository of the old maintainer. Please re-install the plugin from the repository to update, keeping your
     settings. The release notes of the version by the new maintainer can be found at the "Read more..." link below.
   link: https://github.com/AliceGrey/OctoprintKlipperPlugin/releases/tag/0.3.1
+- plugin: ender3v2tempfix
+  versions: ["0.0.1", "0.0.2", "0.0.3"]
+  date: 2020-09-23 15:15:00Z
+  text: Version 0.0.4 of this plugin is available, but due to a name change the automatic update needs a bit of extra
+    help. Please uninstall the plugin and then just reinstall it from the plugin repository.
