@@ -6,8 +6,8 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html"> <!--<![endif]-->
 <head>
     <meta charset="utf-8" />
-    <title>Ender-3 v2 Temperature Fix</title>
-    <meta name="description" content="Fixes the temperature reporting from the Creality Ender-3 v2 printer">
+    <title>Creality 2x temperature reporting fix</title>
+    <meta name="description" content="Fixes the temperature reporting from Creality printers shipped with the new mainboard (new Ender-3 Pro&#39;s, Ender-3 Pro v2, CR-6 SE &amp; possibly more)">
     <meta name="author" content="Albert MN. @ SimplyPrint, b-morgan">
     <meta name="referrer" content="same-origin">
     <meta name="google-site-verification" content="0EFsbaNygJcEinKPmzP-hTf0Ju6wDIpJxO5zvQtOQT0" />
@@ -39,13 +39,13 @@
 
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@OctoPrint3D" />
-    <meta name="twitter:title" content="Ender-3 v2 Temperature Fix" />
+    <meta name="twitter:title" content="Creality 2x temperature reporting fix" />
     <meta name="twitter:description" content="Fixes the double temperature reporting from the Creality Ender-3 v2 printer described in this OctoPrint forum topic.
 
 " />
     <meta name="twitter:image" content="https://plugins.octoprint.org/assets/img/octoprint-avatar-240x240.png" />
 
-    <meta property="og:title" content="Ender-3 v2 Temperature Fix" />
+    <meta property="og:title" content="Creality 2x temperature reporting fix" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://plugins.octoprint.org/assets/img/repo-600x400.png" />
     <meta property="og:description" content="Fixes the double temperature reporting from the Creality Ender-3 v2 printer described in this OctoPrint forum topic.
@@ -55,7 +55,7 @@
     <meta property="og:url" content="https://plugins.octoprint.org/plugins/ender3v2tempfix/" />
 
     <meta itemscope itemtype="http://schema.org/WebPage" />
-    <meta itemprop="headline" content="Ender-3 v2 Temperature Fix" />
+    <meta itemprop="headline" content="Creality 2x temperature reporting fix" />
     <meta itemprop="description" content="Fixes the double temperature reporting from the Creality Ender-3 v2 printer described in this OctoPrint forum topic.
 
 " />
@@ -159,7 +159,7 @@
   <div class="container">
     <div class="row">
       <div class="span12">
-        <h1>Ender-3 v2 Temperature Fix</h1>
+        <h1>Creality 2x temperature reporting fix</h1>
       </div>
     </div>
   </div>
@@ -168,11 +168,11 @@
 <div class="container">
   <div class="row-fluid">
     
-    <small class="pull-left"><a href="/plugins/emergencystopsimplified/"><i class="fa fa-double-angle-left"></i>&nbsp;Emergency Stop Simplified</a></small>
+    <small class="pull-left"><a href="/plugins/costestimation/"><i class="fa fa-double-angle-left"></i>&nbsp;CostEstimation</a></small>
     
     &nbsp;
     
-    <small class="pull-right"><a href="/plugins/excluderegion/">Exclude Region&nbsp;<i class="fa fa-double-angle-right"></i></a></small>
+    <small class="pull-right"><a href="/plugins/CrealityTemperature/">Creality Temperature Fix&nbsp;<i class="fa fa-double-angle-right"></i></a></small>
     
   </div>
   <div class="content plugin-content row-fluid">
@@ -183,12 +183,12 @@
       
 
       <p class="lead">
-        Fixes the temperature reporting from the Creality Ender-3 v2 printer
+        Fixes the temperature reporting from Creality printers shipped with the new mainboard (new Ender-3 Pro&#39;s, Ender-3 Pro v2, CR-6 SE &amp; possibly more)
       </p>
       <p>Fixes the double temperature reporting from the Creality Ender-3 v2 printer described in <a href="https://community.octoprint.org/t/octoprint-doesnt-show-a-temperature-graph-for-my-creality-printer/23901">this OctoPrint forum topic</a>.</p>
 
 <p>Some of the newer Creality firmware has an issue where, when reporting its temperature, it writes everything twice.
-Example; _should report tool; 27.76, bed; 39.35</p>
+Example; <em>should</em> report tool; 27.76, bed; 39.35</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>TT::27.7627.76  //0.000.00  BB::39.3539.35  //0.000.00  @@::00  BB@@::00
 </code></pre></div></div>
 
@@ -200,6 +200,8 @@ Example; _should report tool; 27.76, bed; 39.35</p>
 <ul>
   <li>Creality Ender-3 Pro v2</li>
   <li>Creality CR-6 SE</li>
+  <li>Creality Ender-3 Pro <em>(newly produced ones that ship with the new mainboard)</em></li>
+  <li><em>probably all other Creality printers with the new main board as well</em></li>
 </ul>
 
 
@@ -230,14 +232,14 @@ Example; _should report tool; 27.76, bed; 39.35</p>
         
         <dd>
           URL:
-          <pre>https://github.com/SimplyPrint/OctoPrint-Ender3V2TempFix/archive/master.zip</pre>
+          <pre>https://github.com/SimplyPrint/OctoPrint-Creality2xTemperatureReportingFix/archive/master.zip</pre>
           
         </dd>
         
         
         <dd>
           Command line:
-          <pre>pip install "https://github.com/SimplyPrint/OctoPrint-Ender3V2TempFix/archive/master.zip"</pre>
+          <pre>pip install "https://github.com/SimplyPrint/OctoPrint-Creality2xTemperatureReportingFix/archive/master.zip"</pre>
         </dd>
         
       </dl>
@@ -251,13 +253,13 @@ Example; _should report tool; 27.76, bed; 39.35</p>
       
       <dl class="installations">
         <dt>Active instances the past month</dt>
-        <dd>Installed on at least <strong>813</strong> instances</dd>
+        <dd>Installed on at least <strong>816</strong> instances</dd>
       </dl>
       
       
       <dl class="install_events">
         <dt>New installs the past week</dt>
-        <dd>At least <strong>179</strong> new installations</dd>
+        <dd>At least <strong>177</strong> new installations</dd>
       </dl>
       
       
@@ -267,14 +269,14 @@ Example; _should report tool; 27.76, bed; 39.35</p>
           <ul>
             
             <li>
-              Latest Release: <a href="https://github.com/SimplyPrint/OctoPrint-Ender3V2TempFix/releases/tag/0.0.3" target="_blank">0.0.3</a><br>
+              Latest Release: <a href="https://github.com/SimplyPrint/OctoPrint-Creality2xTemperatureReportingFix/releases/tag/0.0.3" target="_blank">0.0.3</a><br>
               <small>released on 07 Sep 2020</small>
             </li>
             <li>Releases: 2</li>
             
             <li>Stars: 2</li>
             <li>Issues: 2 open, 4 closed</li>
-            <li>Last push: 11 Sep 2020</li>
+            <li>Last push: 23 Sep 2020</li>
           </ul>
         </dd>
       </dl>
@@ -288,6 +290,10 @@ Example; _should report tool; 27.76, bed; 39.35</p>
           
           
           <a class="label" href="/by_tag/#tag-creality">creality</a>
+          
+          <a class="label" href="/by_tag/#tag-double-temperature">double temperature</a>
+          
+          <a class="label" href="/by_tag/#tag-ender-3-pro">ender-3 pro</a>
           
           <a class="label" href="/by_tag/#tag-ender-3-v2">ender-3 v2</a>
           
@@ -323,13 +329,13 @@ Example; _should report tool; 27.76, bed; 39.35</p>
       
       <dl class="homepage">
         <dt>Homepage</dt>
-        <dd><a href="https://github.com/SimplyPrint/OctoPrint-Ender3V2TempFix" target="_blank">https://github.com/SimplyPrint/OctoPrint-Ender3V2TempFix</a></dd>
+        <dd><a href="https://github.com/SimplyPrint/OctoPrint-Creality2xTemperatureReportingFix" target="_blank">https://github.com/SimplyPrint/OctoPrint-Creality2xTemperatureReportingFix</a></dd>
       </dl>
       
       
       <dl class="source">
         <dt>Source</dt>
-        <dd><a href="https://github.com/SimplyPrint/OctoPrint-Ender3V2TempFix" target="_blank">https://github.com/SimplyPrint/OctoPrint-Ender3V2TempFix</a></dd>
+        <dd><a href="https://github.com/SimplyPrint/OctoPrint-Creality2xTemperatureReportingFix" target="_blank">https://github.com/SimplyPrint/OctoPrint-Creality2xTemperatureReportingFix</a></dd>
       </dl>
       
       
@@ -343,19 +349,19 @@ Example; _should report tool; 27.76, bed; 39.35</p>
         <dd>
           <p>
             If there is <strong>something wrong with this listing</strong> (broken links & images etc), please
-            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=bug&template=listing_error.md&title=%5BListing+Error%5D+Ender-3+v2+Temperature+Fix">report it here</a>.
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=bug&template=listing_error.md&title=%5BListing+Error%5D+Creality+2x+temperature+reporting+fix">report it here</a>.
           </p>
           <p>
             If this plugin <strong>has been <em>confirmed</em> as abandoned</strong> by its maintainer, please
-            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=abandoned+plugin&template=abandoned_plugin.md&title=%5BAbandoned+Plugin%5D+Ender-3+v2+Temperature+Fix">report it here</a>.
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=abandoned+plugin&template=abandoned_plugin.md&title=%5BAbandoned+Plugin%5D+Creality+2x+temperature+reporting+fix">report it here</a>.
           </p>
           <p>
             If this plugin is <strong>doing something suspicious</strong> (e.g. weird network activity, unannounced tracking, ...) and
             the maintainer is not cooperating in getting to the bottom of that, please
-            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=suspicious+plugin+activity&template=suspicious_plugin_activity.md&title=%5BSuspicious+Plugin+Activity%5D+Ender-3+v2+Temperature+Fix">report the plugin as suspicious here</a>.
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=suspicious+plugin+activity&template=suspicious_plugin_activity.md&title=%5BSuspicious+Plugin+Activity%5D+Creality+2x+temperature+reporting+fix">report the plugin as suspicious here</a>.
           </p>
           <p>
-            Report bugs or feature requests for the plugin to the plugin author (e.g. on the plugin's <a href="https://github.com/SimplyPrint/OctoPrint-Ender3V2TempFix">homepage</a>) please, not here!
+            Report bugs or feature requests for the plugin to the plugin author (e.g. on the plugin's <a href="https://github.com/SimplyPrint/OctoPrint-Creality2xTemperatureReportingFix">homepage</a>) please, not here!
           </p>
         </dd>
       </dl>
@@ -401,7 +407,7 @@ Example; _should report tool; 27.76, bed; 39.35</p>
                           </li>
                           
                           <li>
-                              <a class="post-link" href="/plugins/ender3v2tempfix/">Ender-3 v2 Temperature Fix</a>
+                              <a class="post-link" href="/plugins/ender3v2tempfix/">Creality 2x temperature reporting fix</a>
                           </li>
                           
                           <li>

@@ -2743,11 +2743,11 @@
 "id": "/plugins/ender3v2tempfix",
 "url": "/plugins/ender3v2tempfix/",
 "date": "2020-09-07 00:00:00 -0500",
-"title": "Ender-3 v2 Temperature Fix",
-"description": "Fixes the temperature reporting from the Creality Ender-3 v2 printer",
+"title": "Creality 2x temperature reporting fix",
+"description": "Fixes the temperature reporting from Creality printers shipped with the new mainboard (new Ender-3 Pro's, Ender-3 Pro v2, CR-6 SE & possibly more)",
 "author": "Albert MN. @ SimplyPrint, b-morgan",
-"content": "Fixes the double temperature reporting from the Creality Ender-3 v2 printer described in this OctoPrint forum topic.Some of the newer Creality firmware has an issue where, when reporting its temperature, it writes everything twice.Example; _should report tool; 27.76, bed; 39.35TT::27.7627.76  //0.000.00  BB::39.3539.35  //0.000.00  @@::00  BB@@::00This plugin turns the input into the correct format, like this;T:23.84 /0.00 B:24.05 /0.00 @:0 B@:0This fix is confirmed to work for the following printers:  Creality Ender-3 Pro v2  Creality CR-6 SE",
-"tags": ["creality","ender-3 v2","temperature"]
+"content": "Fixes the double temperature reporting from the Creality Ender-3 v2 printer described in this OctoPrint forum topic.Some of the newer Creality firmware has an issue where, when reporting its temperature, it writes everything twice.Example; should report tool; 27.76, bed; 39.35TT::27.7627.76  //0.000.00  BB::39.3539.35  //0.000.00  @@::00  BB@@::00This plugin turns the input into the correct format, like this;T:23.84 /0.00 B:24.05 /0.00 @:0 B@:0This fix is confirmed to work for the following printers:  Creality Ender-3 Pro v2  Creality CR-6 SE  Creality Ender-3 Pro (newly produced ones that ship with the new mainboard)  probably all other Creality printers with the new main board as well",
+"tags": ["creality","ender-3 v2","ender-3 pro","double temperature","temperature"]
 },
 
 {
