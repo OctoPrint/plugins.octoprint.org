@@ -4,14 +4,14 @@ layout: plugin
 id: klipper
 title: OctoKlipper
 description: A plugin for a better integration of Klipper into OctoPrint.
-author: Martin Mühlhäuser
+author: Alice Weigt
 license: AGPLv3
 
 date: 2018-08-21
 
-homepage: https://github.com/mmone/OctoprintKlipperPlugin
-source: https://github.com/mmone/OctoprintKlipperPlugin
-archive: https://github.com/mmone/OctoPrintKlipper/archive/master.zip
+homepage: https://github.com/AliceGrey/OctoprintKlipperPlugin
+source: https://github.com/AliceGrey/OctoprintKlipperPlugin
+archive: https://github.com/AliceGrey/OctoprintKlipperPlugin/archive/master.zip
 
 follow_dependency_links: false
 

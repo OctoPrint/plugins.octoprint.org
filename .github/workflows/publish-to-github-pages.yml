@@ -52,6 +52,13 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.metadata_token }}
 
+      - name: 🏗 Enrich notices
+        if: github.repository == 'OctoPrint/plugins.octoprint.org' && github.event_name != 'pull_request'
+        run: |
+          python ./src/.github/scripts/populate_additional_notices.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.metadata_token }}
+
       - name: 📦 Cache jekyll build bundle
         uses: actions/cache@v2
         with:

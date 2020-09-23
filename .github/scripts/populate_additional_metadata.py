@@ -302,12 +302,12 @@ def process_plugin_file(path, incl_stats=True, incl_github=True):
 		                 "month": dict(instances=0,
 		                               install_events=0)}
 
-		stats7d = _plugin_stats_7d.get(data["id"].lower())
+		stats7d = _plugin_stats_7d["plugins"].get(data["id"].lower())
 		if stats7d is not None:
 			out("  Enriching {} with stats for week...".format(plugin_id))
 			data["stats"]["week"] = build_stats(stats7d)
 
-		stats30d = _plugin_stats_30d.get(data["id"].lower())
+		stats30d = _plugin_stats_30d["plugins"].get(data["id"].lower())
 		if stats30d is not None:
 			out("  Enriching {} with stats for month...".format(plugin_id))
 			data["stats"]["month"] = build_stats(stats30d)

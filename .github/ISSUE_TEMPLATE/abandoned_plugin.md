@@ -24,6 +24,8 @@ nick.
 
 **Which Plugin? (URL to plugin page on plugin repository)**
 
+https://plugins.octoprint.org/plugins/...?
+
 **Ticket on plugin's issue tracker confirming abandonment:**
 
 **Is there someone open to adopting it? ("no" or @-mention user):**

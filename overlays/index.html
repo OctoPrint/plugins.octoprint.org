@@ -1,0 +1,46 @@
+---
+layout: page
+title: Config overlays
+---
+
+<h2>Update check overlay</h2>
+
+<p>
+    Starting with version 1.5.0 OctoPrint now supports the use of a centralized update check overlay, to allow for
+    setting new software update configs for plugins that e.g. were abandoned by their original maintainer and have been
+    adopted by a new one at a new repository location, or plugins that shipped with a broken default update config.
+</p>
+<p>
+    The overlay is hosted here on <code>plugins.octoprint.org</code> as a <a href="/update_check_overlay.json">JSON file</a>
+    and currently contains the following entries:
+</p>
+<table class="table overlay-table">
+    <thead>
+        <tr>
+            <th class="overlay-plugin">Plugin</th>
+            <th class="overlay-data">Overlay</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for item in site.data.update_check_overlays %}
+        <tr>
+            <td class="overlay-plugin">
+                {% assign id = item[0] | prepend: "/plugins/" %}
+                {% assign p = site.plugins | where: "id", id | first %}
+                {% if p %}
+                <a href="{{ p.url }}">{{ p.title }}</a>
+                {% else %}
+                <code>{{ item[0] | xml_escape }}</code>
+                {% endif %}
+            </td>
+            <td class="overlay-data">
+                <div class="language-json highlighter-rouge">
+                    <div class="highlight">
+                        <pre class="highlight">{{ item[1] | jsonify }}</pre>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>

@@ -35,6 +35,7 @@ featuredimage: https://github.com/StefanCohen/OctoPrint-Dashboard/raw/master/scr
 compatibility:
   python: ">=2.7,<4"
 
+abandoned: https://github.com/OctoPrint/plugins.octoprint.org/issues/628
 ---
 This plugin adds a  dashboard tab in Octoprint that displays the most relevant info regarding the state of the printer and any on-going print job.
 

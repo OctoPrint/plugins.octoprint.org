@@ -34,16 +34,27 @@ layout: page
 
     {% assign plugin_counter = site.plugins | size %}
     {% assign python3_counter = 0 %}
+    {% assign abandoned_counter = 0 %}
     {% for plugin in site.plugins %}
       {% if plugin.compatibility and plugin.compatibility.python and plugin.compatibility.python == '>=2.7,<4' %}
         {% assign python3_counter = python3_counter | plus:1 %}
       {% elsif plugin.compatibility and plugin.compatibility.python and plugin.compatibility.python == '>=3,<4' %}
         {% assign python3_counter = python3_counter | plus:1 %}
       {% endif %}
+      {% if plugin.abandoned %}
+        {% assign abandoned_counter = abandoned_counter | plus:1 %}
+      {% endif %}
     {% endfor %}
 
     <p>
-      There are currently <strong>{{ plugin_counter }}</strong> plugins listed in this repository of which <strong>{{ python3_counter }} ({{ python3_counter | times:100 | divided_by:plugin_counter | round }}%)</strong> are marked as Python 3 compatible.
+      There are currently <strong>{{ plugin_counter }}</strong> plugins listed in this repository of
+      which <strong>{{ python3_counter }} ({{ python3_counter | times:100 | divided_by:plugin_counter | round }}%)</strong>
+      are marked as Python 3 compatible.
+    </p>
+
+    <p>
+      <a href="https://github.com/OctoPrint/plugins.octoprint.org/labels/abandoned%20plugin"><strong>{{ abandoned_counter }}</strong>
+      plugins have been marked as abandoned</a> and are looking for a new maintainer.
     </p>
 
     {% assign shown_usage = false %}

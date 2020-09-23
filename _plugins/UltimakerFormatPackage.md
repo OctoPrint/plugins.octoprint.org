@@ -2,7 +2,7 @@
 layout: plugin
 
 id: UltimakerFormatPackage
-title: Ultimaker Format Package
+title: Cura Thumbnails
 description: This plugin adds support for Ultimaker Format Package (.ufp) files.
 author: jneilliii
 license: AGPLv3
@@ -27,7 +27,9 @@ featuredimage: /assets/img/plugins/UltimakerFormatPackage/screenshot_thumbnail.p
 
 ---
 
-# OctoPrint-UltimakerFormatPackage
+# Cura Thumbnails
+
+(formerly Ultimaker Format Package)
 
 This plugin adds support for Ultimaker Format Package (.ufp) files. Ultimaker Format Package files are based on Open Packaging Conventions (OPC) and contain compressed gcode and a preview thumbnail. This format will automatically be used by the [OctoPrint Connection](https://github.com/fieldOfView/Cura-OctoPrintPlugin) plugin in Cura (install via Marketplace) if this plugin is installed. 
 
