@@ -86,8 +86,7 @@ compatibility:
   - macos
   - freebsd
 
-  compatibility:
-    python: ">=2.7,<4"
+  python: ">=2.7,<4"
 
 ---
 
