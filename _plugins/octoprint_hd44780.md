@@ -10,6 +10,7 @@ license: AGPLv3
 # today's date in format YYYY-MM-DD, e.g.
 date: 2020-09-26
 
+homepage: https://git.kunsmann.eu/kunsi/Octoprint-LCD-HD44780
 source: https://git.kunsmann.eu/kunsi/Octoprint-LCD-HD44780
 archive: https://git.kunsmann.eu/kunsi/Octoprint-LCD-HD44780/archive/main.zip
 
