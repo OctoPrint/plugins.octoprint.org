@@ -86,6 +86,8 @@ compatibility:
   - macos
   - freebsd
 
+  python: ">=2.7,<4"
+
 ---
 
 ### OctoPrint-PrintTrack
