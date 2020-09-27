@@ -2770,6 +2770,17 @@
 "author": "jeffeb3",
 "content": "Octoprint-TerminalMessagingPlugin that adds styling to the terminal tab that makes it easier to see where a message is from.Messages you send are on the right and are in green. Messages the printer sends back are on the leftand in blue.This is similar to how a text messaging app would differentiate between sender and receiver in theUI.This plugin is very small, and just edits the css of the elements in the terminal for readability.Enjoy!Special Thanks@jneilliii wrote this plugin after I asked about it in the forums. Thank you!",
 "tags": ["terminal","ui","style","gcode"]
+},
+
+{
+"id": "/plugins/marlingcodedocumentation",
+"url": "/plugins/marlingcodedocumentation/",
+"date": "2020-09-27 00:00:00 -0500",
+"title": "MarlinGcodeDocumentation",
+"description": "Provides documentation for Marlin GCode commands in the Terminal tab",
+"author": "Costas Basdekis",
+"content": "It displays GCode documentation for Marlin in the terminal command line.Type a command and you will get explanation for the command and the parameters.Type ‘?’ and some terms and you’ll be shown commands that reference those terms.",
+"tags": ["terminal","gcode","marlin"]
 }
 ]
 }
