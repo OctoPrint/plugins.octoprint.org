@@ -4,14 +4,14 @@ layout: plugin
 id: dashboard
 title: OctoPrint-Dashboard
 description: A dashboard tab for Octoprint
-author: Stefan Cohen
+author: j7126, Willmac16
 license: AGPLv3
 
 date: 2019-09-10
 
-homepage: https://github.com/StefanCohen/OctoPrint-Dashboard
-source: https://github.com/StefanCohen/OctoPrint-Dashboard
-archive: https://github.com/StefanCohen/OctoPrint-Dashboard/archive/master.zip
+homepage: https://github.com/j7126/OctoPrint-Dashboard
+source: https://github.com/j7126/OctoPrint-Dashboard
+archive: https://github.com/j7126/OctoPrint-Dashboard/archive/master.zip
 
 tags:
 - dashboard
@@ -20,45 +20,53 @@ tags:
 - progress
 
 screenshots:
-- url: https://github.com/StefanCohen/OctoPrint-Dashboard/raw/master/screenshot.png
+- url: https://github.com/j7126/OctoPrint-Dashboard/raw/master/screenshot.png
   alt: screenshot
-  caption: caption of a screenshot
-- url: https://github.com/StefanCohen/OctoPrint-Dashboard/raw/master/screenshot-theme.png
+  caption: Dashboard screenshot
+- url: https://github.com/j7126/OctoPrint-Dashboard/raw/master/screenshot-theme.png
   alt: screenshot
-  caption: themed screenshot
-- url: https://github.com/StefanCohen/OctoPrint-Dashboard/raw/master/screenshot-theme2.png
+  caption: Themed dashboard screenshot
+- url: https://github.com/j7126/OctoPrint-Dashboard/raw/master/screenshot-theme2.png
   alt: screenshot
-  caption: themed screenshot
+  caption: Themed dashboard screenshot
 
-featuredimage: https://github.com/StefanCohen/OctoPrint-Dashboard/raw/master/screenshot.png
+featuredimage: https://github.com/j7126/OctoPrint-Dashboard/raw/master/screenshot.png
 
 compatibility:
   python: ">=2.7,<4"
 
-abandoned: https://github.com/OctoPrint/plugins.octoprint.org/issues/628
 ---
 This plugin adds a  dashboard tab in Octoprint that displays the most relevant info regarding the state of the printer and any on-going print job.
 
-![Screenshot](https://github.com/StefanCohen/OctoPrint-Dashboard/raw/master/screenshot.png)
+![Screenshot](https://github.com/j7126/OctoPrint-Dashboard/raw/master/screenshot.png)
 
 ## Features
 
-* Shows stats for:
+* Adds a new tab first in the list and becomes the default tab when opening OctoPrint
+* Widgets for current:
+    * RPi host CPU Load, CPU Temp, CPU frequency, Mem Utilization, Storage Utilization.   
     * Printer profile, Connection status, Printer Status
     * Hotend temp(s), Bed Temp, Chamber Temp, Fan speed
-    * Printed file, Progress
-    * Estimated total time, Elapsed time, Estimated time left
+    * Temperature/Humidity sensors.
+    * Shell command output 
+    * Printed file, Job Progress, Layer Progress
+    * Layer Duration Graph 
+    * Estimated total time, ETA, Time left, Time since print started
     * Current layer, Total layers
     * Current height, Total height
     * Average layer time
+    * WebCam view
+* Settings to configure what widgets and info to include in the Dashboard
 * Supports multiple hotends as configured in the printer profile
 * Supports chamber temperature if configured in the printer profile
 * Configurable progress gauge type (Circle, Bar)
+* Fullscreen mode including job control buttons (Start, Cancel, Pause/Resume)
+* Full page mode by adding `?dashboard=full` parameter at the end of the octoprint url
 * Uses Estimates from [PrintTimeGenius](https://plugins.octoprint.org/plugins/PrintTimeGenius/) when installed
 * Uses GCode analysis provided by [DisplayLayerProgress](https://plugins.octoprint.org/plugins/DisplayLayerProgress/) to get more accurate layer and fan data
 * Theme friendly:
 
-![Screenshot](https://github.com/StefanCohen/OctoPrint-Dashboard/raw/master/screenshot-theme.png)
+![Screenshot](https://github.com/j7126/OctoPrint-Dashboard/raw/master/screenshot-theme.png)
 
 
-For installation and configuration details, please visit the [dashboard github page](https://github.com/StefanCohen/OctoPrint-Dashboard) 
+For installation and configuration details, please visit the [dashboard github page](https://github.com/j7126/OctoPrint-Dashboard) 
