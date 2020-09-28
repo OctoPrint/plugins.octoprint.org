@@ -20,6 +20,15 @@ tags:
 - progress
 
 screenshots:
+- url: /assets/img/plugins/dashboard/screenshot-2.png
+  alt: screenshot
+  caption: Dashboard screenshot
+- url: /assets/img/plugins/dashboard/screenshot-2-theme.png
+  alt: screenshot
+  caption: Themed dashboard screenshot
+- url: /assets/img/plugins/dashboard/screenshot-2-fullscreen.png
+  alt: screenshot
+  caption: Dashboard fullscreen screenshot
 - url: /assets/img/plugins/dashboard/screenshot.png
   alt: screenshot
   caption: Dashboard screenshot
@@ -30,7 +39,7 @@ screenshots:
   alt: screenshot
   caption: Themed dashboard screenshot
 
-featuredimage: /assets/img/plugins/dashboard/screenshot.png
+featuredimage: /assets/img/plugins/dashboard/screenshot-2.png
 
 compatibility:
   python: ">=2.7,<4"
@@ -38,7 +47,7 @@ compatibility:
 ---
 This plugin adds a  dashboard tab in Octoprint that displays the most relevant info regarding the state of the printer and any on-going print job.
 
-![Screenshot](/assets/img/plugins/dashboard/screenshot.png)
+![Screenshot](/assets/img/plugins/dashboard/screenshot-2.png)
 
 ## Features
 
@@ -64,9 +73,16 @@ This plugin adds a  dashboard tab in Octoprint that displays the most relevant i
 * Full page mode by adding `?dashboard=full` parameter at the end of the octoprint url
 * Uses Estimates from [PrintTimeGenius](https://plugins.octoprint.org/plugins/PrintTimeGenius/) when installed
 * Uses GCode analysis provided by [DisplayLayerProgress](https://plugins.octoprint.org/plugins/DisplayLayerProgress/) to get more accurate layer and fan data
-* Theme friendly:
+* Theme friendly
 
-![Screenshot](/assets/img/plugins/dashboard/screenshot-theme.png)
+
+Themed screenshot: 
+
+![Screenshot](/assets/img/plugins/dashboard/screenshot-2-theme.png)
+
+Fullscreen mode screenshot: 
+
+![Screenshot](/assets/img/plugins/dashboard/screenshot-2-fullscreen.png)
 
 
 For installation and configuration details, please visit the [dashboard github page](https://github.com/j7126/OctoPrint-Dashboard)
