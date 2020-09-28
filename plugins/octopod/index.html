@@ -40,9 +40,10 @@
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@OctoPrint3D" />
     <meta name="twitter:title" content="OctoPrint-OctoPod" />
-    <meta name="twitter:description" content="This plugin sends immediate push notifications to your iOS devices when:
+    <meta name="twitter:description" content="This plugin sends immediate push notifications to your iOS devices or IFTTT when:
 
-  Print finished (includes camera snapshot)
+  Print finished (includes camera snapshot) or at specific progress percentages
+  Print reached specified layers (requires DisplayLayerProgress plugin)
   Bed warmed up to target temp for a period of time. Helps get smooth first layers
   Bed cooled down below specified threshold. Ideal to easily remove prints from bed
   Extruder cooled down below specified threshold. Ideal to know when to turn printer off
@@ -58,9 +59,10 @@
     <meta property="og:title" content="OctoPrint-OctoPod" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://plugins.octoprint.org/assets/img/plugins/octopod/print_finished.jpg" />
-    <meta property="og:description" content="This plugin sends immediate push notifications to your iOS devices when:
+    <meta property="og:description" content="This plugin sends immediate push notifications to your iOS devices or IFTTT when:
 
-  Print finished (includes camera snapshot)
+  Print finished (includes camera snapshot) or at specific progress percentages
+  Print reached specified layers (requires DisplayLayerProgress plugin)
   Bed warmed up to target temp for a period of time. Helps get smooth first layers
   Bed cooled down below specified threshold. Ideal to easily remove prints from bed
   Extruder cooled down below specified threshold. Ideal to know when to turn printer off
@@ -76,9 +78,10 @@
 
     <meta itemscope itemtype="http://schema.org/WebPage" />
     <meta itemprop="headline" content="OctoPrint-OctoPod" />
-    <meta itemprop="description" content="This plugin sends immediate push notifications to your iOS devices when:
+    <meta itemprop="description" content="This plugin sends immediate push notifications to your iOS devices or IFTTT when:
 
-  Print finished (includes camera snapshot)
+  Print finished (includes camera snapshot) or at specific progress percentages
+  Print reached specified layers (requires DisplayLayerProgress plugin)
   Bed warmed up to target temp for a period of time. Helps get smooth first layers
   Bed cooled down below specified threshold. Ideal to easily remove prints from bed
   Extruder cooled down below specified threshold. Ideal to know when to turn printer off
@@ -215,9 +218,10 @@
       <p class="lead">
         OctoPrint plugin for OctoPod
       </p>
-      <p>This plugin sends immediate push notifications to your iOS devices when:</p>
+      <p>This plugin sends immediate push notifications to your iOS devices or <a href="https://ifttt.com/home">IFTTT</a> when:</p>
 <ol>
-  <li>Print finished (includes camera snapshot)</li>
+  <li>Print finished (includes camera snapshot) or at specific progress percentages</li>
+  <li>Print reached specified layers (requires <a href="https://plugins.octoprint.org/plugins/DisplayLayerProgress/">DisplayLayerProgress plugin</a>)</li>
   <li>Bed warmed up to target temp for a period of time. Helps get smooth first layers</li>
   <li>Bed cooled down below specified threshold. Ideal to easily remove prints from bed</li>
   <li>Extruder cooled down below specified threshold. Ideal to know when to turn printer off</li>
@@ -232,7 +236,7 @@ to control your printer from any iOS device then this plugin is a great addition
 never heard of <a href="https://itunes.apple.com/us/app/octopod-for-octoprint/id1412557625?mt=8">OctoPod</a>
 before then you are in for a treat. Here are some of its features: multiple printers support,
 multiple cameras support including full screen with zoom in/out, control your printer using
-Siri or from your Apple Watch, temperature charts including temp variance. You can cancel any object
+Siri, your Apple Watch or your Apple TV, temperature charts including temp variance. You can cancel any object
 being printed since it has support for <a href="https://plugins.octoprint.org/plugins/cancelobject/">Cancel object plugin</a>.
 But that is not the only supported plugin, here are other supported plugins: <a href="https://plugins.octoprint.org/plugins/tplinksmartplug/">TPLink</a>,
 <a href="https://github.com/kantlivelong/OctoPrint-PSUControl">PSU Control</a>, <a href="https://plugins.octoprint.org/plugins/domoticz/">Domoticz</a>,
@@ -285,6 +289,11 @@ it can receive notifications. This step is required for testing the plugin</li>
           <a href="/assets/img/plugins/octopod/mmu_notification.png" data-lightbox="/plugins/octopod" data-title="MMU Requires User Assistance"><img src="/assets/img/plugins/octopod/mmu_notification.png" alt="MMU Notification" title="MMU Requires User Assistance"></a>
         </figure>
         
+        <figure>
+          
+          <a href="/assets/img/plugins/octopod/IFTTT.png" data-lightbox="/plugins/octopod" data-title="Events available for IFTTT"><img src="/assets/img/plugins/octopod/IFTTT.png" alt="IFTTT Configuration" title="Events available for IFTTT"></a>
+        </figure>
+        
       
     </article>
 
@@ -333,13 +342,13 @@ it can receive notifications. This step is required for testing the plugin</li>
       
       <dl class="installations">
         <dt>Active instances the past month</dt>
-        <dd>Installed on at least <strong>3.41k</strong> instances</dd>
+        <dd>Installed on at least <strong>3.4k</strong> instances</dd>
       </dl>
       
       
       <dl class="install_events">
         <dt>New installs the past week</dt>
-        <dd>At least <strong>123</strong> new installations</dd>
+        <dd>At least <strong>119</strong> new installations</dd>
       </dl>
       
       
@@ -370,6 +379,8 @@ it can receive notifications. This step is required for testing the plugin</li>
           
           
           <a class="label" href="/by_tag/#tag-bed-temperature">bed temperature</a>
+          
+          <a class="label" href="/by_tag/#tag-ifttt">ifttt</a>
           
           <a class="label" href="/by_tag/#tag-ios">ios</a>
           
