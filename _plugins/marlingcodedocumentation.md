@@ -31,6 +31,9 @@ screenshots:
 
 featuredimage: /assets/img/plugins/marlingcodedocumentation/screenshot-example-command.png
 
+compatibility:
+  python: ">=2.7,<4"
+
 ---
 
 It displays GCode documentation for Marlin in the terminal command line.
