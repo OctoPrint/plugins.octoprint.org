@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <title>OctoPrint-Dashboard</title>
     <meta name="description" content="A dashboard tab for Octoprint">
-    <meta name="author" content="Stefan Cohen">
+    <meta name="author" content="Stefan Cohen, j7126, Willmac16">
     <meta name="referrer" content="same-origin">
     <meta name="google-site-verification" content="0EFsbaNygJcEinKPmzP-hTf0Ju6wDIpJxO5zvQtOQT0" />
 
@@ -47,7 +47,7 @@
 
     <meta property="og:title" content="OctoPrint-Dashboard" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://plugins.octoprint.orghttps://github.com/StefanCohen/OctoPrint-Dashboard/raw/master/screenshot.png" />
+    <meta property="og:image" content="https://plugins.octoprint.org/assets/img/plugins/dashboard/screenshot-2.png" />
     <meta property="og:description" content="This plugin adds a  dashboard tab in Octoprint that displays the most relevant info regarding the state of the printer and any on-going print job.
 
 " />
@@ -59,7 +59,7 @@
     <meta itemprop="description" content="This plugin adds a  dashboard tab in Octoprint that displays the most relevant info regarding the state of the printer and any on-going print job.
 
 " />
-    <meta itemprop="image" content="https://plugins.octoprint.orghttps://github.com/StefanCohen/OctoPrint-Dashboard/raw/master/screenshot.png" />
+    <meta itemprop="image" content="https://plugins.octoprint.org/assets/img/plugins/dashboard/screenshot-2.png" />
 
     <script integrity="sha256-S1jf6xGbLdFfVOCgdM+OtjIEyLA9RQVuC1FOBC82qkQ=" crossorigin="anonymous" type="text/javascript" src="/assets/js/jquery-1.9.1.min-4b58dfeb119b2dd15f54e0a074cf8eb63204c8b03d45056e0b514e042f36aa44.js"></script>
     <script integrity="sha256-Qtj60TvCj8cmd1GW7Jq5U/6/m94XXFhFEoNhyVP6F/Q=" crossorigin="anonymous" type="text/javascript" src="/assets/js/underscore.min-42d8fad13bc28fc726775196ec9ab953febf9bde175c5845128361c953fa17f4.js"></script>
@@ -179,7 +179,7 @@
     <article class="post-content span8">
       
       
-      <div class="alert"><h3>This plugin has been abandoned</h3>The current maintainer of this plugin seems to have abandoned it. If you want to take over its maintainenance, please get in touch <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/628" target="_blank" rel="noopener noreferrer">here...</a></div>
+      
       
 
       <p class="lead">
@@ -187,33 +187,48 @@
       </p>
       <p>This plugin adds a  dashboard tab in Octoprint that displays the most relevant info regarding the state of the printer and any on-going print job.</p>
 
-<p><img src="https://github.com/StefanCohen/OctoPrint-Dashboard/raw/master/screenshot.png" alt="Screenshot" /></p>
+<p><img src="/assets/img/plugins/dashboard/screenshot-2.png" alt="Screenshot" /></p>
 
 <h2 id="features">Features</h2>
 
 <ul>
-  <li>Shows stats for:
+  <li>Adds a new tab first in the list and becomes the default tab when opening OctoPrint</li>
+  <li>Widgets for current:
     <ul>
+      <li>RPi host CPU Load, CPU Temp, CPU frequency, Mem Utilization, Storage Utilization.</li>
       <li>Printer profile, Connection status, Printer Status</li>
       <li>Hotend temp(s), Bed Temp, Chamber Temp, Fan speed</li>
-      <li>Printed file, Progress</li>
-      <li>Estimated total time, Elapsed time, Estimated time left</li>
+      <li>Temperature/Humidity sensors.</li>
+      <li>Shell command output</li>
+      <li>Printed file, Job Progress, Layer Progress</li>
+      <li>Layer Duration Graph</li>
+      <li>Estimated total time, ETA, Time left, Time since print started</li>
       <li>Current layer, Total layers</li>
       <li>Current height, Total height</li>
       <li>Average layer time</li>
+      <li>WebCam view</li>
     </ul>
   </li>
+  <li>Settings to configure what widgets and info to include in the Dashboard</li>
   <li>Supports multiple hotends as configured in the printer profile</li>
   <li>Supports chamber temperature if configured in the printer profile</li>
   <li>Configurable progress gauge type (Circle, Bar)</li>
+  <li>Fullscreen mode including job control buttons (Start, Cancel, Pause/Resume)</li>
+  <li>Full page mode by adding <code class="language-plaintext highlighter-rouge">?dashboard=full</code> parameter at the end of the octoprint url</li>
   <li>Uses Estimates from <a href="https://plugins.octoprint.org/plugins/PrintTimeGenius/">PrintTimeGenius</a> when installed</li>
   <li>Uses GCode analysis provided by <a href="https://plugins.octoprint.org/plugins/DisplayLayerProgress/">DisplayLayerProgress</a> to get more accurate layer and fan data</li>
-  <li>Theme friendly:</li>
+  <li>Theme friendly</li>
 </ul>
 
-<p><img src="https://github.com/StefanCohen/OctoPrint-Dashboard/raw/master/screenshot-theme.png" alt="Screenshot" /></p>
+<p>Themed screenshot:</p>
 
-<p>For installation and configuration details, please visit the <a href="https://github.com/StefanCohen/OctoPrint-Dashboard">dashboard github page</a></p>
+<p><img src="/assets/img/plugins/dashboard/screenshot-2-theme.png" alt="Screenshot" /></p>
+
+<p>Fullscreen mode screenshot:</p>
+
+<p><img src="/assets/img/plugins/dashboard/screenshot-2-fullscreen.png" alt="Screenshot" /></p>
+
+<p>For installation and configuration details, please visit the <a href="https://github.com/j7126/OctoPrint-Dashboard">dashboard github page</a></p>
 
 
       
@@ -221,17 +236,32 @@
         
         <figure>
           
-          <a href="https://github.com/StefanCohen/OctoPrint-Dashboard/raw/master/screenshot.png" data-lightbox="/plugins/dashboard" data-title="caption of a screenshot"><img src="https://github.com/StefanCohen/OctoPrint-Dashboard/raw/master/screenshot.png" alt="screenshot" title="caption of a screenshot"></a>
+          <a href="/assets/img/plugins/dashboard/screenshot-2.png" data-lightbox="/plugins/dashboard" data-title="Dashboard screenshot"><img src="/assets/img/plugins/dashboard/screenshot-2.png" alt="screenshot" title="Dashboard screenshot"></a>
         </figure>
         
         <figure>
           
-          <a href="https://github.com/StefanCohen/OctoPrint-Dashboard/raw/master/screenshot-theme.png" data-lightbox="/plugins/dashboard" data-title="themed screenshot"><img src="https://github.com/StefanCohen/OctoPrint-Dashboard/raw/master/screenshot-theme.png" alt="screenshot" title="themed screenshot"></a>
+          <a href="/assets/img/plugins/dashboard/screenshot-2-theme.png" data-lightbox="/plugins/dashboard" data-title="Themed dashboard screenshot"><img src="/assets/img/plugins/dashboard/screenshot-2-theme.png" alt="screenshot" title="Themed dashboard screenshot"></a>
         </figure>
         
         <figure>
           
-          <a href="https://github.com/StefanCohen/OctoPrint-Dashboard/raw/master/screenshot-theme2.png" data-lightbox="/plugins/dashboard" data-title="themed screenshot"><img src="https://github.com/StefanCohen/OctoPrint-Dashboard/raw/master/screenshot-theme2.png" alt="screenshot" title="themed screenshot"></a>
+          <a href="/assets/img/plugins/dashboard/screenshot-2-fullscreen.png" data-lightbox="/plugins/dashboard" data-title="Dashboard fullscreen screenshot"><img src="/assets/img/plugins/dashboard/screenshot-2-fullscreen.png" alt="screenshot" title="Dashboard fullscreen screenshot"></a>
+        </figure>
+        
+        <figure>
+          
+          <a href="/assets/img/plugins/dashboard/screenshot.png" data-lightbox="/plugins/dashboard" data-title="Dashboard screenshot"><img src="/assets/img/plugins/dashboard/screenshot.png" alt="screenshot" title="Dashboard screenshot"></a>
+        </figure>
+        
+        <figure>
+          
+          <a href="/assets/img/plugins/dashboard/screenshot-theme.png" data-lightbox="/plugins/dashboard" data-title="Themed dashboard screenshot"><img src="/assets/img/plugins/dashboard/screenshot-theme.png" alt="screenshot" title="Themed dashboard screenshot"></a>
+        </figure>
+        
+        <figure>
+          
+          <a href="/assets/img/plugins/dashboard/screenshot-theme2.png" data-lightbox="/plugins/dashboard" data-title="Themed dashboard screenshot"><img src="/assets/img/plugins/dashboard/screenshot-theme2.png" alt="screenshot" title="Themed dashboard screenshot"></a>
         </figure>
         
       
@@ -261,14 +291,14 @@
         
         <dd>
           URL:
-          <pre>https://github.com/StefanCohen/OctoPrint-Dashboard/archive/master.zip</pre>
+          <pre>https://github.com/j7126/OctoPrint-Dashboard/archive/master.zip</pre>
           
         </dd>
         
         
         <dd>
           Command line:
-          <pre>pip install "https://github.com/StefanCohen/OctoPrint-Dashboard/archive/master.zip"</pre>
+          <pre>pip install "https://github.com/j7126/OctoPrint-Dashboard/archive/master.zip"</pre>
         </dd>
         
       </dl>
@@ -288,7 +318,7 @@
       
       <dl class="install_events">
         <dt>New installs the past week</dt>
-        <dd>At least <strong>340</strong> new installations</dd>
+        <dd>At least <strong>342</strong> new installations</dd>
       </dl>
       
       
@@ -349,20 +379,20 @@
       <dl class="author">
         <dt>Author</dt>
         <dd>
-<a href="/by_author/#stefan-cohen">Stefan Cohen</a>
+<a href="/by_author/#stefan-cohen-j7126-willmac16">Stefan Cohen, j7126, Willmac16</a>
 </dd>
       </dl>
       
       
       <dl class="homepage">
         <dt>Homepage</dt>
-        <dd><a href="https://github.com/StefanCohen/OctoPrint-Dashboard" target="_blank">https://github.com/StefanCohen/OctoPrint-Dashboard</a></dd>
+        <dd><a href="https://github.com/j7126/OctoPrint-Dashboard" target="_blank">https://github.com/j7126/OctoPrint-Dashboard</a></dd>
       </dl>
       
       
       <dl class="source">
         <dt>Source</dt>
-        <dd><a href="https://github.com/StefanCohen/OctoPrint-Dashboard" target="_blank">https://github.com/StefanCohen/OctoPrint-Dashboard</a></dd>
+        <dd><a href="https://github.com/j7126/OctoPrint-Dashboard" target="_blank">https://github.com/j7126/OctoPrint-Dashboard</a></dd>
       </dl>
       
       
@@ -388,7 +418,7 @@
             <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=suspicious+plugin+activity&template=suspicious_plugin_activity.md&title=%5BSuspicious+Plugin+Activity%5D+OctoPrint-Dashboard">report the plugin as suspicious here</a>.
           </p>
           <p>
-            Report bugs or feature requests for the plugin to the plugin author (e.g. on the plugin's <a href="https://github.com/StefanCohen/OctoPrint-Dashboard">homepage</a>) please, not here!
+            Report bugs or feature requests for the plugin to the plugin author (e.g. on the plugin's <a href="https://github.com/j7126/OctoPrint-Dashboard">homepage</a>) please, not here!
           </p>
         </dd>
       </dl>
