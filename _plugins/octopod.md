@@ -20,6 +20,7 @@ tags:
 - iOS
 - notifications
 - mmu
+- ifttt
 
 compatibility:
   python: ">=2.7,<4"
@@ -37,17 +38,21 @@ screenshots:
 - url: /assets/img/plugins/octopod/mmu_notification.png
   alt: MMU Notification
   caption: MMU Requires User Assistance
+- url: /assets/img/plugins/octopod/IFTTT.png
+  alt: IFTTT Configuration
+  caption: Events available for IFTTT
 
 featuredimage: /assets/img/plugins/octopod/print_finished.jpg
 
 ---
 
-This plugin sends immediate push notifications to your iOS devices when:
-1. Print finished (includes camera snapshot)
+This plugin sends immediate push notifications to your iOS devices or [IFTTT](https://ifttt.com/home) when:
+1. Print finished (includes camera snapshot) or at specific progress percentages
+1. Print reached specified layers (requires [DisplayLayerProgress plugin](https://plugins.octoprint.org/plugins/DisplayLayerProgress/))
 1. Bed warmed up to target temp for a period of time. Helps get smooth first layers
 1. Bed cooled down below specified threshold. Ideal to easily remove prints from bed
 1. Extruder cooled down below specified threshold. Ideal to know when to turn printer off
-1. Printer paused for user. This may happen when running out of filament or when doing manual multi color printing (M600) 
+1. Printer paused for user. This may happen when running out of filament or when doing manual multi color printing (M600)
 1. [Palette 2 / Pro](https://www.mosaicmfg.com/products/palette-2) encountered a problem while printing
 1. [MMU](https://shop.prusa3d.com/en/upgrades/183-original-prusa-i3-mk25smk3s-multi-material-2s-upgrade-kit-mmu2s.html#) requires user assistance (requires Prusa firmware)
 1. Firmware errors. Get security alerts like thermal runaway, probing failed, min temp error, max temp error, etc.
@@ -58,7 +63,7 @@ to control your printer from any iOS device then this plugin is a great addition
 never heard of [OctoPod](https://itunes.apple.com/us/app/octopod-for-octoprint/id1412557625?mt=8)
 before then you are in for a treat. Here are some of its features: multiple printers support,
 multiple cameras support including full screen with zoom in/out, control your printer using
-Siri or from your Apple Watch, temperature charts including temp variance. You can cancel any object
+Siri, your Apple Watch or your Apple TV, temperature charts including temp variance. You can cancel any object
 being printed since it has support for [Cancel object plugin](https://plugins.octoprint.org/plugins/cancelobject/).
 But that is not the only supported plugin, here are other supported plugins: [TPLink](https://plugins.octoprint.org/plugins/tplinksmartplug/),
 [PSU Control](https://github.com/kantlivelong/OctoPrint-PSUControl), [Domoticz](https://plugins.octoprint.org/plugins/domoticz/),
