@@ -20,17 +20,17 @@ tags:
 - progress
 
 screenshots:
-- url: https://github.com/j7126/OctoPrint-Dashboard/raw/master/screenshot.png
+- url: /assets/img/plugins/dashboard/screenshot.png
   alt: screenshot
   caption: Dashboard screenshot
-- url: https://github.com/j7126/OctoPrint-Dashboard/raw/master/screenshot-theme.png
+- url: /assets/img/plugins/dashboard/screenshot-theme.png
   alt: screenshot
   caption: Themed dashboard screenshot
-- url: https://github.com/j7126/OctoPrint-Dashboard/raw/master/screenshot-theme2.png
+- url: /assets/img/plugins/dashboard/screenshot-theme2.png
   alt: screenshot
   caption: Themed dashboard screenshot
 
-featuredimage: https://github.com/j7126/OctoPrint-Dashboard/raw/master/screenshot.png
+featuredimage: /assets/img/plugins/dashboard/screenshot.png
 
 compatibility:
   python: ">=2.7,<4"
@@ -38,7 +38,7 @@ compatibility:
 ---
 This plugin adds a  dashboard tab in Octoprint that displays the most relevant info regarding the state of the printer and any on-going print job.
 
-![Screenshot](https://github.com/j7126/OctoPrint-Dashboard/raw/master/screenshot.png)
+![Screenshot](/assets/img/plugins/dashboard/screenshot.png)
 
 ## Features
 
@@ -48,9 +48,9 @@ This plugin adds a  dashboard tab in Octoprint that displays the most relevant i
     * Printer profile, Connection status, Printer Status
     * Hotend temp(s), Bed Temp, Chamber Temp, Fan speed
     * Temperature/Humidity sensors.
-    * Shell command output 
+    * Shell command output
     * Printed file, Job Progress, Layer Progress
-    * Layer Duration Graph 
+    * Layer Duration Graph
     * Estimated total time, ETA, Time left, Time since print started
     * Current layer, Total layers
     * Current height, Total height
@@ -66,7 +66,7 @@ This plugin adds a  dashboard tab in Octoprint that displays the most relevant i
 * Uses GCode analysis provided by [DisplayLayerProgress](https://plugins.octoprint.org/plugins/DisplayLayerProgress/) to get more accurate layer and fan data
 * Theme friendly:
 
-![Screenshot](https://github.com/j7126/OctoPrint-Dashboard/raw/master/screenshot-theme.png)
+![Screenshot](/assets/img/plugins/dashboard/screenshot-theme.png)
 
 
-For installation and configuration details, please visit the [dashboard github page](https://github.com/j7126/OctoPrint-Dashboard) 
+For installation and configuration details, please visit the [dashboard github page](https://github.com/j7126/OctoPrint-Dashboard)
