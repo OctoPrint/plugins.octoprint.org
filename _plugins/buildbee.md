@@ -18,11 +18,13 @@ archive: https://octoprint-buildbee-source.buildbee.com/dist/OctoPrint-BuildBee-
 #follow_dependency_links: false
 
 tags:
-- a list
-- of tags
-- that apply
-- to your plugin
-- (take a look at the existing plugins for what makes sense here)
+- cloud
+- cloud printing
+- remote access
+- design management
+- fleet management
+- user management
+- buildbee
 
 screenshots:
 - url: /assets/img/plugins/buildbee/buildbee_screen_1.png
