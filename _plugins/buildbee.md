@@ -40,7 +40,7 @@ screenshots:
   alt: Four views of BuildBee's enterprise tools, showing fleet monitoring analytics, print job queue management, printer fleet overview and a printer's detailed information screen.
   caption: Enterprise tools make it easy to manage a fleet of printers and many users in your school, office, makerspace and home.
 
-featuredimage: url of a featured image for your plugin, /assets/img/...
+featuredimage: /assets/img/plugins/buildbee/buildbee_featured.png
 
 # You only need the following if your plugin requires specific OctoPrint versions or
 # specific operating systems to function - you can safely remove the whole
@@ -58,6 +58,12 @@ compatibility:
 ## BuildBee CloudDock
 
 Install this plugin to convert your Octoprint installation into a BuildBee CloudDock, connecting your printer to BuildBee's online services. You can then manage, monitor and print wirelessly to your OctoPrint enabled 3D printer from anywhere via [BuildBee.com](https://buildbee.com) or the BuildBee Desktop app.
+
+---
+
+<div style="text-align:center">
+  <img style="text-align:center" src="/assets/img/plugins/buildbee/buildbee_feature.png" alt="BuildBee"/>
+</div>
 
 ## What is BuildBee?
 
