@@ -2773,6 +2773,17 @@
 },
 
 {
+"id": "/plugins/octoprint_hd44780",
+"url": "/plugins/octoprint_hd44780/",
+"date": "2020-09-26 00:00:00 -0500",
+"title": "Octoprint-LCD-HD44780",
+"description": "Output status information on a 20x4 LCD screen",
+"author": "Kunsi",
+"content": "This Plugin allows you to connect a HD44780-compatible LCD screen to your Raspberry Pi running OctoPrint.Currently, the screen size is fixed to 20x4 characters. The used GPIO pins are fixed, too.",
+"tags": ["status","gpio","lcd"]
+},
+
+{
 "id": "/plugins/marlingcodedocumentation",
 "url": "/plugins/marlingcodedocumentation/",
 "date": "2020-09-27 00:00:00 -0500",

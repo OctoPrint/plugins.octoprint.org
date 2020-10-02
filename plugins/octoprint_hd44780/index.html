@@ -6,9 +6,9 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html"> <!--<![endif]-->
 <head>
     <meta charset="utf-8" />
-    <title>Pushover</title>
-    <meta name="description" content="A plugin that send a notification with Pushover when the job is done or is failed">
-    <meta name="author" content="Thijs Bekke">
+    <title>Octoprint-LCD-HD44780</title>
+    <meta name="description" content="Output status information on a 20x4 LCD screen">
+    <meta name="author" content="Kunsi">
     <meta name="referrer" content="same-origin">
     <meta name="google-site-verification" content="0EFsbaNygJcEinKPmzP-hTf0Ju6wDIpJxO5zvQtOQT0" />
 
@@ -39,27 +39,27 @@
 
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@OctoPrint3D" />
-    <meta name="twitter:title" content="Pushover" />
-    <meta name="twitter:description" content="This plugin adds support for Pushover notifications to OctoPrint.
+    <meta name="twitter:title" content="Octoprint-LCD-HD44780" />
+    <meta name="twitter:description" content="This Plugin allows you to connect a HD44780-compatible LCD screen to your Raspberry Pi running OctoPrint.
 
 " />
-    <meta name="twitter:image" content="https://plugins.octoprint.org" />
+    <meta name="twitter:image" content="https://plugins.octoprint.org/assets/img/octoprint-avatar-240x240.png" />
 
-    <meta property="og:title" content="Pushover" />
+    <meta property="og:title" content="Octoprint-LCD-HD44780" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://plugins.octoprint.org/assets/img/plugins/pushover/pushover.png" />
-    <meta property="og:description" content="This plugin adds support for Pushover notifications to OctoPrint.
+    <meta property="og:image" content="https://plugins.octoprint.org/assets/img/repo-600x400.png" />
+    <meta property="og:description" content="This Plugin allows you to connect a HD44780-compatible LCD screen to your Raspberry Pi running OctoPrint.
 
 " />
     <meta property="og:site_name" content="OctoPrint Plugin Repository" />
-    <meta property="og:url" content="https://plugins.octoprint.org/plugins/pushover/" />
+    <meta property="og:url" content="https://plugins.octoprint.org/plugins/octoprint_hd44780/" />
 
     <meta itemscope itemtype="http://schema.org/WebPage" />
-    <meta itemprop="headline" content="Pushover" />
-    <meta itemprop="description" content="This plugin adds support for Pushover notifications to OctoPrint.
+    <meta itemprop="headline" content="Octoprint-LCD-HD44780" />
+    <meta itemprop="description" content="This Plugin allows you to connect a HD44780-compatible LCD screen to your Raspberry Pi running OctoPrint.
 
 " />
-    <meta itemprop="image" content="https://plugins.octoprint.org/assets/img/plugins/pushover/pushover.png" />
+    <meta itemprop="image" content="https://plugins.octoprint.org/assets/img/repo-600x400.png" />
 
     <script integrity="sha256-S1jf6xGbLdFfVOCgdM+OtjIEyLA9RQVuC1FOBC82qkQ=" crossorigin="anonymous" type="text/javascript" src="/assets/js/jquery-1.9.1.min-4b58dfeb119b2dd15f54e0a074cf8eb63204c8b03d45056e0b514e042f36aa44.js"></script>
     <script integrity="sha256-Qtj60TvCj8cmd1GW7Jq5U/6/m94XXFhFEoNhyVP6F/Q=" crossorigin="anonymous" type="text/javascript" src="/assets/js/underscore.min-42d8fad13bc28fc726775196ec9ab953febf9bde175c5845128361c953fa17f4.js"></script>
@@ -159,7 +159,7 @@
   <div class="container">
     <div class="row">
       <div class="span12">
-        <h1>Pushover</h1>
+        <h1>Octoprint-LCD-HD44780</h1>
       </div>
     </div>
   </div>
@@ -168,11 +168,11 @@
 <div class="container">
   <div class="row-fluid">
     
-    <small class="pull-left"><a href="/plugins/octobullet/"><i class="fa fa-double-angle-left"></i>&nbsp;Pushbullet</a></small>
+    <small class="pull-left"><a href="/plugins/octolapse/"><i class="fa fa-double-angle-left"></i>&nbsp;Octolapse</a></small>
     
     &nbsp;
     
-    <small class="pull-right"><a href="/plugins/Python3PluginCompatibilityCheck/">Python 3 Check&nbsp;<i class="fa fa-double-angle-right"></i></a></small>
+    <small class="pull-right"><a href="/plugins/Octoslack/">Octoslack&nbsp;<i class="fa fa-double-angle-right"></i></a></small>
     
   </div>
   <div class="content plugin-content row-fluid">
@@ -183,45 +183,13 @@
       
 
       <p class="lead">
-        A plugin that send a notification with Pushover when the job is done or is failed
+        Output status information on a 20x4 LCD screen
       </p>
-      <p>This plugin adds support for <a href="https://pushover.net/">Pushover notifications</a> to OctoPrint.</p>
+      <p>This Plugin allows you to connect a HD44780-compatible LCD screen to your Raspberry Pi running OctoPrint.</p>
 
-<p>When your job is finished or is failed OctoPrint will send a notification to Pushover. You can configure the sound or priority of the messages.</p>
-
-<p>This plugin supports the following features/events</p>
-
-<ul>
-  <li>Send notifications on an interval (percent or time)</li>
-  <li>Include a capture of your camera with your notifications</li>
-  <li>Temperature reached</li>
-  <li>Print done</li>
-  <li>After first couple of layer</li>
-  <li>Print Failed</li>
-  <li>Print Started</li>
-  <li>Printer is Waiting</li>
-  <li>Printer Shutdown</li>
-  <li>Print Paused</li>
-  <li>Alert Event (M300)</li>
-  <li>Panic Event (M112)</li>
-  <li>Error Event</li>
-  <li>Limit to specific devices</li>
-</ul>
+<p>Currently, the screen size is fixed to 20x4 characters. The used GPIO pins are fixed, too.</p>
 
 
-      
-        <h2>Pictures</h2>
-        
-        <figure>
-          
-          <a href="/assets/img/plugins/pushover/settings.png" data-lightbox="/plugins/pushover" data-title="You can configure a couple of settings via Octoprint&#39;s settings. Set your user key, change the sound, priority and test your settings."><img src="/assets/img/plugins/pushover/settings.png" alt="Settings" title="You can configure a couple of settings via Octoprint&#39;s settings. Set your user key, change the sound, priority and test your settings."></a>
-        </figure>
-        
-        <figure>
-          
-          <a href="/assets/img/plugins/pushover/pushover.png" data-lightbox="/plugins/pushover" data-title="An examplatory push notification in the Pushover webclient"><img src="/assets/img/plugins/pushover/pushover.png" alt="Pushover" title="An examplatory push notification in the Pushover webclient"></a>
-        </figure>
-        
       
     </article>
 
@@ -249,14 +217,14 @@
         
         <dd>
           URL:
-          <pre>https://github.com/thijsbekke/OctoPrint-Pushover/archive/master.zip</pre>
+          <pre>https://git.kunsmann.eu/kunsi/Octoprint-LCD-HD44780/archive/main.zip</pre>
           
         </dd>
         
         
         <dd>
           Command line:
-          <pre>pip install "https://github.com/thijsbekke/OctoPrint-Pushover/archive/master.zip"</pre>
+          <pre>pip install "https://git.kunsmann.eu/kunsi/Octoprint-LCD-HD44780/archive/main.zip"</pre>
         </dd>
         
       </dl>
@@ -264,39 +232,21 @@
       
       <dl class="date">
         <dt>Registration date</dt>
-        <dd>13 Apr 2016</dd>
+        <dd>26 Sep 2020</dd>
       </dl>
       
       
       <dl class="installations">
         <dt>Active instances the past month</dt>
-        <dd>Installed on at least <strong>884</strong> instances</dd>
+        <dd>Installed on at least <strong>0</strong> instances</dd>
       </dl>
       
       
       <dl class="install_events">
         <dt>New installs the past week</dt>
-        <dd>At least <strong>11</strong> new installations</dd>
+        <dd>At least <strong>0</strong> new installations</dd>
       </dl>
       
-      
-      <dl class="github">
-        <dt>Github stats</dt>
-        <dd>
-          <ul>
-            
-            <li>
-              Latest Release: <a href="https://github.com/thijsbekke/OctoPrint-Pushover/releases/tag/0.3.8" target="_blank">0.3.8</a><br>
-              <small>released on 16 Jul 2020</small>
-            </li>
-            <li>Releases: 23</li>
-            
-            <li>Stars: 17</li>
-            <li>Issues: 6 open, 39 closed</li>
-            <li>Last push: 21 Jul 2020</li>
-          </ul>
-        </dd>
-      </dl>
       
       
       <dl class="tags">
@@ -306,9 +256,11 @@
           
           
           
-          <a class="label" href="/by_tag/#tag-notification">notification</a>
+          <a class="label" href="/by_tag/#tag-gpio">gpio</a>
           
-          <a class="label" href="/by_tag/#tag-pushover">pushover</a>
+          <a class="label" href="/by_tag/#tag-lcd">lcd</a>
+          
+          <a class="label" href="/by_tag/#tag-status">status</a>
           
         </dd>
       </dl>
@@ -318,13 +270,13 @@
         <dd>
           <ul>
             
-            <li>OctoPrint: all versions</li>
+            <li>OctoPrint: 1.4.0+</li>
             
             
-            <li>Operating Systems: all</li>
+            <li>Operating Systems: Linux</li>
             
             
-            <li>Python: &gt;=2.7,&lt;4</li>
+            <li>Python: &gt;=3,&lt;4</li>
             
           </ul>
         </dd>
@@ -333,20 +285,20 @@
       <dl class="author">
         <dt>Author</dt>
         <dd>
-<a href="/by_author/#thijs-bekke">Thijs Bekke</a>
+<a href="/by_author/#kunsi">Kunsi</a>
 </dd>
       </dl>
       
       
       <dl class="homepage">
         <dt>Homepage</dt>
-        <dd><a href="https://github.com/thijsbekke/OctoPrint-Pushover/" target="_blank">https://github.com/thijsbekke/OctoPrint-Pushover/</a></dd>
+        <dd><a href="https://git.kunsmann.eu/kunsi/Octoprint-LCD-HD44780" target="_blank">https://git.kunsmann.eu/kunsi/Octoprint-LCD-HD44780</a></dd>
       </dl>
       
       
       <dl class="source">
         <dt>Source</dt>
-        <dd><a href="https://github.com/thijsbekke/OctoPrint-Pushover/" target="_blank">https://github.com/thijsbekke/OctoPrint-Pushover/</a></dd>
+        <dd><a href="https://git.kunsmann.eu/kunsi/Octoprint-LCD-HD44780" target="_blank">https://git.kunsmann.eu/kunsi/Octoprint-LCD-HD44780</a></dd>
       </dl>
       
       
@@ -360,19 +312,19 @@
         <dd>
           <p>
             If there is <strong>something wrong with this listing</strong> (broken links & images etc), please
-            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=bug&template=listing_error.md&title=%5BListing+Error%5D+Pushover">report it here</a>.
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=bug&template=listing_error.md&title=%5BListing+Error%5D+Octoprint-LCD-HD44780">report it here</a>.
           </p>
           <p>
             If this plugin <strong>has been <em>confirmed</em> as abandoned</strong> by its maintainer, please
-            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=abandoned+plugin&template=abandoned_plugin.md&title=%5BAbandoned+Plugin%5D+Pushover">report it here</a>.
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=abandoned+plugin&template=abandoned_plugin.md&title=%5BAbandoned+Plugin%5D+Octoprint-LCD-HD44780">report it here</a>.
           </p>
           <p>
             If this plugin is <strong>doing something suspicious</strong> (e.g. weird network activity, unannounced tracking, ...) and
             the maintainer is not cooperating in getting to the bottom of that, please
-            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=suspicious+plugin+activity&template=suspicious_plugin_activity.md&title=%5BSuspicious+Plugin+Activity%5D+Pushover">report the plugin as suspicious here</a>.
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=suspicious+plugin+activity&template=suspicious_plugin_activity.md&title=%5BSuspicious+Plugin+Activity%5D+Octoprint-LCD-HD44780">report the plugin as suspicious here</a>.
           </p>
           <p>
-            Report bugs or feature requests for the plugin to the plugin author (e.g. on the plugin's <a href="https://github.com/thijsbekke/OctoPrint-Pushover/">homepage</a>) please, not here!
+            Report bugs or feature requests for the plugin to the plugin author (e.g. on the plugin's <a href="https://git.kunsmann.eu/kunsi/Octoprint-LCD-HD44780">homepage</a>) please, not here!
           </p>
         </dd>
       </dl>
