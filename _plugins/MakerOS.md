@@ -7,7 +7,7 @@ description: An OctoPrint plugin integration with the MakerOS Platform API.
 author: Thomas Lawton
 license: AGPLv3
 
-date: 2020-10-02
+date: 2020-10-05
 
 homepage: https://github.com/makeros3d/Octoprint-Makeros
 source: https://github.com/makeros3d/Octoprint-Makeros
@@ -36,10 +36,13 @@ featuredimage: /assets/img/plugins/MakerOS/Octoprint-Makeros-projects.png
 
 ---
 
+This plugin requires a [MakerOS](https://makeros.com) business account. Please
+note that there is no free subscription tier.
+
 The official MakerOS OctoPrint plugin will allow you to interface with your
 MakerOS projects from within OctoPrint. Once installed you will be able to query
 your projects and download both .gcode and .STL files from your projects to your
-OctoPrint intance.
+OctoPrint instance.
 
 On the initial call to the MakerOS API a MakerOS folder will be created in your
 files. From there, upon downloading a file, a project specific folder will be
@@ -55,5 +58,3 @@ manually using this URL: https://github.com/makeros3d/Octoprint-Makeros/archive/
 Once the plugin is installed it is easily configurable via the plugin's settings
 in the settings menu. All that you'll need are your MakerOS Provider ID, API 
 key, and API URL.
-
-http://plugins.octoprint.org/plugin/MakerOS/
