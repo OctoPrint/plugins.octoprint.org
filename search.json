@@ -2792,6 +2792,17 @@
 "author": "Costas Basdekis",
 "content": "It displays GCode documentation for Marlin &amp; RepRap in the terminal command line.Type a command and you will get explanation for the command and the parameters.Type ‘?’ and some terms and you’ll be shown commands that reference those terms.Features:  Commands from Marlin &amp; RepRap official documentations  Support for search by prepending ?  Add and manage favourite commands  Support for Multiline Terminal plugin  If you use Terminal Messaging, it allows you to explain sent commands",
 "tags": ["terminal","gcode","marlin","reprap","documentation"]
+},
+
+{
+"id": "/plugins/MakerOS",
+"url": "/plugins/MakerOS/",
+"date": "2020-10-05 00:00:00 -0500",
+"title": "MakerOS",
+"description": "An OctoPrint plugin integration with the MakerOS Platform API.",
+"author": "Thomas Lawton",
+"content": "This plugin requires a MakerOS business account. Pleasenote that there is no free subscription tier.The official MakerOS OctoPrint plugin will allow you to interface with yourMakerOS projects from within OctoPrint. Once installed you will be able to queryyour projects and download both .gcode and .STL files from your projects to yourOctoPrint instance.On the initial call to the MakerOS API a MakerOS folder will be created in yourfiles. From there, upon downloading a file, a project specific folder will becreated for you within the MakerOS folder.  Please note that downloading .STL files will require you to install the CuraEngine Legacy plugin which can be installed in the same way as you installed the MakerOS plugin.Setting up the plugin is simple - you may install via the Plugin Manager or manually using this URL: https://github.com/makeros3d/Octoprint-Makeros/archive/master.zipOnce the plugin is installed it is easily configurable via the plugin’s settingsin the settings menu. All that you’ll need are your MakerOS Provider ID, API key, and API URL.",
+"tags": ["api","addon","makeros","files"]
 }
 ]
 }
