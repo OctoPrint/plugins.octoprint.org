@@ -5,10 +5,34 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>https://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 08 Oct 2020 19:28:44 -0500</pubDate>
-    <lastBuildDate>Thu, 08 Oct 2020 19:28:44 -0500</lastBuildDate>
+    <pubDate>Thu, 08 Oct 2020 20:28:58 -0500</pubDate>
+    <lastBuildDate>Thu, 08 Oct 2020 20:28:58 -0500</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
+    
+      <item>
+        <title>WiFi Status</title>
+        <description>
+          <![CDATA[
+            Displays the WiFi connection status on the OctoPrint navigation bar.
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/wifistatus/WiFiStatus.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Thu, 08 Oct 2020 00:00:00 -0500
+</pubDate>
+        <link>https://plugins.octoprint.org/plugins/wifistatus/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/wifistatus/</guid>
+        
+        <category>navbar</category>
+        
+        <category>network</category>
+        
+        <category>status</category>
+        
+        <category>ui</category>
+        
+      </item>
     
       <item>
         <title>MakerOS</title>
@@ -223,30 +247,6 @@ Fri, 21 Aug 2020 00:00:00 -0500
         <category>wait</category>
         
         <category>procastinator</category>
-        
-      </item>
-    
-      <item>
-        <title>OctoPrint-PrettyGCode</title>
-        <description>
-          <![CDATA[
-            A pretty GCode visualizer for Octoprint
-            <p><img src="https://plugins.octoprint.org/assets/img/plugins/prettygcode/PrettyGcode-Screen1.jpg"></p>
-          ]]>
-        </description>
-        <pubDate>
-Mon, 17 Aug 2020 00:00:00 -0500
-</pubDate>
-        <link>https://plugins.octoprint.org/plugins/prettygcode/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/prettygcode/</guid>
-        
-        <category>Gcode</category>
-        
-        <category>visualizer</category>
-        
-        <category>WebGL</category>
-        
-        <category>progress</category>
         
       </item>
     
