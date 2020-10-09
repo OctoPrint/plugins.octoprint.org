@@ -32,3 +32,5 @@ compatibility:
 
 ---
 This plugin will add a WiFi status indicator to the OctoPrint navigation bar to give an at-a-glance indication of the quality of the WiFi connection. Mousing over the indicator will provide more details on the connection.
+
+This plugin will only work on Linux and if OctoPrint is running under Python 3.7 or higher. See <https://github.com/cp2004/Octoprint-Upgrade-To-Py3> if you wish to upgrade your OctoPrint installation to use Python 3.
