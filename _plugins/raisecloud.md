@@ -77,3 +77,9 @@ customize the printing workflow through you and your team.
 # How to Connect your Printers to RaiseCloud?
 Please follow video tutorial or the instructions [Document](https://support.raise3d.com/RaiseCloud/raisecloud-plugin-installation-manual-6-1049.html) 
 {% include youtube.html vid="3c935PTRef0" preview="'/assets/img/plugins/raisecloud/Video-3c935PTRef0.png'" %}
+
+# Resource Limit
+The standard limit for connecting to the user's raisecloud account through this plug-in is a printer.
+If the free limit of the account is exceeded, users need to purchase resources to expand the number of connections. (the price is not yet determined)
+In order to help maker better use and print objects in the epidemic situation. Raise3d now removes restrictions and gives users access to the basic features of raisecloud for free.
+The time of re charging shall be subject to the official notice.
