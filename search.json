@@ -2814,6 +2814,17 @@
 "author": "Manuel McLure",
 "content": "This plugin will add a WiFi status indicator to the OctoPrint navigation bar to give an at-a-glance indication of the quality of the WiFi connection. Mousing over the indicator will provide more details on the connection.This plugin will only work on Linux and if OctoPrint is running under Python 3.7 or higher. See https://github.com/cp2004/Octoprint-Upgrade-To-Py3 if you wish to upgrade your OctoPrint installation to use Python 3.",
 "tags": ["navbar","network","status","ui"]
+},
+
+{
+"id": "/plugins/raisecloud",
+"url": "/plugins/raisecloud/",
+"date": "2020-10-10 00:00:00 -0500",
+"title": "RaiseCloud",
+"description": "Manage your OctoPi powered 3D printer through our powerful cloud management platform, RaiseCloud (web or app).",
+"author": "Raise3D",
+"content": "What is RaiseCloud?The RaiseCloud management platform is compatible with most open-source printers tomanage, monitor, and process 3D prints anytime and anywhere. The four key functions help you maximize work-flow efficiency and accessibility for your 3D printing process:1.Connect to OctoPi powered 3D printersDo you have different brands of printers but want to manage your printer efficiently? RaiseCloud would connect to OctoPi powered printers and help you manage your printers efficiently.2.Remote MonitoringDon’t want to work overtime to check on your 3D printer? RaiseCloud provides a cloud management platform for you to monitor your printing process anytime anywhere.3.Multi-Task ManagementAre you struggling to manage multiple tasks on different 3D printers? RaiseCloud would provide you a dashboard to easily manage print jobs across one or multiple 3D printers.4.Printer Management by TeamDo you want you and your team could manage the 3D printers together? RaiseCloud could help to customize the printing workflow through you and your team.How to Connect your Printers to RaiseCloud?Please follow video tutorial or the instructions Document\tResource LimitThe standard limit for connecting to the user’s raisecloud account through this plug-in is a printer.If the free limit of the account is exceeded, users need to purchase resources to expand the number of connections. (the price is not yet determined)In order to help maker better use and print objects in the epidemic situation. Raise3d now removes restrictions and gives users access to the basic features of raisecloud for free.The time of re charging shall be subject to the official notice.",
+"tags": ["remote monitoring","webcam","cloud printing","control","task queue","print local files"]
 }
 ]
 }
