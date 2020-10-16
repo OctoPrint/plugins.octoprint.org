@@ -8,7 +8,7 @@ author: Anni Lange
 license: GPLv3
 
 # today's date in format YYYY-MM-DD, e.g.
-date: 2020-10-12
+date: 2020-10-16
 
 homepage: https://github.com/maocypher/Octoprint-Smart-Filament-Sensor
 source: https://github.com/maocypher/Octoprint-Smart-Filament-Sensor
