@@ -69,8 +69,8 @@ compatibility:
   # You can also remove the whole "os" block. Removing it will default to all
   # operating systems being supported.
 
-#  os:
-#  - linux
+  os:
+  - linux
 #  - windows
 #  - macos
 #  - freebsd
