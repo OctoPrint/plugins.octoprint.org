@@ -5,10 +5,44 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>https://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 18 Oct 2020 07:15:17 -0500</pubDate>
-    <lastBuildDate>Sun, 18 Oct 2020 07:15:17 -0500</lastBuildDate>
+    <pubDate>Sun, 18 Oct 2020 12:33:08 -0500</pubDate>
+    <lastBuildDate>Sun, 18 Oct 2020 12:33:08 -0500</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
+    
+      <item>
+        <title>Mattacloud Beta</title>
+        <description>
+          <![CDATA[
+            Making 3D printers intelligent. Remote 3D printer control and management from anywhere with advanced AI error detection and informative notifications.
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/mattacloud/mattacloud.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Sat, 17 Oct 2020 00:00:00 -0500
+</pubDate>
+        <link>https://plugins.octoprint.org/plugins/mattacloud/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/mattacloud/</guid>
+        
+        <category>remote monitoring</category>
+        
+        <category>cloud printing</category>
+        
+        <category>webcam</category>
+        
+        <category>print queue</category>
+        
+        <category>remote control</category>
+        
+        <category>ai</category>
+        
+        <category>machine learning</category>
+        
+        <category>error detection</category>
+        
+        <category>beta</category>
+        
+      </item>
     
       <item>
         <title>Octoprint-Smart-Filament-Sensor</title>
@@ -219,33 +253,6 @@ Sat, 19 Sep 2020 00:00:00 -0500
         <category>backup</category>
         
         <category>schedule</category>
-        
-      </item>
-    
-      <item>
-        <title>Creality 2x temperature reporting fix</title>
-        <description>
-          <![CDATA[
-            Fixes the temperature reporting from Creality printers shipped with the new mainboard (new Ender-3 Pro's, Ender-3 Pro v2, CR-6 SE &amp; possibly more)
-            <p><img src="https://plugins.octoprint.org/assets/img/repo-600x400.png"></p>
-            
-          ]]>
-        </description>
-        <pubDate>
-Mon, 07 Sep 2020 00:00:00 -0500
-</pubDate>
-        <link>https://plugins.octoprint.org/plugins/ender3v2tempfix/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/ender3v2tempfix/</guid>
-        
-        <category>creality</category>
-        
-        <category>ender-3 v2</category>
-        
-        <category>ender-3 pro</category>
-        
-        <category>double temperature</category>
-        
-        <category>temperature</category>
         
       </item>
     
