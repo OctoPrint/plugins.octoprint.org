@@ -23,7 +23,7 @@ tags:
 - Filament
 
 screenshots:
-- url: /assets/img/plugins/smartfilamentsensor/settings.png
+- url: /assets/img/plugins/smartfilamentsensor/settings.PNG
   alt: Screenshot of the plugin in settings
   caption: Smart Filament Sensor settings
 #- url: url of another screenshot, /assets/img/...
