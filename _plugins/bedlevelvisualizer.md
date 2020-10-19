@@ -77,6 +77,13 @@ into this
 
 ![screenshot](/assets/img/plugins/bedlevelvisualizer/settings_stored_mesh.png)
 
+## Known Issues
+- Install will fail silently in Python 3 due to missing system dependencies. You may have to SSH to your pi and run the command `sudo apt install libatlas3-base` to get the plugin to load.
+- System Command Editor and Custom Control Editor plugins have a known issue [here](https://github.com/jneilliii/OctoPrint-BedLevelVisualizer/issues/228) and [here](https://github.com/jneilliii/OctoPrint-BedLevelVisualizer/issues/244) where your customizations for those plugins get wiped when used in conjunction with Bed Level Visualizer and a few other plugins. To avoid this from happening to you disable Bed Level Visualizer and after restarting OctoPrint configure your customizations in those plugins and save. Immediately disable those plugins and re-enable Bed Level Visualizer restart OctoPrint and Reload. Your customizations to controls and the system menu will still remain and the bug that exists in those plugins will be prevented from clearing your customizations. I highly recommend you take regular backups as well.
+- Since version 0.1.3 there is a python dependency on numpy. As a result; if you don't already have numpy the install can take in excess of 30 minutes to complete on a pi. Just be patient and let it run and eventually the plugin install will finish.
+- If your device have less than 512MB of ram your numpy installation will most likely fail. See [#141](https://github.com/jneilliii/OctoPrint-BedLevelVisualizer/issues/141#issuecomment-542227338) for solution.
+- If you have Marlin's Auto Temperature Reporting Feature enabled you will want to have M155 S30 and M155 S3 surrounding your G29 command, see settings screenshot, otherwise the collected data will be tainted.
+
 ## Get Help
 
 If you experience issues with this plugin or need assistance please use the issue tracker at the plugin's Homepage linked on the right.
@@ -86,8 +93,8 @@ If you experience issues with this plugin or need assistance please use the issu
 Check out my other plugins [here](https://plugins.octoprint.org/by_author/#jneilliii)
 
 ### Support My Efforts
-I, jneilliii, programmed this plugin for fun and do my best effort to support those that have issues with it, please return the favor and leave me a tip if you find this plugin helpful.
+I, jneilliii, programmed this plugin for fun and do my best effort to support those that have issues with it, please return the favor and leave me a tip or become a Patron if you find this plugin helpful and want me to continue future development.
 
-[![paypal](/assets/img/plugins/bedlevelvisualizer/paypal-with-text.png)](https://paypal.me/jneilliii)
+[![Patreon](/assets/img/plugins/bedlevelvisualizer/patreon-with-text-new.png)](https://www.patreon.com/jneilliii) [![paypal](/assets/img/plugins/bedlevelvisualizer/paypal-with-text.png)](https://paypal.me/jneilliii)
 
 <small>No paypal.me? Send funds via PayPal to jneilliii&#64;gmail&#46;com</small>

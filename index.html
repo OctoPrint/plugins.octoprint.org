@@ -9,7 +9,7 @@ title: OctoPrint Plugin Repository
 </div>
 <ul>
   {% assign sorted_plugins = site.plugins | sort: 'date', 'last' | reverse %}
-  {% for plugin in sorted_plugins limit:10 %}
+  {% for plugin in sorted_plugins limit:20 %}
   <li>{% include plugin_snippet plugin=plugin %}</li>
   {% endfor %}
 </ul>

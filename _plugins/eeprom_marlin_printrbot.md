@@ -9,9 +9,9 @@ license: AGPLv3
 
 date: 2015-12-26
 
-homepage: https://github.com/ryanneufeld/OctoPrint-EEprom-Marlin
-source: https://github.com/ryanneufeld/OctoPrint-EEprom-Marlin
-archive: https://github.com/ryanneufeld/OctoPrint-EEprom-Marlin/archive/master.zip
+homepage: https://github.com/ryanneufeld/OctoPrint-EEPROM-Marlin-Printrbot
+source: https://github.com/ryanneufeld/OctoPrint-EEPROM-Marlin-Printrbot
+archive: https://github.com/ryanneufeld/OctoPrint-EEPROM-Marlin-Printrbot/archive/master.zip
 
 follow_dependency_links: false
 

@@ -20,6 +20,10 @@ tags:
 - eta
 - estimation
 - m73
+
+compatibility:
+  python: ">=2.7,<4"
+
 ---
 
 ## About

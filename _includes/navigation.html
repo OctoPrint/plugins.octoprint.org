@@ -24,7 +24,15 @@
               <li><a href="http://docs.octoprint.org/en/master/plugins/gettingstarted.html">The Plugin Tutorial</a></li>
             </ul>
           </li>
-          <li{% if page.url == '/blacklist/' %} class="active"{% endif %}><a href="{{ '/blacklist/' | prepend: site.base.url }}">Blacklist</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">Lists <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="{{ '/blacklist/' | prepend: site.baseurl }}">Blacklist</a></li>
+              <li><a href="{{ '/notices/' | prepend: site.baseurl }}">Notices</a></li>
+              <li><a href="{{ '/overlays/' | prepend: site.baseurl }}">Overlays</a></li>
+              <li><a href="{{ '/abandoned/' | prepend: site.baseurl }}">Abandoned plugins</a></li>
+            </ul>
+          </li>
         </ul>
       </div>
     </div>

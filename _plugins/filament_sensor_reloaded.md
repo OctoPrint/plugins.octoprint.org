@@ -4,13 +4,13 @@ layout: plugin
 id: filamentreload
 title: Filament Sensor Reloaded
 description: Use a filament sensor to pause printing when filament runs out.
-author: kontakt
+author: kontakt, ssorgatem
 license: AGPLv3
 date: 2017-01-06
 
-homepage: https://github.com/kontakt/Octoprint-Filament-Reloaded
-source: https://github.com/kontakt/Octoprint-Filament-Reloaded
-archive: https://github.com/kontakt/Octoprint-Filament-Reloaded/archive/master.zip
+homepage: https://github.com/ssorgatem/Octoprint-Filament-Reloaded
+source: https://github.com/ssorgatem/Octoprint-Filament-Reloaded
+archive: https://github.com/ssorgatem/Octoprint-Filament-Reloaded/archive/master.zip
 follow_dependency_links: false
 
 tags:

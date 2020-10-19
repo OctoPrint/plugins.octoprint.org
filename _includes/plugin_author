@@ -1,1 +1,5 @@
+{% if include.nolabel %}
+<a href="{{ '/by_author/' | prepend: site.baseurl }}#{{ include.author | slugify }}">{{ include.author }}</a>
+{% else %}
 <a class="label" href="{{ '/by_author/' | prepend: site.baseurl }}#{{ include.author | slugify }}">{{ include.author }}</a>
+{% endif %}

@@ -15,6 +15,8 @@ archive: https://github.com/sysadminsh/OctoPrint-M73ETAOverride/archive/master.z
 
 follow_dependency_links: false
 
+abandoned: https://github.com/OctoPrint/plugins.octoprint.org/issues/619
+
 tags:
 - progress
 - eta

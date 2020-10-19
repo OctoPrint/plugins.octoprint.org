@@ -1,0 +1,24 @@
+# Update check overlays, in case of maintainer change or a broken config etc. Format:
+#
+#   pluginID:
+#     user: new github user
+#     repo: new github repo
+#     pip: new pip URL
+#     ...
+#
+# Any keys from the software update config can be overwritten, changing the default values. config.yaml on the
+# instances out there still wins though, in case the user has a personal override configured.
+octoprint:
+  user: OctoPrint
+detailedprogress:
+  user: tpmullan
+filamentmanager:
+  user: OllisGit
+klipper:
+  user: AliceGrey
+costestimation:
+  user: OllisGit
+filamentreload:
+  user: ssorgatem
+eeprom_marlin:
+  user: cp2004

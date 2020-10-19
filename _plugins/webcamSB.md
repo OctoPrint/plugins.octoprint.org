@@ -41,7 +41,7 @@ featuredimage: /assets/img/plugins/webcamSB/featured.png
 # "compatibility" block if this is not the case.
 
 compatibility:
-
+  python: ">=2.7,<4"
   # List of compatible versions
   #
   # A single version number will be interpretated as a minimum version requirement,

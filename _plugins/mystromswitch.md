@@ -89,6 +89,8 @@ compatibility:
   - macos
   - freebsd
 
+  python: ">=2.7,<4"
+
 ---
 
 Plugin to integrate [myStrom Switch](https://mystrom.ch/de/wifi-switch/) into your OctoPrint installation

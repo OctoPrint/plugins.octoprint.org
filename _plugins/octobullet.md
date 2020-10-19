@@ -22,8 +22,7 @@ featuredimage: /assets/img/plugins/octobullet/example_push.png
 compatibility:
   octoprint:
   - 1.2.4
-  
-up_for_adoption: https://github.com/OctoPrint/OctoPrint-Pushbullet/issues/24
+  python: ">=2.7,<4"
   
 ---
 

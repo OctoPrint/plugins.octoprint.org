@@ -31,6 +31,9 @@ screenshots:
 
 featuredimage: /assets/img/plugins/PrinterAlerts/screenshot.png
 
+compatibility:
+  python: ">=2.7,<4"
+
 ---
 
 # PrinterAlerts

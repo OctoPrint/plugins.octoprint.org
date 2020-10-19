@@ -1,0 +1,31 @@
+---
+layout: page
+title: Abandoned plugins looking for a new maintainer
+---
+
+<p>
+    The following plugins have been reported as abandoned by their maintainer and are looking for someone to adopt them.
+    If you want to take over maintenance of one, please get in touch in the linked ticket!
+</p>
+
+<table class="table abandoned-table">
+    <thead>
+        <tr>
+            <th class="abandoned-plugin">Plugin</th>
+            <th class="abandoned-ticket">Abandonment ticket</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% assign plugins = site.plugins | where_exp: 'plugin', 'plugin.abandoned != nil' | sort: 'title' %}
+        {% for plugin in plugins %}
+        <tr>
+            <td class="abandoned-plugin">
+                <a href="{{ plugin.url }}">{{ plugin.title }}</a>
+            </td>
+            <td class="abandoned-ticket">
+                <a href="{{ plugin.abandoned }}">{{ plugin.abandoned }}</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>

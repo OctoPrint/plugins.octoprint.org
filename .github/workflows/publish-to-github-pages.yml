@@ -1,0 +1,149 @@
+name: Build, validate & publish page
+
+on:
+  schedule:
+    - cron: '0 */12 * * *'
+  push:
+    branches:
+      - gh-pages
+  pull_request:
+    branches:
+      - gh-pages
+  workflow_dispatch:
+
+jobs:
+  build-validate-and-publish:
+    name: Publish to Github Pages
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          path: src
+
+      - uses: actions/checkout@v2
+        with:
+          path: live
+          ref: master
+
+      - name: 🐍 Set up Python 3.7
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.7"
+
+      - name: 🐍 Install requirements
+        run: |
+          pip install -r ./src/.github/scripts/requirements.txt
+
+      - name: 📺 Refresh youtube thumbnails
+        run: |
+          cd src
+          chmod +x .github/scripts/fetch_yt_preview
+          .github/scripts/fetch_yt_preview
+
+      - name: 🕵️‍♂ Validate front matter
+        run: |
+          cd src
+          python .github/scripts/validate_front_matter.py --action-output
+
+      - name: 🏗 Enrich front matter
+        if: github.repository == 'OctoPrint/plugins.octoprint.org' && github.event_name != 'pull_request'
+        run: |
+          python ./src/.github/scripts/populate_additional_metadata.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.metadata_token }}
+
+      - name: 🏗 Enrich notices
+        if: github.repository == 'OctoPrint/plugins.octoprint.org' && github.event_name != 'pull_request'
+        run: |
+          python ./src/.github/scripts/populate_additional_notices.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.metadata_token }}
+
+      - name: 📦 Cache jekyll build bundle
+        uses: actions/cache@v2
+        with:
+          path: ./bundle
+          key: ${{ runner.os }}-jekyll-build-bundle
+
+      - name: 🔨 Build page
+        run: |
+          docker run \
+          -v ${{ github.workspace }}/src:/srv/jekyll \
+          -v ${{ github.workspace }}/bundle:/usr/local/bundle \
+          jekyll/builder:3.8.6 /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --trace --future --strict_front_matter"
+
+      - name: 🔄 Prepare live copy
+        run: |
+          rm -rf live/* || true
+          touch live/.nojekyll
+          cp -r src/_site/* live
+
+      - name: 🔎 Determine changed files
+        id: changed
+        run: |
+          cd live
+          git diff --name-only
+          changed=($(git diff --name-only))
+          json=`printf '%s\n' "${changed[@]}" | jq -R . | jq -c -s .`
+          echo "::set-output name=files::$json"
+
+      - name: 🕵️‍♂️ Validate plugins.json
+        if: contains( fromJSON( steps.changed.outputs.files ), 'plugins.json' )
+        run: |
+          docker run \
+          -v ${{ github.workspace }}/live:/json \
+          peterdavehello/jsonlint jsonlint -q /json/plugins.json
+
+      - name: 🕵️‍♂️ Validate notices.json
+        if: contains( fromJSON( steps.changed.outputs.files ), 'notices.json' )
+        run: |
+          docker run \
+          -v ${{ github.workspace }}/live:/json \
+          peterdavehello/jsonlint jsonlint -q /json/notices.json
+
+      - name: 🕵️‍♂️ Validate search.json
+        if: contains( fromJSON( steps.changed.outputs.files ), 'search.json' )
+        run: |
+          docker run \
+          -v ${{ github.workspace }}/live:/json \
+          peterdavehello/jsonlint jsonlint -q /json/search.json
+
+      #- name: 🕵️‍♂️ Run link check
+      #  run: |
+      #    docker run \
+      #    -v ${{ github.workspace }}/_site:/mounted-site \
+      #    mtlynch/htmlproofer /mounted-site --only-4xx --check-favicon --check-html --file-ignore '/\/mounted-site\/search\/index\.php/,/\/mounted-site\/by_(author|tag|date|name)\/index\.html/' --log-level ':debug'
+
+      #- name: 🕵️‍♂️ Run link check
+      #  id: lc
+      #  uses: peter-evans/link-checker@v1
+      #  with:
+      #    args: -v -r -d ./_site/ ./_site/
+      #- name: 🕵️‍♂️ Evaluate link check
+      #  run: exit ${{ steps.lc.outputs.exit_code }}
+
+      - name: 🚀 Commit & deploy
+        if: github.repository == 'OctoPrint/plugins.octoprint.org' && github.event_name != 'pull_request'
+        uses: EndBug/add-and-commit@v4
+        with:
+          cwd: "live"
+          ref: "master"
+          message: "deploy: ${{ github.sha }}"
+          author_name: 'github-actions[bot]'
+          author_email: 'github-actions[bot]@users.noreply.github.com'
+
+      - name: 📧 Discord success notification
+        if: github.repository == 'OctoPrint/plugins.octoprint.org' && github.event_name != 'pull_request'
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.discord_webhook }}
+        uses: Ilshidur/action-discord@master
+        with:
+          args: '☑️ Page build for plugins.octoprint.org was successful'
+   
+      - name: 📧 Discord failure notification
+        if: failure() && github.repository == 'OctoPrint/plugins.octoprint.org' && github.event_name != 'pull_request'
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.discord_webhook }}
+        uses: Ilshidur/action-discord@master
+        with:
+          args: '🚫 Page build for plugins.octoprint.org failed'
