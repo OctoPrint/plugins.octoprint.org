@@ -21,8 +21,6 @@ tags:
 - creality
 - temperature
 
-screenshots:
-
 featuredimage: 
 
 compatibility:
