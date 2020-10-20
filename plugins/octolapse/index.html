@@ -20,7 +20,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Le styles -->
-    <link rel="stylesheet" type="text/css" href="/assets/css/site-a2da94ab93bb95b04c71ba0f1644462bb08e20918c79962bbae1d1779670bf28.css" integrity="sha256-otqUq5O7lbBMcboPFkRGK7COIJGMeZYruuHRd5Zwvyg=" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/assets/css/site-157ef2ccfeb1452e3a516f5d70c1dea8e6d7fe25e5bfdca28524227a09aece03.css" integrity="sha256-FX7yzP6xRS46UW9dcMHeqObX/iXlv9yihSQiegmuzgM=" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap-responsive-c77a05ed6f7d09ff73e449cbc70b8bed232766c37371185af0d332e1d4a9cb3c.css" integrity="sha256-x3oF7W99Cf9z5EnLxwuL7SMnZsNzcRha8NMy4dSpyzw=" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="/assets/css/fontawesome-all.min-50c3c339da3ba3c3bf3060501d2862b4d0794e0fa4abaa5844b74a9d16f59697.css" integrity="sha256-UMPDOdo7o8O/MGBQHShitNB5Tg+kq6pYRLdKnRb1lpc=" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="/assets/css/prettify-30df8270395128e468d5c072b23ec9f8ef7265820f7e745251f9b703bc1962a9.css" integrity="sha256-MN+CcDlRKORo1cBysj7J+O9yZYIPfnRSUfm3A7wZYqk=" crossorigin="anonymous">
@@ -129,6 +129,8 @@
               <li><a href="/help/installation/">Installing Plugins</a></li>
               <li><a href="/help/registering/">Registering Plugins</a></li>
               <li><a href="http://docs.octoprint.org/en/master/plugins/gettingstarted.html">The Plugin Tutorial</a></li>
+              <li class="divider"></li>
+              <li><a href="/help/github_integration/">GitHub Integration on plugins.octoprint.org</a></li>
             </ul>
           </li>
           <li class="dropdown">
@@ -528,18 +530,18 @@
       
       <dl class="installations">
         <dt>Active instances the past month</dt>
-        <dd>Installed on at least <strong>16.69k</strong> instances</dd>
+        <dd>Installed on at least <strong>16.68k</strong> instances</dd>
       </dl>
       
       
       <dl class="install_events">
         <dt>New installs the past week</dt>
-        <dd>At least <strong>595</strong> new installations</dd>
+        <dd>At least <strong>600</strong> new installations</dd>
       </dl>
       
       
       <dl class="github">
-        <dt>Github stats</dt>
+        <dt>GitHub stats <a href="/help/github_integration/" class="fas fa-question-circle"></a> <span id="github_login">(<a href="javascript:void(0)">Login</a>)</span></dt>
         <dd>
           <ul>
             
@@ -549,7 +551,7 @@
             </li>
             <li>Releases: 28</li>
             
-            <li>Stars: <span id="star_count">349</span> <a href="javascript:void(0)" id="github_star">Login to star</a> <small id="github_logout"><a href="javascript:void(0)">(Logout)</a></small></li>
+            <li>Stars: <span id="github_star_count">349</span> <span id="github_star"><a href="javascript:void(0)"><i class="far fa-star"></i></a></span></li>
             <li>Issues: 106 open, 476 closed</li>
             <li>Last push: 07 Jun 2020</li>
           </ul>
@@ -646,8 +648,8 @@
       if (github_repo) {
         var status = "unknown";
 
-        var star = $("#github_star");
-        star.click(function() {
+        var starSpan = $("#github_star");
+        $("a", starSpan).click(function() {
           switch (status) {
             case "starred": {
               window.githubUnstar(github_repo)
@@ -655,7 +657,7 @@
                   markAsUnstarred();
                   updateStarcount();
                 })
-                .fail(markAsLogin);
+                .fail(markAsLoggedout);
               break;
             }
             case "unstarred": {
@@ -664,7 +666,7 @@
                   markAsStarred();
                   updateStarcount();
                 })
-                .fail(markAsLogin);
+                .fail(markAsLoggedout);
               break;
             }
             case "loggedout": {
@@ -673,28 +675,41 @@
               break;
             }
           }
-        })
-
-        var logout = $("#github_logout");
-        $("a", logout).click(function() {
-          window.githubLogout()
-            .done(determineStatus);
         });
-        logout.hide();
+        starSpan.hide();
 
-        var starCount = $("#star_count");
+        var login = $("#github_login");
+        $("a", login).click(function() {
+          switch (status) {
+            case "loggedout": {
+              window.githubLogin()
+                .done(determineStatus);
+              break;
+            }
+            case "starred":
+            case "unstarred": {
+              window.githubLogout()
+                .done(determineStatus);
+              break;
+            }
+          }
+        });
+
+        var starCount = $("#github_star_count");
 
         var markAsStarred = function() {
           status = "starred";
-          star.text("Unstar");
+          $("i.fa-star", starSpan).removeClass("far").addClass("fas");
+          $("a", login).text("Logout");
         }
         var markAsUnstarred = function() {
           status = "unstarred";
-          star.text("Star");
+          $("i.fa-star", starSpan).removeClass("fas").addClass("far");
+          $("a", login).text("Logout");
         };
-        var markAsLogin = function() {
+        var markAsLoggedout = function() {
           status = "loggedout";
-          star.text("Login to star");
+          $("a", login).text("Login");
         };
         var updateStarcount = function() {
           window.githubRepo(github_repo)
@@ -710,12 +725,12 @@
               } else {
                 markAsUnstarred();
               }
-              logout.show();
+              starSpan.show();
               updateStarcount();
             })
             .fail(function() {
-              markAsLogin();
-              logout.hide();
+              markAsLoggedout();
+              starSpan.hide();
             });
         }
 
