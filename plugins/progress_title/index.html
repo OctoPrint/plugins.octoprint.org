@@ -97,6 +97,7 @@
             window.location.replace(url);
         }
     </script>
+    <script type="text/javascript" src="/assets/js/github-73e1355d906c07655d447494d9c6d4191b84418e6687b816673b8090feb07b6d.js" integrity="sha256-c+E1XZBsB2VdRHSU2cbUGRuEQY5mh7gWZzuAkP6we20=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -262,7 +263,7 @@
             </li>
             <li>Releases: 2</li>
             
-            <li>Stars: 3</li>
+            <li>Stars: 3 <a href="javascript:void(0)" id="github_star">Login to star</a> <small id="github_logout"><a href="javascript:void(0)">(Logout)</a></small></li>
             <li>Issues: 1 open, 1 closed</li>
             <li>Last push: 29 Jul 2020</li>
           </ul>
@@ -352,6 +353,78 @@
   </div>
 </div>
 
+<script type="application/javascript">
+  $(function() {
+    var has_github = true;
+    if (has_github) {
+      var github_repo = "pwnbus/OctoPrint-Progress-Title";
+
+      if (github_repo) {
+        var status = "unknown";
+
+        var star = $("#github_star");
+        star.click(function() {
+          switch (status) {
+            case "starred": {
+              window.githubUnstar(github_repo)
+                .done(markAsUnstarred)
+                .fail(markAsLogin);
+              break;
+            }
+            case "unstarred": {
+              window.githubStar(github_repo)
+                .done(markAsStarred)
+                .fail(markAsLogin);
+              break;
+            }
+            case "loggedout": {
+              window.githubLogin()
+                .done(determineStatus);
+              break;
+            }
+          }
+        })
+
+        var logout = $("#github_logout");
+        $("a", logout).click(function() {
+          window.githubLogout()
+            .done(determineStatus);
+        });
+        logout.hide();
+
+        var markAsStarred = function() {
+          status = "starred";
+          star.text("Unstar");
+        }
+        var markAsUnstarred = function() {
+          status = "unstarred";
+          star.text("Star");
+        };
+        var markAsLogin = function() {
+          status = "loggedout";
+          star.text("Login to star");
+        }
+        var determineStatus = function() {
+          window.githubStatus(github_repo)
+          .done(function(starred) {
+            if (starred) {
+              markAsStarred();
+            } else {
+              markAsUnstarred();
+            }
+            logout.show();
+          })
+          .fail(function() {
+            markAsLogin();
+            logout.hide();
+          });
+        }
+
+        determineStatus();
+      }
+    }
+  });
+</script>
     </div>
 </div>
 
