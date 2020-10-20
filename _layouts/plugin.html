@@ -121,7 +121,7 @@ layout: default
       {% endif %}
       {% if page.github %}
       <dl class="github">
-        <dt>Github stats</dt>
+        <dt>GitHub stats <a href="/help/github_integration/" class="fas fa-question-circle"></a> <span id="github_login">(<a href="javascript:void(0)">Login</a>)</span></dt>
         <dd>
           <ul>
             {% if page.github.releases > 0 %}
@@ -131,7 +131,7 @@ layout: default
             </li>
             <li>Releases: {% include format_number number=page.github.releases %}</li>
             {% endif %}
-            <li>Stars: <span id="star_count">{% include format_number number=page.github.stars %}</span> <a href="javascript:void(0)" id="github_star">Login to star</a> <small id="github_logout"><a href="javascript:void(0)">(Logout)</a></small></li>
+            <li>Stars: <span id="github_star_count">{% include format_number number=page.github.stars %}</span> <span id="github_star"><a href="javascript:void(0)"><i class="far fa-star"></i></a></span></li>
             <li>Issues: {% include format_number number=page.github.open_issues %} open, {% include format_number number=page.github.closed_issues %} closed</li>
             <li>Last push: {{ page.github.last_push | date_to_string }}</li>
           </ul>
@@ -237,8 +237,8 @@ layout: default
       if (github_repo) {
         var status = "unknown";
 
-        var star = $("#github_star");
-        star.click(function() {
+        var starSpan = $("#github_star");
+        $("a", starSpan).click(function() {
           switch (status) {
             case "starred": {
               window.githubUnstar(github_repo)
@@ -246,7 +246,7 @@ layout: default
                   markAsUnstarred();
                   updateStarcount();
                 })
-                .fail(markAsLogin);
+                .fail(markAsLoggedout);
               break;
             }
             case "unstarred": {
@@ -255,7 +255,7 @@ layout: default
                   markAsStarred();
                   updateStarcount();
                 })
-                .fail(markAsLogin);
+                .fail(markAsLoggedout);
               break;
             }
             case "loggedout": {
@@ -264,28 +264,41 @@ layout: default
               break;
             }
           }
-        })
-
-        var logout = $("#github_logout");
-        $("a", logout).click(function() {
-          window.githubLogout()
-            .done(determineStatus);
         });
-        logout.hide();
+        starSpan.hide();
 
-        var starCount = $("#star_count");
+        var login = $("#github_login");
+        $("a", login).click(function() {
+          switch (status) {
+            case "loggedout": {
+              window.githubLogin()
+                .done(determineStatus);
+              break;
+            }
+            case "starred":
+            case "unstarred": {
+              window.githubLogout()
+                .done(determineStatus);
+              break;
+            }
+          }
+        });
+
+        var starCount = $("#github_star_count");
 
         var markAsStarred = function() {
           status = "starred";
-          star.text("Unstar");
+          $("i.fa-star", starSpan).removeClass("far").addClass("fas");
+          $("a", login).text("Logout");
         }
         var markAsUnstarred = function() {
           status = "unstarred";
-          star.text("Star");
+          $("i.fa-star", starSpan).removeClass("fas").addClass("far");
+          $("a", login).text("Logout");
         };
-        var markAsLogin = function() {
+        var markAsLoggedout = function() {
           status = "loggedout";
-          star.text("Login to star");
+          $("a", login).text("Login");
         };
         var updateStarcount = function() {
           window.githubRepo(github_repo)
@@ -301,12 +314,12 @@ layout: default
               } else {
                 markAsUnstarred();
               }
-              logout.show();
+              starSpan.show();
               updateStarcount();
             })
             .fail(function() {
-              markAsLogin();
-              logout.hide();
+              markAsLoggedout();
+              starSpan.hide();
             });
         }
 
