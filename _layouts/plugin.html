@@ -131,7 +131,7 @@ layout: default
             </li>
             <li>Releases: {% include format_number number=page.github.releases %}</li>
             {% endif %}
-            <li>Stars: {% include format_number number=page.github.stars %} <a href="javascript:void(0)" id="github_star">Login to star</a> <small id="github_logout"><a href="javascript:void(0)">(Logout)</a></small></li>
+            <li>Stars: <span id="star_count">{% include format_number number=page.github.stars %}</span> <a href="javascript:void(0)" id="github_star">Login to star</a> <small id="github_logout"><a href="javascript:void(0)">(Logout)</a></small></li>
             <li>Issues: {% include format_number number=page.github.open_issues %} open, {% include format_number number=page.github.closed_issues %} closed</li>
             <li>Last push: {{ page.github.last_push | date_to_string }}</li>
           </ul>
@@ -242,13 +242,19 @@ layout: default
           switch (status) {
             case "starred": {
               window.githubUnstar(github_repo)
-                .done(markAsUnstarred)
+                .done(function() {
+                  markAsUnstarred();
+                  updateStarcount();
+                })
                 .fail(markAsLogin);
               break;
             }
             case "unstarred": {
               window.githubStar(github_repo)
-                .done(markAsStarred)
+                .done(function() {
+                  markAsStarred();
+                  updateStarcount();
+                })
                 .fail(markAsLogin);
               break;
             }
@@ -267,6 +273,8 @@ layout: default
         });
         logout.hide();
 
+        var starCount = $("#star_count");
+
         var markAsStarred = function() {
           status = "starred";
           star.text("Unstar");
@@ -278,21 +286,28 @@ layout: default
         var markAsLogin = function() {
           status = "loggedout";
           star.text("Login to star");
+        };
+        var updateStarcount = function() {
+          window.githubRepo(github_repo)
+            .done(function(response) {
+              starCount.text(response.stargazers_count);
+            });
         }
         var determineStatus = function() {
           window.githubStatus(github_repo)
-          .done(function(starred) {
-            if (starred) {
-              markAsStarred();
-            } else {
-              markAsUnstarred();
-            }
-            logout.show();
-          })
-          .fail(function() {
-            markAsLogin();
-            logout.hide();
-          });
+            .done(function(starred) {
+              if (starred) {
+                markAsStarred();
+              } else {
+                markAsUnstarred();
+              }
+              logout.show();
+              updateStarcount();
+            })
+            .fail(function() {
+              markAsLogin();
+              logout.hide();
+            });
         }
 
         determineStatus();
