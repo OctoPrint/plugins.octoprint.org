@@ -86,3 +86,11 @@
     repository of the old maintainer. Please uninstall the old plugin from the plugin manager, then reinstall from the plugin
     repository to update it. The release notes of the version by the new maintainer can be found at the "Read more..." link below.
   link: https://github.com/cp2004/OctoPrint-EEPROM-Marlin/releases/tag/2.0.0
+- plugin: stats
+  pluginversions: ["<3.0.0"]
+  versions: ["1.0.0", "2.0.0", "2.0.2"]
+  date: 2020-10-19 12:00:00Z
+  text: Version 3.0.0 of this plugin is available from a new maintainer, but your version still looks for updates at the
+    repository of the old maintainer. Please uninstall the old plugin from the plugin manager, then reinstall from the plugin
+    repository to update it. The release notes of the version by the new maintainer can be found at the "Read more..." link below.
+  link: https://github.com/AlexVerrico/octoprint-stats/releases/tag/3.0.0
