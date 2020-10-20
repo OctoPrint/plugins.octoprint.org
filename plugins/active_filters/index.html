@@ -100,7 +100,7 @@ The save is done local, so if you access OctoPrint on multiple computers, the se
             window.location.replace(url);
         }
     </script>
-    <script type="text/javascript" src="/assets/js/github-73e1355d906c07655d447494d9c6d4191b84418e6687b816673b8090feb07b6d.js" integrity="sha256-c+E1XZBsB2VdRHSU2cbUGRuEQY5mh7gWZzuAkP6we20=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/assets/js/github-6fd845e96926baa29e9f6356e813328514604d09846660936f4caf54ab9a5804.js" integrity="sha256-b9hF6WkmuqKen2NW6BMyhRRgTQmEZmCTb0yvVKuaWAQ=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -238,13 +238,13 @@ The save is done local, so if you access OctoPrint on multiple computers, the se
       
       <dl class="installations">
         <dt>Active instances the past month</dt>
-        <dd>Installed on at least <strong>313</strong> instances</dd>
+        <dd>Installed on at least <strong>314</strong> instances</dd>
       </dl>
       
       
       <dl class="install_events">
         <dt>New installs the past week</dt>
-        <dd>At least <strong>8</strong> new installations</dd>
+        <dd>At least <strong>9</strong> new installations</dd>
       </dl>
       
       
@@ -259,7 +259,7 @@ The save is done local, so if you access OctoPrint on multiple computers, the se
             </li>
             <li>Releases: 1</li>
             
-            <li>Stars: 0 <a href="javascript:void(0)" id="github_star">Login to star</a> <small id="github_logout"><a href="javascript:void(0)">(Logout)</a></small></li>
+            <li>Stars: <span id="star_count">0</span> <a href="javascript:void(0)" id="github_star">Login to star</a> <small id="github_logout"><a href="javascript:void(0)">(Logout)</a></small></li>
             <li>Issues: 4 open, 0 closed</li>
             <li>Last push: 11 May 2017</li>
           </ul>
@@ -365,13 +365,19 @@ The save is done local, so if you access OctoPrint on multiple computers, the se
           switch (status) {
             case "starred": {
               window.githubUnstar(github_repo)
-                .done(markAsUnstarred)
+                .done(function() {
+                  markAsUnstarred();
+                  updateStarcount();
+                })
                 .fail(markAsLogin);
               break;
             }
             case "unstarred": {
               window.githubStar(github_repo)
-                .done(markAsStarred)
+                .done(function() {
+                  markAsStarred();
+                  updateStarcount();
+                })
                 .fail(markAsLogin);
               break;
             }
@@ -390,6 +396,8 @@ The save is done local, so if you access OctoPrint on multiple computers, the se
         });
         logout.hide();
 
+        var starCount = $("#star_count");
+
         var markAsStarred = function() {
           status = "starred";
           star.text("Unstar");
@@ -401,21 +409,28 @@ The save is done local, so if you access OctoPrint on multiple computers, the se
         var markAsLogin = function() {
           status = "loggedout";
           star.text("Login to star");
+        };
+        var updateStarcount = function() {
+          window.githubRepo(github_repo)
+            .done(function(response) {
+              starCount.text(response.stargazers_count);
+            });
         }
         var determineStatus = function() {
           window.githubStatus(github_repo)
-          .done(function(starred) {
-            if (starred) {
-              markAsStarred();
-            } else {
-              markAsUnstarred();
-            }
-            logout.show();
-          })
-          .fail(function() {
-            markAsLogin();
-            logout.hide();
-          });
+            .done(function(starred) {
+              if (starred) {
+                markAsStarred();
+              } else {
+                markAsUnstarred();
+              }
+              logout.show();
+              updateStarcount();
+            })
+            .fail(function() {
+              markAsLogin();
+              logout.hide();
+            });
         }
 
         determineStatus();

@@ -109,7 +109,7 @@ This plugin controlls Tuya-based SmartPlugs.
             window.location.replace(url);
         }
     </script>
-    <script type="text/javascript" src="/assets/js/github-73e1355d906c07655d447494d9c6d4191b84418e6687b816673b8090feb07b6d.js" integrity="sha256-c+E1XZBsB2VdRHSU2cbUGRuEQY5mh7gWZzuAkP6we20=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/assets/js/github-6fd845e96926baa29e9f6356e813328514604d09846660936f4caf54ab9a5804.js" integrity="sha256-b9hF6WkmuqKen2NW6BMyhRRgTQmEZmCTb0yvVKuaWAQ=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -353,7 +353,7 @@ in the <a href="https://github.com/clach04/python-tuya/wiki">python-tuya wiki</a
             </li>
             <li>Releases: 5</li>
             
-            <li>Stars: 9 <a href="javascript:void(0)" id="github_star">Login to star</a> <small id="github_logout"><a href="javascript:void(0)">(Logout)</a></small></li>
+            <li>Stars: <span id="star_count">9</span> <a href="javascript:void(0)" id="github_star">Login to star</a> <small id="github_logout"><a href="javascript:void(0)">(Logout)</a></small></li>
             <li>Issues: 5 open, 16 closed</li>
             <li>Last push: 13 Oct 2020</li>
           </ul>
@@ -459,13 +459,19 @@ in the <a href="https://github.com/clach04/python-tuya/wiki">python-tuya wiki</a
           switch (status) {
             case "starred": {
               window.githubUnstar(github_repo)
-                .done(markAsUnstarred)
+                .done(function() {
+                  markAsUnstarred();
+                  updateStarcount();
+                })
                 .fail(markAsLogin);
               break;
             }
             case "unstarred": {
               window.githubStar(github_repo)
-                .done(markAsStarred)
+                .done(function() {
+                  markAsStarred();
+                  updateStarcount();
+                })
                 .fail(markAsLogin);
               break;
             }
@@ -484,6 +490,8 @@ in the <a href="https://github.com/clach04/python-tuya/wiki">python-tuya wiki</a
         });
         logout.hide();
 
+        var starCount = $("#star_count");
+
         var markAsStarred = function() {
           status = "starred";
           star.text("Unstar");
@@ -495,21 +503,28 @@ in the <a href="https://github.com/clach04/python-tuya/wiki">python-tuya wiki</a
         var markAsLogin = function() {
           status = "loggedout";
           star.text("Login to star");
+        };
+        var updateStarcount = function() {
+          window.githubRepo(github_repo)
+            .done(function(response) {
+              starCount.text(response.stargazers_count);
+            });
         }
         var determineStatus = function() {
           window.githubStatus(github_repo)
-          .done(function(starred) {
-            if (starred) {
-              markAsStarred();
-            } else {
-              markAsUnstarred();
-            }
-            logout.show();
-          })
-          .fail(function() {
-            markAsLogin();
-            logout.hide();
-          });
+            .done(function(starred) {
+              if (starred) {
+                markAsStarred();
+              } else {
+                markAsUnstarred();
+              }
+              logout.show();
+              updateStarcount();
+            })
+            .fail(function() {
+              markAsLogin();
+              logout.hide();
+            });
         }
 
         determineStatus();

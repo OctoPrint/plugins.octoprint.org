@@ -10,6 +10,7 @@ $(function () {
         withCredentials: true,
       },
       crossDomain: true,
+      cache: false,
     }).fail(function (xhr, status, error) {
       if (xhr.status === 401) {
         window.githubLogin();
@@ -25,10 +26,23 @@ $(function () {
         withCredentials: true,
       },
       crossDomain: true,
+      cache: false,
     }).fail(function (xhr, status, error) {
       if (xhr.status === 401) {
         window.githubLogin();
       }
+    });
+  };
+  window.githubRepo = function (repo) {
+    var url = GITHUB_PROXY_BASE + "/repos/" + repo;
+    return $.ajax({
+      url: url,
+      method: "GET",
+      xhrFields: {
+        withCredentials: true,
+      },
+      crossDomain: true,
+      cache: false,
     });
   };
   window.githubStatus = function (repo) {
@@ -41,6 +55,7 @@ $(function () {
         withCredentials: true,
       },
       crossDomain: true,
+      cache: false,
     })
       .done(function (response) {
         // logged in and starred
@@ -65,6 +80,7 @@ $(function () {
         withCredentials: true,
       },
       crossDomain: true,
+      cache: false,
     });
   };
   window.githubLogin = function () {
@@ -101,6 +117,7 @@ $(function () {
         withCredentials: true,
       },
       crossDomain: true,
+      cache: false,
     });
   };
 });

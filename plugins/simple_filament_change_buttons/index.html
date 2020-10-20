@@ -100,7 +100,7 @@
             window.location.replace(url);
         }
     </script>
-    <script type="text/javascript" src="/assets/js/github-73e1355d906c07655d447494d9c6d4191b84418e6687b816673b8090feb07b6d.js" integrity="sha256-c+E1XZBsB2VdRHSU2cbUGRuEQY5mh7gWZzuAkP6we20=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/assets/js/github-6fd845e96926baa29e9f6356e813328514604d09846660936f4caf54ab9a5804.js" integrity="sha256-b9hF6WkmuqKen2NW6BMyhRRgTQmEZmCTb0yvVKuaWAQ=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -268,13 +268,13 @@
       
       <dl class="installations">
         <dt>Active instances the past month</dt>
-        <dd>Installed on at least <strong>840</strong> instances</dd>
+        <dd>Installed on at least <strong>841</strong> instances</dd>
       </dl>
       
       
       <dl class="install_events">
         <dt>New installs the past week</dt>
-        <dd>At least <strong>51</strong> new installations</dd>
+        <dd>At least <strong>52</strong> new installations</dd>
       </dl>
       
       
@@ -289,7 +289,7 @@
             </li>
             <li>Releases: 1</li>
             
-            <li>Stars: 0 <a href="javascript:void(0)" id="github_star">Login to star</a> <small id="github_logout"><a href="javascript:void(0)">(Logout)</a></small></li>
+            <li>Stars: <span id="star_count">0</span> <a href="javascript:void(0)" id="github_star">Login to star</a> <small id="github_logout"><a href="javascript:void(0)">(Logout)</a></small></li>
             <li>Issues: 1 open, 0 closed</li>
             <li>Last push: 15 Jun 2020</li>
           </ul>
@@ -391,13 +391,19 @@
           switch (status) {
             case "starred": {
               window.githubUnstar(github_repo)
-                .done(markAsUnstarred)
+                .done(function() {
+                  markAsUnstarred();
+                  updateStarcount();
+                })
                 .fail(markAsLogin);
               break;
             }
             case "unstarred": {
               window.githubStar(github_repo)
-                .done(markAsStarred)
+                .done(function() {
+                  markAsStarred();
+                  updateStarcount();
+                })
                 .fail(markAsLogin);
               break;
             }
@@ -416,6 +422,8 @@
         });
         logout.hide();
 
+        var starCount = $("#star_count");
+
         var markAsStarred = function() {
           status = "starred";
           star.text("Unstar");
@@ -427,21 +435,28 @@
         var markAsLogin = function() {
           status = "loggedout";
           star.text("Login to star");
+        };
+        var updateStarcount = function() {
+          window.githubRepo(github_repo)
+            .done(function(response) {
+              starCount.text(response.stargazers_count);
+            });
         }
         var determineStatus = function() {
           window.githubStatus(github_repo)
-          .done(function(starred) {
-            if (starred) {
-              markAsStarred();
-            } else {
-              markAsUnstarred();
-            }
-            logout.show();
-          })
-          .fail(function() {
-            markAsLogin();
-            logout.hide();
-          });
+            .done(function(starred) {
+              if (starred) {
+                markAsStarred();
+              } else {
+                markAsUnstarred();
+              }
+              logout.show();
+              updateStarcount();
+            })
+            .fail(function() {
+              markAsLogin();
+              logout.hide();
+            });
         }
 
         determineStatus();
