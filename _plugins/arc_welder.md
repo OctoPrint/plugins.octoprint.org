@@ -8,7 +8,7 @@ author: Brad Hochgesang
 license: AGPL-3.0
 
 # today's date in format YYYY-MM-DD, e.g.
-date: 2020-10-25
+date: 2020-10-24
 
 homepage: https://github.com/FormerLurker/ArcWelderPlugin
 source: https://github.com/FormerLurker/ArcWelderPlugin
@@ -36,7 +36,7 @@ tags:
 #  caption: caption of another screenshot
 #- ...
 
-featuredimage: /assets/img/tab_full.jpg
+featuredimage: /assets/img/plugins/arc_welder/tab_full.jpg
 
 # You only need the following if your plugin requires specific OctoPrint versions or
 # specific operating systems to function - you can safely remove the whole
