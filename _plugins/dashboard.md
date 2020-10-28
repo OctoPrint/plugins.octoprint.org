@@ -4,7 +4,10 @@ layout: plugin
 id: dashboard
 title: OctoPrint-Dashboard
 description: A dashboard tab for Octoprint
-author: Stefan Cohen, j7126, Willmac16
+authors:
+- Stefan Cohen
+- j7126
+- Willmac16
 license: AGPLv3
 
 date: 2019-09-10

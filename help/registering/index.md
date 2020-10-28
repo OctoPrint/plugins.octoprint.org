@@ -77,7 +77,12 @@ If all is in the green, follow these steps:
     id: your plugin's identifier
     title: your plugin's name
     description: short description of your plugin
+    # If your pluign has one author 
     author: your name
+    # If your pluign has multiple authors
+    #authors:
+    #- first author name
+    #- second autor name
     license: your plugin's license
 
     # today's date in format YYYY-MM-DD, e.g.
