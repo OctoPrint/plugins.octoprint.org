@@ -80,6 +80,7 @@ If all is in the green, follow these steps:
     # If your pluign has one author 
     author: your name
     # If your pluign has multiple authors
+    # NOTE: with multiple authors, author is still required in addition to authors
     #authors:
     #- first author name
     #- second autor name
