@@ -8,7 +8,7 @@ author: Louis Sarwal, formerly Paul Goddard
 license: AGPLv3
 
 # today's date in format YYYY-MM-DD, e.g.
-date: 2020-10-31
+date: 2020-04-24
 
 homepage: https://github.com/Zinc-OS/continuousprint
 source: https://github.com/Zinc-OS/continuousprint
