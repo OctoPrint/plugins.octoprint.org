@@ -4,11 +4,11 @@ layout: plugin
 id: continuousprint
 title: Continuous Print
 description: Allows the queueing and automatic print and clearing of the queue
-author: Paul GOddard
+author: Louis Sarwal, formerly Paul Goddard
 license: AGPLv3
 
 # today's date in format YYYY-MM-DD, e.g.
-date: 2020-04-24
+date: 2020-10-31
 
 homepage: https://github.com/Zinc-OS/continuousprint
 source: https://github.com/Zinc-OS/continuousprint
@@ -31,7 +31,8 @@ compatibility:
 
 # Continuous Print
 
-Simple plugin to allow queuing of code files which when started will automatically print, run bed clearing commands and then print again until the end of the queue. Depndeing on your printer, and the material you are printing with, you may want to change the bed clearing commands.
+Simple plugin to allow queuing of code files which when started will automatically print, run bed clearing commands and then print again until the end of the queue. 
+Dependeing on your printer, and the material you are printing with, you may need to change the bed clearing commands.
 
 ## Screenshot
 
