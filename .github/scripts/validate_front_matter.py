@@ -68,7 +68,7 @@ SCHEMA = Schema(
         Required("id"): NonEmptyString,
         Required("title"): NonEmptyString,
         Required("description"): NonEmptyString,
-        Required("author"): NonEmptyString,
+        Optional("author"): NonEmptyString,
         Optional("authors"): list,
         Required("license"): NonEmptyString,
         Required("date"): datetime.date,
@@ -91,6 +91,27 @@ SCHEMA = Schema(
 def validate_schema(data):
     SCHEMA(data)
     return []
+
+
+def validate_author(data):
+    warnings = []
+
+    if "author" not in data and "authors" not in data:
+        raise Invalid("need either author or authors to be defined")
+    elif "author" in data and "authors" in data:
+        message = (
+            "data['author'] and data['authors'] are both defined, "
+            "data['author'] should be removed"
+        )
+        warnings.append(message)
+    elif "author" in data and ("," in data["author"] or "&" in data["author"]):
+        message = (
+            "data['author'] appears to contain multiple entries, "
+            "move to data['authors']"
+        )
+        warnings.append(message)
+
+    return warnings
 
 
 def validate_image_paths(data, src):
@@ -202,6 +223,7 @@ def validate(
     warnings = []
 
     warnings += validate_schema(metadata)
+    warnings += validate_author(metadata)
     warnings += validate_image_paths(metadata, src)
 
     if id_match:

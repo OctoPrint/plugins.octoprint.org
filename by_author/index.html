@@ -30,11 +30,9 @@ title: Plugins by Author
   <ul>
   {% for plugin in site.plugins %}
     {% if plugin.authors %}
-      {% for a in plugin.authors %}
-        {% if author == a  %}
+      {% if plugin.authors contains author %}
           <li>{% include plugin_snippet plugin=plugin %}</li>
-        {% endif %}
-      {% endfor %}
+      {% endif %}
     {% else %}
       {% if author == plugin.author  %}
         <li>{% include plugin_snippet plugin=plugin %}</li>
