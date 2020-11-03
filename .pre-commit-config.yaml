@@ -8,6 +8,7 @@ repos:
       - id: check-case-conflict
       - id: check-merge-conflict
       - id: fix-encoding-pragma
+        args: ["--remove"]
   - repo: https://github.com/OctoPrint/codemods
     rev: devel
     hooks:
