@@ -2174,7 +2174,7 @@
 "title": "Continuous Print",
 "description": "Allows the queueing and automatic print and clearing of the queue",
 "author": "Louis Sarwal, formerly Paul Goddard",
-"content": "Continuous PrintSimple plugin to allow queuing of code files which when started will automatically print, run bed clearing commands and then print again until the end of the queue. Dependeing on your printer, and the material you are printing with, you may need to change the bed clearing commands.Screenshot",
+"content": "Continuous PrintThis is a simple plugin that, as its name suggests, allows continuous print. The gcode files are first loaded into a queue. Once this queue is started, the queue will automatically print from top to bottom. Between prints, it will run bed clearing commands so your prints won’t get messed up. Dependeing on your printer, and the material you are printing with, you may need to change the bed clearing commands.Screenshot",
 "tags": ["continuous print","queueing"]
 },
 
