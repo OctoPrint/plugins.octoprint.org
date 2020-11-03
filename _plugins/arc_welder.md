@@ -246,4 +246,3 @@ G2/G3 support is not perfect at the moment, but I suspect things will start to i
 ## License
 
 View the [*Arc Welder* license](https://raw.githubusercontent.com/FormerLurker/ArcWelderPlugin/master/LICENSE).
-
