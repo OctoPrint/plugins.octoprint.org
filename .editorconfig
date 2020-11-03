@@ -16,3 +16,6 @@ indent_size = 4
 
 [**.yaml]
 indent_size = 2
+
+[_includes/**]
+insert_final_newline = false
