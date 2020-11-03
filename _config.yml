@@ -41,6 +41,10 @@ exclude:
 - .github
 - .asset-cache
 - _build
+- .editorconfig
+- .git-blame-ignore-revs
+- .pre-commit-config.yaml
+- black.toml
 
 plugins:
 - jekyll-redirect-from
