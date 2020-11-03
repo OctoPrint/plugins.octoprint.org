@@ -34,7 +34,7 @@ screenshots:
 - url: /assets/img/plugins/cooldownfan/fan.jpg
   alt: Sample cool down fan
   caption: Sample cool down fan
-  
+
 
 
 
@@ -45,7 +45,7 @@ compatibility:
 
   octoprint:
   - 1.3.0
- 
+
   os:
   - linux
 ---

@@ -56,5 +56,5 @@ It is currently capable of:
 * Connecting and Disconnecting to the printer.
 
 
-**Important**: There are no permissions or controls as to who can send commands to the bot. 
+**Important**: There are no permissions or controls as to who can send commands to the bot.
 This **MUST** be done by the owner of the Discord channel.

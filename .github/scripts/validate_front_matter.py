@@ -1,266 +1,331 @@
 # -*- coding: utf-8 -*-
 from __future__ import absolute_import, division, print_function, unicode_literals
 
-import frontmatter
-import colorama
-import datetime
-import pkg_resources
-import click
-import subprocess
-
-from voluptuous import Schema, Invalid, Required, Optional, Any, All, Length, Range, Url
-
-import os
 import codecs
+import datetime
+import os
+import subprocess
 import sys
+
+import click
+import colorama
+import frontmatter
+import pkg_resources
+from voluptuous import All, Invalid, Length, Optional, Required, Schema, Url
 
 NonEmptyString = All(str, Length(min=1))
 
-def Version(v):
-	if not isinstance(v, str):
-		raise Invalid("version {!r} is not a string".format(v))
 
-	try:
-		compat = v
-		if not any(compat.startswith(c) for c in ("<", "<=", "!=", "==", ">=", ">", "~=", "===")):
-			compat = ">={}".format(compat)
-		pkg_resources.Requirement.parse("Foo" + compat)
-	except:
-		raise Invalid("version {} is not a valid PEP440 version specifier".format(v))
+def Version(v):
+    if not isinstance(v, str):
+        raise Invalid("version {!r} is not a string".format(v))
+
+    try:
+        compat = v
+        if not any(
+            compat.startswith(c) for c in ("<", "<=", "!=", "==", ">=", ">", "~=", "===")
+        ):
+            compat = ">={}".format(compat)
+        pkg_resources.Requirement.parse("Foo" + compat)
+    except Exception:
+        raise Invalid("version {} is not a valid PEP440 version specifier".format(v))
+
 
 def ImageLocation(v):
-	if not isinstance(v, str):
-		raise Invalid("image location {!r} is not a string".format(v))
-	if len(v) == 0:
-		raise Invalid("image location must be a non empty string")
+    if not isinstance(v, str):
+        raise Invalid("image location {!r} is not a string".format(v))
+    if len(v) == 0:
+        raise Invalid("image location must be a non empty string")
 
-	if not v.startswith("/assets/img/plugins/"):
-		try:
-			Url()(v)
-		except Invalid:
-			raise Invalid("image location '{}' must either be an URL or a path starting with '/assets/img/plugins/'".format(v))
+    if not v.startswith("/assets/img/plugins/"):
+        try:
+            Url()(v)
+        except Invalid:
+            raise Invalid(
+                "image location '{}' must either be an URL or a path starting with '/assets/img/plugins/'".format(
+                    v
+                )
+            )
 
-ScreenshotDef = Schema({
-	Required("url"): ImageLocation,
-	Optional("alt"): NonEmptyString,
-	Optional("caption"): NonEmptyString
-})
 
-Compatibility = Schema({
-	Optional("octoprint"): [Version],
-	Optional("os"): ["windows", "linux", "macos", "freebsd", "posix", "nix"],
-	Optional("python"): Version
-})
+ScreenshotDef = Schema(
+    {
+        Required("url"): ImageLocation,
+        Optional("alt"): NonEmptyString,
+        Optional("caption"): NonEmptyString,
+    }
+)
 
-SCHEMA = Schema({
-	Required("layout"): "plugin",
-	Required("id"): NonEmptyString,
-	Required("title"): NonEmptyString,
-	Required("description"): NonEmptyString,
-	Required("author"): NonEmptyString,
-	Required("license"): NonEmptyString,
+Compatibility = Schema(
+    {
+        Optional("octoprint"): [Version],
+        Optional("os"): ["windows", "linux", "macos", "freebsd", "posix", "nix"],
+        Optional("python"): Version,
+    }
+)
 
-	Required("date"): datetime.date,
+SCHEMA = Schema(
+    {
+        Required("layout"): "plugin",
+        Required("id"): NonEmptyString,
+        Required("title"): NonEmptyString,
+        Required("description"): NonEmptyString,
+        Required("author"): NonEmptyString,
+        Required("license"): NonEmptyString,
+        Required("date"): datetime.date,
+        Required("homepage"): Url(),
+        Required("source"): Url(),
+        Required("archive"): Url(),
+        Optional("follow_dependency_links"): bool,
+        Optional("tags"): list,
+        Optional("screenshots"): All([ScreenshotDef]),
+        Optional("featuredimage"): ImageLocation,
+        Optional("compatibility"): Compatibility,
+        Optional("disabled"): NonEmptyString,
+        Optional("abandoned"): NonEmptyString,
+        Optional("up_for_adoption"): Url(),
+        Optional("redirect_from"): NonEmptyString,
+    }
+)
 
-	Required("homepage"): Url(),
-	Required("source"): Url(),
-	Required("archive"): Url(),
-
-	Optional("follow_dependency_links"): bool,
-
-	Optional("tags"): list,
-	Optional("screenshots"): All([ScreenshotDef]),
-	Optional("featuredimage"): ImageLocation,
-	Optional("compatibility"): Compatibility,
-
-	Optional("disabled"): NonEmptyString,
-	Optional("abandoned"): NonEmptyString,
-	Optional("up_for_adoption"): Url(),
-	Optional("redirect_from"): NonEmptyString
-})
 
 def validate_schema(data):
-	SCHEMA(data)
-	return []
+    SCHEMA(data)
+    return []
+
 
 def validate_image_paths(data, src):
-	def check_url(url):
-		try:
-			Url(url)
-		except Invalid:
-			# image url is a path
-			image_path = os.path.abspath(os.path.join(src, v[1:]))
-			if not os.path.exists(image_path):
-				raise Invalid("image location '{}' doesn't exist on disk ({})".format(v, image_path))
+    def check_url(url):
+        try:
+            Url(url)
+        except Invalid:
+            # image url is a path
+            image_path = os.path.abspath(os.path.join(src, url[1:]))
+            if not os.path.exists(image_path):
+                raise Invalid(
+                    "image location '{}' doesn't exist on disk ({})".format(
+                        url, image_path
+                    )
+                )
 
-	if "screenshots" in data:
-		for entry in data["screenshots"]:
-			check_url(entry["url"])
+    if "screenshots" in data:
+        for entry in data["screenshots"]:
+            check_url(entry["url"])
 
-	if "featuredimage" in data:
-		check_url(data["featuredimage"])
+    if "featuredimage" in data:
+        check_url(data["featuredimage"])
 
-	return []
+    return []
+
 
 def validate_image_urls(data, path):
-	warnings = []
+    warnings = []
 
-	filename = os.path.basename(path)[:-3]
-	def check_url(loc, url):
-		if not url.startswith("/assets/img/plugins/"):
-			message = "image '{}' is hosted externally, should be moved to /assets/img/plugins/{} @ {}".format(url, filename, loc)
-			warnings.append(message)
+    filename = os.path.basename(path)[:-3]
 
-	if "screenshots" in data:
-		count = 0
-		for entry in data["screenshots"]:
-			check_url("data['screenshots'][{}]['url']".format(count), entry["url"])
-			count += 1
+    def check_url(loc, url):
+        if not url.startswith("/assets/img/plugins/"):
+            message = "image '{}' is hosted externally, should be moved to /assets/img/plugins/{} @ {}".format(
+                url, filename, loc
+            )
+            warnings.append(message)
 
-	if "featuredimage" in data:
-		check_url("data['featuredimage']", data["featuredimage"])
+    if "screenshots" in data:
+        count = 0
+        for entry in data["screenshots"]:
+            check_url("data['screenshots'][{}]['url']".format(count), entry["url"])
+            count += 1
 
-	return warnings
+    if "featuredimage" in data:
+        check_url("data['featuredimage']", data["featuredimage"])
+
+    return warnings
+
 
 def validate_screenshots_present(data):
-	warnings = []
-	if "featuredimage" in data and (not "screenshots" in data or len(data["screenshots"]) == 0):
-		warnings.append("featured image defined but no screenshots included @ data['featuredimage']")
-	return warnings
+    warnings = []
+    if "featuredimage" in data and (
+        "screenshots" not in data or len(data["screenshots"]) == 0
+    ):
+        warnings.append(
+            "featured image defined but no screenshots included @ data['featuredimage']"
+        )
+    return warnings
+
 
 def validate_id_match(data, path):
-	filename = os.path.basename(path)[:-3]
-	if data["id"] != filename:
-		return ["id '{}' does not match file name '{}.md' @ data['id']".format(data["id"], filename)]
-	return []
+    filename = os.path.basename(path)[:-3]
+    if data["id"] != filename:
+        return [
+            "id '{}' does not match file name '{}.md' @ data['id']".format(
+                data["id"], filename
+            )
+        ]
+    return []
+
 
 def validate_date_unchanged(data, path, src, sha, debug=False):
-	gitpath = path[len(src) + 1:]
-	if sys.platform == "win32":
-		gitpath = gitpath.replace("\\", "/")
+    gitpath = path[len(src) + 1 :]
+    if sys.platform == "win32":
+        gitpath = gitpath.replace("\\", "/")
 
-	command = ["git", "show", "{}:{}".format(sha, gitpath)]
-	if debug:
-		print("Running {}".format(" ".join(command)))
-	try:
-		output = subprocess.check_output(command, encoding="utf-8")
-		if not output:
-			raise ValueError("could not read prior version")
-	except subprocess.CalledProcessError:
-		return
+    command = ["git", "show", "{}:{}".format(sha, gitpath)]
+    if debug:
+        print("Running {}".format(" ".join(command)))
+    try:
+        output = subprocess.check_output(command, encoding="utf-8")
+        if not output:
+            raise ValueError("could not read prior version")
+    except subprocess.CalledProcessError:
+        return
 
-	old_metadata, old_content = frontmatter.parse(output)
-	if data["date"] != old_metadata.get("date"):
-		raise ValueError("date must not be changed after initial registration @ data['date']")
+    old_metadata, old_content = frontmatter.parse(output)
+    if data["date"] != old_metadata.get("date"):
+        raise ValueError(
+            "date must not be changed after initial registration @ data['date']"
+        )
 
-	return []
+    return []
 
-def validate(src, path, id_match=False, internal_assets=False, date_unchanged=False,
-             screenshots_present=False, debug=False):
-	with codecs.open(path, mode="r", encoding="utf-8") as f:
-		metadata, content = frontmatter.parse(f.read())
 
-	warnings = []
+def validate(
+    src,
+    path,
+    id_match=False,
+    internal_assets=False,
+    date_unchanged=False,
+    screenshots_present=False,
+    debug=False,
+):
+    with codecs.open(path, mode="r", encoding="utf-8") as f:
+        metadata, content = frontmatter.parse(f.read())
 
-	warnings += validate_schema(metadata)
-	warnings += validate_image_paths(metadata, src)
+    warnings = []
 
-	if id_match:
-		warnings += validate_id_match(metadata, path)
+    warnings += validate_schema(metadata)
+    warnings += validate_image_paths(metadata, src)
 
-	if internal_assets:
-		warnings += validate_image_urls(metadata, path)
+    if id_match:
+        warnings += validate_id_match(metadata, path)
 
-	if screenshots_present:
-		warnings += validate_screenshots_present(metadata)
+    if internal_assets:
+        warnings += validate_image_urls(metadata, path)
 
-	if date_unchanged:
-		if path.startswith(src):
-			warnings += validate_date_unchanged(metadata, path, src, date_unchanged, debug=debug)
-		else:
-			print("Can't check for unchanged date, {} is not in {}".format(path, src))
+    if screenshots_present:
+        warnings += validate_screenshots_present(metadata)
 
-	return warnings
+    if date_unchanged:
+        if path.startswith(src):
+            warnings += validate_date_unchanged(
+                metadata, path, src, date_unchanged, debug=debug
+            )
+        else:
+            print("Can't check for unchanged date, {} is not in {}".format(path, src))
+
+    return warnings
+
 
 @click.command()
 @click.option("--debug", is_flag=True)
 @click.option("--src", "src")
 @click.option("--check-id-match", "id_match", is_flag=True)
 @click.option("--check-internal-assets", "internal_assets", is_flag=True)
-@click.option("--check-date-unchanged", "date_unchanged", help="Provide git committish with which to compare")
+@click.option(
+    "--check-date-unchanged",
+    "date_unchanged",
+    help="Provide git committish with which to compare",
+)
 @click.option("--check-screenshots-present", "screenshots_present", is_flag=True)
 @click.option("--action-output", "action_output", is_flag=True)
 @click.argument("paths", nargs=-1)
-def main(paths, debug=False, src=None, id_match=False, internal_assets=False, date_unchanged=None,
-         screenshots_present=False, action_output=False):
-	count = 0
-	fails = 0
-	warns = 0
+def main(
+    paths,
+    debug=False,
+    src=None,
+    id_match=False,
+    internal_assets=False,
+    date_unchanged=None,
+    screenshots_present=False,
+    action_output=False,
+):
+    count = 0
+    fails = 0
+    warns = 0
 
-	if src is None:
-		src = os.getcwd()
-	
-	src = os.path.abspath(src)
-	plugin_dir = os.path.join(src, "_plugins")
+    if src is None:
+        src = os.getcwd()
 
-	if not len(paths):
-		paths = []
-		with os.scandir(plugin_dir) as it:
-			for entry in it:
-				if not entry.is_file() or not entry.name.endswith(".md"):
-					continue
-				paths.append(entry.path)
+    src = os.path.abspath(src)
+    plugin_dir = os.path.join(src, "_plugins")
 
-	for path in paths:
-		path = os.path.abspath(path)
+    if not len(paths):
+        paths = []
+        with os.scandir(plugin_dir) as it:
+            for entry in it:
+                if not entry.is_file() or not entry.name.endswith(".md"):
+                    continue
+                paths.append(entry.path)
 
-		try:
-			warnings = validate(src, path,
-			                    id_match=id_match,
-			                    internal_assets=internal_assets,
-			                    date_unchanged=date_unchanged,
-			                    screenshots_present=screenshots_present,
-			                    debug=debug)
-		except Exception as exc:
-			print("{}: ".format(path), end="")
-			print(colorama.Fore.RED + colorama.Style.BRIGHT + "FAIL")
+    for path in paths:
+        path = os.path.abspath(path)
 
-			if action_output:
-				print("::error file={}::{}".format(path[len(src) + 1:], str(exc)))
-			else:
-				print("  " + str(exc))
+        try:
+            warnings = validate(
+                src,
+                path,
+                id_match=id_match,
+                internal_assets=internal_assets,
+                date_unchanged=date_unchanged,
+                screenshots_present=screenshots_present,
+                debug=debug,
+            )
+        except Exception as exc:
+            print("{}: ".format(path), end="")
+            print(colorama.Fore.RED + colorama.Style.BRIGHT + "FAIL")
 
-			fails += 1
-		else:
-			if debug or len(warnings):
-				print("{}: ".format(path), end="")
-				if len(warnings):
-					print(colorama.Fore.YELLOW + colorama.Style.BRIGHT + "WARN")
+            if action_output:
+                print("::error file={}::{}".format(path[len(src) + 1 :], str(exc)))
+            else:
+                print("  " + str(exc))
 
-					for warning in warnings:
-						if action_output:
-							print("::warning file={}::{}".format(path[len(src) + 1:], warning))
-						else:
-							print("  " + warning)
+            fails += 1
+        else:
+            if debug or len(warnings):
+                print("{}: ".format(path), end="")
+                if len(warnings):
+                    print(colorama.Fore.YELLOW + colorama.Style.BRIGHT + "WARN")
 
-					warns += 1
-				else:
-					print(colorama.Fore.GREEN + colorama.Style.BRIGHT + "PASS")
+                    for warning in warnings:
+                        if action_output:
+                            print(
+                                "::warning file={}::{}".format(
+                                    path[len(src) + 1 :], warning
+                                )
+                            )
+                        else:
+                            print("  " + warning)
 
+                    warns += 1
+                else:
+                    print(colorama.Fore.GREEN + colorama.Style.BRIGHT + "PASS")
 
-		count += 1
+        count += 1
 
-	print("Validated {} files, {} passes ({} with warnings), {} fails".format(count, count - fails, warns, fails))
-	if action_output:
-		print("::set-output name=files::{}".format(count))
-		print("::set-output name=passes::{}".format(count - fails))
-		print("::set-output name=fails::{}".format(fails))
-		print("::set-output name=warns::{}".format(warns))
+    print(
+        "Validated {} files, {} passes ({} with warnings), {} fails".format(
+            count, count - fails, warns, fails
+        )
+    )
+    if action_output:
+        print("::set-output name=files::{}".format(count))
+        print("::set-output name=passes::{}".format(count - fails))
+        print("::set-output name=fails::{}".format(fails))
+        print("::set-output name=warns::{}".format(warns))
 
-	if fails != 0:
-		sys.exit(-1)
+    if fails != 0:
+        sys.exit(-1)
+
 
 if __name__ == "__main__":
-	colorama.init(autoreset=True)
-	main()
-
+    colorama.init(autoreset=True)
+    main()

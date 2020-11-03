@@ -31,7 +31,7 @@ featuredimage: /assets/img/plugins/M300Player/screenshot.png
 ---
 Octoprint plugin to send M300 gcode messages to OctoPrint's web interface using a webkitAudioContext and oscillatorNode on [supported browsers](https://developer.mozilla.org/en-US/docs/Web/API/AudioContext#Browser_compatibility). Tested in Chrome.
 
-**Note:** 
+**Note:**
 + This plugin does **NOT** work with files on the SD card.
 + This plugin does **NOT** work in Internet Explorer.
 

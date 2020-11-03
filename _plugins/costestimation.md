@@ -14,7 +14,7 @@ compatibility:
   python: ">=2.7,<4"
   octoprint:
   - 1.2.14
-  - 1.3.6 
+  - 1.3.6
   - 1.4.0
 tags:
 - cost

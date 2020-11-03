@@ -42,7 +42,7 @@ screenshots:
 - url: https://github.com/LuckyX182/Filament_sensor_simplified/raw/master/screenshots/waiting_for_user_input.png
   alt: Waiting for user input pop-up
   caption: Waiting for user input pop-up
-  
+
 featuredimage: https://github.com/LuckyX182/Filament_sensor_simplified/raw/master/screenshots/settings.png
 
 compatibility:
@@ -50,7 +50,7 @@ compatibility:
 
   octoprint:
   - 1.3.0
- 
+
   os:
   - linux
 ---

@@ -53,7 +53,7 @@ This plugin adds a  dashboard tab in Octoprint that displays the most relevant i
 
 * Adds a new tab first in the list and becomes the default tab when opening OctoPrint
 * Widgets for current:
-    * RPi host CPU Load, CPU Temp, CPU frequency, Mem Utilization, Storage Utilization.   
+    * RPi host CPU Load, CPU Temp, CPU frequency, Mem Utilization, Storage Utilization.
     * Printer profile, Connection status, Printer Status
     * Hotend temp(s), Bed Temp, Chamber Temp, Fan speed
     * Temperature/Humidity sensors.
@@ -76,11 +76,11 @@ This plugin adds a  dashboard tab in Octoprint that displays the most relevant i
 * Theme friendly
 
 
-Themed screenshot: 
+Themed screenshot:
 
 ![Screenshot](/assets/img/plugins/dashboard/screenshot-2-theme.png)
 
-Fullscreen mode screenshot: 
+Fullscreen mode screenshot:
 
 ![Screenshot](/assets/img/plugins/dashboard/screenshot-2-fullscreen.png)
 

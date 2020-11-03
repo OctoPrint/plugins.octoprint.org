@@ -31,9 +31,9 @@ compatibility:
   - windows
   - macos
   - freebsd
-  
+
   python: ">=2.7,<4"
-      
+
 ---
 
 Fixes the double temperature reporting from the Creality Ender-3 v2 printer described in [this OctoPrint forum topic](https://community.octoprint.org/t/octoprint-doesnt-show-a-temperature-graph-for-my-creality-printer/23901).

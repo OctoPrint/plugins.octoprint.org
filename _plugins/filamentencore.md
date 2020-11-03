@@ -23,11 +23,11 @@ compatibility:
 
   os:
   - nix
-  
+
 disabled: There has been a report of OctoPrint crashing on resume. Disabled until this issue has been clarified. See [foosel/OctoPrint#3213](https://github.com/foosel/OctoPrint/issues/3213) and [draagc/OctoPrint-FilamentEncore#3](https://github.com/draagc/OctoPrint-FilamentEncore/issues/3).
-  
+
 ---
 
-Pause printing when the 3D printer runs out of filament. 
+Pause printing when the 3D printer runs out of filament.
 
-Based on the Filament Sensor Reloaded plugin by kontakt, this plugin adds new features such as the ability to prevent print starting/resuming when no filament detected and offers bug fixes. 
+Based on the Filament Sensor Reloaded plugin by kontakt, this plugin adds new features such as the ability to prevent print starting/resuming when no filament detected and offers bug fixes.

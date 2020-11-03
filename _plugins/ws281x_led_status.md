@@ -90,5 +90,3 @@ Whilst I don't like bugs, I want to hear about them! Let me know by [opening an 
 
 # Support my work!
 I created this plugin in my spare time, so if you have enjoyed using it then please [support it's development!](https://github.com/sponsors/cp2004)
-
-

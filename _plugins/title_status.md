@@ -21,12 +21,12 @@ compatibility:
   # list of compatible versions, for example 1.2.0. If left empty no specific version requirement will be assumed
   octoprint:
   - 1.2.6
-  
+
 ---
 Shows the status of the printer (offline, operational, connecting, paused, error... ) in the title of the browser as
 - Connecting...
 - Paused...
-- ERROR !! 
+- ERROR !!
 - * = Offline
 - △ = Printing
 - ? = Unknown

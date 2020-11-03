@@ -38,7 +38,7 @@ An [OctoPrint](https://octoprint.org/) Plugin for performing micro calibration i
 
 ## Key features:
 * Automatic probing
-* Calibrates up to 18 geometry parameters 
+* Calibrates up to 18 geometry parameters
 * 3D visualization of probed points and estimated points after proposed calibration
 
 ![Screenshot](/assets/img/plugins/DuCalibrator/screenshot.png)

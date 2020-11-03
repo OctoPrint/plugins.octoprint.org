@@ -3,7 +3,7 @@ layout: plugin
 
 id: Plabric
 title: Plabric
-description: Manage and control your 3D printer anywhere without port forwarding or VPN. 
+description: Manage and control your 3D printer anywhere without port forwarding or VPN.
 author: Plabric
 license: AGPLv3
 
@@ -26,7 +26,7 @@ compatibility:
 
   octoprint:
   - 1.3.4+
-  
+
   os:
   - linux
   - windows
@@ -36,7 +36,7 @@ compatibility:
 
 # Plabric
 
-Manage and control your 3D printer anywhere without port forwarding or VPN. 
+Manage and control your 3D printer anywhere without port forwarding or VPN.
 
 Plabric plugin allows you to link your 3D printer with Plabric app (currently available for Android, iOS not yet available). Discover all features on https://plabric.com
 

@@ -37,7 +37,7 @@ screenshots:
 - url: /assets/img/plugins/raisecloud/RaiseOcto_APP.gif
   alt: RaiseCloud plugin
   caption: Connect your OctoPrint Device to the RaiseCloud
-  
+
 featuredimage: /assets/img/plugins/raisecloud/Raise3D.jpg
 
 compatibility:
@@ -48,34 +48,34 @@ compatibility:
   os:
   - linux
   - windows
-      
+
   python: ">=2.7,<4"
-      
+
 ---
 
 # What is RaiseCloud?
 The RaiseCloud management platform is compatible with most open-source printers to
-manage, monitor, and process 3D prints anytime and anywhere. The four key functions 
+manage, monitor, and process 3D prints anytime and anywhere. The four key functions
 help you maximize work-flow efficiency and accessibility for your 3D printing process:
 
 ## 1.Connect to OctoPi powered 3D printers
-Do you have different brands of printers but want to manage your printer efficiently? 
+Do you have different brands of printers but want to manage your printer efficiently?
 RaiseCloud would connect to OctoPi powered printers and help you manage your printers efficiently.
 
 ## 2.Remote Monitoring
-Don’t want to work overtime to check on your 3D printer? RaiseCloud provides a cloud management 
+Don’t want to work overtime to check on your 3D printer? RaiseCloud provides a cloud management
 platform for you to monitor your printing process anytime anywhere.
 
 ## 3.Multi-Task Management
-Are you struggling to manage multiple tasks on different 3D printers? RaiseCloud would provide you 
+Are you struggling to manage multiple tasks on different 3D printers? RaiseCloud would provide you
 a dashboard to easily manage print jobs across one or multiple 3D printers.
 
 ## 4.Printer Management by Team
-Do you want you and your team could manage the 3D printers together? RaiseCloud could help to 
+Do you want you and your team could manage the 3D printers together? RaiseCloud could help to
 customize the printing workflow through you and your team.
 
 # How to Connect your Printers to RaiseCloud?
-Please follow video tutorial or the instructions [Document](https://support.raise3d.com/RaiseCloud/raisecloud-plugin-installation-manual-6-1049.html) 
+Please follow video tutorial or the instructions [Document](https://support.raise3d.com/RaiseCloud/raisecloud-plugin-installation-manual-6-1049.html)
 {% include youtube.html vid="3c935PTRef0" preview="'/assets/img/plugins/raisecloud/Video-3c935PTRef0.png'" %}
 
 # Resource Limit

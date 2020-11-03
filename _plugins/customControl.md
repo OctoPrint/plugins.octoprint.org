@@ -36,11 +36,11 @@ screenshots:
   alt: Settings
 - url: /assets/img/plugins/customControl/img4.png
   alt: Dialog
-  
+
 featuredimage: /assets/img/plugins/customControl/img4.png
 
 ---
-    
+
 This plugin helps you create, edit and delete your [custom controls](http://docs.octoprint.org/en/master/features/custom_controls.html).
 You can easily access all the options in the settings under "Custom Control Editor".
 

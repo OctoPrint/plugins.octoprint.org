@@ -30,7 +30,7 @@ compatibility:
   # list of compatible versions, for example 1.2.0. If left empty no specific version requirement will be assumed
   octoprint:
   - 1.2.5
-  
+
 abandoned: https://github.com/OctoPrint/plugins.octoprint.org/issues/646
 
 ---

@@ -39,4 +39,3 @@ compatibility:
 ---
 
 This plugin is designed to show statistics of your printer and estimate power usage in kWh.
-

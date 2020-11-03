@@ -13,7 +13,7 @@ archive: https://github.com/OllisGit/OctoPrint-FilamentManager/releases/latest/d
 compatibility:
   python: ">=2.7,<4"
   octoprint:
-  - 1.3.6 
+  - 1.3.6
   - 1.4.0
 
 tags:
