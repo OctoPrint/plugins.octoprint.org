@@ -5,10 +5,17 @@ title: Plugins by Author
 
 {% assign all_authors = "" | split: "/" %}
 {% for plugin in site.plugins %}
-  {% assign preprocessed = plugin.author %}
-  {% unless preprocessed == "" %}
-    {% assign all_authors = all_authors | push: preprocessed %}
-  {% endunless %}
+  {% if plugin.authors %}
+    {% for author in plugin.authors %}
+      {% unless author == "" %}
+        {% assign all_authors = all_authors | push: author %}
+      {% endunless %}
+    {% endfor %}
+  {% else %}
+    {% unless plugin.author == "" %}
+      {% assign all_authors = all_authors | push: plugin.author %}
+    {% endunless %}
+  {% endif %}
 {% endfor %}
 {% assign all_authors = all_authors | uniq | sort_natural %}
 
@@ -22,8 +29,16 @@ title: Plugins by Author
   <h2 id="{{ author | slugify }}">{{ author }}</h2>
   <ul>
   {% for plugin in site.plugins %}
-    {% if author == plugin.author  %}
-      <li>{% include plugin_snippet plugin=plugin %}</li>
+    {% if plugin.authors %}
+      {% for a in plugin.authors %}
+        {% if author == a  %}
+          <li>{% include plugin_snippet plugin=plugin %}</li>
+        {% endif %}
+      {% endfor %}
+    {% else %}
+      {% if author == plugin.author  %}
+        <li>{% include plugin_snippet plugin=plugin %}</li>
+      {% endif %}
     {% endif %}
   {% endfor %}
   </ul>

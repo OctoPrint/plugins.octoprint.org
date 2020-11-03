@@ -69,6 +69,7 @@ SCHEMA = Schema(
         Required("title"): NonEmptyString,
         Required("description"): NonEmptyString,
         Required("author"): NonEmptyString,
+        Optional("authors"): list,
         Required("license"): NonEmptyString,
         Required("date"): datetime.date,
         Required("homepage"): Url(),

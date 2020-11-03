@@ -178,7 +178,14 @@ layout: default
           </ul>
         </dd>
       </dl>
-      {% if page.author %}
+      {% if page.authors %}
+      <dl class="author">
+        <dt>Authors</dt>
+        {% for author in page.authors %}
+          <dd>{% include plugin_author author=author nolabel='true'%}</dd>
+        {% endfor %}
+      </dl>
+      {% elsif page.author %}
       <dl class="author">
         <dt>Author</dt>
         <dd>{% include plugin_author author=page.author nolabel='true'%}</dd>
