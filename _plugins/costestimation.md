@@ -4,7 +4,9 @@ layout: plugin
 id: costestimation
 title: CostEstimation
 description: Displays the estimated print cost for the loaded model
-author: Sven Lohrmann, Olli
+authors:
+- Sven Lohrmann
+- Olli
 license: AGPLv3
 date: 2017-07-16
 homepage: https://github.com/OllisGit/OctoPrint-CostEstimation

@@ -6,7 +6,9 @@ description: Display temperatures on navbar
 archive: https://github.com/imrahil/OctoPrint-NavbarTemp/archive/master.zip
 homepage: https://github.com/imrahil/OctoPrint-NavbarTemp
 source: https://github.com/imrahil/OctoPrint-NavbarTemp
-author: Jarek Szczepanski & Cosik
+authors:
+- Cosik
+- Jarek Szczepanski
 license: AGPLv3
 featuredimage: https://github.com/imrahil/OctoPrint-NavbarTemp/blob/master/images/navbar.png?raw=true
 date: 2015-04-17

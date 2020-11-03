@@ -4,7 +4,9 @@ layout: plugin
 id: slic3r
 title: OctoPrint-Slic3r
 description: Adds support for slicing via Slic3r from within OctoPrint
-author: Javier Martínez Arrieta, Eyal Soha
+authors:
+- Javier Martínez Arrieta
+- Eyal Soha
 license: AGPLv3
 
 date: 2017-02-07

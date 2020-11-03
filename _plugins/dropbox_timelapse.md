@@ -4,7 +4,10 @@ layout: plugin
 id: dropbox_timelapse
 title: OctoPrint-Dropbox-Timelapse
 description: Automatically upload rendered timelapses to Dropbox. Can also delete after upload to save space on the Raspberry Pi SD Card.
-author: Justin Slay, Sam Kemp, Brad Hochgesang
+authors:
+- Justin Slay
+- Sam Kemp
+- Brad Hochgesang
 license: AGPLv3
 
 date: 2018-05-10

@@ -4,7 +4,9 @@ layout: plugin
 id: filamentreload
 title: Filament Sensor Reloaded
 description: Use a filament sensor to pause printing when filament runs out.
-author: kontakt, ssorgatem
+authors:
+- kontakt
+- ssorgatem
 license: AGPLv3
 date: 2017-01-06
 

@@ -4,7 +4,9 @@ layout: plugin
 id: ender3v2tempfix
 title: Creality 2x temperature reporting fix
 description: Fixes the temperature reporting from Creality printers shipped with the new mainboard (new Ender-3 Pro's, Ender-3 Pro v2, CR-6 SE & possibly more)
-author: Albert MN. @ SimplyPrint, b-morgan
+authors:
+- Albert MN. @ SimplyPrint
+- b-morgan
 license: MIT
 
 # today's date in format YYYY-MM-DD, e.g.

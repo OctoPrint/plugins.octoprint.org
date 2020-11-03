@@ -4,7 +4,9 @@ layout: plugin
 id: ArduCamFocus
 title: ArduCamFocus
 description: Plugin to control ArduCam with motorized focus control on octopi
-author: moof, jneilliii
+authors:
+- moof
+- jneilliii
 license: AGPLv3
 
 date: 2020-07-11

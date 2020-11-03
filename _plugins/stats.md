@@ -4,7 +4,9 @@ layout: plugin
 id: stats
 title: Printer Statistics
 description: Statistics of your 3D Printer
-author: Alex Verrico, originally by Anderson Silva
+authors:
+- Alex Verrico
+- Anderson Silva
 license: AGPLv3
 
 date: 2015-09-13

@@ -4,7 +4,9 @@ layout: plugin
 id: filamentmanager
 title: FilamentManager
 description: Filament Manager for OctoPrint
-author: Sven Lohrmann, Olli
+authors:
+- Sven Lohrmann
+- Olli
 license: AGPLv3
 date: 2017-08-22
 homepage: https://github.com/OllisGit/OctoPrint-FilamentManager

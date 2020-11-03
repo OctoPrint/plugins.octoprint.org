@@ -4,7 +4,9 @@ layout: plugin
 id: EasyServo
 title: Easy Servo
 description: Plugin to control two servos attached to a camera gimbal to control motion.
-author: iFrostizz, jneilliii
+authors:
+- iFrostizz
+- jneilliii
 license: AGPLv3
 
 date: 2020-05-21

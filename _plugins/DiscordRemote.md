@@ -4,7 +4,9 @@ layout: plugin
 id: discordremote
 title: OctoPrint-DiscordRemote
 description: Discord bot for OctoPrint
-author: Cameron Cross, originally by Benjamin Chanudet
+authors:
+- Cameron Cross
+- Benjamin Chanudet
 license: MIT
 
 # TODO
