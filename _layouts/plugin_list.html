@@ -35,6 +35,7 @@ layout: page
     {% assign plugin_counter = site.plugins | size %}
     {% assign python3_counter = 0 %}
     {% assign abandoned_counter = 0 %}
+
     {% for plugin in site.plugins %}
       {% if plugin.compatibility and plugin.compatibility.python and plugin.compatibility.python == '>=2.7,<4' %}
         {% assign python3_counter = python3_counter | plus:1 %}
@@ -46,6 +47,23 @@ layout: page
       {% endif %}
     {% endfor %}
 
+    {% assign all_authors = "" | split: "/" %}
+    {% for plugin in site.plugins %}
+      {% if plugin.authors %}
+        {% for author in plugin.authors %}
+          {% unless author == "" %}
+            {% assign all_authors = all_authors | push: author %}
+          {% endunless %}
+        {% endfor %}
+      {% else %}
+        {% unless plugin.author == "" %}
+          {% assign all_authors = all_authors | push: plugin.author %}
+        {% endunless %}
+      {% endif %}
+    {% endfor %}
+    {% assign all_authors = all_authors | uniq | sort_natural %}
+    {% assign author_count = all_authors | size %}
+
     <p>
       There are currently <strong>{{ plugin_counter }}</strong> plugins listed in this repository of
       which <strong>{{ python3_counter }} ({{ python3_counter | times:100 | divided_by:plugin_counter | round }}%)</strong>
@@ -55,6 +73,10 @@ layout: page
     <p>
       <a href="https://github.com/OctoPrint/plugins.octoprint.org/labels/abandoned%20plugin"><strong>{{ abandoned_counter }}</strong>
       plugins have been marked as abandoned</a> and are looking for a new maintainer.
+    </p>
+
+    <p>
+      All in all <strong>{{ author_count }}</strong> plugin authors have spent time and effort to bring you these plugins.
     </p>
 
     {% assign shown_usage = false %}
