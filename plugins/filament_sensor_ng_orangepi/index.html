@@ -148,7 +148,6 @@
   </div>
 </div>
 
-
 <div id="wrap">
     <div id="main">
     
@@ -210,24 +209,24 @@
 
 <p>Since we are accessing the GPIO as a non root user we need to configure the OS to allow this. Here’s the copy of the library documentation on how to do it:</p>
 
-<p>If you want to be able to use the library as a non root user, you will need to setup a <code class="language-plaintext highlighter-rouge">UDEV</code> rule to grant you permissions first. 
+<p>If you want to be able to use the library as a non root user, you will need to setup a <code class="language-plaintext highlighter-rouge">UDEV</code> rule to grant you permissions first.
  This can be accomplished as follows:</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ sudo usermod -aG gpio &lt;current_user&gt;
  $ sudo nano /etc/udev/rules.d/99-gpio.rules
 </code></pre></div></div>
-<p>That should add your user to the GPIO group, create a new <code class="language-plaintext highlighter-rouge">UDEV</code> rule, and open it in the Nano text editor. 
+<p>That should add your user to the GPIO group, create a new <code class="language-plaintext highlighter-rouge">UDEV</code> rule, and open it in the Nano text editor.
  Enter the following into Nano</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   SUBSYSTEM=="gpio", KERNEL=="gpiochip*", ACTION=="add", PROGRAM="/bin/sh -c 'chown root:gpio /sys/class/gpio/export /sys/class/gpio/unexport ; chmod 220 /sys/class/gpio/export /sys/class/gpio/unexport'" 
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   SUBSYSTEM=="gpio", KERNEL=="gpiochip*", ACTION=="add", PROGRAM="/bin/sh -c 'chown root:gpio /sys/class/gpio/export /sys/class/gpio/unexport ; chmod 220 /sys/class/gpio/export /sys/class/gpio/unexport'"
    SUBSYSTEM=="gpio", KERNEL=="gpio*", ACTION=="add", PROGRAM="/bin/sh -c 'chown root:gpio /sys%p/active_low /sys%p/direction /sys%p/edge /sys%p/value ; chmod 660 /sys%p/active_low /sys%p/direction /sys%p/edge /sys%p/value'"
 </code></pre></div></div>
-<p>press <code class="language-plaintext highlighter-rouge">ctrl-x</code>, <code class="language-plaintext highlighter-rouge">Y</code>, and <code class="language-plaintext highlighter-rouge">ENTER</code> to save and close the file. 
+<p>press <code class="language-plaintext highlighter-rouge">ctrl-x</code>, <code class="language-plaintext highlighter-rouge">Y</code>, and <code class="language-plaintext highlighter-rouge">ENTER</code> to save and close the file.
  Finally, reboot and you should be ready to use <code class="language-plaintext highlighter-rouge">OPi.GPIO</code> as a non root user.</p>
 
 <h2 id="issues-with-opi-gpio-library">Issues with OPI GPIO library</h2>
 
 <p>https://github.com/rm-hull/OPi.GPIO/pull/28 solves the issues with PI GPIO library and the race condition that was preventing normal operations. It is available in release v0.3.4 and up so make sure you have latest OPI GPIO library. To upgrade to latest OPI GPIO library login to your octoprint server as user <code class="language-plaintext highlighter-rouge">pi</code> and execute:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ cd OctoPrint/ 
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ cd OctoPrint/
  $ venv/bin/pip install --upgrade OPi.GPIO
 </code></pre></div></div>
 
@@ -288,7 +287,7 @@
       
       <dl class="installations">
         <dt>Active instances the past month</dt>
-        <dd>Installed on at least <strong>38</strong> instances</dd>
+        <dd>Installed on at least <strong>39</strong> instances</dd>
       </dl>
       
       
@@ -495,6 +494,7 @@
     }
   });
 </script>
+
     </div>
 </div>
 
@@ -552,7 +552,6 @@
               </div>
           </div>
       </footer>
-
 
 <script integrity="sha256-oq4gZXkRKQNEXwwNS5jzGrkB2yjohz3HyBzkCgY3J0U=" crossorigin="anonymous" type="text/javascript" src="/assets/js/prettify-a2ae206579112903445f0c0d4b98f31ab901db28e8873dc7c81ce40a06372745.js"></script>
 <script integrity="sha256-9WUabhj4hYHZvjzwYyj+3p4RKUPJ7AN7TCwdxiPZQps=" crossorigin="anonymous" type="text/javascript" src="/assets/js/bootstrap.min-f5651a6e18f88581d9be3cf06328fede9e112943c9ec037b4c2c1dc623d9429b.js"></script>

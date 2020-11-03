@@ -40,7 +40,7 @@
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@OctoPrint3D" />
     <meta name="twitter:title" content="CuraEngine Legacy" />
-    <meta name="twitter:description" content="The CuraEngine Legacy Plugin allows slicing of STL files uploaded to OctoPrint directly via the legacy version of CuraEngine (up to and including 
+    <meta name="twitter:description" content="The CuraEngine Legacy Plugin allows slicing of STL files uploaded to OctoPrint directly via the legacy version of CuraEngine (up to and including
 version 15.04.x). It was bundled with OctoPrint up until version 1.3.10.
 
 " />
@@ -49,7 +49,7 @@ version 15.04.x). It was bundled with OctoPrint up until version 1.3.10.
     <meta property="og:title" content="CuraEngine Legacy" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://plugins.octoprint.org/assets/img/repo-600x400.png" />
-    <meta property="og:description" content="The CuraEngine Legacy Plugin allows slicing of STL files uploaded to OctoPrint directly via the legacy version of CuraEngine (up to and including 
+    <meta property="og:description" content="The CuraEngine Legacy Plugin allows slicing of STL files uploaded to OctoPrint directly via the legacy version of CuraEngine (up to and including
 version 15.04.x). It was bundled with OctoPrint up until version 1.3.10.
 
 " />
@@ -58,7 +58,7 @@ version 15.04.x). It was bundled with OctoPrint up until version 1.3.10.
 
     <meta itemscope itemtype="http://schema.org/WebPage" />
     <meta itemprop="headline" content="CuraEngine Legacy" />
-    <meta itemprop="description" content="The CuraEngine Legacy Plugin allows slicing of STL files uploaded to OctoPrint directly via the legacy version of CuraEngine (up to and including 
+    <meta itemprop="description" content="The CuraEngine Legacy Plugin allows slicing of STL files uploaded to OctoPrint directly via the legacy version of CuraEngine (up to and including
 version 15.04.x). It was bundled with OctoPrint up until version 1.3.10.
 
 " />
@@ -151,7 +151,6 @@ version 15.04.x). It was bundled with OctoPrint up until version 1.3.10.
   </div>
 </div>
 
-
 <div id="wrap">
     <div id="main">
     
@@ -191,19 +190,19 @@ version 15.04.x). It was bundled with OctoPrint up until version 1.3.10.
       <p class="lead">
         Plugin for slicing via the legacy version of CuraEngine from within OctoPrint, unbundled from OctoPrint starting with version 1.3.11
       </p>
-      <p>The CuraEngine Legacy Plugin allows slicing of STL files uploaded to OctoPrint directly via the legacy version of CuraEngine (<strong>up to and including 
+      <p>The CuraEngine Legacy Plugin allows slicing of STL files uploaded to OctoPrint directly via the legacy version of CuraEngine (<strong>up to and including
 version 15.04.x</strong>). It was bundled with OctoPrint up until version 1.3.10.</p>
 
 <blockquote>
   <p>📝 <strong>Note</strong></p>
 
-  <p>Versions of CuraEngine later than 15.04.x have changed their calling parameters in such a way that this 
-plugin is not compatible to it. For this reason, please use only CuraEngine versions up to and including 15.04, 
+  <p>Versions of CuraEngine later than 15.04.x have changed their calling parameters in such a way that this
+plugin is not compatible to it. For this reason, please use only CuraEngine versions up to and including 15.04,
 as available in the <code class="language-plaintext highlighter-rouge">legacy</code> branch of the CuraEngine repository on Github.</p>
 </blockquote>
 
-<p>The plugin offers a settings module that allows configuring the path to the CuraEngine Legacy executable to use, as well as 
-importing and managing slicing profiles to be used. Please note that the CuraEngine Legacy plugin will use the printer parameters 
+<p>The plugin offers a settings module that allows configuring the path to the CuraEngine Legacy executable to use, as well as
+importing and managing slicing profiles to be used. Please note that the CuraEngine Legacy plugin will use the printer parameters
 you configured within OctoPrint (meaning bed size and extruder count and offsets) for slicing.</p>
 
 <h2 id="setup">Setup</h2>
@@ -224,7 +223,7 @@ or manually using this URL:</p>
   <li>Export a slicing profile from Cura &lt;15.04.x and import it within OctoPrint</li>
 </ol>
 
-<p>OctoPi ships with steps 1 and 2 already done, you only need to supply one or more slicing 
+<p>OctoPi ships with steps 1 and 2 already done, you only need to supply one or more slicing
 profiles to get going :)</p>
 
 <p>If you are coming from an OctoPrint version prior to 1.3.11 and already had the then still bundled version of this plugin
@@ -232,7 +231,7 @@ configured, your configuration &amp; profiles will be migrated.</p>
 
 <h3 id="installing-curaengine-legacy">Installing CuraEngine Legacy</h3>
 
-<p>You’ll need a build of <code class="language-plaintext highlighter-rouge">legacy</code> branch of <a href="http://github.com/Ultimaker/CuraEngine">CuraEngine</a> in order to be able to 
+<p>You’ll need a build of <code class="language-plaintext highlighter-rouge">legacy</code> branch of <a href="http://github.com/Ultimaker/CuraEngine">CuraEngine</a> in order to be able to
 use the Cura Legacy OctoPrint plugin. You can find the <code class="language-plaintext highlighter-rouge">legacy</code> branch <a href="https://github.com/ultimaker/curaengine/tree/legacy">here</a>.</p>
 
 <h4 id="compiling-for-raspbian">Compiling for Raspbian</h4>
@@ -245,24 +244,24 @@ cd CuraEngine
 make
 </code></pre></div></div>
 
-<p>After this has completed, you’ll find your shiny new build of CuraEngine in the build folder (full path for above 
+<p>After this has completed, you’ll find your shiny new build of CuraEngine in the build folder (full path for above
 example: <code class="language-plaintext highlighter-rouge">~/CuraEngine/build/CuraEngine</code>).</p>
 
 <h3 id="using-cura-profiles">Using Cura Profiles</h3>
 
-<p>The CuraEngine Legacy Plugin supports importing your existing profiles for CuraEngine Legacy <strong>up to and including Cura 15.04.x</strong>. Newer CuraEngine 
+<p>The CuraEngine Legacy Plugin supports importing your existing profiles for CuraEngine Legacy <strong>up to and including Cura 15.04.x</strong>. Newer CuraEngine
 releases (e.g. 15.06 or 2.x) use a different internal format that will not work with the Cura Legacy Plugin.</p>
 
 <p>You can find downloads of Cura 15.04.x for Windows, Mac and Linux on <a href="https://ultimaker.com/en/products/cura-software/list">Ultimaker’s download page</a>.</p>
 
-<p>In order to export a slicing profile from the legacy Cura desktop UI, open it, set up your profile, then click on “File” and 
-there on “Save Profile”. You can import the .ini-file this creates via the “Import Profile” button in the CuraEngine Legacy Settings 
+<p>In order to export a slicing profile from the legacy Cura desktop UI, open it, set up your profile, then click on “File” and
+there on “Save Profile”. You can import the .ini-file this creates via the “Import Profile” button in the CuraEngine Legacy Settings
 within OctoPrint.</p>
 
 <h2 id="configuration">Configuration</h2>
 
-<p>The Cura plugin needs to be configured with the full path to your copy of the CuraEngine Legacy executable that it’s supposed 
-to use. You can do this either via the CuraEngine Legacy plugin settings dialog or by manually configuring the path to the 
+<p>The Cura plugin needs to be configured with the full path to your copy of the CuraEngine Legacy executable that it’s supposed
+to use. You can do this either via the CuraEngine Legacy plugin settings dialog or by manually configuring the path to the
 executable via <code class="language-plaintext highlighter-rouge">config.yaml</code>, example:</p>
 
 <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">plugins</span><span class="pi">:</span>
@@ -319,13 +318,13 @@ executable via <code class="language-plaintext highlighter-rouge">config.yaml</c
       
       <dl class="installations">
         <dt>Active instances the past month</dt>
-        <dd>Installed on at least <strong>2.8k</strong> instances</dd>
+        <dd>Installed on at least <strong>2.79k</strong> instances</dd>
       </dl>
       
       
       <dl class="install_events">
         <dt>New installs the past week</dt>
-        <dd>At least <strong>92</strong> new installations</dd>
+        <dd>At least <strong>91</strong> new installations</dd>
       </dl>
       
       
@@ -538,6 +537,7 @@ executable via <code class="language-plaintext highlighter-rouge">config.yaml</c
     }
   });
 </script>
+
     </div>
 </div>
 
@@ -595,7 +595,6 @@ executable via <code class="language-plaintext highlighter-rouge">config.yaml</c
               </div>
           </div>
       </footer>
-
 
 <script integrity="sha256-oq4gZXkRKQNEXwwNS5jzGrkB2yjohz3HyBzkCgY3J0U=" crossorigin="anonymous" type="text/javascript" src="/assets/js/prettify-a2ae206579112903445f0c0d4b98f31ab901db28e8873dc7c81ce40a06372745.js"></script>
 <script integrity="sha256-9WUabhj4hYHZvjzwYyj+3p4RKUPJ7AN7TCwdxiPZQps=" crossorigin="anonymous" type="text/javascript" src="/assets/js/bootstrap.min-f5651a6e18f88581d9be3cf06328fede9e112943c9ec037b4c2c1dc623d9429b.js"></script>

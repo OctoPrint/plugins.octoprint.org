@@ -142,7 +142,6 @@
   </div>
 </div>
 
-
 <div id="wrap">
     <div id="main">
     <div class="page-header">
@@ -160,7 +159,7 @@
     <div class="content row-fluid">
         <div class="span12">
             <p>The OctoPrint Plugin Repository is hosted on <a href="https://pages.github.com/">Github Pages</a>.
-You can register new plugins by forking <a href="https://github.com/OctoPrint/plugins.octoprint.org">the source</a> and just 
+You can register new plugins by forking <a href="https://github.com/OctoPrint/plugins.octoprint.org">the source</a> and just
 editing it accordingly.</p>
 
 <hr />
@@ -170,7 +169,7 @@ editing it accordingly.</p>
 <ul>
   <li>
     <p>Your plugin doesn’t have any additional code in its <code>setup.py</code> that would run directly on
-plugin installation, or any additional code in its <code>__init__.py</code> that would run outside of 
+plugin installation, or any additional code in its <code>__init__.py</code> that would run outside of
 OctoPrint’s plugin framework just by loading it.</p>
   </li>
   <li>
@@ -178,29 +177,29 @@ OctoPrint’s plugin framework just by loading it.</p>
 additional system packages, services or the like. If your plugin needs additional steps like this to function,
 add a wizard dialog that prompts the user to do these things, do <em>not</em> do them automatically.</p>
 
-    <p>Exception: Fetching additional Python dependencies from the Python Package Index through <code class="language-plaintext highlighter-rouge">plugin_requires</code> in your 
+    <p>Exception: Fetching additional Python dependencies from the Python Package Index through <code class="language-plaintext highlighter-rouge">plugin_requires</code> in your
 <code class="language-plaintext highlighter-rouge">setup.py</code> is fine.</p>
   </li>
   <li>
-    <p>If your plugin interacts with external services it will do so over secured connections with a valid certificate only 
-(<code class="language-plaintext highlighter-rouge">https://someservice.com</code> instead of <code class="language-plaintext highlighter-rouge">http://130.47.11.15</code>). This also includes embedding any kinds of iframes in 
+    <p>If your plugin interacts with external services it will do so over secured connections with a valid certificate only
+(<code class="language-plaintext highlighter-rouge">https://someservice.com</code> instead of <code class="language-plaintext highlighter-rouge">http://130.47.11.15</code>). This also includes embedding any kinds of iframes in
 the web interface. Also include this kind of information in the plugin’s long description (see below)!</p>
   </li>
   <li>
-    <p>If your plugin requires the use of external services, and those services are unreachable (say for example a user’s 
-internet is down or the OctoPrint instance runs offline in general), your plugin must fail in a way that does 
+    <p>If your plugin requires the use of external services, and those services are unreachable (say for example a user’s
+internet is down or the OctoPrint instance runs offline in general), your plugin must fail in a way that does
 not cause OctoPrint to malfunction.</p>
   </li>
   <li>
-    <p>If your plugin contains any kind of tracking code, e.g. for anonymous user statistics to help with 
-development, use an <em>opt-in</em> mechanism for this. Also include this kind of information in the plugin’s long 
+    <p>If your plugin contains any kind of tracking code, e.g. for anonymous user statistics to help with
+development, use an <em>opt-in</em> mechanism for this. Also include this kind of information in the plugin’s long
 description (see below)!</p>
 
     <p>The privacy of your users always takes precedence over your need for usage data!</p>
   </li>
   <li>
-    <p>If your plugin makes use of the <a href="http://docs.octoprint.org/en/master/bundledplugins/softwareupdate.html#octoprint-plugin-softwareupdate-check-config"><code class="language-plaintext highlighter-rouge">octoprint.plugin.softwareupdate.check_config</code> hook</a> 
-so that it may be updated through OctoPrint on a new release (highly recommended!) make sure that that hook’s handler uses your plugin’s identifier 
+    <p>If your plugin makes use of the <a href="http://docs.octoprint.org/en/master/bundledplugins/softwareupdate.html#octoprint-plugin-softwareupdate-check-config"><code class="language-plaintext highlighter-rouge">octoprint.plugin.softwareupdate.check_config</code> hook</a>
+so that it may be updated through OctoPrint on a new release (highly recommended!) make sure that that hook’s handler uses your plugin’s identifier
 and points to your plugin’s repository.</p>
   </li>
   <li>
@@ -233,9 +232,9 @@ cd plugins.octoprint.org
     <p>Create a new file in the <code class="language-plaintext highlighter-rouge">_plugins</code> folder called <code class="language-plaintext highlighter-rouge">&lt;your plugin's identifier&gt;.md</code>.</p>
 
     <div class="alert alert-danger">
-    <strong>Important:</strong> Make sure <code>your plugin's identifier</code> is the same you will register your plugin under with OctoPrint! So if you 
+    <strong>Important:</strong> Make sure <code>your plugin's identifier</code> is the same you will register your plugin under with OctoPrint! So if you
     used <code>my_awesome_plugin</code> as <code>plugin_identifier</code> during plugin creation
-    make sure to use that exactly like that here too. Take also care of upper vs. lower case here, <code>MY_awesOmE_PlUGIN</code> 
+    make sure to use that exactly like that here too. Take also care of upper vs. lower case here, <code>MY_awesOmE_PlUGIN</code>
     is not the same as <code>my_awesome_plugin</code>.
 </div>
 
@@ -247,7 +246,9 @@ cd plugins.octoprint.org
 <span class="na">id</span><span class="pi">:</span> <span class="s">your plugin's identifier</span>
 <span class="na">title</span><span class="pi">:</span> <span class="s">your plugin's name</span>
 <span class="na">description</span><span class="pi">:</span> <span class="s">short description of your plugin</span>
-<span class="na">author</span><span class="pi">:</span> <span class="s">your name</span>
+<span class="c1">#authors:</span>
+<span class="c1">#- first author name</span>
+<span class="c1">#- second autor name</span>
 <span class="na">license</span><span class="pi">:</span> <span class="s">your plugin's license</span>
 
 <span class="c1"># today's date in format YYYY-MM-DD, e.g.</span>
@@ -325,25 +326,25 @@ cd plugins.octoprint.org
   <span class="c1">#</span>
   <span class="c1"># Plugins should aim for compatibility for Python 2 and 3 for now, in which case the value should be "&gt;=2.7,&lt;4".</span>
   <span class="c1">#</span>
-  <span class="c1"># Plugins that only wish to support Python 3 should set it to "&gt;=3,&lt;4". </span>
+  <span class="c1"># Plugins that only wish to support Python 3 should set it to "&gt;=3,&lt;4".</span>
   <span class="c1">#</span>
   <span class="c1"># If your plugin only supports Python 2 (worst case, not recommended for newly developed plugins since Python 2</span>
   <span class="c1"># is EOL), leave at "&gt;=2.7,&lt;3"</span>
-      
+
   <span class="na">python</span><span class="pi">:</span> <span class="s2">"</span><span class="s">&gt;=2.7,&lt;3"</span>
-      
+
 <span class="nn">---</span>
 
 Longer description of your plugin, configuration examples etc. This part will be visible on the page at
 plugins.octoprint.org/plugin/<span class="nt">&lt;your</span> <span class="na">plugin</span> <span class="na">identifier</span><span class="nt">&gt;</span>/
-    
+
 Use Markdown for formatting.
 </code></pre></div>    </div>
 
     <div class="alert">
     <strong>Note:</strong> If you used <code>octoprint dev plugin:new</code> or the <a href="https://github.com/OctoPrint/cookiecutter-octoprint-plugin">OctoPrint cookiecutter template</a> for your
-    plugin as suggested in the <a href="http://docs.octoprint.org/en/master/plugins/gettingstarted.html#growing-up-how-to-make-it-distributable">Getting Started guide</a>, 
-    it created a pre-filled file for you under <code>extras/&lt;your plugin's identifier&gt;.md</code> you just have to complete. Then 
+    plugin as suggested in the <a href="http://docs.octoprint.org/en/master/plugins/gettingstarted.html#growing-up-how-to-make-it-distributable">Getting Started guide</a>,
+    it created a pre-filled file for you under <code>extras/&lt;your plugin's identifier&gt;.md</code> you just have to complete. Then
     copy it to <code>_plugins/&lt;your plugin's identifier&gt;</code>.
 </div>
 
@@ -351,7 +352,7 @@ Use Markdown for formatting.
 this folder). You can then reference them as <code class="language-plaintext highlighter-rouge">/assets/img/plugins/&lt;your plugin's identifier&gt;/your_image.png</code> (the
 leading <code class="language-plaintext highlighter-rouge">/</code> here is important!).</p>
 
-    <p>The image you define as <code class="language-plaintext highlighter-rouge">featuredimage</code> will be included in the plugin repository’s RSS feed and plugins.json file. 
+    <p>The image you define as <code class="language-plaintext highlighter-rouge">featuredimage</code> will be included in the plugin repository’s RSS feed and plugins.json file.
 Future versions of the plugin manager might also display it within OctoPrint.</p>
 
     <p><strong>Some general guidelines:</strong></p>
@@ -372,14 +373,14 @@ property. Newly registered plugins will be expected to be compatible <em>at leas
 <em>both Python 2 and 3</em> during a transition period of roughly a year after release of OctoPrint 1.4.0.</p>
       </li>
       <li>
-        <p><strong>Include screenshots and a featured image!</strong> The best way to show users what your plugin does and what they may 
+        <p><strong>Include screenshots and a featured image!</strong> The best way to show users what your plugin does and what they may
 expect from it is to simply include some screenshots that show exactly that. A picture is worth more than a
-thousand words as they say. If your plugin doesn’t visually modify OctoPrint in any way, please include that 
+thousand words as they say. If your plugin doesn’t visually modify OctoPrint in any way, please include that
 fact in the long description.</p>
       </li>
       <li>
-        <p><strong>Do not directly embed third party screenshots/widgets/iframes!</strong> Thanks to the EU’s 
-<a href="https://en.wikipedia.org/wiki/General_Data_Protection_Regulation">GDPR</a> this could cause us severe 
+        <p><strong>Do not directly embed third party screenshots/widgets/iframes!</strong> Thanks to the EU’s
+<a href="https://en.wikipedia.org/wiki/General_Data_Protection_Regulation">GDPR</a> this could cause us severe
 legal problems. If you want to embed a YouTube video showing off your plugin, use the provided <code class="language-plaintext highlighter-rouge">youtube.html</code>
 include:</p>
 
@@ -387,13 +388,13 @@ include:</p>
 </code></pre></div>        </div>
 
         <p>That will make sure that no connection to YouTube is done without the user’s consent. You can fetch the
-preview image of your video at <code class="language-plaintext highlighter-rouge">https://i.ytimg.com/vi/&lt;youtube video id&gt;/maxresdefault.jpg</code> or with the 
+preview image of your video at <code class="language-plaintext highlighter-rouge">https://i.ytimg.com/vi/&lt;youtube video id&gt;/maxresdefault.jpg</code> or with the
 <code class="language-plaintext highlighter-rouge">fetch_yt_preview</code> bash script included in the repository. If you use the latter you can leave out the
 <code class="language-plaintext highlighter-rouge">preview</code> parameter to the include.</p>
       </li>
     </ul>
 
-    <p>If you are unsure about how something should be structured take a look at the existing plugins or 
+    <p>If you are unsure about how something should be structured take a look at the existing plugins or
 <a href="https://community.octoprint.org/c/development">ask on the forum</a>.</p>
   </li>
   <li>
@@ -402,7 +403,7 @@ as expected. For this you’ll need to install <a href="http://jekyllrb.com/">Je
 the plugin repository uses for rendering the static repository from the source files. Make sure you have at least <a href="https://www.ruby-lang.org/en/">Ruby 2.0</a>
 installed.</p>
 
-    <p>Github offers <a href="https://help.github.com/articles/using-jekyll-with-pages/">a nice setup guide</a> that makes sure you 
+    <p>Github offers <a href="https://help.github.com/articles/using-jekyll-with-pages/">a nice setup guide</a> that makes sure you
 have the exact versions of everything you need to run.</p>
 
     <div class="alert">
@@ -509,7 +510,6 @@ red “X” marking the build of your PR as failed.</p>
               </div>
           </div>
       </footer>
-
 
 <script integrity="sha256-oq4gZXkRKQNEXwwNS5jzGrkB2yjohz3HyBzkCgY3J0U=" crossorigin="anonymous" type="text/javascript" src="/assets/js/prettify-a2ae206579112903445f0c0d4b98f31ab901db28e8873dc7c81ce40a06372745.js"></script>
 <script integrity="sha256-9WUabhj4hYHZvjzwYyj+3p4RKUPJ7AN7TCwdxiPZQps=" crossorigin="anonymous" type="text/javascript" src="/assets/js/bootstrap.min-f5651a6e18f88581d9be3cf06328fede9e112943c9ec037b4c2c1dc623d9429b.js"></script>

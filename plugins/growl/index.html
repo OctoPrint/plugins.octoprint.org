@@ -43,13 +43,6 @@
     <meta name="twitter:description" content="The Growl plugin for OctoPrint allows to send notifications about certain printing events to a Growl instance on your
 local network. Right now it sends notifications for the following events:
 
-
-  Printjob started
-  Printjob done
-  File uploaded (optional)
-  Timelapse done (optional)
-
-
 " />
     <meta name="twitter:image" content="https://plugins.octoprint.org" />
 
@@ -59,13 +52,6 @@ local network. Right now it sends notifications for the following events:
     <meta property="og:description" content="The Growl plugin for OctoPrint allows to send notifications about certain printing events to a Growl instance on your
 local network. Right now it sends notifications for the following events:
 
-
-  Printjob started
-  Printjob done
-  File uploaded (optional)
-  Timelapse done (optional)
-
-
 " />
     <meta property="og:site_name" content="OctoPrint Plugin Repository" />
     <meta property="og:url" content="https://plugins.octoprint.org/plugins/growl/" />
@@ -74,13 +60,6 @@ local network. Right now it sends notifications for the following events:
     <meta itemprop="headline" content="Growl" />
     <meta itemprop="description" content="The Growl plugin for OctoPrint allows to send notifications about certain printing events to a Growl instance on your
 local network. Right now it sends notifications for the following events:
-
-
-  Printjob started
-  Printjob done
-  File uploaded (optional)
-  Timelapse done (optional)
-
 
 " />
     <meta itemprop="image" content="https://plugins.octoprint.org/assets/img/plugins/growl/notification.png" />
@@ -172,7 +151,6 @@ local network. Right now it sends notifications for the following events:
   </div>
 </div>
 
-
 <div id="wrap">
     <div id="main">
     
@@ -224,16 +202,16 @@ local network. Right now it sends notifications for the following events:</p>
 
 <h2 id="configuration">Configuration</h2>
 
-<p>You’ll have to configure the host your Growl service is running on (which is probably not the same machine that 
+<p>You’ll have to configure the host your Growl service is running on (which is probably not the same machine that
 your OctoPrint installation is running on), the port it is listening on and - if you secured your growl instance against
 notifications from the network with a password - also the password needed to connect to it.</p>
 
-<p>You can do all this via the settings dialog under “Plugins &gt; Growl”. If you have your OctoPrint installation’s 
-<a href="https://github.com/foosel/OctoPrint/wiki/Plugin:-Discovery">bundled discovery plugin</a> also 
-<a href="https://github.com/foosel/OctoPrint/wiki/Plugin:-Discovery#installing-pybonjour">configured with pybonjour support</a> 
+<p>You can do all this via the settings dialog under “Plugins &gt; Growl”. If you have your OctoPrint installation’s
+<a href="https://github.com/foosel/OctoPrint/wiki/Plugin:-Discovery">bundled discovery plugin</a> also
+<a href="https://github.com/foosel/OctoPrint/wiki/Plugin:-Discovery#installing-pybonjour">configured with pybonjour support</a>
 you’ll also be able to see all the Growl instances on your local network that OctoPrint was able to discover there.</p>
 
-<p>By default only the notifications for “Printjob started” and “Printjob done” are enabled. If you also want to get 
+<p>By default only the notifications for “Printjob started” and “Printjob done” are enabled. If you also want to get
 notification about the other events, you’ll have to <strong>tell Growl</strong>. OctoPrint will send them all, but your local Growl
 instance needs to be told to also display them. You can do this in the configuration of your Growl service. This
 is how it might look:</p>
@@ -302,7 +280,7 @@ is how it might look:</p>
       
       <dl class="installations">
         <dt>Active instances the past month</dt>
-        <dd>Installed on at least <strong>78</strong> instances</dd>
+        <dd>Installed on at least <strong>77</strong> instances</dd>
       </dl>
       
       
@@ -511,6 +489,7 @@ is how it might look:</p>
     }
   });
 </script>
+
     </div>
 </div>
 
@@ -568,7 +547,6 @@ is how it might look:</p>
               </div>
           </div>
       </footer>
-
 
 <script integrity="sha256-oq4gZXkRKQNEXwwNS5jzGrkB2yjohz3HyBzkCgY3J0U=" crossorigin="anonymous" type="text/javascript" src="/assets/js/prettify-a2ae206579112903445f0c0d4b98f31ab901db28e8873dc7c81ce40a06372745.js"></script>
 <script integrity="sha256-9WUabhj4hYHZvjzwYyj+3p4RKUPJ7AN7TCwdxiPZQps=" crossorigin="anonymous" type="text/javascript" src="/assets/js/bootstrap.min-f5651a6e18f88581d9be3cf06328fede9e112943c9ec037b4c2c1dc623d9429b.js"></script>
