@@ -32,7 +32,7 @@ compatibility:
   - windows
   - macos
   - freebsd
-  python: ">=2.7,<3"
+  python: ">=2.7,<4"
 
 ---
 Adds feature to create various gcode macros and display them in sidebar menu
