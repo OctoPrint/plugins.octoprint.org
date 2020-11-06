@@ -23,11 +23,11 @@ tags:
 - sidebar
 
 screenshots:
-- url: assets/img/plugins/touchtest/example.png
+- url: /assets/img/plugins/touchtest/example.png
   alt: Screenshot of Touchtest sidebar panel
   caption: Touchtest sidebar panel
 
-featuredimage: assets/img/plugins/touchtest/example.png
+featuredimage: /assets/img/plugins/touchtest/example.png
 ---
 
 Touch Test plugin for OctoPrint adds a new sidebar panel, essential for manual bed leveling.
