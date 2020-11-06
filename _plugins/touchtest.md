@@ -26,6 +26,9 @@ screenshots:
 - url: /assets/img/plugins/touchtest/example.png
   alt: Screenshot of Touchtest sidebar panel
   caption: Touchtest sidebar panel
+  
+compatibility:
+  python: ">=2.7,<4"
 
 featuredimage: /assets/img/plugins/touchtest/example.png
 ---
