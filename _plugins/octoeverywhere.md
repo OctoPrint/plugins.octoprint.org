@@ -55,16 +55,20 @@ compatibility:
 
 # Hello!
 
-We welcome you aboard the [OctoEverywhere](https://octoeverywhere.com/) rocket! With a **quick** and **free** 2-minute setup you too will can have access to your OctoPrint instance... everywhere!
+We welcome you aboard the [OctoEverywhere.com](https://octoeverywhere.com/) rocket! With a **quick and free 2-minute setup** you too will can have access to your OctoPrint instance... everywhere!
 
-# What Can You Do For Me?
+## Free Remote Access Everywhere?
 
-[OctoEverywhere.com](https://octoeverywhere.com/) gives you **full access** to the exact same OctoPrint webpage portal you know and love. Your customizations, your plugins, your favorite 3rd party apps... everywhere!
+Right! [OctoEverywhere.com](https://octoeverywhere.com/) gives you **full access** to the exact same OctoPrint webpage portal you know and love. Your customizations, your plugins, your favorite 3rd party apps... everywhere!
 
-# Is It Safe?
+## Is It Safe?
 
 [OctoEverywhere.com](https://octoeverywhere.com/) is 100% safe and secure, using standard “bank-level” encryption used widely around the internet. The system doesn’t require any complicated setup - just install the plugin, create an account, and you’re done!
 
-# Give It A Go!
+## Give It A Go!
 
 Interested? Seeing is believing! Check out [OctoEverywhere.com](https://octoeverywhere.com/) to get started!
+
+## Questions Or Comments?
+
+Join our [Reddit Community](https://www.reddit.com/r/OctoEverywhere/) for help!
