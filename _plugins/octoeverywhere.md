@@ -4,7 +4,7 @@ layout: plugin
 id: octoeverywhere
 title: OctoEverywhere!
 description: Free remote access to your full OctoPrint setup anywhere in the world! Your plugins, your camera, your controls, your favorite 3rd party apps. Safe, simple, and secure.
-authors: Quinn Damerell
+author: Quinn Damerell
 license: AGPLv3
 
 # today's date in format YYYY-MM-DD, e.g.
