@@ -34,3 +34,5 @@ resets the timer when:
  - you use `M150` to turn the lights on manually,
  - a print finishes (completed, stopped, or failed),
  - or the settings are updated
+
+![Screenshot of LightsOut settings](/assets/img/plugins/lightsout/settings_screenshot.png)
