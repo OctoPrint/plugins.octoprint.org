@@ -2869,6 +2869,17 @@
 "author": "Quinn Damerell",
 "content": "Hello!We welcome you aboard the OctoEverywhere.com rocket! With a quick and free 2-minute setup you too will can have access to your OctoPrint instance… everywhere!Free Remote Access Everywhere?Right! OctoEverywhere.com gives you full access to the exact same OctoPrint webpage portal you know and love. Your customizations, your plugins, your favorite 3rd party apps… everywhere!Is It Safe?OctoEverywhere.com is 100% safe and secure, using standard “bank-level” encryption used widely around the internet. The system doesn’t require any complicated setup - just install the plugin, create an account, and you’re done!Give It A Go!Interested? Seeing is believing! Check out OctoEverywhere.com to get started!Questions Or Comments?Join our Reddit Community for help!",
 "tags": ["remote access","remote monitor","remote camera","remote app","remote printing","remote","3rd party app support","phone","plugin support","webcam","free","secure","safe","cloud printing","internet","port forwarding"]
+},
+
+{
+"id": "/plugins/lightsout",
+"url": "/plugins/lightsout/",
+"date": "2020-11-08 00:00:00 -0600",
+"title": "OctoPrint-LightsOut",
+"description": "Automatically shuts off lights after some delay when printing completes",
+"author": "Daniel Miller",
+"content": "LightsOut PluginAutomatically turns out the lights after a set period of time. Automaticallyresets the timer when:  you use M150 to turn the lights on manually,  a print finishes (completed, stopped, or failed),  or the settings are updated",
+"tags": ["lights","timer","LED","M150"]
 }
 ]
 }
