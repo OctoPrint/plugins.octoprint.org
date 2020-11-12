@@ -30,6 +30,8 @@ featuredimage: /assets/img/plugins/TPLinkSmartplug/screenshot_on.png
 
 # TP-Link Smartplug
 
+***Warning***: Recent firmware version 1.1.0 for the HS100, HS110 have been reported to break the capability of this plugin to communicate with kasa devices. There is nothing that I can do to resolve this issue until the communication protocol is reverse engineered again.
+
 Work inspired by [OctoPrint-PSUControl](https://github.com/kantlivelong/OctoPrint-PSUControl) and [TP-Link WiFi SmartPlug Client](https://github.com/softScheck/tplink-smartplug), this plugin controls a TP-Link Smartplug via OctoPrint's nav bar.
 
 ## Screenshots
