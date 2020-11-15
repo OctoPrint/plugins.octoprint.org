@@ -77,7 +77,7 @@ Install manually using this URL:
 
 ## Configuration
 
-Follow setup wizard or go to OctoPrint settings: 
+Follow setup wizard or go to OctoPrint settings:
 
 1. Indicate your gateway ip and your security code (found under your gateway)
 2. Save

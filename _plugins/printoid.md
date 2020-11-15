@@ -67,10 +67,10 @@ This plugin sends immediate push notifications to your Android devices running
 - [MMU](https://shop.prusa3d.com/en/upgrades/183-original-prusa-i3-mk25smk3s-multi-material-2s-upgrade-kit-mmu2s.html#) requires user assistance (it requires Prusa firmware)
 - Firmware errors (get security alerts like thermal runaway, probing failed, min temp error, max temp error...)
 
-This plugin does not need your phone to be connected to the same network as your OctoPrint server to send the notifications. 
+This plugin does not need your phone to be connected to the same network as your OctoPrint server to send the notifications.
 You will be able to receive the notifications even if you are out of your home and/or connected to the cellular network (3G/4G/5G) for example.
 
-This plugin does not need your network to be opened to the Internet. You do not need to do port forwarding, and you do not need to setup a VPN ;) 
+This plugin does not need your network to be opened to the Internet. You do not need to do port forwarding, and you do not need to setup a VPN ;)
 
 Printoid does not need to be opened on your device to receive the notifications from the plugin. The app can be killed and your phone can be sleeping, you will receive the notifications whatever happens!
 
@@ -93,11 +93,10 @@ or manually using this URL:
 
 Once the plugin has been installed:
 
-1. Open the _Settings_ panel of OctoPrint 
+1. Open the _Settings_ panel of OctoPrint
 2. Navigate to the _Plugins_ section and select _Printoid Notifications_
 3. Open the Printoid application on your phone, and connect it to your OctoPrint server
 4. Wait few seconds for the app to be fully refreshed
 5. From the OctoPrint interface, click on the _Send test notification_ button
 6. Check on your phone, you should receive your first notification!
-7. The Printoid app is now paired with the Printoid plugin, you will receive notifications! 
-
+7. The Printoid app is now paired with the Printoid plugin, you will receive notifications!

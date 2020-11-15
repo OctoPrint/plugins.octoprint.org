@@ -25,7 +25,7 @@ screenshots:
 - url: https://raw.githubusercontent.com/fmalekpour/OctoPrint-Gpioshutdown/master/screenshots/screen01.jpg
   alt: Configuration Screen
   caption: Configuration Screen
-  
+
 featuredimage: https://raw.githubusercontent.com/fmalekpour/OctoPrint-Gpioshutdown/master/screenshots/screen01.jpg
 
 compatibility:
@@ -33,7 +33,7 @@ compatibility:
 
   octoprint:
   - 1.3.0
- 
+
   os:
   - linux
 ---

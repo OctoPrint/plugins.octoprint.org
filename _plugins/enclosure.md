@@ -76,5 +76,3 @@ A list of things that you can do:
 * Add sub-menus on navbar to quick access outputs and temperature sensors
 
 There is also an API that can be used to interact with the plugin with other software
-
-

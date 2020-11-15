@@ -43,7 +43,7 @@ screenshots:
 - url: /assets/img/plugins/klipper/performance-graph.png
   alt: Performance Graph
   caption: Performance Graph
-  
+
 featuredimage: /assets/img/plugins/klipper/message-log.png
 
 compatibility:
@@ -64,7 +64,7 @@ It provides the following functions:
 - A dialog for Klippers PID Tuning.
 - A dialog to set a coordinate offset for future GCODE move commands.
 - A log displaying only Klipper messages.
-- A basic configuration editor to configure Klipper directly through your browser. 
+- A basic configuration editor to configure Klipper directly through your browser.
 - A performance graph displaying key parameters extracted from the Klipper logs, helpful when debugging performance issues.
 
 #### Get Help

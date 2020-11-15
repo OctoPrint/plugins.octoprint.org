@@ -44,4 +44,3 @@ This plugin cuts the solid state relay from power when a configured temperature 
 
 In some countries, not everybody is allowed to connect or modify 230V/130V electrical cicuits.
 In this case you'll do the changes !! AT YOUR OWN RISK !! and no insurance will cover damage.
-

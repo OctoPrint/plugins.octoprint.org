@@ -4,7 +4,9 @@ layout: plugin
 id: discordremote
 title: OctoPrint-DiscordRemote
 description: Discord bot for OctoPrint
-author: Cameron Cross, originally by Benjamin Chanudet
+authors:
+- Cameron Cross
+- Benjamin Chanudet
 license: MIT
 
 # TODO
@@ -56,5 +58,5 @@ It is currently capable of:
 * Connecting and Disconnecting to the printer.
 
 
-**Important**: There are no permissions or controls as to who can send commands to the bot. 
+**Important**: There are no permissions or controls as to who can send commands to the bot.
 This **MUST** be done by the owner of the Discord channel.

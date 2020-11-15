@@ -27,7 +27,7 @@ screenshots:
 - url: /assets/img/plugins/thingiverse/thingiverse_settings.jpg
   alt: Thingiverse Settings
   caption: ThingiverseSettings
-  
+
 ---
 
 # OctoPrint-Thingiverse
@@ -44,8 +44,8 @@ This repository is open for everyone, for then mentioned task.
 
 **Description**
 
-This plugin adds the ability to browse Thingiverse website from OctoPrint. 
-A lot of people use Thingiverse website for their 3D model portfolio, but they need 
+This plugin adds the ability to browse Thingiverse website from OctoPrint.
+A lot of people use Thingiverse website for their 3D model portfolio, but they need
 to change windows all the time (ALT+TAB).
 
 **No more!**
@@ -53,7 +53,7 @@ to change windows all the time (ALT+TAB).
 Now you can search 3D models inside your OctoPrint environment.
 
 **Tip:**
-If you have Slic3r or Cura engine plugin, all you need is your OctoPrint. No browser, no external slicing engines. 
+If you have Slic3r or Cura engine plugin, all you need is your OctoPrint. No browser, no external slicing engines.
 
 **Search the model** > **Download**  > **Open zip file** > **Drag&Drop .stl file** > **Print!**.
 
@@ -72,7 +72,7 @@ Install via the bundled [Plugin Manager](https://docs.octoprint.org/en/master/bu
     ```
 ## Setup
 
-Once installed go into OctoPrint Settings > Thingiverse where you can enable/disable this function and follow a small guide for a cleaner and ergonomic view of the website.   
+Once installed go into OctoPrint Settings > Thingiverse where you can enable/disable this function and follow a small guide for a cleaner and ergonomic view of the website.
 
 ## Disclaimer
 
@@ -83,7 +83,7 @@ The Thingiverse website is copyright, trademark, and owned by MakerBot Industrie
 The author of this plugin is not responsible for any malicious action regarding MakerBot Industries, LLC property.
 
 ### Support the effort
-If you found this plugin useful you can support it's creator. 
+If you found this plugin useful you can support it's creator.
 Thank you.
 
 [![paypal](/assets/img/plugins/thingiverse/paypal-support.png)](https://paypal.me/stefancandrea)

@@ -4,7 +4,9 @@ layout: plugin
 id: eeprom_marlin
 title: Marlin EEPROM Editor
 description: Makes it possible to change the EEPROM values of Marlin Firmware through OctoPrint
-author: Charlie Powell, previously Anderson Silva
+authors:
+- Charlie Powell
+- Anderson Silva
 license: AGPLv3
 
 date: 2015-08-30

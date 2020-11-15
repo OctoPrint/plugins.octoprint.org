@@ -39,12 +39,12 @@ compatibility:
   - 1.4.2
 
   python: ">=2.7,<4"
-      
+
 ---
 
 Ever wanted to start a printjob sometime later? Instead of scheduliing a printjob by other means
 (cron & curl via API), this plugin allows for a printjob to be started and immediately put on hold
-until a given time (or immediately, if so desired). 
+until a given time (or immediately, if so desired).
 
 This might be useful if you want to start a printjob in the middle of the night (while sleeping)
 or even just a little later on (without the risk of forgetting to actually start the printjob later on).

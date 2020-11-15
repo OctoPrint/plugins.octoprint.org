@@ -33,7 +33,7 @@ featuredimage: /assets/img/plugins/rtmpstreamer/tab_screenshot.jpg
 
 Plugin that adds a tab to OctoPrint for viewing, starting, and stopping a re-encoded stream to any RTMP server. Only tested with Twitch.
 
-**Notes:** 
+**Notes:**
 - Plugin requires that OctoPrint's webcam stream uses a full url path including the ip address, ie `http://192.168.1.2/webcam/?action=stream`
 - Only tested streaming to Twitch from a Pi3.
 - Plugin does not provide a streaming application, it just re-encodes the mjpg stream (included with ocotpi) to a flv stream and transmits to configured RTMP server url.

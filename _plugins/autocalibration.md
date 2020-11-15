@@ -1,36 +1,36 @@
 ---
 layout: plugin
-    
+
 id: autocalibration
 title: Autocalibration
 description: Calibrates your printers backlash for the X, Y or Z-axis.
 author: Florens Wasserfall (Platsch)
 license: AGPLv3
-    
+
 # today's date in format YYYY-MM-DD, e.g.
 date: 2015-11-09
-    
+
 homepage: https://github.com/platsch/OctoPrint-Autocalibration
 source: https://github.com/platsch/OctoPrint-Autocalibration
 archive: https://github.com/platsch/OctoPrint-Autocalibration/archive/master.zip
-    
+
 # set this to true if your plugin uses the dependency_links setup parameter to include
 # library versions not yet published on PyPi. SHOULD ONLY BE USED IF THERE IS NO OTHER OPTION!
 follow_dependency_links: false
-    
+
 tags:
 - repetier
 - calibration
 - backlash
 
 screenshots:
-- url: /assets/img/plugins/autocalibration/screenshot.png 
+- url: /assets/img/plugins/autocalibration/screenshot.png
   alt: Settings dialog of the autocalibration plugin.
   caption: Settings dialog of the autocalibration plugin.
 
 featuredimage: /assets/img/plugins/autocalibration/screenshot.png
 ---
-    
+
 This plugin calibrates your printers [backlash](https://en.wikipedia.org/wiki/Backlash_%28engineering%29) for the X, Y or Z-axis.
 
 ## How does it work?

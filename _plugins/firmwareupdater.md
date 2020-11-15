@@ -4,7 +4,10 @@ layout: plugin
 id: firmwareupdater
 title: Firmware Updater
 description: Flash pre-compiled firmware images from OctoPrint
-author: Gina Häußge and Ben Lye, based on work by Nicanor Romero Venier
+authors:
+- Ben Lye
+- Gina Häußge
+- Nicanor Romero Venier
 license: AGPLv3
 
 # today's date in format YYYY-MM-DD, e.g.

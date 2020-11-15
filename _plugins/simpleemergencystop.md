@@ -34,7 +34,7 @@ screenshots:
   alt: Setting
 
 compatibility:
-  
+
   python: ">=2.7,<4"
 
 
