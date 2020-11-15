@@ -110,6 +110,7 @@ This plugin can use the GPIO.BOARD or GPIO.BCM numbering scheme.
 * Detect if filament is not moving anymore (jammed or runout)
     * Detection based on timeout
     * Detection based on filament position returned bei M114 (unfortunately imprecise compared with firmware)
+    * Alternative pausing commands if M600 is not supported by the printer
 
 ## Installation
 
@@ -135,6 +136,7 @@ To reduce the negative effects on the print quality a sampling time must be set.
 
 ### Octoprint - Firmware & Protocol
 Since currently GCode command M600 is used to interrupt the print, it is recommended to add M600 to the setting "Pausing commands".
+Since v1.1.3 there are also alternative pausing commands [M0, M1, M25, M226, M600, M601] available, for those whose printer don't support M600.
 
 ### Octoprint - GCode Scripts
 If you do not want that the print is paused right on your print, I recommend to add a GCode Script for "After print job is paused". Also adding GCode script "Before print job is resumed" might be useful, in the case you hit the heatbed or print head during the change of the filament or removing the blockage.
@@ -144,8 +146,10 @@ If you do not want that the print is paused right on your print, I recommend to 
 * Be cautious not to damage your Raspberry Pi, because of wrong voltage. I don't take any responsibility for wrong wiring.
 
 ## Outlook
-Support of multiple sensors for multiextruders like 4 channel kraken hotend
+* Integrated sensor connection test
+* Support of multiple sensors for multiextruders like 4 channel kraken hotend
 
 ## Contact
 * [Issues](https://github.com/maocypher/Octoprint-Smart-Filament-Sensor/issues)
-* [Slack](https://maocypher.slack.com/archives/C01DG7C82UW)
+* [Smart-Filament-Sensor Discord](https://discord.gg/YQsXrSwrV7)
+* [Octoprint Discord](https://discord.octoprint.org/)
