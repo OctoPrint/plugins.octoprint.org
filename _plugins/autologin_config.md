@@ -33,7 +33,7 @@ featuredimage: /assets/img/plugins/autologin_config/config.png
 
 compatibility:
   octoprint:
-    - 1.5.0
+    - 1.4.0
 
   os:
     - linux
