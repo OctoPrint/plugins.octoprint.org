@@ -27,7 +27,6 @@ screenshots:
   - url: /assets/img/plugins/autologin_config/config.png
     alt: configuration
     caption: Configuration UI
-  - ...
 
 featuredimage: /assets/img/plugins/autologin_config/config.png
 
