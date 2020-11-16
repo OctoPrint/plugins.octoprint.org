@@ -5,10 +5,35 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>https://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 16 Nov 2020 06:12:12 -0600</pubDate>
-    <lastBuildDate>Mon, 16 Nov 2020 06:12:12 -0600</lastBuildDate>
+    <pubDate>Mon, 16 Nov 2020 17:09:32 -0600</pubDate>
+    <lastBuildDate>Mon, 16 Nov 2020 17:09:32 -0600</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
+    
+      <item>
+        <title>OctoPrint-AutoLoginConfig</title>
+        <description>
+          <![CDATA[
+            Configure AutoLoginLocal from the UI with ease.
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/autologin_config/config.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Sun, 15 Nov 2020 00:00:00 -0600</pubDate>
+        <link>https://plugins.octoprint.org/plugins/autologin_config/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/autologin_config/</guid>
+        
+        <category>settings</category>
+        
+        <category>configuration</category>
+        
+        <category>autologin</category>
+        
+        <category>autologinlocal</category>
+        
+        <category>accesscontrol</category>
+        
+      </item>
     
       <item>
         <title>OctoPrint-LightsOut</title>
@@ -257,28 +282,6 @@ Sun, 27 Sep 2020 00:00:00 -0500</pubDate>
         <category>reprap</category>
         
         <category>documentation</category>
-        
-      </item>
-    
-      <item>
-        <title>Octoprint-LCD-HD44780</title>
-        <description>
-          <![CDATA[
-            Output status information on a 20x4 LCD screen
-            <p><img src="https://plugins.octoprint.org/assets/img/repo-600x400.png"></p>
-            
-          ]]>
-        </description>
-        <pubDate>
-Sat, 26 Sep 2020 00:00:00 -0500</pubDate>
-        <link>https://plugins.octoprint.org/plugins/octoprint_hd44780/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/octoprint_hd44780/</guid>
-        
-        <category>status</category>
-        
-        <category>gpio</category>
-        
-        <category>lcd</category>
         
       </item>
     

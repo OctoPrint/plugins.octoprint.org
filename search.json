@@ -2880,6 +2880,17 @@
 "author": "Daniel Miller",
 "content": "LightsOut PluginAutomatically turns out the lights after a set period of time. Automaticallyresets the timer when:  you use M150 to turn the lights on manually,  a print finishes (completed, stopped, or failed),  or the settings are updated",
 "tags": ["lights","timer","LED","M150"]
+},
+
+{
+"id": "/plugins/autologin_config",
+"url": "/plugins/autologin_config/",
+"date": "2020-11-15 00:00:00 -0600",
+"title": "OctoPrint-AutoLoginConfig",
+"description": "Configure AutoLoginLocal from the UI with ease.",
+"author": "Charlie Powell",
+"content": "Allows for UI configuration of AutoLoginLocal - an OctoPrint feature that automatically logs in a user from a local network.                                    Do not use this if you cannot trust EVERYONE on your local network. And I really            mean everyone. If you ignore this and then someone takes over your OctoPrint instance, installs            malware on it and makes your printer print an endless stream of benchies, that's on you.            This plugin requires access control to be enabled &amp; set up correctly on OctoPrint 1.4.0 or newer.Problems, bugs, need help? Get in touch:  on the OctoPrint Community Forum  on the Issue Tracker  on the OctoPrint discordSupport my work with OctoPrint Thanks to JetBrains for sponsoring an open source license for their IDEsYou can support my work through Github here!AutoLoginLocal Configuration by Charlie Powell and contributors",
+"tags": ["settings","configuration","autologin","autologinlocal","accesscontrol"]
 }
 ]
 }
