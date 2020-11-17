@@ -11,7 +11,7 @@ date: 2020-11-15
 
 homepage: https://github.com/OctoPrint/OctoPrint-AutoLoginConfig
 source: https://github.com/OctoPrint/OctoPrint-AutoLoginConfig
-archive: https://github.com/OctoPrint/OctoPrint-AutoLoginConfig/archive/main.zip
+archive: https://github.com/OctoPrint/OctoPrint-AutoLoginConfig/releases/latest/download/release.zip
 
 tags:
   - settings
