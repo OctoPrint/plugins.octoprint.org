@@ -4,7 +4,9 @@ layout: plugin
 id: displayprogress
 title: DisplayProgress
 description: Displays the print progress on the printer's display
-author: jneilliii, Gina Häußge
+authors:
+- jneilliii
+- Gina Häußge
 license: AGPLv3
 
 date: 2015-08-03
@@ -25,6 +27,9 @@ screenshots:
   caption: Example of operation
 
 featuredimage: /assets/img/plugins/displayprogress/example.jpg
+
+compatibility:
+  python: ">=2.7,<4"
 
 ---
 

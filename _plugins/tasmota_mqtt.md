@@ -20,6 +20,9 @@ tags:
 - mqtt
 - power
 
+compatibility:
+  python: ">=2.7,<4"
+
 featuredimage: /assets/img/plugins/tasmota_mqtt/navbar.png
 
 ---
@@ -37,7 +40,7 @@ This plugin allows the control of [Tasmota](https://github.com/arendst/Sonoff-Ta
 Install the [MQTT](https://github.com/OctoPrint/OctoPrint-MQTT) plugin via the Plugin Manager or manually using this url:
 
 	https://github.com/OctoPrint/OctoPrint-MQTT/archive/master.zip
-	
+
 ## Settings
 
 ![settings](/assets/img/plugins/tasmota_mqtt/settings.png)
@@ -58,8 +61,8 @@ If you experience issues with this plugin or need assistance please use the issu
 Check out my other plugins [here](https://plugins.octoprint.org/by_author/#jneilliii)
 
 ### Support My Efforts
-I, jneilliii, programmed this plugin for fun and do my best effort to support those that have issues with it, please return the favor and leave me a tip if you find this plugin helpful.
+I, jneilliii, programmed this plugin for fun and do my best effort to support those that have issues with it, please return the favor and leave me a tip or become a Patron if you find this plugin helpful and want me to continue future development.
 
-[![paypal](/assets/img/plugins/tasmota_mqtt/paypal-with-text.png)](https://paypal.me/jneilliii)
+[![Patreon](/assets/img/plugins/tasmota_mqtt/patreon-with-text-new.png)](https://www.patreon.com/jneilliii) [![paypal](/assets/img/plugins/tasmota_mqtt/paypal-with-text.png)](https://paypal.me/jneilliii)
 
 <small>No paypal.me? Send funds via PayPal to jneilliii&#64;gmail&#46;com</small>

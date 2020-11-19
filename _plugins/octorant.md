@@ -38,7 +38,7 @@ featuredimage: /assets/img/plugins/octorant/featured.jpg
 
 OctoRant is a plugin allowing Octoprint to send notifications to a Discord channel via a webhook URL. When wanted it can directly send a snapshot to Discord (without needing third-party services)
 
-License : MIT 
+License : MIT
 
 ![Screeshot of the Discord messages](/assets/img/plugins/octorant/featured.jpg)
 
@@ -84,8 +84,8 @@ Here you can customize every message handled by Octorant.
 
 - **Toggle the message** : by unchecking the checkbox in front of the message title, you can disable the message. It won't be sent to Discord.
 - **Message** : you can change the default content here. See the section [Message format](#message-format) for more information.
-- **Include snapshot** : if you have a snapshot URL defined in the Octoprint settings, you can choose to upload a snapshot with the message to Discord. 
-- **Notify every `XX`%** : specific to the `printing progress` message, this settings allows you to change the frequency of the notification : 
+- **Include snapshot** : if you have a snapshot URL defined in the Octoprint settings, you can choose to upload a snapshot with the message to Discord.
+- **Notify every `XX`%** : specific to the `printing progress` message, this settings allows you to change the frequency of the notification :
     - `10%` means you'll receive a message at 10%, 20%, 30%, 40% ... 80%, 90% of the printing process.
     - `5%` means you'll receive a message at 5%, 10%, 15%, 20% ... 80%, 85%, 90%, 95% of the printing process.
     - etc...
@@ -98,7 +98,7 @@ Messages are regular Discord messages, which means you can use :
 - `:emoji:` shortcuts to display emojis
 - `@mentions` to notify someone
 
-Some events also support variables, here is a basic list : 
+Some events also support variables, here is a basic list :
 
 **Printing process : started event** :
 - `{name}` : file's name that's being printed
@@ -110,7 +110,7 @@ Some events also support variables, here is a basic list :
 - `{path}` : file's path within its origin location
 - `{origin}` : the origin storage location
 
-**Printing process : done event** : 
+**Printing process : done event** :
 - `{name}` : file's name that's being printed
 - `{path}` : file's path within its origin location
 - `{origin}` : the origin storage location
@@ -139,7 +139,7 @@ Some events also support variables, here is a basic list :
 - `{progress}` : progress in % of the print.
 
 **Printer state : error**
-- `{error}` : The error received 
+- `{error}` : The error received
 
 For more reference, you can go to the [Octoprint documentation on Events](http://docs.octoprint.org/en/master/events/index.html#sec-events-available-events)
 

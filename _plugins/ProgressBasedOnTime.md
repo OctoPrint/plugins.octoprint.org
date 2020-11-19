@@ -40,6 +40,8 @@ compatibility:
   octoprint:
   - 1.3.9
 
+  python: ">=2.7,<4"
+
   # List of compatible operating systems
   #
   # Valid values:
@@ -76,6 +78,3 @@ It will apply change for all plugin and apps that display progression informatio
 I suggest to associate those plugins:
  * Print Time Genius (https://plugins.octoprint.org/plugins/PrintTimeGenius/)
  * DetailedProgress (https://plugins.octoprint.org/plugins/detailedprogress/).
-
-
-

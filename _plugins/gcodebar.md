@@ -26,6 +26,10 @@ screenshots:
   caption: Send Custom GCodes
 
 featuredimage: /assets/img/plugins/gcodebar/gcodebar.png
+
+compatibility:
+  python: ">=2.7,<4"
+
 ---
 
 # GcodeBar

@@ -27,6 +27,9 @@ screenshots:
 
 featuredimage: /assets/img/plugins/freemobilenotifier/freemobilenotifier.png
 
+compatibility:
+  python: ">=2.7,<4"
+
 ---
 
 Receive SMS notifications when OctoPrint jobs are complete.

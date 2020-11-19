@@ -11,6 +11,10 @@ layout: page
 
     {% include search.html %}
 
+    <div class="ad">
+      {% include adsnippet_desktop.html %}
+    </div>
+
     <h2><i class="far fa-lightbulb"></i> Help</h2>
 
     <p>
@@ -28,10 +32,88 @@ layout: page
 
     <h2><i class="fa fa-chart-line"></i> Stats</h2>
 
-    There are currently {{ site.plugins | size }} plugins listed in this repository.
+    {% assign plugin_counter = site.plugins | size %}
+    {% assign python3_counter = 0 %}
+    {% assign abandoned_counter = 0 %}
 
-    <div class="ad">
-      {% include adsnippet_desktop.html %}
-    </div>
+    {% for plugin in site.plugins %}
+      {% if plugin.compatibility and plugin.compatibility.python and plugin.compatibility.python == '>=2.7,<4' %}
+        {% assign python3_counter = python3_counter | plus:1 %}
+      {% elsif plugin.compatibility and plugin.compatibility.python and plugin.compatibility.python == '>=3,<4' %}
+        {% assign python3_counter = python3_counter | plus:1 %}
+      {% endif %}
+      {% if plugin.abandoned %}
+        {% assign abandoned_counter = abandoned_counter | plus:1 %}
+      {% endif %}
+    {% endfor %}
+
+    {% assign all_authors = "" | split: "/" %}
+    {% for plugin in site.plugins %}
+      {% if plugin.authors %}
+        {% for author in plugin.authors %}
+          {% unless author == "" %}
+            {% assign all_authors = all_authors | push: author %}
+          {% endunless %}
+        {% endfor %}
+      {% else %}
+        {% unless plugin.author == "" %}
+          {% assign all_authors = all_authors | push: plugin.author %}
+        {% endunless %}
+      {% endif %}
+    {% endfor %}
+    {% assign all_authors = all_authors | uniq | sort_natural %}
+    {% assign author_count = all_authors | size %}
+
+    <p>
+      There are currently <strong>{{ plugin_counter }}</strong> plugins listed in this repository of
+      which <strong>{{ python3_counter }} ({{ python3_counter | times:100 | divided_by:plugin_counter | round }}%)</strong>
+      are marked as Python 3 compatible.
+    </p>
+
+    <p>
+      <a href="https://github.com/OctoPrint/plugins.octoprint.org/labels/abandoned%20plugin"><strong>{{ abandoned_counter }}</strong>
+      plugins have been marked as abandoned</a> and are looking for a new maintainer.
+    </p>
+
+    <p>
+      All in all <strong>{{ author_count }}</strong> plugin authors have spent time and effort to bring you these plugins.
+    </p>
+
+    {% assign shown_usage = false %}
+
+    {% assign sorted_plugins = site.plugins | where_exp: "plugin", "plugin.stats.month.instances" | sort: "stats.month.instances" | reverse %}
+    {% assign sorted_plugins_size = sorted_plugins | size %}
+    {% if sorted_plugins_size > 0 %}
+    {% assign shown_usage = true %}
+    <h3>Top 10 of the month</h3>
+    <ol>
+      {% for plugin in sorted_plugins limit: 10 %}
+      <li>
+        <a href="{{ plugin.url | prepend: site.baseurl }}">{{ plugin.title }}</a><br>
+        <small class="muted">over {% include format_number number=plugin.stats.month.instances %} instances</small>
+      </li>
+      {% endfor %}
+    </ol>
+    {% endif %}
+
+    {% assign sorted_plugins = site.plugins | where_exp: "plugin", "plugin.stats.week.install_events" | sort: "stats.week.install_events" | reverse %}
+    {% assign sorted_plugins_size = sorted_plugins | size %}
+    {% if sorted_plugins_size > 0 %}
+    {% assign shown_usage = true %}
+    <h3>Trending this week</h3>
+    <ol>
+      {% for plugin in sorted_plugins limit: 5 %}
+      <li>
+        <a href="{{ plugin.url | prepend: site.baseurl }}">{{ plugin.title }}</a><br>
+        <small class="muted">over {% include format_number number=plugin.stats.week.install_events %} new installs</small>
+      </li>
+      {% endfor %}
+    </ol>
+    {% endif %}
+
+    {% if shown_usage %}
+    <small><em>Based on anonymous usage data.</em></small>
+    {% endif %}
+
   </div>
 </div>

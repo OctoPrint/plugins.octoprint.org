@@ -11,7 +11,7 @@ date: 2016-02-25
 
 homepage: https://github.com/fabianonline/OctoPrint-Telegram
 source: https://github.com/fabianonline/OctoPrint-Telegram
-archive: https://github.com/fabianonline/OctoPrint-Telegram/archive/stable.zip
+archive: https://github.com/fabianonline/OctoPrint-Telegram/archive/master.zip
 
 # TODO set this to true if your plugin uses the dependency_links setup parameter to include
 # library versions not yet published on PyPi. SHOULD ONLY BE USED IF THERE IS NO OTHER OPTION!
@@ -53,7 +53,7 @@ and even during a print at customizable heights or after a certain time (e.g. af
 You can also control Octoprint via messages. Send /status to receive the current status,
 /abort to abort the currently running print or /help to receive a list of available commands.
 
-Please have a look at [the documentation at github](https://github.com/fabianonline/OctoPrint-Telegram/blob/stable/README.md) 
+Please have a look at [the documentation at github](https://github.com/fabianonline/OctoPrint-Telegram/blob/stable/README.md)
 to learn how to register a Telegram bot. This is a needed step in order to make this plugin work.
 
 If you have any questions or problems feel free to contact me via Telegram: [@fabianonline](http://telegram.me/fabianonline).

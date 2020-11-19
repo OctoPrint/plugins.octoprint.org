@@ -30,6 +30,5 @@ featuredimage: /assets/img/plugins/pushjet/settings.png
 ---
 
 Notification plugin for [OctoPrint](https://octoprint.org). It can be used to receive push notifications on your phone using [Pushjet](https://pushjet.io/).
-This is practically an adaptation of the plugin from [thijsbekke](https://github.com/thijsbekke/OctoPrint-Pushover/) with minor modification and 
+This is practically an adaptation of the plugin from [thijsbekke](https://github.com/thijsbekke/OctoPrint-Pushover/) with minor modification and
 the possibility to sent the notification asynchronously.
-

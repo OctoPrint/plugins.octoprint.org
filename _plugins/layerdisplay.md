@@ -31,4 +31,4 @@ LayerDisplay displays what layer a print job is on and how many layers are in th
 - <span style="color:#E66; background:#EEE">LayerDisplay does not work when printing from the SD card.</span>
 
 ## Get Help
-Visit the [issues section](https://github.com/chatrat12/layerdisplay/issues) of GitHub if you experience an issue or have a question or suggestion. 
+Visit the [issues section](https://github.com/chatrat12/layerdisplay/issues) of GitHub if you experience an issue or have a question or suggestion.

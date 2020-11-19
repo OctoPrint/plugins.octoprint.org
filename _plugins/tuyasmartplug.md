@@ -1,6 +1,6 @@
 ---
 layout: plugin
-    
+
 id: tuyasmartplug
 title: OctoPrint-TuyaSmartplug
 description: Plugin to control Tuya based Smartplug devices from OctoPrint web interface.
@@ -8,13 +8,13 @@ author: ziirish
 license: AGPLv3
 
 date: 2018-11-12
-    
+
 homepage: https://github.com/ziirish/OctoPrint-TuyaSmartplug
 source: https://github.com/ziirish/OctoPrint-TuyaSmartplug
 archive: https://github.com/ziirish/OctoPrint-TuyaSmartplug/archive/master.zip
-    
+
 follow_dependency_links: false
-    
+
 tags:
 - Tuya
 - Smartplug
@@ -25,7 +25,7 @@ featuredimage: /assets/img/plugins/TuyaSmartplug/screenshot.png
 ---
 
 # Tuya Smartplug
-    
+
 Work based on [OctoPrint-TPLinkSmartplug](https://github.com/jneilliii/OctoPrint-TPLinkSmartplug) and [python-tuya](https://github.com/clach04/python-tuya).
 This plugin controlls [Tuya-based](https://en.tuya.com/) SmartPlugs.
 
@@ -66,7 +66,7 @@ Once installed go into settings and enter the ip address for your Tuya Smartplug
   - When checked will run system command configured in **System Command On** setting after a delay in seconds configured in **System Command On Delay**.
 - **Cmd Off**
   - When checked will run system command configured in **System Command Off** setting after a delay in seconds configured in **System Command Off Delay**.
-  
+
 ## Get Help
 
 If you experience issues with this plugin or need assistance please use the issue tracker at the plugin's Homepage linked on the right.

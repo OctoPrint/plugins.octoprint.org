@@ -1,0 +1,8 @@
+{% capture throwaway %}
+{% assign result = include.number %}
+{% assign postfix = "" %}
+{% if result > 1000 %}
+{% assign result = result | divided_by: 1000.0 %}
+{% assign postfix = "k" %}
+{% endif %}
+{% endcapture %}{{ result | round: 2 }}{{ postfix }}

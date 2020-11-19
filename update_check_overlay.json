@@ -1,0 +1,4 @@
+---
+layout: null
+---
+{{ site.data.update_check_overlays | jsonify }}

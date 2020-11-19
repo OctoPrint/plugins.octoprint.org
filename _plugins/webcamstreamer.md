@@ -34,15 +34,15 @@ featuredimage: /assets/img/plugins/webcamstreamer/screenshot_tab.png
 
 # OctoPrint-WebcamStreamer
 
-## Overview 
+## Overview
 
-Plugin that adds a tab to OctoPrint for viewing, starting, and stopping a live stream. 
+Plugin that adds a tab to OctoPrint for viewing, starting, and stopping a live stream.
 
 ![screenshot](/assets/img/plugins/webcamstreamer/screenshot_tab.png)
 
 **Credits:**
 
-Inspired by and based on the work by 
+Inspired by and based on the work by
 
 - Alex Ellis found [here](https://blog.alexellis.io/live-stream-with-docker/)
 - jneilliii [OctoPrint-YouTube Live](https://plugins.octoprint.org/plugins/YouTubeLive/) plugin found [here](https://github.com/jneilliii/OctoPrint-YouTubeLive)
@@ -125,6 +125,6 @@ Advanced option allow for modification of the [FFmpeg](https://www.ffmpeg.org/) 
     | `{webcam_url}`     | OctoPi Webcam URL
     | `{frame_rate}`     | OctoPi Webcam Frame Rate
     | `{gop_size}`       | Internal Calculated Value (frame rate * 2)
-    | `{filter}`         | Internal Calculated Value   
+    | `{filter}`         | Internal Calculated Value
 
 ![screenshot](/assets/img/plugins/webcamstreamer/screenshot_settings_advanced.png)

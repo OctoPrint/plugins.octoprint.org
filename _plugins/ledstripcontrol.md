@@ -28,6 +28,7 @@ screenshots:
 compatibility:
   octoprint:
   - 1.3.1
+  python: ">=2.7,<4"
 ---
 
 OctoPrint Plugin that intercepts M150 GCode commands and controls local GPIOs on your Pi.
@@ -39,5 +40,3 @@ Implements the M150 command syntax from the latest Marlin.
     M150 R255 U127  ; Turn LED orange
     M150            ; Turn LED off
     M150 R U B      ; Turn LED white
-
-

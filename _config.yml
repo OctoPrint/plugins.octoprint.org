@@ -4,11 +4,10 @@ short_title: Plugin Repo
 email: contact@octoprint.org
 description: The official OctoPrint Plugin Repository
 external: "https://plugins.octoprint.org"
-#external: "http://localhost:4000"
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://plugins.octoprint.org" # the base hostname & protocol for your site
+url: "https://plugins.octoprint.org" # the base hostname & protocol for your site
 twitter_username: OctoPrint3D
-github_username:  OctoPrint
+github_username: OctoPrint
 
 # Build settings
 highlighter: rouge
@@ -38,11 +37,30 @@ exclude:
 - .rbenv-version
 - node_modules
 - fetch_yt_preview
+- README.md
+- .github
+- .asset-cache
+- _build
+- .editorconfig
+- .git-blame-ignore-revs
+- .pre-commit-config.yaml
+- black.toml
 
 plugins:
 - jekyll-redirect-from
+- jekyll-assets
+
+assets:
+  digest: true
+  compress:
+    css: false
+    js: false
+  assets:
+    - "**.css"
+    - "**.js"
+  sources:
+    - "_assets"
 
 twitterlink: https://twitter.com/OctoPrint3D
 facebooklink: https://facebook.com/OctoPrint
-gpluslink: https://plus.google.com/+OctoprintOrg/posts
 youtubelink: https://www.youtube.com/c/OctoPrint3D

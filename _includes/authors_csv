@@ -1,0 +1,1 @@
+{% if include.plugin.authors %}{{ include.plugin.authors | join: ", " }}{% else %}{{ include.plugin.author }}{% endif %}

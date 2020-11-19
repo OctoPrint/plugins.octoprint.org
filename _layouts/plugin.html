@@ -45,6 +45,8 @@ layout: default
     <article class="post-content span8">
       {% if page.disabled %}<div class="alert alert-danger"><h3>This plugin is currently marked as disabled</h3>{{ page.disabled | markdownify }}</div>{% endif %}
       {% if page.up_for_adoption %}<div class="alert"><h3>This plugin is up for adoption</h3>The current maintainer of this plugin is looking for someone to take over maintenance. <a href="{{ page.up_for_adoption }}" target="_blank" rel="noopener noreferrer">Learn more...</a></div>{% endif %}
+      {% if page.abandoned %}<div class="alert"><h3>This plugin has been abandoned</h3>The current maintainer of this plugin seems to have abandoned it. If you want to take over its maintainenance, please get in touch <a href="{{ page.abandoned }}" target="_blank" rel="noopener noreferrer">here...</a></div>{% endif %}
+      {% if page.note %}<div class="alert"><h3>Please note</h3>{{ page.note | markdownify }}</div>{% endif %}
 
       <p class="lead">
         {{ page.description | strip_html | escape }}
@@ -70,12 +72,70 @@ layout: default
       </dl>
       {% if page.archive %}
       <dl class="installation">
-        <dt>Installation <a href="/help/installation/" class="fa fa-question-sign"></a></dt>
+        <dt>Installation <a href="/help/installation/" class="fas fa-question-circle"></a></dt>
         {% if page.disabled %}
-        <dd><pre><s>pip install {% if page.follow_dependency_links %}--process-dependency-links {% endif %}"{{ page.archive | strip_html | strip_newlines | escape }}"</s></pre><small>Currently not recommended</small></dd>
+        <dd>
+          URL:
+          <pre><s>{{ page.archive | escape | escape | strip_newlines }}</s></pre>
+          <small>Currently not recommended</small>
+          {% if page.follow_dependency_links %}<small>Needs "Use --process-dependency-links with pip install" to be checked.</small>{% endif %}
+        </dd>
         {% else %}
-        <dd><pre>pip install {% if page.follow_dependency_links %}--process-dependency-links {% endif %}"{{ page.archive | escape | escape | strip_newlines }}"</pre></dd>
+        <dd>
+          URL:
+          <pre>{{ page.archive | escape | escape | strip_newlines }}</pre>
+          {% if page.follow_dependency_links %}<small>Needs "Use --process-dependency-links with pip install" to be checked.</small>{% endif %}
+        </dd>
         {% endif %}
+        {% if page.disabled %}
+        <dd>
+          Command line:
+          <pre><s>pip install {% if page.follow_dependency_links %}--process-dependency-links {% endif %}"{{ page.archive | strip_html | strip_newlines | escape }}"</s></pre>
+          <small>Currently not recommended</small>
+        </dd>
+        {% else %}
+        <dd>
+          Command line:
+          <pre>pip install {% if page.follow_dependency_links %}--process-dependency-links {% endif %}"{{ page.archive | escape | escape | strip_newlines }}"</pre>
+        </dd>
+        {% endif %}
+      </dl>
+      {% endif %}
+      {% if page.date %}
+      <dl class="date">
+        <dt>Registration date</dt>
+        <dd>{{ page.date | strip_html | strip_newlines | escape | date_to_string}}</dd>
+      </dl>
+      {% endif %}
+      {% if page.stats.month.instances %}
+      <dl class="installations">
+        <dt>Active instances the past month</dt>
+        <dd>Installed on at least <strong>{% include format_number number=page.stats.month.instances %}</strong> instances</dd>
+      </dl>
+      {% endif %}
+      {% if page.stats.week.install_events %}
+      <dl class="install_events">
+        <dt>New installs the past week</dt>
+        <dd>At least <strong>{% include format_number number=page.stats.week.install_events %}</strong> new installations</dd>
+      </dl>
+      {% endif %}
+      {% if page.github %}
+      <dl class="github">
+        <dt>GitHub stats <a href="/help/github_integration/" class="fas fa-question-circle"></a> <span id="github_login">(<a href="javascript:void(0)">Login</a>)</span></dt>
+        <dd>
+          <ul>
+            {% if page.github.releases > 0 %}
+            <li>
+              Latest Release: <a href="{{ page.github.latest_release_url | strip_html | strip_newlines | escape }}" target="_blank">{{ page.github.latest_release_tag | strip_html | strip_newlines | escape }}</a><br>
+              <small>released on {{ page.github.latest_release_date | date_to_string}}</small>
+            </li>
+            <li>Releases: {% include format_number number=page.github.releases %}</li>
+            {% endif %}
+            <li>Stars: <span id="github_star_count">{% include format_number number=page.github.stars %}</span> <span id="github_star"><a href="javascript:void(0)"><i class="far fa-star"></i></a></span></li>
+            <li>Issues: {% include format_number number=page.github.open_issues %} open, {% include format_number number=page.github.closed_issues %} closed</li>
+            <li>Last push: {{ page.github.last_push | date_to_string }}</li>
+          </ul>
+        </dd>
       </dl>
       {% endif %}
       {% if page.tags %}
@@ -110,13 +170,25 @@ layout: default
             {% else %}
             <li>Operating Systems: all</li>
             {% endif %}
+            {% if page.compatibility.python %}
+            <li>Python: {{ page.compatibility.python | strip_html | strip_newlines | escape }}</li>
+            {% else %}
+            <li>Python: &gt;=2.7,&lt;3</li>
+            {% endif %}
           </ul>
         </dd>
       </dl>
-      {% if page.author %}
+      {% if page.authors %}
+      <dl class="author">
+        <dt>Authors</dt>
+        {% for author in page.authors %}
+          <dd>{% include plugin_author author=author nolabel='true'%}</dd>
+        {% endfor %}
+      </dl>
+      {% elsif page.author %}
       <dl class="author">
         <dt>Author</dt>
-        <dd>{{ page.author | strip_html | strip_newlines | escape }}</dd>
+        <dd>{% include plugin_author author=page.author nolabel='true'%}</dd>
       </dl>
       {% endif %}
       {% if page.homepage %}
@@ -138,10 +210,24 @@ layout: default
       </dl>
       {% endif %}
       <dl class="issue">
-        <dt>Something wrong with this listing?</dt>
+        <dt>Something wrong here?</dt>
         <dd>
-          <p>If there is something wrong with this listing, please <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues">report it</a>.</p>
-          <p>Only use this for problems with this listing - report <em>bugs in the plugin itself</em> to the plugin's author!</p>
+          <p>
+            If there is <strong>something wrong with this listing</strong> (broken links & images etc), please
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=bug&template=listing_error.md&title=%5BListing+Error%5D+{{ page.title | strip_html | strip_newlines | cgi_escape }}">report it here</a>.
+          </p>
+          <p>
+            If this plugin <strong>has been <em>confirmed</em> as abandoned</strong> by its maintainer, please
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=abandoned+plugin&template=abandoned_plugin.md&title=%5BAbandoned+Plugin%5D+{{ page.title | strip_html | strip_newlines | cgi_escape }}">report it here</a>.
+          </p>
+          <p>
+            If this plugin is <strong>doing something suspicious</strong> (e.g. weird network activity, unannounced tracking, ...) and
+            the maintainer is not cooperating in getting to the bottom of that, please
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=suspicious+plugin+activity&template=suspicious_plugin_activity.md&title=%5BSuspicious+Plugin+Activity%5D+{{ page.title | strip_html | strip_newlines | cgi_escape }}">report the plugin as suspicious here</a>.
+          </p>
+          <p>
+            Report bugs or feature requests for the plugin to the plugin author{% if page.homepage %} (e.g. on the plugin's <a href="{{ page.homepage }}">homepage</a>){% endif %} please, not here!
+          </p>
         </dd>
       </dl>
     </div>
@@ -149,3 +235,103 @@ layout: default
   </div>
 </div>
 
+<script type="application/javascript">
+  $(function() {
+    var has_github = {% if page.github %}true{% else %}false{% endif %};
+    if (has_github) {
+      var github_repo = {% if page.github and page.github.repo %}"{{ page.github.repo }}"{% else %}""{% endif %};
+
+      if (github_repo) {
+        var status = "unknown";
+
+        var starSpan = $("#github_star");
+        $("a", starSpan).click(function() {
+          switch (status) {
+            case "starred": {
+              window.githubUnstar(github_repo)
+                .done(function() {
+                  markAsUnstarred();
+                  updateStarcount();
+                })
+                .fail(markAsLoggedout);
+              break;
+            }
+            case "unstarred": {
+              window.githubStar(github_repo)
+                .done(function() {
+                  markAsStarred();
+                  updateStarcount();
+                })
+                .fail(markAsLoggedout);
+              break;
+            }
+            case "loggedout": {
+              window.githubLogin()
+                .done(determineStatus);
+              break;
+            }
+          }
+        });
+        starSpan.hide();
+
+        var login = $("#github_login");
+        $("a", login).click(function() {
+          switch (status) {
+            case "loggedout": {
+              window.githubLogin()
+                .done(determineStatus);
+              break;
+            }
+            case "starred":
+            case "unstarred": {
+              window.githubLogout()
+                .done(determineStatus);
+              break;
+            }
+          }
+        });
+
+        var starCount = $("#github_star_count");
+
+        var markAsStarred = function() {
+          status = "starred";
+          $("i.fa-star", starSpan).removeClass("far").addClass("fas");
+          $("a", login).text("Logout");
+        }
+        var markAsUnstarred = function() {
+          status = "unstarred";
+          $("i.fa-star", starSpan).removeClass("fas").addClass("far");
+          $("a", login).text("Logout");
+        };
+        var markAsLoggedout = function() {
+          status = "loggedout";
+          $("a", login).text("Login");
+        };
+        var updateStarcount = function() {
+          window.githubRepo(github_repo)
+            .done(function(response) {
+              starCount.text(response.stargazers_count);
+            });
+        }
+        var determineStatus = function() {
+          window.githubStatus(github_repo)
+            .done(function(starred) {
+              if (starred) {
+                markAsStarred();
+              } else {
+                markAsUnstarred();
+              }
+              starSpan.show();
+              updateStarcount();
+            })
+            .fail(function() {
+              markAsLoggedout();
+              starSpan.hide();
+            });
+        }
+
+        determineStatus();
+      }
+    }
+  });
+</script>

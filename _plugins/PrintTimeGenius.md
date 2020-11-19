@@ -36,7 +36,7 @@ featuredimage: /assets/img/plugins/PrintTimeGenius/precise.png
 compatibility:
   octoprint:
   - 1.3.9rc1
-
+  python: ">=2.7,<4"
 ---
 
 Generate highly accurate gcode printing time estimations using advanced gcode analyzers combined with the printing history.

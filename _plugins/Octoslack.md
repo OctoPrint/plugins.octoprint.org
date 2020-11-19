@@ -3,7 +3,7 @@ layout: plugin
 
 id: Octoslack
 title: Octoslack
-description: An OctoPrint plugin for monitoring your printer and prints via Slack or Mattermost
+description: An OctoPrint plugin for monitoring your printer and prints via Slack, Mattermost, Pushbullet, Pushover, Rocket.Chat, Discord, Riot/Matrix, or Microsoft Teams
 author: Chris Fraschetti
 license: MIT
 
@@ -21,6 +21,13 @@ archive: https://github.com/fraschetti/Octoslack/archive/master.zip
 tags:
 - slack
 - mattermost
+- pushbullet
+- pushover
+- rocket chat
+- matrix
+- riot
+- discord
+- microsoft teams
 - notification
 - progress
 - mobile
@@ -29,7 +36,8 @@ tags:
 - remote monitoring
 - filament runout
 - s3
-- imgur 
+- imgur
+- minio
 - gcode
 - camera
 - webcam
@@ -38,45 +46,70 @@ tags:
 - print time
 - snapshots
 - status
+- alert
+- gcode
+
+compatibility:
+  python: ">=2.7,<4"
 
 screenshots:
-- url: /assets/img/plugins/Octoprint/Octoslack-PrintStarted.png
-  alt: Print started
-  caption: Print started
-- url: /assets/img/plugins/Octoprint/Octoslack-PrintProgress.png
-  alt: Print progress
-  caption: Print progress
-- url: /assets/img/plugins/Octoprint/Octoslack-PrintFinished.png
-  alt: Print finished
-  caption: Print finished
+- url: /assets/img/plugins/Octoslack/Octoslack-PrintStarted.png
+  alt: Slack/Mattermost - Print started
+  caption: Slack/Mattermost - Print started
+- url: /assets/img/plugins/Octoslack/Octoslack-PrintProgress.png
+  alt: Slack/Mattermost - Print progress
+  caption: Slack/Mattermost - Print progress
+- url: /assets/img/plugins/Octoslack/Octoslack-PrintFinished.png
+  alt: Slack/Mattermost - Print finished
+  caption: Slack/Mattermost - Print finished
+- url: /assets/img/plugins/Octoslack/Octoslack-Pushbullet-PrintStarted.png
+  alt: Pushbullet - Print started
+  caption: Pushbullet - Print started
+- url: /assets/img/plugins/Octoslack/Octoslack-Pushover-PrintStarted.png
+  alt: Pushover - Print started
+  caption: Pushover - Print started
+- url: /assets/img/plugins/Octoslack/Octoslack-RocketChat-PrintStarted.png
+  alt: Rocket.Chat - Print started
+  caption: Rocket.Chat - Print started
+- url: /assets/img/plugins/Octoslack/Octoslack-Matrix-PrintStarted.png
+  alt: Matrix/Riot.im - Print started
+  caption: Matrix/Riot.im - Print started
+- url: /assets/img/plugins/Octoslack/Octoslack-GcodeEventCommand.png
+  alt: G-code event & System command
+  caption: G-code event & System command
 
-featuredimage: /assets/img/plugins/Octoprint/Octoslack-PrintProgress_SlackOnly.png
+featuredimage: /assets/img/plugins/Octoslack/Octoslack-PrintProgress_SlackOnly.png
 
 ---
 
 
-An OctoPrint plugin for monitoring your printer and prints via Slack or Mattermost
+An OctoPrint plugin for monitoring your printer and prints via Slack, Mattermost, Pushbullet, Pushover, Rocket.Chat, or Riot/Matrix
 
 # Features #
- - Support for both Slack and Mattermost
+ - Support for Slack, Mattermost, Pushbullet, Pushover, Rocket.Chat, Discord, Matrix based platforms (e.g. Riot), & Microsoft Teams
  - Monitor both print status as well as printer connectivity status
- - Slack+Mattermost WebHooks and Slack API Token
  - Respond to Slack commands to check print status or cancel/pause/resume a print
-     - Requires use of the Slack API Token
+     - Each command can be individually enabled/disbaled or flagged as restricted which limits the command(s) to specific users
+     - Requires use of the Slack App Bot Token
  - Customizable messages
+     - Slack and Mattermost support for a fallback message (e.g. mobile notification)
+     - Pushover support for event specific sound and priority settings
  - Support for posting to one more channels as well as event level channel overrides
- - Support for inclusion of RasPi temperature, bed temperature, nozzle temperates, and nozzle height
- - Custom bot name/icon/emoji
+ - Support for inclusion of RasPi temperature, bed temperature, nozzle temperates, nozzle height, and device IP(s)
+ - Support for local system command execution
+ - Slack bot name/icon/emoji customizations
+     - Requires use of the Slack App Bot Token
  - Optional inclusion of printer snapshot images with each message
-     - Support for snapshot hosting via Amazon S3, Minio, Imgur (with album support), or Slack attachments
-     - Slack attachments requires use of the Slack API Token
+     - Support for snapshot hosting via Amazon S3, Minio, Imgur (with album support), Slack attachments, Pushover, Pushbullet, Rocket.Chat, Discord, or Matrix
+     - Slack attachments requires use of the Slack App Bot Token
  - Optional upload of rendered timelapse video to configured hosting service
-     - Excluding Imgur which does not support video uploads
+     - Currently excludes Imgur, Pushover, Rocket.Chat, Discord, & Matrix
  - Support for additional snapshot images from IP cameras
 
 # Supported Events #
  - Print started
  - Print failed
+ - Print cancelling
  - Print cancelled
  - Print paused
  - Print resumed
@@ -87,8 +120,10 @@ An OctoPrint plugin for monitoring your printer and prints via Slack or Mattermo
  - G-code sent to the printer
  - G-code received from the printer (including filament runout messages)
  - Timelapse render started
- - Timelapse render finished
+ - Timelapse render finished (including Octolapse timelapses)
  - Timelapse render failed
+ - File analysis started
+ - File analysis finished
  - OctoPrint error
  - OctoPrint started
  - OctoPrint stopped
@@ -96,4 +131,3 @@ An OctoPrint plugin for monitoring your printer and prints via Slack or Mattermo
  - Printer connected
  - Printer disconnecting
  - Printer disconnected
-

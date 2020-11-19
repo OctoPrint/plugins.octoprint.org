@@ -13,7 +13,6 @@ homepage: https://github.com/christophschranz/OctoPrint-PrePrintService
 source: https://github.com/christophschranz/OctoPrint-PrePrintService
 archive: https://github.com/christophschranz/OctoPrint-PrePrintService/archive/master.zip
 
-
 follow_dependency_links: false
 
 tags:
@@ -229,9 +228,9 @@ I hope this workflow for 3D print preprocessing helps you!
 
 ## Donation
 
-This plugin, as well as the auto-rotation module 
+This plugin, as well as the auto-rotation module
 [Tweaker-3](https://github.com/ChristophSchranz/Tweaker-3) was developed in my spare time.
-If you like it, I would be thankful about a cup of coffee :) 
+If you like it, I would be thankful about a cup of coffee :)
 
 [![More coffee, more code](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=RG7UBJMUNLMHN&source=url)
 

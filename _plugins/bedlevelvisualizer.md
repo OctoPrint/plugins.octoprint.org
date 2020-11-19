@@ -27,6 +27,7 @@ compatibility:
   - windows
   - macos
   - freebsd
+  python: ">=2.7,<4"
 
 featuredimage: /assets/img/plugins/bedlevelvisualizer/screenshot.png
 
@@ -38,29 +39,29 @@ This plugin utilizes [Plotly](https://plot.ly/plotly-js-scientific-d3-charting-l
 ```
 Send: G29 T
 Recv: echo:Home XYZ first
-Recv: 
+Recv:
 Recv: Bed Topography Report:
-Recv: 
+Recv:
 Recv: (0,9)                                                                   (9,9)
 Recv: (30,270)                                                                (270,270)
 Recv:  -0.452   -0.319   -0.237    0.287    0.140    0.139    0.136    0.317    0.247    0.247
-Recv: 
+Recv:
 Recv:  -0.195   -0.273   -0.180   -0.178    0.014    0.018    0.111    0.214    0.210    0.210
-Recv: 
+Recv:
 Recv:  -0.270   -0.252   -0.151   -0.119    0.009    0.016    0.072    0.249    0.224    0.224
-Recv: 
+Recv:
 Recv:  -0.307   -0.205   -0.163   -0.124   -0.094   -0.002    0.036    0.151    0.174    0.196
-Recv: 
+Recv:
 Recv:  -0.186   -0.130   -0.152   -0.105   -0.144   -0.007    0.044    0.093    0.181    0.270
-Recv: 
+Recv:
 Recv:  -0.010   -0.077   -0.073    0.155   -0.006   -0.133    0.110    0.046    0.109    0.173
-Recv: 
+Recv:
 Recv:   0.059   -0.094   -0.072   -0.002   -0.006    0.037    0.050    0.065    0.124    0.184
-Recv: 
+Recv:
 Recv:  -0.057   -0.028    0.039    0.028    0.024    0.005    0.102    0.165    0.176    0.187
-Recv: 
+Recv:
 Recv:   0.067    0.015    0.096    0.117    0.001    0.079    0.138    0.346    0.185    0.185
-Recv: 
+Recv:
 Recv: [ 0.071]   0.014    0.061   -0.127    0.167    0.040    0.098    0.195    0.194    0.194
 Recv: (30,30)                                                                    (270,30)
 Recv: (0,0)                                                                     (9,0)
@@ -76,6 +77,13 @@ into this
 
 ![screenshot](/assets/img/plugins/bedlevelvisualizer/settings_stored_mesh.png)
 
+## Known Issues
+- Install will fail silently in Python 3 due to missing system dependencies. You may have to SSH to your pi and run the command `sudo apt install libatlas3-base` to get the plugin to load.
+- System Command Editor and Custom Control Editor plugins have a known issue [here](https://github.com/jneilliii/OctoPrint-BedLevelVisualizer/issues/228) and [here](https://github.com/jneilliii/OctoPrint-BedLevelVisualizer/issues/244) where your customizations for those plugins get wiped when used in conjunction with Bed Level Visualizer and a few other plugins. To avoid this from happening to you disable Bed Level Visualizer and after restarting OctoPrint configure your customizations in those plugins and save. Immediately disable those plugins and re-enable Bed Level Visualizer restart OctoPrint and Reload. Your customizations to controls and the system menu will still remain and the bug that exists in those plugins will be prevented from clearing your customizations. I highly recommend you take regular backups as well.
+- Since version 0.1.3 there is a python dependency on numpy. As a result; if you don't already have numpy the install can take in excess of 30 minutes to complete on a pi. Just be patient and let it run and eventually the plugin install will finish.
+- If your device have less than 512MB of ram your numpy installation will most likely fail. See [#141](https://github.com/jneilliii/OctoPrint-BedLevelVisualizer/issues/141#issuecomment-542227338) for solution.
+- If you have Marlin's Auto Temperature Reporting Feature enabled you will want to have M155 S30 and M155 S3 surrounding your G29 command, see settings screenshot, otherwise the collected data will be tainted.
+
 ## Get Help
 
 If you experience issues with this plugin or need assistance please use the issue tracker at the plugin's Homepage linked on the right.
@@ -85,8 +93,8 @@ If you experience issues with this plugin or need assistance please use the issu
 Check out my other plugins [here](https://plugins.octoprint.org/by_author/#jneilliii)
 
 ### Support My Efforts
-I, jneilliii, programmed this plugin for fun and do my best effort to support those that have issues with it, please return the favor and leave me a tip if you find this plugin helpful.
+I, jneilliii, programmed this plugin for fun and do my best effort to support those that have issues with it, please return the favor and leave me a tip or become a Patron if you find this plugin helpful and want me to continue future development.
 
-[![paypal](/assets/img/plugins/bedlevelvisualizer/paypal-with-text.png)](https://paypal.me/jneilliii)
+[![Patreon](/assets/img/plugins/bedlevelvisualizer/patreon-with-text-new.png)](https://www.patreon.com/jneilliii) [![paypal](/assets/img/plugins/bedlevelvisualizer/paypal-with-text.png)](https://paypal.me/jneilliii)
 
 <small>No paypal.me? Send funds via PayPal to jneilliii&#64;gmail&#46;com</small>

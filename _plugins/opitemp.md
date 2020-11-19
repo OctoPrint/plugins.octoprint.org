@@ -26,6 +26,8 @@ compatibility:
   os:
   - linux
 
+  python: ">=2.7,<4"
+
 ---
 
 Simple plugin to show Orange Pi (running armbian) SOC temperature in the navbar.
