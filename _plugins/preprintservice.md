@@ -29,8 +29,7 @@ featuredimage: /assets/img/plugins/preprintservice/workflow.png
 
 compatibility:
 
-  octoprint:
-  - 1.3.0
+  octoprint: ">=1.4.0"
 
   os:
   - linux
