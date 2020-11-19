@@ -37,7 +37,9 @@ compatibility:
   - linux
   - windows
   - macos
-
+  
+  python: ">=2.7,<4"
+  
 ---
 
 # OctoPrint-PrePrintService
