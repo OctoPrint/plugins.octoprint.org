@@ -5,10 +5,35 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>https://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 29 Nov 2020 06:15:15 -0600</pubDate>
-    <lastBuildDate>Sun, 29 Nov 2020 06:15:15 -0600</lastBuildDate>
+    <pubDate>Sun, 29 Nov 2020 15:38:48 -0600</pubDate>
+    <lastBuildDate>Sun, 29 Nov 2020 15:38:48 -0600</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
+    
+      <item>
+        <title>OctoPrint-GcodeLeveling</title>
+        <description>
+          <![CDATA[
+            Leveling of Z values in Gcode using manually measured positions
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/gcodeleveling/point-entry.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Sun, 29 Nov 2020 00:00:00 -0600</pubDate>
+        <link>https://plugins.octoprint.org/plugins/gcodeleveling/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/gcodeleveling/</guid>
+        
+        <category>leveling</category>
+        
+        <category>gcode</category>
+        
+        <category>manual bed leveling</category>
+        
+        <category>grbl</category>
+        
+        <category>cnc</category>
+        
+      </item>
     
       <item>
         <title>OctoPrint-AutoLoginConfig</title>
@@ -257,31 +282,6 @@ Mon, 05 Oct 2020 00:00:00 -0500</pubDate>
         <category>makeros</category>
         
         <category>files</category>
-        
-      </item>
-    
-      <item>
-        <title>MarlinGcodeDocumentation</title>
-        <description>
-          <![CDATA[
-            Provides documentation for Marlin &amp; RepRap GCode commands in the Terminal tab
-            <p><img src="https://plugins.octoprint.org/assets/img/plugins/marlingcodedocumentation/screenshot-example-command.png"></p>
-          ]]>
-        </description>
-        <pubDate>
-Sun, 27 Sep 2020 00:00:00 -0500</pubDate>
-        <link>https://plugins.octoprint.org/plugins/marlingcodedocumentation/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/marlingcodedocumentation/</guid>
-        
-        <category>terminal</category>
-        
-        <category>gcode</category>
-        
-        <category>marlin</category>
-        
-        <category>reprap</category>
-        
-        <category>documentation</category>
         
       </item>
     
