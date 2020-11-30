@@ -5,10 +5,37 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>https://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 30 Nov 2020 06:14:00 -0600</pubDate>
-    <lastBuildDate>Mon, 30 Nov 2020 06:14:00 -0600</lastBuildDate>
+    <pubDate>Mon, 30 Nov 2020 10:54:28 -0600</pubDate>
+    <lastBuildDate>Mon, 30 Nov 2020 10:54:28 -0600</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
+    
+      <item>
+        <title>UI Customizer</title>
+        <description>
+          <![CDATA[
+            Customize the layout of OctoPrint userinterface, add webcam widget and more. Make the UI mobile responsive, add a floating webcam overlay.
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/uicustomizer/responsive.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Mon, 30 Nov 2020 00:00:00 -0600</pubDate>
+        <link>https://plugins.octoprint.org/plugins/uicustomizer/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/uicustomizer/</guid>
+        
+        <category>responsive</category>
+        
+        <category>mobile</category>
+        
+        <category>webcam</category>
+        
+        <category>zoom</category>
+        
+        <category>fixed</category>
+        
+        <category>settings</category>
+        
+      </item>
     
       <item>
         <title>OctoPrint-GcodeLeveling</title>
@@ -259,29 +286,6 @@ Thu, 08 Oct 2020 00:00:00 -0500</pubDate>
         <category>status</category>
         
         <category>ui</category>
-        
-      </item>
-    
-      <item>
-        <title>MakerOS</title>
-        <description>
-          <![CDATA[
-            An OctoPrint plugin integration with the MakerOS Platform API.
-            <p><img src="https://plugins.octoprint.org/assets/img/plugins/MakerOS/Octoprint-Makeros-projects.png"></p>
-          ]]>
-        </description>
-        <pubDate>
-Mon, 05 Oct 2020 00:00:00 -0500</pubDate>
-        <link>https://plugins.octoprint.org/plugins/MakerOS/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/MakerOS/</guid>
-        
-        <category>api</category>
-        
-        <category>addon</category>
-        
-        <category>makeros</category>
-        
-        <category>files</category>
         
       </item>
     
