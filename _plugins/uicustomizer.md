@@ -9,7 +9,7 @@ authors:
 license: AGPLv3
 
 
-date: 2020-11-29
+date: 2020-11-30
 
 homepage: https://github.com/LazeMSS/OctoPrint-UICustomizer
 source: https://github.com/LazeMSS/OctoPrint-UICustomizer
