@@ -102,3 +102,12 @@
     repository of the old maintainer. Please uninstall the old plugin from the plugin manager, then reinstall from the plugin
     repository to update it. The release notes of the version by the new maintainer can be found at the "Read more..." link below.
   link: https://github.com/Zinc-OS/continuousprint/releases/tag/1.0.4
+- plugin: gcodeleveling
+  pluginversions: ["<=0.1.1"]
+  versions: ["0.1.0", "0.1.1"]
+  octoversions: [">=1.5.0"]
+  date: 2020-12-02 15:00:00Z
+  text: There are reports of this plugin somehow breaking extrusion on OctoPrint 1.5.0. It has since been blacklisted
+    until the author can look into this. If it is still active on your instance, please disable it and restart to avoid
+    this problem.
+  link: https://github.com/Willmac16/OctoPrint-GcodeLeveling/issues/5
