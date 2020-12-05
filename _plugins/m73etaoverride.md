@@ -4,7 +4,9 @@ layout: plugin
 id: m73etaoverride
 title: M73 ETA Override
 description: Plugin that overrides OctoPrint ETA to values from last M73 gcode sent to the printer
-author: Gaston Dombiak
+authors:
+- Jakub Furman
+- Gaston Dombiak
 license: AGPLv3
 
 date: 2018-09-18
