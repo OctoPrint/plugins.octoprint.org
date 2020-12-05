@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <title>M73 ETA Override</title>
     <meta name="description" content="Plugin that overrides OctoPrint ETA to values from last M73 gcode sent to the printer">
-    <meta name="author" content="Jakub Furman">
+    
     <meta name="referrer" content="same-origin">
     <meta name="google-site-verification" content="0EFsbaNygJcEinKPmzP-hTf0Ju6wDIpJxO5zvQtOQT0" />
 
@@ -41,7 +41,7 @@
     <meta name="twitter:site" content="@OctoPrint3D" />
     <meta name="twitter:title" content="M73 ETA Override" />
     <meta name="twitter:description" content="About
-The last Sli3cr Prusa Edition implemented M73 gcode injecting to the generated gcodes. This M73 estimations works a much better for Prusa printers than normal OctoPrint ETA estimator. M73 are displayed on Prusa LCD already directly after receiving gcode so there is nothing to change but I think that it will be good to make this better estimation available also on other OctoPrint sources (web/mobile etc) so this plugin will override OctoPrint estimation with estimation from last M73 gcode sended.
+PrusaSlicer is able to calculate print estimates very accurately. Those estimates get injected into generated gcode as M73 gcode commands. This plugin reads the injected information to override what OctoPrint uses as default to calculate estimates. Improved estimates are displayed in OctoPrint, your printer display and in your favorite OctoPrint client.
 
 " />
     <meta name="twitter:image" content="https://plugins.octoprint.org/assets/img/octoprint-avatar-240x240.png" />
@@ -50,7 +50,7 @@ The last Sli3cr Prusa Edition implemented M73 gcode injecting to the generated g
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://plugins.octoprint.org/assets/img/repo-600x400.png" />
     <meta property="og:description" content="About
-The last Sli3cr Prusa Edition implemented M73 gcode injecting to the generated gcodes. This M73 estimations works a much better for Prusa printers than normal OctoPrint ETA estimator. M73 are displayed on Prusa LCD already directly after receiving gcode so there is nothing to change but I think that it will be good to make this better estimation available also on other OctoPrint sources (web/mobile etc) so this plugin will override OctoPrint estimation with estimation from last M73 gcode sended.
+PrusaSlicer is able to calculate print estimates very accurately. Those estimates get injected into generated gcode as M73 gcode commands. This plugin reads the injected information to override what OctoPrint uses as default to calculate estimates. Improved estimates are displayed in OctoPrint, your printer display and in your favorite OctoPrint client.
 
 " />
     <meta property="og:site_name" content="OctoPrint Plugin Repository" />
@@ -59,7 +59,7 @@ The last Sli3cr Prusa Edition implemented M73 gcode injecting to the generated g
     <meta itemscope itemtype="http://schema.org/WebPage" />
     <meta itemprop="headline" content="M73 ETA Override" />
     <meta itemprop="description" content="About
-The last Sli3cr Prusa Edition implemented M73 gcode injecting to the generated gcodes. This M73 estimations works a much better for Prusa printers than normal OctoPrint ETA estimator. M73 are displayed on Prusa LCD already directly after receiving gcode so there is nothing to change but I think that it will be good to make this better estimation available also on other OctoPrint sources (web/mobile etc) so this plugin will override OctoPrint estimation with estimation from last M73 gcode sended.
+PrusaSlicer is able to calculate print estimates very accurately. Those estimates get injected into generated gcode as M73 gcode commands. This plugin reads the injected information to override what OctoPrint uses as default to calculate estimates. Improved estimates are displayed in OctoPrint, your printer display and in your favorite OctoPrint client.
 
 " />
     <meta itemprop="image" content="https://plugins.octoprint.org/assets/img/repo-600x400.png" />
@@ -184,14 +184,24 @@ The last Sli3cr Prusa Edition implemented M73 gcode injecting to the generated g
     <article class="post-content span8">
       
       
-      <div class="alert"><h3>This plugin has been abandoned</h3>The current maintainer of this plugin seems to have abandoned it. If you want to take over its maintainenance, please get in touch <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/619" target="_blank" rel="noopener noreferrer">here...</a></div>
+      
       
 
       <p class="lead">
         Plugin that overrides OctoPrint ETA to values from last M73 gcode sent to the printer
       </p>
       <h2 id="about">About</h2>
-<p>The last Sli3cr Prusa Edition implemented M73 gcode injecting to the generated gcodes. This M73 estimations works a much better for Prusa printers than normal OctoPrint ETA estimator. M73 are displayed on Prusa LCD already directly after receiving gcode so there is nothing to change but I think that it will be good to make this better estimation available also on other OctoPrint sources (web/mobile etc) so this plugin will override OctoPrint estimation with estimation from last M73 gcode sended.</p>
+<p>PrusaSlicer is able to calculate print estimates very accurately. Those estimates get injected into generated gcode as <a href="https://marlinfw.org/docs/gcode/M073.html">M73 gcode</a> commands. This plugin reads the injected information to override what OctoPrint uses as default to calculate estimates. Improved estimates are displayed in OctoPrint, your printer display and in your favorite OctoPrint client.</p>
+
+<p>This plugin will also work with other slicers that inject M73 gcode commands while slicing your STL files to produce gcode.</p>
+
+<h2 id="firmware">Firmware</h2>
+
+<p>Prusa printers will display M73 estimates without any modifications. Printers that run on Marlin firmware might require their firmware to be properly configured to display M73 ETA on the printer display. If you are using Marlin 2.0.x then you will need to:</p>
+<ol>
+  <li>Uncomment #define SHOW_REMAINING_TIME in Configuration_adv.h</li>
+  <li>Uncomment #define USE_M73_REMAINING_TIME in Configuration_adv.h</li>
+</ol>
 
 <h2 id="get-help">Get Help</h2>
 
@@ -225,14 +235,14 @@ The last Sli3cr Prusa Edition implemented M73 gcode injecting to the generated g
         
         <dd>
           URL:
-          <pre>https://github.com/sysadminsh/OctoPrint-M73ETAOverride/archive/master.zip</pre>
+          <pre>https://github.com/gdombiak/OctoPrint-M73ETAOverride/archive/master.zip</pre>
           
         </dd>
         
         
         <dd>
           Command line:
-          <pre>pip install "https://github.com/sysadminsh/OctoPrint-M73ETAOverride/archive/master.zip"</pre>
+          <pre>pip install "https://github.com/gdombiak/OctoPrint-M73ETAOverride/archive/master.zip"</pre>
         </dd>
         
       </dl>
@@ -252,7 +262,7 @@ The last Sli3cr Prusa Edition implemented M73 gcode injecting to the generated g
       
       <dl class="install_events">
         <dt>New installs the past week</dt>
-        <dd>At least <strong>11</strong> new installations</dd>
+        <dd>At least <strong>10</strong> new installations</dd>
       </dl>
       
       
@@ -261,9 +271,15 @@ The last Sli3cr Prusa Edition implemented M73 gcode injecting to the generated g
         <dd>
           <ul>
             
-            <li>Stars: <span id="github_star_count">11</span> <span id="github_star"><a href="javascript:void(0)"><i class="far fa-star"></i></a></span></li>
-            <li>Issues: 9 open, 3 closed</li>
-            <li>Last push: 08 Jan 2019</li>
+            <li>
+              Latest Release: <a href="https://github.com/gdombiak/OctoPrint-M73ETAOverride/releases/tag/1.0.4" target="_blank">1.0.4</a><br>
+              <small>released on 05 Dec 2020</small>
+            </li>
+            <li>Releases: 3</li>
+            
+            <li>Stars: <span id="github_star_count">0</span> <span id="github_star"><a href="javascript:void(0)"><i class="far fa-star"></i></a></span></li>
+            <li>Issues: 0 open, 0 closed</li>
+            <li>Last push: 05 Dec 2020</li>
           </ul>
         </dd>
       </dl>
@@ -298,29 +314,35 @@ The last Sli3cr Prusa Edition implemented M73 gcode injecting to the generated g
             <li>Operating Systems: all</li>
             
             
-            <li>Python: &gt;=2.7,&lt;3</li>
+            <li>Python: &gt;=2.7,&lt;4</li>
             
           </ul>
         </dd>
       </dl>
       
       <dl class="author">
-        <dt>Author</dt>
-        <dd>
+        <dt>Authors</dt>
+        
+          <dd>
 <a href="/by_author/#jakub-furman">Jakub Furman</a>
 </dd>
+        
+          <dd>
+<a href="/by_author/#gaston-dombiak">Gaston Dombiak</a>
+</dd>
+        
       </dl>
       
       
       <dl class="homepage">
         <dt>Homepage</dt>
-        <dd><a href="https://github.com/sysadminsh/OctoPrint-M73ETAOverride" target="_blank">https://github.com/sysadminsh/OctoPrint-M73ETAOverride</a></dd>
+        <dd><a href="https://github.com/gdombiak/OctoPrint-M73ETAOverride" target="_blank">https://github.com/gdombiak/OctoPrint-M73ETAOverride</a></dd>
       </dl>
       
       
       <dl class="source">
         <dt>Source</dt>
-        <dd><a href="https://github.com/sysadminsh/OctoPrint-M73ETAOverride" target="_blank">https://github.com/sysadminsh/OctoPrint-M73ETAOverride</a></dd>
+        <dd><a href="https://github.com/gdombiak/OctoPrint-M73ETAOverride" target="_blank">https://github.com/gdombiak/OctoPrint-M73ETAOverride</a></dd>
       </dl>
       
       
@@ -346,7 +368,7 @@ The last Sli3cr Prusa Edition implemented M73 gcode injecting to the generated g
             <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=suspicious+plugin+activity&template=suspicious_plugin_activity.md&title=%5BSuspicious+Plugin+Activity%5D+M73+ETA+Override">report the plugin as suspicious here</a>.
           </p>
           <p>
-            Report bugs or feature requests for the plugin to the plugin author (e.g. on the plugin's <a href="https://github.com/sysadminsh/OctoPrint-M73ETAOverride">homepage</a>) please, not here!
+            Report bugs or feature requests for the plugin to the plugin author (e.g. on the plugin's <a href="https://github.com/gdombiak/OctoPrint-M73ETAOverride">homepage</a>) please, not here!
           </p>
         </dd>
       </dl>
@@ -359,7 +381,7 @@ The last Sli3cr Prusa Edition implemented M73 gcode injecting to the generated g
   $(function() {
     var has_github = true;
     if (has_github) {
-      var github_repo = "sysadminsh/OctoPrint-M73ETAOverride";
+      var github_repo = "gdombiak/OctoPrint-M73ETAOverride";
 
       if (github_repo) {
         var status = "unknown";
