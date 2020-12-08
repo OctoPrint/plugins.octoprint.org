@@ -26,6 +26,7 @@ compatibility:
 
   os:
   - nix
+abandoned: https://github.com/OctoPrint/plugins.octoprint.org/issues/687
 ---
 Pause printing when the 3D printer runs out of filament.
 
