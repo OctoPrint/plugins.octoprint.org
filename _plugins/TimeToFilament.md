@@ -24,7 +24,6 @@ screenshots:
   alt: Screenshot of TimeToFilament showing the time until next filament change and the time until the next layer.
   caption: Added to the display.
 
-# TODO
 featuredimage: /assets/img/plugins/TimeToFilament/screenshot.png
 
 ---
