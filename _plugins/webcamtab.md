@@ -4,8 +4,9 @@ layout: plugin
 id: webcamtab
 title: WebcamTab
 description: Moves the webcam stream from the controls into its own tab
-author: Bryan J. Rentoul
-authors: Sven Lohrmann (original)
+authors:
+- Bryan J. Rentoul
+- Sven Lohrmann (original)
 license: AGPLv3
 date: 2020-12-08
 homepage: https://github.com/gruvin/OctoPrint-WebcamTab
