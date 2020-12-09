@@ -14,7 +14,7 @@ source: https://github.com/gruvin/OctoPrint-WebcamTab
 archive: https://github.com/gruvin/OctoPrint-WebcamTab/archive/master.zip
 compatibility:
   octoprint:
-  - "1.3.5"
+  - 1.3.5
   python: ">=2.7,<4"
 tags:
 - webcam
