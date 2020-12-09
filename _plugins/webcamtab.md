@@ -8,7 +8,7 @@ authors:
 - Bryan J. Rentoul
 - Sven Lohrmann (original)
 license: AGPLv3
-date: 2020-12-08
+date: 2018-01-16
 homepage: https://github.com/gruvin/OctoPrint-WebcamTab
 source: https://github.com/gruvin/OctoPrint-WebcamTab
 archive: https://github.com/gruvin/OctoPrint-WebcamTab/archive/master.zip
