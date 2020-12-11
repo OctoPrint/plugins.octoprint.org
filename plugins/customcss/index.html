@@ -6,9 +6,9 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html"> <!--<![endif]-->
 <head>
     <meta charset="utf-8" />
-    <title>Z Probe Offset Control</title>
-    <meta name="description" content="Add input to the control view for editing the z probe offset on marlin based printers">
-    <meta name="author" content="razer">
+    <title>OctoPrint-CustomCSS</title>
+    <meta name="description" content="Quickly add custom CSS to modify your OctoPrint UI.">
+    
     <meta name="referrer" content="same-origin">
     <meta name="google-site-verification" content="0EFsbaNygJcEinKPmzP-hTf0Ju6wDIpJxO5zvQtOQT0" />
 
@@ -39,27 +39,27 @@
 
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@OctoPrint3D" />
-    <meta name="twitter:title" content="Z Probe Offset Control" />
-    <meta name="twitter:description" content="Z Probe Offset Control
+    <meta name="twitter:title" content="OctoPrint-CustomCSS" />
+    <meta name="twitter:description" content="Add your CSS by navigating to Settings -&amp;gt; Plugins -&amp;gt; Custom CSS.
 
 " />
-    <meta name="twitter:image" content="https://plugins.octoprint.org" />
+    <meta name="twitter:image" content="https://plugins.octoprint.org/assets/img/octoprint-avatar-240x240.png" />
 
-    <meta property="og:title" content="Z Probe Offset Control" />
+    <meta property="og:title" content="OctoPrint-CustomCSS" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://plugins.octoprint.org/assets/img/plugins/z_probe_offset/z_probe_offset_control.png" />
-    <meta property="og:description" content="Z Probe Offset Control
+    <meta property="og:image" content="https://plugins.octoprint.org/assets/img/repo-600x400.png" />
+    <meta property="og:description" content="Add your CSS by navigating to Settings -&amp;gt; Plugins -&amp;gt; Custom CSS.
 
 " />
     <meta property="og:site_name" content="OctoPrint Plugin Repository" />
-    <meta property="og:url" content="https://plugins.octoprint.org/plugins/z_probe_offset/" />
+    <meta property="og:url" content="https://plugins.octoprint.org/plugins/customcss/" />
 
     <meta itemscope itemtype="http://schema.org/WebPage" />
-    <meta itemprop="headline" content="Z Probe Offset Control" />
-    <meta itemprop="description" content="Z Probe Offset Control
+    <meta itemprop="headline" content="OctoPrint-CustomCSS" />
+    <meta itemprop="description" content="Add your CSS by navigating to Settings -&amp;gt; Plugins -&amp;gt; Custom CSS.
 
 " />
-    <meta itemprop="image" content="https://plugins.octoprint.org/assets/img/plugins/z_probe_offset/z_probe_offset_control.png" />
+    <meta itemprop="image" content="https://plugins.octoprint.org/assets/img/repo-600x400.png" />
 
     <script type="text/javascript" src="/assets/js/jquery-1.9.1.min-4b58dfeb119b2dd15f54e0a074cf8eb63204c8b03d45056e0b514e042f36aa44.js" integrity="sha256-S1jf6xGbLdFfVOCgdM+OtjIEyLA9RQVuC1FOBC82qkQ=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="/assets/js/underscore.min-42d8fad13bc28fc726775196ec9ab953febf9bde175c5845128361c953fa17f4.js" integrity="sha256-Qtj60TvCj8cmd1GW7Jq5U/6/m94XXFhFEoNhyVP6F/Q=" crossorigin="anonymous"></script>
@@ -161,7 +161,7 @@
   <div class="container">
     <div class="row">
       <div class="span12">
-        <h1>Z Probe Offset Control</h1>
+        <h1>OctoPrint-CustomCSS</h1>
       </div>
     </div>
   </div>
@@ -170,11 +170,11 @@
 <div class="container">
   <div class="row-fluid">
     
-    <small class="pull-left"><a href="/plugins/youtubelive/"><i class="fa fa-double-angle-left"></i>&nbsp;YouTube Live</a></small>
+    <small class="pull-left"><a href="/plugins/custombackground/"><i class="fa fa-double-angle-left"></i>&nbsp;OctoPrint-CustomBackground</a></small>
     
     &nbsp;
     
-    <small class="pull-right"><a href="/plugins/LCD1602_I2cdisplay/">octoprint-LCD1602&nbsp;<i class="fa fa-double-angle-right"></i></a></small>
+    <small class="pull-right"><a href="/plugins/dashboard/">OctoPrint-Dashboard&nbsp;<i class="fa fa-double-angle-right"></i></a></small>
     
   </div>
   <div class="content plugin-content row-fluid">
@@ -185,26 +185,28 @@
       
 
       <p class="lead">
-        Add input to the control view for editing the z probe offset on marlin based printers
+        Quickly add custom CSS to modify your OctoPrint UI.
       </p>
-      <h1 id="z-probe-offset-control">Z Probe Offset Control</h1>
+      <p>Add your CSS by navigating to Settings -&gt; Plugins -&gt; Custom CSS.</p>
 
-<p>Add input to the control view for editing the z probe offset on marlin based printers.</p>
+<p>Originally developed to fix an issue with overly large thumbnails on mobile when using <a href="https://plugins.octoprint.org/plugins/prusaslicerthumbnails/">PrusaSlicer Thumbnails</a> and <a href="https://plugins.octoprint.org/plugins/touchui/">TouchUI</a> together.</p>
 
-<p>Needs Marlin firmware with z probe capability enabled.</p>
+<p><br /></p>
+<h4 id="prusaslicer-thumbnails--touchui-css-fixes">PrusaSlicer Thumbnails + TouchUI CSS Fixes</h4>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/* Fix PrusaSlicer Thumbnails size when using TouchUI  */
+@media (max-width: 980px) {
+  #touch .inline_prusa_thumbnail {
+    max-width: 140px;
+    margin-right: 10px;
+    float: left;
+  }
+}
 
-<p>Currently, firmwares that have been tested are:</p>
-<ul>
-  <li>Stock Marlin v1.x and v2.x</li>
-  <li>Creality3D Marlin fork (Ver 1.70.0 BL)</li>
-  <li>Prusa Marlin fork (Prusa-Firmware 3.9.0)</li>
-</ul>
-
-<p>Note:</p>
-
-<p>If your firmware is a marlin derivate and is not listed as tested, <a href="https://framagit.org/razer/octoprint_z_probe_offset/-/issues">please report it as a working one</a> in order to add it to the list, or <a href="https://framagit.org/razer/octoprint_z_probe_offset/-/issues">report any issues</a></p>
-
-<p><img src="/assets/img/plugins/z_probe_offset/z_probe_offset_control.png" alt="screenshot" /></p>
+/* Optional: Make the file list taller (reccomended by PrusaSlicer Thumbnails)  */
+#files &gt; div &gt; div.gcode_files &gt; div.scroll-wrapper {
+  min-height: 800px !important;
+}
+</code></pre></div></div>
 
 
       
@@ -234,14 +236,14 @@
         
         <dd>
           URL:
-          <pre>https://framagit.org/razer/octoprint_z_probe_offset/-/archive/latest/octoprint_z_probe_offset-latest.zip</pre>
+          <pre>https://github.com/crankeye/OctoPrint-CustomCSS/archive/master.zip</pre>
           
         </dd>
         
         
         <dd>
           Command line:
-          <pre>pip install "https://framagit.org/razer/octoprint_z_probe_offset/-/archive/latest/octoprint_z_probe_offset-latest.zip"</pre>
+          <pre>pip install "https://github.com/crankeye/OctoPrint-CustomCSS/archive/master.zip"</pre>
         </dd>
         
       </dl>
@@ -249,21 +251,33 @@
       
       <dl class="date">
         <dt>Registration date</dt>
-        <dd>14 Jun 2020</dd>
+        <dd>10 Dec 2020</dd>
       </dl>
       
       
       <dl class="installations">
         <dt>Active instances the past month</dt>
-        <dd>Installed on at least <strong>2.08k</strong> instances</dd>
+        <dd>Installed on at least <strong>3</strong> instances</dd>
       </dl>
       
       
       <dl class="install_events">
         <dt>New installs the past week</dt>
-        <dd>At least <strong>129</strong> new installations</dd>
+        <dd>At least <strong>1</strong> new installations</dd>
       </dl>
       
+      
+      <dl class="github">
+        <dt>GitHub stats <a href="/help/github_integration/" class="fas fa-question-circle"></a> <span id="github_login">(<a href="javascript:void(0)">Login</a>)</span></dt>
+        <dd>
+          <ul>
+            
+            <li>Stars: <span id="github_star_count">0</span> <span id="github_star"><a href="javascript:void(0)"><i class="far fa-star"></i></a></span></li>
+            <li>Issues: 0 open, 0 closed</li>
+            <li>Last push: 10 Dec 2020</li>
+          </ul>
+        </dd>
+      </dl>
       
       
       <dl class="tags">
@@ -273,9 +287,9 @@
           
           
           
-          <a class="label" href="/by_tag/#tag-marlin">marlin</a>
+          <a class="label" href="/by_tag/#tag-css">css</a>
           
-          <a class="label" href="/by_tag/#tag-probe">probe</a>
+          <a class="label" href="/by_tag/#tag-settings">settings</a>
           
         </dd>
       </dl>
@@ -285,35 +299,37 @@
         <dd>
           <ul>
             
-            <li>OctoPrint: 1.3.9+</li>
+            <li>OctoPrint: all versions</li>
             
             
-            <li>Operating Systems: Linux, FreeBSD</li>
+            <li>Operating Systems: all</li>
             
             
-            <li>Python: &gt;=2.7,&lt;4</li>
+            <li>Python: &gt;=2.7,&lt;3</li>
             
           </ul>
         </dd>
       </dl>
       
       <dl class="author">
-        <dt>Author</dt>
-        <dd>
-<a href="/by_author/#razer">razer</a>
+        <dt>Authors</dt>
+        
+          <dd>
+<a href="/by_author/#neal-lambert">Neal Lambert</a>
 </dd>
+        
       </dl>
       
       
       <dl class="homepage">
         <dt>Homepage</dt>
-        <dd><a href="https://framagit.org/razer/octoprint_z_probe_offset" target="_blank">https://framagit.org/razer/octoprint_z_probe_offset</a></dd>
+        <dd><a href="https://github.com/crankeye/OctoPrint-CustomCSS" target="_blank">https://github.com/crankeye/OctoPrint-CustomCSS</a></dd>
       </dl>
       
       
       <dl class="source">
         <dt>Source</dt>
-        <dd><a href="https://framagit.org/razer/octoprint_z_probe_offset" target="_blank">https://framagit.org/razer/octoprint_z_probe_offset</a></dd>
+        <dd><a href="https://github.com/crankeye/OctoPrint-CustomCSS" target="_blank">https://github.com/crankeye/OctoPrint-CustomCSS</a></dd>
       </dl>
       
       
@@ -327,19 +343,19 @@
         <dd>
           <p>
             If there is <strong>something wrong with this listing</strong> (broken links & images etc), please
-            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=bug&template=listing_error.md&title=%5BListing+Error%5D+Z+Probe+Offset+Control">report it here</a>.
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=bug&template=listing_error.md&title=%5BListing+Error%5D+OctoPrint-CustomCSS">report it here</a>.
           </p>
           <p>
             If this plugin <strong>has been <em>confirmed</em> as abandoned</strong> by its maintainer, please
-            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=abandoned+plugin&template=abandoned_plugin.md&title=%5BAbandoned+Plugin%5D+Z+Probe+Offset+Control">report it here</a>.
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=abandoned+plugin&template=abandoned_plugin.md&title=%5BAbandoned+Plugin%5D+OctoPrint-CustomCSS">report it here</a>.
           </p>
           <p>
             If this plugin is <strong>doing something suspicious</strong> (e.g. weird network activity, unannounced tracking, ...) and
             the maintainer is not cooperating in getting to the bottom of that, please
-            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=suspicious+plugin+activity&template=suspicious_plugin_activity.md&title=%5BSuspicious+Plugin+Activity%5D+Z+Probe+Offset+Control">report the plugin as suspicious here</a>.
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=suspicious+plugin+activity&template=suspicious_plugin_activity.md&title=%5BSuspicious+Plugin+Activity%5D+OctoPrint-CustomCSS">report the plugin as suspicious here</a>.
           </p>
           <p>
-            Report bugs or feature requests for the plugin to the plugin author (e.g. on the plugin's <a href="https://framagit.org/razer/octoprint_z_probe_offset">homepage</a>) please, not here!
+            Report bugs or feature requests for the plugin to the plugin author (e.g. on the plugin's <a href="https://github.com/crankeye/OctoPrint-CustomCSS">homepage</a>) please, not here!
           </p>
         </dd>
       </dl>
@@ -350,9 +366,9 @@
 
 <script type="application/javascript">
   $(function() {
-    var has_github = false;
+    var has_github = true;
     if (has_github) {
-      var github_repo = "";
+      var github_repo = "crankeye/OctoPrint-CustomCSS";
 
       if (github_repo) {
         var status = "unknown";
