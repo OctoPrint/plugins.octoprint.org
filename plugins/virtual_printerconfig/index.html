@@ -195,7 +195,51 @@ Overrides the default template which only has an enabling checkbox.</p>
 
 <p>Very useful if you are developing plugins, or even core OctoPrint. No more digging deep into config.yaml and hoping you typed the settings correctly!</p>
 
-<p>Note that this plugin is only compatible with OctoPrint 1.4.1 and higher.</p>
+<h4 id="this-plugin-is-not-under-active-development-but-if-you-have-any-problems-or-feature-requests-i-would-be-happy-to-take-a-look--see-what-i-can-do">This plugin is not under <em>active</em> development, but if you have any problems, or feature requests I would be happy to take a look &amp; see what I can do.</h4>
+
+<h2 id="compatibility">Compatibility</h2>
+
+<p>The lastest version of the plugin is only compatible with OctoPrint 1.5.x.
+To find a version compatible with your instance, take a look in the table below</p>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>OctoPrint version</th>
+      <th>Plugin version</th>
+      <th>Install URL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1.5.x</td>
+      <td>1.5.x</td>
+      <td><code class="language-plaintext highlighter-rouge">https://github.com/cp2004/OctoPrint-VirtualPrinterSettings/archive/1.5.0.zip</code></td>
+    </tr>
+    <tr>
+      <td>1.4.1/2</td>
+      <td>0.1.3</td>
+      <td><code class="language-plaintext highlighter-rouge">https://github.com/cp2004/OctoPrint-VirtualPrinterSettings/archive/0.1.3.zip</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Use the above URLs in OctoPrint’s <a href="https://docs.octoprint.org/en/master/bundledplugins/pluginmanager.html">Plugin Manager</a> &gt;
+Get More &gt; …from URL field.</p>
+
+<h2 id="setup">Setup</h2>
+
+<p>Install via the bundled <a href="https://docs.octoprint.org/en/master/bundledplugins/pluginmanager.html">Plugin Manager</a>
+or manually using this URL:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://github.com/cp2004/OctoPrint-VirtualPrinterSettings/archive/master.zip
+</code></pre></div></div>
+
+<h2 id="configuration">Configuration</h2>
+
+<p>Plugin adds settings to OctoPrint’s UI that are <a href="https://docs.octoprint.org/en/master/development/virtual_printer.html#virtual-printer-configuration-options">documented here</a></p>
+
+<p>It replaces the original implementation, introduced in OctoPrint 1.4.1</p>
 
 
       
@@ -233,14 +277,14 @@ Overrides the default template which only has an enabling checkbox.</p>
         
         <dd>
           URL:
-          <pre>https://github.com/cp2004/OctoPrint-VirtualPrinterSettings/archive/master.zip</pre>
+          <pre>https://github.com/cp2004/OctoPrint-VirtualPrinterSettings/releases/latest/download/release.zip</pre>
           
         </dd>
         
         
         <dd>
           Command line:
-          <pre>pip install "https://github.com/cp2004/OctoPrint-VirtualPrinterSettings/archive/master.zip"</pre>
+          <pre>pip install "https://github.com/cp2004/OctoPrint-VirtualPrinterSettings/releases/latest/download/release.zip"</pre>
         </dd>
         
       </dl>
@@ -304,7 +348,7 @@ Overrides the default template which only has an enabling checkbox.</p>
         <dd>
           <ul>
             
-            <li>OctoPrint: 1.4.1+</li>
+            <li>OctoPrint: 1.5.0+</li>
             
             
             <li>Operating Systems: Linux, Windows, Mac OS X, FreeBSD</li>
