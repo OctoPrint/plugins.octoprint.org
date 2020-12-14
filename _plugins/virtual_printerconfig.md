@@ -11,7 +11,7 @@ date: 2020-08-04
 
 homepage: https://github.com/cp2004/OctoPrint-VirtualPrinterSettings
 source: https://github.com/cp2004/OctoPrint-VirtualPrinterSettings
-archive: https://github.com/cp2004/OctoPrint-VirtualPrinterSettings/archive/master.zip
+archive: https://github.com/cp2004/OctoPrint-VirtualPrinterSettings/releases/latest/download/release.zip
 
 tags:
 - development
