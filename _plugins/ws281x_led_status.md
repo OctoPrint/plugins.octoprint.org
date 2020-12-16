@@ -11,7 +11,7 @@ date: 2020-07-28
 
 homepage: https://github.com/cp2004/OctoPrint-WS281x_LED_Status
 source: https://github.com/cp2004/OctoPrint-WS281x_LED_Status
-archive: https://github.com/cp2004/OctoPrint-WS281x_LED_Status/archive/master.zip
+archive: https://github.com/cp2004/OctoPrint-WS281x_LED_Status/releases/latest/download/release.zip
 
 follow_dependency_links: false
 
@@ -80,12 +80,12 @@ For a full setup guide, with detailed instructions for each step, please see the
 
 ### Getting help
 You may want to [check the wiki]({{ page.homepage }}/wiki), to see if your question has been answered there. Still got questions? Get in touch:
-* Open an issue with the [question template](https://github.com/cp2004/OctoPrint-WS281x_LED_Status/issues/new?assignees=&labels=type%3A+question&template=question.md&title=)
+* Open an issue with the [question template]({{ page.homepage }}/issues/new?assignees=&labels=question&template=question.md&title=)
 * Find me on the [OctoPrint Discord](https://discord.octoprint.org) @cp2004
 * Find me on the [Community Forums](https://community.octoprint.org) @Charlie_Powell
 
 ### Reporting problems
-Whilst I don't like bugs, I want to hear about them! Let me know by [opening an issue on Github](https://github.com/cp2004/OctoPrint-WS281x_LED_Status/issues/new?assignees=&labels=type%3A+potential+bug&template=bug_report.md&title=%5BBug%5D)
+Whilst I don't like bugs, I want to hear about them! Let me know by [opening an issue on Github]({{ page.homepage }}/issues/new?assignees=&template=bug_report.md&title=%5BBug%5D)
 
 
 # Support my work!
