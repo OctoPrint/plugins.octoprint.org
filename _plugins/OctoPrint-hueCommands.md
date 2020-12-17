@@ -26,8 +26,8 @@ tags:
 - philips
 
 compatibility:
-  octoprint: ">=1.3.9,<1.6"
-  python: ">=2.7,<4"
+ octoprint: ">=1.3.9,<1.6"
+ python: ">=2.7,<4"
 
 screenshots:
 - url: https://raw.githubusercontent.com/LMS0815/OctoPrint-hueCommands/master/screenshots/huecommands_settings.png
@@ -36,8 +36,8 @@ screenshots:
 featuredimage: https://raw.githubusercontent.com/LMS0815/OctoPrint-hueCommands/master/screenshots/huecommands_settings.png
 ---
 
-The plugin enables you to conteol control philips hue lighting by adding commands to your GCODE script(s).
-A code like `HUE L15 on` added to you start print GCODE copuld switch on light 15 befor printing.
+The plugin enables you to control Philips hue lighting by adding commands to your GCODE script(s). 
+A command like `HUE L15 on` added to you start print GCODE would switch on light 15 before printing.
 Sending `HUE L15 off` via console (or widget window, script) would switch it off.
 
 ## Support My Efforts
