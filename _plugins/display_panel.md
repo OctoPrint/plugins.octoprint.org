@@ -26,7 +26,7 @@ screenshots:
 - url: /assets/img/plugins/display_panel/glamour.jpeg
   alt: Glamour shot of the hardware before installation on a blue background
   caption: Look how pretty it is...
-- url: /assets/img/plugins/display_panel/wiring.png
+- url: /assets/img/plugins/display_panel/wiring-diagram.png
   alt: Wiring diagram describing placement of parts, wires and how to plug into the Raspberry Pi
   caption: Wiring Diagram
 
@@ -56,7 +56,7 @@ This plugin implements the software control side of an OctoPrint Control Panel f
 
 Please see the [plugin repository](https://github.com/sethvoltz/OctoPrint-DisplayPanel) for the latest hardware and wiring instructions. The wiring instructions at the time of publishing are below.
 
-![Wiring diagram for the control panel](/assets/img/display_panel/wiring-diagram.png)
+![Wiring diagram for the control panel](/assets/img/plugins/display_panel/wiring-diagram.png)
 
 ## Setup
 
