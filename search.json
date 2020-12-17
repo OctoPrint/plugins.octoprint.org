@@ -2924,6 +2924,17 @@
 "author": "Neal Lambert",
 "content": "Add your CSS by navigating to Settings -&gt; Plugins -&gt; Custom CSS.Originally developed to fix an issue with overly large thumbnails on mobile when using PrusaSlicer Thumbnails and TouchUI together.PrusaSlicer Thumbnails + TouchUI CSS Fixes/* Fix PrusaSlicer Thumbnails size when using TouchUI  */@media (max-width: 980px) {  #touch .inline_prusa_thumbnail {    max-width: 140px;    margin-right: 10px;    float: left;  }}/* Optional: Make the file list taller (reccomended by PrusaSlicer Thumbnails)  */#files &gt; div &gt; div.gcode_files &gt; div.scroll-wrapper {  min-height: 800px !important;}",
 "tags": ["css","settings"]
+},
+
+{
+"id": "/plugins/display_panel",
+"url": "/plugins/display_panel/",
+"date": "2020-12-16 00:00:00 -0600",
+"title": "OctoPrint Display Panel",
+"description": "Simple control and status paired with a physical button panel and OLED display",
+"author": "Seth Voltz",
+"content": "This plugin implements the software control side of an OctoPrint Control Panel for Octopi. The hardware half is a series of 4 buttons, an OLED screen and a 3D printed case that mounts on the printer next to the Raspnerry Pi so it can be plugged in to the header pins.Watch a demo of the panel in action! More photos are at the end of this readme.Hardware3D models are available on Thingiverse.Please see the plugin repository for the latest hardware and wiring instructions. The wiring instructions at the time of publishing are below.SetupNOTE: This plugin required OctoPrint to be updated to run on Python 3. Please follow these instructions if you are not already on Python 3.Install via the bundled Plugin Manageror manually using this URL:https://github.com/sethvoltz/OctoPrint-DisplayPanel/archive/master.zip",
+"tags": ["monitoring","hardware","physical hardware","oled"]
 }
 ]
 }
