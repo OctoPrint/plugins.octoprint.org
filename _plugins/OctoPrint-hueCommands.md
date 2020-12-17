@@ -26,8 +26,8 @@ tags:
 - philips
 
 compatibility:
- octoprint: ">=1.3.9,<1.6"
- python: ">=2.7,<4"
+- python: ">=2.7,<4"
+- octoprint: ">=1.3.9,<1.6"
 
 screenshots:
 - url: https://raw.githubusercontent.com/LMS0815/OctoPrint-hueCommands/master/screenshots/huecommands_settings.png
