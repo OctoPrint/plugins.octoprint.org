@@ -28,8 +28,7 @@ screenshots:
 featuredimage: https://raw.githubusercontent.com/LMS0815/OctoPrint-hueCommands/master/screenshots/huecommands_settings.png
 
 compatibility:
-  octoprint:
-  - 1.3.9
+  octoprint: ">=1.3.9,<1.6"
   python: ">=2.7,<4"
 
 ---
