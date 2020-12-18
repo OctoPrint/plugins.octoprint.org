@@ -27,10 +27,7 @@ tags:
 
 compatibility:
   python: ">=2.7,<4"
-  octoprint:
-  - 1.3.*
-  - 1.4.*
-  - 1.5.*
+  octoprint: ">=1.3,<1.6"
 
 screenshots:
 - url: /assets/img/plugins/hueCommands/huecommands_settings_bridge.png
@@ -42,10 +39,11 @@ screenshots:
 - url: /assets/img/plugins/hueCommands/huecommands_settings_usage.png
 - alt: Plugin Settings: Usage documentation
 
-featuredimage: /assets/img/plugins/hueCommands/huecommands_settings_feature.png
+featuredimage:
+  /assets/img/plugins/hueCommands/huecommands_settings_feature.png
 ---
 
-The plugin enables you to control Philips hue lighting by adding commands to your GCODE script(s). 
+This plugin enables you to control Philips hue lighting by adding commands to your GCODE script(s). 
 A command like `HUE L15 on` added to you start print GCODE would switch on light 15 before printing.
 Sending `HUE L15 off` via console (or widget window, script) would switch it off.
 
@@ -53,4 +51,3 @@ Sending `HUE L15 off` via console (or widget window, script) would switch it off
 I programmed this plugin for fun and do my best effort to support those that have issues with it, please return the favor and support me.
 
 [![paypal](/assets/img/plugins/hueCommands/PayPal_Logo.jpg)](https://paypal.me/stonehome/5 "PayPal.me")
-
