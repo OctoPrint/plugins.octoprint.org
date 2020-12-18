@@ -10,6 +10,7 @@ date: 2020-03-18
 homepage: https://github.com/LMS0815/OctoPrint-hueCommands
 source: https://github.com/LMS0815/OctoPrint-hueCommands
 archive: https://github.com/LMS0815/OctoPrint-hueCommands/archive/master/OctoPrint-hueCommands.zip
+
 tags:
 - hue
 - philips
@@ -18,9 +19,11 @@ tags:
 - automation
 - lights
 - status
+
 compatibility:
-  python: ">=2.7,<4"
-  octoprint: 1.5
+- python: ">=2.7,<4"
+- octoprint: 1.5
+
 screenshots:
 - url: /assets/img/plugins/hueCommands/huecommands_settings_bridge.png
   alt: Plugin Settings - Bridge Parameter
@@ -30,6 +33,7 @@ screenshots:
   alt: Plugin Settings - Presets
 - url: /assets/img/plugins/hueCommands/huecommands_settings_usage.png
   alt: Plugin Settings - Usage documentation
+
 featuredimage: /assets/img/plugins/hueCommands/huecommands_settings_feature.png
 
 ---
