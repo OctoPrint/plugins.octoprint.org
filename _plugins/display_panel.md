@@ -11,7 +11,7 @@ date: 2020-12-16
 
 homepage: https://github.com/sethvoltz/OctoPrint-DisplayPanel
 source: https://github.com/sethvoltz/OctoPrint-DisplayPanel
-archive: https://github.com/sethvoltz/OctoPrint-DisplayPanel/archive/master.zip
+archive: https://github.com/sethvoltz/OctoPrint-DisplayPanel/archive/main.zip
 
 tags:
 - monitoring
@@ -65,4 +65,4 @@ Please see the [plugin repository](https://github.com/sethvoltz/OctoPrint-Displa
 Install via the bundled [Plugin Manager](https://docs.octoprint.org/en/master/bundledplugins/pluginmanager.html)
 or manually using this URL:
 
-    https://github.com/sethvoltz/OctoPrint-DisplayPanel/archive/master.zip
+    https://github.com/sethvoltz/OctoPrint-DisplayPanel/archive/main.zip
