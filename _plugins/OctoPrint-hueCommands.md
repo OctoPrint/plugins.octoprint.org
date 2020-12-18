@@ -1,3 +1,4 @@
+
 ---
 layout: plugin
 
@@ -12,37 +13,29 @@ homepage: https://github.com/LMS0815/OctoPrint-hueCommands
 source: https://github.com/LMS0815/OctoPrint-hueCommands
 archive: https://github.com/LMS0815/OctoPrint-hueCommands/archive/master/OctoPrint-hueCommands.zip
 
-# Set this to true if your plugin uses the dependency_links setup parameter to include
-# library versions not yet published on PyPi. SHOULD ONLY BE USED IF THERE IS NO OTHER OPTION!
-#follow_dependency_links: false
-
 tags:
 - hue
+  philips
 - gcode
 - automation
 - lights
 - philips hue
 - status
-- philips
 
 compatibility:
   python: ">=2.7,<4"
   octoprint: ">=1.3,<1.6"
-
 screenshots:
 - url: /assets/img/plugins/hueCommands/huecommands_settings_bridge.png
-- alt: Plugin Settings: Bridge Parameter
+  alt: Plugin Settings: Bridge Parameter
 - url: /assets/img/plugins/hueCommands/huecommands_settings_examples.png
-- alt: Plugin Settings: Examples
+  alt: Plugin Settings: Examples
 - url: /assets/img/plugins/hueCommands/huecommands_settings_preset.png
-- alt: Plugin Settings: Presets
+  alt: Plugin Settings: Presets
 - url: /assets/img/plugins/hueCommands/huecommands_settings_usage.png
-- alt: Plugin Settings: Usage documentation
-
-featuredimage:
-  /assets/img/plugins/hueCommands/huecommands_settings_feature.png
+  alt: Plugin Settings: Usage documentation
+featuredimage: /assets/img/plugins/hueCommands/huecommands_settings_feature.png
 ---
-
 This plugin enables you to control Philips hue lighting by adding commands to your GCODE script(s). 
 A command like `HUE L15 on` added to you start print GCODE would switch on light 15 before printing.
 Sending `HUE L15 off` via console (or widget window, script) would switch it off.
