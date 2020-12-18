@@ -20,7 +20,7 @@ tags:
 - status
 compatibility:
   python: ">=2.7,<4"
-  octoprint: ">=1.3,<1.6"
+  octoprint: 1.5
 screenshots:
 - url: /assets/img/plugins/hueCommands/huecommands_settings_bridge.png
   alt: Plugin Settings - Bridge Parameter
