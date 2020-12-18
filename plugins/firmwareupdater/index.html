@@ -275,9 +275,27 @@ Allows you to flash pre-compiled firmware images to boards with Atmel AVR family
       
       <dl class="install_events">
         <dt>New installs the past week</dt>
-        <dd>At least <strong>372</strong> new installations</dd>
+        <dd>At least <strong>368</strong> new installations</dd>
       </dl>
       
+      
+      <dl class="github">
+        <dt>GitHub stats <a href="/help/github_integration/" class="fas fa-question-circle"></a> <span id="github_login">(<a href="javascript:void(0)">Login</a>)</span></dt>
+        <dd>
+          <ul>
+            
+            <li>
+              Latest Release: <a href="https://github.com/OctoPrint/OctoPrint-FirmwareUpdater/releases/tag/1.7.6" target="_blank">1.7.6</a><br>
+              <small>released on 17 Dec 2020</small>
+            </li>
+            <li>Releases: 19</li>
+            
+            <li>Stars: <span id="github_star_count">160</span> <span id="github_star"><a href="javascript:void(0)"><i class="far fa-star"></i></a></span></li>
+            <li>Issues: 9 open, 120 closed</li>
+            <li>Last push: 17 Dec 2020</li>
+          </ul>
+        </dd>
+      </dl>
       
       
       <dl class="tags">
@@ -384,9 +402,9 @@ Allows you to flash pre-compiled firmware images to boards with Atmel AVR family
 
 <script type="application/javascript">
   $(function() {
-    var has_github = false;
+    var has_github = true;
     if (has_github) {
-      var github_repo = "";
+      var github_repo = "OctoPrint/OctoPrint-FirmwareUpdater";
 
       if (github_repo) {
         var status = "unknown";
