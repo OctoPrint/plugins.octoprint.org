@@ -74,7 +74,11 @@ Featuring:
 - Python processing & storage, eliminating performance issues in the UI.
 - Storage of data on the OctoPrint server, so it can be viewed while the printer is disconnected or printing.
 - Brand new UI, written from the ground up.
+- Includes new read-only mode, when the printer is printing
 - All-new backup feature, allowing naming and storing of backups, so you can quickly swap between profiles and more.
+- ... and more!
+
+**For the full changelist please check out the [release notes](https://github.com/cp2004/OctoPrint-EEPROM-Marlin/releases/tag/3.0.0).**
 
 ## Screenhots
 
@@ -89,10 +93,14 @@ Backup feature
 
 
 ## Enjoying the plugin? Sponsor its development!
-I am developing this plugin in my spare time, if you appreciate the work I have put in please [sponsor its development on GitHub](https://github.com/sponsors/cp2004)
+I am working on this plugin in my spare time, if you appreciate the work I have put in
+please consider [sponsoring its development on GitHub.](https://github.com/sponsors/cp2004)
 
 ## Need help? Get in touch!
-For bugs, issues, feature requests & questions, please open an issue on the [GitHub repository](https://github.com/cp2004/OctoPrint-EEPROM-Marlin)
+Whilst I don't like bugs, I want to know where they are!
+* Get in touch on the [Github Repository](https://github.com/cp2004/OctoPrint-EEPROM-Marlin)
+* Ask a question on the [community forums](https://community.octoprint.org)
+* Find help on the [OctoPrint Discord Server](https://discord.octoprint.org)
 
 ## My other plugins
 Check out some more of my plugins [in the repository here](https://plugins.octoprint.org/by_author/#charlie-powell)
