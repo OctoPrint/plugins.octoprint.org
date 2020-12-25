@@ -277,33 +277,15 @@
       
       <dl class="installations">
         <dt>Active instances the past month</dt>
-        <dd>Installed on at least <strong>442</strong> instances</dd>
+        <dd>Installed on at least <strong>449</strong> instances</dd>
       </dl>
       
       
       <dl class="install_events">
         <dt>New installs the past week</dt>
-        <dd>At least <strong>24</strong> new installations</dd>
+        <dd>At least <strong>25</strong> new installations</dd>
       </dl>
       
-      
-      <dl class="github">
-        <dt>GitHub stats <a href="/help/github_integration/" class="fas fa-question-circle"></a> <span id="github_login">(<a href="javascript:void(0)">Login</a>)</span></dt>
-        <dd>
-          <ul>
-            
-            <li>
-              Latest Release: <a href="https://github.com/jneilliii/OctoPrint-GoogleDriveBackup/releases/tag/0.0.3" target="_blank">0.0.3</a><br>
-              <small>released on 07 Oct 2020</small>
-            </li>
-            <li>Releases: 4</li>
-            
-            <li>Stars: <span id="github_star_count">8</span> <span id="github_star"><a href="javascript:void(0)"><i class="far fa-star"></i></a></span></li>
-            <li>Issues: 5 open, 6 closed</li>
-            <li>Last push: 17 Nov 2020</li>
-          </ul>
-        </dd>
-      </dl>
       
       
       <dl class="tags">
@@ -392,9 +374,9 @@
 
 <script type="application/javascript">
   $(function() {
-    var has_github = true;
+    var has_github = false;
     if (has_github) {
-      var github_repo = "jneilliii/OctoPrint-GoogleDriveBackup";
+      var github_repo = "";
 
       if (github_repo) {
         var status = "unknown";
