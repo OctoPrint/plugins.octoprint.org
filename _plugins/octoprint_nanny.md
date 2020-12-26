@@ -33,24 +33,24 @@ tags:
 
 # TODO
 screenshots:
-- url: /assets/img/octoprint_nanny/logo.jpg
+- url: /assets/img/plugins/octoprint_nanny/logo.jpg
   alt: Print Nanny Logo
   caption: Print Nanny
-- url: /assets/img/octoprint_nanny/screenshot_1.png
+- url: /assets/img/plugins/octoprint_nanny/screenshot_1.png
   alt: OctoPrint UI plugin tab
   caption: Print Nanny monitors your 3D prints in real-time.
-- url: /assets/img/octoprint_nanny/screenshot_2.png
+- url: /assets/img/plugins/octoprint_nanny/screenshot_2.png
   alt: Control your printer and queue remotely
   caption: Control your printer and queue remotely
-- url: /assets/img/octoprint_nanny/screenshot_3.png
+- url: /assets/img/plugins/octoprint_nanny/screenshot_3.png
   alt: No-code workflows
   caption: Build custom automation - no coding required
-- url: /assets/img/octoprint_nanny/screenshot_4.png
+- url: /assets/img/plugins/octoprint_nanny/screenshot_4.png
   alt: Percentage completed and low quality alerts
   caption: Percentage completed and low quality alerts
 
 # TODO
-featuredimage: /assets/img/octoprint_nanny/screenshot_2.png
+featuredimage: /assets/img/plugins/octoprint_nanny/screenshot_2.png
 
 # TODO
 # You only need the following if your plugin requires specific OctoPrint versions or
