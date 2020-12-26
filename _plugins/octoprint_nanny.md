@@ -120,7 +120,7 @@ compatibility:
 
 Learn more about Print Nanny: https://www.print-nanny.com/
 
-![Print Nanny Dashboard and App](/assets/img/plugins/octoprint_nanny/screenshot_2.jpg)
+![Print Nanny Dashboard and App](/assets/img/plugins/octoprint_nanny/screenshot_2.png)
 
 
 **Note:** currently in closed Beta. Please [request an invite](https://www.print-nanny.com/request-invite/) if you're interested in a preview of Print Nanny.
@@ -131,12 +131,12 @@ Learn more about Print Nanny: https://www.print-nanny.com/
 2. Install the OctoPrint Nanny plugin using the Plugin Manager or [clone the Github repo](https://github.com/bitsy-ai/octoprint-nanny-plugin).
 3. Copy your Print Nanny authentication token.
 
-![Print Nanny Dashboard and App](/assets/img/plugins/octoprint_nanny/screenshot_4.jpg)
+![Print Nanny Dashboard and App](/assets/img/plugins/octoprint_nanny/screenshot_4.png)
 
 4. Open OctoPrint's settings and paste your token. Don't forget to test your connection and save!
 
 
-![Settings Example](/assets/img/plugins/octoprint_nanny/screenshot_5.jpg)
+![Settings Example](/assets/img/plugins/octoprint_nanny/screenshot_5.png)
 
 
 4. That's it! Print Nanny will automatically discover new printers, save your profiles, and generate detailed reports about your print jobs.
@@ -145,7 +145,7 @@ Learn more about Print Nanny: https://www.print-nanny.com/
 
 You'll receive email notifications by default. Additional setup may be required for other notification sources and custom workflows.
 
-![Workflows Example](/assets/img/plugins/octoprint_nanny/screenshot_3.jpg)
+![Workflows Example](/assets/img/plugins/octoprint_nanny/screenshot_3.png)
 
 
 ### Stay Tuned!
@@ -171,4 +171,4 @@ Details about pricing will be announced before launch.
 Participation in the Beta test will be rewarded with special discounts and swag giveaways.
 
 
-![Plugin tab live stream](/assets/img/plugins/octoprint_nanny/screenshot_1.jpg)
+![Plugin tab live stream](/assets/img/plugins/octoprint_nanny/screenshot_1.png)
