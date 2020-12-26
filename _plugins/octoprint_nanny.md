@@ -11,7 +11,8 @@ date: 2020-12-25
 
 homepage: https://print-nanny.com
 source: https://github.com/bitsy-ai/octoprint-nanny-plugin
-archive: https://github.com/bitsy-ai/octoprint-nanny-plugin/archive/master.zip
+
+archive: https://github.com/bitsy-ai/octoprint-nanny-plugin/archive/main.zip
 
 # TODO
 # Set this to true if your plugin uses the dependency_links setup parameter to include
@@ -147,11 +148,27 @@ You'll receive email notifications by default. Additional setup may be required 
 ![Workflows Example](/assets/img/plugins/octoprint_nanny/screenshot_3.jpg)
 
 
-### Stay tuned!
+### Stay Tuned!
 
 This document will be updated when Print Nanny v1.0.0 is released. By requesting a Beta invitation, you are opting in to receive email updates about new features and development.
 
+* [Read the Developer Blog](https://www.bitsy.ai/automate-bounding-box-annotation-with-tensorflow-and-automl/)
 * [Join Discord](https://discord.gg/YK7qnv5KjB)
+
+
+### Will this plugin cost money?
+
+Short answer: _yes_
+
+Longer answer: Print Nanny will be released under an Open Source license in 2021, financially supported by a cloud-hosted subscription service and business licensing model. That means the OctoPrint plugin, webapp, data & training pipelines, and machine learning model architechtures & trained weights will be 100% Open Source. 🦾 My mission is to provide:
+
+* Free ("free" as in "freedom", not "free" as in "free beer") self-hosted, self-supported community distribution.
+* Low-cost hosted tier for hobbyists with one or two printers.
+* Premium support for print shops and e-commerce stores.
+
+Details about pricing will be announced before launch. 
+
+Participation in the Beta test will be rewarded with special discounts and swag giveaways.
 
 
 ![Plugin tab live stream](/assets/img/plugins/octoprint_nanny/screenshot_1.jpg)
