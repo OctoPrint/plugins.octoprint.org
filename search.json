@@ -2935,6 +2935,17 @@
 "author": "Seth Voltz",
 "content": "This plugin implements the software control side of an OctoPrint Control Panel for Octopi. The hardware half is a series of 4 buttons, an OLED screen and a 3D printed case that mounts on the printer next to the Raspnerry Pi so it can be plugged in to the header pins.Watch a demo of the panel in action! More photos are at the end of this readme.Hardware3D models are available on Thingiverse.Please see the plugin repository for the latest hardware and wiring instructions. The wiring instructions at the time of publishing are below.SetupNOTE: This plugin required OctoPrint to be updated to run on Python 3. Please follow these instructions if you are not already on Python 3.Install via the bundled Plugin Manageror manually using this URL:https://github.com/sethvoltz/OctoPrint-DisplayPanel/archive/main.zip",
 "tags": ["monitoring","hardware","physical hardware","oled"]
+},
+
+{
+"id": "/plugins/octoprint_nanny",
+"url": "/plugins/octoprint_nanny/",
+"date": "2020-12-25 00:00:00 -0600",
+"title": "OctoPrint Nanny",
+"description": "Get notified of print defects and safety hazards",
+"author": "Leigh Johnson",
+"content": "What is Print Nanny?  Full remote control from anywhere, plus automatic defect and safety hazard detection.  Push notifications to SMS, Email, Slack, Discord, and more!  Build custom workflows to handle shipping, filament resupply, or update product availability in your online store.  Send print-on-demand orders to job queue.  Smart slicer recommendations - perfect for beginners.  Developer API &amp; Webhooks for advanced automation.Learn more about Print Nanny: https://www.print-nanny.com/Note: currently in closed Beta. Please request an invite if you’re interested in a preview of Print Nanny.Setup  Create an account  Install the OctoPrint Nanny plugin using the Plugin Manager or clone the Github repo.  Copy your Print Nanny authentication token.  Open OctoPrint’s settings and paste your token. Don’t forget to test your connection and save!  That’s it! Print Nanny will automatically discover new printers, save your profiles, and generate detailed reports about your print jobs.Note: Print Nanny requires a webcam to function!You’ll receive email notifications by default. Additional setup may be required for other notification sources and custom workflows.Stay Tuned!This document will be updated when Print Nanny v1.0.0 is released. By requesting a Beta invitation, you are opting in to receive email updates about new features and development.  Read the Developer Blog  Join DiscordWill this plugin cost money?Short answer: yesLonger answer: Print Nanny will be released under an Open Source license in 2021, financially supported by a cloud-hosted subscription service and business licensing model. That means the OctoPrint plugin, webapp, data &amp; training pipelines, and machine learning model architechtures &amp; trained weights will be 100% Open Source. 🦾 My mission is to provide:  Free (“free” as in “freedom”, not “free” as in “free beer”) self-hosted, self-supported community distribution.  Low-cost hosted tier for hobbyists with one or two printers.  Premium support for print shops and e-commerce stores.Details about pricing will be announced before launch.Participation in the Beta test will be rewarded with special discounts and swag giveaways.",
+"tags": ["ai","automation","quality control","remote","monitor","monitoring","alert","alerting","workflow","automation"]
 }
 ]
 }

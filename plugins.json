@@ -3125,16 +3125,16 @@
         "abandoned": false,
         "github": { 
             "latest_release": {
-                "name": "0.8.16",
-                "date": "2020-11-30 23:33:06 +0000",
-                "tag": "0.8.16"
+                "name": "0.8.17",
+                "date": "2020-12-27 00:51:04 +0000",
+                "tag": "0.8.17"
             },
-            "releases": 30,
-            "last_push": "2020-11-30 23:32:44 +0000",
+            "releases": 31,
+            "last_push": "2020-12-27 00:50:33 +0000",
             "stars": 40,
             "issues": {
-                "open": 12,
-                "closed": 75
+                "open": 10,
+                "closed": 77
             }
         },
         "stats": {
@@ -9927,6 +9927,39 @@
             "install_events_month": 7,
             "instances_week": 17,
             "install_events_week": 6
+        }
+    },
+
+    {
+        "id": "octoprint_nanny",
+        "published": "2020-12-25 00:00:00 -0600",
+        "title": "OctoPrint Nanny",
+        "description": "Get notified of print defects and safety hazards",
+        "archive": "https://github.com/bitsy-ai/octoprint-nanny-plugin/archive/main.zip",
+        "author": "Leigh Johnson",
+        "homepage": "https://print-nanny.com",
+        "page": "https://plugins.octoprint.org/plugins/octoprint_nanny/",
+        "compatibility": {
+            "octoprint": ["1.5.0"],
+            "os": ["linux"],
+            "python": ">=3,<4"
+        },
+        "license": "GNU AFFERO GENERAL PUBLIC LICENSE",
+        "image": "https://plugins.octoprint.org/assets/img/plugins/octoprint_nanny/screenshot_2.png",
+        "abandoned": false,
+        "github": { 
+            "last_push": "2020-12-27 00:31:12 +0000",
+            "stars": 0,
+            "issues": {
+                "open": 1,
+                "closed": 0
+            }
+        },
+        "stats": {
+            "instances_month": 0,
+            "install_events_month": 0,
+            "instances_week": 0,
+            "install_events_week": 0
         }
     }
 ]
