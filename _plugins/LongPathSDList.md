@@ -28,7 +28,7 @@ screenshots:
   alt: Improved SD list
   caption: After
 
-featuredimage: /assets/img/LongPathSDList/after.png
+featuredimage: /assets/img/plugins/LongPathSDList/after.png
 
 ---
 
