@@ -21,10 +21,10 @@ tags:
 - M33
 
 screenshots:
-- url: /assets/img/LongPathSDList/before.png
+- url: /assets/img/plugins/LongPathSDList/before.png
   alt: Default Octoprint SD list
   caption: Before
-- url: /assets/img/LongPathSDList/after.png
+- url: /assets/img/plugins/LongPathSDList/after.png
   alt: Improved SD list
   caption: After
 
