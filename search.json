@@ -2946,6 +2946,17 @@
 "author": "Leigh Johnson",
 "content": "What is Print Nanny?  Full remote control from anywhere, plus automatic defect and safety hazard detection.  Push notifications to SMS, Email, Slack, Discord, and more!  Build custom workflows to handle shipping, filament resupply, or update product availability in your online store.  Send print-on-demand orders to job queue.  Smart slicer recommendations - perfect for beginners.  Developer API &amp; Webhooks for advanced automation.Learn more about Print Nanny: https://www.print-nanny.com/Note: currently in closed Beta. Please request an invite if you’re interested in a preview of Print Nanny.Setup  Create an account  Install the OctoPrint Nanny plugin using the Plugin Manager or clone the Github repo.  Copy your Print Nanny authentication token.  Open OctoPrint’s settings and paste your token. Don’t forget to test your connection and save!  That’s it! Print Nanny will automatically discover new printers, save your profiles, and generate detailed reports about your print jobs.Note: Print Nanny requires a webcam to function!You’ll receive email notifications by default. Additional setup may be required for other notification sources and custom workflows.Stay Tuned!This document will be updated when Print Nanny v1.0.0 is released. By requesting a Beta invitation, you are opting in to receive email updates about new features and development.  Read the Developer Blog  Join DiscordWill this plugin cost money?Short answer: yesLonger answer: Print Nanny will be released under an Open Source license in 2021, financially supported by a cloud-hosted subscription service and business licensing model. That means the OctoPrint plugin, webapp, data &amp; training pipelines, and machine learning model architechtures &amp; trained weights will be 100% Open Source. 🦾 My mission is to provide:  Free (“free” as in “freedom”, not “free” as in “free beer”) self-hosted, self-supported community distribution.  Low-cost hosted tier for hobbyists with one or two printers.  Premium support for print shops and e-commerce stores.Details about pricing will be announced before launch.Participation in the Beta test will be rewarded with special discounts and swag giveaways.",
 "tags": ["ai","automation","quality control","remote","monitor","monitoring","alert","alerting","workflow","automation"]
+},
+
+{
+"id": "/plugins/LongPathSDList",
+"url": "/plugins/LongPathSDList/",
+"date": "2021-01-03 00:00:00 -0600",
+"title": "OctoPrint-Longpathsdlist",
+"description": "Could block serial communication - read more at the plugin homepage! This is a simple plugin to show long path names in the SD List.",
+"author": "Petttkous",
+"content": "Long Path SD LISTThis is a very simple plugin that enhances the SD list filenames",
+"tags": ["SD Long Path List","SD List","M20","M33"]
 }
 ]
 }

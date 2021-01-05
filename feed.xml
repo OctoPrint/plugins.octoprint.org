@@ -5,10 +5,33 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>https://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 05 Jan 2021 06:19:18 -0600</pubDate>
-    <lastBuildDate>Tue, 05 Jan 2021 06:19:18 -0600</lastBuildDate>
+    <pubDate>Tue, 05 Jan 2021 10:27:40 -0600</pubDate>
+    <lastBuildDate>Tue, 05 Jan 2021 10:27:40 -0600</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
+    
+      <item>
+        <title>OctoPrint-Longpathsdlist</title>
+        <description>
+          <![CDATA[
+            Could block serial communication - read more at the plugin homepage! This is a simple plugin to show long path names in the SD List.
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/LongPathSDList/after.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Sun, 03 Jan 2021 00:00:00 -0600</pubDate>
+        <link>https://plugins.octoprint.org/plugins/LongPathSDList/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/LongPathSDList/</guid>
+        
+        <category>SD Long Path List</category>
+        
+        <category>SD List</category>
+        
+        <category>M20</category>
+        
+        <category>M33</category>
+        
+      </item>
     
       <item>
         <title>OctoPrint Nanny</title>
@@ -261,39 +284,6 @@ Sat, 24 Oct 2020 00:00:00 -0500</pubDate>
         <category>g3</category>
         
         <category>stutter</category>
-        
-      </item>
-    
-      <item>
-        <title>Mattacloud Beta</title>
-        <description>
-          <![CDATA[
-            Making 3D printers intelligent. Remote 3D printer control and management from anywhere with advanced AI error detection and informative notifications.
-            <p><img src="https://plugins.octoprint.org/assets/img/plugins/mattacloud/mattacloud.png"></p>
-          ]]>
-        </description>
-        <pubDate>
-Sat, 17 Oct 2020 00:00:00 -0500</pubDate>
-        <link>https://plugins.octoprint.org/plugins/mattacloud/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/mattacloud/</guid>
-        
-        <category>remote monitoring</category>
-        
-        <category>cloud printing</category>
-        
-        <category>webcam</category>
-        
-        <category>print queue</category>
-        
-        <category>remote control</category>
-        
-        <category>ai</category>
-        
-        <category>machine learning</category>
-        
-        <category>error detection</category>
-        
-        <category>beta</category>
         
       </item>
     
