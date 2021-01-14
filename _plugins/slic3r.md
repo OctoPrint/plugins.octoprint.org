@@ -24,6 +24,9 @@ tags:
 
 featuredimage: /assets/img/plugins/slic3r/logo.png
 
+compatibility:
+  python: ">=2.7,<4"
+
 ---
 
 # Slic3r plugin for OctoPrint
