@@ -7,7 +7,7 @@ description: Display time until next filament change
 author: eyal0
 license: AGPLv3
 
-date: 2020-07-15
+date: 2021-01-14
 
 homepage: https://github.com/eyal0/OctoPrint-TimeToFilament
 source: https://github.com/eyal0/OctoPrint-TimeToFilament
@@ -18,6 +18,11 @@ tags:
 - time
 - remaining
 - change
+
+compatibility:
+  octoprint:
+  - 1.5.0
+  python: ">=2.7,<4"
 
 screenshots:
 - url: /assets/img/plugins/TimeToFilament/screenshot.png
