@@ -2957,6 +2957,17 @@
 "author": "Petttkous",
 "content": "Long Path SD LISTThis is a very simple plugin that enhances the SD list filenames",
 "tags": ["SD Long Path List","SD List","M20","M33"]
+},
+
+{
+"id": "/plugins/TimeToFilament",
+"url": "/plugins/TimeToFilament/",
+"date": "2021-01-14 00:00:00 -0600",
+"title": "OctoPrint-TimeToFilament",
+"description": "Display time until next filament change",
+"author": "eyal0",
+"content": "TimeToFilament can show you the time until the next filament change inyour print.  It can also show the time until your next layer willstart.  In fact, it’s extensible and can show you whatever you want ifyou configure it through the settings!How it works:TimeToFilament scans through your gcode looking for a line that youspecify.  Then it parses the text on that line and sends it to yourbrowser along with how many seconds until the printer will reach thatline.  Your browser will use that to create some text to display rightbelow the total time to print.If you know how to write a regularexpression, you can make your own.  If youneed this and have trouble with it, file a request.http://plugins.octoprint.org/plugin/TimeToFilament/",
+"tags": ["filament","time","remaining","change"]
 }
 ]
 }
