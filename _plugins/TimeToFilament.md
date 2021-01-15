@@ -33,6 +33,8 @@ featuredimage: /assets/img/plugins/TimeToFilament/screenshot.png
 
 ---
 
+**This plugin requires [OctoPrint-PrintTimeGenius](https://plugins.octoprint.org/plugins/PrintTimeGenius/).**
+
 TimeToFilament can show you the time until the next filament change in
 your print.  It can also show the time until your next layer will
 start.  In fact, it's extensible and can show you whatever you want if
