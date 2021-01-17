@@ -2968,6 +2968,17 @@
 "author": "eyal0",
 "content": "This plugin requires OctoPrint-PrintTimeGenius.TimeToFilament can show you the time until the next filament change inyour print.  It can also show the time until your next layer willstart.  In fact, it’s extensible and can show you whatever you want ifyou configure it through the settings!How it works:TimeToFilament scans through your gcode looking for a line that youspecify.  Then it parses the text on that line and sends it to yourbrowser along with how many seconds until the printer will reach thatline.  Your browser will use that to create some text to display rightbelow the total time to print.If you know how to write a regularexpression, you can make your own.  If youneed this and have trouble with it, file a request.http://plugins.octoprint.org/plugin/TimeToFilament/",
 "tags": ["filament","time","remaining","change"]
+},
+
+{
+"id": "/plugins/webdavbackup",
+"url": "/plugins/webdavbackup/",
+"date": "2021-01-16 00:00:00 -0600",
+"title": "WebDAV Backup",
+"description": "This plugin will automatically save a copy of your OctoPrint backup to a WebDAV server upon completion.",
+"author": "edekeijzer",
+"content": "WebDAV BackupThis plugin will automatically upload a backup upon completion to a WebDAV compatible storage server.ConfigurationPlease note that the password to connect to the WebDAV server will be stored in the OctoPrint configuration in plain text, so use an app specific password if possible. See documentation how to configure this for Nextcloud, OwnCloudGet HelpIf you experience issues with this plugin or need assistance please use the issue tracker at the plugin’s Homepage linked on the right.",
+"tags": ["Backup","WebDAV","Nextcloud","OwnCloud"]
 }
 ]
 }
