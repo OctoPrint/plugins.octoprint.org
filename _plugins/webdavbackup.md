@@ -5,10 +5,10 @@ title: WebDAV Backup
 description: This plugin will automatically save a copy of your OctoPrint backup to a WebDAV server upon completion.
 author: edekeijzer
 license: MIT
-date: 2020-12-10
+date: 2021-01-16
 homepage: https://github.com/edekeijzer/OctoPrint-WebDavBackup
 source: https://github.com/edekeijzer/OctoPrint-WebDavBackup
-archive: https://github.com/edekeijzer/OctoPrint-WebDavBackup/archive/master.zip
+archive: https://github.com/edekeijzer/OctoPrint-WebDavBackup/archive/main.zip
 tags:
 - Backup
 - WebDAV
