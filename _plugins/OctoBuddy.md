@@ -4,7 +4,7 @@ layout: plugin
 id: OctoBuddy
 title: OctoBuddy
 description: A plugin that allows common printer actions to be performed with physical buttons via GPIO
-#authors:
+authors:
 - Mark
 - Lorenz
 license: AGPLv3
