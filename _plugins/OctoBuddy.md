@@ -5,8 +5,7 @@ id: OctoBuddy
 title: OctoBuddy
 description: A plugin that allows common printer actions to be performed with physical buttons via GPIO
 authors:
-- Mark
-- Lorenz
+- Mark Lorenz
 license: AGPLv3
 
 # today's date in format YYYY-MM-DD, e.g.
@@ -36,7 +35,7 @@ screenshots:
 - url: /assets/img/plugins/OctoBuddy/ShelfMount1.jpg
   alt: OctoBuddy Shelf Mount Version
   caption: OctoBuddy Shelf Mount Version
-  - url: /assets/img/plugins/OctoBuddy/OctoBuddySettings.png
+- url: /assets/img/plugins/OctoBuddy/OctoBuddySettings.png
   alt: OctoBuddy Shelf Mount Version
   caption: OctoBuddy Shelf Mount Version
 - url: /assets/img/plugins/OctoBuddy/ShelfMount2.jpg
