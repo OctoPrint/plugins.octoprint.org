@@ -9,7 +9,7 @@ authors:
 license: AGPLv3
 
 # today's date in format YYYY-MM-DD, e.g.
-date: 2021/01/17
+date: 2021-01-17
 
 homepage: https://github.com/mlo821/OctoBuddy
 source: https://github.com/mlo821/OctoBuddy
