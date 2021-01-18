@@ -4,8 +4,8 @@ layout: plugin
 id: octolight
 title: OctoLight
 description: A simple plugin, that add's a button to the navbar, toggleing GPIO on the RPi. It can be used for turning on and off a light.
-#authors:
-#- first author name
+authors:
+- Žiga Kralj
 #- second autor name
 license: AGPLv3
 
