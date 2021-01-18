@@ -44,7 +44,6 @@ screenshots:
 - url: /assets/img/plugins/OctoBuddy/ShelfMount4.jpg
   alt: OctoBuddy Shelf Mount Version
   caption: OctoBuddy Shelf Mount Version
-- ...
 
 featuredimage: /assets/img/plugins/OctoBuddy/ShelfMount1.jpg
 
