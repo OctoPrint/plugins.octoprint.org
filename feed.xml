@@ -5,10 +5,45 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>https://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 18 Jan 2021 19:02:23 -0600</pubDate>
-    <lastBuildDate>Mon, 18 Jan 2021 19:02:23 -0600</lastBuildDate>
+    <pubDate>Mon, 18 Jan 2021 20:03:03 -0600</pubDate>
+    <lastBuildDate>Mon, 18 Jan 2021 20:03:03 -0600</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
+    
+      <item>
+        <title>OctoBuddy</title>
+        <description>
+          <![CDATA[
+            A plugin that allows common printer actions to be performed with physical buttons via GPIO
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/OctoBuddy/ShelfMount1.jpg"></p>
+          ]]>
+        </description>
+        <pubDate>
+Sun, 17 Jan 2021 00:00:00 -0600</pubDate>
+        <link>https://plugins.octoprint.org/plugins/OctoBuddy/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/OctoBuddy/</guid>
+        
+        <category>control</category>
+        
+        <category>heat bed</category>
+        
+        <category>GPIO</category>
+        
+        <category>easy control</category>
+        
+        <category>heat nozzle</category>
+        
+        <category>jog axis</category>
+        
+        <category>home printer</category>
+        
+        <category>push button</category>
+        
+        <category>pushbutton</category>
+        
+        <category>printer interface</category>
+        
+      </item>
     
       <item>
         <title>WebDAV Backup</title>
@@ -231,29 +266,6 @@ Sun, 15 Nov 2020 00:00:00 -0600</pubDate>
         <category>autologinlocal</category>
         
         <category>accesscontrol</category>
-        
-      </item>
-    
-      <item>
-        <title>OctoPrint-LightsOut</title>
-        <description>
-          <![CDATA[
-            Automatically shuts off lights after some delay when printing completes
-            <p><img src="https://plugins.octoprint.org/assets/img/plugins/lightsout/settings_screenshot.png"></p>
-          ]]>
-        </description>
-        <pubDate>
-Sun, 08 Nov 2020 00:00:00 -0600</pubDate>
-        <link>https://plugins.octoprint.org/plugins/lightsout/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/lightsout/</guid>
-        
-        <category>lights</category>
-        
-        <category>timer</category>
-        
-        <category>LED</category>
-        
-        <category>M150</category>
         
       </item>
     

@@ -2979,6 +2979,17 @@
 "author": "edekeijzer",
 "content": "WebDAV BackupThis plugin will automatically upload a backup upon completion to a WebDAV compatible storage server.ConfigurationPlease note that the password to connect to the WebDAV server will be stored in the OctoPrint configuration in plain text, so use an app specific password if possible. See documentation how to configure this for Nextcloud, OwnCloudGet HelpIf you experience issues with this plugin or need assistance please use the issue tracker at the plugin’s Homepage linked on the right.",
 "tags": ["Backup","WebDAV","Nextcloud","OwnCloud"]
+},
+
+{
+"id": "/plugins/OctoBuddy",
+"url": "/plugins/OctoBuddy/",
+"date": "2021-01-17 00:00:00 -0600",
+"title": "OctoBuddy",
+"description": "A plugin that allows common printer actions to be performed with physical buttons via GPIO",
+"author": "Mark Lorenz",
+"content": "OctoBuddy is 3D printable button panel with an accompanying OctoPrint plugin that lets perform common printer actions like moving your print head with the push of a single button.  It let’s you speed up things like maintenance, troubleshooting, and filament changes much quicker and easier by bypassing the need to access OctoPrint interface or cumbersome printer menus.  The concept is simple, connect a button to the Raspberry Pi GPIO interface and tell the plugin which what action you want the port to perform.  You can mount your buttons to one of the  my button panels  or make your own.OctoBuddy can currently perform the following actions:    Home Printer    Jog any Axis by a configurable distance    Toggle bed temperature between a configurable temperature and 0    Toggle nozzle temperature between a configurable temperature and 0For a full how-to on building your own OctoBuddy go here: https://www.factoryrestart.com/octobuddyI build these things cause I like it.  I make them available to you because… well, why not.  If you like my work and would like to donate just click here.  All contributions are much appreciated.",
+"tags": ["control","heat bed","GPIO","easy control","heat nozzle","jog axis","home printer","push button","pushbutton","printer interface"]
 }
 ]
 }
