@@ -5,8 +5,8 @@ id: continuousprint
 title: Continuous Print
 description: Allows the queueing and automatic print and clearing of the queue
 authors: 
--Louis Sarwal
--Paul Goddard(Original)
+- Louis Sarwal
+- Paul Goddard(Original)
 license: AGPLv3
 
 # today's date in format YYYY-MM-DD, e.g.
