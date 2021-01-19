@@ -4,7 +4,9 @@ layout: plugin
 id: slicer
 title: Full-featured Slicer
 description: A full-blown GUI-based slicer. Rotate and scale model; slice multiple STL files at a time; set layer height and other slicing settings.
-author: Kenneth Jiang
+authors:
+- eyal0
+- Kenneth Jiang
 license: AGPLv3
 
 # today's date in format YYYY-MM-DD, e.g.
@@ -43,8 +45,6 @@ compatibility:
   # list of compatible versions, for example 1.2.0. If left empty no specific version requirement will be assumed
   octoprint:
   - 1.2.14
-
-abandoned: https://github.com/OctoPrint/plugins.octoprint.org/issues/572
 
 ---
 
