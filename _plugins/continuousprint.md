@@ -4,7 +4,7 @@ layout: plugin
 id: continuousprint
 title: Continuous Print
 description: Allows the queueing and automatic print and clearing of the queue
-author: 
+Authors: 
 -Louis Sarwal
 -Paul Goddard(original)
 license: AGPLv3
