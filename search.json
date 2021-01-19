@@ -457,7 +457,7 @@
 "date": "2016-09-22 00:00:00 -0500",
 "title": "Full-featured Slicer",
 "description": "A full-blown GUI-based slicer. Rotate and scale model; slice multiple STL files at a time; set layer height and other slicing settings.",
-"author": "Kenneth Jiang",
+"author": "eyal0, Kenneth Jiang",
 "content": "Slicer plugin offers useful features that OctoPrint’s built-in slicer doesn’t have:  Rotate, scale, and move STL models.  Slice multiple STLs at a time. Split 1 STL into unconnected parts.  Circular print bed support (do you have a delta printer?).  High-light overhang areas. Automatically orient the model for better result (“lay flat”).  Slice based on Cura profiles you upload to OctoPrint.  Customizable slicing settings, including Basic (layer height, bed temperature …) and Advanced (print speed, start/end G-code …).  Slic3r support (when Slic3r plugin is installed).  More is coming…",
 "tags": ["slicer","gcode","stl"]
 },
