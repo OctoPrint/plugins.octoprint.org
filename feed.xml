@@ -5,10 +5,29 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>https://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 19 Jan 2021 06:35:49 -0600</pubDate>
-    <lastBuildDate>Tue, 19 Jan 2021 06:35:49 -0600</lastBuildDate>
+    <pubDate>Tue, 19 Jan 2021 13:38:12 -0600</pubDate>
+    <lastBuildDate>Tue, 19 Jan 2021 13:38:12 -0600</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
+    
+      <item>
+        <title>OctoLight</title>
+        <description>
+          <![CDATA[
+            A simple plugin, that add's a button to the navbar, toggleing GPIO on the RPi. It can be used for turning on and off a light.
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/octolight/screenshoot.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Mon, 18 Jan 2021 00:00:00 -0600</pubDate>
+        <link>https://plugins.octoprint.org/plugins/octolight/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/octolight/</guid>
+        
+        <category>raspberry pi</category>
+        
+        <category>gpio</category>
+        
+      </item>
     
       <item>
         <title>OctoBuddy</title>
@@ -241,31 +260,6 @@ Sun, 29 Nov 2020 00:00:00 -0600</pubDate>
         <category>grbl</category>
         
         <category>cnc</category>
-        
-      </item>
-    
-      <item>
-        <title>OctoPrint-AutoLoginConfig</title>
-        <description>
-          <![CDATA[
-            Configure AutoLoginLocal from the UI with ease.
-            <p><img src="https://plugins.octoprint.org/assets/img/plugins/autologin_config/config.png"></p>
-          ]]>
-        </description>
-        <pubDate>
-Sun, 15 Nov 2020 00:00:00 -0600</pubDate>
-        <link>https://plugins.octoprint.org/plugins/autologin_config/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/autologin_config/</guid>
-        
-        <category>settings</category>
-        
-        <category>configuration</category>
-        
-        <category>autologin</category>
-        
-        <category>autologinlocal</category>
-        
-        <category>accesscontrol</category>
         
       </item>
     

@@ -2990,6 +2990,17 @@
 "author": "Mark Lorenz",
 "content": "OctoBuddy is 3D printable button panel with an accompanying OctoPrint plugin that lets perform common printer actions like moving your print head with the push of a single button.  It let’s you speed up things like maintenance, troubleshooting, and filament changes much quicker and easier by bypassing the need to access OctoPrint interface or cumbersome printer menus.  The concept is simple, connect a button to the Raspberry Pi GPIO interface and tell the plugin which what action you want the port to perform.  You can mount your buttons to one of the  my button panels  or make your own.OctoBuddy can currently perform the following actions:    Home Printer    Jog any Axis by a configurable distance    Toggle bed temperature between a configurable temperature and 0    Toggle nozzle temperature between a configurable temperature and 0For a full how-to on building your own OctoBuddy go here: https://www.factoryrestart.com/octobuddyI build these things cause I like it.  I make them available to you because… well, why not.  If you like my work and would like to donate just click here.  All contributions are much appreciated.",
 "tags": ["control","heat bed","GPIO","easy control","heat nozzle","jog axis","home printer","push button","pushbutton","printer interface"]
+},
+
+{
+"id": "/plugins/octolight",
+"url": "/plugins/octolight/",
+"date": "2021-01-18 00:00:00 -0600",
+"title": "OctoLight",
+"description": "A simple plugin, that add's a button to the navbar, toggleing GPIO on the RPi. It can be used for turning on and off a light.",
+"author": "Žiga Kralj",
+"content": "A simple plugin that adds a button to the navigation bar for toggleing a GPIO pin on the Raspberry Pi. I use it for turning ON and OFF the light on my 3D printer.",
+"tags": ["raspberry pi","gpio"]
 }
 ]
 }
