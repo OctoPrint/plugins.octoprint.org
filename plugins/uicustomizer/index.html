@@ -13,7 +13,7 @@
     <meta name="google-site-verification" content="0EFsbaNygJcEinKPmzP-hTf0Ju6wDIpJxO5zvQtOQT0" />
 
     <!--[if lt IE 9]>
-    <script type="text/javascript" src="/assets/js/html5shim-d55410eeb0d1e50b9558b594560e362529c60f3d70f808efe63dc16137b0226a.js" integrity="sha256-1VQQ7rDR5QuVWLWUVg42JSnGDz1w+Ajv5j3BYTewImo=" crossorigin="anonymous"></script>
+    <script integrity="sha256-1VQQ7rDR5QuVWLWUVg42JSnGDz1w+Ajv5j3BYTewImo=" crossorigin="anonymous" src="/assets/js/html5shim-d55410eeb0d1e50b9558b594560e362529c60f3d70f808efe63dc16137b0226a.js" type="text/javascript"></script>
     <![endif]-->
 
     <!-- Enable responsive viewport -->
@@ -61,11 +61,11 @@
 " />
     <meta itemprop="image" content="https://plugins.octoprint.org/assets/img/plugins/uicustomizer/responsive.png" />
 
-    <script type="text/javascript" src="/assets/js/jquery-1.9.1.min-4b58dfeb119b2dd15f54e0a074cf8eb63204c8b03d45056e0b514e042f36aa44.js" integrity="sha256-S1jf6xGbLdFfVOCgdM+OtjIEyLA9RQVuC1FOBC82qkQ=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="/assets/js/underscore.min-42d8fad13bc28fc726775196ec9ab953febf9bde175c5845128361c953fa17f4.js" integrity="sha256-Qtj60TvCj8cmd1GW7Jq5U/6/m94XXFhFEoNhyVP6F/Q=" crossorigin="anonymous"></script>
+    <script integrity="sha256-S1jf6xGbLdFfVOCgdM+OtjIEyLA9RQVuC1FOBC82qkQ=" crossorigin="anonymous" src="/assets/js/jquery-1.9.1.min-4b58dfeb119b2dd15f54e0a074cf8eb63204c8b03d45056e0b514e042f36aa44.js" type="text/javascript"></script>
+    <script integrity="sha256-Qtj60TvCj8cmd1GW7Jq5U/6/m94XXFhFEoNhyVP6F/Q=" crossorigin="anonymous" src="/assets/js/underscore.min-42d8fad13bc28fc726775196ec9ab953febf9bde175c5845128361c953fa17f4.js" type="text/javascript"></script>
 
     <link rel="stylesheet" type="text/css" href="/assets/css/cookieconsent.min-b4bf981e76e71509875afcf5f4ad89e6d9b3bcba41fa20fc6a26226d5e162bd1.css" integrity="sha256-tL+YHnbnFQmHWvz19K2J5tmzvLpB+iD8aiYibV4WK9E=" crossorigin="anonymous">
-    <script type="text/javascript" src="/assets/js/cookieconsent.min-e8aac0b7a7c3e3c17c621bf5bb24c098a602e4ad0c2867598f40d5ee49eca425.js" integrity="sha256-6KrAt6fD48F8Yhv1uyTAmKYC5K0MKGdZj0DV7knspCU=" crossorigin="anonymous"></script>
+    <script integrity="sha256-6KrAt6fD48F8Yhv1uyTAmKYC5K0MKGdZj0DV7knspCU=" crossorigin="anonymous" src="/assets/js/cookieconsent.min-e8aac0b7a7c3e3c17c621bf5bb24c098a602e4ad0c2867598f40d5ee49eca425.js" type="text/javascript"></script>
     <script>
         if (!String.prototype.startsWith) {
             String.prototype.startsWith = function(search, pos) {
@@ -100,7 +100,7 @@
             window.location.replace(url);
         }
     </script>
-    <script type="text/javascript" src="/assets/js/github-6fd845e96926baa29e9f6356e813328514604d09846660936f4caf54ab9a5804.js" integrity="sha256-b9hF6WkmuqKen2NW6BMyhRRgTQmEZmCTb0yvVKuaWAQ=" crossorigin="anonymous"></script>
+    <script integrity="sha256-b9hF6WkmuqKen2NW6BMyhRRgTQmEZmCTb0yvVKuaWAQ=" crossorigin="anonymous" src="/assets/js/github-6fd845e96926baa29e9f6356e813328514604d09846660936f4caf54ab9a5804.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -189,10 +189,12 @@
       </p>
       <h2 id="ui-customizer">UI Customizer</h2>
 
-<p>A  plugin that allows you to customize the look and feel of the user interface and more.
+<p>A <a href="https://github.com/foosel/OctoPrint">OctoPrint</a> plugin that allows you to customize the look and feel of the user interface.
 It also features a lot of other fixes and improvements:</p>
 <ul>
+  <li>Customize tabs: Change icon, labels, order, show/hide</li>
   <li>Change width of the columns</li>
+  <li>Sort the order to icons in the menu bar (top icons)</li>
   <li>Move “widgets” around in columns</li>
   <li>Turn on/off responsive layout</li>
   <li>Improved settings window</li>
@@ -202,8 +204,11 @@ It also features a lot of other fixes and improvements:</p>
   <li>Hide temperature background graphics</li>
   <li>Zoomed/Floating webcam option</li>
   <li>Extra Webcam “widget”</li>
-  <li>Compact <a href="https://plugins.octoprint.org/plugins/navbartemp/">“Navbar temperature plugin”</a> icons</li>
-  <li>Hide widget</li>
+  <li>Extra Gcode viewer “widget”</li>
+  <li><a href="https://plugins.octoprint.org/plugins/navbartemp/">Compact Navbar temp</a> icons</li>
+  <li>Hide widgets</li>
+  <li>Hide main camera</li>
+  <li>Center top bar icons</li>
   <li>Realtime preview of changes</li>
 </ul>
 
@@ -216,23 +221,56 @@ or manually using this URL:</p>
 </code></pre></div></div>
 
 <h3 id="configuration">Configuration</h3>
-<p>The configuration is split into two sections - the top checkboxes for switching features on and off.</p>
+<p>The configuration is split into 5 tabs - all have an preview option</p>
 
-<h4 id="features">Features</h4>
+<h4 id="general">General</h4>
 <ul>
-  <li>Realtime preview - switching this on will minimize the settingsdialog and preview any changes made to UI Customizer settings directly in the UI</li>
-  <li>Fixed header/topbar - should the top menubar stay fixed when scrolling or not</li>
-  <li>Fixed footer/bottombar - should the bottom bar stay fixed when scrolling or not</li>
-  <li>Compact <a href="https://plugins.octoprint.org/plugins/navbartemp/">“Navbar temperature plugin”</a> - will add icons and shrink the temperature display on this awesome plugin</li>
-  <li>Fluid/full width layout - should the entire screen width be used or not</li>
   <li>Improve mobile/responsive - enable the improved responsive modes including settings for mobile screens etc.</li>
+  <li>Fluid/full width layout - should the entire screen width be used or not</li>
+  <li>Fixed header/topbar - should the top menubar stay fixed when scrolling or not</li>
+  <li>Hide temp. graph background - Hide temperature background graphics</li>
+  <li>Fixed footer/bottombar - should the bottom bar stay fixed when scrolling or not</li>
+  <li>Hide main camera - should the main camera be hidden - only acive if the webcam widget is enabled</li>
+  <li>Compact menu - should the “dropdown” menu be a single compact menu</li>
   <li>Zoom/float webcam icon - will add an zoom icon to the webcam live feed that will popup out the webcam video feed into a floating resizeable overlay</li>
+  <li>Gcode full-size - maximize the main gcode viewer to take up as much space as possible</li>
+  <li>Compress temp. controls - compress/minimize the temperature controls in the temperature main tab</li>
 </ul>
 
 <h4 id="layout">Layout</h4>
 <p>The layout of the screen can be made into 1,2 or 3 columns and the size of the columns can be adjusted. The total width of the columns added together must not be greater than 12. Each column can contain zero or more widgets, widgets are the diffent “containers” for all the user interface, ie. the webcam, files etc.
 If you want a two or one column layout then just drag the “widgets” all the widgets into the left hand side columns.
-Each widget can be moved by draging. The widgets can also be hidden by clicking the eye on the right hand side of the widget.</p>
+Each widget can be moved by draging. The widgets can also be hidden by clicking the eye on the right hand side of the widget.
+Notice there is 2 extras widgets include with UI Customizer:</p>
+<ul>
+  <li>Webcam widget which allows you to have a webcam outside the main tabs</li>
+  <li>Gcode widget which allows you to have a gcode viewer outside the main tabs</li>
+</ul>
+
+<h4 id="main-tabs">Main tabs</h4>
+<p>The main/center tabs can be changed using this settings panel.</p>
+<ul>
+  <li>The up and down arrow is used to change the order of the tabs when they are displayed</li>
+  <li>The first field is for entering a custom name for the tab, if left blank it will use default.</li>
+  <li>The “eye” icon can show or hide the entire tab and its content - click to toggle show/hide.</li>
+  <li>The next icon is used to the change the icon and color of icon, shown in the tab. If no icon is selected then a blue magnifying glass is shown. Click the icon to get a dialog up for searching icons and picking a color. Enter a searchword and the icon you want and color using the “eye-dropper”. Click the trashcan icon if you dont want to select an icon.</li>
+  <li>The last dropdown is to change what is shown on the tab: Icon + Text (Icon on the left - text on the right), Text + Icon, Icon only, Text only - notice its not possible to make “empty” tabs ie. selecting “Icon only” and then no icon is selected.</li>
+</ul>
+
+<h4 id="top-icons">Top icons</h4>
+
+<p>This allows you to change the look &amp; feel of the top icons in top menu</p>
+<ul>
+  <li>Compact <a href="https://plugins.octoprint.org/plugins/navbartemp/">“Navbar temperature plugin”</a> - will add icons and shrink the temperature display on this awesome plugin</li>
+  <li>Center topbar icons - will horizontal center the extra plugins/top icons in the topbar</li>
+  <li>Icon order - change the order in which the icons are displayed in the top menu bar - notice some icons can be hidden. Turn on “Preview” to see them</li>
+</ul>
+
+<h4 id="advanced">Advanced</h4>
+
+<ul>
+  <li>Disable terminal when hidden - Disables the terminal update when the terminal tab is in the background - gives a small perfomance boost.</li>
+</ul>
 
 
       
@@ -307,7 +345,7 @@ Each widget can be moved by draging. The widgets can also be hidden by clicking 
       
       <dl class="install_events">
         <dt>New installs the past week</dt>
-        <dd>At least <strong>323</strong> new installations</dd>
+        <dd>At least <strong>320</strong> new installations</dd>
       </dl>
       
       
@@ -581,17 +619,17 @@ Each widget can be moved by draging. The widgets can also be hidden by clicking 
           </div>
       </footer>
 
-<script type="text/javascript" src="/assets/js/prettify-a2ae206579112903445f0c0d4b98f31ab901db28e8873dc7c81ce40a06372745.js" integrity="sha256-oq4gZXkRKQNEXwwNS5jzGrkB2yjohz3HyBzkCgY3J0U=" crossorigin="anonymous"></script>
-<script type="text/javascript" src="/assets/js/bootstrap.min-f5651a6e18f88581d9be3cf06328fede9e112943c9ec037b4c2c1dc623d9429b.js" integrity="sha256-9WUabhj4hYHZvjzwYyj+3p4RKUPJ7AN7TCwdxiPZQps=" crossorigin="anonymous"></script>
-<script type="text/javascript" src="/assets/js/lunr.min-a639270160a101546ac6c6373b24d7422b4a37bdb938d8eaa5ec3ebefdd343f8.js" integrity="sha256-pjknAWChAVRqxsY3OyTXQitKN725ONjqpew+vv3TQ/g=" crossorigin="anonymous"></script>
-<script type="text/javascript" src="/assets/js/mustache-9a85a65d19dc9967bca5e7bb155e1f822b42740fd2ee04f3a1fd73da4ce3cad8.js" integrity="sha256-moWmXRncmWe8pee7FV4fgitCdA/S7gTzof1z2kzjytg=" crossorigin="anonymous"></script>
-<script type="text/javascript" src="/assets/js/URI.min-569c0cdd34d9826a0e5b1ab3ead135e14c06281a71de90aa8e2aea35e8c9db75.js" integrity="sha256-VpwM3TTZgmoOWxqz6tE14UwGKBpx3pCqjirqNejJ23U=" crossorigin="anonymous"></script>
-<script type="text/javascript" src="/assets/js/date.format-7f5d1885a0cf226d38cb313b8cd4397e02c8fe8fd1cc2004c2eb949ada1bdaf5.js" integrity="sha256-f10YhaDPIm04yzE7jNQ5fgLI/o/RzCAEwuuUmtob2vU=" crossorigin="anonymous"></script>
-<script type="text/javascript" src="/assets/js/jquery.lunr.search-145b1699bf8e6b3e590f15ea32ffdb5440b017717fc8da8924e09cc9c7715378.js" integrity="sha256-FFsWmb+Oaz5ZDxXqMv/bVECwF3F/yNqJJOCcycdxU3g=" crossorigin="anonymous"></script>
-<script type="text/javascript" src="/assets/js/lightbox.min-40fdcc195c5982250c8901f2c160e15342941a311faf6372c04117c0d9c44bc7.js" integrity="sha256-QP3MGVxZgiUMiQHywWDhU0KUGjEfr2NywEEXwNnES8c=" crossorigin="anonymous"></script>
-<script type="text/javascript" src="/assets/js/site-9cd3c1f2763a9bba048afaa1d65885869520587e0f536ffb0bf93598428371fd.js" integrity="sha256-nNPB8nY6m7oEivqh1liFhpUgWH4PU2/7C/k1mEKDcf0=" crossorigin="anonymous"></script>
-<script type="text/javascript" src="/assets/js/autotrack-2e10f5ef468c4b20088ec964a113acbad1f15d1baf4074a5255fd03c204bf37f.js" integrity="sha256-LhD170aMSyAIjslkoROsutHxXRuvQHSlJV/QPCBL838=" crossorigin="anonymous"></script>
-<script type="text/javascript" src="/assets/js/yt-with-consent-93662d2c310d0341065cd518f3d448995e3b7e44c87151bce9449b14846a5b6e.js" integrity="sha256-k2YtLDENA0EGXNUY89RImV47fkTIcVG86USbFIRqW24=" crossorigin="anonymous"></script>
+<script integrity="sha256-oq4gZXkRKQNEXwwNS5jzGrkB2yjohz3HyBzkCgY3J0U=" crossorigin="anonymous" src="/assets/js/prettify-a2ae206579112903445f0c0d4b98f31ab901db28e8873dc7c81ce40a06372745.js" type="text/javascript"></script>
+<script integrity="sha256-9WUabhj4hYHZvjzwYyj+3p4RKUPJ7AN7TCwdxiPZQps=" crossorigin="anonymous" src="/assets/js/bootstrap.min-f5651a6e18f88581d9be3cf06328fede9e112943c9ec037b4c2c1dc623d9429b.js" type="text/javascript"></script>
+<script integrity="sha256-pjknAWChAVRqxsY3OyTXQitKN725ONjqpew+vv3TQ/g=" crossorigin="anonymous" src="/assets/js/lunr.min-a639270160a101546ac6c6373b24d7422b4a37bdb938d8eaa5ec3ebefdd343f8.js" type="text/javascript"></script>
+<script integrity="sha256-moWmXRncmWe8pee7FV4fgitCdA/S7gTzof1z2kzjytg=" crossorigin="anonymous" src="/assets/js/mustache-9a85a65d19dc9967bca5e7bb155e1f822b42740fd2ee04f3a1fd73da4ce3cad8.js" type="text/javascript"></script>
+<script integrity="sha256-VpwM3TTZgmoOWxqz6tE14UwGKBpx3pCqjirqNejJ23U=" crossorigin="anonymous" src="/assets/js/URI.min-569c0cdd34d9826a0e5b1ab3ead135e14c06281a71de90aa8e2aea35e8c9db75.js" type="text/javascript"></script>
+<script integrity="sha256-f10YhaDPIm04yzE7jNQ5fgLI/o/RzCAEwuuUmtob2vU=" crossorigin="anonymous" src="/assets/js/date.format-7f5d1885a0cf226d38cb313b8cd4397e02c8fe8fd1cc2004c2eb949ada1bdaf5.js" type="text/javascript"></script>
+<script integrity="sha256-FFsWmb+Oaz5ZDxXqMv/bVECwF3F/yNqJJOCcycdxU3g=" crossorigin="anonymous" src="/assets/js/jquery.lunr.search-145b1699bf8e6b3e590f15ea32ffdb5440b017717fc8da8924e09cc9c7715378.js" type="text/javascript"></script>
+<script integrity="sha256-QP3MGVxZgiUMiQHywWDhU0KUGjEfr2NywEEXwNnES8c=" crossorigin="anonymous" src="/assets/js/lightbox.min-40fdcc195c5982250c8901f2c160e15342941a311faf6372c04117c0d9c44bc7.js" type="text/javascript"></script>
+<script integrity="sha256-nNPB8nY6m7oEivqh1liFhpUgWH4PU2/7C/k1mEKDcf0=" crossorigin="anonymous" src="/assets/js/site-9cd3c1f2763a9bba048afaa1d65885869520587e0f536ffb0bf93598428371fd.js" type="text/javascript"></script>
+<script integrity="sha256-LhD170aMSyAIjslkoROsutHxXRuvQHSlJV/QPCBL838=" crossorigin="anonymous" src="/assets/js/autotrack-2e10f5ef468c4b20088ec964a113acbad1f15d1baf4074a5255fd03c204bf37f.js" type="text/javascript"></script>
+<script integrity="sha256-k2YtLDENA0EGXNUY89RImV47fkTIcVG86USbFIRqW24=" crossorigin="anonymous" src="/assets/js/yt-with-consent-93662d2c310d0341065cd518f3d448995e3b7e44c87151bce9449b14846a5b6e.js" type="text/javascript"></script>
 
 <script>
     var gaBaseProperty = 'UA-62479257';
