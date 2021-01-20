@@ -10172,5 +10172,44 @@
             "instances_week": 133,
             "install_events_week": 142
         }
+    },
+
+    {
+        "id": "usb_keyboard",
+        "published": "2021-01-20 00:00:00 -0600",
+        "title": "USB Keyboard",
+        "description": "Use a USB Keyboard to control your printer and Octoprint!",
+        "archive": "https://github.com/barrettford/Octoprint-Usb_keyboard/archive/master.zip",
+        "author": "Barrett Ford",
+        "homepage": "https://github.com/barrettford/Octoprint-Usb_keyboard",
+        "page": "https://plugins.octoprint.org/plugins/usb_keyboard/",
+        "compatibility": {
+            "octoprint": [],
+            "os": [],
+            "python": ">=3,<4"
+        },
+        "license": "GPL-3.0 License",
+        "image": "https://plugins.octoprint.org/assets/img/plugins/usb_keyboard/example_qwerty.png",
+        "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "First release",
+                "date": "2021-01-19 16:56:45 +0000",
+                "tag": "v0.1.5"
+            },
+            "releases": 1,
+            "last_push": "2021-01-20 16:23:23 +0000",
+            "stars": 1,
+            "issues": {
+                "open": 1,
+                "closed": 0
+            }
+        },
+        "stats": {
+            "instances_month": 0,
+            "install_events_month": 0,
+            "instances_week": 0,
+            "install_events_week": 0
+        }
     }
 ]

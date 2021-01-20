@@ -3001,6 +3001,17 @@
 "author": "Žiga Kralj",
 "content": "A simple plugin that adds a button to the navigation bar for toggleing a GPIO pin on the Raspberry Pi. I use it for turning ON and OFF the light on my 3D printer.",
 "tags": ["raspberry pi","gpio"]
+},
+
+{
+"id": "/plugins/usb_keyboard",
+"url": "/plugins/usb_keyboard/",
+"date": "2021-01-20 00:00:00 -0600",
+"title": "USB Keyboard",
+"description": "Use a USB Keyboard to control your printer and Octoprint!",
+"author": "Barrett Ford",
+"content": "Life3D printer interfaces are a pain to navigate using that encoder wheel.Octoprint’s interface always seems to take forever to reload on a tablet.Wouldn’t it be nice if you just had some easy hardware buttons to do those simple things you do all the time?Wait no more!A fully configurable USB Keyboard plugin has arrived!Features  Fully customizable keyboard key layouts with self-assigned keys/keycodes  Several configurable command types including arbitrary gcode and variable manipulation  Documentation found in-settings. Look for the [i] buttons!  Keyboard troubleshooting and setup tools  Keyboard Profiles and easy profile duplication",
+"tags": ["usb","keyboard","control","printer","configure","gcode","macros","psu","plugin"]
 }
 ]
 }
