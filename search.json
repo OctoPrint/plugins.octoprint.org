@@ -2788,10 +2788,10 @@
 "url": "/plugins/marlingcodedocumentation/",
 "date": "2020-09-27 00:00:00 -0500",
 "title": "MarlinGcodeDocumentation",
-"description": "Provides documentation for Marlin & RepRap GCode commands in the Terminal tab",
+"description": "Provides documentation for Marlin, RepRap, and Klipper, GCode commands in the Terminal tab",
 "author": "Costas Basdekis",
-"content": "It displays GCode documentation for Marlin &amp; RepRap in the terminal command line.Type a command and you will get explanation for the command and the parameters.Type ‘?’ and some terms and you’ll be shown commands that reference those terms.Features:  Commands from Marlin &amp; RepRap official documentations  Support for search by prepending ?  Add and manage favourite commands  Support for Multiline Terminal plugin  If you use Terminal Messaging, it allows you to explain sent commands",
-"tags": ["terminal","gcode","marlin","reprap","documentation"]
+"content": "It displays GCode documentation for Marlin, RepRap, and Klipper, in the terminal command line.Type a command and you will get explanation for the command and the parameters.Type ‘?’ and some terms and you’ll be shown commands that reference those terms.Features:  Commands from Marlin,RepRap, andKlipper official documentations  Support for search by prepending ?  Add and manage favourite commands  Support for Multiline Terminal plugin  If you use Terminal Messaging, it allows you to explain sent commands",
+"tags": ["terminal","gcode","marlin","reprap","klipper","documentation"]
 },
 
 {
