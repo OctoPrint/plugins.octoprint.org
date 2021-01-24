@@ -3012,6 +3012,17 @@
 "author": "Barrett Ford",
 "content": "Life3D printer interfaces are a pain to navigate using that encoder wheel.Octoprint’s interface always seems to take forever to reload on a tablet.Wouldn’t it be nice if you just had some easy hardware buttons to do those simple things you do all the time?Wait no more!A fully configurable USB Keyboard plugin has arrived!Features  Fully customizable keyboard key layouts with self-assigned keys/keycodes  Several configurable command types including arbitrary gcode and variable manipulation  Documentation found in-settings. Look for the [i] buttons!  Keyboard troubleshooting and setup tools  Keyboard Profiles and easy profile duplication",
 "tags": ["usb","keyboard","control","printer","configure","gcode","macros","psu","plugin"]
+},
+
+{
+"id": "/plugins/toptemp",
+"url": "/plugins/toptemp/",
+"date": "2021-01-24 00:00:00 -0600",
+"title": "Top Temp",
+"description": "Customize the layout of OctoPrint userinterface, add webcam widget and more. Make the UI mobile responsive, add a floating webcam overlay.",
+"author": "Mikkel Skovgaard",
+"content": "Top TempA plugin that will show you the temperatures of hotend, chamber, all tools/hotends and also add an unlimited number of your own “top widgets” for example showing cpu temperature, fan speed - well anything that is a number (for now) that you can get back from running a command.It can all be customized and setup to fit your needs:  Add a small background graph to show the history  Customizable “widgets” can have different run intervals  Show temperature in Celsius or Fahrenheit  Hide printer temperatures when not operational  Set padding between each and outer margin  Sort the order of the “widgets”  Show target temperature  Show target progress aka getting hotter or colder  Show temperature symbol  Set label or no label to be shown  Icon or no icon to be shown  Colorize icons to indicate when hot  Number of digits to display  Set background graph transparency, height, line width and color  Realtime previewPlanned features  Popover with extra information/history and full graph  Set lowpoint for custom graphs  Small font options  Max width per “widget”  More custom/predefined tools: Wifi signal, Disk space, Fan speed, CPU percentage  Custom option to set as not a temperature (no fahrenheit conversion and no check for number)  Custom option postfix label (rpm etc)SetupInstall via the bundled Plugin Manageror manually using this URL:    https://github.com/LazeMSS/OctoPrint-TopTemp/archive/main.zipConfigurationInstall and read the onscreen information - it should be pretty self-explanatory else play with it :)Custom commandsThe custom commands allow you to run any OS command by entering a command into the “Command” field. There is a Test button that will run the command and let you validate the returned data. At the moment the returned data has to be a number (float or integer) and will be fixedIf the plugin has detected any known ways of finding interesting data on startup this will be shown in Predefined dropdown button.At the moment it only looks for known CPU temperature, but if you know of any good generic ways to display interesting data then post it here https://github.com/LazeMSS/OctoPrint-TopTemp/issues3RD Party software  http://gionkunz.github.io/chartist-js/index.htmlThis plugin uses the wonderful CHARTIST.JS library to make the svg graphs",
+"tags": ["temperature","widgets","customize","fan","navbar","temp","heater","tool","chamber"]
 }
 ]
 }
