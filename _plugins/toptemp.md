@@ -79,7 +79,7 @@ The custom commands allow you to run any OS command by entering a command into t
 If the plugin has detected any known ways of finding interesting data on startup this will be shown in Predefined dropdown button.
 At the moment it only looks for known CPU temperature, but if you know of any good generic ways to display interesting data then post it here https://github.com/LazeMSS/OctoPrint-TopTemp/issues
 
-## 3RD Party software
+### 3RD Party software
 * http://gionkunz.github.io/chartist-js/index.html
 This plugin uses the wonderful CHARTIST.JS library to make the svg graphs
 
