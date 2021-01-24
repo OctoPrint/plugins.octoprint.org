@@ -9666,7 +9666,7 @@
             },
             "releases": 8,
             "last_push": "2020-10-25 21:25:50 +0000",
-            "stars": 176,
+            "stars": 177,
             "issues": {
                 "open": 39,
                 "closed": 88
@@ -10217,7 +10217,7 @@
         "id": "toptemp",
         "published": "2021-01-24 00:00:00 -0600",
         "title": "Top Temp",
-        "description": "Customize the layout of OctoPrint userinterface, add webcam widget and more. Make the UI mobile responsive, add a floating webcam overlay.",
+        "description": "Show the temperatures of everything in the navbar/topbar of OctoPrint. It can display the hotend, chamber, all tools/hotends and also add an unlimited number of your own “top widgets” for example showing cpu temperature, fan speed - well anything that is a number (for now) that you can get back from running a command.",
         "archive": "https://github.com/LazeMSS/OctoPrint-TopTemp/archive/main.zip",
         "author": "Mikkel Skovgaard",
         "homepage": "https://github.com/LazeMSS/OctoPrint-TopTemp",
