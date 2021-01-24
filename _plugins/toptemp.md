@@ -3,7 +3,7 @@ layout: plugin
 
 id: toptemp
 title: Top Temp
-description: Customize the layout of OctoPrint userinterface, add webcam widget and more. Make the UI mobile responsive, add a floating webcam overlay.
+description: Show the temperatures of everything in the navbar/topbar of OctoPrint. It can display the hotend, chamber, all tools/hotends and also add an unlimited number of your own “top widgets” for example showing cpu temperature, fan speed - well anything that is a number (for now) that you can get back from running a command.
 authors:
 - Mikkel Skovgaard
 license: AGPLv3
@@ -39,7 +39,7 @@ featuredimage: /assets/img/plugins/toptemp/main.png
 
 ---
 ## Top Temp
-A plugin that will show you the temperatures of hotend, chamber, all tools/hotends and also add an unlimited number of your own “top widgets” for example showing cpu temperature, fan speed - well anything that is a number (for now) that you can get back from running a command.
+A OctoPrint plugin that will show you the temperatures in the navbar/topbar of OctoPrint. It can display the hotend, chamber, all tools/hotends and also add an unlimited number of your own “top widgets” for example showing cpu temperature, fan speed - well anything that is a number (for now) that you can get back from running a command.
 It can all be customized and setup to fit your needs:
 * Add a small background graph to show the history
 * Customizable “widgets” can have different run intervals
