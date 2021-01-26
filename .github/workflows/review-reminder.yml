@@ -1,3 +1,5 @@
+name: Remind reviewers of requested reviews
+
 on:
   schedule:
     - cron: '0 */12 * * *'
