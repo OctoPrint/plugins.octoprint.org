@@ -47,7 +47,6 @@ It compresses/packs outgoing g-code by a ratio of 0.55 (or 0.61 without whitespa
 
 ### Firmware with MeatPack Support:
 
-* Marlin (merged Jan. 25, 2021, so check that your release was built after this date)
-* Prusa (official build reviewing support, unofficial build with support available at https://github.com/scottmudge/Prusa-Firmware-MeatPack)
+To check if your firmware has MeatPack support, please check here: https://github.com/scottmudge/OctoPrint-MeatPack#firmware-with-meatpack-support
 
 Adding support is fairly straight-forward, so if you'd like to add support into other firmware, please contact me and I can provide the latest firmware-side source code (also available in Prusa fork above).
