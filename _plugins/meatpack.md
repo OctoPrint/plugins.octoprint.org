@@ -8,7 +8,7 @@ authors:
 - Scott Mudge
 license: AGPLv3
 
-date: 2021-01-09
+date: 2021-01-26
 
 homepage: https://github.com/scottmudge/OctoPrint-MeatPack
 source: https://github.com/scottmudge/OctoPrint-MeatPack
