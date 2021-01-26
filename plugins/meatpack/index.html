@@ -40,7 +40,8 @@
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@OctoPrint3D" />
     <meta name="twitter:title" content="MeatPack" />
-    <meta name="twitter:description" content="About
+    <meta name="twitter:description" content="MeatPack
+Easy, fast, effective, and automatic g-code compression!
 
 " />
     <meta name="twitter:image" content="https://plugins.octoprint.org" />
@@ -48,7 +49,8 @@
     <meta property="og:title" content="MeatPack" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://plugins.octoprint.org/assets/img/plugins/meatpack/meatpack.png" />
-    <meta property="og:description" content="About
+    <meta property="og:description" content="MeatPack
+Easy, fast, effective, and automatic g-code compression!
 
 " />
     <meta property="og:site_name" content="OctoPrint Plugin Repository" />
@@ -56,7 +58,8 @@
 
     <meta itemscope itemtype="http://schema.org/WebPage" />
     <meta itemprop="headline" content="MeatPack" />
-    <meta itemprop="description" content="About
+    <meta itemprop="description" content="MeatPack
+Easy, fast, effective, and automatic g-code compression!
 
 " />
     <meta itemprop="image" content="https://plugins.octoprint.org/assets/img/plugins/meatpack/meatpack.png" />
@@ -187,17 +190,20 @@
       <p class="lead">
         Automatic G-Code Compression
       </p>
-      <h2 id="about">About</h2>
+      <h2 id="meatpack">MeatPack</h2>
+<h3 id="easy-fast-effective-and-automatic-g-code-compression">Easy, fast, effective, and automatic g-code compression!</h3>
 
-<p>MeatPack is a plugin which automatically compresses/packs outgoing g-code to compatible firmware (*see below!). It uses a unique data packing method which leverages the limited character-set inherent to most g-code. It is able to pack the most common characters in g-code into 4-bit blocks, while also retaining the ability to send full-width characters where needed.</p>
+<p>MeatPack is a plugin which automatically compresses/packs outgoing g-code to compatible firmware (*see below!). It uses a unique data packing method which leverages the limited character-set inherent to most g-code. It is able to pack the most common characters in g-code into 4-bit blocks, while also retaining the ability to send full-width characters where needed. It also has the option to strip outgoing whitespace characters for an even greater compression ratio (ensure your firmware supports this).</p>
 
-<p>It compresses/packs outgoing g-code by a ratio of 0.61. Meaning that what would normally be a 115,200 baud connection effectively becomes a 188,850 baud connection, with no changes to hardware. And it does all this with virtually zero computational overhead, so it is compatible with even the most speed-limited 16-MHz controllers.</p>
+<p>It compresses/packs outgoing g-code by a ratio of 0.55 (or 0.61 without whitespace removal enabled). Meaning that what would normally be a 115,200 baud connection effectively becomes a 210,000 baud connection, with no changes to hardware. And it does all this with virtually zero computational overhead, so it is compatible with even the most speed-limited 16-MHz controllers.</p>
 
-<p><strong>MeatPack does require modifications to firmware</strong>, so do <strong><em>NOT</em></strong> install this plugin without first upgrading your firmware to a compatible build (where available). If you do not have a compatible version of controller firmware, the plugin will simply do nothing.</p>
+<p><strong>MeatPack does require firmware support!</strong>, so do <em>NOT</em> install this plugin without first upgrading your firmware to a compatible build (where available). If you do not have a compatible firmware and install this plugin, connection to your printer may fail.</p>
 
-<p><strong>NOTE:</strong> MeatPack is currently only compatible with my custom build of Prusa MK3 firmware. You can find builds of the latest v3.9.3 firmware here: https://github.com/scottmudge/Prusa-Firmware-MeatPack</p>
+<h3 id="firmware-with-meatpack-support">Firmware with MeatPack Support:</h3>
 
-<p>This custom build of the Prusa MK3 firmware is functionally identical to the official build, however it has added functionality for MeatPack. I currently have a pull-request open for adding this feature to the official firmware, but it is currently pending. The firmware is compatible with both uncompressed and compressed g-code, and the OctoPrint plugin will manage and synchronize the settings automatically. Just install and go!</p>
+<p>To check if your firmware has MeatPack support, please check here: https://github.com/scottmudge/OctoPrint-MeatPack#firmware-with-meatpack-support</p>
+
+<p>Adding support is fairly straight-forward, so if you’d like to add support into other firmware, please contact me and I can provide the latest firmware-side source code (also available in Prusa fork above).</p>
 
 
       
@@ -256,13 +262,13 @@
       
       <dl class="installations">
         <dt>Active instances the past month</dt>
-        <dd>Installed on at least <strong>9</strong> instances</dd>
+        <dd>Installed on at least <strong>20</strong> instances</dd>
       </dl>
       
       
       <dl class="install_events">
         <dt>New installs the past week</dt>
-        <dd>At least <strong>4</strong> new installations</dd>
+        <dd>At least <strong>15</strong> new installations</dd>
       </dl>
       
       
@@ -277,8 +283,8 @@
             </li>
             <li>Releases: 5</li>
             
-            <li>Stars: <span id="github_star_count">8</span> <span id="github_star"><a href="javascript:void(0)"><i class="far fa-star"></i></a></span></li>
-            <li>Issues: 0 open, 4 closed</li>
+            <li>Stars: <span id="github_star_count">9</span> <span id="github_star"><a href="javascript:void(0)"><i class="far fa-star"></i></a></span></li>
+            <li>Issues: 2 open, 4 closed</li>
             <li>Last push: 26 Jan 2021</li>
           </ul>
         </dd>
@@ -297,6 +303,8 @@
           <a class="label" href="/by_tag/#tag-firmware">firmware</a>
           
           <a class="label" href="/by_tag/#tag-gcode">gcode</a>
+          
+          <a class="label" href="/by_tag/#tag-marlin">marlin</a>
           
           <a class="label" href="/by_tag/#tag-packing">packing</a>
           
