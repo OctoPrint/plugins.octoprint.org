@@ -1,0 +1,16 @@
+on:
+  schedule:
+    - cron: '0 */12 * * *'
+  workflow_dispatch:
+
+jobs:
+  review-reminder:
+    name: Review reminder
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: OctoPrint/review-reminder@main
+      with:
+        token: "${{ secrets.GITHUB_TOKEN }}"
+        reminder-comment: "Don't forget to review this PR!"
+        days-before-reminder: 7
