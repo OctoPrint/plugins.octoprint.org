@@ -2930,7 +2930,7 @@
 "id": "/plugins/display_panel",
 "url": "/plugins/display_panel/",
 "date": "2020-12-16 00:00:00 -0600",
-"title": "OctoPrint Display Panel",
+"title": "OctoPrint Micro Panel",
 "description": "Simple control and status paired with a physical button panel and OLED display",
 "author": "Seth Voltz",
 "content": "This plugin implements the software control side of an OctoPrint Control Panel for Octopi. The hardware half is a series of 4 buttons, an OLED screen and a 3D printed case that mounts on the printer next to the Raspnerry Pi so it can be plugged in to the header pins.Watch a demo of the panel in action! More photos are at the end of this readme.Hardware3D models are available on Thingiverse.Please see the plugin repository for the latest hardware and wiring instructions. The wiring instructions at the time of publishing are below.SetupNOTE: This plugin required OctoPrint to be updated to run on Python 3. Please follow these instructions if you are not already on Python 3.Install via the bundled Plugin Manageror manually using this URL:https://github.com/sethvoltz/OctoPrint-DisplayPanel/archive/main.zip",
