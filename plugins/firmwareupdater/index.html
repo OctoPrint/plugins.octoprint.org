@@ -7,7 +7,7 @@
 <head>
     <meta charset="utf-8" />
     <title>Firmware Updater</title>
-    <meta name="description" content="Flash pre-compiled firmware images from OctoPrint">
+    <meta name="description" content="Update your printer&#39;s firmware from OctoPrint">
     
     <meta name="referrer" content="same-origin">
     <meta name="google-site-verification" content="0EFsbaNygJcEinKPmzP-hTf0Ju6wDIpJxO5zvQtOQT0" />
@@ -41,7 +41,7 @@
     <meta name="twitter:site" content="@OctoPrint3D" />
     <meta name="twitter:title" content="Firmware Updater" />
     <meta name="twitter:description" content="About
-Allows you to flash pre-compiled firmware images to boards with Atmel AVR family 8-bit MCUs (Atmega1280, Atmega1284p, and Atmega2560, e.g. RAMPS, Anet, etc.), and Atmel SAM family 32-bit MCUs (e.g. Arduino DUE).
+Allows you to flash pre-compiled firmware to your printer right from OctoPrint.
 
 " />
     <meta name="twitter:image" content="https://plugins.octoprint.org" />
@@ -50,7 +50,7 @@ Allows you to flash pre-compiled firmware images to boards with Atmel AVR family
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://plugins.octoprint.org/assets/img/plugins/firmwareupdater/firmware-updater.png" />
     <meta property="og:description" content="About
-Allows you to flash pre-compiled firmware images to boards with Atmel AVR family 8-bit MCUs (Atmega1280, Atmega1284p, and Atmega2560, e.g. RAMPS, Anet, etc.), and Atmel SAM family 32-bit MCUs (e.g. Arduino DUE).
+Allows you to flash pre-compiled firmware to your printer right from OctoPrint.
 
 " />
     <meta property="og:site_name" content="OctoPrint Plugin Repository" />
@@ -59,7 +59,7 @@ Allows you to flash pre-compiled firmware images to boards with Atmel AVR family
     <meta itemscope itemtype="http://schema.org/WebPage" />
     <meta itemprop="headline" content="Firmware Updater" />
     <meta itemprop="description" content="About
-Allows you to flash pre-compiled firmware images to boards with Atmel AVR family 8-bit MCUs (Atmega1280, Atmega1284p, and Atmega2560, e.g. RAMPS, Anet, etc.), and Atmel SAM family 32-bit MCUs (e.g. Arduino DUE).
+Allows you to flash pre-compiled firmware to your printer right from OctoPrint.
 
 " />
     <meta itemprop="image" content="https://plugins.octoprint.org/assets/img/plugins/firmwareupdater/firmware-updater.png" />
@@ -188,12 +188,29 @@ Allows you to flash pre-compiled firmware images to boards with Atmel AVR family
       
 
       <p class="lead">
-        Flash pre-compiled firmware images from OctoPrint
+        Update your printer&#39;s firmware from OctoPrint
       </p>
       <h2 id="about">About</h2>
-<p>Allows you to flash pre-compiled firmware images to boards with Atmel AVR family 8-bit MCUs (<code class="language-plaintext highlighter-rouge">Atmega1280</code>, <code class="language-plaintext highlighter-rouge">Atmega1284p</code>, and <code class="language-plaintext highlighter-rouge">Atmega2560</code>, e.g. RAMPS, Anet, etc.), and Atmel SAM family 32-bit MCUs (e.g. <code class="language-plaintext highlighter-rouge">Arduino DUE</code>).</p>
+<p>Allows you to flash pre-compiled firmware to your printer right from OctoPrint.</p>
+
+<p>A large number of boards are supported, based on the MCU (processor) they have:</p>
+<ul>
+  <li>Atmel Atmega (AVR) family 8-bit MCUs (e.g. RAMPS, Sanguinololu, Melzi, Anet, Creality, Ender, Prusa MMU, Prusa CW1 many others)</li>
+  <li>Atmel AT90USB family 8-bit MCUs (e.g. Printrboard)</li>
+  <li>Atmel SAM family 32-bit MCUs (e.g. Arduino DUE)</li>
+  <li>NXP LPC1768 &amp; LPC1769 MCUs (MKS SBASE, BigTreeTech SKR v1.1, v1.3, v1.4, etc., also SKR Pro v1.1)</li>
+  <li>STM32 family 32-bits MCUs with embedded ST serial bootloader (e.g. FYSETC Cheetah, not SKR Pro)</li>
+  <li>STM32 family 32-bit MCUs which update from the SD card using the same method as LPC176x boards (e.g. SKR Pro v1.1, SKR Mini E3 v2, etc.)</li>
+</ul>
 
 <p>More boards can be added, please request additions via a <a href="https://github.com/OctoPrint/OctoPrint-FirmwareUpdater/issues">Github issue</a>.</p>
+
+<h3 id="additional-features">Additional Features</h3>
+<ul>
+  <li>Advanced options allow the flash methods to be configured or customized</li>
+  <li>Pre and post-flash options allow gcode or system commands to be run before and after flashing</li>
+  <li>A navbar icon can be enabled to give quick access to the Firmware Updater user interface</li>
+</ul>
 
 <p>Full documentation is available on the <a href="https://github.com/OctoPrint/OctoPrint-FirmwareUpdater">plugin’s homepage</a>.</p>
 
@@ -208,17 +225,37 @@ Allows you to flash pre-compiled firmware images to boards with Atmel AVR family
         
         <figure>
           
-          <a href="/assets/img/plugins/firmwareupdater/avrdude-config.png" data-lightbox="/plugins/firmwareupdater" data-title="Avrdude Configuration Options"><img src="/assets/img/plugins/firmwareupdater/avrdude-config.png" alt="Avrdude Configuration Options" title="Avrdude Configuration Options"></a>
+          <a href="/assets/img/plugins/firmwareupdater/avrdude.png" data-lightbox="/plugins/firmwareupdater" data-title="Avrdude Configuration"><img src="/assets/img/plugins/firmwareupdater/avrdude.png" alt="Avrdude Configuration" title="Avrdude Configuration"></a>
         </figure>
         
         <figure>
           
-          <a href="/assets/img/plugins/firmwareupdater/bossac-config.png" data-lightbox="/plugins/firmwareupdater" data-title="Bossac Configuration Options"><img src="/assets/img/plugins/firmwareupdater/bossac-config.png" alt="Bossac Configuration Options" title="Bossac Configuration Options"></a>
+          <a href="/assets/img/plugins/firmwareupdater/bossac.png" data-lightbox="/plugins/firmwareupdater" data-title="Bossac Configuration"><img src="/assets/img/plugins/firmwareupdater/bossac.png" alt="Bossac Configuration" title="Bossac Configuration"></a>
         </figure>
         
         <figure>
           
-          <a href="/assets/img/plugins/firmwareupdater/post-flash-config.png" data-lightbox="/plugins/firmwareupdater" data-title="Post-flash Configuration Options"><img src="/assets/img/plugins/firmwareupdater/post-flash-config.png" alt="Post-flash Configuration Options" title="Post-flash Configuration Options"></a>
+          <a href="/assets/img/plugins/firmwareupdater/dfu-prog.png" data-lightbox="/plugins/firmwareupdater" data-title="Dfu Programmer Configuration"><img src="/assets/img/plugins/firmwareupdater/dfu-prog.png" alt="Dfu Programmer Configuration" title="Dfu Programmer Configuration"></a>
+        </figure>
+        
+        <figure>
+          
+          <a href="/assets/img/plugins/firmwareupdater/lpc176x.png" data-lightbox="/plugins/firmwareupdater" data-title="LPC176x Configuration"><img src="/assets/img/plugins/firmwareupdater/lpc176x.png" alt="LPC176x Configuration" title="LPC176x Configuration"></a>
+        </figure>
+        
+        <figure>
+          
+          <a href="/assets/img/plugins/firmwareupdater/stm32flash.png" data-lightbox="/plugins/firmwareupdater" data-title="STM32Flash Configuration"><img src="/assets/img/plugins/firmwareupdater/stm32flash.png" alt="STM32Flash Configuration" title="STM32Flash Configuration"></a>
+        </figure>
+        
+        <figure>
+          
+          <a href="/assets/img/plugins/firmwareupdater/pre-post.png" data-lightbox="/plugins/firmwareupdater" data-title="Pre and Post-flash Options"><img src="/assets/img/plugins/firmwareupdater/pre-post.png" alt="Pre and Post-flash Options" title="Pre and Post-flash Options"></a>
+        </figure>
+        
+        <figure>
+          
+          <a href="/assets/img/plugins/firmwareupdater/plugin-options.png" data-lightbox="/plugins/firmwareupdater" data-title="Plugin Options"><img src="/assets/img/plugins/firmwareupdater/plugin-options.png" alt="Plugin Options" title="Plugin Options"></a>
         </figure>
         
       
@@ -275,7 +312,7 @@ Allows you to flash pre-compiled firmware images to boards with Atmel AVR family
       
       <dl class="install_events">
         <dt>New installs the past week</dt>
-        <dd>At least <strong>517</strong> new installations</dd>
+        <dd>At least <strong>507</strong> new installations</dd>
       </dl>
       
       
@@ -291,7 +328,7 @@ Allows you to flash pre-compiled firmware images to boards with Atmel AVR family
             <li>Releases: 27</li>
             
             <li>Stars: <span id="github_star_count">184</span> <span id="github_star"><a href="javascript:void(0)"><i class="far fa-star"></i></a></span></li>
-            <li>Issues: 5 open, 131 closed</li>
+            <li>Issues: 6 open, 130 closed</li>
             <li>Last push: 30 Jan 2021</li>
           </ul>
         </dd>
@@ -318,6 +355,12 @@ Allows you to flash pre-compiled firmware images to boards with Atmel AVR family
           <a class="label" href="/by_tag/#tag-firmware-updater">firmware updater</a>
           
           <a class="label" href="/by_tag/#tag-flashing">flashing</a>
+          
+          <a class="label" href="/by_tag/#tag-lpc1768">lpc1768</a>
+          
+          <a class="label" href="/by_tag/#tag-lpc1769">lpc1769</a>
+          
+          <a class="label" href="/by_tag/#tag-stm32">stm32</a>
           
         </dd>
       </dl>
