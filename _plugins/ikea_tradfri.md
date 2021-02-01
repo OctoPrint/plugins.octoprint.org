@@ -31,9 +31,9 @@ featuredimage: /assets/img/plugins/ikea_tradfri/navbar.png
 
 compatibility:
   octoprint:
-  - 1.3.1
   - 1.4.0
-  python: ">=2.7,<4"
+  - 1.5.0
+  python: ">=3,<4"
   os:
   - linux
   - windows
@@ -53,21 +53,6 @@ Turn on your printer with Ikea Tradfri Outlet.
 
 ## Setup
 
-## Install libcoap
-
-You need _libcoap_ to communicate with your Ikea Gateway.
-
-**Requirements** : `autoconf automake libtool` (`sudo apt install autoconf automake libtool`)
-
-    git clone --recursive https://github.com/obgm/libcoap.git
-    cd libcoap
-    git checkout dtls
-    git submodule update --init --recursive
-    ./autogen.sh
-    ./configure --disable-documentation --disable-shared --without-debug CFLAGS="-D COAP_DEBUG_FD=stderr"
-    make
-    sudo make install
-
 ## Install plugin
 
 Install manually using this URL:
@@ -77,7 +62,7 @@ Install manually using this URL:
 
 ## Configuration
 
-Follow setup wizard or go to OctoPrint settings: 
+Follow setup wizard or go to OctoPrint settings:
 
 1. Indicate your gateway ip and your security code (found under your gateway)
 2. Save

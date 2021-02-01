@@ -16,7 +16,7 @@ tags:
 - atx
 - psu
 - control
-screenshots: 
+screenshots:
 - url: https://raw.githubusercontent.com/kantlivelong/OctoPrint-PSUControl/master/psucontrol_navbar_settings.png
   alt: PSU Control screenshot
   caption: PSU Control screenshot

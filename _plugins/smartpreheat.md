@@ -13,7 +13,7 @@ date: 2020-05-02
 tags:
 - preheat
 - temperature
-screenshots: 
+screenshots:
 - url: https://raw.githubusercontent.com/kantlivelong/OctoPrint-SmartPreheat/master/extra/screenshots/tempgraph_with.png
   alt: Heating with Smart Preheat
   caption: Heating with Smart Preheat

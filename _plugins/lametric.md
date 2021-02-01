@@ -45,6 +45,6 @@ When you start printing OctoPrint will send the current temperature or progress 
 The following notifications will be send to your LaMetric:
 
 * Temperature of Tool and Bed
-* Percentage complete 
+* Percentage complete
 * Job is Failed
 * Job is completed

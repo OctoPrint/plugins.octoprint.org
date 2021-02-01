@@ -4,7 +4,9 @@ layout: plugin
 id: slic3r
 title: OctoPrint-Slic3r
 description: Adds support for slicing via Slic3r from within OctoPrint
-author: Javier Martínez Arrieta, Eyal Soha
+authors:
+- Javier Martínez Arrieta
+- Eyal Soha
 license: AGPLv3
 
 date: 2017-02-07
@@ -21,6 +23,9 @@ tags:
 - stl
 
 featuredimage: /assets/img/plugins/slic3r/logo.png
+
+compatibility:
+  python: ">=2.7,<4"
 
 ---
 
@@ -49,7 +54,7 @@ At this moment, the plugin will be installed, but Slic3r must be downloaded and 
 
    <!-- language: lang-sh -->
         #!/bin/sh
-      
+
         echo "Shell script created by Javier Martínez Arrieta for Slic3r installation\n"
         #Ask the user for a version
         echo "Please indicate which version you desire to be installed (e.g. 1.1.7)"
@@ -70,7 +75,7 @@ At this moment, the plugin will be installed, but Slic3r must be downloaded and 
 2. Save the file and allow execution giving permission. Using a terminal, it would be chmod +x slic3r_install.sh (or the name given to the file).
    <!-- language: lang-sh -->
         chmod +x slic3r_install.sh
-  
+
 3. Now that you have permission to execute it, type ./slic3r_install.sh and press 'Enter'. If it is the first time executing the installer, take into account that it can take about 30 minutes or even more.
    <!-- language: lang-sh -->
         ./slic3r_install.sh

@@ -4,7 +4,9 @@ layout: plugin
 id: EasyServo
 title: Easy Servo
 description: Plugin to control two servos attached to a camera gimbal to control motion.
-author: iFrostizz, jneilliii
+authors:
+- iFrostizz
+- jneilliii
 license: AGPLv3
 
 date: 2020-05-21
@@ -35,9 +37,9 @@ Here is a simple plugin to control two servos using the OctoPrint Control tab. I
 
 ![Easy Servo](/assets/img/plugins/EasyServo/screenshot_easyservo.png)
 
-It utilizes a custom `@EASYSERVO <GPIO NUMBER> <RELATIVE ANGLE DIFFERENCE>` command that can be incorporated within your slicer to automatically move while printing. 
+It utilizes a custom `@EASYSERVO <GPIO NUMBER> <RELATIVE ANGLE DIFFERENCE>` command that can be incorporated within your slicer to automatically move while printing.
 
-Example: `@EASYSERVO 12 10` will move the servo attached to GPIO 12 10 degrees in the positive direction from the current position. `@EASYSERVO 13 -10` will move the servo attached to GPIO 13 10 degrees in the negative direction from the current position. 
+Example: `@EASYSERVO 12 10` will move the servo attached to GPIO 12 10 degrees in the positive direction from the current position. `@EASYSERVO 13 -10` will move the servo attached to GPIO 13 10 degrees in the negative direction from the current position.
 
 **Note:** The servos will initialize at 90 degrees on OctoPrint start up and is limited to a 90 degree rotation in either direction.
 

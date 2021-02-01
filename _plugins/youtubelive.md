@@ -34,7 +34,7 @@ compatibility:
 
 Plugin that adds a YouTube Live tab to OctoPrint with the capability of starting and stopping a live stream that is created by reencoding the mjpg stream configured in OctoPrint's Webcam & Timelapse settings.
 
-**Note:** OctoPrint's webcam stream requires using a full url path with an ip address, ie `http://192.168.1.2:8080/?action=stream` 
+**Note:** OctoPrint's webcam stream requires using a full url path with an ip address, ie `http://192.168.1.2:8080/?action=stream`
 
 ## Screenshots
 

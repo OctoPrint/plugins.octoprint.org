@@ -78,6 +78,3 @@ It will apply change for all plugin and apps that display progression informatio
 I suggest to associate those plugins:
  * Print Time Genius (https://plugins.octoprint.org/plugins/PrintTimeGenius/)
  * DetailedProgress (https://plugins.octoprint.org/plugins/detailedprogress/).
-
-
-

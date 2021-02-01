@@ -7,16 +7,16 @@ labels:
 ---
 
 <!--
-It might happen that a plugin becomes abandoned by its maintainer. 
+It might happen that a plugin becomes abandoned by its maintainer.
 
 If it looks like this is the case, please first try to get in touch with the maintainer,
-e.g. by opening a (friendly!) ticket on the plugin's repository asking if it is still 
+e.g. by opening a (friendly!) ticket on the plugin's repository asking if it is still
 being actively maintained by the author and if not if they would be open to putting it up
 for adoption.
 
 If you do not get a response on this within reasonable time (use the general response times
 on the tracker to judge this) then report the plugin as abandoned here. Be sure to include
-the ticket on the plugin's tracker you opened to confirm abandonment. 
+the ticket on the plugin's tracker you opened to confirm abandonment.
 
 If you or someone else is open to taking over plugin maintenance, please also include their
 nick.

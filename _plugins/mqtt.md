@@ -3,12 +3,14 @@ layout: plugin
 id: mqtt
 title: MQTT
 description: Adds support for subscribing and publishing to MQTT topics.
-author: Franziska Kunsmann, Gina Häußge
+authors:
+- Franziska Kunsmann
+- Gina Häußge
 license: AGPLv3
 homepage: https://github.com/OctoPrint/OctoPrint-MQTT
 source: https://github.com/OctoPrint/OctoPrint-MQTT
 archive: https://github.com/OctoPrint/OctoPrint-MQTT/archive/master.zip
-tags: 
+tags:
 - mqtt
 - helper
 - notification

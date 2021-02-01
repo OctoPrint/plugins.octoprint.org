@@ -86,13 +86,15 @@ compatibility:
   - macos
   - freebsd
 
+  python: ">=2.7,<4"
+
 ---
 
 ### OctoPrint-PrintTrack
-This plugin is meant to help you keep track of your printers progress and status. Currently it will display the printers status in the tab of OctoPrint in the browser. There are customization options to change how it is displayed and also has adjustable strings so you can translate them or just make them something else.  
+This plugin is meant to help you keep track of your printers progress and status. Currently it will display the printers status in the tab of OctoPrint in the browser. There are customization options to change how it is displayed and also has adjustable strings so you can translate them or just make them something else.
 
 #### Install & Setup
-Install via the bundled [Plugin Manager](https://github.com/foosel/OctoPrint/wiki/Plugin:-Plugin-Manager) or manually using this URL:  
+Install via the bundled [Plugin Manager](https://github.com/foosel/OctoPrint/wiki/Plugin:-Plugin-Manager) or manually using this URL:
 ```https://github.com/ElectricSquid/OctoPrint-PrintTrack/archive/master.zip```
 
 #### Reporting Issues & Improvments

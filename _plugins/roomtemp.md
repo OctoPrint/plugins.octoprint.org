@@ -15,9 +15,9 @@ tags:
 compatibility:
   octoprint:
   - 1.3.1
-  
+
 disabled: This plugin can cause severe server issues in its current form.
-  
+
 ---
 
 # Plugin that displays room temperature on navbar
@@ -47,7 +47,7 @@ This plugin displays room temperature on navbar via a ds18b20 sensor connected t
 
 		dtoverlay=w1-gpio
 
-5 - Once done save & exit by pressing ctrl x and then y. 
+5 - Once done save & exit by pressing ctrl x and then y.
 
 6 - Now reboot the Pi by running the following command.
 

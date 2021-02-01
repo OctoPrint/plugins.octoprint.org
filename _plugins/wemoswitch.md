@@ -1,6 +1,6 @@
 ---
 layout: plugin
-    
+
 id: wemoswitch
 title: OctoPrint-WemoSwitch
 description: Plugin to control Belkin Wemo devices from OctoPrint web interface.
@@ -8,13 +8,13 @@ author: jneilliii
 license: AGPLv3
 
 date: 2018-09-18
-    
+
 homepage: https://github.com/jneilliii/OctoPrint-WemoSwitch
 source: https://github.com/jneilliii/OctoPrint-WemoSwitch
 archive: https://github.com/jneilliii/OctoPrint-WemoSwitch/archive/master.zip
-    
+
 follow_dependency_links: false
-    
+
 tags:
 - Belkin
 - Wemo
@@ -29,7 +29,7 @@ featuredimage: /assets/img/plugins/wemoswitch/screenshot_on.png
 ---
 
 # Wemo Switch
-    
+
 This plugin allows for the control of Belkin Wemo devices via navbar buttons and gcode commands.
 
 ## Screenshots
@@ -67,7 +67,7 @@ Once installed go into settings and enter the name of your wemo device. Adjust a
   - When checked will run system command configured in **System Command On** setting after a delay in seconds configured in **System Command On Delay**.
 - **Cmd Off**
   - When checked will run system command configured in **System Command Off** setting after a delay in seconds configured in **System Command Off Delay**.
-  
+
 ## Get Help
 
 If you experience issues with this plugin or need assistance please use the issue tracker at the plugin's Homepage linked on the right.
@@ -82,4 +82,3 @@ I, jneilliii, programmed this plugin for fun and do my best effort to support th
 [![Patreon](/assets/img/plugins/wemoswitch/patreon-with-text-new.png)](https://www.patreon.com/jneilliii) [![paypal](/assets/img/plugins/wemoswitch/paypal-with-text.png)](https://paypal.me/jneilliii)
 
 <small>No paypal.me? Send funds via PayPal to jneilliii&#64;gmail&#46;com</small>
-

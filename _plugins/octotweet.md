@@ -50,10 +50,10 @@ This is a fork of the amazing plugin [Octorant](https://plugins.octoprint.org/pl
 
 ## SETUP
 ### Install the plugin
-Install manually using this url :  
-https://github.com/jpg32/OctoPrint-Octotweet/archive/master.zip  
+Install manually using this url :
+https://github.com/jpg32/OctoPrint-Octotweet/archive/master.zip
 
-### Create Twitter App 
+### Create Twitter App
 Login with your Twitter account on [developer.twitter.com](https://developer.twitter.com/en).
 
 Click on *App* and then on *Create an app*:
@@ -65,13 +65,13 @@ Select *Student*:
 Follow steps to complete the subscription to Twitter's Developer Program:
 ![screen twitter setup 3](/assets/img/plugins/octotweet/twitter_setup_3.JPG)
 
-Now you can create a new app:  
+Now you can create a new app:
 ![screen twitter setup 4](/assets/img/plugins/octotweet/twitter_setup_4.JPG)
 
 The next step show you your API Key & API secret keys:
 ![screen twitter setup 4](/assets/img/plugins/octotweet/twitter_setup_5.JPG)
 
-Copy them to the OctoTweet plugin configuration:  
+Copy them to the OctoTweet plugin configuration:
 ![screen octoprint 1](/assets/img/plugins/octotweet//octoprint_1.JPG)
 
 Edit app's permissions:
@@ -135,7 +135,7 @@ Some events also support variables, here is a basic list:
 - `{time_formatted}` : same as `{time}`, but in a human-readable format (`HH:MM:SS`)
 
 **Printing process : failed event**
-- `{name}`: name of the file that is being printed 
+- `{name}`: name of the file that is being printed
 - `{path}`: path of the file in its origin location
 - `{origin}`: the origin storage location
 - `{position}`: position of the hotend

@@ -28,9 +28,9 @@ tags:
 screenshots:
 - url: /assets/img/plugins/SMuFF/SMuFF-Settings.jpg
   alt: SMuFF plugin settings
-  caption: The SMuFF plugin 
+  caption: The SMuFF plugin
 - url: /assets/img/plugins/SMuFF/SMuFF-V5.png
-  alt: Smart Multi Filament Feeder 
+  alt: Smart Multi Filament Feeder
   caption: The SMuFF V5
 
 featuredimage: /assets/img/plugins/SMuFF/SMuFF-V5.png
@@ -81,11 +81,11 @@ compatibility:
   #
   # Plugins should aim for compatibility for Python 2 and 3 for now, in which case the value should be ">=2.7,<4".
   #
-  # Plugins that only wish to support Python 3 should set it to ">=3,<4". 
+  # Plugins that only wish to support Python 3 should set it to ">=3,<4".
   #
   # If your plugin only supports Python 2 (worst case, not recommended for newly developed plugins since Python 2
   # is EOL), leave at ">=2.7,<3"
-      
+
   python: ">=3,<4"
 ---
 
@@ -94,5 +94,3 @@ This plugin runs in the background and tracks tool changes (Tx) via the **octopr
 When triggered, it'll send the according command to the SMuFF via the Raspberry's second onboard UART ttyS0.
 
 For further information on how to configure your Raspberry Pi, please visit this [Github repository](https://github.com/technik-gegg/OctoPrint-Smuff).
-
-      

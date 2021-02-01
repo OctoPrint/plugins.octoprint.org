@@ -73,15 +73,15 @@ The plugin allows OctoPrint to send notifications on events using [xMatters](htt
 
 ## Setup
 
-### xMatter integration setup 
+### xMatter integration setup
 
 * Open your xMatters page
 * go to page: Developer > Communication Plans
-* Import zip file from [xMatters/OctoPrintIntegration.zip](https://github.com/svv2014/OctoPrint-xMatters-integration/tree/master/xMatters) 
+* Import zip file from [xMatters/OctoPrintIntegration.zip](https://github.com/svv2014/OctoPrint-xMatters-integration/tree/master/xMatters)
     * this will create communication plan for integration
 * On communication plan press `Edit` and choose `Integration Builder`
-* You should see one configured `Inbound integration`  
-    * Note if `Inbound integrations` configuration was not imported you may need to create once with `authentication method` equals to `API key`. 
+* You should see one configured `Inbound integration`
+    * Note if `Inbound integrations` configuration was not imported you may need to create once with `authentication method` equals to `API key`.
 * Open this configuration and at the bottom you will find all needed credentials
 
 ### Configuration

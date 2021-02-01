@@ -44,7 +44,7 @@ All these settings are set client-side, so we won't interfere with other clients
 
 ![TouchUI Interface](https://billyblaze.github.io/OctoPrint-TouchUI/images/touchui-v030.gif)
 
-- **Touchscreens**  
+- **Touchscreens**
 Read more about [setting up a touchscreen](https://github.com/BillyBlaze/OctoPrint-TouchUI/wiki/Setup#raspberrypi--touchscreen) on our Wiki.
 
 ## Configuration
@@ -52,5 +52,5 @@ The interface will automatically start when your browser is smaller then 980 pix
 
 Read more [configuration options](https://github.com/BillyBlaze/OctoPrint-TouchUI/wiki/Configuration) on our Wiki.
 
-- **Customization**  
+- **Customization**
 You can change 4 main colors of the interface with the power of LESS. If you would like to change more colors, then you're free to add your own LESS file. [Read more about this and the variables](https://github.com/BillyBlaze/OctoPrint-TouchUI/wiki/Customize:-Use-your-own-file) on our wiki.

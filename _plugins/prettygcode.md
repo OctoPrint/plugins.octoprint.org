@@ -35,7 +35,7 @@ featuredimage: /assets/img/plugins/prettygcode/PrettyGcode-Screen1.jpg
 compatibility:
   python: ">=2.7,<4"
 ---
-This plugin adds a 3D GCode visualizer tab in Octoprint. It displays colored lines to give you some idea what the printer is doing and animates progress during printing. 
+This plugin adds a 3D GCode visualizer tab in Octoprint. It displays colored lines to give you some idea what the printer is doing and animates progress during printing.
 
 ![Screenshot](/assets/img/plugins/prettygcode/PrettyGcode-Screen2.jpg)
 
@@ -51,4 +51,4 @@ This plugin adds a 3D GCode visualizer tab in Octoprint. It displays colored lin
 ![Screenshot](/assets/img/plugins/prettygcode/PrettyGcode-Screen3.jpg)
 
 
-For and configuration details, please see the instructions on the PrettyGcode tab in OctoPrint. Report bugs via the [PrettyGCode github page](https://github.com/Kragrathea/OctoPrint-PrettyGCode). 
+For and configuration details, please see the instructions on the PrettyGcode tab in OctoPrint. Report bugs via the [PrettyGCode github page](https://github.com/Kragrathea/OctoPrint-PrettyGCode).

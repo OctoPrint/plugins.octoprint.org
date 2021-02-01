@@ -35,5 +35,5 @@ featuredimage: /assets/img/plugins/finetunerptr/OctoPrint-FineTuneRptr.png
 
 ---
 
-Clean and structured UI for Repetier-Firmware based printers. 
+Clean and structured UI for Repetier-Firmware based printers.
 Helps you in maintenance situations as it keeps the most important tools always accessible.

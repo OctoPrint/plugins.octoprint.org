@@ -86,4 +86,3 @@ I, jneilliii, programmed this plugin for fun and do my best effort to support th
 [![Patreon](/assets/img/plugins/MyMiniFactory/patreon-with-text-new.png)](https://www.patreon.com/jneilliii) [![paypal](/assets/img/plugins/MyMiniFactory/paypal-with-text.png)](https://paypal.me/jneilliii)
 
 <small>No paypal.me? Send funds via PayPal to jneilliii&#64;gmail&#46;com</small>
-

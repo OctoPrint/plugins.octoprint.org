@@ -25,3 +25,10 @@
   octoversions:
   - ">1.4.0"
   reason: "[Issue that breaks file management in the web interface](https://github.com/ieatacid/OctoPrint-GcodeEditor/issues/18)"
+- plugin: gcodeleveling
+  versions:
+    - 0.1.0
+    - 0.1.1
+  octoversions:
+  - ">1.5.0"
+  reason: "[Issue that causes the extruder to stop working](https://github.com/Willmac16/OctoPrint-GcodeLeveling/issues/5)"
