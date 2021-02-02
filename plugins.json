@@ -10288,5 +10288,44 @@
             "instances_week": 249,
             "install_events_week": 242
         }
+    },
+
+    {
+        "id": "SimplyPrint",
+        "published": "2021-02-02 00:00:00 -0600",
+        "title": "SimplyPrint cloud",
+        "description": "3D print online anywhere; elevate your 3D printing experience from your computer or phone, with smart features like filament manager, livestream, print queue, and much more. Simple, beautiful, smart.",
+        "archive": "https://github.com/SimplyPrint/OctoPrint-SimplyPrint/archive/master.zip",
+        "author": "SimplyPrint",
+        "homepage": "https://simplyprint.io/",
+        "page": "https://plugins.octoprint.org/plugins/SimplyPrint/",
+        "compatibility": {
+            "octoprint": [],
+            "os": [],
+            "python": ">=2.7,<4"
+        },
+        "license": "GNU General Public License v3.0",
+        "image": "https://plugins.octoprint.org/assets/img/plugins/SimplyPrint/showcase_feature_image.png",
+        "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "1.6.6",
+                "date": "2020-11-04 01:19:53 +0000",
+                "tag": "1.6.6"
+            },
+            "releases": 4,
+            "last_push": "2021-02-01 19:35:52 +0000",
+            "stars": 1,
+            "issues": {
+                "open": 0,
+                "closed": 0
+            }
+        },
+        "stats": {
+            "instances_month": 181,
+            "install_events_month": 0,
+            "instances_week": 147,
+            "install_events_week": 0
+        }
     }
 ]
