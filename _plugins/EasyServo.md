@@ -1,3 +1,27 @@
+layout: plugin
+id: EasyServo
+title: Easy Servo
+description: Plugin to control two servos attached to a camera gimbal to control motion.
+authors:
+- iFrostizz
+- jneilliii
+license: AGPLv3
+date: 2020-05-21
+homepage: https://github.com/iFrostizz/OctoPrint-EasyServo
+source: https://github.com/iFrostizz/OctoPrint-EasyServo
+archive: https://github.com/iFrostizz/OctoPrint-EasyServo/archive/master.zip
+tags:
+	- GPIO
+	- servos
+	- PWM
+compatibility:
+  octoprint:
+  - 1.2.0
+  os:
+  - linux
+  python: ">=2.7,<4"
+
+
 # Easy Servo
 
 Here is a simple plugin to control two servos using the OctoPrint Control tab. It has been programmed in conjuction with a camera gimbal mount design I published on Thingiverse [here](https://www.thingiverse.com/thing:4381240).
