@@ -66,7 +66,7 @@ Read more about SimplyPrint and its features on [https://simplyprint.io/](https:
 # SimplyPrint installation
 
 ![installation](/assets/img/plugins/SimplyPrint/installation.gif "The SimplyPrint installation")
-- Install the `SimplyPrint Cloud` plugn
+- Install the `SimplyPrint Cloud` plugin
 - Follow the instruction that appears after install _(finish install on the [SimplyPrint website](https://simplyprint.io/))_
 - You're done in less than 2 minutes!
 
