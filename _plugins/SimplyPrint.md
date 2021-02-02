@@ -86,7 +86,7 @@ See the full list of features that our different subscription plans have on the 
 
 ## Future plans for SimplyPrint
 
-We have _a lot_ of stuff planned for the near future, this is just the beginning!
+We have _a lot_ of stuff planned for the near future, we're **still in beta**, so this is just the beginning!
 Check out our public roadmap at; [https://simplyprint.io/roadmap](https://simplyprint.io/roadmap)
 
 <hr />
