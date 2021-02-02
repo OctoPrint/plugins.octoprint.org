@@ -20,11 +20,11 @@ tags:
 - servos
 - PWM
 compatibility:
-octoprint:
-- 1.2.0
-os:
-- linux
-python: ">=2.7,<4"
+  octoprint:
+  - 1.2.0
+  os:
+  - linux
+  python: ">=2.7,<4"
 ---
 
 
