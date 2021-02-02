@@ -39,7 +39,7 @@ Example: `EASYSERVO_REL 12 10` will move the servo attached to GPIO number 12 10
 **Note:** The servos will initialize at 90 degrees on OctoPrint start up and is limited to a 90 degree rotation in either direction.
 A later update will support continous servos (you can do the mod yourself).
 
-![Easy Servo](screenshot_easyservo.png)
+![Easy Servo](/assets/img/plugins/EasyServo/screenshot_easyservo.png)
 
 ## Pre-Installation Requirements
 
@@ -54,23 +54,23 @@ sudo raspi-config
 
 Select **Interface Options**
 
-![edit service](screenshot_interface_options.png)
+![edit service](/assets/img/plugins/EasyServo/screenshot_interface_options.png)
 
 Select **I2C**
 
-![I2c Interfaces](screenshot_interface_options_I2C.png)
+![I2c Interfaces](/assets/img/plugins/EasyServo/screenshot_interface_options_I2C.png)
 
 Select **Yes** to enable the ARM I2C interface
 
-![Enable I2C](screenshot_interface_options_I2C_yes.png)
+![Enable I2C](/assets/img/plugins/EasyServo/screenshot_interface_options_I2C_yes.png)
 
 Press **Ok**
 
-![Enable I2C](screenshot_interface_options_I2C_ok.png)
+![Enable I2C](/assets/img/plugins/EasyServo/screenshot_interface_options_I2C_ok.png)
 
 Select **Finish** to exit raspi-config.
 
-![Enable I2C](screenshot_interface_options_I2C_finish.png)
+![Enable I2C](/assets/img/plugins/EasyServo/screenshot_interface_options_I2C_finish.png)
 
 2. Now run the following commands to install and configure the required pigpio daemon.
 
@@ -83,7 +83,7 @@ This will open a text editor. Change the ExecStart line to be `/usr/bin/pigpiod 
 
 **Note:** the last character at the end of the example line above is the number one.
 
-![edit service](screenshot_edit_service.png)
+![edit service](/assets/img/plugins/EasyServo/screenshot_edit_service.png)
 
 Press CTRL+X to exit, Press Y to save, Press enter to keep the original name.
 
@@ -108,13 +108,13 @@ You will need this library if you are using the Pan-Tilt hat from Pimoroni.
 
 Connect the 5V and GND wires of your servos (recommended exernal power source) followed by the signal wires to the two GPIO numbers that you want to control with the plugin. The below diagram schows the servos connected to GPIO numbers 12 and 13 (the default plugin's GPIO number assignments) on a Pi 3B+.
 
-![Servos are connected to GPIO 12 and GPIO 13](screenshot_servos_connexion.png)
+![Servos are connected to GPIO 12 and GPIO 13](/assets/img/plugins/EasyServo/screenshot_servos_connexion.png)
 
 Use the chart below to identify the GPIO numbers to use in the plugin's settings after install if you choose anything other than 12 or 13 as diagrammed above. The GPIO numbers in yellow are the ones that can be controlled by this plugin.
 
 *Grounding the external power supply may be a solution if your servos are doing anything strange!*
 
-![Servos are connected to GPIO 12 and GPIO 13](screenshot_GPIO.png)
+![Servos are connected to GPIO 12 and GPIO 13](/assets/img/plugins/EasyServo/screenshot_GPIO.png)
 
 **You are now ready to continue with the plugin install/configuration.**
 
@@ -129,8 +129,8 @@ or manually using this URL:
 
 The plugin supports the ability to configure the GPIO numbers used for controlling the servos for the X and Y axes.
 
-![edit service](screenshot_settings_easyservo1.png)
-![edit service](screenshot_settings_easyservo2.png)
+![edit service](/assets/img/plugins/EasyServo/screenshot_settings_easyservo1.png)
+![edit service](/assets/img/plugins/EasyServo/screenshot_settings_easyservo2.png)
 
 ## Features
 ### Basic control
@@ -156,7 +156,7 @@ The xOffset correspond to the horizontal length in mm between the axis of the se
 
 The yOffset correspond to the vertical length in mm between the eye of the camera when this last one is at 90° and this same point.
 
-![edit service](z-track-wonderful-drawing.png)
+![edit service](/assets/img/plugins/EasyServo/z-track-wonderful-drawing.png)
 
 Black: Print bed
 
