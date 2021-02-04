@@ -25,6 +25,9 @@ tags:
 - settings
 
 screenshots:
+- url: /assets/img/plugins/uicustomizer/responsive.png
+  alt: overview
+  caption: responsive layouts
 - url: /assets/img/plugins/uicustomizer/camwidget.png
   alt: overview
   caption: Overview with webcam widget on the right

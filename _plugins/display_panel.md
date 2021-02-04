@@ -2,7 +2,7 @@
 layout: plugin
 
 id: display_panel
-title: OctoPrint Display Panel
+title: OctoPrint Micro Panel
 description: Simple control and status paired with a physical button panel and OLED display
 author: Seth Voltz
 license: MIT
