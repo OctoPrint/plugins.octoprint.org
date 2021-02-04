@@ -94,6 +94,12 @@ compatibility:
 
 ---
 # Arc Welder: Anti Stutter and GCode Compression
+<figure style="text-align:center">
+    {% include youtube.html vid="18uYYXecH5g" %}
+    <figcaption>
+        <a href="https://www.youtube.com/channel/UCevttltfkZ76jwqfV1vrRbQ">Makers Mashup</a> Review of Arc Welder
+    </figcaption>
+</figure>
 
 <figure style="text-align:center">
     <img src="{{site.url}}/assets/img/plugins/arc_welder/tab_mini.jpg" alt="The Arc Welder Tab" title="The Arc Welder Tab."/>
