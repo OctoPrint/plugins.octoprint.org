@@ -92,6 +92,8 @@ Please read the [Get Help Guide](https://cp2004.gitbook.io/ws281x-led-status/gui
 ### Reporting problems
 Whilst I don't like bugs, I want to hear about them! Let me know by [opening an issue on Github]({{ page.homepage }}/issues/new?assignees=&template=bug_report.md&title=%5BBug%5D)
 
+Before you report a bug, please read the [Get Help Guide](https://cp2004.gitbook.io/ws281x-led-status/guides/get-help-guide) as well, there is a section on reporting bugs.
+
 
 # Support my work!
 I created this plugin in my spare time, so if you have enjoyed using it then please [support it's development!](https://github.com/sponsors/cp2004)
