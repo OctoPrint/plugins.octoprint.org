@@ -78,7 +78,7 @@ Setting up the plugin couldn't be easier! There are 3 main steps, with the heavy
 * Configuring SPI
 * Configuring plugin settings
 
-Like the sound of it? Follow the detailed [setup guide](https://app.gitbook.com/@cp2004/s/ws281x-led-status/guides/setup-guide-1) in the documentation.
+Like the sound of it? Follow the detailed [setup guide](https://cp2004.gitbook.io/ws281x-led-status/guides/setup-guide-1) in the documentation.
 
 ### Getting help
 
