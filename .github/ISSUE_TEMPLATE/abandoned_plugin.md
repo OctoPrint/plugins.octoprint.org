@@ -14,7 +14,7 @@ e.g. by opening a (friendly!) ticket on the plugin's repository asking if it is 
 being actively maintained by the author and if not if they would be open to putting it up
 for adoption.
 
-If you do not get a response on this within reasonable time (use the general response times
+If you do not get a response on this within a reasonable time (use the general response times
 on the tracker to judge this) then report the plugin as abandoned here. Be sure to include
 the ticket on the plugin's tracker you opened to confirm abandonment.
 
