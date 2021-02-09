@@ -4,14 +4,14 @@ layout: plugin
 id: mmu2filamentselect
 title: OctoPrint-Mmu2filamentselect
 description: Select the filament for Prusa MMU2 when printing in single mode.
-author: Florian Schütte
+author: Thomas Köckerbauer, previously Florian Schütte
 license: AGPLv3
 
 date: 2019-10-04
 
-homepage: https://github.com/derPicknicker1/OctoPrint-Mmu2filamentselect
-source: https://github.com/derPicknicker1/OctoPrint-Mmu2filamentselect
-archive: https://github.com/derPicknicker1/OctoPrint-Mmu2filamentselect/archive/master.zip
+homepage: https://github.com/tkoecker/OctoPrint-Mmu2filamentselect
+source: https://github.com/tkoecker/OctoPrint-Mmu2filamentselect
+archive: https://github.com/tkoecker/OctoPrint-Mmu2filamentselect/archive/master.zip
 
 follow_dependency_links: false
 
@@ -34,11 +34,14 @@ screenshots:
 
 featuredimage: /assets/img/plugins/mmu2filamentselect/octoprusa.png
 
+compatibility:
+  python: ">=2.7,<4"
+
 ---
 
 ![logo](/assets/img/plugins/mmu2filamentselect/octoprusa.png)
 
-This plugin shows a dialog to select the filament when a print on a Prusa printer with MMU2 is startet in single mode.
+This plugin shows a dialog to select the filament when a print on a Prusa printer with MMU2 is started in single mode.
 
 The dialog is shown, when the plugin detects a 'Tx' command in the gcode.
 
