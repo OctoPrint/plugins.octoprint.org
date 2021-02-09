@@ -58,19 +58,19 @@ compatibility:
 
 ## 👋 Hello!
 
-We welcome you aboard the [OctoEverywhere.com](https://octoeverywhere.com/) rocket! With a **simple and free 2-minute setup** you too will can have access to your full OctoPrint portal... everywhere! Join the over 10k users already enjoying full remote control, full webcam streaming, and much more!
+We welcome you aboard the [OctoEverywhere.com](https://octoeverywhere.com/?source=plugin_website) rocket! With a **simple and free 2-minute setup** you too will have access to your full OctoPrint portal... everywhere! Join the over 10k users already enjoying full remote control, full webcam streaming, and much more!
 
 ### Free Remote Access Everywhere?
 
-Right! [OctoEverywhere.com](https://octoeverywhere.com/) gives you **full access** to the exact same OctoPrint webpage portal you know and love. Your customizations, your webcam, your plugins, your favorite 3rd party apps... everywhere!
+Right! [OctoEverywhere.com](https://octoeverywhere.com/?source=plugin_website) gives you **full access** to the exact same OctoPrint web portal you know and love. Your customizations, your webcam, your plugins, your favorite 3rd party apps... everywhere!
 
 ### Is It Safe?
 
-[OctoEverywhere.com](https://octoeverywhere.com/) is a 100% secure remote monitoring solution. We utilize “bank-level” encryption to secure the connection all the way between you and your printer. The service doesn’t require any complicated setup or port forwarding - just install the plugin, create an account, and you’re done!
+[OctoEverywhere.com](https://octoeverywhere.com/?source=plugin_website) is a 100% secure remote monitoring solution. We utilize bank-level encryption to secure the connection all the way between you and your printer. The service doesn’t require any complicated setup or port forwarding - just install the plugin, create an account, and you’re done!
 
 ### Give It A Go!
 
-Interested? Seeing is believing! Check out [OctoEverywhere.com](https://octoeverywhere.com/) or install the OctoPrint plugin to get started!
+Interested? Seeing is believing! Check out [OctoEverywhere.com](https://octoeverywhere.com/?source=plugin_website) or install the OctoPrint plugin to get started!
 
 ### Questions Or Comments?
 
