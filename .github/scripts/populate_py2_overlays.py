@@ -29,7 +29,7 @@ def process_plugin_file(path):
                     plugin_id
                 )
             )
-            overlay = {plugin_id: {"enabled": False, "compatible": False}}
+            overlay = {plugin_id: {"disabled": True, "compatible": False}}
 
     return "\n".join(output), overlay
 
