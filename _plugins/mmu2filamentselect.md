@@ -4,7 +4,9 @@ layout: plugin
 id: mmu2filamentselect
 title: OctoPrint-Mmu2filamentselect
 description: Select the filament for Prusa MMU2 when printing in single mode.
-author: Thomas Köckerbauer, previously Florian Schütte
+authors: 
+  - Thomas Köckerbauer
+  - Florian Schütte
 license: AGPLv3
 
 date: 2019-10-04
