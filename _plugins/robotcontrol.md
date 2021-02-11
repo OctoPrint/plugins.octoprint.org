@@ -15,13 +15,12 @@ source: https://github.com/Zinc-OS/octoprint-robot-plugin
 archive: https://github.com/Zinc-OS/octoprint-robot-plugin/archive/master.zip
 
 tags:
+- i2c
+- automation
 - robot
-- servo
+- robotics
 - GPIO
--i2c
--robotics
--automation
--i2cbus
+
 
 featuredimage: /assets/img/plugins/robotcontrol/screnshat.png
 
@@ -31,7 +30,9 @@ compatibility:
   os:
   - linux
   python: ">=2.7,<4"
+
 ---
+
 
 # Robot Control Plugin
 
