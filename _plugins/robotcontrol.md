@@ -31,7 +31,6 @@ compatibility:
   - 1.5.0
   os:
   - linux
-  - raspberry pi
   python: ">=2.7,<4"
 
 ---
