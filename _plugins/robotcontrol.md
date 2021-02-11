@@ -21,7 +21,7 @@ tags:
 - GPIO
 
 
-featuredimage: /assets/img/plugins/robotcontrol/screenshot.png
+featuredimage: /assets/img/plugins/robotcontrol/Screenshot.png
 
 compatibility:
   octoprint:
@@ -53,4 +53,4 @@ There are sliders in the robot control tab, and gcodes can be used with the form
 
 ## Screenshot
 
-![screenshot](/assets/img/plugins/robotcontrol/screenshot.png)
+![screenshot](/assets/img/plugins/robotcontrol/Screenshot.png)
