@@ -4,8 +4,7 @@ layout: plugin
 id: robotcontrol
 title: Robot Control
 description: Plugin to control a robot over i2c
-author:
-- Louis Sarwal
+author: Louis Sarwal
 license: AGPLv3
 
 date: 2021-02-11
