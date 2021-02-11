@@ -1,18 +1,49 @@
+---
+layout: plugin
+
+id: robotcontrol
+title: Robot Control
+description: Plugin to control a robot over i2c
+author:
+- Louis Sarwal
+license: AGPLv3
+
+date: 2021-02-11
+
+homepage: https://github.com/Zinc-OS/octoprint-robot-plugin
+source: https://github.com/Zinc-OS/octoprint-robot-plugin
+archive: https://github.com/Zinc-OS/octoprint-robot-plugin/archive/master.zip
+
+tags:
+- robot
+- servo
+- GPIO
+-i2c
+-I2C
+-robotics
+-automation
+-i2cbus
+
+featuredimage: /assets/img/plugins/robotcontrol/screnshat.png
+
+compatibility:
+  octoprint:
+  - 1.5.0
+  os:
+  - linux
+  - raspberry pi
+  python: ">=2.7,<4"
+
+---
+
 # Robot Control Plugin
 
-Plugin for controling my robot
-
-## Setup
-
-Install manually using this URL:
-
-    https://github.com/Zinc-OS/octoprint-robot-plugin/archive/master.zip
-
+Plugin for controling my robot via the i2c bus.
 
 
 ## Configuration
 
-For a four servo robot. via the I2C bus
+Currently For a four servo robot(I plan to add support for more).
 
 You will also need to enable i2c bus via ```sudo raspi-cofig``` throught the terminal, accessible through ```ssh pi@octopi.local:22```
 
