@@ -53,4 +53,4 @@ There are sliders in the robot control tab, and gcodes can be used with the form
 
 ## Screenshot
 
-![screenshot](/assets/img/plugins/robotcontrol/screneshot.png)
+![screenshot](/assets/img/plugins/robotcontrol/screenshot.png)
