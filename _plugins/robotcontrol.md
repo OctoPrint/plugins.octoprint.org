@@ -19,7 +19,6 @@ tags:
 - servo
 - GPIO
 -i2c
--I2C
 -robotics
 -automation
 -i2cbus
@@ -32,7 +31,6 @@ compatibility:
   os:
   - linux
   python: ">=2.7,<4"
-
 ---
 
 # Robot Control Plugin
@@ -52,3 +50,7 @@ then
 For the raspi, addresses cannot be lower than 3, and the arduino only use addresses higher than 8, so the address must be an integer 8-127, and must be the same for the adruino and the raspi.
 
 There are sliders in the robot control tab, and gcodes can be used with the format ```@servo[1..4]:[ANGLE]```, such as ```@servo2:90``` or ```@servo4:12```.
+
+## Screenshot
+
+![screenshot](/assets/img/plugins/robotcontrol/screnshat.png)
