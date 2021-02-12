@@ -42,7 +42,7 @@ Plugin for controling my robot via the i2c bus.
 
 Currently For a four servo robot(I plan to add support for more).
 
-You will also need to enable i2c bus via ```sudo raspi-cofig``` throught the terminal, accessible through ```ssh pi@octopi.local:22```
+You will also need to enable i2c bus via ```sudo raspi-cofig``` through the terminal, accessible through ```ssh pi@octopi.local:22```
 
 then
 ```interface options>enable i2c>yes>finish```
