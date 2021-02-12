@@ -1,0 +1,46 @@
+name: Listing error
+about: Use this to report errors in a plugin list (broken images, broken links, incorrect compatibility information, NOT BUGS IN THE PLUGIN)
+title: '[Listing Error] <insert name of plugin here>'
+labels: 'listing error'
+inputs:
+  - type: description
+    attributes:
+      value: >
+        Use this form to report errors in a plugin listing. The kinds of issues you
+        should report here are:
+
+          * missing or broken homepage, source or download URLs
+          * broken images
+          * incorrect compatibility information
+          * ... in short, anything related to the **data** on plugins.octoprint.org
+
+        Things that don't belong here:
+
+          * Any kinds of issues with the plugins themselves - report those
+            to the plugin author instead
+          * Support requests for how to use a plugin - reach out on the
+            [community forums](https://community.octoprint.org), the
+            [Discord server](https://discord.octoprint.org) or the plugin author instead
+  - type: input
+    attributes:
+      label: Which Plugin?
+      description: >-
+        Please enter the URL to the **plugin page on the plugin repository** so there's no ambiguity!
+      placeholder: https://plugins.octoprint.org/...
+      required: true
+  - type: dropdown
+    attributes:
+      label: What kind of listing error are you reporting?
+      choices:
+        - broken link on the listing
+        - broken images on the listing
+        - incorrect compatibility information on the plugin listing
+        - a typo in the plugin listing
+      required: true
+  - type: textarea
+    attributes:
+      label: What specifically is broken or wrong?
+      description: >-
+        E.g. what link is broken, which image doesn't display properly, which parts of the
+        compatibility information are wrong, where is the typo?
+      required: true
