@@ -2,6 +2,7 @@ name: Report a listing error
 about: Use this to report errors in a plugin list (broken images, broken links, incorrect compatibility information, NOT BUGS IN THE PLUGIN)
 title: '[Listing Error] <insert name of plugin here>'
 labels: 'listing error'
+issue_body: true
 body:
   - type: markdown
     attributes:
@@ -39,11 +40,12 @@ body:
         - a typo in the plugin listing
     validation:
       required: true
-  - type: textarea
+  - type: markdown
     attributes:
-      label: What specifically is broken or wrong?
-      description: >-
+      value: >
+        ### What specifically is broken or wrong?
+
         E.g. what link is broken, which image doesn't display properly, which parts of the
         compatibility information are wrong, where is the typo?
-    validation:
-      required: true
+
+        You can also upload screenshots here if that helps to communicate the problem.

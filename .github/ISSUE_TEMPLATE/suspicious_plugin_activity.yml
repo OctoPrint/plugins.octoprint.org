@@ -2,6 +2,7 @@ name: Suspicious plugin activity
 about: Use this to report errors in a plugin list (broken images, broken links, incorrect compatibility information, NOT BUGS IN THE PLUGIN)
 title: '[Listing Error] <insert name of plugin here>'
 labels: 'listing error'
+issue_body: false
 inputs:
   - type: description
     attributes:
