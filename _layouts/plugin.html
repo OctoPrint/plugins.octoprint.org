@@ -214,16 +214,16 @@ layout: default
         <dd>
           <p>
             If there is <strong>something wrong with this listing</strong> (broken links & images etc), please
-            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?template=listing_error.yml&title=%5BListing+Error%5D+{{ page.title | strip_html | strip_newlines | cgi_escape }}&which_plugin={{ page.url | prepend: site.baseurl | prepend: site.external | cgi_escape }}">report it here</a>.
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?template=listing_error.yml&labels%5B%5D=listing+error&title=%5BListing+Error%5D+{{ page.title | strip_html | strip_newlines | cgi_escape }}&which_plugin={{ page.url | prepend: site.baseurl | prepend: site.external | cgi_escape }}">report it here</a>.
           </p>
           <p>
             If this plugin <strong>has been <em>confirmed</em> as abandoned</strong> by its maintainer, please
-            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?template=abandoned_plugin.yml&title=%5BAbandoned+Plugin%5D+{{ page.title | strip_html | strip_newlines | cgi_escape }}&which_plugin={{ page.url | prepend: site.baseurl | prepend: site.external | cgi_escape }}">report it here</a>.
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?template=abandoned_plugin.yml&labels%5B%5D=abandoned+plugin&title=%5BAbandoned+Plugin%5D+{{ page.title | strip_html | strip_newlines | cgi_escape }}&which_plugin={{ page.url | prepend: site.baseurl | prepend: site.external | cgi_escape }}">report it here</a>.
           </p>
           <p>
             If this plugin is <strong>doing something suspicious</strong> (e.g. weird network activity, unannounced tracking, ...) and
             the maintainer is not cooperating in getting to the bottom of that, please
-            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?template=suspicious_plugin_activity.yml&title=%5BSuspicious+Plugin+Activity%5D+{{ page.title | strip_html | strip_newlines | cgi_escape }}&which_plugin={{ page.url | prepend: site.baseurl | prepend: site.external | cgi_escape }}">report the plugin as suspicious here</a>.
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?template=suspicious_plugin_activity.yml&labels%5B%5D=suspicious+plugin+activity&title=%5BSuspicious+Plugin+Activity%5D+{{ page.title | strip_html | strip_newlines | cgi_escape }}&which_plugin={{ page.url | prepend: site.baseurl | prepend: site.external | cgi_escape }}">report the plugin as suspicious here</a>.
           </p>
           <p>
             Report bugs or feature requests for the plugin to the plugin author{% if page.homepage %} (e.g. on the plugin's <a href="{{ page.homepage }}">homepage</a>){% endif %} please, not here!
