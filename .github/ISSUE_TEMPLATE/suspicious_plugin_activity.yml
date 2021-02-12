@@ -1,8 +1,8 @@
 name: Suspicious plugin activity
-about: Use this to report errors in a plugin list (broken images, broken links, incorrect compatibility information, NOT BUGS IN THE PLUGIN)
-title: '[Listing Error] <insert name of plugin here>'
-labels: 'listing error'
-issue_body: false
+about: Use this to report plugins that are doing something malicious and/or undocumented (e.g. crypto mining, suspicious network connections, unannounced tracking without opt-in, ...)
+title: '[Suspicious Plugin Activity] <insert name of plugin here>'
+labels: 'suspicious plugin activity'
+issue_body: true
 inputs:
   - type: description
     attributes:
@@ -49,3 +49,9 @@ inputs:
         here that the an attempt at a friendly resolution was actually made.
       placeholder: https://...
       required: true
+  - type: description
+    attributes:
+      value: >
+        ### Further information you want to provide
+
+        If there's any more information you want to provide, please do this here:
