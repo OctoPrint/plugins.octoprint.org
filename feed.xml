@@ -5,10 +5,31 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>https://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 14 Feb 2021 06:14:16 -0600</pubDate>
-    <lastBuildDate>Sun, 14 Feb 2021 06:14:16 -0600</lastBuildDate>
+    <pubDate>Sun, 14 Feb 2021 11:54:06 -0600</pubDate>
+    <lastBuildDate>Sun, 14 Feb 2021 11:54:06 -0600</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
+    
+      <item>
+        <title>OctoPrint-InlineConfirm</title>
+        <description>
+          <![CDATA[
+            Removes the confirm cancel print dialog and replaces it with confirmation by clicking the cancel buton twice.
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/inlineconfirm/cancel_print_button.gif"></p>
+          ]]>
+        </description>
+        <pubDate>
+Sun, 14 Feb 2021 00:00:00 -0600</pubDate>
+        <link>https://plugins.octoprint.org/plugins/inlineconfirm/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/inlineconfirm/</guid>
+        
+        <category>ui</category>
+        
+        <category>control</category>
+        
+        <category>cancel</category>
+        
+      </item>
     
       <item>
         <title>SimplyPrint Cloud</title>
@@ -256,41 +277,6 @@ Sun, 03 Jan 2021 00:00:00 -0600</pubDate>
         <category>M20</category>
         
         <category>M33</category>
-        
-      </item>
-    
-      <item>
-        <title>OctoPrint Nanny</title>
-        <description>
-          <![CDATA[
-            Get notified of print defects and safety hazards
-            <p><img src="https://plugins.octoprint.org/assets/img/plugins/octoprint_nanny/screenshot_2.png"></p>
-          ]]>
-        </description>
-        <pubDate>
-Fri, 25 Dec 2020 00:00:00 -0600</pubDate>
-        <link>https://plugins.octoprint.org/plugins/octoprint_nanny/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/octoprint_nanny/</guid>
-        
-        <category>ai</category>
-        
-        <category>automation</category>
-        
-        <category>quality control</category>
-        
-        <category>remote</category>
-        
-        <category>monitor</category>
-        
-        <category>monitoring</category>
-        
-        <category>alert</category>
-        
-        <category>alerting</category>
-        
-        <category>workflow</category>
-        
-        <category>automation</category>
         
       </item>
     
