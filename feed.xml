@@ -5,10 +5,31 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>https://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 16 Feb 2021 06:14:42 -0600</pubDate>
-    <lastBuildDate>Tue, 16 Feb 2021 06:14:42 -0600</lastBuildDate>
+    <pubDate>Tue, 16 Feb 2021 15:59:52 -0600</pubDate>
+    <lastBuildDate>Tue, 16 Feb 2021 15:59:52 -0600</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
+    
+      <item>
+        <title>OctoPrint-GpioControl</title>
+        <description>
+          <![CDATA[
+            GPIO Control adds a sidebar with on/off buttons. You can add as many buttons as you want that will control each device connected to your Raspberry Pi.
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/gpiocontrol/sidebar.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Tue, 16 Feb 2021 00:00:00 -0600</pubDate>
+        <link>https://plugins.octoprint.org/plugins/gpiocontrol/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/gpiocontrol/</guid>
+        
+        <category>raspberry pi</category>
+        
+        <category>gpio</category>
+        
+        <category>control</category>
+        
+      </item>
     
       <item>
         <title>OctoPrint-InlineConfirm</title>
@@ -256,29 +277,6 @@ Sat, 16 Jan 2021 00:00:00 -0600</pubDate>
         <category>Nextcloud</category>
         
         <category>OwnCloud</category>
-        
-      </item>
-    
-      <item>
-        <title>OctoPrint-TimeToFilament</title>
-        <description>
-          <![CDATA[
-            Display time until next filament change
-            <p><img src="https://plugins.octoprint.org/assets/img/plugins/TimeToFilament/screenshot.png"></p>
-          ]]>
-        </description>
-        <pubDate>
-Thu, 14 Jan 2021 00:00:00 -0600</pubDate>
-        <link>https://plugins.octoprint.org/plugins/TimeToFilament/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/TimeToFilament/</guid>
-        
-        <category>filament</category>
-        
-        <category>time</category>
-        
-        <category>remaining</category>
-        
-        <category>change</category>
         
       </item>
     
