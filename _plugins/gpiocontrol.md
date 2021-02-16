@@ -24,11 +24,11 @@ screenshots:
   caption: GPIO Control settings
 featuredimage: /assets/img/plugins/gpiocontrol/sidebar.png
 compatibility:
-  octoprint:
-  - 1.3.0
-  os:
-  - linux
-  python: ">=2.7,<4"
+octoprint:
+- 1.3.0
+os:
+- linux
+python: ">=2.7,<4"
 
 ---
 
