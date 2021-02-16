@@ -1,12 +1,11 @@
 ---
 layout: plugin
-
 id: gpiocontrol
 title: OctoPrint-GpioControl
 description: GPIO Control adds a sidebar with on/off buttons. You can add as many buttons as you want that will control each device connected to your Raspberry Pi.
 authors:
 - Damian Wójcik
-  license: AGPLv3
+license: AGPLv3
 date: 2021-02-16
 homepage: https://github.com/catgiggle/OctoPrint-GpioControl
 source: https://github.com/catgiggle/OctoPrint-GpioControl
@@ -24,11 +23,11 @@ screenshots:
   caption: GPIO Control settings
 featuredimage: /assets/img/plugins/gpiocontrol/sidebar.png
 compatibility:
-octoprint:
-- 1.3.0
-os:
-- linux
-python: ">=2.7,<4"
+  octoprint:
+  - 1.3.0
+  os:
+  - linux
+  python: ">=2.7,<4"
 
 ---
 
