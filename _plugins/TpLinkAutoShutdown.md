@@ -21,6 +21,12 @@ source: https://github.com/jamesmccannon02/OctoPrint-Tplinkautoshutdown
 
 archive: https://github.com/jamesmccannon02/OctoPrint-Tplinkautoshutdown/archive/master.zip
 
+tags:
+- Printer
+- Kasa
+- Tp-Link
+- Auto_Shutdown
+
 compatibility:
   octoprint:
   - 1.5.3
