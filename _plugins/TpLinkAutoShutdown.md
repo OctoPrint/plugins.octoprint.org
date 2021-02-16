@@ -21,6 +21,8 @@ source: https://github.com/jamesmccannon02/OctoPrint-Tplinkautoshutdown
 
 archive: https://github.com/jamesmccannon02/OctoPrint-Tplinkautoshutdown/archive/master.zip
 
+follow_dependency_links: false
+
 tags:
 - Printer
 - Kasa
