@@ -3048,6 +3048,17 @@
 },
 
 {
+"id": "/plugins/robotcontrol",
+"url": "/plugins/robotcontrol/",
+"date": "2021-02-11 00:00:00 -0600",
+"title": "Robot Control",
+"description": "Plugin to control a robot over i2c",
+"author": "Louis Sarwal",
+"content": "Robot Control PluginPlugin for controling my robot via the i2c bus.ConfigurationCurrently For a four servo robot(I plan to add support for more).You will also need to enable i2c bus via sudo raspi-cofig through the terminal, accessible through ssh pi@octopi.local:22theninterface options&gt;enable i2c&gt;yes&gt;finishFor the raspi, addresses cannot be lower than 3, and the arduino only use addresses higher than 8, so the address must be an integer 8-127, and must be the same for the adruino and the raspi.There are sliders in the robot control tab, and gcodes can be used with the format @servo[1..4]:[ANGLE], such as @servo2:90 or @servo4:12.Screenshot",
+"tags": ["i2c","automation","robot","robotics","GPIO"]
+},
+
+{
 "id": "/plugins/inlineconfirm",
 "url": "/plugins/inlineconfirm/",
 "date": "2021-02-14 00:00:00 -0600",
