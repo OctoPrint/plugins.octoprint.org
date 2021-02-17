@@ -3073,10 +3073,10 @@
 "id": "/plugins/gpiocontrol",
 "url": "/plugins/gpiocontrol/",
 "date": "2021-02-16 00:00:00 -0600",
-"title": "OctoPrint-GpioControl",
+"title": "GPIO Control",
 "description": "GPIO Control adds a sidebar with on/off buttons. You can add as many buttons as you want that will control each device connected to your Raspberry Pi.",
 "author": "Damian Wójcik",
-"content": "OctoPrint GPIO ControlGPIO Control adds a sidebar with on/off buttons. You can add as many buttons as you want that will control each device connected to your Raspberry Pi.Very useful if you want to add some electronic/improvements to your printer.SetupInstall via the bundled Plugin Manageror manually using this URL:https://github.com/catgiggle/OctoPrint-GpioControl/archive/master.zipConfigurationJust add correct GPIO configuration:  select icon using icon picker (or typing manually) for better identification  type name for your device connected to GPIO  type pin number according to BCM numeration - for more details please visit this page  select if device is driven for low or high state of GPIO          active high means that device is on for high state of GPIO and off for low state      active low means that device is on for low state of GPIO and off for high state        select if device should be on or off by default eg. after startup",
+"content": "Very useful if you want to add some electronic/improvements to your printer.SetupInstall via the bundled Plugin Manageror manually using this URL:https://github.com/catgiggle/OctoPrint-GpioControl/archive/master.zipConfigurationJust add correct GPIO configuration:  select icon using icon picker (or typing manually) for better identification  type name for your device connected to GPIO  type pin number according to BCM numeration - for more details please visit this page  select if device is driven for low or high state of GPIO          active high means that device is on for high state of GPIO and off for low state      active low means that device is on for low state of GPIO and off for high state        select if device should be on or off by default eg. after startup",
 "tags": ["raspberry pi","gpio","control"]
 }
 ]
