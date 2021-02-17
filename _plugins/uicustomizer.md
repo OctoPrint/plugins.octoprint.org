@@ -17,6 +17,13 @@ archive: https://github.com/LazeMSS/OctoPrint-UICustomizer/archive/main.zip
 
 
 tags:
+- theme
+- themes
+- skin
+- skins
+- dark
+- style
+- styling
 - responsive
 - mobile
 - webcam
