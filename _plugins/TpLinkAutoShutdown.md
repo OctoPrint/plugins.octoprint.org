@@ -12,7 +12,7 @@ authors:
 
 license: AGPLv3
 
-date: 2020-02-15
+date: 2021-02-17
 
 homepage: https://github.com/jamesmccannon02/OctoPrint-Tplinkautoshutdown
 
