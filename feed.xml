@@ -5,10 +5,34 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>https://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 17 Feb 2021 15:15:03 -0600</pubDate>
-    <lastBuildDate>Wed, 17 Feb 2021 15:15:03 -0600</lastBuildDate>
+    <pubDate>Wed, 17 Feb 2021 16:53:45 -0600</pubDate>
+    <lastBuildDate>Wed, 17 Feb 2021 16:53:45 -0600</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
+    
+      <item>
+        <title>OctoPrint-Tplinkautoshutdown</title>
+        <description>
+          <![CDATA[
+            This plugin is designed to help you integrate your IoT TP-Link Kasa wireless plug into OctoPrint. The basis of the plug-in is to enable you to automatically switch-off your 3D printer once a print has successfully completed.
+            <p><img src="https://plugins.octoprint.org/assets/img/repo-600x400.png"></p>
+            
+          ]]>
+        </description>
+        <pubDate>
+Wed, 17 Feb 2021 00:00:00 -0600</pubDate>
+        <link>https://plugins.octoprint.org/plugins/TpLinkAutoShutdown/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/TpLinkAutoShutdown/</guid>
+        
+        <category>Printer</category>
+        
+        <category>Kasa</category>
+        
+        <category>Tp-Link</category>
+        
+        <category>Auto_Shutdown</category>
+        
+      </item>
     
       <item>
         <title>GPIO Control</title>
@@ -254,29 +278,6 @@ Sun, 17 Jan 2021 00:00:00 -0600</pubDate>
         <category>pushbutton</category>
         
         <category>printer interface</category>
-        
-      </item>
-    
-      <item>
-        <title>WebDAV Backup</title>
-        <description>
-          <![CDATA[
-            This plugin will automatically save a copy of your OctoPrint backup to a WebDAV server upon completion.
-            <p><img src="https://plugins.octoprint.org/assets/img/plugins/webdavbackup/configuration_screen.png"></p>
-          ]]>
-        </description>
-        <pubDate>
-Sat, 16 Jan 2021 00:00:00 -0600</pubDate>
-        <link>https://plugins.octoprint.org/plugins/webdavbackup/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/webdavbackup/</guid>
-        
-        <category>Backup</category>
-        
-        <category>WebDAV</category>
-        
-        <category>Nextcloud</category>
-        
-        <category>OwnCloud</category>
         
       </item>
     
