@@ -1,7 +1,7 @@
 ---
 layout: plugin
 id: gpiocontrol
-title: OctoPrint-GpioControl
+title: GPIO Control
 description: GPIO Control adds a sidebar with on/off buttons. You can add as many buttons as you want that will control each device connected to your Raspberry Pi.
 authors:
 - Damian Wójcik
@@ -31,14 +31,7 @@ compatibility:
 
 ---
 
-# OctoPrint GPIO Control
-
-GPIO Control adds a sidebar with on/off buttons. You can add as many buttons as you want that will control each device connected to your Raspberry Pi.
-
 Very useful if you want to add some electronic/improvements to your printer.
-
-![GpioControl](/assets/img/plugins/gpiocontrol/sidebar.png)
-![GpioControl](/assets/img/plugins/gpiocontrol/settings.png)
 
 ## Setup
 
