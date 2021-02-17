@@ -35,8 +35,8 @@ screenshots:
   alt: floating webcam
   caption: Floating resizeable webcam overlay
 - url: /assets/img/plugins/uicustomizer/settings.png
-  alt: setting
-  caption: Mobile friendly settings
+  alt: theme
+  caption: Select themes
 
 
 featuredimage: /assets/img/plugins/uicustomizer/responsive.png
@@ -46,6 +46,7 @@ featuredimage: /assets/img/plugins/uicustomizer/responsive.png
 
 A [OctoPrint](https://github.com/foosel/OctoPrint) plugin that allows you to customize the look and feel of the user interface.
 It also features a lot of other fixes and improvements:
+* Themes/skins - choose between 6 themes and more are coming soon
 * Customize tabs: Change icon, labels, order, show/hide
 * Change width of the columns
 * Sort the order to icons in the menu bar (top icons)
@@ -74,7 +75,7 @@ or manually using this URL:
 
 
 ### Configuration
-The configuration is split into 5 tabs - all have an preview option
+The configuration is split into 6 tabs - all have an preview option in the top right menu
 
 #### General
 * Improve mobile/responsive - enable the improved responsive modes including settings for mobile screens etc.
@@ -87,6 +88,9 @@ The configuration is split into 5 tabs - all have an preview option
 * Zoom/float webcam icon - will add an zoom icon to the webcam live feed that will popup out the webcam video feed into a floating resizeable overlay
 * Gcode full-size - maximize the main gcode viewer to take up as much space as possible
 * Compress temp. controls - compress/minimize the temperature controls in the temperature main tab
+
+#### Themes
+Select a theme - notice you can enable preview and see the theme in a realtime preview
 
 
 #### Layout
@@ -107,13 +111,10 @@ The main/center tabs can be changed using this settings panel.
 
 
 #### Top icons
-
 This allows you to change the look & feel of the top icons in top menu
 * Compact ["Navbar temperature plugin"](https://plugins.octoprint.org/plugins/navbartemp/) - will add icons and shrink the temperature display on this awesome plugin
 * Center topbar icons - will horizontal center the extra plugins/top icons in the topbar
 * Icon order - change the order in which the icons are displayed in the top menu bar - notice some icons can be hidden. Turn on "Preview" to see them
 
-#### Advanced
-
+### Advanced
 * Disable terminal when hidden - Disables the terminal update when the terminal tab is in the background - gives a small perfomance boost.
-
