@@ -14,7 +14,7 @@ date: 2021-02-19
 
 homepage: https://github.com/DavideM84/OctoPrint-IgnorePausedForUser
 source: https://github.com/DavideM84/OctoPrint-IgnorePausedForUser
-archive: https://github.com/DavideM84/OctoPrint-IgnorePausedForUser/archive/v1.2.2.zip
+archive: https://github.com/DavideM84/OctoPrint-IgnorePausedForUser/archive/main.zip
 
 # Set this to true if your plugin uses the dependency_links setup parameter to include
 # library versions not yet published on pypi. SHOULD ONLY BE USED IF THERE IS NO OTHER OPTION!
