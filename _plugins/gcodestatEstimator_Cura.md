@@ -3,7 +3,7 @@ layout: plugin
 
 id: gcodestatEstimator_Cura
 title: GcodeStat Estimator Cura
-description: uses data put in to gcode by Cura to estimate time to finish print
+description: uses data put in to gcode by Cura to estimate remaining printtime
 author: Nils Hendrik Rottgardt, Based on Bogdan Kecman
 license: unlicence
 date: 2021-02-20
@@ -25,10 +25,10 @@ compatibility:
   octoprint:
   - 1.3.9
 
-  python: ">=2.7,<4"
 ---
 
-# Estimator is based on Arhi Script but adapted to needs of Cura
+# Estimator is based on Arhi Script and changed to needs of Cura
+With this plugin and active Post Processing in Cura you will get an excact estimation of time remaining as it will set from information analysed in the slicer (Cura). So it will be very accurate.
 
 ## Requirement
  * Needs M73 and M117 codes in your G-Code in Cura format. M73 contains percentage done and M117 remaining time.
