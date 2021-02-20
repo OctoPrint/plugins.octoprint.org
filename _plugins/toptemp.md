@@ -39,7 +39,7 @@ featuredimage: /assets/img/plugins/toptemp/main.png
 
 ---
 ## Top Temp
-![preview](/assets/img/plugins/bedlevelvisualizer/main.png)
+![preview](/assets/img/plugins/toptemp/main.png)
 A plugin that will show you the temperatures in the navbar/topbar of OctoPrint. It can display the hotend, chamber, all tools/hotends and also add an unlimited number of your own “top widgets” for example showing cpu temperature, fan speed - well anything that is a number (for now) that you can get back from running a command.
 
 It can all be customized and setup to fit your needs:
