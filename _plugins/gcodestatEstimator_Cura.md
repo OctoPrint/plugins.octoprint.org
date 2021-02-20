@@ -18,7 +18,6 @@ tags:
 - estimation
 - time
 - print time
-- cura
 
 compatibility:
 
