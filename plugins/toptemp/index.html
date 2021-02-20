@@ -41,24 +41,6 @@
     <meta name="twitter:site" content="@OctoPrint3D" />
     <meta name="twitter:title" content="Top Temp" />
     <meta name="twitter:description" content="Top Temp
-A OctoPrint plugin that will show you the temperatures in the navbar/topbar of OctoPrint. It can display the hotend, chamber, all tools/hotends and also add an unlimited number of your own “top widgets” for example showing cpu temperature, fan speed - well anything that is a number (for now) that you can get back from running a command.
-It can all be customized and setup to fit your needs:
-
-  Add a small background graph to show the history
-  Customizable “widgets” can have different run intervals
-  Show temperature in Celsius or Fahrenheit
-  Hide printer temperatures when not operational
-  Set padding between each and outer margin
-  Sort the order of the “widgets”
-  Show target temperature
-  Show target progress aka getting hotter or colder
-  Show temperature symbol
-  Set label or no label to be shown
-  Icon or no icon to be shown
-  Colorize icons to indicate when hot
-  Number of digits to display
-  Set background graph transparency, height, line width and color
-  Realtime preview
 
 
 " />
@@ -68,24 +50,6 @@ It can all be customized and setup to fit your needs:
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://plugins.octoprint.org/assets/img/plugins/toptemp/main.png" />
     <meta property="og:description" content="Top Temp
-A OctoPrint plugin that will show you the temperatures in the navbar/topbar of OctoPrint. It can display the hotend, chamber, all tools/hotends and also add an unlimited number of your own “top widgets” for example showing cpu temperature, fan speed - well anything that is a number (for now) that you can get back from running a command.
-It can all be customized and setup to fit your needs:
-
-  Add a small background graph to show the history
-  Customizable “widgets” can have different run intervals
-  Show temperature in Celsius or Fahrenheit
-  Hide printer temperatures when not operational
-  Set padding between each and outer margin
-  Sort the order of the “widgets”
-  Show target temperature
-  Show target progress aka getting hotter or colder
-  Show temperature symbol
-  Set label or no label to be shown
-  Icon or no icon to be shown
-  Colorize icons to indicate when hot
-  Number of digits to display
-  Set background graph transparency, height, line width and color
-  Realtime preview
 
 
 " />
@@ -95,24 +59,6 @@ It can all be customized and setup to fit your needs:
     <meta itemscope itemtype="http://schema.org/WebPage" />
     <meta itemprop="headline" content="Top Temp" />
     <meta itemprop="description" content="Top Temp
-A OctoPrint plugin that will show you the temperatures in the navbar/topbar of OctoPrint. It can display the hotend, chamber, all tools/hotends and also add an unlimited number of your own “top widgets” for example showing cpu temperature, fan speed - well anything that is a number (for now) that you can get back from running a command.
-It can all be customized and setup to fit your needs:
-
-  Add a small background graph to show the history
-  Customizable “widgets” can have different run intervals
-  Show temperature in Celsius or Fahrenheit
-  Hide printer temperatures when not operational
-  Set padding between each and outer margin
-  Sort the order of the “widgets”
-  Show target temperature
-  Show target progress aka getting hotter or colder
-  Show temperature symbol
-  Set label or no label to be shown
-  Icon or no icon to be shown
-  Colorize icons to indicate when hot
-  Number of digits to display
-  Set background graph transparency, height, line width and color
-  Realtime preview
 
 
 " />
@@ -245,11 +191,23 @@ It can all be customized and setup to fit your needs:
         Show the temperatures of everything in the navbar/topbar of OctoPrint. It can display the hotend, chamber, all tools/hotends and also add an unlimited number of your own “top widgets” for example showing cpu temperature, fan speed - well anything that is a number (for now) that you can get back from running a command.
       </p>
       <h2 id="top-temp">Top Temp</h2>
-<p>A OctoPrint plugin that will show you the temperatures in the navbar/topbar of OctoPrint. It can display the hotend, chamber, all tools/hotends and also add an unlimited number of your own “top widgets” for example showing cpu temperature, fan speed - well anything that is a number (for now) that you can get back from running a command.
-It can all be customized and setup to fit your needs:</p>
+<p><img src="/assets/img/plugins/toptemp/main.png" alt="preview" /></p>
+
+<p>A plugin that will show you the temperatures in the navbar/topbar of OctoPrint. It can display the hotend, chamber, all tools/hotends and also add an unlimited number of your own “top widgets” for example showing cpu temperature, fan speed - well anything that is a number (for now) that you can get back from running a command.</p>
+
+<p>It can all be customized and setup to fit your needs:</p>
 <ul>
-  <li>Add a small background graph to show the history</li>
+  <li>Add a small background graph to show the history directly in the topbar</li>
   <li>Customizable “widgets” can have different run intervals</li>
+  <li>4 different custom types:
+    <ul>
+      <li>Command: Run a local command on the RPI/PC and get the result back</li>
+      <li>GCode sent: Get data from the GCode being sent. For example: Cooling fan speed, Feedrate, Z-height</li>
+      <li>From printer: Get data based on data from the printer. For example:M105 commands with ambient and probe temp if you printer support its</li>
+      <li>Server data: CPU percentage/frequency, load average, memory total/avail/used/free, swap, disk free/total/used, all sensors (temperatures and fans), battery timeleft/percentage</li>
+    </ul>
+  </li>
+  <li>Popover graphs with full history with a quick clance</li>
   <li>Show temperature in Celsius or Fahrenheit</li>
   <li>Hide printer temperatures when not operational</li>
   <li>Set padding between each and outer margin</li>
@@ -265,34 +223,36 @@ It can all be customized and setup to fit your needs:</p>
   <li>Realtime preview</li>
 </ul>
 
-<h3 id="planned-features">Planned features</h3>
+<h2 id="planned-features">Planned features</h2>
 <ul>
-  <li>Popover with extra information/history and full graph</li>
-  <li>Set lowpoint for custom graphs</li>
   <li>Small font options</li>
   <li>Max width per “widget”</li>
-  <li>More custom/predefined tools: Wifi signal, Disk space, Fan speed, CPU percentage</li>
-  <li>Custom option to set as not a temperature (no fahrenheit conversion and no check for number)</li>
-  <li>Custom option postfix label (rpm etc)</li>
 </ul>
 
-<h3 id="setup">Setup</h3>
+<h2 id="setup">Setup</h2>
 <p>Install via the bundled <a href="https://github.com/foosel/OctoPrint/wiki/Plugin:-Plugin-Manager">Plugin Manager</a>
 or manually using this URL:
     https://github.com/LazeMSS/OctoPrint-TopTemp/archive/main.zip</p>
 
-<h3 id="configuration">Configuration</h3>
-<p>Install and read the onscreen information - it should be pretty self-explanatory else play with it :)</p>
+<h2 id="configuration">Configuration</h2>
+<p>Install and read the onscreen information - it should be pretty self-explanatory else play with it :)
+<img src="/assets/img/plugins/toptemp/configuration.png" alt="configuration" /></p>
 
-<h3 id="custom-commands">Custom commands</h3>
+<h2 id="custom-commands">Custom commands</h2>
 <p>The custom commands allow you to run any OS command by entering a command into the “Command” field. There is a Test button that will run the command and let you validate the returned data. At the moment the returned data has to be a number (float or integer) and will be fixed
 If the plugin has detected any known ways of finding interesting data on startup this will be shown in Predefined dropdown button.
 At the moment it only looks for known CPU temperature, but if you know of any good generic ways to display interesting data then post it here https://github.com/LazeMSS/OctoPrint-TopTemp/issues</p>
 
-<h3 id="3rd-party-software">3RD Party software</h3>
+<h2 id="3rd-party-software">3RD Party software</h2>
 <ul>
-  <li>http://gionkunz.github.io/chartist-js/index.html
-This plugin uses the wonderful CHARTIST.JS library to make the svg graphs</li>
+  <li>
+    <p>http://gionkunz.github.io/chartist-js/index.html
+This plugin uses the wonderful CHARTIST.JS library to make the svg graphs</p>
+  </li>
+  <li>
+    <p>https://psutil.readthedocs.io/en/latest/#
+The included psutil in octoprint is used and gives all the important cpu/disk etc. data.</p>
+  </li>
 </ul>
 
 
@@ -363,7 +323,7 @@ This plugin uses the wonderful CHARTIST.JS library to make the svg graphs</li>
       
       <dl class="install_events">
         <dt>New installs the past week</dt>
-        <dd>At least <strong>225</strong> new installations</dd>
+        <dd>At least <strong>221</strong> new installations</dd>
       </dl>
       
       
