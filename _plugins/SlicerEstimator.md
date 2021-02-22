@@ -26,9 +26,12 @@ screenshots:
 - url: /assets/img/plugins/SlicerEstimator/Gcode.png
   alt: Gcode
   caption: Gcode
-- url: /assets/img/plugins/SlicerEstimator/Settings.png
-  alt: OctoPrint Settings
-  caption: OctoPrint Settings
+- url: /assets/img/plugins/SlicerEstimator/Settings_Basic.png
+  alt: OctoPrint selecion of the Slicer
+  caption: OctoPrint Basic Settings
+- url: /assets/img/plugins/SlicerEstimator/Settings_Custom.png
+  alt: OctoPrint Custom Settings
+  caption: OctoPrint Custom Settings
 - url: /assets/img/plugins/SlicerEstimator/Cura.png
   alt: Cura Settings
   caption: Cura Settings  
