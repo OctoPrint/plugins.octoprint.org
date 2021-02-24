@@ -25,7 +25,7 @@ screenshots:
   alt: UBL Mesh Editor
   caption: UBL Mesh Editor
 
-featuredimage: /assets/img/plugins/ublmeshedit/screenshot.png.
+featuredimage: /assets/img/plugins/ublmeshedit/screenshot.png
 
 # You only need the following if your plugin requires specific OctoPrint versions or
 # specific operating systems to function - you can safely remove the whole
