@@ -80,3 +80,12 @@ More boards can be added, please request additions via a [Github issue](https://
 * A navbar icon can be enabled to give quick access to the Firmware Updater user interface
 
 Full documentation is available on the [plugin's homepage](https://github.com/OctoPrint/OctoPrint-FirmwareUpdater).
+
+### Support
+For problems or bug reports, or to request support for a new board, please open a [Github issue](https://github.com/OctoPrint/OctoPrint-FirmwareUpdater/issues).
+
+For general support:
+* Use the [#support-plugins](https://discord.com/channels/704958479194128507/708230241285439518) Discord channel
+* Post in the OctoPrint Community [Plugins](https://community.octoprint.org/c/plugins/12) category
+
+In either case, you can mention `@benlye` in your message to get my attention.

@@ -59,6 +59,11 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.metadata_token }}
 
+      - name: 🏗 Enrich py2 check overlays
+        if: github.repository == 'OctoPrint/plugins.octoprint.org' && github.event_name != 'pull_request'
+        run: |
+          python ./src/.github/scripts/populate_py2_overlays.py
+
       - name: 📦 Cache jekyll build bundle
         uses: actions/cache@v2
         with:

@@ -2,7 +2,7 @@
 layout: plugin
 
 id: SimplyPrint
-title: SimplyPrint cloud
+title: SimplyPrint Cloud
 description: 3D print online anywhere; elevate your 3D printing experience from your computer or phone, with smart features like filament manager, livestream, print queue, and much more. Simple, beautiful, smart.
 authors:
 - SimplyPrint

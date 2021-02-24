@@ -1,0 +1,50 @@
+name: Report an abandoned plugin
+about: Use this to report plugins that have been confirmed as abandoned
+title: '[Abandoned Plugin] <insert name of plugin here>'
+labels: 'abandoned plugin'
+issue_body: false
+body:
+  - type: markdown
+    attributes:
+      value: >
+        It might happen that a plugin becomes abandoned by its maintainer.
+
+
+        If it looks like this is the case, please first try to get in touch with the maintainer,
+        e.g. by opening a (friendly!) ticket on the plugin's repository asking if it is still
+        being actively maintained by the author and if not if they would be open to putting it up
+        for adoption.
+
+
+        If you do not get a response on this within a reasonable time (use the general response times
+        on the tracker to judge this) then report the plugin as abandoned here. Be sure to include
+        the ticket on the plugin's tracker you opened to confirm abandonment.
+
+
+        If you or someone else is open to taking over plugin maintenance, please also
+        mention them.
+  - type: input
+    attributes:
+      label: Which Plugin?
+      description: >-
+        Please enter the URL to the **plugin page on the plugin repository** so there's no ambiguity!
+      placeholder: https://plugins.octoprint.org/...
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Link to ticket on plugin's issue tracker confirming abandonment
+      description: >-
+        We either need a link to a ticket on the plugin's issue tracker or to some other
+        form of proof that the plugin in fact has been abandoned. If no such thing exists
+        yet then please create a ticket asking the maintainer if the plugin is still being
+        maintained, and only if you don't hear anything back within a reasonable time come
+        back here and report the plugin as abandoned.
+      placeholder: https://...
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Is there someone open to adopting it?
+      description: If you know someone who is open to adopt this plugin, please @-mention them here!
+      placeholder: "@..."
