@@ -61,13 +61,13 @@ Installing SimplyPrint on your Raspberry Pi instantly elevates your 3D printing 
 - Queue the prints you can't wait to print!
 - _And much more..._
 
-Read more about SimplyPrint and its features on [https://simplyprint.io/](https://simplyprint.io/)
+Read more about SimplyPrint and its features on [https://simplyprint.io/](https://simplyprint.io/?utm_source=octoprint)
 
 # SimplyPrint installation
 
 ![installation](/assets/img/plugins/SimplyPrint/installation.gif "The SimplyPrint installation")
 - Install the `SimplyPrint Cloud` plugin
-- Follow the instruction that appears after install _(finish install on the [SimplyPrint website](https://simplyprint.io/))_
+- Follow the instruction that appears after install _(finish install on the [SimplyPrint website](https://simplyprint.io/?utm_source=octoprint))_
 - You're done in less than 2 minutes!
 
 ## Companion app
@@ -81,13 +81,13 @@ We have a **free** plan called "Basic", which will remain free forever. This pla
 
 For those who want a little more out of their 3D printer, we have two subscription plans with features like; _smart filament changing, smart-rotation in slicer, up to 1 FPS webcam stream, SMS notifications, statistics, print queue_ & much more
 
-See the full list of features that our different subscription plans have on the [SimplyPrint website](https://simplyprint.io/).
+See the full list of features that our different subscription plans have on the [SimplyPrint website](https://simplyprint.io/?utm_source=octoprint).
 
 
 ## Future plans for SimplyPrint
 
 We have _a lot_ of stuff planned for the near future, we're **still in beta**, so this is just the beginning!
-Check out our public roadmap at; [https://simplyprint.io/roadmap](https://simplyprint.io/roadmap)
+Check out our public roadmap at; [https://simplyprint.io/roadmap](https://simplyprint.io/roadmap?utm_source=octoprint)
 
 <hr />
 
@@ -103,9 +103,9 @@ To enhance the user experience as much as possible, SimplyPrint takes control of
 
 ### Questions, comments or want to join the community?
 
-We have a live chat support on our website _(open 5 hours all week days, in our local timezone, GMT+1, sorry, we're just 3 guys on the project, living in Denmark :))_. You can also always [send us an email at contact@simplyprint.io](contact@simplyprint.io)
+We have a live chat support on our website _(open 5 hours all week days, in our local timezone, GMT+1, sorry, we're just 3 guys on the project, living in Denmark :))_. You can also always [send us an email at contact@simplyprint.io](mailto:contact@simplyprint.io)
 
-Also, come hang out with us in our [Facebook group](facebook.com/groups/simplyprint)! A strong community is important to us, and we always listen to suggestions _(and often implement them),_ we and usually fix problems _lighning fast_ ;)
+Also, come hang out with us in our [Facebook group](https://facebook.com/groups/simplyprint/)! A strong community is important to us, and we always listen to suggestions _(and often implement them),_ we and usually fix problems _lighning fast_ ;)
 
 
 <a href="https://www.facebook.com/simplyprintDK"><i class="fab fa-facebook fa-2x" style="color:#29ABE2;"></i></a>&nbsp;<a href="https://www.youtube.com/channel/UC-fVuu_ny14RV3COTi0CVDw"><i class="fab fa-youtube-square fa-2x" style="color:#29ABE2;"></i></a>&nbsp;<a href="https://twitter.com/SimplyPrint3D"><i class="fab fa-twitter-square fa-2x" style="color:#29ABE2;"></i></a>
