@@ -10,7 +10,7 @@ authors:
 license: GNU v3.0
 
 # today's date in format YYYY-MM-DD, e.g.
-date: 2021-02-19
+date: 2021-02-25
 
 homepage: https://github.com/DavideM84/OctoPrint-IgnorePausedForUser
 source: https://github.com/DavideM84/OctoPrint-IgnorePausedForUser
