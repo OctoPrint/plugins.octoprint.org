@@ -3,7 +3,7 @@ layout: plugin
 
 id: uicustomizer
 title: UI Customizer
-description: Customize the layout of OctoPrint userinterface, add webcam widget and more. Make the UI mobile responsive, add a floating webcam overlay.
+description: Customize Octoprint: 5+ awesome themes, webcam and gcode widgets, rearrange layout and support mobile/tablets and much more...
 authors:
 - Mikkel Skovgaard
 license: AGPLv3
