@@ -5,7 +5,7 @@ id: ignorepausedforuser
 title: IgnorePausedForUser
 description: Plugin to ignore 'Paused for User' message from printer.
 authors:
-- Davide Mencarelli <d.mencarelli@outlook.com>
+- Davide Mencarelli
 #- second autor name
 license: GNU v3.0
 
