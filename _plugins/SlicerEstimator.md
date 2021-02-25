@@ -53,6 +53,6 @@ You can select a predefined slicer or change configuration according your needs.
 
  Example for custom configuration: For the following command "M117 100% Remaining 1 weeks 6 days ( 07:54:19 )" you can use RegEx "M117 .+ Remaining ([0-9]+) weeks.+" with Match 1 to get the weeks. To get the minutes you should use "M117 .+ Remaining .+\( ([0-9]+):([0-9]+):([0-9]+) \)" and Match 2 to avoid an issue if weeks are not shown. 
 
-I like to suggest regex101.com for testing and to get the right match group.
+ I like to suggest regex101.com for testing and to get the right match group.
 
 More configurations can be added, please request additions via a [Github issue](https://github.com/NilsRo/OctoPrint-SlicerEstimator/issues).

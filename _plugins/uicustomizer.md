@@ -50,6 +50,7 @@ featuredimage: /assets/img/plugins/uicustomizer/responsive.png
 
 ---
 ## UI Customizer
+![feature](/assets/img/plugins/uicustomizer/responsive.png)
 
 A [OctoPrint](https://github.com/foosel/OctoPrint) plugin that allows you to customize the look and feel of the user interface.
 It also features a lot of other fixes and improvements:
