@@ -52,9 +52,9 @@ Be sure to [check out the screenshots](#Screenshots) below for more details!
 
 ## Setup
 
-Install manually using this URL:
+Find it in the plugin manager or install manually using this URL:
 
-    https://github.com/cp2004/OctoPrint-EEPROM-Marlin/archive/master.zip
+    https://github.com/cp2004/OctoPrint-EEPROM-Marlin/releases/latest/download/release.zip
 
 ## Firmware requirements
 

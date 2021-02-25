@@ -1,10 +1,10 @@
-name: Suspicious plugin activity
+name: Report suspicious plugin activity
 about: Use this to report plugins that are doing something malicious and/or undocumented (e.g. crypto mining, suspicious network connections, unannounced tracking without opt-in, ...)
 title: '[Suspicious Plugin Activity] <insert name of plugin here>'
 labels: 'suspicious plugin activity'
 issue_body: true
-inputs:
-  - type: description
+body:
+  - type: markdown
     attributes:
       value: >
         You might come across a plugin that appears to be doing something suspicious that it shouldn't,
@@ -21,15 +21,18 @@ inputs:
       description: >-
         Please enter the URL to the **plugin page on the plugin repository** so there's no ambiguity!
       placeholder: https://plugins.octoprint.org/...
+    validations:
       required: true
   - type: dropdown
     attributes:
       label: What kind of suspicious activity are you reporting?
-      choices:
+      options:
         - installing things on the system without my consent
         - tracking without opt-in
         - suspicious network activity
+        - crypto mining
         - something else (specify below)
+    validations:
       required: true
   - type: input
     attributes:
@@ -48,8 +51,9 @@ inputs:
         If there's no public issue tracker, some other form of proof should be provided
         here that the an attempt at a friendly resolution was actually made.
       placeholder: https://...
+    validations:
       required: true
-  - type: description
+  - type: markdown
     attributes:
       value: >
         ### Further information you want to provide

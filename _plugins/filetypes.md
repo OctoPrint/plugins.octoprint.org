@@ -27,6 +27,8 @@ screenshots:
   caption: Filetypes
 
 featuredimage: /assets/img/plugins/filetypes/screen.jpg
+
+abandoned: https://github.com/OctoPrint/plugins.octoprint.org/issues/796
 ---
 
 Small and simple plugin. Now you can specify what kind of files you want to see in upload dialog.

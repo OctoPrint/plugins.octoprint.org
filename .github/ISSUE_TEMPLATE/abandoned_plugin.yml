@@ -1,10 +1,10 @@
-name: Abandoned Plugin
+name: Report an abandoned plugin
 about: Use this to report plugins that have been confirmed as abandoned
 title: '[Abandoned Plugin] <insert name of plugin here>'
 labels: 'abandoned plugin'
 issue_body: false
-inputs:
-  - type: description
+body:
+  - type: markdown
     attributes:
       value: >
         It might happen that a plugin becomes abandoned by its maintainer.
@@ -29,6 +29,7 @@ inputs:
       description: >-
         Please enter the URL to the **plugin page on the plugin repository** so there's no ambiguity!
       placeholder: https://plugins.octoprint.org/...
+    validations:
       required: true
   - type: input
     attributes:
@@ -40,6 +41,7 @@ inputs:
         maintained, and only if you don't hear anything back within a reasonable time come
         back here and report the plugin as abandoned.
       placeholder: https://...
+    validations:
       required: true
   - type: input
     attributes:
