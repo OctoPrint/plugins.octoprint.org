@@ -37,7 +37,7 @@ screenshots:
   caption: Cura Settings  
 ---
 
-# Slicer Estimator - a generic implemenation for an accurate remaining time
+# Slicer Estimator - a generic implementation for an accurate remaining time
 With this plugin and active Post Processing in e.g. Cura you will get an exact estimation of time remaining as it will set from information analysed in the slicer. So it will be very accurate. Thanks to arhi for the idea and first implementation.
 
 You can select a predefined slicer or change configuration according your needs.
