@@ -14,7 +14,7 @@ date: 2015-10-28
 
 homepage: https://github.com/mkevenaar/OctoPrint-Slack
 source: https://github.com/mkevenaar/OctoPrint-Slack
-archive: https://github.com/mkevenaar/OctoPrint-Slack/archive/master.zip
+archive: https://github.com/mkevenaar/OctoPrint-Slack/releases/latest/download/release.zip
 
 # set this to true if your plugin uses the dependency_links setup parameter to include
 # library versions not yet published on PyPi. SHOULD ONLY BE USED IF THERE IS NO OTHER OPTION!
