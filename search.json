@@ -292,7 +292,7 @@
 "date": "2015-10-28 00:00:00 -0500",
 "title": "Slack",
 "description": "Send message to Slack chat when printing events happen",
-"author": "Richard Joyce",
+"author": "Maurice Kevenaar, Richard Joyce",
 "content": "Send messages to your group’s Slack chat when printing events happen! You need to set up an Incoming Webhook integration on the Slack side to use this.Features  Select which events you want to trigger a chat notification for  Customizable messages for each event  Customize bot icon and username in Slack chat  Sends elapsed time of print after finished",
 "tags": ["notification"]
 },
