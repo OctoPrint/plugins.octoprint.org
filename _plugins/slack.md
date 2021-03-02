@@ -4,15 +4,17 @@ layout: plugin
 id: slack
 title: Slack
 description: Send message to Slack chat when printing events happen
-author: Richard Joyce
+authors: 
+  - Maurice Kevenaar
+  - Richard Joyce
 license: MIT
 
 # today's date in format YYYY-MM-DD, e.g.
 date: 2015-10-28
 
-homepage: https://github.com/richjoyce/OctoPrint-Slack
-source: https://github.com/richjoyce/OctoPrint-Slack
-archive: https://github.com/richjoyce/OctoPrint-Slack/archive/master.zip
+homepage: https://github.com/mkevenaar/OctoPrint-Slack
+source: https://github.com/mkevenaar/OctoPrint-Slack
+archive: https://github.com/mkevenaar/OctoPrint-Slack/releases/latest/download/release.zip
 
 # set this to true if your plugin uses the dependency_links setup parameter to include
 # library versions not yet published on PyPi. SHOULD ONLY BE USED IF THERE IS NO OTHER OPTION!
@@ -36,7 +38,9 @@ screenshots:
 
 featuredimage: /assets/img/plugins/slack/slack.png
 
-abandoned: https://github.com/OctoPrint/plugins.octoprint.org/issues/797
+compatibility:
+  python: ">=2.7,<4"
+
 ---
 Send messages to your group's Slack chat when printing events happen! You need to set up an [Incoming Webhook](https://my.slack.com/services/new/incoming-webhook) integration on the Slack side to use this.
 
