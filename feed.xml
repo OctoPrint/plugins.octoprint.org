@@ -5,10 +5,27 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>https://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 01 Mar 2021 18:22:11 -0600</pubDate>
-    <lastBuildDate>Mon, 01 Mar 2021 18:22:11 -0600</lastBuildDate>
+    <pubDate>Tue, 02 Mar 2021 00:21:33 -0600</pubDate>
+    <lastBuildDate>Tue, 02 Mar 2021 00:21:33 -0600</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
+    
+      <item>
+        <title>OctoPrint-TranslateModel</title>
+        <description>
+          <![CDATA[
+            A plugin to move models around without re-slicing.
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/translatemodel/viewerGraphic.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Mon, 01 Mar 2021 00:00:00 -0600</pubDate>
+        <link>https://plugins.octoprint.org/plugins/translatemodel/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/translatemodel/</guid>
+        
+        <category>gcode</category>
+        
+      </item>
     
       <item>
         <title>IgnorePausedForUser</title>
@@ -228,39 +245,6 @@ Tue, 26 Jan 2021 00:00:00 -0600</pubDate>
         <category>prusa</category>
         
         <category>marlin</category>
-        
-      </item>
-    
-      <item>
-        <title>Top Temp</title>
-        <description>
-          <![CDATA[
-            Show the temperatures of everything in the navbar/topbar of OctoPrint. It can display the hotend, chamber, all tools/hotends and also add an unlimited number of your own “top widgets” for example showing cpu temperature, fan speed - well anything that is a number (for now) that you can get back from running a command.
-            <p><img src="https://plugins.octoprint.org/assets/img/plugins/toptemp/main.png"></p>
-          ]]>
-        </description>
-        <pubDate>
-Sun, 24 Jan 2021 00:00:00 -0600</pubDate>
-        <link>https://plugins.octoprint.org/plugins/toptemp/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/toptemp/</guid>
-        
-        <category>temperature</category>
-        
-        <category>widgets</category>
-        
-        <category>customize</category>
-        
-        <category>fan</category>
-        
-        <category>navbar</category>
-        
-        <category>temp</category>
-        
-        <category>heater</category>
-        
-        <category>tool</category>
-        
-        <category>chamber</category>
         
       </item>
     

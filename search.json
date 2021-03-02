@@ -3122,6 +3122,17 @@
 "author": "Davide Mencarelli",
 "content": "IgnorePausedForUserOctoprint plugin to ignore ‘Paused for User’ message from printer.Occasionally when printing from Octoprint the printer stuck with the message “Paused for user”.This plugin when receives that message from the printer, sends an M108 to resume printing immediately.Obviously it should not be used if one or more filament changes are planned.",
 "tags": ["paused for user","pause","ignore pause","stuck print"]
+},
+
+{
+"id": "/plugins/translatemodel",
+"url": "/plugins/translatemodel/",
+"date": "2021-03-01 00:00:00 -0600",
+"title": "OctoPrint-TranslateModel",
+"description": "A plugin to move models around without re-slicing.",
+"author": "Will MacCormack",
+"content": "OctoPrint-TranslateModelTranslate Model allows you to move models around in gcode files without reslicing.Features  Select files via the translate button in the file pane  Quick and easy model movement along the x and y axes  Options to automatically print files after translationSetupInstall via the bundled Plugin Manageror manually using this URL:https://github.com/Willmac16/OctoPrint-TranslateModel/archive/main.zip  This plugin will compile its C++ code on install, but this should be pretty quick.See the GitHub page for up-to-date information.",
+"tags": ["gcode"]
 }
 ]
 }
