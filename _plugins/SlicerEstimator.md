@@ -48,6 +48,6 @@ The default configuration matches the syntax of the following slicers, but you c
 * PrusaSlicer
 
 
-A more detailed description and manual is available on Github.
+A more detailed description and manual is available on Github - the plugin's homepage on the right.
 
 More configurations can be added, please request additions via a [Github issue](https://github.com/NilsRo/OctoPrint-SlicerEstimator/issues).
