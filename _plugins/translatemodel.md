@@ -28,7 +28,7 @@ screenshots:
   alt: File Translate example
   caption: easily move gcode models all within OctoPrint
 
-featuredimage: url of a featured image for your plugin, /assets/img/plugins/translatemodel/viewerGraphic.png
+featuredimage: /assets/img/plugins/translatemodel/viewerGraphic.png
 
 compatibility:
 
