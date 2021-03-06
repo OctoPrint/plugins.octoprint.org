@@ -2,8 +2,8 @@
 layout: plugin
 
 id: SlicerEstimator
-title: Slicer Estimator
-description: Slicer Estimator is a generic implemenation to read accurate remaining time to print embedded in the GCODE file by the slicer
+title: Slicer Print Time Estimator
+description: Slicer Print Time Estimator is a generic implemenation to read accurate remaining time to print embedded in the GCODE file by the slicer
 author: Nils Hendrik Rottgardt
 license: AGPLv3
 date: 2021-02-24
@@ -21,6 +21,8 @@ tags:
 
 compatibility:
   python: ">=2.7,<4"
+  octoprint:
+  - 1.3.9
 
 screenshots:
 - url: /assets/img/plugins/SlicerEstimator/Gcode.png
@@ -37,7 +39,7 @@ screenshots:
   caption: Cura Settings  
 ---
 
-# Slicer Estimator - for an accurate remaining time to print
+# Slicer Print Time Estimator - for an accurate remaining time to print
 With this plugin you can use the more accurate estimation of time remaining of the slicer instead of Octoprints estimations. So it will be very accurate, as the slicer created each command of the GCODE. Thanks to arhi for the idea and first implementation.
 
 The default configuration matches the syntax of the following slicers, but you can change it in the plugins custom settings according your needs.
