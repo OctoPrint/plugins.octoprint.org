@@ -3095,10 +3095,10 @@
 "id": "/plugins/SlicerEstimator",
 "url": "/plugins/SlicerEstimator/",
 "date": "2021-02-24 00:00:00 -0600",
-"title": "Slicer Estimator",
-"description": "Slicer Estimator is a generic implemenation to read accurate remaining time to print embedded in the GCODE file by the slicer",
+"title": "Slicer Print Time Estimator",
+"description": "Slicer Print Time Estimator is a generic implemenation to read accurate remaining time to print embedded in the GCODE file by the slicer",
 "author": "Nils Hendrik Rottgardt",
-"content": "Slicer Estimator - for an accurate remaining time to printWith this plugin you can use the more accurate estimation of time remaining of the slicer instead of Octoprints estimations. So it will be very accurate, as the slicer created each command of the GCODE. Thanks to arhi for the idea and first implementation.The default configuration matches the syntax of the following slicers, but you can change it in the plugins custom settings according your needs.  Cura  Cura M117  Simplify3D  PrusaSlicerA more detailed description and manual is available on Github - the plugin’s homepage on the right.More configurations can be added, please request additions via a Github issue.",
+"content": "Slicer Print Time Estimator - for an accurate remaining time to printWith this plugin you can use the more accurate estimation of time remaining of the slicer instead of Octoprints estimations. So it will be very accurate, as the slicer created each command of the GCODE. Thanks to arhi for the idea and first implementation.The default configuration matches the syntax of the following slicers, but you can change it in the plugins custom settings according your needs.  Cura  Cura M117  Simplify3D  PrusaSlicerA more detailed description and manual is available on Github - the plugin’s homepage on the right.More configurations can be added, please request additions via a Github issue.",
 "tags": ["helper","estimator","estimation","time","print time"]
 },
 
