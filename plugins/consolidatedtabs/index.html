@@ -189,62 +189,86 @@
       </p>
       <h1 id="consolidated-tabs">Consolidated Tabs</h1>
 
-<p>This plugin will allow you to combine the selected tabs into a single tab as draggable and resizable panels. Click the screenshot below to see an example YouTube video.</p>
+<p>This plugin will allow you to consolidate any OctoPrint tab into a single Consolidated Tab as a draggable and resizable panel. Click the screenshot below to see an example YouTube video. Since version 1.0.0 the plugin utilizes <a href="https://gridstackjs.com/">gridstack.js</a> for positioning and sizing.</p>
 
 <div class="responsive_iframe">
-	<div class="yt-with-consent" data-vid="fd2xVNUORg8" data-preview="/assets/img/plugins/consolidatedtabs/screenshot_tab.png"></div>
+	<div class="yt-with-consent" data-vid="1Qg6TIGGRB4" data-preview="/assets/img/plugins/consolidatedtabs/screenshot_tab.png"></div>
 </div>
-
-<p><strong>Note:</strong> Initial positioning and sizing can be difficult due to the relative positioning of the panels. You may have to drag/resize and refresh the page a couple of times to get everything perfectly aligned. See <strong>Tips</strong> below for more information.</p>
 
 <h2 id="settings">Settings</h2>
 
 <p>Click the screenshot below to open a YouTube video demonstrating setting up Consolidated Tabs.</p>
 
 <div class="responsive_iframe">
-	<div class="yt-with-consent" data-vid="rrzeOJF2u4A" data-preview="/assets/img/plugins/consolidatedtabs/screenshot_settings.png"></div>
+	<div class="yt-with-consent" data-vid="BuJJV-giFNc" data-preview="/assets/img/plugins/consolidatedtabs/screenshot_settings.png"></div>
 </div>
 
 <ul>
-  <li><strong>Snap to Edges While Dragging:</strong> if enabled panels will snap to the edges of other panels while dragging.</li>
-  <li><strong>Combined Tabs Order:</strong> all the tabs that will be combined into one tab as a panel.</li>
-  <li><strong>Uncombined Tabs:</strong> tabs that have not been combined and will remain as their own tab.</li>
   <li><strong>Resize Navbar:</strong> whether to resize the width of the top navbar to 100% or not.</li>
-  <li><strong>Remove Tab Name:</strong> don’t show the name of the consolidated tab, only possible if all tabs are combined.</li>
-  <li><strong>Use Full Width of Browser:</strong> if enabled the tab area will be sized to fit the entire width of the browser and the sidebar will be moved to the left.</li>
-  <li><strong>Clear All Positions and Sizes:</strong> use the buttons to clear all position or size customizations, helpful when panels get moved off screen.</li>
+  <li><strong>Remove Tab Name:</strong> don’t show the name of the consolidated tab, only possible if all tabs are consolidated.</li>
+  <li><strong>Use Full Width of Browser:</strong> if enabled the tab area will be sized to fit the entire width of the browser, and the sidebar will be moved to the left.</li>
+  <li><strong>Enable Floating Panels:</strong> if enabled the panels will not auto collapse into available open space. Can be helpful when panels are jumping around a lot.</li>
+  <li><strong>Don’t Show Instructions:</strong> if enabled the instructions will not be displayed when enabling edit mode.</li>
+  <li><strong>Don’t Show Edit Button:</strong> if enabled the edit button in the navbar will be hidden.</li>
 </ul>
+
+<h2 id="instructions">Instructions</h2>
+
+<p><img src="/assets/img/plugins/consolidatedtabs/screenshot_instructions.png" alt="screenshot_instructions" /></p>
 
 <h2 id="tips">Tips</h2>
 
 <ul>
-  <li>
-    <p>The name of the tab will match what is configured in OctoPrint’s <code class="language-plaintext highlighter-rouge">Title</code> appearance setting.</p>
-  </li>
-  <li>
-    <p>The best way to get your panels sized and positioned is to order them in the plugin’s settings first in the order that you want the panels to be in the consolidated tab. The panels will wrap from left to right and top to bottom in that order.</p>
-  </li>
-  <li>Hold down the shift key on your keyboard and click anywhere on a panel (typically in blank space or on header) to activate it. Once activated you can let go of the shift key.
-    <ul>
-      <li>Move panels by clicking and dragging the panel header.</li>
-      <li>Resize panels by clicking and dragging the edges of the panel.</li>
-      <li>Once finished click any panel to deactivate the currently active panel.</li>
-    </ul>
-  </li>
-  <li>
-    <p>Each panel is positioned relative to the panel that precedes it in settings, and as a result resizing a panel will cause the other panels to move, and potentially wrap if they extend past the containing tab.</p>
-  </li>
-  <li>There are circumstances in which a panel may jump out of view while dragging/resizing panels. If this happens you can use the <code class="language-plaintext highlighter-rouge">Clear Positions</code> button in the plugin’s settings to make all the panels realign to each other.</li>
+  <li>The name of the tab will match what is configured in OctoPrint’s <code class="language-plaintext highlighter-rouge">Title</code> appearance setting.</li>
+  <li>It’s best to consolidate the desired tabs first and save, reload, and then enable edit mode again to resize and position.</li>
+  <li>Panels will become full width automatically and realign once the tab’s area width drops below a certain size.</li>
 </ul>
 
 <h2 id="themeify">Themeify</h2>
 
-<p>If using Themeify you will want to add extra settings to your Advanced options. These are the relevant css selectors that you will need to adjust.</p>
+<p>If using Themeify you may want to add extra settings to your Advanced options. These are the relevant css selectors that you can adjust.</p>
 
-<p><img src="/assets/img/plugins/consolidatedtabs/screenshot_themeify.png" alt="screenshot themeify" /></p>
-
-<h2 id="to-do">To-Do</h2>
-<p>[ ]  Figure out how to get rid of the extra whitespace at the bottom of the page after panels are positioned.</p>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Selector</th>
+      <th>CSS-Rule</th>
+      <th>Value</th>
+      <th>Context</th>
+      <th>Hidden Tab Name Specific</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>.grid-stack-item.consolidated .grid-stack-item-content</td>
+      <td>background-color</td>
+      <td>#2f3136</td>
+      <td>Each Panel</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>.grid-stack-item.consolidated .grid-stack-item-content</td>
+      <td>border</td>
+      <td>1px solid #fc8003</td>
+      <td>Panels Border</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>#tabs_content</td>
+      <td>box-shadow</td>
+      <td>unset</td>
+      <td>Tab content wrapper</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>#tabs_content</td>
+      <td>background-color</td>
+      <td>unset</td>
+      <td>Tab content wrapper</td>
+      <td>Yes</td>
+    </tr>
+  </tbody>
+</table>
 
 <h2 id="get-help">Get Help</h2>
 
@@ -326,14 +350,14 @@
           <ul>
             
             <li>
-              Latest Release: <a href="https://github.com/jneilliii/OctoPrint-ConsolidatedTabs/releases/tag/0.1.3" target="_blank">0.1.3</a><br>
-              <small>released on 21 Nov 2020</small>
+              Latest Release: <a href="https://github.com/jneilliii/OctoPrint-ConsolidatedTabs/releases/tag/1.0.0" target="_blank">1.0.0</a><br>
+              <small>released on 06 Mar 2021</small>
             </li>
-            <li>Releases: 15</li>
+            <li>Releases: 16</li>
             
             <li>Stars: <span id="github_star_count">16</span> <span id="github_star"><a href="javascript:void(0)"><i class="far fa-star"></i></a></span></li>
-            <li>Issues: 10 open, 31 closed</li>
-            <li>Last push: 30 Jan 2021</li>
+            <li>Issues: 5 open, 36 closed</li>
+            <li>Last push: 06 Mar 2021</li>
           </ul>
         </dd>
       </dl>
@@ -346,7 +370,13 @@
           
           
           
+          <a class="label" href="/by_tag/#tag-style">style</a>
+          
+          <a class="label" href="/by_tag/#tag-styling">styling</a>
+          
           <a class="label" href="/by_tag/#tag-tab">tab</a>
+          
+          <a class="label" href="/by_tag/#tag-ui">ui</a>
           
           <a class="label" href="/by_tag/#tag-widescreen">widescreen</a>
           
