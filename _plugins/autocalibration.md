@@ -29,6 +29,8 @@ screenshots:
   caption: Settings dialog of the autocalibration plugin.
 
 featuredimage: /assets/img/plugins/autocalibration/screenshot.png
+
+abandoned: https://github.com/OctoPrint/plugins.octoprint.org/issues/800
 ---
 
 This plugin calibrates your printers [backlash](https://en.wikipedia.org/wiki/Backlash_%28engineering%29) for the X, Y or Z-axis.

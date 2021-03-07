@@ -3,7 +3,9 @@ layout: plugin
 
 id: TpLinkAutoShutdown
 
+
 title: OctoPrint-TpLinkAutoShutdown
+
 
 description: This plugin is designed to help you integrate your IoT TP-Link Kasa wireless plug into OctoPrint. The basis of the plug-in is to enable you to automatically switch-off your 3D printer once a print has successfully completed.
 
@@ -12,7 +14,7 @@ authors:
 
 license: AGPLv3
 
-date: 2020-02-15
+date: 2021-02-17
 
 homepage: https://github.com/jamesmccannon02/OctoPrint-Tplinkautoshutdown
 
@@ -43,6 +45,7 @@ compatibility:
 
 This plugin is designed to help you integrate your IoT TP-Link Kasa wireless plug into OctoPrint. The basis of the plug-in is to enable you to automatically switch-off your 3D printer
 once a print has successfully completed.
+
 
 ## Requirements
 * Python >=3.7, <4.0
@@ -78,6 +81,7 @@ To connect to your smart device, simply download the plugin and navigate to 'set
 3. choose if you want your timelapse to render before the plug is turned off automatically (great if you use the same plug for OctoPrint and the printer).
 4. When using the smart strip KP303 you can manually decide what each socket does.
 
+
 #### Features coming soon
 1.	Within the near future, you will be able to control how your printer reacts once a print has finished, paused, started etc.
 2.	Additionally, an automatic search for your IoT device will be added. This will save you as the user searching for your Smart Plug.
@@ -97,6 +101,7 @@ Although, this plugin may work with a number of other Kasa devices, this plugin 
 * HS105
 * HS107
 * HS110
+
 
 #### Smart Strips:
 * KP303
@@ -118,4 +123,3 @@ Views from within the settings
 ![Smart plug settings](https://github.com/jamesmccannon02/OctoPrint-Tplinkautoshutdown/blob/master/assets/smartPlug_settings.png?raw=true)
 
 ![Smart strip settings](https://github.com/jamesmccannon02/OctoPrint-Tplinkautoshutdown/blob/master/assets/smartStrip_settings.png?raw=true)
-

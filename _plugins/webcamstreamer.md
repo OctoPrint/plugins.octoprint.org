@@ -30,6 +30,8 @@ screenshots:
 
 featuredimage: /assets/img/plugins/webcamstreamer/screenshot_tab.png
 
+abandoned: https://github.com/OctoPrint/plugins.octoprint.org/issues/807
+
 ---
 
 # OctoPrint-WebcamStreamer
