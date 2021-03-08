@@ -47,6 +47,7 @@ compatibility:
 
   python: ">=2.7,<4"
 
+up_for_adoption: https://github.com/CharlesWillis3/OctoPrint-MarlinBft/issues/18
 ---
 
 **DEVELOPER NOTE**
