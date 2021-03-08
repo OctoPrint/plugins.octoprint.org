@@ -19,7 +19,7 @@ tags:
 - settings
 
 compatibility:
-  python: ">=2.7,<3"
+  python: ">=2.7,<4"
 
 ---
 Add your CSS by navigating to Settings -> Plugins -> Custom CSS.
