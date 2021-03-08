@@ -16,11 +16,11 @@ tags:
 - google
 
 screenshots:
-- url: https://raw.githubusercontent.com/ryanfox1985/OctoPrint-Youtube-Timelapse/master/screenshots/configuration_step7.png
+- url: /assets/img/plugins/youtube_timelapse/configuration_step7.png
   alt: Main plugin screenshot
   caption: Main plugin screenshot
 
-featuredimage: https://raw.githubusercontent.com/ryanfox1985/OctoPrint-Youtube-Timelapse/master/screenshots/configuration_step7.png
+featuredimage: /assets/img/plugins/youtube_timelapse/configuration_step7.png
 
 compatibility:
   octoprint:
