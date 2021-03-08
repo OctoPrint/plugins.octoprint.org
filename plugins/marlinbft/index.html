@@ -40,7 +40,7 @@
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@OctoPrint3D" />
     <meta name="twitter:title" content="OctoPrint-MarlinBft" />
-    <meta name="twitter:description" content="This will transfer a file to a printer using Marlin firmware’s experimental binary file transfer protocol.
+    <meta name="twitter:description" content="DEVELOPER NOTE
 
 " />
     <meta name="twitter:image" content="https://plugins.octoprint.org" />
@@ -48,7 +48,7 @@
     <meta property="og:title" content="OctoPrint-MarlinBft" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://plugins.octoprint.org/assets/img/plugins/marlinbft/marlinbft-feature.png" />
-    <meta property="og:description" content="This will transfer a file to a printer using Marlin firmware’s experimental binary file transfer protocol.
+    <meta property="og:description" content="DEVELOPER NOTE
 
 " />
     <meta property="og:site_name" content="OctoPrint Plugin Repository" />
@@ -56,7 +56,7 @@
 
     <meta itemscope itemtype="http://schema.org/WebPage" />
     <meta itemprop="headline" content="OctoPrint-MarlinBft" />
-    <meta itemprop="description" content="This will transfer a file to a printer using Marlin firmware’s experimental binary file transfer protocol.
+    <meta itemprop="description" content="DEVELOPER NOTE
 
 " />
     <meta itemprop="image" content="https://plugins.octoprint.org/assets/img/plugins/marlinbft/marlinbft-feature.png" />
@@ -180,14 +180,34 @@
   <div class="content plugin-content row-fluid">
     <article class="post-content span8">
       
-      
+      <div class="alert"><h3>This plugin is up for adoption</h3>The current maintainer of this plugin is looking for someone to take over maintenance. <a href="https://github.com/CharlesWillis3/OctoPrint-MarlinBft/issues/18" target="_blank" rel="noopener noreferrer">Learn more...</a></div>
       
       
 
       <p class="lead">
         Upload files using Marlin Binary File Transfer Mark II
       </p>
-      <p>This will transfer a file to a printer using Marlin firmware’s experimental binary file transfer protocol.</p>
+      <p><strong>DEVELOPER NOTE</strong></p>
+
+<p>There are several major issues currently reported:</p>
+
+<ul>
+  <li>Installation on systems with python 3 but not python 2</li>
+  <li>Failed transfers on latest Marlin bugfix-2.0.x</li>
+</ul>
+
+<p>I am not currently in a position to maintain this plugin, or the library that handles
+the actual binary transfer. If you’re interested, please respond to the pinned issues on
+the repositories:</p>
+
+<ul>
+  <li>https://github.com/CharlesWillis3/OctoPrint-MarlinBft</li>
+  <li>https://github.com/CharlesWillis3/marlin-binary-protocol</li>
+</ul>
+
+<hr />
+
+<p>This will transfer a file to a printer using Marlin firmware’s experimental binary file transfer protocol.</p>
 
 <ul>
   <li>Marlin bugfix-2.0.x</li>
