@@ -5,10 +5,33 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>https://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 09 Mar 2021 06:15:20 -0600</pubDate>
-    <lastBuildDate>Tue, 09 Mar 2021 06:15:20 -0600</lastBuildDate>
+    <pubDate>Tue, 09 Mar 2021 08:57:24 -0600</pubDate>
+    <lastBuildDate>Tue, 09 Mar 2021 08:57:24 -0600</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
+    
+      <item>
+        <title>Octoprint Youtube Timelapse</title>
+        <description>
+          <![CDATA[
+            Automatically upload rendered timelapses to Youtube. Can also delete after upload to save space on the Raspberry Pi SD Card.
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/youtube_timelapse/configuration_step7.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Tue, 09 Mar 2021 00:00:00 -0600</pubDate>
+        <link>https://plugins.octoprint.org/plugins/youtube_timelapse/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/youtube_timelapse/</guid>
+        
+        <category>youtube</category>
+        
+        <category>timelapse</category>
+        
+        <category>oAuth</category>
+        
+        <category>google</category>
+        
+      </item>
     
       <item>
         <title>OctoPrint-TranslateModel</title>
@@ -216,35 +239,6 @@ Tue, 02 Feb 2021 00:00:00 -0600</pubDate>
         <category>control</category>
         
         <category>webcam</category>
-        
-      </item>
-    
-      <item>
-        <title>MeatPack</title>
-        <description>
-          <![CDATA[
-            Automatic G-Code Compression
-            <p><img src="https://plugins.octoprint.org/assets/img/plugins/meatpack/meatpack.png"></p>
-          ]]>
-        </description>
-        <pubDate>
-Tue, 26 Jan 2021 00:00:00 -0600</pubDate>
-        <link>https://plugins.octoprint.org/plugins/meatpack/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/meatpack/</guid>
-        
-        <category>gcode</category>
-        
-        <category>compression</category>
-        
-        <category>firmware</category>
-        
-        <category>serial</category>
-        
-        <category>packing</category>
-        
-        <category>prusa</category>
-        
-        <category>marlin</category>
         
       </item>
     

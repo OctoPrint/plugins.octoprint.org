@@ -3133,6 +3133,17 @@
 "author": "Will MacCormack",
 "content": "OctoPrint-TranslateModelTranslate Model allows you to move models around in gcode files without reslicing.Features  Select files via the translate button in the file pane  Quick and easy model movement along the x and y axes  Options to automatically print files after translationSetupInstall via the bundled Plugin Manageror manually using this URL:https://github.com/Willmac16/OctoPrint-TranslateModel/archive/main.zip  This plugin will compile its C++ code on install, but this should be pretty quick.See the GitHub page for up-to-date information.",
 "tags": ["gcode"]
+},
+
+{
+"id": "/plugins/youtube_timelapse",
+"url": "/plugins/youtube_timelapse/",
+"date": "2021-03-09 00:00:00 -0600",
+"title": "Octoprint Youtube Timelapse",
+"description": "Automatically upload rendered timelapses to Youtube. Can also delete after upload to save space on the Raspberry Pi SD Card.",
+"author": "ryanfox1985",
+"content": "OctoPrint-Youtube-TimelapseAutomatically upload rendered timelapses to Youtube. Can also delete after upload to save space on the Raspberry PiSD Card. In order for the plugin to work properly you will have to create a Google OAuth App to authorize access. To create your own Google OAuth app please follow the directions outlined in the Prerequisites.ConfigurationOnce the Prerequisite are met and you have downloaded your client_secrets.json file follow the steps here to authorize the plugin to your newly created OAuth app.Get HelpIf you experience issues with this plugin or need assistance please use the issue tracker at the plugin’s Homepage linked on the right.",
+"tags": ["youtube","timelapse","oAuth","google"]
 }
 ]
 }
