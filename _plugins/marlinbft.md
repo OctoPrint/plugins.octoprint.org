@@ -47,7 +47,25 @@ compatibility:
 
   python: ">=2.7,<4"
 
+up_for_adoption: https://github.com/CharlesWillis3/OctoPrint-MarlinBft/issues/18
 ---
+
+**DEVELOPER NOTE**
+
+There are several major issues currently reported:
+
+* Installation on systems with python 3 but not python 2
+* Failed transfers on latest Marlin bugfix-2.0.x
+
+I am not currently in a position to maintain this plugin, or the library that handles
+the actual binary transfer. If you're interested, please respond to the pinned issues on
+the repositories:
+
+* https://github.com/CharlesWillis3/OctoPrint-MarlinBft
+* https://github.com/CharlesWillis3/marlin-binary-protocol
+
+---
+
 This will transfer a file to a printer using Marlin firmware's experimental binary file transfer protocol.
 
 * Marlin bugfix-2.0.x
