@@ -31,7 +31,7 @@ screenshots:
 - url: /assets/img/plugins/SlicerEstimator/file_metadata1.png
   alt: Update of file metadata after upload (1)
   caption: Updates estimation on upload from slicer (1)
-- url: /assets/img/plugins/SlicerEstimator/file_metadata1.png
+- url: /assets/img/plugins/SlicerEstimator/file_metadata2.png
   alt: Update of file metadata after upload (2)
   caption: Updates estimation on upload from slicer (2)
 - url: /assets/img/plugins/SlicerEstimator/Settings_Basic.png
