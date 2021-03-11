@@ -35,7 +35,7 @@ compatibility:
   octoprint:
   - 1.3.1
 
-  python: ">=2.7,<4"
+  python: ">=3,<4"
 
 ---
 
