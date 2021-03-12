@@ -34,8 +34,7 @@ compatibility:
   octoprint:
   - 1.3.0
   os:
-  - linux
-  - armbian
+  - nix
   python: ">=2.7,<4"
 
 ---
