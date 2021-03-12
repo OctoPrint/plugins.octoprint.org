@@ -2,28 +2,21 @@
 layout: plugin
 
 id: filament_sensor_orangepipc
-title: FilamentSensor-OrangePiPC
+title: FilamentSensor OrangePiPC
 description: A filament sensor for use GPIO OrangePI-PC and others OrangePi, pauses the print when your filament runs out and lets you restart it.
-authors:
-- NandoGommez
-#- second autor name
+author: NandoGommez
 license: GPLv3
-
-# today's date in format YYYY-MM-DD, e.g.
 date: 2021-03-12
 
 homepage: https://github.com/NandoGommez/OctoPrint-Filament-Sensor-OrangePi-PC/
 source: OctoPrint-Filament-Sensor-OrangePi-PC
 archive: https://github.com/NandoGommez/OctoPrint-Filament-Sensor-OrangePi-PC/archive/master.zip
-
-# Set this to true if your plugin uses the dependency_links setup parameter to include
-# library versions not yet published on pypi. SHOULD ONLY BE USED IF THERE IS NO OTHER OPTION!
-#follow_dependency_links: false
+follow_dependency_links: false
 
 tags:
 - filament
 - sensor
-- orange
+- orangepi
 - gpio
 
 screenshots:
@@ -34,64 +27,25 @@ screenshots:
   alt: Pinout OrangePiPc
   caption: Pinout OrangePiPc
 
-
 featuredimage: /assets/img/configuration_filament_sensor_orangepipc.png
-
-# You only need the following if your plugin requires specific OctoPrint versions or
-# specific operating systems to function - you can safely remove the whole
-# "compatibility" block if this is not the case.
 
 compatibility:
 
-  # List of compatible versions
-  #
-  # A single version number will be interpretated as a minimum version requirement,
-  # e.g. "1.3.1" will show the plugin as compatible to OctoPrint versions 1.3.1 and up.
-  # More sophisticated version requirements can be modelled too by using PEP440
-  # compatible version specifiers.
-  #
-  # You can also remove the whole "octoprint" block. Removing it will default to all
-  # OctoPrint versions being supported.
-
   octoprint:
-  - 1.3.0+
-
-  # List of compatible operating systems
-  #
-  # Possible values:
-  #
-  # - windows
-  # - linux
-  # - macos
-  # - freebsd
-  #
-  # There are also two OS groups defined that get expanded on usage:
-  #
-  # - posix: linux, macos and freebsd
-  # - nix: linux and freebsd
-  #
-  # You can also remove the whole "os" block. Removing it will default to all
-  # operating systems being supported.
-
+  - 1.3.0
   os:
   - linux
   - armbian
-
-  # Compatible Python version
-  #
-  # Plugins should aim for compatibility for Python 2 and 3 for now, in which case the value should be ">=2.7,<4".
-  #
-  # Plugins that only wish to support Python 3 should set it to ">=3,<4".
-  #
-  # If your plugin only supports Python 2 (worst case, not recommended for newly developed plugins since Python 2
-  # is EOL), leave at ">=2.7,<3"
-
   python: ">=2.7,<4"
 
 ---
+## Overview
+
+Pause printing when the 3D printer runs out of filament.
 
 # OctoPrint-FilamentSensor-OrangePiPC-2021
 
+**Credits:**
 I fork this because [Octoprint-Filament-Sensor-ng-OrangePi](https://github.com/deadly667/Octoprint-Filament-Sensor-ng-OrangePi) doesn't have support for OrangePi-PC and Python 3, and the last update was 4 years ago, so it looks like an abandoned Project.
 
 [OctoPrint](http://octoprint.org/) plugin that integrates with a filament sensor hooked up to a OrangePiPc GPIO pin and allows the filament spool to be changed during a print if the filament runs out.
@@ -122,7 +76,7 @@ After installation, configure the plugin via OctoPrint Settings interface.
 
 The pin being used needs to be entered by name (e.g. PA01, PC07)
 
-## OrangePI OS Configuration
+## OrangePiPc OS Configuration
 
 Since we are accessing the GPIO as a non root user we need to configure the OS to allow this. Here's the copy of the library documentation on how to do it:
 
