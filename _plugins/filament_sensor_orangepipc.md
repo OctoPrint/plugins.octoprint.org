@@ -27,7 +27,7 @@ tags:
 - gpio
 
 screenshots:
-- url: url of a screenshot, /assets/img/configuration_filament_sensor_orangepipc.png
+- url: /assets/img/configuration_filament_sensor_orangepipc.png
   alt: Configuration Page
   caption: Configuration Page
 
