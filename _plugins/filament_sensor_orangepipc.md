@@ -9,7 +9,7 @@ license: GPLv3
 date: 2021-03-12
 
 homepage: https://github.com/NandoGommez/OctoPrint-Filament-Sensor-OrangePi-PC/
-source: OctoPrint-Filament-Sensor-OrangePi-PC
+source: https://github.com/NandoGommez/OctoPrint-Filament-Sensor-OrangePi-PC/
 archive: https://github.com/NandoGommez/OctoPrint-Filament-Sensor-OrangePi-PC/archive/master.zip
 follow_dependency_links: false
 
