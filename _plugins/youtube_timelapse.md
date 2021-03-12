@@ -45,7 +45,7 @@ compatibility:
 # OctoPrint-Youtube-Timelapse
 
 Automatically upload rendered timelapses to Youtube. Can also delete after upload to save space on the Raspberry Pi
-SD Card. In order for the plugin to work properly you will have to create a Google OAuth App to authorize access. To create your own Google OAuth app please follow the directions outlined in the [Prerequisites](https://github.com/jneilliii/OctoPrint-GoogleDriveBackup#create-a-google-oauth-app).
+SD Card. In order for the plugin to work properly you will have to create a Google OAuth App to authorize access. To create your own Google OAuth app please follow the directions outlined in the [Prerequisites](https://github.com/ryanfox1985/OctoPrint-Youtube-Timelapse#prerequisites).
 
 ## Configuration
 
