@@ -5,7 +5,11 @@ title: Octoprint Youtube Timelapse
 description: Automatically upload rendered timelapses to Youtube. Can also delete after upload to save space on the Raspberry Pi SD Card.
 author: ryanfox1985
 license: MIT
+<<<<<<< HEAD
 date: 2021-03-06
+=======
+date: 2021-03-09
+>>>>>>> cf6598188f1539161d27b7499880f2d842f1c8b5
 homepage: https://github.com/ryanfox1985/OctoPrint-Youtube-Timelapse
 source: https://github.com/ryanfox1985/OctoPrint-Youtube-Timelapse
 archive: https://github.com/ryanfox1985/OctoPrint-Youtube-Timelapse/archive/master.zip

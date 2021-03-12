@@ -25,18 +25,24 @@ compatibility:
   - 1.3.9
 
 screenshots:
-- url: /assets/img/plugins/SlicerEstimator/Gcode.png
-  alt: Gcode
-  caption: Gcode
+- url: /assets/img/plugins/SlicerEstimator/OctoPrint-estimator_dot.png
+  alt: OctoPrint shows that Slicer information is detected and accurate
+  caption: Slicer information detected
+- url: /assets/img/plugins/SlicerEstimator/file_metadata1.png
+  alt: Update of file metadata after upload (1)
+  caption: Updates estimation on upload from slicer (1)
+- url: /assets/img/plugins/SlicerEstimator/file_metadata2.png
+  alt: Update of file metadata after upload (2)
+  caption: Updates estimation on upload from slicer (2)
 - url: /assets/img/plugins/SlicerEstimator/Settings_Basic.png
-  alt: OctoPrint selecion of the Slicer
+  alt: OctoPrint selection of the Slicer
   caption: OctoPrint Basic Settings
 - url: /assets/img/plugins/SlicerEstimator/Settings_Custom.png
   alt: OctoPrint Custom Settings
   caption: OctoPrint Custom Settings
-- url: /assets/img/plugins/SlicerEstimator/Cura.png
-  alt: Cura Settings
-  caption: Cura Settings  
+- url: /assets/img/plugins/SlicerEstimator/Gcode.png
+  alt: Gcode
+  caption: Gcode
 ---
 
 # Slicer Print Time Estimator - for an accurate remaining time to print
