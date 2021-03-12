@@ -20,14 +20,14 @@ tags:
 - gpio
 
 screenshots:
-- url: /assets/img/configuration_filament_sensor_orangepipc.png
+- url: /assets/img/plugins/filament_sensor_orangepipc/filament_sensor_orangepipc_configuration.png
   alt: Configuration Page
   caption: Configuration Page
-- url: /assets/img/GPIO_OrangePiPc_filament_sensor_orangepipc.png
+- url: /assets/img/plugins/filament_sensor_orangepipc/filament_sensor_orangepipc_OrangePiPc_Pinout.png
   alt: Pinout OrangePiPc
   caption: Pinout OrangePiPc
 
-featuredimage: /assets/img/configuration_filament_sensor_orangepipc.png
+featuredimage: /assets/img/plugins/filament_sensor_orangepipc/filament_sensor_orangepipc_configuration.png
 
 compatibility:
 
