@@ -14,7 +14,7 @@ date: 2021-03-12
 
 homepage: https://github.com/NandoGommez/OctoPrint-Filament-Sensor-OrangePi-PC/
 source: OctoPrint-Filament-Sensor-OrangePi-PC
-archive: archive link to install your plugin via pip, e.g. from github: https://github.com/NandoGommez/OctoPrint-Filament-Sensor-OrangePi-PC/archive/master.zip
+archive: https://github.com/NandoGommez/OctoPrint-Filament-Sensor-OrangePi-PC/archive/master.zip
 
 # Set this to true if your plugin uses the dependency_links setup parameter to include
 # library versions not yet published on pypi. SHOULD ONLY BE USED IF THERE IS NO OTHER OPTION!
