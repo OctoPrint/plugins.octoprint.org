@@ -30,6 +30,9 @@ screenshots:
 - url: /assets/img/configuration_filament_sensor_orangepipc.png
   alt: Configuration Page
   caption: Configuration Page
+- url: /assets/img/GPIO_OrangePiPc_filament_sensor_orangepipc.png
+  alt: Pinout OrangePiPc
+  caption: Pinout OrangePiPc
 
 
 featuredimage: /assets/img/configuration_filament_sensor_orangepipc.png
