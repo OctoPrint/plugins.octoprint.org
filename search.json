@@ -1359,7 +1359,7 @@
 "date": "2018-08-21 00:00:00 -0500",
 "title": "OctoKlipper",
 "description": "A plugin for a better integration of Klipper into OctoPrint.",
-"author": "Alice Weigt",
+"author": "thelastWallE, Alice Weigt",
 "content": "OctoKlipper assists in configuring, controlling and monitoring the Klipper 3D-printer firmware.It provides the following functions:  Simplified connection dialog.  Buttons for restarting Klippers host and MCU processes.  User definable macro buttons that let you execute custom GCODE and Klipper commands.  An assisted bed leveling wizard with user definable probe points to simplify manual bed leveling.  A dialog for Klippers PID Tuning.  A dialog to set a coordinate offset for future GCODE move commands.  A log displaying only Klipper messages.  A basic configuration editor to configure Klipper directly through your browser.  A performance graph displaying key parameters extracted from the Klipper logs, helpful when debugging performance issues.Get HelpIf you experience issues with this plugin please use the issue tracker at the plugins github linked on the right.",
 "tags": ["klipper","firmware","control","monitor"]
 },
