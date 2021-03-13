@@ -34,7 +34,6 @@ screenshots:
 - url: /assets/img/plugins/OctoRelay/settings.png
   alt: settings
   caption: settings
-- ...
 
 featuredimage: /assets/img/plugins/OctoRelay/screenshot.png
 
