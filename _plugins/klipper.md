@@ -4,7 +4,9 @@ layout: plugin
 id: klipper
 title: OctoKlipper
 description: A plugin for a better integration of Klipper into OctoPrint.
-author: thelastWallE
+authors:
+- thelastWallE
+- Alice Weigt
 license: AGPLv3
 
 date: 2018-08-21
