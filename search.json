@@ -3144,6 +3144,17 @@
 "author": "ryanfox1985",
 "content": "OctoPrint-Youtube-TimelapseAutomatically upload rendered timelapses to Youtube. Can also delete after upload to save space on the Raspberry PiSD Card. In order for the plugin to work properly you will have to create a Google OAuth App to authorize access. To create your own Google OAuth app please follow the directions outlined in the Prerequisites.ConfigurationOnce the Prerequisite are met and you have downloaded your client_secrets.json file follow the steps here to authorize the plugin to your newly created OAuth app.Get HelpIf you experience issues with this plugin or need assistance please use the issue tracker at the plugin’s Homepage linked on the right.",
 "tags": ["youtube","timelapse","oAuth","google"]
+},
+
+{
+"id": "/plugins/octorelay",
+"url": "/plugins/octorelay/",
+"date": "2021-03-13 00:00:00 -0600",
+"title": "OctoRelay",
+"description": "A plugin to control relays or other things on the GPIO pins of your raspberry pi. For example turn the power of printer, the light or a fan ON and OFF via the web interface.",
+"author": "Boris Burgstaller",
+"content": "A plugin that adds buttons to the navigation bar to toggle GPIO pins on the Raspberry Pi.I use it with a 4 relay board, and printed this case for it: https://www.thingiverse.com/thing:2975944Just hooked up the GPIO pins with the relay board, and now I can turn the power of the printer, the fan and the light on and foo with OctoPrint.",
+"tags": ["raspberry pi","GPIO","relay","power","switch"]
 }
 ]
 }

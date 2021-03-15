@@ -5,10 +5,35 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>https://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 15 Mar 2021 07:15:42 -0500</pubDate>
-    <lastBuildDate>Mon, 15 Mar 2021 07:15:42 -0500</lastBuildDate>
+    <pubDate>Mon, 15 Mar 2021 09:00:33 -0500</pubDate>
+    <lastBuildDate>Mon, 15 Mar 2021 09:00:33 -0500</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
+    
+      <item>
+        <title>OctoRelay</title>
+        <description>
+          <![CDATA[
+            A plugin to control relays or other things on the GPIO pins of your raspberry pi. For example turn the power of printer, the light or a fan ON and OFF via the web interface.
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/octorelay/screenshot.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Sat, 13 Mar 2021 00:00:00 -0600</pubDate>
+        <link>https://plugins.octoprint.org/plugins/octorelay/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/octorelay/</guid>
+        
+        <category>raspberry pi</category>
+        
+        <category>GPIO</category>
+        
+        <category>relay</category>
+        
+        <category>power</category>
+        
+        <category>switch</category>
+        
+      </item>
     
       <item>
         <title>Octoprint Youtube Timelapse</title>
@@ -208,37 +233,6 @@ Thu, 11 Feb 2021 00:00:00 -0600</pubDate>
         <category>robotics</category>
         
         <category>GPIO</category>
-        
-      </item>
-    
-      <item>
-        <title>SimplyPrint Cloud</title>
-        <description>
-          <![CDATA[
-            3D print online anywhere; elevate your 3D printing experience from your computer or phone, with smart features like filament manager, livestream, print queue, and much more. Simple, beautiful, smart.
-            <p><img src="https://plugins.octoprint.org/assets/img/plugins/SimplyPrint/showcase_feature_image.png"></p>
-          ]]>
-        </description>
-        <pubDate>
-Tue, 02 Feb 2021 00:00:00 -0600</pubDate>
-        <link>https://plugins.octoprint.org/plugins/SimplyPrint/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/SimplyPrint/</guid>
-        
-        <category>cloud</category>
-        
-        <category>simplyprint</category>
-        
-        <category>remote monitoring</category>
-        
-        <category>remote access</category>
-        
-        <category>print local files</category>
-        
-        <category>print queue</category>
-        
-        <category>control</category>
-        
-        <category>webcam</category>
         
       </item>
     
