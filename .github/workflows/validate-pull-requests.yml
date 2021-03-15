@@ -41,7 +41,7 @@ jobs:
                 python ../current/.github/scripts/validate_front_matter.py "$file" --debug --check-date-unchanged=${{ github.event.pull_request.base.sha }} --action-output
               elif [ "$modifier" == "A" ]; then
                 echo "ADDED: $file"
-                python ../current/.github/scripts/validate_front_matter.py "$file" --debug --check-screenshots-present --check-internal-assets --check-id-match --action-output
+                python ../current/.github/scripts/validate_front_matter.py "$file" --debug --check-screenshots-present --check-internal-assets --check-id-match --check-py3-compat --action-output
               fi
             fi
           done < <(git diff-tree --no-commit-id --name-status -r ${{ github.event.pull_request.base.sha }} ${{ github.event.pull_request.head.sha }} | xargs -n2 )
