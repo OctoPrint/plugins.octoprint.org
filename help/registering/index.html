@@ -328,10 +328,12 @@ cd plugins.octoprint.org
   <span class="c1">#</span>
   <span class="c1"># Plugins that only wish to support Python 3 should set it to "&gt;=3,&lt;4".</span>
   <span class="c1">#</span>
-  <span class="c1"># If your plugin only supports Python 2 (worst case, not recommended for newly developed plugins since Python 2</span>
-  <span class="c1"># is EOL), leave at "&gt;=2.7,&lt;3"</span>
+  <span class="c1"># If your plugin only supports Python 2 it will no longer be accepted on the plugin repository.</span>
+  <span class="c1">#</span>
+  <span class="c1"># Uncomment the appropriate setting</span>
 
-  <span class="na">python</span><span class="pi">:</span> <span class="s2">"</span><span class="s">&gt;=2.7,&lt;3"</span>
+  <span class="c1">#python: "&gt;=2.7,&lt;3" # Python 2 &amp; 3</span>
+  <span class="c1">#python: "&gt;=3,&lt;4" # Python 3 only</span>
 
 <span class="nn">---</span>
 
