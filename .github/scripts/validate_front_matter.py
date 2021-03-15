@@ -194,11 +194,11 @@ def validate_python_compatibility(data):
     if "compatibility" in data and "python" in data["compatibility"]:
         requirement = to_requirement(data["compatibility"]["python"], name="Python")
         if all(map(lambda x: x not in requirement, OCTOPRINT_PY3_SUPPORT)):
-            warnings.append(
+            raise ValueError(
                 "python compatibility does not include Python 3 @ data['compatibility']['python']"
             )
     else:
-        warnings.append("not flagged as Python 3 compatible @ data")
+        raise ValueError("not flagged as Python 3 compatible @ data")
     return warnings
 
 
