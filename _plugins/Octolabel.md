@@ -19,10 +19,12 @@ tags:
 - notifications
 - brother
 
+
 compatibility:
-octoprint:
+  octoprint:
   - 1.4.2
   python: ">=2.7,<4"
-  
+
+
   
 ---
