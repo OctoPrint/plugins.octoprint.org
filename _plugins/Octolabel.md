@@ -13,16 +13,14 @@ homepage: https://github.com/LowieGoossens/octolabel
 source: https://github.com/LowieGoossens/octolabel
 archive: https://github.com/LowieGoossens/octolabel/archive/master.zip
 
-#follow_dependency_links: false
-
-compatibility:
-octoprint:
-- 1.4.2
-  python: ">=2.7,<4"
-
 
 tags:
 - label
 - notifications
 - brother
+
+compatibility:
+octoprint:
+- 1.4.2
+  python: ">=2.7,<4"
 ---
