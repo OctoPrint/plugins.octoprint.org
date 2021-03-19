@@ -1,7 +1,7 @@
 ---
 layout: plugin
 
-id: octolabel
+id: Octolabel
 title: OctoPrint-Octolabel based on octotweet
 description: label plugin for OctoPrint
 author: Lowie Goossens
