@@ -84,9 +84,6 @@ The available label names can be listed with `brother_ql info labels`:
 ### Label Settings
 Here you can customize the timing of every Label handled by Octoprint.
 
-![screen twitter setup 1](assets/docs/setup1.png)
-![screen twitter setup 1](assets/docs/setup2.png)
-
 - **Toggle the message** : by unchecking the checkbox in front of the time title, you can disable the printing the label.
 - **Message** : you can change the default content here. See the section [Message format](#message-format) for more information.
 - **Notify every `XX`%** : specific to the `printing progress` message, this setting allows you to change the frequency of the notification :
