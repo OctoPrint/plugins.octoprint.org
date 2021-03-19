@@ -21,8 +21,8 @@ archive: https://github.com/LowieGoossens/octolabel/archive/master.zip
 compatibility:
 octoprint:
 - 1.4.2
-  python: ">2.7,<4"
-
+  python: ">=2.7,<4"
+  
 # tags
 tags:
 - label
