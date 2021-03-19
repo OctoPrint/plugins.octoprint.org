@@ -28,8 +28,8 @@ tags:
 - label
 - notifications
 - brother
-
-# Octoprint-OctoLabel 1.0
+---
+# Octoprint-OctoLabel
 
 OctoLabel is a plugin allowing Octoprint to print labels.
 This is a fork of the amazing pluggin [Octorant](https://plugins.octoprint.org/plugins/octorant/) by @bchanudet.
