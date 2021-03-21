@@ -29,7 +29,7 @@ featuredimage: /assets/img/plugins/eeprom_marlin/firmware_info.png
 
 compatibility:
   python: ">=2.7,<4"
-
+  octoprint: 1.4.0
 
 ---
 
