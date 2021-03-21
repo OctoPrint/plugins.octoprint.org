@@ -7,7 +7,7 @@ description: Label printing plugin for OctoPrint
 author: Lowie Goossens
 license: MIT
 
-date: 2020-03-21
+date: 2021-03-21
 
 homepage: https://github.com/LowieGoossens/octolabel
 source: https://github.com/LowieGoossens/octolabel
