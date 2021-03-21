@@ -7107,44 +7107,6 @@
     },
 
     {
-        "id": "octolabel",
-        "published": "2020-03-21 00:00:00 -0500",
-        "title": "OctoPrint-OctoLabel",
-        "description": "Label printing plugin for OctoPrint",
-        "archive": "https://github.com/LowieGoossens/octolabel/archive/master.zip",
-        "author": "Lowie Goossens",
-        "homepage": "https://github.com/LowieGoossens/octolabel",
-        "page": "https://plugins.octoprint.org/plugins/octolabel/",
-        "compatibility": {
-            "octoprint": ["1.4.2"],
-            "os": [],
-            "python": ">=2.7,<4"
-        },
-        "license": "MIT",
-        "abandoned": false,
-        "github": { 
-            "latest_release": {
-                "name": "first release",
-                "date": "2021-03-17 16:44:06 +0000",
-                "tag": "master"
-            },
-            "releases": 1,
-            "last_push": "2021-03-21 09:34:06 +0000",
-            "stars": 0,
-            "issues": {
-                "open": 0,
-                "closed": 0
-            }
-        },
-        "stats": {
-            "instances_month": 0,
-            "install_events_month": 0,
-            "instances_week": 0,
-            "install_events_week": 0
-        }
-    },
-
-    {
         "id": "remove_ttys_ports",
         "published": "2020-03-23 00:00:00 -0500",
         "title": "Remove /dev/ttyS* Ports (port auto detection fix)",
@@ -10772,6 +10734,44 @@
             "install_events_month": 490,
             "instances_week": 571,
             "install_events_week": 489
+        }
+    },
+
+    {
+        "id": "octolabel",
+        "published": "2021-03-21 00:00:00 -0500",
+        "title": "OctoPrint-OctoLabel",
+        "description": "Label printing plugin for OctoPrint",
+        "archive": "https://github.com/LowieGoossens/octolabel/archive/master.zip",
+        "author": "Lowie Goossens",
+        "homepage": "https://github.com/LowieGoossens/octolabel",
+        "page": "https://plugins.octoprint.org/plugins/octolabel/",
+        "compatibility": {
+            "octoprint": ["1.4.2"],
+            "os": [],
+            "python": ">=2.7,<4"
+        },
+        "license": "MIT",
+        "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "first release",
+                "date": "2021-03-17 16:44:06 +0000",
+                "tag": "master"
+            },
+            "releases": 1,
+            "last_push": "2021-03-21 09:34:06 +0000",
+            "stars": 0,
+            "issues": {
+                "open": 0,
+                "closed": 0
+            }
+        },
+        "stats": {
+            "instances_month": 0,
+            "install_events_month": 0,
+            "instances_week": 0,
+            "install_events_week": 0
         }
     }
 ]
