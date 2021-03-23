@@ -15,19 +15,46 @@ archive: https://github.com/Salandora/OctoPrint-EEprom-Repetier/archive/master.z
 
 follow_dependency_links: false
 
-# TODO
 tags:
 - repetier
+- eeprom
+- editor
+- eeprom editor
+- eeprom config
 - helper
 
-screenshots:
-- url: /assets/img/plugins/eeprom_repetier/img1.png
-  alt: Settings
-- url: /assets/img/plugins/eeprom_repetier/img2.png
-  alt: Settings
+featuredimage: /assets/img/plugins/eeprom_repetier/eeprom_values.png
 
-featuredimage: /assets/img/plugins/eeprom_repetier/img2.png
+compatibility:
+  python: ">=2.7,<4"
+  octoprint: 
+  - 1.5.x
 
 ---
 
 This plugin is designed to get, change and save the values in the EEPROM of your Repetier Firmware based Machine
+
+## Features
+
+- Load and edit the values stored EEPROM from the printer firmware.
+- Save changes to the EEPROM on the printer.
+- Backup and restore snapshot copies of the EEPROM data (new in V0.1.4).
+
+## Setup
+
+Find it in the plugin manager or install manually using the archive URL
+
+## Firmware requirements
+
+This plugin only supports Repetier firmware, version 0.92 and later.  Use caution when restoring data from an older firmware version.  
+
+## Screenhots
+
+EEPROM Values Editor
+![EEPROM Values](/assets/img/plugins/eeprom_repetier/eeprom_values.png)
+
+Changed Values Display
+![Changed Values Displayed](/assets/img/plugins/eeprom_repetier/eeprom_changed_values.png)
+
+EEPROM Backups
+![Backups](/assets/img/plugins/eeprom_repetier/eeprom_backups.png)
