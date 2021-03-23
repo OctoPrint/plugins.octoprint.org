@@ -41,13 +41,15 @@
     <meta name="twitter:site" content="@OctoPrint3D" />
     <meta name="twitter:title" content="EEPROM Repetier Editor" />
     <meta name="twitter:description" content="This plugin is designed to get, change and save the values in the EEPROM of your Repetier Firmware based Machine
+
 " />
     <meta name="twitter:image" content="https://plugins.octoprint.org" />
 
     <meta property="og:title" content="EEPROM Repetier Editor" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://plugins.octoprint.org/assets/img/plugins/eeprom_repetier/img2.png" />
+    <meta property="og:image" content="https://plugins.octoprint.org/assets/img/plugins/eeprom_repetier/eeprom_values.png" />
     <meta property="og:description" content="This plugin is designed to get, change and save the values in the EEPROM of your Repetier Firmware based Machine
+
 " />
     <meta property="og:site_name" content="OctoPrint Plugin Repository" />
     <meta property="og:url" content="https://plugins.octoprint.org/plugins/eeprom_repetier/" />
@@ -55,8 +57,9 @@
     <meta itemscope itemtype="http://schema.org/WebPage" />
     <meta itemprop="headline" content="EEPROM Repetier Editor" />
     <meta itemprop="description" content="This plugin is designed to get, change and save the values in the EEPROM of your Repetier Firmware based Machine
+
 " />
-    <meta itemprop="image" content="https://plugins.octoprint.org/assets/img/plugins/eeprom_repetier/img2.png" />
+    <meta itemprop="image" content="https://plugins.octoprint.org/assets/img/plugins/eeprom_repetier/eeprom_values.png" />
 
     <script type="text/javascript" src="/assets/js/jquery-1.9.1.min-4b58dfeb119b2dd15f54e0a074cf8eb63204c8b03d45056e0b514e042f36aa44.js" integrity="sha256-S1jf6xGbLdFfVOCgdM+OtjIEyLA9RQVuC1FOBC82qkQ=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="/assets/js/underscore.min-42d8fad13bc28fc726775196ec9ab953febf9bde175c5845128361c953fa17f4.js" integrity="sha256-Qtj60TvCj8cmd1GW7Jq5U/6/m94XXFhFEoNhyVP6F/Q=" crossorigin="anonymous"></script>
@@ -186,20 +189,34 @@
       </p>
       <p>This plugin is designed to get, change and save the values in the EEPROM of your Repetier Firmware based Machine</p>
 
+<h2 id="features">Features</h2>
 
-      
-        <h2>Pictures</h2>
-        
-        <figure>
-          
-          <a href="/assets/img/plugins/eeprom_repetier/img1.png" data-lightbox="/plugins/eeprom_repetier" data-title=""><img src="/assets/img/plugins/eeprom_repetier/img1.png" alt="Settings" title=""></a>
-        </figure>
-        
-        <figure>
-          
-          <a href="/assets/img/plugins/eeprom_repetier/img2.png" data-lightbox="/plugins/eeprom_repetier" data-title=""><img src="/assets/img/plugins/eeprom_repetier/img2.png" alt="Settings" title=""></a>
-        </figure>
-        
+<ul>
+  <li>Load and edit the values stored EEPROM from the printer firmware.</li>
+  <li>Save changes to the EEPROM on the printer.</li>
+  <li>Backup and restore snapshot copies of the EEPROM data (new in V0.1.4).</li>
+</ul>
+
+<h2 id="setup">Setup</h2>
+
+<p>Find it in the plugin manager or install manually using the archive URL</p>
+
+<h2 id="firmware-requirements">Firmware requirements</h2>
+
+<p>This plugin only supports Repetier firmware, version 0.92 and later.  Use caution when restoring data from an older firmware version.</p>
+
+<h2 id="screenhots">Screenhots</h2>
+
+<p>EEPROM Values Editor
+<img src="/assets/img/plugins/eeprom_repetier/eeprom_values.png" alt="EEPROM Values" /></p>
+
+<p>Changed Values Display
+<img src="/assets/img/plugins/eeprom_repetier/eeprom_changed_values.png" alt="Changed Values Displayed" /></p>
+
+<p>EEPROM Backups
+<img src="/assets/img/plugins/eeprom_repetier/eeprom_backups.png" alt="Backups" /></p>
+
+
       
     </article>
 
@@ -248,7 +265,7 @@
       
       <dl class="installations">
         <dt>Active instances the past month</dt>
-        <dd>Installed on at least <strong>349</strong> instances</dd>
+        <dd>Installed on at least <strong>348</strong> instances</dd>
       </dl>
       
       
@@ -284,6 +301,14 @@
           
           
           
+          <a class="label" href="/by_tag/#tag-editor">editor</a>
+          
+          <a class="label" href="/by_tag/#tag-eeprom">eeprom</a>
+          
+          <a class="label" href="/by_tag/#tag-eeprom-config">eeprom config</a>
+          
+          <a class="label" href="/by_tag/#tag-eeprom-editor">eeprom editor</a>
+          
           <a class="label" href="/by_tag/#tag-helper">helper</a>
           
           <a class="label" href="/by_tag/#tag-repetier">repetier</a>
@@ -296,7 +321,7 @@
         <dd>
           <ul>
             
-            <li>OctoPrint: all versions</li>
+            <li>OctoPrint: 1.5.x+</li>
             
             
             <li>Operating Systems: all</li>
