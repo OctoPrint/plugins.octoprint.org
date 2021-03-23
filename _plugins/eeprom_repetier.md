@@ -57,4 +57,4 @@ Changed Values Display
 ![Changed Values Displayed](/assets/img/plugins/eeprom_repetier/eeprom_changed_values.png)
 
 EEPROM Backups
-![Backups](/assets/img/plugins/eeprom_repetier/eeprom_values.png)
+![Backups](/assets/img/plugins/eeprom_repetier/eeprom_backups.png)
