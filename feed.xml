@@ -5,10 +5,35 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>https://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 30 Mar 2021 07:22:43 -0500</pubDate>
-    <lastBuildDate>Tue, 30 Mar 2021 07:22:43 -0500</lastBuildDate>
+    <pubDate>Tue, 30 Mar 2021 15:13:46 -0500</pubDate>
+    <lastBuildDate>Tue, 30 Mar 2021 15:13:46 -0500</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
+    
+      <item>
+        <title>OctoText</title>
+        <description>
+          <![CDATA[
+            Send text messages on common printer events
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/OctoText/octotext-email.PNG"></p>
+          ]]>
+        </description>
+        <pubDate>
+Tue, 30 Mar 2021 00:00:00 -0500</pubDate>
+        <link>https://plugins.octoprint.org/plugins/OctoText/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/OctoText/</guid>
+        
+        <category>octotext</category>
+        
+        <category>printer status</category>
+        
+        <category>email</category>
+        
+        <category>text</category>
+        
+        <category>notification</category>
+        
+      </item>
     
       <item>
         <title>OctoPrint-OctoLabel</title>
@@ -209,27 +234,6 @@ Tue, 16 Feb 2021 00:00:00 -0600</pubDate>
         <category>gpio</category>
         
         <category>control</category>
-        
-      </item>
-    
-      <item>
-        <title>OctoPrint-InlineConfirm</title>
-        <description>
-          <![CDATA[
-            Removes the confirm cancel print dialog and replaces it with confirmation by clicking the cancel buton twice.
-            <p><img src="https://plugins.octoprint.org/assets/img/plugins/inlineconfirm/cancel_print_button.gif"></p>
-          ]]>
-        </description>
-        <pubDate>
-Sun, 14 Feb 2021 00:00:00 -0600</pubDate>
-        <link>https://plugins.octoprint.org/plugins/inlineconfirm/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/inlineconfirm/</guid>
-        
-        <category>ui</category>
-        
-        <category>control</category>
-        
-        <category>cancel</category>
         
       </item>
     
