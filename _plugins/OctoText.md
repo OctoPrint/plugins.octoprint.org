@@ -11,9 +11,9 @@ license: AGPLv3
 # TODO
 date: 2021-03-26
 
-homepage: https://github.com/berrystephenw/Octotext
-source: https://github.com/berrystephenw/Octotext
-archive: "https://github.com/berrystephenw/OctoText/archive/refs/tags/0.1.4.zip"
+homepage: https://github.com/berrystephenw/OctoText
+source: https://github.com/berrystephenw/OctoText
+archive: "https://github.com/berrystephenw/OctoText/archive/refs/heads/main.zip"
 
 # TODO
 # Set this to true if your plugin uses the dependency_links setup parameter to include
