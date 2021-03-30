@@ -36,13 +36,13 @@ screenshots:
 - url: /assets/img/plugins/OctoText/IMG_6024.PNG
   alt: Touch UI
   caption: Touch UI
-- url: /assets/img/plugins/OctoText/settings.PNG
+- url: /assets/img/plugins/OctoText/settings.png
   alt: Settings page
   caption: Settings page
 
 
 # TODO
-featuredimage: /assets/img/plugins/OctoText/octotext-email.PNG
+featuredimage: /assets/img/plugins/OctoText/octotext-email.png
 
 # TODO
 # You only need the following if your plugin requires specific OctoPrint versions or
