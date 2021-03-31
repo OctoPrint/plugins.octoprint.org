@@ -11,6 +11,8 @@ archive: https://github.com/Booli/OctoPrint-ActionTriggerPlugin/archive/master.z
 date: 2015-04-17
 tags:
 - printing
+
+abandoned: https://github.com/OctoPrint/plugins.octoprint.org/issues/833
 ---
 compatibility:
   python: ">=2.7,<4"
