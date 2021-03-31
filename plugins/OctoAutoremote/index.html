@@ -306,24 +306,6 @@ via this URL:</p>
       </dl>
       
       
-      <dl class="github">
-        <dt>GitHub stats <a href="/help/github_integration/" class="fas fa-question-circle"></a> <span id="github_login">(<a href="javascript:void(0)">Login</a>)</span></dt>
-        <dd>
-          <ul>
-            
-            <li>
-              Latest Release: <a href="https://github.com/trunzoc/Octoprint_AutoRemote/releases/tag/1.5.0" target="_blank">1.5.0</a><br>
-              <small>released on 02 Oct 2018</small>
-            </li>
-            <li>Releases: 6</li>
-            
-            <li>Stars: <span id="github_star_count">0</span> <span id="github_star"><a href="javascript:void(0)"><i class="far fa-star"></i></a></span></li>
-            <li>Issues: 1 open, 0 closed</li>
-            <li>Last push: 08 May 2019</li>
-          </ul>
-        </dd>
-      </dl>
-      
       
       <dl class="tags">
         <dt>Tags</dt>
@@ -413,9 +395,9 @@ via this URL:</p>
 
 <script type="application/javascript">
   $(function() {
-    var has_github = true;
+    var has_github = false;
     if (has_github) {
-      var github_repo = "trunzoc/Octoprint_AutoRemote";
+      var github_repo = "";
 
       if (github_repo) {
         var status = "unknown";

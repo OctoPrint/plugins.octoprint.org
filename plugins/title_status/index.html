@@ -293,24 +293,6 @@
       </dl>
       
       
-      <dl class="github">
-        <dt>GitHub stats <a href="/help/github_integration/" class="fas fa-question-circle"></a> <span id="github_login">(<a href="javascript:void(0)">Login</a>)</span></dt>
-        <dd>
-          <ul>
-            
-            <li>
-              Latest Release: <a href="https://github.com/MoonshineSG/OctoPrint-TitleStatus/releases/tag/0.0.5" target="_blank">0.0.5</a><br>
-              <small>released on 24 Jun 2020</small>
-            </li>
-            <li>Releases: 5</li>
-            
-            <li>Stars: <span id="github_star_count">2</span> <span id="github_star"><a href="javascript:void(0)"><i class="far fa-star"></i></a></span></li>
-            <li>Issues: 3 open, 3 closed</li>
-            <li>Last push: 08 Dec 2020</li>
-          </ul>
-        </dd>
-      </dl>
-      
       
       <dl class="tags">
         <dt>Tags</dt>
@@ -396,9 +378,9 @@
 
 <script type="application/javascript">
   $(function() {
-    var has_github = true;
+    var has_github = false;
     if (has_github) {
-      var github_repo = "MoonshineSG/OctoPrint-TitleStatus";
+      var github_repo = "";
 
       if (github_repo) {
         var status = "unknown";

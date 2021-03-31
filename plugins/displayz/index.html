@@ -264,27 +264,9 @@ not, so here it is as plugin.</p>
       
       <dl class="install_events">
         <dt>New installs the past week</dt>
-        <dd>At least <strong>58</strong> new installations</dd>
+        <dd>At least <strong>59</strong> new installations</dd>
       </dl>
       
-      
-      <dl class="github">
-        <dt>GitHub stats <a href="/help/github_integration/" class="fas fa-question-circle"></a> <span id="github_login">(<a href="javascript:void(0)">Login</a>)</span></dt>
-        <dd>
-          <ul>
-            
-            <li>
-              Latest Release: <a href="https://github.com/foosel/OctoPrint-DisplayZ/releases/tag/0.2.0" target="_blank">0.2.0</a><br>
-              <small>released on 01 Jul 2020</small>
-            </li>
-            <li>Releases: 1</li>
-            
-            <li>Stars: <span id="github_star_count">7</span> <span id="github_star"><a href="javascript:void(0)"><i class="far fa-star"></i></a></span></li>
-            <li>Issues: 0 open, 7 closed</li>
-            <li>Last push: 04 Jul 2020</li>
-          </ul>
-        </dd>
-      </dl>
       
       
       <dl class="tags">
@@ -371,9 +353,9 @@ not, so here it is as plugin.</p>
 
 <script type="application/javascript">
   $(function() {
-    var has_github = true;
+    var has_github = false;
     if (has_github) {
-      var github_repo = "foosel/OctoPrint-DisplayZ";
+      var github_repo = "";
 
       if (github_repo) {
         var status = "unknown";

@@ -292,18 +292,6 @@
       </dl>
       
       
-      <dl class="github">
-        <dt>GitHub stats <a href="/help/github_integration/" class="fas fa-question-circle"></a> <span id="github_login">(<a href="javascript:void(0)">Login</a>)</span></dt>
-        <dd>
-          <ul>
-            
-            <li>Stars: <span id="github_star_count">13</span> <span id="github_star"><a href="javascript:void(0)"><i class="far fa-star"></i></a></span></li>
-            <li>Issues: 4 open, 1 closed</li>
-            <li>Last push: 04 Dec 2019</li>
-          </ul>
-        </dd>
-      </dl>
-      
       
       <dl class="tags">
         <dt>Tags</dt>
@@ -389,9 +377,9 @@
 
 <script type="application/javascript">
   $(function() {
-    var has_github = true;
+    var has_github = false;
     if (has_github) {
-      var github_repo = "waltmoorhouse/OctoPrint-Filamentstorage";
+      var github_repo = "";
 
       if (github_repo) {
         var status = "unknown";

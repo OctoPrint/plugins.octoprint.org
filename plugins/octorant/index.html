@@ -394,27 +394,9 @@ or manually using this URL:</p>
       
       <dl class="install_events">
         <dt>New installs the past week</dt>
-        <dd>At least <strong>22</strong> new installations</dd>
+        <dd>At least <strong>21</strong> new installations</dd>
       </dl>
       
-      
-      <dl class="github">
-        <dt>GitHub stats <a href="/help/github_integration/" class="fas fa-question-circle"></a> <span id="github_login">(<a href="javascript:void(0)">Login</a>)</span></dt>
-        <dd>
-          <ul>
-            
-            <li>
-              Latest Release: <a href="https://github.com/bchanudet/OctoPrint-Octorant/releases/tag/1.2.3" target="_blank">1.2.3</a><br>
-              <small>released on 18 Mar 2020</small>
-            </li>
-            <li>Releases: 6</li>
-            
-            <li>Stars: <span id="github_star_count">19</span> <span id="github_star"><a href="javascript:void(0)"><i class="far fa-star"></i></a></span></li>
-            <li>Issues: 14 open, 30 closed</li>
-            <li>Last push: 18 Mar 2020</li>
-          </ul>
-        </dd>
-      </dl>
       
       
       <dl class="tags">
@@ -503,9 +485,9 @@ or manually using this URL:</p>
 
 <script type="application/javascript">
   $(function() {
-    var has_github = true;
+    var has_github = false;
     if (has_github) {
-      var github_repo = "bchanudet/OctoPrint-Octorant";
+      var github_repo = "";
 
       if (github_repo) {
         var status = "unknown";

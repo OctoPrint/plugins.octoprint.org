@@ -350,27 +350,9 @@
       
       <dl class="install_events">
         <dt>New installs the past week</dt>
-        <dd>At least <strong>35</strong> new installations</dd>
+        <dd>At least <strong>36</strong> new installations</dd>
       </dl>
       
-      
-      <dl class="github">
-        <dt>GitHub stats <a href="/help/github_integration/" class="fas fa-question-circle"></a> <span id="github_login">(<a href="javascript:void(0)">Login</a>)</span></dt>
-        <dd>
-          <ul>
-            
-            <li>
-              Latest Release: <a href="https://github.com/OctoPrint/OctoPrint-Slic3r/releases/tag/1.2.2" target="_blank">1.2.2</a><br>
-              <small>released on 12 Jan 2021</small>
-            </li>
-            <li>Releases: 7</li>
-            
-            <li>Stars: <span id="github_star_count">73</span> <span id="github_star"><a href="javascript:void(0)"><i class="far fa-star"></i></a></span></li>
-            <li>Issues: 6 open, 41 closed</li>
-            <li>Last push: 13 Jan 2021</li>
-          </ul>
-        </dd>
-      </dl>
       
       
       <dl class="tags">
@@ -465,9 +447,9 @@
 
 <script type="application/javascript">
   $(function() {
-    var has_github = true;
+    var has_github = false;
     if (has_github) {
-      var github_repo = "OctoPrint/OctoPrint-Slic3r";
+      var github_repo = "";
 
       if (github_repo) {
         var status = "unknown";

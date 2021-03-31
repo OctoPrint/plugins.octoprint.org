@@ -285,27 +285,9 @@ You can install multiple libraries if your firmware needs it, upload your firmwa
       
       <dl class="install_events">
         <dt>New installs the past week</dt>
-        <dd>At least <strong>87</strong> new installations</dd>
+        <dd>At least <strong>88</strong> new installations</dd>
       </dl>
       
-      
-      <dl class="github">
-        <dt>GitHub stats <a href="/help/github_integration/" class="fas fa-question-circle"></a> <span id="github_login">(<a href="javascript:void(0)">Login</a>)</span></dt>
-        <dd>
-          <ul>
-            
-            <li>
-              Latest Release: <a href="https://github.com/Renaud11232/OctoPrint-Marlin-Flasher/releases/tag/0.4.1" target="_blank">0.4.1</a><br>
-              <small>released on 15 Nov 2020</small>
-            </li>
-            <li>Releases: 36</li>
-            
-            <li>Stars: <span id="github_star_count">31</span> <span id="github_star"><a href="javascript:void(0)"><i class="far fa-star"></i></a></span></li>
-            <li>Issues: 12 open, 56 closed</li>
-            <li>Last push: 15 Mar 2021</li>
-          </ul>
-        </dd>
-      </dl>
       
       
       <dl class="tags">
@@ -400,9 +382,9 @@ You can install multiple libraries if your firmware needs it, upload your firmwa
 
 <script type="application/javascript">
   $(function() {
-    var has_github = true;
+    var has_github = false;
     if (has_github) {
-      var github_repo = "Renaud11232/OctoPrint-Marlin-Flasher";
+      var github_repo = "";
 
       if (github_repo) {
         var status = "unknown";
