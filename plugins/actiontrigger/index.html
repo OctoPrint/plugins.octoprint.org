@@ -184,7 +184,7 @@
     <article class="post-content span8">
       
       
-      
+      <div class="alert"><h3>This plugin has been abandoned</h3>The current maintainer of this plugin seems to have abandoned it. If you want to take over its maintainenance, please get in touch <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/833" target="_blank" rel="noopener noreferrer">here...</a></div>
       
 
       <p class="lead">
@@ -274,6 +274,24 @@ action:door_closed
       </dl>
       
       
+      <dl class="github">
+        <dt>GitHub stats <a href="/help/github_integration/" class="fas fa-question-circle"></a> <span id="github_login">(<a href="javascript:void(0)">Login</a>)</span></dt>
+        <dd>
+          <ul>
+            
+            <li>
+              Latest Release: <a href="https://github.com/Booli/OctoPrint-ActionTriggerPlugin/releases/tag/v1.1" target="_blank">v1.1</a><br>
+              <small>released on 28 Jun 2020</small>
+            </li>
+            <li>Releases: 1</li>
+            
+            <li>Stars: <span id="github_star_count">3</span> <span id="github_star"><a href="javascript:void(0)"><i class="far fa-star"></i></a></span></li>
+            <li>Issues: 2 open, 2 closed</li>
+            <li>Last push: 14 Sep 2020</li>
+          </ul>
+        </dd>
+      </dl>
+      
       
       <dl class="tags">
         <dt>Tags</dt>
@@ -357,9 +375,9 @@ action:door_closed
 
 <script type="application/javascript">
   $(function() {
-    var has_github = false;
+    var has_github = true;
     if (has_github) {
-      var github_repo = "";
+      var github_repo = "Booli/OctoPrint-ActionTriggerPlugin";
 
       if (github_repo) {
         var status = "unknown";

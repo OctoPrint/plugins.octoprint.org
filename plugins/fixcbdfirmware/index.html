@@ -263,15 +263,33 @@ or manually using this URL:</p>
       
       <dl class="installations">
         <dt>Active instances the past month</dt>
-        <dd>Installed on at least <strong>670</strong> instances</dd>
+        <dd>Installed on at least <strong>671</strong> instances</dd>
       </dl>
       
       
       <dl class="install_events">
         <dt>New installs the past week</dt>
-        <dd>At least <strong>35</strong> new installations</dd>
+        <dd>At least <strong>36</strong> new installations</dd>
       </dl>
       
+      
+      <dl class="github">
+        <dt>GitHub stats <a href="/help/github_integration/" class="fas fa-question-circle"></a> <span id="github_login">(<a href="javascript:void(0)">Login</a>)</span></dt>
+        <dd>
+          <ul>
+            
+            <li>
+              Latest Release: <a href="https://github.com/OctoPrint/OctoPrint-FixCBDFirmware/releases/tag/0.4.0" target="_blank">0.4.0</a><br>
+              <small>released on 23 Feb 2021</small>
+            </li>
+            <li>Releases: 5</li>
+            
+            <li>Stars: <span id="github_star_count">2</span> <span id="github_star"><a href="javascript:void(0)"><i class="far fa-star"></i></a></span></li>
+            <li>Issues: 0 open, 1 closed</li>
+            <li>Last push: 23 Feb 2021</li>
+          </ul>
+        </dd>
+      </dl>
       
       
       <dl class="tags">
@@ -374,9 +392,9 @@ or manually using this URL:</p>
 
 <script type="application/javascript">
   $(function() {
-    var has_github = false;
+    var has_github = true;
     if (has_github) {
-      var github_repo = "";
+      var github_repo = "OctoPrint/OctoPrint-FixCBDFirmware";
 
       if (github_repo) {
         var status = "unknown";

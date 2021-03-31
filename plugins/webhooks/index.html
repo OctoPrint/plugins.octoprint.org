@@ -624,7 +624,7 @@ For instance, if the reponse of the OAuth request was</p>
       
       <dl class="installations">
         <dt>Active instances the past month</dt>
-        <dd>Installed on at least <strong>331</strong> instances</dd>
+        <dd>Installed on at least <strong>330</strong> instances</dd>
       </dl>
       
       
@@ -633,6 +633,24 @@ For instance, if the reponse of the OAuth request was</p>
         <dd>At least <strong>13</strong> new installations</dd>
       </dl>
       
+      
+      <dl class="github">
+        <dt>GitHub stats <a href="/help/github_integration/" class="fas fa-question-circle"></a> <span id="github_login">(<a href="javascript:void(0)">Login</a>)</span></dt>
+        <dd>
+          <ul>
+            
+            <li>
+              Latest Release: <a href="https://github.com/2blane/OctoPrint-Webhooks/releases/tag/3.0.3" target="_blank">3.0.3</a><br>
+              <small>released on 25 May 2020</small>
+            </li>
+            <li>Releases: 20</li>
+            
+            <li>Stars: <span id="github_star_count">24</span> <span id="github_star"><a href="javascript:void(0)"><i class="far fa-star"></i></a></span></li>
+            <li>Issues: 9 open, 15 closed</li>
+            <li>Last push: 27 Feb 2021</li>
+          </ul>
+        </dd>
+      </dl>
       
       
       <dl class="tags">
@@ -729,9 +747,9 @@ For instance, if the reponse of the OAuth request was</p>
 
 <script type="application/javascript">
   $(function() {
-    var has_github = false;
+    var has_github = true;
     if (has_github) {
-      var github_repo = "";
+      var github_repo = "2blane/OctoPrint-Webhooks";
 
       if (github_repo) {
         var status = "unknown";

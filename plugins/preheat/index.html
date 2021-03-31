@@ -251,15 +251,33 @@ If the target temperature is not zero, the button will instead turn off nozzle h
       
       <dl class="installations">
         <dt>Active instances the past month</dt>
-        <dd>Installed on at least <strong>9.45k</strong> instances</dd>
+        <dd>Installed on at least <strong>9.44k</strong> instances</dd>
       </dl>
       
       
       <dl class="install_events">
         <dt>New installs the past week</dt>
-        <dd>At least <strong>216</strong> new installations</dd>
+        <dd>At least <strong>218</strong> new installations</dd>
       </dl>
       
+      
+      <dl class="github">
+        <dt>GitHub stats <a href="/help/github_integration/" class="fas fa-question-circle"></a> <span id="github_login">(<a href="javascript:void(0)">Login</a>)</span></dt>
+        <dd>
+          <ul>
+            
+            <li>
+              Latest Release: <a href="https://github.com/marian42/octoprint-preheat/releases/tag/0.7.2" target="_blank">0.7.2</a><br>
+              <small>released on 25 Mar 2021</small>
+            </li>
+            <li>Releases: 12</li>
+            
+            <li>Stars: <span id="github_star_count">21</span> <span id="github_star"><a href="javascript:void(0)"><i class="far fa-star"></i></a></span></li>
+            <li>Issues: 1 open, 43 closed</li>
+            <li>Last push: 25 Mar 2021</li>
+          </ul>
+        </dd>
+      </dl>
       
       
       <dl class="tags">
@@ -348,9 +366,9 @@ If the target temperature is not zero, the button will instead turn off nozzle h
 
 <script type="application/javascript">
   $(function() {
-    var has_github = false;
+    var has_github = true;
     if (has_github) {
-      var github_repo = "";
+      var github_repo = "marian42/octoprint-preheat";
 
       if (github_repo) {
         var status = "unknown";
