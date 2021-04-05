@@ -3177,6 +3177,17 @@
 "author": "Stephen Berry",
 "content": "OctoText - Simple, Easy to use, Free text or email notificationsOctoText is a notification plugin that will send you a text or email on configurable printer events. All you need is an email account! The printer status - along with a webcam snapshot if configured - willbe sent to you either through email or SMS text message.OctoText is not a service, you will never be charged and your information is only stored on the device itis installed on and never transmitted anywhere for any reason.Get optionally notified on the following printer events:    File uploaded    Print started    Print done    Print failure     Peroidic progress updates     Error (unrecoverable)OctoText plugin installationIf you can set up an email account you can configure OctoText!  Install the plugin via the Plugin Manager  Choose an existing email or setup a new email account to be used for the plugin. It is recommended that you use a freeservice such as Microsoft’s Outlook just for this. The email host will need to allow you to send emailvia an SMTP gateway and you will need this information to set up OctoText.  Open the settings tab on Octoprint for the OctoText settings and change the default gateway and port for your email hosting service. Outlook uses smtp.office365.com for its gateway and 587 for the port number.  Optionally modify the “Message” setting for the test.  Change the email address and password settings to match the account you setup. The password is stored securely on the OctoPrint server and NEVER transmitted beyond setting up the email connection.  For a text message enter the phone number and SMS gateway(1), for email destination enter the username and host.com address  If you are going to use the webcam - test the snapshot setting first!  Press the test button!That’s it! You will get feedback relatively quickly if the text/email was configured correctly.The only error case that we cannot detect easily is a bad destination address of the text or email.(1) https://en.wikipedia.org/wiki/SMS_gatewayProblems?If you are having trouble with your setup, you can post on the discussion board and I’ll get to your question as soon as I can. Please include a copy of the octoprint log from the logging menu of octoprint. https://github.com/berrystephenw/OctoText/discussions",
 "tags": ["octotext","printer status","email","text","notification"]
+},
+
+{
+"id": "/plugins/energeniecontrol",
+"url": "/plugins/energeniecontrol/",
+"date": "2021-04-05 00:00:00 -0500",
+"title": "OctoPrint-EnergenieControl",
+"description": "Controls Energenie sockets to turn printer on and off.",
+"author": "Arlo Blythe",
+"content": "Uses the Energenie remote control sockets to turn the 3d printer on when OctoPrint connects, and turn it off when it disconnects.The control board and sockets can be found here and hereThe plugin doesn’t add any UI to OctoPrint, it just runs when OctoPrint connects to, or disconnects from, the printer. This can be done from the OctoPrint sidebar, but any automatic connections or disconnections will also trigger it.",
+"tags": ["raspberry pi","GPIO","power","wireless"]
 }
 ]
 }

@@ -5,10 +5,34 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>https://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 05 Apr 2021 07:22:40 -0500</pubDate>
-    <lastBuildDate>Mon, 05 Apr 2021 07:22:40 -0500</lastBuildDate>
+    <pubDate>Mon, 05 Apr 2021 11:33:42 -0500</pubDate>
+    <lastBuildDate>Mon, 05 Apr 2021 11:33:42 -0500</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
+    
+      <item>
+        <title>OctoPrint-EnergenieControl</title>
+        <description>
+          <![CDATA[
+            Controls Energenie sockets to turn printer on and off.
+            <p><img src="https://plugins.octoprint.org/assets/img/repo-600x400.png"></p>
+            
+          ]]>
+        </description>
+        <pubDate>
+Mon, 05 Apr 2021 00:00:00 -0500</pubDate>
+        <link>https://plugins.octoprint.org/plugins/energeniecontrol/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/energeniecontrol/</guid>
+        
+        <category>raspberry pi</category>
+        
+        <category>GPIO</category>
+        
+        <category>power</category>
+        
+        <category>wireless</category>
+        
+      </item>
     
       <item>
         <title>OctoText</title>
@@ -213,27 +237,6 @@ Wed, 17 Feb 2021 00:00:00 -0600</pubDate>
         <category>Tp-Link</category>
         
         <category>Auto_Shutdown</category>
-        
-      </item>
-    
-      <item>
-        <title>GPIO Control</title>
-        <description>
-          <![CDATA[
-            GPIO Control adds a sidebar with on/off buttons. You can add as many buttons as you want that will control each device connected to your Raspberry Pi.
-            <p><img src="https://plugins.octoprint.org/assets/img/plugins/gpiocontrol/sidebar.png"></p>
-          ]]>
-        </description>
-        <pubDate>
-Tue, 16 Feb 2021 00:00:00 -0600</pubDate>
-        <link>https://plugins.octoprint.org/plugins/gpiocontrol/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/gpiocontrol/</guid>
-        
-        <category>raspberry pi</category>
-        
-        <category>gpio</category>
-        
-        <category>control</category>
         
       </item>
     

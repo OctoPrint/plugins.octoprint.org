@@ -6,9 +6,9 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html"> <!--<![endif]-->
 <head>
     <meta charset="utf-8" />
-    <title>Upload Anything</title>
-    <meta name="description" content="Allows custom file types to be uploaded via the web interface">
-    <meta name="author" content="Roberto Lo Giacco">
+    <title>OctoPrint-EnergenieControl</title>
+    <meta name="description" content="Controls Energenie sockets to turn printer on and off.">
+    
     <meta name="referrer" content="same-origin">
     <meta name="google-site-verification" content="0EFsbaNygJcEinKPmzP-hTf0Ju6wDIpJxO5zvQtOQT0" />
 
@@ -39,27 +39,30 @@
 
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@OctoPrint3D" />
-    <meta name="twitter:title" content="Upload Anything" />
-    <meta name="twitter:description" content="If you want to keep your files organized storing project files and models along the sliced GCODE as I do then this plugin will allow you to overcome the default constraint allowing to upload only GCODE files via the file embedded file upload mechanism.
+    <meta name="twitter:title" content="OctoPrint-EnergenieControl" />
+    <meta name="twitter:description" content="Uses the Energenie remote control sockets to turn the 3d printer on when OctoPrint connects, and turn it off when it disconnects.
+The control board and sockets can be found here and here
 
 " />
-    <meta name="twitter:image" content="https://plugins.octoprint.org" />
+    <meta name="twitter:image" content="https://plugins.octoprint.org/assets/img/octoprint-avatar-240x240.png" />
 
-    <meta property="og:title" content="Upload Anything" />
+    <meta property="og:title" content="OctoPrint-EnergenieControl" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://plugins.octoprint.org/assets/img/plugins/uploadanything/settings.png" />
-    <meta property="og:description" content="If you want to keep your files organized storing project files and models along the sliced GCODE as I do then this plugin will allow you to overcome the default constraint allowing to upload only GCODE files via the file embedded file upload mechanism.
+    <meta property="og:image" content="https://plugins.octoprint.org/assets/img/repo-600x400.png" />
+    <meta property="og:description" content="Uses the Energenie remote control sockets to turn the 3d printer on when OctoPrint connects, and turn it off when it disconnects.
+The control board and sockets can be found here and here
 
 " />
     <meta property="og:site_name" content="OctoPrint Plugin Repository" />
-    <meta property="og:url" content="https://plugins.octoprint.org/plugins/uploadanything/" />
+    <meta property="og:url" content="https://plugins.octoprint.org/plugins/energeniecontrol/" />
 
     <meta itemscope itemtype="http://schema.org/WebPage" />
-    <meta itemprop="headline" content="Upload Anything" />
-    <meta itemprop="description" content="If you want to keep your files organized storing project files and models along the sliced GCODE as I do then this plugin will allow you to overcome the default constraint allowing to upload only GCODE files via the file embedded file upload mechanism.
+    <meta itemprop="headline" content="OctoPrint-EnergenieControl" />
+    <meta itemprop="description" content="Uses the Energenie remote control sockets to turn the 3d printer on when OctoPrint connects, and turn it off when it disconnects.
+The control board and sockets can be found here and here
 
 " />
-    <meta itemprop="image" content="https://plugins.octoprint.org/assets/img/plugins/uploadanything/settings.png" />
+    <meta itemprop="image" content="https://plugins.octoprint.org/assets/img/repo-600x400.png" />
 
     <script type="text/javascript" integrity="sha256-S1jf6xGbLdFfVOCgdM+OtjIEyLA9RQVuC1FOBC82qkQ=" crossorigin="anonymous" src="/assets/js/jquery-1.9.1.min-4b58dfeb119b2dd15f54e0a074cf8eb63204c8b03d45056e0b514e042f36aa44.js"></script>
     <script type="text/javascript" integrity="sha256-Qtj60TvCj8cmd1GW7Jq5U/6/m94XXFhFEoNhyVP6F/Q=" crossorigin="anonymous" src="/assets/js/underscore.min-42d8fad13bc28fc726775196ec9ab953febf9bde175c5845128361c953fa17f4.js"></script>
@@ -161,7 +164,7 @@
   <div class="container">
     <div class="row">
       <div class="span12">
-        <h1>Upload Anything</h1>
+        <h1>OctoPrint-EnergenieControl</h1>
       </div>
     </div>
   </div>
@@ -170,11 +173,11 @@
 <div class="container">
   <div class="row-fluid">
     
-    <small class="pull-left"><a href="/plugins/updatefix127/"><i class="fa fa-double-angle-left"></i>&nbsp;Updatefix 1.2.7</a></small>
+    <small class="pull-left"><a href="/plugins/enclosure/"><i class="fa fa-double-angle-left"></i>&nbsp;OctoPrint-Enclosure</a></small>
     
     &nbsp;
     
-    <small class="pull-right"><a href="/plugins/virtual_printerconfig/">Virtual Printer Settings&nbsp;<i class="fa fa-double-angle-right"></i></a></small>
+    <small class="pull-right"><a href="/plugins/FanSpeedMirror/">OctoPrint-FanSpeedMirror&nbsp;<i class="fa fa-double-angle-right"></i></a></small>
     
   </div>
   <div class="content plugin-content row-fluid">
@@ -185,32 +188,14 @@
       
 
       <p class="lead">
-        Allows custom file types to be uploaded via the web interface
+        Controls Energenie sockets to turn printer on and off.
       </p>
-      <p>If you want to keep your files organized storing project files and models along the sliced GCODE as I do then this plugin will allow you to overcome the default constraint allowing to upload only GCODE files via the file embedded file upload mechanism.</p>
+      <p>Uses the Energenie remote control sockets to turn the 3d printer on when OctoPrint connects, and turn it off when it disconnects.
+The control board and sockets can be found <a href="https://cpc.farnell.com/energenie/ener002/1-gang-socket-radio-controlled/dp/PL14928">here</a> and <a href="https://cpc.farnell.com/energenie/ener314/rf-controller-board-for-raspberry/dp/SC13489">here</a></p>
 
-<p>By default this plugin adds the following file extensions:</p>
-
-<ul>
-  <li>STL</li>
-  <li>OBJ</li>
-  <li>3MF</li>
-  <li>JPG</li>
-  <li>GIF</li>
-  <li>PNG</li>
-</ul>
-
-<p>You can add or remove from the above list at your liking via the dedicated plugin settings.</p>
+<p>The plugin doesn’t add any UI to OctoPrint, it just runs when OctoPrint connects to, or disconnects from, the printer. This can be done from the OctoPrint sidebar, but any automatic connections or disconnections will also trigger it.</p>
 
 
-      
-        <h2>Pictures</h2>
-        
-        <figure>
-          
-          <a href="/assets/img/plugins/uploadanything/settings.png" data-lightbox="/plugins/uploadanything" data-title="Customize allowed file extensions"><img src="/assets/img/plugins/uploadanything/settings.png" alt="Plugin settings" title="Customize allowed file extensions"></a>
-        </figure>
-        
       
     </article>
 
@@ -238,14 +223,14 @@
         
         <dd>
           URL:
-          <pre>https://github.com/rlogiacco/UploadAnything/archive/master.zip</pre>
+          <pre>https://github.com/arlohb/OctoPrint-EnergenieControl/archive/main.zip</pre>
           
         </dd>
         
         
         <dd>
           Command line:
-          <pre>pip install "https://github.com/rlogiacco/UploadAnything/archive/master.zip"</pre>
+          <pre>pip install "https://github.com/arlohb/OctoPrint-EnergenieControl/archive/main.zip"</pre>
         </dd>
         
       </dl>
@@ -253,19 +238,19 @@
       
       <dl class="date">
         <dt>Registration date</dt>
-        <dd>28 May 2019</dd>
+        <dd>05 Apr 2021</dd>
       </dl>
       
       
       <dl class="installations">
         <dt>Active instances the past month</dt>
-        <dd>Installed on at least <strong>387</strong> instances</dd>
+        <dd>Installed on at least <strong>1</strong> instances</dd>
       </dl>
       
       
       <dl class="install_events">
         <dt>New installs the past week</dt>
-        <dd>At least <strong>16</strong> new installations</dd>
+        <dd>At least <strong>1</strong> new installations</dd>
       </dl>
       
       
@@ -274,9 +259,15 @@
         <dd>
           <ul>
             
-            <li>Stars: <span id="github_star_count">2</span> <span id="github_star"><a href="javascript:void(0)"><i class="far fa-star"></i></a></span></li>
-            <li>Issues: 1 open, 1 closed</li>
-            <li>Last push: 29 Nov 2020</li>
+            <li>
+              Latest Release: <a href="https://github.com/arlohb/OctoPrint-EnergenieControl/releases/tag/v1.0.0" target="_blank">v1.0.0</a><br>
+              <small>released on 05 Apr 2021</small>
+            </li>
+            <li>Releases: 1</li>
+            
+            <li>Stars: <span id="github_star_count">0</span> <span id="github_star"><a href="javascript:void(0)"><i class="far fa-star"></i></a></span></li>
+            <li>Issues: 0 open, 0 closed</li>
+            <li>Last push: 05 Apr 2021</li>
           </ul>
         </dd>
       </dl>
@@ -289,9 +280,13 @@
           
           
           
-          <a class="label" href="/by_tag/#tag-file-upload">file upload</a>
+          <a class="label" href="/by_tag/#tag-gpio">gpio</a>
           
-          <a class="label" href="/by_tag/#tag-upload">upload</a>
+          <a class="label" href="/by_tag/#tag-power">power</a>
+          
+          <a class="label" href="/by_tag/#tag-raspberry-pi">raspberry pi</a>
+          
+          <a class="label" href="/by_tag/#tag-wireless">wireless</a>
           
         </dd>
       </dl>
@@ -304,7 +299,7 @@
             <li>OctoPrint: all versions</li>
             
             
-            <li>Operating Systems: Linux, Windows, Mac OS X, FreeBSD</li>
+            <li>Operating Systems: Linux</li>
             
             
             <li>Python: &gt;=2.7,&lt;4</li>
@@ -314,28 +309,30 @@
       </dl>
       
       <dl class="author">
-        <dt>Author</dt>
-        <dd>
-<a href="/by_author/#roberto-lo-giacco">Roberto Lo Giacco</a>
+        <dt>Authors</dt>
+        
+          <dd>
+<a href="/by_author/#arlo-blythe">Arlo Blythe</a>
 </dd>
+        
       </dl>
       
       
       <dl class="homepage">
         <dt>Homepage</dt>
-        <dd><a href="https://github.com/rlogiacco/UploadAnything" target="_blank">https://github.com/rlogiacco/UploadAnything</a></dd>
+        <dd><a href="https://github.com/arlohb/OctoPrint-EnergenieControl" target="_blank">https://github.com/arlohb/OctoPrint-EnergenieControl</a></dd>
       </dl>
       
       
       <dl class="source">
         <dt>Source</dt>
-        <dd><a href="https://github.com/rlogiacco/UploadAnything" target="_blank">https://github.com/rlogiacco/UploadAnything</a></dd>
+        <dd><a href="https://github.com/arlohb/OctoPrint-EnergenieControl" target="_blank">https://github.com/arlohb/OctoPrint-EnergenieControl</a></dd>
       </dl>
       
       
       <dl class="license">
         <dt>License</dt>
-        <dd>Apache License 2.0</dd>
+        <dd>AGPLv3</dd>
       </dl>
       
       <dl class="issue">
@@ -343,19 +340,19 @@
         <dd>
           <p>
             If there is <strong>something wrong with this listing</strong> (broken links & images etc), please
-            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?template=listing_error.yml&labels%5B%5D=listing+error&title=%5BListing+Error%5D+Upload+Anything&which_plugin=https%3A%2F%2Fplugins.octoprint.org%2Fplugins%2Fuploadanything%2F">report it here</a>.
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?template=listing_error.yml&labels%5B%5D=listing+error&title=%5BListing+Error%5D+OctoPrint-EnergenieControl&which_plugin=https%3A%2F%2Fplugins.octoprint.org%2Fplugins%2Fenergeniecontrol%2F">report it here</a>.
           </p>
           <p>
             If this plugin <strong>has been <em>confirmed</em> as abandoned</strong> by its maintainer, please
-            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?template=abandoned_plugin.yml&labels%5B%5D=abandoned+plugin&title=%5BAbandoned+Plugin%5D+Upload+Anything&which_plugin=https%3A%2F%2Fplugins.octoprint.org%2Fplugins%2Fuploadanything%2F">report it here</a>.
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?template=abandoned_plugin.yml&labels%5B%5D=abandoned+plugin&title=%5BAbandoned+Plugin%5D+OctoPrint-EnergenieControl&which_plugin=https%3A%2F%2Fplugins.octoprint.org%2Fplugins%2Fenergeniecontrol%2F">report it here</a>.
           </p>
           <p>
             If this plugin is <strong>doing something suspicious</strong> (e.g. weird network activity, unannounced tracking, ...) and
             the maintainer is not cooperating in getting to the bottom of that, please
-            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?template=suspicious_plugin_activity.yml&labels%5B%5D=suspicious+plugin+activity&title=%5BSuspicious+Plugin+Activity%5D+Upload+Anything&which_plugin=https%3A%2F%2Fplugins.octoprint.org%2Fplugins%2Fuploadanything%2F">report the plugin as suspicious here</a>.
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?template=suspicious_plugin_activity.yml&labels%5B%5D=suspicious+plugin+activity&title=%5BSuspicious+Plugin+Activity%5D+OctoPrint-EnergenieControl&which_plugin=https%3A%2F%2Fplugins.octoprint.org%2Fplugins%2Fenergeniecontrol%2F">report the plugin as suspicious here</a>.
           </p>
           <p>
-            Report bugs or feature requests for the plugin to the plugin author (e.g. on the plugin's <a href="https://github.com/rlogiacco/UploadAnything">homepage</a>) please, not here!
+            Report bugs or feature requests for the plugin to the plugin author (e.g. on the plugin's <a href="https://github.com/arlohb/OctoPrint-EnergenieControl">homepage</a>) please, not here!
           </p>
         </dd>
       </dl>
@@ -368,7 +365,7 @@
   $(function() {
     var has_github = true;
     if (has_github) {
-      var github_repo = "rlogiacco/UploadAnything";
+      var github_repo = "arlohb/OctoPrint-EnergenieControl";
 
       if (github_repo) {
         var status = "unknown";
