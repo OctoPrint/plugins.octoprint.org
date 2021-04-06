@@ -2,7 +2,6 @@ name: Report suspicious plugin activity
 description: Use this to report plugins that are doing something malicious and/or undocumented (e.g. crypto mining, suspicious network connections, unannounced tracking without opt-in, ...)
 title: '[Suspicious Plugin Activity] <insert name of plugin here>'
 labels: 'suspicious plugin activity'
-issue_body: true
 body:
   - type: markdown
     attributes:
@@ -53,9 +52,8 @@ body:
       placeholder: https://...
     validations:
       required: true
-  - type: markdown
+  - type: textarea
     attributes:
-      value: >
-        ### Further information you want to provide
-
+      label: Further information you want to provide
+      description: >-
         If there's any more information you want to provide, please do this here:
