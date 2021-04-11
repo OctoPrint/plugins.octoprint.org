@@ -1,9 +1,9 @@
 ---
 layout: plugin
 
-id: octoprint_nanny
-title: OctoPrint Nanny
-description: Get notified of print defects and safety hazards
+id: print_nanny
+title: Print Nanny
+description: Sick of babysitting your 3D printer? Get notified automatically of print failures.
 author: Leigh Johnson
 license: GNU AFFERO GENERAL PUBLIC LICENSE
 
@@ -34,24 +34,24 @@ tags:
 
 # TODO
 screenshots:
-- url: /assets/img/plugins/octoprint_nanny/logo.jpg
+- url: /assets/img/plugins/print_nanny/logo.jpg
   alt: Print Nanny Logo
   caption: Print Nanny
-- url: /assets/img/plugins/octoprint_nanny/screenshot_1.png
+- url: /assets/img/plugins/print_nanny/screenshot_1.png
   alt: OctoPrint UI plugin tab
   caption: Print Nanny monitors your 3D prints in real-time.
-- url: /assets/img/plugins/octoprint_nanny/screenshot_2.png
+- url: /assets/img/plugins/print_nanny/screenshot_2.png
   alt: Control your printer and queue remotely
   caption: Control your printer and queue remotely
-- url: /assets/img/plugins/octoprint_nanny/screenshot_3.png
+- url: /assets/img/plugins/print_nanny/screenshot_3.png
   alt: No-code workflows
   caption: Build custom automation - no coding required
-- url: /assets/img/plugins/octoprint_nanny/screenshot_4.png
+- url: /assets/img/plugins/print_nanny/screenshot_4.png
   alt: Percentage completed and low quality alerts
   caption: Percentage completed and low quality alerts
 
 # TODO
-featuredimage: /assets/img/plugins/octoprint_nanny/screenshot_2.png
+featuredimage: /assets/img/plugins/print_nanny/screenshot_2.png
 
 # TODO
 # You only need the following if your plugin requires specific OctoPrint versions or
@@ -106,7 +106,7 @@ compatibility:
 
 ---
 
-![Print Nanny Logo](/assets/img/plugins/octoprint_nanny/logo.jpg)
+![Print Nanny Logo](/assets/img/plugins/print_nanny/logo.jpg)
 
 
 # What is Print Nanny?
@@ -120,7 +120,7 @@ compatibility:
 
 Learn more about Print Nanny: https://www.print-nanny.com/
 
-![Print Nanny Dashboard and App](/assets/img/plugins/octoprint_nanny/screenshot_2.png)
+![Print Nanny Dashboard and App](/assets/img/plugins/print_nanny/screenshot_2.png)
 
 
 **Note:** currently in closed Beta. Please [request an invite](https://www.print-nanny.com/request-invite/) if you're interested in a preview of Print Nanny.
@@ -128,15 +128,15 @@ Learn more about Print Nanny: https://www.print-nanny.com/
 ### Setup
 
 1. [Create an account](https://www.print-nanny.com/request-invite/)
-2. Install the OctoPrint Nanny plugin using the Plugin Manager or [clone the Github repo](https://github.com/bitsy-ai/octoprint-nanny-plugin).
+2. Install the Print Nanny plugin using the Plugin Manager or [clone the Github repo](https://github.com/bitsy-ai/octoprint-nanny-plugin).
 3. Copy your Print Nanny authentication token.
 
-![Print Nanny Dashboard and App](/assets/img/plugins/octoprint_nanny/screenshot_4.png)
+![Print Nanny Dashboard and App](/assets/img/plugins/print_nanny/screenshot_4.png)
 
 4. Open OctoPrint's settings and paste your token. Don't forget to test your connection and save!
 
 
-![Settings Example](/assets/img/plugins/octoprint_nanny/screenshot_5.png)
+![Settings Example](/assets/img/plugins/print_nanny/screenshot_5.png)
 
 
 4. That's it! Print Nanny will automatically discover new printers, save your profiles, and generate detailed reports about your print jobs.
@@ -145,7 +145,7 @@ Learn more about Print Nanny: https://www.print-nanny.com/
 
 You'll receive email notifications by default. Additional setup may be required for other notification sources and custom workflows.
 
-![Workflows Example](/assets/img/plugins/octoprint_nanny/screenshot_3.png)
+![Workflows Example](/assets/img/plugins/print_nanny/screenshot_3.png)
 
 
 ### Stay Tuned!
@@ -171,4 +171,4 @@ Details about pricing will be announced before launch.
 Participation in the Beta test will be rewarded with special discounts and swag giveaways.
 
 
-![Plugin tab live stream](/assets/img/plugins/octoprint_nanny/screenshot_1.png)
+![Plugin tab live stream](/assets/img/plugins/print_nanny/screenshot_1.png)
