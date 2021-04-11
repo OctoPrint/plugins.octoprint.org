@@ -3,7 +3,7 @@ layout: plugin
 
 id: print_nanny
 title: Print Nanny
-description: Sick of babysitting your 3D printer? Get notified automatically of print failures.
+description: Sick of babysitting your 3D printer? Get notified automatically of print failures! Control your printer from anywhere with remote commands.
 author: Leigh Johnson
 license: GNU AFFERO GENERAL PUBLIC LICENSE
 
