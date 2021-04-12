@@ -2,7 +2,6 @@ name: Report an abandoned plugin
 description: Use this to report plugins that have been confirmed as abandoned
 title: '[Abandoned Plugin] <insert name of plugin here>'
 labels: 'abandoned plugin'
-issue_body: false
 body:
   - type: markdown
     attributes:
