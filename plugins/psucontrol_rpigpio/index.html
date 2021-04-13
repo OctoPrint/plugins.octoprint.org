@@ -6,9 +6,9 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html"> <!--<![endif]-->
 <head>
     <meta charset="utf-8" />
-    <title>OctoPrint-GcodeLeveling</title>
-    <meta name="description" content="Leveling of Z values in Gcode using manually measured positions">
-    
+    <title>PSU Control - RPi.GPIO</title>
+    <meta name="description" content="Adds legacy RPi.GPIO to OctoPrint-PSUControl as a sub-plugin">
+    <meta name="author" content="Shawn Bruce">
     <meta name="referrer" content="same-origin">
     <meta name="google-site-verification" content="0EFsbaNygJcEinKPmzP-hTf0Ju6wDIpJxO5zvQtOQT0" />
 
@@ -39,27 +39,24 @@
 
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@OctoPrint3D" />
-    <meta name="twitter:title" content="OctoPrint-GcodeLeveling" />
-    <meta name="twitter:description" content="Gcode Leveling
-
+    <meta name="twitter:title" content="PSU Control - RPi.GPIO" />
+    <meta name="twitter:description" content="See https://github.com/kantlivelong/OctoPrint-PSUControl-RPiGPIO for information on configuration.
 " />
-    <meta name="twitter:image" content="https://plugins.octoprint.org" />
+    <meta name="twitter:image" content="https://plugins.octoprint.org/assets/img/octoprint-avatar-240x240.png" />
 
-    <meta property="og:title" content="OctoPrint-GcodeLeveling" />
+    <meta property="og:title" content="PSU Control - RPi.GPIO" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://plugins.octoprint.org/assets/img/plugins/gcodeleveling/point-entry.png" />
-    <meta property="og:description" content="Gcode Leveling
-
+    <meta property="og:image" content="https://plugins.octoprint.org/assets/img/repo-600x400.png" />
+    <meta property="og:description" content="See https://github.com/kantlivelong/OctoPrint-PSUControl-RPiGPIO for information on configuration.
 " />
     <meta property="og:site_name" content="OctoPrint Plugin Repository" />
-    <meta property="og:url" content="https://plugins.octoprint.org/plugins/gcodeleveling/" />
+    <meta property="og:url" content="https://plugins.octoprint.org/plugins/psucontrol_rpigpio/" />
 
     <meta itemscope itemtype="http://schema.org/WebPage" />
-    <meta itemprop="headline" content="OctoPrint-GcodeLeveling" />
-    <meta itemprop="description" content="Gcode Leveling
-
+    <meta itemprop="headline" content="PSU Control - RPi.GPIO" />
+    <meta itemprop="description" content="See https://github.com/kantlivelong/OctoPrint-PSUControl-RPiGPIO for information on configuration.
 " />
-    <meta itemprop="image" content="https://plugins.octoprint.org/assets/img/plugins/gcodeleveling/point-entry.png" />
+    <meta itemprop="image" content="https://plugins.octoprint.org/assets/img/repo-600x400.png" />
 
     <script type="text/javascript" integrity="sha256-S1jf6xGbLdFfVOCgdM+OtjIEyLA9RQVuC1FOBC82qkQ=" crossorigin="anonymous" src="/assets/js/jquery-1.9.1.min-4b58dfeb119b2dd15f54e0a074cf8eb63204c8b03d45056e0b514e042f36aa44.js"></script>
     <script type="text/javascript" integrity="sha256-Qtj60TvCj8cmd1GW7Jq5U/6/m94XXFhFEoNhyVP6F/Q=" crossorigin="anonymous" src="/assets/js/underscore.min-42d8fad13bc28fc726775196ec9ab953febf9bde175c5845128361c953fa17f4.js"></script>
@@ -161,7 +158,7 @@
   <div class="container">
     <div class="row">
       <div class="span12">
-        <h1>OctoPrint-GcodeLeveling</h1>
+        <h1>PSU Control - RPi.GPIO</h1>
       </div>
     </div>
   </div>
@@ -170,11 +167,11 @@
 <div class="container">
   <div class="row-fluid">
     
-    <small class="pull-left"><a href="/plugins/floatingnavbar/"><i class="fa fa-double-angle-left"></i>&nbsp;OctoPrint-FloatingNavbar</a></small>
+    <small class="pull-left"><a href="/plugins/psucontrol/"><i class="fa fa-double-angle-left"></i>&nbsp;PSU Control</a></small>
     
     &nbsp;
     
-    <small class="pull-right"><a href="/plugins/gitfiles/">OctoPrint-GitFiles&nbsp;<i class="fa fa-double-angle-right"></i></a></small>
+    <small class="pull-right"><a href="/plugins/PauseForUserEvent/">PauseForUser Event&nbsp;<i class="fa fa-double-angle-right"></i></a></small>
     
   </div>
   <div class="content plugin-content row-fluid">
@@ -185,41 +182,11 @@
       
 
       <p class="lead">
-        Leveling of Z values in Gcode using manually measured positions
+        Adds legacy RPi.GPIO to OctoPrint-PSUControl as a sub-plugin
       </p>
-      <h1 id="gcode-leveling">Gcode Leveling</h1>
-
-<p>This plugin creates a model of the work surface (using the least squares method on user provided points), allowing for leveling of machines through gcode that otherwise cannot be leveled (e.g. for a grbl machine). A user just needs to measure some z values at a variety of x and y values (e.g. with the paper test), then configure a couple of settings, and the plugin will handle the leveling on file upload.</p>
-
-<h2 id="setup">Setup</h2>
-
-<p>Install via the bundled <a href="https://docs.octoprint.org/en/master/bundledplugins/pluginmanager.html">Plugin Manager</a>
-or manually using this URL:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://github.com/willmac16/OctoPrint-GcodeLeveling/archive/master.zip
-</code></pre></div></div>
-
-<ul>
-  <li>The plugin depends on numpy, so it will need to install this (if it is not already installed), which can take some time on a raspberry pi.
-    <ul>
-      <li>Numpy in a python3 environment requires libatlas3-base, so some instances may need to run <code class="language-plaintext highlighter-rouge">sudo apt install libatlas3-base</code> to install properly.</li>
-    </ul>
-  </li>
-</ul>
-
-<h2 id="configuration">Configuration</h2>
-
-<p>See the <a href="https://github.com/Willmac16/OctoPrint-GcodeLeveling#configuration">GitHub page</a> for up-to-date configuration information.</p>
+      <p>See <a href="https://github.com/kantlivelong/OctoPrint-PSUControl-RPiGPIO">https://github.com/kantlivelong/OctoPrint-PSUControl-RPiGPIO</a> for information on configuration.</p>
 
 
-      
-        <h2>Pictures</h2>
-        
-        <figure>
-          
-          <a href="/assets/img/plugins/gcodeleveling/point-entry.png" data-lightbox="/plugins/gcodeleveling" data-title="Gcode Leveling Point Entry"><img src="/assets/img/plugins/gcodeleveling/point-entry.png" alt="the point entry in settings" title="Gcode Leveling Point Entry"></a>
-        </figure>
-        
       
     </article>
 
@@ -247,14 +214,14 @@ or manually using this URL:</p>
         
         <dd>
           URL:
-          <pre>https://github.com/willmac16/OctoPrint-GcodeLeveling/archive/master.zip</pre>
+          <pre>https://github.com/kantlivelong/OctoPrint-PSUControl-RPiGPIO/archive/master.zip</pre>
           
         </dd>
         
         
         <dd>
           Command line:
-          <pre>pip install "https://github.com/willmac16/OctoPrint-GcodeLeveling/archive/master.zip"</pre>
+          <pre>pip install "https://github.com/kantlivelong/OctoPrint-PSUControl-RPiGPIO/archive/master.zip"</pre>
         </dd>
         
       </dl>
@@ -262,19 +229,19 @@ or manually using this URL:</p>
       
       <dl class="date">
         <dt>Registration date</dt>
-        <dd>29 Nov 2020</dd>
+        <dd>05 Apr 2021</dd>
       </dl>
       
       
       <dl class="installations">
         <dt>Active instances the past month</dt>
-        <dd>Installed on at least <strong>226</strong> instances</dd>
+        <dd>Installed on at least <strong>0</strong> instances</dd>
       </dl>
       
       
       <dl class="install_events">
         <dt>New installs the past week</dt>
-        <dd>At least <strong>12</strong> new installations</dd>
+        <dd>At least <strong>0</strong> new installations</dd>
       </dl>
       
       
@@ -284,14 +251,14 @@ or manually using this URL:</p>
           <ul>
             
             <li>
-              Latest Release: <a href="https://github.com/Willmac16/OctoPrint-GcodeLeveling/releases/tag/0.4.0" target="_blank">0.4.0</a><br>
-              <small>released on 16 Mar 2021</small>
+              Latest Release: <a href="https://github.com/kantlivelong/OctoPrint-PSUControl-RPiGPIO/releases/tag/1.0.0" target="_blank">1.0.0</a><br>
+              <small>released on 11 Apr 2021</small>
             </li>
-            <li>Releases: 8</li>
+            <li>Releases: 1</li>
             
-            <li>Stars: <span id="github_star_count">4</span> <span id="github_star"><a href="javascript:void(0)"><i class="far fa-star"></i></a></span></li>
-            <li>Issues: 0 open, 10 closed</li>
-            <li>Last push: 16 Mar 2021</li>
+            <li>Stars: <span id="github_star_count">0</span> <span id="github_star"><a href="javascript:void(0)"><i class="far fa-star"></i></a></span></li>
+            <li>Issues: 1 open, 0 closed</li>
+            <li>Last push: 13 Apr 2021</li>
           </ul>
         </dd>
       </dl>
@@ -304,15 +271,17 @@ or manually using this URL:</p>
           
           
           
-          <a class="label" href="/by_tag/#tag-cnc">cnc</a>
+          <a class="label" href="/by_tag/#tag-atx">atx</a>
           
-          <a class="label" href="/by_tag/#tag-gcode">gcode</a>
+          <a class="label" href="/by_tag/#tag-control">control</a>
           
-          <a class="label" href="/by_tag/#tag-grbl">grbl</a>
+          <a class="label" href="/by_tag/#tag-power">power</a>
           
-          <a class="label" href="/by_tag/#tag-leveling">leveling</a>
+          <a class="label" href="/by_tag/#tag-psu">psu</a>
           
-          <a class="label" href="/by_tag/#tag-manual-bed-leveling">manual bed leveling</a>
+          <a class="label" href="/by_tag/#tag-psucontrol">psucontrol</a>
+          
+          <a class="label" href="/by_tag/#tag-ui">ui</a>
           
         </dd>
       </dl>
@@ -325,7 +294,7 @@ or manually using this URL:</p>
             <li>OctoPrint: all versions</li>
             
             
-            <li>Operating Systems: all</li>
+            <li>Operating Systems: Linux</li>
             
             
             <li>Python: &gt;=2.7,&lt;4</li>
@@ -335,24 +304,22 @@ or manually using this URL:</p>
       </dl>
       
       <dl class="author">
-        <dt>Authors</dt>
-        
-          <dd>
-<a href="/by_author/#will-maccormack">Will MacCormack</a>
+        <dt>Author</dt>
+        <dd>
+<a href="/by_author/#shawn-bruce">Shawn Bruce</a>
 </dd>
-        
       </dl>
       
       
       <dl class="homepage">
         <dt>Homepage</dt>
-        <dd><a href="https://github.com/willmac16/OctoPrint-GcodeLeveling" target="_blank">https://github.com/willmac16/OctoPrint-GcodeLeveling</a></dd>
+        <dd><a href="https://github.com/kantlivelong/OctoPrint-PSUControl-RPiGPIO" target="_blank">https://github.com/kantlivelong/OctoPrint-PSUControl-RPiGPIO</a></dd>
       </dl>
       
       
       <dl class="source">
         <dt>Source</dt>
-        <dd><a href="https://github.com/willmac16/OctoPrint-GcodeLeveling" target="_blank">https://github.com/willmac16/OctoPrint-GcodeLeveling</a></dd>
+        <dd><a href="https://github.com/kantlivelong/OctoPrint-PSUControl-RPiGPIO" target="_blank">https://github.com/kantlivelong/OctoPrint-PSUControl-RPiGPIO</a></dd>
       </dl>
       
       
@@ -366,19 +333,19 @@ or manually using this URL:</p>
         <dd>
           <p>
             If there is <strong>something wrong with this listing</strong> (broken links & images etc), please
-            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?template=listing_error.yml&labels%5B%5D=listing+error&title=%5BListing+Error%5D+OctoPrint-GcodeLeveling&which_plugin=https%3A%2F%2Fplugins.octoprint.org%2Fplugins%2Fgcodeleveling%2F">report it here</a>.
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?template=listing_error.yml&labels%5B%5D=listing+error&title=%5BListing+Error%5D+PSU+Control+-+RPi.GPIO&which_plugin=https%3A%2F%2Fplugins.octoprint.org%2Fplugins%2Fpsucontrol_rpigpio%2F">report it here</a>.
           </p>
           <p>
             If this plugin <strong>has been <em>confirmed</em> as abandoned</strong> by its maintainer, please
-            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?template=abandoned_plugin.yml&labels%5B%5D=abandoned+plugin&title=%5BAbandoned+Plugin%5D+OctoPrint-GcodeLeveling&which_plugin=https%3A%2F%2Fplugins.octoprint.org%2Fplugins%2Fgcodeleveling%2F">report it here</a>.
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?template=abandoned_plugin.yml&labels%5B%5D=abandoned+plugin&title=%5BAbandoned+Plugin%5D+PSU+Control+-+RPi.GPIO&which_plugin=https%3A%2F%2Fplugins.octoprint.org%2Fplugins%2Fpsucontrol_rpigpio%2F">report it here</a>.
           </p>
           <p>
             If this plugin is <strong>doing something suspicious</strong> (e.g. weird network activity, unannounced tracking, ...) and
             the maintainer is not cooperating in getting to the bottom of that, please
-            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?template=suspicious_plugin_activity.yml&labels%5B%5D=suspicious+plugin+activity&title=%5BSuspicious+Plugin+Activity%5D+OctoPrint-GcodeLeveling&which_plugin=https%3A%2F%2Fplugins.octoprint.org%2Fplugins%2Fgcodeleveling%2F">report the plugin as suspicious here</a>.
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?template=suspicious_plugin_activity.yml&labels%5B%5D=suspicious+plugin+activity&title=%5BSuspicious+Plugin+Activity%5D+PSU+Control+-+RPi.GPIO&which_plugin=https%3A%2F%2Fplugins.octoprint.org%2Fplugins%2Fpsucontrol_rpigpio%2F">report the plugin as suspicious here</a>.
           </p>
           <p>
-            Report bugs or feature requests for the plugin to the plugin author (e.g. on the plugin's <a href="https://github.com/willmac16/OctoPrint-GcodeLeveling">homepage</a>) please, not here!
+            Report bugs or feature requests for the plugin to the plugin author (e.g. on the plugin's <a href="https://github.com/kantlivelong/OctoPrint-PSUControl-RPiGPIO">homepage</a>) please, not here!
           </p>
         </dd>
       </dl>
@@ -391,7 +358,7 @@ or manually using this URL:</p>
   $(function() {
     var has_github = true;
     if (has_github) {
-      var github_repo = "willmac16/OctoPrint-GcodeLeveling";
+      var github_repo = "kantlivelong/OctoPrint-PSUControl-RPiGPIO";
 
       if (github_repo) {
         var status = "unknown";
