@@ -20,6 +20,8 @@ screenshots:
   alt: Settings
 featuredimage: /assets/img/plugins/CR10Leveling/control.png
 
+abandoned: https://github.com/OctoPrint/plugins.octoprint.org/issues/843
+
 ---
 
 This plugin adds buttons to apply heat to the bed and nozzle, and move the
