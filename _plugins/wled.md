@@ -66,11 +66,10 @@ aims to provide a similar experience of high configurability with ease of use.
 
 ### Compatibility
 
-This plugin will only install on Python 3 systems. For a guide to upgrading (it's easy!), please see the
-[blog post (octoprint.org)](https://octoprint.org/blog/2020/09/10/upgrade-to-py3/).
+This plugin will only install on Python 3 systems. For a guide to upgrading (it's easy!), please see my
+[blog post on the OctoPrint blog](https://octoprint.org/blog/2020/09/10/upgrade-to-py3/) for more details.
 
-In addition, I can also only guarantee compatibility with OctoPrint 1.5.0 and newer. The icons definitely won't work in
-older versions. Please update!
+In addition, I can also only guarantee compatibility with OctoPrint 1.5.0 and newer. Older versions may not work as expected.
 
 ### Install
 
@@ -78,6 +77,8 @@ Install via the bundled [Plugin Manager](https://docs.octoprint.org/en/master/bu
 or manually using this URL:
 
     https://github.com/cp2004/OctoPrint-WLED/releases/latest/download/release.zip
+
+*Note*: Do not try and install the plugin this way if it does not show up in the plugin manager - this likely means it is not compatible with your system!
 
 ## Configuration
 
