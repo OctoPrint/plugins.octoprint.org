@@ -23,14 +23,14 @@ tags:
   - addressable led
 
 screenshots:
-  - url: /assets/img/plugins/wled/plugin.png
+  - url: /assets/img/plugins/wled/wled-octoprint.png
     alt: WLED + OctoPrint
     caption: WLED meets OctoPrint!
   - url: /assets/img/plugins/wled/settings.png
     alt: WLED Settings
     caption: Sample of the WLED Settings
 
-featuredimage: /assets/img/plugins/wled/plugin.png
+featuredimage: /assets/img/plugins/wled/wled-octoprint.png
 
 compatibility:
   octoprint:
