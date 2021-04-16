@@ -5,10 +5,39 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>https://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 16 Apr 2021 07:22:23 -0500</pubDate>
-    <lastBuildDate>Fri, 16 Apr 2021 07:22:23 -0500</lastBuildDate>
+    <pubDate>Fri, 16 Apr 2021 13:13:25 -0500</pubDate>
+    <lastBuildDate>Fri, 16 Apr 2021 13:13:25 -0500</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
+    
+      <item>
+        <title>WLED Connection</title>
+        <description>
+          <![CDATA[
+            WLED is an awesome project, as is OctoPrint. What could be better than a plugin linking the two?
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/wled/wled-octoprint.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Fri, 16 Apr 2021 00:00:00 -0500</pubDate>
+        <link>https://plugins.octoprint.org/plugins/wled/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/wled/</guid>
+        
+        <category>wled</category>
+        
+        <category>led</category>
+        
+        <category>wireless</category>
+        
+        <category>IoT</category>
+        
+        <category>rgb led</category>
+        
+        <category>status</category>
+        
+        <category>addressable led</category>
+        
+      </item>
     
       <item>
         <title>PSU Control - RPi.GPIO</title>
@@ -215,32 +244,6 @@ Wed, 24 Feb 2021 00:00:00 -0600</pubDate>
         <category>ubl</category>
         
         <category>mesh</category>
-        
-      </item>
-    
-      <item>
-        <title>Slicer Print Time Estimator</title>
-        <description>
-          <![CDATA[
-            Slicer Print Time Estimator is a generic implemenation to read accurate remaining time to print embedded in the GCODE file by the slicer
-            <p><img src="https://plugins.octoprint.org/assets/img/repo-600x400.png"></p>
-            
-          ]]>
-        </description>
-        <pubDate>
-Wed, 24 Feb 2021 00:00:00 -0600</pubDate>
-        <link>https://plugins.octoprint.org/plugins/SlicerEstimator/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/SlicerEstimator/</guid>
-        
-        <category>helper</category>
-        
-        <category>estimator</category>
-        
-        <category>estimation</category>
-        
-        <category>time</category>
-        
-        <category>print time</category>
         
       </item>
     
