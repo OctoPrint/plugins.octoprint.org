@@ -90,7 +90,7 @@ compatibility:
 
 ---
 
-#### Whether you're worried about print failures, fire hazards, or network security, The Spaghetti Detective has got your back.
+<p class="lead">Whether you're worried about print failures, fire hazards, or network security, The Spaghetti Detective has got your back.</p>
 
 <div class="row-fluid" style="margin-top: 28px;">
   <div class="span4">
@@ -121,7 +121,7 @@ compatibility:
   </div>
 </div>
 
-### Features
+## Features
 
 * <span style="font-weight: bold; font-size: 1.2em;">AI-powered failure detection.</span> The Detective will watch your prints so you don't have
   to.
@@ -138,7 +138,7 @@ compatibility:
 
 <br />
 
-### Does the AI really work?
+## Does the AI really work?
 
 The Spaghetti Detective has caught thousands of failures for the 3D printing enthusiasts
 around the globe. Here are some examples:
@@ -153,11 +153,11 @@ Video courtesy of TSD user Lila.
 
 <br />
 
-If you can't have enough spaghetti (pun intended), head to [The Spaghetti Gallery](https://app.thespaghettidetective.com/publictimelapses/) for more time-lapses.
+*If you can't have enough spaghetti (pun intended), head to [The Spaghetti Gallery](https://app.thespaghettidetective.com/publictimelapses/) for more time-lapses.*
 
 <br />
 
-### Screenshots
+## Screenshots
 
 #### Unlimited webcam streaming
 
