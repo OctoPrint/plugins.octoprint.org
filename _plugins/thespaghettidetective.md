@@ -163,39 +163,53 @@ Video courtesy of TSD user Lila.
 
 Pro users get 25 fps premium webcam streaming. Free users get unlimited streaming at a lower frame rate.
 
+![Webcam streaming](/assets/img/plugins/thespaghettidetective/premium_streaming.gif
+"Webcam streaming")
+
+<br />
+
 #### Printer control
 
 ![Printer control](/assets/img/plugins/thespaghettidetective/screenshot1.jpg "Printer
 control")
+
+<br />
+
+#### Secure OctoPrint tunneling
+
+![OctoPrint tunneling](/assets/img/plugins/thespaghettidetective/screenshot8.png
+"OctoPrint tunneling")
+
+<br />
 
 #### iOS and Android apps
 
 <div class="row-fluid" style="margin-top: 28px;">
   <div class="span4">
     <img style="width: 200px; display: block; margin: auto;" src="/assets/img/plugins/thespaghettidetective/screenshot4.png" />
-    <div style="text-align: center; margin: 0 0 18px 0;">Print progress</div>
+    <div style="text-align: center;">Print progress</div>
   </div>
   <div class="span4">
     <img style="width: 200px; display: block; margin: auto;" src="/assets/img/plugins/thespaghettidetective/screenshot2.png" />
-    <div style="text-align: center; margin: 0 0 18px 0;">Temperature controls</div>
+    <div style="text-align: center;">Temperature controls</div>
   </div>
   <div class="span4">
     <img style="width: 200px; display: block; margin: auto;" src="/assets/img/plugins/thespaghettidetective/screenshot3.png" />
-    <div style="text-align: center; margin: 0 0 18px 0;">G-Code remote upload and printing</div>
+    <div style="text-align: center;">G-Code remote upload and printing</div>
   </div>
 </div>
 <div class="row-fluid" style="margin-top: 28px;">
   <div class="span4">
     <img style="width: 200px; display: block; margin: auto;" src="/assets/img/plugins/thespaghettidetective/screenshot5.png" />
-    <div style="text-align: center; margin: 0 0 18px 0;">Push notifications on lock screen</div>
+    <div style="text-align: center;">Push notifications on lock screen</div>
   </div>
   <div class="span4">
     <img style="width: 200px; display: block; margin: auto;" src="/assets/img/plugins/thespaghettidetective/screenshot6.png" />
-    <div style="text-align: center; margin: 0 0 18px 0;">Full-screen webcam streaming</div>
+    <div style="text-align: center;">Full-screen webcam streaming</div>
   </div>
   <div class="span4">
     <img style="width: 200px; display: block; margin: auto;" src="/assets/img/plugins/thespaghettidetective/screenshot7.png" />
-    <div style="text-align: center; margin: 0 0 18px 0;">Multiple printers at one glance</div>
+    <div style="text-align: center;">Multiple printers at one glance</div>
   </div>
 </div>
 
