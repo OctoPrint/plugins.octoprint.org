@@ -727,17 +727,6 @@
 },
 
 {
-"id": "/plugins/anywhere",
-"url": "/plugins/anywhere/",
-"date": "2017-07-01 00:00:00 -0500",
-"title": "OctoPrint Anywhere",
-"description": "Remote monitoring and control of your 3D printers over the internet. ANYWHERE. ON YOUR PHONE. No more port forwarding or VPN.",
-"author": "Kenneth Jiang",
-"content": "Please note: OctoPrint Anywhere will be succeeded by The Spaghetti Detective, a faster and more powerful remote monitoring tool. It also detects print failures using AI. We strongly urge you to install that plugin instead.Why OctoPrint Anywhere?Do you want to have a quick glance at the realtime webcam feed of your running print while you are at work, grocery-shopping, or from any place with internet access?Do you wish you had an easy way to remotely adjust the temperature, cancel or pause the print in case things go wrong, all from your phone?If so, OctoPrint Anywhere is for you.OctoPrint Anywhere streams the webcam feed, bed/nozzle temperature, and other critical status from your 3D printer to your phone via the internet. Now you don’t have to be on the same WiFi network as the OctoPrint to monitor and control your 3D printer. No more messing with your router to set up port forwarding (a security risk too) or VPN.Highlights of OctoPrint Anywhere  Webcam feed on your phone. Extremely low latency (usually &lt;3s).  Real-time feed on temperatures and status of active print. Pause or cancel the active print.  Bandwidth-efficiency. Streams data only when you are watching. Data transmission immediately stops when browser tab goes to background.  Sharing realtime webcam feed with your friends with an encrypted link!  Access to your timelapses anywhere so that you can show them off! Sharing them too!  Remote control of X/Y/Z movement.  Seeing the IP address of your OctoPrint.  Check status of all your 3D printers on the same page at a glance.  Many more to come…Screenshots                                Webcam Feed                                            Print Status Control                                            Webcam Sharing                                            Temperature Adjustment                                            On iPad or Laptop            Installation And Setup In 6 Easy Steps                Step 1                    Step 2                    Step 3                    Step 4                    Step 5                    Step 6    Questions? Comments? Email k@getanywhere.io",
-"tags": ["remote","monitor","monitoring","phone","control","webcam","port forwarding","internet"]
-},
-
-{
 "id": "/plugins/BLTouch",
 "url": "/plugins/BLTouch/",
 "date": "2017-07-14 00:00:00 -0500",
