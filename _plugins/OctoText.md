@@ -33,9 +33,12 @@ screenshots:
 - url: /assets/img/plugins/OctoText/IMG_6025.PNG
   alt: Webcam integration
   caption: Text message received
-- url: /assets/img/plugins/OctoText/IMG_6024.PNG
+- url: /assets/img/plugins/OctoText/test-button.PNG
   alt: Touch UI
   caption: Touch UI
+- url: /assets/img/plugins/OctoText/IMG_6143.PNG
+  alt: Thumbnail
+  caption: Thumbnail text
 - url: /assets/img/plugins/OctoText/settings.PNG
   alt: Settings page
   caption: Settings page
@@ -53,7 +56,7 @@ compatibility:
 
   # List of compatible versions
   #
-  # A single version number will be interpretated as a minimum version requirement,
+  # A single version number will be interpreted as a minimum version requirement,
   # e.g. "1.3.1" will show the plugin as compatible to OctoPrint versions 1.3.1 and up.
   # More sophisticated version requirements can be modelled too by using PEP440
   # compatible version specifiers.
@@ -100,21 +103,34 @@ compatibility:
   python: ">=3,<4"
 
 ---
-# OctoText - Simple, Easy to use, Free text or email notifications 
-OctoText is a notification plugin that will send you a text or email on configurable printer events. All 
+# OctoText - Simple, Easy to use, Free text or email notifications
+OctoText is a notification plugin that will send you a text or email on configurable printer events. All
 you need is an email account! The printer status - along with a webcam snapshot if configured - will
-be sent to you either through email or SMS text message. 
+be sent to you either through email or SMS text message.
 
-OctoText is not a service, you will never be charged and your information is only stored on the device it
+OctoText is not a service, you will never be charged, and your information is only stored on the device it
 is installed on and never transmitted anywhere for any reason.
+
+New in this release:
+<li> Thumbnails from PrusaSlicer and Cura are read from newly uploaded files
+and sent on printer start notifications.</li>
+<li> Pause detection for Prusa "wait for user" messages on filament change events.</li>
+<li> SSL protocol has been added for services that don't support TLS.</li>
+<li> better message formatting.</li>
+<li> the test button on the navigation bar is now an envelope and can be hidden.</li>
+<li> bug fixes with webcams that are rotated and flipped.</li>
+<li> the printer name is now used in the messages to identify the source of the notification.</li>
 
 ## Get optionally notified on the following printer events:
 <ul>
    <li> File uploaded</li>
    <li> Print started</li>
-   <li> Print done</li>
+   <li> Print finished</li>
    <li> Print failure </li>
-   <li> Peroidic progress updates </li>
+   <li> Print cancel </li>
+   <li> Print pause </li>
+   <li> Print resume </li>
+   <li> Periodic progress updates </li>
    <li> Error (unrecoverable)</li>
 </ul>
 
@@ -122,24 +138,33 @@ is installed on and never transmitted anywhere for any reason.
 If you can set up an email account you can configure OctoText!
 
 1. Install the plugin via the [Plugin Manager](https://docs.octoprint.org/en/master/bundledplugins/pluginmanager.html)
-2. Choose an existing email or setup a new email account to be used for the plugin. It is recommended that you use a free
-service such as Microsoft's Outlook just for this. The email host will need to allow you to send email
-via an SMTP gateway and you will need this information to set up OctoText. 
-3. Open the settings tab on Octoprint for the OctoText settings and change the default gateway and port 
-for your email hosting service. Outlook uses smtp.office365.com for its gateway and 587 for the port number.
+2. Choose an existing email or set up a new email account to be used for the plugin. It is recommended that you use a free
+service such as Microsoft's Outlook just for this. Your email host will must allow you to send messages
+via an SMTP connection and you will need the port and server address information to set up OctoText.
+3. Open the settings tab on Octoprint for the OctoText settings and change the default gateway and port
+for your email hosting service. As an example, Outlook uses smtp.office365.com for its gateway and 587 for the port number.
+   If your service uses SSL encryption then you will need to check the SSL box and set the port number appropriately
+   (usually this is port 465). TLS encryption is the default.
 4. Optionally modify the "Message" setting for the test.
-5. Change the email address and password settings to match the account you setup. The password is stored securely on 
-the OctoPrint server and NEVER transmitted beyond setting up the email connection.
+5. Change the email address and password settings to match the account you have set up. The password is stored securely on
+the OctoPrint server and NEVER transmitted beyond initiating the email connection.
 6. For a text message enter the phone number and SMS gateway(1), for email destination enter the username and host.com address
 7. If you are going to use the webcam - test the snapshot setting first!
-8. Press the test button!
+8. Save your settings.
+9. Press the test button!
 
 That's it! You will get feedback relatively quickly if the text/email was configured correctly.
-The only error case that we cannot detect easily is a bad destination address of the text or email. 
+The only error case that we cannot detect easily is a bad destination address of the text or email.
 
-(1) https://en.wikipedia.org/wiki/SMS_gateway
+Some email services such as gmail and yahoo require an "app" password that you will need to use
+in order to login to the account. Check your email provider to see how this is done or go to the
+OctoText discussion board for instructions: [FAQ](https://github.com/berrystephenw/OctoText/discussions/1#discussion-3279932)
+
+(1) [https://en.wikipedia.org/wiki/SMS_gateway](https://en.wikipedia.org/wiki/SMS_gateway)
 
 # Problems?
-If you are having trouble with your setup, you can post on the discussion board and I'll get to your question as soon as I can. Please include a copy of the octoprint log from the logging menu of octoprint. https://github.com/berrystephenw/OctoText/discussions
+If you are having trouble with your setup, you can post on the discussion board and I'll get to your question as soon as I can.
+Please include a copy of the octoprint log from the logging menu of octoprint.
+[https://github.com/berrystephenw/OctoText/discussions](https://github.com/berrystephenw/OctoText/discussions)
 
 <img width="128" alt="OctoText" src="/assets/img/plugins/OctoText/iconfinder_13_1236350.png">
