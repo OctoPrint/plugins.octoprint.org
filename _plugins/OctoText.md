@@ -2,14 +2,14 @@
 layout: plugin
 
 id: OctoText
-title: OctoPrint-Octotext
+title: OctoText
 description: Send text messages on common printer events
 authors:
 - Stephen Berry
 license: AGPLv3
 
 # TODO
-date: 2021-03-26
+date: 2021-03-30
 
 homepage: https://github.com/berrystephenw/OctoText
 source: https://github.com/berrystephenw/OctoText
