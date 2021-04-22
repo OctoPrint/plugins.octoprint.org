@@ -33,19 +33,19 @@ screenshots:
 - url: /assets/img/plugins/OctoText/IMG_6025.PNG
   alt: Webcam integration
   caption: Text message received
-- url: /assets/img/plugins/OctoText/test-button.PNG
+- url: /assets/img/plugins/OctoText/test-button.png
   alt: Touch UI
   caption: Touch UI
 - url: /assets/img/plugins/OctoText/IMG_6143.PNG
   alt: Thumbnail
   caption: Thumbnail text
-- url: /assets/img/plugins/OctoText/settings.PNG
+- url: /assets/img/plugins/OctoText/settings.png
   alt: Settings page
   caption: Settings page
 
 
 # TODO
-featuredimage: /assets/img/plugins/OctoText/octotext-email.PNG
+featuredimage: /assets/img/plugins/OctoText/octotext-email.png
 
 # TODO
 # You only need the following if your plugin requires specific OctoPrint versions or
