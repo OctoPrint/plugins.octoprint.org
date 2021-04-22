@@ -1,8 +1,7 @@
 name: Feature request
-about: Use this to request new features for the plugin repository (NOT ANY PLUGINS!)
+description: Use this to request new features for the plugin repository (NOT ANY PLUGINS!)
 title: '[Feature Request] <insert short summary of request here>'
 labels: 'enhancement'
-issue_body: true
 body:
   - type: markdown
     attributes:
@@ -23,7 +22,6 @@ body:
       description: Please provide a few examples of the kind of problems that would be solved by implementing the feature request.
     validations:
       required: true
-  - type: markdown
+  - type: textarea
     attributes:
-      value: >
-        **Any additional information you want to provide?**
+      label: Any additional information you want to provide?
