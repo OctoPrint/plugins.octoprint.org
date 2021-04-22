@@ -3,7 +3,7 @@ layout: plugin
 
 id: thespaghettidetective
 title: Access Anywhere - The Spaghetti Detective
-description: Monitor and control your printer anywhere over the internet, on your phone! No port-forwarding or VPN is needed. Best part? AI-based failure detection!
+description: 3D Print With Peace of Mind
 author: TSD Team
 license: AGPLv3
 
@@ -23,16 +23,27 @@ archive: https://github.com/TheSpaghettiDetective/OctoPrint-TheSpaghettiDetectiv
 tags:
 - remote
 - monitor
-- monitoring
 - webcam
-- AI
-- Machine Learning
 - phone
 - control
 - port forwarding
+- safe
+- secure
 - internet
+- remote access
+- remote app
+- remote camera
+- remote printing
+- monitoring
+- AI
+- Machine Learning
+- app
+- cloud printing
+- free
+- plugin support
 
-featuredimage: /assets/img/plugins/thespaghettidetective/video_preview1.png
+
+featuredimage: /assets/img/plugins/thespaghettidetective/hero.png
 
 # TODO
 # You only need the following if your plugin requires specific OctoPrint versions or
@@ -52,7 +63,7 @@ compatibility:
   # OctoPrint versions being supported.
 
   octoprint:
-  - 1.3.2
+  - 1.3.8
 
   # List of compatible operating systems
   #
@@ -79,50 +90,136 @@ compatibility:
 
 ---
 
-**Can't sleep well whenever your 3D printer is printing at night? Always worried that your print may fail when you are not home?**
+<p class="lead">Whether you're worried about print failures, fire hazards, or network security, The Spaghetti Detective has got your back.</p>
 
-[The Spaghetti Detective](https://www.thespaghettidetective.com) constantly watches your prints when you are not. It uses AI (Deep Learning) to analyze webcam images in the background and alerts you when your print shows the signs of failing.
+<div class="row-fluid" style="margin-top: 28px;">
+  <div class="span4">
+    <img style="width: 100px; display: block; margin: auto;" src="/assets/img/plugins/thespaghettidetective/TSDBenefitIcons-03.svg" />
+    <div style="text-align: center;font-weight: bolder; margin: 12px 0 18px 0;">Save time and money</div>
+  </div>
+  <div class="span4">
+    <img style="width: 100px; display: block; margin: auto;" src="/assets/img/plugins/thespaghettidetective/TSDBenefitIcons-04.svg" />
+    <div style="text-align: center;font-weight: bolder; margin: 12px 0 18px 0;">Catch print hazards early</div>
+  </div>
+  <div class="span4">
+    <img style="width: 100px; display: block; margin: auto;" src="/assets/img/plugins/thespaghettidetective/EquipmentDamageIcon-11.svg" />
+    <div style="text-align: center;font-weight: bolder; margin: 12px 0 18px 0;">Lower equipment damage risk</div>
+  </div>
+</div>
+<div class="row-fluid" style="margin-bottom: 18px;">
+  <div class="span4">
+    <img style="width: 100px; display: block; margin: auto;" src="/assets/img/plugins/thespaghettidetective/TSDBenefitIcons-05.svg" />
+    <div style="text-align: center;font-weight: bolder; margin: 12px 0 18px 0;">Secure remote access </div>
+  </div>
+  <div class="span4">
+    <img style="width: 100px; display: block; margin: auto;" src="/assets/img/plugins/thespaghettidetective/TSDBenefitIcons-08.svg" />
+    <div style="text-align: center;font-weight: bolder; margin: 12px 0 18px 0;">Manage printer on your phone </div>
+  </div>
+  <div class="span4">
+    <img style="width: 100px; display: block; margin: auto;" src="/assets/img/plugins/thespaghettidetective/TSDBenefitIcons-07.svg" />
+    <div style="text-align: center;font-weight: bolder; margin: 12px 0 18px 0;">Get the most out of OctoPrint</div>
+  </div>
+</div>
 
-It also comes with a host of other features so that you can **print remotely with a peace of mind even when you are not home**.
+## Features
 
-* Remote webcam access. No port-forwarding or VPN required (merged from [OctoPrint Anywhere](https://plugins.octoprint.org/plugins/anywhere/)).
+* <span style="font-weight: bold; font-size: 1.2em;">AI-powered failure detection.</span> The Detective will watch your prints so you don't have
+  to.
 
-* Full remote control of your printer. Pause or cancel print. Check and set heater temperatures or turn them off. Move print head.
+* **Unlimited webcam streaming.** Pro users get 25 fps premium webcam streaming. Free users get
+  unlimited streaming at a lower frame rate.
 
-* Upload G-Code files and start a print remotely.
+* **Secure OctoPrint remote access/control.** No port-forwarding or VPN required. Full
+  OctoPrint access from anywhere with an internet connection.
 
-* Easy share of your webcam streaming or time-lapses with your friend.
+* **Free companion iOS and Android app.** Progress and webcam feed pushed to your phone while printing. No need to open the app or even unlock the screen.
 
-* Alert and print job notification (when a print is done or cancelled) via email, Telegram, PushBullet, and Slack.
-
-{% include youtube.html vid="VRoV9Z1C1yM" preview="'/assets/img/plugins/thespaghettidetective/video_preview1.png'" %}
+* **Printer feed sharing.** Show off your print with an encrypted link. Easy. Secure.
 
 <br />
 
-## Sounds cool! But does this AI thing really work?
+## Does the AI really work?
 
-The Spaghetti Detective is still at early stage so it doesn't always get it right. But many beta testers have already written to us and told us "hey it worked!". Here are a few time-lapses from our users:
+The Spaghetti Detective has caught thousands of failures for the 3D printing enthusiasts
+around the globe. Here are some examples:
 
-{% include youtube.html vid="znI9_Vs6X9c" preview="'/assets/img/plugins/thespaghettidetective/video_preview2.png'" %}
-From beta tester **Torsten**
+{% include youtube.html vid="tUmHmVRIF_4" preview="'/assets/img/plugins/thespaghettidetective/video_preview2.png'" %}
+Video courtesy of TSD user Jimmy.
 
-{% include youtube.html vid="btNtCFfFYk0" preview="'/assets/img/plugins/thespaghettidetective/video_preview3.png'" %}
-From beta tester **Lila**
+<br />
 
-If you can't have enough spaghetti (pun intended), head to our [Spaghetti Gallery](https://app.thespaghettidetective.com/publictimelapses/) for more time-lapses.
+{% include youtube.html vid="uf_oSxS6oI8" preview="'/assets/img/plugins/thespaghettidetective/video_preview3.png'" %}
+Video courtesy of TSD user Lila.
 
+<br />
 
-## How about webcam streaming?
+*If you can't have enough spaghetti (pun intended), head to [The Spaghetti Gallery](https://app.thespaghettidetective.com/publictimelapses/) for more time-lapses.*
 
-Glad that you asked! The Spaghetti Detective has a shiny new feature - webcam streaming in 25 frames per second (Pro subscriber only)! Check out this video and be amazed about how smooth the webcam streaming is!
+<br />
 
-{% include youtube.html vid="UgGzcuX6Z1A" preview="'/assets/img/plugins/thespaghettidetective/streaming.png'" %}
+## Screenshots
+
+#### Unlimited webcam streaming
+
+Pro users get 25 fps premium webcam streaming. Free users get unlimited streaming at a lower frame rate.
+
+![Webcam streaming](/assets/img/plugins/thespaghettidetective/premium_streaming.gif
+"Webcam streaming")
+
+<br />
+
+#### Printer control
+
+![Printer control](/assets/img/plugins/thespaghettidetective/screenshot1.jpg "Printer
+control")
+
+<br />
+
+#### Secure OctoPrint tunneling
+
+![OctoPrint tunneling](/assets/img/plugins/thespaghettidetective/screenshot8.png
+"OctoPrint tunneling")
+
+<br />
+
+#### iOS and Android apps
+
+<div class="row-fluid" style="margin-top: 28px;">
+  <div class="span4">
+    <img style="width: 200px; display: block; margin: auto;" src="/assets/img/plugins/thespaghettidetective/screenshot4.png" />
+    <div style="text-align: center;">Print progress</div>
+  </div>
+  <div class="span4">
+    <img style="width: 200px; display: block; margin: auto;" src="/assets/img/plugins/thespaghettidetective/screenshot2.png" />
+    <div style="text-align: center;">Temperature controls</div>
+  </div>
+  <div class="span4">
+    <img style="width: 200px; display: block; margin: auto;" src="/assets/img/plugins/thespaghettidetective/screenshot3.png" />
+    <div style="text-align: center;">G-Code remote upload and printing</div>
+  </div>
+</div>
+<div class="row-fluid" style="margin-top: 28px;">
+  <div class="span4">
+    <img style="width: 200px; display: block; margin: auto;" src="/assets/img/plugins/thespaghettidetective/screenshot5.png" />
+    <div style="text-align: center;">Push notifications on lock screen</div>
+  </div>
+  <div class="span4">
+    <img style="width: 200px; display: block; margin: auto;" src="/assets/img/plugins/thespaghettidetective/screenshot6.png" />
+    <div style="text-align: center;">Full-screen webcam streaming</div>
+  </div>
+  <div class="span4">
+    <img style="width: 200px; display: block; margin: auto;" src="/assets/img/plugins/thespaghettidetective/screenshot7.png" />
+    <div style="text-align: center;">Multiple printers at one glance</div>
+  </div>
+</div>
+
 
 ## Install and setup
 
 Setting up The Spaghetti Detective is quite straightforward. Just install this plugin and follow the steps on the wizard screen and you will be all set.
 
-If you run into any difficulties, check out the [Setup Guide](https://www.thespaghettidetective.com/docs/octoprint-plugin-setup/).
+If you run into any difficulties, check out the [Setup
+Guide](https://help.thespaghettidetective.com/kb/guide/en/setup-the-spaghetti-detective-using-the-web-app-dbCcgiR0Tr/Steps/291120).
 
 ![wizard](/assets/img/plugins/thespaghettidetective/plugin_wizard.png "The Spaghetti Detective Set up Wizard")
 
@@ -136,5 +233,3 @@ Yes and No.
 <hr />
 
 *Questions? Comments? Run into problems? [Reach out to us](mailto:support@thespaghettidetective.com).*
-
-*Support us by liking us or following us on social media:* &nbsp;<a href="https://www.facebook.com/pg/thespaghettidetective/posts/"><i class="fab fa-facebook fa-2x" style="color: rgb(121, 53, 241);"></i></a>&nbsp;<a href="https://www.youtube.com/channel/UCbAJcR6t5lrdZ1JXjPPRjGA/featured?view_as=subscriber"><i class="fab fa-youtube-square fa-2x" style="color: rgb(121, 53, 241);"></i></a>&nbsp;<a href="https://twitter.com/thespaghettispy"><i class="fab fa-twitter-square fa-2x" style="color: rgb(121, 53, 241);"></i></a>
