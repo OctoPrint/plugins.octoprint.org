@@ -9,7 +9,7 @@ source: https://github.com/jonfairbanks/OctoPrint-NetworkHealth
 authors:
 - Jon Fairbanks
 license: AGPLv3
-featuredimage: https://raw.githubusercontent.com/jonfairbanks/OctoPrint-NetworkHealth/master/logo.png
+featuredimage: /assets/img/plugins/networkhealth/logo.png
 date: 2021-04-20
 
 tags:
