@@ -9,7 +9,7 @@ authors:
 - AvanOsch
 - electr0sheep
 license: AGPLv3
-date: 2021-04-24
+date: 2018-02-26
 homepage: https://github.com/lsellens/OctoPrint-Cr10_leveling
 source: https://github.com/lsellens/OctoPrint-Cr10_leveling
 archive: https://github.com/lsellens/OctoPrint-Cr10_leveling/archive/master.zip
