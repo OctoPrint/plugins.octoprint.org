@@ -6,8 +6,8 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html"> <!--<![endif]-->
 <head>
     <meta charset="utf-8" />
-    <title>CR-10 Leveling</title>
-    <meta name="description" content="Adds CR-10 leveling buttons to the controls tab">
+    <title>Bed Leveling</title>
+    <meta name="description" content="Adds bed leveling buttons to the controls tab">
     
     <meta name="referrer" content="same-origin">
     <meta name="google-site-verification" content="0EFsbaNygJcEinKPmzP-hTf0Ju6wDIpJxO5zvQtOQT0" />
@@ -39,7 +39,7 @@
 
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@OctoPrint3D" />
-    <meta name="twitter:title" content="CR-10 Leveling" />
+    <meta name="twitter:title" content="Bed Leveling" />
     <meta name="twitter:description" content="This plugin adds buttons to apply heat to the bed and nozzle, and move the
 printing head to each of the four corners of the bed, as well as the center of
 the bed.
@@ -47,9 +47,9 @@ the bed.
 " />
     <meta name="twitter:image" content="https://plugins.octoprint.org" />
 
-    <meta property="og:title" content="CR-10 Leveling" />
+    <meta property="og:title" content="Bed Leveling" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://plugins.octoprint.org/assets/img/plugins/CR10Leveling/control.png" />
+    <meta property="og:image" content="https://plugins.octoprint.org/assets/img/plugins/CR10_Leveling/control.png" />
     <meta property="og:description" content="This plugin adds buttons to apply heat to the bed and nozzle, and move the
 printing head to each of the four corners of the bed, as well as the center of
 the bed.
@@ -59,13 +59,13 @@ the bed.
     <meta property="og:url" content="https://plugins.octoprint.org/plugins/CR10_Leveling/" />
 
     <meta itemscope itemtype="http://schema.org/WebPage" />
-    <meta itemprop="headline" content="CR-10 Leveling" />
+    <meta itemprop="headline" content="Bed Leveling" />
     <meta itemprop="description" content="This plugin adds buttons to apply heat to the bed and nozzle, and move the
 printing head to each of the four corners of the bed, as well as the center of
 the bed.
 
 " />
-    <meta itemprop="image" content="https://plugins.octoprint.org/assets/img/plugins/CR10Leveling/control.png" />
+    <meta itemprop="image" content="https://plugins.octoprint.org/assets/img/plugins/CR10_Leveling/control.png" />
 
     <script integrity="sha256-S1jf6xGbLdFfVOCgdM+OtjIEyLA9RQVuC1FOBC82qkQ=" crossorigin="anonymous" src="/assets/js/jquery-1.9.1.min-4b58dfeb119b2dd15f54e0a074cf8eb63204c8b03d45056e0b514e042f36aa44.js" type="text/javascript"></script>
     <script integrity="sha256-Qtj60TvCj8cmd1GW7Jq5U/6/m94XXFhFEoNhyVP6F/Q=" crossorigin="anonymous" src="/assets/js/underscore.min-42d8fad13bc28fc726775196ec9ab953febf9bde175c5845128361c953fa17f4.js" type="text/javascript"></script>
@@ -167,7 +167,7 @@ the bed.
   <div class="container">
     <div class="row">
       <div class="span12">
-        <h1>CR-10 Leveling</h1>
+        <h1>Bed Leveling</h1>
       </div>
     </div>
   </div>
@@ -176,11 +176,11 @@ the bed.
 <div class="container">
   <div class="row-fluid">
     
-    <small class="pull-left"><a href="/plugins/bettergrblsupport/"><i class="fa fa-double-angle-left"></i>&nbsp;Better Grbl Support</a></small>
+    <small class="pull-left"><a href="/plugins/bedlevelvisualizer/"><i class="fa fa-double-angle-left"></i>&nbsp;Bed Level Visualizer</a></small>
     
     &nbsp;
     
-    <small class="pull-right"><a href="/plugins/Change_Filament/">Change_Filament&nbsp;<i class="fa fa-double-angle-right"></i></a></small>
+    <small class="pull-right"><a href="/plugins/bettergrblsupport/">Better Grbl Support&nbsp;<i class="fa fa-double-angle-right"></i></a></small>
     
   </div>
   <div class="content plugin-content row-fluid">
@@ -191,7 +191,7 @@ the bed.
       
 
       <p class="lead">
-        Adds CR-10 leveling buttons to the controls tab
+        Adds bed leveling buttons to the controls tab
       </p>
       <p>This plugin adds buttons to apply heat to the bed and nozzle, and move the
 printing head to each of the four corners of the bed, as well as the center of
@@ -205,12 +205,12 @@ the bed.</p>
         
         <figure>
           
-          <a href="/assets/img/plugins/CR10Leveling/control.png" data-lightbox="/plugins/CR10_Leveling" data-title=""><img src="/assets/img/plugins/CR10Leveling/control.png" alt="Control Tab" title=""></a>
+          <a href="/assets/img/plugins/CR10_Leveling/control.png" data-lightbox="/plugins/CR10_Leveling" data-title=""><img src="/assets/img/plugins/CR10_Leveling/control.png" alt="Control Tab" title=""></a>
         </figure>
         
         <figure>
           
-          <a href="/assets/img/plugins/CR10Leveling/settings.png" data-lightbox="/plugins/CR10_Leveling" data-title=""><img src="/assets/img/plugins/CR10Leveling/settings.png" alt="Settings" title=""></a>
+          <a href="/assets/img/plugins/CR10_Leveling/settings.png" data-lightbox="/plugins/CR10_Leveling" data-title=""><img src="/assets/img/plugins/CR10_Leveling/settings.png" alt="Settings" title=""></a>
         </figure>
         
       
@@ -261,13 +261,13 @@ the bed.</p>
       
       <dl class="installations">
         <dt>Active instances the past month</dt>
-        <dd>Installed on at least <strong>925</strong> instances</dd>
+        <dd>Installed on at least <strong>921</strong> instances</dd>
       </dl>
       
       
       <dl class="install_events">
         <dt>New installs the past week</dt>
-        <dd>At least <strong>24</strong> new installations</dd>
+        <dd>At least <strong>25</strong> new installations</dd>
       </dl>
       
       
@@ -297,9 +297,9 @@ the bed.</p>
           
           
           
-          <a class="label" href="/by_tag/#tag-cr10">cr10</a>
+          <a class="label" href="/by_tag/#tag-bed-leveling">bed leveling</a>
           
-          <a class="label" href="/by_tag/#tag-leveling">leveling</a>
+          <a class="label" href="/by_tag/#tag-ui">ui</a>
           
         </dd>
       </dl>
@@ -326,6 +326,10 @@ the bed.</p>
         
           <dd>
 <a href="/by_author/#lsellens">lsellens</a>
+</dd>
+        
+          <dd>
+<a href="/by_author/#avanosch">AvanOsch</a>
 </dd>
         
           <dd>
@@ -357,16 +361,16 @@ the bed.</p>
         <dd>
           <p>
             If there is <strong>something wrong with this listing</strong> (broken links & images etc), please
-            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?template=listing_error.yml&labels%5B%5D=listing+error&title=%5BListing+Error%5D+CR-10+Leveling&which_plugin=https%3A%2F%2Fplugins.octoprint.org%2Fplugins%2FCR10_Leveling%2F">report it here</a>.
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?template=listing_error.yml&labels%5B%5D=listing+error&title=%5BListing+Error%5D+Bed+Leveling&which_plugin=https%3A%2F%2Fplugins.octoprint.org%2Fplugins%2FCR10_Leveling%2F">report it here</a>.
           </p>
           <p>
             If this plugin <strong>has been <em>confirmed</em> as abandoned</strong> by its maintainer, please
-            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?template=abandoned_plugin.yml&labels%5B%5D=abandoned+plugin&title=%5BAbandoned+Plugin%5D+CR-10+Leveling&which_plugin=https%3A%2F%2Fplugins.octoprint.org%2Fplugins%2FCR10_Leveling%2F">report it here</a>.
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?template=abandoned_plugin.yml&labels%5B%5D=abandoned+plugin&title=%5BAbandoned+Plugin%5D+Bed+Leveling&which_plugin=https%3A%2F%2Fplugins.octoprint.org%2Fplugins%2FCR10_Leveling%2F">report it here</a>.
           </p>
           <p>
             If this plugin is <strong>doing something suspicious</strong> (e.g. weird network activity, unannounced tracking, ...) and
             the maintainer is not cooperating in getting to the bottom of that, please
-            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?template=suspicious_plugin_activity.yml&labels%5B%5D=suspicious+plugin+activity&title=%5BSuspicious+Plugin+Activity%5D+CR-10+Leveling&which_plugin=https%3A%2F%2Fplugins.octoprint.org%2Fplugins%2FCR10_Leveling%2F">report the plugin as suspicious here</a>.
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?template=suspicious_plugin_activity.yml&labels%5B%5D=suspicious+plugin+activity&title=%5BSuspicious+Plugin+Activity%5D+Bed+Leveling&which_plugin=https%3A%2F%2Fplugins.octoprint.org%2Fplugins%2FCR10_Leveling%2F">report the plugin as suspicious here</a>.
           </p>
           <p>
             Report bugs or feature requests for the plugin to the plugin author (e.g. on the plugin's <a href="https://github.com/lsellens/OctoPrint-Cr10_leveling">homepage</a>) please, not here!
