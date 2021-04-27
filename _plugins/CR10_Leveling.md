@@ -2,10 +2,11 @@
 layout: plugin
 
 id: CR10_Leveling
-title: CR-10 Leveling
-description: Adds CR-10 leveling buttons to the controls tab
+title: Bed Leveling
+description: Adds bed leveling buttons to the controls tab
 authors: 
 - lsellens
+- AvanOsch
 - electr0sheep
 license: AGPLv3
 date: 2018-02-26
@@ -13,14 +14,14 @@ homepage: https://github.com/lsellens/OctoPrint-Cr10_leveling
 source: https://github.com/lsellens/OctoPrint-Cr10_leveling
 archive: https://github.com/lsellens/OctoPrint-Cr10_leveling/archive/master.zip
 tags:
-- cr10
-- leveling
+- ui
+- bed leveling
 screenshots:
-- url: /assets/img/plugins/CR10Leveling/control.png
+- url: /assets/img/plugins/CR10_Leveling/control.png
   alt: Control Tab
-- url: /assets/img/plugins/CR10Leveling/settings.png
+- url: /assets/img/plugins/CR10_Leveling/settings.png
   alt: Settings
-featuredimage: /assets/img/plugins/CR10Leveling/control.png
+featuredimage: /assets/img/plugins/CR10_Leveling/control.png
 
 ---
 
