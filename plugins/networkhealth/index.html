@@ -40,7 +40,7 @@
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@OctoPrint3D" />
     <meta name="twitter:title" content="Network Health" />
-    <meta name="twitter:description" content="Plugin for OctoPrint - monitors network health
+    <meta name="twitter:description" content="Network Health
 
 " />
     <meta name="twitter:image" content="https://plugins.octoprint.org" />
@@ -48,7 +48,7 @@
     <meta property="og:title" content="Network Health" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://plugins.octoprint.org/assets/img/plugins/networkhealth/logo.png" />
-    <meta property="og:description" content="Plugin for OctoPrint - monitors network health
+    <meta property="og:description" content="Network Health
 
 " />
     <meta property="og:site_name" content="OctoPrint Plugin Repository" />
@@ -56,7 +56,7 @@
 
     <meta itemscope itemtype="http://schema.org/WebPage" />
     <meta itemprop="headline" content="Network Health" />
-    <meta itemprop="description" content="Plugin for OctoPrint - monitors network health
+    <meta itemprop="description" content="Network Health
 
 " />
     <meta itemprop="image" content="https://plugins.octoprint.org/assets/img/plugins/networkhealth/logo.png" />
@@ -187,22 +187,47 @@
       <p class="lead">
         Monitors the health of the Network connection and restarts it if necessary
       </p>
-      <h1 id="plugin-for-octoprint---monitors-network-health">Plugin for OctoPrint - monitors network health</h1>
+      <h1 id="network-health">Network Health</h1>
 
 <p>Monitors the health of the Network connection by pinging the default gateway at a periodic interval. If the check fails, the plugin will restart the network adapter(s) as necessary.</p>
 
 <p>This plugin does not modify the UI in any way. You can confirm the plugin is running from octoprint.log</p>
 
+<h2 id="configuration">Configuration</h2>
+
+<p>By default the <code class="language-plaintext highlighter-rouge">ip</code> command used to restart the network interfaces requires sudo permissions.</p>
+
+<p>To allow OctoPrint to manage this for us, we need to update sudoers using the below command:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>echo 'pi ALL=NOPASSWD:/sbin/ip' | sudo tee /etc/sudoers.d/octoprint-ip
+</code></pre></div></div>
+
 <h2 id="setup">Setup</h2>
 
-<p>Install the plugin using Plugin Manager from Settings</p>
+<p>Install via the bundled <a href="https://docs.octoprint.org/en/master/bundledplugins/pluginmanager.html">Plugin Manager</a>
+or manually using this URL:</p>
 
-<p>No further configuration is required</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://github.com/jonfairbanks/OctoPrint-NetworkHealth/archive/master.zip
+</code></pre></div></div>
 
-<h2 id="change-notes">Change notes:</h2>
+<h2 id="change-notes">Change Notes:</h2>
+<p>v 1.0.3</p>
+<ul>
+  <li>Proper Versioning</li>
+</ul>
+
+<p>v 1.0.2</p>
+<ul>
+  <li>Bug Fixes</li>
+</ul>
+
+<p>v 1.0.1</p>
+<ul>
+  <li>Usability Improvements</li>
+</ul>
+
 <p>v 1.0.0</p>
 <ul>
-  <li>Initial commit</li>
+  <li>Initial Commit</li>
 </ul>
 
 
@@ -254,13 +279,13 @@
       
       <dl class="installations">
         <dt>Active instances the past month</dt>
-        <dd>Installed on at least <strong>1</strong> instances</dd>
+        <dd>Installed on at least <strong>58</strong> instances</dd>
       </dl>
       
       
       <dl class="install_events">
         <dt>New installs the past week</dt>
-        <dd>At least <strong>1</strong> new installations</dd>
+        <dd>At least <strong>59</strong> new installations</dd>
       </dl>
       
       
@@ -270,13 +295,13 @@
           <ul>
             
             <li>
-              Latest Release: <a href="https://github.com/jonfairbanks/OctoPrint-NetworkHealth/releases/tag/1.0.0" target="_blank">1.0.0</a><br>
-              <small>released on 25 Apr 2021</small>
+              Latest Release: <a href="https://github.com/jonfairbanks/OctoPrint-NetworkHealth/releases/tag/1.0.3" target="_blank">1.0.3</a><br>
+              <small>released on 27 Apr 2021</small>
             </li>
-            <li>Releases: 1</li>
+            <li>Releases: 4</li>
             
-            <li>Stars: <span id="github_star_count">0</span> <span id="github_star"><a href="javascript:void(0)"><i class="far fa-star"></i></a></span></li>
-            <li>Issues: 0 open, 0 closed</li>
+            <li>Stars: <span id="github_star_count">1</span> <span id="github_star"><a href="javascript:void(0)"><i class="far fa-star"></i></a></span></li>
+            <li>Issues: 0 open, 2 closed</li>
             <li>Last push: 27 Apr 2021</li>
           </ul>
         </dd>

@@ -3208,7 +3208,7 @@
 "title": "Network Health",
 "description": "Monitors the health of the Network connection and restarts it if necessary",
 "author": "Jon Fairbanks",
-"content": "Plugin for OctoPrint - monitors network healthMonitors the health of the Network connection by pinging the default gateway at a periodic interval. If the check fails, the plugin will restart the network adapter(s) as necessary.This plugin does not modify the UI in any way. You can confirm the plugin is running from octoprint.logSetupInstall the plugin using Plugin Manager from SettingsNo further configuration is requiredChange notes:v 1.0.0  Initial commit",
+"content": "Network HealthMonitors the health of the Network connection by pinging the default gateway at a periodic interval. If the check fails, the plugin will restart the network adapter(s) as necessary.This plugin does not modify the UI in any way. You can confirm the plugin is running from octoprint.logConfigurationBy default the ip command used to restart the network interfaces requires sudo permissions.To allow OctoPrint to manage this for us, we need to update sudoers using the below command:echo 'pi ALL=NOPASSWD:/sbin/ip' | sudo tee /etc/sudoers.d/octoprint-ipSetupInstall via the bundled Plugin Manageror manually using this URL:https://github.com/jonfairbanks/OctoPrint-NetworkHealth/archive/master.zipChange Notes:v 1.0.3  Proper Versioningv 1.0.2  Bug Fixesv 1.0.1  Usability Improvementsv 1.0.0  Initial Commit",
 "tags": ["network","wifi","ethernet"]
 }
 ]
