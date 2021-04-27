@@ -3199,6 +3199,17 @@
 "author": "Charlie Powell",
 "content": "This plugin allows you to configure a WLED device to connect to OctoPrint, and the LEDs can react to different eventsto display the status of your prints with ease!Inspired by my other plugin, OctoPrint WS281x LED Status, itaims to provide a similar experience of high configurability with ease of use.Current features:  Reacting to printer states including:          Idle      Disconnected      Print started      Print success      Print failed      Print paused        Tracking print progress  Highly configurable settings &amp; and easy to use UI  … and more!This project is under early development, please be patient as bugs are fixed and features are added!For the most up to date information, be sure to check out the GitHub RepositorySetupCompatibilityThis plugin will only install on Python 3 systems. For a guide to upgrading (it’s easy!), please see myblog post on the OctoPrint blog for more details.In addition, I can also only guarantee compatibility with OctoPrint 1.5.0 and newer. Older versions may not work as expected.InstallInstall via the bundled Plugin Manageror manually using this URL:https://github.com/cp2004/OctoPrint-WLED/releases/latest/download/release.zipNote: Do not try and install the plugin this way if it does not show up in the plugin manager - this likely means it is not compatible with your system!ConfigurationConfiguration can be performed in the OctoPrint UI, under Settings &gt; WLED Integration.More documentation and explanation is on the way!Support My EffortsI created this plugin in my spare time, for the community. If you have enjoyed using it, please consider supporting it’s development through GitHub sponsors. Monthly, one-time or a custom amount, you choose!CreditsThis plugin wouldn’t be possible without the great work from @frenck with thepython-wled Python module that I was able to use. It has been slightly modifiedto work better within an OctoPrint plugin, but it is a great module to work with. Thank you!View the OctoPrint-WLED licenseView the python-wled license",
 "tags": ["wled","led","wireless","IoT","rgb led","status","addressable led"]
+},
+
+{
+"id": "/plugins/networkhealth",
+"url": "/plugins/networkhealth/",
+"date": "2021-04-20 00:00:00 -0500",
+"title": "Network Health",
+"description": "Monitors the health of the Network connection and restarts it if necessary",
+"author": "Jon Fairbanks",
+"content": "Plugin for OctoPrint - monitors network healthMonitors the health of the Network connection by pinging the default gateway at a periodic interval. If the check fails, the plugin will restart the network adapter(s) as necessary.This plugin does not modify the UI in any way. You can confirm the plugin is running from octoprint.logSetupInstall the plugin using Plugin Manager from SettingsNo further configuration is requiredChange notes:v 1.0.0  Initial commit",
+"tags": ["network","wifi","ethernet"]
 }
 ]
 }
