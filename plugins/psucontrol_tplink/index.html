@@ -6,9 +6,9 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html"> <!--<![endif]-->
 <head>
     <meta charset="utf-8" />
-    <title>OctoPrint-Enclosure</title>
-    <meta name="description" content="Control printer environment (Temperature control / Lights / Fans and Filament Sensor) using Raspberry Pi GPIO">
-    <meta name="author" content="Vitor Henrique">
+    <title>PSU Control - TPLink</title>
+    <meta name="description" content="Adds TPLink Smart Plug support to OctoPrint-PSUControl as a sub-plugin">
+    <meta name="author" content="Shawn Bruce">
     <meta name="referrer" content="same-origin">
     <meta name="google-site-verification" content="0EFsbaNygJcEinKPmzP-hTf0Ju6wDIpJxO5zvQtOQT0" />
 
@@ -39,27 +39,24 @@
 
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@OctoPrint3D" />
-    <meta name="twitter:title" content="OctoPrint-Enclosure" />
-    <meta name="twitter:description" content="This plugin is intended to control your printer enclosure using raspberry pi GPIO (At the moment this plugin only support raspberry pi).
-
+    <meta name="twitter:title" content="PSU Control - TPLink" />
+    <meta name="twitter:description" content="See https://github.com/kantlivelong/OctoPrint-PSUControl-TPLink for information on configuration.
 " />
-    <meta name="twitter:image" content="https://plugins.octoprint.org" />
+    <meta name="twitter:image" content="https://plugins.octoprint.org/assets/img/octoprint-avatar-240x240.png" />
 
-    <meta property="og:title" content="OctoPrint-Enclosure" />
+    <meta property="og:title" content="PSU Control - TPLink" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://plugins.octoprint.org/assets/img/plugins/enclosure/Plugin_Temperature_Control.png" />
-    <meta property="og:description" content="This plugin is intended to control your printer enclosure using raspberry pi GPIO (At the moment this plugin only support raspberry pi).
-
+    <meta property="og:image" content="https://plugins.octoprint.org/assets/img/repo-600x400.png" />
+    <meta property="og:description" content="See https://github.com/kantlivelong/OctoPrint-PSUControl-TPLink for information on configuration.
 " />
     <meta property="og:site_name" content="OctoPrint Plugin Repository" />
-    <meta property="og:url" content="https://plugins.octoprint.org/plugins/enclosure/" />
+    <meta property="og:url" content="https://plugins.octoprint.org/plugins/psucontrol_tplink/" />
 
     <meta itemscope itemtype="http://schema.org/WebPage" />
-    <meta itemprop="headline" content="OctoPrint-Enclosure" />
-    <meta itemprop="description" content="This plugin is intended to control your printer enclosure using raspberry pi GPIO (At the moment this plugin only support raspberry pi).
-
+    <meta itemprop="headline" content="PSU Control - TPLink" />
+    <meta itemprop="description" content="See https://github.com/kantlivelong/OctoPrint-PSUControl-TPLink for information on configuration.
 " />
-    <meta itemprop="image" content="https://plugins.octoprint.org/assets/img/plugins/enclosure/Plugin_Temperature_Control.png" />
+    <meta itemprop="image" content="https://plugins.octoprint.org/assets/img/repo-600x400.png" />
 
     <script integrity="sha256-S1jf6xGbLdFfVOCgdM+OtjIEyLA9RQVuC1FOBC82qkQ=" crossorigin="anonymous" src="/assets/js/jquery-1.9.1.min-4b58dfeb119b2dd15f54e0a074cf8eb63204c8b03d45056e0b514e042f36aa44.js" type="text/javascript"></script>
     <script integrity="sha256-Qtj60TvCj8cmd1GW7Jq5U/6/m94XXFhFEoNhyVP6F/Q=" crossorigin="anonymous" src="/assets/js/underscore.min-42d8fad13bc28fc726775196ec9ab953febf9bde175c5845128361c953fa17f4.js" type="text/javascript"></script>
@@ -161,7 +158,7 @@
   <div class="container">
     <div class="row">
       <div class="span12">
-        <h1>OctoPrint-Enclosure</h1>
+        <h1>PSU Control - TPLink</h1>
       </div>
     </div>
   </div>
@@ -170,11 +167,11 @@
 <div class="container">
   <div class="row-fluid">
     
-    <small class="pull-left"><a href="/plugins/dropbox_timelapse/"><i class="fa fa-double-angle-left"></i>&nbsp;OctoPrint-Dropbox-Timelapse</a></small>
+    <small class="pull-left"><a href="/plugins/psucontrol_rpigpio/"><i class="fa fa-double-angle-left"></i>&nbsp;PSU Control - RPi.GPIO</a></small>
     
     &nbsp;
     
-    <small class="pull-right"><a href="/plugins/energeniecontrol/">OctoPrint-EnergenieControl&nbsp;<i class="fa fa-double-angle-right"></i></a></small>
+    <small class="pull-right"><a href="/plugins/PauseForUserEvent/">PauseForUser Event&nbsp;<i class="fa fa-double-angle-right"></i></a></small>
     
   </div>
   <div class="content plugin-content row-fluid">
@@ -185,56 +182,11 @@
       
 
       <p class="lead">
-        Control printer environment (Temperature control / Lights / Fans and Filament Sensor) using Raspberry Pi GPIO
+        Adds TPLink Smart Plug support to OctoPrint-PSUControl as a sub-plugin
       </p>
-      <p>This plugin is intended to control your printer enclosure using raspberry pi GPIO (At the moment this plugin only support raspberry pi).</p>
-
-<p>A list of things that you can do:</p>
-<ul>
-  <li>Add temperature sensors on your enclosure or near your printer</li>
-  <li>Add active heaters on your enclosure and keep the temperature nice and high for large ABS</li>
-  <li>Use custom Gcode to control rapsberry pi GPIO</li>
-  <li>Use custom Gcode to control neopixel</li>
-  <li>Use custom Gcode to control enclosure temperature</li>
-  <li>PWM controlled outputs</li>
-  <li>PWM controlled outputs based on temperature sensor</li>
-  <li>Active cooling for good PLA printing</li>
-  <li>Schedule GPIO’s to turn on and off with a fixed period of time during printing.</li>
-  <li>Mechanical buttons to pause and resume printer jobs</li>
-  <li>Mechanical buttons to send GCODE to the printer</li>
-  <li>Mechanical buttons to control raspberry pi GPIO</li>
-  <li>Multiple filament sensors for dual or more extruders</li>
-  <li>Alarm when enclosure temperature reaches some sort of value</li>
-  <li>Notifications using IFTTT when events happen (temperature trigger / print events / etc)</li>
-  <li>Add sub-menus on navbar to quick access outputs and temperature sensors</li>
-</ul>
-
-<p>There is also an API that can be used to interact with the plugin with other software</p>
+      <p>See <a href="https://github.com/kantlivelong/OctoPrint-PSUControl-TPLink">https://github.com/kantlivelong/OctoPrint-PSUControl-TPLink</a> for information on configuration.</p>
 
 
-      
-        <h2>Pictures</h2>
-        
-        <figure>
-          
-          <a href="/assets/img/plugins/enclosure/Plugin_Tab.png" data-lightbox="/plugins/enclosure" data-title="OctoPrint enclosure main screen."><img src="/assets/img/plugins/enclosure/Plugin_Tab.png" alt="OctoPrint enclosure main screen." title="OctoPrint enclosure main screen."></a>
-        </figure>
-        
-        <figure>
-          
-          <a href="/assets/img/plugins/enclosure/Input_Configuration.png" data-lightbox="/plugins/enclosure" data-title="OctoPrint enclosure setting screen."><img src="/assets/img/plugins/enclosure/Input_Configuration.png" alt="OctoPrint enclosure setting screen." title="OctoPrint enclosure setting screen."></a>
-        </figure>
-        
-        <figure>
-          
-          <a href="/assets/img/plugins/enclosure/Output_Configuration.png" data-lightbox="/plugins/enclosure" data-title="OctoPrint enclosure setting screen."><img src="/assets/img/plugins/enclosure/Output_Configuration.png" alt="OctoPrint enclosure setting screen." title="OctoPrint enclosure setting screen."></a>
-        </figure>
-        
-        <figure>
-          
-          <a href="/assets/img/plugins/enclosure/Advanced_Section.png" data-lightbox="/plugins/enclosure" data-title="OctoPrint enclosure advanced setting screen."><img src="/assets/img/plugins/enclosure/Advanced_Section.png" alt="OctoPrint enclosure setting screen." title="OctoPrint enclosure advanced setting screen."></a>
-        </figure>
-        
       
     </article>
 
@@ -262,14 +214,14 @@
         
         <dd>
           URL:
-          <pre>https://github.com/vitormhenrique/OctoPrint-Enclosure/archive/master.zip</pre>
+          <pre>https://github.com/kantlivelong/OctoPrint-PSUControl-TPLink/archive/master.zip</pre>
           
         </dd>
         
         
         <dd>
           Command line:
-          <pre>pip install "https://github.com/vitormhenrique/OctoPrint-Enclosure/archive/master.zip"</pre>
+          <pre>pip install "https://github.com/kantlivelong/OctoPrint-PSUControl-TPLink/archive/master.zip"</pre>
         </dd>
         
       </dl>
@@ -277,19 +229,19 @@
       
       <dl class="date">
         <dt>Registration date</dt>
-        <dd>15 Mar 2017</dd>
+        <dd>28 Apr 2021</dd>
       </dl>
       
       
       <dl class="installations">
         <dt>Active instances the past month</dt>
-        <dd>Installed on at least <strong>5.57k</strong> instances</dd>
+        <dd>Installed on at least <strong>2</strong> instances</dd>
       </dl>
       
       
       <dl class="install_events">
         <dt>New installs the past week</dt>
-        <dd>At least <strong>142</strong> new installations</dd>
+        <dd>At least <strong>2</strong> new installations</dd>
       </dl>
       
       
@@ -299,13 +251,13 @@
           <ul>
             
             <li>
-              Latest Release: <a href="https://github.com/vitormhenrique/OctoPrint-Enclosure/releases/tag/4.12" target="_blank">4.12</a><br>
-              <small>released on 27 Jun 2018</small>
+              Latest Release: <a href="https://github.com/kantlivelong/OctoPrint-PSUControl-TPLink/releases/tag/1.0.0" target="_blank">1.0.0</a><br>
+              <small>released on 28 Apr 2021</small>
             </li>
-            <li>Releases: 27</li>
+            <li>Releases: 1</li>
             
-            <li>Stars: <span id="github_star_count">277</span> <span id="github_star"><a href="javascript:void(0)"><i class="far fa-star"></i></a></span></li>
-            <li>Issues: 122 open, 244 closed</li>
+            <li>Stars: <span id="github_star_count">0</span> <span id="github_star"><a href="javascript:void(0)"><i class="far fa-star"></i></a></span></li>
+            <li>Issues: 0 open, 0 closed</li>
             <li>Last push: 28 Apr 2021</li>
           </ul>
         </dd>
@@ -319,39 +271,19 @@
           
           
           
-          <a class="label" href="/by_tag/#tag-am2302">am2302</a>
-          
-          <a class="label" href="/by_tag/#tag-bme280">bme280</a>
+          <a class="label" href="/by_tag/#tag-atx">atx</a>
           
           <a class="label" href="/by_tag/#tag-control">control</a>
           
-          <a class="label" href="/by_tag/#tag-dht11">dht11</a>
+          <a class="label" href="/by_tag/#tag-power">power</a>
           
-          <a class="label" href="/by_tag/#tag-dht22">dht22</a>
+          <a class="label" href="/by_tag/#tag-psu">psu</a>
           
-          <a class="label" href="/by_tag/#tag-ds18b20">ds18b20</a>
+          <a class="label" href="/by_tag/#tag-psucontrol">psucontrol</a>
           
-          <a class="label" href="/by_tag/#tag-fan">fan</a>
+          <a class="label" href="/by_tag/#tag-tplink">tplink</a>
           
-          <a class="label" href="/by_tag/#tag-filament">filament</a>
-          
-          <a class="label" href="/by_tag/#tag-gcode">gcode</a>
-          
-          <a class="label" href="/by_tag/#tag-humidity">humidity</a>
-          
-          <a class="label" href="/by_tag/#tag-lights">lights</a>
-          
-          <a class="label" href="/by_tag/#tag-neopixel">neopixel</a>
-          
-          <a class="label" href="/by_tag/#tag-sensor">sensor</a>
-          
-          <a class="label" href="/by_tag/#tag-si7021">si7021</a>
-          
-          <a class="label" href="/by_tag/#tag-temperature">temperature</a>
-          
-          <a class="label" href="/by_tag/#tag-tmp102">tmp102</a>
-          
-          <a class="label" href="/by_tag/#tag-ws2812b">ws2812b</a>
+          <a class="label" href="/by_tag/#tag-ui">ui</a>
           
         </dd>
       </dl>
@@ -364,7 +296,7 @@
             <li>OctoPrint: all versions</li>
             
             
-            <li>Operating Systems: Linux, FreeBSD</li>
+            <li>Operating Systems: Linux, FreeBSD, Mac OS XWindows</li>
             
             
             <li>Python: &gt;=2.7,&lt;4</li>
@@ -376,26 +308,26 @@
       <dl class="author">
         <dt>Author</dt>
         <dd>
-<a href="/by_author/#vitor-henrique">Vitor Henrique</a>
+<a href="/by_author/#shawn-bruce">Shawn Bruce</a>
 </dd>
       </dl>
       
       
       <dl class="homepage">
         <dt>Homepage</dt>
-        <dd><a href="https://github.com/vitormhenrique/OctoPrint-Enclosure" target="_blank">https://github.com/vitormhenrique/OctoPrint-Enclosure</a></dd>
+        <dd><a href="https://github.com/kantlivelong/OctoPrint-PSUControl-TPLink" target="_blank">https://github.com/kantlivelong/OctoPrint-PSUControl-TPLink</a></dd>
       </dl>
       
       
       <dl class="source">
         <dt>Source</dt>
-        <dd><a href="https://github.com/vitormhenrique/OctoPrint-Enclosure" target="_blank">https://github.com/vitormhenrique/OctoPrint-Enclosure</a></dd>
+        <dd><a href="https://github.com/kantlivelong/OctoPrint-PSUControl-TPLink" target="_blank">https://github.com/kantlivelong/OctoPrint-PSUControl-TPLink</a></dd>
       </dl>
       
       
       <dl class="license">
         <dt>License</dt>
-        <dd>GPLv3</dd>
+        <dd>AGPLv3</dd>
       </dl>
       
       <dl class="issue">
@@ -403,19 +335,19 @@
         <dd>
           <p>
             If there is <strong>something wrong with this listing</strong> (broken links & images etc), please
-            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?template=listing_error.yml&labels%5B%5D=listing+error&title=%5BListing+Error%5D+OctoPrint-Enclosure&which_plugin=https%3A%2F%2Fplugins.octoprint.org%2Fplugins%2Fenclosure%2F">report it here</a>.
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?template=listing_error.yml&labels%5B%5D=listing+error&title=%5BListing+Error%5D+PSU+Control+-+TPLink&which_plugin=https%3A%2F%2Fplugins.octoprint.org%2Fplugins%2Fpsucontrol_tplink%2F">report it here</a>.
           </p>
           <p>
             If this plugin <strong>has been <em>confirmed</em> as abandoned</strong> by its maintainer, please
-            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?template=abandoned_plugin.yml&labels%5B%5D=abandoned+plugin&title=%5BAbandoned+Plugin%5D+OctoPrint-Enclosure&which_plugin=https%3A%2F%2Fplugins.octoprint.org%2Fplugins%2Fenclosure%2F">report it here</a>.
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?template=abandoned_plugin.yml&labels%5B%5D=abandoned+plugin&title=%5BAbandoned+Plugin%5D+PSU+Control+-+TPLink&which_plugin=https%3A%2F%2Fplugins.octoprint.org%2Fplugins%2Fpsucontrol_tplink%2F">report it here</a>.
           </p>
           <p>
             If this plugin is <strong>doing something suspicious</strong> (e.g. weird network activity, unannounced tracking, ...) and
             the maintainer is not cooperating in getting to the bottom of that, please
-            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?template=suspicious_plugin_activity.yml&labels%5B%5D=suspicious+plugin+activity&title=%5BSuspicious+Plugin+Activity%5D+OctoPrint-Enclosure&which_plugin=https%3A%2F%2Fplugins.octoprint.org%2Fplugins%2Fenclosure%2F">report the plugin as suspicious here</a>.
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?template=suspicious_plugin_activity.yml&labels%5B%5D=suspicious+plugin+activity&title=%5BSuspicious+Plugin+Activity%5D+PSU+Control+-+TPLink&which_plugin=https%3A%2F%2Fplugins.octoprint.org%2Fplugins%2Fpsucontrol_tplink%2F">report the plugin as suspicious here</a>.
           </p>
           <p>
-            Report bugs or feature requests for the plugin to the plugin author (e.g. on the plugin's <a href="https://github.com/vitormhenrique/OctoPrint-Enclosure">homepage</a>) please, not here!
+            Report bugs or feature requests for the plugin to the plugin author (e.g. on the plugin's <a href="https://github.com/kantlivelong/OctoPrint-PSUControl-TPLink">homepage</a>) please, not here!
           </p>
         </dd>
       </dl>
@@ -428,7 +360,7 @@
   $(function() {
     var has_github = true;
     if (has_github) {
-      var github_repo = "vitormhenrique/OctoPrint-Enclosure";
+      var github_repo = "kantlivelong/OctoPrint-PSUControl-TPLink";
 
       if (github_repo) {
         var status = "unknown";
