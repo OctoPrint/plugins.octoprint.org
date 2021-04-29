@@ -3221,6 +3221,17 @@
 "author": "Shawn Bruce",
 "content": "See https://github.com/kantlivelong/OctoPrint-PSUControl-TPLink for information on configuration.",
 "tags": ["ui","power","atx","psu","control","psucontrol","tplink"]
+},
+
+{
+"id": "/plugins/camerasettings",
+"url": "/plugins/camerasettings/",
+"date": "2021-04-29 00:00:00 -0500",
+"title": "Camera Settings",
+"description": "Interactive camera settings via v4l2-ctl",
+"author": "Taylor Talkington",
+"content": "OctoPrint-CameraSettingsCamera Settings allows a user to interactively change camera settings by running v4l2-ctl on the backend. This method should work for any Linux environment, including OctoPi, as long as the camera is attached to the same device running OctoPrint.Note: not compatible with The Spaghetti Detective premium.Have a RaspiCam or ArduCam? Look at the setup guide.See the GitHub repo for the most up to date information, including setup information and frequently asked questionsFor issues and feature requests, check the issues on GitHub and create one if needed.",
+"tags": ["camera"]
 }
 ]
 }
