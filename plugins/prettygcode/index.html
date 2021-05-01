@@ -118,11 +118,26 @@
       </div>
       <div class="nav-collapse collapse">
         <ul class="nav">
-          <li><a href="/by_name/">by Name</a></li>
-          <li><a href="/by_date/">by Date</a></li>
-          <li><a href="/by_tag/">by Tag</a></li>
-          <li><a href="/by_author/">by Author</a></li>
-          <li><form class="navbar-search pull-right" action="/search/" method="get"><input type="text" class="input-medium search-query" placeholder="Enter search &amp; hit enter..." name="q"></form></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">Sorted by... <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="/by_name/">... name</a></li>
+              <li><a href="/by_date/">... date</a></li>
+              <li><a href="/by_tag/">... tag</a></li>
+              <li><a href="/by_author/">... author</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">Topics <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              
+              <li><a href="/topics/power_control">Power Control (12 plugins)</a></li>
+              
+              <li><a href="/topics/remote_access">Remote Access (16 plugins)</a></li>
+              
+            </ul>
+          </li>
+          <li><form class="navbar-search pull-right" action="/search/" method="get"><input type="text" class="input-large search-query" placeholder="Enter search &amp; hit enter..." name="q"></form></li>
           <li class="dropdown">
             <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">Help <b class="caret"></b></a>
             <ul class="dropdown-menu">
@@ -278,7 +293,7 @@
       
       <dl class="install_events">
         <dt>New installs the past week</dt>
-        <dd>At least <strong>174</strong> new installations</dd>
+        <dd>At least <strong>175</strong> new installations</dd>
       </dl>
       
       

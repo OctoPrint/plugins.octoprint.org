@@ -112,11 +112,26 @@
       </div>
       <div class="nav-collapse collapse">
         <ul class="nav">
-          <li><a href="/by_name/">by Name</a></li>
-          <li><a href="/by_date/">by Date</a></li>
-          <li><a href="/by_tag/">by Tag</a></li>
-          <li><a href="/by_author/">by Author</a></li>
-          <li><form class="navbar-search pull-right" action="/search/" method="get"><input type="text" class="input-medium search-query" placeholder="Enter search &amp; hit enter..." name="q"></form></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">Sorted by... <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="/by_name/">... name</a></li>
+              <li><a href="/by_date/">... date</a></li>
+              <li><a href="/by_tag/">... tag</a></li>
+              <li><a href="/by_author/">... author</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">Topics <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              
+              <li><a href="/topics/power_control">Power Control (12 plugins)</a></li>
+              
+              <li><a href="/topics/remote_access">Remote Access (16 plugins)</a></li>
+              
+            </ul>
+          </li>
+          <li><form class="navbar-search pull-right" action="/search/" method="get"><input type="text" class="input-large search-query" placeholder="Enter search &amp; hit enter..." name="q"></form></li>
           <li class="dropdown">
             <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">Help <b class="caret"></b></a>
             <ul class="dropdown-menu">
@@ -689,29 +704,6 @@
                 
                 
                 
-                <a href="/plugins/cost/">Cost estimator</a>
-                
-                
-                <div class="notice-text"><p>This plugin has been abandoned by its maintainer and is looking for someone to adopt it. If you want to step in as the new maintainer please get in touch at the “Read more…” link below.</p>
-</div>
-                
-                
-                <div class="notice-link"><a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/608" target="_blank">Read more...</a></div>
-                
-            </td>
-            <td class="notice-versions">
-                all
-            </td>
-            <td class="notice-octoversions">
-                all
-            </td>
-        </tr>
-        
-        <tr>
-            <td class="notice-plugin">
-                
-                
-                
                 <a href="/plugins/automaticshutdown/">AutomaticShutdown</a>
                 
                 
@@ -720,29 +712,6 @@
                 
                 
                 <div class="notice-link"><a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/646" target="_blank">Read more...</a></div>
-                
-            </td>
-            <td class="notice-versions">
-                all
-            </td>
-            <td class="notice-octoversions">
-                all
-            </td>
-        </tr>
-        
-        <tr>
-            <td class="notice-plugin">
-                
-                
-                
-                <a href="/plugins/active_filters/">Active Filters</a>
-                
-                
-                <div class="notice-text"><p>This plugin has been abandoned by its maintainer and is looking for someone to adopt it. If you want to step in as the new maintainer please get in touch at the “Read more…” link below.</p>
-</div>
-                
-                
-                <div class="notice-link"><a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/711" target="_blank">Read more...</a></div>
                 
             </td>
             <td class="notice-versions">
@@ -781,14 +750,37 @@
                 
                 
                 
-                <a href="/plugins/filetypes/">Filetypes</a>
+                <a href="/plugins/cost/">Cost estimator</a>
                 
                 
                 <div class="notice-text"><p>This plugin has been abandoned by its maintainer and is looking for someone to adopt it. If you want to step in as the new maintainer please get in touch at the “Read more…” link below.</p>
 </div>
                 
                 
-                <div class="notice-link"><a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/796" target="_blank">Read more...</a></div>
+                <div class="notice-link"><a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/608" target="_blank">Read more...</a></div>
+                
+            </td>
+            <td class="notice-versions">
+                all
+            </td>
+            <td class="notice-octoversions">
+                all
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="notice-plugin">
+                
+                
+                
+                <a href="/plugins/active_filters/">Active Filters</a>
+                
+                
+                <div class="notice-text"><p>This plugin has been abandoned by its maintainer and is looking for someone to adopt it. If you want to step in as the new maintainer please get in touch at the “Read more…” link below.</p>
+</div>
+                
+                
+                <div class="notice-link"><a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/711" target="_blank">Read more...</a></div>
                 
             </td>
             <td class="notice-versions">
@@ -812,6 +804,29 @@
                 
                 
                 <div class="notice-link"><a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/807" target="_blank">Read more...</a></div>
+                
+            </td>
+            <td class="notice-versions">
+                all
+            </td>
+            <td class="notice-octoversions">
+                all
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="notice-plugin">
+                
+                
+                
+                <a href="/plugins/filetypes/">Filetypes</a>
+                
+                
+                <div class="notice-text"><p>This plugin has been abandoned by its maintainer and is looking for someone to adopt it. If you want to step in as the new maintainer please get in touch at the “Read more…” link below.</p>
+</div>
+                
+                
+                <div class="notice-link"><a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/796" target="_blank">Read more...</a></div>
                 
             </td>
             <td class="notice-versions">

@@ -1,0 +1,1441 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en" xmlns="http://www.w3.org/1999/html"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+    <title>Power Control</title>
+    
+    
+    <meta name="referrer" content="same-origin">
+    <meta name="google-site-verification" content="0EFsbaNygJcEinKPmzP-hTf0Ju6wDIpJxO5zvQtOQT0" />
+
+    <!--[if lt IE 9]>
+    <script integrity="sha256-1VQQ7rDR5QuVWLWUVg42JSnGDz1w+Ajv5j3BYTewImo=" crossorigin="anonymous" src="/assets/js/html5shim-d55410eeb0d1e50b9558b594560e362529c60f3d70f808efe63dc16137b0226a.js" type="text/javascript"></script>
+    <![endif]-->
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Le styles -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/site-26b9a0516732e8edda19c7b1d60a66a5437bd3e65218a83bd7ca758ec0f1ad6c.css" integrity="sha256-JrmgUWcy6O3aGcex1gpmpUN70+ZSGKg718p1jsDxrWw=" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap-responsive-c77a05ed6f7d09ff73e449cbc70b8bed232766c37371185af0d332e1d4a9cb3c.css" integrity="sha256-x3oF7W99Cf9z5EnLxwuL7SMnZsNzcRha8NMy4dSpyzw=" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/assets/css/fontawesome-all.min-50c3c339da3ba3c3bf3060501d2862b4d0794e0fa4abaa5844b74a9d16f59697.css" integrity="sha256-UMPDOdo7o8O/MGBQHShitNB5Tg+kq6pYRLdKnRb1lpc=" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/assets/css/prettify-30df8270395128e468d5c072b23ec9f8ef7265820f7e745251f9b703bc1962a9.css" integrity="sha256-MN+CcDlRKORo1cBysj7J+O9yZYIPfnRSUfm3A7wZYqk=" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/assets/css/lightbox-4cb5722046a1da0569855a52d2fd670043c99af8b5cc8eac099bcb016a85ce48.css" integrity="sha256-TLVyIEah2gVphVpS0v1nAEPJmvi1zI6sCZvLAWqFzkg=" crossorigin="anonymous">
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="/assets/img/tentacle-32x32.png">
+
+    <!-- Le RSS feed -->
+    <link rel="alternate" type="application/rss+xml" title="OctoPrint Plugin Repository: New Plugins" href="/feed.xml">
+
+    <!-- Le social media meta data -->
+    
+    
+    
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@OctoPrint3D" />
+    <meta name="twitter:title" content="Power Control" />
+    <meta name="twitter:description" content="The following plugins allow controlling power to your printer via OctoPrint through various means.
+" />
+    <meta name="twitter:image" content="https://plugins.octoprint.org/assets/img/octoprint-avatar-240x240.png" />
+
+    <meta property="og:title" content="Power Control" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://plugins.octoprint.org/assets/img/repo-600x400.png" />
+    <meta property="og:description" content="The following plugins allow controlling power to your printer via OctoPrint through various means.
+" />
+    <meta property="og:site_name" content="OctoPrint Plugin Repository" />
+    <meta property="og:url" content="https://plugins.octoprint.org/topics/power_control/" />
+
+    <meta itemscope itemtype="http://schema.org/WebPage" />
+    <meta itemprop="headline" content="Power Control" />
+    <meta itemprop="description" content="The following plugins allow controlling power to your printer via OctoPrint through various means.
+" />
+    <meta itemprop="image" content="https://plugins.octoprint.org/assets/img/repo-600x400.png" />
+
+    <script integrity="sha256-S1jf6xGbLdFfVOCgdM+OtjIEyLA9RQVuC1FOBC82qkQ=" crossorigin="anonymous" src="/assets/js/jquery-1.9.1.min-4b58dfeb119b2dd15f54e0a074cf8eb63204c8b03d45056e0b514e042f36aa44.js" type="text/javascript"></script>
+    <script integrity="sha256-Qtj60TvCj8cmd1GW7Jq5U/6/m94XXFhFEoNhyVP6F/Q=" crossorigin="anonymous" src="/assets/js/underscore.min-42d8fad13bc28fc726775196ec9ab953febf9bde175c5845128361c953fa17f4.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/cookieconsent.min-b4bf981e76e71509875afcf5f4ad89e6d9b3bcba41fa20fc6a26226d5e162bd1.css" integrity="sha256-tL+YHnbnFQmHWvz19K2J5tmzvLpB+iD8aiYibV4WK9E=" crossorigin="anonymous">
+    <script integrity="sha256-6KrAt6fD48F8Yhv1uyTAmKYC5K0MKGdZj0DV7knspCU=" crossorigin="anonymous" src="/assets/js/cookieconsent.min-e8aac0b7a7c3e3c17c621bf5bb24c098a602e4ad0c2867598f40d5ee49eca425.js" type="text/javascript"></script>
+    <script>
+        if (!String.prototype.startsWith) {
+            String.prototype.startsWith = function(search, pos) {
+            return this.substr(!pos || pos < 0 ? 0 : +pos, search.length) === search;
+            };
+        }
+
+        window.addEventListener("load", function(){
+            window.cookieconsent.initialise({
+                "position": "bottom",
+                "theme": "edgeless",
+                "palette": {
+                    "popup": {
+                        "background": "#000000",
+                        "link": "#10a800"
+                    },
+                    "button": {
+                        "background": "#0b7500"
+                    }
+                }
+            })
+        });
+
+        /**
+         * Make sure octoprint.github.io stuff gets rewritten to plugins.octoprint.org.
+         * See https://github.com/OctoPrint/plugins.octoprint.org/issues/146.
+         */
+        var githubio = "octoprint.github.io/plugins.octoprint.org";
+        var url = window.location.href;
+        if (url && (url.startsWith("http://" + githubio) || url.startsWith("https://" + githubio))) {
+            url = url.replace(githubio, "plugins.octoprint.org");
+            window.location.replace(url);
+        }
+    </script>
+    <script integrity="sha256-b9hF6WkmuqKen2NW6BMyhRRgTQmEZmCTb0yvVKuaWAQ=" crossorigin="anonymous" src="/assets/js/github-6fd845e96926baa29e9f6356e813328514604d09846660936f4caf54ab9a5804.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+<div class="navbar navbar-inverse navbar-static-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand" href="/"><img src="/assets/img/tentacle-20x20.png" alt="Tentacle logo" class="tentacle"> Plugin Repo</a>
+      <a href="javascript:void(0)" class="btn btn-burger btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><i class="fas fa-bars"></i></a>
+      <div class="pull-right">
+        <ul class="nav social-navbar">
+          <li><a href="https://octoprint.org/merch/" title="Get some merchandise!" target="_blank"><i class="fa fa-shopping-basket"></i></a></li>
+          <li><a href="https://octoprint.org/support-octoprint/" title="Support OctoPrint!" data-event-category="supportlink" data-event-action="navigation" target="_blank"><i class="fas fa-donate"></i></a></li>
+        </ul>
+      </div>
+      <div class="nav-collapse collapse">
+        <ul class="nav">
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">Sorted by... <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="/by_name/">... name</a></li>
+              <li><a href="/by_date/">... date</a></li>
+              <li><a href="/by_tag/">... tag</a></li>
+              <li><a href="/by_author/">... author</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">Topics <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              
+              <li><a href="/topics/power_control">Power Control (12 plugins)</a></li>
+              
+              <li><a href="/topics/remote_access">Remote Access (16 plugins)</a></li>
+              
+            </ul>
+          </li>
+          <li><form class="navbar-search pull-right" action="/search/" method="get"><input type="text" class="input-large search-query" placeholder="Enter search &amp; hit enter..." name="q"></form></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">Help <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="/help/installation/">Installing Plugins</a></li>
+              <li><a href="/help/registering/">Registering Plugins</a></li>
+              <li><a href="http://docs.octoprint.org/en/master/plugins/gettingstarted.html">The Plugin Tutorial</a></li>
+              <li class="divider"></li>
+              <li><a href="/help/github_integration/">GitHub Integration on plugins.octoprint.org</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">Lists <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="/blacklist/">Blacklist</a></li>
+              <li><a href="/notices/">Notices</a></li>
+              <li><a href="/overlays/">Overlays</a></li>
+              <li><a href="/abandoned/">Abandoned plugins</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="wrap">
+    <div id="main">
+    <div class="page-header">
+    <div class="container">
+        <div class="row">
+            <div class="span12">
+                <h1>Power Control</h1>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="content row-fluid">
+        <div class="span12">
+            <div class="plugin-list row-liquid">
+  <div class="span8">
+      
+
+
+
+<p>The following plugins allow controlling power to your printer via OctoPrint through various means.</p>
+
+
+<ul>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <li>
+<div class="plugin-list-item">
+<h3><a class="post-link" href="/plugins/psucontrol/">PSU Control</a></h3>
+
+<p class="stats">
+    <small class="prop" title="Publication date"><i class="fas fa-calendar-alt"></i> 25 Jan 2017</small>
+    <small class="prop" title="License"><i class="fas fa-gavel"></i> AGPLv3</small>
+    <small class="prop" title="Active instances past month"><i class="fas fa-server"></i> 6.12k</small>
+    <small class="prop" title="GitHub stars"><i class="fas fa-star"></i> 135</small>
+    <small class="prop" title="Last push to main branch"><i class="fas fa-sync"></i> 28 Apr 2021</small>
+    <small class="prop" title="Latest release & date"><i class="fas fa-tag"></i> 1.0.5 (28 Apr 2021)</small>
+</p>
+
+<p>
+  Control ATX/AUX power supply
+</p>
+
+
+
+
+
+  <a class="label" href="/by_tag/#tag-atx">atx</a>
+
+  <a class="label" href="/by_tag/#tag-control">control</a>
+
+  <a class="label" href="/by_tag/#tag-power">power</a>
+
+  <a class="label" href="/by_tag/#tag-psu">psu</a>
+
+  <a class="label" href="/by_tag/#tag-ui">ui</a>
+
+</div></li>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <li>
+<div class="plugin-list-item">
+<h3><a class="post-link" href="/plugins/tplinksmartplug/">OctoPrint-TPLinkSmartplug</a></h3>
+
+<p class="stats">
+    <small class="prop" title="Publication date"><i class="fas fa-calendar-alt"></i> 03 Sep 2017</small>
+    <small class="prop" title="License"><i class="fas fa-gavel"></i> AGPLv3</small>
+    <small class="prop" title="Active instances past month"><i class="fas fa-server"></i> 4.52k</small>
+    <small class="prop" title="GitHub stars"><i class="fas fa-star"></i> 76</small>
+    <small class="prop" title="Last push to main branch"><i class="fas fa-sync"></i> 16 Apr 2021</small>
+    <small class="prop" title="Latest release & date"><i class="fas fa-tag"></i> 1.0.1 (15 Apr 2021)</small>
+</p>
+
+<p>
+  Plugin to control TP-Link Smartplug devices from OctoPrint web interface.
+</p>
+
+
+
+
+
+  <a class="label" href="/by_tag/#tag-power">power</a>
+
+  <a class="label" href="/by_tag/#tag-smartplug">smartplug</a>
+
+  <a class="label" href="/by_tag/#tag-tp-link">tp-link</a>
+
+  <a class="label" href="/by_tag/#tag-tplink">tplink</a>
+
+</div></li>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <li>
+<div class="plugin-list-item">
+<h3><a class="post-link" href="/plugins/shutdownprinter/">ShutdownPrinter</a></h3>
+
+<p class="stats">
+    <small class="prop" title="Publication date"><i class="fas fa-calendar-alt"></i> 18 Jun 2018</small>
+    <small class="prop" title="License"><i class="fas fa-gavel"></i> AGPLv3</small>
+    <small class="prop" title="Active instances past month"><i class="fas fa-server"></i> 1.14k</small>
+    <small class="prop" title="GitHub stars"><i class="fas fa-star"></i> 11</small>
+    <small class="prop" title="Last push to main branch"><i class="fas fa-sync"></i> 13 Mar 2021</small>
+    <small class="prop" title="Latest release & date"><i class="fas fa-tag"></i> 1.0.8 (22 Nov 2019)</small>
+</p>
+
+<p>
+  Plugin for shutdown printer after finishing a print job
+</p>
+
+
+
+
+
+  <a class="label" href="/by_tag/#tag-shutdown">shutdown</a>
+
+  <a class="label" href="/by_tag/#tag-shutdown-printer">shutdown printer</a>
+
+  <a class="label" href="/by_tag/#tag-tplink">tplink</a>
+
+</div></li>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <li>
+<div class="plugin-list-item">
+<h3><a class="post-link" href="/plugins/octorelay/">OctoRelay</a></h3>
+
+<p class="stats">
+    <small class="prop" title="Publication date"><i class="fas fa-calendar-alt"></i> 13 Mar 2021</small>
+    <small class="prop" title="License"><i class="fas fa-gavel"></i> AGPLv3</small>
+    <small class="prop" title="Active instances past month"><i class="fas fa-server"></i> 1.05k</small>
+    <small class="prop" title="GitHub stars"><i class="fas fa-star"></i> 11</small>
+    <small class="prop" title="Last push to main branch"><i class="fas fa-sync"></i> 24 Mar 2021</small>
+    
+</p>
+
+<p>
+  A plugin to control relays or other things on the GPIO pins of your raspberry pi. For example turn the power of printer, the light or a fan ON and OFF via the web interface.
+</p>
+
+
+
+
+
+  <a class="label" href="/by_tag/#tag-gpio">gpio</a>
+
+  <a class="label" href="/by_tag/#tag-power">power</a>
+
+  <a class="label" href="/by_tag/#tag-raspberry-pi">raspberry pi</a>
+
+  <a class="label" href="/by_tag/#tag-relay">relay</a>
+
+  <a class="label" href="/by_tag/#tag-switch">switch</a>
+
+</div></li>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <li>
+<div class="plugin-list-item">
+<h3><a class="post-link" href="/plugins/TpLinkAutoShutdown/">OctoPrint-TpLinkAutoShutdown</a></h3>
+
+<p class="stats">
+    <small class="prop" title="Publication date"><i class="fas fa-calendar-alt"></i> 17 Feb 2021</small>
+    <small class="prop" title="License"><i class="fas fa-gavel"></i> AGPLv3</small>
+    <small class="prop" title="Active instances past month"><i class="fas fa-server"></i> 456</small>
+    <small class="prop" title="GitHub stars"><i class="fas fa-star"></i> 3</small>
+    <small class="prop" title="Last push to main branch"><i class="fas fa-sync"></i> 22 Apr 2021</small>
+    <small class="prop" title="Latest release & date"><i class="fas fa-tag"></i> 1.1.4 (22 Apr 2021)</small>
+</p>
+
+<p>
+  This plugin is designed to help you integrate your IoT TP-Link Kasa wireless plug into OctoPrint. The basis of the plug-in is to enable you to automatically switch-off your 3D printer once a print has successfully completed.
+</p>
+
+
+
+
+
+  <a class="label" href="/by_tag/#tag-auto-shutdown">auto_shutdown</a>
+
+  <a class="label" href="/by_tag/#tag-kasa">kasa</a>
+
+  <a class="label" href="/by_tag/#tag-printer">printer</a>
+
+  <a class="label" href="/by_tag/#tag-tp-link">tp-link</a>
+
+</div></li>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <li>
+<div class="plugin-list-item">
+<h3><a class="post-link" href="/plugins/wemoswitch/">OctoPrint-WemoSwitch</a></h3>
+
+<p class="stats">
+    <small class="prop" title="Publication date"><i class="fas fa-calendar-alt"></i> 18 Sep 2018</small>
+    <small class="prop" title="License"><i class="fas fa-gavel"></i> AGPLv3</small>
+    <small class="prop" title="Active instances past month"><i class="fas fa-server"></i> 424</small>
+    <small class="prop" title="GitHub stars"><i class="fas fa-star"></i> 7</small>
+    <small class="prop" title="Last push to main branch"><i class="fas fa-sync"></i> 30 Jan 2021</small>
+    <small class="prop" title="Latest release & date"><i class="fas fa-tag"></i> 0.1.10 (11 Jan 2021)</small>
+</p>
+
+<p>
+  Plugin to control Belkin Wemo devices from OctoPrint web interface.
+</p>
+
+
+
+
+
+  <a class="label" href="/by_tag/#tag-belkin">belkin</a>
+
+  <a class="label" href="/by_tag/#tag-power">power</a>
+
+  <a class="label" href="/by_tag/#tag-smartplug">smartplug</a>
+
+  <a class="label" href="/by_tag/#tag-wemo">wemo</a>
+
+</div></li>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <li>
+<div class="plugin-list-item">
+<h3><a class="post-link" href="/plugins/tuyasmartplug/">OctoPrint-TuyaSmartplug</a></h3>
+
+<p class="stats">
+    <small class="prop" title="Publication date"><i class="fas fa-calendar-alt"></i> 12 Nov 2018</small>
+    <small class="prop" title="License"><i class="fas fa-gavel"></i> AGPLv3</small>
+    <small class="prop" title="Active instances past month"><i class="fas fa-server"></i> 362</small>
+    <small class="prop" title="GitHub stars"><i class="fas fa-star"></i> 12</small>
+    <small class="prop" title="Last push to main branch"><i class="fas fa-sync"></i> 13 Oct 2020</small>
+    <small class="prop" title="Latest release & date"><i class="fas fa-tag"></i> 0.3.0 (16 Oct 2020)</small>
+</p>
+
+<p>
+  Plugin to control Tuya based Smartplug devices from OctoPrint web interface.
+</p>
+
+
+
+
+
+  <a class="label" href="/by_tag/#tag-power">power</a>
+
+  <a class="label" href="/by_tag/#tag-smartplug">smartplug</a>
+
+  <a class="label" href="/by_tag/#tag-tuya">tuya</a>
+
+</div></li>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <li>
+<div class="plugin-list-item">
+<h3><a class="post-link" href="/plugins/ophom/">Ophom</a></h3>
+
+<p class="stats">
+    <small class="prop" title="Publication date"><i class="fas fa-calendar-alt"></i> 16 Aug 2020</small>
+    <small class="prop" title="License"><i class="fas fa-gavel"></i> AGPLv3</small>
+    <small class="prop" title="Active instances past month"><i class="fas fa-server"></i> 136</small>
+    <small class="prop" title="GitHub stars"><i class="fas fa-star"></i> 3</small>
+    <small class="prop" title="Last push to main branch"><i class="fas fa-sync"></i> 12 Feb 2021</small>
+    <small class="prop" title="Latest release & date"><i class="fas fa-tag"></i> 1.3.5 (12 Feb 2021)</small>
+</p>
+
+<p>
+  Octoprint Philips Hue Outlet Manager
+</p>
+
+
+
+
+
+  <a class="label" href="/by_tag/#tag-auto-off">auto off</a>
+
+  <a class="label" href="/by_tag/#tag-hue">hue</a>
+
+  <a class="label" href="/by_tag/#tag-outlet">outlet</a>
+
+  <a class="label" href="/by_tag/#tag-philips">philips</a>
+
+  <a class="label" href="/by_tag/#tag-power-manage">power manage</a>
+
+</div></li>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <li>
+<div class="plugin-list-item">
+<h3><a class="post-link" href="/plugins/energeniecontrol/">OctoPrint-EnergenieControl</a></h3>
+
+<p class="stats">
+    <small class="prop" title="Publication date"><i class="fas fa-calendar-alt"></i> 05 Apr 2021</small>
+    <small class="prop" title="License"><i class="fas fa-gavel"></i> AGPLv3</small>
+    <small class="prop" title="Active instances past month"><i class="fas fa-server"></i> 114</small>
+    <small class="prop" title="GitHub stars"><i class="fas fa-star"></i> 0</small>
+    <small class="prop" title="Last push to main branch"><i class="fas fa-sync"></i> 05 Apr 2021</small>
+    <small class="prop" title="Latest release & date"><i class="fas fa-tag"></i> v1.0.1 (05 Apr 2021)</small>
+</p>
+
+<p>
+  Controls Energenie sockets to turn printer on and off.
+</p>
+
+
+
+
+
+  <a class="label" href="/by_tag/#tag-gpio">gpio</a>
+
+  <a class="label" href="/by_tag/#tag-power">power</a>
+
+  <a class="label" href="/by_tag/#tag-raspberry-pi">raspberry pi</a>
+
+  <a class="label" href="/by_tag/#tag-wireless">wireless</a>
+
+</div></li>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <li>
+<div class="plugin-list-item">
+<h3><a class="post-link" href="/plugins/mystromswitch/">OctoPrint-MyStromSwitch</a></h3>
+
+<p class="stats">
+    <small class="prop" title="Publication date"><i class="fas fa-calendar-alt"></i> 03 Dec 2019</small>
+    <small class="prop" title="License"><i class="fas fa-gavel"></i> AGPLv3</small>
+    <small class="prop" title="Active instances past month"><i class="fas fa-server"></i> 79</small>
+    <small class="prop" title="GitHub stars"><i class="fas fa-star"></i> 4</small>
+    <small class="prop" title="Last push to main branch"><i class="fas fa-sync"></i> 25 Jul 2020</small>
+    <small class="prop" title="Latest release & date"><i class="fas fa-tag"></i> 1.2.0 (25 Jul 2020)</small>
+</p>
+
+<p>
+  Plugin to integrate myStrom Switch into your OctoPrint installation
+</p>
+
+
+
+
+
+  <a class="label" href="/by_tag/#tag-mystrom">mystrom</a>
+
+  <a class="label" href="/by_tag/#tag-relay">relay</a>
+
+  <a class="label" href="/by_tag/#tag-switch">switch</a>
+
+</div></li>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <li>
+<div class="plugin-list-item">
+<h3><a class="post-link" href="/plugins/orvibos20/">OctoPrint-OrviboS20</a></h3>
+
+<p class="stats">
+    <small class="prop" title="Publication date"><i class="fas fa-calendar-alt"></i> 03 Oct 2019</small>
+    <small class="prop" title="License"><i class="fas fa-gavel"></i> AGPLv3</small>
+    <small class="prop" title="Active instances past month"><i class="fas fa-server"></i> 26</small>
+    <small class="prop" title="GitHub stars"><i class="fas fa-star"></i> 2</small>
+    <small class="prop" title="Last push to main branch"><i class="fas fa-sync"></i> 14 Jun 2020</small>
+    <small class="prop" title="Latest release & date"><i class="fas fa-tag"></i> 0.2.3 (14 Jun 2020)</small>
+</p>
+
+<p>
+  Plugin to control Orvibo S20 Smart Plug from the OctoPrint web interface.
+</p>
+
+
+
+
+
+  <a class="label" href="/by_tag/#tag-orvibo">orvibo</a>
+
+  <a class="label" href="/by_tag/#tag-power">power</a>
+
+  <a class="label" href="/by_tag/#tag-s20">s20</a>
+
+  <a class="label" href="/by_tag/#tag-smartplug">smartplug</a>
+
+</div></li>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <li>
+<div class="plugin-list-item">
+<h3><a class="post-link" href="/plugins/atxpihat/">ATXPiHat</a></h3>
+
+<p class="stats">
+    <small class="prop" title="Publication date"><i class="fas fa-calendar-alt"></i> 25 Jan 2018</small>
+    <small class="prop" title="License"><i class="fas fa-gavel"></i> Creative Commons</small>
+    <small class="prop" title="Active instances past month"><i class="fas fa-server"></i> 4</small>
+    <small class="prop" title="GitHub stars"><i class="fas fa-star"></i> 6</small>
+    <small class="prop" title="Last push to main branch"><i class="fas fa-sync"></i> 08 Jul 2018</small>
+    <small class="prop" title="Latest release & date"><i class="fas fa-tag"></i> 1.1.5 (17 Jun 2018)</small>
+</p>
+
+<p>
+  Software support for the ATXPiHat
+</p>
+
+
+
+
+
+  <a class="label" href="/by_tag/#tag-atx">atx</a>
+
+  <a class="label" href="/by_tag/#tag-control">control</a>
+
+  <a class="label" href="/by_tag/#tag-emergency">emergency</a>
+
+  <a class="label" href="/by_tag/#tag-epo">epo</a>
+
+  <a class="label" href="/by_tag/#tag-fan">fan</a>
+
+  <a class="label" href="/by_tag/#tag-led">led</a>
+
+  <a class="label" href="/by_tag/#tag-monitor">monitor</a>
+
+  <a class="label" href="/by_tag/#tag-psu">psu</a>
+
+</div></li>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</ul>
+
+<hr />
+
+<p>
+<small>Plugins are sorted by the number of installations, as determined based on data from <a href="https://tracking.octoprint.org" target="_blank" rel="noopener noreferer">OctoPrint's Anonymous Usage Tracking</a>.</small>
+</p>
+
+  </div>
+  <div class="span4">
+    <h2><i class="fa fa-search"></i> Search</h2>
+
+    <form class="form-search" action="/search/" method="get" style="text-align: center">
+    <input type="search" id="search-query" class="search-query" placeholder="Enter search term &amp; hit enter..." name="q">
+</form>
+
+    <div class="ad">
+      <script>
+    if (!window["carbon-disable"] && !window.matchMedia("(max-width: 767px)").matches) {
+        (function() {
+            var po = document.createElement("script");
+            po.type = "text/javascript";
+            po.async = true;
+            po.src  = "//cdn.carbonads.com/carbon.js?serve=CK7DT237&placement=pluginsoctoprintorg";
+            po.id = "_carbonads_js";
+            var s = document.currentScript;
+            s.parentNode.insertBefore(po, s);
+        })();
+    }
+</script>
+    </div>
+
+    <h2><i class="far fa-lightbulb"></i> Help</h2>
+
+    <p>
+      You are a user of OctoPrint and want to to know <strong>how to install</strong> any of the plugins listed here? <a href="/help/installation/">Take a look at this guide</a>.
+    </p>
+    <p>
+      You are a plugin author and want to <strong>register your new plugin</strong> to be listed here? <a href="/help/registering/">Take a look at this guide</a>.
+    </p>
+    <p>
+      You are interested in <strong>writing your own plugin</strong> and don't know how to start? <a href="http://docs.octoprint.org/en/master/plugins/gettingstarted.html">Take a look at the plugin tutorial</a>.
+    </p>
+    <p>
+      <strong>Something is wrong with this repository?</strong> If something appears to be broken, please <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues">report it</a> or <a href="https://github.com/OctoPrint/plugins.octoprint.org/pulls">send a PR to fix it =)</a>. Thanks!
+    </p>
+
+    <h2><i class="fa fa-chart-line"></i> Stats</h2>
+
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+
+    <p>
+      There are currently <strong>294</strong> plugins listed in this repository of
+      which <strong>244 (82%)</strong>
+      are marked as Python 3 compatible.
+    </p>
+
+    <p>
+      <a href="https://github.com/OctoPrint/plugins.octoprint.org/labels/abandoned%20plugin"><strong>9</strong>
+      plugins have been marked as abandoned</a> and are looking for a new maintainer.
+    </p>
+
+    <p>
+      All in all <strong>210</strong> plugin authors have spent time and effort to bring you these plugins.
+    </p>
+
+    
+
+    
+    
+    
+    
+    <h3>Top 10 of the month</h3>
+    <ol>
+      
+      <li>
+        <a href="/plugins/bedlevelvisualizer/">Bed Level Visualizer</a><br>
+        <small class="muted">over 29.28k instances</small>
+      </li>
+      
+      <li>
+        <a href="/plugins/octolapse/">Octolapse</a><br>
+        <small class="muted">over 22.35k instances</small>
+      </li>
+      
+      <li>
+        <a href="/plugins/PrintTimeGenius/">OctoPrint-PrintTimeGenius</a><br>
+        <small class="muted">over 22.26k instances</small>
+      </li>
+      
+      <li>
+        <a href="/plugins/themeify/">Themeify</a><br>
+        <small class="muted">over 20.19k instances</small>
+      </li>
+      
+      <li>
+        <a href="/plugins/DisplayLayerProgress/">DisplayLayerProgress</a><br>
+        <small class="muted">over 19.37k instances</small>
+      </li>
+      
+      <li>
+        <a href="/plugins/navbartemp/">Navbar Temp</a><br>
+        <small class="muted">over 16.65k instances</small>
+      </li>
+      
+      <li>
+        <a href="/plugins/firmwareupdater/">Firmware Updater</a><br>
+        <small class="muted">over 15.71k instances</small>
+      </li>
+      
+      <li>
+        <a href="/plugins/thespaghettidetective/">Access Anywhere - The Spaghetti Detective</a><br>
+        <small class="muted">over 14.32k instances</small>
+      </li>
+      
+      <li>
+        <a href="/plugins/dashboard/">OctoPrint-Dashboard</a><br>
+        <small class="muted">over 12.91k instances</small>
+      </li>
+      
+      <li>
+        <a href="/plugins/ender3v2tempfix/">Creality 2x temperature reporting fix</a><br>
+        <small class="muted">over 11.9k instances</small>
+      </li>
+      
+    </ol>
+    
+
+    
+    
+    
+    
+    <h3>Trending this week</h3>
+    <ol>
+      
+      <li>
+        <a href="/plugins/bedlevelvisualizer/">Bed Level Visualizer</a><br>
+        <small class="muted">over 924 new installs</small>
+      </li>
+      
+      <li>
+        <a href="/plugins/camerasettings/">Camera Settings</a><br>
+        <small class="muted">over 898 new installs</small>
+      </li>
+      
+      <li>
+        <a href="/plugins/octolapse/">Octolapse</a><br>
+        <small class="muted">over 742 new installs</small>
+      </li>
+      
+      <li>
+        <a href="/plugins/ender3v2tempfix/">Creality 2x temperature reporting fix</a><br>
+        <small class="muted">over 615 new installs</small>
+      </li>
+      
+      <li>
+        <a href="/plugins/DisplayLayerProgress/">DisplayLayerProgress</a><br>
+        <small class="muted">over 550 new installs</small>
+      </li>
+      
+    </ol>
+    
+
+    
+    <small><em>Based on anonymous usage data.</em></small>
+    
+
+  </div>
+</div>
+
+        </div>
+    </div>
+</div>
+
+    </div>
+</div>
+
+      <footer>
+          <div class="container">
+              <div class="row">
+                  <div class="span4">
+                      <h2>On the web</h2>
+                      <ul class="fa-ul">
+                          <li><span class="fa-li"><i class="fas fa-users fa-fw"></i></span><a href="https://community.octoprint.org">Community Forum</a></li>
+                          <li><span class="fa-li"><i class="fab fa-discord fa-fw"></i></span><a href="https://discord.octoprint.org" target="_blank">Discord</a></li>
+                          <li><span class="fa-li"><i class="fab fa-twitter fa-fw"></i></span><a href="https://twitter.com/OctoPrint3D" target="_blank">Twitter</a></li>
+                          <li><span class="fa-li"><i class="fab fa-facebook-f fa-fw"></i></span><a href="https://facebook.com/OctoPrint" target="_blank">Facebook</a></li>
+                          <li><span class="fa-li"><i class="fab fa-youtube fa-fw"></i></span><a href="https://www.youtube.com/c/OctoPrint3D" target="_blank">YouTube</a></li>
+                          <li><span class="fa-li"><i class="fas fa-tachometer-alt fa-fw"></i></span><a href="https://status.octoprint.org" target="_blank">Site Status</a></li>
+                          <li><span class="fa-li"><i class="fas fa-gavel fa-fw"></i></span><a href="https://octoprint.org/imprint/" rel="nofollow">Legal Notice</a></li>
+                          <li><span class="fa-li"><i class="fas fa-gavel fa-fw"></i></span><a href="https://octoprint.org/privacy/" rel="nofollow">Privacy Policy</a></li>
+                      </ul>
+                  </div>
+                  <div class="span4">
+                      <h2>Recently Added</h2>
+                      <ul>
+                          
+                          
+                          <li>
+                              <a class="post-link" href="/plugins/camerasettings/">Camera Settings</a>
+                          </li>
+                          
+                          <li>
+                              <a class="post-link" href="/plugins/psucontrol_tplink/">PSU Control - TPLink</a>
+                          </li>
+                          
+                          <li>
+                              <a class="post-link" href="/plugins/networkhealth/">Network Health</a>
+                          </li>
+                          
+                          <li>
+                              <a class="post-link" href="/plugins/wled/">WLED Connection</a>
+                          </li>
+                          
+                          <li>
+                              <a class="post-link" href="/plugins/psucontrol_rpigpio/">PSU Control - RPi.GPIO</a>
+                          </li>
+                          
+                      </ul>
+                  </div>
+                  <div class="span4 hidden-phone">
+                      <a href="http://octoprint.org"><img src="/assets/img/logo-footer.png" alt="Octopus logo" class="pull-right"></a>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="span12 text-center legal">
+                      <small>"OctoPrint" is a <a href="http://octoprint.org/trademark-rules/">registered trademark</a></small>
+                  </div>
+              </div>
+          </div>
+      </footer>
+
+<script integrity="sha256-oq4gZXkRKQNEXwwNS5jzGrkB2yjohz3HyBzkCgY3J0U=" crossorigin="anonymous" src="/assets/js/prettify-a2ae206579112903445f0c0d4b98f31ab901db28e8873dc7c81ce40a06372745.js" type="text/javascript"></script>
+<script integrity="sha256-9WUabhj4hYHZvjzwYyj+3p4RKUPJ7AN7TCwdxiPZQps=" crossorigin="anonymous" src="/assets/js/bootstrap.min-f5651a6e18f88581d9be3cf06328fede9e112943c9ec037b4c2c1dc623d9429b.js" type="text/javascript"></script>
+<script integrity="sha256-pjknAWChAVRqxsY3OyTXQitKN725ONjqpew+vv3TQ/g=" crossorigin="anonymous" src="/assets/js/lunr.min-a639270160a101546ac6c6373b24d7422b4a37bdb938d8eaa5ec3ebefdd343f8.js" type="text/javascript"></script>
+<script integrity="sha256-moWmXRncmWe8pee7FV4fgitCdA/S7gTzof1z2kzjytg=" crossorigin="anonymous" src="/assets/js/mustache-9a85a65d19dc9967bca5e7bb155e1f822b42740fd2ee04f3a1fd73da4ce3cad8.js" type="text/javascript"></script>
+<script integrity="sha256-VpwM3TTZgmoOWxqz6tE14UwGKBpx3pCqjirqNejJ23U=" crossorigin="anonymous" src="/assets/js/URI.min-569c0cdd34d9826a0e5b1ab3ead135e14c06281a71de90aa8e2aea35e8c9db75.js" type="text/javascript"></script>
+<script integrity="sha256-f10YhaDPIm04yzE7jNQ5fgLI/o/RzCAEwuuUmtob2vU=" crossorigin="anonymous" src="/assets/js/date.format-7f5d1885a0cf226d38cb313b8cd4397e02c8fe8fd1cc2004c2eb949ada1bdaf5.js" type="text/javascript"></script>
+<script integrity="sha256-FFsWmb+Oaz5ZDxXqMv/bVECwF3F/yNqJJOCcycdxU3g=" crossorigin="anonymous" src="/assets/js/jquery.lunr.search-145b1699bf8e6b3e590f15ea32ffdb5440b017717fc8da8924e09cc9c7715378.js" type="text/javascript"></script>
+<script integrity="sha256-QP3MGVxZgiUMiQHywWDhU0KUGjEfr2NywEEXwNnES8c=" crossorigin="anonymous" src="/assets/js/lightbox.min-40fdcc195c5982250c8901f2c160e15342941a311faf6372c04117c0d9c44bc7.js" type="text/javascript"></script>
+<script integrity="sha256-nNPB8nY6m7oEivqh1liFhpUgWH4PU2/7C/k1mEKDcf0=" crossorigin="anonymous" src="/assets/js/site-9cd3c1f2763a9bba048afaa1d65885869520587e0f536ffb0bf93598428371fd.js" type="text/javascript"></script>
+<script integrity="sha256-LhD170aMSyAIjslkoROsutHxXRuvQHSlJV/QPCBL838=" crossorigin="anonymous" src="/assets/js/autotrack-2e10f5ef468c4b20088ec964a113acbad1f15d1baf4074a5255fd03c204bf37f.js" type="text/javascript"></script>
+<script integrity="sha256-k2YtLDENA0EGXNUY89RImV47fkTIcVG86USbFIRqW24=" crossorigin="anonymous" src="/assets/js/yt-with-consent-93662d2c310d0341065cd518f3d448995e3b7e44c87151bce9449b14846a5b6e.js" type="text/javascript"></script>
+
+<script>
+    var gaBaseProperty = 'UA-62479257';
+    var gaProperty = gaBaseProperty + '-2';
+
+    // opt out
+    var disableStr = 'ga-disable-' + gaProperty;
+    var disableCookie = 'ga-disable-' + gaBaseProperty;
+    function gaOptout() {
+        document.cookie = disableCookie + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/; domain=octoprint.org';
+        window[disableStr] = true;
+        alert("Google Analytics ist jetzt deaktiviert! / Google Analytics is now deactivated!")
+    }
+
+    // tracking code
+    if (document.cookie.indexOf(disableCookie + '=true') > -1) {
+        window[disableStr] = true;
+    } else {
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', gaProperty, 'auto');
+        ga('require', 'autotrack');
+        ga('set', 'anonymizeIp', true);
+        ga('send', 'pageview');
+    }
+</script>
+
+</body>
+</html>
