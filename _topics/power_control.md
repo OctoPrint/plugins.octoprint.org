@@ -10,6 +10,8 @@ plugins:
   - orvibos20
   - psucontrol
   - shutdownprinter
+  - tasmota
+  - tasmota_mqtt
   - TpLinkAutoShutdown
   - tplinksmartplug
   - tuyasmartplug

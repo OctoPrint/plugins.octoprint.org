@@ -13,9 +13,6 @@ plugins:
   - polarcloud
   - raisecloud
   - SimplyPrint
-  - tasmota
-  - tasmota_mqtt
-  - telegram
   - telegram
   - thespaghettidetective
 ---
