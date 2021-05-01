@@ -9,6 +9,10 @@ layout: plugin_list
 {% endfor %}
 {% assign sorted_plugins = site.plugins | where_exp: "plugin", "plugin.stats.month.instances" | sort: "stats.month.instances", "last" | reverse %}
 
+<p><em>
+  Topics are curated lists of plugins pertaining to a certain topic. They are provided for your convenience, they do not constitute official endorsement of any plugin.
+</em></p>
+
 {{ content }}
 
 <ul>
