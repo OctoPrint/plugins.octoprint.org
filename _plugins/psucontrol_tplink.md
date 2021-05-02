@@ -10,9 +10,7 @@ author: Shawn Bruce
 license: AGPLv3
 date: 2021-04-28
 tags:
-- ui
 - power
-- atx
 - psu
 - control
 - psucontrol

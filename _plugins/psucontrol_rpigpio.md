@@ -10,12 +10,11 @@ author: Shawn Bruce
 license: AGPLv3
 date: 2021-04-05
 tags:
-- ui
 - power
-- atx
 - psu
 - control
 - psucontrol
+- gpio
 compatibility:
   os:
   - linux
