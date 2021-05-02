@@ -5,10 +5,36 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>https://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 02 May 2021 12:40:17 -0500</pubDate>
-    <lastBuildDate>Sun, 02 May 2021 12:40:17 -0500</lastBuildDate>
+    <pubDate>Sun, 02 May 2021 12:51:54 -0500</pubDate>
+    <lastBuildDate>Sun, 02 May 2021 12:51:54 -0500</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
+    
+      <item>
+        <title>PSU Control - Tasmota</title>
+        <description>
+          <![CDATA[
+            Adds Tasmota Smart Plug support to OctoPrint-PSUControl as a sub-plugin
+            <p><img src="https://plugins.octoprint.org/assets/img/repo-600x400.png"></p>
+            
+          ]]>
+        </description>
+        <pubDate>
+Sun, 02 May 2021 00:00:00 -0500</pubDate>
+        <link>https://plugins.octoprint.org/plugins/psucontrol_tasmota/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/psucontrol_tasmota/</guid>
+        
+        <category>power</category>
+        
+        <category>psu</category>
+        
+        <category>control</category>
+        
+        <category>psucontrol</category>
+        
+        <category>tasmota</category>
+        
+      </item>
     
       <item>
         <title>Camera Settings</title>
@@ -228,29 +254,6 @@ Sat, 13 Mar 2021 00:00:00 -0600</pubDate>
         <category>power</category>
         
         <category>switch</category>
-        
-      </item>
-    
-      <item>
-        <title>Octoprint Youtube Timelapse</title>
-        <description>
-          <![CDATA[
-            Automatically upload rendered timelapses to Youtube. Can also delete after upload to save space on the Raspberry Pi SD Card.
-            <p><img src="https://plugins.octoprint.org/assets/img/plugins/youtube_timelapse/configuration_step7.png"></p>
-          ]]>
-        </description>
-        <pubDate>
-Tue, 09 Mar 2021 00:00:00 -0600</pubDate>
-        <link>https://plugins.octoprint.org/plugins/youtube_timelapse/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/youtube_timelapse/</guid>
-        
-        <category>youtube</category>
-        
-        <category>timelapse</category>
-        
-        <category>oAuth</category>
-        
-        <category>google</category>
         
       </item>
     

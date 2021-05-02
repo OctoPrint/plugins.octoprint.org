@@ -11014,5 +11014,43 @@
             "instances_week": 1363,
             "install_events_week": 1354
         }
+    },
+
+    {
+        "id": "psucontrol_tasmota",
+        "published": "2021-05-02 00:00:00 -0500",
+        "title": "PSU Control - Tasmota",
+        "description": "Adds Tasmota Smart Plug support to OctoPrint-PSUControl as a sub-plugin",
+        "archive": "https://github.com/kantlivelong/OctoPrint-PSUControl-Tasmota/archive/master.zip",
+        "author": "Shawn Bruce",
+        "homepage": "https://github.com/kantlivelong/OctoPrint-PSUControl-Tasmota",
+        "page": "https://plugins.octoprint.org/plugins/psucontrol_tasmota/",
+        "compatibility": {
+            "octoprint": [],
+            "os": ["linux","freebsd","macos","windows"],
+            "python": ">=2.7,<4"
+        },
+        "license": "AGPLv3",
+        "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "1.0.0",
+                "date": "2021-05-02 17:14:28 +0000",
+                "tag": "1.0.0"
+            },
+            "releases": 1,
+            "last_push": "2021-05-02 17:10:36 +0000",
+            "stars": 0,
+            "issues": {
+                "open": 0,
+                "closed": 0
+            }
+        },
+        "stats": {
+            "instances_month": 2,
+            "install_events_month": 2,
+            "instances_week": 2,
+            "install_events_week": 1
+        }
     }
 ]

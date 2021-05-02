@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en" xmlns="http://www.w3.org/1999/html"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+    <title>PSU Control - Tasmota</title>
+    <meta name="description" content="Adds Tasmota Smart Plug support to OctoPrint-PSUControl as a sub-plugin">
+    <meta name="author" content="Shawn Bruce">
+    <meta name="referrer" content="same-origin">
+    <meta name="google-site-verification" content="0EFsbaNygJcEinKPmzP-hTf0Ju6wDIpJxO5zvQtOQT0" />
+
+    <!--[if lt IE 9]>
+    <script integrity="sha256-1VQQ7rDR5QuVWLWUVg42JSnGDz1w+Ajv5j3BYTewImo=" crossorigin="anonymous" src="/assets/js/html5shim-d55410eeb0d1e50b9558b594560e362529c60f3d70f808efe63dc16137b0226a.js" type="text/javascript"></script>
+    <![endif]-->
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Le styles -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/site-26b9a0516732e8edda19c7b1d60a66a5437bd3e65218a83bd7ca758ec0f1ad6c.css" integrity="sha256-JrmgUWcy6O3aGcex1gpmpUN70+ZSGKg718p1jsDxrWw=" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap-responsive-c77a05ed6f7d09ff73e449cbc70b8bed232766c37371185af0d332e1d4a9cb3c.css" integrity="sha256-x3oF7W99Cf9z5EnLxwuL7SMnZsNzcRha8NMy4dSpyzw=" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/assets/css/fontawesome-all.min-50c3c339da3ba3c3bf3060501d2862b4d0794e0fa4abaa5844b74a9d16f59697.css" integrity="sha256-UMPDOdo7o8O/MGBQHShitNB5Tg+kq6pYRLdKnRb1lpc=" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/assets/css/prettify-30df8270395128e468d5c072b23ec9f8ef7265820f7e745251f9b703bc1962a9.css" integrity="sha256-MN+CcDlRKORo1cBysj7J+O9yZYIPfnRSUfm3A7wZYqk=" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/assets/css/lightbox-4cb5722046a1da0569855a52d2fd670043c99af8b5cc8eac099bcb016a85ce48.css" integrity="sha256-TLVyIEah2gVphVpS0v1nAEPJmvi1zI6sCZvLAWqFzkg=" crossorigin="anonymous">
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="/assets/img/tentacle-32x32.png">
+
+    <!-- Le RSS feed -->
+    <link rel="alternate" type="application/rss+xml" title="OctoPrint Plugin Repository: New Plugins" href="/feed.xml">
+
+    <!-- Le social media meta data -->
+    
+    
+    
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@OctoPrint3D" />
+    <meta name="twitter:title" content="PSU Control - Tasmota" />
+    <meta name="twitter:description" content="See https://github.com/kantlivelong/OctoPrint-PSUControl-Tasmota for information on configuration.
+" />
+    <meta name="twitter:image" content="https://plugins.octoprint.org/assets/img/octoprint-avatar-240x240.png" />
+
+    <meta property="og:title" content="PSU Control - Tasmota" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://plugins.octoprint.org/assets/img/repo-600x400.png" />
+    <meta property="og:description" content="See https://github.com/kantlivelong/OctoPrint-PSUControl-Tasmota for information on configuration.
+" />
+    <meta property="og:site_name" content="OctoPrint Plugin Repository" />
+    <meta property="og:url" content="https://plugins.octoprint.org/plugins/psucontrol_tasmota/" />
+
+    <meta itemscope itemtype="http://schema.org/WebPage" />
+    <meta itemprop="headline" content="PSU Control - Tasmota" />
+    <meta itemprop="description" content="See https://github.com/kantlivelong/OctoPrint-PSUControl-Tasmota for information on configuration.
+" />
+    <meta itemprop="image" content="https://plugins.octoprint.org/assets/img/repo-600x400.png" />
+
+    <script integrity="sha256-S1jf6xGbLdFfVOCgdM+OtjIEyLA9RQVuC1FOBC82qkQ=" crossorigin="anonymous" src="/assets/js/jquery-1.9.1.min-4b58dfeb119b2dd15f54e0a074cf8eb63204c8b03d45056e0b514e042f36aa44.js" type="text/javascript"></script>
+    <script integrity="sha256-Qtj60TvCj8cmd1GW7Jq5U/6/m94XXFhFEoNhyVP6F/Q=" crossorigin="anonymous" src="/assets/js/underscore.min-42d8fad13bc28fc726775196ec9ab953febf9bde175c5845128361c953fa17f4.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/cookieconsent.min-b4bf981e76e71509875afcf5f4ad89e6d9b3bcba41fa20fc6a26226d5e162bd1.css" integrity="sha256-tL+YHnbnFQmHWvz19K2J5tmzvLpB+iD8aiYibV4WK9E=" crossorigin="anonymous">
+    <script integrity="sha256-6KrAt6fD48F8Yhv1uyTAmKYC5K0MKGdZj0DV7knspCU=" crossorigin="anonymous" src="/assets/js/cookieconsent.min-e8aac0b7a7c3e3c17c621bf5bb24c098a602e4ad0c2867598f40d5ee49eca425.js" type="text/javascript"></script>
+    <script>
+        if (!String.prototype.startsWith) {
+            String.prototype.startsWith = function(search, pos) {
+            return this.substr(!pos || pos < 0 ? 0 : +pos, search.length) === search;
+            };
+        }
+
+        window.addEventListener("load", function(){
+            window.cookieconsent.initialise({
+                "position": "bottom",
+                "theme": "edgeless",
+                "palette": {
+                    "popup": {
+                        "background": "#000000",
+                        "link": "#10a800"
+                    },
+                    "button": {
+                        "background": "#0b7500"
+                    }
+                }
+            })
+        });
+
+        /**
+         * Make sure octoprint.github.io stuff gets rewritten to plugins.octoprint.org.
+         * See https://github.com/OctoPrint/plugins.octoprint.org/issues/146.
+         */
+        var githubio = "octoprint.github.io/plugins.octoprint.org";
+        var url = window.location.href;
+        if (url && (url.startsWith("http://" + githubio) || url.startsWith("https://" + githubio))) {
+            url = url.replace(githubio, "plugins.octoprint.org");
+            window.location.replace(url);
+        }
+    </script>
+    <script integrity="sha256-b9hF6WkmuqKen2NW6BMyhRRgTQmEZmCTb0yvVKuaWAQ=" crossorigin="anonymous" src="/assets/js/github-6fd845e96926baa29e9f6356e813328514604d09846660936f4caf54ab9a5804.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+<div class="navbar navbar-inverse navbar-static-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand" href="/"><img src="/assets/img/tentacle-20x20.png" alt="Tentacle logo" class="tentacle"> Plugin Repo</a>
+      <a href="javascript:void(0)" class="btn btn-burger btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><i class="fas fa-bars"></i></a>
+      <div class="pull-right">
+        <ul class="nav social-navbar">
+          <li><a href="https://octoprint.org/merch/" title="Get some merchandise!" target="_blank"><i class="fa fa-shopping-basket"></i></a></li>
+          <li><a href="https://octoprint.org/support-octoprint/" title="Support OctoPrint!" data-event-category="supportlink" data-event-action="navigation" target="_blank"><i class="fas fa-donate"></i></a></li>
+        </ul>
+      </div>
+      <div class="nav-collapse collapse">
+        <ul class="nav">
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">Sorted by... <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="/by_name/">... name</a></li>
+              <li><a href="/by_date/">... date</a></li>
+              <li><a href="/by_tag/">... tag</a></li>
+              <li><a href="/by_author/">... author</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">Topics <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              
+              <li><a href="/topics/power_control">Power Control (14 plugins)</a></li>
+              
+              <li><a href="/topics/remote_access">Remote Access (13 plugins)</a></li>
+              
+            </ul>
+          </li>
+          <li><form class="navbar-search pull-right" action="/search/" method="get"><input type="text" class="input-large search-query" placeholder="Enter search &amp; hit enter..." name="q"></form></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">Help <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="/help/installation/">Installing Plugins</a></li>
+              <li><a href="/help/registering/">Registering Plugins</a></li>
+              <li><a href="http://docs.octoprint.org/en/master/plugins/gettingstarted.html">The Plugin Tutorial</a></li>
+              <li class="divider"></li>
+              <li><a href="/help/github_integration/">GitHub Integration on plugins.octoprint.org</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">Lists <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="/blacklist/">Blacklist</a></li>
+              <li><a href="/notices/">Notices</a></li>
+              <li><a href="/overlays/">Overlays</a></li>
+              <li><a href="/abandoned/">Abandoned plugins</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="wrap">
+    <div id="main">
+    
+
+
+
+
+
+
+<div class="page-header">
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+        <h1>PSU Control - Tasmota</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row-fluid">
+    
+    <small class="pull-left"><a href="/plugins/psucontrol_tplink/"><i class="fa fa-double-angle-left"></i>&nbsp;PSU Control - TPLink</a></small>
+    
+    &nbsp;
+    
+    <small class="pull-right"><a href="/plugins/PauseForUserEvent/">PauseForUser Event&nbsp;<i class="fa fa-double-angle-right"></i></a></small>
+    
+  </div>
+  <div class="content plugin-content row-fluid">
+    <article class="post-content span8">
+      
+      
+      
+      
+
+      <p class="lead">
+        Adds Tasmota Smart Plug support to OctoPrint-PSUControl as a sub-plugin
+      </p>
+      <p>See <a href="https://github.com/kantlivelong/OctoPrint-PSUControl-Tasmota">https://github.com/kantlivelong/OctoPrint-PSUControl-Tasmota</a> for information on configuration.</p>
+
+
+      
+    </article>
+
+    <div class="span4">
+      <dl class="adbox">
+        <dd class="ad">
+          <script>
+    if (!window["carbon-disable"]) {
+        (function() {
+            var po = document.createElement("script");
+            po.type = "text/javascript";
+            po.async = true;
+            po.src  = "//cdn.carbonads.com/carbon.js?serve=CK7DT237&placement=pluginsoctoprintorg";
+            po.id = "_carbonads_js";
+            var s = document.currentScript;
+            s.parentNode.insertBefore(po, s);
+        })();
+    }
+</script>
+        </dd>
+      </dl>
+      
+      <dl class="installation">
+        <dt>Installation <a href="/help/installation/" class="fas fa-question-circle"></a></dt>
+        
+        <dd>
+          URL:
+          <pre>https://github.com/kantlivelong/OctoPrint-PSUControl-Tasmota/archive/master.zip</pre>
+          
+        </dd>
+        
+        
+        <dd>
+          Command line:
+          <pre>pip install "https://github.com/kantlivelong/OctoPrint-PSUControl-Tasmota/archive/master.zip"</pre>
+        </dd>
+        
+      </dl>
+      
+      
+      <dl class="date">
+        <dt>Registration date</dt>
+        <dd>02 May 2021</dd>
+      </dl>
+      
+      
+      <dl class="installations">
+        <dt>Active instances the past month</dt>
+        <dd>Installed on at least <strong>2</strong> instances</dd>
+      </dl>
+      
+      
+      <dl class="install_events">
+        <dt>New installs the past week</dt>
+        <dd>At least <strong>1</strong> new installations</dd>
+      </dl>
+      
+      
+      <dl class="github">
+        <dt>GitHub stats <a href="/help/github_integration/" class="fas fa-question-circle"></a> <span id="github_login">(<a href="javascript:void(0)">Login</a>)</span></dt>
+        <dd>
+          <ul>
+            
+            <li>
+              Latest Release: <a href="https://github.com/kantlivelong/OctoPrint-PSUControl-Tasmota/releases/tag/1.0.0" target="_blank">1.0.0</a><br>
+              <small>released on 02 May 2021</small>
+            </li>
+            <li>Releases: 1</li>
+            
+            <li>Stars: <span id="github_star_count">0</span> <span id="github_star"><a href="javascript:void(0)"><i class="far fa-star"></i></a></span></li>
+            <li>Issues: 0 open, 0 closed</li>
+            <li>Last push: 02 May 2021</li>
+          </ul>
+        </dd>
+      </dl>
+      
+      
+      <dl class="tags">
+        <dt>Tags</dt>
+        <dd>
+          
+          
+          
+          
+          <a class="label" href="/by_tag/#tag-control">control</a>
+          
+          <a class="label" href="/by_tag/#tag-power">power</a>
+          
+          <a class="label" href="/by_tag/#tag-psu">psu</a>
+          
+          <a class="label" href="/by_tag/#tag-psucontrol">psucontrol</a>
+          
+          <a class="label" href="/by_tag/#tag-tasmota">tasmota</a>
+          
+        </dd>
+      </dl>
+      
+      <dl class="compatibility">
+        <dt>Compatibility Information</dt>
+        <dd>
+          <ul>
+            
+            <li>OctoPrint: all versions</li>
+            
+            
+            <li>Operating Systems: Linux, FreeBSD, Mac OS XWindows</li>
+            
+            
+            <li>Python: &gt;=2.7,&lt;4</li>
+            
+          </ul>
+        </dd>
+      </dl>
+      
+      <dl class="author">
+        <dt>Author</dt>
+        <dd>
+<a href="/by_author/#shawn-bruce">Shawn Bruce</a>
+</dd>
+      </dl>
+      
+      
+      <dl class="homepage">
+        <dt>Homepage</dt>
+        <dd><a href="https://github.com/kantlivelong/OctoPrint-PSUControl-Tasmota" target="_blank">https://github.com/kantlivelong/OctoPrint-PSUControl-Tasmota</a></dd>
+      </dl>
+      
+      
+      <dl class="source">
+        <dt>Source</dt>
+        <dd><a href="https://github.com/kantlivelong/OctoPrint-PSUControl-Tasmota" target="_blank">https://github.com/kantlivelong/OctoPrint-PSUControl-Tasmota</a></dd>
+      </dl>
+      
+      
+      <dl class="license">
+        <dt>License</dt>
+        <dd>AGPLv3</dd>
+      </dl>
+      
+      <dl class="issue">
+        <dt>Something wrong here?</dt>
+        <dd>
+          <p>
+            If there is <strong>something wrong with this listing</strong> (broken links & images etc), please
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?template=listing_error.yml&labels%5B%5D=listing+error&title=%5BListing+Error%5D+PSU+Control+-+Tasmota&which_plugin=https%3A%2F%2Fplugins.octoprint.org%2Fplugins%2Fpsucontrol_tasmota%2F">report it here</a>.
+          </p>
+          <p>
+            If this plugin <strong>has been <em>confirmed</em> as abandoned</strong> by its maintainer, please
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?template=abandoned_plugin.yml&labels%5B%5D=abandoned+plugin&title=%5BAbandoned+Plugin%5D+PSU+Control+-+Tasmota&which_plugin=https%3A%2F%2Fplugins.octoprint.org%2Fplugins%2Fpsucontrol_tasmota%2F">report it here</a>.
+          </p>
+          <p>
+            If this plugin is <strong>doing something suspicious</strong> (e.g. weird network activity, unannounced tracking, ...) and
+            the maintainer is not cooperating in getting to the bottom of that, please
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?template=suspicious_plugin_activity.yml&labels%5B%5D=suspicious+plugin+activity&title=%5BSuspicious+Plugin+Activity%5D+PSU+Control+-+Tasmota&which_plugin=https%3A%2F%2Fplugins.octoprint.org%2Fplugins%2Fpsucontrol_tasmota%2F">report the plugin as suspicious here</a>.
+          </p>
+          <p>
+            Report bugs or feature requests for the plugin to the plugin author (e.g. on the plugin's <a href="https://github.com/kantlivelong/OctoPrint-PSUControl-Tasmota">homepage</a>) please, not here!
+          </p>
+        </dd>
+      </dl>
+    </div>
+
+  </div>
+</div>
+
+<script type="application/javascript">
+  $(function() {
+    var has_github = true;
+    if (has_github) {
+      var github_repo = "kantlivelong/OctoPrint-PSUControl-Tasmota";
+
+      if (github_repo) {
+        var status = "unknown";
+
+        var starSpan = $("#github_star");
+        $("a", starSpan).click(function() {
+          switch (status) {
+            case "starred": {
+              window.githubUnstar(github_repo)
+                .done(function() {
+                  markAsUnstarred();
+                  updateStarcount();
+                })
+                .fail(markAsLoggedout);
+              break;
+            }
+            case "unstarred": {
+              window.githubStar(github_repo)
+                .done(function() {
+                  markAsStarred();
+                  updateStarcount();
+                })
+                .fail(markAsLoggedout);
+              break;
+            }
+            case "loggedout": {
+              window.githubLogin()
+                .done(determineStatus);
+              break;
+            }
+          }
+        });
+        starSpan.hide();
+
+        var login = $("#github_login");
+        $("a", login).click(function() {
+          switch (status) {
+            case "loggedout": {
+              window.githubLogin()
+                .done(determineStatus);
+              break;
+            }
+            case "starred":
+            case "unstarred": {
+              window.githubLogout()
+                .done(determineStatus);
+              break;
+            }
+          }
+        });
+
+        var starCount = $("#github_star_count");
+
+        var markAsStarred = function() {
+          status = "starred";
+          $("i.fa-star", starSpan).removeClass("far").addClass("fas");
+          $("a", login).text("Logout");
+        }
+        var markAsUnstarred = function() {
+          status = "unstarred";
+          $("i.fa-star", starSpan).removeClass("fas").addClass("far");
+          $("a", login).text("Logout");
+        };
+        var markAsLoggedout = function() {
+          status = "loggedout";
+          $("a", login).text("Login");
+        };
+        var updateStarcount = function() {
+          window.githubRepo(github_repo)
+            .done(function(response) {
+              starCount.text(response.stargazers_count);
+            });
+        }
+        var determineStatus = function() {
+          window.githubStatus(github_repo)
+            .done(function(starred) {
+              if (starred) {
+                markAsStarred();
+              } else {
+                markAsUnstarred();
+              }
+              starSpan.show();
+              updateStarcount();
+            })
+            .fail(function() {
+              markAsLoggedout();
+              starSpan.hide();
+            });
+        }
+
+        determineStatus();
+      }
+    }
+  });
+</script>
+
+    </div>
+</div>
+
+      <footer>
+          <div class="container">
+              <div class="row">
+                  <div class="span4">
+                      <h2>On the web</h2>
+                      <ul class="fa-ul">
+                          <li><span class="fa-li"><i class="fas fa-users fa-fw"></i></span><a href="https://community.octoprint.org">Community Forum</a></li>
+                          <li><span class="fa-li"><i class="fab fa-discord fa-fw"></i></span><a href="https://discord.octoprint.org" target="_blank">Discord</a></li>
+                          <li><span class="fa-li"><i class="fab fa-twitter fa-fw"></i></span><a href="https://twitter.com/OctoPrint3D" target="_blank">Twitter</a></li>
+                          <li><span class="fa-li"><i class="fab fa-facebook-f fa-fw"></i></span><a href="https://facebook.com/OctoPrint" target="_blank">Facebook</a></li>
+                          <li><span class="fa-li"><i class="fab fa-youtube fa-fw"></i></span><a href="https://www.youtube.com/c/OctoPrint3D" target="_blank">YouTube</a></li>
+                          <li><span class="fa-li"><i class="fas fa-tachometer-alt fa-fw"></i></span><a href="https://status.octoprint.org" target="_blank">Site Status</a></li>
+                          <li><span class="fa-li"><i class="fas fa-gavel fa-fw"></i></span><a href="https://octoprint.org/imprint/" rel="nofollow">Legal Notice</a></li>
+                          <li><span class="fa-li"><i class="fas fa-gavel fa-fw"></i></span><a href="https://octoprint.org/privacy/" rel="nofollow">Privacy Policy</a></li>
+                      </ul>
+                  </div>
+                  <div class="span4">
+                      <h2>Recently Added</h2>
+                      <ul>
+                          
+                          
+                          <li>
+                              <a class="post-link" href="/plugins/psucontrol_tasmota/">PSU Control - Tasmota</a>
+                          </li>
+                          
+                          <li>
+                              <a class="post-link" href="/plugins/camerasettings/">Camera Settings</a>
+                          </li>
+                          
+                          <li>
+                              <a class="post-link" href="/plugins/psucontrol_tplink/">PSU Control - TPLink</a>
+                          </li>
+                          
+                          <li>
+                              <a class="post-link" href="/plugins/networkhealth/">Network Health</a>
+                          </li>
+                          
+                          <li>
+                              <a class="post-link" href="/plugins/wled/">WLED Connection</a>
+                          </li>
+                          
+                      </ul>
+                  </div>
+                  <div class="span4 hidden-phone">
+                      <a href="http://octoprint.org"><img src="/assets/img/logo-footer.png" alt="Octopus logo" class="pull-right"></a>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="span12 text-center legal">
+                      <small>"OctoPrint" is a <a href="http://octoprint.org/trademark-rules/">registered trademark</a></small>
+                  </div>
+              </div>
+          </div>
+      </footer>
+
+<script integrity="sha256-oq4gZXkRKQNEXwwNS5jzGrkB2yjohz3HyBzkCgY3J0U=" crossorigin="anonymous" src="/assets/js/prettify-a2ae206579112903445f0c0d4b98f31ab901db28e8873dc7c81ce40a06372745.js" type="text/javascript"></script>
+<script integrity="sha256-9WUabhj4hYHZvjzwYyj+3p4RKUPJ7AN7TCwdxiPZQps=" crossorigin="anonymous" src="/assets/js/bootstrap.min-f5651a6e18f88581d9be3cf06328fede9e112943c9ec037b4c2c1dc623d9429b.js" type="text/javascript"></script>
+<script integrity="sha256-pjknAWChAVRqxsY3OyTXQitKN725ONjqpew+vv3TQ/g=" crossorigin="anonymous" src="/assets/js/lunr.min-a639270160a101546ac6c6373b24d7422b4a37bdb938d8eaa5ec3ebefdd343f8.js" type="text/javascript"></script>
+<script integrity="sha256-moWmXRncmWe8pee7FV4fgitCdA/S7gTzof1z2kzjytg=" crossorigin="anonymous" src="/assets/js/mustache-9a85a65d19dc9967bca5e7bb155e1f822b42740fd2ee04f3a1fd73da4ce3cad8.js" type="text/javascript"></script>
+<script integrity="sha256-VpwM3TTZgmoOWxqz6tE14UwGKBpx3pCqjirqNejJ23U=" crossorigin="anonymous" src="/assets/js/URI.min-569c0cdd34d9826a0e5b1ab3ead135e14c06281a71de90aa8e2aea35e8c9db75.js" type="text/javascript"></script>
+<script integrity="sha256-f10YhaDPIm04yzE7jNQ5fgLI/o/RzCAEwuuUmtob2vU=" crossorigin="anonymous" src="/assets/js/date.format-7f5d1885a0cf226d38cb313b8cd4397e02c8fe8fd1cc2004c2eb949ada1bdaf5.js" type="text/javascript"></script>
+<script integrity="sha256-FFsWmb+Oaz5ZDxXqMv/bVECwF3F/yNqJJOCcycdxU3g=" crossorigin="anonymous" src="/assets/js/jquery.lunr.search-145b1699bf8e6b3e590f15ea32ffdb5440b017717fc8da8924e09cc9c7715378.js" type="text/javascript"></script>
+<script integrity="sha256-QP3MGVxZgiUMiQHywWDhU0KUGjEfr2NywEEXwNnES8c=" crossorigin="anonymous" src="/assets/js/lightbox.min-40fdcc195c5982250c8901f2c160e15342941a311faf6372c04117c0d9c44bc7.js" type="text/javascript"></script>
+<script integrity="sha256-nNPB8nY6m7oEivqh1liFhpUgWH4PU2/7C/k1mEKDcf0=" crossorigin="anonymous" src="/assets/js/site-9cd3c1f2763a9bba048afaa1d65885869520587e0f536ffb0bf93598428371fd.js" type="text/javascript"></script>
+<script integrity="sha256-LhD170aMSyAIjslkoROsutHxXRuvQHSlJV/QPCBL838=" crossorigin="anonymous" src="/assets/js/autotrack-2e10f5ef468c4b20088ec964a113acbad1f15d1baf4074a5255fd03c204bf37f.js" type="text/javascript"></script>
+<script integrity="sha256-k2YtLDENA0EGXNUY89RImV47fkTIcVG86USbFIRqW24=" crossorigin="anonymous" src="/assets/js/yt-with-consent-93662d2c310d0341065cd518f3d448995e3b7e44c87151bce9449b14846a5b6e.js" type="text/javascript"></script>
+
+<script>
+    var gaBaseProperty = 'UA-62479257';
+    var gaProperty = gaBaseProperty + '-2';
+
+    // opt out
+    var disableStr = 'ga-disable-' + gaProperty;
+    var disableCookie = 'ga-disable-' + gaBaseProperty;
+    function gaOptout() {
+        document.cookie = disableCookie + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/; domain=octoprint.org';
+        window[disableStr] = true;
+        alert("Google Analytics ist jetzt deaktiviert! / Google Analytics is now deactivated!")
+    }
+
+    // tracking code
+    if (document.cookie.indexOf(disableCookie + '=true') > -1) {
+        window[disableStr] = true;
+    } else {
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', gaProperty, 'auto');
+        ga('require', 'autotrack');
+        ga('set', 'anonymizeIp', true);
+        ga('send', 'pageview');
+    }
+</script>
+
+</body>
+</html>
