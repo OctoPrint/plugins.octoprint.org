@@ -22,4 +22,4 @@ compatibility:
   python: ">=2.7,<4"
 ---
 
-See <https://github.com/kantlivelong/OctoPrint-PSUControl-TendaBeli> for information on configuration.
+See <https://github.com/jgroman/OctoPrint-PSUControl-TendaBeli> for information on configuration.
