@@ -11097,5 +11097,44 @@
             "instances_week": 39,
             "install_events_week": 41
         }
+    },
+
+    {
+        "id": "octodashcompanion",
+        "published": "2021-05-03 00:00:00 -0500",
+        "title": "OctoDash Companion",
+        "description": "This plugin allows for configuring OctoDash settings and upload custom theme files from within the OctoPrint interface.",
+        "archive": "https://github.com/jneilliii/OctoPrint-OctoDashCompanion/archive/master.zip",
+        "author": "jneilliii",
+        "homepage": "https://github.com/jneilliii/OctoPrint-OctoDashCompanion",
+        "page": "https://plugins.octoprint.org/plugins/octodashcompanion/",
+        "compatibility": {
+            "octoprint": ["1.4.0"],
+            "os": ["linux","windows","macos","freebsd"],
+            "python": ">=3.3,<4"
+        },
+        "license": "MIT",
+        "image": "https://plugins.octoprint.org/assets/img/plugins/octodashcompanion/screenshot_settings.png",
+        "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "0.0.1 - Initial Alpha Release",
+                "date": "2021-04-25 18:13:01 +0000",
+                "tag": "0.0.1"
+            },
+            "releases": 1,
+            "last_push": "2021-04-25 18:00:55 +0000",
+            "stars": 0,
+            "issues": {
+                "open": 0,
+                "closed": 0
+            }
+        },
+        "stats": {
+            "instances_month": 6,
+            "install_events_month": 5,
+            "instances_week": 6,
+            "install_events_week": 1
+        }
     }
 ]

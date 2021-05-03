@@ -3254,6 +3254,17 @@
 "author": "Shawn Bruce",
 "content": "See https://github.com/kantlivelong/OctoPrint-PSUControl-Tasmota for information on configuration.",
 "tags": ["power","psu","control","psucontrol","tasmota"]
+},
+
+{
+"id": "/plugins/octodashcompanion",
+"url": "/plugins/octodashcompanion/",
+"date": "2021-05-03 00:00:00 -0500",
+"title": "OctoDash Companion",
+"description": "This plugin allows for configuring OctoDash settings and upload custom theme files from within the OctoPrint interface.",
+"author": "jneilliii",
+"content": "OctoDash CompanionThis plugin allows for configuring OctoDash settings and upload custom theme files from within the OctoPrint interface. It assumes that you have both OctoDash and OctoPrint running on the same physical machine.ConfigurationOnce installed you can use the OctoDash Companion settings to configure the Printer Name and Custom Actions. Other settings will be added as deemed necessary.To upload a new Custom Theme file, just upload the custom-styles.css file to OctoPrint as if it were a gcode file.Get HelpIf you experience issues with this plugin or need assistance please use the issue tracker at the plugin’s Homepage linked on the right.Additional PluginsCheck out my other plugins hereSupport My EffortsI, jneilliii, programmed this plugin for fun and do my best effort to support those that have issues with it, please return the favor and leave me a tip or become a Patron if you find this plugin helpful and want me to continue future development. No paypal.me? Send funds via PayPal to jneilliii@gmail.com",
+"tags": ["OctoDash"]
 }
 ]
 }
