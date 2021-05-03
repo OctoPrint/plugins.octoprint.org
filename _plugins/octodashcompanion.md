@@ -17,6 +17,11 @@ archive: https://github.com/jneilliii/OctoPrint-OctoDashCompanion/archive/master
 tags:
 - OctoDash
 
+screenshots:
+- url: /assets/img/plugins/octodashcompanion/screenshot_settings.png
+  alt: OctoDash Companion
+  caption: OctoDash Companion Settings
+
 featuredimage: /assets/img/plugins/octodashcompanion/screenshot_settings.png
 
 compatibility:
