@@ -5,8 +5,8 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>https://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 03 May 2021 09:18:39 -0500</pubDate>
-    <lastBuildDate>Mon, 03 May 2021 09:18:39 -0500</lastBuildDate>
+    <pubDate>Mon, 03 May 2021 09:30:03 -0500</pubDate>
+    <lastBuildDate>Mon, 03 May 2021 09:30:03 -0500</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
     
@@ -33,6 +33,27 @@ Sun, 02 May 2021 00:00:00 -0500</pubDate>
         <category>psucontrol</category>
         
         <category>tasmota</category>
+        
+      </item>
+    
+      <item>
+        <title>Filament Scale Enhanced</title>
+        <description>
+          <![CDATA[
+            Display filament weight using a HX-711 and a load cell
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/filament_scale/display.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Thu, 29 Apr 2021 00:00:00 -0500</pubDate>
+        <link>https://plugins.octoprint.org/plugins/filament_scale/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/filament_scale/</guid>
+        
+        <category>raspberry pi</category>
+        
+        <category>filament</category>
+        
+        <category>gpio</category>
         
       </item>
     
@@ -223,31 +244,6 @@ Sun, 21 Mar 2021 00:00:00 -0500</pubDate>
         <category>notifications</category>
         
         <category>brother</category>
-        
-      </item>
-    
-      <item>
-        <title>OctoRelay</title>
-        <description>
-          <![CDATA[
-            A plugin to control relays or other things on the GPIO pins of your raspberry pi. For example turn the power of printer, the light or a fan ON and OFF via the web interface.
-            <p><img src="https://plugins.octoprint.org/assets/img/plugins/octorelay/screenshot.png"></p>
-          ]]>
-        </description>
-        <pubDate>
-Sat, 13 Mar 2021 00:00:00 -0600</pubDate>
-        <link>https://plugins.octoprint.org/plugins/octorelay/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/octorelay/</guid>
-        
-        <category>raspberry pi</category>
-        
-        <category>GPIO</category>
-        
-        <category>relay</category>
-        
-        <category>power</category>
-        
-        <category>switch</category>
         
       </item>
     

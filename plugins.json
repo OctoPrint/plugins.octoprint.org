@@ -11023,6 +11023,45 @@
     },
 
     {
+        "id": "filament_scale",
+        "published": "2021-04-29 00:00:00 -0500",
+        "title": "Filament Scale Enhanced",
+        "description": "Display filament weight using a HX-711 and a load cell",
+        "archive": "https://github.com/techman83/Filament-Scale-Enhanced/releases/latest/download/Filament_Scale_Enhanced.zip",
+        "author": "Victor Noordhoek, Techman83",
+        "homepage": "https://github.com/techman83/Filament-Scale-Enhanced",
+        "page": "https://plugins.octoprint.org/plugins/filament_scale/",
+        "compatibility": {
+            "octoprint": ["1.5.0"],
+            "os": ["linux"],
+            "python": ">=3,<4"
+        },
+        "license": "AGPLv3",
+        "image": "https://plugins.octoprint.org/assets/img/plugins/filament_scale/display.png",
+        "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "v0.2.9",
+                "date": "2021-04-30 05:26:34 +0000",
+                "tag": "v0.2.9"
+            },
+            "releases": 9,
+            "last_push": "2021-04-30 05:25:21 +0000",
+            "stars": 0,
+            "issues": {
+                "open": 0,
+                "closed": 0
+            }
+        },
+        "stats": {
+            "instances_month": 62,
+            "install_events_month": 7,
+            "instances_week": 54,
+            "install_events_week": 2
+        }
+    },
+
+    {
         "id": "psucontrol_tasmota",
         "published": "2021-05-02 00:00:00 -0500",
         "title": "PSU Control - Tasmota",

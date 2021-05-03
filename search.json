@@ -3235,6 +3235,17 @@
 },
 
 {
+"id": "/plugins/filament_scale",
+"url": "/plugins/filament_scale/",
+"date": "2021-04-29 00:00:00 -0500",
+"title": "Filament Scale Enhanced",
+"description": "Display filament weight using a HX-711 and a load cell",
+"author": "Victor Noordhoek, Techman83",
+"content": "This plugin allows connecting an HX711-based load cell to a Raspberry PI, and Octoprint display the current weight of the remaining filament.You will need an HX711 breakout board and a compatible load cell. You can find these bundled together on Ebay/Aliexpress for roughly $8. Any load cell rated for more than 1kg and less than 50kg should work; I used a 5kg load cell with solid results.See here for instructions on wiring up the load cellThis plugin assumes you connected the data pin to GPIO20, and the clock pin to GPIO21.You will also need the bracket to connect the load cell to your printer:  Regular Spool Holder  Spannerhands Spool Holder",
+"tags": ["raspberry pi","filament","gpio"]
+},
+
+{
 "id": "/plugins/psucontrol_tasmota",
 "url": "/plugins/psucontrol_tasmota/",
 "date": "2021-05-02 00:00:00 -0500",
