@@ -20,7 +20,7 @@ tags:
 - finish time
 
 screenshots:
-- url: url of a screenshot, /assets/img/plugins/print_eta/screenshot.png
+- url: /assets/img/plugins/print_eta/screenshot.png
   alt: ETA for current print job.
   caption: ETA for current print job.
 
