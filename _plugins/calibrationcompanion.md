@@ -1,7 +1,7 @@
 ---
 layout: plugin
 
-id: CalibrationCompanion
+id: calibrationcompanion
 title: Calibration Companion
 description: This plugin was created to calibrate 3D printer settings easily.
 author: iFrostizz
@@ -32,9 +32,9 @@ Let me explain all the tabs a bit more precisely before throwing yourself in the
 
 ## Pictures 
 
-![Calibration Companion Setup](/assets/img/plugins/CalibrationCompanion/setup.png)
+![Calibration Companion Setup](/assets/img/plugins/calibrationcompanion/setup.png)
 
-![Calibration Companion Retraction](/assets/img/plugins/CalibrationCompanion/retraction.png)
+![Calibration Companion Retraction](/assets/img/plugins/calibrationcompanion/retraction.png)
 
 
 If you need more informations, please head on: https://github.com/iFrostizz/OctoPrint-CalibrationCompanion
