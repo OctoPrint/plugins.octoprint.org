@@ -313,9 +313,27 @@ I think the names are pretty self-explanatory.</p>
       
       <dl class="install_events">
         <dt>New installs the past week</dt>
-        <dd>At least <strong>86</strong> new installations</dd>
+        <dd>At least <strong>87</strong> new installations</dd>
       </dl>
       
+      
+      <dl class="github">
+        <dt>GitHub stats <a href="/help/github_integration/" class="fas fa-question-circle"></a> <span id="github_login">(<a href="javascript:void(0)">Login</a>)</span></dt>
+        <dd>
+          <ul>
+            
+            <li>
+              Latest Release: <a href="https://github.com/tjjfvi/OctoPrint-BetterHeaterTimeout/releases/tag/v1.3.0" target="_blank">v1.3.0</a><br>
+              <small>released on 25 Oct 2020</small>
+            </li>
+            <li>Releases: 5</li>
+            
+            <li>Stars: <span id="github_star_count">8</span> <span id="github_star"><a href="javascript:void(0)"><i class="far fa-star"></i></a></span></li>
+            <li>Issues: 7 open, 8 closed</li>
+            <li>Last push: 25 Oct 2020</li>
+          </ul>
+        </dd>
+      </dl>
       
       
       <dl class="tags">
@@ -408,9 +426,9 @@ I think the names are pretty self-explanatory.</p>
 
 <script type="application/javascript">
   $(function() {
-    var has_github = false;
+    var has_github = true;
     if (has_github) {
-      var github_repo = "";
+      var github_repo = "tjjfvi/OctoPrint-BetterHeaterTimeout";
 
       if (github_repo) {
         var status = "unknown";
