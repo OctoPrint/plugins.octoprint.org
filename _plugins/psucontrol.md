@@ -30,4 +30,4 @@ compatibility:
 
 See <https://github.com/kantlivelong/OctoPrint-PSUControl> for information on configuration.
 
-Sub Plugins: <https://plugins.octoprint.org/by_tag/#tag-psucontrol>
+Sub Plugins: <https://plugins.octoprint.org/by_tag/#tag-psucontrol_subplugin>
