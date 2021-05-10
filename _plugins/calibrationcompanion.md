@@ -17,7 +17,7 @@ archive: https://github.com/iFrostizz/OctoPrint-CalibrationCompanion/archive/mas
 tags:
 - calibration
 
-featuredimage: /assets/img/plugins/CalibrationCompanion/setup.png
+featuredimage: /assets/img/plugins/calibrationcompanion/setup.png
   
 compatibility:  
   python: ">=2.7,<4"
