@@ -14,6 +14,7 @@ tags:
 - psu
 - control
 - psucontrol
+- psucontrol_subplugin
 - tasmota
 compatibility:
   os:
