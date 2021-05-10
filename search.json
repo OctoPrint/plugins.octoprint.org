@@ -557,7 +557,7 @@
 "title": "PSU Control",
 "description": "Smart control of your power supply via GPIO, GCODE Command, System Command, or variety of sub-plugins.",
 "author": "Shawn Bruce",
-"content": "See https://github.com/kantlivelong/OctoPrint-PSUControl for information on configuration.Sub Plugins: https://plugins.octoprint.org/by_tag/#tag-psucontrol_subplugin",
+"content": "See https://github.com/kantlivelong/OctoPrint-PSUControl for information on configuration.Sub Plugins: https://plugins.octoprint.org/by_tag/#tag-psucontrol-subplugin",
 "tags": ["power","atx","psu","control","psucontrol","gpio"]
 },
 
@@ -3187,7 +3187,7 @@
 "description": "Adds legacy RPi.GPIO to OctoPrint-PSUControl as a sub-plugin",
 "author": "Shawn Bruce",
 "content": "See https://github.com/kantlivelong/OctoPrint-PSUControl-RPiGPIO for information on configuration.",
-"tags": ["power","psu","control","psucontrol","psucontrol_subplugin","gpio"]
+"tags": ["power","psu","control","psucontrol","psucontrol subplugin","gpio"]
 },
 
 {
@@ -3220,7 +3220,7 @@
 "description": "Adds TPLink Smart Plug support to OctoPrint-PSUControl as a sub-plugin",
 "author": "Shawn Bruce",
 "content": "See https://github.com/kantlivelong/OctoPrint-PSUControl-TPLink for information on configuration.",
-"tags": ["power","psu","control","psucontrol","psucontrol_subplugin","tplink"]
+"tags": ["power","psu","control","psucontrol","psucontrol subplugin","tplink"]
 },
 
 {
@@ -3253,7 +3253,7 @@
 "description": "Adds Tasmota Smart Plug support to OctoPrint-PSUControl as a sub-plugin",
 "author": "Shawn Bruce",
 "content": "See https://github.com/kantlivelong/OctoPrint-PSUControl-Tasmota for information on configuration.",
-"tags": ["power","psu","control","psucontrol","psucontrol_subplugin","tasmota"]
+"tags": ["power","psu","control","psucontrol","psucontrol subplugin","tasmota"]
 },
 
 {
@@ -3275,7 +3275,7 @@
 "description": "Adds Tenda Beli SP3 Smart Plug support to OctoPrint-PSUControl as a sub-plugin",
 "author": "Jaroslav Groman",
 "content": "See https://github.com/jgroman/OctoPrint-PSUControl-TendaBeli for information on configuration.",
-"tags": ["power","psu","control","psucontrol","psucontrol_subplugin","tenda"]
+"tags": ["power","psu","control","psucontrol","psucontrol subplugin","tenda"]
 },
 
 {
@@ -3286,7 +3286,7 @@
 "description": "Adds Wemo Smart Plug support to OctoPrint-PSUControl as a sub-plugin",
 "author": "jneilliii",
 "content": "PSU Control - WemoFor advanced Wemo support and multiple Smartplug control consider checking out my original OctoPrint-WemoSwitch plugin.Get HelpIf you experience issues with this plugin or need assistance please use the issue tracker at the plugin’s Homepage linked on the right.Additional PluginsCheck out my other plugins hereSupport My EffortsI, jneilliii, programmed this plugin for fun and do my best effort to support those that have issues with it, please return the favor and leave me a tip or become a Patron if you find this plugin helpful and want me to continue future development. No paypal.me? Send funds via PayPal to jneilliii@gmail.com",
-"tags": ["power","psu","control","psucontrol","psucontrol_subplugin","wemo"]
+"tags": ["power","psu","control","psucontrol","psucontrol subplugin","wemo"]
 }
 ]
 }
