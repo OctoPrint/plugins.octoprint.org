@@ -11,11 +11,24 @@
       </div>
       <div class="nav-collapse collapse">
         <ul class="nav">
-          <li{% if page.url == '/by_name/' %} class="active"{% endif %}><a href="{{ '/by_name/' | prepend: site.baseurl }}">by Name</a></li>
-          <li{% if page.url == '/by_date/' %} class="active"{% endif %}><a href="{{ '/by_date/' | prepend: site.baseurl }}">by Date</a></li>
-          <li{% if page.url == '/by_tag/' %} class="active"{% endif %}><a href="{{ '/by_tag/' | prepend: site.baseurl }}">by Tag</a></li>
-          <li{% if page.url == '/by_author/' %} class="active"{% endif %}><a href="{{ '/by_author/' | prepend: site.baseurl }}">by Author</a></li>
-          <li><form class="navbar-search pull-right" action="{{ '/search/' | prepend: site.baseurl }}" method="get"><input type="text" class="input-medium search-query" placeholder="Enter search &amp; hit enter..." name="q"></form></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">Sorted by... <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="{{ '/by_name/' | prepend: site.baseurl }}">... name</a></li>
+              <li><a href="{{ '/by_date/' | prepend: site.baseurl }}">... date</a></li>
+              <li><a href="{{ '/by_tag/' | prepend: site.baseurl }}">... tag</a></li>
+              <li><a href="{{ '/by_author/' | prepend: site.baseurl }}">... author</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">Topics <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              {% for topic in site.topics | sort: "title" %}
+              <li><a href="{{ topic.id | prepend: site.baseurl }}">{{ topic.title }} ({{ topic.plugins.size }} {% if topic.plugins.size == 1 %}plugin{% else %}plugins{% endif %})</a></li>
+              {% endfor %}
+            </ul>
+          </li>
+          <li><form class="navbar-search pull-right" action="{{ '/search/' | prepend: site.baseurl }}" method="get"><input type="text" class="input-large search-query" placeholder="Enter search &amp; hit enter..." name="q"></form></li>
           <li class="dropdown">
             <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">Help <b class="caret"></b></a>
             <ul class="dropdown-menu">
