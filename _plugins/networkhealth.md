@@ -50,6 +50,9 @@ or manually using this URL:
 
 
 ## Change Notes:
+v 1.0.4
+- Error Handling
+
 v 1.0.3
 - Proper Versioning
 
