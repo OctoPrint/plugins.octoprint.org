@@ -11212,5 +11212,44 @@
             "instances_week": 34,
             "install_events_week": 34
         }
+    },
+
+    {
+        "id": "calibrationcompanion",
+        "published": "2021-05-10 00:00:00 -0500",
+        "title": "Calibration Companion",
+        "description": "This plugin was created to calibrate 3D printer settings easily.",
+        "archive": "https://github.com/iFrostizz/OctoPrint-CalibrationCompanion/archive/master.zip",
+        "author": "iFrostizz",
+        "homepage": "https://github.com/iFrostizz/OctoPrint-CalibrationCompanion",
+        "page": "https://plugins.octoprint.org/plugins/calibrationcompanion/",
+        "compatibility": {
+            "octoprint": [],
+            "os": [],
+            "python": ">=2.7,<4"
+        },
+        "license": "AGPLv3",
+        "image": "https://plugins.octoprint.org/assets/img/plugins/calibrationcompanion/setup.png",
+        "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "First version",
+                "date": "2021-05-10 22:37:46 +0000",
+                "tag": "1.0.0"
+            },
+            "releases": 1,
+            "last_push": "2021-05-11 08:43:40 +0000",
+            "stars": 0,
+            "issues": {
+                "open": 0,
+                "closed": 0
+            }
+        },
+        "stats": {
+            "instances_month": 3,
+            "install_events_month": 3,
+            "instances_week": 2,
+            "install_events_week": 2
+        }
     }
 ]

@@ -3287,6 +3287,17 @@
 "author": "jneilliii",
 "content": "PSU Control - WemoFor advanced Wemo support and multiple Smartplug control consider checking out my original OctoPrint-WemoSwitch plugin.Get HelpIf you experience issues with this plugin or need assistance please use the issue tracker at the plugin’s Homepage linked on the right.Additional PluginsCheck out my other plugins hereSupport My EffortsI, jneilliii, programmed this plugin for fun and do my best effort to support those that have issues with it, please return the favor and leave me a tip or become a Patron if you find this plugin helpful and want me to continue future development. No paypal.me? Send funds via PayPal to jneilliii@gmail.com",
 "tags": ["power","psu","control","psucontrol","psucontrol subplugin","wemo"]
+},
+
+{
+"id": "/plugins/calibrationcompanion",
+"url": "/plugins/calibrationcompanion/",
+"date": "2021-05-10 00:00:00 -0500",
+"title": "Calibration Companion",
+"description": "This plugin was created to calibrate 3D printer settings easily.",
+"author": "iFrostizz",
+"content": "Calibration CompanionThis plugin was created to calibrate your 3D printer settings easily.It comes really handy when you want to try a new filament for example.Let me explain all the tabs a bit more precisely before throwing yourself in the process.PicturesIf you need more informations, please head on: https://github.com/iFrostizz/OctoPrint-CalibrationCompanionDISCLAIMERThis plugin has been tested but could contains bugs. If you spot any of them, open an issue describing it and what happened to lead to this bug.Please always handle it with care, import the GCodes in Cura before printing, and inspect them carefully. I will not be responsible for any physical injury.",
+"tags": ["calibration"]
 }
 ]
 }
