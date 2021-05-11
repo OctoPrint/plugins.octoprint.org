@@ -11,7 +11,7 @@ date: 2021-05-10
 
 homepage: https://github.com/iFrostizz/OctoPrint-CalibrationCompanion
 source: https://github.com/iFrostizz/OctoPrint-CalibrationCompanion
-archive: https://github.com/iFrostizz/OctoPrint-CalibrationCompanion/archive/master.zip
+archive: https://github.com/iFrostizz/OctoPrint-CalibrationCompanion/archive/main.zip
 
 
 tags:
