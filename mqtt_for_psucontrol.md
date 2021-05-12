@@ -8,7 +8,7 @@ homepage: https://github.com/oerkel47/OctoPrint-MQTT-for-PSUcontrol
 source: https://github.com/oerkel47/OctoPrint-MQTT-for-PSUcontrol
 author: oerkel47
 license: AGPLv3
-featuredimage: https://github.com/oerkel47/OctoPrint-MQTT-for-PSUcontrol/blob/main/screenshot_settings.PNG
+featuredimage: /assets/img/plugins/mqtt_for_psucontrol/screenshot_settings.PNG
 date: 2021-05-12
 tags:
 - Home Assistant
@@ -16,9 +16,9 @@ tags:
 - psucontrol
 - mqtt
 screenshots:
-- url: https://github.com/oerkel47/OctoPrint-MQTT-for-PSUcontrol/blob/main/screenshot_HomeAssistant.PNG
-  alt: Screenshot from Home Assistant device
-  caption: Screenshot from Home Assistant device
+- url: /assets/img/plugins/mqtt_for_psucontrol/screenshot_HomeAssistant.PNG
+  alt: Screenshot from Home Assistant MQTT device
+  caption: Screenshot from Home Assistant MQTT device
 compatibility:
   python: ">=3,<4"
 
