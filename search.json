@@ -3298,6 +3298,17 @@
 "author": "iFrostizz",
 "content": "Calibration CompanionThis plugin was created to calibrate your 3D printer settings easily.It comes really handy when you want to try a new filament for example.Let me explain all the tabs a bit more precisely before throwing yourself in the process.PicturesIf you need more informations, please head on: https://github.com/iFrostizz/OctoPrint-CalibrationCompanionDISCLAIMERThis plugin has been tested but could contains bugs. If you spot any of them, open an issue describing it and what happened to lead to this bug.Please always handle it with care, import the GCodes in Cura before printing, and inspect them carefully. I will not be responsible for any physical injury.",
 "tags": ["calibration"]
+},
+
+{
+"id": "/plugins/mqtt_for_psucontrol",
+"url": "/plugins/mqtt_for_psucontrol/",
+"date": "2021-05-12 00:00:00 -0500",
+"title": "MQTT for PSU Control",
+"description": "Use MQTT and/or HomeAssistant to control the switch you use with the PSU Control plugin",
+"author": "oerkel47",
+"content": "This plugin interfaces between PSUControl plugin and MQTT plugin and adds support for HomeAssistant discovery.What it does  Let’s you control and monitor the switch that is configured in PSUControl via the MQTT protocol.  Supports HomeAssistant discovery to integrate everything without hassle.What you need  configured and running MQTT plugin for OctoPrint  PSU Control plugin for OctoPrint  optional: Home Assistant",
+"tags": ["Home Assistant","control","psucontrol","mqtt"]
 }
 ]
 }

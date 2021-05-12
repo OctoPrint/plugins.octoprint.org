@@ -11251,5 +11251,44 @@
             "instances_week": 845,
             "install_events_week": 870
         }
+    },
+
+    {
+        "id": "mqtt_for_psucontrol",
+        "published": "2021-05-12 00:00:00 -0500",
+        "title": "MQTT for PSU Control",
+        "description": "Use MQTT and/or HomeAssistant to control the switch you use with the PSU Control plugin",
+        "archive": "https://github.com/oerkel47/OctoPrint-MQTT-for-PSUcontrol/archive/main.zip",
+        "author": "oerkel47",
+        "homepage": "https://github.com/oerkel47/OctoPrint-MQTT-for-PSUcontrol",
+        "page": "https://plugins.octoprint.org/plugins/mqtt_for_psucontrol/",
+        "compatibility": {
+            "octoprint": [],
+            "os": [],
+            "python": ">=3,<4"
+        },
+        "license": "AGPLv3",
+        "image": "https://plugins.octoprint.org/assets/img/plugins/mqtt_for_psucontrol/screenshot_settings.PNG",
+        "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "1.0.2",
+                "date": "2021-05-12 15:28:31 +0000",
+                "tag": "1.0.2"
+            },
+            "releases": 3,
+            "last_push": "2021-05-12 15:21:22 +0000",
+            "stars": 0,
+            "issues": {
+                "open": 0,
+                "closed": 0
+            }
+        },
+        "stats": {
+            "instances_month": 3,
+            "install_events_month": 3,
+            "instances_week": 3,
+            "install_events_week": 3
+        }
     }
 ]
