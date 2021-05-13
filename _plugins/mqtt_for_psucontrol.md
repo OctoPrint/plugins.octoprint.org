@@ -20,7 +20,7 @@ screenshots:
   alt: Screenshot of plugin settings page
   caption: Screenshot of plugin settings page
 - url: /assets/img/plugins/mqtt_for_psucontrol/screenshot_HomeAssistant.PNG
-  alt: Screenshot of Home Assistant MQTT device
+  alt: Screenshot of Home Assistant MQTT device page
   caption: Screenshot of Home Assistant MQTT device page
 compatibility:
   python: ">=3,<4"
