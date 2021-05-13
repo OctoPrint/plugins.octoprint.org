@@ -16,21 +16,26 @@ tags:
 - psucontrol
 - mqtt
 screenshots:
+- url: /assets/img/plugins/mqtt_for_psucontrol/screenshot_settings.PNG
+  alt: Screenshot of plugin settings page
+  caption: Screenshot of plugin settings page
 - url: /assets/img/plugins/mqtt_for_psucontrol/screenshot_HomeAssistant.PNG
-  alt: Screenshot from Home Assistant MQTT device
-  caption: Screenshot from Home Assistant MQTT device
+  alt: Screenshot of Home Assistant MQTT device
+  caption: Screenshot of Home Assistant MQTT device page
 compatibility:
   python: ">=3,<4"
 
 ---
 
-This plugin interfaces between [PSUControl](https://github.com/kantlivelong/OctoPrint-PSUControl) plugin and [MQTT](https://github.com/OctoPrint/OctoPrint-MQTT) plugin and adds support for [HomeAssistant](https://www.home-assistant.io) discovery. 
+This plugin interfaces between [PSU Control](https://github.com/kantlivelong/OctoPrint-PSUControl) plugin and [MQTT](https://github.com/OctoPrint/OctoPrint-MQTT) plugin and adds support for [Home Assistant](https://www.home-assistant.io) discovery. 
 
-# What it does
+For more information please visit the [homepage](https://github.com/oerkel47/OctoPrint-MQTT-for-PSUcontrol).
+
+## What it does
 - Let's you control and monitor the switch that is configured in PSUControl via the MQTT protocol.
-- Supports HomeAssistant discovery to integrate everything without hassle.
+- Supports Home Assistant discovery to integrate everything without hassle.
 
-# What you need
- - configured and running MQTT plugin for OctoPrint
- - PSU Control plugin for OctoPrint
+## What you need
+ - configured and running [MQTT](https://github.com/OctoPrint/OctoPrint-MQTT) plugin for OctoPrint
+ - [PSU Control](https://github.com/kantlivelong/OctoPrint-PSUControl) plugin for OctoPrint
  - optional: Home Assistant
