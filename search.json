@@ -3305,9 +3305,9 @@
 "url": "/plugins/mqtt_for_psucontrol/",
 "date": "2021-05-12 00:00:00 -0500",
 "title": "MQTT for PSU Control",
-"description": "Use MQTT and/or HomeAssistant to control the switch you use with the PSU Control plugin",
+"description": "Use MQTT and/or Home Assistant to control the switch you use with the PSU Control plugin.",
 "author": "oerkel47",
-"content": "This plugin interfaces between PSUControl plugin and MQTT plugin and adds support for HomeAssistant discovery.What it does  Let’s you control and monitor the switch that is configured in PSUControl via the MQTT protocol.  Supports HomeAssistant discovery to integrate everything without hassle.What you need  configured and running MQTT plugin for OctoPrint  PSU Control plugin for OctoPrint  optional: Home Assistant",
+"content": "MQTT for PSU ControlThis plugin interfaces between PSU Control plugin and MQTT plugin and adds support for Home Assistant discovery.For more information please visit the homepage.What it does  Let’s you control and monitor the switch that is configured in PSU Control via the MQTT protocol.  Supports Home Assistant discovery to integrate everything easily.What you need  configured and running MQTT plugin for OctoPrint  PSU Control plugin for OctoPrint  optional: Home Assistant",
 "tags": ["Home Assistant","control","psucontrol","mqtt"]
 }
 ]
