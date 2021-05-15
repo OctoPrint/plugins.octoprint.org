@@ -3309,6 +3309,28 @@
 "author": "oerkel47",
 "content": "MQTT for PSU ControlThis plugin interfaces between PSU Control plugin and MQTT plugin and adds support for Home Assistant discovery.For more information please visit the homepage.What it does  Let’s you control and monitor the switch that is configured in PSU Control via the MQTT protocol.  Supports Home Assistant discovery to integrate everything easily.What you need  configured and running MQTT plugin for OctoPrint  PSU Control plugin for OctoPrint  optional: Home Assistant",
 "tags": ["Home Assistant","control","psucontrol","mqtt"]
+},
+
+{
+"id": "/plugins/psucontrol_homeassistant",
+"url": "/plugins/psucontrol_homeassistant/",
+"date": "2021-05-15 00:00:00 -0500",
+"title": "PSU Control - HomeAssistant",
+"description": "Adds HomeAssistant support to OctoPrint-PSUControl as a sub-plugin",
+"author": "Erik de Keijzer",
+"content": "See https://github.com/edekeijzer/OctoPrint-PSUControl-HomeAssistant for information on configuration.",
+"tags": ["power","psu","control","psucontrol","psucontrol subplugin","homeassistant",{"alt":"Plugin settings","url":"/assets/img/plugins/psucontrol_homeassistant/settings.png"}]
+},
+
+{
+"id": "/plugins/psucontrol_shelly",
+"url": "/plugins/psucontrol_shelly/",
+"date": "2021-05-15 00:00:00 -0500",
+"title": "PSU Control - Shelly",
+"description": "Adds Shelly smart switch support to OctoPrint-PSUControl as a sub-plugin",
+"author": "Erik de Keijzer",
+"content": "See https://github.com/edekeijzer/OctoPrint-PSUControl-Shelly for information on configuration.",
+"tags": ["power","psu","control","psucontrol","psucontrol subplugin","shelly"]
 }
 ]
 }

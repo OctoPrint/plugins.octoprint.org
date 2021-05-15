@@ -11290,5 +11290,81 @@
             "instances_week": 66,
             "install_events_week": 77
         }
+    },
+
+    {
+        "id": "psucontrol_homeassistant",
+        "published": "2021-05-15 00:00:00 -0500",
+        "title": "PSU Control - HomeAssistant",
+        "description": "Adds HomeAssistant support to OctoPrint-PSUControl as a sub-plugin",
+        "archive": "https://github.com/edekeijzer/OctoPrint-PSUControl-HomeAssistant/archive/main.zip",
+        "author": "Erik de Keijzer",
+        "homepage": "https://github.com/edekeijzer/OctoPrint-PSUControl-HomeAssistant",
+        "page": "https://plugins.octoprint.org/plugins/psucontrol_homeassistant/",
+        "compatibility": {
+            "octoprint": [],
+            "os": ["linux","freebsd","macos","windows"],
+            "python": ">=3,<4"
+        },
+        "license": "AGPLv3",
+        "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "1.0.2",
+                "date": "2021-05-11 19:05:31 +0000",
+                "tag": "1.0.2"
+            },
+            "releases": 1,
+            "last_push": "2021-05-11 19:02:01 +0000",
+            "stars": 1,
+            "issues": {
+                "open": 0,
+                "closed": 0
+            }
+        },
+        "stats": {
+            "instances_month": 1,
+            "install_events_month": 1,
+            "instances_week": 1,
+            "install_events_week": 1
+        }
+    },
+
+    {
+        "id": "psucontrol_shelly",
+        "published": "2021-05-15 00:00:00 -0500",
+        "title": "PSU Control - Shelly",
+        "description": "Adds Shelly smart switch support to OctoPrint-PSUControl as a sub-plugin",
+        "archive": "https://github.com/edekeijzer/OctoPrint-PSUControl-Shelly/archive/main.zip",
+        "author": "Erik de Keijzer",
+        "homepage": "https://github.com/edekeijzer/OctoPrint-PSUControl-Shelly",
+        "page": "https://plugins.octoprint.org/plugins/psucontrol_shelly/",
+        "compatibility": {
+            "octoprint": [],
+            "os": ["linux","freebsd","macos","windows"],
+            "python": ">=3,<4"
+        },
+        "license": "AGPLv3",
+        "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "1.0.1",
+                "date": "2021-05-11 19:06:19 +0000",
+                "tag": "1.0.1"
+            },
+            "releases": 1,
+            "last_push": "2021-05-11 19:01:36 +0000",
+            "stars": 1,
+            "issues": {
+                "open": 0,
+                "closed": 0
+            }
+        },
+        "stats": {
+            "instances_month": 2,
+            "install_events_month": 2,
+            "instances_week": 2,
+            "install_events_week": 2
+        }
     }
 ]
