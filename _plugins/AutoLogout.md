@@ -3,7 +3,7 @@ layout: plugin
 
 id: AutoLogout
 title: AutoLogout
-description: Plugin starts a countdown timer after login and if the timer is count to zero, the user is automatically logged out.
+description: Plugin logs out the user if there is some time of inactvity or after a print job is finished.
 
 author: Olli
 license: AGPLv3
@@ -28,15 +28,15 @@ compatibility:
   - 1.4.0
 
 screenshots:
-- url: https://github.com/OllisGit/Octoprint-AutoLogout/raw/master/screenshots/plugin-navbar.png
-  alt: Plugin Navbar
-  caption: Plugin Navbar
 - url: https://github.com/OllisGit/Octoprint-AutoLogout/raw/master/screenshots/plugin-settings.png
   alt: Plugin Settings
   caption: Plugin Settings
 featuredimage: https://github.com/OllisGit/Octoprint-AutoLogout/raw/master/screenshots/plugin-settings.png
 
 ---
+
+Plugin logs out the user if there is some time of inactvity or after a print job is finished.
+The time of inactivity and also the print status for the logout can be adjusted.
 
 Plugin starts a countdown timer after login and if the timer is count to zero, the user is automatically logged out.
 The timer is restarted each time a user clicks on "something" like a tab-change.
