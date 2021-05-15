@@ -16,6 +16,7 @@ tags:
 - psucontrol
 - psucontrol subplugin
 - homeassistant
+screenshots:
 - url: /assets/img/plugins/psucontrol_homeassistant/settings.png
   alt: Plugin settings
 compatibility:
