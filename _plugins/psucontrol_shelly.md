@@ -25,7 +25,7 @@ compatibility:
   os:
   - posix
   - windows
-  python: ">=2.7,<4"
+  python: ">=3,<4"
 ---
 
 See <https://github.com/edekeijzer/OctoPrint-PSUControl-Shelly> for information on configuration.
