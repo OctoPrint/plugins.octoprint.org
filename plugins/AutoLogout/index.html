@@ -7,7 +7,7 @@
 <head>
     <meta charset="utf-8" />
     <title>AutoLogout</title>
-    <meta name="description" content="Plugin starts a countdown timer after login and if the timer is count to zero, the user is automatically logged out.">
+    <meta name="description" content="Plugin logs out the user if there is some time of inactvity or after a print job is finished.">
     <meta name="author" content="Olli">
     <meta name="referrer" content="same-origin">
     <meta name="google-site-verification" content="0EFsbaNygJcEinKPmzP-hTf0Ju6wDIpJxO5zvQtOQT0" />
@@ -40,8 +40,8 @@
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@OctoPrint3D" />
     <meta name="twitter:title" content="AutoLogout" />
-    <meta name="twitter:description" content="Plugin starts a countdown timer after login and if the timer is count to zero, the user is automatically logged out.
-The timer is restarted each time a user clicks on “something” like a tab-change.
+    <meta name="twitter:description" content="Plugin logs out the user if there is some time of inactvity or after a print job is finished.
+The time of inactivity and also the print status for the logout can be adjusted.
 
 " />
     <meta name="twitter:image" content="https://plugins.octoprint.org" />
@@ -49,8 +49,8 @@ The timer is restarted each time a user clicks on “something” like a tab-cha
     <meta property="og:title" content="AutoLogout" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://plugins.octoprint.orghttps://github.com/OllisGit/Octoprint-AutoLogout/raw/master/screenshots/plugin-settings.png" />
-    <meta property="og:description" content="Plugin starts a countdown timer after login and if the timer is count to zero, the user is automatically logged out.
-The timer is restarted each time a user clicks on “something” like a tab-change.
+    <meta property="og:description" content="Plugin logs out the user if there is some time of inactvity or after a print job is finished.
+The time of inactivity and also the print status for the logout can be adjusted.
 
 " />
     <meta property="og:site_name" content="OctoPrint Plugin Repository" />
@@ -58,8 +58,8 @@ The timer is restarted each time a user clicks on “something” like a tab-cha
 
     <meta itemscope itemtype="http://schema.org/WebPage" />
     <meta itemprop="headline" content="AutoLogout" />
-    <meta itemprop="description" content="Plugin starts a countdown timer after login and if the timer is count to zero, the user is automatically logged out.
-The timer is restarted each time a user clicks on “something” like a tab-change.
+    <meta itemprop="description" content="Plugin logs out the user if there is some time of inactvity or after a print job is finished.
+The time of inactivity and also the print status for the logout can be adjusted.
 
 " />
     <meta itemprop="image" content="https://plugins.octoprint.orghttps://github.com/OllisGit/Octoprint-AutoLogout/raw/master/screenshots/plugin-settings.png" />
@@ -203,9 +203,12 @@ The timer is restarted each time a user clicks on “something” like a tab-cha
       
 
       <p class="lead">
-        Plugin starts a countdown timer after login and if the timer is count to zero, the user is automatically logged out.
+        Plugin logs out the user if there is some time of inactvity or after a print job is finished.
       </p>
-      <p>Plugin starts a countdown timer after login and if the timer is count to zero, the user is automatically logged out.
+      <p>Plugin logs out the user if there is some time of inactvity or after a print job is finished.
+The time of inactivity and also the print status for the logout can be adjusted.</p>
+
+<p>Plugin starts a countdown timer after login and if the timer is count to zero, the user is automatically logged out.
 The timer is restarted each time a user clicks on “something” like a tab-change.</p>
 
 <p>For implementation details please visit the <a href="https://github.com/OllisGit/OctoPrint-AutoLogout">homepage</a>.</p>
@@ -220,11 +223,6 @@ If you like it, I would be thankful about a cup of coffee :)</p>
 
       
         <h2>Pictures</h2>
-        
-        <figure>
-          
-          <a href="https://github.com/OllisGit/Octoprint-AutoLogout/raw/master/screenshots/plugin-navbar.png" data-lightbox="/plugins/AutoLogout" data-title="Plugin Navbar"><img src="https://github.com/OllisGit/Octoprint-AutoLogout/raw/master/screenshots/plugin-navbar.png" alt="Plugin Navbar" title="Plugin Navbar"></a>
-        </figure>
         
         <figure>
           
@@ -325,7 +323,7 @@ If you like it, I would be thankful about a cup of coffee :)</p>
         <dd>
           <ul>
             
-            <li>OctoPrint: 1.3.10+, 1.4.0+</li>
+            <li>OctoPrint: all versions</li>
             
             
             <li>Operating Systems: all</li>
