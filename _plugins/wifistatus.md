@@ -11,7 +11,7 @@ date: 2020-10-08
 
 homepage: https://github.com/ManuelMcLure/OctoPrint-WiFiStatus
 source: https://github.com/ManuelMcLure/OctoPrint-WiFiStatus
-archive: https://github.com/ManuelMcLure/OctoPrint-WiFiStatus/archive/master.zip
+archive: https://github.com/ManuelMcLure/OctoPrint-WiFiStatus/archive/main.zip
 featuredimage: /assets/img/plugins/wifistatus/WiFiStatus.png
 
 tags:
