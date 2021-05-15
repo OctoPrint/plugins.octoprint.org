@@ -23,9 +23,6 @@ tags:
 
 compatibility:
   python: ">=2.7,<4"
-  octoprint:
-  - 1.3.10
-  - 1.4.0
 
 screenshots:
 - url: https://github.com/OllisGit/Octoprint-AutoLogout/raw/master/screenshots/plugin-settings.png
