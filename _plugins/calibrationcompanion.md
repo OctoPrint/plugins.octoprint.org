@@ -28,7 +28,6 @@ compatibility:
 
 This plugin was created to calibrate your 3D printer settings easily.
 It comes really handy when you want to try a new filament for example.
-Let me explain all the tabs a bit more precisely before throwing yourself in the process.
 
 ## Pictures 
 
