@@ -8,7 +8,6 @@ authors:
   - Sander Ronde
 license: MIT
 
-# TODO
 date: 2021-5-18
 
 homepage: https://github.com/SanderRonde/Octoprint-Draggable-Files
