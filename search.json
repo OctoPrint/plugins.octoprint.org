@@ -3331,6 +3331,17 @@
 "author": "Erik de Keijzer",
 "content": "See https://github.com/edekeijzer/OctoPrint-PSUControl-Shelly for information on configuration.",
 "tags": ["power","psu","control","psucontrol","psucontrol subplugin","shelly"]
+},
+
+{
+"id": "/plugins/draggable_files",
+"url": "/plugins/draggable_files/",
+"date": "2021-05-18 00:00:00 -0500",
+"title": "OctoPrint-Draggable_files",
+"description": "Plugin that allows for the dragging of files in the File Manager",
+"author": "Sander Ronde",
+"content": "Octoprint Draggable FilesPlugin that allows for the dragging of files in the File Manager. Additionally, it adds the ability to resize the file manager.Example:",
+"tags": ["file","filemanager","file_manager","dragging"]
 }
 ]
 }
