@@ -6,8 +6,8 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html"> <!--<![endif]-->
 <head>
     <meta charset="utf-8" />
-    <title>PrusaSlicer Thumbnails</title>
-    <meta name="description" content="Extracts embedded thumbnails from PrusaSlicer gcode files.">
+    <title>Slicer Thumbnails</title>
+    <meta name="description" content="Extracts various slicer&#39;s embedded thumbnails from gcode files.">
     <meta name="author" content="jneilliii">
     <meta name="referrer" content="same-origin">
     <meta name="google-site-verification" content="0EFsbaNygJcEinKPmzP-hTf0Ju6wDIpJxO5zvQtOQT0" />
@@ -39,24 +39,24 @@
 
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@OctoPrint3D" />
-    <meta name="twitter:title" content="PrusaSlicer Thumbnails" />
-    <meta name="twitter:description" content="PrusaSlicer Thumbnails
+    <meta name="twitter:title" content="Slicer Thumbnails" />
+    <meta name="twitter:description" content="Slicer Thumbnails
 
 " />
     <meta name="twitter:image" content="https://plugins.octoprint.org" />
 
-    <meta property="og:title" content="PrusaSlicer Thumbnails" />
+    <meta property="og:title" content="Slicer Thumbnails" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://plugins.octoprint.org/assets/img/plugins/prusaslicerthumbnails/screenshot_thumbnail.png" />
-    <meta property="og:description" content="PrusaSlicer Thumbnails
+    <meta property="og:description" content="Slicer Thumbnails
 
 " />
     <meta property="og:site_name" content="OctoPrint Plugin Repository" />
     <meta property="og:url" content="https://plugins.octoprint.org/plugins/prusaslicerthumbnails/" />
 
     <meta itemscope itemtype="http://schema.org/WebPage" />
-    <meta itemprop="headline" content="PrusaSlicer Thumbnails" />
-    <meta itemprop="description" content="PrusaSlicer Thumbnails
+    <meta itemprop="headline" content="Slicer Thumbnails" />
+    <meta itemprop="description" content="Slicer Thumbnails
 
 " />
     <meta itemprop="image" content="https://plugins.octoprint.org/assets/img/plugins/prusaslicerthumbnails/screenshot_thumbnail.png" />
@@ -176,7 +176,7 @@
   <div class="container">
     <div class="row">
       <div class="span12">
-        <h1>PrusaSlicer Thumbnails</h1>
+        <h1>Slicer Thumbnails</h1>
       </div>
     </div>
   </div>
@@ -185,11 +185,11 @@
 <div class="container">
   <div class="row-fluid">
     
-    <small class="pull-left"><a href="/plugins/PrusaLevelingGuide/"><i class="fa fa-double-angle-left"></i>&nbsp;Prusa Leveling Guide</a></small>
+    <small class="pull-left"><a href="/plugins/SlicerEstimator/"><i class="fa fa-double-angle-left"></i>&nbsp;Slicer Print Time Estimator</a></small>
     
     &nbsp;
     
-    <small class="pull-right"><a href="/plugins/octobullet/">Pushbullet&nbsp;<i class="fa fa-double-angle-right"></i></a></small>
+    <small class="pull-right"><a href="/plugins/smartpreheat/">Smart Preheat&nbsp;<i class="fa fa-double-angle-right"></i></a></small>
     
   </div>
   <div class="content plugin-content row-fluid">
@@ -200,13 +200,11 @@
       
 
       <p class="lead">
-        Extracts embedded thumbnails from PrusaSlicer gcode files.
+        Extracts various slicer&#39;s embedded thumbnails from gcode files.
       </p>
-      <h1 id="prusaslicer-thumbnails">PrusaSlicer Thumbnails</h1>
+      <h1 id="slicer-thumbnails">Slicer Thumbnails</h1>
 
-<p>This plugin will extract the embedded thumbnails from PrusaSlicer gcode files where the printer’s profile ini file has the thumbnail option configured. This is default behavior for the Prusa Mini printer profile.</p>
-
-<p>The thumbnail image extracted will always be the last resolution provided in the thumbnail setting. So for example the Prusa Mini setting is <code class="language-plaintext highlighter-rouge">thumbnails = 16x16,220x124</code> so the thumbnail that will be extracted will be 220x124 pixels as seen in the screenshots below. See the Configuration section below for additional details.</p>
+<p>This plugin will extract embedded thumbnails from gcode files created from <a href="#PrusaSlicer">PrusaSlicer</a>, <a href="#SuperSlicer">SuperSlicer</a>, <a href="#Cura">Cura</a>, or <a href="#Simplify3D">Simplify3D</a>.</p>
 
 <p>The preview thumbnail can be shown in OctoPrint from the files list by clicking the newly added image button.</p>
 
@@ -216,44 +214,37 @@
 
 <p><img src="/assets/img/plugins/prusaslicerthumbnails/screenshot_thumbnail.png" alt="thumbnail" /></p>
 
-<p>If enabled in settings the thumbnail can also be embedded as an inline thumbnail within the file list itself. If you use this option it’s highly recommended to use Themeify to make the file list taller and/or adjust the thumbnail’s size.</p>
-
-<table class="table">
-  <thead>
-    <tr>
-      <th>Selector</th>
-      <th>CSS_Rule</th>
-      <th>Value</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>#files &gt; div &gt; div.gcode_files &gt; div.scroll-wrapper</td>
-      <td>min-height</td>
-      <td>800px !important</td>
-    </tr>
-  </tbody>
-</table>
+<p>If enabled in settings the thumbnail can also be embedded as an inline thumbnail within the file list itself. If you use this option it’s highly recommended to also set the option to set file list height or position inline image to the left.</p>
 
 <p><img src="/assets/img/plugins/prusaslicerthumbnails/screenshot_inline_thumbnail.png" alt="thumbnail" /></p>
 
 <h2 id="configuration">Configuration</h2>
 
-<p><del>Since PrusaSlicer only enables thumbnails by default for the Prusa Mini you may need to manually update your configuration files. Those can be found by selecting <code class="language-plaintext highlighter-rouge">Show Configuration Folder</code> from the Help menu of the application and then inside the printers sub-folder you’ll find your printer profiles.</del></p>
+<h3 id="prusaslicer">PrusaSlicer</h3>
 
-<p><strong>Update:</strong> <a href="https://github.com/prusa3d/PrusaSlicer/issues/4112">PrusaSlicer</a> has implemented setting the thumbnails in version 2.3.0-beta3.</p>
+<p>Available via the UI since version 2.3, requires expert mode to be enabled in the upper right corner of the program to see the setting.</p>
 
-<p><strong>Update:</strong> <a href="https://github.com/supermerill/SuperSlicer">SuperSlicer</a>, an advanced fork of PrusaSlicer, now has image options in the Printer Settings as of version 2.2.53, big shout out to the team there. You must enable expert mode in order to see it. This plugin will use the <code class="language-plaintext highlighter-rouge">big</code> reoslution configured.</p>
+<p><img src="/assets/img/plugins/prusaslicerthumbnails/screenshot_prusaslicer.png" alt="PrusaSlicer" /></p>
+
+<p><strong>Warning</strong>: the higher the resolution of the thumbnail you use in this setting the larger your gcode file will be when sliced.</p>
+
+<h3 id="superslicer">SuperSlicer</h3>
+
+<p>Available via the UI since version 2.2.53, requires expert mode to be enabled in the upper right corner of the program to see the setting.</p>
 
 <p><img src="/assets/img/plugins/prusaslicerthumbnails/screenshot_superslicer.png" alt="SuperSlicer" /></p>
 
-<p><strong>Note:</strong> If you don’t see your printer’s ini file in the printers sub-folder; you are probably using one of the bundled Prusa Printer profiles (ie MK3S). If so you may need to create a copy of this printer profile to be able to have an ini file to edit. To do this in PrusaSlicer go to the Printer Settings tab and Click the save button next to the printer list and give it a new name. Alternatively, push Prusa Research to update their bundled profiles to match the Mini by commenting in the issue posted on their repository <a href="https://github.com/prusa3d/PrusaSlicer/issues/3488">here</a>.</p>
+<p><strong>Warning</strong>: the higher the resolution of the thumbnail you use in this setting the larger your gcode file will be when sliced.</p>
 
-<p>Open your desired printer profile in your favorite text editor and find the <code class="language-plaintext highlighter-rouge">thumbnails =</code> section and add the resolution that you would like to include in your sliced files, and therefore visible by this plugin. For example <code class="language-plaintext highlighter-rouge">thumbnails = 16x16,220x124</code> will be the equivalent of the Prusa Mini as described above.</p>
+<h3 id="cura">Cura</h3>
 
-<p><strong>Note:</strong> Once you’ve made your changes you will need to restart PrusaSlicer in order for the changes to be used and embed the thumbnails in the exported gcode files.</p>
+<p>A post-processing script has been bundled since version 4.9. For older versions you can manually add the post-processing script as described <a href="https://gist.github.com/jneilliii/4034c84d1ec219c68c8877d0e794ec4e">here</a>.</p>
 
-<p><strong>Warning</strong>: the higher the resolution of the thumbnail you enter in this setting the larger your gcode file will be when sliced.</p>
+<p><img src="screenshot_cura.png" alt="Cura" /></p>
+
+<h3 id="simplify3d">Simplify3D</h3>
+
+<p>Available as a post-processing script for <a href="https://github.com/boweeble/s3d-thumbnail-generator">windows</a> or <a href="https://github.com/NotExpectedYet/s3d-thumbnail-generator">linux</a> thanks to <a href="https://github.com/boweeble/">@boweeble</a> and <a href="https://github.com/NotExpectedYet/">@NotExpectedYet</a>.</p>
 
 <h2 id="get-help">Get Help</h2>
 
@@ -411,16 +402,16 @@
         <dd>
           <p>
             If there is <strong>something wrong with this listing</strong> (broken links & images etc), please
-            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?template=listing_error.yml&labels%5B%5D=listing+error&title=%5BListing+Error%5D+PrusaSlicer+Thumbnails&which_plugin=https%3A%2F%2Fplugins.octoprint.org%2Fplugins%2Fprusaslicerthumbnails%2F">report it here</a>.
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?template=listing_error.yml&labels%5B%5D=listing+error&title=%5BListing+Error%5D+Slicer+Thumbnails&which_plugin=https%3A%2F%2Fplugins.octoprint.org%2Fplugins%2Fprusaslicerthumbnails%2F">report it here</a>.
           </p>
           <p>
             If this plugin <strong>has been <em>confirmed</em> as abandoned</strong> by its maintainer, please
-            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?template=abandoned_plugin.yml&labels%5B%5D=abandoned+plugin&title=%5BAbandoned+Plugin%5D+PrusaSlicer+Thumbnails&which_plugin=https%3A%2F%2Fplugins.octoprint.org%2Fplugins%2Fprusaslicerthumbnails%2F">report it here</a>.
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?template=abandoned_plugin.yml&labels%5B%5D=abandoned+plugin&title=%5BAbandoned+Plugin%5D+Slicer+Thumbnails&which_plugin=https%3A%2F%2Fplugins.octoprint.org%2Fplugins%2Fprusaslicerthumbnails%2F">report it here</a>.
           </p>
           <p>
             If this plugin is <strong>doing something suspicious</strong> (e.g. weird network activity, unannounced tracking, ...) and
             the maintainer is not cooperating in getting to the bottom of that, please
-            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?template=suspicious_plugin_activity.yml&labels%5B%5D=suspicious+plugin+activity&title=%5BSuspicious+Plugin+Activity%5D+PrusaSlicer+Thumbnails&which_plugin=https%3A%2F%2Fplugins.octoprint.org%2Fplugins%2Fprusaslicerthumbnails%2F">report the plugin as suspicious here</a>.
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?template=suspicious_plugin_activity.yml&labels%5B%5D=suspicious+plugin+activity&title=%5BSuspicious+Plugin+Activity%5D+Slicer+Thumbnails&which_plugin=https%3A%2F%2Fplugins.octoprint.org%2Fplugins%2Fprusaslicerthumbnails%2F">report the plugin as suspicious here</a>.
           </p>
           <p>
             Report bugs or feature requests for the plugin to the plugin author (e.g. on the plugin's <a href="https://github.com/jneilliii/OctoPrint-PrusaSlicerThumbnails">homepage</a>) please, not here!
