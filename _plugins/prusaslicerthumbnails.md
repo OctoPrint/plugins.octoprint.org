@@ -65,7 +65,7 @@ Available via the UI since version 2.2.53, requires expert mode to be enabled in
 
 A post-processing script has been bundled since version 4.9. For older versions you can manually add the post-processing script as described [here](https://gist.github.com/jneilliii/4034c84d1ec219c68c8877d0e794ec4e).
 
-![Cura](screenshot_cura.png)
+![Cura](/assets/img/plugins/prusaslicerthumbnails/screenshot_cura.png)
 
 ### Simplify3D
 
