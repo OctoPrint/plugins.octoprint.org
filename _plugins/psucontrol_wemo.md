@@ -14,7 +14,7 @@ tags:
 - psu
 - control
 - psucontrol
-- psucontrol_subplugin
+- psucontrol subplugin
 - wemo
 compatibility:
   os:
