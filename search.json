@@ -3342,6 +3342,17 @@
 "author": "Sander Ronde",
 "content": "Octoprint Draggable FilesPlugin that allows for the dragging of files in the File Manager. Additionally, it adds the ability to resize the file manager.Example:",
 "tags": ["file","filemanager","file_manager","dragging"]
+},
+
+{
+"id": "/plugins/navbarclock",
+"url": "/plugins/navbarclock/",
+"date": "2021-06-01 00:00:00 -0500",
+"title": "Navbar Clock",
+"description": "Displays the current time on the OctoPrint navigation bar",
+"author": "Manuel McLure",
+"content": "This plugin will add a clock to the navigation bar. The time displayed may be the server time (default), browser time or UTC. Both 24 hour and AM/PM formats are supported, and display of seconds is optional.This plugin will only work if OctoPrint is running under Python 3.7 or higher. See https://github.com/cp2004/Octoprint-Upgrade-To-Py3 if you wish to upgrade your OctoPrint installation to use Python 3.",
+"tags": ["navbar","ui"]
 }
 ]
 }

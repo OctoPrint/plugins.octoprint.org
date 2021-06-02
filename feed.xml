@@ -5,10 +5,29 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>https://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 01 Jun 2021 21:28:06 -0500</pubDate>
-    <lastBuildDate>Tue, 01 Jun 2021 21:28:06 -0500</lastBuildDate>
+    <pubDate>Wed, 02 Jun 2021 00:14:34 -0500</pubDate>
+    <lastBuildDate>Wed, 02 Jun 2021 00:14:34 -0500</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
+    
+      <item>
+        <title>Navbar Clock</title>
+        <description>
+          <![CDATA[
+            Displays the current time on the OctoPrint navigation bar
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/navbarclock/NavbarClock.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Tue, 01 Jun 2021 00:00:00 -0500</pubDate>
+        <link>https://plugins.octoprint.org/plugins/navbarclock/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/navbarclock/</guid>
+        
+        <category>navbar</category>
+        
+        <category>ui</category>
+        
+      </item>
     
       <item>
         <title>OctoPrint-Draggable_files</title>
@@ -228,27 +247,6 @@ Sun, 02 May 2021 00:00:00 -0500</pubDate>
         <category>psucontrol subplugin</category>
         
         <category>tasmota</category>
-        
-      </item>
-    
-      <item>
-        <title>Filament Scale Enhanced</title>
-        <description>
-          <![CDATA[
-            Display filament weight using a HX-711 and a load cell
-            <p><img src="https://plugins.octoprint.org/assets/img/plugins/filament_scale/display.png"></p>
-          ]]>
-        </description>
-        <pubDate>
-Thu, 29 Apr 2021 00:00:00 -0500</pubDate>
-        <link>https://plugins.octoprint.org/plugins/filament_scale/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/filament_scale/</guid>
-        
-        <category>raspberry pi</category>
-        
-        <category>filament</category>
-        
-        <category>gpio</category>
         
       </item>
     
