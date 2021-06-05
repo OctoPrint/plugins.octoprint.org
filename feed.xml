@@ -5,10 +5,31 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>https://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 04 Jun 2021 20:19:03 -0500</pubDate>
-    <lastBuildDate>Fri, 04 Jun 2021 20:19:03 -0500</lastBuildDate>
+    <pubDate>Fri, 04 Jun 2021 22:19:38 -0500</pubDate>
+    <lastBuildDate>Fri, 04 Jun 2021 22:19:38 -0500</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
+    
+      <item>
+        <title>OctoPrint-Fortune</title>
+        <description>
+          <![CDATA[
+            Gives you a pithy fortune on web login or startup
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/fortune/fortune-1"></p>
+          ]]>
+        </description>
+        <pubDate>
+Fri, 04 Jun 2021 00:00:00 -0500</pubDate>
+        <link>https://plugins.octoprint.org/plugins/fortune/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/fortune/</guid>
+        
+        <category>fortune</category>
+        
+        <category>text</category>
+        
+        <category>notification</category>
+        
+      </item>
     
       <item>
         <title>Navbar Clock</title>
@@ -219,34 +240,6 @@ Mon, 03 May 2021 00:00:00 -0500</pubDate>
         <guid isPermaLink="true">https://plugins.octoprint.org/plugins/octodashcompanion/</guid>
         
         <category>OctoDash</category>
-        
-      </item>
-    
-      <item>
-        <title>PSU Control - Tasmota</title>
-        <description>
-          <![CDATA[
-            Adds Tasmota Smart Plug support to OctoPrint-PSUControl as a sub-plugin
-            <p><img src="https://plugins.octoprint.org/assets/img/repo-600x400.png"></p>
-            
-          ]]>
-        </description>
-        <pubDate>
-Sun, 02 May 2021 00:00:00 -0500</pubDate>
-        <link>https://plugins.octoprint.org/plugins/psucontrol_tasmota/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/psucontrol_tasmota/</guid>
-        
-        <category>power</category>
-        
-        <category>psu</category>
-        
-        <category>control</category>
-        
-        <category>psucontrol</category>
-        
-        <category>psucontrol subplugin</category>
-        
-        <category>tasmota</category>
         
       </item>
     
