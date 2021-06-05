@@ -28,7 +28,7 @@ screenshots:
   alt: text fortune
   caption: Fortune sent to OctoText
 
-featuredimage: /assets/img/plugins/fortune/fortune-1
+featuredimage: /assets/img/plugins/fortune/fortune-1.png
 
 # TODO
 # You only need the following if your plugin requires specific OctoPrint versions or
