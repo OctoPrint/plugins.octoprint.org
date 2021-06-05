@@ -24,7 +24,7 @@ screenshots:
 - url: /assets/img/plugins/fortune/fortune-1.png
   alt: Fortune message on login
   caption: Your fortune
-- url: /assets/img/plugins/fortune/IMG_6255.png
+- url: /assets/img/plugins/fortune/IMG_6255.PNG
   alt: text fortune
   caption: Fortune sent to OctoText
 
