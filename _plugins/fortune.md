@@ -115,5 +115,5 @@ this feature to work.
 
 ## Copyright
 
-Copyright © 2008-2012 Brian M. Clapper. All rights reserved.
+Copyright © 2008-2019 Brian M. Clapper. All rights reserved.
 
