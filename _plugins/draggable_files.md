@@ -2,7 +2,7 @@
 layout: plugin
 
 id: draggable_files
-title: OctoPrint-Draggable_files
+title: Draggable Files
 description: Plugin that allows for the dragging of files in the File Manager
 authors:
   - Sander Ronde
