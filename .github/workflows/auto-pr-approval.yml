@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Automatic PR Approval
-        uses: mheap/automatic-approve-action@v1
+        uses: mheap/automatic-approve-action@v1.1.0
         with:
           token: ${{ secrets.metadata_token }}
           workflows: "pr-labeler.yml,validate-pull-requests.yml,publish-to-github-pages.yml"
