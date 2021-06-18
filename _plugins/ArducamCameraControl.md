@@ -9,7 +9,7 @@ authors:
 license: AGPLv3
 
 # TODO
-date: 2021-06-07
+date: 2021-06-18
 
 homepage: https://github.com/arducam/ArducamCameraControl
 source: https://github.com/arducam/ArducamCameraControl
