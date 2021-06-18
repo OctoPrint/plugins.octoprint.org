@@ -11482,5 +11482,44 @@
             "instances_week": 93,
             "install_events_week": 19
         }
+    },
+
+    {
+        "id": "ArducamCameraControl",
+        "published": "2021-06-18 00:00:00 -0500",
+        "title": "ArducamCameraControl",
+        "description": "Plugin to control Arducam motorized and ptz camera",
+        "archive": "https://github.com/arducam/ArducamCameraControl/archive/master.zip",
+        "author": "Arducam",
+        "homepage": "https://github.com/arducam/ArducamCameraControl",
+        "page": "https://plugins.octoprint.org/plugins/ArducamCameraControl/",
+        "compatibility": {
+            "octoprint": ["1.4.0"],
+            "os": ["linux"],
+            "python": ">=2.7,<4"
+        },
+        "license": "AGPLv3",
+        "image": "https://plugins.octoprint.org/assets/img/plugins/ArducamCameraControl/ArducamCameraControl.png",
+        "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "",
+                "date": "2021-06-18 06:58:42 +0000",
+                "tag": "0.3"
+            },
+            "releases": 3,
+            "last_push": "2021-06-18 06:57:50 +0000",
+            "stars": 0,
+            "issues": {
+                "open": 0,
+                "closed": 1
+            }
+        },
+        "stats": {
+            "instances_month": 3,
+            "install_events_month": 2,
+            "instances_week": 3,
+            "install_events_week": 2
+        }
     }
 ]
