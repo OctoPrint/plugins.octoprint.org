@@ -32,7 +32,6 @@ screenshots:
 - url: /assets/img/plugins/gpiofancontroller/settings.png
   alt: Pin and PWM frequency settings
   caption: Pin and PWM frequency settings
-- ...
 
 # TODO
 featuredimage: /assets/img/plugins/gpiofancontroller/featured.png
