@@ -11531,5 +11531,44 @@
             "instances_week": 26,
             "install_events_week": 26
         }
+    },
+
+    {
+        "id": "gpiorgbcontroller",
+        "published": "2021-07-07 00:00:00 -0500",
+        "title": "OctoPrint-GpioRgbController",
+        "description": "Uses PI GPIO pins to control a RGB Led strip",
+        "archive": "https://github.com/z4gunn/OctoPrint-GpioRgbController/archive/master.zip",
+        "author": "Erik Gundersen",
+        "homepage": "https://github.com/z4gunn/OctoPrint-GpioRgbController",
+        "page": "https://plugins.octoprint.org/plugins/gpiorgbcontroller/",
+        "compatibility": {
+            "octoprint": ["1.2.0"],
+            "os": ["linux","windows","macos","freebsd"],
+            "python": ">=3,<4"
+        },
+        "license": "AGPLv3",
+        "image": "https://plugins.octoprint.org/assets/img/plugins/gpiorgbcontroller/featured.png",
+        "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "initial release",
+                "date": "2021-07-08 12:45:56 +0000",
+                "tag": "0.1.0"
+            },
+            "releases": 1,
+            "last_push": "2021-07-08 02:54:42 +0000",
+            "stars": 0,
+            "issues": {
+                "open": 0,
+                "closed": 0
+            }
+        },
+        "stats": {
+            "instances_month": 0,
+            "install_events_month": 0,
+            "instances_week": 0,
+            "install_events_week": 0
+        }
     }
 ]

@@ -3375,6 +3375,17 @@
 "author": "Erik Gundersen",
 "content": "This is a plugin to control an external fan via Raspberry Pi GPIO pin. This plugin allows you to set the pin number and PWM frequency in the settings and control the FAN speed via sidebar control.",
 "tags": ["fan","gpio","pwm"]
+},
+
+{
+"id": "/plugins/gpiorgbcontroller",
+"url": "/plugins/gpiorgbcontroller/",
+"date": "2021-07-07 00:00:00 -0500",
+"title": "OctoPrint-GpioRgbController",
+"description": "Uses PI GPIO pins to control a RGB Led strip",
+"author": "Erik Gundersen",
+"content": "This is a plugin to control an external RGB LED strip via Raspberry Pi GPIO pins.  This plugin allows you to set the pin numbers in the settings and control the LED color and on/off state via sidebar control.",
+"tags": ["led","rgb","gpio"]
 }
 ]
 }
