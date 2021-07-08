@@ -3364,6 +3364,17 @@
 "author": "Arducam",
 "content": "ArducamCameraControlA plugin to control your arducam camera with motorized and ptz camera on octoprint.InstallPlease follow the manufacturer’s instructions:I2CThis plugin uses I2C to communicate with the camera.  That is not enabled by default.  The ArduCamFocus plugin will not function untilyou enable I2C.  ssh to your octopi and enter this commands (this only needs to be done once):if ! grep -Fxq \"^#ArduCamFocus$\" /boot/config.txt; thensudo cat &lt;&lt; end_of_file &gt; /boot/config.txt#ArduCamFocusdtparam=i2c_vc=ondtparam=i2c_arm=onend_of_filefiAfter executing the above command, the file /boot/config.txt should now have the commands to enable I2C.  In addition, you have to enable the I2Ckernel module using raspi-config.  Again, ssh to your octopi, and then enter this command:sudo raspi-config  select “5 Interfacing Options”  select “P5 I2C”  raspi-config will ask, “Would you like the ARM I2C interface to be enabled?”  select “Yes”  you should see, “The ARM I2C interface is enabled”  select “Finish”SmbusInstall smbuspip install smbusPluginInstall pluginhttp://plugins.octoprint.org/plugin/ArducamCameraControl/After you reboot, the camera should become operational in OctoPrintSettingsThis plugin has no configurable settings.",
 "tags": ["Arducam","Camera"]
+},
+
+{
+"id": "/plugins/gpiofancontroller",
+"url": "/plugins/gpiofancontroller/",
+"date": "2021-07-04 00:00:00 -0500",
+"title": "OctoPrint-GpioFanController",
+"description": "Uses PI GPIO pins to control a variable speed fan with PWM",
+"author": "Erik Gundersen",
+"content": "This is a plugin to control an external fan via Raspberry Pi GPIO pin. This plugin allows you to set the pin number and PWM frequency in the settings and control the FAN speed via sidebar control.",
+"tags": ["fan","gpio","pwm"]
 }
 ]
 }
