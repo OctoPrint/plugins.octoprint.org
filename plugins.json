@@ -11570,5 +11570,43 @@
             "instances_week": 45,
             "install_events_week": 49
         }
+    },
+
+    {
+        "id": "LightControls",
+        "published": "2021-07-09 00:00:00 -0500",
+        "title": "OctoPrint-LightControls",
+        "description": "Adds easily configurable PWM Light controls to Octoprint Control Tab",
+        "archive": "https://github.com/RoboMagus/OctoPrint-LightControls/archive/main.zip",
+        "author": "RoboMagus",
+        "homepage": "https://github.com/RoboMagus/OctoPrint-LightControls",
+        "page": "https://plugins.octoprint.org/plugins/LightControls/",
+        "compatibility": {
+            "octoprint": ["1.6.0"],
+            "os": ["linux"],
+            "python": ">=3,<4"
+        },
+        "license": "AGPLv3",
+        "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "Initial Release",
+                "date": "2021-07-09 20:39:14 +0000",
+                "tag": "0.1.1"
+            },
+            "releases": 1,
+            "last_push": "2021-07-09 19:55:27 +0000",
+            "stars": 0,
+            "issues": {
+                "open": 0,
+                "closed": 0
+            }
+        },
+        "stats": {
+            "instances_month": 0,
+            "install_events_month": 0,
+            "instances_week": 0,
+            "install_events_week": 0
+        }
     }
 ]

@@ -3386,6 +3386,17 @@
 "author": "Erik Gundersen",
 "content": "This is a plugin to control an external RGB LED strip via Raspberry Pi GPIO pins.  This plugin allows you to set the pin numbers in the settings and control the LED color and on/off state via sidebar control.",
 "tags": ["led","rgb","gpio"]
+},
+
+{
+"id": "/plugins/LightControls",
+"url": "/plugins/LightControls/",
+"date": "2021-07-09 00:00:00 -0500",
+"title": "OctoPrint-LightControls",
+"description": "Adds easily configurable PWM Light controls to Octoprint Control Tab",
+"author": "RoboMagus",
+"content": "",
+"tags": ["Raspberry PI","Lights","PWM","Slider"]
 }
 ]
 }
