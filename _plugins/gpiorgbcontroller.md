@@ -7,7 +7,7 @@ description: Uses PI GPIO pins to control a RGB Led strip
 author: Erik Gundersen
 license: AGPLv3
 
-date: 2021-07-10
+date: 2021-07-07
 
 homepage: https://github.com/z4gunn/OctoPrint-GpioRgbController
 source: https://github.com/z4gunn/OctoPrint-GpioRgbController

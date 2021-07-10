@@ -7,7 +7,7 @@ description: Uses PI GPIO pins to control a variable speed fan with PWM
 author: Erik Gundersen
 license: AGPLv3
 
-date: 2021-07-10
+date: 2021-07-04
 
 homepage: https://github.com/z4gunn/OctoPrint-GpioFanController
 source: https://github.com/z4gunn/OctoPrint-GpioFanController
