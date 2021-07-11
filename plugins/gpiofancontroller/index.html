@@ -40,21 +40,27 @@
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@OctoPrint3D" />
     <meta name="twitter:title" content="OctoPrint-GpioFanController" />
-    <meta name="twitter:description" content="This is a plugin to control an external fan via Raspberry Pi GPIO pin. This plugin allows you to set the pin number and PWM frequency in the settings and control the FAN speed via sidebar control.
+    <meta name="twitter:description" content="GPIO FAN Controller
+This is a plugin to control an external fan via Raspberry Pi GPIO pin. This plugin allows you to set the pin number and PWM frequency in the settings and control the FAN speed via sidebar control.
+
 " />
     <meta name="twitter:image" content="https://plugins.octoprint.org" />
 
     <meta property="og:title" content="OctoPrint-GpioFanController" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://plugins.octoprint.org/assets/img/plugins/gpiofancontroller/featured.png" />
-    <meta property="og:description" content="This is a plugin to control an external fan via Raspberry Pi GPIO pin. This plugin allows you to set the pin number and PWM frequency in the settings and control the FAN speed via sidebar control.
+    <meta property="og:description" content="GPIO FAN Controller
+This is a plugin to control an external fan via Raspberry Pi GPIO pin. This plugin allows you to set the pin number and PWM frequency in the settings and control the FAN speed via sidebar control.
+
 " />
     <meta property="og:site_name" content="OctoPrint Plugin Repository" />
     <meta property="og:url" content="https://plugins.octoprint.org/plugins/gpiofancontroller/" />
 
     <meta itemscope itemtype="http://schema.org/WebPage" />
     <meta itemprop="headline" content="OctoPrint-GpioFanController" />
-    <meta itemprop="description" content="This is a plugin to control an external fan via Raspberry Pi GPIO pin. This plugin allows you to set the pin number and PWM frequency in the settings and control the FAN speed via sidebar control.
+    <meta itemprop="description" content="GPIO FAN Controller
+This is a plugin to control an external fan via Raspberry Pi GPIO pin. This plugin allows you to set the pin number and PWM frequency in the settings and control the FAN speed via sidebar control.
+
 " />
     <meta itemprop="image" content="https://plugins.octoprint.org/assets/img/plugins/gpiofancontroller/featured.png" />
 
@@ -199,11 +205,23 @@
       <p class="lead">
         Uses PI GPIO pins to control a variable speed fan with PWM
       </p>
-      <p>This is a plugin to control an external fan via Raspberry Pi GPIO pin. This plugin allows you to set the pin number and PWM frequency in the settings and control the FAN speed via sidebar control.</p>
+      <h1 id="gpio-fan-controller">GPIO FAN Controller</h1>
+<p>This is a plugin to control an external fan via Raspberry Pi GPIO pin. This plugin allows you to set the pin number and PWM frequency in the settings and control the FAN speed via sidebar control.</p>
+
+<h2 id="important---fan-compatibility">IMPORTANT - FAN Compatibility</h2>
+
+<p>This plugin is only intended to drive an external brushless DC FAN via MOSFET driver circuit.  A MOSFET must be used to drive the FAN since the PI is not capable of providing adequate current to the FAN.</p>
+
+<p>This is a great <a href="https://create.arduino.cc/projecthub/ejshea/connecting-an-n-channel-mosfet-7e0242">tutorial</a> that explains on how to connect a brushless DC FAN to the an Arduino, however the same concept applies to interfacing to a PI.  You can also use a larger MOSFET such as <a href="https://www.adafruit.com/product/355">IRLB8721</a> to drive fans that require more than  200 mA.</p>
 
 
       
         <h2>Pictures</h2>
+        
+        <figure>
+          
+          <a href="/assets/img/plugins/gpiofancontroller/featured.png" data-lightbox="/plugins/gpiofancontroller" data-title="Fan speed control"><img src="/assets/img/plugins/gpiofancontroller/featured.png" alt="Fan speed control" title="Fan speed control"></a>
+        </figure>
         
         <figure>
           
@@ -263,13 +281,13 @@
       
       <dl class="installations">
         <dt>Active instances the past month</dt>
-        <dd>Installed on at least <strong>87</strong> instances</dd>
+        <dd>Installed on at least <strong>88</strong> instances</dd>
       </dl>
       
       
       <dl class="install_events">
         <dt>New installs the past week</dt>
-        <dd>At least <strong>88</strong> new installations</dd>
+        <dd>At least <strong>89</strong> new installations</dd>
       </dl>
       
       

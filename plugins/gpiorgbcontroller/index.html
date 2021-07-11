@@ -40,21 +40,27 @@
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@OctoPrint3D" />
     <meta name="twitter:title" content="OctoPrint-GpioRgbController" />
-    <meta name="twitter:description" content="This is a plugin to control an external RGB LED strip via Raspberry Pi GPIO pins.  This plugin allows you to set the pin numbers in the settings and control the LED color and on/off state via sidebar control.
+    <meta name="twitter:description" content="GPIO RGB Controller
+This is a plugin to control an external RGB LED strip via Raspberry Pi GPIO pins.  This plugin allows you to set the pin numbers in the settings and control the LED color and on/off state via sidebar control.
+
 " />
     <meta name="twitter:image" content="https://plugins.octoprint.org" />
 
     <meta property="og:title" content="OctoPrint-GpioRgbController" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://plugins.octoprint.org/assets/img/plugins/gpiorgbcontroller/featured.png" />
-    <meta property="og:description" content="This is a plugin to control an external RGB LED strip via Raspberry Pi GPIO pins.  This plugin allows you to set the pin numbers in the settings and control the LED color and on/off state via sidebar control.
+    <meta property="og:description" content="GPIO RGB Controller
+This is a plugin to control an external RGB LED strip via Raspberry Pi GPIO pins.  This plugin allows you to set the pin numbers in the settings and control the LED color and on/off state via sidebar control.
+
 " />
     <meta property="og:site_name" content="OctoPrint Plugin Repository" />
     <meta property="og:url" content="https://plugins.octoprint.org/plugins/gpiorgbcontroller/" />
 
     <meta itemscope itemtype="http://schema.org/WebPage" />
     <meta itemprop="headline" content="OctoPrint-GpioRgbController" />
-    <meta itemprop="description" content="This is a plugin to control an external RGB LED strip via Raspberry Pi GPIO pins.  This plugin allows you to set the pin numbers in the settings and control the LED color and on/off state via sidebar control.
+    <meta itemprop="description" content="GPIO RGB Controller
+This is a plugin to control an external RGB LED strip via Raspberry Pi GPIO pins.  This plugin allows you to set the pin numbers in the settings and control the LED color and on/off state via sidebar control.
+
 " />
     <meta itemprop="image" content="https://plugins.octoprint.org/assets/img/plugins/gpiorgbcontroller/featured.png" />
 
@@ -199,7 +205,14 @@
       <p class="lead">
         Uses PI GPIO pins to control a RGB Led strip
       </p>
-      <p>This is a plugin to control an external RGB LED strip via Raspberry Pi GPIO pins.  This plugin allows you to set the pin numbers in the settings and control the LED color and on/off state via sidebar control.</p>
+      <h1 id="gpio-rgb-controller">GPIO RGB Controller</h1>
+<p>This is a plugin to control an external RGB LED strip via Raspberry Pi GPIO pins.  This plugin allows you to set the pin numbers in the settings and control the LED color and on/off state via sidebar control.</p>
+
+<h2 id="important---led-strip-compatibility">IMPORTANT - LED Strip Compatibility</h2>
+
+<p>This plugin is only intended to drive discrete or strip RGB LED’s via independent GPIO control.  This plugin will not work with LED strips that have coontrolers or digital interface such as SPI.</p>
+
+<p>A MOSFET must also be used to drive each LED channel since the PI is not capable of providing adequate current to the LED’s.  This is a great <a href="https://learn.adafruit.com/rgb-led-strips">tutorial</a> that explains on how to connect an analog RGB LED strip to an Arduino, however the same concept applies to interfacing to a PI.</p>
 
 
       
@@ -268,13 +281,13 @@
       
       <dl class="installations">
         <dt>Active instances the past month</dt>
-        <dd>Installed on at least <strong>67</strong> instances</dd>
+        <dd>Installed on at least <strong>68</strong> instances</dd>
       </dl>
       
       
       <dl class="install_events">
         <dt>New installs the past week</dt>
-        <dd>At least <strong>68</strong> new installations</dd>
+        <dd>At least <strong>69</strong> new installations</dd>
       </dl>
       
       
