@@ -47,9 +47,12 @@ compatibility:
 
 GPIO RGB Controller
 =========================
-This is a plugin to control an external RGB LED strip via Raspberry Pi GPIO pins.  This plugin allows you to set the pin numbers in the settings and control the LED color and on/off state via sidebar control.
+This is a lightweight plugin dedicated to the control of an external RGB LED strip via Raspberry Pi GPIO pins.  This plugin has the following features:
 
-The LED on/off state can also be controled via a button connected to a Raspberry Pi input pin.
+* Convenient sidebar control
+* Adjustable RGB color picker
+* Pin selection via settings
+* Optional on/off trigger via input pin
 
 
 ## IMPORTANT - LED Strip Compatibility
