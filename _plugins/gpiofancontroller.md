@@ -47,7 +47,13 @@ compatibility:
 
 GPIO FAN Controller
 =========================
-This is a plugin to control an external fan via Raspberry Pi GPIO pin. This plugin allows you to set the pin number and PWM frequency in the settings and control the FAN speed via sidebar control.
+This is a lightweight plugin dedicated for controlling a fan via Raspberry Pi GPIO pin.  This plugin has the following features:
+
+* Convenient sidebar control
+* Adjustable FAN speed
+* Pin selection via settings
+* M106 / M107 GCODE support
+* Independent GCODE control using optional fan index
 
 ## IMPORTANT - FAN Compatibility
 
