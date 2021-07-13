@@ -53,7 +53,8 @@ This is a lightweight plugin dedicated to the control of an external RGB LED str
 * Adjustable RGB color picker
 * Pin selection via settings
 * Optional on/off trigger via input pin
-
+* M150 GCODE support
+* Independent GCODE control using optional RGB index
 
 ## IMPORTANT - LED Strip Compatibility
 
