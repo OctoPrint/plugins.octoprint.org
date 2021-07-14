@@ -8,7 +8,7 @@ authors:
 - Nigel Metheringham
 license: AGPLv3
 
-date: 2021-07-11
+date: 2021-07-14
 
 homepage: https://github.com/nigelm/OctoPrint-MoteLightingControl
 source: https://github.com/nigelm/OctoPrint-MoteLightingControl
@@ -20,14 +20,14 @@ tags:
 - rgb
 
 screenshots:
-- url: https://raw.githubusercontent.com/nigelm/OctoPrint-MoteLightingControl/main/assets/img/mote_lights_configuration.png
+- url: /assets/img/mote_lighting_control/mote_lights_configuration.png
   alt: Configuration Screen
   caption: Configuration Screen
-- url: https://raw.githubusercontent.com/nigelm/OctoPrint-MoteLightingControl/main/assets/img/mote_lights_navbar.png
+- url: /assets/img/mote_lighting_control/mote_lights_navbar.png
   alt: Nav Bar lighting button
   caption: Nav Bar lighting button
 
-featuredimage: https://raw.githubusercontent.com/nigelm/OctoPrint-MoteLightingControl/main/assets/img/mote_lights.jpg
+featuredimage: /assets/img/mote_lighting_control/mote_lights.jpg
 
 # TODO
 # You only need the following if your plugin requires specific OctoPrint versions or
@@ -96,6 +96,3 @@ Additionally some code was used from
 [`OctoLight`](https://plugins.octoprint.org/plugins/octolight/)
 (the API handling code and js), and
 [`TP-Link Smartplug`](https://plugins.octoprint.org/plugins/tplinksmartplug/).
-
-Unfortunately the plugin documentation is insufficiently complete to make sole
-use of - so inspecting other plugins is the only option.
