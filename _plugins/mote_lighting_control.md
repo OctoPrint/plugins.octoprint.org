@@ -20,14 +20,14 @@ tags:
 - rgb
 
 screenshots:
-- url: /assets/img/mote_lighting_control/mote_lights_configuration.png
+- url: /assets/img/plugins/mote_lighting_control/mote_lights_configuration.png
   alt: Configuration Screen
   caption: Configuration Screen
-- url: /assets/img/mote_lighting_control/mote_lights_navbar.png
+- url: /assets/img/plugins/mote_lighting_control/mote_lights_navbar.png
   alt: Nav Bar lighting button
   caption: Nav Bar lighting button
 
-featuredimage: /assets/img/mote_lighting_control/mote_lights.jpg
+featuredimage: /assets/img/plugins/mote_lighting_control/mote_lights.jpg
 
 # TODO
 # You only need the following if your plugin requires specific OctoPrint versions or
