@@ -11608,5 +11608,38 @@
             "instances_week": 50,
             "install_events_week": 51
         }
+    },
+
+    {
+        "id": "mote_lighting_control",
+        "published": "2021-07-14 00:00:00 -0500",
+        "title": "OctoPrint-MoteLightingControl",
+        "description": "Control a set of Mote lights - with different OctoPrint conditions causing changes in the lighting colour and state.",
+        "archive": "https://github.com/nigelm/OctoPrint-MoteLightingControl/archive/main.zip",
+        "author": "Nigel Metheringham",
+        "homepage": "https://github.com/nigelm/OctoPrint-MoteLightingControl",
+        "page": "https://plugins.octoprint.org/plugins/mote_lighting_control/",
+        "compatibility": {
+            "octoprint": ["1.4.0"],
+            "os": ["linux","windows","macos","freebsd"],
+            "python": ">=3,<4"
+        },
+        "license": "AGPLv3",
+        "image": "https://plugins.octoprint.org/assets/img/plugins/mote_lighting_control/mote_lights.jpg",
+        "abandoned": false,
+        "github": { 
+            "last_push": "2021-07-14 19:38:51 +0000",
+            "stars": 0,
+            "issues": {
+                "open": 0,
+                "closed": 0
+            }
+        },
+        "stats": {
+            "instances_month": 1,
+            "install_events_month": 1,
+            "instances_week": 1,
+            "install_events_week": 1
+        }
     }
 ]
