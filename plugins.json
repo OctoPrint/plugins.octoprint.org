@@ -5311,14 +5311,14 @@
         "published": "2019-02-08 00:00:00 -0600",
         "title": "OctoPrint-Hardwarepwm",
         "description": "Plugin for true hardware PWM on the Raspberry Pi",
-        "archive": "https://github.com/pastapojken/OctoPrint-Hardwarepwm/archive/master.zip",
+        "archive": "https://github.com/farfalleflickan/OctoPrint-Hardwarepwm/archive/master.zip",
         "author": "Daria Rostirolla",
-        "homepage": "https://github.com/pastapojken/OctoPrint-Hardwarepwm",
+        "homepage": "https://github.com/farfalleflickan/OctoPrint-Hardwarepwm",
         "page": "https://plugins.octoprint.org/plugins/hardwarepwm/",
         "compatibility": {
             "octoprint": ["1.2.0"],
             "os": ["linux"],
-            "python": ">=2.7,<4"
+            "python": ">=3,<4"
         },
         "license": "AGPLv3",
         "image": "https://plugins.octoprint.org/assets/img/plugins/hardwarepwm/settingsPage.png",
