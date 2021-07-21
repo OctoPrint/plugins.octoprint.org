@@ -24,7 +24,6 @@ screenshots:
 - url: /assets/img/plugins/printstarted.png
   alt: A print started message
   caption: A matrix notification showing a print started message and a snapshot image.
-- ...
 
 featuredimage: /assets/img/plugins/printstarted.png
 
