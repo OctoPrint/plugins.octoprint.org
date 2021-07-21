@@ -8,7 +8,7 @@ authors:
 - Stuart Mumford
 license: AGPLv3
 
-date: 2021-07-18
+date: 2021-07-21
 
 homepage: https://github.com/Cadair/octoprint-matrix-notifier-plugin
 source: https://github.com/Cadair/octoprint-matrix-notifier-plugin
