@@ -3408,6 +3408,17 @@
 "author": "Nigel Metheringham",
 "content": "Control a set of Pimoroni Motelights - with different OctoPrint conditions causing changes in the lighting colour and state.Lighting changes can happen on changes in state - for example a print start orfinish - or via a manual button on the navbar.This code only supports the USB version of the Mote controllers.  Since a PiZero is not suitable for running OctoPrint, and is not likely to be used, andI do not have the relevant hardware, the PHAT version of the Mote controlleris not supported.SetupInstall via the bundled Plugin Manageror manually using this URL:https://github.com/nigelm/OctoPrint-MoteLightingControl/archive/main.zipConfigurationThe configuration allows you to select the colours used for each OctoPrint state.You can enable/disable automatic lighting changes on any state change, andadditionally enable/disable each state individually.   By default all statechanges do cause lighting changes,The selectable states, and their default colours are:-  On OctoPrint Startup - Blue  Printer Connected - Green  Printer Disconnected - Black (lights off)  File Uploaded - Yellow for a few seconds  Active Printing - White  Print Finished - Pink  Error or Print Failed - RedCreditsThis plugin draws very heavily onOctoPrintMote byRichard HaylerAdditionally some code was used fromOctoLight(the API handling code and js), andTP-Link Smartplug.",
 "tags": ["lights","led","rgb"]
+},
+
+{
+"id": "/plugins/matrix_notifier",
+"url": "/plugins/matrix_notifier/",
+"date": "2021-07-21 00:00:00 -0500",
+"title": "Matrix Notifier",
+"description": "Sends matrix notifications and snapshots of your print.",
+"author": "Stuart Mumford",
+"content": "Matrix notifier sends messages to a configured matrix room with information about your print and snapshots of your camera.The following events are configurable through the web UI:  PrintStarted  PrintPaused  PrintFailed  PrintDone  Print ProgressThe message templates support markdown which are converted to HTML to send as formatted matrix messages.In addition to this any other event should be configurable directly in the config.yaml file.Take the event name from https://docs.octoprint.org/en/master/events/ and add a section under the plugins: section which looks like this:  matrix_notifier:    events:      Connected:        enabled: true        template: |          ## Printer ConnectedThis would send messages on the “Connected” event. Find the existing section of the config and edit it where appropriate rather than adding new sections.Note that not all events have been tested, please open an issue if you encounter an issue with a specific event.",
+"tags": ["notifications","notification","matrix","shapshots"]
 }
 ]
 }
