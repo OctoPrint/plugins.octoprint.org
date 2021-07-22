@@ -47,7 +47,7 @@ The message templates support markdown which are converted to HTML to send as fo
 
 In addition to this any other event should be configurable directly in the `config.yaml` file.
 
-Take the event name from https://docs.octoprint.org/en/master/events/ and add a section under the `plugins:` section which looks like this:
+Take the event name from [the OctoPrint events documentation](https://docs.octoprint.org/en/master/events/) and add a section under the `plugins:` section which looks like this:
 
 ```
   matrix_notifier:
