@@ -21,11 +21,11 @@ tags:
 - shapshots
 
 screenshots:
-- url: /assets/img/plugins/printstarted.png
+- url: /assets/img/plugins/matrix_notifier/printstarted.png
   alt: A print started message
   caption: A matrix notification showing a print started message and a snapshot image.
 
-featuredimage: /assets/img/plugins/printstarted.png
+featuredimage: /assets/img/plugins/matrix_notifier/printstarted.png
 
 compatibility:
   # Compatible Python version
