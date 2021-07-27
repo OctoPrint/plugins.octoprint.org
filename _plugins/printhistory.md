@@ -26,9 +26,8 @@ screenshots:
   alt: Print history tab showing prints
 
 
-  compatibility:
-  octoprint:
-  - 1.2.9
+compatibility:
+  python: ">=2.7,<4"
 
 ---
 
