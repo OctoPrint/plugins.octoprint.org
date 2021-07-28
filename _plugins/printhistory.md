@@ -22,7 +22,7 @@ tags:
 - log
 
 screenshots:
-- url: https://github.com/imrahil/OctoPrint-PrintHistory/raw/master/printhistory.png?raw=true
+- url: /assets/img/plugins/printhistory/printhistory.png
   alt: Print history tab showing prints
 
 
