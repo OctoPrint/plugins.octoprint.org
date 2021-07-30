@@ -13,6 +13,8 @@ archive: https://github.com/malnvenshorn/OctoPrint-MetadataPreprocessor/archive/
 tags:
 - gcode
 - metadata
+
+abandoned: https://github.com/OctoPrint/plugins.octoprint.org/issues/920
 ---
 
 This OctoPrint plugin uses a generated metadata comment in the gcode file to speed up the analyzing process on systems with limited resources like the Raspberry PI.
