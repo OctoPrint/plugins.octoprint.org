@@ -1572,42 +1572,6 @@
     },
 
     {
-        "id": "m33fio",
-        "published": "2016-10-25 00:00:00 -0500",
-        "title": "M33 Fio",
-        "description": "Allows viewing uploaded models, using a Micro 3D printer, modifying a slicer profile and model before slicing, uploading OBJs and other 3D file formats, hosting a webcam stream, and much more",
-        "archive": "https://github.com/donovan6000/M33-Fio/archive/master.zip",
-        "author": "donovan6000",
-        "homepage": "https://github.com/donovan6000/M33-Fio",
-        "page": "https://plugins.octoprint.org/plugins/m33fio/",
-        "compatibility": {"octoprint": [], "os": [], "python": ">=2.7,<3"},
-        "license": "GPLv3",
-        "image": "https://plugins.octoprint.org/assets/img/plugins/m33fio/model_editor.png",
-        "disabled": "<p>This plugin has been abandoned by its author, is no longer being maintained and incompatible to current versions of OctoPrint. See <a href=\"https://github.com/OctoPrint/plugins.octoprint.org/issues/411\">this ticket</a> on the plugin repository issue tracker.</p>\n",
-        "abandoned": true,
-        "github": { 
-            "latest_release": {
-                "name": "1.21 (stable)",
-                "date": "2017-08-05 03:59:40 +0000",
-                "tag": "V1.21"
-            },
-            "releases": 62,
-            "last_push": "2017-08-05 03:58:14 +0000",
-            "stars": 121,
-            "issues": {
-                "open": 21,
-                "closed": 158
-            }
-        },
-        "stats": {
-            "instances_month": 39,
-            "install_events_month": 2,
-            "instances_week": 28,
-            "install_events_week": 2
-        }
-    },
-
-    {
         "id": "M117NavBar",
         "published": "2016-10-27 00:00:00 -0500",
         "title": "OctoPrint-M117NavBar",
