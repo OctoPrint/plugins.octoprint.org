@@ -45,7 +45,8 @@ compatibility:
 
   #octoprint:
   #- 1.2.0
-
+  os:
+  - linux
   python: ">=3,<4"
 
 ---
