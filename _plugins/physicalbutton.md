@@ -46,9 +46,6 @@ compatibility:
   #octoprint:
   #- 1.2.0
 
-  os:
-  - 'OctoPi'
-
   python: ">=3,<4"
 
 ---
