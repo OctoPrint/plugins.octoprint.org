@@ -7215,7 +7215,7 @@
             },
             "releases": 28,
             "last_push": "2021-05-19 01:49:26 +0000",
-            "stars": 42,
+            "stars": 43,
             "issues": {
                 "open": 3,
                 "closed": 63
@@ -11682,6 +11682,45 @@
             "install_events_month": 62,
             "instances_week": 48,
             "install_events_week": 14
+        }
+    },
+
+    {
+        "id": "physicalbutton",
+        "published": "2021-08-01 00:00:00 -0500",
+        "title": "Physical Button",
+        "description": "Add physical buttons to OctoPrint",
+        "archive": "https://github.com/LuxuSam/PhysicalButton/archive/master.zip",
+        "author": "LuxuSam",
+        "homepage": "https://github.com/LuxuSam/PhysicalButton/tree/master",
+        "page": "https://plugins.octoprint.org/plugins/physicalbutton/",
+        "compatibility": {
+            "octoprint": [],
+            "os": ["linux"],
+            "python": ">=3,<4"
+        },
+        "license": "AGPLv3",
+        "image": "https://plugins.octoprint.org/assets/img/plugins/physicalbutton/PhysicalButton_Logo.png",
+        "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "🎉  Initial Release - 01 August 2021",
+                "date": "2021-08-01 18:22:09 +0000",
+                "tag": "v0.2.0"
+            },
+            "releases": 1,
+            "last_push": "2021-08-01 17:58:27 +0000",
+            "stars": 1,
+            "issues": {
+                "open": 0,
+                "closed": 1
+            }
+        },
+        "stats": {
+            "instances_month": 0,
+            "install_events_month": 0,
+            "instances_week": 0,
+            "install_events_week": 0
         }
     }
 ]

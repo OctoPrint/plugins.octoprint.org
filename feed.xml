@@ -5,10 +5,47 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>https://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 01 Aug 2021 17:15:43 -0500</pubDate>
-    <lastBuildDate>Sun, 01 Aug 2021 17:15:43 -0500</lastBuildDate>
+    <pubDate>Sun, 01 Aug 2021 17:41:30 -0500</pubDate>
+    <lastBuildDate>Sun, 01 Aug 2021 17:41:30 -0500</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
+    
+      <item>
+        <title>Physical Button</title>
+        <description>
+          <![CDATA[
+            Add physical buttons to OctoPrint
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/physicalbutton/PhysicalButton_Logo.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Sun, 01 Aug 2021 00:00:00 -0500</pubDate>
+        <link>https://plugins.octoprint.org/plugins/physicalbutton/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/physicalbutton/</guid>
+        
+        <category>physical</category>
+        
+        <category>button</category>
+        
+        <category>buttons</category>
+        
+        <category>input</category>
+        
+        <category>gpio</category>
+        
+        <category>pins</category>
+        
+        <category>external</category>
+        
+        <category>send</category>
+        
+        <category>action</category>
+        
+        <category>actions</category>
+        
+        <category>gcode</category>
+        
+      </item>
     
       <item>
         <title>Matrix Notifier</title>
@@ -200,34 +237,6 @@ Tue, 18 May 2021 00:00:00 -0500</pubDate>
         <category>file_manager</category>
         
         <category>dragging</category>
-        
-      </item>
-    
-      <item>
-        <title>PSU Control - Shelly</title>
-        <description>
-          <![CDATA[
-            Adds Shelly smart switch support to OctoPrint-PSUControl as a sub-plugin
-            <p><img src="https://plugins.octoprint.org/assets/img/repo-600x400.png"></p>
-            
-          ]]>
-        </description>
-        <pubDate>
-Sat, 15 May 2021 00:00:00 -0500</pubDate>
-        <link>https://plugins.octoprint.org/plugins/psucontrol_shelly/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/psucontrol_shelly/</guid>
-        
-        <category>power</category>
-        
-        <category>psu</category>
-        
-        <category>control</category>
-        
-        <category>psucontrol</category>
-        
-        <category>psucontrol subplugin</category>
-        
-        <category>shelly</category>
         
       </item>
     
