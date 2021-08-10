@@ -5,10 +5,35 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>https://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 09 Aug 2021 19:50:46 -0500</pubDate>
-    <lastBuildDate>Mon, 09 Aug 2021 19:50:46 -0500</lastBuildDate>
+    <pubDate>Mon, 09 Aug 2021 20:28:38 -0500</pubDate>
+    <lastBuildDate>Mon, 09 Aug 2021 20:28:38 -0500</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
+    
+      <item>
+        <title>Gcode Macros</title>
+        <description>
+          <![CDATA[
+            Configure custom gcode macros you can use anywhere!
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/gcode_macro/settings.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Mon, 09 Aug 2021 00:00:00 -0500</pubDate>
+        <link>https://plugins.octoprint.org/plugins/gcode_macro/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/gcode_macro/</guid>
+        
+        <category>gcode</category>
+        
+        <category>macro</category>
+        
+        <category>scripts</category>
+        
+        <category>custom</category>
+        
+        <category>productivity</category>
+        
+      </item>
     
       <item>
         <title>Physical Button</title>
@@ -215,30 +240,6 @@ Tue, 01 Jun 2021 00:00:00 -0500</pubDate>
         <category>navbar</category>
         
         <category>ui</category>
-        
-      </item>
-    
-      <item>
-        <title>Draggable Files</title>
-        <description>
-          <![CDATA[
-            Plugin that allows for the dragging of files in the File Manager
-            <p><img src="https://plugins.octoprint.org/assets/img/repo-600x400.png"></p>
-            
-          ]]>
-        </description>
-        <pubDate>
-Tue, 18 May 2021 00:00:00 -0500</pubDate>
-        <link>https://plugins.octoprint.org/plugins/draggable_files/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/draggable_files/</guid>
-        
-        <category>file</category>
-        
-        <category>filemanager</category>
-        
-        <category>file_manager</category>
-        
-        <category>dragging</category>
         
       </item>
     
