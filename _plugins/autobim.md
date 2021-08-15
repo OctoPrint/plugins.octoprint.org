@@ -30,7 +30,7 @@ screenshots:
   alt: AutoBim's settings screen
   caption: AutoBim's settings screen
 
-featuredimage: /assets/img/ui_1.png
+featuredimage: /assets/img/plugins/autobim/ui_1.png
 
 # TODO
 # You only need the following if your plugin requires specific OctoPrint versions or
