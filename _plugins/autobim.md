@@ -8,7 +8,7 @@ authors:
 - Juri Berlanda
 license: AGPLv3
 
-date: today's date in format YYYY-MM-DD, e.g. 2021-08-15
+date: 2021-08-15
 
 homepage: https://github.com/j-be/AutoBim
 source: https://github.com/j-be/AutoBim
