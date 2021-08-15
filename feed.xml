@@ -5,10 +5,37 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>https://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 15 Aug 2021 14:12:15 -0500</pubDate>
-    <lastBuildDate>Sun, 15 Aug 2021 14:12:15 -0500</lastBuildDate>
+    <pubDate>Sun, 15 Aug 2021 15:03:49 -0500</pubDate>
+    <lastBuildDate>Sun, 15 Aug 2021 15:03:49 -0500</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
+    
+      <item>
+        <title>AutoBim</title>
+        <description>
+          <![CDATA[
+            A bed tramming utility for OctoPrint
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/autobim/ui_1.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Sun, 15 Aug 2021 00:00:00 -0500</pubDate>
+        <link>https://plugins.octoprint.org/plugins/autobim/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/autobim/</guid>
+        
+        <category>abl</category>
+        
+        <category>bed level</category>
+        
+        <category>bed levelling</category>
+        
+        <category>auto bed leveling</category>
+        
+        <category>bl-touch</category>
+        
+        <category>maintenance</category>
+        
+      </item>
     
       <item>
         <title>Gcode Macros</title>
@@ -221,25 +248,6 @@ Fri, 04 Jun 2021 00:00:00 -0500</pubDate>
         <category>text</category>
         
         <category>notification</category>
-        
-      </item>
-    
-      <item>
-        <title>Navbar Clock</title>
-        <description>
-          <![CDATA[
-            Displays the current time on the OctoPrint navigation bar
-            <p><img src="https://plugins.octoprint.org/assets/img/plugins/navbarclock/NavbarClock.png"></p>
-          ]]>
-        </description>
-        <pubDate>
-Tue, 01 Jun 2021 00:00:00 -0500</pubDate>
-        <link>https://plugins.octoprint.org/plugins/navbarclock/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/navbarclock/</guid>
-        
-        <category>navbar</category>
-        
-        <category>ui</category>
         
       </item>
     
