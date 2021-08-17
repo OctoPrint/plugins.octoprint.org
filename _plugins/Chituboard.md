@@ -31,7 +31,7 @@ screenshots:
   alt: file dropdown
   caption: data on printable file
 
-featuredimage: /assets/img/Chituboard/octoprint_chituboard.png
+featuredimage: /assets/img/plugins/Chituboard/octoprint_chituboard.png
 
 compatibility:
   octoprint:
