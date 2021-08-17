@@ -38,7 +38,7 @@ compatibility:
   - 1.6.1
   os:
   - linux
-  python:">=3.7,<4"
+  python: ">=3.7,<4"
 
 ---
 
