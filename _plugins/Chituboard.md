@@ -73,7 +73,7 @@ https://github.com/rudetrooper/Octoprint-Chituboard/archive/main.zip
   * Peopoly Phenom L
   * EPAX E10/X10
 
-##configuration
+## Configuration
 
 **Follow hardware setup instructions in source repo**
 https://github.com/rudetrooper/Octoprint-Chituboard
