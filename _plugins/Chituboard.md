@@ -4,7 +4,7 @@ layout: plugin
 id: Chituboard
 title: Octoprint-Chituboard
 description: compatibility layer for SLA printers with Chituboards like the Photon and Mars series
-authors: Vikram Sarkhel
+author: Vikram Sarkhel
 license: AGPLv3
 
 date: 2021-07-16
