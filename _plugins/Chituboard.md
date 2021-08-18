@@ -4,7 +4,7 @@ layout: plugin
 id: Chituboard
 title: Octoprint-Chituboard
 description: compatibility layer for SLA printers with Chituboards like the Photon and Mars series
-authors: Vikram Sarkhel
+author: Vikram Sarkhel
 license: AGPLv3
 
 date: 2021-08-16
@@ -32,7 +32,7 @@ screenshots:
   alt: file dropdown
   caption: data on printable file
 
-featuredimage: /assets/img/Chituboard/octoprint_chituboard.png
+featuredimage: /assets/img/plugins/Chituboard/octoprint_chituboard.png
 
 compatibility:
   octoprint:
@@ -74,7 +74,7 @@ https://github.com/rudetrooper/Octoprint-Chituboard/archive/main.zip
   * Peopoly Phenom L
   * EPAX E10/X10
 
-##configuration
+## Configuration
 
 **Follow hardware setup instructions in source repo**
 https://github.com/rudetrooper/Octoprint-Chituboard
