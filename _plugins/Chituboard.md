@@ -7,7 +7,7 @@ description: compatibility layer for SLA printers with Chituboards like the Phot
 authors: Vikram Sarkhel
 license: AGPLv3
 
-date: 2021-07-16
+date: 2021-08-16
 
 homepage: https://github.com/rudetrooper/Octoprint-Chituboard
 source: https://github.com/rudetrooper/Octoprint-Chituboard
@@ -17,7 +17,8 @@ follow_dependency_links: false
 
 tags:
 - anycubic
-- cbd
+- elegoo
+- chituboard
 - printer
 - resin printer
 - broken firmware
@@ -38,7 +39,7 @@ compatibility:
   - 1.6.1
   os:
   - linux
-  python:">=3.7,<4"
+  python: ">=3.7,<4"
 
 ---
 
@@ -94,4 +95,13 @@ Follow one of these steps.
 Connect the jumper wires from the pi's UART0 port to the Elegoo Mars 2 motherboard like this.
 ![pi_UART](/assets/img/plugins/Chituboard/schematic.png)
 pinout.xyz is a good reference if you’re unfamiliar with the Raspberry Pi’s GPIO pins. Note that the Pi’s TX pin is connected to the motherboard’s RX pin and vice-versa. Connect GND to GND, Rx to Tx, and Tx to Rx
+
+### Acknowledgements
+
+Used code or studied file format reverse engineering from these repos:
+
+* https://github.com/luizribeiro/mariner
+* https://github.com/cbiffle/catibo/blob/master/doc/cbddlp-ctb.adoc
+* https://github.com/sn4k3/UVtools
+* https://github.com/ezrec/uv3dp
 
