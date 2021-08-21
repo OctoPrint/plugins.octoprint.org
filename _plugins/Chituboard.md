@@ -47,8 +47,8 @@ compatibility:
 
 Added basic support chituboard based printers(Elegoo Mars, Anycubic Photon, Phrozen, etc.) to octoprint.
 * upload files to folder `~/.octoprint/uploads/resin`
-* pause and resume are still somewhat buggy due to a timeout issue
-* File analysis CLI command works `octoprint plugins Chituboard:sla_analysis NAME`
+* File analysis CLI command works `octoprint plugins chituboard:sla_analysis NAME`
+* Plugin might not work if you've updated your Elegoo Mars printer to the newest firmware due to issues with Chitu3d encrypting their files so users are forced to use Chitubox 1.9.0. I'm not planning on incorporating the non FOSS chitubox SDK into an AGPLv3 licensed plugin.
 
 ## Setup
 
@@ -70,7 +70,6 @@ https://github.com/rudetrooper/Octoprint-Chituboard/archive/main.zip
   * Phrozen Sonic Mini 4K
   * Creality LD-002H
   * Creality LD-002R
-  * Voxelab Proxima
   * Peopoly Phenom L
   * EPAX E10/X10
 
