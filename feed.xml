@@ -5,8 +5,8 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>https://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 22 Aug 2021 14:57:12 -0500</pubDate>
-    <lastBuildDate>Sun, 22 Aug 2021 14:57:12 -0500</lastBuildDate>
+    <pubDate>Sun, 22 Aug 2021 15:00:27 -0500</pubDate>
+    <lastBuildDate>Sun, 22 Aug 2021 15:00:27 -0500</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
     
@@ -78,6 +78,35 @@ Sat, 21 Aug 2021 00:00:00 -0500</pubDate>
         <category>UI</category>
         
         <category>plotly</category>
+        
+      </item>
+    
+      <item>
+        <title>Octoprint-Chituboard</title>
+        <description>
+          <![CDATA[
+            compatibility layer for SLA printers with Chituboards like the Photon and Mars series
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/Chituboard/octoprint_chituboard.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Mon, 16 Aug 2021 00:00:00 -0500</pubDate>
+        <link>https://plugins.octoprint.org/plugins/Chituboard/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/Chituboard/</guid>
+        
+        <category>anycubic</category>
+        
+        <category>elegoo</category>
+        
+        <category>chituboard</category>
+        
+        <category>printer</category>
+        
+        <category>resin printer</category>
+        
+        <category>broken firmware</category>
+        
+        <category>workaround</category>
         
       </item>
     
@@ -239,27 +268,6 @@ Fri, 09 Jul 2021 00:00:00 -0500</pubDate>
         <category>PWM</category>
         
         <category>Slider</category>
-        
-      </item>
-    
-      <item>
-        <title>OctoPrint-GpioRgbController</title>
-        <description>
-          <![CDATA[
-            Uses PI GPIO pins to control a RGB Led strip
-            <p><img src="https://plugins.octoprint.org/assets/img/plugins/gpiorgbcontroller/featured.png"></p>
-          ]]>
-        </description>
-        <pubDate>
-Wed, 07 Jul 2021 00:00:00 -0500</pubDate>
-        <link>https://plugins.octoprint.org/plugins/gpiorgbcontroller/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/gpiorgbcontroller/</guid>
-        
-        <category>led</category>
-        
-        <category>rgb</category>
-        
-        <category>gpio</category>
         
       </item>
     
