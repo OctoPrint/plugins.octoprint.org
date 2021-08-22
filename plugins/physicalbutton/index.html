@@ -41,7 +41,7 @@
     <meta name="twitter:site" content="@OctoPrint3D" />
     <meta name="twitter:title" content="Physical Button" />
     <meta name="twitter:description" content="The PhysicalButton plugin (hence the name) lets you add physical buttons to your Raspberry Pi.
-The buttons are then able to send GCODE and actions to your printer.
+The buttons are then able to send GCODE, actions and system commands to your printer.
 
 " />
     <meta name="twitter:image" content="https://plugins.octoprint.org" />
@@ -50,7 +50,7 @@ The buttons are then able to send GCODE and actions to your printer.
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://plugins.octoprint.org/assets/img/plugins/physicalbutton/PhysicalButton_Logo.png" />
     <meta property="og:description" content="The PhysicalButton plugin (hence the name) lets you add physical buttons to your Raspberry Pi.
-The buttons are then able to send GCODE and actions to your printer.
+The buttons are then able to send GCODE, actions and system commands to your printer.
 
 " />
     <meta property="og:site_name" content="OctoPrint Plugin Repository" />
@@ -59,7 +59,7 @@ The buttons are then able to send GCODE and actions to your printer.
     <meta itemscope itemtype="http://schema.org/WebPage" />
     <meta itemprop="headline" content="Physical Button" />
     <meta itemprop="description" content="The PhysicalButton plugin (hence the name) lets you add physical buttons to your Raspberry Pi.
-The buttons are then able to send GCODE and actions to your printer.
+The buttons are then able to send GCODE, actions and system commands to your printer.
 
 " />
     <meta itemprop="image" content="https://plugins.octoprint.org/assets/img/plugins/physicalbutton/PhysicalButton_Logo.png" />
@@ -206,32 +206,46 @@ The buttons are then able to send GCODE and actions to your printer.
         Add physical buttons to OctoPrint
       </p>
       <p>The <strong>PhysicalButton</strong> plugin (hence the name) lets you add physical buttons to your Raspberry Pi.
-The buttons are then able to send GCODE and actions to your printer.</p>
+The buttons are then able to send GCODE, actions and system commands to your printer.</p>
 
 <hr />
-<h3 id="configuring-a-new-button">Configuring a new button</h3>
+
+<h3 id="configuration---overview">Configuration - Overview</h3>
+<p>To add a new button you have to click on the ➕. This adds a new button to the end of your list.</p>
+
+<p>From there you should enter a button name, the used GPIO and the mode (NO or NC) of the button.
+In addition you have to specify for how long a button has to be held in order to trigger.</p>
+
+<p>The last step is to add activities to your button which are executed in order of the activities list.
+You can edit, move or remove activities in the right pane.</p>
+
+<hr />
+<h3 id="configuration---detail">Configuration - Detail</h3>
 <ul>
   <li><strong>Button Name</strong>
     <ul>
-      <li>This is where you put the name of your button to differentiate them in the list of buttons.</li>
+      <li>This is where you put the name of your button to differentiate it in the list of buttons.</li>
     </ul>
   </li>
   <li><strong>GPIO</strong>
     <ul>
-      <li>This is the GPIO you connect your button to, the other cable has to be connected to a ground pin (Buttons are configured to use internal pulled-up resistors). You can only create one button per GPIO.</li>
+      <li>This is the GPIO you connect your button to. The other cable has to be connected to a ground pin (Buttons are configured to use internal pulled-up resistors). You can only create one button per GPIO.</li>
     </ul>
   </li>
   <li><strong>Mode</strong>
     <ul>
-      <li>Depending on your button setup or wiring you have to choose between the two modes.</li>
-      <li>Normally Open (NO)
+      <li>Depending on your button setup or wiring you have to choose between the following two modes:
         <ul>
-          <li>Use this mode if your button is usually not pressed (open).</li>
-        </ul>
-      </li>
-      <li>Normally Closed (NC)
-        <ul>
-          <li>Use this mode if your button is usually pressed (closed).</li>
+          <li>Normally Open (NO)
+            <ul>
+              <li>Use this mode if your button is usually not pressed (open).</li>
+            </ul>
+          </li>
+          <li>Normally Closed (NC)
+            <ul>
+              <li>Use this mode if your button is usually pressed (closed).</li>
+            </ul>
+          </li>
         </ul>
       </li>
     </ul>
@@ -245,17 +259,35 @@ The buttons are then able to send GCODE and actions to your printer.</p>
     <ul>
       <li>Action:
         <ul>
-          <li>You can choose between the standard actions of OctoPrint (cancel, connect, disconnect, home (x, y and z are homed), pause, resume and start).</li>
+          <li>You can choose between different actions:<br />
+connect, disconnect, home (x, y and z are homed), pause, resume, start, cancel, toggle pause-resume and toggle start-cancel</li>
+        </ul>
+      </li>
+      <li>File:
+        <ul>
+          <li>You can specify the path to a file which will be selected.</li>
+          <li>To start the execution of a file, add ‘start action’ behind the ‘file activity’.</li>
+          <li>There are three ways to specify a file:
+            <ul>
+              <li>Absolute path to a file:<br />
+<code class="language-plaintext highlighter-rouge">/home/pi/Some/Folder/Test.gcode</code></li>
+              <li>Relative path to a file inside the uploads folder:<br />
+<code class="language-plaintext highlighter-rouge">Some/Folder/Test.gcode</code></li>
+              <li>Path to a file on the SD-card of the printer:<br />
+<code class="language-plaintext highlighter-rouge">@sd:Some/Folder/Test.gcode</code></li>
+            </ul>
+          </li>
         </ul>
       </li>
       <li>GCODE:
         <ul>
-          <li>You can input any GCODE.</li>
+          <li>You can input any GCODE commands.</li>
         </ul>
       </li>
       <li>System:
         <ul>
-          <li>You can input any system command for your Octoprint host.</li>
+          <li>You can input any system command for your Octoprint host.<br />
+Note that system commands will be run under the same user that owns your OctoPrint service (usually ‘pi’ for OctoPi) with the same rights and permissions, so you may need to use sudo facilities for certain tasks. Please refer to your OctoPrint host’s documentation for details.</li>
         </ul>
       </li>
       <li>These activities will be executed in order of your list. You can also rearrange them by inserting them at your desired position.</li>
@@ -270,7 +302,7 @@ The buttons are then able to send GCODE and actions to your printer.</p>
 
 <hr />
 <h3 id="get-help--feature-request">Get Help / Feature request</h3>
-<p>If you encounter problems using the plugin or if you have an idea for a new feature please use the <a href="https://github.com/LuxuSam/PhysicalButton/issues">issue tracker</a> and if applicable add the corresponding label.</p>
+<p>If you encounter problems using the plugin or if you have an idea for a new feature please use the <a href="https://github.com/LuxuSam/PhysicalButton/issues">issue tracker</a> and the corresponding issue template.</p>
 
 <hr />
 <h3 id="️-support-me️">❤️ Support me❤️</h3>
@@ -295,6 +327,11 @@ The buttons are then able to send GCODE and actions to your printer.</p>
         <figure>
           
           <a href="/assets/img/plugins/physicalbutton/PhysicalButton_system.png" data-lightbox="/plugins/physicalbutton" data-title="An exemplary system activity of a button."><img src="/assets/img/plugins/physicalbutton/PhysicalButton_system.png" alt="Image that shows a system activity of a button." title="An exemplary system activity of a button."></a>
+        </figure>
+        
+        <figure>
+          
+          <a href="/assets/img/plugins/physicalbutton/PhysicalButton_file.png" data-lightbox="/plugins/physicalbutton" data-title="An exemplary file activity of a button."><img src="/assets/img/plugins/physicalbutton/PhysicalButton_file.png" alt="Image that shows a file activity of a button." title="An exemplary file activity of a button."></a>
         </figure>
         
         <figure>
@@ -369,7 +406,7 @@ The buttons are then able to send GCODE and actions to your printer.</p>
               Latest Release: <a href="https://github.com/LuxuSam/PhysicalButton/releases/tag/v0.3.3" target="_blank">v0.3.3</a><br>
               <small>released on 17 Aug 2021</small>
             </li>
-            <li>Releases: 5</li>
+            <li>Releases: 6</li>
             
             <li>Stars: <span id="github_star_count">9</span> <span id="github_star"><a href="javascript:void(0)"><i class="far fa-star"></i></a></span></li>
             <li>Issues: 2 open, 9 closed</li>
@@ -395,6 +432,8 @@ The buttons are then able to send GCODE and actions to your printer.</p>
           <a class="label" href="/by_tag/#tag-buttons">buttons</a>
           
           <a class="label" href="/by_tag/#tag-external">external</a>
+          
+          <a class="label" href="/by_tag/#tag-file">file</a>
           
           <a class="label" href="/by_tag/#tag-gcode">gcode</a>
           
