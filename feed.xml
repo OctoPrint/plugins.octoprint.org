@@ -5,10 +5,31 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>https://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 22 Aug 2021 12:44:18 -0500</pubDate>
-    <lastBuildDate>Sun, 22 Aug 2021 12:44:18 -0500</lastBuildDate>
+    <pubDate>Sun, 22 Aug 2021 13:02:58 -0500</pubDate>
+    <lastBuildDate>Sun, 22 Aug 2021 13:02:58 -0500</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
+    
+      <item>
+        <title>UPS</title>
+        <description>
+          <![CDATA[
+            Integrates a UPS monitored by NUT into OctoPrint
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/ups/ups_navbar.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Sun, 22 Aug 2021 00:00:00 -0500</pubDate>
+        <link>https://plugins.octoprint.org/plugins/ups/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/ups/</guid>
+        
+        <category>ups</category>
+        
+        <category>battery</category>
+        
+        <category>nut</category>
+        
+      </item>
     
       <item>
         <title>AutoBim</title>
@@ -229,27 +250,6 @@ Fri, 18 Jun 2021 00:00:00 -0500</pubDate>
         <category>Arducam</category>
         
         <category>Camera</category>
-        
-      </item>
-    
-      <item>
-        <title>OctoPrint-Fortune</title>
-        <description>
-          <![CDATA[
-            Gives you a pithy fortune on web login or startup
-            <p><img src="https://plugins.octoprint.org/assets/img/plugins/fortune/fortune-1.png"></p>
-          ]]>
-        </description>
-        <pubDate>
-Fri, 04 Jun 2021 00:00:00 -0500</pubDate>
-        <link>https://plugins.octoprint.org/plugins/fortune/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/fortune/</guid>
-        
-        <category>fortune</category>
-        
-        <category>text</category>
-        
-        <category>notification</category>
         
       </item>
     

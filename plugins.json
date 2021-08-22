@@ -11800,5 +11800,44 @@
             "instances_week": 457,
             "install_events_week": 445
         }
+    },
+
+    {
+        "id": "ups",
+        "published": "2021-08-22 00:00:00 -0500",
+        "title": "UPS",
+        "description": "Integrates a UPS monitored by NUT into OctoPrint",
+        "archive": "https://github.com/kantlivelong/OctoPrint-UPS/archive/master.zip",
+        "author": "Shawn Bruce",
+        "homepage": "https://github.com/kantlivelong/OctoPrint-UPS",
+        "page": "https://plugins.octoprint.org/plugins/ups/",
+        "compatibility": {
+            "octoprint": [],
+            "os": ["linux","freebsd","macos","windows"],
+            "python": ">=3,<4"
+        },
+        "license": "AGPLv3",
+        "image": "https://plugins.octoprint.org/assets/img/plugins/ups/ups_navbar.png",
+        "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "0.0.1",
+                "date": "2021-08-20 03:54:03 +0000",
+                "tag": "0.0.1"
+            },
+            "releases": 1,
+            "last_push": "2021-08-20 03:50:38 +0000",
+            "stars": 1,
+            "issues": {
+                "open": 0,
+                "closed": 0
+            }
+        },
+        "stats": {
+            "instances_month": 4,
+            "install_events_month": 3,
+            "instances_week": 3,
+            "install_events_week": 2
+        }
     }
 ]
