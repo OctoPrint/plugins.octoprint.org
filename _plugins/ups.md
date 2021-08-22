@@ -8,14 +8,14 @@ homepage: https://github.com/kantlivelong/OctoPrint-UPS
 source: https://github.com/kantlivelong/OctoPrint-UPS
 author: Shawn Bruce
 license: AGPLv3
-featuredimage: https://raw.githubusercontent.com/kantlivelong/OctoPrint-UPS/master/screenshots/ups_navbar.png
-date: 2021-08-19
+featuredimage: /assets/img/plugins/ups/ups_navbar.png
+date: 2021-08-22
 tags:
 - ups
 - battery
 - nut
 screenshots:
-- url: https://raw.githubusercontent.com/kantlivelong/OctoPrint-UPS/master/screenshots/ups_navbar.png
+- url: /assets/img/plugins/ups/ups_navbar.png
   alt: UPS screenshot
   caption: UPS screenshot
 compatibility:
