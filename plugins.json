@@ -9839,8 +9839,8 @@
             "last_push": "2021-08-21 14:35:35 +0000",
             "stars": 67,
             "issues": {
-                "open": 6,
-                "closed": 147
+                "open": 5,
+                "closed": 148
             }
         },
         "stats": {
@@ -11812,7 +11812,7 @@
         "homepage": "https://github.com/kantlivelong/OctoPrint-UPS",
         "page": "https://plugins.octoprint.org/plugins/ups/",
         "compatibility": {
-            "octoprint": [],
+            "octoprint": ["1.6.0"],
             "os": ["linux","freebsd","macos","windows"],
             "python": ">=3,<4"
         },
