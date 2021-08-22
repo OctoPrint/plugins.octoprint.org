@@ -19,6 +19,8 @@ screenshots:
   alt: UPS screenshot
   caption: UPS screenshot
 compatibility:
+  octoprint:
+  - 1.6.0
   os:
   - posix
   - windows
