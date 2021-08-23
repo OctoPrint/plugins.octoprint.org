@@ -145,3 +145,11 @@
   text: On August 19th 2021 a vulnerability was discovered with The Spaghetti Detective that allowed unauthorized access to OctoPrint 
     instances. The issue was resolved shortly after being discovered, more information is available at the "Read more..." link below.
   link: https://www.thespaghettidetective.com/blog/2021/08/19/what-happened-last-night/
+- plugin: metadatapreprocessor
+  pluginversions: ["<0.2.1"]
+  versions: ["0.1.0", "0.2.0"]
+  date: 2021-08-25 12:00:00Z
+  text: Version 0.2.1 of this plugin is available from a new maintainer, but your version still looks for updates at the
+    repository of the old maintainer. Please uninstall the old plugin from the plugin manager, then reinstall from the plugin
+    repository to update it. The release notes of the version by the new maintainer can be found at the "Read more..." link below.
+  link: https://github.com/awenelo/OctoPrint-MetadataPreprocessor/releases/tag/0.2.1
