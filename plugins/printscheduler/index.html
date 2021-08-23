@@ -206,7 +206,11 @@
 
 <p>Plugin that allows for scheduling prints to happen. If a print is ongoing or the printer is not in an operational state, the plugin will try to print those again until it is possible to start the print.</p>
 
-<p><strong>WARNING</strong>: This plugin currently only has knowledge of your printer’s state. If your printer is showing operational in OctoPrint, the next scheduled print job will run even if something is on the bed. Take caution when adding multiple prints to the scheduler for this reason.</p>
+<p><strong>WARNINGS</strong>:</p>
+<ul>
+  <li>This plugin currently only has knowledge of your printer’s state. If your printer is showing operational in OctoPrint, the next scheduled print job will run even if something is on the bed. Take caution when adding multiple prints to the scheduler for this reason.</li>
+  <li>The date time picked will be compared against the device running OctoPrint, so make sure you have your timezone and date/time options configured properly (sudo raspi-config for pi via SSH).</li>
+</ul>
 
 <h2 id="screenshots">Screenshots</h2>
 
@@ -301,7 +305,7 @@
             
             <li>Stars: <span id="github_star_count">0</span> <span id="github_star"><a href="javascript:void(0)"><i class="far fa-star"></i></a></span></li>
             <li>Issues: 3 open, 0 closed</li>
-            <li>Last push: 15 Aug 2021</li>
+            <li>Last push: 23 Aug 2021</li>
           </ul>
         </dd>
       </dl>
