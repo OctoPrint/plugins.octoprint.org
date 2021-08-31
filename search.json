@@ -3496,6 +3496,17 @@
 "author": "Shawn Bruce",
 "content": "See https://github.com/kantlivelong/OctoPrint-UPS for information on configuration.",
 "tags": ["ups","battery","nut"]
+},
+
+{
+"id": "/plugins/SafetyPrinter",
+"url": "/plugins/SafetyPrinter/",
+"date": "2021-08-30 00:00:00 -0500",
+"title": "Safety Printer",
+"description": "This plugin interfaces with Safety Printer MCU to improve your printer's safety.",
+"author": "Rodrigo C. C. Silva",
+"content": "Safety PrinterThis plugin interfaces with Safety Printer MCU to improve your printer’s safety. You can find more information on Wiki.P.S.: It also integrates with Octopod notifications, so is highly recommended its installation.With this plugin you will be able to setup, supervise and trobleshoot your Safety Printer MCU. It provides: Sidebar sensor monitoring, Plugin and Sensor setup and Safety Printer MCU communications terminal (for advanced users).Get HelpIf you experience issues with this plugin or need assistance please use the issue tracker at the plugin’s source page linked on the right.Join the projectIf you think that you can contribute with the project, join us, send me a message: SinisteRrj",
+"tags": ["fire","smoke","notification","bed temperature","hotend temperature","safety","flame detector","emergency","shutdown","trip"]
 }
 ]
 }
