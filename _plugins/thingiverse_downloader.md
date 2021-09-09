@@ -16,6 +16,7 @@ archive: https://github.com/appdevelopmentandsuch/Thingiverse-Downloader/archive
 
 tags:
   - thingiverse
+  - 3d models
 
 screenshots:
   - url: /assets/img/plugins/thingiverse_downloader/demo.png
