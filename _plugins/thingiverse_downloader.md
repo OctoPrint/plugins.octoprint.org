@@ -8,7 +8,7 @@ authors:
   - Lucas Bock
 license: MIT
 
-date: 2021-09-08
+date: 2021-09-10
 
 homepage: https://github.com/appdevelopmentandsuch/Thingiverse-Downloader
 source: https://github.com/appdevelopmentandsuch/Thingiverse-Downloader
