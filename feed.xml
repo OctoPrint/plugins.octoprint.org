@@ -5,10 +5,29 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>https://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 10 Sep 2021 09:15:27 -0500</pubDate>
-    <lastBuildDate>Fri, 10 Sep 2021 09:15:27 -0500</lastBuildDate>
+    <pubDate>Fri, 10 Sep 2021 09:33:32 -0500</pubDate>
+    <lastBuildDate>Fri, 10 Sep 2021 09:33:32 -0500</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
+    
+      <item>
+        <title>Thingiverse Downloader</title>
+        <description>
+          <![CDATA[
+            Download and extract a thing from Thingiverse to your Octoprint instance
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/thingiverse_downloader/demo.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Fri, 10 Sep 2021 00:00:00 -0500</pubDate>
+        <link>https://plugins.octoprint.org/plugins/thingiverse_downloader/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/thingiverse_downloader/</guid>
+        
+        <category>thingiverse</category>
+        
+        <category>3d models</category>
+        
+      </item>
     
       <item>
         <title>Safety Printer</title>
@@ -258,27 +277,6 @@ Wed, 21 Jul 2021 00:00:00 -0500</pubDate>
         <category>matrix</category>
         
         <category>shapshots</category>
-        
-      </item>
-    
-      <item>
-        <title>OctoPrint-MoteLightingControl</title>
-        <description>
-          <![CDATA[
-            Control a set of Mote lights - with different OctoPrint conditions causing changes in the lighting colour and state.
-            <p><img src="https://plugins.octoprint.org/assets/img/plugins/mote_lighting_control/mote_lights.jpg"></p>
-          ]]>
-        </description>
-        <pubDate>
-Wed, 14 Jul 2021 00:00:00 -0500</pubDate>
-        <link>https://plugins.octoprint.org/plugins/mote_lighting_control/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/mote_lighting_control/</guid>
-        
-        <category>lights</category>
-        
-        <category>led</category>
-        
-        <category>rgb</category>
         
       </item>
     

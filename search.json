@@ -3507,6 +3507,17 @@
 "author": "Rodrigo C. C. Silva",
 "content": "Safety PrinterThis plugin interfaces with Safety Printer MCU to improve your printer’s safety. You can find more information on Wiki.P.S.: It also integrates with Octopod notifications, so is highly recommended its installation.With this plugin you will be able to setup, supervise and trobleshoot your Safety Printer MCU. It provides: Sidebar sensor monitoring, Plugin and Sensor setup and Safety Printer MCU communications terminal (for advanced users).Get HelpIf you experience issues with this plugin or need assistance please use the issue tracker at the plugin’s source page linked on the right.Join the projectIf you think that you can contribute with the project, join us, send me a message: SinisteRrj",
 "tags": ["fire","smoke","notification","bed temperature","hotend temperature","safety","flame detector","emergency","shutdown","trip"]
+},
+
+{
+"id": "/plugins/thingiverse_downloader",
+"url": "/plugins/thingiverse_downloader/",
+"date": "2021-09-10 00:00:00 -0500",
+"title": "Thingiverse Downloader",
+"description": "Download and extract a thing from Thingiverse to your Octoprint instance",
+"author": "Lucas Bock",
+"content": "SetupQuick InstallInstall via the bundled Plugin Manageror manually using this URL:https://github.com/appdevelopmentandsuch/Thingiverse-Downloader/archive/main.zip  Install one of the following in order to view / upload STL files to your Octoprint instance.          Octoprint-Slic3r      STL Viewer      Cura Legacy      Full-featured Slicer        Install the Thingiverse-Downloader plugin either from the Plugin manager, or manually.  Acquire an API key from the Thingiverse Developer Console (tutorial to come).Configuration            Settings      Description                  API Key      An API key / App Key acquired from the Thingiverse Developer Console found here.              Output Directory      The desired directory you wish to have the Thingiverse thing downloaded to. Recommend using models      ",
+"tags": ["thingiverse","3d models"]
 }
 ]
 }
