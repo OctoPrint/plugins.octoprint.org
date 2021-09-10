@@ -27,21 +27,25 @@ compatibility:
   python: ">=3,<4"
 ---
 
-![Thingiverse-Downloader-Demo-URL](https://user-images.githubusercontent.com/22528729/132139046-1b1b4dc5-dfb8-4084-bb2d-1d3c27e53bb4.gif)
-![Thingiverse-Downloader-Demo-ID](https://user-images.githubusercontent.com/22528729/132139044-446589ee-4ab9-4962-ac1d-04c991062782.gif)
+![Thingiverse-Downloader-Demo](/assets/img/plugins/thingiverse_downloader/demo_url.gif)
+![Thingiverse-Downloader-Demo](/assets/img/plugins/thingiverse_downloader/demo_id.gif)
 
 ## Setup
 
 ### Quick Install
 
-![Thingiverse-Downloader-Install](https://user-images.githubusercontent.com/22528729/131595461-adb80ed1-4f57-4f24-ade5-fa84749ae93a.gif)
+![Thingiverse-Downloader-Install](/assets/img/plugins/thingiverse_downloader/install.gif)
 
 Install via the bundled [Plugin Manager](https://docs.octoprint.org/en/master/bundledplugins/pluginmanager.html)
 or manually using this URL:
 
     https://github.com/appdevelopmentandsuch/Thingiverse-Downloader/archive/main.zip
 
-1. Install the [Octoprint-Slic3r](https://plugins.octoprint.org/plugins/slic3r/) plugin in order to view / upload STL files to your Octoprint instance.
+1. Install one of the following in order to view / upload STL files to your Octoprint instance.
+   - [Octoprint-Slic3r](https://plugins.octoprint.org/plugins/slic3r/)
+   - [STL Viewer](https://plugins.octoprint.org/plugins/stlviewer/)
+   - [Cura Legacy](https://plugins.octoprint.org/plugins/curalegacy/)
+   - [Full-featured Slicer](https://plugins.octoprint.org/plugins/slicer/)
 2. Install the Thingiverse-Downloader plugin either from the Plugin manager, or manually.
 3. Acquire an API key from the Thingiverse Developer Console (tutorial to come).
 
