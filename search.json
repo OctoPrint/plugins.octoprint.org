@@ -3518,6 +3518,17 @@
 "author": "Lucas Bock",
 "content": "SetupQuick InstallInstall via the bundled Plugin Manageror manually using this URL:https://github.com/appdevelopmentandsuch/Thingiverse-Downloader/archive/main.zip  Install one of the following in order to view / upload STL files to your Octoprint instance.          Octoprint-Slic3r      STL Viewer      Cura Legacy      Full-featured Slicer        Install the Thingiverse-Downloader plugin either from the Plugin manager, or manually.  Acquire an API key from the Thingiverse Developer Console (tutorial to come).Configuration            Settings      Description                  API Key      An API key / App Key acquired from the Thingiverse Developer Console found here.              Output Directory      The desired directory you wish to have the Thingiverse thing downloaded to. Recommend using models      ",
 "tags": ["thingiverse","3d models"]
+},
+
+{
+"id": "/plugins/fractalbridge",
+"url": "/plugins/fractalbridge/",
+"date": "2021-09-15 00:00:00 -0500",
+"title": "Fractal Bridge",
+"description": "Fractal's printer control plugin for OctoPrint",
+"author": "Fractal",
+"content": "Automate your 3D printing workflow using FractalFractal is a cloud platform that automates the complete worklow of 3D printing so that you can spend time where it matters: adding value!",
+"tags": ["cloud printing","remote printing","remote access","video streaming","automated printing","smart queuing","fleet management"]
 }
 ]
 }
