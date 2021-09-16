@@ -51,7 +51,7 @@ Some of the current features include:
 - Information distillation into simple actionable commands for 100% print farm efficiency
 
 
-And other cool features are beeing added soon<sup>TM</sup>:
+And other cool features are being added soon<sup>TM</sup>:
 - Print process monitoring
 - Full e-commerce integration
 - Advanced analytics
@@ -61,4 +61,4 @@ And other cool features are beeing added soon<sup>TM</sup>:
 ## Join us on Discord
 We have a server dedicated to talking all things 3D printing automation. We'd love for you to join!
 
-[![Discord Banner 2](https://discord.com/api/guilds/715220468881424465/widget.png?style=banner2)](https://discord.gg/gHjjAqkVsZ)
+[Fractal Discord](https://discord.gg/gHjjAqkVsZ)
