@@ -31,7 +31,7 @@ screenshots:
   alt: Fractal Home
   caption: Connect your printer to Fractal using OctoPrint
 
-featuredimage: /assets/img/plugins/fractalbridge/fractal-home.jpg
+featuredimage: /assets/img/plugins/fractalbridge/fractal-home.png
 
 compatibility:
   python: ">=2.7,<4"
