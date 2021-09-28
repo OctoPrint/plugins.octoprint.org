@@ -8,7 +8,7 @@ homepage: https://github.com/Tomatenjoghurt/OctoPrint-PSUControl-openHAB3
 source: https://github.com/Tomatenjoghurt/OctoPrint-PSUControl-openHAB3
 author: Philipp Große
 license: AGPLv3
-date: 2021-09-09
+date: 2021-09-27
 tags:
 - power
 - psu
