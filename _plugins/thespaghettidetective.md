@@ -90,7 +90,7 @@ compatibility:
 
 ---
 
-<p class="lead">Whether you're worried about print failures, fire hazards, or network security, The Spaghetti Detective has got your back.</p>
+<p class="lead">Whether you're worried about print failures, fire hazards, or network security, <a href="https://www.thespaghettidetective.com">The Spaghetti Detective</a> has got your back.</p>
 
 <div class="row-fluid" style="margin-top: 28px;">
   <div class="span4">
@@ -140,7 +140,7 @@ compatibility:
 
 ## Does the AI really work?
 
-The Spaghetti Detective has caught thousands of failures for the 3D printing enthusiasts
+[The Spaghetti Detective](https://www.thespaghettidetective.com) has caught thousands of failures for the 3D printing enthusiasts
 around the globe. Here are some examples:
 
 {% include youtube.html vid="tUmHmVRIF_4" preview="'/assets/img/plugins/thespaghettidetective/video_preview2.png'" %}
@@ -219,7 +219,7 @@ control")
 Setting up The Spaghetti Detective is quite straightforward. Just install this plugin and follow the steps on the wizard screen and you will be all set.
 
 If you run into any difficulties, check out the [Setup
-Guide](https://help.thespaghettidetective.com/kb/guide/en/setup-the-spaghetti-detective-using-the-web-app-dbCcgiR0Tr/Steps/291120).
+Guide](https://www.thespaghettidetective.com/docs/octoprint-plugin-setup/).
 
 ![wizard](/assets/img/plugins/thespaghettidetective/plugin_wizard.png "The Spaghetti Detective Set up Wizard")
 
