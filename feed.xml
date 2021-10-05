@@ -5,10 +5,33 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>https://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 05 Oct 2021 15:16:37 -0500</pubDate>
-    <lastBuildDate>Tue, 05 Oct 2021 15:16:37 -0500</lastBuildDate>
+    <pubDate>Tue, 05 Oct 2021 16:02:30 -0500</pubDate>
+    <lastBuildDate>Tue, 05 Oct 2021 16:02:30 -0500</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
+    
+      <item>
+        <title>PSU Control - MQTT</title>
+        <description>
+          <![CDATA[
+            adds support for generic MQTT switches to PSU Control as a subplugin
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/psucontrol_mqtt/screenshot_settings.PNG"></p>
+          ]]>
+        </description>
+        <pubDate>
+Tue, 05 Oct 2021 00:00:00 -0500</pubDate>
+        <link>https://plugins.octoprint.org/plugins/psucontrol_mqtt/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/psucontrol_mqtt/</guid>
+        
+        <category>control</category>
+        
+        <category>psucontrol</category>
+        
+        <category>psucontrol subplugin</category>
+        
+        <category>mqtt</category>
+        
+      </item>
     
       <item>
         <title>PSU Control - openHAB3</title>
@@ -241,33 +264,6 @@ Mon, 16 Aug 2021 00:00:00 -0500</pubDate>
         <category>broken firmware</category>
         
         <category>workaround</category>
-        
-      </item>
-    
-      <item>
-        <title>AutoBim</title>
-        <description>
-          <![CDATA[
-            A bed tramming utility for OctoPrint
-            <p><img src="https://plugins.octoprint.org/assets/img/plugins/autobim/ui_1.png"></p>
-          ]]>
-        </description>
-        <pubDate>
-Sun, 15 Aug 2021 00:00:00 -0500</pubDate>
-        <link>https://plugins.octoprint.org/plugins/autobim/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/autobim/</guid>
-        
-        <category>abl</category>
-        
-        <category>bed level</category>
-        
-        <category>bed levelling</category>
-        
-        <category>auto bed leveling</category>
-        
-        <category>bl-touch</category>
-        
-        <category>maintenance</category>
         
       </item>
     

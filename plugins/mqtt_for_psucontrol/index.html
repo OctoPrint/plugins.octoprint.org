@@ -6,8 +6,8 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html"> <!--<![endif]-->
 <head>
     <meta charset="utf-8" />
-    <title>MQTT for PSU Control</title>
-    <meta name="description" content="Use MQTT and/or Home Assistant to control the switch you use with the PSU Control plugin.">
+    <title>MQTT exposure for PSU Control</title>
+    <meta name="description" content="Control your PSU Control with MQTT or Home Assistant">
     <meta name="author" content="oerkel47">
     <meta name="referrer" content="same-origin">
     <meta name="google-site-verification" content="0EFsbaNygJcEinKPmzP-hTf0Ju6wDIpJxO5zvQtOQT0" />
@@ -39,27 +39,27 @@
 
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@OctoPrint3D" />
-    <meta name="twitter:title" content="MQTT for PSU Control" />
-    <meta name="twitter:description" content="MQTT for PSU Control
-This plugin interfaces between PSU Control plugin and MQTT plugin and adds support for Home Assistant discovery.
+    <meta name="twitter:title" content="MQTT exposure for PSU Control" />
+    <meta name="twitter:description" content="MQTT exposure for PSU Control
+Exposes PSU Control switch on MQTT so you can access it from somewhere else. Supports Home Assistant discovery for easy setup.
 
 " />
     <meta name="twitter:image" content="https://plugins.octoprint.org" />
 
-    <meta property="og:title" content="MQTT for PSU Control" />
+    <meta property="og:title" content="MQTT exposure for PSU Control" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://plugins.octoprint.org/assets/img/plugins/mqtt_for_psucontrol/screenshot_settings.PNG" />
-    <meta property="og:description" content="MQTT for PSU Control
-This plugin interfaces between PSU Control plugin and MQTT plugin and adds support for Home Assistant discovery.
+    <meta property="og:description" content="MQTT exposure for PSU Control
+Exposes PSU Control switch on MQTT so you can access it from somewhere else. Supports Home Assistant discovery for easy setup.
 
 " />
     <meta property="og:site_name" content="OctoPrint Plugin Repository" />
     <meta property="og:url" content="https://plugins.octoprint.org/plugins/mqtt_for_psucontrol/" />
 
     <meta itemscope itemtype="http://schema.org/WebPage" />
-    <meta itemprop="headline" content="MQTT for PSU Control" />
-    <meta itemprop="description" content="MQTT for PSU Control
-This plugin interfaces between PSU Control plugin and MQTT plugin and adds support for Home Assistant discovery.
+    <meta itemprop="headline" content="MQTT exposure for PSU Control" />
+    <meta itemprop="description" content="MQTT exposure for PSU Control
+Exposes PSU Control switch on MQTT so you can access it from somewhere else. Supports Home Assistant discovery for easy setup.
 
 " />
     <meta itemprop="image" content="https://plugins.octoprint.org/assets/img/plugins/mqtt_for_psucontrol/screenshot_settings.PNG" />
@@ -179,7 +179,7 @@ This plugin interfaces between PSU Control plugin and MQTT plugin and adds suppo
   <div class="container">
     <div class="row">
       <div class="span12">
-        <h1>MQTT for PSU Control</h1>
+        <h1>MQTT exposure for PSU Control</h1>
       </div>
     </div>
   </div>
@@ -203,24 +203,19 @@ This plugin interfaces between PSU Control plugin and MQTT plugin and adds suppo
       
 
       <p class="lead">
-        Use MQTT and/or Home Assistant to control the switch you use with the PSU Control plugin.
+        Control your PSU Control with MQTT or Home Assistant
       </p>
-      <h1 id="mqtt-for-psu-control">MQTT for PSU Control</h1>
-<p>This plugin interfaces between <a href="https://github.com/kantlivelong/OctoPrint-PSUControl">PSU Control</a> plugin and <a href="https://github.com/OctoPrint/OctoPrint-MQTT">MQTT</a> plugin and adds support for <a href="https://www.home-assistant.io">Home Assistant</a> discovery.</p>
+      <h1 id="mqtt-exposure-for-psu-control">MQTT exposure for PSU Control</h1>
+<p>Exposes <a href="https://github.com/kantlivelong/OctoPrint-PSUControl">PSU Control</a> switch on MQTT so you can access it from somewhere else. Supports Home Assistant discovery for easy setup.</p>
 
-<p>For more information please visit the <a href="https://github.com/oerkel47/OctoPrint-MQTT-for-PSUcontrol">homepage</a>.</p>
+<p>This plugin does <strong>not</strong> connect a smart plug to PSU Control. If this is what you need , take a look at “PSU Control - MQTT” instead.</p>
 
-<h2 id="what-it-does">What it does</h2>
+<p><strong>Please check the <a href="https://github.com/oerkel47/OctoPrint-MQTT-for-PSUcontrol">github repo</a> for up to date information and more details</strong></p>
+
+<h1 id="requirements">Requirements:</h1>
 <ul>
-  <li>Let’s you control and monitor the switch that is configured in PSU Control via the MQTT protocol.</li>
-  <li>Supports Home Assistant discovery to integrate everything easily.</li>
-</ul>
-
-<h2 id="what-you-need">What you need</h2>
-<ul>
-  <li>configured and running <a href="https://github.com/OctoPrint/OctoPrint-MQTT">MQTT</a> plugin for OctoPrint</li>
-  <li><a href="https://github.com/kantlivelong/OctoPrint-PSUControl">PSU Control</a> plugin for OctoPrint</li>
-  <li>optional: <a href="https://www.home-assistant.io">Home Assistant</a></li>
+  <li><a href="https://plugins.octoprint.org/plugins/mqtt/">MQTT plugin for OctoPrint</a></li>
+  <li><a href="https://plugins.octoprint.org/plugins/psucontrol/">PSU Control plugin for OctoPrint</a></li>
 </ul>
 
 
@@ -379,16 +374,16 @@ This plugin interfaces between PSU Control plugin and MQTT plugin and adds suppo
         <dd>
           <p>
             If there is <strong>something wrong with this listing</strong> (broken links & images etc), please
-            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?template=listing_error.yml&labels%5B%5D=listing+error&title=%5BListing+Error%5D+MQTT+for+PSU+Control&which_plugin=https%3A%2F%2Fplugins.octoprint.org%2Fplugins%2Fmqtt_for_psucontrol%2F">report it here</a>.
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?template=listing_error.yml&labels%5B%5D=listing+error&title=%5BListing+Error%5D+MQTT+exposure+for+PSU+Control&which_plugin=https%3A%2F%2Fplugins.octoprint.org%2Fplugins%2Fmqtt_for_psucontrol%2F">report it here</a>.
           </p>
           <p>
             If this plugin <strong>has been <em>confirmed</em> as abandoned</strong> by its maintainer, please
-            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?template=abandoned_plugin.yml&labels%5B%5D=abandoned+plugin&title=%5BAbandoned+Plugin%5D+MQTT+for+PSU+Control&which_plugin=https%3A%2F%2Fplugins.octoprint.org%2Fplugins%2Fmqtt_for_psucontrol%2F">report it here</a>.
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?template=abandoned_plugin.yml&labels%5B%5D=abandoned+plugin&title=%5BAbandoned+Plugin%5D+MQTT+exposure+for+PSU+Control&which_plugin=https%3A%2F%2Fplugins.octoprint.org%2Fplugins%2Fmqtt_for_psucontrol%2F">report it here</a>.
           </p>
           <p>
             If this plugin is <strong>doing something suspicious</strong> (e.g. weird network activity, unannounced tracking, ...) and
             the maintainer is not cooperating in getting to the bottom of that, please
-            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?template=suspicious_plugin_activity.yml&labels%5B%5D=suspicious+plugin+activity&title=%5BSuspicious+Plugin+Activity%5D+MQTT+for+PSU+Control&which_plugin=https%3A%2F%2Fplugins.octoprint.org%2Fplugins%2Fmqtt_for_psucontrol%2F">report the plugin as suspicious here</a>.
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?template=suspicious_plugin_activity.yml&labels%5B%5D=suspicious+plugin+activity&title=%5BSuspicious+Plugin+Activity%5D+MQTT+exposure+for+PSU+Control&which_plugin=https%3A%2F%2Fplugins.octoprint.org%2Fplugins%2Fmqtt_for_psucontrol%2F">report the plugin as suspicious here</a>.
           </p>
           <p>
             Report bugs or feature requests for the plugin to the plugin author (e.g. on the plugin's <a href="https://github.com/oerkel47/OctoPrint-MQTT-for-PSUcontrol">homepage</a>) please, not here!
@@ -527,6 +522,10 @@ This plugin interfaces between PSU Control plugin and MQTT plugin and adds suppo
                           
                           
                           <li>
+                              <a class="post-link" href="/plugins/psucontrol_mqtt/">PSU Control - MQTT</a>
+                          </li>
+                          
+                          <li>
                               <a class="post-link" href="/plugins/psucontrol_openhab3/">PSU Control - openHAB3</a>
                           </li>
                           
@@ -540,10 +539,6 @@ This plugin interfaces between PSU Control plugin and MQTT plugin and adds suppo
                           
                           <li>
                               <a class="post-link" href="/plugins/thingiverse_downloader/">Thingiverse Downloader</a>
-                          </li>
-                          
-                          <li>
-                              <a class="post-link" href="/plugins/SafetyPrinter/">Safety Printer</a>
                           </li>
                           
                       </ul>
