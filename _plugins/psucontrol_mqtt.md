@@ -31,3 +31,8 @@ MQTT subplugin for PSU Control
 Lets you control any MQTT controlled switch with PSU Control.
 
 **Please check the [github repo](https://github.com/oerkel47/OctoPrint-PSUControl-MQTT) for up to date information and more details**
+
+# Requirements:
+- [MQTT plugin for OctoPrint](https://plugins.octoprint.org/plugins/mqtt/)
+- [PSU Control plugin for OctoPrint](https://plugins.octoprint.org/plugins/psucontrol/)
+
