@@ -9,9 +9,9 @@ license: Apache 2
 
 date: 2017-09-25
 
-homepage: https://github.com/google/OctoPrint-HeaterTimeout
-source: https://github.com/google/OctoPrint-HeaterTimeout
-archive: https://github.com/google/OctoPrint-HeaterTimeout/archive/master.zip
+homepage: https://github.com/Andy-ch/OctoPrint-HeaterTimeout
+source: https://github.com/Andy-ch/OctoPrint-HeaterTimeout
+archive: https://github.com/Andy-ch/OctoPrint-HeaterTimeout/archive/master.zip
 
 follow_dependency_links: false
 
@@ -27,7 +27,6 @@ compatibility:
   - 1.3.1
   python: ">=2.7,<4"
 
-abandoned: https://github.com/OctoPrint/plugins.octoprint.org/issues/917
 ---
 
 Ever accidentally preheat your hotend or bed and then forget to start a print? Then this is the plugin for you.
