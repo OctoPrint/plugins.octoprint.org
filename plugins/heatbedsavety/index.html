@@ -287,6 +287,18 @@ In this case you’ll do the changes !! AT YOUR OWN RISK !! and no insurance wil
       </dl>
       
       
+      <dl class="github">
+        <dt>GitHub stats <a href="/help/github_integration/" class="fas fa-question-circle"></a> <span id="github_login">(<a href="javascript:void(0)">Login</a>)</span></dt>
+        <dd>
+          <ul>
+            
+            <li>Stars: <span id="github_star_count">1</span> <span id="github_star"><a href="javascript:void(0)"><i class="far fa-star"></i></a></span></li>
+            <li>Issues: 0 open, 3 closed</li>
+            <li>Last push: 17 Aug 2020</li>
+          </ul>
+        </dd>
+      </dl>
+      
       
       <dl class="tags">
         <dt>Tags</dt>
@@ -374,9 +386,9 @@ In this case you’ll do the changes !! AT YOUR OWN RISK !! and no insurance wil
 
 <script type="application/javascript">
   $(function() {
-    var has_github = false;
+    var has_github = true;
     if (has_github) {
-      var github_repo = "";
+      var github_repo = "linux-paul/OctoPrint-Heatbedsavety";
 
       if (github_repo) {
         var status = "unknown";
