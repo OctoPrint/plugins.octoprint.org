@@ -4,7 +4,9 @@ layout: plugin
 id: HeaterTimeout
 title: HeaterTimeout
 description: Automatically shut off heaters if no print has been started.
-author: Uriah Welcome
+authors:
+- Andrew Cherevatkin
+- Uriah Welcome
 license: Apache 2
 
 date: 2017-09-25
