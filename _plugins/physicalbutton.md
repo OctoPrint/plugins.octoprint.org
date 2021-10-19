@@ -28,8 +28,12 @@ tags:
 - file
 - gcode
 - system
+- output
 
 screenshots:
+- url: /assets/img/plugins/physicalbutton/PhysicalButton_output.png
+  alt: Image that shows an output activity of a button.
+  caption: An exemplary output activity for a button.
 - url: /assets/img/plugins/physicalbutton/PhysicalButton_action.png
   alt: Image that shows an action activity of a button.
   caption: An exemplary action activity for a button.
@@ -89,7 +93,7 @@ You can edit, move or remove activities in the right pane.
 * **Choose activities for your button**
   * Action:
     * You can choose between different actions:  
-    connect, disconnect, home (x, y and z are homed), pause, resume, start, cancel, toggle pause-resume and toggle start-cancel
+    connect, disconnect, home (x, y and z are homed), pause, resume, start, start latest, cancel, toggle pause-resume, toggle start-cancel, toggle start latest-cancel
   * File:
     * You can specify the path to a file which will be selected.
     * To start the execution of a file, add 'start action' behind the 'file activity'.
@@ -105,6 +109,11 @@ You can edit, move or remove activities in the right pane.
   * System:
     * You can input any system command for your Octoprint host.  
     Note that system commands will be run under the same user that owns your OctoPrint service (usually 'pi' for OctoPi) with the same rights and permissions, so you may need to use sudo facilities for certain tasks. Please refer to your OctoPrint host's documentation for details.
+  * Output:
+    * Generate output on the given GPIO pin for a given amount of time.
+    * By setting the time to 0, the output will continue until you toggle it again.
+    * The async option lets the output run while also continuing with the next activities.
+    * The initial value sets the level of the GPIO pin for startup and settings save.
   * These activities will be executed in order of your list. You can also rearrange them by inserting them at your desired position.
 
 ----
