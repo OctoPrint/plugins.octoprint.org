@@ -848,12 +848,12 @@
 },
 
 {
-"id": "/plugins/heatertimeout",
-"url": "/plugins/heatertimeout/",
+"id": "/plugins/HeaterTimeout",
+"url": "/plugins/HeaterTimeout/",
 "date": "2017-09-25 00:00:00 -0500",
 "title": "HeaterTimeout",
 "description": "Automatically shut off heaters if no print has been started.",
-"author": "Uriah Welcome",
+"author": "Andrew Cherevatkin, Uriah Welcome",
 "content": "Ever accidentally preheat your hotend or bed and then forget to start a print? Then this is the plugin for you.This plugin will automatically disable your printers heaters after a specified timeout if no print has been started.",
 "tags": ["temperature"]
 },
