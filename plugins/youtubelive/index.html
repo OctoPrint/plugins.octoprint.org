@@ -294,33 +294,15 @@
       
       <dl class="installations">
         <dt>Active instances the past month</dt>
-        <dd>Installed on at least <strong>393</strong> instances</dd>
+        <dd>Installed on at least <strong>394</strong> instances</dd>
       </dl>
       
       
       <dl class="install_events">
         <dt>New installs the past week</dt>
-        <dd>At least <strong>13</strong> new installations</dd>
+        <dd>At least <strong>14</strong> new installations</dd>
       </dl>
       
-      
-      <dl class="github">
-        <dt>GitHub stats <a href="/help/github_integration/" class="fas fa-question-circle"></a> <span id="github_login">(<a href="javascript:void(0)">Login</a>)</span></dt>
-        <dd>
-          <ul>
-            
-            <li>
-              Latest Release: <a href="https://github.com/jneilliii/OctoPrint-YouTubeLive/releases/tag/0.5.2" target="_blank">0.5.2</a><br>
-              <small>released on 11 Sep 2020</small>
-            </li>
-            <li>Releases: 7</li>
-            
-            <li>Stars: <span id="github_star_count">35</span> <span id="github_star"><a href="javascript:void(0)"><i class="far fa-star"></i></a></span></li>
-            <li>Issues: 3 open, 56 closed</li>
-            <li>Last push: 15 Aug 2021</li>
-          </ul>
-        </dd>
-      </dl>
       
       
       <dl class="tags">
@@ -407,9 +389,9 @@
 
 <script type="application/javascript">
   $(function() {
-    var has_github = true;
+    var has_github = false;
     if (has_github) {
-      var github_repo = "jneilliii/OctoPrint-YouTubeLive";
+      var github_repo = "";
 
       if (github_repo) {
         var status = "unknown";
