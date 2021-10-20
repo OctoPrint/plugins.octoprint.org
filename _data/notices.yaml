@@ -158,3 +158,11 @@
   text: The maintainer of this plugin is looking for some help with maintaining it from the community. If this sounds like something you'd like to 
     lend a hand in, please click on the "Read more..." link below.
   link: https://github.com/vitormhenrique/OctoPrint-Enclosure/issues/435
+- plugin: HeaterTimeout
+  pluginversions: ["<0.0.4"]
+  versions: ["0.0.1", "0.0.2", "0.0.3"]
+  date: 2021-10-20 12:00:00Z
+  text: Version 0.0.4 of this plugin is available from a new maintainer, but your version still looks for updates at the
+    repository of the old maintainer. Please uninstall the old plugin from the plugin manager, then reinstall from the plugin
+    repository to update it. The release notes of the version by the new maintainer can be found at the "Read more..." link below.
+  link: https://github.com/Andy-ch/OctoPrint-HeaterTimeout/releases/tag/0.0.4
