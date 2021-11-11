@@ -45,7 +45,7 @@ screenshots:
 featuredimage: /assets/img/plugins/dashboard/screenshot-2.png
 
 compatibility:
-  python: ">=2.7,<4"
+  python: ">=3.6,<4"
 
 ---
 This plugin adds a  dashboard tab in Octoprint that displays the most relevant info regarding the state of the printer and any on-going print job.
@@ -75,7 +75,6 @@ This plugin adds a  dashboard tab in Octoprint that displays the most relevant i
 * Fullscreen mode including job control buttons (Start, Cancel, Pause/Resume)
 * Full page mode by adding `?dashboard=full` parameter at the end of the octoprint url
 * Uses Estimates from [PrintTimeGenius](https://plugins.octoprint.org/plugins/PrintTimeGenius/) when installed
-* Uses GCode analysis provided by [DisplayLayerProgress](https://plugins.octoprint.org/plugins/DisplayLayerProgress/) to get more accurate layer and fan data
 * Theme friendly
 
 
