@@ -36,7 +36,7 @@ compatibility:
 ---
 * # OctoPrint-Crealitycloud
 
-  A OctoPrint-Plugin that connect the Octoprint to Creality Could
+  A OctoPrint-Plugin that connect the Octoprint to CrealityCloud
 
   ## Setup
 
