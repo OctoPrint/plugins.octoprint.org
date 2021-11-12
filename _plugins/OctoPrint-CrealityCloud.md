@@ -36,8 +36,12 @@ compatibility:
 ---
 * # OctoPrint-Crealitycloud
 
+
 ![preview](/assets/img/plugins/OctoPrint-CrealityCloud/main.png)
+
   A OctoPrint-Plugin that connect the Octoprint to Creality Cloud
+=======
+  A OctoPrint-Plugin that connect the Octoprint to CrealityCloud
 
   ## Setup
 
