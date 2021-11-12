@@ -1,7 +1,7 @@
 ---
 layout: plugin
 
-id: OctoPrint-CrealityCloud
+id: crealitycloud
 title: OctoPrint-CrealityCloud
 description: A OctoPrint-Plugin that connect the Octoprint to Creality Could
 authors:
