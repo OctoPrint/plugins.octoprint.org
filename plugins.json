@@ -6158,9 +6158,9 @@
         "published": "2019-09-05 00:00:00 -0500",
         "title": "GcodeSuperLaserController",
         "description": "A plugin for Laser engraving add",
-        "archive": "https://github.com/Skiepp/GCodeSuperLaserController/archive/master.zip",
+        "archive": "https://github.com/jneilliii/GCodeSuperLaserController/archive/master.zip",
         "author": "Skiepp",
-        "homepage": "https://github.com/Skiepp/GCodeSuperLaserController",
+        "homepage": "https://github.com/jneilliii/GCodeSuperLaserController",
         "page": "https://plugins.octoprint.org/plugins/gslc/",
         "compatibility": {
             "octoprint": [],
@@ -6168,7 +6168,21 @@
             "python": ">=2.7,<3"
         },
         "license": "Apache License 2.0",
-        "abandoned": false,
+        "abandoned": true,
+        "github": { 
+            "latest_release": {
+                "name": "1.1",
+                "date": "2021-11-14 21:37:31 +0000",
+                "tag": "1.1"
+            },
+            "releases": 1,
+            "last_push": "2021-11-14 21:39:13 +0000",
+            "stars": 0,
+            "issues": {
+                "open": 0,
+                "closed": 0
+            }
+        },
         "stats": {
             "instances_month": 27,
             "install_events_month": 1,
