@@ -59,10 +59,10 @@ compatibility:
   1、Make sure OctoPrint is up and running ,and Raspberry Pi is online. 
   2、Make sure the above three plugins are installed.
   3、In Octoprint select Setting->Crealitycloud Plugin->click botton to get bind code 
-  ![Configuration](/assets/img/plugins/OctoPrint-CrealityCloud/1.png)
+  ![Configuration](/assets/img/plugins/crealitycloud/1.png)
   4、In Creality Could APP select print->Add Device->choose Raspberry Pi 
-  ![Configuration](/assets/img/plugins/OctoPrint-CrealityCloud/2.png)
+  ![Configuration](/assets/img/plugins/crealitycloud/2.png)
   5、input code or scan QR Code 
-  ![Configuration](/assets/img/plugins/OctoPrint-CrealityCloud/3.png)
+  ![Configuration](/assets/img/plugins/crealitycloud/3.png)
 
   Then you can control your Octoprint on Creality Could APP！
