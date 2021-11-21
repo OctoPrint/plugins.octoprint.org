@@ -34,9 +34,9 @@ tags:
 - remote app
 
 screenshots:
-# - url: /assets/img/octoapp/carousel.png
-#   alt: simple UI, made for Android
-#   caption: 
+- url: /assets/img/octoapp/screenshot.png
+  alt: Automatic setup
+  caption: OctoApp will connect automatically!
 # - url: url of another screenshot, /assets/img/...
 #   alt: alt-text of another screenshot
 #   caption: caption of another screenshot
