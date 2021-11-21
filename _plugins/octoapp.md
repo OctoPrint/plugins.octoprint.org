@@ -34,6 +34,9 @@ tags:
 - remote app
 
 screenshots:
+- url: /assets/img/plugins/octoapp/carousel.webp
+  alt: Get OctoApp on Google Play
+  caption: Get OctoApp on Google Play
 - url: /assets/img/plugins/octoapp/screenshot.png
   alt: Automatic setup
   caption: OctoApp will connect automatically!
