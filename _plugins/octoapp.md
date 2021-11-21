@@ -34,7 +34,7 @@ tags:
 - remote app
 
 screenshots:
-- url: /assets/img/octoapp/screenshot.png
+- url: /assets/img/plugins/octoapp/screenshot.png
   alt: Automatic setup
   caption: OctoApp will connect automatically!
 # - url: url of another screenshot, /assets/img/...
@@ -42,7 +42,7 @@ screenshots:
 #   caption: caption of another screenshot
 # - ...
 
-featuredimage: /assets/img/octoapp/carousel.webp
+featuredimage: /assets/img/plugins/octoapp/carousel.webp
 
 # You only need the following if your plugin requires specific OctoPrint versions or
 # specific operating systems to function - you can safely remove the whole
@@ -109,6 +109,6 @@ A plugin providing extra functionality to OctoApp:
 
 Get OctoApp on Google Play!
 
-[![Google Play](/assets/img/octoapp/google_play.png)](https://play.google.com/store/apps/details?id=de.crysxd.octoapp&hl=en&gl=US)
+[![Google Play](/assets/img/plugins/octoapp/google_play.png)](https://play.google.com/store/apps/details?id=de.crysxd.octoapp&hl=en&gl=US)
 
 This plugin requires OctoApp 1.11 or newer!
