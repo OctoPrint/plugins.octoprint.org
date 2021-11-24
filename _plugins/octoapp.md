@@ -14,7 +14,7 @@ date: 2021-11-21
 
 homepage: https://play.google.com/store/apps/details?id=de.crysxd.octoapp&hl=en&gl=US
 source: https://github.com/crysxd/OctoApp-Plugin
-archive: https://github.com/crysxd/OctoApp-Plugin/archive/refs/tags/1.0.3.zip
+archive: https://github.com/crysxd/OctoApp-Plugin/archive/refs/heads/release.zip
 
 # Set this to true if your plugin uses the dependency_links setup parameter to include
 # library versions not yet published on pypi. SHOULD ONLY BE USED IF THERE IS NO OTHER OPTION!
