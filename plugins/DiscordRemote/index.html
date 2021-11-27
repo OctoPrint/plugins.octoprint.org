@@ -290,7 +290,7 @@ This <strong>MUST</strong> be done by the owner of the Discord channel.</p>
       
       <dl class="installations">
         <dt>Active instances the past month</dt>
-        <dd>Installed on at least <strong>757</strong> instances</dd>
+        <dd>Installed on at least <strong>755</strong> instances</dd>
       </dl>
       
       
@@ -299,6 +299,24 @@ This <strong>MUST</strong> be done by the owner of the Discord channel.</p>
         <dd>At least <strong>16</strong> new installations</dd>
       </dl>
       
+      
+      <dl class="github">
+        <dt>GitHub stats <a href="/help/github_integration/" class="fas fa-question-circle"></a> <span id="github_login">(<a href="javascript:void(0)">Login</a>)</span></dt>
+        <dd>
+          <ul>
+            
+            <li>
+              Latest Release: <a href="https://github.com/cameroncros/OctoPrint-DiscordRemote/releases/tag/v3.3.0" target="_blank">v3.3.0</a><br>
+              <small>released on 02 Nov 2021</small>
+            </li>
+            <li>Releases: 73</li>
+            
+            <li>Stars: <span id="github_star_count">49</span> <span id="github_star"><a href="javascript:void(0)"><i class="far fa-star"></i></a></span></li>
+            <li>Issues: 2 open, 160 closed</li>
+            <li>Last push: 02 Nov 2021</li>
+          </ul>
+        </dd>
+      </dl>
       
       
       <dl class="tags">
@@ -332,7 +350,7 @@ This <strong>MUST</strong> be done by the owner of the Discord channel.</p>
             <li>Operating Systems: all</li>
             
             
-            <li>Python: &gt;=2.7,&lt;3</li>
+            <li>Python: &gt;=3.6,&lt;4</li>
             
           </ul>
         </dd>
@@ -397,9 +415,9 @@ This <strong>MUST</strong> be done by the owner of the Discord channel.</p>
 
 <script type="application/javascript">
   $(function() {
-    var has_github = false;
+    var has_github = true;
     if (has_github) {
-      var github_repo = "";
+      var github_repo = "cameroncros/OctoPrint-DiscordRemote";
 
       if (github_repo) {
         var status = "unknown";

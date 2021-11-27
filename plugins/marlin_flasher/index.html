@@ -294,15 +294,33 @@ You can install multiple libraries if your firmware needs it, upload your firmwa
       
       <dl class="installations">
         <dt>Active instances the past month</dt>
-        <dd>Installed on at least <strong>1.26k</strong> instances</dd>
+        <dd>Installed on at least <strong>1.25k</strong> instances</dd>
       </dl>
       
       
       <dl class="install_events">
         <dt>New installs the past week</dt>
-        <dd>At least <strong>54</strong> new installations</dd>
+        <dd>At least <strong>51</strong> new installations</dd>
       </dl>
       
+      
+      <dl class="github">
+        <dt>GitHub stats <a href="/help/github_integration/" class="fas fa-question-circle"></a> <span id="github_login">(<a href="javascript:void(0)">Login</a>)</span></dt>
+        <dd>
+          <ul>
+            
+            <li>
+              Latest Release: <a href="https://github.com/Renaud11232/OctoPrint-Marlin-Flasher/releases/tag/0.5.1" target="_blank">0.5.1</a><br>
+              <small>released on 12 Apr 2021</small>
+            </li>
+            <li>Releases: 41</li>
+            
+            <li>Stars: <span id="github_star_count">33</span> <span id="github_star"><a href="javascript:void(0)"><i class="far fa-star"></i></a></span></li>
+            <li>Issues: 6 open, 70 closed</li>
+            <li>Last push: 12 Apr 2021</li>
+          </ul>
+        </dd>
+      </dl>
       
       
       <dl class="tags">
@@ -397,9 +415,9 @@ You can install multiple libraries if your firmware needs it, upload your firmwa
 
 <script type="application/javascript">
   $(function() {
-    var has_github = false;
+    var has_github = true;
     if (has_github) {
-      var github_repo = "";
+      var github_repo = "Renaud11232/OctoPrint-Marlin-Flasher";
 
       if (github_repo) {
         var status = "unknown";
