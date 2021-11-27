@@ -308,24 +308,6 @@
       </dl>
       
       
-      <dl class="github">
-        <dt>GitHub stats <a href="/help/github_integration/" class="fas fa-question-circle"></a> <span id="github_login">(<a href="javascript:void(0)">Login</a>)</span></dt>
-        <dd>
-          <ul>
-            
-            <li>
-              Latest Release: <a href="https://github.com/vitormhenrique/OctoPrint-Enclosure/releases/tag/4.13.2" target="_blank">4.13.2</a><br>
-              <small>released on 18 Oct 2021</small>
-            </li>
-            <li>Releases: 28</li>
-            
-            <li>Stars: <span id="github_star_count">321</span> <span id="github_star"><a href="javascript:void(0)"><i class="far fa-star"></i></a></span></li>
-            <li>Issues: 135 open, 251 closed</li>
-            <li>Last push: 10 Nov 2021</li>
-          </ul>
-        </dd>
-      </dl>
-      
       
       <dl class="tags">
         <dt>Tags</dt>
@@ -382,7 +364,7 @@
             <li>Operating Systems: Linux, FreeBSD</li>
             
             
-            <li>Python: &gt;=2.7,&lt;4</li>
+            <li>Python: &gt;=2.7,&lt;3</li>
             
           </ul>
         </dd>
@@ -441,9 +423,9 @@
 
 <script type="application/javascript">
   $(function() {
-    var has_github = true;
+    var has_github = false;
     if (has_github) {
-      var github_repo = "vitormhenrique/OctoPrint-Enclosure";
+      var github_repo = "";
 
       if (github_repo) {
         var status = "unknown";

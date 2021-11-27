@@ -295,27 +295,9 @@ You can easily access all the options in the settings under “Custom Control Ed
       
       <dl class="install_events">
         <dt>New installs the past week</dt>
-        <dd>At least <strong>42</strong> new installations</dd>
+        <dd>At least <strong>43</strong> new installations</dd>
       </dl>
       
-      
-      <dl class="github">
-        <dt>GitHub stats <a href="/help/github_integration/" class="fas fa-question-circle"></a> <span id="github_login">(<a href="javascript:void(0)">Login</a>)</span></dt>
-        <dd>
-          <ul>
-            
-            <li>
-              Latest Release: <a href="https://github.com/Salandora/octoprint-customControl/releases/tag/0.2.2" target="_blank">0.2.2</a><br>
-              <small>released on 07 May 2020</small>
-            </li>
-            <li>Releases: 4</li>
-            
-            <li>Stars: <span id="github_star_count">22</span> <span id="github_star"><a href="javascript:void(0)"><i class="far fa-star"></i></a></span></li>
-            <li>Issues: 21 open, 17 closed</li>
-            <li>Last push: 03 May 2020</li>
-          </ul>
-        </dd>
-      </dl>
       
       
       <dl class="tags">
@@ -402,9 +384,9 @@ You can easily access all the options in the settings under “Custom Control Ed
 
 <script type="application/javascript">
   $(function() {
-    var has_github = true;
+    var has_github = false;
     if (has_github) {
-      var github_repo = "Salandora/octoprint-customControl";
+      var github_repo = "";
 
       if (github_repo) {
         var status = "unknown";
