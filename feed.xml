@@ -5,10 +5,47 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>https://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 01 Dec 2021 18:53:18 -0600</pubDate>
-    <lastBuildDate>Wed, 01 Dec 2021 18:53:18 -0600</lastBuildDate>
+    <pubDate>Wed, 01 Dec 2021 19:27:55 -0600</pubDate>
+    <lastBuildDate>Wed, 01 Dec 2021 19:27:55 -0600</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
+    
+      <item>
+        <title>OctoApp</title>
+        <description>
+          <![CDATA[
+            The Companion Plugin for OctoApp
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/octoapp/carousel.webp"></p>
+          ]]>
+        </description>
+        <pubDate>
+Wed, 01 Dec 2021 00:00:00 -0600</pubDate>
+        <link>https://plugins.octoprint.org/plugins/octoapp/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/octoapp/</guid>
+        
+        <category>android</category>
+        
+        <category>app</category>
+        
+        <category>notifications</category>
+        
+        <category>push</category>
+        
+        <category>print finished</category>
+        
+        <category>control</category>
+        
+        <category>phone</category>
+        
+        <category>octoapp</category>
+        
+        <category>monitor</category>
+        
+        <category>monitoring</category>
+        
+        <category>remote app</category>
+        
+      </item>
     
       <item>
         <title>PSU Control - MQTT</title>
@@ -235,35 +272,6 @@ Sat, 21 Aug 2021 00:00:00 -0500</pubDate>
         <category>UI</category>
         
         <category>plotly</category>
-        
-      </item>
-    
-      <item>
-        <title>Octoprint-Chituboard</title>
-        <description>
-          <![CDATA[
-            compatibility layer for SLA printers with Chituboards like the Photon and Mars series
-            <p><img src="https://plugins.octoprint.org/assets/img/plugins/Chituboard/octoprint_chituboard.png"></p>
-          ]]>
-        </description>
-        <pubDate>
-Mon, 16 Aug 2021 00:00:00 -0500</pubDate>
-        <link>https://plugins.octoprint.org/plugins/Chituboard/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/Chituboard/</guid>
-        
-        <category>anycubic</category>
-        
-        <category>elegoo</category>
-        
-        <category>chituboard</category>
-        
-        <category>printer</category>
-        
-        <category>resin printer</category>
-        
-        <category>broken firmware</category>
-        
-        <category>workaround</category>
         
       </item>
     

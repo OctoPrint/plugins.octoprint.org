@@ -3562,6 +3562,17 @@
 "author": "oerkel47",
 "content": "PSU Control - MQTTMQTT subplugin for PSU ControlLets you control any MQTT controlled switch with PSU Control.Please check the github repo for up to date information and more detailsRequirements:  MQTT plugin for OctoPrint  PSU Control plugin for OctoPrint",
 "tags": ["control","psucontrol","psucontrol subplugin","mqtt"]
+},
+
+{
+"id": "/plugins/octoapp",
+"url": "/plugins/octoapp/",
+"date": "2021-12-01 00:00:00 -0600",
+"title": "OctoApp",
+"description": "The Companion Plugin for OctoApp",
+"author": "Christian Würthner",
+"content": "A plugin providing extra functionality to OctoApp:  Remote push notification for events like print completion or filament change with end-to-end encryption  Remote push notifications for your print progress with end-to-end encryption  More coming in the future!Get OctoApp on Google Play!This plugin requires OctoApp 1.11 or newer!",
+"tags": ["android","app","notifications","push","print finished","control","phone","octoapp","monitor","monitoring","remote app"]
 }
 ]
 }
