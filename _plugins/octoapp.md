@@ -10,7 +10,7 @@ authors:
 license: AGPL v3
 
 # today's date in format YYYY-MM-DD, e.g.
-date: 2021-11-21
+date: 2021-12-01
 
 homepage: https://play.google.com/store/apps/details?id=de.crysxd.octoapp&hl=en&gl=US
 source: https://github.com/crysxd/OctoApp-Plugin
