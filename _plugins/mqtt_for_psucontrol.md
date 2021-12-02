@@ -1,8 +1,8 @@
 ---
 layout: plugin
 id: mqtt_for_psucontrol
-title: MQTT for PSU Control
-description: Use MQTT and/or Home Assistant to control the switch you use with the PSU Control plugin.
+title: MQTT exposure for PSU Control
+description: Control your PSU Control with MQTT or Home Assistant
 archive: https://github.com/oerkel47/OctoPrint-MQTT-for-PSUcontrol/archive/main.zip
 homepage: https://github.com/oerkel47/OctoPrint-MQTT-for-PSUcontrol
 source: https://github.com/oerkel47/OctoPrint-MQTT-for-PSUcontrol
@@ -27,16 +27,15 @@ compatibility:
 
 ---
 
-# MQTT for PSU Control
-This plugin interfaces between [PSU Control](https://github.com/kantlivelong/OctoPrint-PSUControl) plugin and [MQTT](https://github.com/OctoPrint/OctoPrint-MQTT) plugin and adds support for [Home Assistant](https://www.home-assistant.io) discovery. 
+# MQTT exposure for PSU Control
+Exposes [PSU Control](https://github.com/kantlivelong/OctoPrint-PSUControl) switch on MQTT so you can access it from somewhere else. Supports Home Assistant discovery for easy setup.
 
-For more information please visit the [homepage](https://github.com/oerkel47/OctoPrint-MQTT-for-PSUcontrol).
+This plugin does **not** connect a smart plug to PSU Control. If this is what you need , take a look at "PSU Control - MQTT" instead.
 
-## What it does
-- Let's you control and monitor the switch that is configured in PSU Control via the MQTT protocol.
-- Supports Home Assistant discovery to integrate everything easily.
+**Please check the [github repo](https://github.com/oerkel47/OctoPrint-MQTT-for-PSUcontrol) for up to date information and more details**
 
-## What you need
- - configured and running [MQTT](https://github.com/OctoPrint/OctoPrint-MQTT) plugin for OctoPrint
- - [PSU Control](https://github.com/kantlivelong/OctoPrint-PSUControl) plugin for OctoPrint
- - optional: [Home Assistant](https://www.home-assistant.io)
+# Requirements:
+- [MQTT plugin for OctoPrint](https://plugins.octoprint.org/plugins/mqtt/)
+- [PSU Control plugin for OctoPrint](https://plugins.octoprint.org/plugins/psucontrol/)
+
+
