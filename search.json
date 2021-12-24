@@ -3573,6 +3573,17 @@
 "author": "Christian Würthner",
 "content": "A plugin providing extra functionality to OctoApp:  Remote push notification for events like print completion or filament change with end-to-end encryption  Remote push notifications for your print progress with end-to-end encryption  More coming in the future!Get OctoApp on Google Play!This plugin requires OctoApp 1.11 or newer!",
 "tags": ["android","app","notifications","push","print finished","control","phone","octoapp","monitor","monitoring","remote app"]
+},
+
+{
+"id": "/plugins/BLOCKS",
+"url": "/plugins/BLOCKS/",
+"date": "2021-12-24 00:00:00 -0600",
+"title": "Blocks",
+"description": "Theme for Blocks 3D printers and extended functionalities.",
+"author": "Hugo C. Lopes Santos Costa",
+"content": "About      This plugin was made with the intention of offering a different experience to users with Blocks 3D printers.The plugin reorganizes the user interface in order to display all relevant information in a grid.Adding to this, users can also add new network connections with Octoprint!        This functionality works best with the automatic creation of hotspots on a raspberry pi when no internet connection was made.Check out https://medium.com/@kennethjiang/painless-wi-fi-for-octoprint-4e6b68005400 for more information about that.        If the 3D printer is from Blocks additional functionality is available.For example, if run with the Blocks R21 printer additional wifi reporting from octoprint to the printer is enabled.        The plugin is in constant development.  MoreKnown Issues  There are some compatibility issues with other plugins on the repository.An example of this are plugins that make use of the classic octoprint control tab and the consolidated tabs pluginGet Help  Any issues or requests can be made on the main homepage located on the right.Acknowledgments  I’d like to express my gratitude to the OctoPrint devs and the community.      I recommend joining the official discord channel for OctoPrint, help is always given to those who ask.    Used and studied the code from:https://github.com/LazeMSS/OctoPrint-UICustomizer/ https://github.com/ManuelMcLure/OctoPrint-WiFiStatus/Also See",
+"tags": ["wifi","UI","Grid","theme","Blocks Printers","Notifications"]
 }
 ]
 }

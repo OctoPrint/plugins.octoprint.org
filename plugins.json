@@ -3054,7 +3054,7 @@
                 "tag": "1.1.0"
             },
             "releases": 52,
-            "last_push": "2021-11-12 22:52:15 +0000",
+            "last_push": "2021-12-24 18:41:17 +0000",
             "stars": 50,
             "issues": {
                 "open": 6,
@@ -12249,6 +12249,39 @@
             "install_events_month": 2042,
             "instances_week": 1715,
             "install_events_week": 266
+        }
+    },
+
+    {
+        "id": "BLOCKS",
+        "published": "2021-12-24 00:00:00 -0600",
+        "title": "Blocks",
+        "description": "Theme for Blocks 3D printers and extended functionalities.",
+        "archive": "https://github.com/HugoCLSC/Octoprint-BLOCKS/archive/master.zip",
+        "author": "Hugo C. Lopes Santos Costa",
+        "homepage": "https://github.com/HugoCLSC/OctoPrint-BLOCKS",
+        "page": "https://plugins.octoprint.org/plugins/BLOCKS/",
+        "compatibility": {
+            "octoprint": ["1.7.2"],
+            "os": ["linux"],
+            "python": ">=3.3,<4"
+        },
+        "license": "AGPLv3",
+        "image": "https://plugins.octoprint.org/assets/img/plugins/BLOCKS/Blocks_VECTORIZADOpreto.png",
+        "abandoned": false,
+        "github": { 
+            "last_push": "2021-12-23 11:27:47 +0000",
+            "stars": 0,
+            "issues": {
+                "open": 0,
+                "closed": 0
+            }
+        },
+        "stats": {
+            "instances_month": 11,
+            "install_events_month": 0,
+            "instances_week": 3,
+            "install_events_week": 0
         }
     }
 ]
