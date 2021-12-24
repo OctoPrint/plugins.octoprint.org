@@ -8,7 +8,7 @@ authors:
 - Hugo C. Lopes Santos Costa
 license: AGPLv3
 
-date: 2021-12-17
+date: 2021-12-24
 
 homepage: https://github.com/HugoCLSC/OctoPrint-BLOCKS
 source: https://github.com/HugoCLSC/Octoprint-BLOCKS
