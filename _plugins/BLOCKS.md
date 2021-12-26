@@ -12,7 +12,7 @@ date: 2021-12-24
 
 homepage: https://github.com/HugoCLSC/OctoPrint-BLOCKS
 source: https://github.com/HugoCLSC/Octoprint-BLOCKS
-archive: https://github.com/HugoCLSC/Octoprint-BLOCKS/archive/master.zip
+archive: https://github.com/HugoCLSC/Octoprint-BLOCKS/archive/main.zip
 
 tags:
 - wifi
