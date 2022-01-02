@@ -32,9 +32,9 @@ screenshots:
 - url: /assets/img/plugins/SlicerEstimator/file_metadata1.png
   alt: Update of file metadata after upload (1)
   caption: Updates estimation on upload from slicer (1)
-- url: /assets/img/plugins/SlicerEstimator/OctoPrint-estimator_dot.png
-  alt: OctoPrint shows that Slicer information is detected and accurate
-  caption: Slicer information detected
+- url: /assets/img/plugins/SlicerEstimator/file_metadata2.png
+  alt: Update of file metadata after upload (2)
+  caption: Updates estimation on upload from slicer (2)
 - url: /assets/img/plugins/SlicerEstimator/file_custom_metadata.png
   alt: Custom metadata in filelist
   caption: Slicer information detected
