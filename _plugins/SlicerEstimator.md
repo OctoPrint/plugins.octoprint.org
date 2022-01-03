@@ -3,7 +3,7 @@ layout: plugin
 
 id: SlicerEstimator
 title: Slicer Print Time Estimator
-description: Slicer Print Time Estimator is a generic implemenation to read accurate remaining time to print embedded in the GCODE file by the slicer
+description: Slicer Print Time Estimator - read accurate remaining time to print and other custom metadata embedded in the GCODE file by the slicer
 author: Nils Hendrik Rottgardt
 license: AGPLv3
 date: 2021-02-24
@@ -18,6 +18,7 @@ tags:
 - estimation
 - time
 - print time
+- metadata
 
 compatibility:
   python: ">=2.7,<4"
@@ -34,6 +35,9 @@ screenshots:
 - url: /assets/img/plugins/SlicerEstimator/file_metadata2.png
   alt: Update of file metadata after upload (2)
   caption: Updates estimation on upload from slicer (2)
+- url: /assets/img/plugins/SlicerEstimator/file_custom_metadata.png
+  alt: Custom metadata in filelist
+  caption: Slicer information detected
 - url: /assets/img/plugins/SlicerEstimator/Settings_Basic.png
   alt: OctoPrint selection of the Slicer
   caption: OctoPrint Basic Settings
@@ -46,7 +50,8 @@ screenshots:
 ---
 
 # Slicer Print Time Estimator - for an accurate remaining time to print
-With this plugin you can use the more accurate estimation of time remaining of the slicer instead of Octoprints estimations. So it will be very accurate, as the slicer created each command of the GCODE. Thanks to arhi for the idea and first implementation.
+With this plugin you can use the more accurate estimation of time remaining of the slicer instead of Octoprints estimations. So it will be very accurate, as the slicer created each command of the GCODE.
+Also it is possible to add custom metadata to the GCODE and make it visible in OctoPrints filelist like material type in Cura.
 
 The default configuration matches the syntax of the following slicers, but you can change it in the plugins custom settings according your needs.
 
