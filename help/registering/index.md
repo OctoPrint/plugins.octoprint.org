@@ -159,10 +159,12 @@ If all is in the green, follow these steps:
       #
       # Plugins that only wish to support Python 3 should set it to ">=3,<4".
       #
-      # If your plugin only supports Python 2 (worst case, not recommended for newly developed plugins since Python 2
-      # is EOL), leave at ">=2.7,<3"
+      # If your plugin only supports Python 2 it will no longer be accepted on the plugin repository.
+      #
+      # Uncomment the appropriate setting
 
-      python: ">=2.7,<3"
+      #python: ">=2.7,<3" # Python 2 & 3
+      #python: ">=3,<4" # Python 3 only
 
     ---
 

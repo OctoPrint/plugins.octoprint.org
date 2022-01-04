@@ -89,19 +89,9 @@ compatibility:
 
 UBL Mesh Editor can be used to view, edit and manage Marlin Unified Bed Leveling (UBL) meshes. 
 
-In its current state, this plugin is intended to be used to make minor tweaks to a mesh that is already valid and setup. This could be to correct a point that wasn't probed properly for some reason or to fine tune the mesh when using `PROBE_MANUALLY`. It won't help with the initial creation of a mesh, except in the case of starting with a zero mesh and manually editing points.
+See the plugin repository for the most up to date information and features: https://github.com/The-EG/OctoPrint-UBLMeshEdit
 
-*Note: this is only intended for UBL, and not any other ABL or MBL setup. It assumes a square mesh and will not function properly with other shapes.*
+*Note: this is only intended for UBL. This plugin will attempt to show and provide basic functionality for ABL meshes, but some features will be disabled and others may not function as expected.*
 
-## Usage
-
-With the printer connected and idle, switch to the 'UBL Mesh Editor' tab and click 'Get Mesh'. The current mesh will be shown.
-
-Click a point to edit the value. The current value will be shown next to 'Z Value.' That value can be changed by clicking up/down or by entering a value. To save the value, click 'Save Value.'
-
-UBL Mesh Editor can also save and load saved meshes. Select the mesh slot next to 'Mesh Save Slot' and click either 'Save' or 'Load.'
-
-*Note: the plugin does not currently verify the save mesh slot is valid.*
-
-For issues, [check the issues on GitHub](https://github.com/The-EG/OctoPrint-UBLMeshEdit/issues) and create one if needed.
+For issues and feature requests, [check the issues on GitHub](https://github.com/The-EG/OctoPrint-UBLMeshEdit/issues) and create one if needed.
 

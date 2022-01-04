@@ -2,8 +2,8 @@
 layout: plugin
 
 id: prusaslicerthumbnails
-title: PrusaSlicer Thumbnails
-description: Extracts embedded thumbnails from PrusaSlicer gcode files.
+title: Slicer Thumbnails
+description: Extracts various slicer's embedded thumbnails from gcode files.
 author: jneilliii
 license: AGPLv3
 
@@ -27,11 +27,9 @@ featuredimage: /assets/img/plugins/prusaslicerthumbnails/screenshot_thumbnail.pn
 
 ---
 
-# PrusaSlicer Thumbnails
+# Slicer Thumbnails
 
-This plugin will extract the embedded thumbnails from PrusaSlicer gcode files where the printer's profile ini file has the thumbnail option configured. This is default behavior for the Prusa Mini printer profile.
-
-The thumbnail image extracted will always be the last resolution provided in the thumbnail setting. So for example the Prusa Mini setting is `thumbnails = 16x16,220x124` so the thumbnail that will be extracted will be 220x124 pixels as seen in the screenshots below. See the Configuration section below for additional details.
+This plugin will extract embedded thumbnails from gcode files created from [PrusaSlicer](#PrusaSlicer), [SuperSlicer](#SuperSlicer), [Cura](#Cura), or [Simplify3D](#Simplify3D).
 
 The preview thumbnail can be shown in OctoPrint from the files list by clicking the newly added image button.
 
@@ -41,32 +39,37 @@ The thumbnail will open in a modal window.
 
 ![thumbnail](/assets/img/plugins/prusaslicerthumbnails/screenshot_thumbnail.png)
 
-If enabled in settings the thumbnail can also be embedded as an inline thumbnail within the file list itself. If you use this option it's highly recommended to use Themeify to make the file list taller and/or adjust the thumbnail's size.
-
-{:.table}
-| Selector                                            | CSS_Rule   | Value            |
-|-----------------------------------------------------|------------|------------------|
-| #files > div > div.gcode_files > div.scroll-wrapper | min-height | 800px !important |
+If enabled in settings the thumbnail can also be embedded as an inline thumbnail within the file list itself. If you use this option it's highly recommended to also set the option to set file list height or position inline image to the left.
 
 ![thumbnail](/assets/img/plugins/prusaslicerthumbnails/screenshot_inline_thumbnail.png)
 
 ## Configuration
 
-~~Since PrusaSlicer only enables thumbnails by default for the Prusa Mini you may need to manually update your configuration files. Those can be found by selecting `Show Configuration Folder` from the Help menu of the application and then inside the printers sub-folder you'll find your printer profiles.~~
+### PrusaSlicer
 
-**Update:** [PrusaSlicer](https://github.com/prusa3d/PrusaSlicer/issues/4112) has implemented setting the thumbnails in version 2.3.0-beta3.
+Available via the UI since version 2.3, requires expert mode to be enabled in the upper right corner of the program to see the setting.
 
-**Update:** [SuperSlicer](https://github.com/supermerill/SuperSlicer), an advanced fork of PrusaSlicer, now has image options in the Printer Settings as of version 2.2.53, big shout out to the team there. You must enable expert mode in order to see it. This plugin will use the `big` reoslution configured.
+![PrusaSlicer](/assets/img/plugins/prusaslicerthumbnails/screenshot_prusaslicer.png)
+
+**Warning**: the higher the resolution of the thumbnail you use in this setting the larger your gcode file will be when sliced.
+
+### SuperSlicer
+
+Available via the UI since version 2.2.53, requires expert mode to be enabled in the upper right corner of the program to see the setting.
 
 ![SuperSlicer](/assets/img/plugins/prusaslicerthumbnails/screenshot_superslicer.png)
 
-**Note:** If you don't see your printer's ini file in the printers sub-folder; you are probably using one of the bundled Prusa Printer profiles (ie MK3S). If so you may need to create a copy of this printer profile to be able to have an ini file to edit. To do this in PrusaSlicer go to the Printer Settings tab and Click the save button next to the printer list and give it a new name. Alternatively, push Prusa Research to update their bundled profiles to match the Mini by commenting in the issue posted on their repository [here](https://github.com/prusa3d/PrusaSlicer/issues/3488).
+**Warning**: the higher the resolution of the thumbnail you use in this setting the larger your gcode file will be when sliced.
 
-Open your desired printer profile in your favorite text editor and find the `thumbnails =` section and add the resolution that you would like to include in your sliced files, and therefore visible by this plugin. For example `thumbnails = 16x16,220x124` will be the equivalent of the Prusa Mini as described above.
+### Cura
 
-**Note:** Once you've made your changes you will need to restart PrusaSlicer in order for the changes to be used and embed the thumbnails in the exported gcode files.
+A post-processing script has been bundled since version 4.9. For older versions you can manually add the post-processing script as described [here](https://gist.github.com/jneilliii/4034c84d1ec219c68c8877d0e794ec4e).
 
-**Warning**: the higher the resolution of the thumbnail you enter in this setting the larger your gcode file will be when sliced.
+![Cura](/assets/img/plugins/prusaslicerthumbnails/screenshot_cura.png)
+
+### Simplify3D
+
+Available as a post-processing script for [windows](https://github.com/boweeble/s3d-thumbnail-generator) or [linux](https://github.com/NotExpectedYet/s3d-thumbnail-generator) thanks to [@boweeble](https://github.com/boweeble/) and [@NotExpectedYet](https://github.com/NotExpectedYet/).
 
 ## Get Help
 
