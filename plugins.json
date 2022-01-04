@@ -10509,7 +10509,7 @@
             "last_push": "2022-01-02 11:50:28 +0000",
             "stars": 2,
             "issues": {
-                "open": 0,
+                "open": 1,
                 "closed": 11
             }
         },
@@ -12282,6 +12282,44 @@
             "install_events_month": 99,
             "instances_week": 71,
             "install_events_week": 49
+        }
+    },
+
+    {
+        "id": "custom_gcode_events",
+        "published": "2022-01-02 00:00:00 -0600",
+        "title": "OctoPrint-Custom_gcode_events",
+        "description": "Enables the User to configure custom GCode hooks (both sent and received) that will fire a User-defined event to be picked up by other plugins.",
+        "archive": "https://github.com/RoboMagus/OctoPrint-Custom_gcode_events/archive/master.zip",
+        "author": "RoboMagus",
+        "homepage": "https://github.com/RoboMagus/OctoPrint-Custom_gcode_events",
+        "page": "https://plugins.octoprint.org/plugins/custom_gcode_events/",
+        "compatibility": {
+            "octoprint": [],
+            "os": [],
+            "python": ">=3,<4"
+        },
+        "license": "AGPLv3",
+        "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "Initial release",
+                "date": "2022-01-04 07:09:30 +0000",
+                "tag": "0.1.0"
+            },
+            "releases": 1,
+            "last_push": "2022-01-04 07:01:39 +0000",
+            "stars": 0,
+            "issues": {
+                "open": 0,
+                "closed": 0
+            }
+        },
+        "stats": {
+            "instances_month": 0,
+            "install_events_month": 0,
+            "instances_week": 0,
+            "install_events_week": 0
         }
     }
 ]
