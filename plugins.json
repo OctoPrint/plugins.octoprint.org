@@ -12321,5 +12321,44 @@
             "instances_week": 4,
             "install_events_week": 5
         }
+    },
+
+    {
+        "id": "onedrive_backup",
+        "published": "2022-01-03 00:00:00 -0600",
+        "title": "OneDrive Backup",
+        "description": "Automatically upload OctoPrint backups to Microsoft OneDrive",
+        "archive": "https://github.com/cp2004/OctoPrint-OneDrive-Backup/releases/latest/download/release.zip",
+        "author": "Charlie Powell",
+        "homepage": "https://github.com/cp2004/OctoPrint-OneDrive-Backup",
+        "page": "https://plugins.octoprint.org/plugins/onedrive_backup/",
+        "compatibility": {
+            "octoprint": ["1.5.0"],
+            "os": [],
+            "python": ">=3.7,<4"
+        },
+        "license": "AGPLv3",
+        "image": "https://plugins.octoprint.org/assets/img/plugins/onedrive_backup/config-3.png",
+        "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "1.0.0 First Release!",
+                "date": "2022-01-05 00:25:45 +0000",
+                "tag": "1.0.0"
+            },
+            "releases": 1,
+            "last_push": "2022-01-05 00:22:31 +0000",
+            "stars": 0,
+            "issues": {
+                "open": 0,
+                "closed": 4
+            }
+        },
+        "stats": {
+            "instances_month": 2,
+            "install_events_month": 2,
+            "instances_week": 2,
+            "install_events_week": 1
+        }
     }
 ]
