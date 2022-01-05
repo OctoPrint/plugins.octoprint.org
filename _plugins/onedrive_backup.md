@@ -12,7 +12,7 @@ date: 2022-01-03
 
 homepage: https://github.com/cp2004/OctoPrint-OneDrive-Backup
 source: https://github.com/cp2004/OctoPrint-OneDrive-Backup
-archive: https://github.com/cp2004/OctoPrint-OneDrive-Backup/releases/download/latest/release.zip
+archive: https://github.com/cp2004/OctoPrint-OneDrive-Backup/releases/latest/download/release.zip
 
 tags:
 - onedrive
@@ -41,7 +41,7 @@ compatibility:
 
 Install the plugin via the bundled Plugin Manager or manually using this URL:
 ```
-https://github.com/cp2004/OctoPrint-OneDrive-Backup/releases/download/latest/release.zip
+https://github.com/cp2004/OctoPrint-OneDrive-Backup/releases/latest/download/release.zip
 ```
 
 **Warning**: This plugin requires Python 3.7 or newer to install. To find out more about upgrading your OctoPrint install
