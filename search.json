@@ -3606,6 +3606,28 @@
 "author": "Charlie Powell",
 "content": "InstallationInstall the plugin via the bundled Plugin Manager or manually using this URL:https://github.com/cp2004/OctoPrint-OneDrive-Backup/releases/latest/download/release.zipWarning: This plugin requires Python 3.7 or newer to install. To find out more about upgrading your OctoPrint installto use Python 3, you can take a look at this postConfigurationOnce the plugin is installed and loaded, you can set it up to connect to your Microsoft account.Adding your accountSelect ‘Add account’ to generate a login code. Head to the URL linked to login with your account, entering the codegenerated and logging in with your Microsoft account. Grant OctoPrint OneDrive Backup access to your files.Once this is done, return the plugin, and it should show your account name &amp; a success message.Configuring the backup uploadYou can then configure the folder to save backups to. Select ‘Change Folder’ and then you should be able to navigatethrough your OneDrive folders to find somewhere for backups to be saved.Maybe give it a test after configuring it - head to the backup &amp; restore tab and create a backup. Upload progress willbe shown in a notification in the UI.Supporting DevelopmentI work on OctoPrint, OctoPrint plugins and help support the community in my spare time. It takes a lot of work, so ifyou are interested you can support me through GitHub Sponsors. You can contribute monthly or one time forany amount, you choose!Important Security NoticePlease be aware that this plugin stores its tokens for accessing your Microsoft account in OctoPrint’sconfiguration folder, as expected. As a result, if your OctoPrint install (or the server it is running on) iscompromised, your files in OneDrive are at risk.It is not recommended to install this plugin on OctoPrint installs accessible directly from theinternet, or multi-user installs where you may not trust every user.The author of this plugin is not responsible for any damage caused as a result of using this plugin.",
 "tags": ["onedrive","backup","cloud","microsoft"]
+},
+
+{
+"id": "/plugins/gpiostatus",
+"url": "/plugins/gpiostatus/",
+"date": "2022-01-08 00:00:00 -0600",
+"title": "GPIO Status",
+"description": "This plugin allows to check the Raspberry GPIO status.",
+"author": "danieleborgo",
+"content": "GPIO StatusThis OctoPrint plugin allows to check the GPIO statusby its web interface, without the need to connect via SSH.In addition, it permits knowing services’ status andhardware information.This plugin doesn’t know which pins are in use and whichare free, since its purpose is to just show their state.PrerequisitesThis plugin must be executed on a Rasperry and  requiresthe two commands raspi-config and raspi-gpio.They’re usually installed by default but, if they are not,the plugin will show a notification message on itssettings page.SetupInstall via the bundled Plugin Manageror manually using this URL:https://github.com/danieleborgo/OctoPrint-GPIOStatus/archive/master.zipScreenshotsLicenseThis software is distributed on GPLv3.0.",
+"tags": ["gpio","raspberry","raspberrypi","raspbian","linux","gpiostatus","pin","pins","bcm"]
+},
+
+{
+"id": "/plugins/shutdownbuttonledbuzzer",
+"url": "/plugins/shutdownbuttonledbuzzer/",
+"date": "2022-01-08 00:00:00 -0600",
+"title": "ShutdownButtonLEDBuzzer",
+"description": "This plugin implements a shutdown physical button for the Rasperry Pi, with a buzzer and a status LED.",
+"author": "danieleborgo",
+"content": "ShutdownButtonLEDBuzzerThis OctoPrint plugin implements a shutdown physical buttonfor the Rasperry Pi. It offers also a status LED to know whenOctoPrint is ready and a buzzer to signal the startup andthe shutdown. Remember that these signals may vary of fewseconds.SetupInstall via the bundled Plugin Manageror manually using this URL:https://github.com/danieleborgo/OctoPrint-ShutdownButtonLEDBuzzer/archive/master.zipCircuitThe circuit hereafter exposed is just the one set by default,since the plugin allows to edit each of these pin:  Button: by default directly on pin GPIO26  LED: by default on pin GPIO6  Buzzer: by default on pin GPIO12In case one of these features is not needed, it can bedeactivated by the apposite settings section.ConfigurationThis plugin offers several configuration parameters,accessible in the apposite OctoPrint section in setting:LicenseThis software is distributed on GPLv3.0.",
+"tags": ["raspberry","raspberrypi","raspbian","linux","gpio","shutdown","shutdownbutton","button","led","buzzer"]
 }
 ]
 }

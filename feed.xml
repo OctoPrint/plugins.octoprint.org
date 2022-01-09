@@ -5,10 +5,78 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>https://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 09 Jan 2022 11:24:47 -0600</pubDate>
-    <lastBuildDate>Sun, 09 Jan 2022 11:24:47 -0600</lastBuildDate>
+    <pubDate>Sun, 09 Jan 2022 12:19:23 -0600</pubDate>
+    <lastBuildDate>Sun, 09 Jan 2022 12:19:23 -0600</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
+    
+      <item>
+        <title>ShutdownButtonLEDBuzzer</title>
+        <description>
+          <![CDATA[
+            This plugin implements a shutdown physical button for the Rasperry Pi, with a buzzer and a status LED.
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/shutdownbuttonledbuzzer/circuit.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Sat, 08 Jan 2022 00:00:00 -0600</pubDate>
+        <link>https://plugins.octoprint.org/plugins/shutdownbuttonledbuzzer/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/shutdownbuttonledbuzzer/</guid>
+        
+        <category>raspberry</category>
+        
+        <category>raspberrypi</category>
+        
+        <category>raspbian</category>
+        
+        <category>linux</category>
+        
+        <category>gpio</category>
+        
+        <category>shutdown</category>
+        
+        <category>shutdownbutton</category>
+        
+        <category>button</category>
+        
+        <category>led</category>
+        
+        <category>buzzer</category>
+        
+      </item>
+    
+      <item>
+        <title>GPIO Status</title>
+        <description>
+          <![CDATA[
+            This plugin allows to check the Raspberry GPIO status.
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/gpiostatus/GPIO.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Sat, 08 Jan 2022 00:00:00 -0600</pubDate>
+        <link>https://plugins.octoprint.org/plugins/gpiostatus/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/gpiostatus/</guid>
+        
+        <category>gpio</category>
+        
+        <category>raspberry</category>
+        
+        <category>raspberrypi</category>
+        
+        <category>raspbian</category>
+        
+        <category>linux</category>
+        
+        <category>gpiostatus</category>
+        
+        <category>pin</category>
+        
+        <category>pins</category>
+        
+        <category>bcm</category>
+        
+      </item>
     
       <item>
         <title>OneDrive Backup</title>
@@ -221,60 +289,6 @@ Wed, 15 Sep 2021 00:00:00 -0500</pubDate>
         <category>smart queuing</category>
         
         <category>fleet management</category>
-        
-      </item>
-    
-      <item>
-        <title>Thingiverse Downloader</title>
-        <description>
-          <![CDATA[
-            Download and extract a thing from Thingiverse to your Octoprint instance
-            <p><img src="https://plugins.octoprint.org/assets/img/plugins/thingiverse_downloader/demo.png"></p>
-          ]]>
-        </description>
-        <pubDate>
-Fri, 10 Sep 2021 00:00:00 -0500</pubDate>
-        <link>https://plugins.octoprint.org/plugins/thingiverse_downloader/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/thingiverse_downloader/</guid>
-        
-        <category>thingiverse</category>
-        
-        <category>3d models</category>
-        
-      </item>
-    
-      <item>
-        <title>Safety Printer</title>
-        <description>
-          <![CDATA[
-            This plugin interfaces with Safety Printer MCU to improve your printer's safety.
-            <p><img src="https://plugins.octoprint.org/assets/img/plugins/SafetyPrinter/icon.PNG"></p>
-          ]]>
-        </description>
-        <pubDate>
-Mon, 30 Aug 2021 00:00:00 -0500</pubDate>
-        <link>https://plugins.octoprint.org/plugins/SafetyPrinter/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/SafetyPrinter/</guid>
-        
-        <category>fire</category>
-        
-        <category>smoke</category>
-        
-        <category>notification</category>
-        
-        <category>bed temperature</category>
-        
-        <category>hotend temperature</category>
-        
-        <category>safety</category>
-        
-        <category>flame detector</category>
-        
-        <category>emergency</category>
-        
-        <category>shutdown</category>
-        
-        <category>trip</category>
         
       </item>
     
