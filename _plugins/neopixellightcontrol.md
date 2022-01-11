@@ -4,8 +4,8 @@ layout: plugin
 id: neopixellightcontrol
 title: Neopixel Light Control
 description: Uses PI GPIO to control an external RGB LED Neopixel Strip (Including Power Control)
-#authors:
-#- first author name
+authors:
+- Lucas Härtel
 #- second autor name
 license: GNU General Public License
 
@@ -43,3 +43,5 @@ tags:
 #Neopixel Light Control
 
 For now it is still WIP (not working) and based on the Plugin GpioRgbController from Erik Gundersen.
+
+DO NOT USE!
