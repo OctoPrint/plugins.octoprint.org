@@ -14,7 +14,7 @@ date: 2022-01-11
 
 homepage: https://github.com/lucashaertel/octopi-neopixellightcontrol
 source: https://github.com/lucashaertel/octopi-neopixellightcontrol
-archive: archive link to install your plugin via pip, e.g. from github: https://github.com/username/repository/archive/master.zip
+archive: https://github.com/lucashaertel/octopi-neopixellightcontrol/archive/master.zip
 
 # Set this to true if your plugin uses the dependency_links setup parameter to include
 # library versions not yet published on pypi. SHOULD ONLY BE USED IF THERE IS NO OTHER OPTION!
