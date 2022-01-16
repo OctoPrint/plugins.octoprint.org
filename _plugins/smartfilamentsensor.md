@@ -86,6 +86,7 @@ compatibility:
 
   python: ">=2.7,<4"
 
+abandoned: https://github.com/OctoPrint/plugins.octoprint.org/issues/983
 ---
 
 # Octoprint-Smart-Filament-Sensor
