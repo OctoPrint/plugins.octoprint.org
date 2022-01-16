@@ -35,7 +35,7 @@ compatibility:
   - 1.3.9
 
 screenshots:
-- url: /assets/img/plugins/SlicerEstimator/OctoPrint-estimator_dot.png
+- url: /assets/img/plugins/SlicerEstimator/Printer_Estimation.png
   alt: OctoPrint shows that Slicer information is detected and accurate
   caption: Slicer information detected
 - url: /assets/img/plugins/SlicerEstimator/File_Metadata_1.png
