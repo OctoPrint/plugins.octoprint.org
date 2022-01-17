@@ -3,11 +3,11 @@ layout: plugin
 
 id: shutdownbuttonledbuzzer
 title: ShutdownButtonLEDBuzzer
-description: This plugin implements a shutdown physical button for the Rasperry Pi, with a buzzer and a status LED.
+description: It implements a shutdown physical button for the Raspberry Pi, with a buzzer and a status LED.
 
 authors:
 - danieleborgo
-#- second autor name
+#- second author name
 license: GPLv3
 
 # today's date in format YYYY-MM-DD, e.g.
@@ -107,14 +107,20 @@ compatibility:
 # ShutdownButtonLEDBuzzer
 
 This OctoPrint plugin implements a shutdown physical button
-for the Rasperry Pi. It offers also a status LED to know when
+for the Raspberry Pi. It offers also a status LED to know when
 OctoPrint is ready and a buzzer to signal the startup and
 the shutdown. Remember that these signals may vary of few
 seconds.
 
+## Note
+
+This plugin uses an **active** buzzer.
+
 ## Setup
 
-Install via the bundled [Plugin Manager](https://docs.octoprint.org/en/master/bundledplugins/pluginmanager.html)
+Install via the bundled
+[Plugin Manager](
+https://docs.octoprint.org/en/master/bundledplugins/pluginmanager.html)
 or manually using this URL:
 
     https://github.com/danieleborgo/OctoPrint-ShutdownButtonLEDBuzzer/archive/master.zip
@@ -127,10 +133,13 @@ since the plugin allows to edit each of these pin:
 
 - Button: by default directly on pin GPIO26
 - LED: by default on pin GPIO6
-- Buzzer: by default on pin GPIO12
+- Buzzer: by default on pin GPIO13
 
 In case one of these features is not needed, it can be
 deactivated by the apposite settings section.
+
+Always remember to properly check each connection, using
+the official datasheet, before turning on the Raspberry.
 
 ![circuit](/assets/img/plugins/shutdownbuttonledbuzzer/circuit.png)
 
@@ -145,4 +154,6 @@ accessible in the apposite OctoPrint section in setting:
 
 ## License
 
-This software is distributed on GPLv3.0.
+This software is distributed on GPLv3.0, more information
+available in [LICENSE.md](
+https://github.com/danieleborgo/OctoPrint-ShutdownButtonLEDBuzzer/blob/master/LICENSE.md).
