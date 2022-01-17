@@ -7,7 +7,7 @@
 <head>
     <meta charset="utf-8" />
     <title>GPIO Status</title>
-    <meta name="description" content="This plugin allows to check the Raspberry GPIO status.">
+    <meta name="description" content="Check the Raspberry GPIO status and other hardware data.">
     
     <meta name="referrer" content="same-origin">
     <meta name="google-site-verification" content="0EFsbaNygJcEinKPmzP-hTf0Ju6wDIpJxO5zvQtOQT0" />
@@ -200,25 +200,28 @@
       
 
       <p class="lead">
-        This plugin allows to check the Raspberry GPIO status.
+        Check the Raspberry GPIO status and other hardware data.
       </p>
       <h1 id="gpio-status">GPIO Status</h1>
 
 <p>This OctoPrint plugin allows to check the GPIO status
-by its web interface, without the need to connect via SSH.
-In addition, it permits knowing services’ status and
-hardware information.</p>
+by the web interface, without the need to connect via SSH.
+It also permits knowing services’ status and hardware
+information.</p>
+
+<h2 id="preliminary-note">Preliminary note</h2>
 
 <p>This plugin doesn’t know which pins are in use and which
-are free, since its purpose is to just show their state.</p>
+are free, since its purpose is to just show their state.
+Always remember to precisely check every GPIO connection
+before turning on the Raspberry according to the datasheet.</p>
 
 <h2 id="prerequisites">Prerequisites</h2>
 
-<p>This plugin must be executed on a Rasperry and  requires
+<p>This plugin must be executed on a Rasperry PI and requires
 the two commands <strong><em>raspi-config</em></strong> and <strong><em>raspi-gpio</em></strong>.
 They’re usually installed by default but, if they are not,
-the plugin will show a notification message on its
-settings page.</p>
+the plugin will show a notification message on its tab.</p>
 
 <h2 id="setup">Setup</h2>
 
@@ -230,14 +233,28 @@ or manually using this URL:</p>
 
 <h2 id="screenshots">Screenshots</h2>
 
-<p><img src="/assets/img/plugins/gpiostatus/Refresh.png" alt="Refresh" />
-<img src="/assets/img/plugins/gpiostatus/GPIO.png" alt="GPIO" />
-<img src="/assets/img/plugins/gpiostatus/Services.png" alt="Services" />
-<img src="/assets/img/plugins/gpiostatus/Hardware.png" alt="Hardware" /></p>
+<p>This is GPIO Status main page with all the view checkboxes:</p>
+
+<p><img src="/assets/img/plugins/gpiostatus/Checks.png" alt="Checks" /></p>
+
+<p>This is the compact representation of a GPIO:</p>
+
+<p><img src="/assets/img/plugins/gpiostatus/GPIO.png" alt="GPIO" /></p>
+
+<p>This plugin is also able to show services status:</p>
+
+<p><img src="/assets/img/plugins/gpiostatus/Services.png" alt="Services" /></p>
+
+<p>These are the Raspberry PI hardware information:</p>
+
+<p><img src="/assets/img/plugins/gpiostatus/Hardware.png" alt="Hardware" /></p>
+
+<p>More images are available <a href="https://github.com/danieleborgo/OctoPrint-GPIOStatus/tree/master/docs">here</a>.</p>
 
 <h2 id="license">License</h2>
 
-<p>This software is distributed on GPLv3.0.</p>
+<p>This software is distributed on GPLv3.0, more information
+available in <a href="https://github.com/danieleborgo/OctoPrint-GPIOStatus/blob/master/LICENSE.md">LICENSE.md</a>.</p>
 
 
       

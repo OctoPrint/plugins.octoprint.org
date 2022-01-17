@@ -7,7 +7,7 @@
 <head>
     <meta charset="utf-8" />
     <title>ShutdownButtonLEDBuzzer</title>
-    <meta name="description" content="This plugin implements a shutdown physical button for the Rasperry Pi, with a buzzer and a status LED.">
+    <meta name="description" content="It implements a shutdown physical button for the Raspberry Pi, with a buzzer and a status LED.">
     
     <meta name="referrer" content="same-origin">
     <meta name="google-site-verification" content="0EFsbaNygJcEinKPmzP-hTf0Ju6wDIpJxO5zvQtOQT0" />
@@ -200,19 +200,24 @@
       
 
       <p class="lead">
-        This plugin implements a shutdown physical button for the Rasperry Pi, with a buzzer and a status LED.
+        It implements a shutdown physical button for the Raspberry Pi, with a buzzer and a status LED.
       </p>
       <h1 id="shutdownbuttonledbuzzer">ShutdownButtonLEDBuzzer</h1>
 
 <p>This OctoPrint plugin implements a shutdown physical button
-for the Rasperry Pi. It offers also a status LED to know when
+for the Raspberry Pi. It offers also a status LED to know when
 OctoPrint is ready and a buzzer to signal the startup and
 the shutdown. Remember that these signals may vary of few
 seconds.</p>
 
+<h2 id="note">Note</h2>
+
+<p>This plugin uses an <strong>active</strong> buzzer.</p>
+
 <h2 id="setup">Setup</h2>
 
-<p>Install via the bundled <a href="https://docs.octoprint.org/en/master/bundledplugins/pluginmanager.html">Plugin Manager</a>
+<p>Install via the bundled
+<a href="https://docs.octoprint.org/en/master/bundledplugins/pluginmanager.html">Plugin Manager</a>
 or manually using this URL:</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://github.com/danieleborgo/OctoPrint-ShutdownButtonLEDBuzzer/archive/master.zip
@@ -226,11 +231,14 @@ since the plugin allows to edit each of these pin:</p>
 <ul>
   <li>Button: by default directly on pin GPIO26</li>
   <li>LED: by default on pin GPIO6</li>
-  <li>Buzzer: by default on pin GPIO12</li>
+  <li>Buzzer: by default on pin GPIO13</li>
 </ul>
 
 <p>In case one of these features is not needed, it can be
 deactivated by the apposite settings section.</p>
+
+<p>Always remember to properly check each connection, using
+the official datasheet, before turning on the Raspberry.</p>
 
 <p><img src="/assets/img/plugins/shutdownbuttonledbuzzer/circuit.png" alt="circuit" /></p>
 
@@ -245,7 +253,8 @@ accessible in the apposite OctoPrint section in setting:</p>
 
 <h2 id="license">License</h2>
 
-<p>This software is distributed on GPLv3.0.</p>
+<p>This software is distributed on GPLv3.0, more information
+available in <a href="https://github.com/danieleborgo/OctoPrint-ShutdownButtonLEDBuzzer/blob/master/LICENSE.md">LICENSE.md</a>.</p>
 
 
       
