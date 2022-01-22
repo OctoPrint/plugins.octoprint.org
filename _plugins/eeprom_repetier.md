@@ -28,7 +28,7 @@ featuredimage: /assets/img/plugins/eeprom_repetier/eeprom_values.png
 compatibility:
   python: ">=2.7,<4"
   octoprint:
-  - 1.5
+  - 1.5.0
 
 ---
 
