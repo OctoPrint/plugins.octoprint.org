@@ -3628,6 +3628,28 @@
 "author": "danieleborgo",
 "content": "ShutdownButtonLEDBuzzerThis OctoPrint plugin implements a shutdown physical buttonfor the Raspberry Pi. It offers also a status LED to know whenOctoPrint is ready and a buzzer to signal the startup andthe shutdown. Remember that these signals may vary of fewseconds.NoteThis plugin uses an active buzzer.SetupInstall via the bundledPlugin Manageror manually using this URL:https://github.com/danieleborgo/OctoPrint-ShutdownButtonLEDBuzzer/archive/master.zipCircuitThe circuit hereafter exposed is just the one set by default,since the plugin allows to edit each of these pin:  Button: by default directly on pin GPIO26  LED: by default on pin GPIO6  Buzzer: by default on pin GPIO13In case one of these features is not needed, it can bedeactivated by the apposite settings section.Always remember to properly check each connection, usingthe official datasheet, before turning on the Raspberry.ConfigurationThis plugin offers several configuration parameters,accessible in the apposite OctoPrint section in setting:LicenseThis software is distributed on GPLv3.0, more informationavailable in LICENSE.md.",
 "tags": ["raspberry","raspberrypi","raspbian","linux","gpio","shutdown","shutdownbutton","button","led","buzzer"]
+},
+
+{
+"id": "/plugins/activeconnections",
+"url": "/plugins/activeconnections/",
+"date": "2022-01-22 00:00:00 -0600",
+"title": "Active Connections",
+"description": "Displays list of active connections in a sidebar panel.",
+"author": "jneilliii",
+"content": "Active ConnectionsSimple plugin that displays a list of active connections in the sidebar of OctoPrint.Get HelpIf you experience issues with this plugin or need assistance please use the issue tracker at the plugin’s Homepage linked on the right.Additional PluginsCheck out my other plugins hereSupport My EffortsI, jneilliii, programmed this plugin for fun and do my best effort to support those that have issues with it, please return the favor and leave me a tip or become a Patron if you find this plugin helpful and want me to continue future development. No paypal.me? Send funds via PayPal to jneilliii@gmail.com",
+"tags": ["connection","network"]
+},
+
+{
+"id": "/plugins/googledrivefiles",
+"url": "/plugins/googledrivefiles/",
+"date": "2022-01-22 00:00:00 -0600",
+"title": "Google Drive Files",
+"description": "Adds Google Drive file access from within OctoPrint's file manager.",
+"author": "jneilliii",
+"content": "Google Drive FilesThis plugin will sync a configured folder in your Google Drive locally to your OctoPrint instance.ConfigurationOnce the Prerequisites are met and you have downloaded your client_secrets.json file follow the steps here to authorize the plugin to your newly created OAuth app.Get HelpIf you experience issues with this plugin or need assistance please use the issue tracker at the plugin’s Homepage linked on the right.Additional PluginsCheck out my other plugins hereSupport My EffortsI, jneilliii, programmed this plugin for fun and do my best effort to support those that have issues with it, please return the favor and leave me a tip or become a Patron if you find this plugin helpful and want me to continue future development. No paypal.me? Send funds via PayPal to jneilliii@gmail.com",
+"tags": ["google","cloud","sync"]
 }
 ]
 }

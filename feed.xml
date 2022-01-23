@@ -5,10 +5,50 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>https://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 22 Jan 2022 17:15:39 -0600</pubDate>
-    <lastBuildDate>Sat, 22 Jan 2022 17:15:39 -0600</lastBuildDate>
+    <pubDate>Sat, 22 Jan 2022 18:48:01 -0600</pubDate>
+    <lastBuildDate>Sat, 22 Jan 2022 18:48:01 -0600</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
+    
+      <item>
+        <title>Google Drive Files</title>
+        <description>
+          <![CDATA[
+            Adds Google Drive file access from within OctoPrint's file manager.
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/googledrivefiles/screenshot_filelist.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Sat, 22 Jan 2022 00:00:00 -0600</pubDate>
+        <link>https://plugins.octoprint.org/plugins/googledrivefiles/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/googledrivefiles/</guid>
+        
+        <category>google</category>
+        
+        <category>cloud</category>
+        
+        <category>sync</category>
+        
+      </item>
+    
+      <item>
+        <title>Active Connections</title>
+        <description>
+          <![CDATA[
+            Displays list of active connections in a sidebar panel.
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/activeconnections/screenshot.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Sat, 22 Jan 2022 00:00:00 -0600</pubDate>
+        <link>https://plugins.octoprint.org/plugins/activeconnections/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/activeconnections/</guid>
+        
+        <category>connection</category>
+        
+        <category>network</category>
+        
+      </item>
     
       <item>
         <title>ShutdownButtonLEDBuzzer</title>
@@ -239,56 +279,6 @@ Mon, 27 Sep 2021 00:00:00 -0500</pubDate>
         <category>openhab</category>
         
         <category>openhab3</category>
-        
-      </item>
-    
-      <item>
-        <title>OctoPrint-BedCooldown</title>
-        <description>
-          <![CDATA[
-            Turns off the bed heater toward the end of a print
-            <p><img src="https://plugins.octoprint.org/assets/img/plugins/bedcooldown/graph.png"></p>
-          ]]>
-        </description>
-        <pubDate>
-Sun, 26 Sep 2021 00:00:00 -0500</pubDate>
-        <link>https://plugins.octoprint.org/plugins/bedcooldown/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/bedcooldown/</guid>
-        
-        <category>heated bed</category>
-        
-        <category>bed temperature</category>
-        
-        <category>cooldown</category>
-        
-      </item>
-    
-      <item>
-        <title>Fractal Bridge</title>
-        <description>
-          <![CDATA[
-            Fractal's printer control plugin for OctoPrint
-            <p><img src="https://plugins.octoprint.org/assets/img/plugins/fractalbridge/fractal-home.png"></p>
-          ]]>
-        </description>
-        <pubDate>
-Wed, 15 Sep 2021 00:00:00 -0500</pubDate>
-        <link>https://plugins.octoprint.org/plugins/fractalbridge/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/fractalbridge/</guid>
-        
-        <category>cloud printing</category>
-        
-        <category>remote printing</category>
-        
-        <category>remote access</category>
-        
-        <category>video streaming</category>
-        
-        <category>automated printing</category>
-        
-        <category>smart queuing</category>
-        
-        <category>fleet management</category>
         
       </item>
     
