@@ -87,7 +87,7 @@ compatibility:
 
 ---
 
-<p class="lead">Now including OctoPrint app support, full framerate webcam streaming, live streaming, printer notifications, and much more! Your full OctoPrint portal, plugins, apps, and webcam everywhere!</b></p>
+<p class="lead">Now including OctoPrint app support, full framerate webcam streaming, live streaming, printer notifications, and much more! Your full OctoPrint portal, plugins, apps, and webcam everywhere!</p>
 
 ### 👋 Hello!
 
