@@ -5556,8 +5556,8 @@
             "last_push": "2022-01-31 09:07:55 +0000",
             "stars": 37,
             "issues": {
-                "open": 8,
-                "closed": 60
+                "open": 9,
+                "closed": 59
             }
         },
         "stats": {
@@ -6218,7 +6218,7 @@
             "last_push": "2022-01-27 13:24:22 +0000",
             "stars": 219,
             "issues": {
-                "open": 24,
+                "open": 25,
                 "closed": 257
             }
         },
@@ -9213,12 +9213,12 @@
         "abandoned": false,
         "github": { 
             "latest_release": {
-                "name": "V1.6.0",
-                "date": "2022-01-12 16:30:10 +0000",
-                "tag": "1.6.0"
+                "name": "V1.6.1",
+                "date": "2022-01-31 22:51:02 +0000",
+                "tag": "1.6.1"
             },
-            "releases": 18,
-            "last_push": "2022-01-12 16:14:19 +0000",
+            "releases": 19,
+            "last_push": "2022-01-31 22:47:39 +0000",
             "stars": 121,
             "issues": {
                 "open": 38,
@@ -12515,6 +12515,45 @@
             "install_events_month": 536,
             "instances_week": 506,
             "install_events_week": 276
+        }
+    },
+
+    {
+        "id": "printwatch",
+        "published": "2022-01-31 00:00:00 -0600",
+        "title": "Abort Failures - Printwatch",
+        "description": "PrintWatch monitors your prints for defects in real-time and optimizes your 3D printers using Artificial Intelligence",
+        "archive": "https://github.com/printpal-io/OctoPrint-Printwatch/archive/master.zip",
+        "author": "printpal.io",
+        "homepage": "https://github.com/printpal-io/OctoPrint-Printwatch",
+        "page": "https://plugins.octoprint.org/plugins/printwatch/",
+        "compatibility": {
+            "octoprint": ["1.3.2"],
+            "os": ["linux","windows","macos","freebsd"],
+            "python": ">=2.7,<4"
+        },
+        "license": "AGPLv3",
+        "image": "https://plugins.octoprint.org/assets/img/plugins/printwatch/printwatch.png",
+        "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "Official Release",
+                "date": "2022-01-28 19:04:22 +0000",
+                "tag": "1.0.18"
+            },
+            "releases": 1,
+            "last_push": "2022-01-28 18:52:15 +0000",
+            "stars": 3,
+            "issues": {
+                "open": 0,
+                "closed": 0
+            }
+        },
+        "stats": {
+            "instances_month": 2,
+            "install_events_month": 1,
+            "instances_week": 1,
+            "install_events_week": 0
         }
     }
 ]
