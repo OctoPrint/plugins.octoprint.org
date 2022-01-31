@@ -4,7 +4,9 @@ layout: plugin
 id: smartfilamentsensor
 title: Octoprint-Smart-Filament-Sensor
 description: A plugin to directly add Smart Filament Sensors like BigTreeTech Smart Filament Sensor to Octoprint.
-author: Anni Lange
+authors: 
+- Royrdan
+- Anni Lange
 license: GPLv3
 
 # today's date in format YYYY-MM-DD, e.g.
@@ -86,7 +88,6 @@ compatibility:
 
   python: ">=2.7,<4"
 
-abandoned: https://github.com/OctoPrint/plugins.octoprint.org/issues/983
 ---
 
 # Octoprint-Smart-Filament-Sensor
