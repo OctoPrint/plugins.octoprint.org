@@ -5,10 +5,33 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>https://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 06 Feb 2022 08:14:38 -0600</pubDate>
-    <lastBuildDate>Sun, 06 Feb 2022 08:14:38 -0600</lastBuildDate>
+    <pubDate>Sun, 06 Feb 2022 08:50:38 -0600</pubDate>
+    <lastBuildDate>Sun, 06 Feb 2022 08:50:38 -0600</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
+    
+      <item>
+        <title>Timelapse Purger</title>
+        <description>
+          <![CDATA[
+            Automatically deletes timelapses that are older than configured number of days.
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/timelapsepurger/screenshot.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Sun, 06 Feb 2022 00:00:00 -0600</pubDate>
+        <link>https://plugins.octoprint.org/plugins/timelapsepurger/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/timelapsepurger/</guid>
+        
+        <category>timelapse</category>
+        
+        <category>purge</category>
+        
+        <category>clean</category>
+        
+        <category>delete</category>
+        
+      </item>
     
       <item>
         <title>Abort Failures - Printwatch</title>
@@ -289,29 +312,6 @@ Wed, 01 Dec 2021 00:00:00 -0600</pubDate>
         <category>monitoring</category>
         
         <category>remote app</category>
-        
-      </item>
-    
-      <item>
-        <title>PSU Control - MQTT</title>
-        <description>
-          <![CDATA[
-            adds support for generic MQTT switches to PSU Control as a subplugin
-            <p><img src="https://plugins.octoprint.org/assets/img/plugins/psucontrol_mqtt/screenshot_settings.PNG"></p>
-          ]]>
-        </description>
-        <pubDate>
-Tue, 05 Oct 2021 00:00:00 -0500</pubDate>
-        <link>https://plugins.octoprint.org/plugins/psucontrol_mqtt/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/psucontrol_mqtt/</guid>
-        
-        <category>control</category>
-        
-        <category>psucontrol</category>
-        
-        <category>psucontrol subplugin</category>
-        
-        <category>mqtt</category>
         
       </item>
     
