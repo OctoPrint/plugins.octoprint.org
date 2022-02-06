@@ -8,7 +8,7 @@ authors:
 - jneilliii
 license: AGPLv3
 
-date: 2022-01-26
+date: 2022-02-06
 
 homepage: https://github.com/jneilliii/OctoPrint-TimelapsePurger
 source: https://github.com/jneilliii/OctoPrint-TimelapsePurger
