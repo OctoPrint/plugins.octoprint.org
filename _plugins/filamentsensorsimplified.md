@@ -7,7 +7,7 @@ description: This plugin reacts to filament sensor output. If triggered it issue
 author: Lukáš Malatinský
 license: AGPLv3
 
-date: 2020-04-23
+date: 2022-02-10
 
 homepage: https://github.com/LuckyX182/Filament_sensor_simplified
 source: https://github.com/LuckyX182/Filament_sensor_simplified
@@ -22,17 +22,22 @@ tags:
 - simple
 - trigger
 - runout
+- gpio
+- raspberry
 
 screenshots:
-- url: https://github.com/LuckyX182/Filament_sensor_simplified/blob/master/screenshots/settings.png
+- url: https://github.com/LuckyX182/Filament_sensor_simplified/raw/master/screenshots/settings.png
   alt: Settings page
   caption: Settings page
+- url: https://github.com/LuckyX182/Filament_sensor_simplified/raw/master/screenshots/navbar-icon1.png
+  alt: Navigation bar icon - filament present
+  caption: Navigation bar icon - filament present
+- url: https://github.com/LuckyX182/Filament_sensor_simplified/raw/master/screenshots/navbar-icon2.png
+  alt: Navigation bar icon - filament not present
+  caption: Navigation bar icon - filament not present
 - url: https://github.com/LuckyX182/Filament_sensor_simplified/raw/master/screenshots/no_conf_popup.png
   alt: No configuration pop-up
   caption: No configuration pop-up
-- url: https://github.com/LuckyX182/Filament_sensor_simplified/raw/master/screenshots/M600_disabled.png
-  alt: Pop-up for M600 disabled
-  caption: Pop-up for M600 disabled
 - url: https://github.com/LuckyX182/Filament_sensor_simplified/raw/master/screenshots/no_filament.png
   alt: No filament when starting print pop-up
   caption: No filament when starting print pop-up
@@ -66,12 +71,14 @@ Let's check some features:
 * test button so you know if your sensor really works or not
 * filament check at the start of the print - if no filament present it won't start printing, again pop-up will appear
 * filament check at the end of filament change - just to be sure you won't start printing with no filament
-* check if printer supports M600 when printer connected and gcode starts with M600 - if not user will be notified through pop-up
+* navbar icon where you can immediately see if the filament's in
 * info pop-up when plugin hasn't been configured
-* filament runouts can be repeatable which didn't work with other plugins I tried
+* filament runouts can be repeatable
 * user-friendly and easy to configure
 * pin validation so you don't accidentally save wrong pin number
 * detection of used GPIO mode - this makes it compatible with other plugins
+* handles delibrate M600 filament change
+* if your printer doesn't support M600 you have option to use Octoprint pause and the plugin will park the head to X0 Y0
 * runs on OctoPrint 1.3.0 and higher
 
 **NOTE: this plugin won't work if you use OctoPrint only to start printing from SD card**
@@ -86,19 +93,19 @@ or manually using this URL:
 #### Configuration
 
 Configuration consists of these parameters:
-1. **GPIO mode** - BOARD or BCM mode, **BOARD mode** - referring to the pins by the number, **BCM mode** - referring to the pins
+1. **Board mode** - Physical/BOARD or GPIO/BCM mode, **Physical/BOARD mode** - referring to the pins by the number, **GPIO/BCM mode** - referring to the pins
 by the "Broadcom SOC channel", if this is selected by 3rd party, this option will be disabled with note on GUI
 2. **pin number** - pin number based on selected mode
-3. **gcode** to send to printer on filament runout - default is M600 X0 Y0
-4. **power input to sensor** - input is connected to **ground or 3.3 V**
-5. **switch type** - switch should be **triggered when opened** (input of the sensor doesn't transfer to its output) or **triggered
-when closed** (input of the sensor is transferred to its output)
+3. **power input to sensor** - input is connected to **ground or 3.3 V**
+4. **switch type** - switch should be **triggered when opened** (input of the sensor doesn't transfer to its output) or **triggered when closed** (input of the sensor is transferred to its output)
+5. **runout action** - choose whether you want or send **M600 X0 Y0 or other G-code** or use **Octoprint pause**
+5. **g-code** to send to printer on filament runout - default is M600 X0 Y0
 
-Default pin is -1 (not configured) and ground (as it is safer, read below).
+Default pin is 0 (not configured) and ground (as it is safer, read warning below).
+
+After configuring it is best to restart Octoprint and dry-run to check if the filament change works correctly to avoid any problems.
 
 **WARNING! Never connect the switch input to 5V as it could fry the GPIO section of your Raspberry!**
-
-**WARNING! When using test button on input pin used by other application it will reset internal pull up/down resistor**
 
 #### Advice
 
