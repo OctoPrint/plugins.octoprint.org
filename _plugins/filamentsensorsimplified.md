@@ -7,7 +7,7 @@ description: This plugin reacts to filament sensor output. If triggered it issue
 author: Lukáš Malatinský
 license: AGPLv3
 
-date: 2022-02-10
+date: 2020-04-23
 
 homepage: https://github.com/LuckyX182/Filament_sensor_simplified
 source: https://github.com/LuckyX182/Filament_sensor_simplified
