@@ -26,25 +26,25 @@ tags:
 - raspberry
 
 screenshots:
-- url: https://github.com/LuckyX182/Filament_sensor_simplified/raw/master/screenshots/settings.png
+- url: /assets/img/plugins/filamentsensorsimplified/settings.png
   alt: Settings page
   caption: Settings page
-- url: https://github.com/LuckyX182/Filament_sensor_simplified/raw/master/screenshots/navbar-icon1.png
+- url: /assets/img/plugins/filamentsensorsimplified/navbar-icon1.png
   alt: Navigation bar icon - filament present
   caption: Navigation bar icon - filament present
-- url: https://github.com/LuckyX182/Filament_sensor_simplified/raw/master/screenshots/navbar-icon2.png
+- url: /assets/img/plugins/filamentsensorsimplified/navbar-icon2.png
   alt: Navigation bar icon - filament not present
   caption: Navigation bar icon - filament not present
-- url: https://github.com/LuckyX182/Filament_sensor_simplified/raw/master/screenshots/no_conf_popup.png
+- url: /assets/img/plugins/filamentsensorsimplified/no_conf_popup.png
   alt: No configuration pop-up
   caption: No configuration pop-up
-- url: https://github.com/LuckyX182/Filament_sensor_simplified/raw/master/screenshots/no_filament.png
+- url: /assets/img/plugins/filamentsensorsimplified/no_filament.png
   alt: No filament when starting print pop-up
   caption: No filament when starting print pop-up
-- url: https://github.com/LuckyX182/Filament_sensor_simplified/raw/master/screenshots/filament_runout.png
+- url: /assets/img/plugins/filamentsensorsimplified/filament_runout.png
   alt: Filament runout pop-up
   caption: Filament runout pop-up
-- url: https://github.com/LuckyX182/Filament_sensor_simplified/raw/master/screenshots/waiting_for_user_input.png
+- url: /assets/img/plugins/filamentsensorsimplified/waiting_for_user_input.png
   alt: Waiting for user input pop-up
   caption: Waiting for user input pop-up
 
