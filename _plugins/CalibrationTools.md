@@ -34,7 +34,7 @@ compatibility:
     - windows
     - macos
     - freebsd
-  python: ">=3,<4"
+  python: ">=2.7,<4"
 
 ---
 
