@@ -214,12 +214,14 @@ If triggered it issues configured command to printer.</p>
   <li>test button so you know if your sensor really works or not</li>
   <li>filament check at the start of the print - if no filament present it won’t start printing, again pop-up will appear</li>
   <li>filament check at the end of filament change - just to be sure you won’t start printing with no filament</li>
-  <li>check if printer supports M600 when printer connected and gcode starts with M600 - if not user will be notified through pop-up</li>
+  <li>navbar icon where you can immediately see if the filament’s in</li>
   <li>info pop-up when plugin hasn’t been configured</li>
-  <li>filament runouts can be repeatable which didn’t work with other plugins I tried</li>
+  <li>filament runouts can be repeatable</li>
   <li>user-friendly and easy to configure</li>
   <li>pin validation so you don’t accidentally save wrong pin number</li>
   <li>detection of used GPIO mode - this makes it compatible with other plugins</li>
+  <li>handles delibrate M600 filament change</li>
+  <li>if your printer doesn’t support M600 you have option to use Octoprint pause and the plugin will park the head to X0 Y0</li>
   <li>runs on OctoPrint 1.3.0 and higher</li>
 </ul>
 
@@ -237,20 +239,20 @@ or manually using this URL:</p>
 
 <p>Configuration consists of these parameters:</p>
 <ol>
-  <li><strong>GPIO mode</strong> - BOARD or BCM mode, <strong>BOARD mode</strong> - referring to the pins by the number, <strong>BCM mode</strong> - referring to the pins
+  <li><strong>Board mode</strong> - Physical/BOARD or GPIO/BCM mode, <strong>Physical/BOARD mode</strong> - referring to the pins by the number, <strong>GPIO/BCM mode</strong> - referring to the pins
 by the “Broadcom SOC channel”, if this is selected by 3rd party, this option will be disabled with note on GUI</li>
   <li><strong>pin number</strong> - pin number based on selected mode</li>
-  <li><strong>gcode</strong> to send to printer on filament runout - default is M600 X0 Y0</li>
   <li><strong>power input to sensor</strong> - input is connected to <strong>ground or 3.3 V</strong></li>
-  <li><strong>switch type</strong> - switch should be <strong>triggered when opened</strong> (input of the sensor doesn’t transfer to its output) or <strong>triggered
-when closed</strong> (input of the sensor is transferred to its output)</li>
+  <li><strong>switch type</strong> - switch should be <strong>triggered when opened</strong> (input of the sensor doesn’t transfer to its output) or <strong>triggered when closed</strong> (input of the sensor is transferred to its output)</li>
+  <li><strong>runout action</strong> - choose whether you want or send <strong>M600 X0 Y0 or other G-code</strong> or use <strong>Octoprint pause</strong></li>
+  <li><strong>g-code</strong> to send to printer on filament runout - default is M600 X0 Y0</li>
 </ol>
 
-<p>Default pin is -1 (not configured) and ground (as it is safer, read below).</p>
+<p>Default pin is 0 (not configured) and ground (as it is safer, read warning below).</p>
+
+<p>After configuring it is best to restart Octoprint and dry-run to check if the filament change works correctly to avoid any problems.</p>
 
 <p><strong>WARNING! Never connect the switch input to 5V as it could fry the GPIO section of your Raspberry!</strong></p>
-
-<p><strong>WARNING! When using test button on input pin used by other application it will reset internal pull up/down resistor</strong></p>
 
 <h4 id="advice">Advice</h4>
 
@@ -273,32 +275,37 @@ If you find it useful and like it, you can support me by clicking the button bel
         
         <figure>
           
-          <a href="https://github.com/LuckyX182/Filament_sensor_simplified/blob/master/screenshots/settings.png" data-lightbox="/plugins/filamentsensorsimplified" data-title="Settings page"><img src="https://github.com/LuckyX182/Filament_sensor_simplified/blob/master/screenshots/settings.png" alt="Settings page" title="Settings page"></a>
+          <a href="/assets/img/plugins/filamentsensorsimplified/settings.png" data-lightbox="/plugins/filamentsensorsimplified" data-title="Settings page"><img src="/assets/img/plugins/filamentsensorsimplified/settings.png" alt="Settings page" title="Settings page"></a>
         </figure>
         
         <figure>
           
-          <a href="https://github.com/LuckyX182/Filament_sensor_simplified/raw/master/screenshots/no_conf_popup.png" data-lightbox="/plugins/filamentsensorsimplified" data-title="No configuration pop-up"><img src="https://github.com/LuckyX182/Filament_sensor_simplified/raw/master/screenshots/no_conf_popup.png" alt="No configuration pop-up" title="No configuration pop-up"></a>
+          <a href="/assets/img/plugins/filamentsensorsimplified/navbar-icon1.png" data-lightbox="/plugins/filamentsensorsimplified" data-title="Navigation bar icon - filament present"><img src="/assets/img/plugins/filamentsensorsimplified/navbar-icon1.png" alt="Navigation bar icon - filament present" title="Navigation bar icon - filament present"></a>
         </figure>
         
         <figure>
           
-          <a href="https://github.com/LuckyX182/Filament_sensor_simplified/raw/master/screenshots/M600_disabled.png" data-lightbox="/plugins/filamentsensorsimplified" data-title="Pop-up for M600 disabled"><img src="https://github.com/LuckyX182/Filament_sensor_simplified/raw/master/screenshots/M600_disabled.png" alt="Pop-up for M600 disabled" title="Pop-up for M600 disabled"></a>
+          <a href="/assets/img/plugins/filamentsensorsimplified/navbar-icon2.png" data-lightbox="/plugins/filamentsensorsimplified" data-title="Navigation bar icon - filament not present"><img src="/assets/img/plugins/filamentsensorsimplified/navbar-icon2.png" alt="Navigation bar icon - filament not present" title="Navigation bar icon - filament not present"></a>
         </figure>
         
         <figure>
           
-          <a href="https://github.com/LuckyX182/Filament_sensor_simplified/raw/master/screenshots/no_filament.png" data-lightbox="/plugins/filamentsensorsimplified" data-title="No filament when starting print pop-up"><img src="https://github.com/LuckyX182/Filament_sensor_simplified/raw/master/screenshots/no_filament.png" alt="No filament when starting print pop-up" title="No filament when starting print pop-up"></a>
+          <a href="/assets/img/plugins/filamentsensorsimplified/no_conf_popup.png" data-lightbox="/plugins/filamentsensorsimplified" data-title="No configuration pop-up"><img src="/assets/img/plugins/filamentsensorsimplified/no_conf_popup.png" alt="No configuration pop-up" title="No configuration pop-up"></a>
         </figure>
         
         <figure>
           
-          <a href="https://github.com/LuckyX182/Filament_sensor_simplified/raw/master/screenshots/filament_runout.png" data-lightbox="/plugins/filamentsensorsimplified" data-title="Filament runout pop-up"><img src="https://github.com/LuckyX182/Filament_sensor_simplified/raw/master/screenshots/filament_runout.png" alt="Filament runout pop-up" title="Filament runout pop-up"></a>
+          <a href="/assets/img/plugins/filamentsensorsimplified/no_filament.png" data-lightbox="/plugins/filamentsensorsimplified" data-title="No filament when starting print pop-up"><img src="/assets/img/plugins/filamentsensorsimplified/no_filament.png" alt="No filament when starting print pop-up" title="No filament when starting print pop-up"></a>
         </figure>
         
         <figure>
           
-          <a href="https://github.com/LuckyX182/Filament_sensor_simplified/raw/master/screenshots/waiting_for_user_input.png" data-lightbox="/plugins/filamentsensorsimplified" data-title="Waiting for user input pop-up"><img src="https://github.com/LuckyX182/Filament_sensor_simplified/raw/master/screenshots/waiting_for_user_input.png" alt="Waiting for user input pop-up" title="Waiting for user input pop-up"></a>
+          <a href="/assets/img/plugins/filamentsensorsimplified/filament_runout.png" data-lightbox="/plugins/filamentsensorsimplified" data-title="Filament runout pop-up"><img src="/assets/img/plugins/filamentsensorsimplified/filament_runout.png" alt="Filament runout pop-up" title="Filament runout pop-up"></a>
+        </figure>
+        
+        <figure>
+          
+          <a href="/assets/img/plugins/filamentsensorsimplified/waiting_for_user_input.png" data-lightbox="/plugins/filamentsensorsimplified" data-title="Waiting for user input pop-up"><img src="/assets/img/plugins/filamentsensorsimplified/waiting_for_user_input.png" alt="Waiting for user input pop-up" title="Waiting for user input pop-up"></a>
         </figure>
         
       
@@ -386,6 +393,10 @@ If you find it useful and like it, you can support me by clicking the button bel
           
           
           <a class="label" href="/by_tag/#tag-filament">filament</a>
+          
+          <a class="label" href="/by_tag/#tag-gpio">gpio</a>
+          
+          <a class="label" href="/by_tag/#tag-raspberry">raspberry</a>
           
           <a class="label" href="/by_tag/#tag-runout">runout</a>
           
