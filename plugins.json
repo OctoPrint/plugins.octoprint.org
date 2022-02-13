@@ -12594,5 +12594,44 @@
             "instances_week": 556,
             "install_events_week": 557
         }
+    },
+
+    {
+        "id": "CalibrationTools",
+        "published": "2022-02-09 00:00:00 -0600",
+        "title": "Calibration Tools",
+        "description": "Marlin Calibration Tools",
+        "archive": "https://github.com/SergiuToporjinschi/OctoPrint-CalibrationTools/archive/main.zip",
+        "author": "Sergiu Toporjinschi",
+        "homepage": "https://github.com/SergiuToporjinschi/OctoPrint-CalibrationTools",
+        "page": "https://plugins.octoprint.org/plugins/CalibrationTools/",
+        "compatibility": {
+            "octoprint": ["1.2.0"],
+            "os": ["linux","windows","macos","freebsd"],
+            "python": ">=2.7,<4"
+        },
+        "license": "GNUv3",
+        "image": "https://plugins.octoprint.org/assets/img/plugins/CalibrationTools/featuredimage.png",
+        "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "1.0.0",
+                "date": "2022-02-08 20:55:46 +0000",
+                "tag": "1.0.0"
+            },
+            "releases": 3,
+            "last_push": "2022-02-13 07:24:19 +0000",
+            "stars": 0,
+            "issues": {
+                "open": 0,
+                "closed": 1
+            }
+        },
+        "stats": {
+            "instances_month": 2,
+            "install_events_month": 0,
+            "instances_week": 1,
+            "install_events_week": 0
+        }
     }
 ]

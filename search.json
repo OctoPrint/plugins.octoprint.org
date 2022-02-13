@@ -3672,6 +3672,17 @@
 "author": "jneilliii",
 "content": "Timelapse PurgerThis plugin will automatically delete timelapse files that are older than a configured number of days.Get HelpIf you experience issues with this plugin or need assistance please use the issue tracker at the plugin’s Homepage linked on the right.Additional PluginsCheck out my other plugins hereSupport My EffortsI, jneilliii, programmed this plugin for fun and do my best effort to support those that have issues with it, please return the favor and leave me a tip or become a Patron if you find this plugin helpful and want me to continue future development. No paypal.me? Send funds via PayPal to jneilliii@gmail.com",
 "tags": ["timelapse","purge","clean","delete"]
+},
+
+{
+"id": "/plugins/CalibrationTools",
+"url": "/plugins/CalibrationTools/",
+"date": "2022-02-09 00:00:00 -0600",
+"title": "Calibration Tools",
+"description": "Marlin Calibration Tools",
+"author": "Sergiu Toporjinschi",
+"content": "A set of tools to help users with calibration process.Supported tunings:  E Steps - calibrating number of steps/mm for E extruder;  XYZ Steps - calibrating number of steps/mm for axes X, Y and Z;  PID Auto-tune - calibration Proportional gain, Integral gain and Derivative values for hot-end and heated bed;Before start using this plugin I strongly recommend reading some documentation about tunning teachingtechyt.github.ioSupported frameworks  Marlin 2.xScreensSetupInstall via the bundled Plugin Manageror manually using this URL:https://github.com/SergiuToporjinschi/OctoPrint-CalibrationTools/archive/main.zipConfigurationYou can set the default values for each tuning process.",
+"tags": ["marlin","calibration","cube","pid","axes","printer","tools","extrusion"]
 }
 ]
 }
