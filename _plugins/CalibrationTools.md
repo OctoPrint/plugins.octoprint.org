@@ -12,7 +12,7 @@ date: 2022-02-09
 
 homepage: https://github.com/SergiuToporjinschi/OctoPrint-CalibrationTools
 source: https://github.com/SergiuToporjinschi/OctoPrint-CalibrationTools
-archive: https://github.com/SergiuToporjinschi/OctoPrint-CalibrationTools/archive/master.zip
+archive: https://github.com/SergiuToporjinschi/OctoPrint-CalibrationTools/archive/main.zip
 
 tags:
   - marlin
@@ -64,7 +64,7 @@ Before start using this plugin I strongly recommend reading some documentation a
 Install via the bundled [Plugin Manager](https://docs.octoprint.org/en/master/bundledplugins/pluginmanager.html)
 or manually using this URL:
 
-    https://github.com/SergiuToporjinschi/OctoPrint-CalibrationTools/archive/master.zip
+    https://github.com/SergiuToporjinschi/OctoPrint-CalibrationTools/archive/main.zip
 
 ## Configuration
 
