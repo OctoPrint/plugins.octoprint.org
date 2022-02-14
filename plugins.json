@@ -12633,5 +12633,44 @@
             "instances_week": 853,
             "install_events_week": 879
         }
+    },
+
+    {
+        "id": "emc2101",
+        "published": "2022-02-14 00:00:00 -0600",
+        "title": "OctoPrint-Emc2101",
+        "description": "Enable control of a PWM fan for your enclosue controlled by an Adafruit 2101",
+        "archive": "https://github.com/JeremyLaurenson/OctoPrint-Emc2101/archive/main.zip",
+        "author": "Jeremy Laurenson",
+        "homepage": "https://github.com/JeremyLaurenson/OctoPrint-Emc2101",
+        "page": "https://plugins.octoprint.org/plugins/emc2101/",
+        "compatibility": {
+            "octoprint": ["1.2.0"],
+            "os": ["linux"],
+            "python": ">=3,<4"
+        },
+        "license": "AGPLv3",
+        "image": "https://plugins.octoprint.org/assets/img/plugins/emc2101/screenshotv0.0.2.png",
+        "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "EMC2101 Octoprint Plugin",
+                "date": "2022-02-14 23:10:20 +0000",
+                "tag": "0.0.2"
+            },
+            "releases": 1,
+            "last_push": "2022-02-14 22:38:48 +0000",
+            "stars": 0,
+            "issues": {
+                "open": 0,
+                "closed": 0
+            }
+        },
+        "stats": {
+            "instances_month": 1,
+            "install_events_month": 1,
+            "instances_week": 1,
+            "install_events_week": 1
+        }
     }
 ]

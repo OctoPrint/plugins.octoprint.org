@@ -3683,6 +3683,17 @@
 "author": "Sergiu Toporjinschi",
 "content": "A set of tools to help users with calibration process.Supported tunings:  E Steps - calibrating number of steps/mm for E extruder;  XYZ Steps - calibrating number of steps/mm for axes X, Y and Z;  PID Auto-tune - calibration Proportional gain, Integral gain and Derivative values for hot-end and heated bed;Before start using this plugin I strongly recommend reading some documentation about tunning teachingtechyt.github.ioSupported frameworks  Marlin 2.xScreensSetupInstall via the bundled Plugin Manageror manually using this URL:https://github.com/SergiuToporjinschi/OctoPrint-CalibrationTools/archive/main.zipConfigurationYou can set the default values for each tuning process.",
 "tags": ["marlin","calibration","cube","pid","axes","printer","tools","extrusion"]
+},
+
+{
+"id": "/plugins/emc2101",
+"url": "/plugins/emc2101/",
+"date": "2022-02-14 00:00:00 -0600",
+"title": "OctoPrint-Emc2101",
+"description": "Enable control of a PWM fan for your enclosue controlled by an Adafruit 2101",
+"author": "Jeremy Laurenson",
+"content": "The EMC2101 plugin allows you to control the speed of a 4 pin PWM fan attached to an Adafruit EMC2101 board connected to your Raspberry Pi.",
+"tags": ["enclosure","fan","PWM","temperature"]
 }
 ]
 }
