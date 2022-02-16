@@ -3,7 +3,7 @@ layout: plugin
 
 id: octoprint_psucontrol_meross
 title: PSU Control - Meross
-description: Adds Meross IOT device support to OctoPrint-PSUControl
+description: Adds Meross IOT device support to PSUControl
 authors:
 - Ilja Orlovs
 license: AGPLv3
@@ -27,12 +27,9 @@ tags:
 - psucontrol
 - psucontrol-subplugin
 
-screenshots:
-- url: https://raw.githubusercontent.com/VRGhost/OctoPrint-PSUControl-Meross/stable-latest/docs/images/plugin_settings.png
-  alt: settings page
-  caption: Settings page
+# screenshots: []
 
-featuredimage: https://raw.githubusercontent.com/VRGhost/OctoPrint-PSUControl-Meross/stable-latest/docs/images/plugin_settings.png
+# featuredimage: null
 
 # You only need the following if your plugin requires specific OctoPrint versions or
 # specific operating systems to function - you can safely remove the whole
@@ -91,3 +88,6 @@ compatibility:
 ---
 
 This plugin enables the "PSU Control" plugin to control Meross devices.
+
+# Requirements:
+- [PSU Control plugin for OctoPrint](https://plugins.octoprint.org/plugins/psucontrol/)
