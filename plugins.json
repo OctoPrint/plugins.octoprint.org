@@ -12672,5 +12672,43 @@
             "instances_week": 39,
             "install_events_week": 34
         }
+    },
+
+    {
+        "id": "octoprint_psucontrol_meross",
+        "published": "2022-02-22 00:00:00 -0600",
+        "title": "PSU Control - Meross",
+        "description": "Adds Meross IOT device support to PSUControl",
+        "archive": "https://github.com/VRGhost/OctoPrint-PSUControl-Meross/archive/refs/tags/stable-latest.zip",
+        "author": "Ilja Orlovs",
+        "homepage": "https://github.com/VRGhost/OctoPrint-PSUControl-Meross",
+        "page": "https://plugins.octoprint.org/plugins/octoprint_psucontrol_meross/",
+        "compatibility": {
+            "octoprint": ["1.7.3"],
+            "os": ["linux","windows","macos","freebsd"],
+            "python": ">=3,<4"
+        },
+        "license": "AGPLv3",
+        "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "0.12.1",
+                "date": "2022-02-13 18:53:14 +0000",
+                "tag": "0.12.1"
+            },
+            "releases": 4,
+            "last_push": "2022-02-13 18:57:27 +0000",
+            "stars": 0,
+            "issues": {
+                "open": 0,
+                "closed": 0
+            }
+        },
+        "stats": {
+            "instances_month": 1,
+            "install_events_month": 1,
+            "instances_week": 0,
+            "install_events_week": 0
+        }
     }
 ]

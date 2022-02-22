@@ -3694,6 +3694,17 @@
 "author": "Jeremy Laurenson",
 "content": "The EMC2101 plugin allows you to control the speed of a 4 pin PWM fan attached to an Adafruit EMC2101 board connected to your Raspberry Pi.",
 "tags": ["enclosure","fan","PWM","temperature"]
+},
+
+{
+"id": "/plugins/octoprint_psucontrol_meross",
+"url": "/plugins/octoprint_psucontrol_meross/",
+"date": "2022-02-22 00:00:00 -0600",
+"title": "PSU Control - Meross",
+"description": "Adds Meross IOT device support to PSUControl",
+"author": "Ilja Orlovs",
+"content": "This plugin enables the “PSU Control” plugin to control Meross devices.Requirements:  PSU Control plugin for OctoPrint",
+"tags": ["control","meross","power","psu","psucontrol","psucontrol-subplugin"]
 }
 ]
 }
