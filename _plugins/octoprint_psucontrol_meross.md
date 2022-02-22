@@ -9,7 +9,7 @@ authors:
 license: AGPLv3
 
 # today's date in format YYYY-MM-DD, e.g.
-date: 2022-02-13
+date: 2022-02-22
 
 homepage: https://github.com/VRGhost/OctoPrint-PSUControl-Meross
 source: https://github.com/VRGhost/OctoPrint-PSUControl-Meross
