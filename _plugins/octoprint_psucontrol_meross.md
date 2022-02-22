@@ -25,7 +25,7 @@ tags:
 - power
 - psu
 - psucontrol
-- psucontrol-subplugin
+- psucontrol subplugin
 
 # screenshots: []
 
