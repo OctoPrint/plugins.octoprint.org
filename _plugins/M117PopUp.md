@@ -1,6 +1,6 @@
 ---
 layout: plugin
-    
+
 id: M117PopUp
 title: OctoPrint-M117PopUp
 description: Plugin to send M117 gcode messages to the web interface.
@@ -8,13 +8,13 @@ author: jneilliii
 license: AGPLv3
 
 date: 2016-10-27
-    
+
 homepage: https://github.com/jneilliii/OctoPrint-M117PopUp
 source: https://github.com/jneilliii/OctoPrint-M117PopUp
 archive: https://github.com/jneilliii/OctoPrint-M117PopUp/archive/master.zip
 
 follow_dependency_links: false
-    
+
 tags:
 - M117
 - gcode
@@ -27,7 +27,7 @@ featuredimage: /assets/img/plugins/M117PopUp/screenshot_1.png
 ---
 
 # M117PopUp
-    
+
 This plugin utilizes ``_plugin_manager.send_plugin_message`` and ``onDataUpdaterPluginMessage`` to communicate between server and client. It utilizes OctoPrint's built in alerting system to pop up the messages being sent via M117 gcode command.
 
 ## Screenshots

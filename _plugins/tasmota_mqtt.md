@@ -40,7 +40,7 @@ This plugin allows the control of [Tasmota](https://github.com/arendst/Sonoff-Ta
 Install the [MQTT](https://github.com/OctoPrint/OctoPrint-MQTT) plugin via the Plugin Manager or manually using this url:
 
 	https://github.com/OctoPrint/OctoPrint-MQTT/archive/master.zip
-	
+
 ## Settings
 
 ![settings](/assets/img/plugins/tasmota_mqtt/settings.png)

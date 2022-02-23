@@ -34,15 +34,15 @@ itself during startup utilizing the plugin manager.
 After installing the plugin and restarting, the plugin will check if you are
 running OctoPrint version 1.2.7 or 1.2.8.
 
-If you are running 1.2.7, it will apply the necessary fix to the loaded class 
-of the Software Update Plugin during start-up of the server (via so called monkey 
+If you are running 1.2.7, it will apply the necessary fix to the loaded class
+of the Software Update Plugin during start-up of the server (via so called monkey
 patching). Once your server has started you may then update as usual.
 
 If the plugin detects version 1.2.8 as running, it will uninstall itself
 and restart the server (since it's not necessary any more).
 
 If you are running neither 1.2.7 nor 1.2.8, the plugin will not do anything
-but change its name and description to hint at the fact that it should be 
+but change its name and description to hint at the fact that it should be
 uninstalled.
 
 Usually the process will look like the following:

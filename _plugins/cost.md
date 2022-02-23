@@ -1,6 +1,6 @@
 ---
 layout: plugin
-    
+
 id: cost
 title: Cost estimator
 description: When a file is loaded to be printed, it will display the estimated cost of printing.
@@ -14,11 +14,11 @@ follow_dependency_links: false
 tags:
 - helper
 - cost
-screenshots: 
+screenshots:
 - url: /assets/img/plugins/cost/screenshot.png
   alt: Screenshot.
   caption: Sample view.
-  
+
 abandoned: https://github.com/OctoPrint/plugins.octoprint.org/issues/608
 
 ---

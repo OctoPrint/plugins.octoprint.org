@@ -41,10 +41,10 @@ compatibility:
   - linux
   - windows
   - macos
-  
+
   python: ">=2.7,<4"
-  
-  octoprint: 
+
+  octoprint:
   - 1.4.0
 
 ---

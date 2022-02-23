@@ -54,5 +54,4 @@ This plugin supports the following features/events
 * Alert Event (M300)
 * Panic Event (M112)
 * Error Event
-* Limit to specific devices 
-
+* Limit to specific devices

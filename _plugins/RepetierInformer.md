@@ -7,7 +7,7 @@ description: Send notices to the Repetier-Informer app.
 author: Dan Delaney
 license: AGPLv3
 
-date: 2017-09-18 
+date: 2017-09-18
 
 homepage: https://github.com/drdelaney/OctoPrint-RepetierInformer
 source: https://github.com/drdelaney/OctoPrint-RepetierInformer

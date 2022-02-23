@@ -26,7 +26,7 @@ featuredimage: /assets/img/plugins/ipOnConnect/screenshot.jpg
 ---
 # ipOnConnect
 
-Simple plugin to display the ip address of connected OctoPrint instance on the control panel using M117 command. Feathured by Prusa Research and bundled with their OctoPrint image.
+Simple plugin to display the ip address of connected OctoPrint instance on the control panel using M117 command. Featured by Prusa Research and bundled with their OctoPrint image.
 
 ## Screenshots
 

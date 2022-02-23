@@ -36,7 +36,7 @@ tags:
 - remote monitoring
 - filament runout
 - s3
-- imgur 
+- imgur
 - minio
 - gcode
 - camera

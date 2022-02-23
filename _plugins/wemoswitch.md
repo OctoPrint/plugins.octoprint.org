@@ -1,6 +1,6 @@
 ---
 layout: plugin
-    
+
 id: wemoswitch
 title: OctoPrint-WemoSwitch
 description: Plugin to control Belkin Wemo devices from OctoPrint web interface.
@@ -8,13 +8,13 @@ author: jneilliii
 license: AGPLv3
 
 date: 2018-09-18
-    
+
 homepage: https://github.com/jneilliii/OctoPrint-WemoSwitch
 source: https://github.com/jneilliii/OctoPrint-WemoSwitch
 archive: https://github.com/jneilliii/OctoPrint-WemoSwitch/archive/master.zip
-    
+
 follow_dependency_links: false
-    
+
 tags:
 - Belkin
 - Wemo
@@ -29,7 +29,7 @@ featuredimage: /assets/img/plugins/wemoswitch/screenshot_on.png
 ---
 
 # Wemo Switch
-    
+
 This plugin allows for the control of Belkin Wemo devices via navbar buttons and gcode commands.
 
 ## Screenshots
@@ -46,28 +46,8 @@ Once installed go into settings and enter the name of your wemo device. Adjust a
 
 ![screenshot](/assets/img/plugins/wemoswitch/settings_wemo_editor.png)
 
-- **Device Name**
-  - Name configured in the Wemo App associated with the plug.
-- **Label**
-  - Label to use for title attribute on hover over button in navbar.
-- **Icon Class**
-  - Class name from [fontawesome](http://fontawesome.io/3.2.1/cheatsheet/) to use for icon on button.
-- **Warn**
-  - The left checkbox will always warn when checked.
-  - The right checkbox will only warn when printer is printing.
-- **GCODE**
-  - When checked this will enable the processing of M80 and M81 commands from gcode to power on/off plug.  Syntax for gcode command is M80/M81 followed by device name.  For example if your plug is `living_room` your gcode command would be **M80 living_room**
-- **postConnect**
-  - Automatically connect to printer after plug is powered on.
-  - Will wait for number of seconds configured in **Auto Connect Delay** setting prior to attempting connection to printer.
-- **preDisconnect**
-  - Automatically disconnect printer prior to powering off the plug.
-  - Will wait for number of seconds configured in **Auto Disconnect Delay** prior to powering off the plug.
-- **Cmd On**
-  - When checked will run system command configured in **System Command On** setting after a delay in seconds configured in **System Command On Delay**.
-- **Cmd Off**
-  - When checked will run system command configured in **System Command Off** setting after a delay in seconds configured in **System Command Off Delay**.
-  
+For up to date details on settings please see the plugin's Homepage.
+
 ## Get Help
 
 If you experience issues with this plugin or need assistance please use the issue tracker at the plugin's Homepage linked on the right.
@@ -82,4 +62,3 @@ I, jneilliii, programmed this plugin for fun and do my best effort to support th
 [![Patreon](/assets/img/plugins/wemoswitch/patreon-with-text-new.png)](https://www.patreon.com/jneilliii) [![paypal](/assets/img/plugins/wemoswitch/paypal-with-text.png)](https://paypal.me/jneilliii)
 
 <small>No paypal.me? Send funds via PayPal to jneilliii&#64;gmail&#46;com</small>
-

@@ -23,7 +23,7 @@ tags:
 
 screenshots:
 - url: /assets/img/plugins/PrinterAlerts/screenshot.png
-  alt: A demonstration of 'Print paused for user' alert 
+  alt: A demonstration of 'Print paused for user' alert
   caption: An example alert
 - url: /assets/img/plugins/PrinterAlerts/settings.png
   alt: The settings page, allowing configurable alert urgency, auto-closing, and spoken alerts
@@ -54,8 +54,8 @@ This is especially useful for Prusa's printers with MultiMaterial Units installe
  * Note: For printer like the Prusas that repeatedly give the same message while waiting, I strongly recommend leaving this set to Auto Close.
 * Optionally can speak the alerts as well (not supported in all browsers)
 
-## Compatibility 
-* This plugin was designed to work with the Prusa i3 Mk3s MMU2 3D printer, and will likely work with other Prusa printers as well. 
+## Compatibility
+* This plugin was designed to work with the Prusa i3 Mk3s MMU2 3D printer, and will likely work with other Prusa printers as well.
 * It will work with any non-prusa printers that output the same message``echo:busy: paused for user`` when waiting for user input
 * For other printers that have a different waiting for user message, create an issue on github, and I'll be happy to try to implement it for those messages as well
 * this plugin might not work with files on the SD card. (Untested)

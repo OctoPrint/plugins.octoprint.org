@@ -1,8 +1,20 @@
 {% assign plugin = include.plugin %}
-<h3><a class="post-link" href="{{ plugin.url | prepend: site.baseurl }}">{{ plugin.title }}</a> {% if plugin.date %}<small class="post-date">{% include plugin_date date=plugin.date %}</small>{% endif %}</h3>
+<div class="plugin-list-item">
+<h3><a class="post-link" href="{{ plugin.url | prepend: site.baseurl }}">{{ plugin.title }}</a></h3>
+
+<p class="stats">
+    <small class="prop" title="Publication date"><i class="fas fa-calendar-alt"></i> {% include plugin_date date=plugin.date %}</small>
+    <small class="prop" title="License"><i class="fas fa-gavel"></i> {{ plugin.license }}</small>
+    {% if plugin.stats.month.instances %}<small class="prop" title="Active instances past month"><i class="fas fa-server"></i> {% include format_number number=plugin.stats.month.instances %}</small>{% endif %}
+    {% if plugin.github.stars %}<small class="prop" title="GitHub stars"><i class="fas fa-star"></i> {% include format_number number=plugin.github.stars %}</small>{% endif %}
+    {% if plugin.github.last_push %}<small class="prop" title="Last push to main branch"><i class="fas fa-sync"></i> {% include plugin_date date=plugin.github.last_push %}</small>{% endif %}
+    {% if plugin.github.latest_release_tag and plugin.github.latest_release_date %}<small class="prop" title="Latest release & date"><i class="fas fa-tag"></i> {{ plugin.github.latest_release_tag }} ({% include plugin_date date=plugin.github.latest_release_date %})</small>{% endif %}
+</p>
+
 <p>
   {{ plugin.description }}
 </p>
+
 {% assign plugin_tags = "" | split: "/" %}
 {% for tag in plugin.tags %}
   {% assign preprocessed = tag | strip | downcase %}
@@ -14,3 +26,4 @@
 {% for tag in plugin_tags %}
   {% include plugin_tag tag=tag %}
 {% endfor %}
+</div>

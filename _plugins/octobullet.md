@@ -9,7 +9,7 @@ date: 2015-07-23
 homepage: https://github.com/OctoPrint/OctoPrint-Pushbullet
 source: https://github.com/OctoPrint/OctoPrint-Pushbullet
 archive: https://github.com/OctoPrint/OctoPrint-Pushbullet/archive/master.zip
-tags: 
+tags:
 - notification
 screenshots:
 - url: /assets/img/plugins/octobullet/configuration.png
@@ -23,7 +23,7 @@ compatibility:
   octoprint:
   - 1.2.4
   python: ">=2.7,<4"
-  
+
 ---
 
 This plugin adds support for [Pushbullet notifications](https://www.pushbullet.com/) to OctoPrint.

@@ -7,7 +7,7 @@ description: Another Signal Messenger Integration based on the signal-cli-rest-a
 author: Bernhard B.
 license: AGPLv3
 
-date: 2020-06-06 
+date: 2020-06-06
 
 homepage: https://github.com/bbernhard/OctoPrint-Signalclirestapi
 source: https://github.com/bbernhard/OctoPrint-Signalclirestapi
@@ -19,7 +19,7 @@ archive: https://github.com/bbernhard/OctoPrint-Signalclirestapi/archive/master.
 #follow_dependency_links: false
 
 tags:
-- notification 
+- notification
 
 
 screenshots:
@@ -83,38 +83,38 @@ compatibility:
   - windows
   - macos
   - freebsd
-  
+
   # Compatible Python version
   #
   # Plugins should aim for compatibility for Python 2 and 3 for now, in which case the value should be ">=2.7,<4".
   #
-  # Plugins that only wish to support Python 3 should set it to ">=3,<4". 
+  # Plugins that only wish to support Python 3 should set it to ">=3,<4".
   #
   # If your plugin only supports Python 2 (worst case, not recommended for newly developed plugins since Python 2
   # is EOL), leave at ">=2.7,<3"
-  
+
   python: ">=2.7,<4"
 
 ---
 
-# Features 
+# Features
 
-* Support for Signal Messenger groups: 
-  
-  It's possible to create a Signal Messenger group for every print job. That way, all the messages and webcam snapshots are nicely grouped together. 
+* Support for Signal Messenger groups:
+
+  It's possible to create a Signal Messenger group for every print job. That way, all the messages and webcam snapshots are nicely grouped together.
 
 * Support for Print Progress:
-  
+
   If enabled, a message will be sent when the print job progress reaches 20%, 40, 80%.
 
-* Support for all Print Events: 
-  
+* Support for all Print Events:
+
   The plugin supports the `Print Started`, `Print Failed`, `Print Cancelled`, `Print Paused`, `Print Resumed`, `Print Done` events.
 
-* Support for signal-cli-rest-api: 
-  
+* Support for signal-cli-rest-api:
+
   The [signal-cli-rest-api](https://github.com/bbernhard/signal-cli-rest-api) is a small REST API wrapper around the awesome [signal-cli](https://github.com/AsamK/signal-cli) commandline tool. The main advantage is, that you don't need to run `signal-cli` on the same host as your Octoprint instance. That's especially useful, if you use other services in your home network (like [Home Assistant](https://www.home-assistant.io/)) that also send Signal Messenger notifications.
 
 # Installation
 
-This plugin requires the `signal-cli-rest-api` docker container. **Without the docker container, the plugin won't work!** The following [document](https://github.com/bbernhard/OctoPrint-Signalclirestapi) describes how to set up the docker container and register your phone number. 
+This plugin requires the `signal-cli-rest-api` docker container. **Without the docker container, the plugin won't work!** The following [document](https://github.com/bbernhard/OctoPrint-Signalclirestapi) describes how to set up the docker container and register your phone number.

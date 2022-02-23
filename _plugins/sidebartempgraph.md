@@ -28,7 +28,7 @@ featuredimage: /assets/img/plugins/sidebartempgraph/screenshot.png
 
 # Sidebar Temp Graph
 
-Small plugin that adds a temperature graph to the side bar.  
+Small plugin that adds a temperature graph to the side bar.
 
 **Note:** To change the location of the graph within the side bar install [OctoPrint-SidebarOrder](https://github.com/zoombahh/OctoPrint-SidebarOrder) plugin, use `plugin_sidebartempgraph` for the sidebar identifier.
 

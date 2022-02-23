@@ -25,7 +25,7 @@ tags:
 
 compatibility:
   # list of compatible versions, for example 1.2.0. If left empty no specific version requirement will be assumed
-  octoprint: 
+  octoprint:
     - 1.2.0
   python: ">=2.7,<4"
 

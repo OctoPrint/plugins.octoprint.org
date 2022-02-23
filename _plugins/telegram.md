@@ -53,7 +53,7 @@ and even during a print at customizable heights or after a certain time (e.g. af
 You can also control Octoprint via messages. Send /status to receive the current status,
 /abort to abort the currently running print or /help to receive a list of available commands.
 
-Please have a look at [the documentation at github](https://github.com/fabianonline/OctoPrint-Telegram/blob/stable/README.md) 
+Please have a look at [the documentation at github](https://github.com/fabianonline/OctoPrint-Telegram/blob/stable/README.md)
 to learn how to register a Telegram bot. This is a needed step in order to make this plugin work.
 
 If you have any questions or problems feel free to contact me via Telegram: [@fabianonline](http://telegram.me/fabianonline).

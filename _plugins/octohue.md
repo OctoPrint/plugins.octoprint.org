@@ -40,7 +40,7 @@ featuredimage: /assets/img/plugins/octohue/Featured-Image.png
 # "compatibility" block if this is not the case.
 
 compatibility:
-  
+
   python: ">=2.7,<4"
 
 ---
@@ -67,7 +67,7 @@ or manually using this URL:
 
     https://github.com/entrippy/OctoPrint-OctoHue/archive/master.zip
 
-**Hue Bridge Configuration** 
+**Hue Bridge Configuration**
 
 Octohue requires 3 settings to function
 1. The IP Address of you Hue Bridge

@@ -18,5 +18,5 @@ tags:
 - ui
 
 ---
-    
+
 This plugin moves the Editor's from Salandora onto a single Page.

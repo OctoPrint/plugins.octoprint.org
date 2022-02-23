@@ -71,16 +71,16 @@ compatibility:
   - windows
   - macos
   - freebsd
-  
+
   # Compatible Python version
   #
   # Plugins should aim for compatibility for Python 2 and 3 for now, in which case the value should be ">=2.7,<4".
   #
-  # Plugins that only wish to support Python 3 should set it to ">=3,<4". 
+  # Plugins that only wish to support Python 3 should set it to ">=3,<4".
   #
   # If your plugin only supports Python 2 (worst case, not recommended for newly developed plugins since Python 2
   # is EOL), leave at ">=2.7,<3"
-  
+
   python: ">=2.7,<4"
 
 ---
@@ -89,12 +89,12 @@ compatibility:
 
 ### Automatic Shudown
 
-Switch a Philips Hue that your printer is connected to _ON_ or _OFF_.  
+Switch a Philips Hue that your printer is connected to _ON_ or _OFF_.
 You can set an automatic switch-off based on a minimum temperature.
 
 The Philips Hue bridge have an internal clock. Ophom can create à delayed power off for a conventional shutdown of the system (eg: Raspberry Pi powered by printer PSU)
 
-![Ophom Configuration](/assets/img/plugins/ophom/paired.png)  
+![Ophom Configuration](/assets/img/plugins/ophom/paired.png)
 
 ### Security Shudown
 

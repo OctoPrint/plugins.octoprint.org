@@ -2,7 +2,7 @@
 layout: plugin
 
 id: DisplayLayerProgress
-title: DisplayLayerProgress 
+title: DisplayLayerProgress
 description: Displays the Layer, Progress and other data on "Printer-Display", "NavBar", "BrowserTab-Title" and in the Browser as a simulated "Printer-Display"
 author: Olli
 license: AGPLv3
@@ -27,7 +27,7 @@ compatibility:
   octoprint:
   - 1.3.10
   - 1.4.0
-  
+
 screenshots:
 - url: https://github.com/OllisGit/OctoPrint-DisplayLayerProgress/raw/master/screenshots/browser-title-tab.png
   alt: Example of Browser Tab Title
@@ -58,7 +58,7 @@ A new feature is the "Desktop Printer-Display", which shows all M117 messages in
 
 It shows the **progress, estimatedEndTime, printTimeLeft, currentLayer, totalLayerCount, last/average layerDuration, currentHeight, totalHeight, feedrate and fanspeed**:
 
-- Printer Display: ```50% L=60/120 H=23mm/47mm```  
+- Printer Display: ```50% L=60/120 H=23mm/47mm```
 - NavBar: Layer: ```60 / 120 Height: 23mm of 47mm```
 - Browser TabTitle: ```12% end: 19:32```
 
@@ -67,11 +67,11 @@ It shows the **progress, estimatedEndTime, printTimeLeft, currentLayer, totalLay
 #### Support my Efforts
 
 This plugin, as well as my [other plugins](https://github.com/OllisGit/) were developed in my spare time.
-If you like it, I would be thankful about a cup of coffee :) 
+If you like it, I would be thankful about a cup of coffee :)
 
 [![More coffee, more code](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6SW5R6ZUKLB5E&source=url)
 
-**ATTENTION:** 
+**ATTENTION:**
 - The layer information works only when the slicer adds "layer-indicator" to the g-code (CURA-Example as comments like ```;LAYER:10```). Then these indicators are parsed via a regular-expression.
 - Currently supported slicers: CURA, Simplify3D, KISSlicer. You can add your own layer-expressions in Plugin-Settings.
 If you want to use "slic3r", see [Enhancement #8](https://github.com/OllisGit/OctoPrint-DisplayLayerProgress/issues/8)
@@ -82,4 +82,3 @@ If you want to use "slic3r", see [Enhancement #8](https://github.com/OllisGit/Oc
 
 
 For implementation details please visit the [homepage]({{ page.homepage | absolute_url }}).
-

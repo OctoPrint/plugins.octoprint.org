@@ -1,6 +1,6 @@
 ---
 layout: plugin
-    
+
 id: gcodestatEstimator
 title: GcodeStat Estimator
 description: uses data put in to g-code by gcodestat to estimate time to finish print
@@ -26,7 +26,7 @@ compatibility:
 
 ---
 
-This plugin will read the M117 data put into G-Code by gcodestat ( https://github.com/arhi/gcodestat ) in format 
+This plugin will read the M117 data put into G-Code by gcodestat ( https://github.com/arhi/gcodestat ) in format
 
 M117 ###% Remaining ( HH:MM:SS )
 

@@ -23,7 +23,7 @@ compatibility:
   octoprint:
   - 1.2.6
 
+abandoned: https://github.com/OctoPrint/plugins.octoprint.org/issues/711
 ---
-This plugin will save the status, active/inactive, of the regex filters in the terminal tab. 
-The save is done local, so if you access OctoPrint on multiple computers, the settings, might vary.  
-
+This plugin will save the status, active/inactive, of the regex filters in the terminal tab.
+The save is done local, so if you access OctoPrint on multiple computers, the settings, might vary.

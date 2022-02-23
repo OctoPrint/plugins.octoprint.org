@@ -76,16 +76,16 @@ compatibility:
   #- windows
   #- macos
   #- freebsd
-  
+
   # Compatible Python version
   #
   # Plugins should aim for compatibility for Python 2 and 3 for now, in which case the value should be ">=2.7,<4".
   #
-  # Plugins that only wish to support Python 3 should set it to ">=3,<4". 
+  # Plugins that only wish to support Python 3 should set it to ">=3,<4".
   #
   # If your plugin only supports Python 2 (worst case, not recommended for newly developed plugins since Python 2
   # is EOL), leave at ">=2.7,<3"
-  
+
   python: ">=2.7,<4"
 
 ---
@@ -98,5 +98,5 @@ __What this plugin _does not_ do:__<br/>
 This plugin does not stop a thermal runaway, it just sends a GCode command, and it is up to you to find a way to handle that GCode command appropriately. As such, *I strongly recommend that you __watch your printer at all times__*
 <br/><br/>
 For more details, see [https://github.com/AlexVerrico/Octoprint-ThermalRunaway](https://github.com/AlexVerrico/Octoprint-ThermalRunaway)
-### Disclaimer:  
+### Disclaimer:
 I, the plugin author, strongly recommend that you __NEVER__ leave you printer unattended while powered. This plugin is not a replacement for [firmware thermal runaway detection](https://3dprinting.stackexchange.com/a/8467). I, the plugin author, __cannot__ be held responsible for any damage to equipment or injuries that may arise from leaving your 3D Printer unattended. I, the plugin author, make no guarantees that this plugin will work or continue to work.

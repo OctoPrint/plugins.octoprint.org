@@ -42,7 +42,7 @@ screenshots:
 - url: /assets/img/plugins/OctoRemote/Keypad.PNG
   alt: Mapping of the Keypad key to the Octoprint functions
   caption: Key assignment of the 4+4 keypad
-  
+
 featuredimage: /assets/img/plugins/OctoRemote/Hardware1.JPG
 
 ---

@@ -8,8 +8,8 @@ license: CC BY-NC-SA 4.0
 date: 2015-05-12
 homepage: https://github.com/dmalec/OctoPrint-OctoGlow
 source: https://github.com/dmalec/OctoPrint-OctoGlow
-archive: https://github.com/dmalec/OctoPrint-OctoGlow/archive/master.zip 
-tags: 
+archive: https://github.com/dmalec/OctoPrint-OctoGlow/archive/master.zip
+tags:
 - notification
 screenshots:
 - url: /assets/img/plugins/octoglow/progress.png

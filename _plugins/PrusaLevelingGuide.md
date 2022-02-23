@@ -44,4 +44,3 @@ compatibility:
 This plugin is to help guide you through the fine adjustments of the nylock bed leveling method for Prusa MK3 printers, which is described in the above guide.  Make sure you start there and already have the nylocks applied to your bed before beginning.  This plugin allows you to select a profile for preheating, then begin adjustment.  For each round of adjustment, the plugin will send the configured mesh level code and gcode for retrieving values (generally G80; G81).  Once values are received, you can view how to adjust your bed in a number of ways.  You click continue to proceed with another round of leveling or click finish to finish up.
 
 You have the option of viewing the values in a table view or overlayed on a photo of the heatbed.  You can also customize whether you view raw values, degrees, decimal turns, or factional turns.
-

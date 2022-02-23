@@ -4,21 +4,21 @@ layout: plugin
 id: continuousprint
 title: Continuous Print
 description: Allows the queueing and automatic print and clearing of the queue
-author: Paul GOddard
+authors: 
+- Louis Sarwal
+- Paul Goddard(Original)
 license: AGPLv3
 
 # today's date in format YYYY-MM-DD, e.g.
 date: 2020-04-24
 
-homepage: https://github.com/nukeem/continuousprint
-source: https://github.com/nukeem/continuousprint
-archive: https://github.com/nukeem/continuousprint/archive/master.zip
+homepage: https://github.com/Zinc-OS/continuousprint
+source: https://github.com/Zinc-OS/continuousprint
+archive: https://github.com/Zinc-OS/continuousprint/archive/master.zip
 
 # Set this to true if your plugin uses the dependency_links setup parameter to include
 # library versions not yet published on pypi. SHOULD ONLY BE USED IF THERE IS NO OTHER OPTION!
 #follow_dependency_links: false
-
-abandoned: https://github.com/OctoPrint/plugins.octoprint.org/issues/622
 
 tags:
 - continuous print
@@ -33,7 +33,8 @@ compatibility:
 
 # Continuous Print
 
-Easy plugin to allow queuing of code files which when started will automatically print, run bed clearing commands and then print again until the end of the queue.
+This is a simple plugin that, as its name suggests, allows _continuous print_. The gcode files are first loaded into a queue. Once this queue is started, the queue will automatically print from top to bottom. Between prints, it will run bed clearing commands so your prints won't get messed up.
+Depending on your printer, and the material you are printing with, you may need to change the bed clearing commands.
 
 ## Screenshot
 

@@ -1,6 +1,6 @@
 ---
 layout: plugin
-    
+
 id: orvibos20
 title: OctoPrint-OrviboS20
 description: Plugin to control Orvibo S20 Smart Plug from the OctoPrint web interface.
@@ -8,13 +8,13 @@ author: cprasmu
 license: AGPLv3
 
 date: 2019-10-03
-    
+
 homepage: https://github.com/cprasmu/OctoPrint-OrviboS20
 source: https://github.com/cprasmu/OctoPrint-OrviboS20
 archive: https://github.com/cprasmu/OctoPrint-OrviboS20/archive/master.zip
-    
+
 follow_dependency_links: false
-    
+
 tags:
 - Orvibo
 - S20
@@ -26,8 +26,8 @@ featuredimage: /assets/img/plugins/orvibos20/power_on_dark.png
 ---
 
 # Orvibo S20
-    
-Work inspired by [OctoPrint TP-Link WiFi SmartPlug](https://github.com/jneilliii/OctoPrint-TPLinkSmartplug) and [Orvibo](https://github.com/cherezov/orvibo), this plugin controls an Orvibo S20 smart-plug via OctoPrint's nav bar. 
+
+Work inspired by [OctoPrint TP-Link WiFi SmartPlug](https://github.com/jneilliii/OctoPrint-TPLinkSmartplug) and [Orvibo](https://github.com/cherezov/orvibo), this plugin controls an Orvibo S20 smart-plug via OctoPrint's nav bar.
 
 ## Screenshots
 
@@ -39,7 +39,7 @@ Work inspired by [OctoPrint TP-Link WiFi SmartPlug](https://github.com/jneilliii
 
 ![screenshot](/assets/img/plugins/orvibos20/settings_dark.png)
 
-Once installed go into settings and enter the ip address for your Orvibo S20. 
+Once installed go into settings and enter the ip address for your Orvibo S20.
 
 ![screenshot](/assets/img/plugins/orvibos20/editor_dark.png)
 
@@ -64,5 +64,3 @@ Once installed go into settings and enter the ip address for your Orvibo S20.
   - When checked will run system command configured in **System Command On** setting after a delay in seconds configured in **System Command On Delay**.
 - **Cmd Off**
   - When checked will run system command configured in **System Command Off** setting after a delay in seconds configured in **System Command Off Delay**.
-  
-
