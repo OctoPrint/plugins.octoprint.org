@@ -49,10 +49,10 @@ featuredimage: /assets/img/plugins/astroprint/astroprint-hero.jpg
 
 compatibility:
   python: ">=2.7,<4"
-  
+
   octoprint:
   - 1.3.4
-  
+
 ---
 
 # Connect to the AstroPrint Cloud

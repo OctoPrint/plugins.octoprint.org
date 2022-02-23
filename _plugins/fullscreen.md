@@ -1,7 +1,7 @@
 ---
 layout: plugin
 
-id: fullscreenwebcam
+id: fullscreen
 title: Fullscreen Webcam
 description: Open the webcam feed in fullscreen mode with extra details about the printjob
 author: Paul de Vries

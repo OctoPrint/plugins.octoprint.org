@@ -24,20 +24,19 @@ compatibility:
   - linux
   - windows
   python: ">=2.7,<4"
-  
+
 screenshots:
 - url: /assets/img/plugins/systemCommandEditor/img1.png
   alt: Settings
 - url: /assets/img/plugins/systemCommandEditor/img2.png
   alt: Dialog
-  
+
 featuredimage: /assets/img/plugins/systemCommandEditor/img1.png
 
 ---
-    
-This plugin helps you create, edit and delete System commands. 
+
+This plugin helps you create, edit and delete System commands.
 
 You can Access all option in the settings under "Plugins -> System Command Editor"
 
 Right Click on a Control or the Green Box to open a context menu.
-

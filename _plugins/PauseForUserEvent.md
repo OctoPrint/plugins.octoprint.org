@@ -8,14 +8,14 @@ license: AGPLv3
 homepage: https://github.com/zeroflow/OctoPrint-PauseForUserEvent
 source: https://github.com/zeroflow/OctoPrint-PauseForUserEvent
 archive: https://github.com/zeroflow/OctoPrint-PauseForUserEvent/archive/master.zip
-tags: 
+tags:
 - paused for user
 - Prusa MMU2
 - notification
 - event
 compatibility:
   octoprint:
-  - 1.3.11 
+  - 1.3.11
 date: 2019-06-11
 
 ---

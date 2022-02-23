@@ -4,14 +4,16 @@ layout: plugin
 id: klipper
 title: OctoKlipper
 description: A plugin for a better integration of Klipper into OctoPrint.
-author: Alice Weigt
+authors:
+- thelastWallE
+- Alice Weigt
 license: AGPLv3
 
 date: 2018-08-21
 
-homepage: https://github.com/AliceGrey/OctoprintKlipperPlugin
-source: https://github.com/AliceGrey/OctoprintKlipperPlugin
-archive: https://github.com/AliceGrey/OctoprintKlipperPlugin/archive/master.zip
+homepage: https://github.com/thelastWallE/OctoprintKlipperPlugin
+source: https://github.com/thelastWallE/OctoprintKlipperPlugin
+archive: https://github.com/thelastWallE/OctoprintKlipperPlugin/archive/master.zip
 
 follow_dependency_links: false
 
@@ -43,7 +45,7 @@ screenshots:
 - url: /assets/img/plugins/klipper/performance-graph.png
   alt: Performance Graph
   caption: Performance Graph
-  
+
 featuredimage: /assets/img/plugins/klipper/message-log.png
 
 compatibility:
@@ -64,7 +66,7 @@ It provides the following functions:
 - A dialog for Klippers PID Tuning.
 - A dialog to set a coordinate offset for future GCODE move commands.
 - A log displaying only Klipper messages.
-- A basic configuration editor to configure Klipper directly through your browser. 
+- A basic configuration editor to configure Klipper directly through your browser.
 - A performance graph displaying key parameters extracted from the Klipper logs, helpful when debugging performance issues.
 
 #### Get Help

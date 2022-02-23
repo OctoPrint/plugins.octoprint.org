@@ -23,7 +23,7 @@ tags:
 - atx
 - fan
 - monitor
-- epo 
+- epo
 - control
 
 screenshots:
@@ -35,7 +35,7 @@ screenshots:
 featuredimage: /assets/img/plugins/atxpihat/screenshot2.png
 
 compatibility:
-   octoprint: 
+   octoprint:
    - 1.3.6
    os:
    - linux
@@ -62,6 +62,3 @@ Read all about this board and it's usage at [baprojectworkshop.com](https://wp.m
 * Monitoring of the 12v rail, for amperage and voltage
 * Automatic shutdown when an amperage threshold is reached. Meltdown protection
 * Switchable 12 or 5 v connector for controlling external items via GCODE
-
-
-

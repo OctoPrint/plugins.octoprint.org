@@ -1,20 +1,20 @@
 ---
 layout: plugin
-    
+
 id: custombackground
 title: OctoPrint-CustomBackground
 description: Plugin to change the background image on the temperature graph.
 author: jneilliii
 license: AGPLv3
-    
+
 date: 2017-08-27
-    
+
 homepage: https://github.com/jneilliii/OctoPrint-CustomBackground
 source: https://github.com/jneilliii/OctoPrint-CustomBackground
 archive: https://github.com/jneilliii/OctoPrint-CustomBackground/archive/master.zip
-    
+
 follow_dependency_links: false
-    
+
 tags:
 - background
 - image
@@ -28,7 +28,7 @@ featuredimage: /assets/img/plugins/CustomBackground/screenshot.png
 ---
 
 # Custom Background
-    
+
 This plugin allows you to upload an image to your OctoPrint instance like a gcode file and it will replace the default background of the Temperature graph with that image.
 
 ## Screenshots

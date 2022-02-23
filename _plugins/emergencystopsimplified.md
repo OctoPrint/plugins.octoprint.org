@@ -28,7 +28,7 @@ compatibility:
 
   octoprint:
   - 1.3.0
- 
+
   os:
   - linux
 ---

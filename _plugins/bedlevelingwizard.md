@@ -22,7 +22,7 @@ compatibility:
 ---
 
 # Bed Leveling Wizard
-    
+
 This plugin mimcs the Simplify3D Bed Leveling Wizard process. Configure default settings in OctoPrint settings.  When ready to level your bed press Start on the plugin's sidebar panel and adjust that point's screw.  Press Next and then adjust that point's screw, and repeat until finished.
 
 ## Screenshots

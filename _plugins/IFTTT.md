@@ -25,6 +25,9 @@ screenshots:
   alt: OctoPrint-IFTTT Settings
   caption: OctoPrint-IFTTT Settings
 
+compatibility:
+  python: ">=2.7,<4"
+  
 ---
 
 *Note: this plugin has not been tested with versions under 1.3.10; they may not work!*

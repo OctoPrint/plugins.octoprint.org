@@ -7,7 +7,7 @@ description: Turns off heaters after specified time being on and unused
 author: T6
 license: AGPLv3
 
-date: 2019-01-02 
+date: 2019-01-02
 
 homepage: https://github.com/tjjfvi/OctoPrint-BetterHeaterTimeout
 source: https://github.com/tjjfvi/OctoPrint-BetterHeaterTimeout
@@ -21,10 +21,10 @@ tags:
 - custom event
 
 screenshots:
-- url: /assets/img/plugins/BetterHeaterTimeout/timedout.png 
+- url: /assets/img/plugins/BetterHeaterTimeout/timedout.png
   alt: Image showing heater timeout
-- url: /assets/img/plugins/BetterHeaterTimeout/settings.png 
-  alt: Screenshot of settings 
+- url: /assets/img/plugins/BetterHeaterTimeout/settings.png
+  alt: Screenshot of settings
 
 featuredimage: /assets/img/plugins/BetterHeaterTimeout/timedout.png
 
@@ -39,7 +39,7 @@ featuredimage: /assets/img/plugins/BetterHeaterTimeout/timedout.png
  - Fires a custom event _*_ when the heaters timeout, so one can be notified or otherwise hook on the event.
 
 _*May not be (officially) supported; see [#2965](https://github.com/foosel/OctoPrint/issues/2965) for more info._
- 
+
 ### Setup
 
 Install via the bundled [Plugin Manager](https://github.com/foosel/OctoPrint/wiki/Plugin:-Plugin-Manager)

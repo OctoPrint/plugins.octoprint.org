@@ -2,7 +2,7 @@ name: Build, validate & publish page
 
 on:
   schedule:
-    - cron: '0 */12 * * *'
+    - cron: '0 */1 * * *'
   push:
     branches:
       - gh-pages
@@ -58,6 +58,11 @@ jobs:
           python ./src/.github/scripts/populate_additional_notices.py
         env:
           GITHUB_TOKEN: ${{ secrets.metadata_token }}
+
+      - name: 🏗 Enrich py2 check overlays
+        if: github.repository == 'OctoPrint/plugins.octoprint.org' && github.event_name != 'pull_request'
+        run: |
+          python ./src/.github/scripts/populate_py2_overlays.py
 
       - name: 📦 Cache jekyll build bundle
         uses: actions/cache@v2
@@ -139,7 +144,7 @@ jobs:
         uses: Ilshidur/action-discord@master
         with:
           args: '☑️ Page build for plugins.octoprint.org was successful'
-   
+
       - name: 📧 Discord failure notification
         if: failure() && github.repository == 'OctoPrint/plugins.octoprint.org' && github.event_name != 'pull_request'
         env:

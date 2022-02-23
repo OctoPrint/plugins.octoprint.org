@@ -121,7 +121,7 @@ layout: default
       {% endif %}
       {% if page.github %}
       <dl class="github">
-        <dt>Github stats</dt>
+        <dt>GitHub stats <a href="/help/github_integration/" class="fas fa-question-circle"></a> <span id="github_login">(<a href="javascript:void(0)">Login</a>)</span></dt>
         <dd>
           <ul>
             {% if page.github.releases > 0 %}
@@ -131,7 +131,7 @@ layout: default
             </li>
             <li>Releases: {% include format_number number=page.github.releases %}</li>
             {% endif %}
-            <li>Stars: {% include format_number number=page.github.stars %}</li>
+            <li>Stars: <span id="github_star_count">{% include format_number number=page.github.stars %}</span> <span id="github_star"><a href="javascript:void(0)"><i class="far fa-star"></i></a></span></li>
             <li>Issues: {% include format_number number=page.github.open_issues %} open, {% include format_number number=page.github.closed_issues %} closed</li>
             <li>Last push: {{ page.github.last_push | date_to_string }}</li>
           </ul>
@@ -178,7 +178,14 @@ layout: default
           </ul>
         </dd>
       </dl>
-      {% if page.author %}
+      {% if page.authors %}
+      <dl class="author">
+        <dt>Authors</dt>
+        {% for author in page.authors %}
+          <dd>{% include plugin_author author=author nolabel='true'%}</dd>
+        {% endfor %}
+      </dl>
+      {% elsif page.author %}
       <dl class="author">
         <dt>Author</dt>
         <dd>{% include plugin_author author=page.author nolabel='true'%}</dd>
@@ -207,16 +214,16 @@ layout: default
         <dd>
           <p>
             If there is <strong>something wrong with this listing</strong> (broken links & images etc), please
-            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=bug&template=listing_error.md&title=%5BListing+Error%5D+{{ page.title | strip_html | strip_newlines | cgi_escape }}">report it here</a>.
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?template=listing_error.yml&labels%5B%5D=listing+error&title=%5BListing+Error%5D+{{ page.title | strip_html | strip_newlines | cgi_escape }}&which_plugin={{ page.url | prepend: site.baseurl | prepend: site.external | cgi_escape }}">report it here</a>.
           </p>
           <p>
             If this plugin <strong>has been <em>confirmed</em> as abandoned</strong> by its maintainer, please
-            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=abandoned+plugin&template=abandoned_plugin.md&title=%5BAbandoned+Plugin%5D+{{ page.title | strip_html | strip_newlines | cgi_escape }}">report it here</a>.
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?template=abandoned_plugin.yml&labels%5B%5D=abandoned+plugin&title=%5BAbandoned+Plugin%5D+{{ page.title | strip_html | strip_newlines | cgi_escape }}&which_plugin={{ page.url | prepend: site.baseurl | prepend: site.external | cgi_escape }}">report it here</a>.
           </p>
           <p>
             If this plugin is <strong>doing something suspicious</strong> (e.g. weird network activity, unannounced tracking, ...) and
             the maintainer is not cooperating in getting to the bottom of that, please
-            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?labels%5B%5D=suspicious+plugin+activity&template=suspicious_plugin_activity.md&title=%5BSuspicious+Plugin+Activity%5D+{{ page.title | strip_html | strip_newlines | cgi_escape }}">report the plugin as suspicious here</a>.
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?template=suspicious_plugin_activity.yml&labels%5B%5D=suspicious+plugin+activity&title=%5BSuspicious+Plugin+Activity%5D+{{ page.title | strip_html | strip_newlines | cgi_escape }}&which_plugin={{ page.url | prepend: site.baseurl | prepend: site.external | cgi_escape }}">report the plugin as suspicious here</a>.
           </p>
           <p>
             Report bugs or feature requests for the plugin to the plugin author{% if page.homepage %} (e.g. on the plugin's <a href="{{ page.homepage }}">homepage</a>){% endif %} please, not here!
@@ -227,3 +234,104 @@ layout: default
 
   </div>
 </div>
+
+<script type="application/javascript">
+  $(function() {
+    var has_github = {% if page.github %}true{% else %}false{% endif %};
+    if (has_github) {
+      var github_repo = {% if page.github and page.github.repo %}"{{ page.github.repo }}"{% else %}""{% endif %};
+
+      if (github_repo) {
+        var status = "unknown";
+
+        var starSpan = $("#github_star");
+        $("a", starSpan).click(function() {
+          switch (status) {
+            case "starred": {
+              window.githubUnstar(github_repo)
+                .done(function() {
+                  markAsUnstarred();
+                  updateStarcount();
+                })
+                .fail(markAsLoggedout);
+              break;
+            }
+            case "unstarred": {
+              window.githubStar(github_repo)
+                .done(function() {
+                  markAsStarred();
+                  updateStarcount();
+                })
+                .fail(markAsLoggedout);
+              break;
+            }
+            case "loggedout": {
+              window.githubLogin()
+                .done(determineStatus);
+              break;
+            }
+          }
+        });
+        starSpan.hide();
+
+        var login = $("#github_login");
+        $("a", login).click(function() {
+          switch (status) {
+            case "loggedout": {
+              window.githubLogin()
+                .done(determineStatus);
+              break;
+            }
+            case "starred":
+            case "unstarred": {
+              window.githubLogout()
+                .done(determineStatus);
+              break;
+            }
+          }
+        });
+
+        var starCount = $("#github_star_count");
+
+        var markAsStarred = function() {
+          status = "starred";
+          $("i.fa-star", starSpan).removeClass("far").addClass("fas");
+          $("a", login).text("Logout");
+        }
+        var markAsUnstarred = function() {
+          status = "unstarred";
+          $("i.fa-star", starSpan).removeClass("fas").addClass("far");
+          $("a", login).text("Logout");
+        };
+        var markAsLoggedout = function() {
+          status = "loggedout";
+          $("a", login).text("Login");
+        };
+        var updateStarcount = function() {
+          window.githubRepo(github_repo)
+            .done(function(response) {
+              starCount.text(response.stargazers_count);
+            });
+        }
+        var determineStatus = function() {
+          window.githubStatus(github_repo)
+            .done(function(starred) {
+              if (starred) {
+                markAsStarred();
+              } else {
+                markAsUnstarred();
+              }
+              starSpan.show();
+              updateStarcount();
+            })
+            .fail(function() {
+              markAsLoggedout();
+              starSpan.hide();
+            });
+        }
+
+        determineStatus();
+      }
+    }
+  });
+</script>

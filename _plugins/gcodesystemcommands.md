@@ -13,7 +13,7 @@ date: 2017-03-14
 tags:
 - gcode
 - command
-screenshots: 
+screenshots:
 - url: /assets/img/plugins/gcodesystemcommands/gcodesystemcommands_settings.png
   alt: GCODE System Commands screenshot
   caption: GCODE System Commands screenshot

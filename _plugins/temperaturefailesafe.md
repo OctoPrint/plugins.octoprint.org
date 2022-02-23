@@ -29,6 +29,8 @@ compatibility:
   os:
   - linux
   python: ">=2.7,<4"
+
+abandoned: https://github.com/OctoPrint/plugins.octoprint.org/issues/914
 ---
 
 OctoPrint Plugin that executes shell commands on temperature violations.

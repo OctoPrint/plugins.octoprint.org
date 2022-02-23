@@ -1,0 +1,11 @@
+# Update check overlays for Python 2 instances specifically. Format:
+#
+#   pluginID:
+#     user: new github user
+#     repo: new github repo
+#     pip: new pip URL
+#     ...
+#
+# Any keys from the software update config can be overwritten, changing the default values. config.yaml on the
+# instances out there still wins though, in case the user has a personal override configured.
+{}

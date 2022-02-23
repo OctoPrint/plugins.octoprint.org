@@ -25,7 +25,7 @@ compatibility:
   octoprint:
   - 1.3.10
   - 1.4.0
-  
+
 screenshots:
 - url: https://raw.githubusercontent.com/OllisGit/OctoPrint-DeleteAfterPrint/master/screenshots/sidebar.jpg
   alt: sidebar
@@ -33,20 +33,20 @@ screenshots:
 - url: https://raw.githubusercontent.com/OllisGit/OctoPrint-DeleteAfterPrint/master/screenshots/plugin-settings.jpg
   alt: plugin-settings
   caption: plugin-settings
-  
+
 featuredimage: https://raw.githubusercontent.com/OllisGit/OctoPrint-DeleteAfterPrint/master/screenshots/sidebar.jpg
 
 
 ---
 
-Delete/Move automatically the Print-Model: 
+Delete/Move automatically the Print-Model:
 * after successful print. If the print fails, the deletion is not executed!
 * after predefined days
 
 #### Support my Efforts
 
 This plugin, as well as my [other plugins](https://github.com/OllisGit/) were developed in my spare time.
-If you like it, I would be thankful about a cup of coffee :) 
+If you like it, I would be thankful about a cup of coffee :)
 
 [![More coffee, more code](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6SW5R6ZUKLB5E&source=url)
 
