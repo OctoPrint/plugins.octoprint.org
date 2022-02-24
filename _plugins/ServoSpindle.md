@@ -43,7 +43,7 @@ compatibility:
   octoprint:
   - 1.3.10
   
-  python: ">=3,<4"
+  python: ">=2.7,<4"
   
   # List of compatible operating systems
   #
