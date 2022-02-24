@@ -11,7 +11,7 @@ date: 2022-02-06
 
 homepage: https://github.com/synman/OctoPrint-Servospindle
 source: https://github.com/synman/OctoPrint-Servospindle
-archive: https://github.com/synman/OctoPrint-Servospindle/archive/master.zip
+archive: https://github.com/synman/OctoPrint-Servospindle/archive/main.zip
 
 tags:
 - grbl
@@ -77,7 +77,7 @@ gcode commands sent to your CNC machine and the status the machine reports for s
 Install via the bundled [Plugin Manager](https://docs.octoprint.org/en/master/bundledplugins/pluginmanager.html)
 or manually using this URL:
 
-    https://github.com/synman/OctoPrint-Servospindle/archive/master.zip
+    https://github.com/synman/OctoPrint-Servospindle/archive/main.zip
 
 The ideal setup for this plugin is using hardware based PWM timing on GPIO 18, 19, 12, or 13.  This is accomplished by use of the **rpi-hardware-pwm** library that provides a simple implementation for interacting directly with your CPU's timing clock.  This enables precise hardware based pulse width modulation which is critical when controlling an electronic speed control.  
 
