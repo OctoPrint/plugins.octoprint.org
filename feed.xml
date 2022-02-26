@@ -5,10 +5,31 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>https://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 26 Feb 2022 13:13:44 -0600</pubDate>
-    <lastBuildDate>Sat, 26 Feb 2022 13:13:44 -0600</lastBuildDate>
+    <pubDate>Sat, 26 Feb 2022 13:47:28 -0600</pubDate>
+    <lastBuildDate>Sat, 26 Feb 2022 13:47:28 -0600</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
+    
+      <item>
+        <title>OctoPrint-OpenMiko</title>
+        <description>
+          <![CDATA[
+            Control OpenMiko Day/Night Mode
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/openmiko/screenshot.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Sat, 26 Feb 2022 00:00:00 -0600</pubDate>
+        <link>https://plugins.octoprint.org/plugins/openmiko/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/openmiko/</guid>
+        
+        <category>webcam</category>
+        
+        <category>openmiko</category>
+        
+        <category>timelapse</category>
+        
+      </item>
     
       <item>
         <title>PSU Control - Meross</title>
@@ -283,29 +304,6 @@ Sat, 08 Jan 2022 00:00:00 -0600</pubDate>
         <category>pins</category>
         
         <category>bcm</category>
-        
-      </item>
-    
-      <item>
-        <title>OneDrive Backup</title>
-        <description>
-          <![CDATA[
-            Automatically upload OctoPrint backups to Microsoft OneDrive
-            <p><img src="https://plugins.octoprint.org/assets/img/plugins/onedrive_backup/config-3.png"></p>
-          ]]>
-        </description>
-        <pubDate>
-Mon, 03 Jan 2022 00:00:00 -0600</pubDate>
-        <link>https://plugins.octoprint.org/plugins/onedrive_backup/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/onedrive_backup/</guid>
-        
-        <category>onedrive</category>
-        
-        <category>backup</category>
-        
-        <category>cloud</category>
-        
-        <category>microsoft</category>
         
       </item>
     

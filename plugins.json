@@ -12710,5 +12710,44 @@
             "instances_week": 0,
             "install_events_week": 0
         }
+    },
+
+    {
+        "id": "openmiko",
+        "published": "2022-02-26 00:00:00 -0600",
+        "title": "OctoPrint-OpenMiko",
+        "description": "Control OpenMiko Day/Night Mode",
+        "archive": "https://github.com/tmountjr/OctoPrint-OpenMiko/archive/main.zip",
+        "author": "Tom Mount",
+        "homepage": "https://github.com/tmountjr/OctoPrint-OpenMiko",
+        "page": "https://plugins.octoprint.org/plugins/openmiko/",
+        "compatibility": {
+            "octoprint": ["1.4.0"],
+            "os": ["linux","windows","macos","freebsd"],
+            "python": ">=3,<4"
+        },
+        "license": "MIT",
+        "image": "https://plugins.octoprint.org/assets/img/plugins/openmiko/screenshot.png",
+        "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "js optimization",
+                "date": "2022-02-26 17:10:08 +0000",
+                "tag": "v0.2.0"
+            },
+            "releases": 2,
+            "last_push": "2022-02-26 17:08:37 +0000",
+            "stars": 0,
+            "issues": {
+                "open": 0,
+                "closed": 0
+            }
+        },
+        "stats": {
+            "instances_month": 0,
+            "install_events_month": 0,
+            "instances_week": 0,
+            "install_events_week": 0
+        }
     }
 ]

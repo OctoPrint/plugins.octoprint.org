@@ -3705,6 +3705,17 @@
 "author": "Ilja Orlovs",
 "content": "This plugin enables the “PSU Control” plugin to control Meross devices.Requirements:  PSU Control plugin for OctoPrint",
 "tags": ["control","meross","power","psu","psucontrol","psucontrol subplugin"]
+},
+
+{
+"id": "/plugins/openmiko",
+"url": "/plugins/openmiko/",
+"date": "2022-02-26 00:00:00 -0600",
+"title": "OctoPrint-OpenMiko",
+"description": "Control OpenMiko Day/Night Mode",
+"author": "Tom Mount",
+"content": "This is a simple plugin that allows you to set the IR LED and IR cutoff filter values for OpenMiko-enabled webcams.This plugin assumes that an OpenMiko-enabled camera has already been set up in OctoPrint as a webcam and will use the URL provided under the Webcam &amp; Timelapse configuration within OctoPrint. If a webcam is not enabled, this plugin will not show any controls.",
+"tags": ["webcam","openmiko","timelapse"]
 }
 ]
 }
