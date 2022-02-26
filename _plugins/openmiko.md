@@ -8,7 +8,7 @@ authors:
 - Tom Mount
 license: MIT
 
-date: 2022-02-22
+date: 2022-02-26
 
 homepage: https://github.com/tmountjr/OctoPrint-OpenMiko
 source: https://github.com/tmountjr/OctoPrint-OpenMiko
