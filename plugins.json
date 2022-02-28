@@ -12749,5 +12749,38 @@
             "instances_week": 38,
             "install_events_week": 38
         }
+    },
+
+    {
+        "id": "ServoSpindle",
+        "published": "2022-02-27 00:00:00 -0600",
+        "title": "Servo Spindle for GRBL CNC",
+        "description": "Servo Spindle enables servo based control of a CNC spindle by connecting to an ESC and trapping Grbl M3/M5/S### commands",
+        "archive": "https://github.com/synman/OctoPrint-Servospindle/archive/main.zip",
+        "author": "Shell M. Shrader",
+        "homepage": "https://github.com/synman/OctoPrint-Servospindle",
+        "page": "https://plugins.octoprint.org/plugins/ServoSpindle/",
+        "compatibility": {
+            "octoprint": ["1.3.10"],
+            "os": [],
+            "python": ">=2.7,<4"
+        },
+        "license": "Apache 2.0",
+        "image": "https://plugins.octoprint.org/assets/img/plugins/ServoSpindle/Grbl_logo.png",
+        "abandoned": false,
+        "github": { 
+            "last_push": "2022-02-07 11:58:33 +0000",
+            "stars": 0,
+            "issues": {
+                "open": 0,
+                "closed": 0
+            }
+        },
+        "stats": {
+            "instances_month": 0,
+            "install_events_month": 0,
+            "instances_week": 0,
+            "install_events_week": 0
+        }
     }
 ]

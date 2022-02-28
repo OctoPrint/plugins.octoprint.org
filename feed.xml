@@ -5,10 +5,39 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>https://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 27 Feb 2022 21:18:28 -0600</pubDate>
-    <lastBuildDate>Sun, 27 Feb 2022 21:18:28 -0600</lastBuildDate>
+    <pubDate>Sun, 27 Feb 2022 21:47:31 -0600</pubDate>
+    <lastBuildDate>Sun, 27 Feb 2022 21:47:31 -0600</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
+    
+      <item>
+        <title>Servo Spindle for GRBL CNC</title>
+        <description>
+          <![CDATA[
+            Servo Spindle enables servo based control of a CNC spindle by connecting to an ESC and trapping Grbl M3/M5/S### commands
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/ServoSpindle/Grbl_logo.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Sun, 27 Feb 2022 00:00:00 -0600</pubDate>
+        <link>https://plugins.octoprint.org/plugins/ServoSpindle/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/ServoSpindle/</guid>
+        
+        <category>grbl</category>
+        
+        <category>laser</category>
+        
+        <category>engraver</category>
+        
+        <category>cnc</category>
+        
+        <category>brushless</category>
+        
+        <category>esc</category>
+        
+        <category>servo</category>
+        
+      </item>
     
       <item>
         <title>OctoPrint-OpenMiko</title>
@@ -271,39 +300,6 @@ Sat, 08 Jan 2022 00:00:00 -0600</pubDate>
         <category>led</category>
         
         <category>buzzer</category>
-        
-      </item>
-    
-      <item>
-        <title>GPIO Status</title>
-        <description>
-          <![CDATA[
-            Check the Raspberry GPIO status and other hardware data.
-            <p><img src="https://plugins.octoprint.org/assets/img/plugins/gpiostatus/GPIO.png"></p>
-          ]]>
-        </description>
-        <pubDate>
-Sat, 08 Jan 2022 00:00:00 -0600</pubDate>
-        <link>https://plugins.octoprint.org/plugins/gpiostatus/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/gpiostatus/</guid>
-        
-        <category>gpio</category>
-        
-        <category>raspberry</category>
-        
-        <category>raspberrypi</category>
-        
-        <category>raspbian</category>
-        
-        <category>linux</category>
-        
-        <category>gpiostatus</category>
-        
-        <category>pin</category>
-        
-        <category>pins</category>
-        
-        <category>bcm</category>
         
       </item>
     
