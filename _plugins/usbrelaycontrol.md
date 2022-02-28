@@ -31,7 +31,7 @@ featuredimage: /assets/img/plugins/usbrelaycontrol/sidebar.png
 
 compatibility:
   octoprint:
-  - 1.3.0
+  - 1.5.0
   os:
   - linux
   python: ">=3,<4" # Python 3 only
