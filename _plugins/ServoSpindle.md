@@ -7,7 +7,7 @@ description: Servo Spindle enables servo based control of a CNC spindle by conne
 author: Shell M. Shrader
 license: Apache 2.0
 
-date: 2022-02-06
+date: 2022-02-27
 
 homepage: https://github.com/synman/OctoPrint-Servospindle
 source: https://github.com/synman/OctoPrint-Servospindle
