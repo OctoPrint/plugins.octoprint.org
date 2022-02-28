@@ -7,6 +7,7 @@ description: Use a filament sensor to pause printing when filament runs out.
 authors:
 - kontakt
 - ssorgatem
+- nickmitchko
 license: AGPLv3
 date: 2017-01-06
 
