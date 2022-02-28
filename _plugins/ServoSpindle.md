@@ -22,7 +22,7 @@ tags:
 - esc
 - servo
 
-featuredimage: /assets/img/plugins/bettergrblsupport/Grbl_logo.png
+featuredimage: /assets/img/plugins/ServoSpindle/Grbl_logo.png
 
 # You only need the following if your plugin requires specific OctoPrint versions or
 # specific operating systems to function - you can safely remove the whole
@@ -42,9 +42,9 @@ compatibility:
 
   octoprint:
   - 1.3.10
-  
+
   python: ">=2.7,<4"
-  
+
   # List of compatible operating systems
   #
   # Valid values:
@@ -67,7 +67,7 @@ compatibility:
 
 # Servo Spindle for GRBL CNC
 
-![grbl](https://user-images.githubusercontent.com/1299716/147993411-7005d1bb-53bf-4277-9e09-5022b40ccc0b.png)
+![grbl](/assets/img/plugins/ServoSpindle/grbl_chrome.png)
 
 Servo Spindle enables you to control a "servo" (typically an Electronic Speed Controller) triggered off of GRBL
 gcode commands sent to your CNC machine and the status the machine reports for spindle mode and spindle speed.
