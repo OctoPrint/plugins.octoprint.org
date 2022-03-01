@@ -5,10 +5,31 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>https://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 01 Mar 2022 05:15:35 -0600</pubDate>
-    <lastBuildDate>Tue, 01 Mar 2022 05:15:35 -0600</lastBuildDate>
+    <pubDate>Tue, 01 Mar 2022 05:26:23 -0600</pubDate>
+    <lastBuildDate>Tue, 01 Mar 2022 05:26:23 -0600</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
+    
+      <item>
+        <title>USB Relay Control</title>
+        <description>
+          <![CDATA[
+            Control USB relays from within OctoPrint
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/usbrelaycontrol/sidebar.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Tue, 01 Mar 2022 00:00:00 -0600</pubDate>
+        <link>https://plugins.octoprint.org/plugins/usbrelaycontrol/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/usbrelaycontrol/</guid>
+        
+        <category>control</category>
+        
+        <category>usb</category>
+        
+        <category>relay</category>
+        
+      </item>
     
       <item>
         <title>Servo Spindle for GRBL CNC</title>
@@ -265,41 +286,6 @@ Sat, 22 Jan 2022 00:00:00 -0600</pubDate>
         <category>connection</category>
         
         <category>network</category>
-        
-      </item>
-    
-      <item>
-        <title>ShutdownButtonLEDBuzzer</title>
-        <description>
-          <![CDATA[
-            It implements a shutdown physical button for the Raspberry Pi, with a buzzer and a status LED.
-            <p><img src="https://plugins.octoprint.org/assets/img/plugins/shutdownbuttonledbuzzer/circuit.png"></p>
-          ]]>
-        </description>
-        <pubDate>
-Sat, 08 Jan 2022 00:00:00 -0600</pubDate>
-        <link>https://plugins.octoprint.org/plugins/shutdownbuttonledbuzzer/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/shutdownbuttonledbuzzer/</guid>
-        
-        <category>raspberry</category>
-        
-        <category>raspberrypi</category>
-        
-        <category>raspbian</category>
-        
-        <category>linux</category>
-        
-        <category>gpio</category>
-        
-        <category>shutdown</category>
-        
-        <category>shutdownbutton</category>
-        
-        <category>button</category>
-        
-        <category>led</category>
-        
-        <category>buzzer</category>
         
       </item>
     
