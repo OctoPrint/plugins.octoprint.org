@@ -1693,9 +1693,9 @@
         "published": "2017-01-06 00:00:00 -0600",
         "title": "Filament Sensor Reloaded",
         "description": "Use a filament sensor to pause printing when filament runs out.",
-        "archive": "https://github.com/ssorgatem/Octoprint-Filament-Reloaded/archive/master.zip",
-        "author": "kontakt, ssorgatem",
-        "homepage": "https://github.com/ssorgatem/Octoprint-Filament-Reloaded",
+        "archive": "https://github.com/nickmitchko/Octoprint-Filament-Reloaded/archive/master.zip",
+        "author": "kontakt, ssorgatem, nickmitchko",
+        "homepage": "https://github.com/nickmitchko/Octoprint-Filament-Reloaded",
         "page": "https://plugins.octoprint.org/plugins/filament_sensor_reloaded/",
         "compatibility": {
             "octoprint": ["1.2.6"],
@@ -1703,7 +1703,7 @@
             "python": ">=2.7,<3"
         },
         "license": "AGPLv3",
-        "abandoned": true,
+        "abandoned": false,
         "github": { 
             "latest_release": {
                 "name": "Fixed a crash due to an uninitialized variable",
@@ -9697,11 +9697,11 @@
         "abandoned": false,
         "github": { 
             "latest_release": {
-                "name": "🚀 More Stable Connections",
-                "date": "2022-02-20 19:07:10 +0000",
-                "tag": "1.5.15"
+                "name": "🚀 It's Here! Slipstream has arrived!",
+                "date": "2022-02-28 23:44:59 +0000",
+                "tag": "1.6.4"
             },
-            "releases": 39,
+            "releases": 40,
             "last_push": "2022-02-24 21:36:02 +0000",
             "stars": 40,
             "issues": {
