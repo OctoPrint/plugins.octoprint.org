@@ -5,8 +5,8 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>https://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 02 Mar 2022 14:17:35 -0600</pubDate>
-    <lastBuildDate>Wed, 02 Mar 2022 14:17:35 -0600</lastBuildDate>
+    <pubDate>Wed, 02 Mar 2022 14:22:52 -0600</pubDate>
+    <lastBuildDate>Wed, 02 Mar 2022 14:22:52 -0600</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
     
@@ -113,7 +113,7 @@ Tue, 22 Feb 2022 00:00:00 -0600</pubDate>
         <title>OctoPrint-Emc2101</title>
         <description>
           <![CDATA[
-            Enable control of a PWM fan for your enclosue controlled by an Adafruit 2101
+            Enable control status display of up to 8 4-Pin PWM fans each controlled by an Adafruit 2101
             <p><img src="https://plugins.octoprint.org/assets/img/plugins/emc2101/screenshotv0.0.3.png"></p>
           ]]>
         </description>
@@ -129,6 +129,8 @@ Mon, 14 Feb 2022 00:00:00 -0600</pubDate>
         <category>PWM</category>
         
         <category>temperature</category>
+        
+        <category>cooling</category>
         
       </item>
     
