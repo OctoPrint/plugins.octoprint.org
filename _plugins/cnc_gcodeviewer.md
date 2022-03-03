@@ -47,5 +47,4 @@ or manually using this URL:
 
     https://github.com/vector76/cnc_gcodeviewer/archive/main.zip
 
-\(Optional\) You may wish to disable the native Octoprint GCode Viewer, or else the UI will try to 
-show both tabs, which may become confusing.
+Note: this plugin replaces the native Octoprint GCode Viewer within the UI.  Disable this plugin to restore the default behavior.
