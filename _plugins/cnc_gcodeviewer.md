@@ -33,7 +33,7 @@ compatibility:
 ---
 
 This viewer adds support for CNC toolpaths, which have no extrusions.  
-This plugin is based (very) heavily on the native OctoPrint GCode Viewer, which does not show jobs that have no extrusions.
+This plugin is based \(very\) heavily on the native OctoPrint GCode Viewer, which does not show jobs that have no extrusions.
 This plugin has been tested primarily with Marlin-flavored gcode.
 
 ## Screen Shot
@@ -47,5 +47,5 @@ or manually using this URL:
 
     https://github.com/vector76/cnc_gcodeviewer/archive/main.zip
 
-(Optional) You may wish to disable the native Octoprint GCode Viewer, or else the UI will try to 
+\(Optional\) You may wish to disable the native Octoprint GCode Viewer, or else the UI will try to 
 show both tabs, which may become confusing.
