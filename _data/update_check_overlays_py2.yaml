@@ -21,15 +21,15 @@ octoprint:
     name: Stable
   prerelease_branches: []
 # Force the bundled plugins to always report as current
-file_check:
-  type: always_current
-  current_version: 2021.2.23
-  prerelease_branches: []
-firmware_check:
-  type: always_current
-  current_version: 2021.10.11
-  prerelease_branches: []
-pi_support:
-  type: always_current
-  current_version:  2021.10.28
-  prerelease_branches: []
+#file_check:
+#  type: always_current
+#  current_version: 2021.2.23
+#  prerelease_branches: []
+#firmware_check:
+#  type: always_current
+#  current_version: 2021.10.11
+#  prerelease_branches: []
+#pi_support:
+#  type: always_current
+#  current_version:  2022.3.1
+#  prerelease_branches: []
