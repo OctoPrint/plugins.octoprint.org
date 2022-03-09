@@ -82,6 +82,7 @@ PrintWatch saves time and material while also giving you peace of mind that your
 Current features include:
 
 - Real-time defect detection
+- Real-time remote monitoring and control
 - Anomalous Printer Detection
 - Advanced Analytics
 - Resume Print
