@@ -204,8 +204,15 @@
       </p>
       <h1 id="continuous-print">Continuous Print</h1>
 
-<p>This is a simple plugin that, as its name suggests, allows <em>continuous print</em>. The gcode files are first loaded into a queue. Once this queue is started, the queue will automatically print from top to bottom. Between prints, it will run bed clearing commands so your prints won’t get messed up.
-Depending on your printer, and the material you are printing with, you may need to change the bed clearing commands.</p>
+<p>This plugin automates your printing!</p>
+
+<ul>
+  <li><strong>Add gcode files to the queue and set a number of times to print each.</strong> The plugin will print them in sequence, running “bed clearing” script after each.</li>
+  <li><strong>Group multiple files together into “jobs” and run them multiple times.</strong> Don’t make 10 boxes by printing 10 bases, then 10 lids - just define a “box” job and print box/lid combos in sequence.</li>
+  <li><strong>Reduce manual intervention with failure automation.</strong> This plugin optionally integrates with <a href="https://www.thespaghettidetective.com/">The Spaghetti Detective</a> and can retry prints that fail to adhere to the bed, with configurable limits on how hard to try before giving up.</li>
+</ul>
+
+<p>WARNING: Your printer must have a method of clearing the bed automatically, with correct GCODE instructions set up in this plugin’s settings page - damage to your printer may occur if this is not done correctly. If you want to manually remove prints, look in the plugin settings for details on how to use <code class="language-plaintext highlighter-rouge">@pause</code> so the queue is paused before another print starts.</p>
 
 <h2 id="screenshot">Screenshot</h2>
 
@@ -239,14 +246,14 @@ Depending on your printer, and the material you are printing with, you may need 
         
         <dd>
           URL:
-          <pre>https://github.com/Zinc-OS/continuousprint/archive/master.zip</pre>
+          <pre>https://github.com/smartin015/continuousprint/archive/master.zip</pre>
           
         </dd>
         
         
         <dd>
           Command line:
-          <pre>pip install "https://github.com/Zinc-OS/continuousprint/archive/master.zip"</pre>
+          <pre>pip install "https://github.com/smartin015/continuousprint/archive/master.zip"</pre>
         </dd>
         
       </dl>
@@ -276,14 +283,14 @@ Depending on your printer, and the material you are printing with, you may need 
           <ul>
             
             <li>
-              Latest Release: <a href="https://github.com/Zinc-OS/continuousprint/releases/tag/1.3.1" target="_blank">1.3.1</a><br>
-              <small>released on 29 Dec 2021</small>
+              Latest Release: <a href="https://github.com/smartin015/continuousprint/releases/tag/1.4.1" target="_blank">1.4.1</a><br>
+              <small>released on 12 Mar 2022</small>
             </li>
-            <li>Releases: 10</li>
+            <li>Releases: 1</li>
             
-            <li>Stars: <span id="github_star_count">21</span> <span id="github_star"><a href="javascript:void(0)"><i class="far fa-star"></i></a></span></li>
-            <li>Issues: 19 open, 17 closed</li>
-            <li>Last push: 29 Dec 2021</li>
+            <li>Stars: <span id="github_star_count">5</span> <span id="github_star"><a href="javascript:void(0)"><i class="far fa-star"></i></a></span></li>
+            <li>Issues: 1 open, 0 closed</li>
+            <li>Last push: 12 Mar 2022</li>
           </ul>
         </dd>
       </dl>
@@ -324,11 +331,15 @@ Depending on your printer, and the material you are printing with, you may need 
         <dt>Authors</dt>
         
           <dd>
+<a href="/by_author/#scott-martin-current">Scott Martin (Current)</a>
+</dd>
+        
+          <dd>
 <a href="/by_author/#louis-sarwal">Louis Sarwal</a>
 </dd>
         
           <dd>
-<a href="/by_author/#paul-goddard-original">Paul Goddard(Original)</a>
+<a href="/by_author/#paul-goddard">Paul Goddard</a>
 </dd>
         
       </dl>
@@ -336,13 +347,13 @@ Depending on your printer, and the material you are printing with, you may need 
       
       <dl class="homepage">
         <dt>Homepage</dt>
-        <dd><a href="https://github.com/Zinc-OS/continuousprint" target="_blank">https://github.com/Zinc-OS/continuousprint</a></dd>
+        <dd><a href="https://github.com/smartin015/continuousprint" target="_blank">https://github.com/smartin015/continuousprint</a></dd>
       </dl>
       
       
       <dl class="source">
         <dt>Source</dt>
-        <dd><a href="https://github.com/Zinc-OS/continuousprint" target="_blank">https://github.com/Zinc-OS/continuousprint</a></dd>
+        <dd><a href="https://github.com/smartin015/continuousprint" target="_blank">https://github.com/smartin015/continuousprint</a></dd>
       </dl>
       
       
@@ -368,7 +379,7 @@ Depending on your printer, and the material you are printing with, you may need 
             <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?template=suspicious_plugin_activity.yml&labels%5B%5D=suspicious+plugin+activity&title=%5BSuspicious+Plugin+Activity%5D+Continuous+Print&which_plugin=https%3A%2F%2Fplugins.octoprint.org%2Fplugins%2Fcontinuousprint%2F">report the plugin as suspicious here</a>.
           </p>
           <p>
-            Report bugs or feature requests for the plugin to the plugin author (e.g. on the plugin's <a href="https://github.com/Zinc-OS/continuousprint">homepage</a>) please, not here!
+            Report bugs or feature requests for the plugin to the plugin author (e.g. on the plugin's <a href="https://github.com/smartin015/continuousprint">homepage</a>) please, not here!
           </p>
         </dd>
       </dl>
@@ -381,7 +392,7 @@ Depending on your printer, and the material you are printing with, you may need 
   $(function() {
     var has_github = true;
     if (has_github) {
-      var github_repo = "Zinc-OS/continuousprint";
+      var github_repo = "smartin015/continuousprint";
 
       if (github_repo) {
         var status = "unknown";
@@ -548,7 +559,7 @@ Depending on your printer, and the material you are printing with, you may need 
 <script src="/assets/js/site-9cd3c1f2763a9bba048afaa1d65885869520587e0f536ffb0bf93598428371fd.js" type="text/javascript" integrity="sha256-nNPB8nY6m7oEivqh1liFhpUgWH4PU2/7C/k1mEKDcf0=" crossorigin="anonymous"></script>
 <script src="/assets/js/autotrack-2e10f5ef468c4b20088ec964a113acbad1f15d1baf4074a5255fd03c204bf37f.js" type="text/javascript" integrity="sha256-LhD170aMSyAIjslkoROsutHxXRuvQHSlJV/QPCBL838=" crossorigin="anonymous"></script>
 <script src="/assets/js/yt-with-consent-93662d2c310d0341065cd518f3d448995e3b7e44c87151bce9449b14846a5b6e.js" type="text/javascript" integrity="sha256-k2YtLDENA0EGXNUY89RImV47fkTIcVG86USbFIRqW24=" crossorigin="anonymous"></script>
-<script src="https://octoprint.org/assets/js/standwithukraine.js?_=1647137483" url="https://supportukrainenow.org/" title="We stand with Ukraine! 🇺🇦" async></script>
+<script src="https://octoprint.org/assets/js/standwithukraine.js?_=1647141291" url="https://supportukrainenow.org/" title="We stand with Ukraine! 🇺🇦" async></script>
 
 <script>
     var gaBaseProperty = 'UA-62479257';

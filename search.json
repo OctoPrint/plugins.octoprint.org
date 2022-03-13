@@ -2140,8 +2140,8 @@
 "date": "2020-04-24 00:00:00 -0500",
 "title": "Continuous Print",
 "description": "Allows the queueing and automatic print and clearing of the queue",
-"author": "Louis Sarwal, Paul Goddard(Original)",
-"content": "Continuous PrintThis is a simple plugin that, as its name suggests, allows continuous print. The gcode files are first loaded into a queue. Once this queue is started, the queue will automatically print from top to bottom. Between prints, it will run bed clearing commands so your prints won’t get messed up.Depending on your printer, and the material you are printing with, you may need to change the bed clearing commands.Screenshot",
+"author": "Scott Martin (Current), Louis Sarwal, Paul Goddard",
+"content": "Continuous PrintThis plugin automates your printing!  Add gcode files to the queue and set a number of times to print each. The plugin will print them in sequence, running “bed clearing” script after each.  Group multiple files together into “jobs” and run them multiple times. Don’t make 10 boxes by printing 10 bases, then 10 lids - just define a “box” job and print box/lid combos in sequence.  Reduce manual intervention with failure automation. This plugin optionally integrates with The Spaghetti Detective and can retry prints that fail to adhere to the bed, with configurable limits on how hard to try before giving up.WARNING: Your printer must have a method of clearing the bed automatically, with correct GCODE instructions set up in this plugin’s settings page - damage to your printer may occur if this is not done correctly. If you want to manually remove prints, look in the plugin settings for details on how to use @pause so the queue is paused before another print starts.Screenshot",
 "tags": ["continuous print","queueing"]
 },
 
