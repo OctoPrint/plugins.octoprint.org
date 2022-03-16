@@ -7,7 +7,9 @@ description: PrintWatch monitors your prints for defects in real-time and optimi
 author: printpal.io
 license: AGPLv3
 
+
 date: 2022-01-31
+
 
 homepage: https://github.com/printpal-io/OctoPrint-Printwatch
 source: https://github.com/printpal-io/OctoPrint-Printwatch
@@ -78,10 +80,12 @@ PrintWatch uses Artificial Intelligence to monitor your 3D prints for any defect
 - 🔥 Turning off the Extruder Heat
 - ⚙ Customized actions created by the user
 
-PrintWatch saves time and material while also giving you peace of mind that your 3D print is printing properly. In addition to detecting defects, PrintWatch has an Anomaly Detection model running in the background that can detect slight changes or anomalies for printers in your fleet. Get notified early and schedule maintenance for the problematic printer, reducing downtime and costs.
+
+PrintWatch saves time and material while also giving you peace of mind that your 3D print is printing properly. In addition to detecting defects, PrintWatch has an Anomaly Detection model running in the background that can detect slight changes or anomalies for printers in your fleet. Get notified early and schedule maintenance for the problematic printer, reducing downtime and costs. PrintWatch's Web App allows you to remotely view and manage all of your printers from anywhere in the world.
 Current features include:
 
 - Real-time defect detection
+- Remote access and management
 - Anomalous Printer Detection
 - Advanced Analytics
 - Resume Print
@@ -126,4 +130,8 @@ Follow the setup guide on the official [GitHub](https://github.com/printpal-io/O
 
 ### Authentication
 
-In order to use PrintWatch, you must provide your API key in the settings. Visit the [printpal.io website](https://printpal.io/pricing/) to register your key for your printers. 
+
+In order to use PrintWatch, you must provide your API key in the settings. Visit the [printpal.io website](https://printpal.io/pricing/) to register your key for your printers.
+
+# Privacy Policy
+Read our privacy polich here: [PrintWatch Privacy policy](https://printpal.io/privacy/)
