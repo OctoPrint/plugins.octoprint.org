@@ -35,7 +35,7 @@ featuredimage: /assets/img/plugins/wled/wled-octoprint.png
 compatibility:
   octoprint:
     - 1.5.0
-  python: ">=3.6,<4"
+  python: ">=3.7,<4"
 
 ---
 

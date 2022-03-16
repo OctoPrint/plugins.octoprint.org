@@ -58,5 +58,7 @@ The default configuration matches the syntax of the following slicers, but you c
 
 A more detailed description and manual is available on Github - the plugin's homepage on the right.
 
+For plugin developers an [API description is available](https://github.com/NilsRo/OctoPrint-SlicerEstimator/blob/master/API_DOC.md) to add metadata also in other plugins.
+
 
 More configurations can be added, please request additions via a [Github issue](https://github.com/NilsRo/OctoPrint-SlicerEstimator/issues).

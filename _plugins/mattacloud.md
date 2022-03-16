@@ -57,18 +57,18 @@ compatibility:
 
 Full remote control, management and access from anywhere in addition to automatic and intelligent error detection and process monitoring for your OctoPrint-enabled 3D printer. Additionally, receive notifications and updates alerting you of failures and keeping you updated on the state of your 3D print. Overview your print history and gain insights into filament use, print times and your printer reliability.
 
-Learn more about **Mattacloud** and its features - [https://mattalabs.com/products/mattacloud/](https://mattalabs.com/products/mattacloud/)
+Learn more about **Mattacloud** and its features [here](https://matta.ai).
 
-_Note: **Mattacloud** is currently still in development so users may experience changes and errors during use._
+_Note: **Mattacloud** is currently still in development for OctoPrint integration so users may experience changes and errors during use._
 
 ### Printer Setup
 
 The setup progress takes less than 5 minutes and consists of 5 simple steps. If you follow these, all the benefits of **Mattacloud** will apply to your printer. Happy printing!
 
-1. [Sign up](https://cloud.mattalabs.com/accounts/signup/) to the **Mattacloud Free Plan** currently undergoing beta testing. If you already have, just [login](https://cloud.mattalabs.com/accounts/login/). This plan will remain free after the beta testing period has finished.
+1. [Sign up](https://cloud.matta.ai/accounts/signup/) to the **Mattacloud Free Plan** currently undergoing beta testing. If you already have, just [login](https://cloud.matta.ai/accounts/login/). This plan will remain free after the beta testing period has finished.
 2. Select your membership type - at this stage you can only choose the free beta membership.
 3. Add a printer to your **Mattacloud** by following the setup guide.
-4. After installing the OctoPrint-Mattacloud Plugin on your OctoPrint enabled device, copy the authorization token from your newly created printer on **Mattacloud** into the authorization token input box presented in the OctoPrint-Mattacloud plugin settings. You can see all of your printers and their respective tokens [here](https://cloud.mattalabs.com/printer-dashboard/).
+4. After installing the OctoPrint-Mattacloud Plugin on your OctoPrint enabled device, copy the authorization token from your newly created printer on **Mattacloud** into the authorization token input box presented in the OctoPrint-Mattacloud plugin settings. You can see all of your printers and their respective tokens [here](https://cloud.matta.ai/printer-dashboard/).
 5. Test your token using the **Activate** button adjacent to the input box.
 6. You are all setup. Happy printing!
 
@@ -120,7 +120,7 @@ Errors that the personal and industrial plans are capable of detecting are:
 - Blocked extruder / out of filament
 - Hotend too close to print bed
 
-At present, the Beta plan does not support error detection as we are still testing our AI models in house. To be released by the end of 2020!
+At present, the Beta plan does not support error detection as we are still testing our AI models in house.
 
 ### Remote control and management
 
@@ -139,7 +139,7 @@ At present, the plugin enables you to do the following:
 
 ### Notifications and updates
 
-By installing this plugin and linking a printer to your **Mattacloud** account, you can receive useful notifications and updates concerning your 3D printer via various channels. When an error occurs during the 3D printing process, you will receive an alert with an attached image showing the error in addition to current progress, material usage and other useful statistics; you can then deside to take action. Additionally, you can also set up other checkpoints to receive notifications, such as upon object completion, or when a print has reached the half way mark.
+By installing this plugin and linking a printer to your **Mattacloud** account, you can receive useful notifications and updates concerning your 3D printer via various channels. When an error occurs during the 3D printing process, you will receive an alert with an attached image showing the error in addition to current progress, material usage and other useful statistics; you can then deside to take action. Additionally, you can also set up other checkpoints to receive notifications, such as upon object completion, or when a print has reached the half way mark. 
 
 The communication channels which are currently supported are:
 

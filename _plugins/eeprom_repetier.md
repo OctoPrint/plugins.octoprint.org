@@ -27,8 +27,8 @@ featuredimage: /assets/img/plugins/eeprom_repetier/eeprom_values.png
 
 compatibility:
   python: ">=2.7,<4"
-  octoprint: 
-  - 1.5.x
+  octoprint:
+  - 1.5.0
 
 ---
 
@@ -46,7 +46,7 @@ Find it in the plugin manager or install manually using the archive URL
 
 ## Firmware requirements
 
-This plugin only supports Repetier firmware, version 0.92 and later.  Use caution when restoring data from an older firmware version.  
+This plugin only supports Repetier firmware, version 0.92 and later.  Use caution when restoring data from an older firmware version.
 
 ## Screenhots
 

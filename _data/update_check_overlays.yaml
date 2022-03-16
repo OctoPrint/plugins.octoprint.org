@@ -19,14 +19,14 @@ klipper:
 costestimation:
   user: OllisGit
 filamentreload:
-  user: ssorgatem
+  user: nickmitchko
 eeprom_marlin:
   user: cp2004
 stats:
   user: AlexVerrico
   repo: octoprint-stats
 continuousprint:
-  user: Zinc-OS
+  user: smartin015
 m73etaoverride:
   user: gdombiak
 webcamtab:
@@ -39,3 +39,6 @@ metadatapreprocessor:
   user: awenelo
 HeaterTimeout:
   user: Andy-ch
+smartfilamentsensor:
+  user: Royrdan
+  pip: https://github.com/Royrdan/Octoprint-Smart-Filament-Sensor/archive/{target_version}.zip
