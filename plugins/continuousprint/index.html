@@ -7,7 +7,7 @@
 <head>
     <meta charset="utf-8" />
     <title>Continuous Print</title>
-    <meta name="description" content="Allows the queueing and automatic print and clearing of the queue">
+    <meta name="description" content="This plugin automates your printer! Queue your prints, push the button, and walk away - now with auto bed clearing and failure recovery.">
     
     <meta name="referrer" content="same-origin">
     <meta name="google-site-verification" content="0EFsbaNygJcEinKPmzP-hTf0Ju6wDIpJxO5zvQtOQT0" />
@@ -40,7 +40,7 @@
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@OctoPrint3D" />
     <meta name="twitter:title" content="Continuous Print" />
-    <meta name="twitter:description" content="Continuous Print
+    <meta name="twitter:description" content="
 
 " />
     <meta name="twitter:image" content="https://plugins.octoprint.org" />
@@ -48,7 +48,7 @@
     <meta property="og:title" content="Continuous Print" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://plugins.octoprint.org/assets/img/plugins/continuousprint/screenshot.png" />
-    <meta property="og:description" content="Continuous Print
+    <meta property="og:description" content="
 
 " />
     <meta property="og:site_name" content="OctoPrint Plugin Repository" />
@@ -56,7 +56,7 @@
 
     <meta itemscope itemtype="http://schema.org/WebPage" />
     <meta itemprop="headline" content="Continuous Print" />
-    <meta itemprop="description" content="Continuous Print
+    <meta itemprop="description" content="
 
 " />
     <meta itemprop="image" content="https://plugins.octoprint.org/assets/img/plugins/continuousprint/screenshot.png" />
@@ -204,23 +204,17 @@
       
 
       <p class="lead">
-        Allows the queueing and automatic print and clearing of the queue
+        This plugin automates your printer! Queue your prints, push the button, and walk away - now with auto bed clearing and failure recovery.
       </p>
-      <h1 id="continuous-print">Continuous Print</h1>
-
-<p>This plugin automates your printing!</p>
+      <p><img src="/assets/img/plugins/continuousprint/screenshot.png" alt="screenshot" /></p>
 
 <ul>
-  <li><strong>Add gcode files to the queue and set a number of times to print each.</strong> The plugin will print them in sequence, running “bed clearing” script after each.</li>
-  <li><strong>Group multiple files together into “jobs” and run them multiple times.</strong> Don’t make 10 boxes by printing 10 bases, then 10 lids - just define a “box” job and print box/lid combos in sequence.</li>
-  <li><strong>Reduce manual intervention with failure automation.</strong> This plugin optionally integrates with <a href="https://www.thespaghettidetective.com/">The Spaghetti Detective</a> and can retry prints that fail to adhere to the bed, with configurable limits on how hard to try before giving up.</li>
+  <li><strong>Add files to the queue and set a number of copies.</strong> The plugin will print the files in sequence, clearing the bed after each print to set up for the next one.</li>
+  <li><strong>Group files together to run them as a unit.</strong> Don’t make 10 boxes by printing 10 bases, then 10 lids - instead, define a “box” job and print box/lid combos in sequence.</li>
+  <li><strong>Use failure recovery to stop wasting time and filament.</strong> Optional <a href="https://www.thespaghettidetective.com/">Spaghetti Detective</a> integration detects bed adhesion failures and recovers automatically.</li>
 </ul>
 
 <p>WARNING: Your printer must have a method of clearing the bed automatically, with correct GCODE instructions set up in this plugin’s settings page - damage to your printer may occur if this is not done correctly. If you want to manually remove prints, look in the plugin settings for details on how to use <code class="language-plaintext highlighter-rouge">@pause</code> so the queue is paused before another print starts.</p>
-
-<h2 id="screenshot">Screenshot</h2>
-
-<p><img src="/assets/img/plugins/continuousprint/screenshot.png" alt="screenshot" /></p>
 
 
       
@@ -307,7 +301,11 @@
           
           
           
+          <a class="label" href="/by_tag/#tag-automation">automation</a>
+          
           <a class="label" href="/by_tag/#tag-continuous-print">continuous print</a>
+          
+          <a class="label" href="/by_tag/#tag-failure-detection">failure detection</a>
           
           <a class="label" href="/by_tag/#tag-queueing">queueing</a>
           
@@ -325,7 +323,7 @@
             <li>Operating Systems: all</li>
             
             
-            <li>Python: &gt;=2.7,&lt;4</li>
+            <li>Python: &gt;=3.6,&lt;4</li>
             
           </ul>
         </dd>

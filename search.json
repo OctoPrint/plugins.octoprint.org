@@ -2139,10 +2139,10 @@
 "url": "/plugins/continuousprint/",
 "date": "2020-04-24 00:00:00 -0500",
 "title": "Continuous Print",
-"description": "Allows the queueing and automatic print and clearing of the queue",
+"description": "This plugin automates your printer! Queue your prints, push the button, and walk away - now with auto bed clearing and failure recovery.",
 "author": "Scott Martin (Current), Louis Sarwal, Paul Goddard",
-"content": "Continuous PrintThis plugin automates your printing!  Add gcode files to the queue and set a number of times to print each. The plugin will print them in sequence, running “bed clearing” script after each.  Group multiple files together into “jobs” and run them multiple times. Don’t make 10 boxes by printing 10 bases, then 10 lids - just define a “box” job and print box/lid combos in sequence.  Reduce manual intervention with failure automation. This plugin optionally integrates with The Spaghetti Detective and can retry prints that fail to adhere to the bed, with configurable limits on how hard to try before giving up.WARNING: Your printer must have a method of clearing the bed automatically, with correct GCODE instructions set up in this plugin’s settings page - damage to your printer may occur if this is not done correctly. If you want to manually remove prints, look in the plugin settings for details on how to use @pause so the queue is paused before another print starts.Screenshot",
-"tags": ["continuous print","queueing"]
+"content": "  Add files to the queue and set a number of copies. The plugin will print the files in sequence, clearing the bed after each print to set up for the next one.  Group files together to run them as a unit. Don’t make 10 boxes by printing 10 bases, then 10 lids - instead, define a “box” job and print box/lid combos in sequence.  Use failure recovery to stop wasting time and filament. Optional Spaghetti Detective integration detects bed adhesion failures and recovers automatically.WARNING: Your printer must have a method of clearing the bed automatically, with correct GCODE instructions set up in this plugin’s settings page - damage to your printer may occur if this is not done correctly. If you want to manually remove prints, look in the plugin settings for details on how to use @pause so the queue is paused before another print starts.",
+"tags": ["continuous print","queueing","automation","failure detection"]
 },
 
 {

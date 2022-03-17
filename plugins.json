@@ -7288,7 +7288,7 @@
         "id": "continuousprint",
         "published": "2020-04-24 00:00:00 -0500",
         "title": "Continuous Print",
-        "description": "Allows the queueing and automatic print and clearing of the queue",
+        "description": "This plugin automates your printer! Queue your prints, push the button, and walk away - now with auto bed clearing and failure recovery.",
         "archive": "https://github.com/smartin015/continuousprint/archive/master.zip",
         "author": "Scott Martin (Current), Louis Sarwal, Paul Goddard",
         "homepage": "https://github.com/smartin015/continuousprint",
@@ -7296,7 +7296,7 @@
         "compatibility": {
             "octoprint": [],
             "os": [],
-            "python": ">=2.7,<4"
+            "python": ">=3.6,<4"
         },
         "license": "AGPLv3",
         "image": "https://plugins.octoprint.org/assets/img/plugins/continuousprint/screenshot.png",
