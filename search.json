@@ -3749,6 +3749,17 @@
 "author": "Jamie Kawabata",
 "content": "This viewer adds support for CNC toolpaths, which have no extrusions.This plugin is based (very) heavily on the native OctoPrint GCode Viewer, which does not show jobs that have no extrusions.This plugin has been tested primarily with Marlin-flavored gcode.Screen ShotSetupInstall via the bundled Plugin Manageror manually using this URL:https://github.com/vector76/cnc_gcodeviewer/archive/main.zipNote: this plugin replaces the native Octoprint GCode Viewer within the UI.  Disable this plugin to restore the default behavior.",
 "tags": ["marlin","cnc"]
+},
+
+{
+"id": "/plugins/wyze",
+"url": "/plugins/wyze/",
+"date": "2022-03-16 00:00:00 -0500",
+"title": "OctoPrint-Wyze",
+"description": "Control Wyze devices through OctoPrint",
+"author": "Eric Shapiro",
+"content": "OctoPrint-Wyze lets you control and automate Wyze home devices through OctoPrint. You can register plugs, lights and cameras to turn on or off whenever specific events occur. For example, you can set a light to turn on whenever the web client is opened, or a print or timelapse is started, then off when a print has finished.NOTE: Only Python 3.8 and up will work! This is not ideal since OctoPrint does not officially support anything higher than Python 3.7 at the moment, so you will need to be comfortable updating OctoPrint’s Python environment. This is a hard requirement because the wyze_sdk module that this plugin relies on will only work with Python 3.8 and up.",
+"tags": ["wyze","control","events","scheduling","lights"]
 }
 ]
 }

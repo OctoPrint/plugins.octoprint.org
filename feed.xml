@@ -5,10 +5,35 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>https://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 18 Mar 2022 20:01:56 -0500</pubDate>
-    <lastBuildDate>Fri, 18 Mar 2022 20:01:56 -0500</lastBuildDate>
+    <pubDate>Fri, 18 Mar 2022 20:17:19 -0500</pubDate>
+    <lastBuildDate>Fri, 18 Mar 2022 20:17:19 -0500</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
+    
+      <item>
+        <title>OctoPrint-Wyze</title>
+        <description>
+          <![CDATA[
+            Control Wyze devices through OctoPrint
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/wyze/OctoPrint-Wyze.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Wed, 16 Mar 2022 00:00:00 -0500</pubDate>
+        <link>https://plugins.octoprint.org/plugins/wyze/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/wyze/</guid>
+        
+        <category>wyze</category>
+        
+        <category>control</category>
+        
+        <category>events</category>
+        
+        <category>scheduling</category>
+        
+        <category>lights</category>
+        
+      </item>
     
       <item>
         <title>CNC GCode Viewer</title>
@@ -267,27 +292,6 @@ Mon, 31 Jan 2022 00:00:00 -0600</pubDate>
         <category>save</category>
         
         <category>time</category>
-        
-      </item>
-    
-      <item>
-        <title>Google Drive Files</title>
-        <description>
-          <![CDATA[
-            Adds Google Drive file access from within OctoPrint's file manager.
-            <p><img src="https://plugins.octoprint.org/assets/img/plugins/googledrivefiles/screenshot_filelist.png"></p>
-          ]]>
-        </description>
-        <pubDate>
-Sat, 22 Jan 2022 00:00:00 -0600</pubDate>
-        <link>https://plugins.octoprint.org/plugins/googledrivefiles/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/googledrivefiles/</guid>
-        
-        <category>google</category>
-        
-        <category>cloud</category>
-        
-        <category>sync</category>
         
       </item>
     
