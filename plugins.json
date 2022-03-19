@@ -5316,39 +5316,6 @@
     },
 
     {
-        "id": "webcamstreamer",
-        "published": "2019-02-08 00:00:00 -0600",
-        "title": "OctoPrint-WebcamStreamer",
-        "description": "Plugin that re-encodes the webcam and streams it to streaming sites like YouTube Live or Twitch.Tv",
-        "archive": "https://github.com/adilinden-oss/octoprint-webcamstreamer/archive/master.zip",
-        "author": "Adi Linden",
-        "homepage": "https://github.com/adilinden-oss/octoprint-webcamstreamer",
-        "page": "https://plugins.octoprint.org/plugins/webcamstreamer/",
-        "compatibility": {
-            "octoprint": [],
-            "os": [],
-            "python": ">=2.7,<4"
-        },
-        "license": "AGPLv3",
-        "image": "https://plugins.octoprint.org/assets/img/plugins/webcamstreamer/screenshot_tab.png",
-        "abandoned": true,
-        "github": { 
-            "last_push": "2020-10-08 18:32:53 +0000",
-            "stars": 20,
-            "issues": {
-                "open": 15,
-                "closed": 22
-            }
-        },
-        "stats": {
-            "instances_month": 638,
-            "install_events_month": 124,
-            "instances_week": 438,
-            "install_events_week": 23
-        }
-    },
-
-    {
         "id": "filament_sensor_ng_orangepi",
         "published": "2019-02-18 00:00:00 -0600",
         "title": "FilamentSensor OrangePi",
