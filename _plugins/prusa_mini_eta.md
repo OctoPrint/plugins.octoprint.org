@@ -36,6 +36,8 @@ compatibility:
 
   python: ">=3,<4"
 
+abandoned: https://github.com/OctoPrint/plugins.octoprint.org/issues/1035
+
 ---
 
 The [Octoprint][1] plugin for retrieving the estimated time of printing using the Prusa Mini printer.
