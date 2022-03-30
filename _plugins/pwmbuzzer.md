@@ -47,11 +47,19 @@ compatibility:
 
 # OctoPrint-PWMBuzzer
 
-If your 3D printer doesn't have a speaker or natively support M300 commands for making beeps, this plugin is for you!
+If your 3D printer doesn't have a speaker or natively support [M300 commands](https://reprap.org/wiki/G-code#M300:_Play_beep_sound) for making beeps, this plugin is for you!
 
-You can use a simple (and cheap) passive buzzer, attach it to your Raspberry Pi's GPIO pins, and route M300 commands through it using Pulse-Width Modulation (PWM).  Simply connect your passive buzzer to a ground pin and the (+) side to a triggering GPIO pin, like GPIO16 (BCM).  You can find more details online in various tutorials ([example](https://github.com/stealthmonkey99/OctoPrint-PWMBuzzer)).
+You can use a simple (and cheap) passive buzzer, attach it to your Raspberry Pi's GPIO pins, and route M300 commands through it using [Pulse-Width Modulation (PWM)](https://en.wikipedia.org/wiki/Pulse-width_modulation).
 
 ## Setup
+
+### Hardware Setup
+
+To get started, simply connect your passive buzzer to a ground pin and the (+) side to a triggering GPIO pin, like GPIO16 (BCM).  You can find more details online in various tutorials ([example](https://github.com/stealthmonkey99/OctoPrint-PWMBuzzer)).
+
+![GPIO Wiring Diagram](/assets/img/plugins/pwmbuzzer/gpio-pwm-buzzer-diagram.png)
+
+### Plugin Setup
 
 Install via the bundled [Plugin Manager](https://docs.octoprint.org/en/master/bundledplugins/pluginmanager.html)
 or manually using this URL:
