@@ -12,7 +12,7 @@ date: 2022-03-29
 
 homepage: https://github.com/stealthmonkey99/OctoPrint-PWMBuzzer
 source: https://github.com/stealthmonkey99/OctoPrint-PWMBuzzer
-archive: https://github.com/stealthmonkey99/OctoPrint-PWMBuzzer/archive/master.zip
+archive: https://github.com/stealthmonkey99/OctoPrint-PWMBuzzer/archive/main.zip
 
 tags:
 - gpio
@@ -64,7 +64,7 @@ To get started, simply connect your passive buzzer to a ground pin and the (+) s
 Install via the bundled [Plugin Manager](https://docs.octoprint.org/en/master/bundledplugins/pluginmanager.html)
 or manually using this URL:
 
-    https://github.com/stealthmonkey99/OctoPrint-PWMBuzzer/archive/master.zip
+    https://github.com/stealthmonkey99/OctoPrint-PWMBuzzer/archive/main.zip
 
 ## Configuration
 
