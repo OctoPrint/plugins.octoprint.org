@@ -5,10 +5,39 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>https://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 01 Apr 2022 10:20:01 -0500</pubDate>
-    <lastBuildDate>Fri, 01 Apr 2022 10:20:01 -0500</lastBuildDate>
+    <pubDate>Fri, 01 Apr 2022 11:11:41 -0500</pubDate>
+    <lastBuildDate>Fri, 01 Apr 2022 11:11:41 -0500</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
+    
+      <item>
+        <title>OctoPrint-PWMBuzzer</title>
+        <description>
+          <![CDATA[
+            Uses PWM via GPIO to sound tones whenever an M300 command is encountered
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/pwmbuzzer/composer.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Tue, 29 Mar 2022 00:00:00 -0500</pubDate>
+        <link>https://plugins.octoprint.org/plugins/pwmbuzzer/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/pwmbuzzer/</guid>
+        
+        <category>gpio</category>
+        
+        <category>pwm</category>
+        
+        <category>buzzer</category>
+        
+        <category>beep</category>
+        
+        <category>m300</category>
+        
+        <category>music</category>
+        
+        <category>gcode</category>
+        
+      </item>
     
       <item>
         <title>OctoPrint-Wyze</title>
@@ -229,69 +258,6 @@ Sun, 06 Feb 2022 00:00:00 -0600</pubDate>
         <category>clean</category>
         
         <category>delete</category>
-        
-      </item>
-    
-      <item>
-        <title>Abort Failures - Printwatch</title>
-        <description>
-          <![CDATA[
-            PrintWatch monitors your prints for defects in real-time and optimizes your 3D printers using Artificial Intelligence
-            <p><img src="https://plugins.octoprint.org/assets/img/plugins/printwatch/printwatch.png"></p>
-          ]]>
-        </description>
-        <pubDate>
-Mon, 31 Jan 2022 00:00:00 -0600</pubDate>
-        <link>https://plugins.octoprint.org/plugins/printwatch/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/printwatch/</guid>
-        
-        <category>AI</category>
-        
-        <category>Monitor</category>
-        
-        <category>Watch</category>
-        
-        <category>Shutoff</category>
-        
-        <category>Defect Detection</category>
-        
-        <category>Remote</category>
-        
-        <category>Access</category>
-        
-        <category>Cloud</category>
-        
-        <category>Remote monitoring</category>
-        
-        <category>Machine Learning</category>
-        
-        <category>alerts</category>
-        
-        <category>internet</category>
-        
-        <category>email</category>
-        
-        <category>notifications</category>
-        
-        <category>remote</category>
-        
-        <category>restart</category>
-        
-        <category>Optimize</category>
-        
-        <category>Analytics</category>
-        
-        <category>failure</category>
-        
-        <category>sms</category>
-        
-        <category>automation</category>
-        
-        <category>material</category>
-        
-        <category>save</category>
-        
-        <category>time</category>
         
       </item>
     
