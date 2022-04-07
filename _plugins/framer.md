@@ -26,7 +26,6 @@ screenshots:
 - url: /assets/img/plugins/framer/settings.png
   alt: Settings screen
   caption: Settings screen.
-- ...
 
 featuredimage: assets/img/screen.png
 
