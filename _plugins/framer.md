@@ -29,6 +29,8 @@ screenshots:
 
 featuredimage: assets/img/screen.png
 
+compatibility:
+  python: ">=3,<4"
 ---
 ## Description
 This plugin adds a button to verify the working area of a Gcode on a CNC or Laser cutter.
