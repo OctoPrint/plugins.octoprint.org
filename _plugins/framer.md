@@ -27,7 +27,7 @@ screenshots:
   alt: Settings screen
   caption: Settings screen.
 
-featuredimage: assets/img/screen.png
+featuredimage: /assets/img/plugins/framer/screen.png
 
 compatibility:
   python: ">=3,<4"
