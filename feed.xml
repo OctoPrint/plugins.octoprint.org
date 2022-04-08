@@ -5,10 +5,31 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>https://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 07 Apr 2022 20:11:50 -0500</pubDate>
-    <lastBuildDate>Thu, 07 Apr 2022 20:11:50 -0500</lastBuildDate>
+    <pubDate>Thu, 07 Apr 2022 20:37:59 -0500</pubDate>
+    <lastBuildDate>Thu, 07 Apr 2022 20:37:59 -0500</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
+    
+      <item>
+        <title>OctoPrint-Framer</title>
+        <description>
+          <![CDATA[
+            Adds frame buttons to the items in the file list which let you verify the area used for the laser/CNC job.
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/framer/screen.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Tue, 05 Apr 2022 00:00:00 -0500</pubDate>
+        <link>https://plugins.octoprint.org/plugins/framer/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/framer/</guid>
+        
+        <category>Octoprint</category>
+        
+        <category>Laser</category>
+        
+        <category>CNC</category>
+        
+      </item>
     
       <item>
         <title>OctoPrint-PWMBuzzer</title>
@@ -235,29 +256,6 @@ Wed, 09 Feb 2022 00:00:00 -0600</pubDate>
         <category>tools</category>
         
         <category>extrusion</category>
-        
-      </item>
-    
-      <item>
-        <title>Timelapse Purger</title>
-        <description>
-          <![CDATA[
-            Automatically deletes timelapses that are older than configured number of days.
-            <p><img src="https://plugins.octoprint.org/assets/img/plugins/timelapsepurger/screenshot.png"></p>
-          ]]>
-        </description>
-        <pubDate>
-Sun, 06 Feb 2022 00:00:00 -0600</pubDate>
-        <link>https://plugins.octoprint.org/plugins/timelapsepurger/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/timelapsepurger/</guid>
-        
-        <category>timelapse</category>
-        
-        <category>purge</category>
-        
-        <category>clean</category>
-        
-        <category>delete</category>
         
       </item>
     

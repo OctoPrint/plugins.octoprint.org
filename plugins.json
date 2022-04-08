@@ -12911,5 +12911,38 @@
             "instances_week": 66,
             "install_events_week": 68
         }
+    },
+
+    {
+        "id": "framer",
+        "published": "2022-04-05 00:00:00 -0500",
+        "title": "OctoPrint-Framer",
+        "description": "Adds frame buttons to the items in the file list which let you verify the area used for the laser/CNC job.",
+        "archive": "https://github.com/rriet/OctoPrint-Framer/archive/master.zip",
+        "author": "Ricardo Riet Correa",
+        "homepage": "https://github.com/rriet/OctoPrint-Framer",
+        "page": "https://plugins.octoprint.org/plugins/framer/",
+        "compatibility": {
+            "octoprint": [],
+            "os": [],
+            "python": ">=3,<4"
+        },
+        "license": "GNUv3",
+        "image": "https://plugins.octoprint.org/assets/img/plugins/framer/screen.png",
+        "abandoned": false,
+        "github": { 
+            "last_push": "2022-04-06 17:35:54 +0000",
+            "stars": 0,
+            "issues": {
+                "open": 0,
+                "closed": 0
+            }
+        },
+        "stats": {
+            "instances_month": 0,
+            "install_events_month": 0,
+            "instances_week": 0,
+            "install_events_week": 0
+        }
     }
 ]
