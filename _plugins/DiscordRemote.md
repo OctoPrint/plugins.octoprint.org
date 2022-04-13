@@ -26,18 +26,18 @@ tags:
 
 # screenshots
 screenshots:
-- url: /assets/img/plugins/DiscordRemote/featured.jpg
+- url: /assets/img/plugins/discordremote/featured.jpg
   alt: Send commands to your octoprint instance via discord
   caption: Send commands to your octoprint instance via discord
-- url: /assets/img/plugins/DiscordRemote/snapshot.jpg
+- url: /assets/img/plugins/discordremote/snapshot.jpg
   alt: Get a snapshot from OctoPrint
   caption: Get a snapshot from OctoPrint
-- url: /assets/img/plugins/DiscordRemote/settings.jpg
+- url: /assets/img/plugins/discordremote/settings.jpg
   alt: Customize the text Octorant sends to your channel
   caption: Customize the text Octorant sends to your channel
 
 # Featured image
-featuredimage: /assets/img/plugins/DiscordRemote/featured.jpg
+featuredimage: /assets/img/plugins/discordremote/featured.jpg
 
 ---
 
