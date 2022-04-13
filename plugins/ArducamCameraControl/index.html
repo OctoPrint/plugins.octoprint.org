@@ -40,7 +40,7 @@
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@OctoPrint3D" />
     <meta name="twitter:title" content="ArducamCameraControl" />
-    <meta name="twitter:description" content="ArducamCameraControl
+    <meta name="twitter:description" content="Arducam Camera Control
 
 " />
     <meta name="twitter:image" content="https://plugins.octoprint.org" />
@@ -48,7 +48,7 @@
     <meta property="og:title" content="ArducamCameraControl" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://plugins.octoprint.org/assets/img/plugins/ArducamCameraControl/ArducamCameraControl.png" />
-    <meta property="og:description" content="ArducamCameraControl
+    <meta property="og:description" content="Arducam Camera Control
 
 " />
     <meta property="og:site_name" content="OctoPrint Plugin Repository" />
@@ -56,7 +56,7 @@
 
     <meta itemscope itemtype="http://schema.org/WebPage" />
     <meta itemprop="headline" content="ArducamCameraControl" />
-    <meta itemprop="description" content="ArducamCameraControl
+    <meta itemprop="description" content="Arducam Camera Control
 
 " />
     <meta itemprop="image" content="https://plugins.octoprint.org/assets/img/plugins/ArducamCameraControl/ArducamCameraControl.png" />
@@ -206,31 +206,38 @@
       <p class="lead">
         Plugin to control Arducam motorized and ptz camera
       </p>
-      <h1 id="arducamcameracontrol">ArducamCameraControl</h1>
+      <h2 id="arducam-camera-control">Arducam Camera Control</h2>
 
-<p>A plugin to control your arducam camera with motorized and ptz camera on octoprint.<br />
-<img src="/assets/img/plugins/ArducamCameraControl/ArducamCameraControl.png" alt="screenshot" /></p>
-<h2 id="install">Install</h2>
-<p>Please follow the manufacturer’s instructions:</p>
+<p>A plugin to control your arducam camera with motorized and ptz camera on octoprint.</p>
+
+<p><img src="extras/assets/img/plugins/ArducamCameraControl/ArducamCameraControl.png" alt="screenshot" /></p>
+
+<h2 id="hardware-install">Hardware Install</h2>
+
+<p>Please follow the manufacturer’s instructions.</p>
+
 <h4 id="i2c">I2C</h4>
-<p>This plugin uses I2C to communicate with the camera.  That is not enabled by default.  The ArduCamFocus plugin will not function until
-you enable I2C.
-  ssh to your octopi and enter this commands (this only needs to be done once):</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="o">!</span> <span class="nb">grep</span> <span class="nt">-Fxq</span> <span class="s2">"^#ArduCamFocus$"</span> /boot/config.txt<span class="p">;</span> <span class="k">then
-</span><span class="nb">sudo cat</span> <span class="o">&lt;&lt;</span> <span class="no">end_of_file</span><span class="sh"> &gt; /boot/config.txt
-#ArduCamFocus
-dtparam=i2c_vc=on
-dtparam=i2c_arm=on
-</span><span class="no">end_of_file
-</span><span class="k">fi</span>
+<p>This plugin uses I2C to communicate with the camera.  That is not enabled by default.  The Arducam Camera Control plugin will not function until
+you enable I2C.</p>
+
+<p>SSH to your octopi, install system dependencies and enable i2c:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt update
+<span class="nb">sudo </span>apt <span class="nb">install </span>i2c-tools
+<span class="nb">sudo </span>nano /boot/config.txt
 </code></pre></div></div>
-<p>After executing the above command, the file /boot/config.txt should now have the commands to enable I2C.  In addition, you have to enable the I2C
-kernel module using raspi-config.  Again, ssh to your octopi, and then enter this command:</p>
+<p>at the very end of the file add the following:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#ArduCamFocus</span>
+<span class="nv">dtparam</span><span class="o">=</span><span class="nv">i2c_vc</span><span class="o">=</span>on
+<span class="nv">dtparam</span><span class="o">=</span><span class="nv">i2c_arm</span><span class="o">=</span>on
+</code></pre></div></div>
+<p>press ctrl+s to save and ctrl+x to exit</p>
+
+<p>Enable the I2C kernel module using raspi-config:</p>
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>raspi-config
 </code></pre></div></div>
 
 <ol>
-  <li>select “5 Interfacing Options”</li>
+  <li>select “3 Interfacing Options”</li>
   <li>select “P5 I2C”</li>
   <li>raspi-config will ask, “Would you like the ARM I2C interface to be enabled?”</li>
   <li>select “Yes”</li>
@@ -238,19 +245,10 @@ kernel module using raspi-config.  Again, ssh to your octopi, and then enter thi
   <li>select “Finish”</li>
 </ol>
 
-<h4 id="smbus">Smbus</h4>
-<p>Install smbus</p>
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip <span class="nb">install </span>smbus
-</code></pre></div></div>
-
 <h4 id="plugin">Plugin</h4>
-<p>Install plugin
-http://plugins.octoprint.org/plugin/ArducamCameraControl/</p>
+<p>Install plugin from Plugin Manager &gt; Get More and search for ArducamCameraControl.</p>
 
-<p>After you reboot, the camera should become operational in OctoPrint</p>
-<h2 id="settings">Settings</h2>
-
-<p>This plugin has no configurable settings.</p>
+<p>After you restart, the camera should be controllable from OctoPrint’s Control tab.</p>
 
 
       
