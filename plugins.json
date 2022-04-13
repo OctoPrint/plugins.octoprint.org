@@ -4003,18 +4003,18 @@
     },
 
     {
-        "id": "DiscordRemote",
+        "id": "discordremote",
         "published": "2018-06-04 00:00:00 -0500",
         "title": "OctoPrint-DiscordRemote",
         "description": "Discord bot for OctoPrint",
         "archive": "https://github.com/cameroncros/OctoPrint-DiscordRemote/archive/master.zip",
         "author": "Cameron Cross, Benjamin Chanudet",
         "homepage": "https://github.com/cameroncros/OctoPrint-DiscordRemote",
-        "page": "https://plugins.octoprint.org/plugins/DiscordRemote/",
+        "page": "https://plugins.octoprint.org/plugins/discordremote/",
         "compatibility": {
             "octoprint": [],
             "os": [],
-            "python": ">=3.6,<4"
+            "python": ">=2.7,<4"
         },
         "license": "MIT",
         "image": "https://plugins.octoprint.org/assets/img/plugins/discordremote/featured.jpg",
