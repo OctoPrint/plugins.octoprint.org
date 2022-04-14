@@ -12944,43 +12944,5 @@
             "instances_week": 45,
             "install_events_week": 50
         }
-    },
-
-    {
-        "id": "crealitycloud",
-        "published": "2022-04-14 00:00:00 -0500",
-        "title": "OctoPrint-CrealityCloud",
-        "description": "A OctoPrint-Plugin that connect the Octoprint to Creality Could",
-        "archive": "https://github.com/crealitycloud/OctoPrint-Crealitycloud/archive/master.zip",
-        "author": "Creality",
-        "homepage": "https://github.com/crealitycloud/OctoPrint-CrealityCloud",
-        "page": "https://plugins.octoprint.org/plugins/crealitycloud/",
-        "compatibility": {
-            "octoprint": ["1.6.1"],
-            "os": ["linux","windows","macos","freebsd"],
-            "python": ">=3,<4"
-        },
-        "license": "AGPLv3",
-        "abandoned": false,
-        "github": { 
-            "latest_release": {
-                "name": "1.0.1",
-                "date": "2022-04-14 04:04:04 +0000",
-                "tag": "1.0.1"
-            },
-            "releases": 8,
-            "last_push": "2022-04-14 04:03:10 +0000",
-            "stars": 11,
-            "issues": {
-                "open": 3,
-                "closed": 7
-            }
-        },
-        "stats": {
-            "instances_month": 301,
-            "install_events_month": 157,
-            "instances_week": 209,
-            "install_events_week": 50
-        }
     }
 ]
