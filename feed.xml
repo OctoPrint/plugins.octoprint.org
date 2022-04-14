@@ -5,10 +5,38 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>https://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 14 Apr 2022 17:20:02 -0500</pubDate>
-    <lastBuildDate>Thu, 14 Apr 2022 17:20:02 -0500</lastBuildDate>
+    <pubDate>Thu, 14 Apr 2022 17:59:15 -0500</pubDate>
+    <lastBuildDate>Thu, 14 Apr 2022 17:59:15 -0500</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
+    
+      <item>
+        <title>PSU Control - Tapo</title>
+        <description>
+          <![CDATA[
+            Adds Tapo Smart Plug support to OctoPrint-PSUControl as a sub-plugin
+            <p><img src="https://plugins.octoprint.org/assets/img/repo-600x400.png"></p>
+            
+          ]]>
+        </description>
+        <pubDate>
+Thu, 14 Apr 2022 00:00:00 -0500</pubDate>
+        <link>https://plugins.octoprint.org/plugins/psucontrol_tapo/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/psucontrol_tapo/</guid>
+        
+        <category>power</category>
+        
+        <category>psu</category>
+        
+        <category>control</category>
+        
+        <category>psucontrol</category>
+        
+        <category>psucontrol subplugin</category>
+        
+        <category>tapo</category>
+        
+      </item>
     
       <item>
         <title>OctoPrint-Framer</title>
@@ -225,37 +253,6 @@ Mon, 14 Feb 2022 00:00:00 -0600</pubDate>
         <category>temperature</category>
         
         <category>cooling</category>
-        
-      </item>
-    
-      <item>
-        <title>Calibration Tools</title>
-        <description>
-          <![CDATA[
-            Marlin Calibration Tools
-            <p><img src="https://plugins.octoprint.org/assets/img/plugins/CalibrationTools/featuredimage.png"></p>
-          ]]>
-        </description>
-        <pubDate>
-Wed, 09 Feb 2022 00:00:00 -0600</pubDate>
-        <link>https://plugins.octoprint.org/plugins/CalibrationTools/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/CalibrationTools/</guid>
-        
-        <category>marlin</category>
-        
-        <category>calibration</category>
-        
-        <category>cube</category>
-        
-        <category>pid</category>
-        
-        <category>axes</category>
-        
-        <category>printer</category>
-        
-        <category>tools</category>
-        
-        <category>extrusion</category>
         
       </item>
     
