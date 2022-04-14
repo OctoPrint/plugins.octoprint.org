@@ -41,6 +41,12 @@ compatibility:
 
 Creality Cloud plugin needs to be installed in the OctoPrint interface so that you can connect the Creality Cloud APP to the Raspberry Pi device and print or control directly through the APP by operating OctoPrint.
 
+## **Before you start configuring the Plugin:**
+
+The Creality Cloud plugin needs to enable cloud services, and your 3D printing data will be uploaded to the cloud server, such as temperature, printing speed, printing status, etc. More detailed information about the privacy policy can be viewed inside the Creality Cloud App navigating to My Space > About > Privacy Policy
+
+You need a Creality Cloud account to connect octoprint and Creality Cloud App.More detailed information about the privacy policy can be viewed inside the Creality Cloud App navigating to My Space > About > User Agreement
+
 ## **Setup Creality Cloud Plugin on OctoPrint:**
 1. Copy the following three plugin links or copy them from Creality Cloud Github.
 
