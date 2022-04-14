@@ -8,7 +8,7 @@ authors:
 - Creality
 license: AGPLv3
 
-date: 2021-11-08
+date: 2022-04-14
 
 homepage: https://github.com/crealitycloud/OctoPrint-CrealityCloud
 source: https://github.com/crealitycloud/OctoPrint-CrealityCloud
