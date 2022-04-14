@@ -8,7 +8,7 @@ homepage: https://github.com/dswd/OctoPrint-PSUControl-Tapo
 source: https://github.com/dswd/OctoPrint-PSUControl-Tapo
 author: Dennis Schwerdel
 license: AGPLv3
-date: 2022-04-10
+date: 2022-04-14
 tags:
 - power
 - psu
