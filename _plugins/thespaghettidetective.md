@@ -3,7 +3,7 @@ layout: plugin
 
 id: thespaghettidetective
 title: Access Anywhere - The Spaghetti Detective
-description: 3D Print With Peace of Mind
+description: Securely monitor and access your full OctoPrint instance from anywhere, for free! Unlimited live webcam streaming. Free companion mobile app for iOS and Android. The best part? AI-powered failure detection. (TSD is the successor of OctoPrint Anywhere).
 author: TSD Team
 license: AGPLv3
 
@@ -38,6 +38,9 @@ tags:
 - AI
 - Machine Learning
 - app
+- mobile
+- mobile app
+- push notification
 - cloud printing
 - free
 - plugin support
@@ -90,7 +93,7 @@ compatibility:
 
 ---
 
-<p class="lead">Whether you're worried about print failures, fire hazards, or network security, <a href="https://www.thespaghettidetective.com">The Spaghetti Detective</a> has got your back.</p>
+<p class="lead">Whether you're worried about print failures, fire hazards, or network security, <a href="https://www.thespaghettidetective.com">The Spaghetti Detective</a> has got your back. <b>3D Print With Peace of Mind!</b></p>
 
 <div class="row-fluid" style="margin-top: 28px;">
   <div class="span4">
@@ -109,15 +112,15 @@ compatibility:
 <div class="row-fluid" style="margin-bottom: 18px;">
   <div class="span4">
     <img style="width: 100px; display: block; margin: auto;" src="/assets/img/plugins/thespaghettidetective/TSDBenefitIcons-05.svg" />
-    <div style="text-align: center;font-weight: bolder; margin: 12px 0 18px 0;">Secure remote access </div>
+    <div style="text-align: center;font-weight: bolder; margin: 12px 0 18px 0;">Secure OctoPrint tunnel</div>
   </div>
   <div class="span4">
     <img style="width: 100px; display: block; margin: auto;" src="/assets/img/plugins/thespaghettidetective/TSDBenefitIcons-08.svg" />
-    <div style="text-align: center;font-weight: bolder; margin: 12px 0 18px 0;">Manage printer on your phone </div>
+    <div style="text-align: center;font-weight: bolder; margin: 12px 0 18px 0;">Mobile app (iOS & Android)</div>
   </div>
   <div class="span4">
     <img style="width: 100px; display: block; margin: auto;" src="/assets/img/plugins/thespaghettidetective/TSDBenefitIcons-07.svg" />
-    <div style="text-align: center;font-weight: bolder; margin: 12px 0 18px 0;">Get the most out of OctoPrint</div>
+    <div style="text-align: center;font-weight: bolder; margin: 12px 0 18px 0;">Full, secure remote OctoPrint access</div>
   </div>
 </div>
 
@@ -126,34 +129,13 @@ compatibility:
 * <span style="font-weight: bold; font-size: 1.2em;">AI-powered failure detection.</span> The Detective will watch your prints so you don't have
   to.
 
-* **Unlimited webcam streaming.** Pro users get 25 fps premium webcam streaming. Free users get
-  unlimited streaming at a lower frame rate.
+* **Unlimited webcam streaming.** Pro users get 25 fps premium webcam streaming. Free users get unlimited streaming at a lower frame rate.
 
-* **Secure OctoPrint remote access/control.** No port-forwarding or VPN required. Full
-  OctoPrint access from anywhere with an internet connection.
+* **Secure OctoPrint remote access/control.** Secure tunnel to OctoPrint from anywhere with an internet connection. No port-forwarding or VPN required.
 
-* **Free companion iOS and Android app.** Progress and webcam feed pushed to your phone while printing. No need to open the app or even unlock the screen.
+* **Free companion iOS and Android app.** Access your printer from anywhere. Unlimited print status and webcam snapshot pushed to your phone. No need to open the app or even unlock the screen.
 
 * **Printer feed sharing.** Show off your print with an encrypted link. Easy. Secure.
-
-<br />
-
-## Does the AI really work?
-
-[The Spaghetti Detective](https://www.thespaghettidetective.com) has caught thousands of failures for the 3D printing enthusiasts
-around the globe. Here are some examples:
-
-{% include youtube.html vid="tUmHmVRIF_4" preview="'/assets/img/plugins/thespaghettidetective/video_preview2.png'" %}
-Video courtesy of TSD user Jimmy.
-
-<br />
-
-{% include youtube.html vid="uf_oSxS6oI8" preview="'/assets/img/plugins/thespaghettidetective/video_preview3.png'" %}
-Video courtesy of TSD user Lila.
-
-<br />
-
-*If you can't have enough spaghetti (pun intended), head to [The Spaghetti Gallery](https://app.thespaghettidetective.com/publictimelapses/) for more time-lapses.*
 
 <br />
 
@@ -175,7 +157,7 @@ control")
 
 <br />
 
-#### Secure OctoPrint tunneling
+#### Secure OctoPrint Tunnel
 
 ![OctoPrint tunneling](/assets/img/plugins/thespaghettidetective/screenshot8.png
 "OctoPrint tunneling")
@@ -212,6 +194,26 @@ control")
     <div style="text-align: center;">Multiple printers at one glance</div>
   </div>
 </div>
+
+
+## Does the AI really work?
+
+[The Spaghetti Detective](https://www.thespaghettidetective.com) has caught thousands of failures for the 3D printing enthusiasts
+around the globe. Here are some examples:
+
+{% include youtube.html vid="tUmHmVRIF_4" preview="'/assets/img/plugins/thespaghettidetective/video_preview2.png'" %}
+Video courtesy of TSD user Jimmy.
+
+<br />
+
+{% include youtube.html vid="uf_oSxS6oI8" preview="'/assets/img/plugins/thespaghettidetective/video_preview3.png'" %}
+Video courtesy of TSD user Lila.
+
+<br />
+
+*If you can't have enough spaghetti (pun intended), head to [The Spaghetti Gallery](https://app.thespaghettidetective.com/publictimelapses/) for more time-lapses.*
+
+<br />
 
 
 ## Install and setup
