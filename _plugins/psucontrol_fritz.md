@@ -15,7 +15,8 @@ tags:
 - control
 - psucontrol
 - psucontrol subplugin
-- tplink
+- fritz
+- fritz dect
 compatibility:
   os:
   - posix
