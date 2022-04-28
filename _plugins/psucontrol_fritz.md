@@ -8,7 +8,7 @@ homepage: https://github.com/not-na/OctoPrint-PSUControl-Fritz
 source: https://github.com/not-na/OctoPrint-PSUControl-Fritz
 author: not-na
 license: AGPLv3
-date: 2022-04-27
+date: 2022-04-28
 tags:
 - power
 - psu
