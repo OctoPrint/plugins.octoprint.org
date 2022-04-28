@@ -3804,6 +3804,17 @@
 "author": "Blue-Beaker",
 "content": "This is a fork of Shawn Bruce’s PSU Control - RPi.GPIO that uses OPi.GPIO instead of RPi.GPIO.SUNXI naming is supported additionally, so you can use pin numbers on the board like “PA12” directly in this plugin.See https://github.com/Blue-Beaker/OctoPrint-PSUControl-OPi.GPIO for information on configuration.",
 "tags": ["power","psu","control","psucontrol","psucontrol subplugin","gpio","orangepi"]
+},
+
+{
+"id": "/plugins/psucontrol_fritz",
+"url": "/plugins/psucontrol_fritz/",
+"date": "2022-04-28 00:00:00 -0500",
+"title": "PSU Control - FRITZ!Box",
+"description": "Adds FRITZ!Dect Smart Plug support to OctoPrint-PSUControl as a sub-plugin",
+"author": "not-na",
+"content": "This sub-plugin adds support for switching FRITZ!Dect Smart Plugs directly from the Octoprint Web Interface.To use this plugin, you’ll also have to install the PSU Control plugin. Without that plugin, this plugin will not function.For security reasons, it is recommended to create a dedicated user account on your FRITZ!Box with only Smart Home privileges.The AIN in the settings should be taken from the FRITZ!Box Smart Home settings, it should be five digits followed by seven digits.Of course, the FRITZ!Dect smart home device should be paired with the FRITZ!Box before configuring this plugin. Please refer tothe instructions provided with the device for further details.",
+"tags": ["power","psu","control","psucontrol","psucontrol subplugin","fritz","fritz dect"]
 }
 ]
 }
