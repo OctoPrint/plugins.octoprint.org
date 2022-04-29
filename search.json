@@ -3807,6 +3807,17 @@
 },
 
 {
+"id": "/plugins/bedready",
+"url": "/plugins/bedready/",
+"date": "2022-04-28 00:00:00 -0500",
+"title": "OctoPrint-BedReady",
+"description": "Plugin that uses the camera and opencv to determine if the bed matches a reference image indicating that the bed is clear and ready to start a print.",
+"author": "jneilliii",
+"content": "Bed ReadyPlugin that uses the camera and opencv to determine if the bed matches a reference image indicating that the bed is clear and ready to start a print.For the plugin to work properly add @BEDREADY at the beginning of your slicer’s start gcode. For best results add gcode to your slicer’s end gcode to position the head out of the way for the next comparison.NOTE: Lighting, camera view angle changes, and filament color that is similar to the bed can impact accuracy; adjust the Match Percentage setting below to compensate.ConfigurationUse the Test Snapshot button to compare the currently stored Reference Image with the bed.Get HelpIf you experience issues with this plugin or need assistance please use the issue tracker at the plugin’s Homepage linked on the right.Additional PluginsCheck out my other plugins hereSupport My EffortsI, jneilliii, programmed this plugin for fun and do my best effort to support those that have issues with it, please return the favor and leave me a tip or become a Patron if you find this plugin helpful and want me to continue future development.  No paypal.me? Send funds via PayPal to jneilliii@gmail.com",
+"tags": ["bed","clear","opencv","collision avoidance","object detection","clear","safety","automation"]
+},
+
+{
 "id": "/plugins/psucontrol_fritz",
 "url": "/plugins/psucontrol_fritz/",
 "date": "2022-04-28 00:00:00 -0500",
