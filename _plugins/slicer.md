@@ -46,6 +46,8 @@ compatibility:
   octoprint:
   - 1.2.14
 
+abandoned: https://github.com/OctoPrint/plugins.octoprint.org/issues/911
+
 ---
 
 Slicer plugin offers useful features that OctoPrint's built-in slicer doesn't have:
