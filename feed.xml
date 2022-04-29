@@ -5,10 +5,41 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>https://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 28 Apr 2022 20:26:11 -0500</pubDate>
-    <lastBuildDate>Thu, 28 Apr 2022 20:26:11 -0500</lastBuildDate>
+    <pubDate>Thu, 28 Apr 2022 20:38:31 -0500</pubDate>
+    <lastBuildDate>Thu, 28 Apr 2022 20:38:31 -0500</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
+    
+      <item>
+        <title>OctoPrint-BedReady</title>
+        <description>
+          <![CDATA[
+            Plugin that uses the camera and opencv to determine if the bed matches a reference image indicating that the bed is clear and ready to start a print.
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/bedready/screenshot_bed_not_ready.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Fri, 29 Apr 2022 00:00:00 -0500</pubDate>
+        <link>https://plugins.octoprint.org/plugins/bedready/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/bedready/</guid>
+        
+        <category>bed</category>
+        
+        <category>clear</category>
+        
+        <category>opencv</category>
+        
+        <category>collision avoidance</category>
+        
+        <category>object detection</category>
+        
+        <category>clear</category>
+        
+        <category>safety</category>
+        
+        <category>automation</category>
+        
+      </item>
     
       <item>
         <title>PSU Control - FRITZ!Box</title>
@@ -243,35 +274,6 @@ Tue, 01 Mar 2022 00:00:00 -0600</pubDate>
         <category>usb</category>
         
         <category>relay</category>
-        
-      </item>
-    
-      <item>
-        <title>Servo Spindle for GRBL CNC</title>
-        <description>
-          <![CDATA[
-            Servo Spindle enables servo based control of a CNC spindle by connecting to an ESC and trapping Grbl M3/M5/S### commands
-            <p><img src="https://plugins.octoprint.org/assets/img/plugins/ServoSpindle/Grbl_logo.png"></p>
-          ]]>
-        </description>
-        <pubDate>
-Sun, 27 Feb 2022 00:00:00 -0600</pubDate>
-        <link>https://plugins.octoprint.org/plugins/ServoSpindle/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/ServoSpindle/</guid>
-        
-        <category>grbl</category>
-        
-        <category>laser</category>
-        
-        <category>engraver</category>
-        
-        <category>cnc</category>
-        
-        <category>brushless</category>
-        
-        <category>esc</category>
-        
-        <category>servo</category>
         
       </item>
     

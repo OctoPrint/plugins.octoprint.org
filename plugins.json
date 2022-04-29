@@ -13097,5 +13097,44 @@
             "instances_week": 9,
             "install_events_week": 9
         }
+    },
+
+    {
+        "id": "bedready",
+        "published": "2022-04-29 00:00:00 -0500",
+        "title": "OctoPrint-BedReady",
+        "description": "Plugin that uses the camera and opencv to determine if the bed matches a reference image indicating that the bed is clear and ready to start a print.",
+        "archive": "https://github.com/jneilliii/OctoPrint-BedReady/archive/master.zip",
+        "author": "jneilliii",
+        "homepage": "https://github.com/jneilliii/OctoPrint-BedReady",
+        "page": "https://plugins.octoprint.org/plugins/bedready/",
+        "compatibility": {
+            "octoprint": ["1.4.0"],
+            "os": ["linux","windows","macos","freebsd"],
+            "python": ">=3.6,<4"
+        },
+        "license": "AGPLv3",
+        "image": "https://plugins.octoprint.org/assets/img/plugins/bedready/screenshot_bed_not_ready.png",
+        "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "0.1.2",
+                "date": "2022-04-18 13:53:32 +0000",
+                "tag": "0.1.2"
+            },
+            "releases": 3,
+            "last_push": "2022-04-18 13:52:40 +0000",
+            "stars": 1,
+            "issues": {
+                "open": 0,
+                "closed": 0
+            }
+        },
+        "stats": {
+            "instances_month": 7,
+            "install_events_month": 6,
+            "instances_week": 7,
+            "install_events_week": 2
+        }
     }
 ]

@@ -3815,6 +3815,17 @@
 "author": "not-na",
 "content": "This sub-plugin adds support for switching FRITZ!Dect Smart Plugs directly from the Octoprint Web Interface.To use this plugin, you’ll also have to install the PSU Control plugin. Without that plugin, this plugin will not function.For security reasons, it is recommended to create a dedicated user account on your FRITZ!Box with only Smart Home privileges.The AIN in the settings should be taken from the FRITZ!Box Smart Home settings, it should be five digits followed by seven digits.Of course, the FRITZ!Dect smart home device should be paired with the FRITZ!Box before configuring this plugin. Please refer tothe instructions provided with the device for further details.",
 "tags": ["power","psu","control","psucontrol","psucontrol subplugin","fritz","fritz dect"]
+},
+
+{
+"id": "/plugins/bedready",
+"url": "/plugins/bedready/",
+"date": "2022-04-29 00:00:00 -0500",
+"title": "OctoPrint-BedReady",
+"description": "Plugin that uses the camera and opencv to determine if the bed matches a reference image indicating that the bed is clear and ready to start a print.",
+"author": "jneilliii",
+"content": "Bed ReadyPlugin that uses the camera and opencv to determine if the bed matches a reference image indicating that the bed is clear and ready to start a print.For the plugin to work properly add @BEDREADY at the beginning of your slicer’s start gcode. For best results add gcode to your slicer’s end gcode to position the head out of the way for the next comparison.NOTE: Lighting, camera view angle changes, and filament color that is similar to the bed can impact accuracy; adjust the Match Percentage setting below to compensate.ConfigurationUse the Test Snapshot button to compare the currently stored Reference Image with the bed.Get HelpIf you experience issues with this plugin or need assistance please use the issue tracker at the plugin’s Homepage linked on the right.Additional PluginsCheck out my other plugins hereSupport My EffortsI, jneilliii, programmed this plugin for fun and do my best effort to support those that have issues with it, please return the favor and leave me a tip or become a Patron if you find this plugin helpful and want me to continue future development.  No paypal.me? Send funds via PayPal to jneilliii@gmail.com",
+"tags": ["bed","clear","opencv","collision avoidance","object detection","clear","safety","automation"]
 }
 ]
 }
