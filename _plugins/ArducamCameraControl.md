@@ -18,10 +18,6 @@ tags:
 - Arducam
 - Camera
 
-
-screenshots:
-- url: /assets/img/plugins/ArducamCameraControl/ArducamCameraControl.png
-
 featuredimage: /assets/img/plugins/ArducamCameraControl/ArducamCameraControl.png
 
 compatibility:
@@ -37,7 +33,7 @@ compatibility:
 
 A plugin to control your arducam camera with motorized and ptz camera on octoprint.
 
-![screenshot](extras/assets/img/plugins/ArducamCameraControl/ArducamCameraControl.png)
+![screenshot](/assets/img/plugins/ArducamCameraControl/ArducamCameraControl.png)
 
 ## Hardware Install
 
