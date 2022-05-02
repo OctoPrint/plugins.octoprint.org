@@ -32,7 +32,7 @@ screenshots:
 featuredimage: /assets/img/plugins/bedcooldown/graph.png
 
 compatibility:
-  python: ">=2.7,<4"
+  python: ">=3,<4"
 
 ---
 
