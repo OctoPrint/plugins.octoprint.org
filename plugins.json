@@ -13136,5 +13136,44 @@
             "instances_week": 266,
             "install_events_week": 259
         }
+    },
+
+    {
+        "id": "extrafileinfo",
+        "published": "2022-05-05 00:00:00 -0500",
+        "title": "ExtraFileInfo",
+        "description": "Adds a file's slicer settings to its additional data column.",
+        "archive": "https://github.com/larsjuhw/OctoPrint-Extrafileinfo/archive/master.zip",
+        "author": "Larsjuhw",
+        "homepage": "https://github.com/larsjuhw/OctoPrint-Extrafileinfo",
+        "page": "https://plugins.octoprint.org/plugins/extrafileinfo/",
+        "compatibility": {
+            "octoprint": [],
+            "os": [],
+            "python": ">=3,<4"
+        },
+        "license": "AGPLv3",
+        "image": "https://plugins.octoprint.org/assets/img/plugins/extrafileinfo/file.png",
+        "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "1.0.0",
+                "date": "2022-05-05 19:56:56 +0000",
+                "tag": "1.0.0"
+            },
+            "releases": 2,
+            "last_push": "2022-05-05 19:09:14 +0000",
+            "stars": 0,
+            "issues": {
+                "open": 0,
+                "closed": 0
+            }
+        },
+        "stats": {
+            "instances_month": 0,
+            "install_events_month": 0,
+            "instances_week": 0,
+            "install_events_week": 0
+        }
     }
 ]

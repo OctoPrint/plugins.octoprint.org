@@ -5,10 +5,31 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>https://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 05 May 2022 16:17:31 -0500</pubDate>
-    <lastBuildDate>Thu, 05 May 2022 16:17:31 -0500</lastBuildDate>
+    <pubDate>Thu, 05 May 2022 16:49:17 -0500</pubDate>
+    <lastBuildDate>Thu, 05 May 2022 16:49:17 -0500</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
+    
+      <item>
+        <title>ExtraFileInfo</title>
+        <description>
+          <![CDATA[
+            Adds a file's slicer settings to its additional data column.
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/extrafileinfo/file.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Thu, 05 May 2022 00:00:00 -0500</pubDate>
+        <link>https://plugins.octoprint.org/plugins/extrafileinfo/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/extrafileinfo/</guid>
+        
+        <category>slicer settings</category>
+        
+        <category>slicersettingsparser</category>
+        
+        <category>info</category>
+        
+      </item>
     
       <item>
         <title>OctoPrint-BedReady</title>
@@ -253,27 +274,6 @@ Thu, 03 Mar 2022 00:00:00 -0600</pubDate>
         <category>marlin</category>
         
         <category>cnc</category>
-        
-      </item>
-    
-      <item>
-        <title>USB Relay Control</title>
-        <description>
-          <![CDATA[
-            Control USB relays from within OctoPrint
-            <p><img src="https://plugins.octoprint.org/assets/img/plugins/usbrelaycontrol/sidebar.png"></p>
-          ]]>
-        </description>
-        <pubDate>
-Tue, 01 Mar 2022 00:00:00 -0600</pubDate>
-        <link>https://plugins.octoprint.org/plugins/usbrelaycontrol/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/usbrelaycontrol/</guid>
-        
-        <category>control</category>
-        
-        <category>usb</category>
-        
-        <category>relay</category>
         
       </item>
     

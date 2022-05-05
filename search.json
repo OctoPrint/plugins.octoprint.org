@@ -3826,6 +3826,17 @@
 "author": "jneilliii",
 "content": "Bed ReadyPlugin that uses the camera and opencv to determine if the bed matches a reference image indicating that the bed is clear and ready to start a print.For the plugin to work properly add @BEDREADY at the beginning of your slicer’s start gcode. For best results add gcode to your slicer’s end gcode to position the head out of the way for the next comparison.NOTE: Lighting, camera view angle changes, and filament color that is similar to the bed can impact accuracy; adjust the Match Percentage setting below to compensate.ConfigurationUse the Test Snapshot button to compare the currently stored Reference Image with the bed.Get HelpIf you experience issues with this plugin or need assistance please use the issue tracker at the plugin’s Homepage linked on the right.Additional PluginsCheck out my other plugins hereSupport My EffortsI, jneilliii, programmed this plugin for fun and do my best effort to support those that have issues with it, please return the favor and leave me a tip or become a Patron if you find this plugin helpful and want me to continue future development.  No paypal.me? Send funds via PayPal to jneilliii@gmail.com",
 "tags": ["bed","clear","opencv","collision avoidance","object detection","clear","safety","automation"]
+},
+
+{
+"id": "/plugins/extrafileinfo",
+"url": "/plugins/extrafileinfo/",
+"date": "2022-05-05 00:00:00 -0500",
+"title": "ExtraFileInfo",
+"description": "Adds a file's slicer settings to its additional data column.",
+"author": "Larsjuhw",
+"content": "ExtraFileInfoThis plugin adds slicer settings to the additional data tab of each file, which is shown by pressing the downwards arrow button. Uses Octoprint-SlicerSettingsParser-Python3 to get the data.The plugin’s settings allows you to configure which slicer settings to show and what their units should be.Configuration            Setting      Description                  Key      The “key” of your slicer setting in SlicerSettingsParser              Label (optional)      A label that replaces the key in the file info view              Unit (optional)      The unit suffix that is appended after the value of the setting      The Key, Label and Unit fields in the plugin’s settings are directly injected into the view, without any sanitization. Therefore, the use of HTML tags (such as label=&lt;strong&gt;Material and unit=&lt;/strong&gt;) is allowed.",
+"tags": ["slicer settings","slicersettingsparser","info"]
 }
 ]
 }
