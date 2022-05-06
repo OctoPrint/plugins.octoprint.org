@@ -4,7 +4,7 @@ layout: plugin
 id: thespaghettidetective
 title: Access Anywhere - The Spaghetti Detective
 description: The Spaghetti Detective is now Obico!
-author: TSD Team
+author: The Obico Team
 license: AGPLv3
 
 # TODO
@@ -92,18 +92,21 @@ compatibility:
 ---
 
 <p class="alert alert-warning">Access Anywhere - The Spaghetti Detective plugin has been
-replaced by the <a href="/plugins/obico/">Obico for OctoPrint</a> plugin.</p>
+replaced by <a href="/plugins/obico/">Obico for OctoPrint</a>.</p>
 
 Obico is everything you loved about The Spaghetti Detective, but smarter and more open.
 
-Please visit the [Obico for OctoPrint plugin page](/plugins/obico/) or [the Obico
+Please visit the Obico for OctoPrint [plugin page](/plugins/obico/) or [the Obico
 website](https://obico.io) to learn more about Obico.
 
 For existing The Spaghetti Detective users, please:
 
 1. Uninstall The Spaghetti Detective plugin while keep its data in OctoPrint.
-2. Then install the Obico plugin.
+2. Then install [the Obico plugin](/plugins/obico/).
 3. All your existing settings in The Spaghetti Detective will be automatically migrated.
 
 For more info, go to [everything about migrating from The Spaghetti Detective to
 Obico](https://www.obico.io/docs/user-guides/move-from-tsd-to-obico-in-octoprint/).
+
+
+-- The Obico Team (Formally TSD Team)
