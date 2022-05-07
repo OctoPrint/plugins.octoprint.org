@@ -188,15 +188,17 @@ Share a secure link of your printer’s live webcam stream with your friends so 
 
 ### Curious if the AI Failure Detection Really Works?
 
-To date, our AI failure detection has watched over 60-million hours of 3D priting and caught hundreds of thousands of failures. Here are a few real-life examples:
+To date, our AI failure detection has watched over **60-million hours** of 3D priting and caught hundreds of thousands of failures. Here are a few real-life examples:
 
-{% include youtube.html vid="tUmHmVRIF_4" preview="'/assets/img/plugins/thespaghettidetective/video_preview2.png'" %}
+{% include youtube.html vid="tUmHmVRIF_4" preview="'/assets/img/plugins/obico/video_preview2.png'" %}
 Video courtesy of TSD user Jimmy.
 
 <br />
 
-{% include youtube.html vid="uf_oSxS6oI8" preview="'/assets/img/plugins/thespaghettidetective/video_preview3.png'" %}
+{% include youtube.html vid="uf_oSxS6oI8" preview="'/assets/img/plugins/obico/video_preview3.png'" %}
 Video courtesy of TSD user Lila.
+
+<br />
 
 **[More failure detection examples](https://app.obico.io/publictimelapses/).**
 
@@ -210,11 +212,13 @@ Create an Obico Cloud account to run Obico with no extra setup required or you c
 
 ![](/assets/img/plugins/obico/setup-wizard.png "Plugin Setup Wizard")
 
+<br />
+
 ### Is Obico Free?
 
 The Obico Cloud free plan is 100% free! Some features are limited due to the cost required for us to run and maintain the Obico Cloud. The Pro Plan gives you full access to all of Obico’s features for the price of a couple of coffees per month. [See the pricing](https://app.obico.io/ent_pub/pricing/).
 
-Of course, since Obico is open-source, you are free (sorry for the pun!) to self-host your own Obico Server! [Compare self-hosting versus Obico Cloud]( https://obico.io/obico-cloud-vs-self-hosted.html), or [read the self-hosting documentation](https://www.obico.io/docs/server-guides/).
+Of course, since Obico is open-source, you are **free** (sorry for the pun!) to self-host your own Obico Server! [Compare self-hosting versus Obico Cloud]( https://obico.io/obico-cloud-vs-self-hosted.html), or [read the self-hosting documentation](https://www.obico.io/docs/server-guides/).
 
 <br />
 <br />
