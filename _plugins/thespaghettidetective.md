@@ -3,8 +3,7 @@ layout: plugin
 
 id: thespaghettidetective
 title: Access Anywhere - The Spaghetti Detective
-description: The Spaghetti Detective is now Obico! Please install the Obico plugin
-instead.
+description: The Spaghetti Detective is now Obico! Please install the Obico plugin instead.
 author: The Obico team
 license: AGPLv3
 
