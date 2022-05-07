@@ -11,8 +11,8 @@ license: AGPLv3
 date: 2019-11-07
 
 homepage: https://www.obico.io
-source: https://github.com/TheSpaghettiDetective/OctoPrint-Obico
-archive: https://github.com/TheSpaghettiDetective/OctoPrint-Obico/archive/master.zip
+source: https://github.com/TheSpaghettiDetective/OctoPrint-TheSpaghettiDetective
+archive: https://github.com/TheSpaghettiDetective/OctoPrint-TheSpaghettiDetective/archive/master.zip
 
 # TODO
 # Set this to true if your plugin uses the dependency_links setup parameter to include

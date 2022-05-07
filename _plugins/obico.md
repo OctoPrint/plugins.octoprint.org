@@ -2,8 +2,8 @@
 layout: plugin
 
 id: obico
-title: Obico
-description: Securely monitor and control your OctoPrint-connected printer from anywhere for free with Obico. Get unlimited live webcam streaming, full OctoPrint remote access, printer status notifications, and a free companion mobile app for iOS and Android. The best part? AI-powered failure detection watches your prints so you don’t have to.
+title: Obico for OctoPrint
+description: Securely monitor and control your OctoPrint-connected printer from anywhere for free with Obico. Get unlimited live webcam streaming, full OctoPrint remote access, printer status notifications, and a free companion mobile app for iOS and Android. The best part? AI-powered failure detection watches your prints so you don’t have to. (Obico is the successor of The Spaghetti Detective.)
 author: The Obico team
 license: AGPLv3
 date: 2022-05-05
