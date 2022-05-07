@@ -3,7 +3,7 @@ layout: plugin
 
 id: thespaghettidetective
 title: Access Anywhere - The Spaghetti Detective
-description: The Spaghetti Detective is now Obico! Please install the Obico plugin instead.
+description: The Spaghetti Detective is now Obico! Please install "Obico for OctoPrint" instead.
 author: The Obico team
 license: AGPLv3
 
@@ -94,7 +94,7 @@ compatibility:
 ---
 
 <p class="alert alert-warning">Access Anywhere - The Spaghetti Detective plugin has been
-replaced by <a href="/plugins/obico/">Obico for OctoPrint</a>.</p>
+succeeded by <a href="/plugins/obico/">Obico for OctoPrint</a>.</p>
 
 Obico is everything you loved about The Spaghetti Detective, but smarter and more open.
 
