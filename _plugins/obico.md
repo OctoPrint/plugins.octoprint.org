@@ -85,6 +85,8 @@ compatibility:
   - macos
   - freebsd
 
+  python: ">=2.7,<4"
+
 ---
 
 **Obico is the successor of The Spaghetti Detective.**
