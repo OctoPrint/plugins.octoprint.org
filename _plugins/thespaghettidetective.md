@@ -89,6 +89,8 @@ compatibility:
   - macos
   - freebsd
 
+  python: ">=2.7,<4"
+
 ---
 
 <p class="alert alert-warning">Access Anywhere - The Spaghetti Detective plugin has been
