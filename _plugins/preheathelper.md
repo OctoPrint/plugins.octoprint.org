@@ -22,7 +22,7 @@ tags:
 
 compatibility:
 
-octoprint:
+  octoprint:
   - 1.4.0
 
   os:
