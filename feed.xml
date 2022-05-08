@@ -5,10 +5,32 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>https://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 07 May 2022 18:18:45 -0500</pubDate>
-    <lastBuildDate>Sat, 07 May 2022 18:18:45 -0500</lastBuildDate>
+    <pubDate>Sat, 07 May 2022 19:51:27 -0500</pubDate>
+    <lastBuildDate>Sat, 07 May 2022 19:51:27 -0500</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
+    
+      <item>
+        <title>OctoPrint-PreheatHelper</title>
+        <description>
+          <![CDATA[
+            A little helper to automate your printer pre-heating!
+            <p><img src="https://plugins.octoprint.org/assets/img/repo-600x400.png"></p>
+            
+          ]]>
+        </description>
+        <pubDate>
+Sat, 07 May 2022 00:00:00 -0500</pubDate>
+        <link>https://plugins.octoprint.org/plugins/preheathelper/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/preheathelper/</guid>
+        
+        <category>preheat</category>
+        
+        <category>helper</category>
+        
+        <category>parser</category>
+        
+      </item>
     
       <item>
         <title>ExtraFileInfo</title>
@@ -255,25 +277,6 @@ Wed, 16 Mar 2022 00:00:00 -0500</pubDate>
         <category>scheduling</category>
         
         <category>lights</category>
-        
-      </item>
-    
-      <item>
-        <title>CNC GCode Viewer</title>
-        <description>
-          <![CDATA[
-            GCode Viewer for CNC toolpaths with no extrusions
-            <p><img src="https://plugins.octoprint.org/assets/img/plugins/cnc_gcodeviewer/crown_screen_shot.png"></p>
-          ]]>
-        </description>
-        <pubDate>
-Thu, 03 Mar 2022 00:00:00 -0600</pubDate>
-        <link>https://plugins.octoprint.org/plugins/cnc_gcodeviewer/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/cnc_gcodeviewer/</guid>
-        
-        <category>marlin</category>
-        
-        <category>cnc</category>
         
       </item>
     

@@ -3837,6 +3837,17 @@
 "author": "Larsjuhw",
 "content": "ExtraFileInfoThis plugin adds slicer settings to the additional data tab of each file, which is shown by pressing the downwards arrow button. Uses Octoprint-SlicerSettingsParser-Python3 to get the data.The plugin’s settings allows you to configure which slicer settings to show and what their units should be.Configuration            Setting      Description                  Key      The “key” of your slicer setting in SlicerSettingsParser              Label (optional)      A label that replaces the key in the file info view              Unit (optional)      The unit suffix that is appended after the value of the setting      The Key, Label and Unit fields in the plugin’s settings are directly injected into the view, without any sanitization. Therefore, the use of HTML tags (such as label=&lt;strong&gt;Material and unit=&lt;/strong&gt;) is allowed.",
 "tags": ["slicer settings","slicersettingsparser","info"]
+},
+
+{
+"id": "/plugins/preheathelper",
+"url": "/plugins/preheathelper/",
+"date": "2022-05-07 00:00:00 -0500",
+"title": "OctoPrint-PreheatHelper",
+"description": "A little helper to automate your printer pre-heating!",
+"author": "RoboMagus",
+"content": "A little helper to automate your printer pre-heating!You can have it automatically pre-heat your printer as soon as it connects to Octoprint.Or when you (pre-)load a file this plugin can scan for the temperature setpoints in the GCode and use those to pre-heat the printer before you hit play.",
+"tags": ["preheat","helper","parser"]
 }
 ]
 }
