@@ -6575,13 +6575,52 @@
     },
 
     {
+        "id": "obico",
+        "published": "2019-11-07 00:00:00 -0600",
+        "title": "Obico for OctoPrint",
+        "description": "Securely monitor and control your OctoPrint-connected printer from anywhere for free with Obico. Get unlimited live webcam streaming, full OctoPrint remote access, printer status notifications, and a free companion mobile app for iOS and Android. The best part? AI-powered failure detection watches your prints so you don’t have to. (Obico is the successor of The Spaghetti Detective.)",
+        "archive": "https://github.com/TheSpaghettiDetective/OctoPrint-Obico/archive/master.zip",
+        "author": "The Obico team",
+        "homepage": "https://www.obico.io",
+        "page": "https://plugins.octoprint.org/plugins/obico/",
+        "compatibility": {
+            "octoprint": ["1.3.8"],
+            "os": ["linux","windows","macos","freebsd"],
+            "python": ">=2.7,<4"
+        },
+        "license": "AGPLv3",
+        "image": "https://plugins.octoprint.org/assets/img/plugins/obico/featured.png",
+        "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "The Spaghetti Detective is now Obico",
+                "date": "2022-05-10 00:48:26 +0000",
+                "tag": "2.0.1"
+            },
+            "releases": 79,
+            "last_push": "2022-05-09 23:25:59 +0000",
+            "stars": 113,
+            "issues": {
+                "open": 23,
+                "closed": 72
+            }
+        },
+        "stats": {
+            "instances_month": 1,
+            "install_events_month": 1,
+            "instances_week": 1,
+            "install_events_week": 1
+        }
+    },
+
+    {
         "id": "thespaghettidetective",
         "published": "2019-11-07 00:00:00 -0600",
         "title": "Access Anywhere - The Spaghetti Detective",
-        "description": "Securely monitor and access your full OctoPrint instance from anywhere, for free! Unlimited live webcam streaming. Free companion mobile app for iOS and Android. The best part? AI-powered failure detection. (TSD is the successor of OctoPrint Anywhere).",
+        "description": "The Spaghetti Detective is now Obico! Please install \"Obico for OctoPrint\" instead.",
         "archive": "https://github.com/TheSpaghettiDetective/OctoPrint-TheSpaghettiDetective/archive/master.zip",
-        "author": "TSD Team",
-        "homepage": "https://www.thespaghettidetective.com",
+        "author": "The Obico team",
+        "homepage": "https://www.obico.io",
         "page": "https://plugins.octoprint.org/plugins/thespaghettidetective/",
         "compatibility": {
             "octoprint": ["1.3.8"],
@@ -6589,7 +6628,6 @@
             "python": ">=2.7,<4"
         },
         "license": "AGPLv3",
-        "image": "https://plugins.octoprint.org/assets/img/plugins/thespaghettidetective/hero.png",
         "abandoned": false,
         "github": { 
             "latest_release": {
