@@ -3,7 +3,7 @@ layout: plugin
 
 id: SlicerEstimator
 title: Slicer Estimator
-description: Slicer Estimator - add accurate remaining time to print and other custom metadata to OctoPrint
+description: Slicer Estimator - adds accurate remaining time to print, remaining time to filament changes and other custom metadata like filament brand, etc. to OctoPrint
 author: Nils Hendrik Rottgardt
 license: AGPLv3
 date: 2021-02-24
