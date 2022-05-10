@@ -202,7 +202,7 @@ Video courtesy of TSD user Lila.
 
 <br />
 
-**[More failure detection examples](https://app.obico.io/publictimelapses/).**
+**[More failure detection examples](https://app.obico.io/ent_pub/publictimelapses/).**
 
 <br />
 
