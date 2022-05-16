@@ -208,13 +208,21 @@
       </p>
       <h1 id="extrafileinfo">ExtraFileInfo</h1>
 
-<p>This plugin adds slicer settings to the additional data tab of each file, which is shown by pressing the downwards arrow button. Uses <a href="https://github.com/Rob4226/OctoPrint-SlicerSettingsParser-Python3">Octoprint-SlicerSettingsParser-Python3</a> to get the data.</p>
+<p>This plugin adds slicer settings to the additional data tab of each file, which is shown by pressing the downwards arrow button. Uses <a href="https://github.com/Rob4226/OctoPrint-SlicerSettingsParser-Python3">Octoprint-SlicerSettingsParser-Python3</a> (which should install automatically) to get the slicer data from the gcode.</p>
 
 <p><img src="/assets/img/plugins/extrafileinfo/file.png" alt="fileinfo" /></p>
 
 <p>The plugin’s settings allows you to configure which slicer settings to show and what their units should be.</p>
 
 <h2 id="configuration">Configuration</h2>
+<h3 id="slicersettingsparser">SlicerSettingsParser</h3>
+<p>SlicerSettingsParser searches through your gcode files to find commented lines that contain the slicer settings. Some slicers automatically add these lines to your gcode files, but not all do it by default. The parser finds the “key = value” sets of these settings by matching each line with a regex. The default regex supports Slic3r and Simplify3D (and the Cura configuration below).</p>
+
+<p>After installing, you need to configure SlicerSettingsParser to parse your gcode files and find the commented settings in them. Press the “Analyze all files” button to scan your old files. Note that my Raspberry Pi 4B 2GB can only handle around 4 MB/s, so this can take a while depending on your files and setup.</p>
+
+<p><strong>If you use Cura, you need to add <a href="https://gist.github.com/tjjfvi/75210b2ed20ed194d6eab48bf70c4f12">this</a> to your start or end gcode.</strong> More gcode variables that Cura supports can be found <a href="http://files.fieldofview.com/cura/Replacement_Patterns.html">on this page</a>. If you want to add these manually, make sure that you keep using the <code class="language-plaintext highlighter-rouge">; key = {variable}</code> style.</p>
+
+<h3 id="extrafileinfo-1">ExtraFileInfo</h3>
 
 <table>
   <thead>
@@ -241,7 +249,29 @@
 
 <hr />
 
-<p>The Key, Label and Unit fields in the plugin’s settings are directly injected into the view, without any sanitization. Therefore, the use of HTML tags (such as label=<code class="language-plaintext highlighter-rouge">&lt;strong&gt;Material</code> and unit=<code class="language-plaintext highlighter-rouge">&lt;/strong&gt;</code>) is allowed.</p>
+<p>The Key, Label and Unit fields in the plugin’s settings are directly injected into the view, without any sanitization. Therefore, the use of HTML tags (such as label=<code class="language-plaintext highlighter-rouge">&lt;strong&gt;Material&lt;/strong&gt;</code>) is allowed.</p>
+
+<h2 id="example">Example</h2>
+
+<p>The gcode file that I upload contains the following lines:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>; layer_height = 0.2
+; adaptive_layer_height_enabled = False
+; adhesion_type = skirt
+</code></pre></div></div>
+<p>The default settings of SlicerSettingsParser support this format. To display these values in the file info, I configure this plugin as such, while leaving the other settings empty:</p>
+
+<p><img src="/assets/img/plugins/extrafileinfo/example1.png" alt="example1" /></p>
+
+<p>This gives the following result in the files menu:</p>
+
+<p><img src="/assets/img/plugins/extrafileinfo/example2.png" alt="example2" /></p>
+
+<h2 id="known-issues">Known Issues</h2>
+
+<ul>
+  <li>SlicerSettingsParser does not parse newly uploaded files when Cura Thumbnails/UltimakerFormatPackage is installed, <a href="https://github.com/tjjfvi/OctoPrint-SlicerSettingsParser/issues/7">as described here</a>. Use <a href="https://plugins.octoprint.org/plugins/prusaslicerthumbnails/#cura">Slicer Thumbnails</a> instead to solve this.</li>
+</ul>
 
 
       
