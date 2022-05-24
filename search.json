@@ -3859,6 +3859,17 @@
 "author": "RoboMagus",
 "content": "A little helper to automate your printer pre-heating!You can have it automatically pre-heat your printer as soon as it connects to Octoprint.Or when you (pre-)load a file this plugin can scan for the temperature setpoints in the GCode and use those to pre-heat the printer before you hit play.",
 "tags": ["preheat","helper","parser"]
+},
+
+{
+"id": "/plugins/psucontrol_jeedom",
+"url": "/plugins/psucontrol_jeedom/",
+"date": "2022-05-24 00:00:00 -0500",
+"title": "PSU Control - Jeedom",
+"description": "Adds Jeedom support to OctoPrint-PSUControl as a sub-plugin",
+"author": "Tex",
+"content": "See https://github.com/TexGG/OctoPrint-PSUControl-Jeedom for information on configuration.",
+"tags": ["power","psu","control","psucontrol","psucontrol subplugin","jeedom"]
 }
 ]
 }

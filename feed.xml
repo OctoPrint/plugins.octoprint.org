@@ -5,10 +5,38 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>https://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 24 May 2022 07:35:43 -0500</pubDate>
-    <lastBuildDate>Tue, 24 May 2022 07:35:43 -0500</lastBuildDate>
+    <pubDate>Tue, 24 May 2022 08:19:21 -0500</pubDate>
+    <lastBuildDate>Tue, 24 May 2022 08:19:21 -0500</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
+    
+      <item>
+        <title>PSU Control - Jeedom</title>
+        <description>
+          <![CDATA[
+            Adds Jeedom support to OctoPrint-PSUControl as a sub-plugin
+            <p><img src="https://plugins.octoprint.org/assets/img/repo-600x400.png"></p>
+            
+          ]]>
+        </description>
+        <pubDate>
+Tue, 24 May 2022 00:00:00 -0500</pubDate>
+        <link>https://plugins.octoprint.org/plugins/psucontrol_jeedom/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/psucontrol_jeedom/</guid>
+        
+        <category>power</category>
+        
+        <category>psu</category>
+        
+        <category>control</category>
+        
+        <category>psucontrol</category>
+        
+        <category>psucontrol subplugin</category>
+        
+        <category>jeedom</category>
+        
+      </item>
     
       <item>
         <title>OctoPrint-PreheatHelper</title>
@@ -252,31 +280,6 @@ Tue, 29 Mar 2022 00:00:00 -0500</pubDate>
         <category>music</category>
         
         <category>gcode</category>
-        
-      </item>
-    
-      <item>
-        <title>OctoPrint-Wyze</title>
-        <description>
-          <![CDATA[
-            Control Wyze devices through OctoPrint
-            <p><img src="https://plugins.octoprint.org/assets/img/plugins/wyze/OctoPrint-Wyze.png"></p>
-          ]]>
-        </description>
-        <pubDate>
-Wed, 16 Mar 2022 00:00:00 -0500</pubDate>
-        <link>https://plugins.octoprint.org/plugins/wyze/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/wyze/</guid>
-        
-        <category>wyze</category>
-        
-        <category>control</category>
-        
-        <category>events</category>
-        
-        <category>scheduling</category>
-        
-        <category>lights</category>
         
       </item>
     
