@@ -8,7 +8,7 @@ authors:
 - Tex
 license: AGPLv3
 
-date: 2022-05-15
+date: 2022-05-24
 
 homepage: https://github.com/TexGG/OctoPrint-PSUControl-Jeedom
 source: https://github.com/TexGG/OctoPrint-PSUControl-Jeedom
