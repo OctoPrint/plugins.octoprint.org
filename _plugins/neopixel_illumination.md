@@ -11,7 +11,7 @@ date: 2022-05-24
 
 homepage: https://github.com/brettvitaz/OctoPrint-Neopixel_Illumination
 source: https://github.com/brettvitaz/OctoPrint-Neopixel_Illumination
-archive: https://github.com/brettvitaz/OctoPrint-Neopixel_Illumination/archive/master.zip
+archive: https://github.com/brettvitaz/OctoPrint-Neopixel_Illumination/archive/main.zip
 tags:
 - neopixel
 - m150
@@ -35,9 +35,6 @@ featuredimage: /assets/img/plugins/neopixel_illumination/navbar_control.png
 compatibility:
   os:
   - linux
-  - windows
-  - macos
-  - freebsd
   python: ">=3,<4"
 
 ---
@@ -52,6 +49,7 @@ This plugin will allow control of NeoPixels from OctoPrint.
 
 ## Configuration
 
+{:.table.table-bordered}
 | Setting | Description | Default |
 | :--- | :--- | :--- |
 | Enable | Enable/Disable NeoPixel strip | |
