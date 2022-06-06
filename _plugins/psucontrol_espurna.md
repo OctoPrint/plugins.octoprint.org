@@ -75,3 +75,4 @@ compatibility:
 
 ---
 
+See <https://github.com/luismanson/Octoprint-PSUControl-ESPurna> for information on configuration.
