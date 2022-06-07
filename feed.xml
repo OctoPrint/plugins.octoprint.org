@@ -5,10 +5,29 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>https://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 06 Jun 2022 23:30:22 -0500</pubDate>
-    <lastBuildDate>Mon, 06 Jun 2022 23:30:22 -0500</lastBuildDate>
+    <pubDate>Tue, 07 Jun 2022 00:20:08 -0500</pubDate>
+    <lastBuildDate>Tue, 07 Jun 2022 00:20:08 -0500</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
+    
+      <item>
+        <title>OctoPrint-Queue</title>
+        <description>
+          <![CDATA[
+            A simple queue setup designed for use by staff at a public library.
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/queue/queue.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Mon, 06 Jun 2022 00:00:00 -0500</pubDate>
+        <link>https://plugins.octoprint.org/plugins/queue/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/queue/</guid>
+        
+        <category>ui</category>
+        
+        <category>queue</category>
+        
+      </item>
     
       <item>
         <title>PSU Control - Jeedom</title>
@@ -251,35 +270,6 @@ Tue, 05 Apr 2022 00:00:00 -0500</pubDate>
         <category>Laser</category>
         
         <category>CNC</category>
-        
-      </item>
-    
-      <item>
-        <title>OctoPrint-PWMBuzzer</title>
-        <description>
-          <![CDATA[
-            Uses PWM via GPIO to sound tones whenever an M300 command is encountered
-            <p><img src="https://plugins.octoprint.org/assets/img/plugins/pwmbuzzer/composer.png"></p>
-          ]]>
-        </description>
-        <pubDate>
-Tue, 29 Mar 2022 00:00:00 -0500</pubDate>
-        <link>https://plugins.octoprint.org/plugins/pwmbuzzer/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/pwmbuzzer/</guid>
-        
-        <category>gpio</category>
-        
-        <category>pwm</category>
-        
-        <category>buzzer</category>
-        
-        <category>beep</category>
-        
-        <category>m300</category>
-        
-        <category>music</category>
-        
-        <category>gcode</category>
         
       </item>
     

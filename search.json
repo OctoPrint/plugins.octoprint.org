@@ -3870,6 +3870,17 @@
 "author": "Tex",
 "content": "See https://github.com/TexGG/OctoPrint-PSUControl-Jeedom for information on configuration.",
 "tags": ["power","psu","control","psucontrol","psucontrol subplugin","jeedom"]
+},
+
+{
+"id": "/plugins/queue",
+"url": "/plugins/queue/",
+"date": "2022-06-06 00:00:00 -0500",
+"title": "OctoPrint-Queue",
+"description": "A simple queue setup designed for use by staff at a public library.",
+"author": "Chris Hennes, Pioneer Library System",
+"content": "A simple print queueDesigned for use at a public library, this plugin allows staff to efficiently manage customer print jobs. Its simple interface and setup are easy to learn, and your organization can either implement its ownprioritization scheme or use the one provided with the plugin. It is primarily intended as a staff communicationmechanism, allowing staff to see which job they should start up next, as well as look up completed jobsto provide information to customers.Purely localThis plugin does not use any outside services and has no requirements beyond having an OctoPrint installation.It does not enforce any restrictions on the input fields, giving staff complete flexibility in how the toolgets used.Copyright 2019 Pioneer Library System. Some rights reserved, see the GNU Affero General Public License for details.",
+"tags": ["ui","queue"]
 }
 ]
 }
