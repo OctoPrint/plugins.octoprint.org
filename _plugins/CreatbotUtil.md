@@ -32,7 +32,7 @@ tags:
 # featuredimage: null
 
 screenshots:
-- url: /assets/img/plugins/creatbotutil/settings.png
+- url: /assets/img/plugins/CreatbotUtil/settings.png
   alt: Settings Page Screenshot
 
 compatibility:
