@@ -7,7 +7,7 @@ description: Various utility functions to make OctoPrint work better with Creatb
 author: Kestin Goforth
 license: AGPLv3
 
-date: 2022-06-09
+date: 2022-06-14
 
 homepage: https://github.com/kForth/OctoPrint-CreatbotUtil
 source: https://github.com/kForth/OctoPrint-CreatbotUtil
