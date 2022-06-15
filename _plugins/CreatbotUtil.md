@@ -52,7 +52,7 @@ This plugin add various utility functions to make OctoPrint work better with Cre
 
 ## Screenshot
 
-![Settings Page Screenshot](/assets/img/plugins/creatbotutil/settings.png)
+![Settings Page Screenshot](/assets/img/plugins/CreatbotUtil/settings.png)
 
 ## Notes
 
