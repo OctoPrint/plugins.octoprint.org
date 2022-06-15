@@ -13328,5 +13328,43 @@
             "instances_week": 111,
             "install_events_week": 91
         }
+    },
+
+    {
+        "id": "CreatbotUtil",
+        "published": "2022-06-14 00:00:00 -0500",
+        "title": "Creatbot Util",
+        "description": "Various utility functions to make OctoPrint work better with Creatbot printers.",
+        "archive": "https://github.com/kForth/OctoPrint-CreatbotUtil/archive/main.zip",
+        "author": "Kestin Goforth",
+        "homepage": "https://github.com/kForth/OctoPrint-CreatbotUtil",
+        "page": "https://plugins.octoprint.org/plugins/CreatbotUtil/",
+        "compatibility": {
+            "octoprint": [],
+            "os": [],
+            "python": ">=2.7,<4"
+        },
+        "license": "AGPLv3",
+        "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "OctoPrint-CreatbotUtil v1.1.1",
+                "date": "2022-06-14 16:34:08 +0000",
+                "tag": "1.1.1"
+            },
+            "releases": 3,
+            "last_push": "2022-06-14 16:32:45 +0000",
+            "stars": 0,
+            "issues": {
+                "open": 0,
+                "closed": 0
+            }
+        },
+        "stats": {
+            "instances_month": 1,
+            "install_events_month": 1,
+            "instances_week": 1,
+            "install_events_week": 1
+        }
     }
 ]

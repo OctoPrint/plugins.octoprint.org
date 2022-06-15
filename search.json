@@ -3881,6 +3881,17 @@
 "author": "Chris Hennes, Pioneer Library System",
 "content": "A simple print queueDesigned for use at a public library, this plugin allows staff to efficiently manage customer print jobs. Its simple interface and setup are easy to learn, and your organization can either implement its ownprioritization scheme or use the one provided with the plugin. It is primarily intended as a staff communicationmechanism, allowing staff to see which job they should start up next, as well as look up completed jobsto provide information to customers.Purely localThis plugin does not use any outside services and has no requirements beyond having an OctoPrint installation.It does not enforce any restrictions on the input fields, giving staff complete flexibility in how the toolgets used.Copyright 2019 Pioneer Library System. Some rights reserved, see the GNU Affero General Public License for details.",
 "tags": ["ui","queue"]
+},
+
+{
+"id": "/plugins/CreatbotUtil",
+"url": "/plugins/CreatbotUtil/",
+"date": "2022-06-14 00:00:00 -0500",
+"title": "Creatbot Util",
+"description": "Various utility functions to make OctoPrint work better with Creatbot printers.",
+"author": "Kestin Goforth",
+"content": "Creatbot UtilThis plugin add various utility functions to make OctoPrint work better with Creatbot printers.Features      Send “Start/Stop Serial Print” commands whenever a print is started, cancelled, or finished (M6006 &amp; M6007).        Replace the Marlin ‘Set Chamber Temperature’ command (M141) with the Creatbot command (M6013).  ScreenshotNotesThis plugin should work for most/all Creatbot 3D Printers but has only been tested with a Creatbot F430.Your Creatbot firmware may need to be upgraded to at least v5.6, the original v5.5 firmware that shipped with my Creatbot F430 did not support the Heated Chamber (M6013) command.",
+"tags": ["creabot","printer","control","command","serial","start","stop","temperature","heated","chamber","build","volume"]
 }
 ]
 }
