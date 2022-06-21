@@ -2,8 +2,8 @@
 layout: plugin
 
 id: octoeverywhere
-title: OctoEverywhere - Free Remote Monitoring And Control!
-description: Free, simple, and secure remote monitoring and control of your OctoPrint printer anywhere in the world!
+title: OctoEverywhere - Free Remote Monitoring, Notifications, And Control!
+description: Free, simple, and secure remote monitoring and control of your OctoPrint printer anywhere in the world! OctoEverywhere gives you unlimited OctoPrint access on any web browser and can empower your favorite OctoPrint Android and iOS apps to work everywhere! With our new instant notification technology, you can stay on top of your prints from any device, anywhere!
 author: Quinn Damerell
 license: AGPLv3
 date: 2020-11-07
@@ -26,13 +26,17 @@ tags:
 - app
 - plugin support
 - webcam
+- video streaming
 - free
 - secure
 - safe
 - cloud printing
 - internet
+- cloud
+- smart
 - port forwarding
 - notifications
+- notification
 - push notifications
 - sms
 - email
@@ -41,6 +45,16 @@ tags:
 - slack
 - pushover
 - pushbullet
+- desktop
+- windows
+- mac
+- android
+- iphone
+- ios
+- smart plug
+- mobile
+- mobile app
+- mobile alerts
 - alerts
 - filament runout
 - eta
@@ -59,6 +73,7 @@ tags:
 - twitch
 - youtube
 - tiktok
+- instagram
 - social networks
 - live links
 - print status
@@ -87,13 +102,13 @@ compatibility:
 
 ---
 
-<p class="lead">Now including OctoPrint app support, full framerate webcam streaming, live streaming, printer notifications, and much more! Your full OctoPrint portal, plugins, apps, and webcam everywhere!</p>
+<p class="lead">Now including OctoPrint app support, full framerate webcam streaming, print status live streaming, printer notifications, and much more! Your full OctoPrint portal, plugins, apps, and webcam everywhere!</p>
 
 ### 👋 Hello!
 
-Welcome aboard the [OctoEverywhere.com](https://octoeverywhere.com/?source=plugin_website_header) rocket! After a **free and easy 30 second setup** you will have access to your full OctoPrint powered printer... everywhere!
+Welcome aboard the [OctoEverywhere.com](https://octoeverywhere.com/?source=plugin_website_header) rocket! After a **free and easy 10 second setup** you will have access to your full OctoPrint powered printer... everywhere!
 
-With a **[4.8/5 star rating](https://www.trustpilot.com/review/octoeverywhere.com)** and over **41k makers** already enjoying full remote control and loads of other features, what are you waiting for? **[Try it now!](https://octoeverywhere.com/?source=plugin_website_try_it_now)**
+With a **[4.9/5 star rating](https://www.trustpilot.com/review/octoeverywhere.com)** and over **56k makers** already enjoying full remote control and loads of other features, what are you waiting for? <span style="text-decoration: underline;">**[Try OctoEverywhere now!](https://octoeverywhere.com/?source=plugin_website_try_it_now)**</span>
 
 <br/><br/>
 
@@ -107,10 +122,10 @@ Yes! [OctoEverywhere.com](https://octoeverywhere.com/?source=plugin_website) emp
 
 <ul style="list-style-type:none">
 <li><strong>⚡ Free & full OctoPrint portal access from anywhere</strong></li>
-<li><strong>🎥 Free full framerate and resolution webcam streaming</strong></li>
+<li><strong>🎥 Free full framerate and full resolution webcam streaming</strong></li>
 <li><strong>📱 Empower your favorite OctoPrint iOS and Android apps to work everywhere</strong></li>
-<li><strong>🔔 Instant printer alerts and detailed progress notifications sent to SMS, Email, Discord, Telegram, Slack, and more</strong></li>
-<li><strong>📺 Live stream to your friends or the entire world with OctoEverywhere Live Links</strong></li>
+<li><strong>🔔 Instant printer alerts and detailed progress notifications sent to SMS, Email, Discord, Telegram, Android, Slack, and more</strong></li>
+<li><strong>📺 Live stream you prints to your friends or the entire world with OctoEverywhere Live Links</strong></li>
 <li><strong>🔌 Full OctoPrint plugin functionality</strong></li>
 <li><strong>🔐 Share secure access of your OctoPrint portal with others</strong></li>
 <li><strong>🥰 One of the top rated OctoPrint remote access plugins</strong></li>
@@ -130,7 +145,7 @@ To learn more about our state-of-the-art security design and practices, <a href=
 
 ### Try It Now!
 
-Sounds amazing right? Seeing is believing! Head over to [OctoEverywhere.com](https://octoeverywhere.com/?source=plugin_website_try) or install our OctoPrint plugin to get started in 30 seconds or less!
+Sounds amazing right? Seeing is believing! Head over to <span style="text-decoration: underline;">[OctoEverywhere.com](https://octoeverywhere.com/?source=plugin_website_try)</span> or install our OctoPrint plugin to get started in 30 seconds or less!
 
 <br/><br/>
 
