@@ -5,10 +5,38 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>https://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 21 Jun 2022 09:17:59 -0500</pubDate>
-    <lastBuildDate>Tue, 21 Jun 2022 09:17:59 -0500</lastBuildDate>
+    <pubDate>Tue, 21 Jun 2022 09:32:39 -0500</pubDate>
+    <lastBuildDate>Tue, 21 Jun 2022 09:32:39 -0500</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
+    
+      <item>
+        <title>Octoprint-PSUControl-ESPurna</title>
+        <description>
+          <![CDATA[
+            Plugin to control devices with ESPurna firmware
+            <p><img src="https://plugins.octoprint.org/assets/img/repo-600x400.png"></p>
+            
+          ]]>
+        </description>
+        <pubDate>
+Tue, 21 Jun 2022 00:00:00 -0500</pubDate>
+        <link>https://plugins.octoprint.org/plugins/psucontrol_espurna/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/psucontrol_espurna/</guid>
+        
+        <category>psucontrol subplugin</category>
+        
+        <category>control</category>
+        
+        <category>power</category>
+        
+        <category>psu</category>
+        
+        <category>psucontrol</category>
+        
+        <category>espurna</category>
+        
+      </item>
     
       <item>
         <title>Creatbot Util</title>
@@ -261,34 +289,6 @@ Fri, 15 Apr 2022 00:00:00 -0500</pubDate>
         <category>notifications</category>
         
         <category>local</category>
-        
-      </item>
-    
-      <item>
-        <title>PSU Control - Tapo</title>
-        <description>
-          <![CDATA[
-            Adds Tapo Smart Plug support to OctoPrint-PSUControl as a sub-plugin
-            <p><img src="https://plugins.octoprint.org/assets/img/repo-600x400.png"></p>
-            
-          ]]>
-        </description>
-        <pubDate>
-Thu, 14 Apr 2022 00:00:00 -0500</pubDate>
-        <link>https://plugins.octoprint.org/plugins/psucontrol_tapo/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/psucontrol_tapo/</guid>
-        
-        <category>power</category>
-        
-        <category>psu</category>
-        
-        <category>control</category>
-        
-        <category>psucontrol</category>
-        
-        <category>psucontrol subplugin</category>
-        
-        <category>tapo</category>
         
       </item>
     
