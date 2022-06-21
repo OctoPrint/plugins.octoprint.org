@@ -9,7 +9,7 @@ authors:
 license: AGPLv3
 
 
-date: 2022-06-05
+date: 2022-06-21
 
 homepage: https://github.com/luismanson/Octoprint-PSUControl-ESPurna
 source: https://github.com/luismanson/Octoprint-PSUControl-ESPurna
