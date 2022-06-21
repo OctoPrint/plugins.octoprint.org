@@ -17,7 +17,7 @@ archive: https://github.com/luismanson/Octoprint-PSUControl-ESPurna/archive/mast
 
 
 tags:
-- tag-psucontrol-subplugin
+- psucontrol subplugin
 - control
 - power
 - psu
