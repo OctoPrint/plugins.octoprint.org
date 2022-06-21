@@ -325,7 +325,7 @@ Highest priority is a method to find out if the given points are actually reacha
       
       <dl class="installations">
         <dt>Active instances the past month</dt>
-        <dd>Installed on at least <strong>544</strong> instances</dd>
+        <dd>Installed on at least <strong>543</strong> instances</dd>
       </dl>
       
       
@@ -334,24 +334,6 @@ Highest priority is a method to find out if the given points are actually reacha
         <dd>At least <strong>19</strong> new installations</dd>
       </dl>
       
-      
-      <dl class="github">
-        <dt>GitHub stats <a href="/help/github_integration/" class="fas fa-question-circle"></a> <span id="github_login">(<a href="javascript:void(0)">Login</a>)</span></dt>
-        <dd>
-          <ul>
-            
-            <li>
-              Latest Release: <a href="https://github.com/j-be/AutoBim/releases/tag/v0.2.4" target="_blank">v0.2.4</a><br>
-              <small>released on 29 Apr 2022</small>
-            </li>
-            <li>Releases: 16</li>
-            
-            <li>Stars: <span id="github_star_count">19</span> <span id="github_star"><a href="javascript:void(0)"><i class="far fa-star"></i></a></span></li>
-            <li>Issues: 13 open, 18 closed</li>
-            <li>Last push: 29 Apr 2022</li>
-          </ul>
-        </dd>
-      </dl>
       
       
       <dl class="tags">
@@ -448,9 +430,9 @@ Highest priority is a method to find out if the given points are actually reacha
 
 <script type="application/javascript">
   $(function() {
-    var has_github = true;
+    var has_github = false;
     if (has_github) {
-      var github_repo = "j-be/AutoBim";
+      var github_repo = "";
 
       if (github_repo) {
         var status = "unknown";
