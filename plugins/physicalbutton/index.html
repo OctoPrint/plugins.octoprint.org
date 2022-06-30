@@ -212,19 +212,33 @@ The buttons are then able to send GCODE, actions and system commands to your pri
       <p>The <strong>PhysicalButton</strong> plugin (hence the name) lets you add physical buttons to your Raspberry Pi.
 The buttons are then able to send GCODE, actions and system commands to your printer.</p>
 
+<p>The buttons have to be plugged into a ground pin and the desired GPIO pin that you want to use.
+The GPIO must be chosen in BCM mode (see <a href="https://pinout.xyz/">https://pinout.xyz/</a>).
+If you have other plugins installed that use GPIOs, make sure those plugins are also set to BCM mode.</p>
+
 <hr />
 
-<h3 id="configuration---overview">Configuration - Overview</h3>
+<h2 id="-configuration---overview-">🔧 Configuration - Overview 🔧</h2>
 <p>To add a new button you have to click on the ➕. This adds a new button to the end of your list.</p>
 
 <p>From there you should enter a button name, the used GPIO and the mode (NO or NC) of the button.
-In addition you have to specify for how long a button has to be held in order to trigger.</p>
+In addition, you have to specify for how long a button has to be held in order to trigger.</p>
 
 <p>The last step is to add activities to your button which are executed in order of the activities list.
 You can edit, move or remove activities in the right pane.</p>
 
-<hr />
-<h3 id="configuration---detail">Configuration - Detail</h3>
+<p>You can disable/enable buttons by pressing
+<img style="height: 1em;width: auto;display: inline-block" src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/toggle-on.svg" />
+/
+<img style="height: 1em;width: auto;display: inline-block" src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/toggle-off.svg" />
+.</p>
+
+<p>You can back up your configuration by pressing
+(<img style="height: 1em;width: auto;display: inline-block" src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/download.svg" /> Config)
+and import a configuration by pressing
+(<img style="height: 1em;width: auto;display: inline-block" src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/upload.svg" /> Config).</p>
+
+<h3 id="-configuration---detail-">🔧 Configuration - Detail 🔧</h3>
 <ul>
   <li><strong>Button Name</strong>
     <ul>
@@ -233,7 +247,7 @@ You can edit, move or remove activities in the right pane.</p>
   </li>
   <li><strong>GPIO</strong>
     <ul>
-      <li>This is the GPIO you connect your button to. The other cable has to be connected to a ground pin (Buttons are configured to use internal pulled-up resistors). You can only create one button per GPIO.</li>
+      <li>This is the GPIO you connect your button to. The other cable has to be connected to a ground pin (Buttons are configured to use internal pulled-up resistors).</li>
     </ul>
   </li>
   <li><strong>Mode</strong>
@@ -259,12 +273,79 @@ You can edit, move or remove activities in the right pane.</p>
       <li>This is where you set the hold time for your button, meaning how long the button has to be held until the reaction is triggered.</li>
     </ul>
   </li>
+  <li><strong>Enabled while printing</strong>
+    <ul>
+      <li>When this option is enabled, you can always use the button. If it’s disabled, the button won’t react to input while the printer is printing.</li>
+    </ul>
+  </li>
   <li><strong>Choose activities for your button</strong>
     <ul>
       <li>Action:
         <ul>
-          <li>You can choose between different actions:<br />
-connect, disconnect, home (x, y and z are homed), pause, resume, start, start latest, cancel, toggle pause-resume, toggle start-cancel, toggle start latest-cancel</li>
+          <li>You can choose between different actions:
+            <ul>
+              <li>connect:
+                <ul>
+                  <li>Connect to the printer.</li>
+                </ul>
+              </li>
+              <li>disconnect
+                <ul>
+                  <li>Disconnect from the printer.</li>
+                </ul>
+              </li>
+              <li>home
+                <ul>
+                  <li>Homes all axes of the printer.</li>
+                </ul>
+              </li>
+              <li>pause
+                <ul>
+                  <li>Pause the current print.</li>
+                </ul>
+              </li>
+              <li>resume
+                <ul>
+                  <li>Resume the current print.</li>
+                </ul>
+              </li>
+              <li>start
+                <ul>
+                  <li>Start printing the currently selected file.</li>
+                </ul>
+              </li>
+              <li>start latest
+                <ul>
+                  <li>Start printing the latest uploaded file.</li>
+                </ul>
+              </li>
+              <li>cancel
+                <ul>
+                  <li>Cancel the current print.</li>
+                </ul>
+              </li>
+              <li>toggle pause-resume
+                <ul>
+                  <li>Toggle between pausing and resuming a print.</li>
+                </ul>
+              </li>
+              <li>toggle start-cancel
+                <ul>
+                  <li>Toggle between starting the currently selected file or cancelling a print.</li>
+                </ul>
+              </li>
+              <li>toggle start latest-cancel
+                <ul>
+                  <li>Toggle between starting the latest uploaded file and cancelling a print.</li>
+                </ul>
+              </li>
+              <li>unselect file
+                <ul>
+                  <li>Unselect the currently selected file.</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
         </ul>
       </li>
       <li>File:
@@ -302,23 +383,62 @@ Note that system commands will be run under the same user that owns your OctoPri
           <li>The initial value sets the level of the GPIO pin for startup and settings save.</li>
         </ul>
       </li>
+      <li>Plugin:
+        <ul>
+          <li>This activity works in a similar way as the action activity.</li>
+          <li>This activity will only appear if other plugins provide actions for this plugin.</li>
+        </ul>
+      </li>
       <li>These activities will be executed in order of your list. You can also rearrange them by inserting them at your desired position.</li>
     </ul>
   </li>
 </ul>
 
+<h3 id="note">Note:</h3>
+<p>You can only configure one button per GPIO.
+If you want more activities to be activated upon button press (/release), add more activities to the button.</p>
+
 <hr />
-<h3 id="️-use-at-your-own-risk-️">⚠️ Use at your own risk ⚠️</h3>
+
+<h3 id="custom-actions-from-your-plugin">Custom actions from your plugin:</h3>
+<p>If you are a developer and want to include functionality of your plugin into PhysicalButton, you can proceed as follows:</p>
+
+<ul>
+  <li>To get the function to register actions:
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">helpers</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">_plugin_manager</span><span class="p">.</span><span class="n">get_helpers</span><span class="p">(</span><span class="s">"physicalbutton"</span><span class="p">,</span> <span class="s">"register_button_actions"</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">helpers</span> <span class="ow">and</span> <span class="s">"register_button_actions"</span> <span class="ow">in</span> <span class="n">helpers</span><span class="p">:</span>
+ <span class="bp">self</span><span class="p">.</span><span class="n">register_button_actions</span> <span class="o">=</span> <span class="n">helpers</span><span class="p">[</span><span class="s">"register_button_actions"</span><span class="p">]</span>
+</code></pre></div>    </div>
+  </li>
+  <li>To register actions use <code class="language-plaintext highlighter-rouge">self.register_button_actions(self, some_action_callback_dict)</code> with:
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">some_action_callback_dict</code> being a dictionary with structure <code class="language-plaintext highlighter-rouge">{some_action : some_callback, ...}</code>.
+        <ul>
+          <li><code class="language-plaintext highlighter-rouge">some_action</code> being a string with the name that should be displayed.</li>
+          <li><code class="language-plaintext highlighter-rouge">some_callback</code> being a function without parameters that is executed on a button press.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h2 id="get-help--feature-request">Get Help / Feature request</h2>
+<p>If you encounter problems using the plugin or if you have an idea for a new feature please use the <a href="https://github.com/LuxuSam/PhysicalButton/issues">issue tracker</a> and if applicable add the corresponding label.</p>
+
+<hr />
+
+<h2 id="️-use-at-your-own-risk-️">⚠️ Use at your own risk ⚠️</h2>
 <p>I am not accountable for any damages made to your printer/raspberry pi when using this plugin (e.g. wrong wiring
-  of buttons, GCODE or system commands that you send with the buttons to your printer, …).</p>
+of buttons, GCODE or system commands that you send with the buttons to your printer, …).</p>
+
+<p>When setting the plugin up corresponding to my instructions, nothing should happen.</p>
 
 <hr />
-<h3 id="get-help--feature-request">Get Help / Feature request</h3>
-<p>If you encounter problems using the plugin or if you have an idea for a new feature please use the <a href="https://github.com/LuxuSam/PhysicalButton/issues">issue tracker</a> and the corresponding issue template.</p>
 
-<hr />
-<h3 id="️-support-me️">❤️ Support me❤️</h3>
-<p>If you enjoy my plugin and want to support me and the development, you can do so by sending me a donation on</p>
+<h2 id="️-support-me-️">❤️ Support me ❤️</h2>
+<p>If you enjoy my plugin and want to support me and the development, you can do so by sending me a donation on <br /></p>
 
 <p><a href="https://www.paypal.com/paypalme/luxusam3d"><img src="https://www.paypalobjects.com/webstatic/de_DE/i/de-pp-logo-100px.png" alt="paypal" /></a>  <a href="https://ko-fi.com/C0C14BZCR"><img src="https://uploads-ssl.webflow.com/5c14e387dab576fe667689cf/5c91bddac6c3aa6b3718fd86_kofisvglofo.svg" alt="ko-fi" /></a></p>
 
@@ -353,7 +473,17 @@ Note that system commands will be run under the same user that owns your OctoPri
         
         <figure>
           
+          <a href="/assets/img/plugins/physicalbutton/PhysicalButton_plugin.png" data-lightbox="/plugins/physicalbutton" data-title="An exemplary plugin activity of a button."><img src="/assets/img/plugins/physicalbutton/PhysicalButton_plugin.png" alt="Image that shows a plugin activity of a button." title="An exemplary plugin activity of a button."></a>
+        </figure>
+        
+        <figure>
+          
           <a href="/assets/img/plugins/physicalbutton/PhysicalButton_delete.png" data-lightbox="/plugins/physicalbutton" data-title="Before deleting a button you have to confirm the deletion."><img src="/assets/img/plugins/physicalbutton/PhysicalButton_delete.png" alt="Image that shows a modal to confirm the deletion of a configured button." title="Before deleting a button you have to confirm the deletion."></a>
+        </figure>
+        
+        <figure>
+          
+          <a href="/assets/img/plugins/physicalbutton/PhysicalButton_backup.png" data-lightbox="/plugins/physicalbutton" data-title="Image that shows a modal to upload a backup file."><img src="/assets/img/plugins/physicalbutton/PhysicalButton_backup.png" alt="Image that shows a modal to upload a configuration/backup file." title="Image that shows a modal to upload a backup file."></a>
         </figure>
         
       
