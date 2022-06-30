@@ -52,6 +52,9 @@ screenshots:
 - url: /assets/img/plugins/physicalbutton/PhysicalButton_delete.png
   alt: Image that shows a modal to confirm the deletion of a configured button.
   caption: Before deleting a button you have to confirm the deletion.
+- url: /assets/img/plugins/physicalbutton/PhysicalButton_backup.png
+  alt: Image that shows a modal to upload a configuration/backup file.
+  caption: Image that shows a modal to upload a backup file.
 
 featuredimage: /assets/img/plugins/physicalbutton/PhysicalButton_Logo.png
 
@@ -65,21 +68,36 @@ compatibility:
   python: ">=3,<4"
 
 ---
+
 The **PhysicalButton** plugin (hence the name) lets you add physical buttons to your Raspberry Pi.
 The buttons are then able to send GCODE, actions and system commands to your printer.
 
-----
+The buttons have to be plugged into a ground pin and the desired GPIO pin that you want to use.
+The GPIO must be chosen in BCM mode (see <https://pinout.xyz/>).
+If you have other plugins installed that use GPIOs, make sure those plugins are also set to BCM mode.
 
-### Configuration - Overview
+---
+
+## 🔧 Configuration - Overview 🔧
 To add a new button you have to click on the ➕. This adds a new button to the end of your list.
 
 From there you should enter a button name, the used GPIO and the mode (NO or NC) of the button.
-In addition you have to specify for how long a button has to be held in order to trigger.
+In addition, you have to specify for how long a button has to be held in order to trigger.
 
 The last step is to add activities to your button which are executed in order of the activities list.
 You can edit, move or remove activities in the right pane.
 
-----
+You can disable/enable buttons by pressing
+<img style="height: 1em;width: auto;display: inline-block" src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/toggle-on.svg">
+/
+<img style="height: 1em;width: auto;display: inline-block" src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/toggle-off.svg">
+.
+
+You can back up your configuration by pressing
+(<img style="height: 1em;width: auto;display: inline-block" src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/download.svg"> Config)
+and import a configuration by pressing
+(<img style="height: 1em;width: auto;display: inline-block" src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/upload.svg"> Config).
+
 ### 🔧 Configuration - Detail 🔧
 * **Button Name**
   * This is where you put the name of your button to differentiate it in the list of buttons.
@@ -93,6 +111,8 @@ You can edit, move or remove activities in the right pane.
       * Use this mode if your button is usually pressed (closed).
 * **Hold Time**
   * This is where you set the hold time for your button, meaning how long the button has to be held until the reaction is triggered.
+* **Enabled while printing**
+  * When this option is enabled, you can always use the button. If it's disabled, the button won't react to input while the printer is printing.
 * **Choose activities for your button**
   * Action:
     * You can choose between different actions:
@@ -166,20 +186,22 @@ if helpers and "register_button_actions" in helpers:
     * `some_action` being a string with the name that should be displayed.
     * `some_callback` being a function without parameters that is executed on a button press.
 
-----
+---
 
-### ⚠️ Use at your own risk ⚠️
-  I am not accountable for any damages made to your printer/raspberry pi when using this plugin (e.g. wrong wiring
-  of buttons, GCODE or system commands that you send with the buttons to your printer, ...).
+## Get Help / Feature request
+If you encounter problems using the plugin or if you have an idea for a new feature please use the [issue tracker](https://github.com/LuxuSam/PhysicalButton/issues) and if applicable add the corresponding label.
 
-----
+---
 
-### Get Help / Feature request
-If you encounter problems using the plugin or if you have an idea for a new feature please use the [issue tracker](https://github.com/LuxuSam/PhysicalButton/issues) and the corresponding issue template.
+## ⚠️ Use at your own risk ⚠️
+I am not accountable for any damages made to your printer/raspberry pi when using this plugin (e.g. wrong wiring
+of buttons, GCODE or system commands that you send with the buttons to your printer, ...).
 
-----
+When setting the plugin up corresponding to my instructions, nothing should happen.
 
-### ❤️ Support me❤️
-If you enjoy my plugin and want to support me and the development, you can do so by sending me a donation on
+---
+
+## ❤️ Support me ❤️
+If you enjoy my plugin and want to support me and the development, you can do so by sending me a donation on <br>
 
 [![paypal](https://www.paypalobjects.com/webstatic/de_DE/i/de-pp-logo-100px.png)](https://www.paypal.com/paypalme/luxusam3d)&emsp;&emsp;[![ko-fi](https://uploads-ssl.webflow.com/5c14e387dab576fe667689cf/5c91bddac6c3aa6b3718fd86_kofisvglofo.svg)](https://ko-fi.com/C0C14BZCR)
