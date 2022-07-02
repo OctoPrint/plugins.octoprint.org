@@ -8944,9 +8944,9 @@
         "homepage": "https://github.com/cp2004/OctoPrint-VirtualPrinterSettings",
         "page": "https://plugins.octoprint.org/plugins/virtual_printerconfig/",
         "compatibility": {
-            "octoprint": ["1.5.0"],
+            "octoprint": ["1.8.0"],
             "os": ["linux","windows","macos","freebsd"],
-            "python": ">=2.7,<4"
+            "python": ">=3.7,<4"
         },
         "license": "AGPLv3",
         "image": "https://plugins.octoprint.org/assets/img/plugins/virtual_printerconfig/settings.png",
