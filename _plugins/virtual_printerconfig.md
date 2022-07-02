@@ -29,7 +29,7 @@ featuredimage: /assets/img/plugins/virtual_printerconfig/settings.png
 compatibility:
 
   octoprint:
-  - 1.5.0
+  - 1.8.0
 
   os:
   - linux
@@ -37,7 +37,7 @@ compatibility:
   - macos
   - freebsd
 
-  python: ">=2.7,<4"
+  python: ">=3.7,<4"
 
 ---
 
@@ -50,27 +50,17 @@ Very useful if you are developing plugins, or even core OctoPrint. No more diggi
 
 ## Compatibility
 
-The lastest version of the plugin is only compatible with OctoPrint 1.5.x.
-To find a version compatible with your instance, take a look in the table below
+The latest version of the plugin is only tested with the most recent OctoPrint version, and since the settings available can change between OctoPrint
+releases, the current version of the plugin may not work with older versions of OctoPrint.
 
-{:.table}
-| OctoPrint version | Plugin version | Install URL                                                                    |
-| ----------------- | -------------- | ------------------------------------------------------------------------------ |
-| 1.5.x             | 1.5.x          | `https://github.com/cp2004/OctoPrint-VirtualPrinterSettings/archive/1.5.0.zip` |
-| 1.4.1/2           | 0.1.3          | `https://github.com/cp2004/OctoPrint-VirtualPrinterSettings/archive/0.1.3.zip` |
-
-Use the above URLs in OctoPrint's [Plugin Manager](https://docs.octoprint.org/en/master/bundledplugins/pluginmanager.html) >
-Get More > ...from URL field.
+If you are using an older version of OctoPrint, you can find details on which plugin versions to use [on the plugin's homepage.](https://github.com/cp2004/OctoPrint-VirtualPrinterSettings#octoprint)
 
 ## Setup
 
-Install via the bundled [Plugin Manager](https://docs.octoprint.org/en/master/bundledplugins/pluginmanager.html)
-or manually using this URL:
-
-    https://github.com/cp2004/OctoPrint-VirtualPrinterSettings/archive/master.zip
+Installation can be performed with from within OctoPrint's plugin manager or manually using the install URL above.
 
 ## Configuration
 
 Plugin adds settings to OctoPrint's UI that are [documented here](https://docs.octoprint.org/en/master/development/virtual_printer.html#virtual-printer-configuration-options)
 
-It replaces the original implementation, introduced in OctoPrint 1.4.1
+It replaces the original implementation, introduced in OctoPrint 1.4.1.
