@@ -7,9 +7,7 @@ description: PrintWatch monitors your prints for defects in real-time and optimi
 author: printpal.io
 license: AGPLv3
 
-
 date: 2022-01-31
-
 
 homepage: https://github.com/printpal-io/OctoPrint-Printwatch
 source: https://github.com/printpal-io/OctoPrint-Printwatch
@@ -43,13 +41,16 @@ tags:
 
 
 screenshots:
+- url: /assets/img/plugins/printwatch/printwatch-tab.jpg
+  alt: PrintWatch monitors your prints with Artificial Intelligence and saves you time and material
+  caption: PrintWatch watches your prints and shows you the status of your print in real-time
 - url: /assets/img/plugins/printwatch/printwatch.png
   alt: PrintWatch monitors your prints with Artificial Intelligence and saves you time and material
   caption: PrintWatch monitors your prints with Artificial Intelligence
 - url: /assets/img/plugins/printwatch/printwatch-notification.png
   alt: Get notified when something goes wrong with your print. Reduce downtime and loss
   caption: PrintWatch notifies you when something goes wrong. Let AI do the watching for you while you enjoy your day
-- url: /assets/img/plugins/printwatch/printwatch-settings.png
+- url: /assets/img/plugins/printwatch/printwatch-settings.jpg
   alt: Configurable settings allow you to customize how PrintWatch works for you.
   caption: Configure your settings the way you like.
 
@@ -76,10 +77,9 @@ compatibility:
 PrintWatch uses Artificial Intelligence to monitor your 3D prints for any defects that begin to form. The plugin takes the video feed from any camera compatible with OctoPrint and runs it through a Machine Learning model that detects print defects in real-time. The plugin takes actions set by the user once a failure is positively detected that include:
 
 - 📧 Email/SMS Notification
-- ⏸ Pausing the print job
+- ⏸ Pausing/Stopping the print job
 - 🔥 Turning off the Extruder Heat
 - ⚙ Customized actions created by the user
-
 
 PrintWatch saves time and material while also giving you peace of mind that your 3D print is printing properly. In addition to detecting defects, PrintWatch has an Anomaly Detection model running in the background that can detect slight changes or anomalies for printers in your fleet. Get notified early and schedule maintenance for the problematic printer, reducing downtime and costs. PrintWatch's Web App allows you to remotely view and manage all of your printers from anywhere in the world.
 Current features include:
@@ -92,6 +92,8 @@ Current features include:
 
 Upcoming features include:
 
+- Pre+post print bed check
+- Live QC/QA
 - G-Code and Speed optimization with ML
 - MultiCamming
 - ROI selection and slicing
@@ -129,7 +131,6 @@ Follow the setup guide on the official [GitHub](https://github.com/printpal-io/O
 
 
 ### Authentication
-
 
 In order to use PrintWatch, you must provide your API key in the settings. Visit the [printpal.io website](https://printpal.io/pricing/) to register your key for your printers.
 
