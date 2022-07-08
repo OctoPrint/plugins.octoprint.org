@@ -7,7 +7,7 @@ description: PrintWatch monitors your prints for defects in real-time and optimi
 author: printpal.io
 license: AGPLv3
 
-date: 2022-01-16
+date: 2022-01-31
 
 homepage: https://github.com/printpal-io/OctoPrint-Printwatch
 source: https://github.com/printpal-io/OctoPrint-Printwatch
@@ -60,7 +60,7 @@ featuredimage: /assets/img/plugins/printwatch/printwatch.png
 compatibility:
 
   octoprint:
-  - 1.8.1
+  - 1.3.2
 
   os:
   - linux
