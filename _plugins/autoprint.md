@@ -41,7 +41,7 @@ screenshots:
   caption: Schematic of a GPIO setup
 
 # TODO
-featuredimage: url of a featured image for your plugin, /assets/img/...
+featuredimage: /assets/img/plugins/autoprint/featured_screenshot.png
 
 
 ---
