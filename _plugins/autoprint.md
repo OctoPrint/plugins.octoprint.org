@@ -27,8 +27,6 @@ tags:
 - psu
 - psucontrol
 
-# TODO
-# When registering a plugin on plugins.octoprint.org, all screenshots should be uploaded not linked from external sites.
 screenshots:
 - url: /assets/img/plugins/autoprint/autoprint_settings.png
   alt: Settings screenshot, describing the plugin configuration options
@@ -40,9 +38,11 @@ screenshots:
   alt: Two relais are needed to be attached to two GPIO ports in order to turn on/off the printer via the plugin
   caption: Schematic of a GPIO setup
 
-# TODO
 featuredimage: /assets/img/plugins/autoprint/featured_screenshot.png
 
+compatibility:
+
+  python: ">=3,<4" # Python 3 only
 
 ---
 
