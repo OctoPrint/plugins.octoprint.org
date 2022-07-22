@@ -43,6 +43,9 @@ featuredimage: /assets/img/plugins/autoprint/featured_screenshot.png
 compatibility:
 
   python: ">=3,<4" # Python 3 only
+  
+  os:
+  - linux
 
 ---
 
@@ -61,12 +64,6 @@ The octoprint autoprint plugin has the following functionalities:
 4. Automatically turning off the printer after the scheduled print job has finished
 
 To fully use the autoprint plugin you need to be able to control your printers power supply as well as the light illuminating the printer via GPIOs and e.g. attached relais that are switching the power (see also the example below). 
-
-For the setup please take care that RPi GPIO python module is installed on the PI:
-
-```console
-sudo apt-get install rpi.gpio
-```
 
 ## Use
 
