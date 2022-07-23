@@ -132,3 +132,8 @@ A printed job can be cancelled any time before the print starts.
 **Warning:** Be aware that running print jobs unattended is a security risk and should not be done in general.
 
 ---
+
+
+## Next steps
+
+1. Consider using all files for autoprinting
