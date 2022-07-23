@@ -28,7 +28,6 @@ screenshots:
 - url: https://github.com/arekm/OctoPrint-Sdwire/raw/main/screenshots/sdwire-hw.jpg
   alt: sdwire hardware
   caption: sdwire hardware
-- ...
 
 featuredimage: https://github.com/arekm/OctoPrint-Sdwire/raw/main/screenshots/sdwire-hw.jpg
 
