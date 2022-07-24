@@ -13486,5 +13486,44 @@
             "instances_week": 130,
             "install_events_week": 130
         }
+    },
+
+    {
+        "id": "autoprint",
+        "published": "2022-07-21 00:00:00 -0500",
+        "title": "OctoPrint-Autoprint",
+        "description": "Tool to automatically start the printer and prints remotely",
+        "archive": "https://github.com/chof747/octoprint-autoprint/archive/master.zip",
+        "author": "Christian Hofbauer",
+        "homepage": "https://github.com/chof747/octoprint-autoprint",
+        "page": "https://plugins.octoprint.org/plugins/autoprint/",
+        "compatibility": {
+            "octoprint": [],
+            "os": ["linux"],
+            "python": ">=3,<4"
+        },
+        "license": "AGPLv3",
+        "image": "https://plugins.octoprint.org/assets/img/plugins/autoprint/featured_screenshot.png",
+        "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "Autoprint with distinct setup for raspberry pi",
+                "date": "2022-07-23 19:35:21 +0000",
+                "tag": "0.9.1"
+            },
+            "releases": 2,
+            "last_push": "2022-07-23 19:31:29 +0000",
+            "stars": 0,
+            "issues": {
+                "open": 0,
+                "closed": 0
+            }
+        },
+        "stats": {
+            "instances_month": 0,
+            "install_events_month": 0,
+            "instances_week": 0,
+            "install_events_week": 0
+        }
     }
 ]
