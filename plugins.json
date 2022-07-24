@@ -13525,5 +13525,44 @@
             "instances_week": 1,
             "install_events_week": 1
         }
+    },
+
+    {
+        "id": "sdwire",
+        "published": "2022-07-24 00:00:00 -0500",
+        "title": "OctoPrint-Sdwire",
+        "description": "Fast file upload to SD card using sdwire hardware",
+        "archive": "https://github.com/arekm/OctoPrint-Sdwire/archive/master.zip",
+        "author": "Arkadiusz Miśkiewicz",
+        "homepage": "https://github.com/arekm/OctoPrint-Sdwire",
+        "page": "https://plugins.octoprint.org/plugins/sdwire/",
+        "compatibility": {
+            "octoprint": ["1.4.0"],
+            "os": ["linux"],
+            "python": ">=3,<4"
+        },
+        "license": "AGPLv3",
+        "image": "https://plugins.octoprint.org/assets/img/plugins/sdwire/sdwire-hw.jpg",
+        "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "Fast upload to sd card.",
+                "date": "2022-07-23 16:56:33 +0000",
+                "tag": "0.1.0"
+            },
+            "releases": 1,
+            "last_push": "2022-07-23 15:44:29 +0000",
+            "stars": 0,
+            "issues": {
+                "open": 0,
+                "closed": 0
+            }
+        },
+        "stats": {
+            "instances_month": 0,
+            "install_events_month": 0,
+            "instances_week": 0,
+            "install_events_week": 0
+        }
     }
 ]
