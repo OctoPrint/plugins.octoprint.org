@@ -8,7 +8,7 @@ authors:
 - Arkadiusz Miśkiewicz
 license: AGPLv3
 
-date: 2022-07-21
+date: 2022-07-24
 
 homepage: https://github.com/arekm/OctoPrint-Sdwire
 source: https://github.com/arekm/OctoPrint-Sdwire
