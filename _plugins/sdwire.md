@@ -22,14 +22,14 @@ tags:
 - upload
 
 screenshots:
-- url: https://github.com/arekm/OctoPrint-Sdwire/raw/main/screenshots/sdwire-octoprint.jpg
+- url: /assets/img/plugins/sdwire/sdwire-octoprint.jpg
   alt: Uploading to sdwire
   caption: Uploading to sdwire
-- url: https://github.com/arekm/OctoPrint-Sdwire/raw/main/screenshots/sdwire-hw.jpg
+- url: /assets/img/plugins/sdwire/sdwire-hw.jpg
   alt: sdwire hardware
   caption: sdwire hardware
 
-featuredimage: https://github.com/arekm/OctoPrint-Sdwire/raw/main/screenshots/sdwire-hw.jpg
+featuredimage: /assets/img/plugins/sdwire/sdwire-hw.jpg
 
 compatibility:
   octoprint:
