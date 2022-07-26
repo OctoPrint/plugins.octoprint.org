@@ -3,15 +3,15 @@ layout: plugin
 
 id: filetypes
 title: Filetypes
-description: Let you select file types visible in upload dialog
-author: thelongrunsmoke
+description: Lets you control which file extensions are allowed to be uploaded thru the 'Upload' and 'Upload to SD' buttons.
+author: Kestin Goforth
 license: AGPLv3
 
 date: 2017-08-23
 
-homepage: https://github.com/TheLongRunSmoke/OctoPrint-Filetypes
-source: https://github.com/TheLongRunSmoke/OctoPrint-Filetypes
-archive: https://github.com/TheLongRunSmoke/OctoPrint-Filetypes/archive/master.zip
+homepage: https://github.com/kforth/OctoPrint-Filetypes
+source: https://github.com/kforth/OctoPrint-Filetypes
+archive: https://github.com/kforth/OctoPrint-Filetypes/archive/master.zip
 
 follow_dependency_links: false
 
@@ -20,15 +20,25 @@ tags:
 - gcode
 - ui
 - upload
+- files
 
 screenshots:
-- url: /assets/img/plugins/filetypes/screen.jpg
-  alt: Filetypes
-  caption: Filetypes
+- url: /assets/img/plugins/filetypes/settings.png
+  alt: Filetype Settings Page
+  caption: Filetype Settings Page
 
-featuredimage: /assets/img/plugins/filetypes/screen.jpg
+featuredimage: /assets/img/plugins/filetypes/settings.png
 
-abandoned: https://github.com/OctoPrint/plugins.octoprint.org/issues/796
 ---
 
-Small and simple plugin. Now you can specify what kind of files you want to see in upload dialog.
+This plugin lets you control which file extensions are allowed to be uploaded thru the 'Upload' and 'Upload to SD' buttons.
+
+If you have installed plugins that support additional file types, add them to the list so that you can easily upload them.
+
+**Note:** The server will still reject uploads for unsupported file types. Only add extensions that are supported by your installed plugins.
+
+## Configuration
+
+Go to 'Settings' -> 'Filetypes Plugin' and configure the extensions you need.
+
+![Settings](https://raw.githubusercontent.com/kforth/OctoPrint-Filetypes/doc/settings.png)
