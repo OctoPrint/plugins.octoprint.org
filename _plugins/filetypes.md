@@ -4,7 +4,9 @@ layout: plugin
 id: filetypes
 title: Filetypes
 description: Lets you control which file extensions are allowed to be uploaded thru the 'Upload' and 'Upload to SD' buttons.
-author: Kestin Goforth
+authors:
+ - Kestin Goforth
+ - thelongrunsmoke
 license: AGPLv3
 
 date: 2017-08-23
@@ -41,4 +43,4 @@ If you have installed plugins that support additional file types, add them to th
 
 Go to 'Settings' -> 'Filetypes Plugin' and configure the extensions you need.
 
-![Settings](https://raw.githubusercontent.com/kforth/OctoPrint-Filetypes/doc/settings.png)
+![Settings](/assets/img/plugins/filetypes/settings.png)
