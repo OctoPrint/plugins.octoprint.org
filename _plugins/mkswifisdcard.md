@@ -23,14 +23,11 @@ tags:
 - WiFi
 
 screenshots:
-- url: /assets/img/plugins/sdwire/sdwire-octoprint.jpg
-  alt: Uploading to sdwire
-  caption: Uploading to sdwire
-- url: /assets/img/plugins/sdwire/sdwire-hw.jpg
-  alt: sdwire hardware
-  caption: sdwire hardware
+- url: /assets/img/plugins/mkswifisdcard/plugin-settings.png
+  alt: Plugin Settings
+  caption: Plugin Settings
 
-featuredimage: /assets/img/plugins/sdwire/sdwire-hw.jpg
+featuredimage: /assets/img/plugins/mkswifisdcard/plugin-settings.png
 
 compatibility:
   octoprint:
