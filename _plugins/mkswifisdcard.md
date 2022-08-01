@@ -12,7 +12,7 @@ date: 2022-07-31
 
 homepage: https://github.com/om2804/octoprint_mkswifisdcard
 source: https://github.com/om2804/octoprint_mkswifisdcard
-archive: https://github.com/om2804/octoprint_mkswifisdcard/archive/master.zip
+archive: https://github.com/om2804/octoprint_mkswifisdcard/archive/main.zip
 
 tags:
 - file
