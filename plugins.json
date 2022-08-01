@@ -13564,5 +13564,44 @@
             "instances_week": 31,
             "install_events_week": 26
         }
+    },
+
+    {
+        "id": "prusammu",
+        "published": "2022-08-01 00:00:00 -0500",
+        "title": "Prusa MMU",
+        "description": "This plugin adds Prusa MMU2 support to OctoPrint. The active filament will be displayed in the navbar and you will be prompted to select which filament to use when slicing in \"MMU2S Single\" mode. Other settings are available to name each tool and set defaults. This plugin only works for a Prusa printer with an MMU2.",
+        "archive": "https://github.com/jukebox42/Octoprint-PrusaMMU/releases/latest/download/Octoprint-PrusaMmu.zip",
+        "author": "jukebox42",
+        "homepage": "https://github.com/jukebox42/Octoprint-PrusaMMU",
+        "page": "https://plugins.octoprint.org/plugins/prusammu/",
+        "compatibility": {
+            "octoprint": ["1.8.0","1.8.1"],
+            "os": [],
+            "python": ">=3,<4"
+        },
+        "license": "AGPLv3",
+        "image": "https://plugins.octoprint.org/assets/img/plugins/prusammu/nav.png",
+        "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "2022.8.1",
+                "date": "2022-07-31 23:33:55 +0000",
+                "tag": "2022.8.1"
+            },
+            "releases": 4,
+            "last_push": "2022-07-31 23:30:53 +0000",
+            "stars": 0,
+            "issues": {
+                "open": 0,
+                "closed": 0
+            }
+        },
+        "stats": {
+            "instances_month": 0,
+            "install_events_month": 0,
+            "instances_week": 0,
+            "install_events_week": 0
+        }
     }
 ]
