@@ -8,7 +8,7 @@ authors:
 - om2804
 license: AGPLv3
 
-date: 2022-07-31
+date: 2022-08-01
 
 homepage: https://github.com/om2804/octoprint_mkswifisdcard
 source: https://github.com/om2804/octoprint_mkswifisdcard
