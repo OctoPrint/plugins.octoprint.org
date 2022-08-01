@@ -5,8 +5,8 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>https://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 01 Aug 2022 15:23:52 -0500</pubDate>
-    <lastBuildDate>Mon, 01 Aug 2022 15:23:52 -0500</lastBuildDate>
+    <pubDate>Mon, 01 Aug 2022 15:29:51 -0500</pubDate>
+    <lastBuildDate>Mon, 01 Aug 2022 15:29:51 -0500</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
     
@@ -28,6 +28,33 @@ Mon, 01 Aug 2022 00:00:00 -0500</pubDate>
         <category>mmu</category>
         
         <category>mmu2</category>
+        
+      </item>
+    
+      <item>
+        <title>OctoPrint-mkswifisdcard</title>
+        <description>
+          <![CDATA[
+            Octoprint plugin for fast upload file to SD-card over MKS WiFi module
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/mkswifisdcard/plugin-settings.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Mon, 01 Aug 2022 00:00:00 -0500</pubDate>
+        <link>https://plugins.octoprint.org/plugins/mkswifisdcard/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/mkswifisdcard/</guid>
+        
+        <category>file</category>
+        
+        <category>file upload</category>
+        
+        <category>transfer</category>
+        
+        <category>upload</category>
+        
+        <category>MKS</category>
+        
+        <category>WiFi</category>
         
       </item>
     
@@ -251,27 +278,6 @@ Sat, 07 May 2022 00:00:00 -0500</pubDate>
         <category>helper</category>
         
         <category>parser</category>
-        
-      </item>
-    
-      <item>
-        <title>ExtraFileInfo</title>
-        <description>
-          <![CDATA[
-            Adds a file's slicer settings to its additional data column.
-            <p><img src="https://plugins.octoprint.org/assets/img/plugins/extrafileinfo/file.png"></p>
-          ]]>
-        </description>
-        <pubDate>
-Thu, 05 May 2022 00:00:00 -0500</pubDate>
-        <link>https://plugins.octoprint.org/plugins/extrafileinfo/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/extrafileinfo/</guid>
-        
-        <category>slicer settings</category>
-        
-        <category>slicersettingsparser</category>
-        
-        <category>info</category>
         
       </item>
     
