@@ -43,7 +43,7 @@
     <meta name="twitter:description" content="Slicer Estimator - for an accurate remaining time to print and custom metadata in OctoPrint
 With this plugin you can use the more accurate estimation of the slicer instead of OctoPrints estimations. So it will be very accurate, as the slicer created each command of the GCODE.
 Also it is possible to add custom metadata to the GCODE and make it visible in OctoPrints filelist or printer state view. For example the material the GCODE is created for becomes visible inside OctoPrint. 
-And if you like to know when a M600 filament change is expected or a tool switch it is also shown. But this is note available in any mode.
+And if you like to know when a M600 filament change is expected or a MMU tool switch it is also shown.
 
 " />
     <meta name="twitter:image" content="https://plugins.octoprint.org/assets/img/octoprint-avatar-240x240.png" />
@@ -54,7 +54,7 @@ And if you like to know when a M600 filament change is expected or a tool switch
     <meta property="og:description" content="Slicer Estimator - for an accurate remaining time to print and custom metadata in OctoPrint
 With this plugin you can use the more accurate estimation of the slicer instead of OctoPrints estimations. So it will be very accurate, as the slicer created each command of the GCODE.
 Also it is possible to add custom metadata to the GCODE and make it visible in OctoPrints filelist or printer state view. For example the material the GCODE is created for becomes visible inside OctoPrint. 
-And if you like to know when a M600 filament change is expected or a tool switch it is also shown. But this is note available in any mode.
+And if you like to know when a M600 filament change is expected or a MMU tool switch it is also shown.
 
 " />
     <meta property="og:site_name" content="OctoPrint Plugin Repository" />
@@ -65,7 +65,7 @@ And if you like to know when a M600 filament change is expected or a tool switch
     <meta itemprop="description" content="Slicer Estimator - for an accurate remaining time to print and custom metadata in OctoPrint
 With this plugin you can use the more accurate estimation of the slicer instead of OctoPrints estimations. So it will be very accurate, as the slicer created each command of the GCODE.
 Also it is possible to add custom metadata to the GCODE and make it visible in OctoPrints filelist or printer state view. For example the material the GCODE is created for becomes visible inside OctoPrint. 
-And if you like to know when a M600 filament change is expected or a tool switch it is also shown. But this is note available in any mode.
+And if you like to know when a M600 filament change is expected or a MMU tool switch it is also shown.
 
 " />
     <meta itemprop="image" content="https://plugins.octoprint.org/assets/img/repo-600x400.png" />
@@ -218,13 +218,12 @@ And if you like to know when a M600 filament change is expected or a tool switch
       <h1 id="slicer-estimator---for-an-accurate-remaining-time-to-print-and-custom-metadata-in-octoprint">Slicer Estimator - for an accurate remaining time to print and custom metadata in OctoPrint</h1>
 <p>With this plugin you can use the more accurate estimation of the slicer instead of OctoPrints estimations. So it will be very accurate, as the slicer created each command of the GCODE.
 Also it is possible to add custom metadata to the GCODE and make it visible in OctoPrints filelist or printer state view. For example the material the GCODE is created for becomes visible inside OctoPrint. 
-And if you like to know when a M600 filament change is expected or a tool switch it is also shown. But this is note available in any mode.</p>
+And if you like to know when a M600 filament change is expected or a MMU tool switch it is also shown.</p>
 
-<p>The default configuration matches the syntax of the following slicers, but you can change it in the plugins custom settings according your needs.</p>
+<p>The default configuration matches the syntax of the following slicers:</p>
 
 <ul>
   <li>Cura</li>
-  <li>Cura M117</li>
   <li>Simplify3D</li>
   <li>PrusaSlicer</li>
 </ul>
@@ -358,7 +357,13 @@ And if you like to know when a M600 filament change is expected or a tool switch
           
           <a class="label" href="/by_tag/#tag-helper">helper</a>
           
+          <a class="label" href="/by_tag/#tag-m600">m600</a>
+          
+          <a class="label" href="/by_tag/#tag-m73">m73</a>
+          
           <a class="label" href="/by_tag/#tag-metadata">metadata</a>
+          
+          <a class="label" href="/by_tag/#tag-mmu">mmu</a>
           
           <a class="label" href="/by_tag/#tag-print-time">print time</a>
           
