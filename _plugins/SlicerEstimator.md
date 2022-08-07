@@ -28,6 +28,9 @@ tags:
 - filament
 - file manager
 - gcode
+- mmu
+- m600
+- m73
 
 compatibility:
   python: ">=2.7,<4"
@@ -50,12 +53,11 @@ screenshots:
 # Slicer Estimator - for an accurate remaining time to print and custom metadata in OctoPrint
 With this plugin you can use the more accurate estimation of the slicer instead of OctoPrints estimations. So it will be very accurate, as the slicer created each command of the GCODE.
 Also it is possible to add custom metadata to the GCODE and make it visible in OctoPrints filelist or printer state view. For example the material the GCODE is created for becomes visible inside OctoPrint. 
-And if you like to know when a M600 filament change is expected or a tool switch it is also shown. But this is note available in any mode.
+And if you like to know when a M600 filament change is expected or a MMU tool switch it is also shown.
 
-The default configuration matches the syntax of the following slicers, but you can change it in the plugins custom settings according your needs.
+The default configuration matches the syntax of the following slicers:
 
 * Cura
-* Cura M117
 * Simplify3D
 * PrusaSlicer
 
