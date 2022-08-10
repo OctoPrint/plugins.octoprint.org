@@ -220,6 +220,11 @@ If all is in the green, follow these steps:
         ``fetch_yt_preview`` bash script included in the repository. If you use the latter you can leave out the
         ``preview`` parameter to the include.
 
+      * Keep ``archive:`` URL **always pointing to latest release**. ``OctoPrint`` uses that link for initial installation
+        of plugin from [Plugin Manager](https://github.com/foosel/OctoPrint/wiki/Plugin:-Plugin-Manager) (regardless
+        of version shown there). If using ``github`` and URL points to ``PROJECT/archive/master.zip`` adjust your
+        branching strategy to **only** have latest release there.
+
     If you are unsure about how something should be structured take a look at the existing plugins or
     [ask on the forum](https://community.octoprint.org/c/development).
 
