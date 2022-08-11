@@ -32,10 +32,6 @@ featuredimage: /assets/img/plugins/mkswifisdcard/plugin-settings.png
 compatibility:
   octoprint:
   - 1.4.0
-
-  os:
-  - linux
-
   python: ">=3,<4"
 
 ---
