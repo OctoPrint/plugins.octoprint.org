@@ -413,6 +413,12 @@ preview image of your video at <code class="language-plaintext highlighter-rouge
 <code class="language-plaintext highlighter-rouge">fetch_yt_preview</code> bash script included in the repository. If you use the latter you can leave out the
 <code class="language-plaintext highlighter-rouge">preview</code> parameter to the include.</p>
       </li>
+      <li>
+        <p>Make sure the <code class="language-plaintext highlighter-rouge">archive</code> URL is <strong>always pointing to the latest release</strong>. OctoPrint uses that URL for initial installation
+of the plugin from the Plugin Manager (regardless of the version shown there). If you are using GitHub and the URL points
+to <code class="language-plaintext highlighter-rouge">&lt;project url&gt;/archive/your_branch.zip</code> (<code class="language-plaintext highlighter-rouge">master</code>, <code class="language-plaintext highlighter-rouge">main</code> are commonly used as branch name) adjust your
+branching strategy to <strong>only</strong> have latest release there.</p>
+      </li>
     </ul>
 
     <p>If you are unsure about how something should be structured take a look at the existing plugins or
