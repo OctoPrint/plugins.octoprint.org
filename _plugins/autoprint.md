@@ -52,9 +52,7 @@ compatibility:
 
 ---
 
-# Autoprint Plugin
-
-## Concept
+# Concept
 
 The octoprint autoprint plugin has the following functionalities:
 
@@ -68,9 +66,9 @@ The octoprint autoprint plugin has the following functionalities:
 
 To fully use the autoprint plugin you need to be able to control your printers power supply as well as the light illuminating the printer via GPIOs and e.g. attached relais that are switching the power (see also the example below). 
 
-## Use
+# Use
 
-### Settings
+## Settings
 
 The plugin can be configured with the following parameters (see also screenshot "Settings" below)
 
@@ -81,11 +79,11 @@ The plugin can be configured with the following parameters (see also screenshot 
 | Printer Startup Time        | Seconds               | Time delay the plugins waits after starting up the printer before it tries to connect to it
 | Nozzle Cooldown Temperature | °C                    | After printing or when getting a shutdown command, the plugin waits until the nozzle has cold down below this threshold to avoid turning off the printer with a too hot hotend | 
 
-### Operations
+## Operations
 
 The plugin offers several options of useage:
 
-1. **Manually turning on the power of the printer and lights:**
+### Manually turning on the power of the printer and lights:
 
    - You can use the "Start up Printer" button on the top left to switch the printer and the lights on and off at   the same time. If the printer is on the button is showing the alternate text "Shut Down Printer"
 
@@ -95,7 +93,7 @@ The plugin offers several options of useage:
 
    - As soon as the printer is connected the printer icon turns green
 
-2. **Manually turning off the printer and the lights:**
+### Manually turning off the printer and the lights:
 
    When the printer is on (and connected) the button on the top left corner of the tavb shows "Shut Off Printer". In this state you can turn off the printer at any time which will trigger the following process:
 
@@ -113,7 +111,7 @@ During the cooldown process you can cancel the shutdown of the printer at any ti
 
 ---
 
-3. Autoprinting
+### Autoprinting
 
 The plugin allows to schedule a print for a later time with the following options:
 
@@ -143,4 +141,5 @@ after the installation of the plugin. - This will automatically fill the folder 
 
 ## Next steps
 
-1. Consider using all files for autoprinting
+1. Integrate autoprint plugin with other plugins:
+  - FilamentManager
