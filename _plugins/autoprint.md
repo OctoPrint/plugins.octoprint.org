@@ -37,6 +37,9 @@ screenshots:
 - url: /assets/img/plugins/autoprint/autoprint_schematic.png
   alt: Two relais are needed to be attached to two GPIO ports in order to turn on/off the printer via the plugin
   caption: Schematic of a GPIO setup
+- url: /assets/img/plugins/autoprint/autoprint_filebrowser-icon.png
+  alt: Showing the extra icon to select a file for autoprinting
+  caption: Settings
 
 featuredimage: /assets/img/plugins/autoprint/featured_screenshot.png
 
@@ -77,7 +80,6 @@ The plugin can be configured with the following parameters (see also screenshot 
 | Printer Light               | GPIO Pin Number (BCM) | GPIO Pin triggering the lights of the printer - should also be connected to a relay or a MOSFET turning on/off a led strip |
 | Printer Startup Time        | Seconds               | Time delay the plugins waits after starting up the printer before it tries to connect to it
 | Nozzle Cooldown Temperature | °C                    | After printing or when getting a shutdown command, the plugin waits until the nozzle has cold down below this threshold to avoid turning off the printer with a too hot hotend | 
-| Autoprint Folder            | Folder Name           | Folder where prints are stored which are eligable for autoprinting |
 
 ### Operations
 
@@ -115,13 +117,18 @@ During the cooldown process you can cancel the shutdown of the printer at any ti
 
 The plugin allows to schedule a print for a later time with the following options:
 
-- Select a file from a specific folder that has been defined in the settings
-- Choose either the start or the end time
+- Select a file from a any folder
+- Choose to start immediately or select either the start or the end time
 - Check wether the printer should shutdown after the print has finished
 
 The autoprint controls are available on the tab of the plugin (see picture below) and are only available if the printer is neither printing, paused nor pausing a print.
 
 A printed job can be cancelled any time before the print starts.
+
+**File Selection**
+
+For selecting the file you can either use the two drop down combo boxes, first selecting the folder and then the file, or you can go to the file browser in the sidebar and press on the small calendar button that appears there
+after the installation of the plugin. - This will automatically fill the folder and filename in the two combo boxes on the tab.
 
 ---
 
