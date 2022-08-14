@@ -40,7 +40,7 @@
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@OctoPrint3D" />
     <meta name="twitter:title" content="OctoPrint-Autoprint" />
-    <meta name="twitter:description" content="Autoprint Plugin
+    <meta name="twitter:description" content="Concept
 
 " />
     <meta name="twitter:image" content="https://plugins.octoprint.org" />
@@ -48,7 +48,7 @@
     <meta property="og:title" content="OctoPrint-Autoprint" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://plugins.octoprint.org/assets/img/plugins/autoprint/featured_screenshot.png" />
-    <meta property="og:description" content="Autoprint Plugin
+    <meta property="og:description" content="Concept
 
 " />
     <meta property="og:site_name" content="OctoPrint Plugin Repository" />
@@ -56,7 +56,7 @@
 
     <meta itemscope itemtype="http://schema.org/WebPage" />
     <meta itemprop="headline" content="OctoPrint-Autoprint" />
-    <meta itemprop="description" content="Autoprint Plugin
+    <meta itemprop="description" content="Concept
 
 " />
     <meta itemprop="image" content="https://plugins.octoprint.org/assets/img/plugins/autoprint/featured_screenshot.png" />
@@ -206,9 +206,7 @@
       <p class="lead">
         Tool to automatically start the printer and prints remotely
       </p>
-      <h1 id="autoprint-plugin">Autoprint Plugin</h1>
-
-<h2 id="concept">Concept</h2>
+      <h1 id="concept">Concept</h1>
 
 <p>The octoprint autoprint plugin has the following functionalities:</p>
 
@@ -224,9 +222,9 @@ so that the print will be finished as specified</li>
 
 <p>To fully use the autoprint plugin you need to be able to control your printers power supply as well as the light illuminating the printer via GPIOs and e.g. attached relais that are switching the power (see also the example below).</p>
 
-<h2 id="use">Use</h2>
+<h1 id="use">Use</h1>
 
-<h3 id="settings">Settings</h3>
+<h2 id="settings">Settings</h2>
 
 <p>The plugin can be configured with the following parameters (see also screenshot “Settings” below)</p>
 
@@ -259,55 +257,45 @@ so that the print will be finished as specified</li>
       <td>°C           </td>
       <td>After printing or when getting a shutdown command, the plugin waits until the nozzle has cold down below this threshold to avoid turning off the printer with a too hot hotend</td>
     </tr>
-    <tr>
-      <td>Autoprint Folder</td>
-      <td>Folder Name</td>
-      <td>Folder where prints are stored which are eligable for autoprinting</td>
-    </tr>
   </tbody>
 </table>
 
-<h3 id="operations">Operations</h3>
+<h2 id="operations">Operations</h2>
 
 <p>The plugin offers several options of useage:</p>
 
-<ol>
-  <li>
-    <p><strong>Manually turning on the power of the printer and lights:</strong></p>
+<h3 id="manually-turning-on-the-power-of-the-printer-and-lights">Manually turning on the power of the printer and lights:</h3>
 
-    <ul>
-      <li>
-        <p>You can use the “Start up Printer” button on the top left to switch the printer and the lights on and off at   the same time. If the printer is on the button is showing the alternate text “Shut Down Printer”</p>
-      </li>
-      <li>
-        <p>As soon as the printer and/or the lights are on the icons right of the button switch to the color yellow</p>
-      </li>
-      <li>
-        <p>After the printer has been turned on and the startup time has passed (configuration), the plugin will try to connect octoprint to the printer</p>
-      </li>
-      <li>
-        <p>As soon as the printer is connected the printer icon turns green</p>
-      </li>
-    </ul>
+<ul>
+  <li>
+    <p>You can use the “Start up Printer” button on the top left to switch the printer and the lights on and off at   the same time. If the printer is on the button is showing the alternate text “Shut Down Printer”</p>
   </li>
   <li>
-    <p><strong>Manually turning off the printer and the lights:</strong></p>
-
-    <p>When the printer is on (and connected) the button on the top left corner of the tavb shows “Shut Off Printer”. In this state you can turn off the printer at any time which will trigger the following process:</p>
-
-    <ul>
-      <li>
-        <p>Wait until the printer hotend has cooled down sufficiently (below the configurable <em>Nozzle Cooldown Temperatur</em>)</p>
-      </li>
-      <li>
-        <p>As soon as the nozzle is cool enough the printer will be disconnected from octoprint</p>
-      </li>
-      <li>
-        <p>Lights and printer are shut down</p>
-      </li>
-    </ul>
+    <p>As soon as the printer and/or the lights are on the icons right of the button switch to the color yellow</p>
   </li>
-</ol>
+  <li>
+    <p>After the printer has been turned on and the startup time has passed (configuration), the plugin will try to connect octoprint to the printer</p>
+  </li>
+  <li>
+    <p>As soon as the printer is connected the printer icon turns green</p>
+  </li>
+</ul>
+
+<h3 id="manually-turning-off-the-printer-and-the-lights">Manually turning off the printer and the lights:</h3>
+
+<p>When the printer is on (and connected) the button on the top left corner of the tavb shows “Shut Off Printer”. In this state you can turn off the printer at any time which will trigger the following process:</p>
+
+<ul>
+  <li>
+    <p>Wait until the printer hotend has cooled down sufficiently (below the configurable <em>Nozzle Cooldown Temperatur</em>)</p>
+  </li>
+  <li>
+    <p>As soon as the nozzle is cool enough the printer will be disconnected from octoprint</p>
+  </li>
+  <li>
+    <p>Lights and printer are shut down</p>
+  </li>
+</ul>
 
 <p>During the cooldown process you can cancel the shutdown of the printer at any time by pressing the button on  the top left which is in this phased labelled as “Cancel Shut Down”</p>
 
@@ -317,21 +305,24 @@ so that the print will be finished as specified</li>
 
 <hr />
 
-<ol>
-  <li>Autoprinting</li>
-</ol>
+<h3 id="autoprinting">Autoprinting</h3>
 
 <p>The plugin allows to schedule a print for a later time with the following options:</p>
 
 <ul>
-  <li>Select a file from a specific folder that has been defined in the settings</li>
-  <li>Choose either the start or the end time</li>
+  <li>Select a file from a any folder</li>
+  <li>Choose to start immediately or select either the start or the end time</li>
   <li>Check wether the printer should shutdown after the print has finished</li>
 </ul>
 
 <p>The autoprint controls are available on the tab of the plugin (see picture below) and are only available if the printer is neither printing, paused nor pausing a print.</p>
 
 <p>A printed job can be cancelled any time before the print starts.</p>
+
+<p><strong>File Selection</strong></p>
+
+<p>For selecting the file you can either use the two drop down combo boxes, first selecting the folder and then the file, or you can go to the file browser in the sidebar and press on the small calendar button that appears there
+after the installation of the plugin. - This will automatically fill the folder and filename in the two combo boxes on the tab.</p>
 
 <hr />
 
@@ -346,7 +337,11 @@ so that the print will be finished as specified</li>
 <h2 id="next-steps">Next steps</h2>
 
 <ol>
-  <li>Consider using all files for autoprinting</li>
+  <li>Integrate autoprint plugin with other plugins:
+    <ul>
+      <li>FilamentManager</li>
+    </ul>
+  </li>
 </ol>
 
 
@@ -366,6 +361,11 @@ so that the print will be finished as specified</li>
         <figure>
           
           <a href="/assets/img/plugins/autoprint/autoprint_schematic.png" data-lightbox="/plugins/autoprint" data-title="Schematic of a GPIO setup"><img src="/assets/img/plugins/autoprint/autoprint_schematic.png" alt="Two relais are needed to be attached to two GPIO ports in order to turn on/off the printer via the plugin" title="Schematic of a GPIO setup"></a>
+        </figure>
+        
+        <figure>
+          
+          <a href="/assets/img/plugins/autoprint/autoprint_filebrowser-icon.png" data-lightbox="/plugins/autoprint" data-title="Settings"><img src="/assets/img/plugins/autoprint/autoprint_filebrowser-icon.png" alt="Showing the extra icon to select a file for autoprinting" title="Settings"></a>
         </figure>
         
       
