@@ -13551,7 +13551,7 @@
                 "tag": "0.1.2"
             },
             "releases": 3,
-            "last_push": "2022-08-15 08:48:40 +0000",
+            "last_push": "2022-08-15 09:30:29 +0000",
             "stars": 2,
             "issues": {
                 "open": 0,
@@ -13641,6 +13641,45 @@
             "install_events_month": 380,
             "instances_week": 327,
             "install_events_week": 116
+        }
+    },
+
+    {
+        "id": "karmen",
+        "published": "2022-08-15 00:00:00 -0500",
+        "title": "Karmen Connector",
+        "description": "Securely integrate your OctoPrint with Karmen Cloud in just a few clicks and start managing your prints from anywhere around the globe.",
+        "archive": "https://github.com/fragaria/karmen-octoprint-plugin/archive/refs/heads/main.zip",
+        "author": "Pavel Vojacek",
+        "homepage": "https://github.com/fragaria/karmen-octoprint-plugin",
+        "page": "https://plugins.octoprint.org/plugins/karmen/",
+        "compatibility": {
+            "octoprint": ["1.4.0"],
+            "os": ["linux","windows","macos","freebsd"],
+            "python": ">=3,<4"
+        },
+        "license": "MIT",
+        "image": "https://plugins.octoprint.org/assets/img/plugins/karmen/karmen_screenshot.png",
+        "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "0.2.2",
+                "date": "2022-08-15 08:24:43 +0000",
+                "tag": "0.2.2"
+            },
+            "releases": 5,
+            "last_push": "2022-08-15 08:19:01 +0000",
+            "stars": 1,
+            "issues": {
+                "open": 0,
+                "closed": 0
+            }
+        },
+        "stats": {
+            "instances_month": 2,
+            "install_events_month": 2,
+            "instances_week": 0,
+            "install_events_week": 0
         }
     }
 ]
