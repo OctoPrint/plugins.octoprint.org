@@ -9,7 +9,7 @@ authors:
 license: MIT
 
 # today's date in format YYYY-MM-DD, e.g.
-date: 2022-05-24
+date: 2022-08-15
 
 homepage: https://github.com/fragaria/karmen-octoprint-plugin
 source: https://github.com/fragaria/karmen-octoprint-plugin
