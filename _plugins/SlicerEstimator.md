@@ -55,11 +55,12 @@ With this plugin you can use the more accurate estimation of the slicer instead 
 Also it is possible to add custom metadata to the GCODE and make it visible in OctoPrints filelist or printer state view. For example the material the GCODE is created for becomes visible inside OctoPrint. 
 And if you like to know when a M600 filament change is expected or a MMU tool switch it is also shown.
 
-The default configuration matches the syntax of the following slicers:
+The the syntax of the following slicers is known and selected automatically:
 
 * Cura
 * Simplify3D
 * PrusaSlicer
+* SuperSlicer
 
 
 A more detailed description and manual is available on Github - the plugin's homepage on the right.
