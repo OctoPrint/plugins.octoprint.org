@@ -6,7 +6,7 @@ title: OctoPrint-HeaderAnnouncements
 description: Add an announcement to the header of your octoprint install for use in a shared environment
 authors:
 - Sean Smith
-  license: MIT
+license: MIT
 
 date: 2021-09-12
 
