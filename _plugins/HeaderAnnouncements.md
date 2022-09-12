@@ -12,7 +12,7 @@ date: 2021-09-12
 
 homepage: https://github.com/wwsean08/OctoPrint-HeaderAnnouncements
 source: https://github.com/wwsean08/OctoPrint-HeaderAnnouncements
-archive: https://github.com/wwsean08/OctoPrint-HeaderAnnouncements/archive/master.zip
+archive: https://github.com/wwsean08/OctoPrint-HeaderAnnouncements/archive/main.zip
 
 tags:
 - alert
