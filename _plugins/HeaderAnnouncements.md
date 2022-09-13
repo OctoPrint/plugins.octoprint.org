@@ -8,7 +8,7 @@ authors:
 - Sean Smith
 license: MIT
 
-date: 2021-09-12
+date: 2022-09-12
 
 homepage: https://github.com/wwsean08/OctoPrint-HeaderAnnouncements
 source: https://github.com/wwsean08/OctoPrint-HeaderAnnouncements
