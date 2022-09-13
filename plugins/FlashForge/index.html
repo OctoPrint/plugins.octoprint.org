@@ -280,33 +280,15 @@ useful and/or want to see continued development, please consider making a donati
       
       <dl class="installations">
         <dt>Active instances the past month</dt>
-        <dd>Installed on at least <strong>145</strong> instances</dd>
+        <dd>Installed on at least <strong>144</strong> instances</dd>
       </dl>
       
       
       <dl class="install_events">
         <dt>New installs the past week</dt>
-        <dd>At least <strong>8</strong> new installations</dd>
+        <dd>At least <strong>7</strong> new installations</dd>
       </dl>
       
-      
-      <dl class="github">
-        <dt>GitHub stats <a href="/help/github_integration/" class="fas fa-question-circle"></a> <span id="github_login">(<a href="javascript:void(0)">Login</a>)</span></dt>
-        <dd>
-          <ul>
-            
-            <li>
-              Latest Release: <a href="https://github.com/Mrnt/OctoPrint-FlashForge/releases/tag/0.2.6" target="_blank">0.2.6</a><br>
-              <small>released on 15 Oct 2020</small>
-            </li>
-            <li>Releases: 23</li>
-            
-            <li>Stars: <span id="github_star_count">73</span> <span id="github_star"><a href="javascript:void(0)"><i class="far fa-star"></i></a></span></li>
-            <li>Issues: 28 open, 26 closed</li>
-            <li>Last push: 09 Mar 2022</li>
-          </ul>
-        </dd>
-      </dl>
       
       
       <dl class="tags">
@@ -395,9 +377,9 @@ useful and/or want to see continued development, please consider making a donati
 
 <script type="application/javascript">
   $(function() {
-    var has_github = true;
+    var has_github = false;
     if (has_github) {
-      var github_repo = "Mrnt/OctoPrint-FlashForge";
+      var github_repo = "";
 
       if (github_repo) {
         var status = "unknown";
