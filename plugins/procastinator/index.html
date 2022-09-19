@@ -296,7 +296,7 @@ always “NOW”, just in case).</p>
       
       <dl class="installations">
         <dt>Active instances the past month</dt>
-        <dd>Installed on at least <strong>258</strong> instances</dd>
+        <dd>Installed on at least <strong>257</strong> instances</dd>
       </dl>
       
       
@@ -305,24 +305,6 @@ always “NOW”, just in case).</p>
         <dd>At least <strong>1</strong> new installations</dd>
       </dl>
       
-      
-      <dl class="github">
-        <dt>GitHub stats <a href="/help/github_integration/" class="fas fa-question-circle"></a> <span id="github_login">(<a href="javascript:void(0)">Login</a>)</span></dt>
-        <dd>
-          <ul>
-            
-            <li>
-              Latest Release: <a href="https://github.com/juergenpabel/OctoPrint-Procastinator/releases/tag/1.1.1" target="_blank">1.1.1</a><br>
-              <small>released on 25 Aug 2020</small>
-            </li>
-            <li>Releases: 19</li>
-            
-            <li>Stars: <span id="github_star_count">2</span> <span id="github_star"><a href="javascript:void(0)"><i class="far fa-star"></i></a></span></li>
-            <li>Issues: 9 open, 3 closed</li>
-            <li>Last push: 25 Aug 2020</li>
-          </ul>
-        </dd>
-      </dl>
       
       
       <dl class="tags">
@@ -417,9 +399,9 @@ always “NOW”, just in case).</p>
 
 <script type="application/javascript">
   $(function() {
-    var has_github = true;
+    var has_github = false;
     if (has_github) {
-      var github_repo = "juergenpabel/OctoPrint-Procastinator";
+      var github_repo = "";
 
       if (github_repo) {
         var status = "unknown";
