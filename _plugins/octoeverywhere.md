@@ -64,7 +64,7 @@ tags:
 - print status
 
 screenshots:
-- url: /assets/img/plugins/octoeverywhere/apps.png
+- url: /assets/img/plugins/octoeverywhere/app.png
   alt: Empower Your Favorite OctoPrint Apps To Work Anywhere
   caption: Empower Your Favorite OctoPrint Apps To Work Anywhere
 - url: /assets/img/plugins/octoeverywhere/notifications.png
