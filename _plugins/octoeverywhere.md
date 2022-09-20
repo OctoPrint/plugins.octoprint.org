@@ -79,12 +79,15 @@ tags:
 - print status
 
 screenshots:
-- url: /assets/img/plugins/octoeverywhere/apps.png
-  alt: Empower your favorite OctoPrint apps to work anywhere!
-  caption: Empower your favorite OctoPrint apps to work anywhere!
+- url: /assets/img/plugins/octoeverywhere/app.png
+  alt: Empower Your Favorite OctoPrint Apps To Work Anywhere
+  caption: Empower Your Favorite OctoPrint Apps To Work Anywhere
+- url: /assets/img/plugins/octoeverywhere/notifications.png
+  alt: Stay On Top Of Your Prints On Any Device
+  caption: Stay On Top Of Your Prints On Any Device
 - url: /assets/img/plugins/octoeverywhere/homepage.png
-  alt: OctoEverywhere Homepage
-  caption: Your full and familiar OctoPrint setup... everywhere!
+  alt: Your Full and Familiar OctoPrint Portal... Everywhere!
+  caption: Your Full and Familiar OctoPrint Portal... Everywhere!
 
 featuredimage: /assets/img/plugins/octoeverywhere/homepage.png
 
