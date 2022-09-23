@@ -365,24 +365,6 @@ Please include a copy of the octoprint log from the logging menu of octoprint.
       </dl>
       
       
-      <dl class="github">
-        <dt>GitHub stats <a href="/help/github_integration/" class="fas fa-question-circle"></a> <span id="github_login">(<a href="javascript:void(0)">Login</a>)</span></dt>
-        <dd>
-          <ul>
-            
-            <li>
-              Latest Release: <a href="https://github.com/berrystephenw/OctoText/releases/tag/0.3.3.1" target="_blank">0.3.3.1</a><br>
-              <small>released on 11 May 2022</small>
-            </li>
-            <li>Releases: 28</li>
-            
-            <li>Stars: <span id="github_star_count">8</span> <span id="github_star"><a href="javascript:void(0)"><i class="far fa-star"></i></a></span></li>
-            <li>Issues: 3 open, 34 closed</li>
-            <li>Last push: 11 May 2022</li>
-          </ul>
-        </dd>
-      </dl>
-      
       
       <dl class="tags">
         <dt>Tags</dt>
@@ -476,9 +458,9 @@ Please include a copy of the octoprint log from the logging menu of octoprint.
 
 <script type="application/javascript">
   $(function() {
-    var has_github = true;
+    var has_github = false;
     if (has_github) {
-      var github_repo = "berrystephenw/OctoText";
+      var github_repo = "";
 
       if (github_repo) {
         var status = "unknown";
