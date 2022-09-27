@@ -4,14 +4,16 @@ layout: plugin
 id: LEDStripControl
 title: LEDStripControl
 description: Control RGB LED Strips via your Raspberry Pi and GCode.
-author: Uriah Welcome
+authors: 
+- Gustavo Bonesso
+- Uriah Welcome
 license: Apache 2
 
 date: 2017-03-10
 
-homepage: https://github.com/google/OctoPrint-LEDStripControl
-source: https://github.com/google/OctoPrint-LEDStripControl
-archive: https://github.com/google/OctoPrint-LEDStripControl/archive/master.zip
+homepage: https://github.com/gbonesso/OctoPrint-LEDStripControl
+source: https://github.com/gbonesso/OctoPrint-LEDStripControl
+archive: https://github.com/gbonesso/OctoPrint-LEDStripControl/archive/master.zip
 
 follow_dependency_links: false
 
