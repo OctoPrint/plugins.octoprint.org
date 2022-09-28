@@ -79,6 +79,7 @@ SCHEMA = Schema(
         Required("homepage"): Url(),
         Required("source"): Url(),
         Required("archive"): Url(),
+        Optional("privacypolicy"): Url(),
         Optional("follow_dependency_links"): bool,
         Optional("tags"): list,
         Optional("screenshots"): All([ScreenshotDef]),
