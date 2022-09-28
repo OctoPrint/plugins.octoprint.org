@@ -200,6 +200,12 @@ add a wizard dialog that prompts the user to do these things, do <em>not</em> do
 <code class="language-plaintext highlighter-rouge">setup.py</code> is fine.</p>
   </li>
   <li>
+    <p>If your plugin heavily interacts with any kind of cloud services, your plugin must now link to a Privacy Policy through
+<code class="language-plaintext highlighter-rouge">privacypolicy</code> in your registration file and <code class="language-plaintext highlighter-rouge">__plugin_privacypolicy__</code> in your <code class="language-plaintext highlighter-rouge">setup.py</code>. The goal is to give
+users access to your Privacy Policy and thus information on how you use their data and what data you use in
+what fashion <em>prior</em> to them installing your plugin.</p>
+  </li>
+  <li>
     <p>If your plugin interacts with external services it will do so over secured connections with a valid certificate only
 (<code class="language-plaintext highlighter-rouge">https://someservice.com</code> instead of <code class="language-plaintext highlighter-rouge">http://130.47.11.15</code>). This also includes embedding any kinds of iframes in
 the web interface. Also include this kind of information in the plugin’s long description (see below)!</p>
@@ -273,9 +279,12 @@ cd plugins.octoprint.org
 <span class="c1"># today's date in format YYYY-MM-DD, e.g.</span>
 <span class="na">date</span><span class="pi">:</span> <span class="s">2015-06-22</span>
 
-<span class="na">homepage</span><span class="pi">:</span> <span class="s">your plugin's homepage</span>
-<span class="na">source</span><span class="pi">:</span> <span class="s">your plugin's source repository</span>
+<span class="na">homepage</span><span class="pi">:</span> <span class="s">your plugin's homepage URL</span>
+<span class="na">source</span><span class="pi">:</span> <span class="s">your plugin's source repository URL</span>
 <span class="na">archive</span><span class="pi">:</span> <span class="s">archive link to install your plugin via pip, e.g. from github</span><span class="pi">:</span> <span class="s">https://github.com/username/repository/archive/master.zip</span>
+
+<span class="c1"># Set this if your plugin heavily interacts with any kind of cloud services.</span>
+<span class="c1">#privacypolicy: your plugin's privacy policy URL</span>
 
 <span class="c1"># Set this to true if your plugin uses the dependency_links setup parameter to include</span>
 <span class="c1"># library versions not yet published on pypi. SHOULD ONLY BE USED IF THERE IS NO OTHER OPTION!</span>
