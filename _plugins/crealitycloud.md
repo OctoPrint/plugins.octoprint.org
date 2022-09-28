@@ -14,6 +14,8 @@ homepage: https://github.com/crealitycloud/OctoPrint-CrealityCloud
 source: https://github.com/crealitycloud/OctoPrint-CrealityCloud
 archive: https://github.com/crealitycloud/OctoPrint-Crealitycloud/archive/master.zip
 
+privacypolicy: https://www.crealitycloud.com/policy?type=policy
+
 tags:
 - Remote control
 - Online slice
@@ -58,7 +60,7 @@ Creality Cloud Plugin:
 
 
 
-Plugins that the Creality Cloud Plugin relies on:  
+Plugins that the Creality Cloud Plugin relies on:
 **Required installation or it may cause abnormal temperature or incomplete functionality:**
 
 - [https://github.com/SimplyPrint/OctoPrint-Creality2xTemperatureReportingFix/archive/master.zip](https://github.com/SimplyPrint/OctoPrint-Creality2xTemperatureReportingFix/archive/master.zip)
@@ -77,8 +79,8 @@ Plugins that the Creality Cloud Plugin relies on:
 ![Setup3](/assets/img/plugins/crealitycloud/Setup3.png)
 ## **Generate A Key File in Creality Cloud APP:**
 
-1.  Download and open the Creality Cloud APP on your phone, select "Printing" > click the "+" icon to add device > choose "Raspberry Pi" > click "Create Raspberry Pi" > click "Download Key File". 
-1.  Transmit the Key file to your computer. 
+1.  Download and open the Creality Cloud APP on your phone, select "Printing" > click the "+" icon to add device > choose "Raspberry Pi" > click "Create Raspberry Pi" > click "Download Key File".
+1.  Transmit the Key file to your computer.
 
 ![generateKey2-1](/assets/img/plugins/crealitycloud/generateKey2-1.png)
 ![generateKey2-2](/assets/img/plugins/crealitycloud/generateKey2-2.png)
@@ -88,8 +90,8 @@ Back to the OctoPrint interface on your desktop, click on the OctoPrint setting 
 ## **Slice & Print:**
 Before you start...
 
-1.  Connect your 3D printer with your Raspberry Pi through a USB cable. Here we recommend using a Raspberry Pi 3. 
-1.  Select the USB serial port detected by OctoPrint to connect to your printer. 
+1.  Connect your 3D printer with your Raspberry Pi through a USB cable. Here we recommend using a Raspberry Pi 3.
+1.  Select the USB serial port detected by OctoPrint to connect to your printer.
 
 ![slice&print2-1](/assets/img/plugins/crealitycloud/slice&print2-1.png)
 ![slice&print2-2](/assets/img/plugins/crealitycloud/slice&print2-2.png)
@@ -105,4 +107,4 @@ Start slicing and printing...
 Hope this Creality Cloud plugin on OctoPrint will give you a different experience on your 3D printing. Thank you for supporting and happy printing!
 
 
-By Creality Cloud. 
+By Creality Cloud.

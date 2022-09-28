@@ -348,7 +348,9 @@ def extract_plugin_control_properties(user, repo, out=print):
         )
         return dict()
 
-    return extract_assignments(root, "__plugin_pythoncompat__")
+    return extract_assignments(
+        root, "__plugin_pythoncompat__", "__plugin_privacypolicy__"
+    )
 
 
 def process_plugin_file(path, incl_stats=True, incl_github=True):
@@ -428,6 +430,12 @@ def process_plugin_file(path, incl_stats=True, incl_github=True):
                         "__plugin_pythoncompat__"
                     ]
                     out("  Added python compatibility info from source")
+                if (
+                    "__plugin_privacypolicy__" in properties
+                    and "privacypolicy" not in data
+                ):
+                    data["privacypolicy"] = properties["__plugin_privacypolicy__"]
+                    out("  Added privacy policy from source")
 
     with open(path, "wb") as f:
         frontmatter.dump(data, f)

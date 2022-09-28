@@ -13,6 +13,8 @@ homepage: https://github.com/printpal-io/OctoPrint-Printwatch
 source: https://github.com/printpal-io/OctoPrint-Printwatch
 archive: https://github.com/printpal-io/OctoPrint-Printwatch/archive/master.zip
 
+privacypolicy: https://printpal.io/privacy/
+
 tags:
 - AI
 - Monitor
@@ -135,4 +137,4 @@ Follow the setup guide on the official [GitHub](https://github.com/printpal-io/O
 In order to use PrintWatch, you must provide your API key in the settings. Visit the [printpal.io website](https://printpal.io/pricing/) to register your key for your printers.
 
 # Privacy Policy
-Read our privacy polich here: [PrintWatch Privacy policy](https://printpal.io/privacy/)
+Read our privacy policy here: [PrintWatch Privacy policy](https://printpal.io/privacy/)

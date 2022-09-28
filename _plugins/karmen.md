@@ -15,6 +15,8 @@ homepage: https://github.com/fragaria/karmen-octoprint-plugin
 source: https://github.com/fragaria/karmen-octoprint-plugin
 archive: https://github.com/fragaria/karmen-octoprint-plugin/archive/refs/heads/main.zip
 
+privacypolicy: https://karmen.tech/documents/fragaria-privacy-policy.pdf
+
 tags:
 - remote access
 - remote camera
