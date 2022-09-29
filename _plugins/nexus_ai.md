@@ -4,7 +4,7 @@ layout: plugin
 id: nexus_ai
 title: Octoprint Nexus AI
 description: Nexus AI was oriniall developed for Sentry Pro to detect print failure. Fiberpunk  make it free and accessible to as many 3D printer users as possible. 
-authors: Fiberpunk team
+author: Fiberpunk team
 #- first author name
 #- second autor name
 license: AGPLv3
