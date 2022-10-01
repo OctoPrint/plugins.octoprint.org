@@ -196,3 +196,11 @@
     Then install the "Obico for OctoPrint" plugin. Your settings in this plugin will be automatically migrated
     to the new plugin. To find out more, click the "Read more..." link below.
   link: https://www.obico.io/docs/user-guides/move-from-tsd-to-obico-in-octoprint/
+- plugin: ledstripcontrol
+  pluginversions: ["<0.3.8"]
+  versions: []
+  date: 2022-10-1 12:00:00Z
+  text: Version 0.3.8 of this plugin is available from a new maintainer, but your version still looks for updates at the
+    repository of the old maintainer. Please uninstall the old plugin from the plugin manager, then reinstall from the plugin
+    repository to update it. The release notes of the version by the new maintainer can be found at the "Read more..." link below.
+  link: https://github.com/gbonesso/OctoPrint-LEDStripControl/releases/tag/v0.3.8

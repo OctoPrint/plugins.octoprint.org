@@ -32,7 +32,6 @@ compatibility:
   - 1.3.1
   python: ">=2.7,<4"
 
-abandoned: https://github.com/OctoPrint/plugins.octoprint.org/issues/918
 ---
 
 OctoPrint Plugin that intercepts M150 GCode commands and controls local GPIOs on your Pi.
