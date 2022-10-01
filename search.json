@@ -600,7 +600,7 @@
 "date": "2017-03-10 00:00:00 -0600",
 "title": "LEDStripControl",
 "description": "Control RGB LED Strips via your Raspberry Pi and GCode.",
-"author": "Uriah Welcome",
+"author": "Gustavo Bonesso, Uriah Welcome",
 "content": "OctoPrint Plugin that intercepts M150 GCode commands and controls local GPIOs on your Pi.Implements the M150 command syntax from the latest Marlin.M150: Set Status LED Color - Use R-U-B for R-G-BM150 R255       ; Turn LED redM150 R255 U127  ; Turn LED orangeM150            ; Turn LED offM150 R U B      ; Turn LED white",
 "tags": ["raspberry pi","led","rgb","gcode"]
 },
