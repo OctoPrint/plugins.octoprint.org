@@ -10,7 +10,7 @@ author: Fiberpunk team
 license: AGPLv3
 
 # today's date in format YYYY-MM-DD, e.g.
-date: 2020-09-29
+date: 2022-09-29
 
 homepage: https://fiber-punk.com/pages/nexusai
 source: https://github.com/fiberpunk1/OctoPrint-Nexus-AI
@@ -24,10 +24,6 @@ archive: https://github.com/fiberpunk1/OctoPrint-Nexus-AI/archive/master.zip
 #follow_dependency_links: false
 
 tags:
-- secure
-- AI
-- Machine Learning
-- to your plugin
 - monitoring
 - free
 - email
