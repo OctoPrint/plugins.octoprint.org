@@ -338,7 +338,7 @@ to work better within an OctoPrint plugin, but it is a great module to work with
       
       <dl class="installations">
         <dt>Active instances the past month</dt>
-        <dd>Installed on at least <strong>431</strong> instances</dd>
+        <dd>Installed on at least <strong>432</strong> instances</dd>
       </dl>
       
       
@@ -347,6 +347,24 @@ to work better within an OctoPrint plugin, but it is a great module to work with
         <dd>At least <strong>8</strong> new installations</dd>
       </dl>
       
+      
+      <dl class="github">
+        <dt>GitHub stats <a href="/help/github_integration/" class="fas fa-question-circle"></a> <span id="github_login">(<a href="javascript:void(0)">Login</a>)</span></dt>
+        <dd>
+          <ul>
+            
+            <li>
+              Latest Release: <a href="https://github.com/cp2004/OctoPrint-WLED/releases/tag/0.1.0" target="_blank">0.1.0</a><br>
+              <small>released on 16 Apr 2021</small>
+            </li>
+            <li>Releases: 6</li>
+            
+            <li>Stars: <span id="github_star_count">48</span> <span id="github_star"><a href="javascript:void(0)"><i class="far fa-star"></i></a></span></li>
+            <li>Issues: 12 open, 17 closed</li>
+            <li>Last push: 15 Jul 2022</li>
+          </ul>
+        </dd>
+      </dl>
       
       
       <dl class="tags">
@@ -444,9 +462,9 @@ to work better within an OctoPrint plugin, but it is a great module to work with
 
 <script type="application/javascript">
   $(function() {
-    var has_github = false;
+    var has_github = true;
     if (has_github) {
-      var github_repo = "";
+      var github_repo = "cp2004/OctoPrint-WLED";
 
       if (github_repo) {
         var status = "unknown";
