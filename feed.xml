@@ -5,10 +5,31 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>https://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 15 Oct 2022 21:08:55 -0500</pubDate>
-    <lastBuildDate>Sat, 15 Oct 2022 21:08:55 -0500</lastBuildDate>
+    <pubDate>Sat, 15 Oct 2022 21:17:22 -0500</pubDate>
+    <lastBuildDate>Sat, 15 Oct 2022 21:17:22 -0500</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
+    
+      <item>
+        <title>Octoprint Nexus AI</title>
+        <description>
+          <![CDATA[
+            Nexus AI was oriniall developed for Sentry Pro to detect print failure. Fiberpunk  make it free and accessible to as many 3D printer users as possible.
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/nexus_ai/featured.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Thu, 29 Sep 2022 00:00:00 -0500</pubDate>
+        <link>https://plugins.octoprint.org/plugins/nexus_ai/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/nexus_ai/</guid>
+        
+        <category>monitoring</category>
+        
+        <category>free</category>
+        
+        <category>email</category>
+        
+      </item>
     
       <item>
         <title>OctoPrint-HeaderAnnouncements</title>
@@ -299,25 +320,6 @@ Tue, 14 Jun 2022 00:00:00 -0500</pubDate>
         <category>build</category>
         
         <category>volume</category>
-        
-      </item>
-    
-      <item>
-        <title>OctoPrint-Queue</title>
-        <description>
-          <![CDATA[
-            A simple queue setup designed for use by staff at a public library.
-            <p><img src="https://plugins.octoprint.org/assets/img/plugins/queue/queue.png"></p>
-          ]]>
-        </description>
-        <pubDate>
-Mon, 06 Jun 2022 00:00:00 -0500</pubDate>
-        <link>https://plugins.octoprint.org/plugins/queue/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/queue/</guid>
-        
-        <category>ui</category>
-        
-        <category>queue</category>
         
       </item>
     

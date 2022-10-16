@@ -13717,5 +13717,44 @@
             "instances_week": 20,
             "install_events_week": 3
         }
+    },
+
+    {
+        "id": "nexus_ai",
+        "published": "2022-09-29 00:00:00 -0500",
+        "title": "Octoprint Nexus AI",
+        "description": "Nexus AI was oriniall developed for Sentry Pro to detect print failure. Fiberpunk  make it free and accessible to as many 3D printer users as possible.",
+        "archive": "https://github.com/fiberpunk1/OctoPrint-Nexus-AI/archive/master.zip",
+        "author": "Fiberpunk team",
+        "homepage": "https://fiber-punk.com/pages/nexusai",
+        "page": "https://plugins.octoprint.org/plugins/nexus_ai/",
+        "compatibility": {
+            "octoprint": ["1.4.0"],
+            "os": ["linux","windows","macos","freebsd"],
+            "python": ">=3.6,<4"
+        },
+        "license": "AGPLv3",
+        "image": "https://plugins.octoprint.org/assets/img/plugins/nexus_ai/featured.png",
+        "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "0.1.0",
+                "date": "2022-10-02 23:15:26 +0000",
+                "tag": "0.1.0"
+            },
+            "releases": 1,
+            "last_push": "2022-10-16 01:02:47 +0000",
+            "stars": 4,
+            "issues": {
+                "open": 0,
+                "closed": 0
+            }
+        },
+        "stats": {
+            "instances_month": 6,
+            "install_events_month": 6,
+            "instances_week": 3,
+            "install_events_week": 0
+        }
     }
 ]

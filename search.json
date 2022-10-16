@@ -3991,6 +3991,17 @@
 "author": "Sean Smith",
 "content": "OverviewThis plugin is useful for shared environments like a maker space, lab, university, etc. where there may be many users and you need a way for people to see announcements and information when using OctoPrint about upcoming maintenance, changes in policies, or other important information.",
 "tags": ["alert","navbar","notification","notifications","ui"]
+},
+
+{
+"id": "/plugins/nexus_ai",
+"url": "/plugins/nexus_ai/",
+"date": "2022-09-29 00:00:00 -0500",
+"title": "Octoprint Nexus AI",
+"description": "Nexus AI was oriniall developed for Sentry Pro to detect print failure. Fiberpunk  make it free and accessible to as many 3D printer users as possible.",
+"author": "Fiberpunk team",
+"content": " Nexus AI, The easiest and free way to implement print failure detectionwhat is Nexus AI?Nexus AI is a server program that can detect 3D printing failures by recognizing patterns in pictures uploaded by clients. Key features:  Free,All features are free recognizing print issues  Easy to deploy.  Simply install. Just install a program on your old computer.  Safer than using a cloud service  Low hardware requirement, it can run on machines without needing the latest high-power CPU, nor it requires GPU to function.  Optimized. It can utilize Intel’s Openvino for machine vision model acceleration to boost performance.Free to use!Step by step turitol, please refer this doc: Nexus AI TuritolEasy deploy and install1. Start serviceWhen the red status label turn to green, means service started.2. Set pluginAll done!",
+"tags": ["monitoring","free","email"]
 }
 ]
 }
