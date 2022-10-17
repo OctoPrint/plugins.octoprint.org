@@ -279,7 +279,7 @@ Once the print is finished, a popup will appear with a countdown which lets the 
       
       <dl class="installations">
         <dt>Active instances the past month</dt>
-        <dd>Installed on at least <strong>913</strong> instances</dd>
+        <dd>Installed on at least <strong>912</strong> instances</dd>
       </dl>
       
       
@@ -288,24 +288,6 @@ Once the print is finished, a popup will appear with a countdown which lets the 
         <dd>At least <strong>20</strong> new installations</dd>
       </dl>
       
-      
-      <dl class="github">
-        <dt>GitHub stats <a href="/help/github_integration/" class="fas fa-question-circle"></a> <span id="github_login">(<a href="javascript:void(0)">Login</a>)</span></dt>
-        <dd>
-          <ul>
-            
-            <li>
-              Latest Release: <a href="https://github.com/devildant/OctoPrint-ShutdownPrinter/releases/tag/1.0.2" target="_blank">1.0.2</a><br>
-              <small>released on 08 Jan 2019</small>
-            </li>
-            <li>Releases: 10</li>
-            
-            <li>Stars: <span id="github_star_count">16</span> <span id="github_star"><a href="javascript:void(0)"><i class="far fa-star"></i></a></span></li>
-            <li>Issues: 0 open, 0 closed</li>
-            <li>Last push: 21 May 2022</li>
-          </ul>
-        </dd>
-      </dl>
       
       
       <dl class="tags">
@@ -395,9 +377,9 @@ Once the print is finished, a popup will appear with a countdown which lets the 
 
 <script type="application/javascript">
   $(function() {
-    var has_github = true;
+    var has_github = false;
     if (has_github) {
-      var github_repo = "devildant/OctoPrint-ShutdownPrinter";
+      var github_repo = "";
 
       if (github_repo) {
         var status = "unknown";
