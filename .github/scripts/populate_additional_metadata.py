@@ -224,7 +224,9 @@ def github_data(user, repo, out=print):
             ),
             file=sys.stderr,
         )
-        traceback.print_exc()
+        trace = traceback.format_exc()
+        for line in trace.split("\n"):
+            out("!! " + line, file=sys.stderr)
         return dict()
 
 
