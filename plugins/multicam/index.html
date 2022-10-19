@@ -278,27 +278,9 @@
       
       <dl class="install_events">
         <dt>New installs the past week</dt>
-        <dd>At least <strong>83</strong> new installations</dd>
+        <dd>At least <strong>82</strong> new installations</dd>
       </dl>
       
-      
-      <dl class="github">
-        <dt>GitHub stats <a href="/help/github_integration/" class="fas fa-question-circle"></a> <span id="github_login">(<a href="javascript:void(0)">Login</a>)</span></dt>
-        <dd>
-          <ul>
-            
-            <li>
-              Latest Release: <a href="https://github.com/mikedmor/OctoPrint_MultiCam/releases/tag/0.1.0" target="_blank">0.1.0</a><br>
-              <small>released on 08 May 2018</small>
-            </li>
-            <li>Releases: 9</li>
-            
-            <li>Stars: <span id="github_star_count">33</span> <span id="github_star"><a href="javascript:void(0)"><i class="far fa-star"></i></a></span></li>
-            <li>Issues: 21 open, 19 closed</li>
-            <li>Last push: 02 Feb 2022</li>
-          </ul>
-        </dd>
-      </dl>
       
       
       <dl class="tags">
@@ -390,9 +372,9 @@
 
 <script type="application/javascript">
   $(function() {
-    var has_github = true;
+    var has_github = false;
     if (has_github) {
-      var github_repo = "mikedmor/OctoPrint_MultiCam";
+      var github_repo = "";
 
       if (github_repo) {
         var status = "unknown";

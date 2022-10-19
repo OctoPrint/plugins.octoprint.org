@@ -292,7 +292,7 @@ Note that not all events have been tested, please <a href="https://github.com/Ca
       
       <dl class="installations">
         <dt>Active instances the past month</dt>
-        <dd>Installed on at least <strong>34</strong> instances</dd>
+        <dd>Installed on at least <strong>33</strong> instances</dd>
       </dl>
       
       
@@ -301,24 +301,6 @@ Note that not all events have been tested, please <a href="https://github.com/Ca
         <dd>At least <strong>0</strong> new installations</dd>
       </dl>
       
-      
-      <dl class="github">
-        <dt>GitHub stats <a href="/help/github_integration/" class="fas fa-question-circle"></a> <span id="github_login">(<a href="javascript:void(0)">Login</a>)</span></dt>
-        <dd>
-          <ul>
-            
-            <li>
-              Latest Release: <a href="https://github.com/Cadair/octoprint-matrix-notifier-plugin/releases/tag/v0.2.0" target="_blank">v0.2.0</a><br>
-              <small>released on 22 Jul 2021</small>
-            </li>
-            <li>Releases: 2</li>
-            
-            <li>Stars: <span id="github_star_count">13</span> <span id="github_star"><a href="javascript:void(0)"><i class="far fa-star"></i></a></span></li>
-            <li>Issues: 7 open, 4 closed</li>
-            <li>Last push: 17 Feb 2022</li>
-          </ul>
-        </dd>
-      </dl>
       
       
       <dl class="tags">
@@ -412,9 +394,9 @@ Note that not all events have been tested, please <a href="https://github.com/Ca
 
 <script type="application/javascript">
   $(function() {
-    var has_github = true;
+    var has_github = false;
     if (has_github) {
-      var github_repo = "Cadair/octoprint-matrix-notifier-plugin";
+      var github_repo = "";
 
       if (github_repo) {
         var status = "unknown";
