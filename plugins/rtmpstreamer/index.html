@@ -307,15 +307,33 @@
       
       <dl class="installations">
         <dt>Active instances the past month</dt>
-        <dd>Installed on at least <strong>300</strong> instances</dd>
+        <dd>Installed on at least <strong>301</strong> instances</dd>
       </dl>
       
       
       <dl class="install_events">
         <dt>New installs the past week</dt>
-        <dd>At least <strong>11</strong> new installations</dd>
+        <dd>At least <strong>12</strong> new installations</dd>
       </dl>
       
+      
+      <dl class="github">
+        <dt>GitHub stats <a href="/help/github_integration/" class="fas fa-question-circle"></a> <span id="github_login">(<a href="javascript:void(0)">Login</a>)</span></dt>
+        <dd>
+          <ul>
+            
+            <li>
+              Latest Release: <a href="https://github.com/jneilliii/OctoPrint-RTMPStreamer/releases/tag/1.0.3" target="_blank">1.0.3</a><br>
+              <small>released on 23 Feb 2022</small>
+            </li>
+            <li>Releases: 10</li>
+            
+            <li>Stars: <span id="github_star_count">19</span> <span id="github_star"><a href="javascript:void(0)"><i class="far fa-star"></i></a></span></li>
+            <li>Issues: 4 open, 30 closed</li>
+            <li>Last push: 23 Sep 2022</li>
+          </ul>
+        </dd>
+      </dl>
       
       
       <dl class="tags">
@@ -405,9 +423,9 @@
 
 <script type="application/javascript">
   $(function() {
-    var has_github = false;
+    var has_github = true;
     if (has_github) {
-      var github_repo = "";
+      var github_repo = "jneilliii/OctoPrint-RTMPStreamer";
 
       if (github_repo) {
         var status = "unknown";
