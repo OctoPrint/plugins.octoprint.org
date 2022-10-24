@@ -19,11 +19,11 @@
         "abandoned": false,
         "github": { 
             "latest_release": {
-                "name": "no more empty chamber temperature",
-                "date": "2019-09-23 20:34:25 +0000",
-                "tag": "0.8.3"
+                "name": "0.1",
+                "date": "2017-03-14 09:31:31 +0000",
+                "tag": "0.1"
             },
-            "releases": 10,
+            "releases": 21,
             "last_push": "2022-08-07 19:05:43 +0000",
             "stars": 129,
             "issues": {
@@ -32,10 +32,10 @@
             }
         },
         "stats": {
-            "instances_month": 3173,
+            "instances_month": 3175,
             "install_events_month": 200,
-            "instances_week": 2547,
-            "install_events_week": 45
+            "instances_week": 2549,
+            "install_events_week": 46
         }
     },
 
@@ -90,6 +90,20 @@
         },
         "license": "AGPLv3",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "Python 3 compatibility release ",
+                "date": "2020-06-28 09:19:33 +0000",
+                "tag": "v1.1"
+            },
+            "releases": 2,
+            "last_push": "2020-09-14 09:38:22 +0000",
+            "stars": 4,
+            "issues": {
+                "open": 0,
+                "closed": 4
+            }
+        },
         "stats": {
             "instances_month": 178,
             "install_events_month": 12,
@@ -117,11 +131,11 @@
         "abandoned": false,
         "github": { 
             "latest_release": {
-                "name": "Displays RaspberryPi's temperature even when disconnected from printer",
-                "date": "2015-06-25 16:09:16 +0000",
-                "tag": "0.6"
+                "name": "Added internal temperature from Raspberry Pi",
+                "date": "2015-06-23 18:12:02 +0000",
+                "tag": "0.5"
             },
-            "releases": 10,
+            "releases": 11,
             "last_push": "2022-08-15 14:16:11 +0000",
             "stars": 40,
             "issues": {
@@ -130,9 +144,9 @@
             }
         },
         "stats": {
-            "instances_month": 15199,
-            "install_events_month": 908,
-            "instances_week": 11782,
+            "instances_month": 15208,
+            "install_events_month": 909,
+            "instances_week": 11785,
             "install_events_week": 213
         }
     },
@@ -156,11 +170,11 @@
         "abandoned": false,
         "github": { 
             "latest_release": {
-                "name": "Compatibility with OctoPrint 1.2.14",
-                "date": "2016-07-28 22:57:55 +0000",
-                "tag": "2.5.4"
+                "name": "2.6.8",
+                "date": "2020-12-05 23:42:05 +0000",
+                "tag": "2.6.8"
             },
-            "releases": 10,
+            "releases": 30,
             "last_push": "2020-12-01 05:58:38 +0000",
             "stars": 94,
             "issues": {
@@ -171,7 +185,7 @@
         "stats": {
             "instances_month": 425,
             "install_events_month": 51,
-            "instances_week": 324,
+            "instances_week": 323,
             "install_events_week": 9
         }
     },
@@ -208,9 +222,9 @@
             }
         },
         "stats": {
-            "instances_month": 2158,
-            "install_events_month": 99,
-            "instances_week": 1671,
+            "instances_month": 2154,
+            "install_events_month": 98,
+            "instances_week": 1674,
             "install_events_week": 18
         }
     },
@@ -275,9 +289,9 @@
             }
         },
         "stats": {
-            "instances_month": 96,
+            "instances_month": 97,
             "install_events_month": 13,
-            "instances_week": 67,
+            "instances_week": 69,
             "install_events_week": 5
         }
     },
@@ -316,7 +330,7 @@
         "stats": {
             "instances_month": 1198,
             "install_events_month": 56,
-            "instances_week": 941,
+            "instances_week": 940,
             "install_events_week": 10
         }
     },
@@ -338,6 +352,20 @@
         "license": "AGPLv3",
         "image": "https://plugins.octoprint.org/assets/img/plugins/editorCollection/img1.png",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "Editor Collection Version 0.1.1",
+                "date": "2015-07-24 21:43:59 +0000",
+                "tag": "0.1.1"
+            },
+            "releases": 2,
+            "last_push": "2020-05-22 17:19:11 +0000",
+            "stars": 1,
+            "issues": {
+                "open": 1,
+                "closed": 1
+            }
+        },
         "stats": {
             "instances_month": 72,
             "install_events_month": 5,
@@ -417,10 +445,10 @@
             }
         },
         "stats": {
-            "instances_month": 1944,
+            "instances_month": 1945,
             "install_events_month": 189,
-            "instances_week": 1411,
-            "install_events_week": 45
+            "instances_week": 1409,
+            "install_events_week": 44
         }
     },
 
@@ -532,9 +560,9 @@
             }
         },
         "stats": {
-            "instances_month": 1362,
+            "instances_month": 1361,
             "install_events_month": 50,
-            "instances_week": 1098,
+            "instances_week": 1100,
             "install_events_week": 13
         }
     },
@@ -624,10 +652,24 @@
         "license": "AGPLv3",
         "image": "https://plugins.octoprint.org/assets/img/plugins/octobullet/example_push.png",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "0.1.0 (stable)",
+                "date": "2015-06-09 09:21:45 +0000",
+                "tag": "0.1.0"
+            },
+            "releases": 13,
+            "last_push": "2020-10-17 13:50:18 +0000",
+            "stars": 13,
+            "issues": {
+                "open": 8,
+                "closed": 20
+            }
+        },
         "stats": {
             "instances_month": 317,
             "install_events_month": 17,
-            "instances_week": 240,
+            "instances_week": 239,
             "install_events_week": 3
         }
     },
@@ -666,7 +708,7 @@
         "stats": {
             "instances_month": 194,
             "install_events_month": 11,
-            "instances_week": 143,
+            "instances_week": 144,
             "install_events_week": 4
         }
     },
@@ -703,7 +745,7 @@
             }
         },
         "stats": {
-            "instances_month": 1954,
+            "instances_month": 1955,
             "install_events_month": 144,
             "instances_week": 1434,
             "install_events_week": 31
@@ -727,10 +769,24 @@
         "license": "AGPLv3",
         "image": "https://plugins.octoprint.org/assets/img/plugins/eeprom_marlin/firmware_info.png",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "2.0.0 (stable release)",
+                "date": "2020-10-06 20:11:12 +0000",
+                "tag": "2.0.0"
+            },
+            "releases": 14,
+            "last_push": "2022-07-01 21:26:26 +0000",
+            "stars": 22,
+            "issues": {
+                "open": 8,
+                "closed": 51
+            }
+        },
         "stats": {
-            "instances_month": 5032,
-            "install_events_month": 452,
-            "instances_week": 3779,
+            "instances_month": 5034,
+            "install_events_month": 453,
+            "instances_week": 3782,
             "install_events_week": 107
         }
     },
@@ -768,9 +824,9 @@
         },
         "stats": {
             "instances_month": 1366,
-            "install_events_month": 93,
-            "instances_week": 1014,
-            "install_events_week": 23
+            "install_events_month": 94,
+            "instances_week": 1013,
+            "install_events_week": 24
         }
     },
 
@@ -808,7 +864,7 @@
         "stats": {
             "instances_month": 639,
             "install_events_month": 84,
-            "instances_week": 428,
+            "instances_week": 425,
             "install_events_week": 22
         }
     },
@@ -845,9 +901,9 @@
             }
         },
         "stats": {
-            "instances_month": 2201,
+            "instances_month": 2203,
             "install_events_month": 110,
-            "instances_week": 1690,
+            "instances_week": 1693,
             "install_events_week": 28
         }
     },
@@ -868,10 +924,24 @@
         },
         "license": "AGPLv3",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "0.1.1",
+                "date": "2016-02-27 23:42:17 +0000",
+                "tag": "0.1.1"
+            },
+            "releases": 10,
+            "last_push": "2020-05-09 21:54:53 +0000",
+            "stars": 23,
+            "issues": {
+                "open": 3,
+                "closed": 9
+            }
+        },
         "stats": {
-            "instances_month": 941,
-            "install_events_month": 66,
-            "instances_week": 768,
+            "instances_month": 940,
+            "install_events_month": 65,
+            "instances_week": 770,
             "install_events_week": 13
         }
     },
@@ -895,11 +965,11 @@
         "abandoned": false,
         "github": { 
             "latest_release": {
-                "name": "0.3.8",
-                "date": "2017-05-31 16:01:04 +0000",
-                "tag": "0.3.8"
+                "name": "0.0.1 (beta)",
+                "date": "2015-10-04 15:33:31 +0000",
+                "tag": "0.0.1"
             },
-            "releases": 10,
+            "releases": 22,
             "last_push": "2021-07-05 18:17:46 +0000",
             "stars": 258,
             "issues": {
@@ -908,10 +978,10 @@
             }
         },
         "stats": {
-            "instances_month": 10006,
-            "install_events_month": 1066,
-            "instances_week": 7495,
-            "install_events_week": 268
+            "instances_month": 10008,
+            "install_events_month": 1063,
+            "instances_week": 7489,
+            "install_events_week": 269
         }
     },
 
@@ -950,7 +1020,7 @@
             "instances_month": 54,
             "install_events_month": 2,
             "instances_week": 47,
-            "install_events_week": 1
+            "install_events_week": 0
         }
     },
 
@@ -999,6 +1069,20 @@
         },
         "license": "AGPLv3",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "0.1.0 (stable)",
+                "date": "2015-12-07 11:57:36 +0000",
+                "tag": "0.1.0"
+            },
+            "releases": 1,
+            "last_push": "2015-12-07 11:47:13 +0000",
+            "stars": 0,
+            "issues": {
+                "open": 0,
+                "closed": 0
+            }
+        },
         "stats": {
             "instances_month": 1,
             "install_events_month": 0,
@@ -1130,11 +1214,11 @@
         "abandoned": false,
         "github": { 
             "latest_release": {
-                "name": "1.4.2 - Adaption of 1.3.0 functionality & bug fixes",
-                "date": "2017-01-11 00:03:07 +0000",
-                "tag": "1.4.2"
+                "name": "v0.1.5",
+                "date": "2016-02-25 21:12:59 +0000",
+                "tag": "0.1.5"
             },
-            "releases": 10,
+            "releases": 23,
             "last_push": "2022-03-06 14:35:49 +0000",
             "stars": 278,
             "issues": {
@@ -1143,10 +1227,10 @@
             }
         },
         "stats": {
-            "instances_month": 4745,
+            "instances_month": 4747,
             "install_events_month": 356,
-            "instances_week": 3517,
-            "install_events_week": 83
+            "instances_week": 3514,
+            "install_events_week": 82
         }
     },
 
@@ -1167,10 +1251,24 @@
         "license": "AGPLv3",
         "image": "https://plugins.octoprint.org/assets/img/plugins/pushover/pushover.png",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "Initial release",
+                "date": "2016-04-17 17:28:17 +0000",
+                "tag": "0.1.0"
+            },
+            "releases": 23,
+            "last_push": "2020-07-21 18:55:41 +0000",
+            "stars": 29,
+            "issues": {
+                "open": 14,
+                "closed": 40
+            }
+        },
         "stats": {
             "instances_month": 865,
             "install_events_month": 32,
-            "instances_week": 718,
+            "instances_week": 717,
             "install_events_week": 10
         }
     },
@@ -1220,6 +1318,20 @@
         "compatibility": {"octoprint": [], "os": [], "python": ">=2.7,<3"},
         "license": "MIT",
         "abandoned": true,
+        "github": { 
+            "latest_release": {
+                "name": "0.1.3: The Missing Release",
+                "date": "2017-07-13 10:32:48 +0000",
+                "tag": "0.1.3"
+            },
+            "releases": 1,
+            "last_push": "2019-12-14 13:07:40 +0000",
+            "stars": 10,
+            "issues": {
+                "open": 16,
+                "closed": 5
+            }
+        },
         "stats": {
             "instances_month": 293,
             "install_events_month": 3,
@@ -1259,9 +1371,9 @@
             }
         },
         "stats": {
-            "instances_month": 2741,
+            "instances_month": 2744,
             "install_events_month": 87,
-            "instances_week": 2058,
+            "instances_week": 2062,
             "install_events_week": 9
         }
     },
@@ -1322,11 +1434,11 @@
         "abandoned": false,
         "github": { 
             "latest_release": {
-                "name": "1.0.8",
-                "date": "2017-11-15 01:48:43 +0000",
-                "tag": "1.0.8"
+                "name": "0.0.1",
+                "date": "2016-01-04 08:24:00 +0000",
+                "tag": "0.0.1"
             },
-            "releases": 10,
+            "releases": 20,
             "last_push": "2020-05-08 01:19:23 +0000",
             "stars": 20,
             "issues": {
@@ -1337,7 +1449,7 @@
         "stats": {
             "instances_month": 992,
             "install_events_month": 50,
-            "instances_week": 742,
+            "instances_week": 741,
             "install_events_week": 16
         }
     },
@@ -1359,8 +1471,22 @@
         "license": "AGPLv3",
         "image": "https://plugins.octoprint.org/assets/img/plugins/gcodebar/gcodebar.png",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "First public release",
+                "date": "2016-09-03 09:09:02 +0000",
+                "tag": "0.1.4"
+            },
+            "releases": 2,
+            "last_push": "2019-12-12 09:59:06 +0000",
+            "stars": 4,
+            "issues": {
+                "open": 1,
+                "closed": 2
+            }
+        },
         "stats": {
-            "instances_month": 637,
+            "instances_month": 638,
             "install_events_month": 23,
             "instances_week": 481,
             "install_events_week": 5
@@ -1399,9 +1525,9 @@
             }
         },
         "stats": {
-            "instances_month": 6129,
+            "instances_month": 6132,
             "install_events_month": 464,
-            "instances_week": 4632,
+            "instances_week": 4634,
             "install_events_week": 125
         }
     },
@@ -1425,11 +1551,11 @@
         "abandoned": true,
         "github": { 
             "latest_release": {
-                "name": "Compatible with Cyborg theme",
-                "date": "2017-09-18 21:33:42 +0000",
-                "tag": "1.3.1"
+                "name": "Test release tag",
+                "date": "2016-12-01 14:46:56 +0000",
+                "tag": "0.8.0"
             },
-            "releases": 10,
+            "releases": 40,
             "last_push": "2021-05-07 15:39:39 +0000",
             "stars": 97,
             "issues": {
@@ -1438,9 +1564,9 @@
             }
         },
         "stats": {
-            "instances_month": 1623,
+            "instances_month": 1621,
             "install_events_month": 200,
-            "instances_week": 1118,
+            "instances_week": 1116,
             "install_events_week": 43
         }
     },
@@ -1555,9 +1681,9 @@
             }
         },
         "stats": {
-            "instances_month": 5811,
+            "instances_month": 5812,
             "install_events_month": 340,
-            "instances_week": 4545,
+            "instances_week": 4538,
             "install_events_week": 71
         }
     },
@@ -1578,6 +1704,20 @@
         },
         "license": "AGPLv3",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "Incorporated several fixes and new features",
+                "date": "2020-09-27 17:06:54 +0000",
+                "tag": "1.3.0"
+            },
+            "releases": 6,
+            "last_push": "2022-02-28 16:05:41 +0000",
+            "stars": 5,
+            "issues": {
+                "open": 4,
+                "closed": 6
+            }
+        },
         "stats": {
             "instances_month": 423,
             "install_events_month": 11,
@@ -1614,7 +1754,7 @@
         "stats": {
             "instances_month": 355,
             "install_events_month": 20,
-            "instances_week": 280,
+            "instances_week": 279,
             "install_events_week": 6
         }
     },
@@ -1636,11 +1776,25 @@
         "license": "AGPLv3",
         "image": "https://plugins.octoprint.org/assets/img/plugins/fullscreen_webcam/main.jpg",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "0.0.1",
+                "date": "2017-01-16 20:23:38 +0000",
+                "tag": "0.0.1"
+            },
+            "releases": 6,
+            "last_push": "2020-11-22 14:29:52 +0000",
+            "stars": 24,
+            "issues": {
+                "open": 12,
+                "closed": 22
+            }
+        },
         "stats": {
             "instances_month": 10971,
-            "install_events_month": 858,
-            "instances_week": 8328,
-            "install_events_week": 189
+            "install_events_month": 857,
+            "instances_week": 8323,
+            "install_events_week": 187
         }
     },
 
@@ -1679,7 +1833,7 @@
             "instances_month": 91,
             "install_events_month": 4,
             "instances_week": 65,
-            "install_events_week": 2
+            "install_events_week": 1
         }
     },
 
@@ -1702,11 +1856,11 @@
         "abandoned": false,
         "github": { 
             "latest_release": {
-                "name": "0.1.9",
-                "date": "2020-01-04 17:51:39 +0000",
-                "tag": "0.1.9"
+                "name": "0.1.0",
+                "date": "2017-01-26 03:16:19 +0000",
+                "tag": "0.1.0"
             },
-            "releases": 10,
+            "releases": 19,
             "last_push": "2021-08-18 02:08:27 +0000",
             "stars": 174,
             "issues": {
@@ -1715,9 +1869,9 @@
             }
         },
         "stats": {
-            "instances_month": 6754,
+            "instances_month": 6757,
             "install_events_month": 646,
-            "instances_week": 5269,
+            "instances_week": 5272,
             "install_events_week": 151
         }
     },
@@ -1754,9 +1908,9 @@
             }
         },
         "stats": {
-            "instances_month": 426,
-            "install_events_month": 68,
-            "instances_week": 279,
+            "instances_month": 425,
+            "install_events_month": 67,
+            "instances_week": 280,
             "install_events_week": 10
         }
     },
@@ -1817,6 +1971,14 @@
         "image": "https://raw.githubusercontent.com/l00ma/OctoPrint-roomTemp/master/RoomTemp.png",
         "disabled": "<p>This plugin can cause severe server issues in its current form.</p>\n",
         "abandoned": false,
+        "github": { 
+            "last_push": "2022-07-27 07:26:19 +0000",
+            "stars": 9,
+            "issues": {
+                "open": 14,
+                "closed": 3
+            }
+        },
         "stats": {
             "instances_month": 2,
             "install_events_month": 0,
@@ -1842,11 +2004,25 @@
         "license": "AGPLv3",
         "image": "https://plugins.octoprint.org/assets/img/plugins/touchtest/example.png",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "Un-abandonment",
+                "date": "2020-11-06 06:16:31 +0000",
+                "tag": "0.3"
+            },
+            "releases": 3,
+            "last_push": "2020-11-06 17:02:06 +0000",
+            "stars": 6,
+            "issues": {
+                "open": 11,
+                "closed": 13
+            }
+        },
         "stats": {
             "instances_month": 932,
-            "install_events_month": 84,
-            "instances_week": 698,
-            "install_events_week": 23
+            "install_events_month": 82,
+            "instances_week": 694,
+            "install_events_week": 22
         }
     },
 
@@ -1920,9 +2096,9 @@
             }
         },
         "stats": {
-            "instances_month": 815,
+            "instances_month": 814,
             "install_events_month": 51,
-            "instances_week": 641,
+            "instances_week": 639,
             "install_events_week": 4
         }
     },
@@ -1946,11 +2122,11 @@
         "abandoned": false,
         "github": { 
             "latest_release": {
-                "name": "Minor Release",
-                "date": "2018-03-08 18:23:03 +0000",
-                "tag": "4.02"
+                "name": "Initial and stable release",
+                "date": "2016-11-01 18:30:44 +0000",
+                "tag": "1.0"
             },
-            "releases": 10,
+            "releases": 28,
             "last_push": "2022-03-12 19:00:46 +0000",
             "stars": 367,
             "issues": {
@@ -1961,7 +2137,7 @@
         "stats": {
             "instances_month": 4078,
             "install_events_month": 256,
-            "instances_week": 3065,
+            "instances_week": 3058,
             "install_events_week": 71
         }
     },
@@ -1979,6 +2155,20 @@
         "license": "AGPLv3",
         "image": "https://plugins.octoprint.org/assets/img/plugins/OctoRemote/Hardware1.JPG",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "Release 0.1.2",
+                "date": "2018-02-03 18:34:53 +0000",
+                "tag": "0.1.2"
+            },
+            "releases": 1,
+            "last_push": "2018-02-03 18:48:19 +0000",
+            "stars": 22,
+            "issues": {
+                "open": 1,
+                "closed": 10
+            }
+        },
         "stats": {
             "instances_month": 11,
             "install_events_month": 0,
@@ -2019,10 +2209,10 @@
             }
         },
         "stats": {
-            "instances_month": 1310,
+            "instances_month": 1312,
             "install_events_month": 77,
-            "instances_week": 1036,
-            "install_events_week": 18
+            "instances_week": 1039,
+            "install_events_week": 17
         }
     },
 
@@ -2051,9 +2241,9 @@
             }
         },
         "stats": {
-            "instances_month": 487,
+            "instances_month": 489,
             "install_events_month": 20,
-            "instances_week": 364,
+            "instances_week": 367,
             "install_events_week": 5
         }
     },
@@ -2110,6 +2300,20 @@
         "license": "MIT",
         "image": "https://plugins.octoprint.org/assets/img/plugins/grbl/Grbl_logo.png",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "1.0.0",
+                "date": "2017-05-11 13:58:30 +0000",
+                "tag": "1.0.0"
+            },
+            "releases": 3,
+            "last_push": "2018-04-19 13:46:50 +0000",
+            "stars": 35,
+            "issues": {
+                "open": 7,
+                "closed": 2
+            }
+        },
         "stats": {
             "instances_month": 7,
             "install_events_month": 3,
@@ -2135,9 +2339,17 @@
         "license": "AGPLv3",
         "image": "https://plugins.octoprint.org/assets/img/plugins/OctoPNP/screenshot.png",
         "abandoned": false,
+        "github": { 
+            "last_push": "2021-11-01 10:13:03 +0000",
+            "stars": 33,
+            "issues": {
+                "open": 5,
+                "closed": 1
+            }
+        },
         "stats": {
             "instances_month": 7,
-            "install_events_month": 2,
+            "install_events_month": 1,
             "instances_week": 4,
             "install_events_week": 0
         }
@@ -2162,11 +2374,11 @@
         "abandoned": false,
         "github": { 
             "latest_release": {
-                "name": "1.7.1 - G-code received event support, ETA calculation bug fix, and Slack API reconnection logic fixes",
-                "date": "2019-01-26 17:09:14 +0000",
-                "tag": "1.7.1"
+                "name": "1.0.0 - Initial release",
+                "date": "2017-05-23 02:11:59 +0000",
+                "tag": "1.0"
             },
-            "releases": 10,
+            "releases": 27,
             "last_push": "2021-05-15 05:37:50 +0000",
             "stars": 66,
             "issues": {
@@ -2177,7 +2389,7 @@
         "stats": {
             "instances_month": 620,
             "install_events_month": 19,
-            "instances_week": 529,
+            "instances_week": 527,
             "install_events_week": 5
         }
     },
@@ -2214,9 +2426,9 @@
             }
         },
         "stats": {
-            "instances_month": 943,
+            "instances_month": 942,
             "install_events_month": 41,
-            "instances_week": 724,
+            "instances_week": 722,
             "install_events_week": 11
         }
     },
@@ -2238,11 +2450,25 @@
         "license": "AGPLv3",
         "image": "https://plugins.octoprint.org/assets/img/plugins/BLTouch/screenshot.png",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "0.1.0",
+                "date": "2017-01-11 03:40:52 +0000",
+                "tag": "0.1.0"
+            },
+            "releases": 9,
+            "last_push": "2022-09-24 02:26:42 +0000",
+            "stars": 16,
+            "issues": {
+                "open": 2,
+                "closed": 18
+            }
+        },
         "stats": {
-            "instances_month": 10783,
+            "instances_month": 10787,
             "install_events_month": 1153,
-            "instances_week": 7829,
-            "install_events_week": 272
+            "instances_week": 7837,
+            "install_events_week": 269
         }
     },
 
@@ -2265,11 +2491,11 @@
         "abandoned": false,
         "github": { 
             "latest_release": {
-                "name": "1.6",
-                "date": "2018-06-16 07:25:14 +0000",
-                "tag": "1.6"
+                "name": "0.2 Beta",
+                "date": "2017-07-04 00:11:20 +0000",
+                "tag": "0.2.0"
             },
-            "releases": 10,
+            "releases": 19,
             "last_push": "2022-07-01 22:10:11 +0000",
             "stars": 14,
             "issues": {
@@ -2317,9 +2543,9 @@
         },
         "stats": {
             "instances_month": 4379,
-            "install_events_month": 310,
-            "instances_week": 3372,
-            "install_events_week": 74
+            "install_events_month": 309,
+            "instances_week": 3366,
+            "install_events_week": 73
         }
     },
 
@@ -2342,11 +2568,11 @@
         "abandoned": false,
         "github": { 
             "latest_release": {
-                "name": "0.2.2",
-                "date": "2018-01-15 09:33:36 +0000",
-                "tag": "0.2.2"
+                "name": "0.1.0",
+                "date": "2017-07-23 17:53:35 +0000",
+                "tag": "0.1.0"
             },
-            "releases": 10,
+            "releases": 17,
             "last_push": "2021-04-26 23:21:09 +0000",
             "stars": 17,
             "issues": {
@@ -2355,10 +2581,10 @@
             }
         },
         "stats": {
-            "instances_month": 10497,
-            "install_events_month": 978,
-            "instances_week": 7823,
-            "install_events_week": 230
+            "instances_month": 10507,
+            "install_events_month": 980,
+            "instances_week": 7832,
+            "install_events_week": 231
         }
     },
 
@@ -2487,11 +2713,11 @@
         "abandoned": false,
         "github": { 
             "latest_release": {
-                "name": "V1.6.1",
-                "date": "2020-10-07 08:54:15 +0000",
-                "tag": "1.6.1"
+                "name": "V1.6.0",
+                "date": "2020-09-12 19:50:44 +0000",
+                "tag": "1.6.0"
             },
-            "releases": 10,
+            "releases": 11,
             "last_push": "2021-11-15 21:35:32 +0000",
             "stars": 50,
             "issues": {
@@ -2500,9 +2726,9 @@
             }
         },
         "stats": {
-            "instances_month": 7074,
-            "install_events_month": 503,
-            "instances_week": 5206,
+            "instances_month": 7073,
+            "install_events_month": 501,
+            "instances_week": 5194,
             "install_events_week": 114
         }
     },
@@ -2561,11 +2787,11 @@
         "abandoned": false,
         "github": { 
             "latest_release": {
-                "name": "0.5.0",
-                "date": "2017-09-01 20:00:58 +0000",
-                "tag": "0.5.0"
+                "name": "0.1.0",
+                "date": "2017-08-27 10:17:48 +0000",
+                "tag": "0.1.0"
             },
-            "releases": 10,
+            "releases": 14,
             "last_push": "2022-09-24 02:26:45 +0000",
             "stars": 11,
             "issues": {
@@ -2574,7 +2800,7 @@
             }
         },
         "stats": {
-            "instances_month": 1280,
+            "instances_month": 1279,
             "install_events_month": 72,
             "instances_week": 983,
             "install_events_week": 12
@@ -2600,11 +2826,11 @@
         "abandoned": false,
         "github": { 
             "latest_release": {
-                "name": "1.0.2",
-                "date": "2022-04-17 00:03:06 +0000",
-                "tag": "1.0.2"
+                "name": "0.1.0",
+                "date": "2017-09-03 18:38:32 +0000",
+                "tag": "0.1.0"
             },
-            "releases": 10,
+            "releases": 54,
             "last_push": "2022-09-24 02:27:39 +0000",
             "stars": 98,
             "issues": {
@@ -2613,10 +2839,10 @@
             }
         },
         "stats": {
-            "instances_month": 3762,
+            "instances_month": 3755,
             "install_events_month": 269,
-            "instances_week": 3051,
-            "install_events_week": 70
+            "instances_week": 3049,
+            "install_events_week": 69
         }
     },
 
@@ -2686,10 +2912,10 @@
             }
         },
         "stats": {
-            "instances_month": 5373,
-            "install_events_month": 483,
-            "instances_week": 3992,
-            "install_events_week": 113
+            "instances_month": 5377,
+            "install_events_month": 484,
+            "instances_week": 3990,
+            "install_events_week": 112
         }
     },
 
@@ -2712,11 +2938,11 @@
         "abandoned": false,
         "github": { 
             "latest_release": {
-                "name": "0.2.2",
-                "date": "2017-11-19 00:29:39 +0000",
-                "tag": "0.2.2"
+                "name": "0.2.1",
+                "date": "2017-10-29 05:40:00 +0000",
+                "tag": "0.2.1"
             },
-            "releases": 10,
+            "releases": 11,
             "last_push": "2022-06-04 22:50:25 +0000",
             "stars": 18,
             "issues": {
@@ -2725,9 +2951,9 @@
             }
         },
         "stats": {
-            "instances_month": 4579,
+            "instances_month": 4577,
             "install_events_month": 234,
-            "instances_week": 3503,
+            "instances_week": 3496,
             "install_events_week": 51
         }
     },
@@ -2749,11 +2975,25 @@
         "license": "AGPLv3",
         "image": "https://plugins.octoprint.org/assets/img/plugins/themeify/discorded_ss.png",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "",
+                "date": "2017-11-15 12:53:04 +0000",
+                "tag": "0.2.0"
+            },
+            "releases": 10,
+            "last_push": "2020-09-04 00:25:50 +0000",
+            "stars": 78,
+            "issues": {
+                "open": 59,
+                "closed": 43
+            }
+        },
         "stats": {
-            "instances_month": 20800,
-            "install_events_month": 1665,
-            "instances_week": 15842,
-            "install_events_week": 393
+            "instances_month": 20809,
+            "install_events_month": 1667,
+            "instances_week": 15823,
+            "install_events_week": 389
         }
     },
 
@@ -2776,11 +3016,11 @@
         "abandoned": false,
         "github": { 
             "latest_release": {
-                "name": "Fix for fallback temperatures when printing from the SD card",
-                "date": "2019-02-17 18:41:04 +0000",
-                "tag": "0.3.1"
+                "name": "Initial release",
+                "date": "2017-11-21 15:59:20 +0000",
+                "tag": "0.1.0"
             },
-            "releases": 10,
+            "releases": 13,
             "last_push": "2021-05-31 22:41:35 +0000",
             "stars": 32,
             "issues": {
@@ -2789,9 +3029,9 @@
             }
         },
         "stats": {
-            "instances_month": 12134,
-            "install_events_month": 849,
-            "instances_week": 8935,
+            "instances_month": 12125,
+            "install_events_month": 847,
+            "instances_week": 8924,
             "install_events_week": 186
         }
     },
@@ -2815,11 +3055,11 @@
         "abandoned": false,
         "github": { 
             "latest_release": {
-                "name": "1.1.3",
-                "date": "2022-10-15 20:46:19 +0000",
-                "tag": "1.1.3"
+                "name": "0.1.0",
+                "date": "2017-11-24 21:45:19 +0000",
+                "tag": "0.1.0"
             },
-            "releases": 10,
+            "releases": 64,
             "last_push": "2022-10-15 20:45:50 +0000",
             "stars": 56,
             "issues": {
@@ -2829,9 +3069,9 @@
         },
         "stats": {
             "instances_month": 1672,
-            "install_events_month": 81,
+            "install_events_month": 80,
             "instances_week": 1298,
-            "install_events_week": 15
+            "install_events_week": 14
         }
     },
 
@@ -2854,11 +3094,11 @@
         "abandoned": false,
         "github": { 
             "latest_release": {
-                "name": "1.5.2",
-                "date": "2020-03-30 15:29:51 +0000",
-                "tag": "1.5.2"
+                "name": "1.0.0",
+                "date": "2017-12-15 09:19:18 +0000",
+                "tag": "1.0.0"
             },
-            "releases": 10,
+            "releases": 41,
             "last_push": "2021-05-19 19:24:28 +0000",
             "stars": 25,
             "issues": {
@@ -2867,7 +3107,7 @@
             }
         },
         "stats": {
-            "instances_month": 2411,
+            "instances_month": 2412,
             "install_events_month": 174,
             "instances_week": 1732,
             "install_events_week": 34
@@ -2893,11 +3133,11 @@
         "abandoned": false,
         "github": { 
             "latest_release": {
-                "name": "Version 1.1.0 - Adds settings",
-                "date": "2020-06-18 06:46:10 +0000",
-                "tag": "1.1.0"
+                "name": "Version 1.0.5 - Adds Python 3 Support",
+                "date": "2020-05-20 08:10:49 +0000",
+                "tag": "1.0.5"
             },
-            "releases": 10,
+            "releases": 12,
             "last_push": "2022-04-13 11:03:27 +0000",
             "stars": 10,
             "issues": {
@@ -2908,8 +3148,8 @@
         "stats": {
             "instances_month": 2317,
             "install_events_month": 184,
-            "instances_week": 1739,
-            "install_events_week": 42
+            "instances_week": 1736,
+            "install_events_week": 41
         }
     },
 
@@ -2971,11 +3211,11 @@
         "abandoned": false,
         "github": { 
             "latest_release": {
-                "name": "1.12.0",
-                "date": "2021-09-02 11:37:12 +0000",
-                "tag": "1.12.0"
+                "name": "0.3.0",
+                "date": "2018-01-26 12:08:10 +0000",
+                "tag": "0.3.0"
             },
-            "releases": 10,
+            "releases": 72,
             "last_push": "2022-05-27 09:04:12 +0000",
             "stars": 309,
             "issues": {
@@ -2984,9 +3224,9 @@
             }
         },
         "stats": {
-            "instances_month": 21850,
-            "install_events_month": 1960,
-            "instances_week": 17236,
+            "instances_month": 21983,
+            "install_events_month": 1959,
+            "instances_week": 17244,
             "install_events_week": 377
         }
     },
@@ -3025,7 +3265,7 @@
         "stats": {
             "instances_month": 3309,
             "install_events_month": 296,
-            "instances_week": 2547,
+            "instances_week": 2546,
             "install_events_week": 69
         }
     },
@@ -3063,7 +3303,7 @@
         "stats": {
             "instances_month": 1709,
             "install_events_month": 145,
-            "instances_week": 1286,
+            "instances_week": 1287,
             "install_events_week": 37
         }
     },
@@ -3100,10 +3340,10 @@
             }
         },
         "stats": {
-            "instances_month": 6006,
+            "instances_month": 6009,
             "install_events_month": 316,
-            "instances_week": 4548,
-            "install_events_week": 63
+            "instances_week": 4552,
+            "install_events_week": 62
         }
     },
 
@@ -3163,10 +3403,24 @@
         "license": "AGPLv3",
         "image": "https://plugins.octoprint.org/assets/img/plugins/tasmota_mqtt/navbar.png",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "0.1.0",
+                "date": "2018-01-05 00:18:53 +0000",
+                "tag": "0.1.0"
+            },
+            "releases": 22,
+            "last_push": "2022-09-24 02:27:28 +0000",
+            "stars": 17,
+            "issues": {
+                "open": 4,
+                "closed": 39
+            }
+        },
         "stats": {
-            "instances_month": 538,
+            "instances_month": 539,
             "install_events_month": 20,
-            "instances_week": 370,
+            "instances_week": 371,
             "install_events_week": 5
         }
     },
@@ -3190,11 +3444,11 @@
         "abandoned": false,
         "github": { 
             "latest_release": {
-                "name": "0.5.0",
-                "date": "2018-03-18 20:45:47 +0000",
-                "tag": "0.5.0"
+                "name": "0.1.0",
+                "date": "2018-01-18 00:46:10 +0000",
+                "tag": "0.1.0"
             },
-            "releases": 10,
+            "releases": 14,
             "last_push": "2022-09-24 02:27:01 +0000",
             "stars": 6,
             "issues": {
@@ -3227,10 +3481,24 @@
         "license": "AGPLv3",
         "image": "https://plugins.octoprint.org/assets/img/plugins/taborder/settings.png",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "0.1.0",
+                "date": "2018-01-20 11:44:40 +0000",
+                "tag": "0.1.0"
+            },
+            "releases": 23,
+            "last_push": "2022-09-24 02:27:21 +0000",
+            "stars": 22,
+            "issues": {
+                "open": 3,
+                "closed": 38
+            }
+        },
         "stats": {
             "instances_month": 4444,
             "install_events_month": 193,
-            "instances_week": 3396,
+            "instances_week": 3391,
             "install_events_week": 29
         }
     },
@@ -3308,7 +3576,7 @@
         },
         "stats": {
             "instances_month": 9,
-            "install_events_month": 2,
+            "install_events_month": 1,
             "instances_week": 5,
             "install_events_week": 0
         }
@@ -3330,8 +3598,22 @@
         },
         "license": "AGPLv3",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "0.1.0 (stable)",
+                "date": "2018-02-07 15:39:42 +0000",
+                "tag": "0.1.0"
+            },
+            "releases": 4,
+            "last_push": "2022-06-23 08:52:03 +0000",
+            "stars": 37,
+            "issues": {
+                "open": 0,
+                "closed": 7
+            }
+        },
         "stats": {
-            "instances_month": 642,
+            "instances_month": 641,
             "install_events_month": 44,
             "instances_week": 496,
             "install_events_week": 19
@@ -3357,11 +3639,11 @@
         "abandoned": false,
         "github": { 
             "latest_release": {
-                "name": "Version 1.0.7",
-                "date": "2018-02-27 01:09:42 +0000",
-                "tag": "v1.0.7"
+                "name": "Version 1.0.0",
+                "date": "2018-02-24 05:36:53 +0000",
+                "tag": "v1.0.0"
             },
-            "releases": 10,
+            "releases": 17,
             "last_push": "2021-12-11 00:21:56 +0000",
             "stars": 10,
             "issues": {
@@ -3370,10 +3652,10 @@
             }
         },
         "stats": {
-            "instances_month": 2160,
-            "install_events_month": 270,
-            "instances_week": 1521,
-            "install_events_week": 81
+            "instances_month": 2161,
+            "install_events_month": 269,
+            "instances_week": 1522,
+            "install_events_week": 79
         }
     },
 
@@ -3433,11 +3715,25 @@
         "license": "AGPL-3.0",
         "image": "https://plugins.octoprint.org/assets/img/plugins/octolapse/tab_mini.png",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "v0.4.1",
+                "date": "2020-12-05 00:58:24 +0000",
+                "tag": "v0.4.1"
+            },
+            "releases": 30,
+            "last_push": "2020-12-05 00:35:29 +0000",
+            "stars": 554,
+            "issues": {
+                "open": 232,
+                "closed": 559
+            }
+        },
         "stats": {
-            "instances_month": 25700,
-            "install_events_month": 2395,
-            "instances_week": 19441,
-            "install_events_week": 527
+            "instances_month": 25703,
+            "install_events_month": 2399,
+            "instances_week": 19443,
+            "install_events_week": 534
         }
     },
 
@@ -3460,11 +3756,11 @@
         "abandoned": false,
         "github": { 
             "latest_release": {
-                "name": "V1.25.2",
-                "date": "2021-01-31 11:09:33 +0000",
-                "tag": "1.25.2"
+                "name": "V1.0.0",
+                "date": "2018-04-10 09:53:41 +0000",
+                "tag": "1.0.0"
             },
-            "releases": 10,
+            "releases": 68,
             "last_push": "2022-07-09 16:41:16 +0000",
             "stars": 111,
             "issues": {
@@ -3473,10 +3769,10 @@
             }
         },
         "stats": {
-            "instances_month": 21015,
-            "install_events_month": 1388,
-            "instances_week": 15929,
-            "install_events_week": 304
+            "instances_month": 21008,
+            "install_events_month": 1387,
+            "instances_week": 15921,
+            "install_events_week": 302
         }
     },
 
@@ -3499,11 +3795,11 @@
         "abandoned": false,
         "github": { 
             "latest_release": {
-                "name": "1.1.0 - Numpy Removal",
-                "date": "2021-07-31 06:02:36 +0000",
-                "tag": "1.1.0"
+                "name": "0.0.1",
+                "date": "2018-04-14 17:51:57 +0000",
+                "tag": "0.0.1"
             },
-            "releases": 10,
+            "releases": 52,
             "last_push": "2022-09-24 02:26:44 +0000",
             "stars": 281,
             "issues": {
@@ -3512,10 +3808,10 @@
             }
         },
         "stats": {
-            "instances_month": 35913,
+            "instances_month": 35918,
             "install_events_month": 3453,
-            "instances_week": 26763,
-            "install_events_week": 782
+            "instances_week": 26811,
+            "install_events_week": 781
         }
     },
 
@@ -3538,11 +3834,11 @@
         "abandoned": false,
         "github": { 
             "latest_release": {
-                "name": "V1.3.1",
-                "date": "2019-05-24 17:48:06 +0000",
-                "tag": "1.3.1"
+                "name": "V1.0.0",
+                "date": "2018-04-20 17:25:18 +0000",
+                "tag": "1.0.0"
             },
-            "releases": 10,
+            "releases": 16,
             "last_push": "2022-01-09 20:45:53 +0000",
             "stars": 8,
             "issues": {
@@ -3629,9 +3925,9 @@
             }
         },
         "stats": {
-            "instances_month": 4589,
-            "install_events_month": 365,
-            "instances_week": 3498,
+            "instances_month": 4590,
+            "install_events_month": 364,
+            "instances_week": 3496,
             "install_events_week": 90
         }
     },
@@ -3668,8 +3964,8 @@
         },
         "stats": {
             "instances_month": 2985,
-            "install_events_month": 291,
-            "instances_week": 2259,
+            "install_events_month": 289,
+            "instances_week": 2254,
             "install_events_week": 64
         }
     },
@@ -3690,6 +3986,20 @@
         },
         "license": "AGPLv3",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "Initial Release",
+                "date": "2018-05-09 15:03:57 +0000",
+                "tag": "0.1.0"
+            },
+            "releases": 5,
+            "last_push": "2020-04-17 05:25:36 +0000",
+            "stars": 9,
+            "issues": {
+                "open": 6,
+                "closed": 6
+            }
+        },
         "stats": {
             "instances_month": 298,
             "install_events_month": 14,
@@ -3715,10 +4025,24 @@
         "license": "MIT",
         "image": "https://plugins.octoprint.org/assets/img/plugins/discordremote/featured.jpg",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "Discord Bot, First Release",
+                "date": "2018-05-18 13:34:19 +0000",
+                "tag": "v2.0"
+            },
+            "releases": 79,
+            "last_push": "2022-09-17 15:37:37 +0000",
+            "stars": 58,
+            "issues": {
+                "open": 5,
+                "closed": 173
+            }
+        },
         "stats": {
-            "instances_month": 660,
+            "instances_month": 661,
             "install_events_month": 50,
-            "instances_week": 527,
+            "instances_week": 528,
             "install_events_week": 10
         }
     },
@@ -3739,6 +4063,20 @@
         },
         "license": "AGPLv3",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "V1.0.0",
+                "date": "2018-06-05 22:57:08 +0000",
+                "tag": "1.0.0"
+            },
+            "releases": 5,
+            "last_push": "2018-12-25 13:43:01 +0000",
+            "stars": 1,
+            "issues": {
+                "open": 0,
+                "closed": 0
+            }
+        },
         "stats": {
             "instances_month": 0,
             "install_events_month": 0,
@@ -3779,7 +4117,7 @@
             }
         },
         "stats": {
-            "instances_month": 554,
+            "instances_month": 552,
             "install_events_month": 23,
             "instances_week": 428,
             "install_events_week": 7
@@ -3805,11 +4143,11 @@
         "abandoned": false,
         "github": { 
             "latest_release": {
-                "name": "0.3.2",
-                "date": "2019-06-05 13:57:29 +0000",
-                "tag": "0.3.2"
+                "name": "0.2.1",
+                "date": "2018-11-08 18:21:33 +0000",
+                "tag": "0.2.1"
             },
-            "releases": 10,
+            "releases": 12,
             "last_push": "2022-02-15 23:39:00 +0000",
             "stars": 93,
             "issues": {
@@ -3819,9 +4157,9 @@
         },
         "stats": {
             "instances_month": 7082,
-            "install_events_month": 378,
-            "instances_week": 5379,
-            "install_events_week": 77
+            "install_events_month": 379,
+            "instances_week": 5380,
+            "install_events_week": 78
         }
     },
 
@@ -3844,11 +4182,11 @@
         "abandoned": false,
         "github": { 
             "latest_release": {
-                "name": "fix compatibility problem with another plugin",
-                "date": "2019-01-08 18:04:10 +0000",
-                "tag": "1.0.2"
+                "name": "add event nozzle temperature target",
+                "date": "2018-06-17 16:45:34 +0000",
+                "tag": "0.0.3"
             },
-            "releases": 10,
+            "releases": 21,
             "last_push": "2022-05-22 01:56:55 +0000",
             "stars": 16,
             "issues": {
@@ -3881,11 +4219,25 @@
         "license": "AGPLv3",
         "image": "https://plugins.octoprint.org/assets/img/plugins/excluderegion/excluderegion-gcode-viewer.png",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "0.1.0",
+                "date": "2018-07-05 13:08:39 +0000",
+                "tag": "0.1.0"
+            },
+            "releases": 6,
+            "last_push": "2020-11-17 13:29:44 +0000",
+            "stars": 46,
+            "issues": {
+                "open": 18,
+                "closed": 39
+            }
+        },
         "stats": {
-            "instances_month": 10940,
-            "install_events_month": 872,
-            "instances_week": 8372,
-            "install_events_week": 208
+            "instances_month": 10948,
+            "install_events_month": 873,
+            "instances_week": 8368,
+            "install_events_week": 207
         }
     },
 
@@ -3985,11 +4337,11 @@
         "abandoned": false,
         "github": { 
             "latest_release": {
-                "name": "Support python3",
-                "date": "2019-12-16 15:34:44 +0000",
-                "tag": "2.1.1"
+                "name": "First working version",
+                "date": "2018-07-12 19:13:50 +0000",
+                "tag": "1.0.0"
             },
-            "releases": 10,
+            "releases": 38,
             "last_push": "2022-10-03 15:44:27 +0000",
             "stars": 161,
             "issues": {
@@ -3998,9 +4350,9 @@
             }
         },
         "stats": {
-            "instances_month": 33915,
-            "install_events_month": 2569,
-            "instances_week": 26553,
+            "instances_month": 33925,
+            "install_events_month": 2574,
+            "instances_week": 26562,
             "install_events_week": 559
         }
     },
@@ -4033,9 +4385,9 @@
             }
         },
         "stats": {
-            "instances_month": 328,
+            "instances_month": 329,
             "install_events_month": 5,
-            "instances_week": 244,
+            "instances_week": 245,
             "install_events_week": 0
         }
     },
@@ -4058,11 +4410,11 @@
         "abandoned": false,
         "github": { 
             "latest_release": {
-                "name": "0.1.5",
-                "date": "2018-07-22 00:27:49 +0000",
-                "tag": "0.1.5"
+                "name": "0.1.1",
+                "date": "2018-07-15 01:44:41 +0000",
+                "tag": "0.1.1"
             },
-            "releases": 10,
+            "releases": 14,
             "last_push": "2022-10-15 18:50:02 +0000",
             "stars": 26,
             "issues": {
@@ -4071,10 +4423,10 @@
             }
         },
         "stats": {
-            "instances_month": 3061,
-            "install_events_month": 316,
-            "instances_week": 2170,
-            "install_events_week": 78
+            "instances_month": 3063,
+            "install_events_month": 317,
+            "instances_week": 2169,
+            "install_events_week": 79
         }
     },
 
@@ -4111,7 +4463,7 @@
         "stats": {
             "instances_month": 245,
             "install_events_month": 9,
-            "instances_week": 203,
+            "instances_week": 201,
             "install_events_week": 1
         }
     },
@@ -4150,7 +4502,7 @@
         "stats": {
             "instances_month": 791,
             "install_events_month": 44,
-            "instances_week": 609,
+            "instances_week": 608,
             "install_events_week": 12
         }
     },
@@ -4172,10 +4524,24 @@
         "license": "AGPLv3",
         "image": "https://plugins.octoprint.org/assets/img/plugins/rtmpstreamer/tab_screenshot.jpg",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "0.1.0",
+                "date": "2018-08-12 07:12:35 +0000",
+                "tag": "0.1.0"
+            },
+            "releases": 21,
+            "last_push": "2022-09-24 02:27:09 +0000",
+            "stars": 19,
+            "issues": {
+                "open": 4,
+                "closed": 30
+            }
+        },
         "stats": {
             "instances_month": 307,
             "install_events_month": 39,
-            "instances_week": 211,
+            "instances_week": 212,
             "install_events_week": 11
         }
     },
@@ -4199,11 +4565,11 @@
         "abandoned": false,
         "github": { 
             "latest_release": {
-                "name": "OctoKlipper 0.3.9.4",
-                "date": "2021-12-31 00:46:26 +0000",
-                "tag": "0.3.9.4"
+                "name": "Version 0.3.0",
+                "date": "2020-08-29 22:35:57 +0000",
+                "tag": "0.3.0"
             },
-            "releases": 10,
+            "releases": 40,
             "last_push": "2021-12-31 00:41:10 +0000",
             "stars": 48,
             "issues": {
@@ -4212,10 +4578,10 @@
             }
         },
         "stats": {
-            "instances_month": 4256,
-            "install_events_month": 807,
+            "instances_month": 4258,
+            "install_events_month": 806,
             "instances_week": 2568,
-            "install_events_week": 186
+            "install_events_week": 187
         }
     },
 
@@ -4290,7 +4656,7 @@
         "stats": {
             "instances_month": 327,
             "install_events_month": 11,
-            "instances_week": 253,
+            "instances_week": 252,
             "install_events_week": 1
         }
     },
@@ -4326,7 +4692,7 @@
             }
         },
         "stats": {
-            "instances_month": 456,
+            "instances_month": 455,
             "install_events_month": 15,
             "instances_week": 381,
             "install_events_week": 2
@@ -4352,11 +4718,11 @@
         "abandoned": false,
         "github": { 
             "latest_release": {
-                "name": "0.1.8",
-                "date": "2020-11-21 20:50:28 +0000",
-                "tag": "0.1.8"
+                "name": "0.1.0",
+                "date": "2018-09-15 14:34:44 +0000",
+                "tag": "0.1.0"
             },
-            "releases": 10,
+            "releases": 19,
             "last_push": "2022-10-15 15:32:58 +0000",
             "stars": 10,
             "issues": {
@@ -4390,11 +4756,11 @@
         "abandoned": false,
         "github": { 
             "latest_release": {
-                "name": "Project Kronos Keyless Upload Update",
-                "date": "2018-08-20 21:27:13 +0000",
-                "tag": "1.1.6"
+                "name": "Project Kronos Data Collector Plugin v1.1",
+                "date": "2018-07-15 03:51:30 +0000",
+                "tag": "1.1"
             },
-            "releases": 10,
+            "releases": 13,
             "last_push": "2020-04-27 21:43:23 +0000",
             "stars": 15,
             "issues": {
@@ -4534,9 +4900,9 @@
         "abandoned": false,
         "stats": {
             "instances_month": 4158,
-            "install_events_month": 456,
-            "instances_week": 2942,
-            "install_events_week": 110
+            "install_events_month": 457,
+            "instances_week": 2948,
+            "install_events_week": 109
         }
     },
 
@@ -4572,7 +4938,7 @@
             }
         },
         "stats": {
-            "instances_month": 417,
+            "instances_month": 416,
             "install_events_month": 61,
             "instances_week": 296,
             "install_events_week": 19
@@ -4595,11 +4961,25 @@
         },
         "license": "AGPLv3",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "0.0.2",
+                "date": "2018-11-17 17:28:18 +0000",
+                "tag": "0.0.2"
+            },
+            "releases": 2,
+            "last_push": "2022-09-24 02:26:42 +0000",
+            "stars": 3,
+            "issues": {
+                "open": 0,
+                "closed": 3
+            }
+        },
         "stats": {
             "instances_month": 1091,
-            "install_events_month": 30,
-            "instances_week": 758,
-            "install_events_week": 10
+            "install_events_month": 31,
+            "instances_week": 760,
+            "install_events_week": 11
         }
     },
 
@@ -4619,10 +4999,24 @@
         },
         "license": "AGPLv3",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "0.1.0",
+                "date": "2018-11-19 04:30:00 +0000",
+                "tag": "0.1.0"
+            },
+            "releases": 8,
+            "last_push": "2022-09-24 02:26:46 +0000",
+            "stars": 7,
+            "issues": {
+                "open": 2,
+                "closed": 16
+            }
+        },
         "stats": {
             "instances_month": 1335,
             "install_events_month": 52,
-            "instances_week": 1057,
+            "instances_week": 1054,
             "install_events_week": 14
         }
     },
@@ -4677,6 +5071,20 @@
         "license": "AGPLv3",
         "image": "https://plugins.octoprint.org/assets/img/plugins/MyMiniFactory/myminifactory_logo_128.png",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "0.1.4",
+                "date": "2020-01-04 04:12:10 +0000",
+                "tag": "0.1.4"
+            },
+            "releases": 14,
+            "last_push": "2022-09-24 02:27:25 +0000",
+            "stars": 8,
+            "issues": {
+                "open": 0,
+                "closed": 8
+            }
+        },
         "stats": {
             "instances_month": 94,
             "install_events_month": 1,
@@ -4697,10 +5105,24 @@
         "compatibility": {"octoprint": [], "os": [], "python": ">=2.7,<3"},
         "license": "AGPLv3",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "1.0.0",
+                "date": "2018-12-22 20:28:29 +0000",
+                "tag": "v1.0.0"
+            },
+            "releases": 4,
+            "last_push": "2022-05-18 14:29:08 +0000",
+            "stars": 10,
+            "issues": {
+                "open": 4,
+                "closed": 6
+            }
+        },
         "stats": {
-            "instances_month": 901,
+            "instances_month": 902,
             "install_events_month": 44,
-            "instances_week": 712,
+            "instances_week": 711,
             "install_events_week": 17
         }
     },
@@ -4737,7 +5159,7 @@
             }
         },
         "stats": {
-            "instances_month": 184,
+            "instances_month": 185,
             "install_events_month": 6,
             "instances_week": 145,
             "install_events_week": 0
@@ -4760,10 +5182,24 @@
         },
         "license": "AGPLv3",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "1.0.0",
+                "date": "2018-12-28 02:15:13 +0000",
+                "tag": "v1.0.0"
+            },
+            "releases": 9,
+            "last_push": "2021-10-19 16:41:21 +0000",
+            "stars": 31,
+            "issues": {
+                "open": 8,
+                "closed": 27
+            }
+        },
         "stats": {
-            "instances_month": 1050,
+            "instances_month": 1048,
             "install_events_month": 45,
-            "instances_week": 822,
+            "instances_week": 821,
             "install_events_week": 10
         }
     },
@@ -4800,9 +5236,9 @@
             }
         },
         "stats": {
-            "instances_month": 3318,
-            "install_events_month": 142,
-            "instances_week": 2543,
+            "instances_month": 3320,
+            "install_events_month": 143,
+            "instances_week": 2545,
             "install_events_week": 27
         }
     },
@@ -4934,6 +5370,14 @@
         "license": "AGPLv3",
         "image": "https://plugins.octoprint.org/assets/img/plugins/printtrack/printtrack_title.png",
         "abandoned": false,
+        "github": { 
+            "last_push": "2020-09-25 22:54:18 +0000",
+            "stars": 3,
+            "issues": {
+                "open": 0,
+                "closed": 1
+            }
+        },
         "stats": {
             "instances_month": 158,
             "install_events_month": 5,
@@ -4961,11 +5405,11 @@
         "abandoned": false,
         "github": { 
             "latest_release": {
-                "name": "V 1.0.2",
-                "date": "2019-03-01 00:39:37 +0000",
-                "tag": "1.0.2"
+                "name": "V1.0",
+                "date": "2019-02-27 18:26:28 +0000",
+                "tag": "1.0"
             },
-            "releases": 10,
+            "releases": 12,
             "last_push": "2021-02-04 20:48:34 +0000",
             "stars": 31,
             "issues": {
@@ -4974,9 +5418,9 @@
             }
         },
         "stats": {
-            "instances_month": 66,
+            "instances_month": 67,
             "install_events_month": 2,
-            "instances_week": 47,
+            "instances_week": 48,
             "install_events_week": 0
         }
     },
@@ -5052,8 +5496,8 @@
         },
         "stats": {
             "instances_month": 1462,
-            "install_events_month": 108,
-            "instances_week": 1014,
+            "install_events_month": 107,
+            "instances_week": 1016,
             "install_events_week": 24
         }
     },
@@ -5077,11 +5521,11 @@
         "abandoned": false,
         "github": { 
             "latest_release": {
-                "name": "2.1.2",
-                "date": "2022-01-17 22:47:08 +0000",
-                "tag": "2.1.2"
+                "name": "v1.0.0",
+                "date": "2019-04-02 03:43:54 +0000",
+                "tag": "1.0.0"
             },
-            "releases": 10,
+            "releases": 50,
             "last_push": "2022-02-04 06:31:58 +0000",
             "stars": 42,
             "issues": {
@@ -5129,9 +5573,9 @@
             }
         },
         "stats": {
-            "instances_month": 550,
+            "instances_month": 551,
             "install_events_month": 25,
-            "instances_week": 387,
+            "instances_week": 389,
             "install_events_week": 10
         }
     },
@@ -5155,11 +5599,11 @@
         "abandoned": false,
         "github": { 
             "latest_release": {
-                "name": "0.5.1",
-                "date": "2021-04-12 17:39:09 +0000",
-                "tag": "0.5.1"
+                "name": "0.1.0",
+                "date": "2019-03-25 10:45:56 +0000",
+                "tag": "0.1.0"
             },
-            "releases": 10,
+            "releases": 48,
             "last_push": "2022-07-09 09:19:47 +0000",
             "stars": 35,
             "issues": {
@@ -5168,10 +5612,10 @@
             }
         },
         "stats": {
-            "instances_month": 1025,
-            "install_events_month": 144,
-            "instances_week": 726,
-            "install_events_week": 40
+            "instances_month": 1026,
+            "install_events_month": 145,
+            "instances_week": 728,
+            "install_events_week": 41
         }
     },
 
@@ -5302,6 +5746,20 @@
         "license": "Apache",
         "image": "https://plugins.octoprint.org/assets/img/plugins/PCA9685LEDStripControl/PCA9685_dev_board.jpg",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "first working release",
+                "date": "2019-05-07 08:40:39 +0000",
+                "tag": "0.3.8"
+            },
+            "releases": 2,
+            "last_push": "2019-05-07 17:52:29 +0000",
+            "stars": 2,
+            "issues": {
+                "open": 0,
+                "closed": 0
+            }
+        },
         "stats": {
             "instances_month": 1,
             "install_events_month": 0,
@@ -5327,6 +5785,14 @@
         "license": "AGPLv3",
         "image": "https://plugins.octoprint.org/assets/img/plugins/preprintservice/workflow.png",
         "abandoned": false,
+        "github": { 
+            "last_push": "2022-07-23 19:21:13 +0000",
+            "stars": 11,
+            "issues": {
+                "open": 1,
+                "closed": 7
+            }
+        },
         "stats": {
             "instances_month": 24,
             "install_events_month": 5,
@@ -5354,11 +5820,11 @@
         "abandoned": false,
         "github": { 
             "latest_release": {
-                "name": "0.3.5",
-                "date": "2021-08-20 22:28:54 +0000",
-                "tag": "0.3.5"
+                "name": "0.1.2",
+                "date": "2019-06-17 01:23:45 +0000",
+                "tag": "0.1.2"
             },
-            "releases": 10,
+            "releases": 27,
             "last_push": "2022-08-07 01:31:59 +0000",
             "stars": 60,
             "issues": {
@@ -5367,9 +5833,9 @@
             }
         },
         "stats": {
-            "instances_month": 5320,
-            "install_events_month": 367,
-            "instances_week": 4180,
+            "instances_month": 5318,
+            "install_events_month": 368,
+            "instances_week": 4177,
             "install_events_week": 80
         }
     },
@@ -5402,7 +5868,7 @@
         "stats": {
             "instances_month": 312,
             "install_events_month": 32,
-            "instances_week": 239,
+            "instances_week": 237,
             "install_events_week": 9
         }
     },
@@ -5424,10 +5890,18 @@
         "license": "bsd-3-clause",
         "image": "https://plugins.octoprint.org/assets/img/plugins/Change_Filament/cf_buttons.png",
         "abandoned": false,
+        "github": { 
+            "last_push": "2021-01-03 23:21:43 +0000",
+            "stars": 14,
+            "issues": {
+                "open": 15,
+                "closed": 20
+            }
+        },
         "stats": {
-            "instances_month": 5131,
-            "install_events_month": 414,
-            "instances_week": 3861,
+            "instances_month": 5129,
+            "install_events_month": 413,
+            "instances_week": 3860,
             "install_events_week": 94
         }
     },
@@ -5449,10 +5923,24 @@
         "license": "MIT",
         "image": "https://raw.githubusercontent.com/juniorRubyist/OctoPrint-OctoFlat/master/assets/octoprint_1.png",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "OctoFlat Reaction",
+                "date": "2019-06-02 03:05:19 +0000",
+                "tag": "0.2.0"
+            },
+            "releases": 1,
+            "last_push": "2020-06-27 19:21:22 +0000",
+            "stars": 5,
+            "issues": {
+                "open": 0,
+                "closed": 1
+            }
+        },
         "stats": {
             "instances_month": 124,
             "install_events_month": 10,
-            "instances_week": 85,
+            "instances_week": 84,
             "install_events_week": 0
         }
     },
@@ -5524,7 +6012,7 @@
         "stats": {
             "instances_month": 362,
             "install_events_month": 11,
-            "instances_week": 294,
+            "instances_week": 293,
             "install_events_week": 2
         }
     },
@@ -5545,6 +6033,14 @@
         },
         "license": "AGPLv3",
         "abandoned": false,
+        "github": { 
+            "last_push": "2019-06-05 17:21:20 +0000",
+            "stars": 5,
+            "issues": {
+                "open": 3,
+                "closed": 0
+            }
+        },
         "stats": {
             "instances_month": 55,
             "install_events_month": 0,
@@ -5586,7 +6082,7 @@
         "stats": {
             "instances_month": 987,
             "install_events_month": 74,
-            "instances_week": 800,
+            "instances_week": 799,
             "install_events_week": 19
         }
     },
@@ -5623,10 +6119,10 @@
             }
         },
         "stats": {
-            "instances_month": 2466,
+            "instances_month": 2468,
             "install_events_month": 191,
-            "instances_week": 1792,
-            "install_events_week": 41
+            "instances_week": 1795,
+            "install_events_week": 42
         }
     },
 
@@ -5685,11 +6181,25 @@
         "license": "AGPLv3",
         "image": "https://plugins.octoprint.org/assets/img/plugins/dashboard/screenshot-2.png",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "1.0.0",
+                "date": "2019-09-09 22:52:54 +0000",
+                "tag": "1.0.0"
+            },
+            "releases": 47,
+            "last_push": "2022-10-11 05:08:09 +0000",
+            "stars": 252,
+            "issues": {
+                "open": 32,
+                "closed": 271
+            }
+        },
         "stats": {
-            "instances_month": 19860,
-            "install_events_month": 2070,
-            "instances_week": 15378,
-            "install_events_week": 425
+            "instances_month": 19859,
+            "install_events_month": 2072,
+            "instances_week": 15383,
+            "install_events_week": 421
         }
     },
 
@@ -5710,10 +6220,24 @@
         "license": "AGPLv3",
         "image": "https://plugins.octoprint.org/assets/img/plugins/octovox/alexa_response.png",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "Initial Release",
+                "date": "2019-08-18 20:51:35 +0000",
+                "tag": "0.1.2"
+            },
+            "releases": 4,
+            "last_push": "2019-10-20 22:41:59 +0000",
+            "stars": 27,
+            "issues": {
+                "open": 20,
+                "closed": 8
+            }
+        },
         "stats": {
             "instances_month": 494,
             "install_events_month": 30,
-            "instances_week": 390,
+            "instances_week": 391,
             "install_events_week": 11
         }
     },
@@ -5907,7 +6431,7 @@
         "stats": {
             "instances_month": 1014,
             "install_events_month": 56,
-            "instances_week": 781,
+            "instances_week": 778,
             "install_events_week": 10
         }
     },
@@ -5972,10 +6496,10 @@
             }
         },
         "stats": {
-            "instances_month": 5329,
+            "instances_month": 5332,
             "install_events_month": 553,
             "instances_week": 3808,
-            "install_events_week": 137
+            "install_events_week": 139
         }
     },
 
@@ -6010,10 +6534,10 @@
             }
         },
         "stats": {
-            "instances_month": 1115,
+            "instances_month": 1116,
             "install_events_month": 118,
             "instances_week": 789,
-            "install_events_week": 32
+            "install_events_week": 31
         }
     },
 
@@ -6075,11 +6599,11 @@
         "abandoned": false,
         "github": { 
             "latest_release": {
-                "name": "1.8.12",
-                "date": "2022-03-09 12:32:20 +0000",
-                "tag": "1.8.12"
+                "name": "Pause/Resume scripts",
+                "date": "2019-03-23 00:11:18 +0000",
+                "tag": "0.5.0"
             },
-            "releases": 10,
+            "releases": 87,
             "last_push": "2022-10-19 03:50:11 +0000",
             "stars": 124,
             "issues": {
@@ -6088,10 +6612,10 @@
             }
         },
         "stats": {
-            "instances_month": 9115,
-            "install_events_month": 2077,
-            "instances_week": 6360,
-            "install_events_week": 603
+            "instances_month": 9112,
+            "install_events_month": 2079,
+            "instances_week": 6351,
+            "install_events_week": 599
         }
     },
 
@@ -6126,9 +6650,9 @@
             }
         },
         "stats": {
-            "instances_month": 5595,
+            "instances_month": 5597,
             "install_events_month": 246,
-            "instances_week": 3799,
+            "instances_week": 3796,
             "install_events_week": 48
         }
     },
@@ -6150,11 +6674,25 @@
         "license": "AGPLv3",
         "image": "https://plugins.octoprint.org/assets/img/plugins/UltimakerFormatPackage/screenshot_thumbnail.png",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "0.0.2",
+                "date": "2019-08-17 22:55:04 +0000",
+                "tag": "0.0.2"
+            },
+            "releases": 29,
+            "last_push": "2022-09-24 02:27:32 +0000",
+            "stars": 26,
+            "issues": {
+                "open": 1,
+                "closed": 38
+            }
+        },
         "stats": {
-            "instances_month": 6206,
-            "install_events_month": 575,
-            "instances_week": 4559,
-            "install_events_week": 142
+            "instances_month": 6202,
+            "install_events_month": 573,
+            "instances_week": 4545,
+            "install_events_week": 141
         }
     },
 
@@ -6174,6 +6712,14 @@
         },
         "license": "AGPLv3",
         "abandoned": true,
+        "github": { 
+            "last_push": "2019-11-25 18:03:40 +0000",
+            "stars": 12,
+            "issues": {
+                "open": 0,
+                "closed": 0
+            }
+        },
         "stats": {
             "instances_month": 47,
             "install_events_month": 0,
@@ -6240,11 +6786,11 @@
         "abandoned": false,
         "github": { 
             "latest_release": {
-                "name": "0.3.9",
-                "date": "2022-10-10 18:18:52 +0000",
-                "tag": "0.3.9"
+                "name": "0.1.0",
+                "date": "2019-11-30 23:30:40 +0000",
+                "tag": "0.1.0"
             },
-            "releases": 10,
+            "releases": 41,
             "last_push": "2022-10-10 18:15:35 +0000",
             "stars": 32,
             "issues": {
@@ -6253,9 +6799,9 @@
             }
         },
         "stats": {
-            "instances_month": 7426,
-            "install_events_month": 631,
-            "instances_week": 4668,
+            "instances_month": 7415,
+            "install_events_month": 630,
+            "instances_week": 4664,
             "install_events_week": 133
         }
     },
@@ -6317,11 +6863,11 @@
         "abandoned": false,
         "github": { 
             "latest_release": {
-                "name": "1.0.8",
-                "date": "2020-03-22 23:49:15 +0000",
-                "tag": "1.0.8"
+                "name": "0.1.0",
+                "date": "2019-12-14 23:06:08 +0000",
+                "tag": "0.1.0"
             },
-            "releases": 10,
+            "releases": 20,
             "last_push": "2021-02-23 19:18:17 +0000",
             "stars": 36,
             "issues": {
@@ -6331,8 +6877,8 @@
         },
         "stats": {
             "instances_month": 3212,
-            "install_events_month": 204,
-            "instances_week": 2512,
+            "install_events_month": 203,
+            "instances_week": 2510,
             "install_events_week": 54
         }
     },
@@ -6354,6 +6900,20 @@
         "license": "AGPLv3",
         "image": "https://plugins.octoprint.org/assets/img/plugins/octohue/Featured-Image.png",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "Octohue MVP",
+                "date": "2020-01-25 09:36:51 +0000",
+                "tag": "0.1.0"
+            },
+            "releases": 7,
+            "last_push": "2020-03-10 11:23:24 +0000",
+            "stars": 16,
+            "issues": {
+                "open": 16,
+                "closed": 13
+            }
+        },
         "stats": {
             "instances_month": 317,
             "install_events_month": 14,
@@ -6379,10 +6939,24 @@
         "license": "AGPLv3",
         "image": "https://plugins.octoprint.org/assets/img/plugins/progress_title/title.png",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "v0.1.0",
+                "date": "2020-07-30 04:52:48 +0000",
+                "tag": "v0.1.0"
+            },
+            "releases": 3,
+            "last_push": "2021-11-04 05:57:19 +0000",
+            "stars": 3,
+            "issues": {
+                "open": 0,
+                "closed": 2
+            }
+        },
         "stats": {
-            "instances_month": 740,
+            "instances_month": 741,
             "install_events_month": 29,
-            "instances_week": 583,
+            "instances_week": 584,
             "install_events_week": 7
         }
     },
@@ -6406,11 +6980,11 @@
         "abandoned": false,
         "github": { 
             "latest_release": {
-                "name": "0.1.3",
-                "date": "2020-02-08 01:38:07 +0000",
-                "tag": "0.1.3"
+                "name": "0.1.1",
+                "date": "2020-02-01 20:36:33 +0000",
+                "tag": "0.1.1"
             },
-            "releases": 10,
+            "releases": 12,
             "last_push": "2022-09-24 02:27:35 +0000",
             "stars": 6,
             "issues": {
@@ -6420,9 +6994,9 @@
         },
         "stats": {
             "instances_month": 1733,
-            "install_events_month": 62,
-            "instances_week": 1231,
-            "install_events_week": 19
+            "install_events_month": 63,
+            "instances_week": 1229,
+            "install_events_week": 20
         }
     },
 
@@ -6513,11 +7087,25 @@
         },
         "license": "AGPLv3",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "0.1.0",
+                "date": "2020-03-25 16:01:44 +0000",
+                "tag": "0.1.0"
+            },
+            "releases": 5,
+            "last_push": "2022-06-23 12:11:23 +0000",
+            "stars": 4,
+            "issues": {
+                "open": 0,
+                "closed": 3
+            }
+        },
         "stats": {
-            "instances_month": 518,
-            "install_events_month": 35,
-            "instances_week": 393,
-            "install_events_week": 7
+            "instances_month": 519,
+            "install_events_month": 36,
+            "instances_week": 392,
+            "install_events_week": 8
         }
     },
 
@@ -6540,7 +7128,7 @@
         "stats": {
             "instances_month": 239,
             "install_events_month": 0,
-            "instances_week": 164,
+            "instances_week": 165,
             "install_events_week": 0
         }
     },
@@ -6561,6 +7149,20 @@
         },
         "license": "AGPLv3",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "0.1.0",
+                "date": "2020-03-30 04:57:07 +0000",
+                "tag": "0.1.0"
+            },
+            "releases": 7,
+            "last_push": "2022-09-24 02:27:10 +0000",
+            "stars": 7,
+            "issues": {
+                "open": 0,
+                "closed": 3
+            }
+        },
         "stats": {
             "instances_month": 93,
             "install_events_month": 2,
@@ -6585,10 +7187,18 @@
         },
         "license": "AGPLv3",
         "abandoned": false,
+        "github": { 
+            "last_push": "2022-09-24 02:26:41 +0000",
+            "stars": 3,
+            "issues": {
+                "open": 0,
+                "closed": 0
+            }
+        },
         "stats": {
             "instances_month": 314,
             "install_events_month": 7,
-            "instances_week": 238,
+            "instances_week": 237,
             "install_events_week": 2
         }
     },
@@ -6612,11 +7222,11 @@
         "abandoned": false,
         "github": { 
             "latest_release": {
-                "name": "1.0.1",
-                "date": "2022-10-15 19:45:38 +0000",
-                "tag": "1.0.1"
+                "name": "0.0.1",
+                "date": "2020-04-21 22:06:51 +0000",
+                "tag": "0.0.1"
             },
-            "releases": 10,
+            "releases": 34,
             "last_push": "2022-10-15 19:40:00 +0000",
             "stars": 63,
             "issues": {
@@ -6625,10 +7235,10 @@
             }
         },
         "stats": {
-            "instances_month": 11361,
-            "install_events_month": 1025,
-            "instances_week": 8883,
-            "install_events_week": 293
+            "instances_month": 11359,
+            "install_events_month": 1027,
+            "instances_week": 8857,
+            "install_events_week": 290
         }
     },
 
@@ -6665,8 +7275,8 @@
         },
         "stats": {
             "instances_month": 919,
-            "install_events_month": 137,
-            "instances_week": 681,
+            "install_events_month": 136,
+            "instances_week": 682,
             "install_events_week": 23
         }
     },
@@ -6690,11 +7300,11 @@
         "abandoned": false,
         "github": { 
             "latest_release": {
-                "name": "2.1.1",
-                "date": "2022-08-24 14:08:31 +0000",
-                "tag": "2.1.1"
+                "name": "1.4.1",
+                "date": "2022-03-13 02:52:04 +0000",
+                "tag": "1.4.1"
             },
-            "releases": 10,
+            "releases": 24,
             "last_push": "2022-09-10 13:44:41 +0000",
             "stars": 25,
             "issues": {
@@ -6705,7 +7315,7 @@
         "stats": {
             "instances_month": 907,
             "install_events_month": 115,
-            "instances_week": 669,
+            "instances_week": 668,
             "install_events_week": 32
         }
     },
@@ -6766,6 +7376,20 @@
         "license": "AGPLv3",
         "image": "https://github.com/OllisGit/OctoPrint-TemperatureLegendMover/raw/master/screenshots/temperature-legend.png",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "V1.0.0",
+                "date": "2020-04-25 14:34:37 +0000",
+                "tag": "1.0.0"
+            },
+            "releases": 1,
+            "last_push": "2020-04-25 15:07:25 +0000",
+            "stars": 4,
+            "issues": {
+                "open": 2,
+                "closed": 0
+            }
+        },
         "stats": {
             "instances_month": 153,
             "install_events_month": 4,
@@ -6823,6 +7447,20 @@
         "license": "AGPLv3",
         "image": "https://plugins.octoprint.org/assets/img/plugins/webhooks/Featured.png",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "First Test Candidate",
+                "date": "2020-04-28 04:52:57 +0000",
+                "tag": "0.1.0"
+            },
+            "releases": 20,
+            "last_push": "2021-02-28 03:33:37 +0000",
+            "stars": 27,
+            "issues": {
+                "open": 17,
+                "closed": 16
+            }
+        },
         "stats": {
             "instances_month": 373,
             "install_events_month": 24,
@@ -6864,7 +7502,7 @@
         "stats": {
             "instances_month": 1920,
             "install_events_month": 88,
-            "instances_week": 1464,
+            "instances_week": 1461,
             "install_events_week": 28
         }
     },
@@ -6901,9 +7539,9 @@
             }
         },
         "stats": {
-            "instances_month": 1276,
-            "install_events_month": 91,
-            "instances_week": 952,
+            "instances_month": 1277,
+            "install_events_month": 90,
+            "instances_week": 951,
             "install_events_week": 23
         }
     },
@@ -6925,6 +7563,20 @@
         "license": "AGPLv3",
         "image": "https://plugins.octoprint.org/assets/img/plugins/terminalresponse/01.png",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "0.1.4",
+                "date": "2021-05-03 08:37:49 +0000",
+                "tag": "0.1.4"
+            },
+            "releases": 1,
+            "last_push": "2021-05-03 08:32:30 +0000",
+            "stars": 3,
+            "issues": {
+                "open": 1,
+                "closed": 4
+            }
+        },
         "stats": {
             "instances_month": 36,
             "install_events_month": 2,
@@ -6951,11 +7603,11 @@
         "abandoned": true,
         "github": { 
             "latest_release": {
-                "name": "0.1.20",
-                "date": "2020-08-14 22:46:41 +0000",
-                "tag": "0.1.20"
+                "name": "",
+                "date": "2019-12-09 23:45:43 +0000",
+                "tag": "0.1.6"
             },
-            "releases": 10,
+            "releases": 23,
             "last_push": "2022-03-09 18:30:42 +0000",
             "stars": 74,
             "issues": {
@@ -7026,8 +7678,22 @@
         "license": "AGPLv3",
         "image": "https://plugins.octoprint.org/assets/img/plugins/multilineterminal/screenshot.png",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "0.1.0",
+                "date": "2020-05-21 22:38:03 +0000",
+                "tag": "0.1.0"
+            },
+            "releases": 6,
+            "last_push": "2022-09-24 02:27:04 +0000",
+            "stars": 5,
+            "issues": {
+                "open": 0,
+                "closed": 7
+            }
+        },
         "stats": {
-            "instances_month": 312,
+            "instances_month": 311,
             "install_events_month": 16,
             "instances_week": 255,
             "install_events_week": 4
@@ -7051,6 +7717,20 @@
         "license": "AGPLv3",
         "image": "https://plugins.octoprint.org/assets/img/plugins/ikea_tradfri/navbar.png",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "1.0.0",
+                "date": "2019-08-18 13:54:35 +0000",
+                "tag": "1.0.0"
+            },
+            "releases": 26,
+            "last_push": "2021-11-04 23:05:17 +0000",
+            "stars": 11,
+            "issues": {
+                "open": 4,
+                "closed": 41
+            }
+        },
         "stats": {
             "instances_month": 96,
             "install_events_month": 4,
@@ -7091,7 +7771,7 @@
             }
         },
         "stats": {
-            "instances_month": 218,
+            "instances_month": 219,
             "install_events_month": 10,
             "instances_week": 173,
             "install_events_week": 4
@@ -7117,11 +7797,11 @@
         "abandoned": false,
         "github": { 
             "latest_release": {
-                "name": "V1.13.0",
-                "date": "2021-05-16 17:23:45 +0000",
-                "tag": "1.13.0"
+                "name": "V1.17.0",
+                "date": "2022-03-18 21:05:05 +0000",
+                "tag": "1.17.0"
             },
-            "releases": 10,
+            "releases": 32,
             "last_push": "2022-03-18 21:00:52 +0000",
             "stars": 133,
             "issues": {
@@ -7132,7 +7812,7 @@
         "stats": {
             "instances_month": 3000,
             "install_events_month": 196,
-            "instances_week": 2330,
+            "instances_week": 2325,
             "install_events_week": 48
         }
     },
@@ -7153,6 +7833,20 @@
         },
         "license": "AGPLv3",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "0.1.1",
+                "date": "2019-11-29 20:51:20 +0000",
+                "tag": "0.1.1"
+            },
+            "releases": 8,
+            "last_push": "2022-09-24 02:27:01 +0000",
+            "stars": 11,
+            "issues": {
+                "open": 2,
+                "closed": 23
+            }
+        },
         "stats": {
             "instances_month": 242,
             "install_events_month": 17,
@@ -7272,7 +7966,7 @@
         "stats": {
             "instances_month": 140,
             "install_events_month": 9,
-            "instances_week": 113,
+            "instances_week": 114,
             "install_events_week": 0
         }
     },
@@ -7311,7 +8005,7 @@
         "stats": {
             "instances_month": 260,
             "install_events_month": 14,
-            "instances_week": 205,
+            "instances_week": 206,
             "install_events_week": 4
         }
     },
@@ -7349,7 +8043,7 @@
         },
         "stats": {
             "instances_month": 187,
-            "install_events_month": 27,
+            "install_events_month": 26,
             "instances_week": 125,
             "install_events_week": 8
         }
@@ -7388,8 +8082,8 @@
         "stats": {
             "instances_month": 489,
             "install_events_month": 49,
-            "instances_week": 342,
-            "install_events_week": 16
+            "instances_week": 341,
+            "install_events_week": 15
         }
     },
 
@@ -7425,9 +8119,9 @@
             }
         },
         "stats": {
-            "instances_month": 2481,
-            "install_events_month": 203,
-            "instances_week": 1872,
+            "instances_month": 2478,
+            "install_events_month": 202,
+            "instances_week": 1870,
             "install_events_week": 49
         }
     },
@@ -7466,8 +8160,8 @@
         "stats": {
             "instances_month": 691,
             "install_events_month": 65,
-            "instances_week": 524,
-            "install_events_week": 16
+            "instances_week": 522,
+            "install_events_week": 15
         }
     },
 
@@ -7488,6 +8182,20 @@
         "license": "AGPLv3",
         "image": "https://plugins.octoprint.org/assets/img/plugins/signalclirestapi/config1.png",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "Version 0.1.1",
+                "date": "2021-10-21 16:43:35 +0000",
+                "tag": "0.1.1"
+            },
+            "releases": 1,
+            "last_push": "2021-10-21 16:40:46 +0000",
+            "stars": 5,
+            "issues": {
+                "open": 1,
+                "closed": 1
+            }
+        },
         "stats": {
             "instances_month": 16,
             "install_events_month": 2,
@@ -7554,11 +8262,11 @@
         "abandoned": false,
         "github": { 
             "latest_release": {
-                "name": "0.1.2",
-                "date": "2018-09-29 03:57:39 +0000",
-                "tag": "0.1.2"
+                "name": "0.1.0",
+                "date": "2018-09-21 17:58:41 +0000",
+                "tag": "0.1.0"
             },
-            "releases": 10,
+            "releases": 12,
             "last_push": "2022-09-24 02:26:43 +0000",
             "stars": 15,
             "issues": {
@@ -7567,9 +8275,9 @@
             }
         },
         "stats": {
-            "instances_month": 1671,
+            "instances_month": 1672,
             "install_events_month": 125,
-            "instances_week": 1267,
+            "instances_week": 1264,
             "install_events_week": 28
         }
     },
@@ -7606,7 +8314,7 @@
             }
         },
         "stats": {
-            "instances_month": 1759,
+            "instances_month": 1758,
             "install_events_month": 165,
             "instances_week": 1320,
             "install_events_week": 38
@@ -7632,11 +8340,11 @@
         "abandoned": false,
         "github": { 
             "latest_release": {
-                "name": "3.2.1",
-                "date": "2021-01-22 02:40:34 +0000",
-                "tag": "3.2.1"
+                "name": "Release 1.0.1",
+                "date": "2020-06-19 23:49:19 +0000",
+                "tag": "1.0.1"
             },
-            "releases": 10,
+            "releases": 33,
             "last_push": "2022-08-06 15:54:50 +0000",
             "stars": 96,
             "issues": {
@@ -7645,10 +8353,10 @@
             }
         },
         "stats": {
-            "instances_month": 2627,
+            "instances_month": 2628,
             "install_events_month": 216,
-            "instances_week": 2101,
-            "install_events_week": 55
+            "instances_week": 2103,
+            "install_events_week": 54
         }
     },
 
@@ -7670,9 +8378,9 @@
         "image": "https://plugins.octoprint.org/assets/img/plugins/z_probe_offset/z_probe_offset_control.png",
         "abandoned": false,
         "stats": {
-            "instances_month": 3699,
-            "install_events_month": 425,
-            "instances_week": 2712,
+            "instances_month": 3700,
+            "install_events_month": 426,
+            "instances_week": 2708,
             "install_events_week": 115
         }
     },
@@ -7705,7 +8413,7 @@
         "stats": {
             "instances_month": 318,
             "install_events_month": 11,
-            "instances_week": 238,
+            "instances_week": 239,
             "install_events_week": 2
         }
     },
@@ -7727,10 +8435,24 @@
         "license": "MIT",
         "image": "https://plugins.octoprint.org/assets/img/plugins/RewriteM600/M600-in-action.png",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "v1.0.2",
+                "date": "2020-07-02 04:17:32 +0000",
+                "tag": "v1.0.2"
+            },
+            "releases": 4,
+            "last_push": "2021-10-02 18:41:15 +0000",
+            "stars": 9,
+            "issues": {
+                "open": 6,
+                "closed": 2
+            }
+        },
         "stats": {
             "instances_month": 312,
             "install_events_month": 21,
-            "instances_week": 220,
+            "instances_week": 219,
             "install_events_week": 6
         }
     },
@@ -7769,7 +8491,7 @@
         "stats": {
             "instances_month": 379,
             "install_events_month": 41,
-            "instances_week": 280,
+            "instances_week": 279,
             "install_events_week": 10
         }
     },
@@ -7845,7 +8567,7 @@
             }
         },
         "stats": {
-            "instances_month": 297,
+            "instances_month": 296,
             "install_events_month": 36,
             "instances_week": 226,
             "install_events_week": 5
@@ -7886,7 +8608,7 @@
         "stats": {
             "instances_month": 538,
             "install_events_month": 45,
-            "instances_week": 408,
+            "instances_week": 407,
             "install_events_week": 9
         }
     },
@@ -8005,8 +8727,16 @@
         "license": "MIT",
         "image": "https://plugins.octoprint.org/assets/img/plugins/gridspace/Kiri-In-OctoPrint.png",
         "abandoned": false,
+        "github": { 
+            "last_push": "2022-10-22 20:19:54 +0000",
+            "stars": 5,
+            "issues": {
+                "open": 3,
+                "closed": 2
+            }
+        },
         "stats": {
-            "instances_month": 79,
+            "instances_month": 78,
             "install_events_month": 8,
             "instances_week": 54,
             "install_events_week": 1
@@ -8047,7 +8777,7 @@
         "stats": {
             "instances_month": 363,
             "install_events_month": 52,
-            "instances_week": 274,
+            "instances_week": 273,
             "install_events_week": 18
         }
     },
@@ -8069,10 +8799,24 @@
         "license": "AGPLv3",
         "image": "https://plugins.octoprint.org/assets/img/plugins/cooldownfan/cool-down-fan-config-screen.jpg",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "1.0.0",
+                "date": "2020-07-16 07:40:04 +0000",
+                "tag": "1.0.0"
+            },
+            "releases": 1,
+            "last_push": "2020-07-17 03:05:44 +0000",
+            "stars": 6,
+            "issues": {
+                "open": 4,
+                "closed": 1
+            }
+        },
         "stats": {
-            "instances_month": 124,
+            "instances_month": 125,
             "install_events_month": 6,
-            "instances_week": 95,
+            "instances_week": 96,
             "install_events_week": 3
         }
     },
@@ -8129,11 +8873,11 @@
         "abandoned": false,
         "github": { 
             "latest_release": {
-                "name": "Bugfixing",
-                "date": "2015-07-28 08:13:20 +0000",
-                "tag": "0.7"
+                "name": "Working version",
+                "date": "2015-06-23 18:12:35 +0000",
+                "tag": "0.4"
             },
-            "releases": 10,
+            "releases": 14,
             "last_push": "2021-11-04 12:16:24 +0000",
             "stars": 60,
             "issues": {
@@ -8142,9 +8886,9 @@
             }
         },
         "stats": {
-            "instances_month": 1306,
+            "instances_month": 1305,
             "install_events_month": 92,
-            "instances_week": 1074,
+            "instances_week": 1072,
             "install_events_week": 15
         }
     },
@@ -8168,11 +8912,11 @@
         "abandoned": false,
         "github": { 
             "latest_release": {
-                "name": "0.7.0 (Stable Release)",
-                "date": "2021-03-11 20:17:52 +0000",
-                "tag": "0.7.0"
+                "name": "v0.1.1 Initial Release!",
+                "date": "2020-07-14 10:47:52 +0000",
+                "tag": "0.1.1"
             },
-            "releases": 10,
+            "releases": 26,
             "last_push": "2022-07-01 21:21:34 +0000",
             "stars": 92,
             "issues": {
@@ -8183,8 +8927,8 @@
         "stats": {
             "instances_month": 951,
             "install_events_month": 97,
-            "instances_week": 690,
-            "install_events_week": 20
+            "instances_week": 687,
+            "install_events_week": 19
         }
     },
 
@@ -8220,7 +8964,7 @@
             }
         },
         "stats": {
-            "instances_month": 229,
+            "instances_month": 230,
             "install_events_month": 23,
             "instances_week": 163,
             "install_events_week": 3
@@ -8246,11 +8990,11 @@
         "abandoned": false,
         "github": { 
             "latest_release": {
-                "name": "0.1.0",
-                "date": "2020-08-22 17:04:50 +0000",
-                "tag": "0.1.0"
+                "name": "0.0.1",
+                "date": "2020-06-29 04:04:52 +0000",
+                "tag": "0.0.1"
             },
-            "releases": 10,
+            "releases": 19,
             "last_push": "2022-09-24 02:26:42 +0000",
             "stars": 18,
             "issues": {
@@ -8283,6 +9027,20 @@
         "license": "MIT",
         "image": "https://plugins.octoprint.org/assets/img/plugins/octotweet/twitter.jpg",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "v1.0.1",
+                "date": "2020-08-14 09:59:19 +0000",
+                "tag": "v1.0.1"
+            },
+            "releases": 4,
+            "last_push": "2020-11-07 16:37:07 +0000",
+            "stars": 2,
+            "issues": {
+                "open": 3,
+                "closed": 0
+            }
+        },
         "stats": {
             "instances_month": 35,
             "install_events_month": 1,
@@ -8307,6 +9065,14 @@
         },
         "license": "AGPLv3",
         "abandoned": false,
+        "github": { 
+            "last_push": "2020-08-17 06:01:47 +0000",
+            "stars": 1,
+            "issues": {
+                "open": 0,
+                "closed": 3
+            }
+        },
         "stats": {
             "instances_month": 24,
             "install_events_month": 1,
@@ -8333,11 +9099,11 @@
         "abandoned": false,
         "github": { 
             "latest_release": {
-                "name": "Bridge IP refinder",
-                "date": "2020-11-07 10:57:55 +0000",
-                "tag": "1.3.1"
+                "name": "Delayed Shutdown",
+                "date": "2020-08-20 15:25:23 +0000",
+                "tag": "1.1.0"
             },
-            "releases": 10,
+            "releases": 17,
             "last_push": "2022-09-28 21:36:40 +0000",
             "stars": 7,
             "issues": {
@@ -8385,10 +9151,10 @@
             }
         },
         "stats": {
-            "instances_month": 13842,
-            "install_events_month": 1297,
-            "instances_week": 10537,
-            "install_events_week": 289
+            "instances_month": 13834,
+            "install_events_month": 1294,
+            "instances_week": 10532,
+            "install_events_week": 288
         }
     },
 
@@ -8411,11 +9177,11 @@
         "abandoned": false,
         "github": { 
             "latest_release": {
-                "name": "1.1.1",
-                "date": "2020-08-25 18:48:39 +0000",
-                "tag": "1.1.1"
+                "name": "Initial public release",
+                "date": "2020-08-21 09:02:25 +0000",
+                "tag": "v0.9.0"
             },
-            "releases": 10,
+            "releases": 19,
             "last_push": "2020-08-25 18:48:35 +0000",
             "stars": 2,
             "issues": {
@@ -8450,11 +9216,11 @@
         "abandoned": false,
         "github": { 
             "latest_release": {
-                "name": "V1.3.4",
-                "date": "2021-04-17 08:41:32 +0000",
-                "tag": "1.3.4"
+                "name": "V1.0.0rc1",
+                "date": "2020-07-14 22:16:36 +0000",
+                "tag": "1.0.0rc1"
             },
-            "releases": 10,
+            "releases": 21,
             "last_push": "2022-03-18 16:06:29 +0000",
             "stars": 146,
             "issues": {
@@ -8463,9 +9229,9 @@
             }
         },
         "stats": {
-            "instances_month": 3796,
-            "install_events_month": 303,
-            "instances_week": 2838,
+            "instances_month": 3797,
+            "install_events_month": 304,
+            "instances_week": 2832,
             "install_events_week": 61
         }
     },
@@ -8486,11 +9252,25 @@
         },
         "license": "MIT",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "0.0.2",
+                "date": "2020-09-07 17:15:59 +0000",
+                "tag": "0.0.2"
+            },
+            "releases": 3,
+            "last_push": "2021-04-26 18:52:11 +0000",
+            "stars": 23,
+            "issues": {
+                "open": 2,
+                "closed": 15
+            }
+        },
         "stats": {
-            "instances_month": 16675,
+            "instances_month": 16672,
             "install_events_month": 1416,
-            "instances_week": 11883,
-            "install_events_week": 317
+            "instances_week": 11860,
+            "install_events_week": 319
         }
     },
 
@@ -8511,11 +9291,25 @@
         "license": "MIT",
         "image": "https://plugins.octoprint.org/assets/img/plugins/backupscheduler/screenshot_settings.png",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "0.0.1",
+                "date": "2020-09-19 08:24:17 +0000",
+                "tag": "0.0.1"
+            },
+            "releases": 11,
+            "last_push": "2022-09-24 02:26:44 +0000",
+            "stars": 10,
+            "issues": {
+                "open": 2,
+                "closed": 18
+            }
+        },
         "stats": {
             "instances_month": 1714,
-            "install_events_month": 99,
-            "instances_week": 1394,
-            "install_events_week": 21
+            "install_events_month": 100,
+            "instances_week": 1387,
+            "install_events_week": 22
         }
     },
 
@@ -8553,7 +9347,7 @@
         "stats": {
             "instances_month": 1041,
             "install_events_month": 90,
-            "instances_week": 810,
+            "instances_week": 807,
             "install_events_week": 24
         }
     },
@@ -8640,11 +9434,11 @@
         "abandoned": false,
         "github": { 
             "latest_release": {
-                "name": "Release 0.9.2",
-                "date": "2020-09-28 20:00:12 +0000",
-                "tag": "v0.9.2"
+                "name": "Release 0.9.0",
+                "date": "2020-09-28 18:15:27 +0000",
+                "tag": "v0.9.0"
             },
-            "releases": 10,
+            "releases": 12,
             "last_push": "2022-05-20 13:51:46 +0000",
             "stars": 16,
             "issues": {
@@ -8656,7 +9450,7 @@
             "instances_month": 2045,
             "install_events_month": 147,
             "instances_week": 1557,
-            "install_events_week": 38
+            "install_events_week": 37
         }
     },
 
@@ -8677,6 +9471,14 @@
         "license": "AGPLv3",
         "image": "https://plugins.octoprint.org/assets/img/plugins/MakerOS/Octoprint-Makeros-projects.png",
         "abandoned": false,
+        "github": { 
+            "last_push": "2020-11-23 15:28:16 +0000",
+            "stars": 0,
+            "issues": {
+                "open": 0,
+                "closed": 2
+            }
+        },
         "stats": {
             "instances_month": 9,
             "install_events_month": 1,
@@ -8702,10 +9504,24 @@
         "license": "AGPLv3",
         "image": "https://plugins.octoprint.org/assets/img/plugins/wifistatus/WiFiStatus.png",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "1.0.0",
+                "date": "2020-10-08 23:58:28 +0000",
+                "tag": "1.0.0"
+            },
+            "releases": 16,
+            "last_push": "2021-10-06 01:59:12 +0000",
+            "stars": 10,
+            "issues": {
+                "open": 0,
+                "closed": 17
+            }
+        },
         "stats": {
-            "instances_month": 3063,
-            "install_events_month": 305,
-            "instances_week": 2206,
+            "instances_month": 3065,
+            "install_events_month": 307,
+            "instances_week": 2204,
             "install_events_week": 85
         }
     },
@@ -8745,7 +9561,7 @@
         "stats": {
             "instances_month": 600,
             "install_events_month": 74,
-            "instances_week": 469,
+            "instances_week": 470,
             "install_events_week": 24
         }
     },
@@ -8781,10 +9597,10 @@
             }
         },
         "stats": {
-            "instances_month": 586,
+            "instances_month": 585,
             "install_events_month": 79,
-            "instances_week": 434,
-            "install_events_week": 20
+            "instances_week": 433,
+            "install_events_week": 19
         }
     },
 
@@ -8850,7 +9666,7 @@
                 "date": "2020-10-24 22:19:14 +0000",
                 "tag": "1.0.0"
             },
-            "releases": 10,
+            "releases": 11,
             "last_push": "2020-10-25 21:25:50 +0000",
             "stars": 378,
             "issues": {
@@ -8859,10 +9675,10 @@
             }
         },
         "stats": {
-            "instances_month": 8194,
-            "install_events_month": 1061,
-            "instances_week": 6061,
-            "install_events_week": 245
+            "instances_month": 8196,
+            "install_events_month": 1063,
+            "instances_week": 6059,
+            "install_events_week": 247
         }
     },
 
@@ -8885,11 +9701,11 @@
         "abandoned": false,
         "github": { 
             "latest_release": {
-                "name": "📷 Smoother Streaming And Better Webcam Compatibility!",
-                "date": "2022-06-23 20:03:31 +0000",
-                "tag": "1.8.1"
+                "name": "Important Update! 🎉 Welcome to 1.0!!",
+                "date": "2022-06-06 03:53:41 +0000",
+                "tag": "1.0.0"
             },
-            "releases": 10,
+            "releases": 13,
             "last_push": "2022-10-14 17:24:30 +0000",
             "stars": 48,
             "issues": {
@@ -8898,10 +9714,10 @@
             }
         },
         "stats": {
-            "instances_month": 26819,
-            "install_events_month": 2847,
-            "instances_week": 22236,
-            "install_events_week": 502
+            "instances_month": 26820,
+            "install_events_month": 2852,
+            "instances_week": 22235,
+            "install_events_week": 505
         }
     },
 
@@ -8961,10 +9777,24 @@
         "license": "AGPLv3",
         "image": "https://plugins.octoprint.org/assets/img/plugins/autologin_config/config.png",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "0.1.0 (Stable Release)",
+                "date": "2020-11-16 22:14:50 +0000",
+                "tag": "0.1.0"
+            },
+            "releases": 9,
+            "last_push": "2022-01-27 13:07:15 +0000",
+            "stars": 1,
+            "issues": {
+                "open": 2,
+                "closed": 4
+            }
+        },
         "stats": {
             "instances_month": 645,
             "install_events_month": 58,
-            "instances_week": 484,
+            "instances_week": 481,
             "install_events_week": 14
         }
     },
@@ -9027,11 +9857,11 @@
         "abandoned": false,
         "github": { 
             "latest_release": {
-                "name": "0.1.6.6 - Navbar overflow + better webcam fullscreen",
-                "date": "2021-08-31 20:13:06 +0000",
-                "tag": "0.1.6.6"
+                "name": "0.0.6",
+                "date": "2020-11-26 14:14:21 +0000",
+                "tag": "0.0.6"
             },
-            "releases": 10,
+            "releases": 53,
             "last_push": "2022-05-25 19:24:44 +0000",
             "stars": 133,
             "issues": {
@@ -9043,7 +9873,7 @@
             "instances_month": 7144,
             "install_events_month": 769,
             "instances_week": 5236,
-            "install_events_week": 178
+            "install_events_week": 177
         }
     },
 
@@ -9137,11 +9967,11 @@
         "abandoned": false,
         "github": { 
             "latest_release": {
-                "name": "0.12.0",
-                "date": "2022-07-08 18:33:33 +0000",
-                "tag": "0.12.0"
+                "name": "0.13.5",
+                "date": "2022-10-19 19:24:43 +0000",
+                "tag": "0.13.5"
             },
-            "releases": 10,
+            "releases": 98,
             "last_push": "2022-10-19 19:24:10 +0000",
             "stars": 25,
             "issues": {
@@ -9183,9 +10013,9 @@
             }
         },
         "stats": {
-            "instances_month": 370,
+            "instances_month": 371,
             "install_events_month": 27,
-            "instances_week": 276,
+            "instances_week": 277,
             "install_events_week": 5
         }
     },
@@ -9207,10 +10037,24 @@
         "license": "AGPLv3",
         "image": "https://plugins.octoprint.org/assets/img/plugins/TimeToFilament/screenshot.png",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "First version",
+                "date": "2020-07-15 17:17:24 +0000",
+                "tag": "1.0.0"
+            },
+            "releases": 7,
+            "last_push": "2022-09-01 20:12:44 +0000",
+            "stars": 7,
+            "issues": {
+                "open": 15,
+                "closed": 19
+            }
+        },
         "stats": {
             "instances_month": 658,
             "install_events_month": 30,
-            "instances_week": 542,
+            "instances_week": 539,
             "install_events_week": 11
         }
     },
@@ -9327,7 +10171,7 @@
         "stats": {
             "instances_month": 635,
             "install_events_month": 40,
-            "instances_week": 475,
+            "instances_week": 474,
             "install_events_week": 8
         }
     },
@@ -9351,11 +10195,11 @@
         "abandoned": false,
         "github": { 
             "latest_release": {
-                "name": "Gcode Bugfix",
-                "date": "2021-01-21 21:22:08 +0000",
-                "tag": "v0.1.7"
+                "name": "First real release",
+                "date": "2021-01-20 17:38:29 +0000",
+                "tag": "v0.1.6"
             },
-            "releases": 10,
+            "releases": 11,
             "last_push": "2021-04-08 22:42:07 +0000",
             "stars": 16,
             "issues": {
@@ -9366,7 +10210,7 @@
         "stats": {
             "instances_month": 182,
             "install_events_month": 26,
-            "instances_week": 127,
+            "instances_week": 128,
             "install_events_week": 8
         }
     },
@@ -9390,11 +10234,11 @@
         "abandoned": false,
         "github": { 
             "latest_release": {
-                "name": "0.0.0.4 - Popovers added (fixed waiting)",
-                "date": "2021-02-02 16:45:19 +0000",
-                "tag": "0.0.0.4"
+                "name": "Initial release",
+                "date": "2021-01-23 08:56:24 +0000",
+                "tag": "0.0.0.1"
             },
-            "releases": 10,
+            "releases": 13,
             "last_push": "2021-10-25 17:56:40 +0000",
             "stars": 20,
             "issues": {
@@ -9403,9 +10247,9 @@
             }
         },
         "stats": {
-            "instances_month": 2171,
+            "instances_month": 2172,
             "install_events_month": 123,
-            "instances_week": 1644,
+            "instances_week": 1643,
             "install_events_week": 26
         }
     },
@@ -9444,7 +10288,7 @@
         "stats": {
             "instances_month": 295,
             "install_events_month": 37,
-            "instances_week": 209,
+            "instances_week": 211,
             "install_events_week": 6
         }
     },
@@ -9467,11 +10311,25 @@
         "license": "GNU General Public License v3.0",
         "image": "https://plugins.octoprint.org/assets/img/plugins/SimplyPrint/showcase_feature_image.png",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "1.6.2",
+                "date": "2020-10-08 09:35:49 +0000",
+                "tag": "1.6.2"
+            },
+            "releases": 14,
+            "last_push": "2022-04-07 15:00:55 +0000",
+            "stars": 8,
+            "issues": {
+                "open": 4,
+                "closed": 11
+            }
+        },
         "stats": {
             "instances_month": 1184,
             "install_events_month": 141,
-            "instances_week": 821,
-            "install_events_week": 57
+            "instances_week": 820,
+            "install_events_week": 56
         }
     },
 
@@ -9585,7 +10443,7 @@
             }
         },
         "stats": {
-            "instances_month": 1407,
+            "instances_month": 1408,
             "install_events_month": 129,
             "instances_week": 1033,
             "install_events_week": 28
@@ -9610,11 +10468,11 @@
         "abandoned": false,
         "github": { 
             "latest_release": {
-                "name": "1.0.2 - Major change (Read release notes)",
-                "date": "2021-03-07 16:35:20 +0000",
-                "tag": "1.0.2"
+                "name": "Initial release",
+                "date": "2021-02-17 19:34:19 +0000",
+                "tag": "0.1.0"
             },
-            "releases": 10,
+            "releases": 18,
             "last_push": "2022-07-30 22:05:11 +0000",
             "stars": 7,
             "issues": {
@@ -9625,8 +10483,8 @@
         "stats": {
             "instances_month": 605,
             "install_events_month": 93,
-            "instances_week": 461,
-            "install_events_week": 23
+            "instances_week": 459,
+            "install_events_week": 22
         }
     },
 
@@ -9648,11 +10506,11 @@
         "abandoned": false,
         "github": { 
             "latest_release": {
-                "name": "Prepared OctoPrint 1.8.0, minor fixes and optimizations",
-                "date": "2022-04-05 05:10:15 +0000",
-                "tag": "1.3.4"
+                "name": "erstes SlicerEstimator Release",
+                "date": "2021-02-22 00:06:11 +0000",
+                "tag": "0.4"
             },
-            "releases": 10,
+            "releases": 33,
             "last_push": "2022-10-07 11:06:12 +0000",
             "stars": 5,
             "issues": {
@@ -9663,7 +10521,7 @@
         "stats": {
             "instances_month": 1246,
             "install_events_month": 121,
-            "instances_week": 933,
+            "instances_week": 932,
             "install_events_week": 22
         }
     },
@@ -9687,11 +10545,11 @@
         "abandoned": false,
         "github": { 
             "latest_release": {
-                "name": "Release v0.1.1",
-                "date": "2021-02-25 17:11:58 +0000",
-                "tag": "v0.1.1"
+                "name": "Initial Release - 0.1.0",
+                "date": "2021-02-24 09:26:00 +0000",
+                "tag": "v0.1.0"
             },
-            "releases": 10,
+            "releases": 11,
             "last_push": "2021-05-19 16:12:29 +0000",
             "stars": 13,
             "issues": {
@@ -9700,9 +10558,9 @@
             }
         },
         "stats": {
-            "instances_month": 490,
+            "instances_month": 491,
             "install_events_month": 49,
-            "instances_week": 373,
+            "instances_week": 374,
             "install_events_week": 16
         }
     },
@@ -9817,9 +10675,9 @@
             }
         },
         "stats": {
-            "instances_month": 209,
-            "install_events_month": 23,
-            "instances_week": 149,
+            "instances_month": 210,
+            "install_events_month": 22,
+            "instances_week": 150,
             "install_events_week": 7
         }
     },
@@ -9856,9 +10714,9 @@
             }
         },
         "stats": {
-            "instances_month": 1187,
+            "instances_month": 1188,
             "install_events_month": 104,
-            "instances_week": 901,
+            "instances_week": 902,
             "install_events_week": 30
         }
     },
@@ -9920,11 +10778,11 @@
         "abandoned": false,
         "github": { 
             "latest_release": {
-                "name": "Bug fix in CC field",
-                "date": "2022-05-11 17:46:12 +0000",
-                "tag": "0.3.3.1"
+                "name": "Another test of the release process",
+                "date": "2021-03-25 13:40:34 +0000",
+                "tag": "0.1.0"
             },
-            "releases": 10,
+            "releases": 28,
             "last_push": "2022-05-11 17:03:00 +0000",
             "stars": 8,
             "issues": {
@@ -9935,7 +10793,7 @@
         "stats": {
             "instances_month": 620,
             "install_events_month": 47,
-            "instances_week": 495,
+            "instances_week": 493,
             "install_events_week": 14
         }
     },
@@ -9956,6 +10814,20 @@
         },
         "license": "AGPLv3",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "1.0.0",
+                "date": "2021-04-05 09:34:44 +0000",
+                "tag": "v1.0.0"
+            },
+            "releases": 3,
+            "last_push": "2022-02-19 18:19:05 +0000",
+            "stars": 0,
+            "issues": {
+                "open": 1,
+                "closed": 1
+            }
+        },
         "stats": {
             "instances_month": 33,
             "install_events_month": 1,
@@ -9997,7 +10869,7 @@
         "stats": {
             "instances_month": 823,
             "install_events_month": 78,
-            "instances_week": 635,
+            "instances_week": 636,
             "install_events_week": 22
         }
     },
@@ -10075,7 +10947,7 @@
         "stats": {
             "instances_month": 681,
             "install_events_month": 50,
-            "instances_week": 527,
+            "instances_week": 526,
             "install_events_week": 14
         }
     },
@@ -10137,11 +11009,11 @@
         "abandoned": false,
         "github": { 
             "latest_release": {
-                "name": "0.3.0",
-                "date": "2021-10-15 13:58:52 +0000",
-                "tag": "0.3.0"
+                "name": "0.1.0rc2",
+                "date": "2021-04-18 16:17:09 +0000",
+                "tag": "0.1.0rc2"
             },
-            "releases": 10,
+            "releases": 27,
             "last_push": "2022-10-03 11:41:09 +0000",
             "stars": 37,
             "issues": {
@@ -10150,10 +11022,10 @@
             }
         },
         "stats": {
-            "instances_month": 7924,
-            "install_events_month": 967,
+            "instances_month": 7931,
+            "install_events_month": 968,
             "instances_week": 5919,
-            "install_events_week": 206
+            "install_events_week": 209
         }
     },
 
@@ -10176,11 +11048,11 @@
         "abandoned": false,
         "github": { 
             "latest_release": {
-                "name": "v0.2.2",
-                "date": "2021-04-26 08:18:51 +0000",
-                "tag": "v0.2.2"
+                "name": "v0.2.1",
+                "date": "2021-04-26 07:43:54 +0000",
+                "tag": "v0.2.1"
             },
-            "releases": 10,
+            "releases": 11,
             "last_push": "2021-05-05 03:04:51 +0000",
             "stars": 13,
             "issues": {
@@ -10251,11 +11123,25 @@
         "license": "MIT",
         "image": "https://plugins.octoprint.org/assets/img/plugins/octodashcompanion/screenshot_settings.png",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "0.0.1 - Initial Alpha Release",
+                "date": "2021-04-25 18:13:01 +0000",
+                "tag": "0.0.1"
+            },
+            "releases": 20,
+            "last_push": "2022-09-24 02:27:13 +0000",
+            "stars": 13,
+            "issues": {
+                "open": 4,
+                "closed": 18
+            }
+        },
         "stats": {
-            "instances_month": 3238,
-            "install_events_month": 232,
-            "instances_week": 2275,
-            "install_events_week": 52
+            "instances_month": 3234,
+            "install_events_month": 233,
+            "instances_week": 2269,
+            "install_events_week": 53
         }
     },
 
@@ -10352,10 +11238,24 @@
         "license": "AGPLv3",
         "image": "https://plugins.octoprint.org/assets/img/plugins/calibrationcompanion/setup.png",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "First version",
+                "date": "2021-05-10 22:37:46 +0000",
+                "tag": "1.0.0"
+            },
+            "releases": 3,
+            "last_push": "2022-09-08 15:29:58 +0000",
+            "stars": 29,
+            "issues": {
+                "open": 6,
+                "closed": 25
+            }
+        },
         "stats": {
-            "instances_month": 2185,
+            "instances_month": 2184,
             "install_events_month": 194,
-            "instances_week": 1590,
+            "instances_week": 1588,
             "install_events_week": 44
         }
     },
@@ -10415,9 +11315,23 @@
         },
         "license": "AGPLv3",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "1.0.2",
+                "date": "2021-05-11 19:05:31 +0000",
+                "tag": "1.0.2"
+            },
+            "releases": 4,
+            "last_push": "2022-05-09 09:30:04 +0000",
+            "stars": 18,
+            "issues": {
+                "open": 0,
+                "closed": 12
+            }
+        },
         "stats": {
             "instances_month": 763,
-            "install_events_month": 118,
+            "install_events_month": 119,
             "instances_week": 610,
             "install_events_week": 18
         }
@@ -10492,9 +11406,9 @@
             }
         },
         "stats": {
-            "instances_month": 1516,
+            "instances_month": 1514,
             "install_events_month": 74,
-            "instances_week": 1197,
+            "instances_week": 1195,
             "install_events_week": 18
         }
     },
@@ -10533,7 +11447,7 @@
         "stats": {
             "instances_month": 556,
             "install_events_month": 33,
-            "instances_week": 424,
+            "instances_week": 421,
             "install_events_week": 13
         }
     },
@@ -10594,6 +11508,20 @@
         "license": "AGPLv3",
         "image": "https://plugins.octoprint.org/assets/img/plugins/ArducamCameraControl/ArducamCameraControl.png",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "",
+                "date": "2021-06-08 08:42:54 +0000",
+                "tag": "0.1"
+            },
+            "releases": 3,
+            "last_push": "2022-03-08 09:13:03 +0000",
+            "stars": 6,
+            "issues": {
+                "open": 3,
+                "closed": 1
+            }
+        },
         "stats": {
             "instances_month": 330,
             "install_events_month": 59,
@@ -10619,10 +11547,24 @@
         "license": "AGPLv3",
         "image": "https://plugins.octoprint.org/assets/img/plugins/gpiofancontroller/featured.png",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "initial release",
+                "date": "2021-07-04 22:28:16 +0000",
+                "tag": "0.1.0"
+            },
+            "releases": 4,
+            "last_push": "2021-08-02 14:46:39 +0000",
+            "stars": 4,
+            "issues": {
+                "open": 5,
+                "closed": 2
+            }
+        },
         "stats": {
             "instances_month": 231,
             "install_events_month": 35,
-            "instances_week": 164,
+            "instances_week": 163,
             "install_events_week": 13
         }
     },
@@ -10661,7 +11603,7 @@
         "stats": {
             "instances_month": 120,
             "install_events_month": 15,
-            "instances_week": 84,
+            "instances_week": 83,
             "install_events_week": 6
         }
     },
@@ -10697,10 +11639,10 @@
             }
         },
         "stats": {
-            "instances_month": 89,
-            "install_events_month": 14,
+            "instances_month": 90,
+            "install_events_month": 15,
             "instances_week": 61,
-            "install_events_week": 6
+            "install_events_week": 7
         }
     },
 
@@ -10754,6 +11696,20 @@
         "license": "AGPLv3",
         "image": "https://plugins.octoprint.org/assets/img/plugins/matrix_notifier/printstarted.png",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "v0.2.0",
+                "date": "2021-07-22 08:19:33 +0000",
+                "tag": "v0.2.0"
+            },
+            "releases": 2,
+            "last_push": "2022-02-17 16:22:29 +0000",
+            "stars": 13,
+            "issues": {
+                "open": 7,
+                "closed": 4
+            }
+        },
         "stats": {
             "instances_month": 33,
             "install_events_month": 0,
@@ -10857,10 +11813,24 @@
         "license": "AGPLv3",
         "image": "https://plugins.octoprint.org/assets/img/plugins/autobim/ui_1.png",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "v0.1.0 - Initial release",
+                "date": "2021-02-22 20:49:34 +0000",
+                "tag": "v0.1.0"
+            },
+            "releases": 16,
+            "last_push": "2022-04-29 15:16:28 +0000",
+            "stars": 19,
+            "issues": {
+                "open": 13,
+                "closed": 19
+            }
+        },
         "stats": {
             "instances_month": 482,
             "install_events_month": 61,
-            "instances_week": 353,
+            "instances_week": 351,
             "install_events_week": 13
         }
     },
@@ -10921,10 +11891,24 @@
         "license": "AGPLv3",
         "image": "https://plugins.octoprint.org/assets/img/plugins/plotlytempgraph/screenshot.png",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "0.0.3",
+                "date": "2020-12-12 18:56:03 +0000",
+                "tag": "0.0.3"
+            },
+            "releases": 24,
+            "last_push": "2022-09-24 02:27:07 +0000",
+            "stars": 21,
+            "issues": {
+                "open": 4,
+                "closed": 30
+            }
+        },
         "stats": {
-            "instances_month": 582,
+            "instances_month": 581,
             "install_events_month": 44,
-            "instances_week": 457,
+            "instances_week": 456,
             "install_events_week": 17
         }
     },
@@ -10948,11 +11932,11 @@
         "abandoned": false,
         "github": { 
             "latest_release": {
-                "name": "0.0.2 - Improved Date Time Picker",
-                "date": "2021-08-26 00:53:58 +0000",
-                "tag": "0.0.2"
+                "name": "0.0.1",
+                "date": "2021-08-15 14:53:17 +0000",
+                "tag": "0.0.1"
             },
-            "releases": 10,
+            "releases": 13,
             "last_push": "2022-10-15 20:53:04 +0000",
             "stars": 6,
             "issues": {
@@ -10961,9 +11945,9 @@
             }
         },
         "stats": {
-            "instances_month": 808,
+            "instances_month": 806,
             "install_events_month": 46,
-            "instances_week": 637,
+            "instances_week": 636,
             "install_events_week": 11
         }
     },
@@ -11000,10 +11984,10 @@
             }
         },
         "stats": {
-            "instances_month": 179,
-            "install_events_month": 14,
-            "instances_week": 143,
-            "install_events_week": 3
+            "instances_month": 180,
+            "install_events_month": 15,
+            "instances_week": 144,
+            "install_events_week": 4
         }
     },
 
@@ -11030,7 +12014,7 @@
                 "date": "2021-10-22 18:51:08 +0000",
                 "tag": "1.1.0"
             },
-            "releases": 10,
+            "releases": 12,
             "last_push": "2021-10-22 18:30:21 +0000",
             "stars": 2,
             "issues": {
@@ -11063,8 +12047,22 @@
         "license": "MIT",
         "image": "https://plugins.octoprint.org/assets/img/plugins/thingiverse_downloader/demo.png",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "v0.0.0",
+                "date": "2021-08-29 20:59:00 +0000",
+                "tag": "v0.0.0"
+            },
+            "releases": 5,
+            "last_push": "2021-09-10 12:20:49 +0000",
+            "stars": 6,
+            "issues": {
+                "open": 1,
+                "closed": 9
+            }
+        },
         "stats": {
-            "instances_month": 809,
+            "instances_month": 808,
             "install_events_month": 107,
             "instances_week": 592,
             "install_events_week": 24
@@ -11136,7 +12134,7 @@
             }
         },
         "stats": {
-            "instances_month": 1011,
+            "instances_month": 1008,
             "install_events_month": 49,
             "instances_week": 781,
             "install_events_week": 8
@@ -11252,10 +12250,10 @@
             }
         },
         "stats": {
-            "instances_month": 3496,
-            "install_events_month": 531,
-            "instances_week": 2702,
-            "install_events_week": 148
+            "instances_month": 3497,
+            "install_events_month": 533,
+            "instances_week": 2704,
+            "install_events_week": 151
         }
     },
 
@@ -11362,7 +12360,7 @@
             }
         },
         "stats": {
-            "instances_month": 806,
+            "instances_month": 805,
             "install_events_month": 57,
             "instances_week": 662,
             "install_events_week": 21
@@ -11404,7 +12402,7 @@
             "instances_month": 616,
             "install_events_month": 44,
             "instances_week": 470,
-            "install_events_week": 15
+            "install_events_week": 14
         }
     },
 
@@ -11442,7 +12440,7 @@
         "stats": {
             "instances_month": 96,
             "install_events_month": 6,
-            "instances_week": 74,
+            "instances_week": 73,
             "install_events_week": 1
         }
     },
@@ -11479,9 +12477,9 @@
             }
         },
         "stats": {
-            "instances_month": 507,
+            "instances_month": 509,
             "install_events_month": 23,
-            "instances_week": 416,
+            "instances_week": 418,
             "install_events_week": 5
         }
     },
@@ -11518,7 +12516,7 @@
             }
         },
         "stats": {
-            "instances_month": 424,
+            "instances_month": 425,
             "install_events_month": 27,
             "instances_week": 317,
             "install_events_week": 5
@@ -11558,10 +12556,10 @@
             }
         },
         "stats": {
-            "instances_month": 735,
+            "instances_month": 733,
             "install_events_month": 78,
             "instances_week": 522,
-            "install_events_week": 22
+            "install_events_week": 20
         }
     },
 
@@ -11599,8 +12597,8 @@
         "stats": {
             "instances_month": 663,
             "install_events_month": 31,
-            "instances_week": 543,
-            "install_events_week": 7
+            "instances_week": 542,
+            "install_events_week": 6
         }
     },
 
@@ -11636,9 +12634,9 @@
             }
         },
         "stats": {
-            "instances_month": 2607,
+            "instances_month": 2608,
             "install_events_month": 375,
-            "instances_week": 1887,
+            "instances_week": 1886,
             "install_events_week": 80
         }
     },
@@ -11872,7 +12870,7 @@
             "instances_month": 131,
             "install_events_month": 25,
             "instances_week": 85,
-            "install_events_week": 3
+            "install_events_week": 2
         }
     },
 
@@ -11893,6 +12891,20 @@
         "license": "AGPLv3",
         "image": "https://plugins.octoprint.org/assets/img/plugins/wyze/OctoPrint-Wyze.png",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "v0.1.0",
+                "date": "2022-03-17 03:25:49 +0000",
+                "tag": "v0.1.0"
+            },
+            "releases": 8,
+            "last_push": "2022-04-22 08:02:03 +0000",
+            "stars": 8,
+            "issues": {
+                "open": 1,
+                "closed": 7
+            }
+        },
         "stats": {
             "instances_month": 24,
             "install_events_month": 5,
@@ -11933,7 +12945,7 @@
             }
         },
         "stats": {
-            "instances_month": 101,
+            "instances_month": 100,
             "install_events_month": 7,
             "instances_week": 79,
             "install_events_week": 2
@@ -11957,8 +12969,16 @@
         "license": "GNUv3",
         "image": "https://plugins.octoprint.org/assets/img/plugins/framer/screen.png",
         "abandoned": false,
+        "github": { 
+            "last_push": "2022-04-06 17:35:54 +0000",
+            "stars": 2,
+            "issues": {
+                "open": 0,
+                "closed": 0
+            }
+        },
         "stats": {
-            "instances_month": 78,
+            "instances_month": 77,
             "install_events_month": 21,
             "instances_week": 49,
             "install_events_week": 2
@@ -11984,11 +13004,11 @@
         "abandoned": false,
         "github": { 
             "latest_release": {
-                "name": "0.5.5",
-                "date": "2022-02-10 08:46:19 +0000",
-                "tag": "0.5.5"
+                "name": "0.5.2",
+                "date": "2022-01-20 02:33:29 +0000",
+                "tag": "0.5.2"
             },
-            "releases": 10,
+            "releases": 13,
             "last_push": "2022-07-26 07:23:44 +0000",
             "stars": 15,
             "issues": {
@@ -11999,7 +13019,7 @@
         "stats": {
             "instances_month": 688,
             "install_events_month": 226,
-            "instances_week": 424,
+            "instances_week": 422,
             "install_events_week": 62
         }
     },
@@ -12037,7 +13057,7 @@
         "stats": {
             "instances_month": 244,
             "install_events_month": 71,
-            "instances_week": 167,
+            "instances_week": 168,
             "install_events_week": 15
         }
     },
@@ -12135,10 +13155,24 @@
         },
         "license": "AGPLv3",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "Initial Release",
+                "date": "2022-04-27 16:47:32 +0000",
+                "tag": "1.0.2"
+            },
+            "releases": 2,
+            "last_push": "2022-04-27 22:45:27 +0000",
+            "stars": 0,
+            "issues": {
+                "open": 0,
+                "closed": 0
+            }
+        },
         "stats": {
             "instances_month": 53,
             "install_events_month": 8,
-            "instances_week": 36,
+            "instances_week": 35,
             "install_events_week": 2
         }
     },
@@ -12160,6 +13194,20 @@
         "license": "AGPLv3",
         "image": "https://plugins.octoprint.org/assets/img/plugins/bedready/screenshot_bed_not_ready.png",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "0.1.0",
+                "date": "2022-04-10 05:46:09 +0000",
+                "tag": "0.1.0"
+            },
+            "releases": 6,
+            "last_push": "2022-09-24 02:26:44 +0000",
+            "stars": 7,
+            "issues": {
+                "open": 5,
+                "closed": 5
+            }
+        },
         "stats": {
             "instances_month": 398,
             "install_events_month": 34,
@@ -12202,7 +13250,7 @@
         "stats": {
             "instances_month": 778,
             "install_events_month": 2,
-            "instances_week": 633,
+            "instances_week": 632,
             "install_events_week": 0
         }
     },
@@ -12300,11 +13348,25 @@
         "license": "AGPLv3",
         "image": "https://plugins.octoprint.org/assets/img/plugins/queue/queue.png",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "First release: v1.0.0",
+                "date": "2022-06-06 19:27:31 +0000",
+                "tag": "v1.0.0"
+            },
+            "releases": 2,
+            "last_push": "2022-06-07 03:10:19 +0000",
+            "stars": 8,
+            "issues": {
+                "open": 6,
+                "closed": 2
+            }
+        },
         "stats": {
-            "instances_month": 126,
+            "instances_month": 125,
             "install_events_month": 26,
-            "instances_week": 85,
-            "install_events_week": 4
+            "instances_week": 84,
+            "install_events_week": 3
         }
     },
 
@@ -12400,6 +13462,20 @@
         },
         "license": "AGPLv3",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "Initial",
+                "date": "2022-07-18 04:55:35 +0000",
+                "tag": "release"
+            },
+            "releases": 2,
+            "last_push": "2022-07-20 13:40:07 +0000",
+            "stars": 1,
+            "issues": {
+                "open": 0,
+                "closed": 0
+            }
+        },
         "stats": {
             "instances_month": 244,
             "install_events_month": 32,
@@ -12443,7 +13519,7 @@
             "instances_month": 94,
             "install_events_month": 20,
             "instances_week": 75,
-            "install_events_week": 5
+            "install_events_week": 4
         }
     },
 
@@ -12464,8 +13540,22 @@
         "license": "AGPLv3",
         "image": "https://plugins.octoprint.org/assets/img/plugins/sdwire/sdwire-hw.jpg",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "Fast upload to sd card.",
+                "date": "2022-07-23 16:56:33 +0000",
+                "tag": "0.1.0"
+            },
+            "releases": 6,
+            "last_push": "2022-10-03 16:19:50 +0000",
+            "stars": 3,
+            "issues": {
+                "open": 0,
+                "closed": 0
+            }
+        },
         "stats": {
-            "instances_month": 34,
+            "instances_month": 33,
             "install_events_month": 7,
             "instances_week": 21,
             "install_events_week": 1
@@ -12489,10 +13579,24 @@
         "license": "AGPLv3",
         "image": "https://plugins.octoprint.org/assets/img/plugins/mkswifisdcard/plugin-settings.png",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "1.0.0",
+                "date": "2022-08-01 20:09:54 +0000",
+                "tag": "1.0.0"
+            },
+            "releases": 2,
+            "last_push": "2022-08-16 15:31:59 +0000",
+            "stars": 1,
+            "issues": {
+                "open": 0,
+                "closed": 1
+            }
+        },
         "stats": {
-            "instances_month": 68,
-            "install_events_month": 18,
-            "instances_week": 48,
+            "instances_month": 67,
+            "install_events_month": 17,
+            "instances_week": 47,
             "install_events_week": 3
         }
     },
@@ -12529,9 +13633,9 @@
             }
         },
         "stats": {
-            "instances_month": 591,
+            "instances_month": 589,
             "install_events_month": 126,
-            "instances_week": 462,
+            "instances_week": 461,
             "install_events_week": 20
         }
     },
@@ -12554,6 +13658,20 @@
         "license": "MIT",
         "image": "https://plugins.octoprint.org/assets/img/plugins/karmen/karmen_screenshot.png",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "0.1.0",
+                "date": "2022-05-25 08:28:52 +0000",
+                "tag": "0.1.0"
+            },
+            "releases": 14,
+            "last_push": "2022-09-30 09:33:52 +0000",
+            "stars": 2,
+            "issues": {
+                "open": 1,
+                "closed": 0
+            }
+        },
         "stats": {
             "instances_month": 132,
             "install_events_month": 42,
@@ -12579,6 +13697,20 @@
         "license": "MIT",
         "image": "https://plugins.octoprint.org/assets/img/plugins/HeaderAnnouncements/announcement.png",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "v0.0.1",
+                "date": "2022-09-12 06:16:00 +0000",
+                "tag": "v0.0.1"
+            },
+            "releases": 4,
+            "last_push": "2022-09-17 20:57:38 +0000",
+            "stars": 1,
+            "issues": {
+                "open": 0,
+                "closed": 0
+            }
+        },
         "stats": {
             "instances_month": 35,
             "install_events_month": 19,
@@ -12619,10 +13751,10 @@
             }
         },
         "stats": {
-            "instances_month": 459,
-            "install_events_month": 458,
-            "instances_week": 418,
-            "install_events_week": 269
+            "instances_month": 460,
+            "install_events_month": 459,
+            "instances_week": 419,
+            "install_events_week": 262
         }
     }
 ]
