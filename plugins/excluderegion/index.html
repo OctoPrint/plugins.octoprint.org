@@ -320,9 +320,27 @@ linked on the right.</p>
       
       <dl class="install_events">
         <dt>New installs the past week</dt>
-        <dd>At least <strong>215</strong> new installations</dd>
+        <dd>At least <strong>216</strong> new installations</dd>
       </dl>
       
+      
+      <dl class="github">
+        <dt>GitHub stats <a href="/help/github_integration/" class="fas fa-question-circle"></a> <span id="github_login">(<a href="javascript:void(0)">Login</a>)</span></dt>
+        <dd>
+          <ul>
+            
+            <li>
+              Latest Release: <a href="https://github.com/bradcfisher/OctoPrint-ExcludeRegionPlugin/releases/tag/0.1.0" target="_blank">0.1.0</a><br>
+              <small>released on 05 Jul 2018</small>
+            </li>
+            <li>Releases: 6</li>
+            
+            <li>Stars: <span id="github_star_count">46</span> <span id="github_star"><a href="javascript:void(0)"><i class="far fa-star"></i></a></span></li>
+            <li>Issues: 18 open, 39 closed</li>
+            <li>Last push: 17 Nov 2020</li>
+          </ul>
+        </dd>
+      </dl>
       
       
       <dl class="tags">
@@ -414,9 +432,9 @@ linked on the right.</p>
 
 <script type="application/javascript">
   $(function() {
-    var has_github = false;
+    var has_github = true;
     if (has_github) {
-      var github_repo = "";
+      var github_repo = "bradcfisher/OctoPrint-ExcludeRegionPlugin";
 
       if (github_repo) {
         var status = "unknown";
