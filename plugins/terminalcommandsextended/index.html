@@ -301,33 +301,15 @@ This plugin adds additional command buttons to the Terminal tab of OctoPrint.
       
       <dl class="installations">
         <dt>Active instances the past month</dt>
-        <dd>Installed on at least <strong>1.73k</strong> instances</dd>
+        <dd>Installed on at least <strong>1.74k</strong> instances</dd>
       </dl>
       
       
       <dl class="install_events">
         <dt>New installs the past week</dt>
-        <dd>At least <strong>18</strong> new installations</dd>
+        <dd>At least <strong>17</strong> new installations</dd>
       </dl>
       
-      
-      <dl class="github">
-        <dt>GitHub stats <a href="/help/github_integration/" class="fas fa-question-circle"></a> <span id="github_login">(<a href="javascript:void(0)">Login</a>)</span></dt>
-        <dd>
-          <ul>
-            
-            <li>
-              Latest Release: <a href="https://github.com/jneilliii/OctoPrint-TerminalCommandsExtended/releases/tag/0.1.1" target="_blank">0.1.1</a><br>
-              <small>released on 01 Feb 2020</small>
-            </li>
-            <li>Releases: 12</li>
-            
-            <li>Stars: <span id="github_star_count">6</span> <span id="github_star"><a href="javascript:void(0)"><i class="far fa-star"></i></a></span></li>
-            <li>Issues: 10 open, 21 closed</li>
-            <li>Last push: 23 Sep 2022</li>
-          </ul>
-        </dd>
-      </dl>
       
       
       <dl class="tags">
@@ -417,9 +399,9 @@ This plugin adds additional command buttons to the Terminal tab of OctoPrint.
 
 <script type="application/javascript">
   $(function() {
-    var has_github = true;
+    var has_github = false;
     if (has_github) {
-      var github_repo = "jneilliii/OctoPrint-TerminalCommandsExtended";
+      var github_repo = "";
 
       if (github_repo) {
         var status = "unknown";
