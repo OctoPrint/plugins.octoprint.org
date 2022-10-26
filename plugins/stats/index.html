@@ -302,9 +302,27 @@ or manually using this URL:</p>
       
       <dl class="install_events">
         <dt>New installs the past week</dt>
-        <dd>At least <strong>24</strong> new installations</dd>
+        <dd>At least <strong>23</strong> new installations</dd>
       </dl>
       
+      
+      <dl class="github">
+        <dt>GitHub stats <a href="/help/github_integration/" class="fas fa-question-circle"></a> <span id="github_login">(<a href="javascript:void(0)">Login</a>)</span></dt>
+        <dd>
+          <ul>
+            
+            <li>
+              Latest Release: <a href="https://github.com/AlexVerrico/octoprint-stats/releases/tag/3.0.0" target="_blank">3.0.0</a><br>
+              <small>released on 19 Oct 2020</small>
+            </li>
+            <li>Releases: 4</li>
+            
+            <li>Stars: <span id="github_star_count">10</span> <span id="github_star"><a href="javascript:void(0)"><i class="far fa-star"></i></a></span></li>
+            <li>Issues: 6 open, 13 closed</li>
+            <li>Last push: 08 Jun 2022</li>
+          </ul>
+        </dd>
+      </dl>
       
       
       <dl class="tags">
@@ -400,9 +418,9 @@ or manually using this URL:</p>
 
 <script type="application/javascript">
   $(function() {
-    var has_github = false;
+    var has_github = true;
     if (has_github) {
-      var github_repo = "";
+      var github_repo = "AlexVerrico/octoprint-stats";
 
       if (github_repo) {
         var status = "unknown";

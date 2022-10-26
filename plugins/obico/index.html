@@ -398,15 +398,33 @@
       
       <dl class="installations">
         <dt>Active instances the past month</dt>
-        <dd>Installed on at least <strong>9.34k</strong> instances</dd>
+        <dd>Installed on at least <strong>9.35k</strong> instances</dd>
       </dl>
       
       
       <dl class="install_events">
         <dt>New installs the past week</dt>
-        <dd>At least <strong>690</strong> new installations</dd>
+        <dd>At least <strong>689</strong> new installations</dd>
       </dl>
       
+      
+      <dl class="github">
+        <dt>GitHub stats <a href="/help/github_integration/" class="fas fa-question-circle"></a> <span id="github_login">(<a href="javascript:void(0)">Login</a>)</span></dt>
+        <dd>
+          <ul>
+            
+            <li>
+              Latest Release: <a href="https://github.com/TheSpaghettiDetective/OctoPrint-Obico/releases/tag/0.5.0" target="_blank">0.5.0</a><br>
+              <small>released on 22 Mar 2019</small>
+            </li>
+            <li>Releases: 87</li>
+            
+            <li>Stars: <span id="github_star_count">125</span> <span id="github_star"><a href="javascript:void(0)"><i class="far fa-star"></i></a></span></li>
+            <li>Issues: 32 open, 76 closed</li>
+            <li>Last push: 18 Oct 2022</li>
+          </ul>
+        </dd>
+      </dl>
       
       
       <dl class="tags">
@@ -542,9 +560,9 @@
 
 <script type="application/javascript">
   $(function() {
-    var has_github = false;
+    var has_github = true;
     if (has_github) {
-      var github_repo = "";
+      var github_repo = "TheSpaghettiDetective/OctoPrint-Obico";
 
       if (github_repo) {
         var status = "unknown";
