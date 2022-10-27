@@ -379,7 +379,7 @@ X-Api-Key: abcdef…</li>
       
       <dl class="installations">
         <dt>Active instances the past month</dt>
-        <dd>Installed on at least <strong>148</strong> instances</dd>
+        <dd>Installed on at least <strong>147</strong> instances</dd>
       </dl>
       
       
@@ -388,18 +388,6 @@ X-Api-Key: abcdef…</li>
         <dd>At least <strong>5</strong> new installations</dd>
       </dl>
       
-      
-      <dl class="github">
-        <dt>GitHub stats <a href="/help/github_integration/" class="fas fa-question-circle"></a> <span id="github_login">(<a href="javascript:void(0)">Login</a>)</span></dt>
-        <dd>
-          <ul>
-            
-            <li>Stars: <span id="github_star_count">11</span> <span id="github_star"><a href="javascript:void(0)"><i class="far fa-star"></i></a></span></li>
-            <li>Issues: 10 open, 5 closed</li>
-            <li>Last push: 29 Jul 2020</li>
-          </ul>
-        </dd>
-      </dl>
       
       
       <dl class="tags">
@@ -493,9 +481,9 @@ X-Api-Key: abcdef…</li>
 
 <script type="application/javascript">
   $(function() {
-    var has_github = true;
+    var has_github = false;
     if (has_github) {
-      var github_repo = "trippwill/OctoPrint-MarlinBft";
+      var github_repo = "";
 
       if (github_repo) {
         var status = "unknown";
