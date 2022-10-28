@@ -276,7 +276,7 @@ Any chars are allowed in the groups; <code class="language-plaintext highlighter
       
       <dl class="installations">
         <dt>Active instances the past month</dt>
-        <dd>Installed on at least <strong>900</strong> instances</dd>
+        <dd>Installed on at least <strong>898</strong> instances</dd>
       </dl>
       
       
@@ -285,6 +285,24 @@ Any chars are allowed in the groups; <code class="language-plaintext highlighter
         <dd>At least <strong>12</strong> new installations</dd>
       </dl>
       
+      
+      <dl class="github">
+        <dt>GitHub stats <a href="/help/github_integration/" class="fas fa-question-circle"></a> <span id="github_login">(<a href="javascript:void(0)">Login</a>)</span></dt>
+        <dd>
+          <ul>
+            
+            <li>
+              Latest Release: <a href="https://github.com/tjjfvi/OctoPrint-SlicerSettingsParser/releases/tag/v1.0.0" target="_blank">v1.0.0</a><br>
+              <small>released on 22 Dec 2018</small>
+            </li>
+            <li>Releases: 4</li>
+            
+            <li>Stars: <span id="github_star_count">10</span> <span id="github_star"><a href="javascript:void(0)"><i class="far fa-star"></i></a></span></li>
+            <li>Issues: 4 open, 6 closed</li>
+            <li>Last push: 18 May 2022</li>
+          </ul>
+        </dd>
+      </dl>
       
       
       <dl class="tags">
@@ -374,9 +392,9 @@ Any chars are allowed in the groups; <code class="language-plaintext highlighter
 
 <script type="application/javascript">
   $(function() {
-    var has_github = false;
+    var has_github = true;
     if (has_github) {
-      var github_repo = "";
+      var github_repo = "tjjfvi/OctoPrint-SlicerSettingsParser";
 
       if (github_repo) {
         var status = "unknown";
