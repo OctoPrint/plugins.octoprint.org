@@ -32,10 +32,10 @@
             }
         },
         "stats": {
-            "instances_month": 3204,
-            "install_events_month": 204,
-            "instances_week": 2549,
-            "install_events_week": 50
+            "instances_month": 3201,
+            "install_events_month": 205,
+            "instances_week": 2551,
+            "install_events_week": 51
         }
     },
 
@@ -144,9 +144,9 @@
             }
         },
         "stats": {
-            "instances_month": 15328,
-            "install_events_month": 890,
-            "instances_week": 11814,
+            "instances_month": 15334,
+            "install_events_month": 887,
+            "instances_week": 11820,
             "install_events_week": 210
         }
     },
@@ -222,9 +222,9 @@
             }
         },
         "stats": {
-            "instances_month": 2174,
+            "instances_month": 2173,
             "install_events_month": 104,
-            "instances_week": 1668,
+            "instances_week": 1667,
             "install_events_week": 27
         }
     },
@@ -329,7 +329,7 @@
         },
         "stats": {
             "instances_month": 1200,
-            "install_events_month": 56,
+            "install_events_month": 55,
             "instances_week": 951,
             "install_events_week": 14
         }
@@ -445,10 +445,10 @@
             }
         },
         "stats": {
-            "instances_month": 1952,
-            "install_events_month": 185,
-            "instances_week": 1390,
-            "install_events_week": 40
+            "instances_month": 1955,
+            "install_events_month": 184,
+            "instances_week": 1391,
+            "install_events_week": 39
         }
     },
 
@@ -560,9 +560,9 @@
             }
         },
         "stats": {
-            "instances_month": 1376,
+            "instances_month": 1377,
             "install_events_month": 50,
-            "instances_week": 1097,
+            "instances_week": 1094,
             "install_events_week": 12
         }
     },
@@ -745,9 +745,9 @@
             }
         },
         "stats": {
-            "instances_month": 1967,
-            "install_events_month": 140,
-            "instances_week": 1454,
+            "instances_month": 1968,
+            "install_events_month": 141,
+            "instances_week": 1453,
             "install_events_week": 28
         }
     },
@@ -784,9 +784,9 @@
             }
         },
         "stats": {
-            "instances_month": 5069,
-            "install_events_month": 450,
-            "instances_week": 3759,
+            "instances_month": 5072,
+            "install_events_month": 449,
+            "instances_week": 3762,
             "install_events_week": 105
         }
     },
@@ -823,7 +823,7 @@
             }
         },
         "stats": {
-            "instances_month": 1354,
+            "instances_month": 1355,
             "install_events_month": 89,
             "instances_week": 1031,
             "install_events_week": 17
@@ -901,9 +901,9 @@
             }
         },
         "stats": {
-            "instances_month": 2234,
+            "instances_month": 2235,
             "install_events_month": 108,
-            "instances_week": 1711,
+            "instances_week": 1713,
             "install_events_week": 25
         }
     },
@@ -978,10 +978,10 @@
             }
         },
         "stats": {
-            "instances_month": 10163,
+            "instances_month": 10161,
             "install_events_month": 1059,
-            "instances_week": 7557,
-            "install_events_week": 227
+            "instances_week": 7562,
+            "install_events_week": 226
         }
     },
 
@@ -1229,7 +1229,7 @@
         "stats": {
             "instances_month": 4768,
             "install_events_month": 341,
-            "instances_week": 3472,
+            "instances_week": 3467,
             "install_events_week": 67
         }
     },
@@ -1251,6 +1251,20 @@
         "license": "AGPLv3",
         "image": "https://plugins.octoprint.org/assets/img/plugins/pushover/pushover.png",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "Initial release",
+                "date": "2016-04-17 17:28:17 +0000",
+                "tag": "0.1.0"
+            },
+            "releases": 23,
+            "last_push": "2020-07-21 18:55:41 +0000",
+            "stars": 29,
+            "issues": {
+                "open": 14,
+                "closed": 40
+            }
+        },
         "stats": {
             "instances_month": 877,
             "install_events_month": 32,
@@ -1304,20 +1318,6 @@
         "compatibility": {"octoprint": [], "os": [], "python": ">=2.7,<3"},
         "license": "MIT",
         "abandoned": true,
-        "github": { 
-            "latest_release": {
-                "name": "0.1.3: The Missing Release",
-                "date": "2017-07-13 10:32:48 +0000",
-                "tag": "0.1.3"
-            },
-            "releases": 1,
-            "last_push": "2019-12-14 13:07:40 +0000",
-            "stars": 10,
-            "issues": {
-                "open": 16,
-                "closed": 5
-            }
-        },
         "stats": {
             "instances_month": 286,
             "install_events_month": 2,
@@ -1357,9 +1357,9 @@
             }
         },
         "stats": {
-            "instances_month": 2724,
-            "install_events_month": 70,
-            "instances_week": 2021,
+            "instances_month": 2725,
+            "install_events_month": 69,
+            "instances_week": 2023,
             "install_events_week": 15
         }
     },
@@ -1474,7 +1474,7 @@
         "stats": {
             "instances_month": 649,
             "install_events_month": 22,
-            "instances_week": 483,
+            "instances_week": 484,
             "install_events_week": 6
         }
     },
@@ -1511,10 +1511,10 @@
             }
         },
         "stats": {
-            "instances_month": 6122,
+            "instances_month": 6124,
             "install_events_month": 452,
-            "instances_week": 4587,
-            "install_events_week": 78
+            "instances_week": 4585,
+            "install_events_week": 79
         }
     },
 
@@ -1551,7 +1551,7 @@
         },
         "stats": {
             "instances_month": 1643,
-            "install_events_month": 208,
+            "install_events_month": 207,
             "instances_week": 1131,
             "install_events_week": 48
         }
@@ -1591,7 +1591,7 @@
         "stats": {
             "instances_month": 460,
             "install_events_month": 18,
-            "instances_week": 351,
+            "instances_week": 353,
             "install_events_week": 4
         }
     },
@@ -1667,9 +1667,9 @@
             }
         },
         "stats": {
-            "instances_month": 5839,
+            "instances_month": 5838,
             "install_events_month": 304,
-            "instances_week": 4530,
+            "instances_week": 4528,
             "install_events_week": 63
         }
     },
@@ -1762,25 +1762,11 @@
         "license": "AGPLv3",
         "image": "https://plugins.octoprint.org/assets/img/plugins/fullscreen_webcam/main.jpg",
         "abandoned": false,
-        "github": { 
-            "latest_release": {
-                "name": "0.0.1",
-                "date": "2017-01-16 20:23:38 +0000",
-                "tag": "0.0.1"
-            },
-            "releases": 6,
-            "last_push": "2020-11-22 14:29:52 +0000",
-            "stars": 24,
-            "issues": {
-                "open": 12,
-                "closed": 22
-            }
-        },
         "stats": {
-            "instances_month": 11051,
+            "instances_month": 11061,
             "install_events_month": 826,
-            "instances_week": 8370,
-            "install_events_week": 163
+            "instances_week": 8377,
+            "install_events_week": 162
         }
     },
 
@@ -1857,7 +1843,7 @@
         "stats": {
             "instances_month": 6822,
             "install_events_month": 634,
-            "instances_week": 5316,
+            "instances_week": 5319,
             "install_events_week": 140
         }
     },
@@ -2007,7 +1993,7 @@
         "stats": {
             "instances_month": 944,
             "install_events_month": 75,
-            "instances_week": 699,
+            "instances_week": 700,
             "install_events_week": 15
         }
     },
@@ -2043,7 +2029,7 @@
             }
         },
         "stats": {
-            "instances_month": 274,
+            "instances_month": 273,
             "install_events_month": 39,
             "instances_week": 176,
             "install_events_week": 11
@@ -2082,8 +2068,8 @@
             }
         },
         "stats": {
-            "instances_month": 799,
-            "install_events_month": 46,
+            "instances_month": 800,
+            "install_events_month": 45,
             "instances_week": 615,
             "install_events_week": 8
         }
@@ -2121,9 +2107,9 @@
             }
         },
         "stats": {
-            "instances_month": 4051,
-            "install_events_month": 246,
-            "instances_week": 3021,
+            "instances_month": 4048,
+            "install_events_month": 244,
+            "instances_week": 3019,
             "install_events_week": 52
         }
     },
@@ -2197,7 +2183,7 @@
         "stats": {
             "instances_month": 1320,
             "install_events_month": 81,
-            "instances_week": 1039,
+            "instances_week": 1038,
             "install_events_week": 21
         }
     },
@@ -2414,7 +2400,7 @@
         "stats": {
             "instances_month": 939,
             "install_events_month": 36,
-            "instances_week": 704,
+            "instances_week": 703,
             "install_events_week": 5
         }
     },
@@ -2451,10 +2437,10 @@
             }
         },
         "stats": {
-            "instances_month": 10913,
-            "install_events_month": 1114,
-            "instances_week": 7808,
-            "install_events_week": 226
+            "instances_month": 10920,
+            "install_events_month": 1116,
+            "instances_week": 7811,
+            "install_events_week": 228
         }
     },
 
@@ -2490,10 +2476,10 @@
             }
         },
         "stats": {
-            "instances_month": 321,
+            "instances_month": 319,
             "install_events_month": 13,
             "instances_week": 219,
-            "install_events_week": 9
+            "install_events_week": 8
         }
     },
 
@@ -2528,10 +2514,10 @@
             }
         },
         "stats": {
-            "instances_month": 4419,
-            "install_events_month": 310,
-            "instances_week": 3392,
-            "install_events_week": 66
+            "instances_month": 4417,
+            "install_events_month": 309,
+            "instances_week": 3393,
+            "install_events_week": 65
         }
     },
 
@@ -2567,10 +2553,10 @@
             }
         },
         "stats": {
-            "instances_month": 10627,
-            "install_events_month": 948,
-            "instances_week": 7874,
-            "install_events_week": 207
+            "instances_month": 10625,
+            "install_events_month": 947,
+            "instances_week": 7876,
+            "install_events_week": 206
         }
     },
 
@@ -2608,7 +2594,7 @@
         "stats": {
             "instances_month": 290,
             "install_events_month": 40,
-            "instances_week": 214,
+            "instances_week": 213,
             "install_events_week": 11
         }
     },
@@ -2712,8 +2698,8 @@
             }
         },
         "stats": {
-            "instances_month": 7088,
-            "install_events_month": 507,
+            "instances_month": 7090,
+            "install_events_month": 506,
             "instances_week": 5268,
             "install_events_week": 122
         }
@@ -2788,7 +2774,7 @@
         "stats": {
             "instances_month": 1272,
             "install_events_month": 72,
-            "instances_week": 969,
+            "instances_week": 967,
             "install_events_week": 17
         }
     },
@@ -2825,10 +2811,10 @@
             }
         },
         "stats": {
-            "instances_month": 3778,
+            "instances_month": 3779,
             "install_events_month": 284,
             "instances_week": 3039,
-            "install_events_week": 72
+            "install_events_week": 68
         }
     },
 
@@ -2899,9 +2885,9 @@
         },
         "stats": {
             "instances_month": 5429,
-            "install_events_month": 475,
-            "instances_week": 4036,
-            "install_events_week": 96
+            "install_events_month": 474,
+            "instances_week": 4038,
+            "install_events_week": 97
         }
     },
 
@@ -2939,7 +2925,7 @@
         "stats": {
             "instances_month": 4573,
             "install_events_month": 228,
-            "instances_week": 3469,
+            "instances_week": 3470,
             "install_events_week": 41
         }
     },
@@ -2976,9 +2962,9 @@
             }
         },
         "stats": {
-            "instances_month": 20749,
+            "instances_month": 20754,
             "install_events_month": 1622,
-            "instances_week": 15902,
+            "instances_week": 15900,
             "install_events_week": 351
         }
     },
@@ -3015,8 +3001,8 @@
             }
         },
         "stats": {
-            "instances_month": 12186,
-            "install_events_month": 822,
+            "instances_month": 12181,
+            "install_events_month": 820,
             "instances_week": 8990,
             "install_events_week": 167
         }
@@ -3054,9 +3040,9 @@
             }
         },
         "stats": {
-            "instances_month": 1665,
+            "instances_month": 1666,
             "install_events_month": 78,
-            "instances_week": 1261,
+            "instances_week": 1262,
             "install_events_week": 19
         }
     },
@@ -3095,8 +3081,8 @@
         "stats": {
             "instances_month": 2409,
             "install_events_month": 163,
-            "instances_week": 1708,
-            "install_events_week": 35
+            "instances_week": 1709,
+            "install_events_week": 34
         }
     },
 
@@ -3132,7 +3118,7 @@
             }
         },
         "stats": {
-            "instances_month": 2337,
+            "instances_month": 2338,
             "install_events_month": 190,
             "instances_week": 1724,
             "install_events_week": 41
@@ -3210,10 +3196,10 @@
             }
         },
         "stats": {
-            "instances_month": 22294,
-            "install_events_month": 1881,
-            "instances_week": 17374,
-            "install_events_week": 409
+            "instances_month": 22297,
+            "install_events_month": 1879,
+            "instances_week": 17375,
+            "install_events_week": 406
         }
     },
 
@@ -3250,7 +3236,7 @@
         },
         "stats": {
             "instances_month": 3347,
-            "install_events_month": 292,
+            "install_events_month": 291,
             "instances_week": 2572,
             "install_events_week": 74
         }
@@ -3287,10 +3273,10 @@
             }
         },
         "stats": {
-            "instances_month": 1737,
-            "install_events_month": 133,
-            "instances_week": 1309,
-            "install_events_week": 29
+            "instances_month": 1736,
+            "install_events_month": 132,
+            "instances_week": 1308,
+            "install_events_week": 28
         }
     },
 
@@ -3327,9 +3313,9 @@
         },
         "stats": {
             "instances_month": 6046,
-            "install_events_month": 301,
+            "install_events_month": 300,
             "instances_week": 4546,
-            "install_events_week": 64
+            "install_events_week": 63
         }
     },
 
@@ -3445,7 +3431,7 @@
         "stats": {
             "instances_month": 81,
             "install_events_month": 3,
-            "instances_week": 68,
+            "instances_week": 67,
             "install_events_week": 1
         }
     },
@@ -3482,10 +3468,10 @@
             }
         },
         "stats": {
-            "instances_month": 4482,
-            "install_events_month": 187,
-            "instances_week": 3441,
-            "install_events_week": 41
+            "instances_month": 4484,
+            "install_events_month": 188,
+            "instances_week": 3444,
+            "install_events_week": 42
         }
     },
 
@@ -3638,10 +3624,10 @@
             }
         },
         "stats": {
-            "instances_month": 2175,
+            "instances_month": 2176,
             "install_events_month": 268,
-            "instances_week": 1526,
-            "install_events_week": 59
+            "instances_week": 1528,
+            "install_events_week": 58
         }
     },
 
@@ -3677,9 +3663,9 @@
             }
         },
         "stats": {
-            "instances_month": 377,
+            "instances_month": 378,
             "install_events_month": 20,
-            "instances_week": 281,
+            "instances_week": 282,
             "install_events_week": 3
         }
     },
@@ -3701,25 +3687,11 @@
         "license": "AGPL-3.0",
         "image": "https://plugins.octoprint.org/assets/img/plugins/octolapse/tab_mini.png",
         "abandoned": false,
-        "github": { 
-            "latest_release": {
-                "name": "v0.4.1",
-                "date": "2020-12-05 00:58:24 +0000",
-                "tag": "v0.4.1"
-            },
-            "releases": 30,
-            "last_push": "2020-12-05 00:35:29 +0000",
-            "stars": 555,
-            "issues": {
-                "open": 232,
-                "closed": 559
-            }
-        },
         "stats": {
-            "instances_month": 25810,
-            "install_events_month": 2355,
+            "instances_month": 25806,
+            "install_events_month": 2351,
             "instances_week": 19426,
-            "install_events_week": 537
+            "install_events_week": 530
         }
     },
 
@@ -3755,10 +3727,10 @@
             }
         },
         "stats": {
-            "instances_month": 21134,
-            "install_events_month": 1378,
-            "instances_week": 16157,
-            "install_events_week": 323
+            "instances_month": 21137,
+            "install_events_month": 1377,
+            "instances_week": 16158,
+            "install_events_week": 321
         }
     },
 
@@ -3794,10 +3766,10 @@
             }
         },
         "stats": {
-            "instances_month": 36258,
-            "install_events_month": 3472,
-            "instances_week": 26838,
-            "install_events_week": 802
+            "instances_month": 36268,
+            "install_events_month": 3471,
+            "instances_week": 26839,
+            "install_events_week": 801
         }
     },
 
@@ -3911,10 +3883,10 @@
             }
         },
         "stats": {
-            "instances_month": 4650,
-            "install_events_month": 344,
-            "instances_week": 3464,
-            "install_events_week": 61
+            "instances_month": 4652,
+            "install_events_month": 345,
+            "instances_week": 3465,
+            "install_events_week": 62
         }
     },
 
@@ -3949,10 +3921,10 @@
             }
         },
         "stats": {
-            "instances_month": 2991,
-            "install_events_month": 276,
-            "instances_week": 2240,
-            "install_events_week": 65
+            "instances_month": 2992,
+            "install_events_month": 277,
+            "instances_week": 2241,
+            "install_events_week": 66
         }
     },
 
@@ -3972,20 +3944,6 @@
         },
         "license": "AGPLv3",
         "abandoned": false,
-        "github": { 
-            "latest_release": {
-                "name": "Initial Release",
-                "date": "2018-05-09 15:03:57 +0000",
-                "tag": "0.1.0"
-            },
-            "releases": 5,
-            "last_push": "2020-04-17 05:25:36 +0000",
-            "stars": 9,
-            "issues": {
-                "open": 6,
-                "closed": 6
-            }
-        },
         "stats": {
             "instances_month": 309,
             "install_events_month": 12,
@@ -4028,7 +3986,7 @@
         "stats": {
             "instances_month": 679,
             "install_events_month": 49,
-            "instances_week": 525,
+            "instances_week": 526,
             "install_events_week": 11
         }
     },
@@ -4106,7 +4064,7 @@
             "instances_month": 548,
             "install_events_month": 22,
             "instances_week": 436,
-            "install_events_week": 5
+            "install_events_week": 4
         }
     },
 
@@ -4143,8 +4101,8 @@
         },
         "stats": {
             "instances_month": 7195,
-            "install_events_month": 363,
-            "instances_week": 5365,
+            "install_events_month": 364,
+            "instances_week": 5366,
             "install_events_week": 81
         }
     },
@@ -4181,9 +4139,9 @@
             }
         },
         "stats": {
-            "instances_month": 904,
-            "install_events_month": 80,
-            "instances_week": 624,
+            "instances_month": 903,
+            "install_events_month": 79,
+            "instances_week": 623,
             "install_events_week": 17
         }
     },
@@ -4220,10 +4178,10 @@
             }
         },
         "stats": {
-            "instances_month": 11014,
-            "install_events_month": 905,
-            "instances_week": 8427,
-            "install_events_week": 208
+            "instances_month": 11018,
+            "install_events_month": 907,
+            "instances_week": 8428,
+            "install_events_week": 211
         }
     },
 
@@ -4336,10 +4294,10 @@
             }
         },
         "stats": {
-            "instances_month": 34244,
-            "install_events_month": 2560,
-            "instances_week": 26753,
-            "install_events_week": 586
+            "instances_month": 34243,
+            "install_events_month": 2562,
+            "instances_week": 26731,
+            "install_events_week": 587
         }
     },
 
@@ -4409,8 +4367,8 @@
             }
         },
         "stats": {
-            "instances_month": 3058,
-            "install_events_month": 335,
+            "instances_month": 3061,
+            "install_events_month": 336,
             "instances_week": 2178,
             "install_events_week": 79
         }
@@ -4449,7 +4407,7 @@
         "stats": {
             "instances_month": 255,
             "install_events_month": 7,
-            "instances_week": 210,
+            "instances_week": 209,
             "install_events_week": 2
         }
     },
@@ -4486,9 +4444,9 @@
             }
         },
         "stats": {
-            "instances_month": 792,
+            "instances_month": 793,
             "install_events_month": 46,
-            "instances_week": 608,
+            "instances_week": 609,
             "install_events_week": 13
         }
     },
@@ -4510,24 +4468,10 @@
         "license": "AGPLv3",
         "image": "https://plugins.octoprint.org/assets/img/plugins/rtmpstreamer/tab_screenshot.jpg",
         "abandoned": false,
-        "github": { 
-            "latest_release": {
-                "name": "0.1.0",
-                "date": "2018-08-12 07:12:35 +0000",
-                "tag": "0.1.0"
-            },
-            "releases": 21,
-            "last_push": "2022-09-24 02:27:09 +0000",
-            "stars": 19,
-            "issues": {
-                "open": 4,
-                "closed": 30
-            }
-        },
         "stats": {
             "instances_month": 318,
             "install_events_month": 45,
-            "instances_week": 216,
+            "instances_week": 215,
             "install_events_week": 12
         }
     },
@@ -4564,10 +4508,10 @@
             }
         },
         "stats": {
-            "instances_month": 4383,
-            "install_events_month": 845,
-            "instances_week": 2652,
-            "install_events_week": 197
+            "instances_month": 4387,
+            "install_events_month": 847,
+            "instances_week": 2657,
+            "install_events_week": 199
         }
     },
 
@@ -4642,7 +4586,7 @@
         "stats": {
             "instances_month": 326,
             "install_events_month": 9,
-            "instances_week": 249,
+            "instances_week": 248,
             "install_events_week": 1
         }
     },
@@ -4680,7 +4624,7 @@
         "stats": {
             "instances_month": 465,
             "install_events_month": 17,
-            "instances_week": 375,
+            "instances_week": 374,
             "install_events_week": 6
         }
     },
@@ -4719,7 +4663,7 @@
         "stats": {
             "instances_month": 313,
             "install_events_month": 17,
-            "instances_week": 260,
+            "instances_week": 259,
             "install_events_week": 4
         }
     },
@@ -4885,10 +4829,10 @@
         "license": "AGPLv3",
         "abandoned": false,
         "stats": {
-            "instances_month": 4211,
-            "install_events_month": 455,
-            "instances_week": 2945,
-            "install_events_week": 94
+            "instances_month": 4212,
+            "install_events_month": 456,
+            "instances_week": 2949,
+            "install_events_week": 95
         }
     },
 
@@ -4964,7 +4908,7 @@
         "stats": {
             "instances_month": 1135,
             "install_events_month": 30,
-            "instances_week": 778,
+            "instances_week": 773,
             "install_events_week": 3
         }
     },
@@ -5074,7 +5018,7 @@
         "stats": {
             "instances_month": 95,
             "install_events_month": 1,
-            "instances_week": 70,
+            "instances_week": 69,
             "install_events_week": 2
         }
     },
@@ -5185,7 +5129,7 @@
         "stats": {
             "instances_month": 1042,
             "install_events_month": 50,
-            "instances_week": 814,
+            "instances_week": 817,
             "install_events_week": 11
         }
     },
@@ -5222,10 +5166,10 @@
             }
         },
         "stats": {
-            "instances_month": 3342,
+            "instances_month": 3347,
             "install_events_month": 148,
-            "instances_week": 2541,
-            "install_events_week": 32
+            "instances_week": 2546,
+            "install_events_week": 31
         }
     },
 
@@ -5302,7 +5246,7 @@
         "stats": {
             "instances_month": 49,
             "install_events_month": 4,
-            "instances_week": 32,
+            "instances_week": 31,
             "install_events_week": 1
         }
     },
@@ -5481,8 +5425,8 @@
             }
         },
         "stats": {
-            "instances_month": 1443,
-            "install_events_month": 111,
+            "instances_month": 1442,
+            "install_events_month": 110,
             "instances_week": 1003,
             "install_events_week": 25
         }
@@ -5598,10 +5542,10 @@
             }
         },
         "stats": {
-            "instances_month": 1033,
-            "install_events_month": 138,
-            "instances_week": 729,
-            "install_events_week": 28
+            "instances_month": 1034,
+            "install_events_month": 139,
+            "instances_week": 731,
+            "install_events_week": 29
         }
     },
 
@@ -5819,10 +5763,10 @@
             }
         },
         "stats": {
-            "instances_month": 5327,
-            "install_events_month": 365,
-            "instances_week": 4194,
-            "install_events_week": 77
+            "instances_month": 5332,
+            "install_events_month": 368,
+            "instances_week": 4198,
+            "install_events_week": 80
         }
     },
 
@@ -5852,9 +5796,9 @@
             }
         },
         "stats": {
-            "instances_month": 312,
+            "instances_month": 313,
             "install_events_month": 29,
-            "instances_week": 231,
+            "instances_week": 232,
             "install_events_week": 3
         }
     },
@@ -5887,8 +5831,8 @@
         "stats": {
             "instances_month": 5150,
             "install_events_month": 412,
-            "instances_week": 3841,
-            "install_events_week": 93
+            "instances_week": 3847,
+            "install_events_week": 94
         }
     },
 
@@ -5925,9 +5869,9 @@
         },
         "stats": {
             "instances_month": 114,
-            "install_events_month": 7,
+            "install_events_month": 8,
             "instances_week": 83,
-            "install_events_week": 0
+            "install_events_week": 1
         }
     },
 
@@ -5996,9 +5940,9 @@
             }
         },
         "stats": {
-            "instances_month": 367,
+            "instances_month": 368,
             "install_events_month": 15,
-            "instances_week": 287,
+            "instances_week": 288,
             "install_events_week": 6
         }
     },
@@ -6066,7 +6010,7 @@
             }
         },
         "stats": {
-            "instances_month": 980,
+            "instances_month": 979,
             "install_events_month": 67,
             "instances_week": 787,
             "install_events_week": 15
@@ -6105,10 +6049,10 @@
             }
         },
         "stats": {
-            "instances_month": 2424,
+            "instances_month": 2423,
             "install_events_month": 174,
             "instances_week": 1794,
-            "install_events_week": 30
+            "install_events_week": 29
         }
     },
 
@@ -6182,10 +6126,10 @@
             }
         },
         "stats": {
-            "instances_month": 20238,
-            "install_events_month": 2059,
-            "instances_week": 15695,
-            "install_events_week": 471
+            "instances_month": 20241,
+            "install_events_month": 2054,
+            "instances_week": 15710,
+            "install_events_week": 469
         }
     },
 
@@ -6299,9 +6243,9 @@
             }
         },
         "stats": {
-            "instances_month": 52,
+            "instances_month": 53,
             "install_events_month": 2,
-            "instances_week": 37,
+            "instances_week": 38,
             "install_events_week": 0
         }
     },
@@ -6415,7 +6359,7 @@
             }
         },
         "stats": {
-            "instances_month": 1014,
+            "instances_month": 1013,
             "install_events_month": 53,
             "instances_week": 784,
             "install_events_week": 12
@@ -6482,10 +6426,10 @@
             }
         },
         "stats": {
-            "instances_month": 5365,
+            "instances_month": 5368,
             "install_events_month": 557,
-            "instances_week": 3838,
-            "install_events_week": 130
+            "instances_week": 3840,
+            "install_events_week": 131
         }
     },
 
@@ -6520,9 +6464,9 @@
             }
         },
         "stats": {
-            "instances_month": 1118,
-            "install_events_month": 121,
-            "instances_week": 787,
+            "instances_month": 1117,
+            "install_events_month": 119,
+            "instances_week": 788,
             "install_events_week": 27
         }
     },
@@ -6598,10 +6542,10 @@
             }
         },
         "stats": {
-            "instances_month": 9783,
-            "install_events_month": 1996,
-            "instances_week": 6742,
-            "install_events_week": 475
+            "instances_month": 9784,
+            "install_events_month": 1991,
+            "instances_week": 6739,
+            "install_events_week": 474
         }
     },
 
@@ -6636,9 +6580,9 @@
             }
         },
         "stats": {
-            "instances_month": 5548,
-            "install_events_month": 239,
-            "instances_week": 3728,
+            "instances_month": 5553,
+            "install_events_month": 237,
+            "instances_week": 3726,
             "install_events_week": 44
         }
     },
@@ -6675,10 +6619,10 @@
             }
         },
         "stats": {
-            "instances_month": 6275,
-            "install_events_month": 571,
-            "instances_week": 4582,
-            "install_events_week": 113
+            "instances_month": 6276,
+            "install_events_month": 569,
+            "instances_week": 4583,
+            "install_events_week": 114
         }
     },
 
@@ -6785,9 +6729,9 @@
             }
         },
         "stats": {
-            "instances_month": 6956,
-            "install_events_month": 614,
-            "instances_week": 4660,
+            "instances_month": 6953,
+            "install_events_month": 613,
+            "instances_week": 4659,
             "install_events_week": 141
         }
     },
@@ -6862,9 +6806,9 @@
             }
         },
         "stats": {
-            "instances_month": 3248,
-            "install_events_month": 207,
-            "instances_week": 2523,
+            "instances_month": 3250,
+            "install_events_month": 205,
+            "instances_week": 2524,
             "install_events_week": 55
         }
     },
@@ -6979,9 +6923,9 @@
             }
         },
         "stats": {
-            "instances_month": 1818,
+            "instances_month": 1819,
             "install_events_month": 64,
-            "instances_week": 1302,
+            "instances_week": 1297,
             "install_events_week": 13
         }
     },
@@ -7073,23 +7017,9 @@
         },
         "license": "AGPLv3",
         "abandoned": false,
-        "github": { 
-            "latest_release": {
-                "name": "0.1.0",
-                "date": "2020-03-25 16:01:44 +0000",
-                "tag": "0.1.0"
-            },
-            "releases": 5,
-            "last_push": "2022-06-23 12:11:23 +0000",
-            "stars": 4,
-            "issues": {
-                "open": 0,
-                "closed": 3
-            }
-        },
         "stats": {
-            "instances_month": 535,
-            "install_events_month": 48,
+            "instances_month": 536,
+            "install_events_month": 47,
             "instances_week": 393,
             "install_events_week": 15
         }
@@ -7112,9 +7042,9 @@
         "license": "AGPLv3",
         "abandoned": false,
         "stats": {
-            "instances_month": 237,
+            "instances_month": 238,
             "install_events_month": 0,
-            "instances_week": 173,
+            "instances_week": 174,
             "install_events_week": 0
         }
     },
@@ -7221,10 +7151,10 @@
             }
         },
         "stats": {
-            "instances_month": 11744,
-            "install_events_month": 1049,
-            "instances_week": 8916,
-            "install_events_week": 257
+            "instances_month": 11745,
+            "install_events_month": 1050,
+            "instances_week": 8912,
+            "install_events_week": 256
         }
     },
 
@@ -7260,7 +7190,7 @@
             }
         },
         "stats": {
-            "instances_month": 926,
+            "instances_month": 927,
             "install_events_month": 123,
             "instances_week": 694,
             "install_events_week": 26
@@ -7299,9 +7229,9 @@
             }
         },
         "stats": {
-            "instances_month": 917,
-            "install_events_month": 118,
-            "instances_week": 656,
+            "instances_month": 918,
+            "install_events_month": 117,
+            "instances_week": 657,
             "install_events_week": 24
         }
     },
@@ -7450,7 +7380,7 @@
         "stats": {
             "instances_month": 382,
             "install_events_month": 27,
-            "instances_week": 317,
+            "instances_week": 318,
             "install_events_week": 4
         }
     },
@@ -7488,7 +7418,7 @@
         "stats": {
             "instances_month": 1903,
             "install_events_month": 92,
-            "instances_week": 1468,
+            "instances_week": 1467,
             "install_events_week": 31
         }
     },
@@ -7525,9 +7455,9 @@
             }
         },
         "stats": {
-            "instances_month": 1303,
+            "instances_month": 1305,
             "install_events_month": 101,
-            "instances_week": 971,
+            "instances_week": 973,
             "install_events_week": 29
         }
     },
@@ -7605,7 +7535,7 @@
             "instances_month": 128,
             "install_events_month": 31,
             "instances_week": 87,
-            "install_events_week": 8
+            "install_events_week": 7
         }
     },
 
@@ -7760,7 +7690,7 @@
             "instances_month": 218,
             "install_events_month": 11,
             "instances_week": 175,
-            "install_events_week": 3
+            "install_events_week": 2
         }
     },
 
@@ -7796,9 +7726,9 @@
             }
         },
         "stats": {
-            "instances_month": 2992,
-            "install_events_month": 186,
-            "instances_week": 2312,
+            "instances_month": 2995,
+            "install_events_month": 187,
+            "instances_week": 2314,
             "install_events_week": 37
         }
     },
@@ -8066,9 +7996,9 @@
             }
         },
         "stats": {
-            "instances_month": 500,
+            "instances_month": 502,
             "install_events_month": 47,
-            "instances_week": 349,
+            "instances_week": 351,
             "install_events_week": 11
         }
     },
@@ -8106,9 +8036,9 @@
         },
         "stats": {
             "instances_month": 2490,
-            "install_events_month": 199,
+            "install_events_month": 198,
             "instances_week": 1843,
-            "install_events_week": 48
+            "install_events_week": 47
         }
     },
 
@@ -8144,9 +8074,9 @@
             }
         },
         "stats": {
-            "instances_month": 703,
+            "instances_month": 704,
             "install_events_month": 66,
-            "instances_week": 546,
+            "instances_week": 547,
             "install_events_week": 18
         }
     },
@@ -8300,7 +8230,7 @@
             }
         },
         "stats": {
-            "instances_month": 1772,
+            "instances_month": 1770,
             "install_events_month": 159,
             "instances_week": 1323,
             "install_events_week": 34
@@ -8339,10 +8269,10 @@
             }
         },
         "stats": {
-            "instances_month": 2667,
-            "install_events_month": 220,
-            "instances_week": 2110,
-            "install_events_week": 50
+            "instances_month": 2666,
+            "install_events_month": 221,
+            "instances_week": 2108,
+            "install_events_week": 51
         }
     },
 
@@ -8364,10 +8294,10 @@
         "image": "https://plugins.octoprint.org/assets/img/plugins/z_probe_offset/z_probe_offset_control.png",
         "abandoned": false,
         "stats": {
-            "instances_month": 3728,
-            "install_events_month": 424,
-            "instances_week": 2735,
-            "install_events_week": 89
+            "instances_month": 3730,
+            "install_events_month": 425,
+            "instances_week": 2737,
+            "install_events_week": 90
         }
     },
 
@@ -8399,7 +8329,7 @@
         "stats": {
             "instances_month": 316,
             "install_events_month": 14,
-            "instances_week": 241,
+            "instances_week": 240,
             "install_events_week": 4
         }
     },
@@ -8438,7 +8368,7 @@
         "stats": {
             "instances_month": 306,
             "install_events_month": 20,
-            "instances_week": 217,
+            "instances_week": 216,
             "install_events_week": 5
         }
     },
@@ -8594,7 +8524,7 @@
         "stats": {
             "instances_month": 530,
             "install_events_month": 39,
-            "instances_week": 404,
+            "instances_week": 405,
             "install_events_week": 5
         }
     },
@@ -8658,7 +8588,7 @@
         "stats": {
             "instances_month": 306,
             "install_events_month": 18,
-            "instances_week": 200,
+            "instances_week": 199,
             "install_events_week": 6
         }
     },
@@ -8761,9 +8691,9 @@
             }
         },
         "stats": {
-            "instances_month": 372,
+            "instances_month": 371,
             "install_events_month": 62,
-            "instances_week": 277,
+            "instances_week": 279,
             "install_events_week": 15
         }
     },
@@ -8874,7 +8804,7 @@
         "stats": {
             "instances_month": 1309,
             "install_events_month": 97,
-            "instances_week": 1072,
+            "instances_week": 1073,
             "install_events_week": 25
         }
     },
@@ -8911,7 +8841,7 @@
             }
         },
         "stats": {
-            "instances_month": 940,
+            "instances_month": 939,
             "install_events_month": 92,
             "instances_week": 667,
             "install_events_week": 21
@@ -8952,7 +8882,7 @@
         "stats": {
             "instances_month": 235,
             "install_events_month": 22,
-            "instances_week": 164,
+            "instances_week": 163,
             "install_events_week": 5
         }
     },
@@ -8991,7 +8921,7 @@
         "stats": {
             "instances_month": 1117,
             "install_events_month": 83,
-            "instances_week": 835,
+            "instances_week": 834,
             "install_events_week": 16
         }
     },
@@ -9098,7 +9028,7 @@
             }
         },
         "stats": {
-            "instances_month": 369,
+            "instances_month": 368,
             "install_events_month": 13,
             "instances_week": 254,
             "install_events_week": 2
@@ -9137,10 +9067,10 @@
             }
         },
         "stats": {
-            "instances_month": 13939,
-            "install_events_month": 1277,
-            "instances_week": 10554,
-            "install_events_week": 295
+            "instances_month": 13933,
+            "install_events_month": 1276,
+            "instances_week": 10547,
+            "install_events_week": 294
         }
     },
 
@@ -9215,10 +9145,10 @@
             }
         },
         "stats": {
-            "instances_month": 3849,
-            "install_events_month": 319,
-            "instances_week": 2884,
-            "install_events_week": 83
+            "instances_month": 3847,
+            "install_events_month": 320,
+            "instances_week": 2882,
+            "install_events_week": 84
         }
     },
 
@@ -9238,11 +9168,25 @@
         },
         "license": "MIT",
         "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "0.0.2",
+                "date": "2020-09-07 17:15:59 +0000",
+                "tag": "0.0.2"
+            },
+            "releases": 3,
+            "last_push": "2021-04-26 18:52:11 +0000",
+            "stars": 23,
+            "issues": {
+                "open": 2,
+                "closed": 15
+            }
+        },
         "stats": {
-            "instances_month": 16775,
-            "install_events_month": 1413,
-            "instances_week": 12156,
-            "install_events_week": 312
+            "instances_month": 16778,
+            "install_events_month": 1409,
+            "instances_week": 12162,
+            "install_events_week": 313
         }
     },
 
@@ -9278,10 +9222,10 @@
             }
         },
         "stats": {
-            "instances_month": 1729,
+            "instances_month": 1730,
             "install_events_month": 102,
-            "instances_week": 1390,
-            "install_events_week": 30
+            "instances_week": 1392,
+            "install_events_week": 29
         }
     },
 
@@ -9317,9 +9261,9 @@
             }
         },
         "stats": {
-            "instances_month": 1056,
+            "instances_month": 1055,
             "install_events_month": 94,
-            "instances_week": 818,
+            "instances_week": 817,
             "install_events_week": 27
         }
     },
@@ -9419,9 +9363,9 @@
             }
         },
         "stats": {
-            "instances_month": 2072,
+            "instances_month": 2073,
             "install_events_month": 152,
-            "instances_week": 1573,
+            "instances_week": 1574,
             "install_events_week": 37
         }
     },
@@ -9476,25 +9420,11 @@
         "license": "AGPLv3",
         "image": "https://plugins.octoprint.org/assets/img/plugins/wifistatus/WiFiStatus.png",
         "abandoned": false,
-        "github": { 
-            "latest_release": {
-                "name": "1.0.0",
-                "date": "2020-10-08 23:58:28 +0000",
-                "tag": "1.0.0"
-            },
-            "releases": 16,
-            "last_push": "2021-10-06 01:59:12 +0000",
-            "stars": 10,
-            "issues": {
-                "open": 0,
-                "closed": 17
-            }
-        },
         "stats": {
-            "instances_month": 3090,
-            "install_events_month": 311,
+            "instances_month": 3089,
+            "install_events_month": 310,
             "instances_week": 2236,
-            "install_events_week": 78
+            "install_events_week": 77
         }
     },
 
@@ -9571,7 +9501,7 @@
         "stats": {
             "instances_month": 586,
             "install_events_month": 79,
-            "instances_week": 425,
+            "instances_week": 424,
             "install_events_week": 14
         }
     },
@@ -9647,10 +9577,10 @@
             }
         },
         "stats": {
-            "instances_month": 8282,
-            "install_events_month": 1053,
-            "instances_week": 6133,
-            "install_events_week": 215
+            "instances_month": 8280,
+            "install_events_month": 1051,
+            "instances_week": 6129,
+            "install_events_week": 214
         }
     },
 
@@ -9686,10 +9616,10 @@
             }
         },
         "stats": {
-            "instances_month": 26841,
-            "install_events_month": 2926,
-            "instances_week": 22577,
-            "install_events_week": 741
+            "instances_month": 26840,
+            "install_events_month": 2928,
+            "instances_week": 22580,
+            "install_events_week": 746
         }
     },
 
@@ -9766,7 +9696,7 @@
         "stats": {
             "instances_month": 643,
             "install_events_month": 52,
-            "instances_week": 474,
+            "instances_week": 475,
             "install_events_week": 8
         }
     },
@@ -9842,10 +9772,10 @@
             }
         },
         "stats": {
-            "instances_month": 7351,
-            "install_events_month": 811,
+            "instances_month": 7349,
+            "install_events_month": 810,
             "instances_week": 5344,
-            "install_events_week": 213
+            "install_events_week": 211
         }
     },
 
@@ -9985,9 +9915,9 @@
             }
         },
         "stats": {
-            "instances_month": 362,
+            "instances_month": 363,
             "install_events_month": 23,
-            "instances_week": 267,
+            "instances_week": 268,
             "install_events_week": 5
         }
     },
@@ -10026,7 +9956,7 @@
         "stats": {
             "instances_month": 664,
             "install_events_month": 34,
-            "instances_week": 528,
+            "instances_week": 527,
             "install_events_week": 8
         }
     },
@@ -10141,9 +10071,9 @@
             }
         },
         "stats": {
-            "instances_month": 631,
+            "instances_month": 632,
             "install_events_month": 39,
-            "instances_week": 461,
+            "instances_week": 463,
             "install_events_week": 8
         }
     },
@@ -10182,7 +10112,7 @@
         "stats": {
             "instances_month": 192,
             "install_events_month": 30,
-            "instances_week": 145,
+            "instances_week": 144,
             "install_events_week": 8
         }
     },
@@ -10219,9 +10149,9 @@
             }
         },
         "stats": {
-            "instances_month": 2181,
+            "instances_month": 2180,
             "install_events_month": 120,
-            "instances_week": 1644,
+            "instances_week": 1642,
             "install_events_week": 33
         }
     },
@@ -10298,9 +10228,9 @@
             }
         },
         "stats": {
-            "instances_month": 1177,
+            "instances_month": 1176,
             "install_events_month": 130,
-            "instances_week": 821,
+            "instances_week": 819,
             "install_events_week": 36
         }
     },
@@ -10415,10 +10345,10 @@
             }
         },
         "stats": {
-            "instances_month": 1426,
-            "install_events_month": 133,
+            "instances_month": 1427,
+            "install_events_month": 134,
             "instances_week": 1036,
-            "install_events_week": 33
+            "install_events_week": 34
         }
     },
 
@@ -10455,8 +10385,8 @@
         "stats": {
             "instances_month": 622,
             "install_events_month": 98,
-            "instances_week": 483,
-            "install_events_week": 28
+            "instances_week": 482,
+            "install_events_week": 27
         }
     },
 
@@ -10491,9 +10421,9 @@
             }
         },
         "stats": {
-            "instances_month": 1250,
+            "instances_month": 1249,
             "install_events_month": 117,
-            "instances_week": 934,
+            "instances_week": 933,
             "install_events_week": 19
         }
     },
@@ -10532,7 +10462,7 @@
         "stats": {
             "instances_month": 503,
             "install_events_month": 55,
-            "instances_week": 377,
+            "instances_week": 376,
             "install_events_week": 11
         }
     },
@@ -10686,9 +10616,9 @@
             }
         },
         "stats": {
-            "instances_month": 1196,
+            "instances_month": 1197,
             "install_events_month": 121,
-            "instances_week": 902,
+            "instances_week": 903,
             "install_events_week": 35
         }
     },
@@ -10765,7 +10695,7 @@
         "stats": {
             "instances_month": 631,
             "install_events_month": 51,
-            "instances_week": 492,
+            "instances_week": 491,
             "install_events_week": 16
         }
     },
@@ -10880,7 +10810,7 @@
         "stats": {
             "instances_month": 440,
             "install_events_month": 45,
-            "instances_week": 328,
+            "instances_week": 327,
             "install_events_week": 8
         }
     },
@@ -10919,7 +10849,7 @@
         "stats": {
             "instances_month": 687,
             "install_events_month": 44,
-            "instances_week": 524,
+            "instances_week": 527,
             "install_events_week": 10
         }
     },
@@ -10957,7 +10887,7 @@
         "stats": {
             "instances_month": 467,
             "install_events_month": 69,
-            "instances_week": 366,
+            "instances_week": 364,
             "install_events_week": 24
         }
     },
@@ -10994,10 +10924,10 @@
             }
         },
         "stats": {
-            "instances_month": 8038,
-            "install_events_month": 962,
-            "instances_week": 6009,
-            "install_events_week": 207
+            "instances_month": 8037,
+            "install_events_month": 959,
+            "instances_week": 6013,
+            "install_events_week": 205
         }
     },
 
@@ -11071,7 +11001,7 @@
             }
         },
         "stats": {
-            "instances_month": 217,
+            "instances_month": 216,
             "install_events_month": 39,
             "instances_week": 161,
             "install_events_week": 12
@@ -11110,9 +11040,9 @@
             }
         },
         "stats": {
-            "instances_month": 3244,
+            "instances_month": 3243,
             "install_events_month": 238,
-            "instances_week": 2282,
+            "instances_week": 2278,
             "install_events_week": 52
         }
     },
@@ -11227,7 +11157,7 @@
         "stats": {
             "instances_month": 2192,
             "install_events_month": 189,
-            "instances_week": 1598,
+            "instances_week": 1595,
             "install_events_week": 39
         }
     },
@@ -11264,7 +11194,7 @@
             }
         },
         "stats": {
-            "instances_month": 170,
+            "instances_month": 169,
             "install_events_month": 17,
             "instances_week": 129,
             "install_events_week": 5
@@ -11302,9 +11232,9 @@
             }
         },
         "stats": {
-            "instances_month": 772,
+            "instances_month": 773,
             "install_events_month": 115,
-            "instances_week": 624,
+            "instances_week": 625,
             "install_events_week": 23
         }
     },
@@ -11340,9 +11270,9 @@
             }
         },
         "stats": {
-            "instances_month": 272,
+            "instances_month": 273,
             "install_events_month": 33,
-            "instances_week": 201,
+            "instances_week": 202,
             "install_events_week": 5
         }
     },
@@ -11378,9 +11308,9 @@
             }
         },
         "stats": {
-            "instances_month": 1513,
+            "instances_month": 1514,
             "install_events_month": 77,
-            "instances_week": 1178,
+            "instances_week": 1177,
             "install_events_week": 18
         }
     },
@@ -11496,9 +11426,9 @@
         },
         "stats": {
             "instances_month": 342,
-            "install_events_month": 64,
-            "instances_week": 229,
-            "install_events_week": 12
+            "install_events_month": 65,
+            "instances_week": 230,
+            "install_events_week": 13
         }
     },
 
@@ -11646,7 +11576,7 @@
         "stats": {
             "instances_month": 15,
             "install_events_month": 1,
-            "instances_week": 12,
+            "instances_week": 13,
             "install_events_week": 0
         }
     },
@@ -11724,7 +11654,7 @@
         "stats": {
             "instances_month": 314,
             "install_events_month": 34,
-            "instances_week": 244,
+            "instances_week": 245,
             "install_events_week": 7
         }
     },
@@ -11880,7 +11810,7 @@
         "stats": {
             "instances_month": 602,
             "install_events_month": 47,
-            "instances_week": 450,
+            "instances_week": 452,
             "install_events_week": 12
         }
     },
@@ -11919,7 +11849,7 @@
         "stats": {
             "instances_month": 819,
             "install_events_month": 47,
-            "instances_week": 648,
+            "instances_week": 646,
             "install_events_week": 12
         }
     },
@@ -12035,8 +11965,8 @@
         },
         "stats": {
             "instances_month": 816,
-            "install_events_month": 106,
-            "instances_week": 584,
+            "install_events_month": 105,
+            "instances_week": 583,
             "install_events_week": 16
         }
     },
@@ -12108,7 +12038,7 @@
         "stats": {
             "instances_month": 1021,
             "install_events_month": 51,
-            "instances_week": 779,
+            "instances_week": 780,
             "install_events_week": 13
         }
     },
@@ -12183,7 +12113,7 @@
             }
         },
         "stats": {
-            "instances_month": 144,
+            "instances_month": 143,
             "install_events_month": 17,
             "instances_week": 106,
             "install_events_week": 3
@@ -12222,9 +12152,9 @@
             }
         },
         "stats": {
-            "instances_month": 3603,
-            "install_events_month": 535,
-            "instances_week": 2720,
+            "instances_month": 3604,
+            "install_events_month": 531,
+            "instances_week": 2721,
             "install_events_week": 114
         }
     },
@@ -12451,7 +12381,7 @@
         "stats": {
             "instances_month": 509,
             "install_events_month": 24,
-            "instances_week": 409,
+            "instances_week": 410,
             "install_events_week": 4
         }
     },
@@ -12528,7 +12458,7 @@
             }
         },
         "stats": {
-            "instances_month": 737,
+            "instances_month": 736,
             "install_events_month": 86,
             "instances_week": 529,
             "install_events_week": 20
@@ -12569,7 +12499,7 @@
         "stats": {
             "instances_month": 666,
             "install_events_month": 35,
-            "instances_week": 539,
+            "instances_week": 538,
             "install_events_week": 7
         }
     },
@@ -12606,7 +12536,7 @@
             }
         },
         "stats": {
-            "instances_month": 2589,
+            "instances_month": 2588,
             "install_events_month": 366,
             "instances_week": 1878,
             "install_events_week": 75
@@ -12724,7 +12654,7 @@
         "stats": {
             "instances_month": 53,
             "install_events_month": 2,
-            "instances_week": 42,
+            "instances_week": 41,
             "install_events_week": 0
         }
     },
@@ -12989,10 +12919,10 @@
             }
         },
         "stats": {
-            "instances_month": 745,
-            "install_events_month": 250,
-            "instances_week": 436,
-            "install_events_week": 63
+            "instances_month": 743,
+            "install_events_month": 251,
+            "instances_week": 435,
+            "install_events_week": 64
         }
     },
 
@@ -13068,7 +12998,7 @@
         "stats": {
             "instances_month": 430,
             "install_events_month": 17,
-            "instances_week": 310,
+            "instances_week": 309,
             "install_events_week": 2
         }
     },
@@ -13260,7 +13190,7 @@
         "stats": {
             "instances_month": 552,
             "install_events_month": 37,
-            "instances_week": 406,
+            "instances_week": 405,
             "install_events_week": 8
         }
     },
@@ -13434,20 +13364,6 @@
         },
         "license": "AGPLv3",
         "abandoned": false,
-        "github": { 
-            "latest_release": {
-                "name": "Initial",
-                "date": "2022-07-18 04:55:35 +0000",
-                "tag": "release"
-            },
-            "releases": 2,
-            "last_push": "2022-07-20 13:40:07 +0000",
-            "stars": 1,
-            "issues": {
-                "open": 0,
-                "closed": 0
-            }
-        },
         "stats": {
             "instances_month": 258,
             "install_events_month": 34,
@@ -13512,20 +13428,6 @@
         "license": "AGPLv3",
         "image": "https://plugins.octoprint.org/assets/img/plugins/sdwire/sdwire-hw.jpg",
         "abandoned": false,
-        "github": { 
-            "latest_release": {
-                "name": "Fast upload to sd card.",
-                "date": "2022-07-23 16:56:33 +0000",
-                "tag": "0.1.0"
-            },
-            "releases": 6,
-            "last_push": "2022-10-03 16:19:50 +0000",
-            "stars": 3,
-            "issues": {
-                "open": 0,
-                "closed": 0
-            }
-        },
         "stats": {
             "instances_month": 35,
             "install_events_month": 9,
@@ -13669,20 +13571,6 @@
         "license": "MIT",
         "image": "https://plugins.octoprint.org/assets/img/plugins/HeaderAnnouncements/announcement.png",
         "abandoned": false,
-        "github": { 
-            "latest_release": {
-                "name": "v0.0.1",
-                "date": "2022-09-12 06:16:00 +0000",
-                "tag": "v0.0.1"
-            },
-            "releases": 4,
-            "last_push": "2022-09-17 20:57:38 +0000",
-            "stars": 1,
-            "issues": {
-                "open": 0,
-                "closed": 0
-            }
-        },
         "stats": {
             "instances_month": 34,
             "install_events_month": 17,
@@ -13723,10 +13611,10 @@
             }
         },
         "stats": {
-            "instances_month": 559,
-            "install_events_month": 554,
+            "instances_month": 560,
+            "install_events_month": 555,
             "instances_week": 441,
-            "install_events_week": 111
+            "install_events_week": 110
         }
     }
 ]
