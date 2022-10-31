@@ -65,7 +65,7 @@ jobs:
           python ./src/.github/scripts/populate_py2_overlays.py
 
       - name: 📦 Cache jekyll build bundle
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: ./bundle
           key: ${{ runner.os }}-jekyll-build-bundle
@@ -129,13 +129,11 @@ jobs:
 
       - name: 🚀 Commit & deploy
         if: github.repository == 'OctoPrint/plugins.octoprint.org' && github.event_name != 'pull_request'
-        uses: EndBug/add-and-commit@v4
+        uses: EndBug/add-and-commit@v9
         with:
           cwd: "live"
-          ref: "master"
           message: "deploy: ${{ github.sha }}"
-          author_name: 'github-actions[bot]'
-          author_email: 'github-actions[bot]@users.noreply.github.com'
+          default_author: github_actions
 
       - name: 📧 Discord success notification
         if: github.repository == 'OctoPrint/plugins.octoprint.org' && github.event_name != 'pull_request'
