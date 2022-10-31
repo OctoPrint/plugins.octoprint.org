@@ -90,7 +90,7 @@ jobs:
           git diff --name-only
           changed=($(git diff --name-only))
           json=`printf '%s\n' "${changed[@]}" | jq -R . | jq -c -s .`
-          echo "::set-output name=files::$json"
+          echo "files=$json" >> $GITHUB_OUTPUT
 
       - name: 🕵️‍♂️ Validate plugins.json
         if: contains( fromJSON( steps.changed.outputs.files ), 'plugins.json' )
