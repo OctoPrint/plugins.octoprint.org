@@ -7,7 +7,7 @@
 <head>
     <meta charset="utf-8" />
     <title>Karmen Connector</title>
-    <meta name="description" content="Securely integrate your OctoPrint with Karmen Cloud in just a few clicks and start managing your prints from anywhere around the globe.">
+    <meta name="description" content="Secured 3D printer monitoring and sharing. G-codes and user management. Schedule print jobs, view print history and timelapse videos. FREE!">
     
     <meta name="referrer" content="same-origin">
     <meta name="google-site-verification" content="0EFsbaNygJcEinKPmzP-hTf0Ju6wDIpJxO5zvQtOQT0" />
@@ -40,19 +40,15 @@
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@OctoPrint3D" />
     <meta name="twitter:title" content="Karmen Connector" />
-    <meta name="twitter:description" content="This plugin allows you to integrate your OctoPrint instance with Karmen Cloud — a cloud-based
-solution for realtime control and monitoring of your prints.
-It will grant you with these new superpowers:
+    <meta name="twitter:description" content="Karmen
 
 " />
     <meta name="twitter:image" content="https://plugins.octoprint.org" />
 
     <meta property="og:title" content="Karmen Connector" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://plugins.octoprint.org/assets/img/plugins/karmen/karmen_screenshot.png" />
-    <meta property="og:description" content="This plugin allows you to integrate your OctoPrint instance with Karmen Cloud — a cloud-based
-solution for realtime control and monitoring of your prints.
-It will grant you with these new superpowers:
+    <meta property="og:image" content="https://plugins.octoprint.org/assets/img/plugins/karmen/versionA.png" />
+    <meta property="og:description" content="Karmen
 
 " />
     <meta property="og:site_name" content="OctoPrint Plugin Repository" />
@@ -60,12 +56,10 @@ It will grant you with these new superpowers:
 
     <meta itemscope itemtype="http://schema.org/WebPage" />
     <meta itemprop="headline" content="Karmen Connector" />
-    <meta itemprop="description" content="This plugin allows you to integrate your OctoPrint instance with Karmen Cloud — a cloud-based
-solution for realtime control and monitoring of your prints.
-It will grant you with these new superpowers:
+    <meta itemprop="description" content="Karmen
 
 " />
-    <meta itemprop="image" content="https://plugins.octoprint.org/assets/img/plugins/karmen/karmen_screenshot.png" />
+    <meta itemprop="image" content="https://plugins.octoprint.org/assets/img/plugins/karmen/versionA.png" />
 
     <script type="text/javascript" integrity="sha256-S1jf6xGbLdFfVOCgdM+OtjIEyLA9RQVuC1FOBC82qkQ=" crossorigin="anonymous" src="/assets/js/jquery-1.9.1.min-4b58dfeb119b2dd15f54e0a074cf8eb63204c8b03d45056e0b514e042f36aa44.js"></script>
     <script type="text/javascript" integrity="sha256-Qtj60TvCj8cmd1GW7Jq5U/6/m94XXFhFEoNhyVP6F/Q=" crossorigin="anonymous" src="/assets/js/underscore.min-42d8fad13bc28fc726775196ec9ab953febf9bde175c5845128361c953fa17f4.js"></script>
@@ -213,80 +207,87 @@ It will grant you with these new superpowers:
       
 
       <p class="lead">
-        Securely integrate your OctoPrint with Karmen Cloud in just a few clicks and start managing your prints from anywhere around the globe.
+        Secured 3D printer monitoring and sharing. G-codes and user management. Schedule print jobs, view print history and timelapse videos. FREE!
       </p>
-      <p>This plugin allows you to integrate your OctoPrint instance with <a href="https://karmen.tech/">Karmen Cloud</a> — a cloud-based
-solution for realtime control and monitoring of your prints.
-It will grant you with these new superpowers:</p>
+      <h1 id="karmen">Karmen</h1>
+
+<p>It’s a breeze to install the Karmen plugin. With Karmen, you’ll have access to your Octoprint-powered printer from anywhere in the world. Plan, launch, review and share print files and videos over a secured interface (web, mobile, tablet). And Karmen is absolutely free!</p>
+
+<p><img src="/assets/img/plugins/karmen/versionB.png" alt="Karmen GUI" /></p>
+
+<p>Karmen features:</p>
 
 <ul>
-  <li>Securely view &amp; manage your printers realtime from any place around the globe.</li>
-  <li>Collaborate with others by using Karmen Cloud workspaces. Share your printers in a secure way. Extremely useful for home, office, schools and many other collaborative environments.</li>
-  <li>Display live video stream of your printers using just a web browser.</li>
-  <li>Record timelapse videos easily without any further config.</li>
-  <li>View full print history of each of your printers, audit individual prints and their outcomes.</li>
-  <li>Never get lost among your print files again: Karmen provides you with a personal Gcode repository with an advanced labeling system.</li>
-  <li>This plugin will link your OctoPrint instance to the Karmen Cloud using a secure WebSocket channel protected by strong encryption. It will also provide it with an elevated permissions so that it will be able to control your printer remotely.</li>
-  <li>Karmen Cloud will never use your OctoPrint data for anything besides extra features described above. It won’t allow other Karmen Cloud users to access your OctoPrint or any related data unless you give them an explicit permission.</li>
+  <li><strong><em>Security:</em></strong> Encrypted access to Octoprint from anywhere in the world.</li>
+  <li><strong><em>Printer control from a single interface:</em></strong> Manage and monitor one or more 3D printers from a single application.</li>
+  <li><strong><em>G-codes management:</em></strong> Cloud storage for print files with the ability to search and sort into folders.</li>
+  <li><strong><em>Application:</em></strong> A modern application optimized for all devices (computer, mobile, tablet).</li>
+  <li><strong><em>Live video:</em></strong> Watch your print in progress and stop the printer if something goes wrong.</li>
+  <li><strong><em>Time-lapse:</em></strong> Karmen makes a record of the print for review and sharing with others.</li>
+  <li><strong><em>Teamwork:</em></strong> Share your 3D printers and print files with friends and colleagues.</li>
+  <li><strong><em>Upload G-codes from any slicer:</em></strong> Send print jobs from your slicer (Slic3r, PrusaSlicer, Cura) straight to Karmen.</li>
+  <li><strong><em>History:</em></strong> Keep track of who printed what and when.</li>
 </ul>
 
-<h2 id="configuration">Configuration</h2>
+<h2 id="configuration-and-documentation">Configuration and documentation</h2>
 
-<p>For configuration check <a href="https://docs.karmen.tech/#/karmen-octo-plugin">documentation</a>.</p>
+<p>It’s easy to connect your printer in a few short steps:</p>
 
-<h2 id="secure-communication">Secure communication</h2>
+<ul>
+  <li>Install the Karmen Connector plugin.</li>
+  <li>Create an account on <a href="https://next.karmen.tech/">next.karmen.tech</a>.</li>
+  <li>Create an Octoprint secondary API key.</li>
+  <li>Add your printer(s) to your Karmen workspace.</li>
+</ul>
 
-<p>Security is a key concern to us. Rest assured, your device public address will not be exposed when using this plugin. Rather, communication between Karmen and your Octoprint installation is made using a secure WebSocket channel protected by HTTPS protocol which is used by major organizations like eshops, banks and others.</p>
+<p>We’ve got detailed instructions in our <a href="https://docs.karmen.tech/#/karmen-octo-plugin">documentation</a>.</p>
 
-<p>Karmen also uses key exchange to ensure it speaks to the expected device on the other end. Key set is established during the initial setup.</p>
+<h2 id="contacts-support-and-social-media">Contacts, support and social media</h2>
 
-<h2 id="privacy-policy">Privacy policy</h2>
+<ul>
+  <li><a href="https://karmen.tech">https://karmen.tech</a></li>
+  <li><a href="mailto:karmen@karmen.tech">karmen@karmen.tech</a></li>
+  <li><a href="https://www.facebook.com/karmen3D">https://www.facebook.com/karmen3D</a></li>
+  <li><a href="https://twitter.com/Karmen3D">https://twitter.com/Karmen3D</a></li>
+  <li><a href="https://www.instagram.com/karmen3d/">https://www.instagram.com/karmen3d/</a></li>
+</ul>
 
-<p>We guarantee that information about you or about your printers will never be sold or even shared to any third party.</p>
+<p>Karmen is developed and maintained with love in Prague by <a href="https://fragaria.cz/">Fragaria</a>.</p>
 
-<h3 id="third-party-services">Third party services</h3>
+<h2 id="pictures">Pictures</h2>
 
-<p>Karmen shares basic information with following parties in order to improve our services and website user experience in general:</p>
+<p><img src="/assets/img/plugins/karmen/versionA.png" alt="Karmen GUI" /></p>
+
+<p><img src="/assets/img/plugins/karmen/printdialog.png" alt="Print dialog" /></p>
+
+<p><img src="/assets/img/plugins/karmen/printerdetail.png" alt="Printer detail" /></p>
+
+<h2 id="security-and-privacy-policy">Security and privacy policy</h2>
+
+<p>Security is a key concern for us. You can rest assured that your device’s public address will not be exposed when using this plugin. Communication between Karmen and your Octoprint installation is made using a secure WebSocket channel protected by the HTTPS protocol used by banks, online stores and many more organizations.</p>
+
+<p>Karmen also uses key exchange to make sure it’s speaking to the expected device on the other end of the line. The key set is established during the initial setup.</p>
+
+<p>By connecting your Octoprint installation to the Karmen Cloud, you confirm that you understand Karmen Cloud will acquire full control over your device. We guarantee that information about you or about your printers will never be sold or shared to any third party.</p>
+
+<p>Karmen shares basic information with the following parties in order to improve our services and website user experience in general:</p>
 
 <ul>
   <li>Google Analytics - tracks our website visits and provides statistics</li>
   <li>Stripe - payment provider</li>
-  <li>Facebook pixel - website visit statistics and info about traffic sources</li>
-  <li>Sentry - helps us analyze, track &amp; report errors</li>
+  <li>Facebook pixel - website visit statistics and information about traffic sources</li>
+  <li>Sentry - helps us analyze and track errors</li>
 </ul>
 
-<h3 id="deleting-personal-data">Deleting personal data</h3>
-
-<p>Should you decide to delete your Karmen account, all you need to do is to write a deletion request to karmen@karmen.tech. Our admins will delete all information about you, your account, your print files, print history as well as timelapse videos, printers and their configuration.</p>
-
-<h3 id="deleting-general-data">Deleting general data</h3>
-
-<p>Should you decide to delete files stored under your user account, you can either do so using Karmen Cloud web app or by sending us an inquiry to karmen@karmen.tech</p>
-
-<h2 id="confirm-you-understand-what-will-happen">Confirm you understand what will happen</h2>
-
-<p>By connecting your Octoprint installation to Karmen Cloud, you confirm you understand that Karmen Cloud will acquire full control over your device.</p>
+<p>Of course if you’d like to completely delete your account and all data from Karmen Cloud, we’ll do so immediately upon your request.</p>
 
 <h2 id="api-key-security">API key security</h2>
 
-<ul>
-  <li>Never share your keys with ANYONE.</li>
-  <li>Please follow our guidelines and do not use the primary Octoprint key when setting up the Karmen plugin. Rather, create a special key for that purpose as recommended in our tutorial. The full procedure including the recommended way of creating your API key can be found at <a href="https://docs.karmen.tech/#/karmen-octo-plugin">https://docs.karmen.tech/#/karmen-octo-plugin</a></li>
-</ul>
+<p>Never share your keys with ANYONE.</p>
 
-<h2 id="contacts--support">Contacts &amp; support</h2>
-
-<p>We’ll gladly answer all your questions or comments. Please get in touch at <a href="mailto:karmen@karmen.tech">karmen@karmen.tech</a>. Thank you for your interest and support!</p>
+<p>Please follow our guidelines and do not use the primary Octoprint key when setting up the Karmen plugin. Instead you should create a special key for that purpose, as recommended in our tutorial. The full procedure, including the recommended way of creating your API key, can be found at <a href="https://docs.karmen.tech/#/karmen-octo-plugin">https://docs.karmen.tech/#/karmen-octo-plugin</a>.</p>
 
 
-      
-        <h2>Pictures</h2>
-        
-        <figure>
-          
-          <a href="/assets/img/plugins/karmen/karmen_screenshot.png" data-lightbox="/plugins/karmen" data-title="Karmen Cloud"><img src="/assets/img/plugins/karmen/karmen_screenshot.png" alt="Karmen" title="Karmen Cloud"></a>
-        </figure>
-        
       
     </article>
 
