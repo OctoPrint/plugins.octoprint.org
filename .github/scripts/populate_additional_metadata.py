@@ -20,17 +20,15 @@ GITHUB_GRAPHQL_URL = "https://api.github.com/graphql"
 GITHUB_GRAPHQL_QUERY = """
 query {
   repository(owner: \"{{user}}\", name: \"{{repo}}\") {
-    openIssues: issues(states: OPEN) {
+    openIssues: issues(first:1, states: OPEN) {
       totalCount
     },
-    closedIssues: issues(states: CLOSED) {
+    closedIssues: issues(first:1, states: CLOSED) {
       totalCount
     },
-    releasesCount: releases(last: 100){
-      totalCount
-    },
-    lastRelease: releases(last:1){
-       nodes {
+    lastRelease: releases(first:1, orderBy:{ direction:DESC, field:CREATED_AT }){
+      totalCount,
+      nodes {
         name,
         publishedAt,
         url,
@@ -51,10 +49,10 @@ query {
         }
       }
     },
-    watchers(last:100){
+    watchers(first:1){
       totalCount
     },
-    stargazers(last:100){
+    stargazers(first:1){
       totalCount
     }
   }
@@ -150,7 +148,7 @@ def github_data(user, repo, out=print):
             return dict()
 
         repository_values = data["data"]["repository"]
-        release_count = repository_values["releasesCount"]["totalCount"]
+        release_count = repository_values["lastRelease"]["totalCount"]
         result = dict(
             repo="{}/{}".format(user, repo),
             open_issues=repository_values["openIssues"]["totalCount"],
@@ -177,7 +175,7 @@ def github_data(user, repo, out=print):
 
             else:
                 # latest release available via graphql is a prerelease, we need to use the REST API to get
-                # the latest full release as we can't (yet) filter for that on the graphql API
+                # the latest full release as we can't (yet?) filter for that on the graphql API
                 out(
                     "Latest release from GraphQL API is a prerelease, fetching latest via REST API"
                 )
