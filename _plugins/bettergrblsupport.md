@@ -3,7 +3,8 @@ layout: plugin
 
 id: bettergrblsupport
 title: Better Grbl Support
-description: Provides core functionality and UI integration for GRBL based engravers and CNC machines
+description: Provides core functionality and UI integration for GRBL based engravers
+  and CNC machines
 author: Shell M. Shrader
 license: Apache 2.0
 
@@ -66,6 +67,7 @@ compatibility:
   # operating systems being supported.
 
 
+  python: '>=2.7,<4'
 ---
 
 # Better Grbl Support Plugin for Octoprint
@@ -74,7 +76,7 @@ compatibility:
 
 This plugin was inspired by mic159's Grbl Support plugin (https://plugins.octoprint.org/plugins/octoprint-grbl-plugin/).  His plugin gets you 90% of the way there for adding Grbl support to Octoprint but had a couple limitations and lacked some bells and whistles from a UI and configuration perspective.
 
-**Better Grbl Support** originally utilized mic159's gcode receiver parser but at this point I've moved well beyond his reference implementation.  
+**Better Grbl Support** originally utilized mic159's gcode receiver parser but at this point I've moved well beyond his reference implementation.
 
 Here are some of bgs's capabilities (as of v2.0.0):
 
@@ -102,7 +104,7 @@ or manually using this URL:
 
     https://github.com/synman/OctoPrint-Bettergrblsupport/archive/master.zip
 
-**NOTE:** Installing this pluging directly from the URL above ensures you always have the latest version, but this comes with risk.  I do not always follow a traditional gitflow which means commits to the master branch may not be fully tested and could cause unforeseen issues. Proceed at your own risk.  
+**NOTE:** Installing this pluging directly from the URL above ensures you always have the latest version, but this comes with risk.  I do not always follow a traditional gitflow which means commits to the master branch may not be fully tested and could cause unforeseen issues. Proceed at your own risk.
 
 ## Configuration
 
@@ -117,5 +119,5 @@ Pay special attention to the following config.yaml configuration parameters.  Th
 * serial / checksumRequiringCommands
 * serial / helloCommand
 * plugins / _disabled / printer_safety_check
-* appearance / components / disabled / tab 
+* appearance / components / disabled / tab
 * gcodeViewer

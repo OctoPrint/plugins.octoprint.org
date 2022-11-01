@@ -11,6 +11,8 @@ license: AGPLv3
 date: 2015-05-22
 tags:
 - ui
+compatibility:
+  python: '>=2.7,<4'
 ---
 
 The default video streamer in the OctoPi image is mjpg-streamer. It works by

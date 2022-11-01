@@ -3,7 +3,8 @@ layout: plugin
 
 id: terminalmessaging
 title: Terminal Messaging
-description: Adds styling to the terminal tab that makes it easier to see where a message is from.
+description: Adds styling to the terminal tab that makes it easier to see where a
+  message is from.
 author: jeffeb3
 license: MIT
 
@@ -25,7 +26,8 @@ screenshots:
   caption: What it looks like
 
 featuredimage: /assets/img/plugins/terminalmessaging/screenshot.png
-
+compatibility:
+  python: '>=2.7,<4'
 ---
 
 # Octoprint-TerminalMessaging

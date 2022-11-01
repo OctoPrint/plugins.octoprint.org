@@ -17,6 +17,8 @@ tags:
 - administration
 - ui
 
+compatibility:
+  python: '>=2.7,<4'
 ---
 
 This plugin moves the Editor's from Salandora onto a single Page.

@@ -21,7 +21,8 @@ tags:
 - Power
 
 featuredimage: /assets/img/plugins/TuyaSmartplug/screenshot.png
-
+compatibility:
+  python: '>=2.7,<4'
 ---
 
 # Tuya Smartplug

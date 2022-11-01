@@ -24,6 +24,7 @@ compatibility:
   - 1.2.6
 
 
+  python: '>=2.7,<4'
 ---
 
 Turn on/off terminal autoscroll when scrolling up/down

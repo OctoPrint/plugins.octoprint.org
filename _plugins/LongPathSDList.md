@@ -3,7 +3,8 @@ layout: plugin
 
 id: LongPathSDList
 title: OctoPrint-Longpathsdlist
-description: Could block serial communication - read more at the plugin homepage! This is a simple plugin to show long path names in the SD List.
+description: Could block serial communication - read more at the plugin homepage!
+  This is a simple plugin to show long path names in the SD List.
 authors:
 - Petttkous
 license: AGPLv3
@@ -29,7 +30,8 @@ screenshots:
   caption: After
 
 featuredimage: /assets/img/plugins/LongPathSDList/after.png
-
+compatibility:
+  python: '>=2.7,<4'
 ---
 
 # Long Path SD LIST

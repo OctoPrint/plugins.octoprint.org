@@ -3,7 +3,8 @@ layout: plugin
 
 id: enclosure
 title: OctoPrint-Enclosure
-description: Control printer environment (Temperature control / Lights / Fans and Filament Sensor) using Raspberry Pi GPIO
+description: Control printer environment (Temperature control / Lights / Fans and
+  Filament Sensor) using Raspberry Pi GPIO
 author: Vitor Henrique
 license: GPLv3
 
@@ -53,6 +54,7 @@ featuredimage: /assets/img/plugins/enclosure/Plugin_Temperature_Control.png
 compatibility:
   os:
   - nix
+  python: '>=2.7,<4'
 ---
 
 This plugin is intended to control your printer enclosure using raspberry pi GPIO (At the moment this plugin only support raspberry pi).

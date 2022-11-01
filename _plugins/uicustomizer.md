@@ -3,7 +3,8 @@ layout: plugin
 
 id: uicustomizer
 title: UI Customizer
-description: Customize Octoprint with 5+ awesome themes, webcam and gcode widgets, rearrange layout and support mobile/tablets and much more...
+description: Customize Octoprint with 5+ awesome themes, webcam and gcode widgets,
+  rearrange layout and support mobile/tablets and much more...
 authors:
 - Mikkel Skovgaard
 license: AGPLv3
@@ -44,10 +45,9 @@ screenshots:
 - url: /assets/img/plugins/uicustomizer/settings.png
   alt: theme
   caption: Select themes
-
-
 featuredimage: /assets/img/plugins/uicustomizer/responsive.png
-
+compatibility:
+  python: '>=2.7,<4'
 ---
 ## UI Customizer
 ![feature](/assets/img/plugins/uicustomizer/responsive.png)

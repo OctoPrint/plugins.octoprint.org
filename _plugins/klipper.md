@@ -53,6 +53,7 @@ compatibility:
   octoprint:
   - 1.3.8
 
+  python: '>=2.7,<4'
 ---
 
 OctoKlipper assists in configuring, controlling and monitoring the [Klipper](https://github.com/KevinOConnor/klipper) 3D-printer firmware.
