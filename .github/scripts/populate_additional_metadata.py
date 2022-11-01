@@ -8,9 +8,10 @@ import sys
 import threading
 import traceback
 from datetime import datetime
+from pathlib import Path
 
-import frontmatter
 import requests
+import ruamel.yaml
 
 GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", None)
 
@@ -62,6 +63,9 @@ GITHUB_GRAPHQL_QUERY = """repository(owner: \"{{user}}\", name: \"{{repo}}\") {
 
 GITHUB_REST_URL = "https://api.github.com"
 
+file_counter = 0
+github_graphql_counter = 0
+github_rest_counter = 0
 
 def to_date(date_str):
     return datetime.fromisoformat(date_str.replace("Z", "+00:00")).strftime(
@@ -118,6 +122,8 @@ github_query_executor = concurrent.futures.ThreadPoolExecutor(max_workers=5, thr
 github_queries = queue.Queue()
 
 def github_query_worker(queries, out=print):
+    global github_graphql_counter
+
     assert GITHUB_TOKEN is not None
 
     auth = "token " + GITHUB_TOKEN
@@ -138,6 +144,7 @@ def github_query_worker(queries, out=print):
 
         payload = "query {\n" + "\n".join(graphql_queries.values()) + "\n}"
 
+        github_graphql_counter += 1
         response = requests.post(
             GITHUB_GRAPHQL_URL, headers=headers, json={"query": payload}
         )
@@ -189,6 +196,8 @@ def github_batcher(out=print):
 
 
 def github_data(user, repo, out=print):
+    global github_rest_counter
+
     if GITHUB_TOKEN is None:
         # GraphQL API does only work with a token
         return dict()
@@ -243,6 +252,8 @@ def github_data(user, repo, out=print):
                 url = GITHUB_REST_URL + "/repos/{}/{}/releases/latest".format(
                     user, repo
                 )
+
+                github_rest_counter += 1
                 r = requests.get(url, headers=headers)
                 out(
                     "~~ Ratelimit: {}/{}".format(
@@ -314,8 +325,10 @@ def extract_plugin_control_properties(user, repo, out=print):
         headers = None
 
     def get_content(path):
+        global github_rest_counter
         url = GITHUB_REST_URL + "/repos/{}/{}/contents/{}".format(user, repo, path)
         try:
+            github_rest_counter += 1
             r = requests.get(url, headers=headers)
             out(
                 "~~ Ratelimit: {}/{}".format(
@@ -397,17 +410,24 @@ def extract_plugin_control_properties(user, repo, out=print):
         return dict()
 
     return extract_assignments(
-        root, "__plugin_pythoncompat__", "__plugin_privacypolicy__"
+        root, "__plugin_pythoncompat__"
     )
 
+def process_plugin_file(path, incl_stats=True, incl_github=True, incl_compat=True):
+    global file_counter
+    file_counter += 1
 
-def process_plugin_file(path, incl_stats=True, incl_github=True):
     result = []
 
     def out(line, prefix="", *args, **kwargs):
         result.append("{}{}".format(prefix, line))
 
-    data = frontmatter.load(path)
+    path_obj = Path(path)
+    frontmatter, content = path_obj.read_text().lstrip().split("\n---", 1)
+    frontmatter += "\n"
+
+    data = ruamel.yaml.round_trip_load(frontmatter, preserve_quotes=True)
+    clean = True
     plugin_id = data["id"]
 
     out("Processing plugin {} at path {}".format(plugin_id, path))
@@ -435,58 +455,60 @@ def process_plugin_file(path, incl_stats=True, incl_github=True):
         if stats7d is not None:
             out("  Enriching {} with stats for week...".format(plugin_id))
             data["stats"]["week"] = build_stats(stats7d)
+            clean = False
 
         stats30d = _plugin_stats_30d["plugins"].get(data["id"].lower())
         if stats30d is not None:
             out("  Enriching {} with stats for month...".format(plugin_id))
             data["stats"]["month"] = build_stats(stats30d)
+            clean = False
 
-    if incl_github:
-        if "github" in data and "repo" in data["github"]:
-            user, repo = data["github"]["repo"].split("/")
-        else:
-            out("  Looking up github repo")
-            user, repo = extract_github_repo(
-                data.get("source"), out=functools.partial(out, prefix="    ")
+    if "github" in data and "repo" in data["github"]:
+        user, repo = data["github"]["repo"].split("/")
+    else:
+        out("  Looking up github repo")
+        user, repo = extract_github_repo(
+            data.get("source"), out=functools.partial(out, prefix="    ")
+        )
+
+    if incl_github and user and repo:
+        out(
+            "  Loading github repo information for plugin {}: {}/{}".format(
+                plugin_id, user, repo
             )
+        )
+        github = github_data(user, repo, out=functools.partial(out, prefix="    "))
+        if github:
+            out("  Enriching {} with github data...".format(plugin_id))
+            data["github"] = github
+            clean = False
 
-        if user and repo:
+    if incl_compat and user and repo:
+        if "compatibility" not in data or "python" not in data["compatibility"]:
+            # let's try to determine python compatibility from the actual plugin
             out(
-                "  Loading github repo information for plugin {}: {}/{}".format(
+                "  Extracting plugin control properties for plugin {} from {}/{}".format(
                     plugin_id, user, repo
                 )
             )
-            github = github_data(user, repo, out=functools.partial(out, prefix="    "))
-            if github:
-                out("  Enriching {} with github data...".format(plugin_id))
-                data["github"] = github
+            properties = extract_plugin_control_properties(
+                user, repo, out=functools.partial(out, prefix="    ")
+            )
+            if "__plugin_pythoncompat__" in properties:
+                if "compatibility" not in data:
+                    data["compatibility"] = dict()
+                data["compatibility"]["python"] = properties[
+                    "__plugin_pythoncompat__"
+                ]
+                clean = False
+                out("  Added python compatibility info from source")
 
-            if "compatibility" not in data or "python" not in data["compatibility"]:
-                # let's try to determine python compatibility from the actual plugin
-                out(
-                    "  Extracting plugin control properties for plugin {} from {}/{}".format(
-                        plugin_id, user, repo
-                    )
-                )
-                properties = extract_plugin_control_properties(
-                    user, repo, out=functools.partial(out, prefix="    ")
-                )
-                if "__plugin_pythoncompat__" in properties:
-                    if "compatibility" not in data:
-                        data["compatibility"] = dict()
-                    data["compatibility"]["python"] = properties[
-                        "__plugin_pythoncompat__"
-                    ]
-                    out("  Added python compatibility info from source")
-                if (
-                    "__plugin_privacypolicy__" in properties
-                    and "privacypolicy" not in data
-                ):
-                    data["privacypolicy"] = properties["__plugin_privacypolicy__"]
-                    out("  Added privacy policy from source")
-
-    with open(path, "wb") as f:
-        frontmatter.dump(data, f)
+    if not clean:
+        with open(path, "w") as f:
+            f.write("---\n")
+            ruamel.yaml.round_trip_dump(data, f, indent=2, block_seq_indent=None)
+            f.write("---")
+            f.write(content)
 
     return "\n".join(result)
 
@@ -495,9 +517,15 @@ if __name__ == "__main__":
     executor = concurrent.futures.ThreadPoolExecutor(max_workers=BATCH_SIZE, thread_name_prefix="process_worker")
     prefetch_plugin_stats()
 
-    filtered = None
+    filtered = []
     if len(sys.argv) > 1:
         filtered = sys.argv[1:]
+
+    no_stats = "--no-stats" in filtered
+    no_github = "--no-github" in filtered
+    no_compat = "--no-compat" in filtered
+
+    filtered = [x for x in filtered if not x.startswith("--")]
 
     futures_to_name = dict()
 
@@ -515,7 +543,7 @@ if __name__ == "__main__":
                 continue
             if filtered and entry.name[:-3] not in filtered:
                 continue
-            future = executor.submit(process_plugin_file, entry.path)
+            future = executor.submit(process_plugin_file, entry.path, incl_stats=not no_stats, incl_github=not no_github, incl_compat=not no_compat)
             futures_to_name[future] = entry.name
 
     for future in concurrent.futures.as_completed(futures_to_name):
@@ -525,3 +553,7 @@ if __name__ == "__main__":
             print("")
         except Exception as exc:
             print("{} generated an exception: {}".format(name, exc))
+
+    print("Processed {} files".format(file_counter))
+    print("  Used {} GitHub GraphQL calls".format(github_graphql_counter))
+    print("  Used {} GitHub REST calls".format(github_rest_counter))
