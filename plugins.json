@@ -2073,33 +2073,15 @@
         "author": "Shawn Bruce",
         "homepage": "https://github.com/kantlivelong/OctoPrint-GCodeSystemCommands",
         "page": "https://plugins.octoprint.org/plugins/gcodesystemcommands/",
-        "compatibility": {
-            "octoprint": [],
-            "os": [],
-            "python": ">=2.7,<4"
-        },
+        "compatibility": {"octoprint": [], "os": [], "python": ">=2.7,<3"},
         "license": "AGPLv3",
         "image": "https://plugins.octoprint.org/assets/img/plugins/gcodesystemcommands/gcodesystemcommands_settings.png",
         "abandoned": false,
-        "github": { 
-            "latest_release": {
-                "name": "1.0.1",
-                "date": "2020-04-27 20:44:10 +0000",
-                "tag": "1.0.1"
-            },
-            "releases": 3,
-            "last_push": "2020-04-28 20:46:34 +0000",
-            "stars": 33,
-            "issues": {
-                "open": 1,
-                "closed": 17
-            }
-        },
         "stats": {
-            "instances_month": 794,
-            "install_events_month": 40,
-            "instances_week": 626,
-            "install_events_week": 9
+            "instances_month": 0,
+            "install_events_month": 0,
+            "instances_week": 0,
+            "install_events_week": 0
         }
     },
 
