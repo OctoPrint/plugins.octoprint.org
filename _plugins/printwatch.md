@@ -62,7 +62,7 @@ screenshots:
   alt: Preview your printers and make changes on the fly.
   caption: Preview your printers and make changes on the fly.
 
-featuredimage: /assets/img/plugins/printwatch/printwatch.png
+featuredimage: /assets/img/plugins/printwatch/printwatch-web-app-individual-printer.jpg
 
 
 compatibility:
