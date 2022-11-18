@@ -7290,7 +7290,7 @@
             "last_push": "2022-11-11 16:34:24 +0000",
             "stars": 25,
             "issues": {
-                "open": 19,
+                "open": 20,
                 "closed": 57
             }
         },
@@ -12518,10 +12518,10 @@
         "compatibility": {
             "octoprint": ["1.3.2"],
             "os": ["linux","windows","macos","freebsd"],
-            "python": ">=2.7,<4"
+            "python": ">=3.6,<4"
         },
         "license": "AGPLv3",
-        "image": "https://plugins.octoprint.org/assets/img/plugins/printwatch/printwatch.png",
+        "image": "https://plugins.octoprint.org/assets/img/plugins/printwatch/printwatch-web-app-individual-printer.jpg",
         "abandoned": false,
         "github": { 
             "latest_release": {
