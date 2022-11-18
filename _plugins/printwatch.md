@@ -55,8 +55,14 @@ screenshots:
 - url: /assets/img/plugins/printwatch/printwatch-settings.jpg
   alt: Configurable settings allow you to customize how PrintWatch works for you.
   caption: Configure your settings the way you like.
+- url: /assets/img/plugins/printwatch/printwatch-web-app-main-page.jpg
+  alt: Manage all your printers from one place, anywhere in the world.
+  caption: Manage all your printers from anywhere in the world.
+- url: /assets/img/plugins/printwatch/printwatch-web-app-individual-printer.jpg
+  alt: Preview your printers and make changes on the fly.
+  caption: Preview your printers and make changes on the fly.
 
-featuredimage: /assets/img/plugins/printwatch/printwatch.png
+featuredimage: /assets/img/plugins/printwatch/printwatch-web-app-individual-printer.jpg
 
 
 compatibility:
@@ -70,7 +76,7 @@ compatibility:
   - macos
   - freebsd
 
-  python: ">=2.7,<4"
+  python: ">=3.6,<4"
 
 ---
 
@@ -94,12 +100,12 @@ Current features include:
 
 Upcoming features include:
 
-- Pre+post print bed check
-- Live QC/QA
+- Pre+post print bed check - currently in BETA. Contact us to join.
+- Live QC/QA - currently in BETA. Contact us to join.
 - G-Code and Speed optimization with ML
-- MultiCamming
-- ROI selection and slicing
-- Local Device
+- MultiCamming - currently available using the API Client repository
+- ROI selection and slicing - currently available using the API Client repository
+- Local Device - currently in pilot program phase. Contact us to get a copy
 
 ### Setup
 
