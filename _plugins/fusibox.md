@@ -6,6 +6,7 @@ title: FusiBox
 description: Plugin that control the fusibox accesories for 3D printers
 license: AGPLv3
 date: 2022-11-28
+author: hm1996
 
 homepage: https://github.com/Fusibox/OctoPrint-Fusibox
 source: https://github.com/Fusibox/OctoPrint-Fusibox
