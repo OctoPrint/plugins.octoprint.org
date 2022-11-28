@@ -31,6 +31,8 @@ compatibility:
   os:
   - linux
 
+  python: ">=3,<4"
+
 ---
 
 This plugin is the tool to use a box designed by FusiBox to contain certains 3D Printers.
