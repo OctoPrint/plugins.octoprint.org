@@ -9587,31 +9587,6 @@
     },
 
     {
-        "id": "mattacloud",
-        "published": "2020-10-17 00:00:00 -0500",
-        "title": "Mattacloud Beta",
-        "description": "Making 3D printers intelligent. Remote 3D printer control and management from anywhere with advanced AI error detection and informative notifications.",
-        "archive": "https://github.com/Mattalabs/OctoPrint-Mattacloud/archive/master.zip",
-        "author": "Mattalabs",
-        "homepage": "https://github.com/Mattalabs/OctoPrint-Mattacloud",
-        "page": "https://plugins.octoprint.org/plugins/mattacloud/",
-        "compatibility": {
-            "octoprint": ["1.3.2"],
-            "os": ["linux","windows","macos","freebsd"],
-            "python": ">=2.7,<4"
-        },
-        "license": "AGPLv3",
-        "image": "https://plugins.octoprint.org/assets/img/plugins/mattacloud/mattacloud.png",
-        "abandoned": false,
-        "stats": {
-            "instances_month": 23,
-            "install_events_month": 1,
-            "instances_week": 15,
-            "install_events_week": 0
-        }
-    },
-
-    {
         "id": "arc_welder",
         "published": "2020-10-24 00:00:00 -0500",
         "title": "Arc Welder",
