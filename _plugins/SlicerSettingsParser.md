@@ -18,6 +18,7 @@ tags:
 - analysis
 - slicer settings
 
+abandoned: https://github.com/OctoPrint/plugins.octoprint.org/issues/1058
 ---
 
 **NOTE: Only supports Slic3r and Simplify3D currently; suggest more in issues; contributions welcome!**
