@@ -34,6 +34,8 @@ compatibility:
   - 1.3.8
 
   python: '>=2.7,<4'
+
+abandoned: https://github.com/OctoPrint/plugins.octoprint.org/issues/1122
 ---
 
 Imagine running a long running, multi-part print job only to have one of the parts fail half-way
