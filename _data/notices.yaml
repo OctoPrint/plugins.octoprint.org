@@ -204,3 +204,11 @@
     repository of the old maintainer. Please uninstall the old plugin from the plugin manager, then reinstall from the plugin
     repository to update it. The release notes of the version by the new maintainer can be found at the "Read more..." link below.
   link: https://github.com/gbonesso/OctoPrint-LEDStripControl/releases/tag/v0.3.8
+- plugin: excluderegion
+  pluginversions: ["<0.3.1"]
+  versions: []
+  date: 2022-12-4 12:00:00Z
+  text: Version 0.3.1 of this plugin is available from a new maintainer, but your version still looks for updates at the
+    repository of the old maintainer. Please uninstall the old plugin from the plugin manager, then reinstall from the plugin
+    repository to update it. The release notes of the version by the new maintainer can be found at the "Read more..." link below.
+  link: https://github.com/katiekloss/OctoPrint-ExcludeRegion/releases/tag/v0.3.1
