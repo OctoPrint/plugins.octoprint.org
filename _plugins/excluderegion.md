@@ -5,16 +5,14 @@ id: excluderegion
 title: Exclude Region
 description: Adds the ability to prevent printing within rectangular or circular regions
   of the currently active gcode file
-authors:
-- Katie Kloss
-- Brad Fisher
+author: Brad Fisher
 license: AGPLv3
 
 date: 2018-07-05
 
-homepage: https://github.com/katiekloss/OctoPrint-ExcludeRegion
-source: https://github.com/katiekloss/OctoPrint-ExcludeRegion
-archive: https://github.com/katiekloss/OctoPrint-ExcludeRegion/archive/release.zip
+homepage: https://github.com/bradcfisher/OctoPrint-ExcludeRegionPlugin
+source: https://github.com/bradcfisher/OctoPrint-ExcludeRegionPlugin
+archive: https://github.com/bradcfisher/OctoPrint-ExcludeRegionPlugin/archive/master.zip
 
 follow_dependency_links: false
 
