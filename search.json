@@ -1775,11 +1775,11 @@
 "id": "/plugins/prusaetaoverride",
 "url": "/plugins/prusaetaoverride/",
 "date": "2019-08-25 00:00:00 -0500",
-"title": "Prusa (M73 response) ETA Override",
-"description": "Plugin that overrides OctoPrint ETA to values from last M73 gcode response received from printer",
+"title": "Slicer M73 ETA override Plugin (Prusa; Marlin 2)",
+"description": "Plugin that overrides OctoPrint ETA/progress to values from last M73 gcode response received from printer",
 "author": "Anton Skorochod",
-"content": "AboutThe last Sli3cr Prusa Edition implemented M73 gcode injecting to the generated gcodes. This M73 sends “NORMAL MODE: Percent done: 0; print time remaining in mins: 3” to serial with perfect time estimation. This plugin overrides ETA to this value.Get HelpIf you experience issues with this plugin or need assistance please use the issue tracker at the plugin’s Homepage linked on the right.",
-"tags": ["progress","eta","estimation","m73"]
+"content": "AboutThe best ETA in 3d printing is ETA coming from slicer software. Slicer adds M73 commands with estimations of print progress, time, time until next pause etc.This plugin uses firmware reports issued to serial output and coming from M73 g-code commands. Supported firmware issues M73 Reports for SD-card and USB printing.Data used by plugin:  time until end of printing  time progress reflected in OctoPrint web UI progress bar (but due to OctoPrint limitations not in API, see OctoPrint/OctoPrint#4663)Also this plugin queries for position (M114) when every M73 command parsing happens and fires z-change event (to support sending status message every X millimeters via telegram).Supported firmwareSupported firmware list:  Prusa Firmware (v3.3.0+)  Marlin 2 (v2.1.2+)Get HelpIf you experience issues with this plugin or need assistance please use the issue tracker at the plugin’s Homepage linked on the right.",
+"tags": ["progress","eta","estimation","m73","prusa","marlin2"]
 },
 
 {

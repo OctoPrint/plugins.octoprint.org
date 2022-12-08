@@ -6,8 +6,8 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html"> <!--<![endif]-->
 <head>
     <meta charset="utf-8" />
-    <title>Prusa (M73 response) ETA Override</title>
-    <meta name="description" content="Plugin that overrides OctoPrint ETA to values from last M73 gcode response received from printer">
+    <title>Slicer M73 ETA override Plugin (Prusa; Marlin 2)</title>
+    <meta name="description" content="Plugin that overrides OctoPrint ETA/progress to values from last M73 gcode response received from printer">
     <meta name="author" content="Anton Skorochod">
     <meta name="referrer" content="same-origin">
     <meta name="google-site-verification" content="0EFsbaNygJcEinKPmzP-hTf0Ju6wDIpJxO5zvQtOQT0" />
@@ -39,27 +39,27 @@
 
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@OctoPrint3D" />
-    <meta name="twitter:title" content="Prusa (M73 response) ETA Override" />
+    <meta name="twitter:title" content="Slicer M73 ETA override Plugin (Prusa; Marlin 2)" />
     <meta name="twitter:description" content="About
-The last Sli3cr Prusa Edition implemented M73 gcode injecting to the generated gcodes. This M73 sends “NORMAL MODE: Percent done: 0; print time remaining in mins: 3” to serial with perfect time estimation. This plugin overrides ETA to this value.
+The best ETA in 3d printing is ETA coming from slicer software. Slicer adds M73 commands with estimations of print progress, time, time until next pause etc.
 
 " />
     <meta name="twitter:image" content="https://plugins.octoprint.org/assets/img/octoprint-avatar-240x240.png" />
 
-    <meta property="og:title" content="Prusa (M73 response) ETA Override" />
+    <meta property="og:title" content="Slicer M73 ETA override Plugin (Prusa; Marlin 2)" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://plugins.octoprint.org/assets/img/repo-600x400.png" />
     <meta property="og:description" content="About
-The last Sli3cr Prusa Edition implemented M73 gcode injecting to the generated gcodes. This M73 sends “NORMAL MODE: Percent done: 0; print time remaining in mins: 3” to serial with perfect time estimation. This plugin overrides ETA to this value.
+The best ETA in 3d printing is ETA coming from slicer software. Slicer adds M73 commands with estimations of print progress, time, time until next pause etc.
 
 " />
     <meta property="og:site_name" content="OctoPrint Plugin Repository" />
     <meta property="og:url" content="https://plugins.octoprint.org/plugins/prusaetaoverride/" />
 
     <meta itemscope itemtype="http://schema.org/WebPage" />
-    <meta itemprop="headline" content="Prusa (M73 response) ETA Override" />
+    <meta itemprop="headline" content="Slicer M73 ETA override Plugin (Prusa; Marlin 2)" />
     <meta itemprop="description" content="About
-The last Sli3cr Prusa Edition implemented M73 gcode injecting to the generated gcodes. This M73 sends “NORMAL MODE: Percent done: 0; print time remaining in mins: 3” to serial with perfect time estimation. This plugin overrides ETA to this value.
+The best ETA in 3d printing is ETA coming from slicer software. Slicer adds M73 commands with estimations of print progress, time, time until next pause etc.
 
 " />
     <meta itemprop="image" content="https://plugins.octoprint.org/assets/img/repo-600x400.png" />
@@ -186,7 +186,7 @@ The last Sli3cr Prusa Edition implemented M73 gcode injecting to the generated g
   <div class="container">
     <div class="row">
       <div class="span12">
-        <h1>Prusa (M73 response) ETA Override</h1>
+        <h1>Slicer M73 ETA override Plugin (Prusa; Marlin 2)</h1>
       </div>
     </div>
   </div>
@@ -195,11 +195,11 @@ The last Sli3cr Prusa Edition implemented M73 gcode injecting to the generated g
 <div class="container">
   <div class="row-fluid">
     
-    <small class="pull-left"><a href="/plugins/prometheus_exporter/"><i class="fa fa-double-angle-left"></i>&nbsp;Prometheus Exporter</a></small>
+    <small class="pull-left"><a href="/plugins/SlicerEstimator/"><i class="fa fa-double-angle-left"></i>&nbsp;Slicer Estimator</a></small>
     
     &nbsp;
     
-    <small class="pull-right"><a href="/plugins/PrusaLevelingGuide/">Prusa Leveling Guide&nbsp;<i class="fa fa-double-angle-right"></i></a></small>
+    <small class="pull-right"><a href="/plugins/prusaslicerthumbnails/">Slicer Thumbnails&nbsp;<i class="fa fa-double-angle-right"></i></a></small>
     
   </div>
   <div class="content plugin-content row-fluid">
@@ -210,10 +210,29 @@ The last Sli3cr Prusa Edition implemented M73 gcode injecting to the generated g
       
 
       <p class="lead">
-        Plugin that overrides OctoPrint ETA to values from last M73 gcode response received from printer
+        Plugin that overrides OctoPrint ETA/progress to values from last M73 gcode response received from printer
       </p>
       <h2 id="about">About</h2>
-<p>The last Sli3cr Prusa Edition implemented M73 gcode injecting to the generated gcodes. This M73 sends “NORMAL MODE: Percent done: 0; print time remaining in mins: 3” to serial with perfect time estimation. This plugin overrides ETA to this value.</p>
+<p>The best ETA in 3d printing is ETA coming from slicer software. Slicer adds M73 commands with estimations of print progress, time, time until next pause etc.</p>
+
+<p>This plugin uses firmware reports issued to serial output and coming from M73 g-code commands. Supported firmware issues M73 Reports for SD-card and USB printing.</p>
+
+<p>Data used by plugin:</p>
+
+<ul>
+  <li>time until end of printing</li>
+  <li>time progress reflected in OctoPrint web UI progress bar (but due to OctoPrint limitations not in API, see OctoPrint/OctoPrint#4663)</li>
+</ul>
+
+<p>Also this plugin queries for position (M114) when every M73 command parsing happens and fires z-change event (to support sending status message every X millimeters via telegram).</p>
+
+<h2 id="supported-firmware">Supported firmware</h2>
+<p>Supported firmware list:</p>
+
+<ul>
+  <li>Prusa Firmware (v3.3.0+)</li>
+  <li>Marlin 2 (v2.1.2+)</li>
+</ul>
 
 <h2 id="get-help">Get Help</h2>
 
@@ -247,14 +266,14 @@ The last Sli3cr Prusa Edition implemented M73 gcode injecting to the generated g
         
         <dd>
           URL:
-          <pre>https://github.com/kanocz/octopi_eta_override/archive/master.zip</pre>
+          <pre>https://github.com/arekm/octopi_eta_override/archive/master.zip</pre>
           
         </dd>
         
         
         <dd>
           Command line:
-          <pre>pip install "https://github.com/kanocz/octopi_eta_override/archive/master.zip"</pre>
+          <pre>pip install "https://github.com/arekm/octopi_eta_override/archive/master.zip"</pre>
         </dd>
         
       </dl>
@@ -310,7 +329,11 @@ The last Sli3cr Prusa Edition implemented M73 gcode injecting to the generated g
           
           <a class="label" href="/by_tag/#tag-m73">m73</a>
           
+          <a class="label" href="/by_tag/#tag-marlin2">marlin2</a>
+          
           <a class="label" href="/by_tag/#tag-progress">progress</a>
+          
+          <a class="label" href="/by_tag/#tag-prusa">prusa</a>
           
         </dd>
       </dl>
@@ -342,13 +365,13 @@ The last Sli3cr Prusa Edition implemented M73 gcode injecting to the generated g
       
       <dl class="homepage">
         <dt>Homepage</dt>
-        <dd><a href="https://github.com/kanocz/octopi_eta_override" target="_blank">https://github.com/kanocz/octopi_eta_override</a></dd>
+        <dd><a href="https://github.com/arekm/octopi_eta_override" target="_blank">https://github.com/arekm/octopi_eta_override</a></dd>
       </dl>
       
       
       <dl class="source">
         <dt>Source</dt>
-        <dd><a href="https://github.com/kanocz/octopi_eta_override" target="_blank">https://github.com/kanocz/octopi_eta_override</a></dd>
+        <dd><a href="https://github.com/arekm/octopi_eta_override" target="_blank">https://github.com/arekm/octopi_eta_override</a></dd>
       </dl>
       
       
@@ -363,19 +386,19 @@ The last Sli3cr Prusa Edition implemented M73 gcode injecting to the generated g
         <dd>
           <p>
             If there is <strong>something wrong with this listing</strong> (broken links & images etc), please
-            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?template=listing_error.yml&labels%5B%5D=listing+error&title=%5BListing+Error%5D+Prusa+%28M73+response%29+ETA+Override&which_plugin=https%3A%2F%2Fplugins.octoprint.org%2Fplugins%2Fprusaetaoverride%2F">report it here</a>.
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?template=listing_error.yml&labels%5B%5D=listing+error&title=%5BListing+Error%5D+Slicer+M73+ETA+override+Plugin+%28Prusa%3B+Marlin+2%29&which_plugin=https%3A%2F%2Fplugins.octoprint.org%2Fplugins%2Fprusaetaoverride%2F">report it here</a>.
           </p>
           <p>
             If this plugin <strong>has been <em>confirmed</em> as abandoned</strong> by its maintainer, please
-            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?template=abandoned_plugin.yml&labels%5B%5D=abandoned+plugin&title=%5BAbandoned+Plugin%5D+Prusa+%28M73+response%29+ETA+Override&which_plugin=https%3A%2F%2Fplugins.octoprint.org%2Fplugins%2Fprusaetaoverride%2F">report it here</a>.
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?template=abandoned_plugin.yml&labels%5B%5D=abandoned+plugin&title=%5BAbandoned+Plugin%5D+Slicer+M73+ETA+override+Plugin+%28Prusa%3B+Marlin+2%29&which_plugin=https%3A%2F%2Fplugins.octoprint.org%2Fplugins%2Fprusaetaoverride%2F">report it here</a>.
           </p>
           <p>
             If this plugin is <strong>doing something suspicious</strong> (e.g. weird network activity, unannounced tracking, ...) and
             the maintainer is not cooperating in getting to the bottom of that, please
-            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?template=suspicious_plugin_activity.yml&labels%5B%5D=suspicious+plugin+activity&title=%5BSuspicious+Plugin+Activity%5D+Prusa+%28M73+response%29+ETA+Override&which_plugin=https%3A%2F%2Fplugins.octoprint.org%2Fplugins%2Fprusaetaoverride%2F">report the plugin as suspicious here</a>.
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?template=suspicious_plugin_activity.yml&labels%5B%5D=suspicious+plugin+activity&title=%5BSuspicious+Plugin+Activity%5D+Slicer+M73+ETA+override+Plugin+%28Prusa%3B+Marlin+2%29&which_plugin=https%3A%2F%2Fplugins.octoprint.org%2Fplugins%2Fprusaetaoverride%2F">report the plugin as suspicious here</a>.
           </p>
           <p>
-            Report bugs or feature requests for the plugin to the plugin author (e.g. on the plugin's <a href="https://github.com/kanocz/octopi_eta_override">homepage</a>) please, not here!
+            Report bugs or feature requests for the plugin to the plugin author (e.g. on the plugin's <a href="https://github.com/arekm/octopi_eta_override">homepage</a>) please, not here!
           </p>
         </dd>
       </dl>

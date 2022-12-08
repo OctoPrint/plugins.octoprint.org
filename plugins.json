@@ -6034,11 +6034,11 @@
     {
         "id": "prusaetaoverride",
         "published": "2019-08-25 00:00:00 -0500",
-        "title": "Prusa (M73 response) ETA Override",
-        "description": "Plugin that overrides OctoPrint ETA to values from last M73 gcode response received from printer",
-        "archive": "https://github.com/kanocz/octopi_eta_override/archive/master.zip",
+        "title": "Slicer M73 ETA override Plugin (Prusa; Marlin 2)",
+        "description": "Plugin that overrides OctoPrint ETA/progress to values from last M73 gcode response received from printer",
+        "archive": "https://github.com/arekm/octopi_eta_override/archive/master.zip",
         "author": "Anton Skorochod",
-        "homepage": "https://github.com/kanocz/octopi_eta_override",
+        "homepage": "https://github.com/arekm/octopi_eta_override",
         "page": "https://plugins.octoprint.org/plugins/prusaetaoverride/",
         "compatibility": {
             "octoprint": [],
