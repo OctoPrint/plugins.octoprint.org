@@ -6,9 +6,9 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html"> <!--<![endif]-->
 <head>
     <meta charset="utf-8" />
-    <title>OctoPrint-SlicerSettingsParser</title>
+    <title>SlicerSettingsParser</title>
     <meta name="description" content="Plugin to analyze gcode for slicer settings comments and add additional metadata of such settings.">
-    <meta name="author" content="T6">
+    
     <meta name="referrer" content="same-origin">
     <meta name="google-site-verification" content="0EFsbaNygJcEinKPmzP-hTf0Ju6wDIpJxO5zvQtOQT0" />
 
@@ -39,24 +39,24 @@
 
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@OctoPrint3D" />
-    <meta name="twitter:title" content="OctoPrint-SlicerSettingsParser" />
-    <meta name="twitter:description" content="NOTE: Only supports Slic3r and Simplify3D currently; suggest more in issues; contributions welcome!
+    <meta name="twitter:title" content="SlicerSettingsParser" />
+    <meta name="twitter:description" content="SlicerSettingsParser
 
 " />
     <meta name="twitter:image" content="https://plugins.octoprint.org/assets/img/octoprint-avatar-240x240.png" />
 
-    <meta property="og:title" content="OctoPrint-SlicerSettingsParser" />
+    <meta property="og:title" content="SlicerSettingsParser" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://plugins.octoprint.org/assets/img/repo-600x400.png" />
-    <meta property="og:description" content="NOTE: Only supports Slic3r and Simplify3D currently; suggest more in issues; contributions welcome!
+    <meta property="og:description" content="SlicerSettingsParser
 
 " />
     <meta property="og:site_name" content="OctoPrint Plugin Repository" />
     <meta property="og:url" content="https://plugins.octoprint.org/plugins/SlicerSettingsParser/" />
 
     <meta itemscope itemtype="http://schema.org/WebPage" />
-    <meta itemprop="headline" content="OctoPrint-SlicerSettingsParser" />
-    <meta itemprop="description" content="NOTE: Only supports Slic3r and Simplify3D currently; suggest more in issues; contributions welcome!
+    <meta itemprop="headline" content="SlicerSettingsParser" />
+    <meta itemprop="description" content="SlicerSettingsParser
 
 " />
     <meta itemprop="image" content="https://plugins.octoprint.org/assets/img/repo-600x400.png" />
@@ -183,7 +183,7 @@
   <div class="container">
     <div class="row">
       <div class="span12">
-        <h1>OctoPrint-SlicerSettingsParser</h1>
+        <h1>SlicerSettingsParser</h1>
       </div>
     </div>
   </div>
@@ -192,32 +192,57 @@
 <div class="container">
   <div class="row-fluid">
     
-    <small class="pull-left"><a href="/plugins/slic3r/"><i class="fa fa-double-angle-left"></i>&nbsp;OctoPrint-Slic3r</a></small>
+    <small class="pull-left"><a href="/plugins/prusaslicerthumbnails/"><i class="fa fa-double-angle-left"></i>&nbsp;Slicer Thumbnails</a></small>
     
     &nbsp;
     
-    <small class="pull-right"><a href="/plugins/SlicerSettingsTab/">OctoPrint-SlicerSettingsTab&nbsp;<i class="fa fa-double-angle-right"></i></a></small>
+    <small class="pull-right"><a href="/plugins/smartpreheat/">Smart Preheat&nbsp;<i class="fa fa-double-angle-right"></i></a></small>
     
   </div>
   <div class="content plugin-content row-fluid">
     <article class="post-content span8">
       
       
-      <div class="alert"><h3>This plugin has been abandoned</h3>The current maintainer of this plugin seems to have abandoned it. If you want to take over its maintainenance, please get in touch <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/1058" target="_blank" rel="noopener noreferrer">here...</a></div>
+      
       
 
       <p class="lead">
         Plugin to analyze gcode for slicer settings comments and add additional metadata of such settings.
       </p>
-      <p><strong>NOTE: Only supports Slic3r and Simplify3D currently; suggest more in issues; contributions welcome!</strong></p>
-
-<p><em>Note: this plugin has not been tested with versions under 1.3.10; they may not work!</em></p>
+      <h1 id="slicersettingsparser">SlicerSettingsParser</h1>
 
 <p><em>This plugin is useless without another plugin to use the metadata. Those can be found <a href="/by_tag/#tag-slicer-settings">here</a>.</em></p>
 
-<h2 id="configuration">Configuration</h2>
+<h3 id="compatible-plugins">Compatible plugins</h3>
+<p>Check out <a href="/plugins/ExtraFileInfo">ExtraFileInfo</a> for an example of what this plugin can do.</p>
 
-<h3 id="python-regexes-advanced">Python regexes (Advanced)</h3>
+<h3 id="configuration">Configuration</h3>
+<h4 id="scan-limit">Scan limit</h4>
+
+<p>Scanning all files entirely can take a considerable amount of time when your gcode library is large. A Raspberry Pi 4B seems to parse at a rate of about 4 MB/s. Every file you upload will be scanned, and choosing a scan limit in the settings will drastically reduce the scan time.</p>
+
+<h4 id="cura">Cura</h4>
+
+<p>Cura doesn’t natively support injecting the slicer settings into the gcode, so you must add <a href="https://gist.github.com/tjjfvi/75210b2ed20ed194d6eab48bf70c4f12">this</a> to your start/end gcode. Preferably add it to the start gcode, so that you can configure this plugin to stop parsing when it sees the first extrusion command. <a href="http://files.fieldofview.com/cura/Replacement_Patterns.html">Here</a> are all the available gcode variables that Cura supports.</p>
+
+<h4 id="python-regexes">Python regexes</h4>
+<h5 id="cura-1">Cura</h5>
+
+<p>If you use the start/end gcode provided above, use this regex:</p>
+<pre><code class="language-regex">^;\s*(?P&lt;key&gt;\w+[\w\s]*) : (?P&lt;val&gt;.*)
+</code></pre>
+
+<h5 id="slic3r">Slic3r</h5>
+
+<pre><code class="language-regex">^; (?P&lt;key&gt;[^,]*?) = (?P&lt;val&gt;.*)
+</code></pre>
+
+<h5 id="simplify3d">Simplify3D</h5>
+
+<pre><code class="language-regex">^;   (?P&lt;key&gt;.*?),(?P&lt;val&gt;.*)
+</code></pre>
+
+<h5 id="other">Other</h5>
 
 <p>This plugin uses python regexes to parse the gcode.
 Syntax can be easily found on the web.
@@ -225,7 +250,7 @@ There should be two named capturing groups, <code class="language-plaintext high
 Multiple regexes should be listed on seperate lines, ordered by precedence.
 Any chars are allowed in the groups; <code class="language-plaintext highlighter-rouge">\n</code> will be replaced by newlines.</p>
 
-<p>See the <a href="https://github.com/tjjfvi/OctoPrint-SlicerSettingsParser/wiki/Python-regexes">wiki</a> for examples.</p>
+<p>If you can not figure it out yourself, open an issue and I can take a look.</p>
 
 
       
@@ -255,14 +280,14 @@ Any chars are allowed in the groups; <code class="language-plaintext highlighter
         
         <dd>
           URL:
-          <pre>https://github.com/tjjfvi/OctoPrint-SlicerSettingsParser/archive/master.zip</pre>
+          <pre>https://github.com/larsjuhw/OctoPrint-SlicerSettingsParser/archive/master.zip</pre>
           
         </dd>
         
         
         <dd>
           Command line:
-          <pre>pip install "https://github.com/tjjfvi/OctoPrint-SlicerSettingsParser/archive/master.zip"</pre>
+          <pre>pip install "https://github.com/larsjuhw/OctoPrint-SlicerSettingsParser/archive/master.zip"</pre>
         </dd>
         
       </dl>
@@ -276,7 +301,7 @@ Any chars are allowed in the groups; <code class="language-plaintext highlighter
       
       <dl class="installations">
         <dt>Active instances the past month</dt>
-        <dd>Installed on at least <strong>872</strong> instances</dd>
+        <dd>Installed on at least <strong>871</strong> instances</dd>
       </dl>
       
       
@@ -292,14 +317,14 @@ Any chars are allowed in the groups; <code class="language-plaintext highlighter
           <ul>
             
             <li>
-              Latest Release: <a href="https://github.com/tjjfvi/OctoPrint-SlicerSettingsParser/releases/tag/v2.0.1" target="_blank">v2.0.1</a><br>
-              <small>released on 13 Feb 2019</small>
+              Latest Release: <a href="https://github.com/larsjuhw/OctoPrint-SlicerSettingsParser/releases/tag/v3.0.0" target="_blank">v3.0.0</a><br>
+              <small>released on 11 Dec 2022</small>
             </li>
-            <li>Releases: 4</li>
+            <li>Releases: 1</li>
             
-            <li>Stars: <span id="github_star_count">10</span> <span id="github_star"><a href="javascript:void(0)"><i class="far fa-star"></i></a></span></li>
-            <li>Issues: 4 open, 6 closed</li>
-            <li>Last push: 18 May 2022</li>
+            <li>Stars: <span id="github_star_count">0</span> <span id="github_star"><a href="javascript:void(0)"><i class="far fa-star"></i></a></span></li>
+            <li>Issues: 0 open, 0 closed</li>
+            <li>Last push: 11 Dec 2022</li>
           </ul>
         </dd>
       </dl>
@@ -332,29 +357,35 @@ Any chars are allowed in the groups; <code class="language-plaintext highlighter
             <li>Operating Systems: all</li>
             
             
-            <li>Python: &gt;=2.7,&lt;3</li>
+            <li>Python: &gt;=3,&lt;4</li>
             
           </ul>
         </dd>
       </dl>
       
       <dl class="author">
-        <dt>Author</dt>
-        <dd>
+        <dt>Authors</dt>
+        
+          <dd>
+<a href="/by_author/#larsjuhw">Larsjuhw</a>
+</dd>
+        
+          <dd>
 <a href="/by_author/#t6">T6</a>
 </dd>
+        
       </dl>
       
       
       <dl class="homepage">
         <dt>Homepage</dt>
-        <dd><a href="https://github.com/tjjfvi/OctoPrint-SlicerSettingsParser" target="_blank">https://github.com/tjjfvi/OctoPrint-SlicerSettingsParser</a></dd>
+        <dd><a href="https://github.com/larsjuhw/OctoPrint-SlicerSettingsParser" target="_blank">https://github.com/larsjuhw/OctoPrint-SlicerSettingsParser</a></dd>
       </dl>
       
       
       <dl class="source">
         <dt>Source</dt>
-        <dd><a href="https://github.com/tjjfvi/OctoPrint-SlicerSettingsParser" target="_blank">https://github.com/tjjfvi/OctoPrint-SlicerSettingsParser</a></dd>
+        <dd><a href="https://github.com/larsjuhw/OctoPrint-SlicerSettingsParser" target="_blank">https://github.com/larsjuhw/OctoPrint-SlicerSettingsParser</a></dd>
       </dl>
       
       
@@ -369,19 +400,19 @@ Any chars are allowed in the groups; <code class="language-plaintext highlighter
         <dd>
           <p>
             If there is <strong>something wrong with this listing</strong> (broken links & images etc), please
-            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?template=listing_error.yml&labels%5B%5D=listing+error&title=%5BListing+Error%5D+OctoPrint-SlicerSettingsParser&which_plugin=https%3A%2F%2Fplugins.octoprint.org%2Fplugins%2FSlicerSettingsParser%2F">report it here</a>.
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?template=listing_error.yml&labels%5B%5D=listing+error&title=%5BListing+Error%5D+SlicerSettingsParser&which_plugin=https%3A%2F%2Fplugins.octoprint.org%2Fplugins%2FSlicerSettingsParser%2F">report it here</a>.
           </p>
           <p>
             If this plugin <strong>has been <em>confirmed</em> as abandoned</strong> by its maintainer, please
-            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?template=abandoned_plugin.yml&labels%5B%5D=abandoned+plugin&title=%5BAbandoned+Plugin%5D+OctoPrint-SlicerSettingsParser&which_plugin=https%3A%2F%2Fplugins.octoprint.org%2Fplugins%2FSlicerSettingsParser%2F">report it here</a>.
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?template=abandoned_plugin.yml&labels%5B%5D=abandoned+plugin&title=%5BAbandoned+Plugin%5D+SlicerSettingsParser&which_plugin=https%3A%2F%2Fplugins.octoprint.org%2Fplugins%2FSlicerSettingsParser%2F">report it here</a>.
           </p>
           <p>
             If this plugin is <strong>doing something suspicious</strong> (e.g. weird network activity, unannounced tracking, ...) and
             the maintainer is not cooperating in getting to the bottom of that, please
-            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?template=suspicious_plugin_activity.yml&labels%5B%5D=suspicious+plugin+activity&title=%5BSuspicious+Plugin+Activity%5D+OctoPrint-SlicerSettingsParser&which_plugin=https%3A%2F%2Fplugins.octoprint.org%2Fplugins%2FSlicerSettingsParser%2F">report the plugin as suspicious here</a>.
+            <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues/new?template=suspicious_plugin_activity.yml&labels%5B%5D=suspicious+plugin+activity&title=%5BSuspicious+Plugin+Activity%5D+SlicerSettingsParser&which_plugin=https%3A%2F%2Fplugins.octoprint.org%2Fplugins%2FSlicerSettingsParser%2F">report the plugin as suspicious here</a>.
           </p>
           <p>
-            Report bugs or feature requests for the plugin to the plugin author (e.g. on the plugin's <a href="https://github.com/tjjfvi/OctoPrint-SlicerSettingsParser">homepage</a>) please, not here!
+            Report bugs or feature requests for the plugin to the plugin author (e.g. on the plugin's <a href="https://github.com/larsjuhw/OctoPrint-SlicerSettingsParser">homepage</a>) please, not here!
           </p>
         </dd>
       </dl>
@@ -394,7 +425,7 @@ Any chars are allowed in the groups; <code class="language-plaintext highlighter
   $(function() {
     var has_github = true;
     if (has_github) {
-      var github_repo = "tjjfvi/OctoPrint-SlicerSettingsParser";
+      var github_repo = "larsjuhw/OctoPrint-SlicerSettingsParser";
 
       if (github_repo) {
         var status = "unknown";
