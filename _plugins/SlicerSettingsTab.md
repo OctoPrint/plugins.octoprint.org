@@ -4,14 +4,16 @@ layout: plugin
 id: SlicerSettingsTab
 title: OctoPrint-SlicerSettingsTab
 description: Adds tab which displays slicer settings of selected gcode file.
-author: T6
+authors:
+- Larsjuhw
+- T6
 license: AGPLv3
 
 date: 2018-12-22
 
-homepage: https://github.com/tjjfvi/OctoPrint-SlicerSettingsTab
-source: https://github.com/tjjfvi/OctoPrint-SlicerSettingsTab
-archive: https://github.com/tjjfvi/OctoPrint-SlicerSettingsTab/archive/master.zip
+homepage: https://github.com/larsjuhw/OctoPrint-SlicerSettingsTab
+source: https://github.com/larsjuhw/OctoPrint-SlicerSettingsTab
+archive: https://github.com/larsjuhw/OctoPrint-SlicerSettingsTab/archive/master.zip
 
 tags:
 - gcode
@@ -43,3 +45,5 @@ compatibility:
 
 This plugin requires also installing [SlicerSettingsParser](/plugins/SlicerSettingsParser)
 or another plugin that adds a metadata dict under `slicer_settings`.
+
+You can pin a setting to the top by clicking on the setting text.
