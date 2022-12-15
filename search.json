@@ -1502,8 +1502,8 @@
 "date": "2018-12-22 00:00:00 -0600",
 "title": "OctoPrint-SlicerSettingsTab",
 "description": "Adds tab which displays slicer settings of selected gcode file.",
-"author": "T6",
-"content": "This plugin requires also installing SlicerSettingsParseror another plugin that adds a metadata dict under slicer_settings.",
+"author": "Larsjuhw, T6",
+"content": "This plugin requires also installing SlicerSettingsParseror another plugin that adds a metadata dict under slicer_settings.You can pin a setting to the top by clicking on the setting text.",
 "tags": ["gcode","analysis","slicer settings"]
 },
 

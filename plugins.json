@@ -5087,7 +5087,7 @@
         "compatibility": {
             "octoprint": [],
             "os": [],
-            "python": ">=3,<4"
+            "python": ">=2.7,<4"
         },
         "license": "AGPLv3",
         "abandoned": false,
@@ -5118,9 +5118,9 @@
         "published": "2018-12-22 00:00:00 -0600",
         "title": "OctoPrint-SlicerSettingsTab",
         "description": "Adds tab which displays slicer settings of selected gcode file.",
-        "archive": "https://github.com/tjjfvi/OctoPrint-SlicerSettingsTab/archive/master.zip",
-        "author": "T6",
-        "homepage": "https://github.com/tjjfvi/OctoPrint-SlicerSettingsTab",
+        "archive": "https://github.com/larsjuhw/OctoPrint-SlicerSettingsTab/archive/master.zip",
+        "author": "Larsjuhw, T6",
+        "homepage": "https://github.com/larsjuhw/OctoPrint-SlicerSettingsTab",
         "page": "https://plugins.octoprint.org/plugins/SlicerSettingsTab/",
         "compatibility": {
             "octoprint": ["1.3.10"],
