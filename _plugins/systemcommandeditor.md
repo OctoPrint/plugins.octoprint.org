@@ -7,7 +7,7 @@ description: This plugin makes System Commands editable through the OctoPrint We
 authors:
 - Shell M Shrader (maintainer)
 - Marc Hannappel 
- license: AGPLv3
+license: AGPLv3
 
 date: 2015-06-03
 
