@@ -5,7 +5,7 @@ id: systemcommandeditor
 title: System Command Editor
 description: This plugin makes System Commands editable through the OctoPrint WebUI
 authors:
-- Shell M Shrader (maintainer)
+- Shell M. Shrader
 - Marc Hannappel 
 license: AGPLv3
 
