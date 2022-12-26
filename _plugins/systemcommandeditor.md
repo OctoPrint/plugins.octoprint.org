@@ -4,14 +4,17 @@ layout: plugin
 id: systemcommandeditor
 title: System Command Editor
 description: This plugin makes System Commands editable through the OctoPrint WebUI
-author: Marc Hannappel (Salandora)
-license: AGPLv3
+author: 
+authors:
+ - Shell M Shrader (maintainer)
+ - Marc Hannappel 
+ license: AGPLv3
 
 date: 2015-06-03
 
-homepage: https://github.com/Salandora/OctoPrint-SystemCommandEditor
-source: https://github.com/Salandora/OctoPrint-SystemCommandEditor
-archive: https://github.com/Salandora/OctoPrint-SystemCommandEditor/archive/master.zip
+homepage: https://github.com/synman/OctoPrint-SystemCommandEditor
+source: https://github.com/synman/OctoPrint-SystemCommandEditor
+archive: https://github.com/synman/OctoPrint-SystemCommandEditor/archive/master.zip
 
 tags:
 - administration
