@@ -5,10 +5,45 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>https://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 29 Dec 2022 17:18:05 -0600</pubDate>
-    <lastBuildDate>Thu, 29 Dec 2022 17:18:05 -0600</lastBuildDate>
+    <pubDate>Thu, 29 Dec 2022 18:59:45 -0600</pubDate>
+    <lastBuildDate>Thu, 29 Dec 2022 18:59:45 -0600</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
+    
+      <item>
+        <title>SmartABL</title>
+        <description>
+          <![CDATA[
+            Simple plugin to improve auto bed leveling, adding some conditions in order to minimize the number of ABLs triggered.
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/SmartABL/settings.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Thu, 29 Dec 2022 00:00:00 -0600</pubDate>
+        <link>https://plugins.octoprint.org/plugins/SmartABL/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/SmartABL/</guid>
+        
+        <category>abl</category>
+        
+        <category>auto bed leveling</category>
+        
+        <category>bed level</category>
+        
+        <category>bed leveling</category>
+        
+        <category>leveling</category>
+        
+        <category>bl-touch</category>
+        
+        <category>mesh</category>
+        
+        <category>probe</category>
+        
+        <category>bilinear</category>
+        
+        <category>marlin</category>
+        
+      </item>
     
       <item>
         <title>Octoprint Nexus AI</title>
@@ -280,46 +315,6 @@ Tue, 21 Jun 2022 00:00:00 -0500</pubDate>
         <category>psucontrol</category>
         
         <category>espurna</category>
-        
-      </item>
-    
-      <item>
-        <title>Creatbot Util</title>
-        <description>
-          <![CDATA[
-            Various utility functions to make OctoPrint work better with Creatbot printers.
-            <p><img src="https://plugins.octoprint.org/assets/img/repo-600x400.png"></p>
-            
-          ]]>
-        </description>
-        <pubDate>
-Tue, 14 Jun 2022 00:00:00 -0500</pubDate>
-        <link>https://plugins.octoprint.org/plugins/CreatbotUtil/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/CreatbotUtil/</guid>
-        
-        <category>creabot</category>
-        
-        <category>printer</category>
-        
-        <category>control</category>
-        
-        <category>command</category>
-        
-        <category>serial</category>
-        
-        <category>start</category>
-        
-        <category>stop</category>
-        
-        <category>temperature</category>
-        
-        <category>heated</category>
-        
-        <category>chamber</category>
-        
-        <category>build</category>
-        
-        <category>volume</category>
         
       </item>
     
