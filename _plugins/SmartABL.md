@@ -5,7 +5,7 @@ id: SmartABL
 title: SmartABL
 description: Simple plugin to improve auto bed leveling, adding some conditions in order to minimize the number of ABLs triggered.
 authors:
-- Sergio C
+- scmanjarrez
 license: AGPLv3
 
 date: 2022-12-29
@@ -48,7 +48,7 @@ compatibility:
 The plugin replaces `G29` from ***.gcode** and check the bed mesh
 in memory.
 - If mesh is updated, `M429 S1` is sent in order to load bed mesh from memory.
-- If mesh is outdated, `G29` and `M500` are sent in order to
+- If mesh is outdated or doesn't exist, `G29` and `M500` are sent in order to
 generate a new mesh and save it to eeprom, respectively.
 
 References:
@@ -62,7 +62,7 @@ for the idea.
 ## Configuration
 
 By default, SmartABL **does not change** the behaviour of the
-auto bed leveling, user input in settings is required:
+auto bed leveling. User *must* change default values in settings:
 
 **Days**
 - **force** (disabled): Force bed mesh update if the `after days`
@@ -70,8 +70,8 @@ condition is met.
 - **after**(1): Days after last print before forcing mesh update.
 
 **Prints**
-- **force** (enabled): Force bed mesh update if the `after prints` condition is met.
-- **after**(1): Prints completed before forcing mesh update.
+- **force** (disabled): Force bed mesh update if the `after prints` condition is met.
+- **after**(5): Prints completed before forcing mesh update.
 
 **Events**
 - **failed** (disabled): Take into account `PrintFailed` events
