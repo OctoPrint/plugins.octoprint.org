@@ -8,7 +8,7 @@ authors:
 - Sergio C
 license: AGPLv3
 
-date: 2022-12-07
+date: 2022-12-29
 
 homepage: https://github.com/scmanjarrez/OctoPrint-SmartABL
 source: https://github.com/scmanjarrez/OctoPrint-SmartABL
