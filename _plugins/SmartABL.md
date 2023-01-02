@@ -84,7 +84,7 @@ Default: disabled.
 Default: disabled (only successful prints increase the counter).
 
 <div align="center">
-    <img alt="Screenshot of SmartABL settings panel" src="/assets/img/plugins/SmartABL/settings.png" width="80%"></img>
+    <img alt="Screenshot of SmartABL settings panel" src="/assets/img/plugins/SmartABL/settings.png" width="90%">
 </div>
 
 ### Side panel
@@ -96,7 +96,7 @@ based on your settings.
 need to force-update your mesh.
 
 <div align="center">
-    <img alt="Screenshot of SmartABL side panel" src="assets/img/plugins/SmartABL/sidepanel.png" width="30%"></img>
+    <img alt="Screenshot of SmartABL side panel" src="/assets/img/plugins/SmartABL/sidepanel.png" width="40%">
 </div>
 
 ## Support me
