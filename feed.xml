@@ -5,10 +5,29 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>https://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 04 Jan 2023 08:17:22 -0600</pubDate>
-    <lastBuildDate>Wed, 04 Jan 2023 08:17:22 -0600</lastBuildDate>
+    <pubDate>Wed, 04 Jan 2023 09:19:18 -0600</pubDate>
+    <lastBuildDate>Wed, 04 Jan 2023 09:19:18 -0600</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
+    
+      <item>
+        <title>OctoPrint-Esp32CamUI</title>
+        <description>
+          <![CDATA[
+            Extend the interface of the ESP32-CAM into the OctoPrint interface.
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/esp32camUI/Tab_ScreenShot.jpg"></p>
+          ]]>
+        </description>
+        <pubDate>
+Wed, 04 Jan 2023 00:00:00 -0600</pubDate>
+        <link>https://plugins.octoprint.org/plugins/esp32camUI/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/esp32camUI/</guid>
+        
+        <category>esp32-cam</category>
+        
+        <category>camera</category>
+        
+      </item>
     
       <item>
         <title>SmartABL</title>
@@ -287,34 +306,6 @@ Sun, 17 Jul 2022 00:00:00 -0500</pubDate>
         <category>reload</category>
         
         <category>history</category>
-        
-      </item>
-    
-      <item>
-        <title>Octoprint-PSUControl-ESPurna</title>
-        <description>
-          <![CDATA[
-            Plugin to control devices with ESPurna firmware
-            <p><img src="https://plugins.octoprint.org/assets/img/repo-600x400.png"></p>
-            
-          ]]>
-        </description>
-        <pubDate>
-Tue, 21 Jun 2022 00:00:00 -0500</pubDate>
-        <link>https://plugins.octoprint.org/plugins/psucontrol_espurna/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/psucontrol_espurna/</guid>
-        
-        <category>psucontrol subplugin</category>
-        
-        <category>control</category>
-        
-        <category>power</category>
-        
-        <category>psu</category>
-        
-        <category>psucontrol</category>
-        
-        <category>espurna</category>
         
       </item>
     
