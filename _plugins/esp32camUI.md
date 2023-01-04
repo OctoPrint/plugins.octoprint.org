@@ -17,12 +17,12 @@ tags:
 - camera
 
 screenshots:
-url: /assets/img/plugins/esp32camUI/Settings_ScreenShot.jpg
-alt: Setting ScreenShot
-caption: Setting ScreenShot
-url: /assets/img/plugins/esp32camUI/Tab_ScreenShot.jpg
-alt: Tab ScreenShot
-caption: Tab ScreenShot
+- url: /assets/img/plugins/esp32camUI/Settings_ScreenShot.jpg
+  alt: Setting ScreenShot
+  caption: Setting ScreenShot
+- url: /assets/img/plugins/esp32camUI/Tab_ScreenShot.jpg
+  alt: Tab ScreenShot
+  caption: Tab ScreenShot
 
 featuredimage: /assets/img/plugins/esp32camUI/Tab_ScreenShot.jpg
 
