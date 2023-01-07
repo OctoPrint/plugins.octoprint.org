@@ -8,11 +8,11 @@ authors:
     - Charlie Powell
 license: AGPLv3
 
-date: 2023-01-05
+date: 2023-01-07
 
-homepage: https://github.com/cp2004/OctoPrint-OneDriveFiles
-source: https://github.com/cp2004/OctoPrint-OneDriveFiles
-archive: https://github.com/cp2004/OctoPrint-OneDriveFiles/archive/master.zip
+homepage: https://github.com/cp2004/OctoPrint-OneDriveFileSync
+source: https://github.com/cp2004/OctoPrint-OneDriveFileSync
+archive: https://github.com/cp2004/OctoPrint-OneDriveFileSync/releases/latest/download/release.zip
 
 tags:
 - onedrive
