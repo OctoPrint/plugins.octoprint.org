@@ -203,6 +203,12 @@ layout: default
         <dd><a href="{{ page.source | strip_html | strip_newlines | escape }}" target="_blank">{{ page.source | strip_html | strip_newlines | escape }}</a></dd>
       </dl>
       {% endif %}
+      {% if page.privacypolicy %}
+      <dl class="privacypolicy">
+        <dt>Privacy Policy</dt>
+        <dd><a href="{{ page.privacypolicy | strip_html | strip_newlines | escape }}" target="_blank">{{ page.privacypolicy | strip_html | strip_newlines | escape }}</a></dd>
+      </dl>
+      {% endif %}
       {% if page.license %}
       <dl class="license">
         <dt>License</dt>

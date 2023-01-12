@@ -26,6 +26,8 @@ tags:
 - network
 
 
+compatibility:
+  python: '>=2.7,<4'
 ---
 
 # Project Kronos

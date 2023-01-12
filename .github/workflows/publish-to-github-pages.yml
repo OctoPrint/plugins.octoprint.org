@@ -16,17 +16,17 @@ jobs:
     name: Publish to Github Pages
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           path: src
 
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           path: live
           ref: master
 
       - name: 🐍 Set up Python 3.7
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v4
         with:
           python-version: "3.7"
 
@@ -65,7 +65,7 @@ jobs:
           python ./src/.github/scripts/populate_py2_overlays.py
 
       - name: 📦 Cache jekyll build bundle
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: ./bundle
           key: ${{ runner.os }}-jekyll-build-bundle
@@ -90,7 +90,7 @@ jobs:
           git diff --name-only
           changed=($(git diff --name-only))
           json=`printf '%s\n' "${changed[@]}" | jq -R . | jq -c -s .`
-          echo "::set-output name=files::$json"
+          echo "files=$json" >> $GITHUB_OUTPUT
 
       - name: 🕵️‍♂️ Validate plugins.json
         if: contains( fromJSON( steps.changed.outputs.files ), 'plugins.json' )
@@ -129,13 +129,11 @@ jobs:
 
       - name: 🚀 Commit & deploy
         if: github.repository == 'OctoPrint/plugins.octoprint.org' && github.event_name != 'pull_request'
-        uses: EndBug/add-and-commit@v4
+        uses: EndBug/add-and-commit@v9
         with:
           cwd: "live"
-          ref: "master"
           message: "deploy: ${{ github.sha }}"
-          author_name: 'github-actions[bot]'
-          author_email: 'github-actions[bot]@users.noreply.github.com'
+          default_author: github_actions
 
       - name: 📧 Discord success notification
         if: github.repository == 'OctoPrint/plugins.octoprint.org' && github.event_name != 'pull_request'

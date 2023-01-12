@@ -2,8 +2,8 @@
 layout: plugin
 
 id: SlicerEstimator
-title: Slicer Print Time Estimator
-description: Slicer Print Time Estimator is a generic implemenation to read accurate remaining time to print embedded in the GCODE file by the slicer
+title: Slicer Estimator
+description: Slicer Estimator - adds accurate remaining time to print, remaining time to filament changes and other custom metadata like filament brand, etc. to OctoPrint
 author: Nils Hendrik Rottgardt
 license: AGPLv3
 date: 2021-02-24
@@ -18,6 +18,19 @@ tags:
 - estimation
 - time
 - print time
+- metadata
+- progress
+- eta
+- analysis
+- cura
+- prusaslicer
+- finish time
+- filament
+- file manager
+- gcode
+- mmu
+- m600
+- m73
 
 compatibility:
   python: ">=2.7,<4"
@@ -25,38 +38,35 @@ compatibility:
   - 1.3.9
 
 screenshots:
-- url: /assets/img/plugins/SlicerEstimator/OctoPrint-estimator_dot.png
-  alt: OctoPrint shows that Slicer information is detected and accurate
+- url: /assets/img/plugins/SlicerEstimator/Printer_Metadata.png
+  alt: OctoPrint shows that Slicer information is detected and available metadata
   caption: Slicer information detected
-- url: /assets/img/plugins/SlicerEstimator/file_metadata1.png
-  alt: Update of file metadata after upload (1)
-  caption: Updates estimation on upload from slicer (1)
-- url: /assets/img/plugins/SlicerEstimator/file_metadata2.png
-  alt: Update of file metadata after upload (2)
-  caption: Updates estimation on upload from slicer (2)
-- url: /assets/img/plugins/SlicerEstimator/Settings_Basic.png
-  alt: OctoPrint selection of the Slicer
-  caption: OctoPrint Basic Settings
-- url: /assets/img/plugins/SlicerEstimator/Settings_Custom.png
-  alt: OctoPrint Custom Settings
-  caption: OctoPrint Custom Settings
-- url: /assets/img/plugins/SlicerEstimator/Gcode.png
-  alt: Gcode
-  caption: Gcode
+- url: /assets/img/plugins/SlicerEstimator/File_Metadata_Custom.png
+  alt: Slicer estimation and metadata available in filelist
+  caption: Slicer estimation and metadata available in filelist
+- url: /assets/img/plugins/SlicerEstimator/Filament_Change.png
+  alt: Filament Changes are visible in Filebrowser and actual print
+  caption: Filament Changes are visible in Filebrowser and actual print
+  
 ---
 
-# Slicer Print Time Estimator - for an accurate remaining time to print
-With this plugin you can use the more accurate estimation of time remaining of the slicer instead of Octoprints estimations. So it will be very accurate, as the slicer created each command of the GCODE. Thanks to arhi for the idea and first implementation.
+# Slicer Estimator - for an accurate remaining time to print and custom metadata in OctoPrint
+With this plugin you can use the more accurate estimation of the slicer instead of OctoPrints estimations. So it will be very accurate, as the slicer created each command of the GCODE.
+Also it is possible to add custom metadata to the GCODE and make it visible in OctoPrints filelist or printer state view. For example the material the GCODE is created for becomes visible inside OctoPrint. 
+And if you like to know when a M600 filament change is expected or a MMU tool switch it is also shown.
 
-The default configuration matches the syntax of the following slicers, but you can change it in the plugins custom settings according your needs.
+The the syntax of the following slicers is known and selected automatically:
 
 * Cura
-* Cura M117
 * Simplify3D
 * PrusaSlicer
+* SuperSlicer
+* Creality Slicer
 
 
 A more detailed description and manual is available on Github - the plugin's homepage on the right.
+
+For plugin developers an [API description is available](https://github.com/NilsRo/OctoPrint-SlicerEstimator/blob/master/API_DOC.md) to add metadata also in other plugins.
 
 
 More configurations can be added, please request additions via a [Github issue](https://github.com/NilsRo/OctoPrint-SlicerEstimator/issues).

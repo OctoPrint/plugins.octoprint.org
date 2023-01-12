@@ -76,6 +76,8 @@ compatibility:
 
   python: ">=2.7,<4"
 
+abandoned: https://github.com/OctoPrint/plugins.octoprint.org/issues/1085
+
 ---
 
 The plugin allows control of some FlashForge, Dremel and PowerSpec printers

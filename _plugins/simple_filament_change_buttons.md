@@ -3,7 +3,8 @@ layout: plugin
 
 id: simple_filament_change_buttons
 title: Simple Filament Change Buttons
-description: Simply adds some buttons to send the filament load/unload/change commands for Marlin, so you don't have to use the LCD menu
+description: Simply adds some buttons to send the filament load/unload/change commands
+  for Marlin, so you don't have to use the LCD menu
 author: Gareth Martin
 license: mit
 
@@ -22,7 +23,8 @@ screenshots:
   caption: Filament Change Buttons
 
 featuredimage: /assets/img/plugins/simple_filament_change_buttons/sfc_buttons.png
-
+compatibility:
+  python: '>=2.7,<4'
 ---
 
 # Simple Filament Change Buttons

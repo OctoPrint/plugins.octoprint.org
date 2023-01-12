@@ -28,6 +28,8 @@ screenshots:
   alt: Thingiverse Settings
   caption: ThingiverseSettings
 
+abandoned: https://github.com/OctoPrint/plugins.octoprint.org/issues/1082
+
 ---
 
 # OctoPrint-Thingiverse

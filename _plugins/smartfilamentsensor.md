@@ -4,15 +4,17 @@ layout: plugin
 id: smartfilamentsensor
 title: Octoprint-Smart-Filament-Sensor
 description: A plugin to directly add Smart Filament Sensors like BigTreeTech Smart Filament Sensor to Octoprint.
-author: Anni Lange
+authors: 
+- Royrdan
+- Anni Lange
 license: GPLv3
 
 # today's date in format YYYY-MM-DD, e.g.
 date: 2020-10-16
 
-homepage: https://github.com/maocypher/Octoprint-Smart-Filament-Sensor
-source: https://github.com/maocypher/Octoprint-Smart-Filament-Sensor
-archive: https://github.com/maocypher/Octoprint-Smart-Filament-Sensor/archive/master.zip
+homepage: https://github.com/Royrdan/Octoprint-Smart-Filament-Sensor
+source: https://github.com/Royrdan/Octoprint-Smart-Filament-Sensor
+archive: https://github.com/Royrdan/Octoprint-Smart-Filament-Sensor/archive/master.zip
 
 # Set this to true if your plugin uses the dependency_links setup parameter to include
 # library versions not yet published on pypi. SHOULD ONLY BE USED IF THERE IS NO OTHER OPTION!
@@ -115,7 +117,7 @@ This plugin can use the GPIO.BOARD or GPIO.BCM numbering scheme.
 ## Installation
 
 * Install via the bundled [Plugin Manager](https://github.com/foosel/OctoPrint/wiki/Plugin:-Plugin-Manager).
-* Manually using this URL: https://github.com/maocypher/Octoprint-Smart-Filament-Sensor/archive/master.zip
+* Manually using this URL: https://github.com/Royrdan/Octoprint-Smart-Filament-Sensor/archive/master.zip
 
 After installation a restart of Octoprint is recommended.
 
@@ -150,6 +152,6 @@ If you do not want that the print is paused right on your print, I recommend to 
 * Support of multiple sensors for multiextruders like 4 channel kraken hotend
 
 ## Contact
-* [Issues](https://github.com/maocypher/Octoprint-Smart-Filament-Sensor/issues)
+* [Issues](https://github.com/Royrdan/Octoprint-Smart-Filament-Sensor/issues)
 * [Smart-Filament-Sensor Discord](https://discord.gg/YQsXrSwrV7)
 * [Octoprint Discord](https://discord.octoprint.org/)

@@ -9,9 +9,9 @@ license: Apache License 2.0
 
 date: 2019-09-05
 
-homepage: https://github.com/Skiepp/GCodeSuperLaserController
-source: https://github.com/Skiepp/GCodeSuperLaserController
-archive: https://github.com/Skiepp/GCodeSuperLaserController/archive/master.zip
+homepage: https://github.com/jneilliii/GCodeSuperLaserController
+source: https://github.com/jneilliii/GCodeSuperLaserController
+archive: https://github.com/jneilliii/GCodeSuperLaserController/archive/master.zip
 
 tags:
 - gcode
@@ -23,6 +23,8 @@ compatibility:
 
   os:
   - linux
+
+abandoned: https://github.com/OctoPrint/plugins.octoprint.org/issues/961
 
 ---
 

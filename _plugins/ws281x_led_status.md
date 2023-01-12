@@ -44,27 +44,27 @@ compatibility:
   os:
   - linux
 
-  python: ">=2.7,<4"
+  python: ">=3.7,<4"
 
 ---
 
 ![rainbow effect](/assets/img/plugins/ws281x_led_status/rainbow.gif)
 
-A highly configurable plugin for supporting WS2811, WS2812 and SK6812 LEDs attached to your Raspberry Pi.
+A highly configurable yet easy to use plugin for attaching WS2811, WS2812 and SK6812 or LEDs to your Raspberry Pi for a printer status update!
 
-With lots of effects to choose from, you can customise the plugin to do things *exactly* as you want them, to display the status from your 3D printer from a simple strip of LEDs
+With lots of options effects and integrations to choose from, you can customise the plugin to do things _exactly_ as you want them.
 
-Features include:
-* Reacting to printing events
-* Tracking heating & printing progress
-* Intercepting M150 commands
-* Quick on/off button from the navbar
-* 'Torch' button
-* A timer to turn the LEDs on or off at certain times
-* Easy to use but highly configurable settings interface, you can turn pretty much anything on or off.
-* LED Strip test
-* Power calculator
-* ... and more!
+Most prominent features include:
+
+- Printer status effects
+- Tracking heating, printing and cooling progress
+- Intercepting M150 commands & controlling with @ commands
+- Easy controls for turning lights on and off from the navbar
+- Theme-friendly torch button to temporarily light up your printer
+- Timers to turn the LEDs off at certain times of day or after a print is done.
+- Custom Triggers - add your own events, @ commands or gcode matching to trigger effects
+- Powerful integration with OctoApp for Android
+- ...and more!
 
 For the most up-to-date feature list, please checkout the [plugin's homepage]({{ page.homepage }}) as well as the [documentation](https://cp2004.gitbook.io/ws281x-led-status/) for more information.
 

@@ -29,7 +29,8 @@ screenshots:
   caption: shutdown printer settings plugin
 
 featuredimage: /assets/img/plugins/shutdownprinter/sidebar.JPG
-
+compatibility:
+  python: '>=2.7,<4'
 ---
 
 This OctoPrint plugin enables the system to be automatically shut down printer after a print is finished (works with tplink plugs and OctoPrint-TPLinkSmartplug plugins).

@@ -32,6 +32,7 @@ compatibility:
   - macos
   - freebsd
 
+  python: '>=2.7,<4'
 ---
 
 Fix to parse correctly temperatures from Creality printers.

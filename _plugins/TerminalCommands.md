@@ -3,7 +3,8 @@ layout: plugin
 
 id: TerminalCommands
 title: OctoPrint-TerminalCommands
-description: Lets you add custom G-code command buttons to OctoPrint's Terminal view tab
+description: Lets you add custom G-code command buttons to OctoPrint's Terminal view
+  tab
 author: ieatacid
 license: AGPLv3
 
@@ -39,6 +40,7 @@ compatibility:
   - macos
   - freebsd
 
+  python: '>=2.7,<4'
 ---
 
 Buttons are inserted between the terminal command input and the terminal filters. Currenty only supports G-code commands that you can send through the terminal.

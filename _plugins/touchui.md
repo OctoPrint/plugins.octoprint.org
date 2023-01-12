@@ -36,6 +36,8 @@ compatibility:
   octoprint:
   - 1.2.6
   python: ">=2.7,<4"
+
+abandoned: https://github.com/OctoPrint/plugins.octoprint.org/issues/1126
 ---
 
 This plugin will transform the OctoPrint layout into a Mobile/TFT friendly layout. With larger buttons and a responsive layout down to the smallest resolution possible. It will mimic pointer events as touch, so you can hook up those touchscreens. It also supports a virtual keyboard.

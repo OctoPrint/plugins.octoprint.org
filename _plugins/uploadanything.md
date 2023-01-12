@@ -71,6 +71,7 @@ compatibility:
   - macos
   - freebsd
 
+  python: '>=2.7,<4'
 ---
 
 If you want to keep your files organized storing project files and models along the sliced GCODE as I do then this plugin will allow you to overcome the default constraint allowing to upload only GCODE files via the file embedded file upload mechanism.

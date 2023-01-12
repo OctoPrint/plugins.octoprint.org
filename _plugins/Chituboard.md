@@ -58,8 +58,9 @@ or manually using this URL:
 https://github.com/rudetrooper/Octoprint-Chituboard/archive/main.zip
 
 ## Requirements
-1. **Raspberry Pi Zero W, Zero WH, 3A+ or 4B** only supports raspberry pi's with USB-OTG ports
-2. Supported printers: SLA printers with chitu3d mainboard
+1. **Raspberry Pi Zero W (not recommended underpowered), Zero 2 W, 3A+ or 4B** only supports raspberry pi's with USB-OTG ports
+  * Doesn't work properly in a docker container, designed to work with a fresh Octopi install
+2. Supported printers: SLA printers with chitu3d mainboard, Anycubic mainboards
   * Anycubic Photon
   * Elegoo Mars
   * Elegoo Mars Pro

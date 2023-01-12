@@ -24,7 +24,7 @@ collections:
 
     # if you ever change this, also change the /plugins/ and / stripping routine in plugins.json!
     permalink: /plugins/:path/
-  
+
   topics:
     output: true
     permalink: /topics/:path/
@@ -65,6 +65,17 @@ assets:
   sources:
     - "_assets"
 
+sourcerepo: https://github.com/OctoPrint/OctoPrint
+forum: https://community.octoprint.org
+discord: https://discord.octoprint.org
+irc: ircs://irc.libera.chat:6697/#octoprint
+
+twitter: OctoPrint3D
+mastodon: "@octoprint@fosstodon.org"
+facebook: OctoPrint
+youtube: OctoPrint3D
+
 twitterlink: https://twitter.com/OctoPrint3D
+mastodonlink: https://fosstodon.org/@octoprint
 facebooklink: https://facebook.com/OctoPrint
 youtubelink: https://www.youtube.com/c/OctoPrint3D

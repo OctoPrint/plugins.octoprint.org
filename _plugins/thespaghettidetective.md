@@ -3,14 +3,14 @@ layout: plugin
 
 id: thespaghettidetective
 title: Access Anywhere - The Spaghetti Detective
-description: 3D Print With Peace of Mind
-author: TSD Team
+description: The Spaghetti Detective is now Obico! Please install "Obico for OctoPrint" instead.
+author: The Obico team
 license: AGPLv3
 
 # TODO
 date: 2019-11-07
 
-homepage: https://www.thespaghettidetective.com
+homepage: https://www.obico.io
 source: https://github.com/TheSpaghettiDetective/OctoPrint-TheSpaghettiDetective
 archive: https://github.com/TheSpaghettiDetective/OctoPrint-TheSpaghettiDetective/archive/master.zip
 
@@ -38,12 +38,13 @@ tags:
 - AI
 - Machine Learning
 - app
+- mobile
+- mobile app
+- push notification
 - cloud printing
 - free
 - plugin support
 
-
-featuredimage: /assets/img/plugins/thespaghettidetective/hero.png
 
 # TODO
 # You only need the following if your plugin requires specific OctoPrint versions or
@@ -88,148 +89,26 @@ compatibility:
   - macos
   - freebsd
 
+  python: ">=2.7,<4"
+
 ---
 
-<p class="lead">Whether you're worried about print failures, fire hazards, or network security, The Spaghetti Detective has got your back.</p>
+<p class="alert alert-warning">Access Anywhere - The Spaghetti Detective plugin has been
+succeeded by <a href="/plugins/obico/">Obico for OctoPrint</a>.</p>
 
-<div class="row-fluid" style="margin-top: 28px;">
-  <div class="span4">
-    <img style="width: 100px; display: block; margin: auto;" src="/assets/img/plugins/thespaghettidetective/TSDBenefitIcons-03.svg" />
-    <div style="text-align: center;font-weight: bolder; margin: 12px 0 18px 0;">Save time and money</div>
-  </div>
-  <div class="span4">
-    <img style="width: 100px; display: block; margin: auto;" src="/assets/img/plugins/thespaghettidetective/TSDBenefitIcons-04.svg" />
-    <div style="text-align: center;font-weight: bolder; margin: 12px 0 18px 0;">Catch print hazards early</div>
-  </div>
-  <div class="span4">
-    <img style="width: 100px; display: block; margin: auto;" src="/assets/img/plugins/thespaghettidetective/EquipmentDamageIcon-11.svg" />
-    <div style="text-align: center;font-weight: bolder; margin: 12px 0 18px 0;">Lower equipment damage risk</div>
-  </div>
-</div>
-<div class="row-fluid" style="margin-bottom: 18px;">
-  <div class="span4">
-    <img style="width: 100px; display: block; margin: auto;" src="/assets/img/plugins/thespaghettidetective/TSDBenefitIcons-05.svg" />
-    <div style="text-align: center;font-weight: bolder; margin: 12px 0 18px 0;">Secure remote access </div>
-  </div>
-  <div class="span4">
-    <img style="width: 100px; display: block; margin: auto;" src="/assets/img/plugins/thespaghettidetective/TSDBenefitIcons-08.svg" />
-    <div style="text-align: center;font-weight: bolder; margin: 12px 0 18px 0;">Manage printer on your phone </div>
-  </div>
-  <div class="span4">
-    <img style="width: 100px; display: block; margin: auto;" src="/assets/img/plugins/thespaghettidetective/TSDBenefitIcons-07.svg" />
-    <div style="text-align: center;font-weight: bolder; margin: 12px 0 18px 0;">Get the most out of OctoPrint</div>
-  </div>
-</div>
+Obico is everything you loved about The Spaghetti Detective, but smarter and more open.
 
-## Features
+Please visit the Obico for OctoPrint [plugin page](/plugins/obico/) or [the Obico
+website](https://obico.io) to learn more about Obico.
 
-* <span style="font-weight: bold; font-size: 1.2em;">AI-powered failure detection.</span> The Detective will watch your prints so you don't have
-  to.
+For existing The Spaghetti Detective users, please:
 
-* **Unlimited webcam streaming.** Pro users get 25 fps premium webcam streaming. Free users get
-  unlimited streaming at a lower frame rate.
+1. Uninstall The Spaghetti Detective plugin while keep its data in OctoPrint.
+2. Then install [the Obico plugin](/plugins/obico/).
+3. All your existing settings in The Spaghetti Detective will be automatically migrated.
 
-* **Secure OctoPrint remote access/control.** No port-forwarding or VPN required. Full
-  OctoPrint access from anywhere with an internet connection.
-
-* **Free companion iOS and Android app.** Progress and webcam feed pushed to your phone while printing. No need to open the app or even unlock the screen.
-
-* **Printer feed sharing.** Show off your print with an encrypted link. Easy. Secure.
-
-<br />
-
-## Does the AI really work?
-
-The Spaghetti Detective has caught thousands of failures for the 3D printing enthusiasts
-around the globe. Here are some examples:
-
-{% include youtube.html vid="tUmHmVRIF_4" preview="'/assets/img/plugins/thespaghettidetective/video_preview2.png'" %}
-Video courtesy of TSD user Jimmy.
-
-<br />
-
-{% include youtube.html vid="uf_oSxS6oI8" preview="'/assets/img/plugins/thespaghettidetective/video_preview3.png'" %}
-Video courtesy of TSD user Lila.
-
-<br />
-
-*If you can't have enough spaghetti (pun intended), head to [The Spaghetti Gallery](https://app.thespaghettidetective.com/publictimelapses/) for more time-lapses.*
-
-<br />
-
-## Screenshots
-
-#### Unlimited webcam streaming
-
-Pro users get 25 fps premium webcam streaming. Free users get unlimited streaming at a lower frame rate.
-
-![Webcam streaming](/assets/img/plugins/thespaghettidetective/premium_streaming.gif
-"Webcam streaming")
-
-<br />
-
-#### Printer control
-
-![Printer control](/assets/img/plugins/thespaghettidetective/screenshot1.jpg "Printer
-control")
-
-<br />
-
-#### Secure OctoPrint tunneling
-
-![OctoPrint tunneling](/assets/img/plugins/thespaghettidetective/screenshot8.png
-"OctoPrint tunneling")
-
-<br />
-
-#### iOS and Android apps
-
-<div class="row-fluid" style="margin-top: 28px;">
-  <div class="span4">
-    <img style="width: 200px; display: block; margin: auto;" src="/assets/img/plugins/thespaghettidetective/screenshot4.png" />
-    <div style="text-align: center;">Print progress</div>
-  </div>
-  <div class="span4">
-    <img style="width: 200px; display: block; margin: auto;" src="/assets/img/plugins/thespaghettidetective/screenshot2.png" />
-    <div style="text-align: center;">Temperature controls</div>
-  </div>
-  <div class="span4">
-    <img style="width: 200px; display: block; margin: auto;" src="/assets/img/plugins/thespaghettidetective/screenshot3.png" />
-    <div style="text-align: center;">G-Code remote upload and printing</div>
-  </div>
-</div>
-<div class="row-fluid" style="margin-top: 28px;">
-  <div class="span4">
-    <img style="width: 200px; display: block; margin: auto;" src="/assets/img/plugins/thespaghettidetective/screenshot5.png" />
-    <div style="text-align: center;">Push notifications on lock screen</div>
-  </div>
-  <div class="span4">
-    <img style="width: 200px; display: block; margin: auto;" src="/assets/img/plugins/thespaghettidetective/screenshot6.png" />
-    <div style="text-align: center;">Full-screen webcam streaming</div>
-  </div>
-  <div class="span4">
-    <img style="width: 200px; display: block; margin: auto;" src="/assets/img/plugins/thespaghettidetective/screenshot7.png" />
-    <div style="text-align: center;">Multiple printers at one glance</div>
-  </div>
-</div>
+For more info, go to [everything about migrating from The Spaghetti Detective to
+Obico](https://www.obico.io/docs/user-guides/move-from-tsd-to-obico-in-octoprint/).
 
 
-## Install and setup
-
-Setting up The Spaghetti Detective is quite straightforward. Just install this plugin and follow the steps on the wizard screen and you will be all set.
-
-If you run into any difficulties, check out the [Setup
-Guide](https://help.thespaghettidetective.com/kb/guide/en/setup-the-spaghetti-detective-using-the-web-app-dbCcgiR0Tr/Steps/291120).
-
-![wizard](/assets/img/plugins/thespaghettidetective/plugin_wizard.png "The Spaghetti Detective Set up Wizard")
-
-## Does it cost anything?
-
-Yes and No.
-
-* First and foremost, The Spaghetti Detective is an [open source project](https://github.com/TheSpaghettiDetective). You can always grab the code and run the server yourself.
-* If you want to skip the hassle and risk of setting up the server and exposing it to internet, you can use The Spaghetti Detective cloud. You can have a free account with limited service, or upgrade to a paid account for a couple coffees a month if you want unrestricted access and features. Check out the [pricing](https://app.thespaghettidetective.com/ent/pricing/).
-
-<hr />
-
-*Questions? Comments? Run into problems? [Reach out to us](mailto:support@thespaghettidetective.com).*
+-- The Obico Team (Formally TSD Team)
