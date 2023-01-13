@@ -2,7 +2,7 @@
 layout: plugin
 
 id: MacroSteps
-title: OctoPrint-Macrosteps
+title: OctoPrint-MacroSteps
 description: A plugin that shows a step by step any print start macro.
 authors:
 - Rodrigo C. C. Silva
@@ -11,9 +11,9 @@ license: AGPLv3
 # TODO
 date: 2023-01-11
 
-homepage: https://github.com/SinisterRj/OctoPrint-Macrosteps
-source: https://github.com/SinisterRj/OctoPrint-Macrosteps
-archive: https://github.com/SinisterRj/OctoPrint-Macrosteps/archive/master.zip
+homepage: https://github.com/SinisterRj/OctoPrint-MacroSteps
+source: https://github.com/SinisterRj/OctoPrint-MacroSteps
+archive: https://github.com/SinisterRj/OctoPrint-MacroSteps/archive/main.zip
 
 # TODO
 # Set this to true if your plugin uses the dependency_links setup parameter to include
@@ -31,12 +31,12 @@ tags:
 # TODO
 # When registering a plugin on plugins.octoprint.org, all screenshots should be uploaded not linked from external sites.
 screenshots:
-- url: /assets/img/plugins/Macrosteps/MS.jpg
+- url: /assets/img/plugins/MacroSteps/MS.jpg
   alt: Sidebar screenshot
   caption: Sidebar screenshot
 
 # TODO
-featuredimage: /assets/img/plugins/Macrosteps/MSfeatured.png
+featuredimage: /assets/img/plugins/MacroSteps/MSfeatured.png
 
 # TODO
 # You only need the following if your plugin requires specific OctoPrint versions or
@@ -100,5 +100,5 @@ Tired of searching hundreds of terminal lines for the reason of a halt on your p
 
 It creates a sidepanel on Octoprint's UI with every step (or GCODE command) of your MACRO and updates it on the fly, indicating what is finished, what is running, what was skiped or what failed, helping to diagnose when something went wrong.
 
-![MacroSteps Plugin sidebar](/assets/img/plugins/onedrive_files/Macrosteps/MS.jpg)
+![MacroSteps Plugin sidebar](/assets/img/plugins/MacroSteps/MS.jpg)
 
