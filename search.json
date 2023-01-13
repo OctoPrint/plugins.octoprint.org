@@ -4024,6 +4024,17 @@
 "author": "Charlie Powell",
 "content": "OctoPrint OneDrive File SyncSync your OctoPrint files with OneDrive automatically.InstallationInstall the plugin via the bundled Plugin Manager or manually using this URL:https://github.com/cp2004/OctoPrint-OneDriveFileSync/releases/latest/download/release.zipWarning: This plugin requires Python 3.7 or newer to install. To find out more about upgrading your OctoPrint installto use Python 3, you can take a look at this postConfigurationOnce the plugin is installed and loaded, you can set it up to connect to your Microsoft account.Adding your accountSelect ‘Add account’ to generate a login code. Head to the URL linked to login with your account, entering the codegenerated and logging in with your Microsoft account. Grant OctoPrint OneDrive File Sync access to your files.Once this is done, return the plugin, and it should show your account name &amp; a success message.Setting up a synced folderYou can use the built in file browser to find which folder in OneDrive you would like to sync with OctoPrint.Files will be synced to an ‘OneDrive’ folder in your OctoPrint uploads.Syncing settingsOut of the box a sync will be run every hour, but you can set this interval much much lower if you would like.The plugin does not upload whilst printing by default, to avoid issues with prints being interrupted should a file needto be downloaded/uploaded and this takes away resources from printing.Supporting DevelopmentI work on OctoPrint, OctoPrint plugins and help support the community in my spare time. It takes a lot of work, so ifyou are interested you can support me through GitHub Sponsors. You can contribute monthly or one time forany amount, you choose!Important Security NoticePlease be aware that this plugin stores its tokens for accessing your Microsoft account in OctoPrint’sconfiguration folder, as expected. As a result, if your OctoPrint install (or the server it is running on) iscompromised, your files in OneDrive are at risk.It is not recommended to install this plugin on OctoPrint installs accessible directly from theinternet, or multi-user installs where you may not trust every user.The author of this plugin is not responsible for any damage caused as a result of using this plugin.",
 "tags": ["onedrive","file sync","sync","cloud","microsoft"]
+},
+
+{
+"id": "/plugins/MacroSteps",
+"url": "/plugins/MacroSteps/",
+"date": "2023-01-11 00:00:00 -0600",
+"title": "OctoPrint-MacroSteps",
+"description": "A plugin that shows a step by step any print start macro.",
+"author": "Rodrigo C. C. Silva",
+"content": "Macro StepsTired of searching hundreds of terminal lines for the reason of a halt on your print start? Do you want more feedback on what is happening with your printer? This is the solution for your problems. This is a simple Octoprint plugin that enables you to follow the steps of your big macros in a very intuitive way.It creates a sidepanel on Octoprint’s UI with every step (or GCODE command) of your MACRO and updates it on the fly, indicating what is finished, what is running, what was skiped or what failed, helping to diagnose when something went wrong.",
+"tags": ["macro","gcode","script","custom","sidebar"]
 }
 ]
 }

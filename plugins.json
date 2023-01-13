@@ -13826,5 +13826,44 @@
             "instances_week": 95,
             "install_events_week": 92
         }
+    },
+
+    {
+        "id": "MacroSteps",
+        "published": "2023-01-11 00:00:00 -0600",
+        "title": "OctoPrint-MacroSteps",
+        "description": "A plugin that shows a step by step any print start macro.",
+        "archive": "https://github.com/SinisterRj/OctoPrint-MacroSteps/archive/main.zip",
+        "author": "Rodrigo C. C. Silva",
+        "homepage": "https://github.com/SinisterRj/OctoPrint-MacroSteps",
+        "page": "https://plugins.octoprint.org/plugins/MacroSteps/",
+        "compatibility": {
+            "octoprint": ["1.4.0"],
+            "os": ["linux","windows","macos","freebsd"],
+            "python": ">=3,<4"
+        },
+        "license": "AGPLv3",
+        "image": "https://plugins.octoprint.org/assets/img/plugins/MacroSteps/MSfeatured.png",
+        "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "0.1.0",
+                "date": "2023-01-13 16:23:28 +0000",
+                "tag": "0.1.0"
+            },
+            "releases": 1,
+            "last_push": "2023-01-13 16:04:34 +0000",
+            "stars": 0,
+            "issues": {
+                "open": 0,
+                "closed": 0
+            }
+        },
+        "stats": {
+            "instances_month": 1,
+            "install_events_month": 1,
+            "instances_week": 1,
+            "install_events_week": 1
+        }
     }
 ]
