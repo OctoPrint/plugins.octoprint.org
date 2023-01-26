@@ -4035,6 +4035,17 @@
 "author": "Rodrigo C. C. Silva",
 "content": "Macro StepsTired of searching hundreds of terminal lines for the reason of a halt on your print start? Do you want more feedback on what is happening with your printer? This is the solution for your problems. This is a simple Octoprint plugin that enables you to follow the steps of your big macros in a very intuitive way.It creates a sidepanel on Octoprint’s UI with every step (or GCODE command) of your MACRO and updates it on the fly, indicating what is finished, what is running, what was skiped or what failed, helping to diagnose when something went wrong.",
 "tags": ["macro","gcode","script","custom","sidebar"]
+},
+
+{
+"id": "/plugins/powerfailure",
+"url": "/plugins/powerfailure/",
+"date": "2023-01-23 00:00:00 -0600",
+"title": "OctoPrint-PowerFailure",
+"description": "This plugin attempts to recover a print after a power failure or printer disconnect.",
+"author": "Pablo Ventura, Paul Paukstelis",
+"content": "OctoPrint-PowerFailure attempts to recover a print after a power failure or printer disconnect. It is intended as a last resort and does not replace the use of proper power backup and appropriate communication setups. Recovered parts are certain to show small defects, but this may be acceptable in some cases. RESULTS WILL VARY AND NO GUARANTEES ARE MADE",
+"tags": ["power","disconnect","recovery"]
 }
 ]
 }

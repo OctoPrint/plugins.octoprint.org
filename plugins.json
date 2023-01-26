@@ -13865,5 +13865,43 @@
             "instances_week": 275,
             "install_events_week": 90
         }
+    },
+
+    {
+        "id": "powerfailure",
+        "published": "2023-01-23 00:00:00 -0600",
+        "title": "OctoPrint-PowerFailure",
+        "description": "This plugin attempts to recover a print after a power failure or printer disconnect.",
+        "archive": "https://github.com/pablogventura/OctoPrint-PowerFailure/archive/master.zip",
+        "author": "Pablo Ventura, Paul Paukstelis",
+        "homepage": "https://github.com/pablogventura/OctoPrint-PowerFailure",
+        "page": "https://plugins.octoprint.org/plugins/powerfailure/",
+        "compatibility": {
+            "octoprint": ["1.3.0"],
+            "os": ["linux","windows","macos","freebsd"],
+            "python": ">=3,<4"
+        },
+        "license": "AGPLv3",
+        "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "1.1.0",
+                "date": "2023-01-23 12:06:50 +0000",
+                "tag": "1.1.0"
+            },
+            "releases": 9,
+            "last_push": "2023-01-26 03:03:25 +0000",
+            "stars": 7,
+            "issues": {
+                "open": 2,
+                "closed": 0
+            }
+        },
+        "stats": {
+            "instances_month": 33,
+            "install_events_month": 38,
+            "instances_week": 25,
+            "install_events_week": 9
+        }
     }
 ]
