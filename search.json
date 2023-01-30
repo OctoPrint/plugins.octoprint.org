@@ -2080,17 +2080,6 @@
 },
 
 {
-"id": "/plugins/Plabric",
-"url": "/plugins/Plabric/",
-"date": "2020-03-26 00:00:00 -0500",
-"title": "Plabric",
-"description": "Manage and control your 3D printer anywhere without port forwarding or VPN.",
-"author": "Plabric",
-"content": "PlabricManage and control your 3D printer anywhere without port forwarding or VPN.Plabric plugin allows you to link your 3D printer with Plabric app (currently available for Android, iOS not yet available). Discover all features on https://plabric.comFor the moment, video stream is only available on x86_64 and armv7l (Raspberry) linux systems.How to installCheck our tutorial: Install PlabricOr install via the bundled Plugin Manageror manually using this URL: https://github.com/plabric/Octoprint-Plabric/archive/master.zipOnce the plugin is installed, follow the steps provided by te plugin for connect with your Plabric account.You can find the steps accessing to plugin options:    Click settings icon on Octoprint navigation bar.    On the left scrollable panel, search Plabric menu option and click it.    Follow the instructions provided.SupportDo you have any question or problem installing the plugin? Contact us at contact@plabric.com",
-"tags": ["control","manage","remote","webcam stream","phone","cloud printing","remote access"]
-},
-
-{
 "id": "/plugins/Python3PluginCompatibilityCheck",
 "url": "/plugins/Python3PluginCompatibilityCheck/",
 "date": "2020-03-31 00:00:00 -0500",
