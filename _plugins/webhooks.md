@@ -5,8 +5,8 @@ id: webhooks
 title: OctoPrint-Webhooks
 description: This allows you to send a webhook to any URL when events happen on OctoPrint.
 authors: 
-- Derek Antrican (Current)
-- Blane Townsend (Original)
+- Derek Antrican
+- Blane Townsend
 license: AGPLv3
 
 date: 2020-04-29
