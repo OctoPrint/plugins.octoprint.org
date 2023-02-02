@@ -287,9 +287,27 @@
       
       <dl class="install_events">
         <dt>New installs the past week</dt>
-        <dd>At least <strong>354</strong> new installations</dd>
+        <dd>At least <strong>352</strong> new installations</dd>
       </dl>
       
+      
+      <dl class="github">
+        <dt>GitHub stats <a href="/help/github_integration/" class="fas fa-question-circle"></a> <span id="github_login">(<a href="javascript:void(0)">Login</a>)</span></dt>
+        <dd>
+          <ul>
+            
+            <li>
+              Latest Release: <a href="https://github.com/The-EG/OctoPrint-CameraSettings/releases/tag/0.4.1" target="_blank">0.4.1</a><br>
+              <small>released on 20 Nov 2022</small>
+            </li>
+            <li>Releases: 29</li>
+            
+            <li>Stars: <span id="github_star_count">38</span> <span id="github_star"><a href="javascript:void(0)"><i class="far fa-star"></i></a></span></li>
+            <li>Issues: 17 open, 87 closed</li>
+            <li>Last push: 15 Jan 2023</li>
+          </ul>
+        </dd>
+      </dl>
       
       
       <dl class="tags">
@@ -377,9 +395,9 @@
 
 <script type="application/javascript">
   $(function() {
-    var has_github = false;
+    var has_github = true;
     if (has_github) {
-      var github_repo = "";
+      var github_repo = "The-EG/OctoPrint-CameraSettings";
 
       if (github_repo) {
         var status = "unknown";
