@@ -9,7 +9,7 @@ authors:
 license: MIT
 
 # today's date in format YYYY-MM-DD, e.g.
-date: 2023-02-25
+date: 2023-03-04
 
 homepage: https://gitlab.com/moltenbytes32/octoprint-influxdb2
 source: https://gitlab.com/moltenbytes32/octoprint-influxdb2
