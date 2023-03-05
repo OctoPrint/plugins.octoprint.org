@@ -5,10 +5,31 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>https://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 04 Mar 2023 19:27:30 -0600</pubDate>
-    <lastBuildDate>Sat, 04 Mar 2023 19:27:30 -0600</lastBuildDate>
+    <pubDate>Sat, 04 Mar 2023 20:44:56 -0600</pubDate>
+    <lastBuildDate>Sat, 04 Mar 2023 20:44:56 -0600</lastBuildDate>
     <generator>Jekyll v3.9.3</generator>
     
+    
+      <item>
+        <title>InfluxDB2</title>
+        <description>
+          <![CDATA[
+            Push Metrics to InfluxDB 2.0+
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/influxdb2/thumbnail.jpg"></p>
+          ]]>
+        </description>
+        <pubDate>
+Sat, 04 Mar 2023 00:00:00 -0600</pubDate>
+        <link>https://plugins.octoprint.org/plugins/influxdb2/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/influxdb2/</guid>
+        
+        <category>events</category>
+        
+        <category>data</category>
+        
+        <category>log</category>
+        
+      </item>
     
       <item>
         <title>OctoPrint-PowerFailure</title>
@@ -269,33 +290,6 @@ Mon, 01 Aug 2022 00:00:00 -0500</pubDate>
         <category>mmu</category>
         
         <category>mmu2</category>
-        
-      </item>
-    
-      <item>
-        <title>OctoPrint-mkswifisdcard</title>
-        <description>
-          <![CDATA[
-            Octoprint plugin for fast upload file to SD-card over MKS WiFi module
-            <p><img src="https://plugins.octoprint.org/assets/img/plugins/mkswifisdcard/plugin-settings.png"></p>
-          ]]>
-        </description>
-        <pubDate>
-Mon, 01 Aug 2022 00:00:00 -0500</pubDate>
-        <link>https://plugins.octoprint.org/plugins/mkswifisdcard/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/mkswifisdcard/</guid>
-        
-        <category>file</category>
-        
-        <category>file upload</category>
-        
-        <category>transfer</category>
-        
-        <category>upload</category>
-        
-        <category>MKS</category>
-        
-        <category>WiFi</category>
         
       </item>
     

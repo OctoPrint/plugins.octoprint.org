@@ -4035,6 +4035,17 @@
 "author": "Pablo Ventura, Paul Paukstelis",
 "content": "OctoPrint-PowerFailure attempts to recover a print after a power failure or printer disconnect. It is intended as a last resort and does not replace the use of proper power backup and appropriate communication setups. Recovered parts are certain to show small defects, but this may be acceptable in some cases. RESULTS WILL VARY AND NO GUARANTEES ARE MADE",
 "tags": ["power","disconnect","recovery"]
+},
+
+{
+"id": "/plugins/influxdb2",
+"url": "/plugins/influxdb2/",
+"date": "2023-03-04 00:00:00 -0600",
+"title": "InfluxDB2",
+"description": "Push Metrics to InfluxDB 2.0+",
+"author": "MoltenBytes",
+"content": "Pushes temperatures and status to an InfluxDB instance. Similar to Octoprint-InfluxDB, however this version is compatible with v2.0+.Features:  Authorization via auth token (only requires write access to one bucket)  Configurable Temperature and Status measurement names  Optional machine name tag  Non-polling, Destructured Logging          The implementation registers itself as a native printer callback, and logs every data point from the printer as they are received (using the timestamps from Octoprint where available)      The fields this plugin fetches aren’t hard-coded. Instead, the event objects are decomposed recursively into fields. If Octoprint (or another plugin) adds additional temperature or state values, they will also get logged in this plugin.        Can configure and test InfluxDB connection entirely from Octoprint UIFor configuration details, see the homepage.",
+"tags": ["events","data","log"]
 }
 ]
 }
