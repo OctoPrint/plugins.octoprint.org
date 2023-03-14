@@ -11,7 +11,7 @@ authors:
 
 license: AGPLv3
 
-date: 2023-07-23
+date: 2020-05-21
 
 homepage: https://github.com/mledan/OctoPrint-EasyServo
 source: https://github.com/mledan/OctoPrint-EasyServo
