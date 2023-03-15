@@ -8,11 +8,11 @@ author: Salah Zanabili
 license: AGPLv3
 
 # today's date in format YYYY-MM-DD, e.g.
-date: 2023-05-14
+date: 2023-03-14
 
 homepage: https://github.com/CardinalCyn/OctoCam-Plugin
 source: https://github.com/CardinalCyn/OctoCam-Plugin
-archive: https://github.com/CardinalCyn/OctoCam-Plugin/raw/main/OctoCam-Plugin-main.zip
+archive: https://github.com/CardinalCyn/OctoCam-Plugin/archive/refs/heads/main.zip
 
 # Set this if your plugin heavily interacts with any kind of cloud services.
 #privacypolicy: your plugin's privacy policy URL
@@ -64,10 +64,7 @@ compatibility:
   # operating systems being supported.
 
   os:
-  - linux
   - windows
-  - macos
-  - freebsd
 
   # Compatible Python version
   #
