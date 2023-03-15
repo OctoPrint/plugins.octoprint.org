@@ -4,7 +4,7 @@ layout: plugin
 id: OctoCam
 title: Octocam
 description: Hosts a stream and snapshot of your webcam with desired dimensions
-authors: Salah Zanabili
+author: Salah Zanabili
 license: AGPLv3
 
 # today's date in format YYYY-MM-DD, e.g.
