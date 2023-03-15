@@ -44,7 +44,7 @@ compatibility:
   # OctoPrint versions being supported.
 
   octoprint:
-  - 1.3.0
+  - 1.8.1
 
   # List of compatible operating systems
   #
@@ -79,8 +79,7 @@ compatibility:
   #
   # Uncomment the appropriate setting
 
-  #python: ">=2.7,<3" # Python 2 & 3
-  #python: ">=3,<4" # Python 3 only
+  python: ">=3,<4"
 
 ---
 
