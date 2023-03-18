@@ -5,10 +5,39 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>https://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 18 Mar 2023 09:14:36 -0500</pubDate>
-    <lastBuildDate>Sat, 18 Mar 2023 09:14:36 -0500</lastBuildDate>
+    <pubDate>Sat, 18 Mar 2023 09:40:40 -0500</pubDate>
+    <lastBuildDate>Sat, 18 Mar 2023 09:40:40 -0500</lastBuildDate>
     <generator>Jekyll v3.9.3</generator>
     
+    
+      <item>
+        <title>OctoPrint-TurnOffHeatOnPauseTimer</title>
+        <description>
+          <![CDATA[
+            Enables setting a timer for how long after the printer is paused that it should turn off hotend, heatbed and/or chamber.
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/turn_off_heat_on_pause_timer/settings.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Thu, 16 Mar 2023 00:00:00 -0500</pubDate>
+        <link>https://plugins.octoprint.org/plugins/turn_off_heat_on_pause_timer/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/turn_off_heat_on_pause_timer/</guid>
+        
+        <category>temperature</category>
+        
+        <category>hotend</category>
+        
+        <category>hotbed</category>
+        
+        <category>chamber</category>
+        
+        <category>pause</category>
+        
+        <category>shutdown</category>
+        
+        <category>timer</category>
+        
+      </item>
     
       <item>
         <title>InfluxDB2</title>
@@ -269,27 +298,6 @@ Mon, 15 Aug 2022 00:00:00 -0500</pubDate>
         <category>twitter</category>
         
         <category>print status</category>
-        
-      </item>
-    
-      <item>
-        <title>Prusa MMU</title>
-        <description>
-          <![CDATA[
-            This plugin adds Prusa MMU2 support to OctoPrint. The active filament will be displayed in the navbar and you will be prompted to select which filament to use when slicing in &quot;MMU2S Single&quot; mode. Other settings are available to name each tool and set defaults. This plugin only works for a Prusa printer with an MMU2.
-            <p><img src="https://plugins.octoprint.org/assets/img/plugins/prusammu/nav.png"></p>
-          ]]>
-        </description>
-        <pubDate>
-Mon, 01 Aug 2022 00:00:00 -0500</pubDate>
-        <link>https://plugins.octoprint.org/plugins/prusammu/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/prusammu/</guid>
-        
-        <category>prusa</category>
-        
-        <category>mmu</category>
-        
-        <category>mmu2</category>
         
       </item>
     

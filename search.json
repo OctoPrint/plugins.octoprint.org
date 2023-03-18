@@ -4046,6 +4046,17 @@
 "author": "MoltenBytes",
 "content": "Pushes temperatures and status to an InfluxDB instance. Similar to Octoprint-InfluxDB, however this version is compatible with v2.0+.Features:  Authorization via auth token (only requires write access to one bucket)  Configurable Temperature and Status measurement names  Optional machine name tag  Non-polling, Destructured Logging          The implementation registers itself as a native printer callback, and logs every data point from the printer as they are received (using the timestamps from Octoprint where available)      The fields this plugin fetches aren’t hard-coded. Instead, the event objects are decomposed recursively into fields. If Octoprint (or another plugin) adds additional temperature or state values, they will also get logged in this plugin.        Can configure and test InfluxDB connection entirely from Octoprint UIFor configuration details, see the homepage.",
 "tags": ["events","data","log"]
+},
+
+{
+"id": "/plugins/turn_off_heat_on_pause_timer",
+"url": "/plugins/turn_off_heat_on_pause_timer/",
+"date": "2023-03-16 00:00:00 -0500",
+"title": "OctoPrint-TurnOffHeatOnPauseTimer",
+"description": "Enables setting a timer for how long after the printer is paused that it should turn off hotend, heatbed and/or chamber.",
+"author": "Per Åstrand",
+"content": "OctoPrint-TurnOffHeatOnPauseTimerA plugin for OctoPrint that shuts off hotend, hotbed and/or chamber after a set amount of seconds following a pause.Useful when just pausing to switch filament, and don’t want the printer to cool down. Or when an AI (like Gadget) automatically pauses and you want to either resume shortly thereafter (no waiting for things to heat up), or shut down since you can’t attend to the 3d-printer at the moment.It can also be used to restore temperatures when later resuming, but I recommend using a GCODE script (see example on GitHub) instead for that, since the plugin needs to pause the print again, heat up and then resume. Can possibly also cause issues with other plugins listening for a pause event.SetupInstall via the bundled Plugin Manageror manually using this URL:https://github.com/Argon2000/OctoPrint-TurnOffHeatOnPauseTimer/archive/master.zipConfigurationTimer (in seconds)Set to desired time after the printer has paused that hotends/heatbed/chamber should turn offDefault: 600 (10 minutes)Turn off hotendWether or not hotend(s) should turn offDefault: ON (Will shut off hotend(s))Turn off heatbedWether or not heatbed should turn offDefault: ON (Will shut off heatbed)Turn off chamberWether or not chamber should turn off (If set to true and no chamber is present, this results in a error pop-up)Default: OFF (Will NOT shut off chamber)Restore temperatures on resume (Better to use GCODE script)If this plugin should handle restoring temperatures when a print resumes.Default: OFF (Will NOT handle restoring temperatures)",
+"tags": ["temperature","hotend","hotbed","chamber","pause","shutdown","timer"]
 }
 ]
 }

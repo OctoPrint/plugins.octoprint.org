@@ -2826,16 +2826,16 @@
         "abandoned": false,
         "github": { 
             "latest_release": {
-                "name": "1.0.2",
-                "date": "2022-04-17 00:03:06 +0000",
-                "tag": "1.0.2"
+                "name": "1.0.3",
+                "date": "2023-03-18 14:35:08 +0000",
+                "tag": "1.0.3"
             },
-            "releases": 56,
-            "last_push": "2023-03-07 03:00:31 +0000",
+            "releases": 57,
+            "last_push": "2023-03-18 14:32:11 +0000",
             "stars": 104,
             "issues": {
-                "open": 23,
-                "closed": 257
+                "open": 20,
+                "closed": 260
             }
         },
         "stats": {
@@ -13921,6 +13921,45 @@
             "install_events_month": 150,
             "instances_week": 109,
             "install_events_week": 31
+        }
+    },
+
+    {
+        "id": "turn_off_heat_on_pause_timer",
+        "published": "2023-03-16 00:00:00 -0500",
+        "title": "OctoPrint-TurnOffHeatOnPauseTimer",
+        "description": "Enables setting a timer for how long after the printer is paused that it should turn off hotend, heatbed and/or chamber.",
+        "archive": "https://github.com/Argon2000/OctoPrint-TurnOffHeatOnPauseTimer/archive/master.zip",
+        "author": "Per Åstrand",
+        "homepage": "https://github.com/Argon2000/OctoPrint-TurnOffHeatOnPauseTimer",
+        "page": "https://plugins.octoprint.org/plugins/turn_off_heat_on_pause_timer/",
+        "compatibility": {
+            "octoprint": ["1.4.0"],
+            "os": ["linux","windows","macos","freebsd"],
+            "python": ">=3,<4"
+        },
+        "license": "AGPLv3",
+        "image": "https://plugins.octoprint.org/assets/img/plugins/turn_off_heat_on_pause_timer/settings.png",
+        "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "0.0.1",
+                "date": "2023-03-18 14:15:41 +0000",
+                "tag": "0.0.1"
+            },
+            "releases": 1,
+            "last_push": "2023-03-18 08:16:10 +0000",
+            "stars": 0,
+            "issues": {
+                "open": 0,
+                "closed": 0
+            }
+        },
+        "stats": {
+            "instances_month": 0,
+            "install_events_month": 0,
+            "instances_week": 0,
+            "install_events_week": 0
         }
     }
 ]
