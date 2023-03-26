@@ -4057,6 +4057,17 @@
 "author": "Per Åstrand",
 "content": "OctoPrint-TurnOffHeatOnPauseTimerA plugin for OctoPrint that shuts off hotend, hotbed and/or chamber after a set amount of seconds following a pause.Useful when just pausing to switch filament, and don’t want the printer to cool down. Or when an AI (like Gadget) automatically pauses and you want to either resume shortly thereafter (no waiting for things to heat up), or shut down since you can’t attend to the 3d-printer at the moment.It can also be used to restore temperatures when later resuming, but I recommend using a GCODE script (see example on GitHub) instead for that, since the plugin needs to pause the print again, heat up and then resume. Can possibly also cause issues with other plugins listening for a pause event.SetupInstall via the bundled Plugin Manageror manually using this URL:https://github.com/Argon2000/OctoPrint-TurnOffHeatOnPauseTimer/archive/master.zipConfigurationTimer (in seconds)Set to desired time after the printer has paused that hotends/heatbed/chamber should turn offDefault: 600 (10 minutes)Turn off hotendWether or not hotend(s) should turn offDefault: ON (Will shut off hotend(s))Turn off heatbedWether or not heatbed should turn offDefault: ON (Will shut off heatbed)Turn off chamberWether or not chamber should turn off (If set to true and no chamber is present, this results in a error pop-up)Default: OFF (Will NOT shut off chamber)Restore temperatures on resume (Better to use GCODE script)If this plugin should handle restoring temperatures when a print resumes.Default: OFF (Will NOT handle restoring temperatures)",
 "tags": ["temperature","hotend","hotbed","chamber","pause","shutdown","timer"]
+},
+
+{
+"id": "/plugins/ssd1306_oled_display",
+"url": "/plugins/ssd1306_oled_display/",
+"date": "2023-03-25 00:00:00 -0500",
+"title": "SSD1306 OLED Display",
+"description": "Use a 128x32 SSD1306-based display to display printer and job status for OctoPrint.",
+"author": "Fredrik Baberg",
+"content": "This plugin enables the use of a SSD1306-based display to present printer- and job- status for OctoPrint.Presents connection status, latest M117 message, temperature, job percentage completed and estimated remaining time.The plugin assumes the SSD1306 is connected by I2C through SDA, SCL.It’s based on https://github.com/jhoos/OctoPrint-SSD1306.Testing has been done with a Pi OLED display, 128x32, but it should be possible to change the resolution in plugin settings.",
+"tags": ["display","ssd1306","PiOLED"]
 }
 ]
 }
