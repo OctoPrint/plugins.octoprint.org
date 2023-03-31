@@ -49,7 +49,7 @@ compatibility:
 
 The plugin reads `ABL_CMD`<sup>1</sup> from ***.gcode** and check the bed mesh
 in memory<sup>M</sup>.
-- If mesh is updated, `M429 S1`<sup>M</sup> is sent in order to load bed mesh from memory.
+- If mesh is updated, `M420 S1`<sup>M</sup> is sent in order to load bed mesh from memory.
 - If mesh is outdated or doesn't exist, `ABL_CMD` is sent in order to generate a new mesh.
 On Marlin, `M500` is also sent to save the mesh on the eeprom.
 
