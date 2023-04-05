@@ -3,7 +3,7 @@ layout: plugin
 
 id: SmartABL
 title: SmartABL
-description: Simple plugin to improve auto bed leveling, adding some conditions in order to minimize the number of ABLs triggered.
+description: Simple plugin to reduce the number of ABLs triggered.
 authors:
 - scmanjarrez
 license: AGPLv3
@@ -24,8 +24,10 @@ tags:
 - mesh
 - probe
 - bilinear
+- unified
 - marlin
 - prusa
+- prusa-buddy
 - klipper
 
 featuredimage: /assets/img/plugins/SmartABL/settings.png
@@ -38,33 +40,30 @@ compatibility:
   - windows
   - macos
   - freebsd
-
   python: ">=3,<4"
 
 ---
 
 # SmartABL
-
 ## How it works?
-
-The plugin reads `ABL_CMD`<sup>1</sup> from ***.gcode** and check the bed mesh
+The plugin reads `ABL_CMD`<sup>1</sup> from your print file and check the bed mesh
 in memory<sup>M</sup>.
 - If mesh is updated, `M420 S1`<sup>M</sup> is sent in order to load bed mesh from memory.
 - If mesh is outdated or doesn't exist, `ABL_CMD` is sent in order to generate a new mesh.
 On Marlin, `M500` is also sent to save the mesh on the eeprom.
 
-> <sup>1</sup>: ABL_CMD can be `G29` (Marlin), `G80` (Prusa) or `BED_MESH_CALIBRATE` (Klipper).
+> <sup>1</sup>: `ABL_CMD` can be `G29` (Marlin/Prusa-buddy), `G80` (Prusa)
+> or `BED_MESH_CALIBRATE` (Klipper). This can be customized in SmartABL settings.
 
-> <sup>M</sup>: Marlin-only compatible.
+> Warning: Prusa and Klipper require at least 1 ABL to track the state.
 
-> Note: Prusa and Klipper require at least 1 ABL to track the state.
-
-> Note: By default, the same ABL command read from your file is sent to the printer, but
-> can be customized in SmartABL settings.
+> Note: By default, the standard ABL command for each firmware triggers SmartABL algorithm,
+> however, you can customize this behaviour in settings: the command that triggers the algorithm, the command sent
+> to the printer or even ignore commands.
 
 References:
-- [G29<sup>M</sup>](https://marlinfw.org/docs/gcode/G029.html)
-- [M420<sup>M</sup>](https://marlinfw.org/docs/gcode/M420.html)
+- [G29<sup>M,B</sup>](https://marlinfw.org/docs/gcode/G029.html)
+- [M420<sup>M,B</sup>](https://marlinfw.org/docs/gcode/M420.html)
 - [M500<sup>M</sup>](https://marlinfw.org/docs/gcode/M500.html)
 - [G80<sup>P</sup>](https://reprap.org/wiki/G-code#G80:_Mesh-based_Z_probe)
 - [G81<sup>P</sup>](https://reprap.org/wiki/G-code#G81:_Mesh_bed_leveling_status)
@@ -76,33 +75,39 @@ Credits to [Oscar](https://3dprinting.stackexchange.com/a/15953/27154)
 for the idea.
 
 ## Compatibility
-- Marlin
-- Prusa
-- Klipper
+- Marlin (M)
+- Prusa (P)
+- Prusa-buddy (B)
+- Klipper (K)
 
-> Want your firmware to be compatible? Open an Issue on github so we can add compatibility 😊
+> Want your firmware to be compatible? Open an Issue on github so we can add it 🙂
+>
+> Don't forget to upload plugin_SmartABL.log!!
 
 ## Configuration
-
-By default, SmartABL **does not change** the behaviour of the
-auto bed leveling. User *must* change default values in settings:
-
 ### Settings panel
-
-**Leveling command**
-- Ignore gcode read from files and send a custom gcode instead.
+**GCODES**
+- Trigger custom gcode(s): By default, SmartABL only triggers with the standard ABL
+commands, i.e. `G29/G80/BED_MESH_CALIBRATE`. However, you can define here
+a list of gcodes that can trigger SmartABl, e.g. macros or non-standard commands.
 Default: disabled (G29).
 
-**Ignore gcodes**
-- Skip gcodes listed here.
+- ABL custom gcode(s): By default, SmartABL sends the standard ABL
+commands, i.e. `G29/G80/BED_MESH_CALIBRATE`. However, you can define here
+a list of gcodes that will be sent instead, e.g. macros or non-standard commands.
+Default: disabled (G29).
+
+- Ignore gcode(s): Define here if you want to skip gcodes. The commands defined here
+won't be sent to the printer.
+Default: disabled.
 
 **Force bed leveling**
-- After `#` days. Default: disabled (1).
-- After `#` prints. Default: disabled (5).
+- After `#` days. Default: enabled (1).
+- After `#` prints. Default: enabled (5).
 - If current print bed temperature is different from last print.
-Default: disabled.
+Default: enabled.
 - If current print hotend temperature is different from last print.
-Default: disabled.
+Default: enabled.
 
 **Prints counter**
 - Take into account failed prints in the counter.
@@ -113,7 +118,6 @@ Default: disabled (only successful prints increase the counter).
 </div>
 
 ### Side panel
-
 - **ABL Restricted**: Normal behaviour, the plugin chooses when to trigger ABL
 based on your settings.
 
