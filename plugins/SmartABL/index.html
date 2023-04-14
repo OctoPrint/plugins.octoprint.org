@@ -7,7 +7,7 @@
 <head>
     <meta charset="utf-8" />
     <title>SmartABL</title>
-    <meta name="description" content="Simple plugin to improve auto bed leveling, adding some conditions in order to minimize the number of ABLs triggered.">
+    <meta name="description" content="Simple plugin to reduce the number of ABLs triggered.">
     
     <meta name="referrer" content="same-origin">
     <meta name="google-site-verification" content="0EFsbaNygJcEinKPmzP-hTf0Ju6wDIpJxO5zvQtOQT0" />
@@ -41,6 +41,14 @@
     <meta name="twitter:site" content="@OctoPrint3D" />
     <meta name="twitter:title" content="SmartABL" />
     <meta name="twitter:description" content="SmartABL
+How it works?
+The plugin reads ABL_CMD1 from your print file and check the bed mesh
+in memoryM.
+
+  If mesh is updated, M420 S1M is sent in order to load bed mesh from memory.
+  If mesh is outdated or doesn’t exist, ABL_CMD is sent in order to generate a new mesh.
+On Marlin, M500 is also sent to save the mesh on the eeprom.
+
 
 " />
     <meta name="twitter:image" content="https://plugins.octoprint.org" />
@@ -49,6 +57,14 @@
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://plugins.octoprint.org/assets/img/plugins/SmartABL/settings.png" />
     <meta property="og:description" content="SmartABL
+How it works?
+The plugin reads ABL_CMD1 from your print file and check the bed mesh
+in memoryM.
+
+  If mesh is updated, M420 S1M is sent in order to load bed mesh from memory.
+  If mesh is outdated or doesn’t exist, ABL_CMD is sent in order to generate a new mesh.
+On Marlin, M500 is also sent to save the mesh on the eeprom.
+
 
 " />
     <meta property="og:site_name" content="OctoPrint Plugin Repository" />
@@ -57,6 +73,14 @@
     <meta itemscope itemtype="http://schema.org/WebPage" />
     <meta itemprop="headline" content="SmartABL" />
     <meta itemprop="description" content="SmartABL
+How it works?
+The plugin reads ABL_CMD1 from your print file and check the bed mesh
+in memoryM.
+
+  If mesh is updated, M420 S1M is sent in order to load bed mesh from memory.
+  If mesh is outdated or doesn’t exist, ABL_CMD is sent in order to generate a new mesh.
+On Marlin, M500 is also sent to save the mesh on the eeprom.
+
 
 " />
     <meta itemprop="image" content="https://plugins.octoprint.org/assets/img/plugins/SmartABL/settings.png" />
@@ -207,13 +231,11 @@
       
 
       <p class="lead">
-        Simple plugin to improve auto bed leveling, adding some conditions in order to minimize the number of ABLs triggered.
+        Simple plugin to reduce the number of ABLs triggered.
       </p>
       <h1 id="smartabl">SmartABL</h1>
-
 <h2 id="how-it-works">How it works?</h2>
-
-<p>The plugin reads <code class="language-plaintext highlighter-rouge">ABL_CMD</code><sup>1</sup> from <strong>*.gcode</strong> and check the bed mesh
+<p>The plugin reads <code class="language-plaintext highlighter-rouge">ABL_CMD</code><sup>1</sup> from your print file and check the bed mesh
 in memory<sup>M</sup>.</p>
 <ul>
   <li>If mesh is updated, <code class="language-plaintext highlighter-rouge">M420 S1</code><sup>M</sup> is sent in order to load bed mesh from memory.</li>
@@ -222,26 +244,24 @@ On Marlin, <code class="language-plaintext highlighter-rouge">M500</code> is als
 </ul>
 
 <blockquote>
-  <p><sup>1</sup>: ABL_CMD can be <code class="language-plaintext highlighter-rouge">G29</code> (Marlin), <code class="language-plaintext highlighter-rouge">G80</code> (Prusa) or <code class="language-plaintext highlighter-rouge">BED_MESH_CALIBRATE</code> (Klipper).</p>
+  <p><sup>1</sup>: <code class="language-plaintext highlighter-rouge">ABL_CMD</code> can be <code class="language-plaintext highlighter-rouge">G29</code> (Marlin/Prusa-buddy), <code class="language-plaintext highlighter-rouge">G80</code> (Prusa)
+or <code class="language-plaintext highlighter-rouge">BED_MESH_CALIBRATE</code> (Klipper). This can be customized in SmartABL settings.</p>
 </blockquote>
 
 <blockquote>
-  <p><sup>M</sup>: Marlin-only compatible.</p>
+  <p>Warning: Prusa and Klipper require at least 1 ABL to track the state.</p>
 </blockquote>
 
 <blockquote>
-  <p>Note: Prusa and Klipper require at least 1 ABL to track the state.</p>
-</blockquote>
-
-<blockquote>
-  <p>Note: By default, the same ABL command read from your file is sent to the printer, but
-can be customized in SmartABL settings.</p>
+  <p>Note: By default, the standard ABL command for each firmware triggers SmartABL algorithm,
+however, you can customize this behaviour in settings: the command that triggers the algorithm, the command sent
+to the printer or even ignore commands.</p>
 </blockquote>
 
 <p>References:</p>
 <ul>
-  <li><a href="https://marlinfw.org/docs/gcode/G029.html">G29<sup>M</sup></a></li>
-  <li><a href="https://marlinfw.org/docs/gcode/M420.html">M420<sup>M</sup></a></li>
+  <li><a href="https://marlinfw.org/docs/gcode/G029.html">G29<sup>M,B</sup></a></li>
+  <li><a href="https://marlinfw.org/docs/gcode/M420.html">M420<sup>M,B</sup></a></li>
   <li><a href="https://marlinfw.org/docs/gcode/M500.html">M500<sup>M</sup></a></li>
   <li><a href="https://reprap.org/wiki/G-code#G80:_Mesh-based_Z_probe">G80<sup>P</sup></a></li>
   <li><a href="https://reprap.org/wiki/G-code#G81:_Mesh_bed_leveling_status">G81<sup>P</sup></a></li>
@@ -254,41 +274,49 @@ for the idea.</p>
 
 <h2 id="compatibility">Compatibility</h2>
 <ul>
-  <li>Marlin</li>
-  <li>Prusa</li>
-  <li>Klipper</li>
+  <li>Marlin (M)</li>
+  <li>Prusa (P)</li>
+  <li>Prusa-buddy (B)</li>
+  <li>Klipper (K)</li>
 </ul>
 
 <blockquote>
-  <p>Want your firmware to be compatible? Open an Issue on github so we can add compatibility 😊</p>
+  <p>Want your firmware to be compatible? Open an Issue on github so we can add it 🙂</p>
+
+  <p>Don’t forget to upload plugin_SmartABL.log!!</p>
 </blockquote>
 
 <h2 id="configuration">Configuration</h2>
-
-<p>By default, SmartABL <strong>does not change</strong> the behaviour of the
-auto bed leveling. User <em>must</em> change default values in settings:</p>
-
 <h3 id="settings-panel">Settings panel</h3>
-
-<p><strong>Leveling command</strong></p>
+<p><strong>GCODES</strong></p>
 <ul>
-  <li>Ignore gcode read from files and send a custom gcode instead.
-Default: disabled (G29).</li>
-</ul>
-
-<p><strong>Ignore gcodes</strong></p>
-<ul>
-  <li>Skip gcodes listed here.</li>
+  <li>
+    <p>Trigger custom gcode(s): By default, SmartABL only triggers with the standard ABL
+commands, i.e. <code class="language-plaintext highlighter-rouge">G29/G80/BED_MESH_CALIBRATE</code>. However, you can define here
+a list of gcodes that can trigger SmartABl, e.g. macros or non-standard commands.
+Default: disabled (G29).</p>
+  </li>
+  <li>
+    <p>ABL custom gcode(s): By default, SmartABL sends the standard ABL
+commands, i.e. <code class="language-plaintext highlighter-rouge">G29/G80/BED_MESH_CALIBRATE</code>. However, you can define here
+a list of gcodes that will be sent instead, e.g. macros or non-standard commands.
+Default: disabled (G29).</p>
+  </li>
+  <li>
+    <p>Ignore gcode(s): Define here if you want to skip gcodes. The commands defined here
+won’t be sent to the printer.
+Default: disabled.</p>
+  </li>
 </ul>
 
 <p><strong>Force bed leveling</strong></p>
 <ul>
-  <li>After <code class="language-plaintext highlighter-rouge">#</code> days. Default: disabled (1).</li>
-  <li>After <code class="language-plaintext highlighter-rouge">#</code> prints. Default: disabled (5).</li>
+  <li>After <code class="language-plaintext highlighter-rouge">#</code> days. Default: enabled (1).</li>
+  <li>After <code class="language-plaintext highlighter-rouge">#</code> prints. Default: enabled (5).</li>
   <li>If current print bed temperature is different from last print.
-Default: disabled.</li>
+Default: enabled.</li>
   <li>If current print hotend temperature is different from last print.
-Default: disabled.</li>
+Default: enabled.</li>
 </ul>
 
 <p><strong>Prints counter</strong></p>
@@ -302,7 +330,6 @@ Default: disabled (only successful prints increase the counter).</li>
 </div>
 
 <h3 id="side-panel">Side panel</h3>
-
 <ul>
   <li>
     <p><strong>ABL Restricted</strong>: Normal behaviour, the plugin chooses when to trigger ABL
@@ -436,6 +463,10 @@ need to force-update your mesh.</p>
           <a class="label" href="/by_tag/#tag-probe">probe</a>
           
           <a class="label" href="/by_tag/#tag-prusa">prusa</a>
+          
+          <a class="label" href="/by_tag/#tag-prusa-buddy">prusa-buddy</a>
+          
+          <a class="label" href="/by_tag/#tag-unified">unified</a>
           
         </dd>
       </dl>
