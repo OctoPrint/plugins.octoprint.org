@@ -211,38 +211,33 @@
       </p>
       <h1 id="octoprint-preprintservice">OctoPrint-PrePrintService</h1>
 
-<p>This service supports your 3D printing workflow by utilizing <strong>auto-orientation</strong>
-and <strong>slicing</strong> functionality.</p>
+<p>OctoPrint-PrePrintService is a powerful solution designed to enhance your 3D printing workflow by automating the orientation and slicing of your 3D models. This service leverages two cutting-edge tools:</p>
 
-<p>The PrePrint Service is based on:</p>
 <ul>
-  <li>The <strong>auto-rotation</strong> software for FDM 3D printing <a href="https://github.com/ChristophSchranz/Tweaker-3">Tweaker-3</a></li>
-  <li>The <strong>slicing</strong> software <a href="https://slic3r.org/">Slic3r</a></li>
+  <li><strong><a href="https://github.com/ChristophSchranz/Tweaker-3">Tweaker-3</a> for auto-orientation of FDM 3D prints</strong></li>
+  <li><strong><a href="https://slic3r.org/">Slic3r</a> for slicing</strong></li>
 </ul>
 
-<p>You can also use a similar and prefered tool-chain by using <a href="https://ultimaker.com/software/ultimaker-cura">Cura</a>
-as the Slicing software and with the Plug-Ins
-<a href="https://github.com/Ultimaker/Cura/wiki/Plugin-Directory">Auto-Orientation</a>
-and <a href="https://github.com/Ultimaker/Cura/wiki/Plugin-Directory">Octoprint Connection</a>.</p>
+<p>For users of the <a href="https://ultimaker.com/software/ultimaker-cura">Cura</a> slicer, a similar toolchain can be set up using the <a href="https://marketplace.ultimaker.com/app/cura/plugins/fieldofview/OctoPrintPlugin">OctoPrint Connection</a> and <a href="https://marketplace.ultimaker.com/app/cura/plugins/nallath/OrientationPlugin">Auto-Orientation</a> plugins.</p>
 
-<h2 id="workflow">Workflow</h2>
+<h2 id="workflow-in-octoprint">Workflow in OctoPrint</h2>
 
-<p>The full workflow can be deployed either on a single machine or more generally
- on two separated nodes as described below:</p>
+<p>The workflow can be deployed on a single machine or across two separate nodes as demonstrated below:</p>
 
 <p><img src="/assets/img/plugins/preprintservice/workflow.png" alt="Workflow" /></p>
 
-<p>The following steps will be done:</p>
+<p>The workflow consists of the following steps:</p>
 
+<!-- Is the first step correct in the new layout, do we need the slicer tab? -->
 <ol>
-  <li>Upload a model on Octoprint and click on the <code class="language-plaintext highlighter-rouge">Slice</code> button in the <code class="language-plaintext highlighter-rouge">file bar</code>.</li>
-  <li>The model will be auto-rotated for a proper 3D print by the <a href="https://github.com/ChristophSchranz/Tweaker-3">Tweaker-3</a> software.</li>
-  <li>The optimized model will be sliced using <a href="https://slic3r.org/">Slic3r</a>.</li>
-  <li>The final machine code will be sent back to the octoprint server.</li>
-  <li>The printing can be started.</li>
+  <li>Upload a model on OctoPrint and click on the <code class="language-plaintext highlighter-rouge">Slice</code> button in the <code class="language-plaintext highlighter-rouge">file bar</code>.</li>
+  <li>The model is auto-oriented for optimal 3D printing by <a href="https://github.com/ChristophSchranz/Tweaker-3">Tweaker-3</a> software.</li>
+  <li>The oriented model is then sliced by <a href="https://slic3r.org/">Slic3r</a>.</li>
+  <li>The final machine code is sent back to the OctoPrint server.</li>
+  <li>You can start your print</li>
 </ol>
 
-<p>Each step can be adjusted as described in the settings.</p>
+<p>Each step can be customized by adjusting the settings as described in the documentation.</p>
 
 <h2 id="requirements">Requirements</h2>
 
@@ -257,107 +252,86 @@ on the more powerful node.</li>
 
 <h2 id="setup">Setup</h2>
 
-<h3 id="1-install-the-plugin">1. Install the Plugin</h3>
+<h3 id="1-set-up-the-preprintserivce-in-docker">1. Set up the PrePrintSerivce in Docker</h3>
 
-<p>Install the <strong>Octoprint-PrePrint Service</strong> in the <a href="http://docs.octoprint.org/en/master/bundledplugins/pluginmanager.html">Plugin Manager</a>
-, e.g., from the archive’s URL <code class="language-plaintext highlighter-rouge">https://github.com/christophschranz/OctoPrint-PrePrintService/archive/master.zip</code>
-or manually using the git’s URL on the Printer-Controller</p>
+<p>For high availability, it is recommended to deploy the PrePrint-Service in Docker.
+Make sure to select the appropriate CPU architecture of the server node in the argument <code class="language-plaintext highlighter-rouge">SLIC3R_VERSION</code> for the installation of Slic3r in <code class="language-plaintext highlighter-rouge">docker-compose.yml</code>, see <a href="https://github.com/prusa3d/PrusaSlicer/releases">here</a>.</p>
 
-<h3 id="2-set-up-the-external-preprocess-services-in-docker">2. Set up the (external) preprocess services in Docker</h3>
+<p>To run the application locally, use:</p>
 
-<p>In order to make the service highly available, it is recommended to deploy the
-PrePrint-Service in Docker. If you are not familiar with docker yet,
-have a quick look at the links in the <a href="#requirements">requirements-section</a>.</p>
-
-<p>Then run the application locally with:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/christophschranz/OctoPrint-PrePrintService
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/christophschranz/OctoPrint-PrePrintService --recurse-submodules
 cd OctoPrint-PrePrintService
 docker-compose up --build -d
 docker-compose logs -f
 </code></pre></div></div>
 
-<p><strong>Optional:</strong> The <code class="language-plaintext highlighter-rouge">docker-compose.yml</code> is also configured to run in a given docker swarm,
- adapt the <code class="language-plaintext highlighter-rouge">docker-compose.yml</code> to your setup and run:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker-compose build
-docker-compose push
-docker stack deploy --compose-file docker-compose.yml preprintservice
-</code></pre></div></div>
-
-<p>The service is available on <a href="http://localhost:2304/tweak">localhost:2304/tweak</a>
-(from the hosting node),
-where a simple UI is provided for testing the PrePrint Service.
-Use <code class="language-plaintext highlighter-rouge">docker-compose down</code> to stop the service. (If you ever wish :wink: )</p>
+<p>The service is available at <a href="http://localhost:2304/tweak">localhost:2304/tweak</a> (on the server node), where a simple UI and API documentation are provided for testing the PrePrint Service. Use <code class="language-plaintext highlighter-rouge">docker-compose down</code> to stop the service.</p>
 
 <p><img src="/assets/img/plugins/preprintservice/PrePrintService.png" alt="PrePrint Service" /></p>
 
-<h2 id="configuration">Configuration</h2>
+<h3 id="2-install-the-preprintservice-plugin">2. Install the PrePrintService Plugin</h3>
 
-<p>Configure the plugin in the settings and make sure the url for the PrePrint service is set
-correct:</p>
+<p>Install the <a href="https://plugins.octoprint.org/plugins/preprintservice/"><strong>PrePrintService Plugin</strong></a> using the <a href="http://docs.octoprint.org/en/master/bundledplugins/pluginmanager.html">Plugin Manager</a> (under <code class="language-plaintext highlighter-rouge">Get More</code> with the name <code class="language-plaintext highlighter-rouge">PrePrintService Plugin</code>
+or manually using the URL on the Printer-Controller</p>
 
-<p><img src="/assets/img/plugins/preprintservice/settings3.png" alt="settings" /></p>
+<p>Configure the plugin in the OctoPrint settings, ensuring that the URL for the PrePrint service (docker) is set correctly.
+Make also sure to use the correct URL of the Octoprint server and copy and paste the Octoprint API-key that can be found under settings, <code class="language-plaintext highlighter-rouge">API</code>.</p>
 
-<p>Note that the <strong>octoprint URL must not be localhost</strong>, as the <code class="language-plaintext highlighter-rouge">tweak-service</code> is deployed in
-a docker network where it is unable to locate it’s hosts local network.</p>
+<p>Save and return to the OctoPrint home UI, click the Slice button on uploaded STL models, and generate printable machine code using this Preprocessing-Plugin. If the small slicing button of the STL files loaded (right of the trash symbol) is deactivated, Octoprint can’t reach the PrePrintService.</p>
 
-<p>Finally, go back to the home UI, <strong>click</strong> on the <strong><code class="language-plaintext highlighter-rouge">Slice</code>-Button</strong> of uploaded STL-Models and
-<strong>produce printable machinecode</strong> via this Preprocessing-Plugin.</p>
+<p><img src="/assets/img/plugins/preprintservice/settings3.png" alt="PrePrint Service Settings" /></p>
+
+<h3 id="3-optional-install-plugins-to-visualize-models">3. (optional) Install Plugins to visualize models</h3>
+
+<p>Plugins to visualize STL models and GCode improve the workflow.
+Therefore install the <strong>GCode Viewer</strong>() and <strong>Slicer</strong>(https://github.com/kennethjiang/OctoPrint-Slicer).</p>
+
+<p>As soon as installed and reloaded, the new Slicer-Tab can be used to load STL-files via the model’s <code class="language-plaintext highlighter-rouge">slice</code>-button and
+sent to the PrePrintService with a Slicing Profile and Output Filename.</p>
+
+<p><img src="/assets/img/plugins/preprintservice/OctoPrint_navbar.png" alt="Octoprint Slicer" /></p>
 
 <h2 id="testing">Testing</h2>
-<p>To test the whole setup, do the following steps:</p>
+
+<p>To test the entire setup, follow these steps:</p>
 
 <ol>
   <li>
-    <p>Visit <a href="http://localhost:2304/tweak">localhost:2304/tweak</a>, select a stl model file
-and make an extended Tweak (auto-rotation) <code class="language-plaintext highlighter-rouge">without</code> slicing. The output should be
-an auto-rotated (binary) STL model. If not, check the logs of the docker-service
-using <code class="language-plaintext highlighter-rouge">docker-compose logs -f</code> in the folder where the <code class="language-plaintext highlighter-rouge">docker-compose.yml</code> is located.</p>
+    <p>Check if the docker service runs appropriately without errors: <code class="language-plaintext highlighter-rouge">docker-compose logs -f</code></p>
   </li>
   <li>
-    <p>Now, do the same <code class="language-plaintext highlighter-rouge">with</code> slicing, the resulting file should be a gcode file of the model.
-Else, check the logs of the docker-service using <code class="language-plaintext highlighter-rouge">docker-compose logs -f</code> in the
-same folder.</p>
+    <p>Visit <a href="http://localhost:2304/tweak">localhost:2304/tweak</a>, select an STL model file and perform an extended Tweak (auto-rotation) without slicing. The output should be an auto-rotated (binary) STL model. If not, check the Docker service logs using <code class="language-plaintext highlighter-rouge">docker-compose logs -f</code> in the directory where <code class="language-plaintext highlighter-rouge">docker-compose.yml</code> is located.</p>
   </li>
   <li>
-    <p>Visit the Octoprint server, click on the <strong><code class="language-plaintext highlighter-rouge">Slice</code>-Button</strong> of the uploaded
-STL-Model in the <code class="language-plaintext highlighter-rouge">file bar</code> and <strong>produce printable machinecode</strong> via this
-PrePrint-Service Plugin.. After some seconds a <code class="language-plaintext highlighter-rouge">.gco</code> file should be uploaded. Note that in a small time frame a
-<code class="language-plaintext highlighter-rouge">.gco</code> file with only one line and 83 bytes can appear. This is expected and should be overwritten
-afterwards after a short time.
-If this doesn’t work, start the octoprint server per CLI with <code class="language-plaintext highlighter-rouge">octoprint serve</code>
-and track the logs. The following two lines are expected:</p>
+    <p>Repeat the process with slicing enabled. The resulting file should be a G-code file of the model. If not, check the Docker service logs using <code class="language-plaintext highlighter-rouge">docker-compose logs -f</code> in the same folder.</p>
+  </li>
+  <li>
+    <p>Visit the OctoPrint server, click the <strong><code class="language-plaintext highlighter-rouge">Slice</code>-Button</strong>  for the uploaded STL model in the file bar, and generate printable machine code using this PrePrint-Service Plugin. After a few seconds, a <code class="language-plaintext highlighter-rouge">.gco</code> file should be uploaded.
+If this doesn’t work, start the OctoPrint server using the command <code class="language-plaintext highlighter-rouge">octoprint serve</code>
+ and monitor the logs with <code class="language-plaintext highlighter-rouge">tail -f .octoprint/logs/octoprint.log</code>. The following two lines are expected:</p>
 
     <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> 2019-04-07 22:28:44,301 - octoprint.plugins.preprintservice - INFO - Connection to PrePrintService on http://192.168.48.81:2304/tweak is ready, status code 200
- 2019-04-07 22:28:44,321 - octoprint.plugins.preprintservice - INFO - Connection to Octoprint server on http://192.168.48.43:5000/api/version?apikey=A943AB47727A461F9CEF9EXXXXXXXX is ready, status code 200
-</code></pre></div>    </div>
-
-    <p>If the the Octoprint Server’s URL is invalid, you will see this:</p>
-
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> 2019-04-07 22:27:34,746 - octoprint.plugins.preprintservice - WARNING - "Connection to Octoprint server on http://192.168.48.43:5000 couldn't be established"
-</code></pre></div>    </div>
-
-    <p>If you see instead the following, please check the APIKEY: (403 - forbidden)</p>
-
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> 2019-04-07 22:30:09,570 - octoprint.plugins.preprintservice - WARNING - Connection to Octoprint server on http://192.168.48.43:5000/api/version couldn't be established, status code 403
 </code></pre></div>    </div>
 
     <p>If the the PrePrint Server can’t be reached, you will see this:</p>
 
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> 2019-04-07 22:27:34,746 - octoprint.plugins.preprintservice - WARNING - Connection to PrePrint Server on http://192.168.48.81:2304/asdf couldn't be established
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> 2019-04-07 22:27:34,746 - octoprint.plugins.preprintservice - WARNING - Connection to PrePrint Server on http://192.168.48.81:2304/tweak couldn't be established
 </code></pre></div>    </div>
 
-    <p>Make also sure that your selected <code class="language-plaintext highlighter-rouge">profile</code> file is correct.</p>
+    <p>Make also sure that your selected <code class="language-plaintext highlighter-rouge">profile</code> file is correct. An invalid profile would look result in:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> 2020-02-05 21:20:28,777 - octoprint.plugins.preprintservice - ERROR - Got http error code 500 on request http://192.168.48.48:2304/tweak
+ 2020-02-05 21:20:28,778 - octoprint.plugins.preprintservice - INFO - Couldn't post to http://192.168.48.48:2304/tweak
+</code></pre></div>    </div>
   </li>
 </ol>
 
-<p>If you have any troubles in setting this plugin up or tips to improve this instruction,
- please let me know!</p>
+<p>If you encounter any issues setting up this plugin or have suggestions for improving these instructions, please let us know!</p>
 
 <h2 id="preprint-service-api">PrePrint-Service API</h2>
 
-<p>You can use this API to preprocess your models for 3D printing.</p>
+<p>You can use the API to preprocess your models for 3D printing. The documentation is available when the server is running at  <a href="http://localhost:2304/api/">http://localhost:2304/api/</a>. 
+To interact with the API in Python, follow the example below:</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">requests</span>
 
@@ -375,36 +349,52 @@ and track the logs. The following two lines are expected:</p>
                               <span class="s">'profile'</span><span class="p">:</span> <span class="nb">open</span><span class="p">(</span><span class="n">profile_path</span><span class="p">,</span> <span class="s">'rb'</span><span class="p">)},</span>
                 <span class="n">data</span><span class="o">=</span><span class="p">{</span><span class="s">"machinecode_name"</span><span class="p">:</span> <span class="n">output_path</span><span class="p">,</span>
                         <span class="s">"tweak_actions"</span><span class="p">:</span> <span class="s">"slice"</span><span class="p">})</span>
+
 <span class="c1"># Auto-rotate and slice the model file
 </span><span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="n">post</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">files</span><span class="o">=</span><span class="p">{</span><span class="s">'model'</span><span class="p">:</span> <span class="nb">open</span><span class="p">(</span><span class="n">model_path</span><span class="p">,</span> <span class="s">'rb'</span><span class="p">),</span> <span class="s">'profile'</span><span class="p">:</span> <span class="nb">open</span><span class="p">(</span><span class="n">profile_path</span><span class="p">,</span> <span class="s">'rb'</span><span class="p">)},</span>
                   <span class="n">data</span><span class="o">=</span><span class="p">{</span><span class="s">"machinecode_name"</span><span class="p">:</span> <span class="n">output_path</span><span class="p">,</span> <span class="s">"tweak_actions"</span><span class="p">:</span> <span class="s">"tweak slice"</span><span class="p">})</span>
 <span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="p">.</span><span class="n">status_code</span><span class="p">)</span>
-<span class="nb">object</span> <span class="o">=</span> <span class="n">r</span><span class="p">.</span><span class="n">text</span>
+<span class="n">return_object</span> <span class="o">=</span> <span class="n">r</span><span class="p">.</span><span class="n">text</span>
 </code></pre></div></div>
 
-<p>The resulting object, either a tweaked stl file or a gcode file is
-accessible via <code class="language-plaintext highlighter-rouge">r.text</code> which can be some MB large.</p>
+<p>The resulting object, either a tweaked STL file or a G-code file, is accessible via <code class="language-plaintext highlighter-rouge">r.text</code>, which may be several MB in size.</p>
 
-<p>Information of how to interact with Octoprint’s API is depicted <a href="http://docs.octoprint.org/en/master/api/files.html#upload-file-or-create-folder">here</a>.
-For example, you can test the file upload API like this:</p>
+<p>Information on interacting with OctoPrint’s API is available <a href="http://docs.octoprint.org/en/master/api/files.html#upload-file-or-create-folder">here</a>.
+You can test the file upload API using the following example:</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">json</span>
 <span class="kn">import</span> <span class="nn">requests</span>
 
-<span class="c1"># Octoprint's URL using the default port 5000 and the API including the API-key
+<span class="c1"># OctoPrint's URL using the default port 5000 and the API including the API-key
 </span><span class="n">url</span> <span class="o">=</span> <span class="s">"http://192.168.48.43:5000/api/files/local?apikey=A943AB47727A461XXXXXXXXXXXX"</span>
 <span class="n">model_path</span> <span class="o">=</span> <span class="s">'preprintservice_src/uploads/model.stl'</span>
-<span class="n">files</span> <span class="o">=</span> <span class="p">{</span><span class="s">'file'</span><span class="p">:</span> <span class="nb">open</span><span class="p">(</span><span class="n">model_path</span><span class="p">,</span> <span class="s">'rb'</span><span class="p">)}</span>
 
-<span class="c1"># Upload a file using Octoprint's API
-</span><span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="n">post</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="n">url</span><span class="p">,</span> <span class="n">files</span><span class="o">=</span><span class="n">files</span><span class="p">)</span>
+<span class="c1"># Upload a file using OctoPrint's API
+</span><span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="n">post</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="n">url</span><span class="p">,</span> <span class="n">files</span><span class="o">=</span><span class="p">{</span><span class="s">'file'</span><span class="p">:</span> <span class="nb">open</span><span class="p">(</span><span class="n">model_path</span><span class="p">,</span> <span class="s">'rb'</span><span class="p">)})</span>
 <span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="p">.</span><span class="n">status_code</span><span class="p">)</span>
 <span class="k">print</span><span class="p">(</span><span class="n">json</span><span class="p">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">r</span><span class="p">.</span><span class="n">json</span><span class="p">(),</span> <span class="n">indent</span><span class="o">=</span><span class="mi">2</span><span class="p">))</span>
 </code></pre></div></div>
 
-<p>I hope this workflow for 3D print preprocessing helps you!</p>
+<h2 id="common-issues">Common issues</h2>
 
-<h2 id="donation">Donation</h2>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">docker-compose</code> returns an error about unsupported CPU, e.g.:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> ERROR: for pre-print-service  Cannot create container for service pre-print-service: NanoCPUs can not be set, as your kernel does not support CPU CFS scheduler or the cgroup is not mounted
+ ERROR: Encountered errors while bringing up the project.
+</code></pre></div>    </div>
+    <p>The reason could be that the container trys to install Slic3r for the wrong CPU architecture. 
+ Select an appropriate <code class="language-plaintext highlighter-rouge">SLIC3R_VERSION</code> in the <code class="language-plaintext highlighter-rouge">args</code> field in <code class="language-plaintext highlighter-rouge">docker-compose.yml</code>, i.e., <code class="language-plaintext highlighter-rouge">x64</code> for most servers and <code class="language-plaintext highlighter-rouge">armv7l</code> for a Raspberry Pi.</p>
+  </li>
+</ul>
+
+<h2 id="note-of-the-developer">Note of the developer</h2>
+
+<p>I hope this PrePrintService improves your 3D printing workflow!</p>
+
+<p>When using in academic works please cite:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Schranz, C. (2016). Tweaker - Auto Rotation Module for FDM 3D Printing. https://doi.org/10.13140/RG.2.2.27593.36966
+</code></pre></div></div>
 
 <p>This plugin, as well as the auto-rotation module
 <a href="https://github.com/ChristophSchranz/Tweaker-3">Tweaker-3</a> was developed in my spare time.
@@ -492,6 +482,8 @@ If you like it, I would be thankful about a cup of coffee :)</p>
           
           
           
+          
+          <a class="label" href="/by_tag/#tag-auto-orientation">auto-orientation</a>
           
           <a class="label" href="/by_tag/#tag-auto-rotate">auto-rotate</a>
           
