@@ -3,7 +3,7 @@ layout: plugin
 
 id: marlingcodedocumentation
 title: MarlinGcodeDocumentation
-description: Provides documentation for Marlin & RepRap GCode commands in the Terminal tab
+description: Provides documentation for Marlin, RepRap, and Klipper, GCode commands in the Terminal tab
 author: Costas Basdekis
 license: AGPLv3
 
@@ -18,6 +18,7 @@ tags:
 - gcode
 - marlin
 - reprap
+- klipper
 - documentation
 
 screenshots:
@@ -44,14 +45,16 @@ compatibility:
 
 ---
 
-It displays GCode documentation for Marlin & RepRap in the terminal command line.
+It displays GCode documentation for Marlin, RepRap, and Klipper, in the terminal command line.
 
 Type a command and you will get explanation for the command and the parameters.
 
 Type '?' and some terms and you'll be shown commands that reference those terms.
 
 Features:
-* Commands from [Marlin](https://marlinfw.org/meta/gcode/) & [RepRap](https://reprap.org/wiki/G-code#G-commands) official documentations
+* Commands from [Marlin](https://marlinfw.org/meta/gcode/),
+[RepRap](https://reprap.org/wiki/G-code#G-commands), and
+[Klipper](https://www.klipper3d.org/G-Codes.html) official documentations
 * Support for search by prepending `?`
 * Add and manage favourite commands
 * Support for [Multiline Terminal plugin](https://plugins.octoprint.org/plugins/multilineterminal/)

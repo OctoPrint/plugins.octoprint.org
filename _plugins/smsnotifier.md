@@ -24,8 +24,8 @@ tags:
 screenshots:
 - url: /assets/img/plugins/smsnotifier/smsnotifier.png
   alt: Settings dialog and SMS notification screenshot
-  caption: Configure notification recipient, Twilio API SID and Auth Token, printer name, and from number.
-
+  caption: Configure notification recipient, Twilio API SID and Auth Token, printer
+    name, and from number.
 featuredimage: /assets/img/plugins/smsnotifier/smsnotifier.png
 
 compatibility:
@@ -33,6 +33,7 @@ compatibility:
   octoprint:
   - 1.2.4
 
+  python: '>=2.7,<4'
 ---
 
 Recieve email notifications when OctoPrint jobs are complete.

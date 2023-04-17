@@ -10,7 +10,7 @@ date: 2018-03-24
 
 homepage: https://formerlurker.github.io/Octolapse/
 source: https://github.com/FormerLurker/Octolapse/
-archive: https://github.com/FormerLurker/Octolapse/archive/v0.4.0.zip
+archive: https://github.com/FormerLurker/Octolapse/archive/master.zip
 
 tags:
 - timelapse

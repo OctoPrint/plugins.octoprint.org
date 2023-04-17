@@ -20,6 +20,9 @@ tags:
 - Live Stream
 - RTMP
 
+compatibility:
+  python: ">=2.7,<4"
+
 screenshots:
 - url: /assets/img/plugins/rtmpstreamer/tab_screenshot.jpg
   alt: RTMP Streamer

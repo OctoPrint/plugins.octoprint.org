@@ -35,6 +35,7 @@ compatibility:
   octoprint:
   - 1.3.2
 
+  python: '>=2.7,<4'
 ---
 
 This plugin adds some features to the temperature graph :

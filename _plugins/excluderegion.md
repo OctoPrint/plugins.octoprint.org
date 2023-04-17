@@ -3,7 +3,8 @@ layout: plugin
 
 id: excluderegion
 title: Exclude Region
-description: Adds the ability to prevent printing within rectangular or circular regions of the currently active gcode file
+description: Adds the ability to prevent printing within rectangular or circular regions
+  of the currently active gcode file
 author: Brad Fisher
 license: AGPLv3
 
@@ -32,6 +33,7 @@ compatibility:
   octoprint:
   - 1.3.8
 
+  python: '>=2.7,<4'
 ---
 
 Imagine running a long running, multi-part print job only to have one of the parts fail half-way

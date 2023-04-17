@@ -2,7 +2,7 @@
 {% assign result = include.number %}
 {% assign postfix = "" %}
 {% if result > 1000 %}
-{% assign result = result | divided_by: 1000.0 %}
+{% assign result = result | divided_by: 1000.0 | round: 2 %}
 {% assign postfix = "k" %}
 {% endif %}
-{% endcapture %}{{ result | round: 2 }}{{ postfix }}
+{% endcapture %}{{ result }}{{ postfix }}

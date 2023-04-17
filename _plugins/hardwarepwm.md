@@ -9,9 +9,9 @@ license: AGPLv3
 
 date: 2019-02-08
 
-homepage: https://github.com/pastapojken/OctoPrint-Hardwarepwm
-source: https://github.com/pastapojken/OctoPrint-Hardwarepwm
-archive: https://github.com/pastapojken/OctoPrint-Hardwarepwm/archive/master.zip
+homepage: https://github.com/farfalleflickan/OctoPrint-Hardwarepwm
+source: https://github.com/farfalleflickan/OctoPrint-Hardwarepwm
+archive: https://github.com/farfalleflickan/OctoPrint-Hardwarepwm/archive/master.zip
 
 tags:
 - hardware pwm
@@ -37,7 +37,7 @@ compatibility:
   os:
   - linux
 
-  python: ">=2.7,<4"
+  python: ">=3,<4"
 
 ---
 

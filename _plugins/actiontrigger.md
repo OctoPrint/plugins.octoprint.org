@@ -11,9 +11,9 @@ archive: https://github.com/Booli/OctoPrint-ActionTriggerPlugin/archive/master.z
 date: 2015-04-17
 tags:
 - printing
----
 compatibility:
-  python: ">=2.7,<4"
+  python: '>=2.7,<4'
+---
 
 > Its gun do some serial trigger handling yo
 

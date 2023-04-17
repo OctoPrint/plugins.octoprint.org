@@ -22,6 +22,7 @@ compatibility:
   octoprint:
   - 1.2.6
 
+  python: '>=2.7,<4'
 ---
 Shows the status of the printer (offline, operational, connecting, paused, error... ) in the title of the browser as
 - Connecting...

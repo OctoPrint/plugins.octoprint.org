@@ -10,7 +10,17 @@ import frontmatter
 import pkg_resources
 from voluptuous import All, Invalid, Length, Optional, Required, Schema, Url
 
+OCTOPRINT_PY3_SUPPORT = ("3.7", "3.8", "3.9")
+
 NonEmptyString = All(str, Length(min=1))
+
+
+def to_requirement(compat, name="Foo"):
+    if not any(
+        compat.startswith(c) for c in ("<", "<=", "!=", "==", ">=", ">", "~=", "===")
+    ):
+        compat = ">={}".format(compat)
+    return pkg_resources.Requirement.parse(name + compat)
 
 
 def Version(v):
@@ -18,12 +28,7 @@ def Version(v):
         raise Invalid("version {!r} is not a string".format(v))
 
     try:
-        compat = v
-        if not any(
-            compat.startswith(c) for c in ("<", "<=", "!=", "==", ">=", ">", "~=", "===")
-        ):
-            compat = ">={}".format(compat)
-        pkg_resources.Requirement.parse("Foo" + compat)
+        to_requirement(v)
     except Exception:
         raise Invalid("version {} is not a valid PEP440 version specifier".format(v))
 
@@ -74,6 +79,7 @@ SCHEMA = Schema(
         Required("homepage"): Url(),
         Required("source"): Url(),
         Required("archive"): Url(),
+        Optional("privacypolicy"): Url(),
         Optional("follow_dependency_links"): bool,
         Optional("tags"): list,
         Optional("screenshots"): All([ScreenshotDef]),
@@ -183,6 +189,20 @@ def validate_id_match(data, path):
     return []
 
 
+def validate_python_compatibility(data):
+    warnings = []
+
+    if "compatibility" in data and "python" in data["compatibility"]:
+        requirement = to_requirement(data["compatibility"]["python"], name="Python")
+        if all(map(lambda x: x not in requirement, OCTOPRINT_PY3_SUPPORT)):
+            raise ValueError(
+                "python compatibility does not include Python 3 @ data['compatibility']['python']"
+            )
+    else:
+        raise ValueError("not flagged as Python 3 compatible @ data")
+    return warnings
+
+
 def validate_date_unchanged(data, path, src, sha, debug=False):
     gitpath = path[len(src) + 1 :]
     if sys.platform == "win32":
@@ -214,6 +234,7 @@ def validate(
     internal_assets=False,
     date_unchanged=False,
     screenshots_present=False,
+    py3_compat_check=False,
     debug=False,
 ):
     with codecs.open(path, mode="r", encoding="utf-8") as f:
@@ -233,6 +254,9 @@ def validate(
 
     if screenshots_present:
         warnings += validate_screenshots_present(metadata)
+
+    if py3_compat_check:
+        warnings += validate_python_compatibility(metadata)
 
     if date_unchanged:
         if path.startswith(src):
@@ -256,6 +280,7 @@ def validate(
     help="Provide git committish with which to compare",
 )
 @click.option("--check-screenshots-present", "screenshots_present", is_flag=True)
+@click.option("--check-py3-compat", "py3_compat_check", is_flag=True)
 @click.option("--action-output", "action_output", is_flag=True)
 @click.argument("paths", nargs=-1)
 def main(
@@ -266,6 +291,7 @@ def main(
     internal_assets=False,
     date_unchanged=None,
     screenshots_present=False,
+    py3_compat_check=False,
     action_output=False,
 ):
     count = 0
@@ -297,6 +323,7 @@ def main(
                 internal_assets=internal_assets,
                 date_unchanged=date_unchanged,
                 screenshots_present=screenshots_present,
+                py3_compat_check=py3_compat_check,
                 debug=debug,
             )
         except Exception as exc:
@@ -337,10 +364,13 @@ def main(
         )
     )
     if action_output:
-        print("::set-output name=files::{}".format(count))
-        print("::set-output name=passes::{}".format(count - fails))
-        print("::set-output name=fails::{}".format(fails))
-        print("::set-output name=warns::{}".format(warns))
+        github_output = os.environ.get("GITHUB_OUTPUT")
+        if github_output:
+            with open(github_output, "a", encoding="utf-8") as f:
+                print("files={}".format(count), file=f)
+                print("passes={}".format(count - fails), file=f)
+                print("fails={}".format(fails), file=f)
+                print("warns={}".format(warns), file=f)
 
     if fails != 0:
         sys.exit(-1)

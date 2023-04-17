@@ -35,6 +35,8 @@ featuredimage: /assets/img/plugins/ESPurna_RGB/screenshot1.png
 compatibility:
   octoprint:
   - 1.3.1
+  python: ">=2.7,<4"
+
 
 ---
 
