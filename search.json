@@ -4068,6 +4068,17 @@
 "author": "Fredrik Baberg",
 "content": "This plugin enables the use of a SSD1306-based display to present printer- and job- status for OctoPrint.Presents connection status, latest M117 message, temperature, job percentage completed and estimated remaining time.The plugin assumes the SSD1306 is connected by I2C through SDA, SCL.It’s based on https://github.com/jhoos/OctoPrint-SSD1306.Testing has been done with a Pi OLED display, 128x32, but it should be possible to change the resolution in plugin settings.",
 "tags": ["display","ssd1306","PiOLED"]
+},
+
+{
+"id": "/plugins/psucontrol_fhem",
+"url": "/plugins/psucontrol_fhem/",
+"date": "2023-04-18 00:00:00 -0500",
+"title": "PSU Control - FHEM",
+"description": "Adds FHEM support to OctoPrint-PSUControl as a sub-plugin",
+"author": "Nils Andresen",
+"content": "This plugin makes an FHEM device usable for PSU Control. Currently this is targeted at switch-like devices, i.e. sendingset &lt;device&gt; on and set &lt;device&gt; off. While there is a certain amount of configuration available, I have only tested itusing switches like the above.Please check the github repo for up to date information and more details",
+"tags": ["power","psu","control","psucontrol","psucontrol subplugin","fhem"]
 }
 ]
 }
