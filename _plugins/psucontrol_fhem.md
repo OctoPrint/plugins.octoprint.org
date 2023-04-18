@@ -6,7 +6,7 @@ description: Adds FHEM support to OctoPrint-PSUControl as a sub-plugin
 authors:
 - Nils Andresen
 license: AGPLv3
-date: 2023-04-04
+date: 2023-04-18
 homepage: https://github.com/nils-org/OctoPrint-PSUControl-FHEM
 source: https://github.com/nils-org/OctoPrint-PSUControl-FHEM
 archive: https://github.com/nils-org/OctoPrint-PSUControl-FHEM/archive/main.zip
