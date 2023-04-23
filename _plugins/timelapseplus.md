@@ -20,10 +20,10 @@ tags:
 - render
 
 screenshots:
-- url: https://github.com/cmuche/octoprint-timelapseplus/raw/master/assets/screenshots/files.png
+- url: /assets/img/plugins/timelapseplus/files.png
   alt: File Manager
   caption: File Manager
-- url: https://github.com/cmuche/octoprint-timelapseplus/raw/master/assets/screenshots/current-print.png
+- url: /assets/img/plugins/timelapseplus/current-print.png
   alt: Current Print Job
   caption: Current Print Job
 
