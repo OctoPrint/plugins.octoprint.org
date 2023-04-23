@@ -27,7 +27,7 @@ screenshots:
   alt: Current Print Job
   caption: Current Print Job
 
-featuredimage: https://github.com/cmuche/octoprint-timelapseplus/raw/master/assets/logo.png
+featuredimage: /assets/img/plugins/timelapseplus/logo.png
 
 # You only need the following if your plugin requires specific OctoPrint versions or
 # specific operating systems to function - you can safely remove the whole
