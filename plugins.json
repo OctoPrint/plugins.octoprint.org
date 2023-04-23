@@ -14039,5 +14039,44 @@
             "instances_week": 15,
             "install_events_week": 14
         }
+    },
+
+    {
+        "id": "webcamextras",
+        "published": "2023-04-22 00:00:00 -0500",
+        "title": "Webcam extras",
+        "description": "Zoom, fullscreen and minimize the webcam view",
+        "archive": "https://github.com/poulou0/OctoPrint-WebcamExtras/archive/refs/heads/main.zip",
+        "author": "poulou",
+        "homepage": "https://github.com/poulou0/OctoPrint-WebcamExtras",
+        "page": "https://plugins.octoprint.org/plugins/webcamextras/",
+        "compatibility": {
+            "octoprint": [],
+            "os": [],
+            "python": ">=2.7,<4"
+        },
+        "license": "Apache 2.0",
+        "image": "https://plugins.octoprint.org/assets/img/plugins/webcamextras/default_theme.jpg",
+        "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "octoprint 1.9.0 fixes",
+                "date": "2023-04-23 13:55:14 +0000",
+                "tag": "0.0.6"
+            },
+            "releases": 5,
+            "last_push": "2023-04-23 13:23:33 +0000",
+            "stars": 0,
+            "issues": {
+                "open": 0,
+                "closed": 0
+            }
+        },
+        "stats": {
+            "instances_month": 2,
+            "install_events_month": 1,
+            "instances_week": 2,
+            "install_events_week": 1
+        }
     }
 ]

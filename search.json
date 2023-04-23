@@ -4079,6 +4079,17 @@
 "author": "Nils Andresen",
 "content": "This plugin makes an FHEM device usable for PSU Control. Currently this is targeted at switch-like devices, i.e. sendingset &lt;device&gt; on and set &lt;device&gt; off. While there is a certain amount of configuration available, I have only tested itusing switches like the above.Please check the github repo for up to date information and more details",
 "tags": ["power","psu","control","psucontrol","psucontrol subplugin","fhem"]
+},
+
+{
+"id": "/plugins/webcamextras",
+"url": "/plugins/webcamextras/",
+"date": "2023-04-22 00:00:00 -0500",
+"title": "Webcam extras",
+"description": "Zoom, fullscreen and minimize the webcam view",
+"author": "poulou",
+"content": "SetupInstall via the bundled Plugin Manageror manually using this URL:https://github.com/poulou0/OctoPrint-WebcamExtras/archive/refs/heads/main.zipCompatible with:  Default theme  Themefy  UI Customizer (uncheck “Float/Fullscreen webcam” on the settings):))",
+"tags": ["webcam","camera","fullscreen","control tab","zoom","ui"]
 }
 ]
 }
