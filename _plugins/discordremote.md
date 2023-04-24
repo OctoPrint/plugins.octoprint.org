@@ -10,7 +10,7 @@ authors:
 license: MIT
 
 # TODO
-date: 2018-06-04
+date: 2023-04-25
 
 homepage: https://github.com/cameroncros/OctoPrint-DiscordRemote
 source: https://github.com/cameroncros/OctoPrint-DiscordRemote
@@ -40,7 +40,7 @@ screenshots:
 featuredimage: /assets/img/plugins/discordremote/featured.jpg
 
 compatibility:
-  python: ">=2.7,<4"
+  python: ">=3.8,<4"
 ---
 
 # DiscordRemote
@@ -59,6 +59,4 @@ It is currently capable of:
 * Taking a snapshot with the configured webcam.
 * Connecting and Disconnecting to the printer.
 
-
-**Important**: There are no permissions or controls as to who can send commands to the bot.
-This **MUST** be done by the owner of the Discord channel.
+And more, see: https://github.com/cameroncros/OctoPrint-DiscordRemote for more details.
