@@ -26,6 +26,30 @@ screenshots:
 - url: /assets/img/plugins/timelapseplus/current-print.png
   alt: Current Print Job
   caption: Current Print Job
+- url: /assets/img/plugins/timelapseplus/render-jobs.png
+  alt: Render Jobs Overview
+  caption: Render Jobs Overview
+- url: /assets/img/plugins/timelapseplus/render-preview.png
+  alt: Render Preview
+  caption: Render Preview
+- url: /assets/img/plugins/timelapseplus/settings-general.png
+  alt: Settings Page
+  caption: Settings Page
+- url: /assets/img/plugins/timelapseplus/settings-enhancement.png
+  alt: Settings Page
+  caption: Settings Page
+- url: /assets/img/plugins/timelapseplus/settings-render-1.png
+  alt: Settings Page
+  caption: Settings Page
+- url: /assets/img/plugins/timelapseplus/settings-render-2.png
+  alt: Settings Page
+  caption: Settings Page
+- url: /assets/img/plugins/timelapseplus/prerequisites.png
+  alt: More Features
+  caption: More Features
+- url: /assets/img/plugins/timelapseplus/toast.png
+  alt: More Features
+  caption: More Features
 
 featuredimage: /assets/img/plugins/timelapseplus/logo.png
 
