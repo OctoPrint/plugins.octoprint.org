@@ -10,7 +10,7 @@ authors:
 license: MIT
 
 # TODO
-date: 2023-04-25
+date: 2018-06-04
 
 homepage: https://github.com/cameroncros/OctoPrint-DiscordRemote
 source: https://github.com/cameroncros/OctoPrint-DiscordRemote
