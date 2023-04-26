@@ -19,3 +19,8 @@ tags:
 - connect
 - upload
 - file
+
+compatibility:
+  python: ">=2.7,<4"
+
+---
