@@ -5,10 +5,35 @@
     <description>The official OctoPrint Plugin Repository</description>
     <link>https://plugins.octoprint.org/</link>
     <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 26 Apr 2023 09:15:59 -0500</pubDate>
-    <lastBuildDate>Wed, 26 Apr 2023 09:15:59 -0500</lastBuildDate>
+    <pubDate>Wed, 26 Apr 2023 09:39:30 -0500</pubDate>
+    <lastBuildDate>Wed, 26 Apr 2023 09:39:30 -0500</lastBuildDate>
     <generator>Jekyll v3.9.3</generator>
     
+    
+      <item>
+        <title>Timelapse+</title>
+        <description>
+          <![CDATA[
+            Timelapse+ is a powerful yet lightweight plugin to capture, enhance and render your print timelapses.
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/timelapseplus/logo.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Mon, 24 Apr 2023 00:00:00 -0500</pubDate>
+        <link>https://plugins.octoprint.org/plugins/timelapseplus/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/timelapseplus/</guid>
+        
+        <category>timelapseplus</category>
+        
+        <category>timelapse</category>
+        
+        <category>snapshot</category>
+        
+        <category>ffmpeg</category>
+        
+        <category>render</category>
+        
+      </item>
     
       <item>
         <title>Webcam extras</title>
@@ -223,49 +248,6 @@ Wed, 04 Jan 2023 00:00:00 -0600</pubDate>
         <category>esp32-cam</category>
         
         <category>camera</category>
-        
-      </item>
-    
-      <item>
-        <title>SmartABL</title>
-        <description>
-          <![CDATA[
-            Simple plugin to reduce the number of ABLs triggered.
-            <p><img src="https://plugins.octoprint.org/assets/img/plugins/SmartABL/settings.png"></p>
-          ]]>
-        </description>
-        <pubDate>
-Thu, 29 Dec 2022 00:00:00 -0600</pubDate>
-        <link>https://plugins.octoprint.org/plugins/SmartABL/?utm_source=rss&amp;utm_medium=feed</link>
-        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/SmartABL/</guid>
-        
-        <category>abl</category>
-        
-        <category>auto bed leveling</category>
-        
-        <category>bed level</category>
-        
-        <category>bed leveling</category>
-        
-        <category>leveling</category>
-        
-        <category>bl-touch</category>
-        
-        <category>mesh</category>
-        
-        <category>probe</category>
-        
-        <category>bilinear</category>
-        
-        <category>unified</category>
-        
-        <category>marlin</category>
-        
-        <category>prusa</category>
-        
-        <category>prusa-buddy</category>
-        
-        <category>klipper</category>
         
       </item>
     

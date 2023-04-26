@@ -14078,5 +14078,44 @@
             "instances_week": 1125,
             "install_events_week": 1139
         }
+    },
+
+    {
+        "id": "timelapseplus",
+        "published": "2023-04-24 00:00:00 -0500",
+        "title": "Timelapse+",
+        "description": "Timelapse+ is a powerful yet lightweight plugin to capture, enhance and render your print timelapses.",
+        "archive": "https://github.com/cmuche/octoprint-timelapseplus/archive/master.zip",
+        "author": "Christoph Muche",
+        "homepage": "https://github.com/cmuche/octoprint-timelapseplus",
+        "page": "https://plugins.octoprint.org/plugins/timelapseplus/",
+        "compatibility": {
+            "octoprint": ["1.8.0"],
+            "os": ["linux","windows","macos","freebsd"],
+            "python": ">=3.7,<4"
+        },
+        "license": "CC BY-ND",
+        "image": "https://plugins.octoprint.org/assets/img/plugins/timelapseplus/logo.png",
+        "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "1.0.0",
+                "date": "2023-04-26 14:32:55 +0000",
+                "tag": "1.0.0"
+            },
+            "releases": 1,
+            "last_push": "2023-04-26 14:32:20 +0000",
+            "stars": 0,
+            "issues": {
+                "open": 8,
+                "closed": 16
+            }
+        },
+        "stats": {
+            "instances_month": 0,
+            "install_events_month": 0,
+            "instances_week": 0,
+            "install_events_week": 0
+        }
     }
 ]
