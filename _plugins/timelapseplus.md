@@ -109,7 +109,7 @@ compatibility:
 
 ---
 
-{% include youtube.html vid="fV8yoPwcXAU" preview="https://github.com/cmuche/octoprint-timelapseplus/raw/master/assets/timelapseplus.gif" %}
+{% include youtube.html vid="fV8yoPwcXAU" preview="/assets/img/plugins/timelapseplus/yt-thumbnail.jpg" %}
 
 ## Features
 - Trigger snapshots via __commands__ in your GCODE (e.g. on layer change)
