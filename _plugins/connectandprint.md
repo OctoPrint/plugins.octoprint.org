@@ -13,7 +13,7 @@ date: 2023-04-26
 
 homepage: https://github.com/Maxinger15/connectandprint
 source: https://github.com/Maxinger15/connectandprint
-archive: https://github.com/Maxinger15/connectandprint/archive/master.zip
+archive: https://raw.githubusercontent.com/Maxinger15/connectandprint/master/connect_and_print.py
 
 tags:
 - connect
