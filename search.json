@@ -4101,6 +4101,17 @@
 "author": "Christoph Muche",
 "content": "\tFeatures  Trigger snapshots via commands in your GCODE (e.g. on layer change)          @-Commands like @SNAPSHOT      Action Commands like //action:SNAPSHOT (on Marlin via M118)        Regular time-based snapshot mode  User-friendly and tidy user interface          View, watch and download your rendered videos      Preview your render settings and check the estimated video length before starting a render job        Customizable image enhancements for post-processing          Brightness and contrast      Auto-Optimization by histogram equalization      Blur parts of the video for privacy when sharing      Resizing        Frame interpolation for smoother timelapses!          Generate frames between your captured frames      Based on motion calculation algorithms      Or just blend frames together to generate sub-frames        Combine/Blend multiple frames to reduce the number of total frames  Colorful Fade-In and Fade-Out effects  Manage and set up your enhancement- and render presets via the settings page  Snapshots are stored in Frame Collections, so you can re-render them at any time with different settings and presets  Preview the snapshot capturing live while printing  Timelapse+ doesn’t modify your GCODE and doesn’t affect your printer’s movements!",
 "tags": ["timelapseplus","timelapse","snapshot","ffmpeg","render"]
+},
+
+{
+"id": "/plugins/connectandprint",
+"url": "/plugins/connectandprint/",
+"date": "2023-04-26 00:00:00 -0500",
+"title": "Connect And Print",
+"description": "Automatically connect to your printer and start the print job on file upload",
+"author": "Max Grallinger",
+"content": "With the Connect and Print plugin, you can save time and effort, as there’s no need to manually connect to the printer and start the print job after uploading a file. Just upload your G-code file and let the plugin handle the rest.Features  Automatically connects to the printer if not already connected upon file upload.  Starts printing the uploaded file immediately after a successful connection.  Implements a 2-minute timeout for printer connection attempts.  Works with OctoPrint’s REST API to streamline the printing process.Note:Please ensure that your printer is properly configured and connected to OctoPrint before using this plugin. In case of a failed connection attempt, the plugin will log an error message after the 2-minute timeout.",
+"tags": ["connect","upload","file"]
 }
 ]
 }
