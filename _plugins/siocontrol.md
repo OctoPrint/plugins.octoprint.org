@@ -54,7 +54,9 @@ screenshots:
 
 
 featuredimage: /assets/img/plugins/SIOControl/SideBarExample.PNG
-python: ">=3,<4"
+
+compatibility:
+  python: ">=3,<4"
 
 ---
 #### Alternative to GPIO if you want to add some electronic/improvements to your printer. Works on Linux and Windows. 
