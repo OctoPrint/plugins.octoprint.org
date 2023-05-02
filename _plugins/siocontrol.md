@@ -4,7 +4,8 @@ id: siocontrol
 title: SIO Control
 description: Serial IO Control, an alterative way to control locally connected IO. Works on any device(PC,SBC) and OS that supports OctoPrint including Windows.  
 
-authors: jcassel
+authors: 
+- jcassel
 license: AGPLv3
 date: 2023-05-2
 homepage: https://github.com/jcassel/OctoPrint-Siocontrol
