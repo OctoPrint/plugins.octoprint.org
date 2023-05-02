@@ -7,7 +7,7 @@ description: Serial IO Control, an alterative way to control locally connected I
 authors: 
 - jcassel
 license: AGPLv3
-date: 2023-05-2
+date: 2023-05-02
 homepage: https://github.com/jcassel/OctoPrint-Siocontrol
 source: https://github.com/jcassel/OctoPrint-Siocontrol
 archive: https://github.com/jcassel/OctoPrint-Siocontrol/archive/master.zip
