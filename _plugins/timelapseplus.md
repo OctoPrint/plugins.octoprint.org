@@ -133,4 +133,9 @@ compatibility:
 - Manage and set up your enhancement- and render presets via the settings page
 - Snapshots are stored in __Frame Collections__, so you can re-render them at any time with different settings and presets
 - __Preview__ the __snapshot capturing__ live while printing
+- Multiple __Output Formats__ and __Codecs__ with different __Quality Presets__
+  - __MP4__ (H.264 and H.265)
+  - __GIF__
+  - __WebM__ (VP8 and VP9)
+  - Legacy __AVI__ and __MPG__
 - Timelapse+ __doesn't modify your GCODE__ and __doesn't affect your printer's movements__!
