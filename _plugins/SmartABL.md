@@ -79,6 +79,11 @@ for the idea.
 - Prusa (P)
 - Prusa-buddy (B)
 - Klipper (K)
+- Custom*
+
+> *: You can customize the gcode triggering ABL and the gcode sent to the printer
+> in settings. Check the setting "Enable SmartABL on unknown firmware" to use not
+> detected firmwares.
 
 > Want your firmware to be compatible? Open an Issue on github so we can add it 🙂
 >
@@ -109,9 +114,15 @@ Default: enabled.
 - If current print hotend temperature is different from last print.
 Default: enabled.
 
-**Prints counter**
-- Take into account failed prints in the counter.
+**Extras**
+- Take into account failed/stopped jobs in prints counter.
 Default: disabled (only successful prints increase the counter).
+- Enable SmartABL on unknown firmwares.
+Default: disabled.
+  > You have to enable and configure <code>Trigger custom gcode(s)</code> and
+  > <code>ABL custom gcode(s)</code>. If you don't configure these two settings,
+  > SmartABL assumes marlin firmware by default (i.e. G29 read from file and
+  > G29 send to printer when ABL is needed)
 
 <div align="center">
     <img alt="Screenshot of SmartABL settings panel" src="/assets/img/plugins/SmartABL/settings.png" width="90%">
