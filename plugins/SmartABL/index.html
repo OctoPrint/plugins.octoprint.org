@@ -278,7 +278,14 @@ for the idea.</p>
   <li>Prusa (P)</li>
   <li>Prusa-buddy (B)</li>
   <li>Klipper (K)</li>
+  <li>Custom*</li>
 </ul>
+
+<blockquote>
+  <p>*: You can customize the gcode triggering ABL and the gcode sent to the printer
+in settings. Check the setting “Enable SmartABL on unknown firmware” to use not
+detected firmwares.</p>
+</blockquote>
 
 <blockquote>
   <p>Want your firmware to be compatible? Open an Issue on github so we can add it 🙂</p>
@@ -319,10 +326,19 @@ Default: enabled.</li>
 Default: enabled.</li>
 </ul>
 
-<p><strong>Prints counter</strong></p>
+<p><strong>Extras</strong></p>
 <ul>
-  <li>Take into account failed prints in the counter.
+  <li>Take into account failed/stopped jobs in prints counter.
 Default: disabled (only successful prints increase the counter).</li>
+  <li>Enable SmartABL on unknown firmwares.
+Default: disabled.
+    <blockquote>
+      <p>You have to enable and configure <code>Trigger custom gcode(s)</code> and
+<code>ABL custom gcode(s)</code>. If you don’t configure these two settings,
+SmartABL assumes marlin firmware by default (i.e. G29 read from file and
+G29 send to printer when ABL is needed)</p>
+    </blockquote>
+  </li>
 </ul>
 
 <div align="center">
