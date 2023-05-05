@@ -4112,6 +4112,17 @@
 "author": "Max Grallinger",
 "content": "With the Connect and Print plugin, you can save time and effort, as there’s no need to manually connect to the printer and start the print job after uploading a file. Just upload your G-code file and let the plugin handle the rest.Features  Automatically connects to the printer if not already connected upon file upload.  Starts printing the uploaded file immediately after a successful connection.  Implements a 2-minute timeout for printer connection attempts.  Works with OctoPrint’s REST API to streamline the printing process.Note:Please ensure that your printer is properly configured and connected to OctoPrint before using this plugin. In case of a failed connection attempt, the plugin will log an error message after the 2-minute timeout.",
 "tags": ["connect","upload","file"]
+},
+
+{
+"id": "/plugins/siocontrol",
+"url": "/plugins/siocontrol/",
+"date": "2023-05-02 00:00:00 -0500",
+"title": "SIO Control",
+"description": "Serial IO Control, an alterative way to control locally connected IO. Works on any device(PC,SBC) and OS that supports OctoPrint including Windows.",
+"author": "jcassel",
+"content": "Alternative to GPIO if you want to add some electronic/improvements to your printer. Works on Linux and Windows.You can now control local IO for Octoprint instances that are not running on a SBC like a Rasberry Pi. You can have GPIO like features if you are running OctoPrint on Windows. The interface was modeled after the GPIO Control Plugin, but has some very distinguishing features that set it apart. Adds a sidebar with on/off buttons for controlling of Outputs and monitoring of Inputs. Is also a SubPlugin for integration with PSU control, incorporates a physical EStop and a Simple Filament runout as sensor. A true alterative GPIO control for users that are not using a Raspberry Pi or other device that has onboard local IO. Does requires a Microcontroller as the IO.SetupInstall via the bundled Plugin Manageror manually using this URL:https://github.com/jcassel/OctoPrint-Siocontrol/archive/main.zipUse the power of an Arduino compatible micro controller to be the IO. The inexpensive ESP8266 and ESP32(Examples available), both can be used as the IO controller. This uses the serial connection of the controler when communicating with Octoprint. Wifi version is in the works. Firmware is easily adapted to run on many standard Arduino compatible devices. See Example firmware and information on how to make or buy a compatible IO board.ConfigurationConfigure the Serial port details.  Port path(name)  Baudrate  Sensing/reporting intervalSimple selections for integrations  Enable and select IO point for PSU Control Sub Plugin.  Enable and select IO point for physical EStop.  Enable and select IO point for Filament runout sensor.Setting up IO in the plugIn is easy:  Select icon using icon picker  Name for your device connected to IO point  Select the IO number to control.  select if the IO is an INPUT or OUTPUT as well as how it is seen when active, low or high          [Type]_HIGH means that device is on for high state and off for low state      [Type]_LOW means that device is on for low state and off for high state        select if device should be on or off by default e.g. on Octoprint startup.",
+"tags": ["sio","gpio","rpio","pc","linux","gpiostatus","pin","pins","atx","control","io","power","estop","psu","psucontrol","psucontrol subplugin","gpiocontrol","relay","enclosure","button","filament","usb","serial","rs232","led","windows"]
 }
 ]
 }

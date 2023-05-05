@@ -7813,20 +7813,6 @@
         },
         "license": "AGPLv3",
         "abandoned": false,
-        "github": { 
-            "latest_release": {
-                "name": "0.1.8",
-                "date": "2022-11-05 19:14:33 +0000",
-                "tag": "0.1.8"
-            },
-            "releases": 9,
-            "last_push": "2023-03-07 03:00:04 +0000",
-            "stars": 11,
-            "issues": {
-                "open": 0,
-                "closed": 27
-            }
-        },
         "stats": {
             "instances_month": 256,
             "install_events_month": 25,
@@ -14154,6 +14140,45 @@
             "install_events_month": 232,
             "instances_week": 221,
             "install_events_week": 232
+        }
+    },
+
+    {
+        "id": "siocontrol",
+        "published": "2023-05-02 00:00:00 -0500",
+        "title": "SIO Control",
+        "description": "Serial IO Control, an alterative way to control locally connected IO. Works on any device(PC,SBC) and OS that supports OctoPrint including Windows.",
+        "archive": "https://github.com/jcassel/OctoPrint-Siocontrol/archive/main.zip",
+        "author": "jcassel",
+        "homepage": "https://github.com/jcassel/OctoPrint-Siocontrol",
+        "page": "https://plugins.octoprint.org/plugins/siocontrol/",
+        "compatibility": {
+            "octoprint": [],
+            "os": [],
+            "python": ">=3,<4"
+        },
+        "license": "AGPLv3",
+        "image": "https://plugins.octoprint.org/assets/img/plugins/siocontrol/SideBarExample.PNG",
+        "abandoned": false,
+        "github": { 
+            "latest_release": {
+                "name": "Initial Public release",
+                "date": "2023-05-05 11:47:27 +0000",
+                "tag": "v0.6.2"
+            },
+            "releases": 2,
+            "last_push": "2023-05-05 11:41:07 +0000",
+            "stars": 0,
+            "issues": {
+                "open": 0,
+                "closed": 0
+            }
+        },
+        "stats": {
+            "instances_month": 0,
+            "install_events_month": 0,
+            "instances_week": 0,
+            "install_events_week": 0
         }
     }
 ]
