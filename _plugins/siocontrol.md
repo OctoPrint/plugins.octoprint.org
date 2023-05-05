@@ -10,7 +10,7 @@ license: AGPLv3
 date: 2023-05-02
 homepage: https://github.com/jcassel/OctoPrint-Siocontrol
 source: https://github.com/jcassel/OctoPrint-Siocontrol
-archive: https://github.com/jcassel/OctoPrint-Siocontrol/archive/master.zip
+archive: https://github.com/jcassel/OctoPrint-Siocontrol/archive/main.zip
 
 tags:
 - sio
@@ -42,18 +42,18 @@ tags:
 
 
 screenshots:
-- url: /assets/img/plugins/SIOControl/SettingsExampleConn.PNG
+- url: /assets/img/plugins/siocontrol/SettingsExampleConn.PNG
   alt: SIO Control Serial Connection
   caption: SIO Control Serial Connection 
-- url: /assets/img/plugins/SIOControl/SettingsExampleIOConfig.PNG
+- url: /assets/img/plugins/siocontrol/SettingsExampleIOConfig.PNG
   alt: SIO Control Example IO Configuration
   caption: SIO Control Example IO Configuration
-- url: /assets/img/plugins/SIOControl/SideBarExample.PNG
+- url: /assets/img/plugins/siocontrol/SideBarExample.PNG
   alt: SIO Control Side bar example
   caption: SIO Control Side bar example
 
 
-featuredimage: /assets/img/plugins/SIOControl/SideBarExample.PNG
+featuredimage: /assets/img/plugins/siocontrol/SideBarExample.PNG
 
 compatibility:
   python: ">=3,<4"
@@ -72,7 +72,7 @@ control for users that are not using a Raspberry Pi or other device that has onb
 Install via the bundled [Plugin Manager](https://docs.octoprint.org/en/master/bundledplugins/pluginmanager.html)
 or manually using this URL:
 
-    https://github.com/jcassel/OctoPrint-Siocontrol/archive/master.zip
+    https://github.com/jcassel/OctoPrint-Siocontrol/archive/main.zip
 
 Use the power of an Arduino compatible micro controller to be the IO. 
 The inexpensive ESP8266 and ESP32(Examples available), both can be used as the IO controller. 
