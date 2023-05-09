@@ -372,15 +372,33 @@ Notice there is 2 extras widgets include with UI Customizer:</p>
       
       <dl class="installations">
         <dt>Active instances the past month</dt>
-        <dd>Installed on at least <strong>10.64k</strong> instances</dd>
+        <dd>Installed on at least <strong>10.63k</strong> instances</dd>
       </dl>
       
       
       <dl class="install_events">
         <dt>New installs the past week</dt>
-        <dd>At least <strong>285</strong> new installations</dd>
+        <dd>At least <strong>286</strong> new installations</dd>
       </dl>
       
+      
+      <dl class="github">
+        <dt>GitHub stats <a href="/help/github_integration/" class="fas fa-question-circle"></a> <span id="github_login">(<a href="javascript:void(0)">Login</a>)</span></dt>
+        <dd>
+          <ul>
+            
+            <li>
+              Latest Release: <a href="https://github.com/LazeMSS/OctoPrint-UICustomizer/releases/tag/0.1.9.4" target="_blank">0.1.9.4</a><br>
+              <small>released on 22 Mar 2023</small>
+            </li>
+            <li>Releases: 56</li>
+            
+            <li>Stars: <span id="github_star_count">150</span> <span id="github_star"><a href="javascript:void(0)"><i class="far fa-star"></i></a></span></li>
+            <li>Issues: 17 open, 224 closed</li>
+            <li>Last push: 22 Mar 2023</li>
+          </ul>
+        </dd>
+      </dl>
       
       
       <dl class="tags">
@@ -492,9 +510,9 @@ Notice there is 2 extras widgets include with UI Customizer:</p>
 
 <script type="application/javascript">
   $(function() {
-    var has_github = false;
+    var has_github = true;
     if (has_github) {
-      var github_repo = "";
+      var github_repo = "LazeMSS/OctoPrint-UICustomizer";
 
       if (github_repo) {
         var status = "unknown";
