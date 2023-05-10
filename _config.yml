@@ -49,21 +49,11 @@ exclude:
 - .git-blame-ignore-revs
 - .pre-commit-config.yaml
 - black.toml
+- bundle
+- Taskfile.yaml
 
 plugins:
 - jekyll-redirect-from
-- jekyll-assets
-
-assets:
-  digest: true
-  compress:
-    css: false
-    js: false
-  assets:
-    - "**.css"
-    - "**.js"
-  sources:
-    - "_assets"
 
 sourcerepo: https://github.com/OctoPrint/OctoPrint
 forum: https://community.octoprint.org

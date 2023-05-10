@@ -16,18 +16,18 @@ layout: none
     <meta name="google-site-verification" content="0EFsbaNygJcEinKPmzP-hTf0Ju6wDIpJxO5zvQtOQT0" />
 
     <!--[if lt IE 9]>
-    {% asset js/html5shim %}
+    <script src="{{ '/assets/js/html5shim.js' | absolute_url }}?{{ site.time | date: '%s%N' }}"></script>
     <![endif]-->
 
     <!-- Enable responsive viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Le styles -->
-    {% asset css/site.css %}
-    {% asset css/bootstrap-responsive.css %}
-    {% asset css/fontawesome-all.min.css %}
-    {% asset css/prettify.css %}
-    {% asset css/lightbox.css %}
+    <link rel="stylesheet" href="/assets/css/site.css?{{ site.time | date: '%s%N' }}">
+    <link rel="stylesheet" href="/assets/css/bootstrap-responsive.css?{{ site.time | date: '%s%N' }}">
+    <link rel="stylesheet" href="/assets/css/fontawesome-all.min.css?{{ site.time | date: '%s%N' }}">
+    <link rel="stylesheet" href="/assets/css/prettify.css?{{ site.time | date: '%s%N' }}">
+    <link rel="stylesheet" href="/assets/css/lightbox.css?{{ site.time | date: '%s%N' }}">
 
     <!-- Le fav and touch icons -->
     <link rel="shortcut icon" href="/assets/img/tentacle-32x32.png">
@@ -64,14 +64,15 @@ layout: none
     <meta itemprop="description" content="{{ thedescription }}" />
     <meta itemprop="image" content="{{ theimage }}" />
 
-    {% asset js/jquery-3.6.4.min.js %}
-    {% asset js/underscore.min.js %}
+    <script src="/assets/js/jquery-3.6.4.min.js?{{ site.time | date: '%s%N' }}"></script>
+    <script src="/assets/js/underscore.min.js?{{ site.time | date: '%s%N' }}"></script>
 
     <!-- Plausible -->
     <script defer data-domain="plugins.octoprint.org" src="https://plausible.octoprint.org/js/plausible.js"></script>
 
-    {% asset css/cookieconsent.min.css %}
-    {% asset js/cookieconsent.min.js %}
+    <!-- Cookie Consent -->
+    <link rel="stylesheet" href="/assets/css/cookieconsent.min.css?{{ site.time | date: '%s%N' }}">
+    <script src="/assets/js/cookieconsent.min.js?{{ site.time | date: '%s%N' }}"></script>
     <script>
         if (!String.prototype.startsWith) {
             String.prototype.startsWith = function(search, pos) {
@@ -106,7 +107,9 @@ layout: none
             window.location.replace(url);
         }
     </script>
-    {% asset js/github %}
+
+    <!-- GitHub starring -->
+    <script src="/assets/js/github.js?{{ site.time | date: '%s%N' }}"></script>
 </head>
 
 <body>
@@ -122,16 +125,16 @@ layout: none
 
 {% include footer.html %}
 
-{% asset js/prettify.js %}
-{% asset js/bootstrap.min.js %}
-{% asset js/lunr.min.js %}
-{% asset js/mustache.js %}
-{% asset js/URI.min.js %}
-{% asset js/date.format.js %}
-{% asset js/jquery.lunr.search.js %}
-{% asset js/lightbox.min.js %}
-{% asset js/site.js %}
-{% asset js/yt-with-consent.js %}
+<script src="/assets/js/prettify.js?{{ site.time | date: '%s%N' }}"></script>
+<script src="/assets/js/bootstrap.min.js?{{ site.time | date: '%s%N' }}"></script>
+<script src="/assets/js/lunr.min.js?{{ site.time | date: '%s%N' }}"></script>
+<script src="/assets/js/mustache.js?{{ site.time | date: '%s%N' }}"></script>
+<script src="/assets/js/URI.min.js?{{ site.time | date: '%s%N' }}"></script>
+<script src="/assets/js/date.format.js?{{ site.time | date: '%s%N' }}"></script>
+<script src="/assets/js/jquery.lunr.search.js?{{ site.time | date: '%s%N' }}"></script>
+<script src="/assets/js/lightbox.min.js?{{ site.time | date: '%s%N' }}"></script>
+<script src="/assets/js/site.js?{{ site.time | date: '%s%N' }}"></script>
+<script src="/assets/js/yt-with-consent.js?{{ site.time | date: '%s%N' }}"></script>
 
 </body>
 </html>
