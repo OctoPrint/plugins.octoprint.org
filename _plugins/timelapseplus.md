@@ -32,7 +32,10 @@ screenshots:
 - url: /assets/img/plugins/timelapseplus/render-preview.png
   alt: Render Preview
   caption: Render Preview
-- url: /assets/img/plugins/timelapseplus/settings-general.png
+- url: /assets/img/plugins/timelapseplus/settings-general-1.png
+  alt: Settings Page
+  caption: Settings Page
+- url: /assets/img/plugins/timelapseplus/settings-general-2.png
   alt: Settings Page
   caption: Settings Page
 - url: /assets/img/plugins/timelapseplus/settings-enhancement.png
@@ -48,6 +51,12 @@ screenshots:
   alt: More Features
   caption: More Features
 - url: /assets/img/plugins/timelapseplus/toast.png
+  alt: More Features
+  caption: More Features
+- url: /assets/img/plugins/timelapseplus/settings-test-capture.png
+  alt: More Features
+  caption: More Features
+- url: /assets/img/plugins/timelapseplus/settings-live-preview.png
   alt: More Features
   caption: More Features
 
@@ -111,7 +120,7 @@ compatibility:
 
 {% include youtube.html vid="fV8yoPwcXAU" preview="/assets/img/plugins/timelapseplus/yt-thumbnail.jpg" %}
 
-## Features
+# Features
 - Trigger snapshots via __commands__ in your GCODE (e.g. on layer change)
   - __@-Commands__ like ``@SNAPSHOT``
   - __Action Commands__ like ``//action:SNAPSHOT`` (on Marlin via ``M118``)
@@ -138,4 +147,13 @@ compatibility:
   - __GIF__
   - __WebM__ (VP8 and VP9)
   - Legacy __AVI__ and __MPG__
+- Supports __Webcam Snapshot Endpoints__ as well as __Webcam Streams__
+  - __JPEG Snapshots__
+  - __MJPEG__ Streams
+  - __MP4__ Streams
+  - __HLS__ Streams
+- __Purge__ Videos and Frame Collections after `n` days
 - Timelapse+ __doesn't modify your GCODE__ and __doesn't affect your printer's movements__!
+
+# Wiki
+You can find the Documentation and Help on the [Timelapse+ Wiki Pages](https://github.com/cmuche/octoprint-timelapseplus/wiki).
