@@ -13,7 +13,7 @@ date: 2023-05-20
 
 homepage: https://github.com/CmdrCody51/OctoPrint-MarlinSlider
 source: https://github.com/CmdrCody51/OctoPrint-MarlinSlider
-archive: https://github.com/CmdrCody51/OctoPrint-MarlinSlider/archive/master.zip
+archive: https://github.com/CmdrCody51/OctoPrint-MarlinSlider/archive/main.zip
 
 tags:
 - UI
@@ -27,7 +27,7 @@ screenshots:
   alt: Settings for MarlinSlider usage
   caption: MarlinSlider settings
 
-featuredimage: /assets/img/plugins/marlinslider/slider.png
+featuredimage: /assets/img/plugins/marlinslider/slider-tools.png
 
 compatibility:
 
