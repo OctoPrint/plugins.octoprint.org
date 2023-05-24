@@ -9,7 +9,7 @@ authors:
 license: AGPLv3
 
 # TODO
-date: 20123-05-24
+date: 2023-05-24
 
 homepage: https://github.com/marcexplorins/plugin_octoprint
 source: https://github.com/marcexplorins/plugin_octoprint
