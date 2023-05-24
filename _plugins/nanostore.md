@@ -19,8 +19,9 @@ tags:
 - Explorins
 
 screenshots:
-
-featuredimage: url of a featured image for your plugin, /assets/img/...
+- url: /assets/img/plugins/nanostore/nanostore.png
+  alt: Octoprints nanostore plugin
+  caption: Octoprints nanostore plugin
 
 compatibility:
 
