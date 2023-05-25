@@ -70,6 +70,11 @@ The workflow consists of the following steps:
 
 Each step can be customized by adjusting the settings as described in the documentation.
 
+## Demo-Video
+
+[![OctoPrint's PrePrintService Plugin Tutorial](https://img.youtube.com/vi/Hvs_Gnh4Y5U/0.jpg))](https://youtu.be/Hvs_Gnh4Y5U)
+
+
 ## Requirements
 
 1. One server node that is connected to your 3D printer, like a Raspberry Pi.
