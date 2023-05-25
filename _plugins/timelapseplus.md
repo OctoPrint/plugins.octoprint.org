@@ -62,41 +62,11 @@ screenshots:
 
 featuredimage: /assets/img/plugins/timelapseplus/logo.png
 
-# You only need the following if your plugin requires specific OctoPrint versions or
-# specific operating systems to function - you can safely remove the whole
-# "compatibility" block if this is not the case.
 
 compatibility:
 
-  # List of compatible versions
-  #
-  # A single version number will be interpretated as a minimum version requirement,
-  # e.g. "1.3.1" will show the plugin as compatible to OctoPrint versions 1.3.1 and up.
-  # More sophisticated version requirements can be modelled too by using PEP440
-  # compatible version specifiers.
-  #
-  # You can also remove the whole "octoprint" block. Removing it will default to all
-  # OctoPrint versions being supported.
-
   octoprint:
   - 1.8.0
-
-  # List of compatible operating systems
-  #
-  # Possible values:
-  #
-  # - windows
-  # - linux
-  # - macos
-  # - freebsd
-  #
-  # There are also two OS groups defined that get expanded on usage:
-  #
-  # - posix: linux, macos and freebsd
-  # - nix: linux and freebsd
-  #
-  # You can also remove the whole "os" block. Removing it will default to all
-  # operating systems being supported.
 
   os:
   - linux
@@ -104,26 +74,22 @@ compatibility:
   - macos
   - freebsd
 
-  # Compatible Python version
-  #
-  # Plugins should aim for compatibility for Python 2 and 3 for now, in which case the value should be ">=2.7,<4".
-  #
-  # Plugins that only wish to support Python 3 should set it to ">=3,<4".
-  #
-  # If your plugin only supports Python 2 it will no longer be accepted on the plugin repository.
-  #
-  # Uncomment the appropriate setting
-
   python: ">=3.7,<4"
 
 ---
 
-{% include youtube.html vid="fV8yoPwcXAU" preview="/assets/img/plugins/timelapseplus/yt-thumbnail.jpg" %}
+![Logo](/assets/img/plugins/timelapseplus/logo-small.png)
 
-# Features
+{% include youtube.html vid="zs9QcQsIEyM" preview="/assets/img/plugins/timelapseplus/yt-thumbnail.jpg" %}
+
+# 👀 Examples 
+Check out the [_Examples Page_](https://github.com/cmuche/octoprint-timelapseplus/wiki/Examples)
+
+# 🚀 Features
 - Trigger snapshots via __commands__ in your GCODE (e.g. on layer change)
   - __@-Commands__ like ``@SNAPSHOT``
   - __Action Commands__ like ``//action:SNAPSHOT`` (on Marlin via ``M118``)
+  - __Pause__ and __Resume__ Capturing via Commands
 - Regular __time-based__ snapshot mode
 - User-friendly and tidy user interface
   - __View, watch and download__ your rendered videos
@@ -138,8 +104,21 @@ compatibility:
   - Based on __motion calculation__ algorithms
   - Or just __blend frames__ together to generate sub-frames
 - __Combine/Blend multiple frames__ to reduce the number of total frames
-- Colorful Fade-In and Fade-Out effects
-- Manage and set up your enhancement- and render presets via the settings page
+- __Pre-Roll__ and __Post-Roll__ effects
+  - __Still frame__ / __Short timelapse__ / __Final preview__
+  - __Animated__
+  - Show __print file name__ and __information__ at the beginning
+- Add __Timecode__ information
+  - Many variations
+    - Text
+    - Time
+    - Elapsed time
+    - Analog clock
+    - Progress bar
+   - Customizable __colors__
+   - Customizable __position__ and __size__
+- Colorful __Fade-In__ and __Fade-Out__ effects
+- Manage and configure your __enhancement- and render presets__ via the settings page
 - Snapshots are stored in __Frame Collections__, so you can re-render them at any time with different settings and presets
 - __Preview__ the __snapshot capturing__ live while printing
 - Multiple __Output Formats__ and __Codecs__ with different __Quality Presets__
@@ -152,8 +131,9 @@ compatibility:
   - __MJPEG__ Streams
   - __MP4__ Streams
   - __HLS__ Streams
+  - Custom __Scripts__
 - __Purge__ Videos and Frame Collections after `n` days
 - Timelapse+ __doesn't modify your GCODE__ and __doesn't affect your printer's movements__!
 
-# Wiki
+# 📚 Wiki
 You can find the Documentation and Help on the [Timelapse+ Wiki Pages](https://github.com/cmuche/octoprint-timelapseplus/wiki).
