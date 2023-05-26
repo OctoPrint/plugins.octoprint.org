@@ -72,7 +72,7 @@ Each step can be customized by adjusting the settings as described in the docume
 
 ## Demo-Video
 
-{% include youtube.html vid="Hvs_Gnh4Y5U" "'/assets/img/plugins/preprintservice/preprintservice_video_preview.jpg'" %}
+{% include youtube.html vid="Hvs_Gnh4Y5U" preview="'/assets/img/plugins/preprintservice/preprintservice_video_preview.jpg'" %}
 
 
 ## Requirements
