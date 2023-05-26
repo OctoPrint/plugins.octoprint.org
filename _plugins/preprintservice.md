@@ -70,6 +70,11 @@ The workflow consists of the following steps:
 
 Each step can be customized by adjusting the settings as described in the documentation.
 
+## Demo-Video
+
+{% include youtube.html vid="Hvs_Gnh4Y5U" preview="'/assets/img/plugins/preprintservice/preprintservice_video_preview.jpg'" %}
+
+
 ## Requirements
 
 1. One server node that is connected to your 3D printer, like a Raspberry Pi.
