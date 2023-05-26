@@ -72,7 +72,7 @@ Each step can be customized by adjusting the settings as described in the docume
 
 ## Demo-Video
 
-[![OctoPrint's PrePrintService Plugin Tutorial](https://img.youtube.com/vi/Hvs_Gnh4Y5U/0.jpg))](https://youtu.be/Hvs_Gnh4Y5U)
+{% include youtube.html vid="Hvs_Gnh4Y5U" "'/assets/img/plugins/preprintservice/preprintservice_video_preview.jpg'" %}
 
 
 ## Requirements
