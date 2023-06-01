@@ -59,9 +59,10 @@ The the syntax of the following slicers is known and selected automatically:
 
 * Cura
 * Simplify3D
+* Creality Slicer
 * PrusaSlicer
 * SuperSlicer
-* Creality Slicer
+* OctoSlicer
 
 
 A more detailed description and manual is available on Github - the plugin's homepage on the right.
