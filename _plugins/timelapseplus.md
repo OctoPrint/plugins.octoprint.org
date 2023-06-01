@@ -82,6 +82,8 @@ compatibility:
 
 {% include youtube.html vid="zs9QcQsIEyM" preview="/assets/img/plugins/timelapseplus/yt-thumbnail.jpg" %}
 
+ℹ️ _Timelapse+ supports the new __Webcam Plugins__ in OctoPrint 1.9.0_
+
 # 👀 Examples 
 Check out the [_Examples Page_](https://github.com/cmuche/octoprint-timelapseplus/wiki/Examples)
 
@@ -126,7 +128,8 @@ Check out the [_Examples Page_](https://github.com/cmuche/octoprint-timelapseplu
   - __GIF__
   - __WebM__ (VP8 and VP9)
   - Legacy __AVI__ and __MPG__
-- Supports __Webcam Snapshot Endpoints__ as well as __Webcam Streams__
+- Supports __Webcam Plugins__,  __Webcam Snapshot Endpoints__ as well as __Webcam Streams__
+  - __Webcam Plugins__ (new in OctoPrint 1.9.0) 
   - __JPEG Snapshots__
   - __MJPEG__ Streams
   - __MP4__ Streams
