@@ -29,8 +29,7 @@ screenshots:
   alt: MultiCam Settings
   caption: MultiCam Settings
 compatibility:
-  python: 
-  - '>=2.7,<4'
+  python: '>=2.7,<4'
   octoprint:
   - 1.9.1
 ---
