@@ -90,6 +90,9 @@ for the idea.
 > Don't forget to upload plugin_SmartABL.log!!
 
 ## Configuration
+### Commands
+- `@SMARTABLRESET`: Send this command by terminal or gcode to zero the counter.
+
 ### Settings panel
 **GCODES**
 - Trigger custom gcode(s): By default, SmartABL only triggers with the standard ABL
