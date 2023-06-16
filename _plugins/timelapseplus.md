@@ -96,7 +96,7 @@ compatibility:
 ![Logo](/assets/img/plugins/timelapseplus/logo-small.png)
 
 [![](/assets/img/plugins/timelapseplus/thumbnail-1.png)](https://www.youtube.com/watch?v=S7q_VtEwRbI)
-[![](/assets/img/plugins/timelapseplus/thumbnail-1.png)](https://www.youtube.com/watch?v=-gPDsS9JMlw)
+[![](/assets/img/plugins/timelapseplus/thumbnail-2.png)](https://www.youtube.com/watch?v=-gPDsS9JMlw)
 
 ▶️ _Click the thumbnails to see the videos on YouTube_
 
