@@ -3,7 +3,7 @@ layout: plugin
 
 id: timelapseplus
 title: Timelapse+
-description: Timelapse+ is a powerful yet lightweight plugin to capture, enhance and render your print timelapses.
+description: Timelapse+ is a powerful yet lightweight plugin to stabilize, capture, enhance and render your print timelapses.
 author: Christoph Muche
 license: CC BY-ND
 date: 2023-04-24
@@ -14,9 +14,15 @@ archive: https://github.com/cmuche/octoprint-timelapseplus/archive/master.zip
 
 tags:
 - timelapseplus
+- stabilization
 - timelapse
 - snapshot
 - ffmpeg
+- webcam
+- preroll
+- postroll
+- video
+- recording
 - render
 
 screenshots:
@@ -41,10 +47,16 @@ screenshots:
 - url: /assets/img/plugins/timelapseplus/settings-enhancement.png
   alt: Settings Page
   caption: Settings Page
+- url: /assets/img/plugins/timelapseplus/settings-enhancement-2.png
+  alt: Settings Page
+  caption: Settings Page
 - url: /assets/img/plugins/timelapseplus/settings-render-1.png
   alt: Settings Page
   caption: Settings Page
 - url: /assets/img/plugins/timelapseplus/settings-render-2.png
+  alt: Settings Page
+  caption: Settings Page
+- url: /assets/img/plugins/timelapseplus/settings-stab-parking.png
   alt: Settings Page
   caption: Settings Page
 - url: /assets/img/plugins/timelapseplus/prerequisites.png
@@ -57,6 +69,9 @@ screenshots:
   alt: More Features
   caption: More Features
 - url: /assets/img/plugins/timelapseplus/settings-live-preview.png
+  alt: More Features
+  caption: More Features
+- url: /assets/img/plugins/timelapseplus/quick-actions.png
   alt: More Features
   caption: More Features
 
@@ -80,9 +95,23 @@ compatibility:
 
 ![Logo](/assets/img/plugins/timelapseplus/logo-small.png)
 
-{% include youtube.html vid="zs9QcQsIEyM" preview="/assets/img/plugins/timelapseplus/yt-thumbnail.jpg" %}
+[![](/assets/img/plugins/timelapseplus/thumbnail-1.png)](https://www.youtube.com/watch?v=S7q_VtEwRbI)
+[![](/assets/img/plugins/timelapseplus/thumbnail-1.png)](https://www.youtube.com/watch?v=-gPDsS9JMlw)
 
-ℹ️ _Timelapse+ supports the new __Webcam Plugins__ in OctoPrint 1.9.0_
+▶️ _Click the thumbnails to see the videos on YouTube_
+
+# 👾 Why Timelapse+?
+
+- __EASY TO USE__\
+_Timelapse+ comes with a clean, organized, and accessible interface, prioritizing user convenience. It enables storing print snapshots in Frame Collections for easy re-rendering with different settings._
+- __EASY TO SET UP__\
+_Setting up is simple, with options to trigger snapshots based on layer changes or time intervals. It's well documented and offers intuitive settings without unnecessary complexity._
+- __BEAUTIFUL ENHANCEMENTS__\
+_Elevate your timelapses with stunning enhancements. Timelapse+ provides simple image enhancements, area blurring for sharing your timelapses and the ability to add beautiful pre and post-roll effects and timecode overlays for artistic flair._
+- __POWERFUL__\
+_Timelapse+ comes with features like frame interpolation for even smoother videos, support for various webcam types and streams, compatibility with OctoPrint's webcam plugins support and multiple output formats (including MP4 and GIF)._
+- __STABLE TIMELAPSES__\
+_Achieve stabilized and smooth timelapses with the print head stabilization feature. It ensures optimal print quality while enabling print head animations for added visual appeal._
 
 # 👀 Examples 
 Check out the [_Examples Page_](https://github.com/cmuche/octoprint-timelapseplus/wiki/Examples)
@@ -96,6 +125,10 @@ Check out the [_Examples Page_](https://github.com/cmuche/octoprint-timelapseplu
 - User-friendly and tidy user interface
   - __View, watch and download__ your rendered videos
   - __Preview__ your __render settings__ and check the estimated video length before starting a render job
+- __Stabilized Timelapses__
+  - Park your print head before taking a snapshot
+  - Optimized for print quality
+  - Animated movements
 - Customizable __image enhancements for post-processing__
   - __Brightness__ and __contrast__
   - __Auto-Optimization__ by histogram equalization
@@ -136,7 +169,6 @@ Check out the [_Examples Page_](https://github.com/cmuche/octoprint-timelapseplu
   - __HLS__ Streams
   - Custom __Scripts__
 - __Purge__ Videos and Frame Collections after `n` days
-- Timelapse+ __doesn't modify your GCODE__ and __doesn't affect your printer's movements__!
 
 # 📚 Wiki
 You can find the Documentation and Help on the [Timelapse+ Wiki Pages](https://github.com/cmuche/octoprint-timelapseplus/wiki).
