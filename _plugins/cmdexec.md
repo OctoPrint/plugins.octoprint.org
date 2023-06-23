@@ -9,7 +9,7 @@ authors:
 license: AGPLv3
 
 # today's date in format YYYY-MM-DD, e.g.
-date: 2023-06-23
+date: 2023-06-13
 
 homepage: https://github.com/Chargnn/Octoprint-CmdExec/
 source: https://github.com/Chargnn/Octoprint-CmdExec/
