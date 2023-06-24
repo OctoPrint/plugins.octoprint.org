@@ -90,5 +90,29 @@ compatibility:
 
 ---
 
-This plugin allows executing custom shell commands through the Octoprint's UI.
+## Description
+
+This plugin allows executing custom shell commands through the Octoprint's UI using a button.
+
+## Configuration
+
+In the plugin's settings page, enter the command you want to execute using the navbar button. You can also change the navbar icon if you want.
+
+You can chain commands with the ```&&``` and write the result of a command to a file with ```>>```.
+Here is an example to execute 3 commands: ```command1 && command2 && command3 >> log.txt```
+
+You can also execute a script directly on your computer by writing the path to the script ```./path/to/script```
+
+**The command execution is only allowed by admin users**
+
+## Usage
+
+- Toggle power of a device
+- Toggle power of the usb hub
+- Toggle power of led strip connected to this device
+- Log information at a specific time
+- Send an email / sms
+- Log device stats to a file
+- Execute any custom scripts at a specific time
+
 https://github.com/Chargnn/Octoprint-CmdExec
