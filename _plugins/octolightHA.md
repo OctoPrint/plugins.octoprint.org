@@ -84,4 +84,6 @@ compatibility:
 
 Adds a button to the navbar, toggling a Home Assistant controlled light. Forked off of OctoLight by Žiga Kralj
 
-/assets/img/plugins/octolightHA/settings1.png
+
+![screenshot](/assets/img/plugins/octolightHA/settings1.png)
+
