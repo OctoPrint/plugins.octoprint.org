@@ -14,7 +14,7 @@ date: 2023-07-04
 
 homepage: https://github.com/mark-bloom/OctoLight_Home-Assistant
 source: https://github.com/mark-bloom/OctoLight_Home-Assistant
-archive: https://github.com/mark-bloom/OctoLight_Home-Assistant/releases/download/release/OctoLight-master.zip
+archive: https://github.com/mark-bloom/OctoLight_Home-Assistant/archive/master.zip
 
 # Set this to true if your plugin uses the dependency_links setup parameter to include
 # library versions not yet published on pypi. SHOULD ONLY BE USED IF THERE IS NO OTHER OPTION!
