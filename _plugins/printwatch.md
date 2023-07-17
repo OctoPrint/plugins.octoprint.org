@@ -100,6 +100,11 @@ printpal.io only uses top of the line cloud compute providers that follow the st
 - GDPR compliance
 - DDOS protection
 - WAF/PCI DSS 3.2 Compliance
+ 
+### Watch the AI in action
+Our AI uses the fastest and the strongest Machine Learning model for detecting 3D print failures. It works with all filaments, colors, printers, and what ever combination of factors you throw at it.
+
+![](/assets/img/plugins/printwatch/ai-example-1.gif "Bambu labs P1P fail")
 
 ### Features and roadmap
 In addition to detecting defects, PrintWatch has an Anomaly Detection model running in the background that can detect slight changes or anomalies for printers in your fleet. Get notified early and schedule maintenance for the problematic printer, reducing downtime and costs. PrintWatch's Web App allows you to remotely view and manage all of your printers from anywhere in the world.
