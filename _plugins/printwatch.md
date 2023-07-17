@@ -81,7 +81,7 @@ compatibility:
 
 ---
 
-# PrintWatch
+# PrintWatch - Free AI monitoring and remote management
 In a little over a year during the BETA program phase, PrintWatch has saved users over $1,000,000 and 7,000 lbs of plastic that would have gone to waste. Our goal is to make 3D printing as simple and seamless as possible for all, regardless of experience. With a quick and easy setup that takes less than 5 minutes, you can enjoy the power of AI for Free today!
 
 ### How does it work?
