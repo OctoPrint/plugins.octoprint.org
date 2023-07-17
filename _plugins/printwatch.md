@@ -3,7 +3,7 @@ layout: plugin
 
 id: printwatch
 title: Abort Failures - Printwatch
-description: PrintWatch monitors your prints for defects in real-time and optimizes your 3D printers using Artificial Intelligence
+description: PrintWatch monitors your prints for defects in real-time and optimizes your 3D printers using Artificial Intelligence for Free. PrintWatch allows you to remotely view and manage your printers from anywhere in the world. Save wasted material and time with our AI monitoring system that notifies you and/or pauses the print when something goes wrong. Go about your day with the peace of mind that your 3D printer is working as it should.
 author: printpal.io
 license: AGPLv3
 
@@ -40,6 +40,7 @@ tags:
 - material
 - save
 - time
+- free
 
 
 screenshots:
@@ -81,7 +82,9 @@ compatibility:
 ---
 
 # PrintWatch
+In a little over a year during the BETA program phase, PrintWatch has saved users over $1,000,000 and 7,000 lbs of plastic that would have gone to waste. Our goal is to make 3D printing as simple and seamless as possible for all, regardless of experience. With a quick and easy setup that takes less than 5 minutes, you can enjoy the power of AI for Free today!
 
+### How does it work?
 PrintWatch uses Artificial Intelligence to monitor your 3D prints for any defects that begin to form. The plugin takes the video feed from any camera compatible with OctoPrint and runs it through a Machine Learning model that detects print defects in real-time. The plugin takes actions set by the user once a failure is positively detected that include:
 
 - 📧 Email/SMS Notification
@@ -89,7 +92,17 @@ PrintWatch uses Artificial Intelligence to monitor your 3D prints for any defect
 - 🔥 Turning off the Extruder Heat
 - ⚙ Customized actions created by the user
 
-PrintWatch saves time and material while also giving you peace of mind that your 3D print is printing properly. In addition to detecting defects, PrintWatch has an Anomaly Detection model running in the background that can detect slight changes or anomalies for printers in your fleet. Get notified early and schedule maintenance for the problematic printer, reducing downtime and costs. PrintWatch's Web App allows you to remotely view and manage all of your printers from anywhere in the world.
+### How safe is it?
+
+printpal.io only uses top of the line cloud compute providers that follow the strictest security standards to ensure that our system is safe for you to use. PrintWatch servers comply to all of the leading industry standards, including, but not limited to:
+- SSL/TLS encryption
+- Zero-Trust
+- GDPR compliance
+- DDOS protection
+- WAF/PCI DSS 3.2 Compliance
+
+### Features and roadmap
+In addition to detecting defects, PrintWatch has an Anomaly Detection model running in the background that can detect slight changes or anomalies for printers in your fleet. Get notified early and schedule maintenance for the problematic printer, reducing downtime and costs. PrintWatch's Web App allows you to remotely view and manage all of your printers from anywhere in the world.
 Current features include:
 
 - Real-time defect detection
@@ -123,7 +136,7 @@ Upcoming features include:
 
 7. Restart OctoPrint once Installation is completed
 
-The full installation guide/quickstart can be found here: QuickStart Guide with OctoPrint
+The full installation guide/quickstart can be found here: [QuickStart Guide with OctoPrint](https://printpal.io/documentation/quick-start-guide/)
 
 ### Configuration
 
@@ -140,7 +153,7 @@ Follow the setup guide on the official [GitHub](https://github.com/printpal-io/O
 
 ### Authentication
 
-In order to use PrintWatch, you must provide your API key in the settings. Visit the [printpal.io website](https://printpal.io/pricing/) to register your key for your printers.
+In order to use PrintWatch, you must provide your API key in the settings. Either use your Free API key, or visit the [printpal.io website](https://printpal.io/pricing/) to register your key for your printers.
 
 # Privacy Policy
 Read our privacy policy here: [PrintWatch Privacy policy](https://printpal.io/privacy/)
