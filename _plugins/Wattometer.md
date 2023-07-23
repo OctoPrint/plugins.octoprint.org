@@ -23,13 +23,13 @@ tags:
 
 
 screenshots:
-- url: /assets/img/plugins/Wattometer/Wattometer_Setting.png
+- url: /assets/img/plugins/Wattometer/Wattometer_Settings.png
   alt: Settings Page of Wattometer
 - url: /assets/img/plugins/Wattometer/Wattometer_Tab.png
   alt: Tab of Wattometer
 
 
-featuredimage: /assets/img/plugins/Wattometer/Wattometer_Setting.png
+featuredimage: /assets/img/plugins/Wattometer/Wattometer_Settings.png
 
 
 compatibility:
