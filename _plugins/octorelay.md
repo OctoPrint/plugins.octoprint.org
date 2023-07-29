@@ -85,7 +85,7 @@ compatibility:
   # If your plugin only supports Python 2 (worst case, not recommended for newly developed plugins since Python 2
   # is EOL), leave at ">=2.7,<3"
 
-  python: ">=2.7,<4"
+  python: ">=3.7,<4"
 
 ---
 
