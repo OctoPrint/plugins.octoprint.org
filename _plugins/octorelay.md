@@ -14,7 +14,7 @@ date: 2021-03-13
 
 homepage: https://github.com/borisbu/OctoRelay
 source: https://github.com/borisbu/OctoRelay
-archive: https://github.com/borisbu/OctoRelay/archive/master.zip
+archive: https://github.com/borisbu/OctoRelay/releases/latest/download/release.zip
 
 # Set this to true if your plugin uses the dependency_links setup parameter to include
 # library versions not yet published on pypi. SHOULD ONLY BE USED IF THERE IS NO OTHER OPTION!
