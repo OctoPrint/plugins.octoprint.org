@@ -28,14 +28,14 @@ tags:
 - switch
 
 screenshots:
-- url: /assets/img/plugins/octorelay/screenshot.png
+- url: /assets/img/plugins/octorelay/controls.jpg
   alt: navbar customization
   caption: navbar customization
 - url: /assets/img/plugins/octorelay/settings.png
   alt: settings
   caption: settings
 
-featuredimage: /assets/img/plugins/octorelay/screenshot.png
+featuredimage: /assets/img/plugins/octorelay/controls.jpg
 
 # You only need the following if your plugin requires specific OctoPrint versions or
 # specific operating systems to function - you can safely remove the whole
