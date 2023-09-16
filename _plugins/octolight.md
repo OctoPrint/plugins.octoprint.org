@@ -10,7 +10,7 @@ authors:
 license: AGPLv3
 
 # today's date in format YYYY-MM-DD, e.g.
-date: 2023-09-16
+date: 2021-01-18
 
 homepage: https://github.com/thomst08/OctoLight
 source: https://github.com/thomst08/OctoLight
