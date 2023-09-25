@@ -48,7 +48,13 @@ or manually using this URL:
 
 ## Compatible with:
 * Default theme
-* [Themefy](https://plugins.octoprint.org/plugins/themeify/)
+* [Dashboard](https://plugins.octoprint.org/plugins/dashboard/)
 * [UI Customizer](https://plugins.octoprint.org/plugins/uicustomizer/) (uncheck "Float/Fullscreen webcam" on the settings)
+* [Themeify](https://plugins.octoprint.org/plugins/themeify/)
+* [MultiCam](https://plugins.octoprint.org/plugins/multicam/)
 
 :))
+
+## Known issues
+* Rotated webcam
+* Multicam, camera menu on floating window

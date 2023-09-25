@@ -32,8 +32,6 @@ compatibility:
   - 1.2.5
   python: ">=2.7,<4"
 
-abandoned: https://github.com/OctoPrint/plugins.octoprint.org/issues/646
-
 ---
 
 This OctoPrint plugin enables the system to be automatically shut down after a print is finished.

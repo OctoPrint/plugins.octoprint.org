@@ -5,6 +5,7 @@ id: octolight
 title: OctoLight
 description: A simple plugin, that add's a button to the navbar, toggleing GPIO on the RPi. It can be used for turning on and off a light.
 authors:
+- Steven Thomson
 - Žiga Kralj
 #- second autor name
 license: AGPLv3
@@ -12,9 +13,9 @@ license: AGPLv3
 # today's date in format YYYY-MM-DD, e.g.
 date: 2021-01-18
 
-homepage: https://github.com/gigibu5/OctoLight
-source: https://github.com/gigibu5/OctoLight
-archive: https://github.com/gigibu5/OctoLight/archive/master.zip
+homepage: https://github.com/thomst08/OctoLight
+source: https://github.com/thomst08/OctoLight
+archive: https://github.com/thomst08/OctoLight/archive/master.zip
 
 # Set this to true if your plugin uses the dependency_links setup parameter to include
 # library versions not yet published on pypi. SHOULD ONLY BE USED IF THERE IS NO OTHER OPTION!
@@ -81,4 +82,28 @@ compatibility:
 
 ---
 
-A simple plugin that adds a button to the navigation bar for toggleing a GPIO pin on the Raspberry Pi. I use it for turning ON and OFF the light on my 3D printer.
+A simple plugin that adds a button to the navigation bar for toggling a GPIO pin on the Raspberry Pi. This plugin has the function to turn on or off based on a printer event or manually through a user interaction. Printer events can also trigger a light turn off after a specified time.
+
+![WebUI interface](/assets/img/plugins/octolight/screenshoot.png)
+
+
+## Configuration
+![Settings panel](/assets/img/plugins/octolight/settings.png)
+
+Curently, you can configure settings:
+- `Light PIN`: The pin on the Raspberry Pi that the button controls.
+	- Default value: 13
+	- The pin number is saved in the **board layout naming** scheme (gray labels on the pinout image below).
+	- **!! IMPORTANT !!** The Raspberry Pi can only control the **GPIO** pins (orange labels on the pinout image below)
+	![Raspberry Pi GPIO](/assets/img/plugins/octolight/rpi_gpio.png)
+
+- `Inverted output`: If true, the output will be inverted
+	- Usage: if you have a light, that is turned off when voltage is applied to the pin (wired in negative logic), you should turn on this option, so the light isn't on when you reboot your Raspberry Pi.
+
+- `Setup Delay Turn off time`: This sets a time out for when the light will automatically turn its self off in an event
+	- Default value: 5
+	- Note: This value is in minutes
+
+- `Setup Printer Events`: This allows you to select what you would like the light to do on a printer event
+	- Default is nothing
+	- Set the light to do nothing, turn on, turn off, or turn on then turn itself off after the delay time value
