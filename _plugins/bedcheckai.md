@@ -3,7 +3,7 @@ layout: plugin
 
 id: bedcheckai
 title: OctoPrint-BedCheckAI
-description: Detects the print bed in the camera frame. Useful for automation and smarter printing.
+description: Detects the print bed in the camera frame. Useful for automation and smarter printing
 authors:
 - printpal.io
 license: AGPLv3
@@ -102,8 +102,6 @@ compatibility:
   ### Our Other Plugins
   `PrintWatch AI monitoring & Remote Access` :
   ```
-  This plugin monitors your prints in real-time for defects and failures and notifies you
-  and/or pauses the print so you save time, material, and gain peace of mind. This plugin
-  also allows you to remotely view and manage your printer from anywhere in the world.
+  This plugin monitors your prints in real-time for defects and failures and notifies you and/or pauses the print so you save time, material, and gain peace of mind. This plugin also allows you to remotely view and manage your printer from anywhere in the world.
   ```
   Check it out [here](https://plugins.octoprint.org/plugins/printwatch/)
