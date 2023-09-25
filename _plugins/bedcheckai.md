@@ -23,15 +23,15 @@ tags:
 - free
 
 screenshots:
-- url: /assets/img/plugins/printwatch/tools.jpg
+- url: /assets/img/plugins/bedcheckai/tools.jpg
   alt: Bed Check AI detects any tools left on your print bed
   caption: Bed Check AI detects any tools left on your print bed
-- url: /assets/img/plugins/printwatch/print.jpg
+- url: /assets/img/plugins/bedcheckai/print.jpg
   alt: Bed Check AI detects any previous prints leftover on your print bed
   caption: Bed Check AI detects any previous prints leftover on your print bed
 
 
-featuredimage: /assets/img/plugins/printwatch/tools.jpg
+featuredimage: /assets/img/plugins/bedcheckai/tools.jpg
 
 
 compatibility:
