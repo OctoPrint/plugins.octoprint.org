@@ -50,7 +50,7 @@ compatibility:
 Detect your print bed with the power of AI. This tool is great for automating your print process, or just a simple quality of life boost in your overall 3D printing experience.
 
 ### How does it work?
-Bed Check AI uses a Deep Neural Network Segmentation model. The model determines which pixels within the image are associated with a print bed and then groups them together. The ML model is large so it is run on the cloud. This allows for you to utilize the tool on any piece of hardware, from anywhere in the world.
+Bed Check AI uses a Deep Neural Network Segmentation model. The model determines which pixels within the image are associated with a print bed and then groups them together. The ML model is large so it is run on the cloud. When the BedCheck Macro/button is triggered, the current camera snapshot is sent to the cloud for ML inference and the various pixel values are returned. This allows for you to utilize the tool on any piece of hardware, from anywhere in the world.
 
 The software compares the current bed detection to your set baseline, and using a loss function it calculates the similarity of the detected, based on this resulting 'loss' we can deduce whether the bed is clear or not.
 
