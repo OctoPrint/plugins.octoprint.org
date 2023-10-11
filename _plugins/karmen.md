@@ -75,6 +75,8 @@ Karmen features:
 - ***Teamwork:*** Share your 3D printers and print files with friends and colleagues.
 - ***Upload G-codes from any slicer:*** Send print jobs from your slicer (Slic3r, PrusaSlicer, Cura) straight to Karmen.
 - ***History:*** Keep track of who printed what and when.
+- **Automatic Error Detection:** Karmen features artificial intelligence that diligently monitors the printing process via webcam.
+- **G-code previews:** This function enables you to find the correct print job and preview the final print, identifying errors like missing support structures.
 
 Configuration and documentation
 ---
@@ -86,7 +88,8 @@ It's easy to connect your printer in a few short steps:
 - Create an Octoprint secondary API key.
 - Add your printer(s) to your Karmen workspace.
 
-We've got detailed instructions in our [documentation](https://docs.karmen.tech/#/karmen-octo-plugin).
+We've got detailed instructions in our video [documentation](https://karmen.tech/en/docs/karmen-connector-octoprint-plugin) and in video tutorial
+{% include youtube.html vid="UTc_Iv4nHaI" preview="<preview image, 'assets/img/plugins/karmen/how_to_connect_youtube.png'>" %}.
 
 Contacts, support and social media
 ---
