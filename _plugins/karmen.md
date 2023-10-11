@@ -131,4 +131,4 @@ API key security
 
 Never share your keys with ANYONE.
 
-Please follow our guidelines and do not use the primary Octoprint key when setting up the Karmen plugin. Instead you should create a special key for that purpose, as recommended in our tutorial. The full procedure, including the recommended way of creating your API key, can be found at <https://docs.karmen.tech/#/karmen-octo-plugin>.
+Please follow our guidelines and do not use the primary Octoprint key when setting up the Karmen plugin. Instead you should create a special key for that purpose, as recommended in our tutorial. The full procedure, including the recommended way of creating your API key, can be found at <https://karmen.tech/en/docs/karmen-connector-octoprint-plugin>.
