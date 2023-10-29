@@ -3,7 +3,7 @@ layout: plugin
 
 id: octolight
 title: OctoLight
-description: A simple plugin, that add's a button to the navbar, toggleing GPIO on the RPi. It can be used for turning on and off a light.
+description: A simple plugin to toggle a GPIO pin on a RPi. This can be toggled through a button, printer events or custom GCODE.
 authors:
 - Steven Thomson
 - Žiga Kralj
@@ -82,7 +82,7 @@ compatibility:
 
 ---
 
-A simple plugin that adds a button to the navigation bar for toggling a GPIO pin on the Raspberry Pi. This plugin has the function to turn on or off based on a printer event or manually through a user interaction. Printer events can also trigger a light turn off after a specified time.
+A simple plugin that allows for the toggling of a GPIO pin on the Raspberry Pi. The user can toggle the pin through a button in the navigation bar, through printer events and through custom GCODE commands. Printer events also allow the pin to be toggled on then off after a period.
 
 ![WebUI interface](/assets/img/plugins/octolight/screenshoot.png)
 
@@ -100,10 +100,18 @@ Curently, you can configure settings:
 - `Inverted output`: If true, the output will be inverted
 	- Usage: if you have a light, that is turned off when voltage is applied to the pin (wired in negative logic), you should turn on this option, so the light isn't on when you reboot your Raspberry Pi.
 
-- `Setup Delay Turn off time`: This sets a time out for when the light will automatically turn its self off in an event
+- `Delay Light Off (mins)`: This sets a time out for when the light will automatically turn its self-off in an event
 	- Default value: 5
 	- Note: This value is in minutes
 
 - `Setup Printer Events`: This allows you to select what you would like the light to do on a printer event
-	- Default is nothing
+	- There are multiple events, these can each be tweaked based on your desired preference.
+	- Default is set to 'Nothing'.
 	- Set the light to do nothing, turn on, turn off, or turn on then turn itself off after the delay time value
+
+- `Enable Custom GCODE Detection`: This must be enabled for GCODE to be read and toggle the light.
+	- If this option is disabled, then the custom GCODE bellow this option will not function.
+
+- `Setup Custom GCODE`: This allows you to select what you would like the light to do when a set GCODE command is sent to the printer
+	- Default is 'OCTOLIGHT ON' and 'OCTOLIGHT OFF' for on and off respectively.
+	- These commands can be any command the user enters, these could be event commands for the printer (e.g.: M600) or custom commands.
