@@ -1,0 +1,32 @@
+---
+layout: plugin
+
+id: OctoPrint_HDMI
+title: OctoPrint HDMI
+description: Steam the octoprint page to the Raspberry HDMI port
+#authors:
+#- denilson-polonio
+license: GPL-2.0
+
+# today's date in format YYYY-MM-DD, e.g.
+date: 2023-11-19
+
+homepage: https://github.com/denilson-polonio/OctoPrint_HDMI
+source: https://github.com/denilson-polonio/OctoPrint_HDMI
+archive: https://github.com/denilson-polonio/OctoPrint_HDMI/archive/master.zip
+
+# Set this if your plugin heavily interacts with any kind of cloud services.
+#privacypolicy: your plugin's privacy policy URL
+
+# Set this to true if your plugin uses the dependency_links setup parameter to include
+# library versions not yet published on pypi. SHOULD ONLY BE USED IF THERE IS NO OTHER OPTION!
+#follow_dependency_links: false
+
+tags:
+- hdmi
+- raspberry
+---
+
+This project is a Python plugin for OctoPrint that allows you to stream the OctoPrint page to the HDMI port of a Raspberry Pi. This can be useful for a variety of purposes, such as:
+- Providing a local display for your 3D printer: This can be helpful if you want to monitor your prints without having to connect to OctoPrint over the network.
+- Creating a standalone 3D printing station: This can be useful if you want to set up a 3D printing station that is not connected to the internet.
