@@ -47,6 +47,7 @@ After installing, you need to configure SlicerSettingsParser to parse your gcode
 ### ExtraFileInfo
 
 #### Simple Setup
+
 | **Setting**      	| **Description**                                                 	|
 |------------------	|-----------------------------------------------------------------	|
 | Key              	| The "key" of your slicer setting in SlicerSettingsParser        	|
