@@ -9,7 +9,7 @@ authors:
     - Olli
 license: AGPLv3
 
-date: 2023-11-27
+date: 2020-05-28
 
 homepage: https://github.com/dojohnso/OctoPrint-PrintJobHistory
 source: https://github.com/dojohnso/OctoPrint-PrintJobHistory
