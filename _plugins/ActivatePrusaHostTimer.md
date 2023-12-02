@@ -3,7 +3,7 @@ layout: plugin
 
 id: ActivatePrusaHostTimer
 title: Activate Prusa HostTimer
-description: Plugin for Octoprint to activate Prusa host features
+description: OctoPrint plugin to activate Prusa host features.
 author: sarusani
 license: AGPLv3
 
@@ -36,12 +36,14 @@ compatibility:
 
 # Activate Prusa HostTimer
 
-Plugin for Octoprint to activate Prusa host features.
+OctoPrint plugin to activate Prusa host features.
 
-Features:
-- Sends M79 S"OP" to printer every x seconds
-- Interval is configurable (5,10,15,20 or 25 seconds)
-- Interval can be paused
+#### Features
+- Sends M79 S"OP" to the printer every x seconds
+- Interval is configurable (5, 10, 15, 20 or 25 seconds)
+- Interval ping can be paused
+
+Check out the [Homepage](https://github.com/sarusani/OctoPrint-ActivatePrusaHostTimer) to find out more about the use cases and upcoming features this plugin will allow you to use.
 
 ## Setup
 
