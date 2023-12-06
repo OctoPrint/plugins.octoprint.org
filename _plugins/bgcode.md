@@ -8,7 +8,7 @@ authors:
 - jneilliii
 license: AGPLv3
 
-date: 2023-12-02
+date: 2023-12-06
 
 homepage: https://github.com/jneilliii/OctoPrint-BGCode
 source: https://github.com/jneilliii/OctoPrint-BGCode
