@@ -56,8 +56,6 @@ screenshots:
 
 featuredimage: /assets/img/plugins/PrintJobHistory/editPrintJob-dialog.png
 
-abandoned: https://github.com/OctoPrint/plugins.octoprint.org/issues/1222
-
 ---
 
 Print Job History-Plugin collects a lot of attributes from OctoPrint itself, like **Filename, Start/End-Time, Status, Username, Slicer-Settings** and many more. But it also grabs information from other plugins: **Thumbnail, Layer-Information, Filament usage**...
