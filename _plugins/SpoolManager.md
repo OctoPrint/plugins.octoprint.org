@@ -4,16 +4,14 @@ layout: plugin
 id: SpoolManager
 title: SpoolManager
 description: The OctoPrint-Plugin manages all spool informations and stores it in a database.
-authors:
-    - dojohnso
-    - Olli
+author: Olli
 license: AGPLv3
 
 date: 2020-08-23
 
-homepage: https://github.com/dojohnso/OctoPrint-SpoolManager
-source: https://github.com/dojohnso/OctoPrint-SpoolManager
-archive: https://github.com/dojohnso/OctoPrint-SpoolManager/releases/latest/download/main.zip
+homepage: https://github.com/OllisGit/OctoPrint-SpoolManager
+source: https://github.com/OllisGit/OctoPrint-SpoolManager
+archive: https://github.com/OllisGit/OctoPrint-SpoolManager/releases/latest/download/master.zip
 
 follow_dependency_links: false
 
@@ -43,6 +41,7 @@ screenshots:
 
 featuredimage: /assets/img/plugins/SpoolManager/editSpool-dialog.png
 
+abandoned: https://github.com/OctoPrint/plugins.octoprint.org/issues/1213
 ---
 
 SpoolManager offers the possibility to save many properties of a Spool in a database. Like: material, color, weight, length, purchase-info, last/first-usage, ...
@@ -50,8 +49,9 @@ SpoolManager offers the possibility to save many properties of a Spool in a data
 For a full overview of the latest feature set and planed features, please visit the [Git Hub Homepage]({{ page.homepage | absolute_url }})
 
 
-## *NOTE: this plugin has been abandoned by the original creator and adopted here by a new maintainer*
+#### Support my Efforts
 
-**This plugin is under new management** and will focus on critical bug fixes to start. Please bear with me as I get acclimated to this new plugin. If you would like to support these new efforts, please consider buying me a coffee or two. Thank you!
+This plugin, as well as my [other plugins](https://github.com/OllisGit/) were developed in my spare time.
+If you like it, I would be thankful about a cup of coffee :)
 
-<a href="https://www.buymeacoffee.com/djohnson.tech" target="_blank"><img src="https://djohnson.tech/images/white-button.png" width=300 /></a>
+[![paypal](/assets/img/plugins/SpoolManager/paypal-with-text.png)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6SW5R6ZUKLB5E&source=url)
