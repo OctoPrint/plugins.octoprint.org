@@ -31,6 +31,14 @@ compatibility:
 
 Plugin allows for the upload and conversion of bgcode files introduced in PrusaSlicer version 2.7.0+. Upon upload of the file, it will still have the bgcode extension but will be an ascii formatted text file that can be streamed to the printer as a standard gcode file from OctoPrint. 
 
+## Why
+
+So you may ask why I made this plugin. The answer is simple, people were posting requests to [OctoPrint](https://github.com/OctoPrint/OctoPrint/issues/4900) and the [OctoPrint Community Forum](https://community.octoprint.org/search?q=bgcode) for OctoPrint support of this new format. My personal opinion is that the best solution is to disable the new format altogether in your slicer profiles, as seen in the screenshot below.
+
+![screenshot](/assets/img/plugins/bgcode/prusa_slicer_settings.png)
+
+There is no good reason why anyone would want to use this new format with OctoPrint. The improvement in upload time would be countered by the extraction time of the ascii gcode upon upload. 
+
 ## Prerequisites
 
 If installing on Windows you'll need some additional applications installed to complete the build process prior to installing the plugin. These are already included on OctoPi image, and possibly octoprint_deploy installations (need to verify). 
