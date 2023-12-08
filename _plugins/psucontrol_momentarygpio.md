@@ -9,7 +9,7 @@ authors:
 - Justin Zak
 license: AGPLv3
 
-date: 2023-11-22
+date: 2023-12-07
 
 homepage: https://github.com/irotsoma/OctoPrint-PSUControl-MomentaryGpio
 source: https://github.com/irotsoma/OctoPrint-PSUControl-MomentaryGpio
