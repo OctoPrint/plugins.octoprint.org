@@ -41,9 +41,9 @@ There is no good reason why anyone would want to use this new format with OctoPr
 
 ## Prerequisites
 
-If installing on Windows you'll need some additional applications installed to complete the build process prior to installing the plugin. These are already included on OctoPi image, and possibly octoprint_deploy installations (need to verify). 
+If installing on Windows or on octo4a you'll need some additional applications installed to complete the build process prior to installing the plugin. These are already included on OctoPi image, and possibly octoprint_deploy installations (need to verify). 
 
-### Install the tools
+### Windows - Install the tools
 
 Install Visual Studio Community 2019, or higher from [visualstudio.microsoft.com/vs/](https://visualstudio.microsoft.com/vs/).
 Older versions are not supported as libbgcode requires support for C++17.
@@ -54,6 +54,15 @@ Download and run the exe accepting all defaults
 
 Install git for Windows from [gitforwindows.org](https://gitforwindows.org/)
 Download and run the exe accepting all defaults
+
+### octo4a - Install the tools
+
+After setting up OpenSSH server on settings tab, You can go to `http://<your-ip>:5002` and use root username and the password you selected on the settings tab. Run these commands to add the necessary system dependencies.
+
+```
+apk add git
+apk add zlib-dev
+```
 
 ## Get Help
 
