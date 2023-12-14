@@ -33,7 +33,17 @@ Plugin allows for the upload and conversion of bgcode files introduced in PrusaS
 
 ## Why
 
-So you may ask why I made this plugin. The answer is simple, people were posting requests to [OctoPrint](https://github.com/OctoPrint/OctoPrint/issues/4900) and the [OctoPrint Community Forum](https://community.octoprint.org/search?q=bgcode) for OctoPrint support of this new format. My personal opinion is that the best solution is to disable the new format altogether in your slicer profiles, as seen in the screenshot below.
+So you may ask why I made this plugin. The answer is simple, people were posting requests to [OctoPrint](https://github.com/OctoPrint/OctoPrint/issues/4900) and the [OctoPrint Community Forum](https://community.octoprint.org/search?q=bgcode) for OctoPrint support of this new format. My personal opinion is that the best solution is to disable the new format altogether in your slicer profiles, as seen in the screenshots below.
+
+### PrusaSlicer 2.7.0
+![screenshot](/assets/img/plugins/bgcode/prusa_slicer_settings.png)
+
+### PrusaSlicer 2.7.1+
+Configuration > Preferences
+
+![screenshot](/assets/img/plugins/bgcode/prusa_slicer_settings_preferences.png)
+
+Printer Settings > General
 
 ![screenshot](/assets/img/plugins/bgcode/prusa_slicer_settings.png)
 
