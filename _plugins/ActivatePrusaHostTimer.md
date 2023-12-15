@@ -51,8 +51,7 @@ OctoPrint plugin to activate Prusa host features.
 - Printer notifications
 
 Supported printer models:<br />
-[MK3S/+](https://github.com/prusa3d/Prusa-Firmware/releases) (Firmware 3.14.0 and newer)<br />
-[MINI/+](https://github.com/prusa3d/Prusa-Firmware-Buddy/releases), [MK4](https://github.com/prusa3d/Prusa-Firmware-Buddy/releases) and [XL](https://github.com/prusa3d/Prusa-Firmware-Buddy/releases) (Firmware 5.1.0 and newer)
+[MK3S/+](https://github.com/prusa3d/Prusa-Firmware/releases) (Firmware 3.14.0 and newer)
 
 Check out the [Homepage](https://github.com/sarusani/OctoPrint-ActivatePrusaHostTimer) to find out more about the use cases and upcoming features this plugin will allow you to use.
 <br />
