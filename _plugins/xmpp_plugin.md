@@ -8,7 +8,7 @@ authors:
 - Tobias Sachs
 license: AGPLv3
 
-date: 2023-12-22
+date: 2023-12-27
 
 homepage: https://github.com/tobser/octoprint-xmpp-plugin
 source: https://github.com/tobser/octoprint-xmpp-plugin
