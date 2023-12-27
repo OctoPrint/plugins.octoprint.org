@@ -29,13 +29,15 @@ featuredimage: /assets/img/plugins/xmpp_plugin/xmpp-plugin-configuration.png
 
 # A Simple XMPP Plugin for octoprint.
 
-This plugin lets you configure an account to connect to a jabber server and another xmpp
-account to send the notifications to.
+This plugin lets you configure an account to connect to a
+[xmpp](https://en.wikipedia.org/wiki/XMPP) server to
+send notifications about your prints progress to another xmpp account.
 
-Currently this plugin can inform you about the start/stop of the octoprint service as well
+Currently this plugin can inform you about the start of the octoprint service as well
 as the start/stop of your prints. It is also possible to trigger a notification every x%
 of print progress.
 
-You can as well configure custom G-codes to trigger notifications. This makes it possible
-to get notified about a required filament change or when the print was paused.
-
+Recently a feature was added to configure custom g-codes to trigger notifications.
+This makes it possible to get notified about pretty much everything that's contained in
+your g-code file. I use it to notify me about a required filament change or when the print
+was paused.
