@@ -37,5 +37,5 @@ as the start/stop of your prints. It is also possible to trigger a notification 
 of print progress.
 
 You can as well configure custom G-codes to trigger notifications. This makes it possible
-to get notified about a required filament change or when the print is was paused.
+to get notified about a required filament change or when the print was paused.
 
