@@ -33,19 +33,26 @@ featuredimage: /assets/img/plugins/mqttchambertemperature/toptemp.png
 
 ---
 
-# MQTT Chamber Temperature Plugin
-
-Enables Chamber temperature reporting via subscribing to an MQTT topic.
-
+## MQTT Chamber Temperature Plugin for Octoprint
+ 
 * Requires the [MQTT](https://plugins.octoprint.org/plugins/mqtt/) Plugin to be installed and configured
 * Subcribed topic configurable via Plugin Settings
 * Can convert retrieved temperature to Celcius if provided in Fahrenheit
-* OctoPrint must be restarted for configuration changes to take effect
+* Control enclosure temperature via MQTT state topics
 
 ## Screenshots
 
-<img width="430" alt="Screenshot 2024-01-02 at 3 33 09 AM" src="/assets/img/plugins/mqttchambertemperature/toptemp.png">
+<img width="430" alt="Top Temp" src="/assets/img/plugins/mqttchambertemperature/toptemp.png">
  
-<img width="986" alt="Screenshot 2024-01-02 at 3 32 49 AM" src="/assets/img/plugins/mqttchambertemperature/tempgraph.png">
+<img width="986" alt="Plotly Temperature Graph" src="/assets/img/plugins/mqttchambertemperature/tempgraph.png">
 
-<img width="979" alt="Screenshot 2024-01-02 at 3 43 44 AM" src="/assets/img/plugins/mqttchambertemperature/settings.png">
+<img width="979" alt="Plugin Settings" src="/assets/img/plugins/mqttchambertemperature/settings.png">
+
+## Temperature Sensor Ideas
+
+* ESP8266/ESP32 BME280 - https://github.com/synman/BME280
+* ESP8266/ESP32 SHT30 & LCD - https://github.com/synman/SHT-Sensor
+
+## Heater and Power Plug Reference
+
+The easiest way to manage temperature control is by use of a [miniature heater](https://www.amazon.com/dp/B07573FKSG) connected to a Home Assistant integrated power plug such as the [TP-LINK HS103](https://www.tp-link.com/us/home-networking/smart-plug/hs103/).  Creating automations for managing the requested and actual power state values via MQTT is then fairly trivial.
