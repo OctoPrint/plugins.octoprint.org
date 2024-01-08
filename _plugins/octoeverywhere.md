@@ -2,8 +2,8 @@
 layout: plugin
 
 id: octoeverywhere
-title: OctoEverywhere - Free Remote Monitoring And Control!
-description: Free, simple, and secure remote monitoring and control of your OctoPrint printer anywhere in the world!
+title: OctoEverywhere - Free Remote Access, AI Failure Detection, And More!
+description: Free, simple, and secure remote monitoring and control of your OctoPrint printer anywhere in the world. OctoEverywhere gives you unlimited OctoPrint access on any web browser and can empower your favorite OctoPrint Android and iOS apps to work everywhere. Meet Gadget, your new free and unlimited AI-powered print failure detection assistant! Gadget continuously watches your prints for errors, so you don't have to!
 author: Quinn Damerell
 license: AGPLv3
 date: 2020-11-07
@@ -26,13 +26,17 @@ tags:
 - app
 - plugin support
 - webcam
+- video streaming
 - free
 - secure
 - safe
 - cloud printing
 - internet
+- cloud
+- smart
 - port forwarding
 - notifications
+- notification
 - push notifications
 - sms
 - email
@@ -41,6 +45,17 @@ tags:
 - slack
 - pushover
 - pushbullet
+- webhook
+- desktop
+- windows
+- mac
+- android
+- iphone
+- ios
+- smart plug
+- mobile
+- mobile app
+- mobile alerts
 - alerts
 - filament runout
 - eta
@@ -59,17 +74,28 @@ tags:
 - twitch
 - youtube
 - tiktok
+- instagram
 - social networks
 - live links
 - print status
+- ai
+- failure detection
+- print failure
+- gadget
 
 screenshots:
-- url: /assets/img/plugins/octoeverywhere/apps.png
-  alt: Empower your favorite OctoPrint apps to work anywhere!
-  caption: Empower your favorite OctoPrint apps to work anywhere!
+- url: /assets/img/plugins/octoeverywhere/app.png
+  alt: Empower Your Favorite OctoPrint Apps To Work Anywhere
+  caption: Empower Your Favorite OctoPrint Apps To Work Anywhere
+- url: /assets/img/plugins/octoeverywhere/gadget.png
+  alt: Gadget Is Your Free And Unlimited AI Failure Detection Assistant
+  caption: Gadget Is Your Free And Unlimited AI Failure Detection Assistant
+- url: /assets/img/plugins/octoeverywhere/notifications.png
+  alt: Stay On Top Of Your Prints On Any Device
+  caption: Stay On Top Of Your Prints On Any Device
 - url: /assets/img/plugins/octoeverywhere/homepage.png
-  alt: OctoEverywhere Homepage
-  caption: Your full and familiar OctoPrint setup... everywhere!
+  alt: Your Full and Familiar OctoPrint Portal... Everywhere!
+  caption: Your Full and Familiar OctoPrint Portal... Everywhere!
 
 featuredimage: /assets/img/plugins/octoeverywhere/homepage.png
 
@@ -87,13 +113,11 @@ compatibility:
 
 ---
 
-<p class="lead">Now including OctoPrint app support, full framerate webcam streaming, live streaming, printer notifications, and much more! Your full OctoPrint portal, plugins, apps, and webcam everywhere!</p>
-
 ### 👋 Hello!
 
-Welcome aboard the [OctoEverywhere.com](https://octoeverywhere.com/?source=plugin_website_header) rocket! After a **free and easy 30 second setup** you will have access to your full OctoPrint powered printer... everywhere!
+Welcome aboard the [OctoEverywhere.com](https://octoeverywhere.com/?source=plugin_website_header) rocket! After a **free and easy 10 second setup** you will have access to your full OctoPrint powered printer... everywhere!
 
-With a **[4.8/5 star rating](https://www.trustpilot.com/review/octoeverywhere.com)** and over **41k makers** already enjoying full remote control and loads of other features, what are you waiting for? **[Try it now!](https://octoeverywhere.com/?source=plugin_website_try_it_now)**
+With a **[4.9/5 star rating](https://www.trustpilot.com/review/octoeverywhere.com)** and over **64k makers** already enjoying full remote control and loads of other features, what are you waiting for? <span style="text-decoration: underline;">**[Try OctoEverywhere now!](https://octoeverywhere.com/?source=plugin_website_try_it_now)**</span>
 
 <br/><br/>
 
@@ -103,17 +127,25 @@ Yes! [OctoEverywhere.com](https://octoeverywhere.com/?source=plugin_website) emp
 
 <br/><br/>
 
+### 🤖 Free AI Failure Detection?
+
+It's amazing! [Gadget](https://octoeverywhere.com/gadget?source=plugin_website_gadget) uses state-of-the-art machine learning algorithms to continuously monitor your prints and take action when many common printing failures are detected. Best of all, Gadget is **free and unlimited** for our entire community!
+
+<br/><br/>
+
+
 ### Features
 
 <ul style="list-style-type:none">
 <li><strong>⚡ Free & full OctoPrint portal access from anywhere</strong></li>
-<li><strong>🎥 Free full framerate and resolution webcam streaming</strong></li>
+<li><strong>🤖 Free & unlimited AI-powered failure detection</strong></li>
+<li><strong>🎥 Free full framerate and full resolution webcam streaming</strong></li>
 <li><strong>📱 Empower your favorite OctoPrint iOS and Android apps to work everywhere</strong></li>
-<li><strong>🔔 Instant printer alerts and detailed progress notifications sent to SMS, Email, Discord, Telegram, Slack, and more</strong></li>
-<li><strong>📺 Live stream to your friends or the entire world with OctoEverywhere Live Links</strong></li>
+<li><strong>🔔 Instant printer alerts and detailed progress notifications sent to SMS, Email, Discord, Telegram, Android, Slack, and more</strong></li>
+<li><strong>📺 Live stream your prints to your friends or the entire world with OctoEverywhere Live Links</strong></li>
 <li><strong>🔌 Full OctoPrint plugin functionality</strong></li>
 <li><strong>🔐 Share secure access of your OctoPrint portal with others</strong></li>
-<li><strong>🥰 One of the top rated OctoPrint remote access plugins</strong></li>
+<li><strong>🥰 One of the top-rated OctoPrint remote access plugins</strong></li>
 <li><strong>🎥 Full multi-cam support</strong></li>
 <li><strong>🤩 ...and much, much more</strong></li>
 </ul>
@@ -130,7 +162,7 @@ To learn more about our state-of-the-art security design and practices, <a href=
 
 ### Try It Now!
 
-Sounds amazing right? Seeing is believing! Head over to [OctoEverywhere.com](https://octoeverywhere.com/?source=plugin_website_try) or install our OctoPrint plugin to get started in 30 seconds or less!
+Sounds amazing right? Seeing is believing! Head over to <span style="text-decoration: underline;">[OctoEverywhere.com](https://octoeverywhere.com/?source=plugin_website_try)</span> or install our OctoPrint plugin to get started in 30 seconds or less!
 
 <br/><br/>
 

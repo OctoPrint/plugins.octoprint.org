@@ -17,7 +17,6 @@ screenshots:
 - url: /assets/img/plugins/gcodesystemcommands/gcodesystemcommands_settings.png
   alt: GCODE System Commands screenshot
   caption: GCODE System Commands screenshot
-featuredimage: /assets/img/plugins/gcodesystemcommands/gcodesystemcommands_settings.png
 ---
 
 See <https://github.com/kantlivelong/OctoPrint-GCodeSystemCommands> for information on configuration.

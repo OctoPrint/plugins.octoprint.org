@@ -3,7 +3,8 @@ layout: plugin
 
 id: telegram
 title: OctoPrint-Telegram
-description: A plugin to send and react on messages before, during and after a print via Telegram Messenger.
+description: A plugin to send and react on messages before, during and after a print
+  via Telegram Messenger.
 author: Fabian Schlenz
 license: AGPLv3
 
@@ -26,22 +27,26 @@ tags:
 screenshots:
 - url: /assets/img/plugins/telegram/features1.png
   alt: Telegram notifications during print
-  caption: You can receive current status with a webcam picture in user-definable intervals.
+  caption: You can receive current status with a webcam picture in user-definable
+    intervals.
 - url: /assets/img/plugins/telegram/features3.png
   alt: Requesting the current status
-  caption: You can control octoprint via messages. E.g. sending /status lets the Plugin send you the current status.
+  caption: You can control octoprint via messages. E.g. sending /status lets the Plugin
+    send you the current status.
 - url: /assets/img/plugins/telegram/features4.png
   alt: Custom keyboards
-  caption: You can also abort the current print with /abort. A custom keyboard is shown for confirmation.
+  caption: You can also abort the current print with /abort. A custom keyboard is
+    shown for confirmation.
 - url: /assets/img/plugins/telegram/features5.png
   alt: Settings
-  caption: You can configure lots of settings via Octoprint's settings. (Or you can use /settings to change them via Telegram.)
-
+  caption: You can configure lots of settings via Octoprint's settings. (Or you can
+    use /settings to change them via Telegram.)
 featuredimage: /assets/img/plugins/telegram/features3.png
 
 compatibility:
   octoprint:
   - 1.2.9
+  python: '>=2.7,<4'
 ---
 
 This plugin integrates Telegram Messenger into Octoprint.

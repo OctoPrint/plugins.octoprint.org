@@ -22,7 +22,8 @@ tags:
 - Power
 
 featuredimage: /assets/img/plugins/orvibos20/power_on_dark.png
-
+compatibility:
+  python: '>=2.7,<4'
 ---
 
 # Orvibo S20

@@ -42,3 +42,21 @@ HeaterTimeout:
 smartfilamentsensor:
   user: Royrdan
   pip: https://github.com/Royrdan/Octoprint-Smart-Filament-Sensor/archive/{target_version}.zip
+ledstripcontrol:
+  user: gbonesso
+  pip: https://github.com/gbonesso/OctoPrint-LEDStripControl/archive/{target_version}.zip
+excluderegion:
+  user: bradcfisher
+SlicerSettingsParser:
+  user: larsjuhw
+webhooks:
+  user: derekantrican
+  pip: https://github.com/derekantrican/OctoPrint-Webhooks/archive/{target_version}.zip
+octolight:
+  user: thomst08
+PrintJobHistory:
+  user: dojohnso
+  pip: https://github.com/dojohnso/OctoPrint-PrintJobHistory/releases/download/{target_version}/main.zip
+SpoolManager:
+  user: dojohnso
+  pip: https://github.com/dojohnso/OctoPrint-SpoolManager/releases/download/{target_version}/main.zip

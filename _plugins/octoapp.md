@@ -30,6 +30,9 @@ tags:
 - phone
 - octoapp
 - monitor
+- obico
+- octoeverywhere
+- ngrok
 - monitoring
 - remote app
 
@@ -112,6 +115,6 @@ A plugin providing extra functionality to OctoApp:
 
 Get OctoApp on Google Play!
 
-[![Google Play](/assets/img/plugins/octoapp/google_play.png)](https://play.google.com/store/apps/details?id=de.crysxd.octoapp&hl=en&gl=US)
+[![Google Play](/assets/img/plugins/octoapp/play-badge.png)](https://play.google.com/store/apps/details?id=de.crysxd.octoapp&hl=en&gl=US)  [![App Store](/assets/img/plugins/octoapp/app-store-badge.png)](https://apps.apple.com/us/app/octoapp-for-octoprint/id1658133862)
 
 This plugin requires OctoApp 1.11 or newer!

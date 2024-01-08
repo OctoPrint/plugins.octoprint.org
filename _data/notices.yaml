@@ -190,3 +190,63 @@
     repository of the old maintainer. Please uninstall the old plugin from the plugin manager, then reinstall from the plugin
     repository to update it. The release notes of the version by the new maintainer can be found at the "Read more..." link below.
   link: https://github.com/egguy/OctoPrint-Prusa-Mini-ETA/releases/tag/0.1.4
+- plugin: thespaghettidetective
+  date: 2022-5-9 12:00:00Z
+  text: This plugin is now succeeded by "Obico for OctoPrint". Please uninstall this plugin (keep data) in the plugin manager.
+    Then install the "Obico for OctoPrint" plugin. Your settings in this plugin will be automatically migrated
+    to the new plugin. To find out more, click the "Read more..." link below.
+  link: https://www.obico.io/docs/user-guides/move-from-tsd-to-obico-in-octoprint/
+- plugin: ledstripcontrol
+  pluginversions: ["<0.3.8"]
+  versions: []
+  date: 2022-10-1 12:00:00Z
+  text: Version 0.3.8 of this plugin is available from a new maintainer, but your version still looks for updates at the
+    repository of the old maintainer. Please uninstall the old plugin from the plugin manager, then reinstall from the plugin
+    repository to update it. The release notes of the version by the new maintainer can be found at the "Read more..." link below.
+  link: https://github.com/gbonesso/OctoPrint-LEDStripControl/releases/tag/v0.3.8
+- plugin: SlicerSettingsParser
+  pluginversions: ["<3.0.0"]
+  versions: []
+  date: 2022-12-11 18:00:00Z
+  text: Version 3.0.0 of this plugin is available from a new maintainer, but your version still looks for updates at the
+    repository of the old maintainer. Please uninstall the old plugin from the plugin manager, then reinstall from the plugin
+    repository to update it. The release notes of the version by the new maintainer can be found at the "Read more..." link below.
+  link: https://github.com/larsjuhw/OctoPrint-SlicerSettingsParser/releases/tag/v3.0.1
+- plugin: systemcommandeditor
+  pluginversions: ["<1.0.0"]
+  versions: []
+  date: 2022-12-25 12:00:00Z
+  text: Version 1.0.0+ of this plugin is available from a new maintainer, but your version still looks for updates at the
+    repository of the old maintainer. Please uninstall the old plugin from the plugin manager, then reinstall from the plugin
+    repository to update it. The release notes of the version by the new maintainer can be found at the "Read more..." link below.
+  link: https://github.com/synman/OctoPrint-SystemCommandEditor/releases/tag/1.0.0
+- plugin: webhooks
+  pluginversions: ["<3.1.3"]
+  versions: []
+  date: 2023-2-2 12:00:00Z
+  text: Version 3.1.3+ of this plugin is available from a new maintainer, but your version still looks for updates at the
+    repository of the old maintainer. Please uninstall the old plugin from the plugin manager, then reinstall from the plugin
+    repository to update it. The release notes of the version by the new maintainer can be found at the "Read more..." link below.
+  link: https://github.com/derekantrican/OctoPrint-Webhooks/releases/tag/3.1.3
+- plugin: octolight
+  pluginversions: ["<0.1.5"]
+  versions: ["0.1.0", "0.1.1", "0.1.2", "0.1.3", "0.1.4"]
+  date: 2023-9-16 12:00:00Z
+  text: Version 0.1.5 of this plugin is available from a new maintainer, but your version still looks for updates at the
+    repository of the old maintainer. Please re-install the plugin from the repository to update and keeping your
+    settings. The release notes of the version by the new maintainer can be found at the "Read more..." link below.
+  link: https://github.com/thomst08/OctoLight/releases/tag/v0.1.5
+- plugin: PrintJobHistory
+  pluginversions: ["<1.17.1"]
+  versions: []
+  date: 2023-11-27 12:00:00Z
+  text: Version 1.17.1 of this plugin is available from a new maintainer. The release notes of the version by the
+    new maintainer can be found at the "Read more..." link below.
+  link: https://github.com/dojohnso/OctoPrint-PrintJobHistory/releases/tag/1.17.1
+- plugin: SpoolManager
+  pluginversions: ["<1.7.1"]
+  versions: []
+  date: 2023-12-06 12:00:00Z
+  text: Version 1.7.1 of this plugin is available from a new maintainer. The release notes of the version by the
+    new maintainer can be found at the "Read more..." link below.
+  link: https://github.com/dojohnso/OctoPrint-SpoolManager/releases/tag/1.7.1

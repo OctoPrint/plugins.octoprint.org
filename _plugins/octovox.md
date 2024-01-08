@@ -32,7 +32,8 @@ screenshots:
   caption: Alexa Response
 
 featuredimage: /assets/img/plugins/octovox/alexa_response.png
-
+compatibility:
+  python: '>=2.7,<4'
 ---
 
 The OctoVox plugin for OctoPrint sends limited printer information to a database for access via Amazon Echo devices.

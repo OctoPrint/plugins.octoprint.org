@@ -3,7 +3,7 @@ layout: plugin
 
 id: gcodeleveling
 title: OctoPrint-GcodeLeveling
-description:  Leveling of Z values in Gcode using manually measured positions
+description: Leveling of Z values in Gcode using manually measured positions
 authors:
 - Will MacCormack
 license: AGPLv3
@@ -28,6 +28,8 @@ screenshots:
   caption: Gcode Leveling Point Entry
 
 featuredimage: /assets/img/plugins/gcodeleveling/point-entry.png
+compatibility:
+  python: '>=2.7,<4'
 ---
 
 # Gcode Leveling

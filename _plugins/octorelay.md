@@ -14,7 +14,7 @@ date: 2021-03-13
 
 homepage: https://github.com/borisbu/OctoRelay
 source: https://github.com/borisbu/OctoRelay
-archive: https://github.com/borisbu/OctoRelay/archive/master.zip
+archive: https://github.com/borisbu/OctoRelay/releases/latest/download/release.zip
 
 # Set this to true if your plugin uses the dependency_links setup parameter to include
 # library versions not yet published on pypi. SHOULD ONLY BE USED IF THERE IS NO OTHER OPTION!
@@ -28,14 +28,14 @@ tags:
 - switch
 
 screenshots:
-- url: /assets/img/plugins/octorelay/screenshot.png
+- url: /assets/img/plugins/octorelay/controls.jpg
   alt: navbar customization
   caption: navbar customization
 - url: /assets/img/plugins/octorelay/settings.png
   alt: settings
   caption: settings
 
-featuredimage: /assets/img/plugins/octorelay/screenshot.png
+featuredimage: /assets/img/plugins/octorelay/controls.jpg
 
 # You only need the following if your plugin requires specific OctoPrint versions or
 # specific operating systems to function - you can safely remove the whole
@@ -54,7 +54,7 @@ compatibility:
   # OctoPrint versions being supported.
 
   octoprint:
-  - 1.3.0
+  - 1.5.3
 
   # List of compatible operating systems
   #
@@ -85,7 +85,7 @@ compatibility:
   # If your plugin only supports Python 2 (worst case, not recommended for newly developed plugins since Python 2
   # is EOL), leave at ">=2.7,<3"
 
-  python: ">=2.7,<4"
+  python: ">=3.7,<4"
 
 ---
 

@@ -22,6 +22,7 @@ compatibility:
   octoprint:
   - 1.2.6
 
+  python: '>=2.7,<4'
 ---
 
 Inject GCODE at specified layers to allow multi color printing based on a regular expression

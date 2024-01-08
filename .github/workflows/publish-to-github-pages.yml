@@ -1,4 +1,4 @@
-name: Build, validate & publish page
+name: Build, validate & deploy page
 
 on:
   schedule:
@@ -11,131 +11,88 @@ on:
       - gh-pages
   workflow_dispatch:
 
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
-  build-validate-and-publish:
-    name: Publish to Github Pages
+  build:
+    name: Build and validate
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-        with:
-          path: src
-
-      - uses: actions/checkout@v2
-        with:
-          path: live
-          ref: master
+      - uses: actions/checkout@v3
 
       - name: 🐍 Set up Python 3.7
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v4
         with:
           python-version: "3.7"
 
       - name: 🐍 Install requirements
         run: |
-          pip install -r ./src/.github/scripts/requirements.txt
+          pip install -r ./.github/scripts/requirements.txt
 
       - name: 📺 Refresh youtube thumbnails
         run: |
-          cd src
           chmod +x .github/scripts/fetch_yt_preview
           .github/scripts/fetch_yt_preview
 
       - name: 🕵️‍♂ Validate front matter
         run: |
-          cd src
           python .github/scripts/validate_front_matter.py --action-output
 
       - name: 🏗 Enrich front matter
         if: github.repository == 'OctoPrint/plugins.octoprint.org' && github.event_name != 'pull_request'
         run: |
-          python ./src/.github/scripts/populate_additional_metadata.py
+          python ./.github/scripts/populate_additional_metadata.py
         env:
           GITHUB_TOKEN: ${{ secrets.metadata_token }}
 
       - name: 🏗 Enrich notices
         if: github.repository == 'OctoPrint/plugins.octoprint.org' && github.event_name != 'pull_request'
         run: |
-          python ./src/.github/scripts/populate_additional_notices.py
+          python ./.github/scripts/populate_additional_notices.py
         env:
           GITHUB_TOKEN: ${{ secrets.metadata_token }}
 
       - name: 🏗 Enrich py2 check overlays
         if: github.repository == 'OctoPrint/plugins.octoprint.org' && github.event_name != 'pull_request'
         run: |
-          python ./src/.github/scripts/populate_py2_overlays.py
+          python ./.github/scripts/populate_py2_overlays.py
 
-      - name: 📦 Cache jekyll build bundle
-        uses: actions/cache@v2
+      - name: 💎 Set up Ruby 3
+        uses: ruby/setup-ruby@v1
         with:
-          path: ./bundle
-          key: ${{ runner.os }}-jekyll-build-bundle
-
+          ruby-version: '3.2'
+          bundler-cache: true
+      
       - name: 🔨 Build page
         run: |
-          docker run \
-          -v ${{ github.workspace }}/src:/srv/jekyll \
-          -v ${{ github.workspace }}/bundle:/usr/local/bundle \
-          jekyll/builder:3.8.6 /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --trace --future --strict_front_matter"
-
-      - name: 🔄 Prepare live copy
-        run: |
-          rm -rf live/* || true
-          touch live/.nojekyll
-          cp -r src/_site/* live
-
-      - name: 🔎 Determine changed files
-        id: changed
-        run: |
-          cd live
-          git diff --name-only
-          changed=($(git diff --name-only))
-          json=`printf '%s\n' "${changed[@]}" | jq -R . | jq -c -s .`
-          echo "::set-output name=files::$json"
+          bundle exec jekyll build --future --trace
 
       - name: 🕵️‍♂️ Validate plugins.json
-        if: contains( fromJSON( steps.changed.outputs.files ), 'plugins.json' )
         run: |
           docker run \
-          -v ${{ github.workspace }}/live:/json \
+          -v ${{ github.workspace }}/_site:/json \
           peterdavehello/jsonlint jsonlint -q /json/plugins.json
 
       - name: 🕵️‍♂️ Validate notices.json
-        if: contains( fromJSON( steps.changed.outputs.files ), 'notices.json' )
         run: |
           docker run \
-          -v ${{ github.workspace }}/live:/json \
+          -v ${{ github.workspace }}/_site:/json \
           peterdavehello/jsonlint jsonlint -q /json/notices.json
 
       - name: 🕵️‍♂️ Validate search.json
-        if: contains( fromJSON( steps.changed.outputs.files ), 'search.json' )
         run: |
           docker run \
-          -v ${{ github.workspace }}/live:/json \
+          -v ${{ github.workspace }}/_site:/json \
           peterdavehello/jsonlint jsonlint -q /json/search.json
 
-      #- name: 🕵️‍♂️ Run link check
-      #  run: |
-      #    docker run \
-      #    -v ${{ github.workspace }}/_site:/mounted-site \
-      #    mtlynch/htmlproofer /mounted-site --only-4xx --check-favicon --check-html --file-ignore '/\/mounted-site\/search\/index\.php/,/\/mounted-site\/by_(author|tag|date|name)\/index\.html/' --log-level ':debug'
-
-      #- name: 🕵️‍♂️ Run link check
-      #  id: lc
-      #  uses: peter-evans/link-checker@v1
-      #  with:
-      #    args: -v -r -d ./_site/ ./_site/
-      #- name: 🕵️‍♂️ Evaluate link check
-      #  run: exit ${{ steps.lc.outputs.exit_code }}
-
-      - name: 🚀 Commit & deploy
-        if: github.repository == 'OctoPrint/plugins.octoprint.org' && github.event_name != 'pull_request'
-        uses: EndBug/add-and-commit@v4
+      - name: ⬆ Upload pages artifact
+        uses: actions/upload-pages-artifact@v1
         with:
-          cwd: "live"
-          ref: "master"
-          message: "deploy: ${{ github.sha }}"
-          author_name: 'github-actions[bot]'
-          author_email: 'github-actions[bot]@users.noreply.github.com'
+          path: ./_site
 
       - name: 📧 Discord success notification
         if: github.repository == 'OctoPrint/plugins.octoprint.org' && github.event_name != 'pull_request'
@@ -152,3 +109,18 @@ jobs:
         uses: Ilshidur/action-discord@master
         with:
           args: '🚫 Page build for plugins.octoprint.org failed'
+
+  deploy:
+    name: "Deploy"
+    runs-on: ubuntu-latest
+    needs: build
+    if: github.repository == 'OctoPrint/plugins.octoprint.org' && github.event_name != 'pull_request'
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1

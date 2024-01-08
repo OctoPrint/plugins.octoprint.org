@@ -3,7 +3,8 @@ layout: plugin
 
 id: slicer
 title: Full-featured Slicer
-description: A full-blown GUI-based slicer. Rotate and scale model; slice multiple STL files at a time; set layer height and other slicing settings.
+description: A full-blown GUI-based slicer. Rotate and scale model; slice multiple
+  STL files at a time; set layer height and other slicing settings.
 authors:
 - eyal0
 - Kenneth Jiang
@@ -46,6 +47,7 @@ compatibility:
   octoprint:
   - 1.2.14
 
+  python: '>=2.7,<4'
 abandoned: https://github.com/OctoPrint/plugins.octoprint.org/issues/911
 
 ---

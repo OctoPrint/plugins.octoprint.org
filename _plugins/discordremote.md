@@ -59,6 +59,4 @@ It is currently capable of:
 * Taking a snapshot with the configured webcam.
 * Connecting and Disconnecting to the printer.
 
-
-**Important**: There are no permissions or controls as to who can send commands to the bot.
-This **MUST** be done by the owner of the Discord channel.
+And more, see: https://github.com/cameroncros/OctoPrint-DiscordRemote for more details.
