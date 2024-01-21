@@ -7,7 +7,7 @@ description: Plugin allowing to ignore upcoming pauses in gcode or add additiona
 author: jneilliii
 license: AGPLv3
 
-date: 2023-12-16
+date: 2024-01-22
 
 homepage: https://github.com/jneilliii/OctoPrint-PauseManagement
 source: https://github.com/jneilliii/OctoPrint-PauseManagement
