@@ -8,7 +8,7 @@ homepage: https://github.com/edekeijzer/OctoPrint-API-Notifications
 source: https://github.com/edekeijzer/OctoPrint-API-Notifications
 author: Erik de Keijzer
 license: AGPLv3
-date: 2024-02-21
+date: 2024-01-21
 tags:
 - notification
 - notify
