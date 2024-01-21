@@ -33,18 +33,18 @@ tags:
 - bcm
 
 screenshots:
-- url: /assets/img/plugins/gpiostatus/GPIO.png
-  alt: GPIO.png
-  caption: GPIO status representation
-- url: /assets/img/plugins/gpiostatus/Hardware.png
-  alt: Hardware.png
-  caption: Hardware page data
-- url: /assets/img/plugins/gpiostatus/Services.png
-  alt: Services.png
-  caption: Services page data
-- url: /assets/img/plugins/gpiostatus/Refresh.png
-  alt: Refresh.png
-  caption: Refresh button
+#- url: /assets/img/plugins/gpiostatus/GPIO.png
+#  alt: GPIO.png
+#  caption: GPIO status representation
+#- url: /assets/img/plugins/gpiostatus/Hardware.png
+#  alt: Hardware.png
+#  caption: Hardware page data
+#- url: /assets/img/plugins/gpiostatus/Services.png
+#  alt: Services.png
+#  caption: Services page data
+#- url: /assets/img/plugins/gpiostatus/Refresh.png
+#  alt: Refresh.png
+#  caption: Refresh button
 
 featuredimage: /assets/img/plugins/gpiostatus/GPIO.png
 
