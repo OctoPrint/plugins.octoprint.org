@@ -54,3 +54,9 @@ webhooks:
   pip: https://github.com/derekantrican/OctoPrint-Webhooks/archive/{target_version}.zip
 octolight:
   user: thomst08
+PrintJobHistory:
+  user: dojohnso
+  pip: https://github.com/dojohnso/OctoPrint-PrintJobHistory/releases/download/{target_version}/main.zip
+SpoolManager:
+  user: dojohnso
+  pip: https://github.com/dojohnso/OctoPrint-SpoolManager/releases/download/{target_version}/main.zip
