@@ -98,7 +98,14 @@ Curently, you can configure settings:
 	![Raspberry Pi GPIO](/assets/img/plugins/octolight/rpi_gpio.png)
 
 - `Inverted output`: If true, the output will be inverted
-	- Usage: if you have a light, that is turned off when voltage is applied to the pin (wired in negative logic), you should turn on this option, so the light isn't on when you reboot your Raspberry Pi.
+	- Usage: If you have a light, that is turned off when voltage is applied to the pin (wired in negative logic), you should turn on this option, so the light isn't on when you reboot your Raspberry Pi.
+
+- `Light is a button`: If true, the output will be treated as a button press
+	- Usage: This function allows OctoLight to toggle the Raspberry Pi pin on and off with a small delay to allow for lights that require a button press to change states.
+
+- `Button Press delay (ms)`: This sets a time out for how long a button press is, this is only used if `Light is a button` is enabled.
+	- Default value: 200
+	- Note: This value is in micro seconds.
 
 - `Delay Light Off (mins)`: This sets a time out for when the light will automatically turn its self-off in an event
 	- Default value: 5
