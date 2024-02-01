@@ -57,7 +57,7 @@ Once that is set up and running, you'll be able to install this plugin. It can b
 from the plugin manager or manually using this URL:
 
 ```
-https://github.com/cp2004/OctoPrint-CameraStreamer-Control/archive/refs/heads/main.zip
+https://github.com/cp2004/OctoPrint-CameraStreamer-Control/releases/latest/download/release.zip
 ```
 
 Once installed, you should see your webcam stream still in the control tab,
