@@ -12,7 +12,7 @@ date: 2024-02-01
 
 homepage: https://github.com/cp2004/OctoPrint-CameraStreamer-Control
 source: https://github.com/cp2004/OctoPrint-CameraStreamer-Control
-archive: https://github.com/cp2004/OctoPrint-CameraStreamer-Control/releases/latest/release.zip
+archive: https://github.com/cp2004/OctoPrint-CameraStreamer-Control/releases/latest/download/release.zip
 
 tags:
 - webcam
