@@ -7,7 +7,7 @@ description: Sub Plugin for SIO Control. Create Reactions to changes in IO, GCod
 authors: 
 - jcassel
 license: AGPLv3
-date: 2024-04-11
+date: 2024-02-11
 homepage: https://github.com/jcassel/OctoPrint-SIOReaction
 source: https://github.com/jcassel/OctoPrint-SIOReaction
 archive: https://github.com/jcassel/OctoPrint-SIOReaction/archive/main.zip
