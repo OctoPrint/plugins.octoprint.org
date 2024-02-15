@@ -61,11 +61,9 @@ compatibility:
 ---
 #### Alternative to GPIO if you want to add some electronic/improvements to your printer. Works on Linux and Windows. 
 
-You can now control local IO for Octoprint instances that are not running on a SBC like a Rasberry Pi. You can have GPIO like features if you are running OctoPrint on Windows. 
-The interface was modeled after the GPIO Control Plugin, but has some very distinguishing features that set it apart. Adds a sidebar with on/off buttons for controlling of Outputs 
-and monitoring of Inputs. Is also a SubPlugin for integration with PSU control, incorporates a physical EStop and a Simple Filament runout as sensor. A true alterative GPIO 
-control for users that are not using a Raspberry Pi or other device that has onboard local IO. Does requires a Microcontroller as the IO. 
+Control relays and lights or add buttons at your printer to help with setup and Filament changes. Automate your enclosure. Get GPIO features if you are running OctoPrint on Windows or a Linux mini PC. It adds a sidebar with on/off buttons for controlling of outputs/relays and monitoring of Input states. It also can place buttons and indicators in the top navigation bar for quick access. It can be configured to act as a Sub-PlugIn for integration with PSU control PlugIn, incorporates a physical E-Stop configuration and a Filament runout as sensor configuration. The alterative when native GPIO is not available on your OctoPrint  device. This solution uses an inexpensive microcontroller as the IO. Just plug it into your USB Port and use its IO to control your devices.
 
+Find Sub Plugins: <https://plugins.octoprint.org/by_tag/#tag-siocontrol-subplugin>
 
 ## Setup
 
@@ -75,10 +73,15 @@ or manually using this URL:
     https://github.com/jcassel/OctoPrint-Siocontrol/archive/main.zip
 
 Use the power of an Arduino compatible micro controller to be the IO. 
-The inexpensive ESP8266 and ESP32(Examples available), both can be used as the IO controller. 
-This uses the serial connection of the controler when communicating with Octoprint. Wifi version is in the works. 
-Firmware is easily adapted to run on many standard Arduino compatible devices. 
-See [Example firmware](https://github.com/jcassel/OctoPrint_SIOControl_Firmware) and information on how to make or buy a [compatible IO board](https://www.tindie.com/products/softwaresedge/octoprint-serial-io-kit/). 
+The inexpensive ESP8266 and ESP32(Examples available) or even an Arduino Nanno, all can be used as the IO controller. 
+The firmware makes use of the serial UART connection of the micro controller when communicating with Octoprint. 
+
+
+There are lots of options for the Firmware. Its easily adapted to run on many standard Arduino compatible devices or you can buy an already setup [controler kit](https://www.tindie.com/stores/softwaresedge/) at a reasonable price. 
+
+
+See [Example firmware](https://github.com/jcassel/OctoPrint_SIOControl_Firmware) and information on how to make or buy a [compatible IO board](https://www.tindie.com/products/softwaresedge/octoprint-serial-io-kit/). and other OctoPrint adjacent products.
+
 
 ## Configuration
 
@@ -87,10 +90,11 @@ Configure the Serial port details.
 - Baudrate  
 - Sensing/reporting interval
 
-Simple selections for integrations
-- Enable and select IO point for PSU Control Sub Plugin.
-- Enable and select IO point for physical EStop.
-- Enable and select IO point for Filament runout sensor.
+
+Simple built in Integrations
+- Enable and select IO point as a switching and sensing; PSU Control Sub Plugin.
+- Enable and select IO point for physical EStop using (M112) GCode when triggered.
+- Enable and select IO point for Filament runout sensor. Causes a pause to be sent to the printer.
 
 
 Setting up IO in the plugIn is easy:
@@ -101,3 +105,7 @@ Setting up IO in the plugIn is easy:
     - [Type]_HIGH means that device is __on for high state__ and __off for low state__
     - [Type]_LOW means that device is __on for low state__ and __off for high state__
 - select if device should be on or off by default e.g. on Octoprint startup.
+
+## Do more with a Sub Plugin:
+
+Use the [SIO Reacton sub plugin](https://plugins.octoprint.org/plugins/SIOReaction/) and create "Reactions" to take place when SIO configured IO points change state.
