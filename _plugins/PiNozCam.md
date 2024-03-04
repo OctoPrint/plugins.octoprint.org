@@ -4,9 +4,7 @@ layout: plugin
 id: PiNozCam
 title: OctoPrint-PiNozCam
 description: AI-driven FREE monitoring for 3D print failures using Pi Arm CPU.
-author: 
-- DrAlexLiu
-- FabricSoul
+author: DrAlexLiu
 license: AGPLv3
 
 date: 2024-03-03
