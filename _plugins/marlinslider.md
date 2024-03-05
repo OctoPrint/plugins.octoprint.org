@@ -9,7 +9,7 @@ authors:
 license: AGPLv3
 
 
-date: 2023-05-20
+date: 2024-03-05
 
 homepage: https://github.com/CmdrCody51/OctoPrint-MarlinSlider
 source: https://github.com/CmdrCody51/OctoPrint-MarlinSlider
@@ -46,7 +46,7 @@ If you experience issues with this plugin or need assistance please use the issu
 Check out my other plugins [here](https://plugins.octoprint.org/by_author/#CmdrCody51)
 
 I, CmdrCody51, programmed this plugin for fun and do my best effort to support those that have issues with it, please return the favor 
-and leave me a tip or become a Patron if you find this plugin helpful and want me to continue future development.
+and leave me a tip if you find this plugin helpful and want me to continue future development.
 
 [![Ko-Fi](/assets/img/plugins/marlinslider/Ko-fi_Donate.png)](https://ko-fi.com/cmdrcody) or [![GitHub](/assets/img/plugins/marlinslider/github-mark-small.png)](https://github.com/CmdrCody51/OctoPrint-MarlinSlider)Use GitHub!
 
