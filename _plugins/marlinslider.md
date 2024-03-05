@@ -9,7 +9,7 @@ authors:
 license: AGPLv3
 
 
-date: 2024-03-05
+date: 2023-05-20
 
 homepage: https://github.com/CmdrCody51/OctoPrint-MarlinSlider
 source: https://github.com/CmdrCody51/OctoPrint-MarlinSlider
