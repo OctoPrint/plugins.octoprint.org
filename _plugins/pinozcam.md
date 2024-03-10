@@ -65,30 +65,51 @@ Unlock advanced 3D printing monitoring with PiNozCam, your go-to solution for **
 
 Download PiNozCam today and enjoy uninterrupted, worry-free 3D printing forever.
 
-## Setup
+
+## 🔧 Setup
+
 
 ### Hardware Setup
 
 #### **Raspberry Pi with Cooling Fan**
 
-- Raspberry Pi 5(x64, >=4GB): 30 images / minute (Highly Recommand)
+
+- Raspberry Pi 5(>=4GB): 30 images / minute (Highly Recommand)
   
   Example: Use [Octoprint_deploy](https://github.com/paukstelis/octoprint_deploy) to install the octoprint and then install PiNozCam
-- Raspberry Pi 4B(x32, >=4GB) : 9 images / minute (Recommand)
+- Raspberry Pi 4B(>=2GB) : 9 images / minute (Recommand)
   
   Example: Use (RPi Imager to flash OctoPi)[https://www.raspberrypi.com/tutorials/set-up-raspberry-pi-octoprint/] and install the PiNozCam
 
-We strongly recommend **fan cooling** to maintain optimal performance. Although PiNozCam can run on Raspberry Pi 3 and PiZero W 2, their longer inference times make them less recommended options. 
+- Raspberry Pi 3B(>=2GB) : 5 images / minute (Acceptable)
+
+  It is advised to adjust the **Max Failure Count to 1** for quick failure stop when operating at this rate of inference.
+
+We strongly recommend **fan cooling** to maintain optimal performance. Although PiNozCam can run on PiZero W 2, their longer inference times make them less recommended options.
+
+⚠️ **Limitation**: Please note, PiNozCam is optimized for **stable OctoPi images** (Bullseye in 32-bit OS system) and all **64-bit OS systems**. For those utilizing other 32-bit Debian platforms, such as OctoPi Nightly (Bookworm armhf platforms) or older OctoPi images (Buster armhf platforms), it's essential to select arm64 builds for compatibility. This ensures a seamless experience and maintains the high performance of PiNozCam in diverse environments.
+
+However, PiNozCam can run other CPUs. If you want to use other methods:
+
+- **PC with Intel i5 10600** (x64, Ubuntu) : 150 images / minute
+  
+  Example: Use [Octoprint docker](https://hub.docker.com/r/octoprint/octoprint) and install the PiNozCam
+
+- **OrangePi Zero 2/3** (x64, Ubuntu) : 7 images / minute
+  
+  PiNozCam supports Allwinner (>=H616) and Rockchip (>=RK3566) series. Make sure the memory is at least 1GB. Recommanded >=2GB. 
+
 
 #### **Endoscope Camera**
 
 Most market-available endoscope cameras are compatible with this setup. Ensure your camera:
 - Operates at a [16:9 30Hz](https://community.octoprint.org/t/how-can-i-change-mjpg-streamer-parameters-on-octopi/203) frequency to minimize motion blur and better experience.
-- Supports a minimum resolution of 480P.
+- Supports a minimum resolution of **480P**.
 - Features built-in lighting for enhanced detection quality.
-- Is positioned approximately 10 cm from the nozzle. 
+- Is positioned **approximately 10 cm** from the nozzle. 
 
-**Cleaning the camera lens** before each print is crucial as dust can accumulate and affect detection accuracy.
+⚠️ **Cleaning the camera lens** before each print is crucial as dust can accumulate and affect detection accuracy.
+
 
 The setup would be like this:
 
@@ -97,6 +118,13 @@ The setup would be like this:
 ### **Software Configuration**
 
 Screenshot:
+
+
+Go to PiNozCam Tab in Octoprint:
+
+![Tab](/assets/img/plugins/pinozcam/tab.png)
+
+The screenshot would be:
 
 ![screenshot](/assets/img/plugins/pinozcam/screenshot.png)
 
@@ -110,11 +138,11 @@ Screenshot:
 - **Failure Consider Time (s):** Implement a time buffer to focus on recent failures, ignoring older detections that may no longer be relevant. This dynamic consideration helps in adapting to the current state of the print.
 - **CPU Speed Control:** Offers options for running the CPU at half or full speed. Half speed is recommended in warmer conditions without adequate cooling to prevent overheating. Full speed is optimal with enforced cooling.
 
-For notifications, enter your [Telegram bot token and chat ID](https://gist.github.com/nafiesl/4ad622f344cd1dc3bb1ecbe468ff9f8a)
-.
 
-Initially, stick with the default settings and adjust them gradually to fine-tune performance.
+To enable notifications, enter your [Telegram bot token and chat ID](https://gist.github.com/nafiesl/4ad622f344cd1dc3bb1ecbe468ff9f8a)
+. Following a successful configuration, a welcome message will be sent to your Telegram after you click "Save". An example notification will be sent like this:
 
+![Telegram_notification](/assets/img/plugins/pinozcam/telegram_notification.jpg)
 
 ## Final Step: Start Printing
 
