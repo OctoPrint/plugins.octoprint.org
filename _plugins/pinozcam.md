@@ -7,7 +7,7 @@ description: AI-driven FREE monitoring for 3D print failures using Pi Arm CPU.
 author: DrAlexLiu
 license: AGPLv3
 
-date: 2024-03-03
+date: 2024-03-06
 
 homepage: https://github.com/DrAlexLiu/OctoPrint-PiNozCam
 source: https://github.com/DrAlexLiu/OctoPrint-PiNozCam
