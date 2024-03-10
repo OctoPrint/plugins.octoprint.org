@@ -65,11 +65,14 @@ Unlock advanced 3D printing monitoring with PiNozCam, your go-to solution for **
 
 Download PiNozCam today and enjoy uninterrupted, worry-free 3D printing forever.
 
+
 ## 🔧 Setup
+
 
 ### Hardware Setup
 
 #### **Raspberry Pi with Cooling Fan**
+
 
 - Raspberry Pi 5(>=4GB): 30 images / minute (Highly Recommand)
   
@@ -96,6 +99,7 @@ However, PiNozCam can run other CPUs. If you want to use other methods:
   
   PiNozCam supports Allwinner (>=H616) and Rockchip (>=RK3566) series. Make sure the memory is at least 1GB. Recommanded >=2GB. 
 
+
 #### **Endoscope Camera**
 
 Most market-available endoscope cameras are compatible with this setup. Ensure your camera:
@@ -106,6 +110,7 @@ Most market-available endoscope cameras are compatible with this setup. Ensure y
 
 ⚠️ **Cleaning the camera lens** before each print is crucial as dust can accumulate and affect detection accuracy.
 
+
 The setup would be like this:
 
 ![nozzle_cam_setup](/assets/img/plugins/pinozcam/nozzle_cam_setup.jpg)
@@ -113,6 +118,7 @@ The setup would be like this:
 ### **Software Configuration**
 
 Screenshot:
+
 
 Go to PiNozCam Tab in Octoprint:
 
@@ -131,6 +137,7 @@ The screenshot would be:
 - **Max Failure Count:** Specify the number of detections required in **Failure Consider Time** before PiNozCam takes the configured action. A value above 1 is recommended to avoid false positives.
 - **Failure Consider Time (s):** Implement a time buffer to focus on recent failures, ignoring older detections that may no longer be relevant. This dynamic consideration helps in adapting to the current state of the print.
 - **CPU Speed Control:** Offers options for running the CPU at half or full speed. Half speed is recommended in warmer conditions without adequate cooling to prevent overheating. Full speed is optimal with enforced cooling.
+
 
 To enable notifications, enter your [Telegram bot token and chat ID](https://gist.github.com/nafiesl/4ad622f344cd1dc3bb1ecbe468ff9f8a)
 . Following a successful configuration, a welcome message will be sent to your Telegram after you click "Save". An example notification will be sent like this:
