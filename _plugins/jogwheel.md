@@ -8,7 +8,7 @@ authors:
 - jneilliii
 license: AGPLv3
 
-date: 2024-03-24
+date: 2024-03-25
 
 homepage: https://github.com/jneilliii/OctoPrint-JogWheelControl
 source: https://github.com/jneilliii/OctoPrint-JogWheelControl
