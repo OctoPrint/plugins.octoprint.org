@@ -1,11 +1,11 @@
 ---
 layout: plugin
 
-id: autocal
+id: ulendocaas
 title: Ulendo Calibration as a Service
 description: Double the performance of your legacy printer with Ulendo CaaS. CaaS automatically tunes vibration compensation parameters for firmware using FT-MOTION module, allowing printers to reduce print times by 50% while maintaining high levels of accuracy.
 authors: info@ulendo.io
-license: ""
+license: AGPLv3
 
 # today's date in format YYYY-MM-DD, e.g.
 date: 2024-06-06
@@ -28,20 +28,20 @@ tags:
 - speed
 
 screenshots:
-- url: /assets/img/plugins/UlendoCaas/realtime_accelerometer_updates.png
+- url: /assets/img/plugins/ulendocaas/realtime_accelerometer_updates.png
   alt: view of the pre-computed response of the selected input shaper
   caption: projected response
-- url: /assets/img/plugins/UlendoCaas/detailed_vibration_compensation_analysis.png
+- url: /assets/img/plugins/ulendocaas/detailed_vibration_compensation_analysis.png
   alt: view of the pre-computed response of the selected input shaper
   caption: projected response
-- url: /assets/img/plugins/UlendoCaas/compensation_verification.png
+- url: /assets/img/plugins/ulendocaas/compensation_verification.png
   alt: view of the measured vibration response after the compensation is applied
   caption: actual vibration response after compensation
-- url: /assets/img/plugins/UlendoCaas/plugin_configuration.png
+- url: /assets/img/plugins/ulendocaas/plugin_configuration.png
   alt: overview of configuration available through the settings window
   caption: advanced configuration options
 
-featuredimage: /assets/img/plugins/UlendoCaas/CaaS_Ad4.png
+featuredimage: /assets/img/plugins/ulendocaas/CaaS_Ad4.png
 
 # You only need the following if your plugin requires specific OctoPrint versions or
 # specific operating systems to function - you can safely remove the whole
@@ -100,6 +100,14 @@ compatibility:
 Ulendo Calibration as a service plugin for OctoPrint is a plugin that is designed to help users maximize the performance of their printer. 
 
 This tool is meant to allow users to quickly and efficiently evaluate and select a compensation strategy that is right for their printer. Ulendo's Calibration as a Service platform quickly evaluates hundreds of potential compensation parameters and directly recommends the option that will provide the best vibration compensation while minimizing rounding. 
+
+Getting started with the plugin
+<figure style="text-align:center">
+    {% include youtube.html vid="hKaipyAW81c"  preview="'/assets/img/plugins/ulendocaas/CaaS Overview.png'" %}
+    <figcaption>
+        <a href="https://www.youtube.com/watch?v=hKaipyAW81c">Ulendo CaaS</a> Getting Started
+    </figcaption>
+</figure>
 
 With the support of the FT_MOTION feature, this plugin can allow printers to print at over 2X the typical speed and acceleration without any additional hardware modifications to their machines. 
 
