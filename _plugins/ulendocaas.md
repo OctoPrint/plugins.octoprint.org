@@ -8,7 +8,7 @@ authors: info@ulendo.io
 license: AGPLv3
 
 # today's date in format YYYY-MM-DD, e.g.
-date: 2024-01-02
+date: 2024-06-06
 
 homepage: https://github.com/S2AUlendo/UlendoCaaS
 source: https://github.com/S2AUlendo/UlendoCaaS
