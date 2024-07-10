@@ -159,30 +159,4 @@ Currently, you can configure settings:
 
 ## API
 
-**Note:** As of version 1.0.1, the API has been updated to be more in line with a RESTFUL standard, instead of functions being changed with a ``GET`` request, the new setup requires a ``POST`` request and the command to be sent in the body.  To keep backwards compatibility with previous API calls, the previous ``GET`` commands can still be used, however, it is recommended to update as these commands will be removed around the end of 2024.  Please reach out if this is an issue or if you need help.  Please have a look at the new API calls below to update.
-
-Base API URL: `http://YOUR_OCTOPRINT_SERVER/api/plugin/octolight`
-
-This API returns light state in JSON for both ``GET`` and ``POST`` requests: ``{state: true}`` <br />
-- ``GET`` calls will require a API key with the "STATUS" permission.  Without this, you will receive a 403 error. <br />
-- ``POST`` calls will require a API key with the "CONTROL" permission.  Without this, you will receive a 403 error.
-
-#### Actions
-- **toggle**: Toggle light switch on/off.
-- **turnOn**: Turn on light.
-- **turnOff**: Turn off light.
-- **delayOff**: Turn on light and setup timer to shutoff light after delay time, note, `{ "delay": VALUE }` can be added to the body to override the default delay time.
-- **delayOffStop**: Shuts off timer and light.
-
-#### Examples
-
-##### GET Request
-- Check the light status: `curl -H "Content-Type: application/json" -H "X-Api-Key: YOUR_OCTOPRINT_API_KEY" -X GET http://YOUR_OCTOPRINT_SERVER/api/plugin/octolight`
-
-##### POST Requests
-- Toggle light: `curl -H "Content-Type: application/json" -H "X-Api-Key: YOUR_OCTOPRINT_API_KEY" -X POST -d '{"command": "toggle"}' http://YOUR_OCTOPRINT_SERVER/api/plugin/octolight`
-- Turn light on: `curl -H "Content-Type: application/json" -H "X-Api-Key: YOUR_OCTOPRINT_API_KEY" -X POST -d '{"command": "turnOn"}' http://YOUR_OCTOPRINT_SERVER/api/plugin/octolight`
-- Turn light off: `curl -H "Content-Type: application/json" -H "X-Api-Key: YOUR_OCTOPRINT_API_KEY" -X POST -d '{"command": "turnOff"}' http://YOUR_OCTOPRINT_SERVER/api/plugin/octolight`
-- Delay off with default value: `curl -H "Content-Type: application/json" -H "X-Api-Key: YOUR_OCTOPRINT_API_KEY" -X POST -d '{"command": "delayOff"}' http://YOUR_OCTOPRINT_SERVER/api/plugin/octolight`
-- Delay off after 3 min: `curl -H "Content-Type: application/json" -H "X-Api-Key: YOUR_OCTOPRINT_API_KEY" -X POST -d '{"command": "delayOff", "delay": 3}' http://YOUR_OCTOPRINT_SERVER/api/plugin/octolight`
-- Delay off stop: `curl -H "Content-Type: application/json" -H "X-Api-Key: YOUR_OCTOPRINT_API_KEY" -X POST -d '{"command": "delayOffStop"}' http://YOUR_OCTOPRINT_SERVER/api/plugin/octolight`
+**Note:** OctoLight supports API calls, please go to the following link to check the latest information: https://github.com/thomst08/OctoLight#api
