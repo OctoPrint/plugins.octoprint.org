@@ -250,3 +250,10 @@
   text: Version 1.7.1 of this plugin is available from a new maintainer. The release notes of the version by the
     new maintainer can be found at the "Read more..." link below.
   link: https://github.com/dojohnso/OctoPrint-SpoolManager/releases/tag/1.7.1
+- plugin: octolight
+  pluginversions: ["<1.0.0"]
+  versions: []
+  date: 2024-07-10 12:00:00Z
+  text: Version 1.0.1 of this plugin changes the API calls, if you use any external program to interact with OctoLight,
+  please click the "Read more..." link below to find out the new API changes.
+  link: https://github.com/thomst08/OctoLight/?tab=readme-ov-file#api
