@@ -64,6 +64,7 @@ The the syntax of the following slicers is known and selected automatically:
 * SuperSlicer
 * OctoSlicer
 * Bambu Studio
+* Snapmaker Luban
 
 
 A more detailed description and manual is available on Github - the plugin's homepage on the right.
