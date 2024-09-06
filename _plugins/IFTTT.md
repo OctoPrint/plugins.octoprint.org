@@ -27,7 +27,9 @@ screenshots:
 
 compatibility:
   python: ">=2.7,<4"
-  
+
+attributes:
+- cloud
 ---
 
 *Note: this plugin has not been tested with versions under 1.3.10; they may not work!*

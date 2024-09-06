@@ -27,6 +27,10 @@ compatibility:
     octoprint:
         - 1.6.0
     python: ">=3.7,<4"
+
+attributes:
+- cloud
+
 ---
 
 # OctoPrint OneDrive File Sync

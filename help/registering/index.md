@@ -174,6 +174,14 @@ If all is in the green, follow these steps:
       #python: ">=2.7,<3" # Python 2 & 3
       #python: ">=3,<4" # Python 3 only
 
+    # TODO
+    # If any of the below attributes apply to your project, uncomment the corresponding lines. This is MANDATORY!
+    
+    attributes:
+    #  - cloud  # if your plugin requires access to a cloud to function
+    #  - commercial  # if your plugin has a commercial aspect to it
+    #  - free-tier  # if your plugin has a free tier
+
     ---
 
     Longer description of your plugin, configuration examples etc. This part will be visible on the page at
@@ -233,8 +241,13 @@ If all is in the green, follow these steps:
         to ``<project url>/archive/your_branch.zip`` (``master``, ``main`` are commonly used as branch name) adjust your
         branching strategy to **only** have latest release there.
 
-    If you are unsure about how something should be structured take a look at the existing plugins or
-    [ask on the forum](https://community.octoprint.org/c/development).
+      * If your plugin **requires a cloud to function, has a commercial aspect to it and/or has a free tier** you *must*
+        mark it as such using the ``attributes`` property. If you are unsure about whether your plugin qualifies as being
+        commercial, ask for clarification on that in your registration pull request. Please note that commercial plugins are 
+        excluded from the public stats after some cases of manipulation.
+
+    If you are unsure about how something should be structured, take a look at the existing plugins or
+    [ask on the forum](https://community.octoprint.org/c/development) or in your registration pull request.
 
  4. Ideally, you'll test that your plugin gets listed correctly and the plugin page looks
     as expected. For this you'll need to install [Jekyll](http://jekyllrb.com/), which is what [Github Pages](https://pages.github.com/) and hence

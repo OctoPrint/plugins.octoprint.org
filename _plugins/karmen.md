@@ -55,6 +55,11 @@ compatibility:
   - freebsd
   python: ">=3,<4" # Python 3 only
 
+attributes:
+- cloud
+- commercial
+- free-tier
+
 ---
 
 Karmen

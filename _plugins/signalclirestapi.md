@@ -95,6 +95,9 @@ compatibility:
 
   python: ">=2.7,<4"
 
+attributes:
+- cloud
+
 ---
 
 # Features

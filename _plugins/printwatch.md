@@ -79,6 +79,11 @@ compatibility:
 
   python: ">=3.6,<4"
 
+attributes:
+- cloud
+- commercial
+- free-tier
+
 ---
 
 # PrintWatch - Free AI monitoring and remote management

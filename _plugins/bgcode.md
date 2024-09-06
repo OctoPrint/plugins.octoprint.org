@@ -72,6 +72,7 @@ After setting up OpenSSH server on settings tab, You can go to `http://<your-ip>
 ```
 apk add git
 apk add zlib-dev
+apk add cmake
 ```
 
 ## Get Help

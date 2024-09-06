@@ -74,6 +74,9 @@ compatibility:
   - macos
   - freebsd
 
+attributes:
+- cloud
+
 ---
 
 Receive SMS/Text notifications when OctoPrint jobs are complete.

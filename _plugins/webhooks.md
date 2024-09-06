@@ -35,6 +35,9 @@ featuredimage: /assets/img/plugins/webhooks/Featured.png
 compatibility:
   python: ">=2.7,<4"
 
+attributes:
+- cloud
+
 ---
 
 # *NOTE: this plugin has been abandoned by the original creator and adopted here by a new maintainer*

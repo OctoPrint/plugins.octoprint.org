@@ -12,6 +12,7 @@ date: 2017-12-15
 homepage: https://github.com/AstroPrint/OctoPrint-AstroPrint/blob/master/README.md
 source: https://github.com/AstroPrint/OctoPrint-AstroPrint
 archive: https://github.com/AstroPrint/OctoPrint-AstroPrint/archive/master.zip
+privacypolicy: https://www.astroprint.com/privacy
 
 # Set this to true if your plugin uses the dependency_links setup parameter to include
 # library versions not yet published on pypi. SHOULD ONLY BE USED IF THERE IS NO OTHER OPTION!
@@ -52,6 +53,11 @@ compatibility:
 
   octoprint:
   - 1.3.4
+
+attributes:
+- cloud
+- commercial
+- free-tier
 
 ---
 

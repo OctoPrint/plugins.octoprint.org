@@ -33,6 +33,9 @@ screenshots:
 featuredimage: /assets/img/plugins/octorant/featured.jpg
 compatibility:
   python: '>=2.7,<4'
+
+attributes:
+- cloud
 ---
 
 # OctoPrint-OctoRant 1.0.0

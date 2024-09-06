@@ -34,6 +34,9 @@ compatibility:
   - 1.2.4
 
   python: '>=2.7,<4'
+
+attributes:
+- cloud
 ---
 
 Recieve email notifications when OctoPrint jobs are complete.

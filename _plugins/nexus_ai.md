@@ -15,6 +15,7 @@ date: 2022-09-29
 homepage: https://fiber-punk.com/pages/nexusai
 source: https://github.com/fiberpunk1/OctoPrint-Nexus-AI
 archive: https://github.com/fiberpunk1/OctoPrint-Nexus-AI/archive/master.zip
+privacypolicy: https://fiber-punk.com/pages/privacy-policy
 
 # Set this if your plugin heavily interacts with any kind of cloud services.
 #privacypolicy: your plugin's privacy policy URL
@@ -85,6 +86,11 @@ compatibility:
 
   #python: ">=2.7,<3" # Python 2 & 3
   python: ">=3.6,<4" # Python 3 only
+
+attributes:
+- cloud
+- commercial
+- free-tier
 
 ---
 <br />

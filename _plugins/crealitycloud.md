@@ -35,6 +35,12 @@ compatibility:
   - freebsd
 
   python: ">=3,<4"
+
+attributes:
+- cloud
+- commercial
+- free-tier
+
 ---
 # OctoPrint-Crealitycloud
 

@@ -7,7 +7,9 @@ layout: plugin_list
     {% assign fixed = id | prepend: '/plugins/' %}
     {% assign topic_plugins = topic_plugins | push: fixed %}
 {% endfor %}
-{% assign sorted_plugins = site.plugins | where_exp: "plugin", "plugin.stats.month.instances" | sort: "stats.month.instances", "last" | reverse %}
+
+{% assign plugins_size = site.plugins | size %}
+{% assign sampled_plugins = site.plugins | sample: plugins_size %}
 
 <p><em>
   Topics are curated lists of plugins pertaining to a certain topic. They are provided for your convenience, they do not constitute official endorsement of any plugin.
@@ -16,7 +18,7 @@ layout: plugin_list
 {{ content }}
 
 <ul>
-  {% for plugin in sorted_plugins %}
+  {% for plugin in sampled_plugins %}
   {% if topic_plugins contains plugin.id %}
   <li>{% include plugin_snippet plugin=plugin %}</li>
   {% endif %}
@@ -26,5 +28,5 @@ layout: plugin_list
 <hr />
 
 <p>
-<small>Plugins are sorted by the number of installations, as determined based on data from <a href="https://tracking.octoprint.org" target="_blank" rel="noopener noreferer">OctoPrint's Anonymous Usage Tracking</a>.</small>
+  <small>Plugins are in random order.</small>
 </p>

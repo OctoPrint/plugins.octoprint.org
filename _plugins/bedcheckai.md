@@ -44,6 +44,9 @@ compatibility:
   - freebsd
   python: ">=3.6,<4"
 
+attributes:
+- cloud
+
 ---
 
 # Bed Check AI

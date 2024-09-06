@@ -48,6 +48,11 @@ featuredimage: /assets/img/plugins/SimplyPrint/showcase_feature_image.png
 compatibility:
   python: ">=2.7,<4"
 
+attributes:
+- cloud
+- commercial
+- free-tier
+
 ---
 
 # Connect your printer to the SimplyPrint cloud in minutes

@@ -47,6 +47,10 @@ compatibility:
   octoprint:
   - 1.2.9
   python: '>=2.7,<4'
+
+attributes:
+- cloud
+
 ---
 
 This plugin integrates Telegram Messenger into Octoprint.

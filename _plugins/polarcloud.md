@@ -37,6 +37,11 @@ compatibility:
   octoprint:
   - 1.3.4
 
+attributes:
+- cloud
+- commercial
+- free-tier
+
 ---
 ## Easily Monitor Your Prints from Anywhere
 

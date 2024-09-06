@@ -38,6 +38,9 @@ screenshots:
 # Featured image
 featuredimage: /assets/img/plugins/octotweet/twitter.jpg
 
+attributes:
+- cloud
+
 ---
 
 # Octoprint-OctoTweet 1.0.0

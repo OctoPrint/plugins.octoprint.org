@@ -80,6 +80,9 @@ screenshots:
 
 featuredimage: /assets/img/plugins/Octoslack/Octoslack-PrintProgress_SlackOnly.png
 
+attributes:
+- cloud
+
 ---
 
 

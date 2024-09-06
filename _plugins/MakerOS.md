@@ -35,6 +35,11 @@ screenshots:
 featuredimage: /assets/img/plugins/MakerOS/Octoprint-Makeros-projects.png
 compatibility:
   python: '>=2.7,<4'
+
+attributes:
+- cloud
+- commercial
+
 ---
 
 This plugin requires a [MakerOS](https://makeros.com) business account. Please

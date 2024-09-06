@@ -35,9 +35,9 @@ tags:
 
 
 screenshots:
-- url: /assets/img/plugins/shutdownbuttonledbuzzer/circuit.png
-  alt: circuit.png
-  caption: Circuit scheme
+#- url: /assets/img/plugins/shutdownbuttonledbuzzer/circuit.png
+#  alt: circuit.png
+#  caption: Circuit scheme
 - url: /assets/img/plugins/shutdownbuttonledbuzzer/settings1.png
   alt: settings1.png
   caption: Settings page
@@ -150,15 +150,6 @@ Always remember to properly check each connection, using
 the official datasheet, before turning on the Raspberry.
 
 ![circuit](/assets/img/plugins/shutdownbuttonledbuzzer/circuit.png)
-
-## Configuration
-
-This plugin offers several configuration parameters,
-accessible in the apposite OctoPrint section in setting:
-
-![settings1](/assets/img/plugins/shutdownbuttonledbuzzer/settings1.png)
-![settings2](/assets/img/plugins/shutdownbuttonledbuzzer/settings2.png)
-![settings3](/assets/img/plugins/shutdownbuttonledbuzzer/settings3.png)
 
 ## FAQ
 

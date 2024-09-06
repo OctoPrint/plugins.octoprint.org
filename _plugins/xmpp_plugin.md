@@ -28,6 +28,9 @@ featuredimage: /assets/img/plugins/xmpp_plugin/xmpp-plugin-configuration.png
 compatibility:
   python: ">=3,<4"
 
+attributes:
+- cloud
+
 ---
 
 # A Simple XMPP Plugin for octoprint.

@@ -29,6 +29,9 @@ screenshots:
   alt: Settings
 featuredimage: /assets/img/plugins/OctoAutoremote/settings.png
 
+attributes:
+- cloud
+
 ---
 # OctoAutoRemote
 

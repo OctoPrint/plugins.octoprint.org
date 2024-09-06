@@ -25,6 +25,9 @@ compatibility:
     - 1.3.5
 
   python: ">=3,<4"
+
+attributes:
+- cloud
 ---
 
 ![Thingiverse-Downloader-Demo](/assets/img/plugins/thingiverse_downloader/demo_url.gif)

@@ -32,6 +32,9 @@ compatibility:
   - freebsd
   python: ">=3,<4"
 
+attributes:
+- cloud
+
 ---
 
 # OctoPrint-Youtube-Timelapse

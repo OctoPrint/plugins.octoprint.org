@@ -30,6 +30,9 @@ featuredimage: /assets/img/plugins/freemobilenotifier/freemobilenotifier.png
 compatibility:
   python: ">=2.7,<4"
 
+attributes:
+- cloud
+
 ---
 
 Receive SMS notifications when OctoPrint jobs are complete.

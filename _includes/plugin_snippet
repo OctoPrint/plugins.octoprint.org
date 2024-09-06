@@ -1,6 +1,6 @@
 {% assign plugin = include.plugin %}
 <div class="plugin-list-item">
-<h3><a class="post-link" href="{{ plugin.url | prepend: site.baseurl }}">{{ plugin.title }}</a></h3>
+<h3><a class="post-link" href="{{ plugin.url | prepend: site.baseurl }}">{{ plugin.title }}</a> {% include plugin_attributes plugin=plugin %}</h3>
 
 <p class="stats">
     <small class="prop" title="Publication date"><i class="fas fa-calendar-alt"></i> {% include plugin_date date=plugin.date %}</small>

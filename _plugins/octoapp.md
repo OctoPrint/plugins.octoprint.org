@@ -105,6 +105,11 @@ compatibility:
   #python: ">=2.7,<3" # Python 2 & 3
   python: ">=3,<4" # Python 3 only
 
+attributes:
+- cloud
+- commercial
+- free-tier
+
 ---
 
 A plugin providing extra functionality to OctoApp:

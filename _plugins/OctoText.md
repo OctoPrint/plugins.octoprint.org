@@ -3,32 +3,30 @@ layout: plugin
 
 id: OctoText
 title: OctoText
-description: Send text messages on common printer events
+description: Send text or email messages on common printer events
 authors:
 - Stephen Berry
+- Douglas Krahmer
 license: AGPLv3
 
-# TODO
 date: 2021-03-30
 
-homepage: https://github.com/berrystephenw/OctoText
-source: https://github.com/berrystephenw/OctoText
-archive: "https://github.com/berrystephenw/OctoText/archive/refs/heads/main.zip"
+homepage: https://github.com/OctoText/OctoText
+source: https://github.com/OctoText/OctoText
+archive: "https://github.com/OctoText/OctoText/archive/refs/heads/main.zip"
 
-# TODO
 # Set this to true if your plugin uses the dependency_links setup parameter to include
 # library versions not yet published on PyPi. SHOULD ONLY BE USED IF THERE IS NO OTHER OPTION!
 #follow_dependency_links: false
 
-# TODO
 tags:
 - octotext
 - printer status
 - email
 - text
 - notification
+- notify
 
-# TODO
 screenshots:
 - url: /assets/img/plugins/OctoText/IMG_6025.PNG
   alt: Webcam integration
@@ -44,10 +42,8 @@ screenshots:
   caption: Settings page
 
 
-# TODO
 featuredimage: /assets/img/plugins/OctoText/octotext-email.png
 
-# TODO
 # You only need the following if your plugin requires specific OctoPrint versions or
 # specific operating systems to function - you can safely remove the whole
 # "compatibility" block if this is not the case.
@@ -111,16 +107,6 @@ be sent to you either through email or SMS text message.
 OctoText is not a service, you will never be charged, and your information is only stored on the device it
 is installed on and never transmitted anywhere for any reason.
 
-New in this release:
-<li> Thumbnails from PrusaSlicer and Cura are read from newly uploaded files
-and sent on printer start notifications.</li>
-<li> Pause detection for Prusa "wait for user" messages on filament change events.</li>
-<li> SSL protocol has been added for services that don't support TLS.</li>
-<li> better message formatting.</li>
-<li> the test button on the navigation bar is now an envelope and can be hidden.</li>
-<li> bug fixes with webcams that are rotated and flipped.</li>
-<li> the printer name is now used in the messages to identify the source of the notification.</li>
-
 ## Get optionally notified on the following printer events:
 <ul>
    <li> File uploaded</li>
@@ -158,13 +144,13 @@ The only error case that we cannot detect easily is a bad destination address of
 
 Some email services such as gmail and yahoo require an "app" password that you will need to use
 in order to login to the account. Check your email provider to see how this is done or go to the
-OctoText discussion board for instructions: [FAQ](https://github.com/berrystephenw/OctoText/discussions/1#discussion-3279932)
+OctoText discussion board for instructions: [FAQ](https://github.com/OctoText/OctoText/discussions/1#discussion-3279932)
 
 (1) [https://en.wikipedia.org/wiki/SMS_gateway](https://en.wikipedia.org/wiki/SMS_gateway)
 
 # Problems?
 If you are having trouble with your setup, you can post on the discussion board and I'll get to your question as soon as I can.
 Please include a copy of the octoprint log from the logging menu of octoprint.
-[https://github.com/berrystephenw/OctoText/discussions](https://github.com/berrystephenw/OctoText/discussions)
+[https://github.com/OctoText/OctoText/discussions](https://github.com/OctoText/OctoText/discussions)
 
 <img width="128" alt="OctoText" src="/assets/img/plugins/OctoText/iconfinder_13_1236350.png">

@@ -79,40 +79,20 @@ layout: page
       All in all <strong>{{ author_count }}</strong> plugin authors have spent time and effort to bring you these plugins.
     </p>
 
-    {% assign shown_usage = false %}
-
     {% assign sorted_plugins = site.plugins | where_exp: "plugin", "plugin.stats.month.instances" | sort: "stats.month.instances" | reverse %}
     {% assign sorted_plugins_size = sorted_plugins | size %}
-    {% if sorted_plugins_size > 0 %}
-    {% assign shown_usage = true %}
-    <h3>Top 10 of the month</h3>
-    <ol>
-      {% for plugin in sorted_plugins limit: 10 %}
+    {% if sorted_plugins_size >= 20 %}
+    {% assign popular_plugins = sorted_plugins | slice: 0, 20 | sample: 20 %}
+    <h3>Popular plugins</h3>
+    <p><small><em>... in random order</em></small></p>
+    <ul>
+      {% for plugin in popular_plugins %}
       <li>
-        <a href="{{ plugin.url | prepend: site.baseurl }}">{{ plugin.title }}</a><br>
-        <small class="muted">over {% include format_number number=plugin.stats.month.instances %} instances</small>
+        <a href="{{ plugin.url | prepend: site.baseurl }}">{{ plugin.title }}</a>
       </li>
       {% endfor %}
-    </ol>
-    {% endif %}
-
-    {% assign sorted_plugins = site.plugins | where_exp: "plugin", "plugin.stats.week.install_events" | sort: "stats.week.install_events" | reverse %}
-    {% assign sorted_plugins_size = sorted_plugins | size %}
-    {% if sorted_plugins_size > 0 %}
-    {% assign shown_usage = true %}
-    <h3>Trending this week</h3>
-    <ol>
-      {% for plugin in sorted_plugins limit: 5 %}
-      <li>
-        <a href="{{ plugin.url | prepend: site.baseurl }}">{{ plugin.title }}</a><br>
-        <small class="muted">over {% include format_number number=plugin.stats.week.install_events %} new installs</small>
-      </li>
-      {% endfor %}
-    </ol>
-    {% endif %}
-
-    {% if shown_usage %}
-    <small><em>Based on anonymous usage data.</em></small>
+    </ul>
+    <small><em>Based on anonymous usage data. Please note that commercial plugins are exempt from this list due to past manipulations.</em></small>
     {% endif %}
 
   </div>

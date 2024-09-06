@@ -33,6 +33,9 @@ compatibility:
     - 1.2.0
   python: ">=2.7,<4"
 
+attributes:
+- cloud
+
 ---
 
 Receive [Signal](https://signal.org/) messages when OctoPrint jobs are complete.

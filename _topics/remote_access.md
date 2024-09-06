@@ -14,7 +14,6 @@ plugins:
   - raisecloud
   - SimplyPrint
   - telegram
-  - thespaghettidetective
   - obico
   - karmen
 ---

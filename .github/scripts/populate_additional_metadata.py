@@ -433,35 +433,38 @@ def process_plugin_file(path, incl_stats=True, incl_github=True, incl_compat=Tru
     out("Processing plugin {} at path {}".format(plugin_id, path))
 
     if incl_stats:
+        if "commercial" not in data.get("attributes", []):
+            def build_stats(stats):
+                result = dict(
+                    instances=stats.get("instances", 0),
+                    install_events=stats.get("install_events", 0),
+                )
+                if "versions" in stats:
+                    result["versions"] = dict()
+                    for version in stats["versions"]:
+                        result["versions"][version] = stats["versions"][version]["instances"]
 
-        def build_stats(stats):
-            result = dict(
-                instances=stats.get("instances", 0),
-                install_events=stats.get("install_events", 0),
-            )
-            if "versions" in stats:
-                result["versions"] = dict()
-                for version in stats["versions"]:
-                    result["versions"][version] = stats["versions"][version]["instances"]
+                return result
 
-            return result
+            data["stats"] = {
+                "week": dict(instances=0, install_events=0),
+                "month": dict(instances=0, install_events=0),
+            }
 
-        data["stats"] = {
-            "week": dict(instances=0, install_events=0),
-            "month": dict(instances=0, install_events=0),
-        }
+            stats7d = _plugin_stats_7d["plugins"].get(data["id"].lower())
+            if stats7d is not None:
+                out("  Enriching {} with stats for week...".format(plugin_id))
+                data["stats"]["week"] = build_stats(stats7d)
+                clean = False
 
-        stats7d = _plugin_stats_7d["plugins"].get(data["id"].lower())
-        if stats7d is not None:
-            out("  Enriching {} with stats for week...".format(plugin_id))
-            data["stats"]["week"] = build_stats(stats7d)
-            clean = False
-
-        stats30d = _plugin_stats_30d["plugins"].get(data["id"].lower())
-        if stats30d is not None:
-            out("  Enriching {} with stats for month...".format(plugin_id))
-            data["stats"]["month"] = build_stats(stats30d)
-            clean = False
+            stats30d = _plugin_stats_30d["plugins"].get(data["id"].lower())
+            if stats30d is not None:
+                out("  Enriching {} with stats for month...".format(plugin_id))
+                data["stats"]["month"] = build_stats(stats30d)
+                clean = False
+        
+        else:
+            out("  Plugin is marked as commercial, skipping stats")
 
     if "github" in data and "repo" in data["github"]:
         user, repo = data["github"]["repo"].split("/")

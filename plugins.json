@@ -43,6 +43,9 @@ layout: null
             "install_events_month": {% if plugin.stats.month.install_events %}{{ plugin.stats.month.install_events }}{% else %}0{% endif %},
             "instances_week": {% if plugin.stats.week.instances %}{{ plugin.stats.week.instances }}{% else %}0{% endif %},
             "install_events_week": {% if plugin.stats.week.install_events %}{{ plugin.stats.week.install_events }}{% else %}0{% endif %}
-        }
+        },
+        "attributes": [
+            {% if plugin.attributes %}{% for attribute in plugin.attributes %}{% unless forloop.first %},{% endunless %}{{attribute | jsonify }}{% endfor %}{% endif %}
+        ]
     }{% endfor %}
 ]

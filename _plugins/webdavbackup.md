@@ -27,6 +27,9 @@ compatibility:
   - 1.5.0
   python: ">=3,<4"
 
+attributes:
+- cloud
+
 ---
 
 # WebDAV Backup

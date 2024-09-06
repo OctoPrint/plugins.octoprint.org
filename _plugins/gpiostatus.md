@@ -130,25 +130,9 @@ https://docs.octoprint.org/en/master/bundledplugins/pluginmanager.html)
 or manually using this URL:
 
     https://github.com/danieleborgo/OctoPrint-GPIOStatus/archive/master.zip
+   
 
-
-## Screenshots
-
-This is GPIO Status main page with all the view checkboxes:
-
-![Checks](/assets/img/plugins/gpiostatus/Checks.png)
-
-This is the compact representation of a GPIO:
-
-![GPIO](/assets/img/plugins/gpiostatus/GPIO.png)
-
-This plugin is also able to show services status:
-
-![Services](/assets/img/plugins/gpiostatus/Services.png)
-
-These are the Raspberry PI hardware information:
-
-![Hardware](/assets/img/plugins/gpiostatus/Hardware.png)
+## Images
 
 More images are available [here](
 https://github.com/danieleborgo/OctoPrint-GPIOStatus/tree/master/docs).

@@ -14,6 +14,8 @@ homepage: https://github.com/MrBreadWater/project-kronos-data-collector
 source: https://github.com/MrBreadWater/project-kronos-data-collector
 archive: https://github.com/MrBreadWater/project-kronos-data-collector/archive/master.zip
 
+privacypolicy: https://github.com/MrBreadWater/project-kronos-data-collector?tab=readme-ov-file#privacy-statement
+
 # Set this to true if your plugin uses the dependency_links setup parameter to include
 # library versions not yet published on pypi. SHOULD ONLY BE USED IF THERE IS NO OTHER OPTION!
 #follow_dependency_links: false
@@ -28,6 +30,10 @@ tags:
 
 compatibility:
   python: '>=2.7,<4'
+
+attributes:
+- cloud
+
 ---
 
 # Project Kronos

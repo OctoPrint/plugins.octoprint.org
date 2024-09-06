@@ -48,6 +48,8 @@ layout: default
       {% if page.abandoned %}<div class="alert"><h3>This plugin has been abandoned</h3>The current maintainer of this plugin seems to have abandoned it. If you want to take over its maintainenance, please get in touch <a href="{{ page.abandoned }}" target="_blank" rel="noopener noreferrer">here...</a></div>{% endif %}
       {% if page.note %}<div class="alert"><h3>Please note</h3>{{ page.note | markdownify }}</div>{% endif %}
 
+      {% include plugin_attributes plugin=page %}
+
       <p class="lead">
         {{ page.description | strip_html | escape }}
       </p>

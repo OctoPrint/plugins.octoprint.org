@@ -104,6 +104,10 @@ compatibility:
   
   python: ">=3,<4"
 
+attributes:
+- cloud
+- commercial
+
 ---
 
 ![Print Nanny Logo](/assets/img/plugins/octoprint_nanny/logo.jpg)

@@ -44,6 +44,9 @@ screenshots:
   alt: Print Progress Notification
   caption: Print progress Notification
 
+attributes:
+- cloud
+
 ---
 
 # 3D Geeks

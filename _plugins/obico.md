@@ -118,6 +118,11 @@ compatibility:
 
   python: ">=2.7,<4"
 
+attributes:
+- cloud
+- commercial
+- free-tier
+
 ---
 
 ## Welcome to Obico!

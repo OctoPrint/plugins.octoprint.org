@@ -43,6 +43,7 @@ screenshots:
 
 featuredimage: /assets/img/plugins/SpoolManager/editSpool-dialog.png
 
+abandoned: https://github.com/OctoPrint/plugins.octoprint.org/issues/1319
 ---
 
 SpoolManager offers the possibility to save many properties of a Spool in a database. Like: material, color, weight, length, purchase-info, last/first-usage, ...

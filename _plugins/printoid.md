@@ -34,6 +34,11 @@ screenshots:
   alt: Notification on temperature alert
   caption: Notification on temperature alert
 
+attributes:
+- cloud
+- commercial
+- free-tier
+
 ---
 
 This is the official plugin made for the [Printoid for OctoPrint](https://play.google.com/store/apps/details?id=fr.yochi76.printoid.phones.premium&utm_source=github&utm_medium=plugin) application.

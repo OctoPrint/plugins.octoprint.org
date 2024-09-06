@@ -69,6 +69,9 @@ compatibility:
   - macos
   - freebsd
 
+attributes:
+- cloud
+
 ---
 
 # OctoPrint Complicated Integration

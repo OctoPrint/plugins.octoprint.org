@@ -24,6 +24,9 @@ compatibility:
   - 1.2.4
   python: ">=2.7,<4"
 
+attributes:
+- cloud
+
 ---
 
 This plugin adds support for [Pushbullet notifications](https://www.pushbullet.com/) to OctoPrint.

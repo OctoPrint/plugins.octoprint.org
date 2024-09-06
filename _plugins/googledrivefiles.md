@@ -31,6 +31,9 @@ compatibility:
   - freebsd
   python: ">=3,<4"
 
+attributes:
+- cloud
+
 ---
 
 # Google Drive Files
