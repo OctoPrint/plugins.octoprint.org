@@ -6,4 +6,4 @@ gem 'eventmachine', '1.2.7', git: 'git@github.com:eventmachine/eventmachine', ta
 gem 'html-proofer'
 gem 'jsonlint'
 
-gem "webrick", "~> 1.7"
+gem "webrick", "~> 1.8"
