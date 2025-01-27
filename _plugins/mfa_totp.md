@@ -4,7 +4,8 @@ layout: plugin
 id: mfa_totp
 title: "Two Factor Authentication: TOTP"
 description: Plugin to support TOTP based Two Factor Authentication in OctoPrint.
-author: Gina Häußge
+authors:
+- Gina Häußge
 license: AGPLv3
 
 date: 2025-01-27
