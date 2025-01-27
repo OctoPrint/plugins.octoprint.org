@@ -36,7 +36,8 @@ featuredimage: /assets/img/plugins/mfa_totp/screenshot_login.png
 
 compatibility:
   python: ">=3.7,<4"
-  octoprint: ">=1.11.0"
+  octoprint: 
+  - ">=1.11.0"
 ---
 
 A plugin to support TOTP based Two Factor Authentication in OctoPrint >= 1.11.0.
