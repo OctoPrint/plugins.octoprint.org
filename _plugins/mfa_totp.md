@@ -8,7 +8,7 @@ authors:
 - Gina Häußge
 license: AGPLv3
 
-date: 2025-01-27
+date: 2025-01-28
 
 homepage: https://github.com/OctoPrint/OctoPrint-MfaTotp
 source: https://github.com/OctoPrint/OctoPrint-MfaTotp
