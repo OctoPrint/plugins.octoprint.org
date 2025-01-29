@@ -40,3 +40,9 @@
   octoversions:
     - ">1.5.0"
   reason: "[Issue that causes the extruder to stop working](https://github.com/Willmac16/OctoPrint-GcodeLeveling/issues/5)"
+- plugin: PrintTimeGenius
+  #pluginversions:
+  #  - "<=2.3.3" # add last broken version here
+  octoversions:
+    - ">=1.11.0rc1"
+  reason: "[Issue that breaks file uploads](https://github.com/eyal0/OctoPrint-PrintTimeGenius/issues/322)"
