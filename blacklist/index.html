@@ -40,7 +40,7 @@ title: Plugin blacklist
                 {% endif %}
             </td>
             <td class="blacklist-versions">
-                {% if item.versions %}{{ item.versions | join: ", " | xml_escape }}{% else %}all{% endif %}
+                {% if item.pluginversions %}{{ item.pluginversions | join: ", " | xml_escape }}{% else %}all{% endif %}
             </td>
             <td class="blacklist-octoversions">
                 {% if item.octoversions %}{{ item.octoversions | join: ", " | xml_escape }}{% else %}all{% endif %}
