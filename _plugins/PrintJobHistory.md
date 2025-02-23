@@ -70,4 +70,4 @@ For a full overview of the latest feature set and planed features, please visit 
 
 If you would like to support these new efforts, please consider buying me a coffee or two. Thank you!
 
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/D1D21B0LA9)
+[![ko-fi](/assets/img/plugins/PrintJobHistory/githubbutton_sm.svg)](https://ko-fi.com/D1D21B0LA9)
