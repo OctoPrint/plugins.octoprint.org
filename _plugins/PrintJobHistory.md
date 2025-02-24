@@ -5,15 +5,16 @@ id: PrintJobHistory
 title: PrintJobHistory
 description: The OctoPrint-Plugin stores all print-job information of a print in a database.
 authors:
+    - vojtakaniok
     - dojohnso
     - Olli
 license: AGPLv3
 
 date: 2020-05-28
 
-homepage: https://github.com/dojohnso/OctoPrint-PrintJobHistory
-source: https://github.com/dojohnso/OctoPrint-PrintJobHistory
-archive: https://github.com/dojohnso/OctoPrint-PrintJobHistory/releases/latest/download/main.zip
+homepage: https://github.com/vojtakaniok/OctoPrint-PrintJobHistory
+source: https://github.com/vojtakaniok/OctoPrint-PrintJobHistory
+archive: https://github.com/vojtakaniok/OctoPrint-PrintJobHistory/releases/latest/download/main.zip
 
 follow_dependency_links: false
 
@@ -56,7 +57,6 @@ screenshots:
 
 featuredimage: /assets/img/plugins/PrintJobHistory/editPrintJob-dialog.png
 
-abandoned: https://github.com/OctoPrint/plugins.octoprint.org/issues/1322
 ---
 
 Print Job History-Plugin collects a lot of attributes from OctoPrint itself, like **Filename, Start/End-Time, Status, Username, Slicer-Settings** and many more. But it also grabs information from other plugins: **Thumbnail, Layer-Information, Filament usage**...
@@ -64,8 +64,10 @@ Print Job History-Plugin collects a lot of attributes from OctoPrint itself, lik
 For a full overview of the latest feature set and planed features, please visit the [Git Hub Homepage]({{ page.homepage | absolute_url }})
 
 
-## *NOTE: this plugin has been abandoned by the original creator and adopted here by a new maintainer*
+#### *NOTE: this plugin was once again abandoned ! Hopefully I will keep support longer*
 
-**This plugin is under new management** and will focus on critical bug fixes to start. Please bear with me as I get acclimated to this new plugin. If you would like to support these new efforts, please consider buying me a coffee or two. Thank you!
+**This plugin is under new management** and will focus on critical bug fixes to start. Please bear with me as I get acclimated to this new plugin.
 
-<a href="https://www.buymeacoffee.com/djohnson.tech" target="_blank"><img src="https://djohnson.tech/images/white-button.png" width=300 /></a>
+If you would like to support these new efforts, please consider buying me a coffee or two. Thank you!
+
+[![ko-fi](/assets/img/plugins/PrintJobHistory/githubbutton_sm.svg)](https://ko-fi.com/D1D21B0LA9)
