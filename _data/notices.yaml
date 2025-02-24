@@ -236,13 +236,6 @@
     repository of the old maintainer. Please re-install the plugin from the repository to update and keeping your
     settings. The release notes of the version by the new maintainer can be found at the "Read more..." link below.
   link: https://github.com/thomst08/OctoLight/releases/tag/v0.1.5
-- plugin: PrintJobHistory
-  pluginversions: ["<1.17.3"]
-  versions: []
-  date: 2025-02-23 12:00:00Z
-  text: Version 1.17.3 of this plugin is available from a new maintainer. The release notes of the version by the
-    new maintainer can be found at the "Read more..." link below.
-  link: https://github.com/vojtakaniok/OctoPrint-PrintJobHistory/releases/tag/1.17.3
 - plugin: SpoolManager
   pluginversions: ["<1.7.4"]
   versions: []
@@ -250,3 +243,10 @@
   text: Version 1.7.4 of this plugin is available from a new maintainer. The release notes of the version by the
     new maintainer can be found at the "Read more..." link below.
   link: https://github.com/WildRikku/OctoPrint-SpoolManager/releases/tag/1.7.4
+- plugin: PrintJobHistory
+  pluginversions: [ "<1.17.3" ]
+  versions: [ ]
+  date: 2025-02-23 12:00:00Z
+  text: Version 1.17.3 of this plugin is available from a new maintainer. The release notes of the version by the
+    new maintainer can be found at the "Read more..." link below.
+  link: https://github.com/vojtakaniok/OctoPrint-PrintJobHistory/releases/tag/1.17.3
