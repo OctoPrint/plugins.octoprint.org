@@ -8,8 +8,7 @@ authors:
 - Michael Szubartowicz
 license: MIT
 
-# TODO
-date: 2025-03-16
+date: 2025-03-23
 
 homepage: https://github.com/michaelszubartowicz/OctoPrint-WaveshareUPS
 source: https://github.com/michaelszubartowicz/OctoPrint-WaveshareUPS
