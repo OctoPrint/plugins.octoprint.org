@@ -43,7 +43,6 @@ featuredimage: /assets/img/plugins/marlingcodedocumentation/screenshot-example-c
 compatibility:
   python: ">=2.7,<4"
 
-abandoned: https://github.com/OctoPrint/plugins.octoprint.org/issues/1347
 ---
 
 It displays GCode documentation for Marlin, RepRap, and Klipper, in the terminal command line.
