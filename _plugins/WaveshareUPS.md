@@ -26,15 +26,15 @@ tags:
 # TODO
 # When registering a plugin on plugins.octoprint.org, all screenshots should be uploaded not linked from external sites.
 screenshots:
-- url: /assets/img/plugins/WavershareUPS/Screenshot_1.png
+- url: /assets/img/plugins/WaveshareUPS/Screenshot_1.png
   alt: Screenshot of the plugin interface
   caption: Navbar icon including tooltip showing battery status
-- url: /assets/img/plugins/WavershareUPS/Screenshot_2.png
+- url: /assets/img/plugins/WaveshareUPS/Screenshot_2.png
   alt: Screenshot of the plugin interface
   caption: Navbar icon showing UPS is powered
 
 
-featuredimage: /assets/img/plugins/WavershareUPS/featured.jpeg
+featuredimage: /assets/img/plugins/WaveshareUPS/featured.jpeg
 
 
 compatibility:
