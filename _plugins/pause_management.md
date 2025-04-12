@@ -45,7 +45,7 @@ Use the + button to inject a configurable pause command at provided height or la
 ![screenshot settings](/assets/img/plugins/pause_management/screenshot_settings.png)
 
 - `Pause Command to Ignore`: Configure this setting to match the pause command used by your slicer. This is what will be ignored when the toggle button in the sidebar is enabled.
-- `Pause Command to Inject`: Configure this setting as the pause command that you want to send at given pause positions in the sidebar.
+- `Pause Command to Inject`: Configure this setting as the pause command that you want to send at given pause positions in the sidebar. For firmware that is missing M601 you can use `@PAUSE` for files printed from OctoPrint.
 - `Layer Indicator`: Configure this setting to match the custom command added to your slicer to let the plugin know what height or layer number the print is at. This is used to match against the pause positions added in the sidebar. See the Slicer Setup section below for more details.
 
 ## Slicer Setup
@@ -70,7 +70,16 @@ Thanks to [@CortezSMz](https://github.com/CortezSMz) for this information, setup
 - Replace: `;LAYER:\1\n@PAUSE_POSITION \1`
 - Use Regular Expressions: _must_ be checked.
 
-![prusa screenshot](/assets/img/plugins/pause_management/screenshot_cura.png)
+![cura screenshot](/assets/img/plugins/pause_management/screenshot_cura.png)
+
+### Simplify3D
+
+Thanks to [@mjfuchs71](https://github.com/mjfuchs71) for this information, for Simplify3D you use a layer change script process. You have a couple of options to use based on how you want to enter pause positions in the sidebar.
+
+- **Height**: `@PAUSE_POSITION [current_Z_position]`
+- **Layer Number**: `@PAUSE_POSITION [current_layer_number]`
+
+![Simplify3D screenshot](/assets/img/plugins/pause_management/screenshot_simplify3d.png)
 
 ---
 
