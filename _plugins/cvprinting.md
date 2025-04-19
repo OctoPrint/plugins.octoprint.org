@@ -40,7 +40,7 @@ screenshots:
   alt: "Discord notification showing snapshot of spaghetty error, togehter with confidence value and information that print has been paused"
   caption: "Example of discord notification after print pause has been triggered"
 
-featuredimage: 
+featuredimage: /assets/img/plugins/cvprinting/discordNotification.png
 
 # You only need the following if your plugin requires specific OctoPrint versions or
 # specific operating systems to function - you can safely remove the whole
