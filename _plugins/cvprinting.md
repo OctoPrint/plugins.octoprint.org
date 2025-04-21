@@ -98,7 +98,7 @@ compatibility:
 # If any of the below attributes apply to your project, uncomment the corresponding lines. This is MANDATORY!
     
 attributes:
-#  - cloud  # if your plugin requires access to a cloud to function
+  - cloud  # if your plugin requires access to a cloud to function
 #  - commercial  # if your plugin has a commercial aspect to it
 #  - free-tier  # if your plugin has a free tier
 
