@@ -9,7 +9,7 @@ authors:
 license: AGPLv3
 
 # today's date in format YYYY-MM-DD, e.g.
-date: 2025-04-19
+date: 2025-04-21
 
 homepage: https://github.com/Spini11/OctoPrint-Cvprinting
 source: https://github.com/Spini11/OctoPrint-Cvprinting
