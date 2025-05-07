@@ -40,6 +40,7 @@ compatibility:
   - macos
   - freebsd
 
+abandoned: https://github.com/OctoPrint/plugins.octoprint.org/issues/1373
 ---
 
 # OctoPrint-Ikea-tradfri
