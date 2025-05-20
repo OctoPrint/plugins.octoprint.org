@@ -36,12 +36,13 @@ jobs:
 
           while read modifier file; do
             if [[ $file == _plugins/* ]] && [[ $file == *.md ]]; then
+              args="--debug --check-internal-assets --check-id-match --check-asset-match --check-py3-compat --action-output"
               if [ "$modifier" == "M" ]; then
                 echo "MODIFIED: $file"
-                python ../current/.github/scripts/validate_front_matter.py "$file" --debug --check-date-unchanged=${{ github.event.pull_request.base.sha }} --action-output
+                python ../current/.github/scripts/validate_front_matter.py "$file" --check-date-unchanged=${{ github.event.pull_request.base.sha }} $args
               elif [ "$modifier" == "A" ]; then
                 echo "ADDED: $file"
-                python ../current/.github/scripts/validate_front_matter.py "$file" --debug --check-internal-assets --check-id-match --check-py3-compat --action-output
+                python ../current/.github/scripts/validate_front_matter.py "$file" $args
               fi
             fi
           done < <(git diff-tree --no-commit-id --name-status -r ${{ github.event.pull_request.base.sha }} ${{ github.event.pull_request.head.sha }} | xargs -n2 )
