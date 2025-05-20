@@ -35,9 +35,6 @@ screenshots:
   alt: Sample cool down fan
   caption: Sample cool down fan
 
-
-
-
 featuredimage: /assets/img/plugins/cooldownfan/cool-down-fan-config-screen.jpg
 
 compatibility:
@@ -48,6 +45,10 @@ compatibility:
 
   os:
   - linux
+
+redirect_from:
+- /plugins/GPIOCoolDownFan
+
 ---
 
 #### Description

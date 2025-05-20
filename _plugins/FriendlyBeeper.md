@@ -32,6 +32,9 @@ featuredimage: /assets/img/plugins/FriendlyBeeper/settings.png
 compatibility:
   python: ">=2.7,<4"
 
+redirect_from:
+- /plugins/FriendlyNeighborhoodBeeper
+
 ---
 
 This plugin is designed to be used to notify when a print is complete. While gcode to beep on print completion can easily be added to the slicer/octoprint, I wanted a way to only beep during certain time frames as I don't want my neighbors to hate me for my printer beeping at 2 in the morning.

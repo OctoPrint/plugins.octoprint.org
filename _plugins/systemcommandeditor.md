@@ -28,12 +28,12 @@ compatibility:
   python: ">=2.7,<4"
 
 screenshots:
-- url: /assets/img/plugins/systemCommandEditor/img1.png
+- url: /assets/img/plugins/systemcommandeditor/img1.png
   alt: Settings
-- url: /assets/img/plugins/systemCommandEditor/img2.png
+- url: /assets/img/plugins/systemcommandeditor/img2.png
   alt: Dialog
 
-featuredimage: /assets/img/plugins/systemCommandEditor/img1.png
+featuredimage: /assets/img/plugins/systemcommandeditor/img1.png
 
 ---
 

@@ -78,6 +78,9 @@ compatibility:
 
 abandoned: https://github.com/OctoPrint/plugins.octoprint.org/issues/1085
 
+redirect_from:
+- /plugins/FlashForge
+
 ---
 
 The plugin allows control of some FlashForge, Dremel and PowerSpec printers

@@ -24,7 +24,7 @@ tags:
 compatibility:
   python: ">=2.7,<4"
 
-featuredimage: /assets/img/plugins/TPLinkSmartplug/screenshot_on.png
+featuredimage: /assets/img/plugins/tplinksmartplug/screenshot_on.png
 
 ---
 
@@ -36,17 +36,17 @@ Work inspired by [OctoPrint-PSUControl](https://github.com/kantlivelong/OctoPrin
 
 ## Screenshots
 
-![on](/assets/img/plugins/TPLinkSmartplug/screenshot_on.png)
+![on](/assets/img/plugins/tplinksmartplug/screenshot_on.png)
 
-![off](/assets/img/plugins/TPLinkSmartplug/screenshot_off.png)
+![off](/assets/img/plugins/tplinksmartplug/screenshot_off.png)
 
 ## Settings
 
-![screenshot](/assets/img/plugins/TPLinkSmartplug/settings.png)
+![screenshot](/assets/img/plugins/tplinksmartplug/settings.png)
 
 Once installed go into settings and enter the ip address for your TP-Link Smartplug device. Adjust additional settings as needed.
 
-![screenshot](/assets/img/plugins/TPLinkSmartplug/smartplug_editor.png)
+![screenshot](/assets/img/plugins/tplinksmartplug/smartplug_editor.png)
 
 - **IP**
   - IP or hostname of plug to control.
@@ -81,6 +81,6 @@ Check out my other plugins [here](https://plugins.octoprint.org/by_author/#jneil
 ### Support My Efforts
 I, jneilliii, programmed this plugin for fun and do my best effort to support those that have issues with it, please return the favor and leave me a tip or become a Patron if you find this plugin helpful and want me to continue future development.
 
-[![Patreon](/assets/img/plugins/TPLinkSmartplug/patreon-with-text-new.png)](https://www.patreon.com/jneilliii) [![paypal](/assets/img/plugins/TPLinkSmartplug/paypal-with-text.png)](https://paypal.me/jneilliii)
+[![Patreon](/assets/img/plugins/tplinksmartplug/patreon-with-text-new.png)](https://www.patreon.com/jneilliii) [![paypal](/assets/img/plugins/tplinksmartplug/paypal-with-text.png)](https://paypal.me/jneilliii)
 
 <small>No paypal.me? Send funds via PayPal to jneilliii&#64;gmail&#46;com</small>

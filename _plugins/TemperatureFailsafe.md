@@ -19,7 +19,7 @@ tags:
 - raspberry pi
 - temperature
 screenshots:
-- url: /assets/img/plugins/temperaturefailsafe/configuration.png
+- url: /assets/img/plugins/TemperatureFailsafe/configuration.png
   alt: Configuration Screen
   caption: Configure Failsafes
 
@@ -31,6 +31,9 @@ compatibility:
   python: ">=2.7,<4"
 
 abandoned: https://github.com/OctoPrint/plugins.octoprint.org/issues/914
+
+redirect_from:
+- /plugins/temperaturefailsafe.md
 ---
 
 OctoPrint Plugin that executes shell commands on temperature violations.
