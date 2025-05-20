@@ -188,7 +188,7 @@ def validate_id_match(data, path):
     filename = os.path.basename(path)[:-3]
     if data["id"] != filename:
         return [
-            "id '{}' does not match file name '{}.md' @ data['id']".format(
+            "id '{}' does not match file name '{}.md', please rename the file @ data['id']".format(
                 data["id"], filename
             )
         ]

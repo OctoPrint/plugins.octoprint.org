@@ -18,6 +18,9 @@ compatibility:
   - 1.3.11
 date: 2019-06-11
 
+redirect_from:
+- /plugins/PauseForUserEvent
+
 ---
 
 When `echo:busy: paused for user` is received on the serial port, this plugin then raises a `paused_for_user` event, which may then be used with other plugins like [OctoPrint-MQTT](https://github.com/OctoPrint/OctoPrint-MQTT) to alert the user, that the printer needs attention.

@@ -23,7 +23,7 @@ tags:
 - rgb
 - gcode
 screenshots:
-- url: /assets/img/plugins/ledstripcontrol/configuration.png
+- url: /assets/img/plugins/LEDStripControl/configuration.png
   alt: Configuration Screen
   caption: Configure GPIOs
 
@@ -32,6 +32,8 @@ compatibility:
   - 1.3.1
   python: ">=2.7,<4"
 
+redirect_from:
+- /plugins/ledstripcontrol
 ---
 
 OctoPrint Plugin that intercepts M150 GCode commands and controls local GPIOs on your Pi.

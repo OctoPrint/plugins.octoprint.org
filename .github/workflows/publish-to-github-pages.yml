@@ -40,7 +40,7 @@ jobs:
 
       - name: 🕵️‍♂ Validate front matter
         run: |
-          python .github/scripts/validate_front_matter.py --check-asset-match --action-output
+          python .github/scripts/validate_front_matter.py --check-id-match --check-asset-match --action-output
 
       - name: 🏗 Enrich front matter
         if: github.repository == 'OctoPrint/plugins.octoprint.org' && github.event_name != 'pull_request'

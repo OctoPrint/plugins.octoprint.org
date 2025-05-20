@@ -15,7 +15,7 @@ source: https://github.com/markwal/OctoPrint-ScreenSquish
 archive: https://github.com/markwal/OctoPrint-ScreenSquish/archive/master.zip
 
 screenshots:
-- url: /assets/img/plugins/screensquish/squishsample.png
+- url: /assets/img/plugins/ScreenSquish/squishsample.png
   alt: Single column view
   caption: OctoPrint in a single column view
 
@@ -23,7 +23,9 @@ tags:
 - mobile
 - ui
 
-featuredimage: /assets/img/plugins/screensquish/squishsample.png
+featuredimage: /assets/img/plugins/ScreenSquish/squishsample.png
+redirect_from:
+- /plugins/screensquish
 ---
 Bootstrap 2 "responsive" UI, a single column on your phone
 

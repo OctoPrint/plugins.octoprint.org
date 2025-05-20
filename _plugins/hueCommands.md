@@ -32,4 +32,7 @@ compatibility:
   - 1.3.9
   python: ">=2.7,<4"
 
+redirect_from:
+- OctoPrint-hueCommands
+
 ---

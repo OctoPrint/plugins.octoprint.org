@@ -31,6 +31,9 @@ screenshots:
     caption: OctoFlat in Action
 
 featuredimage: https://raw.githubusercontent.com/juniorRubyist/OctoPrint-OctoFlat/master/assets/octoprint_1.png
+
+redirect_from:
+- /plugins/OctoFlat
 ---
 
 A nice, sleek OctoPrint theme to get rid of the ugly gradients. It is simply dropped in with no configuration necessary.

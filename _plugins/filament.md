@@ -25,6 +25,9 @@ compatibility:
 
   os:
   - nix
+
+redirect_from:
+- /plugins/filament_sensor
 ---
 Pause print on GPIO filament runout sensor
 

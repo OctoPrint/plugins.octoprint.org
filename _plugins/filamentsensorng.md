@@ -24,6 +24,9 @@ compatibility:
 
   os:
   - nix
+
+redirect_from:
+- /plugins/filament_sensor_ng
 ---
 Pause printing when the 3D printer runs out of filament.
 
