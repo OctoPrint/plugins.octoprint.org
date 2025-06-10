@@ -26,7 +26,7 @@ screenshots:
   alt: sidebar screenshot
 - url: /assets/img/plugins/spooltracker/popup.png
   alt: popup screenshot
-
+---
 
 Created by AI, this plugin simplifies filament management for farm printers. The workflow is straightforward:
 
@@ -62,4 +62,3 @@ Make sure your slicer includes this comment at the end of the G-code file for ac
 
 1. Add a settings page where the user can specify the gcode to look for
 2. Add optional text input to color option
-3. Add custom filament option that allows you to input a custom density
