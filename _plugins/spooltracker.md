@@ -3,12 +3,12 @@ layout: plugin
 
 id: spooltracker
 title: SpoolTracker
-description: Simple filament tracking - load a spool, print until empty, repeat. No Spool Managment
+description: Simple filament tracking - load a spool, print until empty, repeat. No Spool Management
 author: thatguymendel
 license: AGPLv3
 
 # today's date in format YYYY-MM-DD, e.g.
-date: 2025-06-09
+date: 2025-06-10
 
 homepage: https://github.com/thatguymendel/OctoPrint-SpoolTracker
 source: https://github.com/thatguymendel/OctoPrint-SpoolTracker
@@ -26,6 +26,10 @@ screenshots:
   alt: sidebar screenshot
 - url: /assets/img/plugins/spooltracker/popup.png
   alt: popup screenshot
+
+compatibility:
+  python: ">=3,<4" # Python 3 only
+
 ---
 
 Created by AI, this plugin simplifies filament management for farm printers. The workflow is straightforward:
@@ -58,7 +62,7 @@ The plugin looks for the following G-code at the end of your print file to calcu
 
 Make sure your slicer includes this comment at the end of the G-code file for accurate filament tracking.
 
-## Thing to Improve if anyone else actually wants to use this
+## Things to Improve if anyone else actually wants to use this
 
 1. Add a settings page where the user can specify the gcode to look for
 2. Add optional text input to color option
