@@ -9,7 +9,28 @@ editing it accordingly.
 
 ---
 
-**Before registering your plugin, please check the following:**
+**Before registering your plugin, please consider whether you are actually willing and able to *actively* maintain it.** 
+
+This means you will be around after registration too, keep up with changes in OctoPrint's plugin API and adjust your plugin as necessary 
+in new releases, fix bugs that are reported to you by the community, fix *security issues* reported to you and maybe also implement the
+one or other feature request. 
+
+You should *not* register a plugin just to make it easier for you to install it. We expect plugins on 
+the official repository to be actively maintained. That doesn't necessarily mean a lot of work, it very much depends on the complexity 
+and size of your plugin. But you should be clear that **publishing your plugin on the official repository means it becomes your responsibility** 
+-- and, when you no longer can take care of it, notifying us and ideally also helping find someone else who can continue your work is also
+something you should consider your responsibility as a plugin maintainer.
+
+This *also* means that you should be capable of fixing issues in your plugin even if your favourite genAI is down,
+and that you understand why your plugin works in the first place -- meaning that **completely vibe coded plugins
+are *not* something we will accept here**.
+
+**tl;dr: By publishing a plugin on the official OctoPrint Plugin Repository, you become responsible of 
+properly maintaining it. Be sure you are both willing and able to do this *before* you register your plugin.**
+
+---
+
+Once you are clear on whether you want to and can maintain your plugin, also check the following.
 
   * Your plugin doesn't have any additional code in its <code>setup.py</code> that would run directly on
     plugin installation, or any additional code in its <code>__init__.py</code> that would run outside of
