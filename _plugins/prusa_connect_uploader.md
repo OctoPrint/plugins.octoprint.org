@@ -12,7 +12,7 @@ date: 2025-05-01
 
 homepage: https://github.com/rizz360/prusa_connect_uploader
 source: https://github.com/rizz360/prusa_connect_uploader
-archive: https://github.com/rizz360/prusa_connect_uploader/archive/refs/tags/1.0.3.zip
+archive: https://github.com/rizz360/prusa_connect_uploader/archive/refs/heads/main.zip
 
 tags:
 - prusa
