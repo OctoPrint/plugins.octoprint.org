@@ -20,6 +20,19 @@ tags:
 - connection
 - network
 
+screenshots:
+- url: /assets/img/plugins/remote_connection/settings.png
+  alt: Remote Connection Settings
+  caption: Remote Connection Settings
+- url: /assets/img/plugins/remote_connection/connecting.png
+  alt: Connection Widget With Remote Connection
+  caption: Connection Widget With Remote Connection
+- url: /assets/img/plugins/remote_connection/connection_established.png
+  alt: Remote Connection Established
+  caption: Remote Connection Established
+
+featuredimage: /assets/img/plugins/remote_connection/settings.png
+
 compatibility:
   python: ">=3,<4"
 
