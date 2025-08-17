@@ -16,6 +16,7 @@ archive: https://github.com/christophschranz/OctoPrint-PrePrintService/archive/m
 follow_dependency_links: false
 
 tags:
+- slicer
 - slic3r
 - slicing
 - gcode
