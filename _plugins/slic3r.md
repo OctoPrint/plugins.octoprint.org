@@ -19,6 +19,7 @@ follow_dependency_links: false
 
 tags:
 - slic3r
+- slicer
 - gcode
 - stl
 
