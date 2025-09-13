@@ -14,7 +14,7 @@ date: 2023-05-20
 
 homepage: https://github.com/jneilliii/OctoPrint-MarlinSlider
 source: https://github.com/jneilliii/OctoPrint-MarlinSlider
-archive: https://github.com/jneilliii/OctoPrint-MarlinSlider/archive/main.zip
+archive: https://github.com/jneilliii/OctoPrint-MarlinSlider/archive/master.zip
 
 tags:
 - UI
