@@ -31,6 +31,7 @@ compatibility:
   - freebsd
   python: ">=2.7,<4"
 
+abandoned: https://github.com/OctoPrint/plugins.octoprint.org/issues/1380
 ---
 
 # CooldownNotification

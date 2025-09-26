@@ -19,13 +19,14 @@ tags:
 - webcam
 
 screenshots:
-- url: /assets/img/plugins/fullscreen_webcam/main.jpg
+- url: /assets/img/plugins/fullscreen/main.jpg
   alt: Fullscreen mode
   caption: Fullscreen mode
 
-featuredimage: /assets/img/plugins/fullscreen_webcam/main.jpg
+featuredimage: /assets/img/plugins/fullscreen/main.jpg
 
-redirect_from: "/plugins/fullscreen_webcam/"
+redirect_from: 
+- /plugins/fullscreen_webcam
 
 compatibility:
   python: ">=2.7,<4"

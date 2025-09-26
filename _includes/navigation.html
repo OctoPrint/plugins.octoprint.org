@@ -1,51 +1,124 @@
 <div class="navbar navbar-inverse navbar-static-top">
   <div class="navbar-inner">
     <div class="container">
-      <a class="brand" href="/"><img src="/assets/img/tentacle-20x20.png" alt="Tentacle logo" class="tentacle"> {{ site.short_title }}</a>
-      <a href="javascript:void(0)" class="btn btn-burger btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><i class="fas fa-bars"></i></a>
+      <a class="brand" href="/"
+        ><img src="/assets/img/tentacle-20x20.png" alt="Tentacle logo" class="tentacle" />
+        {{ site.short_title }}</a
+      >
+      <a
+        href="javascript:void(0)"
+        class="btn btn-burger btn-navbar"
+        data-toggle="collapse"
+        data-target=".nav-collapse"
+        ><i class="fas fa-bars"></i
+      ></a>
       <div class="pull-right">
         <ul class="nav social-navbar">
-          <li><a href="https://octoprint.org/merch/" title="Get some merchandise!" target="_blank"><i class="fa fa-shopping-basket"></i></a></li>
-          <li><a href="https://octoprint.org/support-octoprint/" title="Support OctoPrint!" data-event-category="supportlink" data-event-action="navigation" target="_blank"><i class="fas fa-donate"></i></a></li>
+          <li>
+            <a
+              href="https://octoprint.org/merch/"
+              title="Get some merchandise!"
+              target="_blank"
+              ><i class="fa fa-shopping-basket"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://octoprint.org/support-octoprint/"
+              title="Support OctoPrint!"
+              data-event-category="supportlink"
+              data-event-action="navigation"
+              target="_blank"
+              ><i class="fas fa-donate"></i
+            ></a>
+          </li>
         </ul>
       </div>
       <div class="nav-collapse collapse">
         <ul class="nav">
           <li class="dropdown">
-            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">Sorted by... <b class="caret"></b></a>
+            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown"
+              >Sorted by... <b class="caret"></b
+            ></a>
             <ul class="dropdown-menu">
               <li><a href="{{ '/by_name/' | prepend: site.baseurl }}">... name</a></li>
               <li><a href="{{ '/by_date/' | prepend: site.baseurl }}">... date</a></li>
               <li><a href="{{ '/by_tag/' | prepend: site.baseurl }}">... tag</a></li>
-              <li><a href="{{ '/by_author/' | prepend: site.baseurl }}">... author</a></li>
+              <li>
+                <a href="{{ '/by_author/' | prepend: site.baseurl }}">... author</a>
+              </li>
             </ul>
           </li>
           <li class="dropdown">
-            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">Topics <b class="caret"></b></a>
+            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown"
+              >Topics <b class="caret"></b
+            ></a>
             <ul class="dropdown-menu">
               {% for topic in site.topics | sort: "title" %}
-              <li><a href="{{ topic.id | prepend: site.baseurl }}">{{ topic.title }} ({{ topic.plugins.size }} {% if topic.plugins.size == 1 %}plugin{% else %}plugins{% endif %})</a></li>
+              <li>
+                <a href="{{ topic.id | prepend: site.baseurl }}"
+                  >{{ topic.title }} ({{ topic.plugins.size }} {% if topic.plugins.size ==
+                  1 %}plugin{% else %}plugins{% endif %})</a
+                >
+              </li>
               {% endfor %}
             </ul>
           </li>
-          <li><form class="navbar-search pull-right" action="{{ '/search/' | prepend: site.baseurl }}" method="get"><input type="text" class="input-large search-query" placeholder="Enter search &amp; hit enter..." name="q"></form></li>
+          <li>
+            <form
+              class="navbar-search pull-right"
+              action="{{ '/search/' | prepend: site.baseurl }}"
+              method="get"
+            >
+              <input
+                type="text"
+                class="input-large search-query"
+                placeholder="Enter search &amp; hit enter..."
+                name="q"
+              />
+            </form>
+          </li>
           <li class="dropdown">
-            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">Help <b class="caret"></b></a>
+            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown"
+              >Help <b class="caret"></b
+            ></a>
             <ul class="dropdown-menu">
-              <li><a href="{{ '/help/installation/' | prepend: site.baseurl }}">Installing Plugins</a></li>
-              <li><a href="{{ '/help/registering/' | prepend: site.baseurl }}">Registering Plugins</a></li>
-              <li><a href="http://docs.octoprint.org/en/master/plugins/gettingstarted.html">The Plugin Tutorial</a></li>
+              <li>
+                <a href="{{ '/help/installation/' | prepend: site.baseurl }}"
+                  >Installing Plugins</a
+                >
+              </li>
+              <li>
+                <a href="{{ '/help/registering/' | prepend: site.baseurl }}"
+                  >Registering Plugins</a
+                >
+              </li>
+              <li>
+                <a href="http://docs.octoprint.org/en/main/plugins/gettingstarted.html"
+                  >The Plugin Tutorial</a
+                >
+              </li>
               <li class="divider"></li>
-              <li><a href="{{ '/help/github_integration/' | prepend: site.baseurl }}">GitHub Integration on plugins.octoprint.org</a></li>
+              <li>
+                <a href="{{ '/help/github_integration/' | prepend: site.baseurl }}"
+                  >GitHub Integration on plugins.octoprint.org</a
+                >
+              </li>
             </ul>
           </li>
           <li class="dropdown">
-            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">Lists <b class="caret"></b></a>
+            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown"
+              >Lists <b class="caret"></b
+            ></a>
             <ul class="dropdown-menu">
               <li><a href="{{ '/blacklist/' | prepend: site.baseurl }}">Blacklist</a></li>
               <li><a href="{{ '/notices/' | prepend: site.baseurl }}">Notices</a></li>
               <li><a href="{{ '/overlays/' | prepend: site.baseurl }}">Overlays</a></li>
-              <li><a href="{{ '/abandoned/' | prepend: site.baseurl }}">Abandoned plugins</a></li>
+              <li>
+                <a href="{{ '/abandoned/' | prepend: site.baseurl }}"
+                  >Abandoned plugins</a
+                >
+              </li>
             </ul>
           </li>
         </ul>

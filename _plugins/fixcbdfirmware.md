@@ -45,4 +45,4 @@ Installing this plugin should make any printers shipped with this broken firmwar
 Install via the bundled [Plugin Manager](https://github.com/foosel/OctoPrint/wiki/Plugin:-Plugin-Manager)
 or manually using this URL:
 
-    https://github.com/OctoPrint/OctoPrint-Fix-CBD-Firmware/archive/master.zip
+    https://github.com/OctoPrint/OctoPrint-FixCBDFirmware/archive/master.zip

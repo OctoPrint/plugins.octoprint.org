@@ -10,9 +10,9 @@ homepage: https://github.com/Salandora/OctoPrint-EditorCollection
 source: https://github.com/Salandora/OctoPrint-EditorCollection
 archive: https://github.com/Salandora/OctoPrint-EditorCollection/archive/master.zip
 screenshots:
-- url: /assets/img/plugins/editorCollection/img1.png
+- url: /assets/img/plugins/editorcollection/img1.png
   alt: Settings
-featuredimage: /assets/img/plugins/editorCollection/img1.png
+featuredimage: /assets/img/plugins/editorcollection/img1.png
 tags:
 - administration
 - ui

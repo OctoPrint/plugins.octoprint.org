@@ -3,88 +3,94 @@ layout: page
 ---
 
 <div class="plugin-list row-liquid">
-  <div class="span8">
-      {{ content }}
-  </div>
+  <div class="span8">{{ content }}</div>
   <div class="span4">
     <h2><i class="fa fa-search"></i> Search</h2>
 
     {% include search.html %}
 
-    <div class="ad">
-      {% include adsnippet_desktop.html %}
-    </div>
+    <div class="ad">{% include adsnippet_desktop.html %}</div>
 
     <h2><i class="far fa-lightbulb"></i> Help</h2>
 
     <p>
-      You are a user of OctoPrint and want to to know <strong>how to install</strong> any of the plugins listed here? <a href="{{ '/help/installation/' | prepend: site.baseurl }}">Take a look at this guide</a>.
+      You are a user of OctoPrint and want to to know <strong>how to install</strong> any
+      of the plugins listed here?
+      <a href="{{ '/help/installation/' | prepend: site.baseurl }}"
+        >Take a look at this guide</a
+      >.
     </p>
     <p>
-      You are a plugin author and want to <strong>register your new plugin</strong> to be listed here? <a href="{{ '/help/registering/' | prepend: site.baseurl }}">Take a look at this guide</a>.
+      You are a plugin author and want to <strong>register your new plugin</strong> to be
+      listed here?
+      <a href="{{ '/help/registering/' | prepend: site.baseurl }}"
+        >Take a look at this guide</a
+      >.
     </p>
     <p>
-      You are interested in <strong>writing your own plugin</strong> and don't know how to start? <a href="http://docs.octoprint.org/en/master/plugins/gettingstarted.html">Take a look at the plugin tutorial</a>.
+      You are interested in <strong>writing your own plugin</strong> and don't know how to
+      start?
+      <a href="http://docs.octoprint.org/en/main/plugins/gettingstarted.html"
+        >Take a look at the plugin tutorial</a
+      >.
     </p>
     <p>
-      <strong>Something is wrong with this repository?</strong> If something appears to be broken, please <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues">report it</a> or <a href="https://github.com/OctoPrint/plugins.octoprint.org/pulls">send a PR to fix it =)</a>. Thanks!
+      <strong>Something is wrong with this repository?</strong> If something appears to be
+      broken, please
+      <a href="https://github.com/OctoPrint/plugins.octoprint.org/issues">report it</a> or
+      <a href="https://github.com/OctoPrint/plugins.octoprint.org/pulls"
+        >send a PR to fix it =)</a
+      >. Thanks!
     </p>
 
     <h2><i class="fa fa-chart-line"></i> Stats</h2>
 
-    {% assign plugin_counter = site.plugins | size %}
-    {% assign python3_counter = 0 %}
-    {% assign abandoned_counter = 0 %}
-
-    {% for plugin in site.plugins %}
-      {% if plugin.compatibility and plugin.compatibility.python and plugin.compatibility.python == '>=2.7,<4' %}
-        {% assign python3_counter = python3_counter | plus:1 %}
-      {% elsif plugin.compatibility and plugin.compatibility.python and plugin.compatibility.python == '>=3,<4' %}
-        {% assign python3_counter = python3_counter | plus:1 %}
-      {% endif %}
-      {% if plugin.abandoned %}
-        {% assign abandoned_counter = abandoned_counter | plus:1 %}
-      {% endif %}
-    {% endfor %}
-
-    {% assign all_authors = "" | split: "/" %}
-    {% for plugin in site.plugins %}
-      {% if plugin.authors %}
-        {% for author in plugin.authors %}
-          {% unless author == "" %}
-            {% assign all_authors = all_authors | push: author %}
-          {% endunless %}
-        {% endfor %}
-      {% else %}
-        {% unless plugin.author == "" %}
-          {% assign all_authors = all_authors | push: plugin.author %}
-        {% endunless %}
-      {% endif %}
-    {% endfor %}
-    {% assign all_authors = all_authors | uniq | sort_natural %}
-    {% assign author_count = all_authors | size %}
+    {% assign plugin_counter = site.plugins | size %} {% assign python3_counter = 0 %} {%
+    assign abandoned_counter = 0 %} {% for plugin in site.plugins %} {% if
+    plugin.compatibility and plugin.compatibility.python and plugin.compatibility.python
+    == '>=2.7,<4' %} {% assign python3_counter = python3_counter | plus:1 %} {% elsif
+    plugin.compatibility and plugin.compatibility.python and plugin.compatibility.python
+    == '>=3,<4' %} {% assign python3_counter = python3_counter | plus:1 %} {% endif %} {%
+    if plugin.abandoned %} {% assign abandoned_counter = abandoned_counter | plus:1 %} {%
+    endif %} {% endfor %} {% assign all_authors = "" | split: "/" %} {% for plugin in
+    site.plugins %} {% if plugin.authors %} {% for author in plugin.authors %} {% unless
+    author == "" %} {% assign all_authors = all_authors | push: author %} {% endunless %}
+    {% endfor %} {% else %} {% unless plugin.author == "" %} {% assign all_authors =
+    all_authors | push: plugin.author %} {% endunless %} {% endif %} {% endfor %} {%
+    assign all_authors = all_authors | uniq | sort_natural %} {% assign author_count =
+    all_authors | size %}
 
     <p>
-      There are currently <strong>{{ plugin_counter }}</strong> plugins listed in this repository of
-      which <strong>{{ python3_counter }} ({{ python3_counter | times:100 | divided_by:plugin_counter | round }}%)</strong>
+      There are currently <strong>{{ plugin_counter }}</strong> plugins listed in this
+      repository of which
+      <strong
+        >{{ python3_counter }} ({{ python3_counter | times:100 | divided_by:plugin_counter
+        | round }}%)</strong
+      >
       are marked as Python 3 compatible.
     </p>
 
     <p>
-      <a href="https://github.com/OctoPrint/plugins.octoprint.org/labels/abandoned%20plugin"><strong>{{ abandoned_counter }}</strong>
-      plugins have been marked as abandoned</a> and are looking for a new maintainer.
+      <a
+        href="https://github.com/OctoPrint/plugins.octoprint.org/labels/abandoned%20plugin"
+        ><strong>{{ abandoned_counter }}</strong> plugins have been marked as abandoned</a
+      >
+      and are looking for a new maintainer.
     </p>
 
     <p>
-      All in all <strong>{{ author_count }}</strong> plugin authors have spent time and effort to bring you these plugins.
+      All in all <strong>{{ author_count }}</strong> plugin authors have spent time and
+      effort to bring you these plugins.
     </p>
 
-    {% assign sorted_plugins = site.plugins | where_exp: "plugin", "plugin.stats.month.instances" | sort: "stats.month.instances" | reverse %}
-    {% assign sorted_plugins_size = sorted_plugins | size %}
-    {% if sorted_plugins_size >= 20 %}
-    {% assign popular_plugins = sorted_plugins | slice: 0, 20 | sample: 20 %}
+    {% assign sorted_plugins = site.plugins | where_exp: "plugin",
+    "plugin.stats.month.instances" | sort: "stats.month.instances" | reverse %} {% assign
+    sorted_plugins_size = sorted_plugins | size %} {% if sorted_plugins_size >= 20 %} {%
+    assign popular_plugins = sorted_plugins | slice: 0, 20 | sample: 20 %}
     <h3>Popular plugins</h3>
-    <p><small><em>... in random order</em></small></p>
+    <p>
+      <small><em>... in random order</em></small>
+    </p>
     <ul>
       {% for plugin in popular_plugins %}
       <li>
@@ -92,8 +98,12 @@ layout: page
       </li>
       {% endfor %}
     </ul>
-    <small><em>Based on anonymous usage data. Please note that commercial plugins are exempt from this list due to past manipulations.</em></small>
+    <small
+      ><em
+        >Based on anonymous usage data. Please note that commercial plugins are exempt
+        from this list due to past manipulations.</em
+      ></small
+    >
     {% endif %}
-
   </div>
 </div>

@@ -15,7 +15,7 @@ tags:
 featuredimage: /assets/img/plugins/backupscheduler/screenshot_settings.png
 compatibility:
   octoprint:
-  - 1.3.10
+  - 1.9.0
   os:
   - linux
   - windows

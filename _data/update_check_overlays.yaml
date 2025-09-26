@@ -17,7 +17,8 @@ filamentmanager:
 klipper:
   user: AliceGrey
 costestimation:
-  user: OllisGit
+  user: Hillshum
+  pip: https://github.com/Hillshum/OctoPrint-CostEstimation/releases/download/{target_version}/master.zip
 filamentreload:
   user: nickmitchko
 eeprom_marlin:
@@ -55,8 +56,14 @@ webhooks:
 octolight:
   user: thomst08
 PrintJobHistory:
-  user: dojohnso
-  pip: https://github.com/dojohnso/OctoPrint-PrintJobHistory/releases/download/{target_version}/main.zip
+  user: vojtakaniok
+  pip: https://github.com/vojtakaniok/OctoPrint-PrintJobHistory/releases/download/{target_version}/main.zip
 SpoolManager:
-  user: dojohnso
-  pip: https://github.com/dojohnso/OctoPrint-SpoolManager/releases/download/{target_version}/main.zip
+  user: WildRikku
+  pip: https://github.com/WildRikku/OctoPrint-SpoolManager/releases/download/{target_version}/main.zip
+telegram:
+  user: jacopotediosi
+  pip: https://github.com/jacopotediosi/OctoPrint-Telegram/archive/{target_version}.zip
+marlinslider:
+  user: jneilliii
+  pip: https://github.com/jneilliii/OctoPrint-MarlinSlider/archive/{target_version}.zip

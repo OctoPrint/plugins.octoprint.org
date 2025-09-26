@@ -34,5 +34,6 @@ compatibility:
   - freebsd
   python: ">=2.7,<4"
 
+abandoned: https://github.com/OctoPrint/plugins.octoprint.org/issues/1362
 ---
 Adds feature to create various gcode macros and display them in sidebar menu

@@ -23,10 +23,10 @@ tags:
 - helper
 
 screenshots:
-- url: /assets/img/plugins/eeprom_mpselectmini/screen.png
+- url: /assets/img/plugins/eeprom_MPSelectMini/screen.png
   alt: Settings
 
-featuredimage: /assets/img/plugins/eeprom_mpselectmini/screen.png
+featuredimage: /assets/img/plugins/eeprom_MPSelectMini/screen.png
 compatibility:
   python: '>=2.7,<4'
 ---

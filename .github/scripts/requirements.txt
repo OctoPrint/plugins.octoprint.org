@@ -2,5 +2,6 @@ requests
 python-frontmatter
 colorama
 voluptuous
-click
+click!=8.2.0
 ruamel.yaml<0.18
+packaging

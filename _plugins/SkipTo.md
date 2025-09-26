@@ -70,4 +70,4 @@ Tested with output from Cura, Slicer3d and PrusaSlicer.
 
 Contact us at [info@awesrc.com.au](info@awesrc.com.au).
 
-![screenshot](/assets/img/plugins/SkipTo/SkipTo.png)
+![screenshot](/assets/img/plugins/SkipTo/skipto.png)

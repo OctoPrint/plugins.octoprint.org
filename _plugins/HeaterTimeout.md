@@ -20,7 +20,7 @@ follow_dependency_links: false
 tags:
 - temperature
 screenshots:
-- url: /assets/img/plugins/heatertimeout/configuration.png
+- url: /assets/img/plugins/HeaterTimeout/configuration.png
   alt: Configuration Screen
   caption: Configure HeaterTimeout
 

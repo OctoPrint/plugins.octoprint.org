@@ -5,13 +5,14 @@ id: costestimation
 title: CostEstimation
 description: Displays the estimated print cost for the loaded model
 authors:
+- Hilton Shumway
 - Sven Lohrmann
 - Olli
 license: AGPLv3
 date: 2017-07-16
-homepage: https://github.com/OllisGit/OctoPrint-CostEstimation
-source: https://github.com/OllisGit/OctoPrint-CostEstimation
-archive: https://github.com/OllisGit/OctoPrint-CostEstimation/releases/latest/download/master.zip
+homepage: https://github.com/Hillshum/OctoPrint-CostEstimation
+source: https://github.com/Hillshum/OctoPrint-CostEstimation
+archive: https://github.com/Hillshum/OctoPrint-CostEstimation/releases/latest/download/master.zip
 compatibility:
   python: ">=2.7,<4"
   octoprint:

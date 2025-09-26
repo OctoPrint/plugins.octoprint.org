@@ -56,6 +56,23 @@ Example:
 
 
 ## Change notes:
+
+v 0.15
+- Fix few exceptions
+- Themify support added Also made the CSS safe from conflicting with other elements
+- Hide tools temps when not active [#80](https://github.com/imrahil/OctoPrint-NavbarTemp/issues/80)
+- Fahrenheit display added [#63](https://github.com/imrahil/OctoPrint-NavbarTemp/issues/63) [#37](https://github.com/imrahil/OctoPrint-NavbarTemp/issues/37)
+- Add BCM2711 as supported SoC
+- Consolidate vcgencmd path between versions
+
+v 0.14
+- Temperature is visible, connection is no needed [#47](https://github.com/imrahil/OctoPrint-NavbarTemp/issues/47) [#65](https://github.com/imrahil/OctoPrint-NavbarTemp/issues/65)
+- Fix for python 3 - [#68](https://github.com/imrahil/OctoPrint-NavbarTemp/issues/68)
+- Support for shorter tool names - [#29](https://github.com/imrahil/OctoPrint-NavbarTemp/issues/29)
+- Fix for settings saving reported in [#47](https://github.com/imrahil/OctoPrint-NavbarTemp/issues/47)
+- Added possibility to remove target temperature output [#57](https://github.com/imrahil/OctoPrint-NavbarTemp/issues/57)
+- Added possibility to configure soc name on navbar [#43](https://github.com/imrahil/OctoPrint-NavbarTemp/issues/47)
+
 v 0.13
 - added support for custom commands
 

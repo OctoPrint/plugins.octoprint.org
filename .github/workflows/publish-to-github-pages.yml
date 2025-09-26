@@ -24,10 +24,10 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: 🐍 Set up Python 3.7
+      - name: 🐍 Set up Python 3.11
         uses: actions/setup-python@v4
         with:
-          python-version: "3.7"
+          python-version: "3.11"
 
       - name: 🐍 Install requirements
         run: |
@@ -40,7 +40,7 @@ jobs:
 
       - name: 🕵️‍♂ Validate front matter
         run: |
-          python .github/scripts/validate_front_matter.py --action-output
+          python .github/scripts/validate_front_matter.py --check-id-match --check-asset-match --action-output
 
       - name: 🏗 Enrich front matter
         if: github.repository == 'OctoPrint/plugins.octoprint.org' && github.event_name != 'pull_request'
@@ -64,7 +64,7 @@ jobs:
       - name: 💎 Set up Ruby 3
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.2'
+          ruby-version: '3.4'
           bundler-cache: true
       
       - name: 🔨 Build page
@@ -90,7 +90,7 @@ jobs:
           peterdavehello/jsonlint jsonlint -q /json/search.json
 
       - name: ⬆ Upload pages artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v3
         with:
           path: ./_site
 
@@ -123,4 +123,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v4

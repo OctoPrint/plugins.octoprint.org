@@ -2,16 +2,50 @@ version: "3"
 
 tasks:
   install:
+    desc: "Install dependencies for page build (requires Ruby)"
     cmds:
       - |
         bundle install
 
   serve:
+    desc: "Runs the server"
     cmds:
       - |
         bundle exec jekyll s --future
   
   assets:
+    desc: "Compiles static assets"
     cmds:
       - |
         lessc "--clean-css=--s1 --advanced --compatibility=ie8" assets/less/site.less assets/css/site.css
+  
+  remove-plugin:
+    desc: "Removes a plugin, use like this: task remove-plugin -- plugin_id"
+    vars:
+      PLUGIN: '{{.CLI_ARGS}}'
+    cmds:
+      - |
+        echo "Removing plugin {{.PLUGIN}}..."
+        [ -f "_plugins/{{.PLUGIN}}.md" ] && rm "_plugins/{{.PLUGIN}}.md" && echo "Deleted markdown @ _plugins/{{.PLUGIN}}.md"
+        [ -d "assets/img/plugins/{{.PLUGIN}}" ] && rm -r "assets/img/plugins/{{.PLUGIN}}" && echo "Deleted assets @ assets/img/plugins/{{.PLUGIN}}"
+        echo "... done!"
+
+  asset-leftovers:
+    desc: "Lists potential left-overs in the assets folder: folders not matching a plugin.md file"
+    cmds:
+      - |
+        pushd assets/img/plugins > /dev/null
+        for dir in *; do
+          [ -d $dir ] || continue
+          
+          if [ ! -f "../../../_plugins/$dir.md" ]; then
+            echo "$dir: No matching .md file found."
+            candidates=$(grep -l "$dir" ../../../_plugins/* | sed -e "s#../../../_plugins/##" )
+            if [ -n "$candidates" ]; then
+              echo "  Possible candidates: $candidates"
+            else
+              echo "  No use of $dir detected in any .md files"
+            fi
+          fi
+        done
+        popd > /dev/null

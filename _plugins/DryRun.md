@@ -33,6 +33,7 @@ screenshots:
 
 featuredimage: https://github.com/OllisGit/OctoPrint-DryRun/raw/master/screenshots/StateAndNavBar.jpg
 
+abandoned: https://github.com/OctoPrint/plugins.octoprint.org/issues/1374
 ---
 
 A Octoprint-Plugin that allows to execute a print without heating your bed or nozzle, turning on any fans, or extruding any filament.

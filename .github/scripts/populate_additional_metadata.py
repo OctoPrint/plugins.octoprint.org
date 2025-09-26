@@ -433,7 +433,11 @@ def process_plugin_file(path, incl_stats=True, incl_github=True, incl_compat=Tru
     out("Processing plugin {} at path {}".format(plugin_id, path))
 
     if incl_stats:
-        if "commercial" not in data.get("attributes", []):
+        attributes = data.get("attributes", [])
+        if attributes is None:
+            attributes = []
+
+        if "commercial" not in attributes:
             def build_stats(stats):
                 result = dict(
                     instances=stats.get("instances", 0),

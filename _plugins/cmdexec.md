@@ -11,9 +11,9 @@ license: AGPLv3
 # today's date in format YYYY-MM-DD, e.g.
 date: 2023-06-13
 
-homepage: https://github.com/Chargnn/Octoprint-CmdExec/
-source: https://github.com/Chargnn/Octoprint-CmdExec/
-archive: https://github.com/Chargnn/Octoprint-CmdExec/archive/master.zip
+homepage: https://github.com/alexis-coulombe/Octoprint-CmdExec/
+source: https://github.com/alexis-coulombe/Octoprint-CmdExec/
+archive: https://github.com/alexis-coulombe/Octoprint-CmdExec/archive/master.zip
 
 # Set this if your plugin heavily interacts with any kind of cloud services.
 #privacypolicy: your plugin's privacy policy URL
@@ -96,7 +96,7 @@ This plugin allows executing custom shell commands through the Octoprint's UI us
 
 ## Configuration
 
-In the plugin's settings page, enter the command you want to execute using the navbar button. You can also change the navbar icon if you want.
+In the plugin's settings page, enter the commands you want to execute using the navbar button. You can also change the navbar icon if you want.
 
 You can chain commands with the ```&&``` and write the result of a command to a file with ```>>```.
 Here is an example to execute 3 commands: ```command1 && command2 && command3 >> log.txt```
@@ -115,4 +115,4 @@ You can also execute a script directly on your computer by writing the path to t
 - Log device stats to a file
 - Execute any custom scripts at a specific time
 
-https://github.com/Chargnn/Octoprint-CmdExec
+https://github.com/alexis-coulombe/Octoprint-CmdExec

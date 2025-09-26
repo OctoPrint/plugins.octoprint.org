@@ -30,7 +30,7 @@ compatibility:
 *This plugin is useless without another plugin to use the metadata. Those can be found [here](/by_tag/#tag-slicer-settings).*
 
 ### Compatible plugins
-Check out [ExtraFileInfo](/plugins/ExtraFileInfo) for an example of what this plugin can do.
+Check out [ExtraFileInfo](/plugins/extrafileinfo) for an example of what this plugin can do.
 
 ### Configuration
 #### Scan limit

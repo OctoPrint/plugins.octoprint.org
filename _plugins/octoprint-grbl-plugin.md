@@ -21,14 +21,14 @@ tags:
 - GCODE
 - protocol
 
-featuredimage: /assets/img/plugins/grbl/Grbl_logo.png
+featuredimage: /assets/img/plugins/octoprint-grbl-plugin/Grbl_logo.png
 
 compatibility:
   octoprint:
   - 1.3.0
 
 screenshots:
-- url: /assets/img/plugins/grbl/Grbl_logo.png
+- url: /assets/img/plugins/octoprint-grbl-plugin/Grbl_logo.png
 
 ---
 

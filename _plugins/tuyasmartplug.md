@@ -20,7 +20,7 @@ tags:
 - Smartplug
 - Power
 
-featuredimage: /assets/img/plugins/TuyaSmartplug/screenshot.png
+featuredimage: /assets/img/plugins/tuyasmartplug/screenshot.png
 compatibility:
   python: '>=2.7,<4'
 ---
@@ -32,15 +32,15 @@ This plugin controlls [Tuya-based](https://en.tuya.com/) SmartPlugs.
 
 ## Screenshots
 
-![overview](/assets/img/plugins/TuyaSmartplug/screenshot.png)
+![overview](/assets/img/plugins/tuyasmartplug/screenshot.png)
 
 ## Settings
 
-![settings](/assets/img/plugins/TuyaSmartplug/settings.png)
+![settings](/assets/img/plugins/tuyasmartplug/settings.png)
 
 Once installed go into settings and enter the ip address for your Tuya Smartplug device. Adjust additional settings as needed.
 
-![screenshot](/assets/img/plugins/TuyaSmartplug/plugeditor.png)
+![screenshot](/assets/img/plugins/tuyasmartplug/plugeditor.png)
 
 - **IP**
   - IP or hostname of plug to control.

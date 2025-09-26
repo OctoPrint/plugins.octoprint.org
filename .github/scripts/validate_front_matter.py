@@ -7,12 +7,17 @@ import sys
 import click
 import colorama
 import frontmatter
-import pkg_resources
+from packaging.specifiers import SpecifierSet
 from voluptuous import All, Any, Invalid, Length, Optional, Required, Schema, Url
 
 OCTOPRINT_PY3_SUPPORT = ("3.7", "3.8", "3.9", "3.10", "3.11", "3.12")
 
 NonEmptyString = All(str, Length(min=1))
+
+class ValidationError(ValueError):
+    def __init__(self, *args, error_messages=None):
+        super().__init__(*args)
+        self.error_messages = error_messages
 
 
 def to_requirement(compat, name="Foo"):
@@ -20,7 +25,7 @@ def to_requirement(compat, name="Foo"):
         compat.startswith(c) for c in ("<", "<=", "!=", "==", ">=", ">", "~=", "===")
     ):
         compat = ">={}".format(compat)
-    return pkg_resources.Requirement.parse(name + compat)
+    return SpecifierSet(compat)
 
 
 def Version(v):
@@ -88,7 +93,7 @@ SCHEMA = Schema(
         Optional("disabled"): NonEmptyString,
         Optional("abandoned"): NonEmptyString,
         Optional("up_for_adoption"): Url(),
-        Optional("redirect_from"): NonEmptyString,
+        Optional("redirect_from"): Any(All([NonEmptyString]), NonEmptyString),
         Optional("attributes"): Any(list, None),
     }
 )
@@ -128,7 +133,7 @@ def validate_image_paths(data, src):
             # image url is a path
             image_path = os.path.abspath(os.path.join(src, url[1:]))
             if not os.path.exists(image_path):
-                raise Invalid(
+                raise ValidationError(
                     "image location '{}' doesn't exist on disk ({})".format(
                         url, image_path
                     )
@@ -144,7 +149,7 @@ def validate_image_paths(data, src):
     return []
 
 
-def validate_image_urls(data, path):
+def validate_internal_assets(data, path):
     warnings = []
 
     filename = os.path.basename(path)[:-3]
@@ -183,10 +188,36 @@ def validate_id_match(data, path):
     filename = os.path.basename(path)[:-3]
     if data["id"] != filename:
         return [
-            "id '{}' does not match file name '{}.md' @ data['id']".format(
+            "id '{}' does not match file name '{}.md', please rename the file @ data['id']".format(
                 data["id"], filename
             )
         ]
+    return []
+
+
+def validate_asset_match(data, path):
+    errors = []
+
+    filename = os.path.basename(path)[:-3]
+
+    def check_url(loc, url):
+        if url.startswith("/assets/img/plugins/") and not url.startswith("/assets/img/plugins/{}".format(filename)):
+            folder = url.split("/")[4]
+            message = "asset folder of image '{}' does not match plugin identifier {}: {} @ {}".format(url, filename, folder, loc)
+            errors.append(message)
+
+    if "screenshots" in data:
+        count = 0
+        for entry in data["screenshots"]:
+            check_url("data['screenshots'][{}]['url']".format(count), entry["url"])
+            count += 1
+
+    if "featuredimage" in data:
+        check_url("data['featuredimage']", data["featuredimage"])
+
+    if errors:
+        raise ValidationError("plugin references assets in mismatched asset folder", error_messages=errors)
+
     return []
 
 
@@ -196,11 +227,11 @@ def validate_python_compatibility(data):
     if "compatibility" in data and "python" in data["compatibility"]:
         requirement = to_requirement(data["compatibility"]["python"], name="Python")
         if all(map(lambda x: x not in requirement, OCTOPRINT_PY3_SUPPORT)):
-            raise ValueError(
+            raise ValidationError(
                 "python compatibility does not include Python 3 @ data['compatibility']['python']"
             )
     else:
-        raise ValueError("not flagged as Python 3 compatible @ data")
+        raise ValidationError("not flagged as Python 3 compatible @ data")
     return warnings
 
 
@@ -215,13 +246,13 @@ def validate_date_unchanged(data, path, src, sha, debug=False):
     try:
         output = subprocess.check_output(command, encoding="utf-8")
         if not output:
-            raise ValueError("could not read prior version")
+            raise ValidationError("could not read prior version")
     except subprocess.CalledProcessError:
         return
 
     old_metadata, old_content = frontmatter.parse(output)
     if data["date"] != old_metadata.get("date"):
-        raise ValueError(
+        raise ValidationError(
             "date must not be changed after initial registration @ data['date']"
         )
 
@@ -232,6 +263,7 @@ def validate(
     src,
     path,
     id_match=False,
+    asset_match=False,
     internal_assets=False,
     date_unchanged=False,
     screenshots_present=False,
@@ -250,8 +282,11 @@ def validate(
     if id_match:
         warnings += validate_id_match(metadata, path)
 
+    if asset_match:
+        warnings += validate_asset_match(metadata, path)
+
     if internal_assets:
-        warnings += validate_image_urls(metadata, path)
+        warnings += validate_internal_assets(metadata, path)
 
     if screenshots_present:
         warnings += validate_screenshots_present(metadata)
@@ -274,6 +309,7 @@ def validate(
 @click.option("--debug", is_flag=True)
 @click.option("--src", "src")
 @click.option("--check-id-match", "id_match", is_flag=True)
+@click.option("--check-asset-match", "asset_match", is_flag=True)
 @click.option("--check-internal-assets", "internal_assets", is_flag=True)
 @click.option(
     "--check-date-unchanged",
@@ -289,6 +325,7 @@ def main(
     debug=False,
     src=None,
     id_match=False,
+    asset_match=False,
     internal_assets=False,
     date_unchanged=None,
     screenshots_present=False,
@@ -321,6 +358,7 @@ def main(
                 src,
                 path,
                 id_match=id_match,
+                asset_match=asset_match,
                 internal_assets=internal_assets,
                 date_unchanged=date_unchanged,
                 screenshots_present=screenshots_present,
@@ -330,6 +368,13 @@ def main(
         except Exception as exc:
             print("{}: ".format(path), end="")
             print(colorama.Fore.RED + colorama.Style.BRIGHT + "FAIL")
+
+            if isinstance(exc, ValidationError) and exc.error_messages:
+                for error in exc.error_messages:
+                    if action_output:
+                        print("::error file={}::{}".format(path[len(src) + 1:], error))
+                    else:
+                        print("  " + error)
 
             if action_output:
                 print("::error file={}::{}".format(path[len(src) + 1 :], str(exc)))
