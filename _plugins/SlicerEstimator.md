@@ -24,6 +24,7 @@ tags:
 - analysis
 - cura
 - prusaslicer
+- orcaslicer
 - finish time
 - filament
 - file manager
@@ -62,7 +63,7 @@ The the syntax of the following slicers is known and selected automatically:
 * Creality Slicer
 * PrusaSlicer
 * SuperSlicer
-* OctoSlicer
+* OrcaSlicer
 * Bambu Studio
 * Snapmaker Luban
 
