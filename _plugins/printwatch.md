@@ -13,7 +13,7 @@ homepage: https://github.com/printpal-io/OctoPrint-Printwatch
 source: https://github.com/printpal-io/OctoPrint-Printwatch
 archive: https://github.com/printpal-io/OctoPrint-Printwatch/archive/master.zip
 
-privacypolicy: https://printpal.io/privacy
+privacypolicy: https://printwatch.printpal.io/privacy
 
 tags:
 - AI
@@ -146,7 +146,7 @@ Upcoming features include:
 
 7. Restart OctoPrint once Installation is completed
 
-The full installation guide/quickstart can be found here: [QuickStart Guide with OctoPrint](https://blog.printpal.io/getting-started-with-printpal/)
+The full installation guide/quickstart can be found here: [QuickStart Guide with OctoPrint](https://printwatch.printpal.io/documentation/quick-start-guide)
 
 ### Configuration
 
@@ -158,12 +158,12 @@ Once you have successfully installed PrintWatch, you should configure the settin
 
 3. Scroll down to the Plugin Settings in the left-side selection menu and select 'PrintWatch'
 
-Follow the setup guide on the official [GitHub](https://github.com/printpal-io/OctoPrint-PrintWatch) or the [printpal.io website](https://blog.printpal.io/getting-started-with-printpal/)
+Follow the setup guide on the official [GitHub](https://github.com/printpal-io/OctoPrint-PrintWatch) or the [printpal.io website](https://printwatch.printpal.io/documentation/quick-start-guide)
 
 
 ### Authentication
 
-In order to use PrintWatch, you must provide your API key in the settings. Either use your Free API key, or visit the [printpal.io website](https://printpal.io/pricing) to register your key for your printers.
+In order to use PrintWatch, you must provide your API key in the settings. Either use your Free API key, or visit the [printpal.io website](https://printwatch.printpal.io/pricing) to register your key for your printers.
 
 # Privacy Policy
-Read our privacy policy here: [PrintWatch Privacy policy](https://printpal.io/privacy)
+Read our privacy policy here: [PrintWatch Privacy policy](https://printwatch.printpal.io/privacy)
