@@ -8,7 +8,7 @@ authors:
 - FACTOR Team
 license: AGPLv3
 
-date: 2024-11-17
+date: 2025-11-18
 
 homepage: https://github.com/kangbyounggwan/octoprint-factor-plugin
 source: https://github.com/kangbyounggwan/octoprint-factor-plugin
@@ -129,21 +129,21 @@ That's it! No MQTT broker configuration, no complex settings - just scan and go!
 - **GitHub Issues**: [Report a bug](https://github.com/kangbyounggwan/octoprint-factor-plugin/issues)
 - **Documentation**: [GitHub README](https://github.com/kangbyounggwan/octoprint-factor-plugin)
 
+## Key Features
+
+- 🔒 **Secure Connection** - TLS/SSL encryption enabled by default for all MQTT communications
+- 🌐 **Cloud Integration** - Pre-configured broker connection to FACTOR cloud service
+- 📱 **Multi-language Support** - English and Korean user interfaces
+- 🎥 **Camera Streaming** - WebRTC-based real-time camera streaming via MediaMTX
+- 🔧 **Easy Setup** - Simple wizard-based configuration with no manual broker setup needed
+- 🌍 **Remote Access** - Access your OctoPrint instance from anywhere securely
+
 ## Privacy & Security
 
 - All connections are encrypted via TLS/SSL
 - Data is transmitted securely via MQTT protocol
 - No credentials stored locally
 - AGPLv3 licensed - fully open source
-
-## What's New in v2.6.3
-
-- 🌍 **English Logging** - All logging statements now in English for international users
-- 🔒 **Secure MQTT Connection** - TLS/SSL encryption enabled by default
-- 🌐 **Cloud Integration** - Pre-configured broker connection to FACTOR cloud
-- 🔧 **Simplified Setup** - No manual MQTT broker configuration needed
-- 📱 **Multi-language Support** - English and Korean interfaces
-- 🎨 **Clean Modern UI** - Intuitive settings and monitoring interface
 
 ---
 
