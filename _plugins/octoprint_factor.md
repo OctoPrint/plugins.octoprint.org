@@ -136,8 +136,9 @@ That's it! No MQTT broker configuration, no complex settings - just scan and go!
 - No credentials stored locally
 - AGPLv3 licensed - fully open source
 
-## What's New in v2.6.2
+## What's New in v2.6.3
 
+- 🌍 **English Logging** - All logging statements now in English for international users
 - 🔒 **Secure MQTT Connection** - TLS/SSL encryption enabled by default
 - 🌐 **Cloud Integration** - Pre-configured broker connection to FACTOR cloud
 - 🔧 **Simplified Setup** - No manual MQTT broker configuration needed
