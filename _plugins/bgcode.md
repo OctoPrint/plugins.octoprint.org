@@ -23,7 +23,7 @@ tags:
 compatibility:
   octoprint:
   - 1.4.0
-  python: ">=3,<4"
+  python: ">=3.8,<4"
 
 ---
 
