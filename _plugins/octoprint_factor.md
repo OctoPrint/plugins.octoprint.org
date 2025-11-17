@@ -3,7 +3,7 @@ layout: plugin
 
 id: octoprint_factor
 title: FACTOR Plugin
-description: Remote monitoring and control for OctoPrint via QR code setup. Access your 3D printer from anywhere with real-time monitoring, camera streaming, and instant notifications.
+description: Remote monitoring and control for OctoPrint. Access your 3D printer from anywhere with real-time monitoring, camera streaming, and instant notifications via cloud connection.
 authors:
 - FACTOR Team
 license: AGPLv3
@@ -26,20 +26,9 @@ tags:
 - monitoring
 - mqtt
 - camera
-- qr code
 - notifications
 - mobile
 - cloud
-
-screenshots:
-- url: https://raw.githubusercontent.com/kangbyounggwan/octoprint-factor-plugin/main/docs/screenshot-wizard.png
-  alt: FACTOR Plugin Setup Wizard
-  caption: Simple 20-second QR code setup wizard
-- url: https://raw.githubusercontent.com/kangbyounggwan/octoprint-factor-plugin/main/docs/screenshot-settings.png
-  alt: FACTOR Plugin Settings
-  caption: Clean settings interface with multilingual support
-
-featuredimage: https://raw.githubusercontent.com/kangbyounggwan/octoprint-factor-plugin/main/docs/logo.png
 
 compatibility:
   octoprint:
@@ -57,14 +46,14 @@ compatibility:
 
 # FACTOR Plugin
 
-Remote monitoring and control for OctoPrint via MQTT, featuring instant QR code setup.
+Remote monitoring and control for OctoPrint via cloud-based MQTT connection.
 
 ## Features
 
-### 🚀 **20-Second Setup**
-- Scan QR code with your mobile device
-- Complete registration on FACTOR web dashboard
-- Start monitoring immediately - no complex configuration needed
+### 🚀 **Easy Setup**
+- Simple web-based registration
+- Automatic MQTT connection configuration
+- Start monitoring immediately - no complex broker setup needed
 
 ### 📱 **Remote Access Anywhere**
 - Access your full OctoPrint portal from desktop, laptop, tablet, or phone
@@ -147,13 +136,13 @@ That's it! No MQTT broker configuration, no complex settings - just scan and go!
 - No credentials stored locally
 - AGPLv3 licensed - fully open source
 
-## What's New in v2.0.0
+## What's New in v2.6.2
 
-- ✨ **QR Code Setup Wizard** - 20-second setup process
-- 🌐 **Full Internationalization** - English and Korean support
-- 🎨 **Redesigned UI** - Modern, clean interface
-- 📱 **Mobile-First Design** - Optimized for all devices
-- 🔧 **Simplified Configuration** - No manual MQTT setup needed
+- 🔒 **Secure MQTT Connection** - TLS/SSL encryption enabled by default
+- 🌐 **Cloud Integration** - Pre-configured broker connection to FACTOR cloud
+- 🔧 **Simplified Setup** - No manual MQTT broker configuration needed
+- 📱 **Multi-language Support** - English and Korean interfaces
+- 🎨 **Clean Modern UI** - Intuitive settings and monitoring interface
 
 ---
 
