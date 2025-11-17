@@ -1,18 +1,25 @@
 ---
 layout: plugin
 
-id: factor_mqtt
+id: octoprint_factor
 title: FACTOR Plugin
 description: Remote monitoring and control for OctoPrint via QR code setup. Access your 3D printer from anywhere with real-time monitoring, camera streaming, and instant notifications.
 authors:
 - FACTOR Team
 license: AGPLv3
 
-date: 2025-01-28
+date: 2024-11-17
 
 homepage: https://github.com/kangbyounggwan/octoprint-factor-plugin
 source: https://github.com/kangbyounggwan/octoprint-factor-plugin
 archive: https://github.com/kangbyounggwan/octoprint-factor-plugin/archive/{target_version}.zip
+
+privacypolicy: https://factor.io.kr/privacy
+
+attributes:
+- cloud
+- commercial
+- free-tier
 
 tags:
 - remote access
@@ -54,33 +61,33 @@ Remote monitoring and control for OctoPrint via MQTT, featuring instant QR code 
 
 ## Features
 
-### **Setup**
+### 🚀 **20-Second Setup**
 - Scan QR code with your mobile device
 - Complete registration on FACTOR web dashboard
 - Start monitoring immediately - no complex configuration needed
 
-### **Remote Access Anywhere**
+### 📱 **Remote Access Anywhere**
 - Access your full OctoPrint portal from desktop, laptop, tablet, or phone
 - Works with your favorite OctoPrint mobile apps
 - Secure cloud connection via MQTT
 
-### **Camera Streaming**
+### 📹 **Camera Streaming**
 - Full framerate webcam streaming
 - Multiple format support (MJPEG, WebRTC, RTSP, HLS)
 - Real-time monitoring of your prints
 
-### **Instant Notifications**
+### 🔔 **Instant Notifications**
 - Print completion alerts
 - Error notifications
 - Real-time status updates
 - Multiple notification channels (Push, Telegram, Discord, Email)
 
-### **Multilingual Support**
+### 🌐 **Multilingual Support**
 - English and Korean (한국어) built-in
 - Automatic language detection
 - Easy to add more languages
 
-### **Modern UI**
+### 🎨 **Modern UI**
 - Clean, intuitive interface
 - Follows OctoPrint design standards
 - Responsive design for all screen sizes
