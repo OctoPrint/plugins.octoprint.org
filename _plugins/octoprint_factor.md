@@ -8,7 +8,7 @@ authors:
 - FACTOR Team
 license: AGPLv3
 
-date: 2025-11-18
+date: 2025-11-20
 
 homepage: https://github.com/kangbyounggwan/octoprint-factor-plugin
 source: https://github.com/kangbyounggwan/octoprint-factor-plugin
@@ -110,11 +110,11 @@ pip install https://github.com/kangbyounggwan/octoprint-factor-plugin/archive/ma
 
 After installation, the **Setup Wizard** will guide you through configuration:
 
-1. **Scan QR Code**: Use your mobile device to scan the displayed QR code
-2. **Web Registration**: Complete device registration on the FACTOR web dashboard at [factor.io.kr](https://factor.io.kr)
+1. **Open Setup Page**: Click the button to open the FACTOR web dashboard
+2. **Web Registration**: Complete device registration at [factor.io.kr](https://factor.io.kr)
 3. **Start Monitoring**: Return to OctoPrint and start using FACTOR
 
-That's it! No MQTT broker configuration, no complex settings - just scan and go! 🎉
+That's it! No MQTT broker configuration, no complex settings - just click and go! 🎉
 
 ## Requirements
 
@@ -129,14 +129,6 @@ That's it! No MQTT broker configuration, no complex settings - just scan and go!
 - **GitHub Issues**: [Report a bug](https://github.com/kangbyounggwan/octoprint-factor-plugin/issues)
 - **Documentation**: [GitHub README](https://github.com/kangbyounggwan/octoprint-factor-plugin)
 
-## Key Features
-
-- 🔒 **Secure Connection** - TLS/SSL encryption enabled by default for all MQTT communications
-- 🌐 **Cloud Integration** - Pre-configured broker connection to FACTOR cloud service
-- 📱 **Multi-language Support** - English and Korean user interfaces
-- 🎥 **Camera Streaming** - WebRTC-based real-time camera streaming via MediaMTX
-- 🔧 **Easy Setup** - Simple wizard-based configuration with no manual broker setup needed
-- 🌍 **Remote Access** - Access your OctoPrint instance from anywhere securely
 
 ## Privacy & Security
 
