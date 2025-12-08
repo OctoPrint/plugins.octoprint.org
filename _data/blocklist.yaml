@@ -3,7 +3,7 @@
 #  pythonversions: affected Python versions (e.g. [">=3"], all versions if left out)
 #  octoversions: affected OctoPrint versions (e.g. [">=1.2.9,<1.3.0",">=1.3.2"], all versions if left out)
 #  versions: list of affected versions (e.g. ["0.1.0"]), optional (all versions if left out), deprecated starting with release of OctoPrint 1.7.0
-#  reason: Human readble reason for blacklisting, may contain Markdown
+#  reason: Human readble reason for blocklisting, may contain Markdown
 - plugin: tplinksmartplug
   versions:
     - 0.7.0
