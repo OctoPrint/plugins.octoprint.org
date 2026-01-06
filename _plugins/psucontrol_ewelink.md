@@ -19,7 +19,7 @@ privacypolicy: https://github.com/chrismin13/OctoPrint-PSUControl-eWeLink/blob/m
 
 tags:
 - psu
-- psu control
+- psucontrol
 - power
 - switch
 - sonoff
