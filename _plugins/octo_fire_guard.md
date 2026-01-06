@@ -39,12 +39,11 @@ compatibility:
 
 An OctoPrint plugin that monitors printer temperatures in real-time to prevent fire hazards. The plugin watches both hotend and heatbed temperatures and triggers emergency shutdown procedures when configurable thresholds are exceeded.
 
-
-> [!WARNING]
-> **⚠️ THIS PLUGIN IS A SAFETY FEATURE, NOT A REPLACEMENT FOR PROPER PRINTER SUPERVISION ⚠️**
-> 
-> **This plugin does not guarantee safety and should not be relied upon as the sole fire prevention mechanism. Always monitor your printer during operation. OctoPrint may not be running, the plugin may malfunction, or other failure modes may occur that prevent the plugin from responding to dangerous conditions.**
-
+<div class="alert alert-warning">
+<h4>⚠️ WARNING</h4>
+<p><strong>THIS PLUGIN IS A SAFETY FEATURE, NOT A REPLACEMENT FOR PROPER PRINTER SUPERVISION</strong></p>
+<p>This plugin does not guarantee safety and should not be relied upon as the sole fire prevention mechanism. Always monitor your printer during operation. OctoPrint may not be running, the plugin may malfunction, or other failure modes may occur that prevent the plugin from responding to dangerous conditions.</p>
+</div>
 
 ## Motivation
 
