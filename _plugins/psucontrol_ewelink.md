@@ -27,6 +27,8 @@ tags:
 - smart home
 - automation
 - psucontrol subplugin
+- smartplug
+- control
 
 compatibility:
   octoprint:
