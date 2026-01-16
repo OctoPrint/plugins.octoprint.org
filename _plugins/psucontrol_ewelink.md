@@ -51,7 +51,7 @@ screenshots:
 featuredimage: /assets/img/plugins/psucontrol_ewelink/settings_screenshot.png
 ---
 
-Integrate [eWeLink](https://ewelink.cc/) smart switches (Sonoff, etc.) with [OctoPrint-PSUControl](https://github.com/kantlivelong/OctoPrint-PSUControl) to turn your 3D printer on and off remotely.
+Integrate [eWeLink](https://ewelink.cc/) smart switches (Sonoff, etc.) with [OctoPrint-PSUControl](https://plugins.octoprint.org/plugins/psucontrol/) to turn your 3D printer on and off remotely.
 
 ## Features
 
@@ -62,7 +62,7 @@ Integrate [eWeLink](https://ewelink.cc/) smart switches (Sonoff, etc.) with [Oct
 ## Requirements
 
 - OctoPrint 1.3.10 or higher
-- [OctoPrint-PSUControl](https://github.com/kantlivelong/OctoPrint-PSUControl) plugin installed
+- [OctoPrint-PSUControl](https://plugins.octoprint.org/plugins/psucontrol/) plugin installed
 - eWeLink account and compatible smart switch
 - Active internet connection
 
