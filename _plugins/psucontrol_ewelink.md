@@ -8,7 +8,7 @@ authors:
 - Christos Miniotis
 license: MIT
 
-date: 2026-01-07
+date: 2026-01-18
 
 homepage: https://github.com/chrismin13/OctoPrint-PSUControl-eWeLink
 source: https://github.com/chrismin13/OctoPrint-PSUControl-eWeLink
@@ -32,7 +32,7 @@ tags:
 
 compatibility:
   octoprint:
-  - 1.3.10
+  - 1.9.0
   
   os:
   - posix
@@ -61,7 +61,7 @@ Integrate [eWeLink](https://ewelink.cc/) smart switches (Sonoff, etc.) with [Oct
 
 ## Requirements
 
-- OctoPrint 1.3.10 or higher
+- OctoPrint 1.9.0 or higher
 - [OctoPrint-PSUControl](https://plugins.octoprint.org/plugins/psucontrol/) plugin installed
 - eWeLink account and compatible smart switch
 - Active internet connection
