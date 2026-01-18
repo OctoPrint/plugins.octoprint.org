@@ -38,7 +38,7 @@ compatibility:
   - posix
   - windows
   
-  python: ">=3.7,<4"
+  python: ">=3.9,<4"
 
 attributes:
 - cloud
