@@ -32,28 +32,28 @@ collections:
 carbon: //cdn.carbonads.com/carbon.js?serve=CK7DT237&placement=pluginsoctoprintorg
 
 exclude:
-- CNAME
-- Gemfile
-- Gemfile.lock
-- vendor
-- "*.iml"
-- .rvmrc
-- .rbenv-version
-- node_modules
-- fetch_yt_preview
-- README.md
-- .github
-- .asset-cache
-- _build
-- .editorconfig
-- .git-blame-ignore-revs
-- .pre-commit-config.yaml
-- black.toml
-- bundle
-- Taskfile.yaml
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - "*.iml"
+  - .rvmrc
+  - .rbenv-version
+  - node_modules
+  - fetch_yt_preview
+  - README.md
+  - .github
+  - .asset-cache
+  - _build
+  - .editorconfig
+  - .git-blame-ignore-revs
+  - .pre-commit-config.yaml
+  - black.toml
+  - bundle
+  - Taskfile.yaml
 
 plugins:
-- jekyll-redirect-from
+  - jekyll-redirect-from
 
 sourcerepo: https://github.com/OctoPrint/OctoPrint
 forum: https://community.octoprint.org
@@ -62,10 +62,8 @@ irc: ircs://irc.libera.chat:6697/#octoprint
 
 twitter: OctoPrint3D
 mastodon: "@octoprint@fosstodon.org"
-facebook: OctoPrint
 youtube: OctoPrint3D
 
 twitterlink: https://twitter.com/OctoPrint3D
 mastodonlink: https://fosstodon.org/@octoprint
-facebooklink: https://facebook.com/OctoPrint
 youtubelink: https://www.youtube.com/c/OctoPrint3D
