@@ -226,7 +226,6 @@ If all is in the green, follow these steps:
     Future versions of the plugin manager might also display it within OctoPrint.
 
     **Some general guidelines:**
-
     - Your **short description** should give a user scrolling through the repository a quick idea of what your plugin provides.
       Don't write a novel here, but if possible be a bit more verbose than just basically repeating your plugin's name.
 
@@ -271,17 +270,12 @@ If all is in the green, follow these steps:
     [ask on the forum](https://community.octoprint.org/c/development) or in your registration pull request.
 
 4.  Ideally, you'll test that your plugin gets listed correctly and the plugin page looks
-    as expected. For this you'll need to install [Jekyll](http://jekyllrb.com/), which is what [Github Pages](https://pages.github.com/) and hence
-    the plugin repository uses for rendering the static repository from the source files. Make sure you have at least [Ruby 2.0](https://www.ruby-lang.org/en/)
-    installed.
-
-    Github offers [a nice setup guide](https://help.github.com/articles/using-jekyll-with-pages/) that makes sure you
-    have the exact versions of everything you need to run.
+    as expected. For this you'll need to install [Jekyll](http://jekyllrb.com/), which is what the plugin repository uses for
+    rendering the static repository from the source files.
 
     <div class="alert">
-        <strong>Note:</strong> If you want to install Jekyll on Windows, you might want to give <a href="http://jekyll-windows.juthilo.com/">this step-by-step guide</a>
-        a look. You might run into some issues with the <code>hitimes</code> gem since at the time of writing this it hasn't yet
-        been adapted to the changes introduced in Ruby 2.2. If this is the case, take a look <a href="http://stackoverflow.com/questions/28985481/hitimes-require-error-when-running-jekyll-serve-on-windows-8-1">here</a>.
+        <strong>Note:</strong> If you want to install Jekyll on Windows, you might want to give <a href="https://jekyllrb.com/docs/installation/windows/">this guide</a>
+        a look.
     </div>
 
     After installing Jekyll, a simple
