@@ -7,7 +7,7 @@ description: Temperature monitoring plugin that prevents fire hazards by monitor
 author: rdar-lab
 license: MIT
 
-date: 2026-01-02
+date: 2026-02-20
 
 homepage: https://github.com/rdar-lab/octo-fire-guard
 source: https://github.com/rdar-lab/octo-fire-guard
