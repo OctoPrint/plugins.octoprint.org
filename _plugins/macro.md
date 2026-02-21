@@ -3,13 +3,15 @@ layout: plugin
 
 id: macro
 title: Sidebar Macros
-description: Plugin for Octoprint to add macros list in sidebar
-author: Mikhail Poluboyarinov
+description: OctoPrint plugin to create various GCODE macros and display them in the sidebar menu.
+authors:
+- Mikhail Poluboyarinov
+- apbarratt
 license: MIT
 date: 2020-06-28
-homepage: https://github.com/mike1pol/octoprint_macro
-source: https://github.com/mike1pol/octoprint_macro
-archive: https://github.com/mike1pol/octoprint_macro/archive/master.zip
+homepage: https://github.com/apbarratt/octoprint_sidebar_macros
+source: https://github.com/apbarratt/octoprint_sidebar_macros
+archive: https://github.com/apbarratt/octoprint_sidebar_macros/releases/latest/download/Sidebar-Macros.zip
 
 tags:
 - sidebar
@@ -26,14 +28,13 @@ featuredimage: /assets/img/plugins/macro/main.png
 
 compatibility:
   octoprint:
-  - 1.2.0
+  - 1.4.0
   os:
   - linux
   - windows
   - macos
   - freebsd
-  python: ">=2.7,<4"
-
-abandoned: https://github.com/OctoPrint/plugins.octoprint.org/issues/1362
+  python: ">=3.7,<4"
 ---
-Adds feature to create various gcode macros and display them in sidebar menu
+
+OctoPrint plugin to create various GCODE macros and display them in the sidebar menu.
