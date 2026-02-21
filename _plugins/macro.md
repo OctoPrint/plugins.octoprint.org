@@ -20,9 +20,9 @@ tags:
 - gcode
 
 screenshots:
-  - url: /assets/img/plugins/macro/main.png
-    alt: Sidebar macros list
-    caption: Sidebar macros list
+- url: /assets/img/plugins/macro/main.png
+  alt: Sidebar macros list
+  caption: Sidebar macros list
 
 featuredimage: /assets/img/plugins/macro/main.png
 
