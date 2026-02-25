@@ -3,8 +3,24 @@ import os
 import sys
 
 import frontmatter
-import pkg_resources
 import yaml
+from packaging.specifiers import SpecifierSet
+from packaging.version import Version
+from packaging.version import parse as parse_version
+
+
+def parse_specifier(specifier: str) -> SpecifierSet:
+    return SpecifierSet(specifier)
+
+
+def is_version_compatible(version, specifier):
+    if not isinstance(version, Version):
+        version = parse_version(version)
+
+    if not isinstance(specifier, SpecifierSet):
+        specifier = parse_specifier(specifier)
+
+    return version in specifier
 
 
 def process_plugin_file(path):
@@ -22,8 +38,7 @@ def process_plugin_file(path):
 
     if data.get("compatibility", {}).get("python"):
         pycompat = data["compatibility"]["python"]
-        s = pkg_resources.Requirement.parse("Python" + pycompat)
-        if "2.7" not in s:
+        if not is_version_compatible("2.7", pycompat):
             out(
                 "Plugin {} is not Python 2 compatible, disable update checks in the field".format(
                     plugin_id
