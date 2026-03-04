@@ -2,7 +2,7 @@ name: Build, validate & deploy page
 
 on:
   schedule:
-    - cron: '0 */1 * * *'
+    - cron: "0 */1 * * *"
   push:
     branches:
       - gh-pages
@@ -22,7 +22,9 @@ jobs:
     name: Build and validate
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
 
       - name: 🐍 Set up Python 3.11
         uses: actions/setup-python@v4
@@ -64,9 +66,9 @@ jobs:
       - name: 💎 Set up Ruby 3
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.4'
+          ruby-version: "3.4"
           bundler-cache: true
-      
+
       - name: 🔨 Build page
         run: |
           bundle exec jekyll build --future --trace
@@ -100,7 +102,7 @@ jobs:
           DISCORD_WEBHOOK: ${{ secrets.discord_webhook }}
         uses: Ilshidur/action-discord@master
         with:
-          args: '☑️ Page build for plugins.octoprint.org was successful'
+          args: "☑️ Page build for plugins.octoprint.org was successful"
 
       - name: 📧 Discord failure notification
         if: failure() && github.repository == 'OctoPrint/plugins.octoprint.org' && github.event_name != 'pull_request'
@@ -108,7 +110,7 @@ jobs:
           DISCORD_WEBHOOK: ${{ secrets.discord_webhook }}
         uses: Ilshidur/action-discord@master
         with:
-          args: '🚫 Page build for plugins.octoprint.org failed'
+          args: "🚫 Page build for plugins.octoprint.org failed"
 
   deploy:
     name: "Deploy"
