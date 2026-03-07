@@ -1,17 +1,17 @@
 ---
 layout: plugin
 
-id: plotly_graph_lywsd03mmc
-title: OctoPrint-PlotlyGraph-LYWSD03MMC
-description: Plugin to add LYWSD03MMC temperature and humidity sensor data to PlotlyTempGraph
+id: OctoPrint-LYWSD03MMC-Plugin-for-PlotlyTempGraph
+title: OctoPrint-LYWSD03MMC-Plugin-for-PlotlyTempGraph
+description: OctoPrint plugin that adds LYWSD03MMC temperature and humidity sensor data to PlotlyTempGraph
 author: yutaka551
 license: MIT
 
-date: 2026-02-22
+date: 2026-03-07
 
-homepage: https://github.com/yutaka551/lywsd03mmc-plotly-graph
-source: https://github.com/yutaka551/lywsd03mmc-plotly-graph
-archive: https://github.com/yutaka551/lywsd03mmc-plotly-graph/archive/master.zip
+homepage: https://github.com/yutaka551/lywsd03mmc-plugin-for-plotly-temp-graph
+source: https://github.com/yutaka551/lywsd03mmc-plugin-for-plotly-temp-graph
+archive: https://github.com/yutaka551/lywsd03mmc-plugin-for-plotly-temp-graph/archive/master.zip
 
 follow_dependency_links: false
 
