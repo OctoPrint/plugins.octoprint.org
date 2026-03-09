@@ -26,6 +26,7 @@ compatibility:
   - posix
   - windows
   python: ">=3,<4"
+abandoned: https://github.com/OctoPrint/plugins.octoprint.org/issues/1417
 ---
 
 See <https://github.com/edekeijzer/OctoPrint-PSUControl-Shelly> for information on configuration.
