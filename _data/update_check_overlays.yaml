@@ -77,3 +77,6 @@ sidebarmacros:
   user: apbarratt
   pip: https://github.com/apbarratt/octoprint_sidebar_macros/releases/download/{target_version}/Sidebar-Macros.zip
   repo: octoprint_sidebar_macros
+psucontrol_shelly:
+  user: triodes
+  pip: https://github.com/triodes/OctoPrint-PSUControl-Shelly/archive/{target_version}.zip
