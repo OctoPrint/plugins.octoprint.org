@@ -8,7 +8,7 @@ homepage: https://github.com/triodes/OctoPrint-PSUControl-Shelly
 source: https://github.com/triodes/OctoPrint-PSUControl-Shelly
 author: Aron List
 license: AGPLv3
-date: 2026-03-16
+date: 2021-05-15
 tags:
 - power
 - psu
