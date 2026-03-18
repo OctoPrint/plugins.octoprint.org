@@ -6,7 +6,9 @@ description: Adds Shelly smart switch support to OctoPrint-PSUControl as a sub-p
 archive: https://github.com/Triodes/OctoPrint-PSUControl-Shelly/archive/main.zip
 homepage: https://github.com/Triodes/OctoPrint-PSUControl-Shelly
 source: https://github.com/Triodes/OctoPrint-PSUControl-Shelly
-author: Aron List
+authors: 
+- Aron List
+- Erik de Keijzer
 license: AGPLv3
 date: 2021-05-15
 tags:
