@@ -21,6 +21,13 @@ tags:
 - analysis
 - tab
 
+screenshots:
+- url: /assets/img/plugins/mesh_repeatability/mesh_screenshot.png
+  alt: Mesh Repeatability tab showing saved captures and parsed mesh details
+  caption: Mesh Repeatability capture history and mesh details
+
+featuredimage: /assets/img/plugins/mesh_repeatability/mesh_screenshot.png
+
 compatibility:
   octoprint:
   - ">=1.8.0"
