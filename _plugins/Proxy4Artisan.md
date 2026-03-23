@@ -29,7 +29,7 @@ tags:
 
 # TODO
 # When registering a plugin on plugins.octoprint.org, all screenshots should be uploaded not linked from external sites.
-screenshots:
+#screenshots:
 #- url: url of a screenshot, /assets/img/...
 #  alt: alt-text of a screenshot
 #  caption: caption of a screenshot
