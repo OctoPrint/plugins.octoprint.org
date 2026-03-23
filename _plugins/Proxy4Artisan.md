@@ -105,9 +105,6 @@ This plugin enables OctoPrint to handle Snapmaker Artisan
 
 What the plugin does
 
-- Connects to a real serial port (usually /dev/ttyUSB0)
-- Creates a virtual port (usually /dev/pts/0), which OctoPrint can use as printer port
-- Proxies data bidirectional between the two ports
 - manipulates temperature responses, for OctoPrint to be able to show a bed temperature: 'B0:' -> 'B:' (just the first occurrence per line)
 - Filament runout will trigger @Pause
 - Output of M114 command is reordered, for OctoPrint to correctly recognize position and set pause_position variable, to be safely used in OctoPrint's GCODE scripts
