@@ -22,11 +22,10 @@ archive: https://github.com/coc815/OctoPrint-Proxy4Artisan/archive/main.zip
 
 # TODO
 tags:
-- a list
-- of tags
-- that apply
-- to your plugin
-- (take a look at the existing plugins for what makes sense here)
+- snapmaker
+- artisan
+- filament runout
+- bed temperature
 
 # TODO
 # When registering a plugin on plugins.octoprint.org, all screenshots should be uploaded not linked from external sites.
