@@ -9,7 +9,7 @@ authors:
 license: AGPL-3.0-or-later
 
 # TODO
-date: 2023-03-23
+date: 2026-03-23
 
 homepage: https://github.com/coc815/OctoPrint-Proxy4Artisan
 source: https://github.com/coc815/OctoPrint-Proxy4Artisan
