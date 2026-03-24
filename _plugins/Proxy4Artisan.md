@@ -106,7 +106,7 @@ This plugin enables OctoPrint to handle Snapmaker Artisan
 What the plugin does
 
 - manipulates temperature responses, for OctoPrint to be able to show a bed temperature: 'B0:' -> 'B:' (just the first occurrence per line)
-- Filament runout will trigger @Pause
+- Filament runout will pause the print
 - Output of M114 command is reordered, for OctoPrint to correctly recognize position and set pause_position variable, to be safely used in OctoPrint's GCODE scripts
 -    original order X: Y: Z: A: B: E: Count X: Y: Z: A: B:
 -    new order  X: Y: Z: E: A: B: Count X: Y: Z: A: B:
