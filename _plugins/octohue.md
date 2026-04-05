@@ -3,86 +3,101 @@ layout: plugin
 
 id: octohue
 title: OctoHue
-description: Hue lighting control for Octoprint - Illuminate your printer and signal its status using Phillips Hue lights
-author: Simon Beckett
+description: Illuminate your 3D printer and signal its status using Philips Hue lights. Supports event-driven colour changes, CT mode for white-spectrum bulbs, night mode, smart plug auto power-off, and guided in-settings bridge pairing.
+authors:
+- Simon Beckett
 license: AGPLv3
 
-# TODO
 date: 2020-01-31
 
 homepage: https://github.com/entrippy/OctoPrint-OctoHue
 source: https://github.com/entrippy/OctoPrint-OctoHue
 archive: https://github.com/entrippy/OctoPrint-OctoHue/archive/master.zip
 
-
 follow_dependency_links: false
 
-# TODO
 tags:
 - Philips Hue
 - Hue
 - Lights
 - Status
 - Automation
+- Smart Plug
+- Power Control
+- Night Mode
 
 screenshots:
-- url: /assets/img/plugins/octohue/Settings-Screenshot.png
-  alt: OctoHue Settings
-  caption: OctoHue's settings showing status colour customisation options
-
+- url: /assets/img/plugins/octohue/Settings-octohue-general.png
+  alt: OctoHue event lighting settings
+  caption: Event lighting table — map any OctoPrint event to a colour, brightness, delay, flash, or turn-off action
+- url: /assets/img/plugins/octohue/Settings-octohue-bridge-pair.png
+  alt: OctoHue bridge pairing screen
+  caption: Guided bridge pairing — discover and pair your Hue bridge without leaving OctoPrint settings
+- url: /assets/img/plugins/octohue/Settings-octohue-pair-success.png
+  alt: OctoHue bridge paired successfully
+  caption: After pairing, a single button takes you straight to the Lights tab
+- url: /assets/img/plugins/octohue/Settings-octohue-lights.png
+  alt: OctoHue light and group selection
+  caption: Combined light and group dropdown — individual bulbs and Hue rooms/zones in one list
 
 featuredimage: /assets/img/plugins/octohue/Featured-Image.png
 
-
-# TODO
-# You only need the following if your plugin requires specific OctoPrint versions or
-# specific operating systems to function - you can safely remove the whole
-# "compatibility" block if this is not the case.
-
 compatibility:
+  octoprint:
+  - 1.8.0
 
-  python: ">=2.7,<4"
+  os:
+  - linux
+  - windows
+  - macos
+  - freebsd
+
+  python: ">=3.9"
 
 ---
 
 # OctoPrint-OctoHue
 
-Illuminate your print job and signal its status using a Philips Hue light.
+Illuminate your 3D print job and signal its status using Philips Hue lights — and optionally cut power to your printer automatically once it cools down.
 
 ## Features
-* Light on and off in coordination with the connection between Octoprint and your printer
-* Configure "Connected" light colour using colour picker or HTML hex colour codes
-* Customisable default brightness
-* Available Customisable Statuses:
-  * Connected -  Default White
-  * Print Finished - Default Green
-  * Error - Default Red
 
-See the TODO list at the end of this page for features on the roadmap
+- **Event-driven lighting** — map any OctoPrint event (Connected, PrintStarted, PrintDone, PrintFailed, etc.) to a specific colour or colour temperature, brightness, optional delay, flash alert, and on/off state
+- **CT mode** — switch any event to colour-temperature mode for RGBCCT lights, activating the white channel instead of the RGB LEDs
+- **Configurable toggle colour** — the navbar toggle button turns your light on with a dedicated colour, CT value, and brightness you configure
+- **Night mode** — define a time window during which light changes are paused entirely, or brightness is capped at a configurable maximum
+- **Smart plug control** — configure a Hue smart plug to cut printer power after a completed print
+- **Auto power-off** — automatically switch off the plug once all extruders cool below a configurable temperature threshold
+- **Guided bridge pairing** — find your Hue bridge on the network and pair it without leaving OctoPrint settings; after pairing, a single button takes you straight to the Lights tab
+- **Navbar toggle** — optional toolbar button to toggle your lights on/off at any time
+- **Group support** — target individual lights or Hue rooms/zones from a single combined dropdown
+- **Configurable delay** — add a delay (in seconds) before each event triggers its light change
+- **API** — `getstate`, `turnon`, `turnoff`, `togglehue`, `getdevices`, `getgroups`, and `cooldown` commands for third-party integrations
 
 ## Setup
 
-Install via the bundled [Plugin Manager](https://github.com/foosel/OctoPrint/wiki/Plugin:-Plugin-Manager)
-or manually using this URL:
+### 1. Bridge pairing
 
-    https://github.com/entrippy/OctoPrint-OctoHue/archive/master.zip
+Open OctoPrint **Settings → OctoHue → Bridge**.
 
-**Hue Bridge Configuration**
+- Click **Find My Bridge** to locate your Hue bridge automatically on your local network.
+- Once found, press the **physical button on top of your Hue bridge**, then click **Start Pairing** within 30 seconds.
+- After a successful pairing, click **Select your light →** to jump straight to the Lights tab with your devices already populated.
 
-Octohue requires 3 settings to function
-1. The IP Address of you Hue Bridge
-2. A User for octoprint to use when contacting your bridge
-3. The numberic ID of your Hue light.
+> If auto-discovery does not work (e.g. the bridge is on a different subnet), you can enter the bridge IP address and API key manually after pairing via the [Hue Getting Started guide](https://developers.meethue.com/develop/get-started-2/).
 
-Steps to find or configure these can be found in [How to Develop for Hue - Getting Started](https://developers.meethue.com/develop/get-started-2/)
+### 2. Light or group selection
 
-## Configuration
+On the **Lights** tab, select your light or group from the dropdown. Individual lights and Hue rooms/zones appear in the same list — groups are labelled **(Group)**. Set **Default Brightness** (1–100%) to control brightness when an event does not specify its own.
 
-Once you have the Hue IP, Username, and Light ID, enter these into the appropriate field in Octohues menu in settings.
+### 3. Event configuration
 
-![Screenshot](https://github.com/entrippy/OctoPrint-OctoHue/blob/master/Settings-Screenshot.png)
+Still on the **Lights** tab, expand **Event Lighting Options** to configure which OctoPrint events trigger a light change. For each event you can set colour (RGB or CT), brightness (1–100%), delay, flash, and turn-off behaviour.
 
-## TODO
-* Make all available statuses customisable
-* Per status brightness
-* LightID Discovery
+### 4. Power control (optional)
+
+Open the **Power** tab to select a Hue smart plug and configure auto power-off after prints complete.
+
+## API
+
+OctoHue exposes a [SimpleAPI](https://docs.octoprint.org/en/master/plugins/mixins.html#octoprint.plugin.SimpleApiPlugin) for third-party integrations. Light-control commands (`turnon`, `turnoff`, `togglehue`, `cooldown`) are accessible without authentication; device and bridge commands require OctoPrint admin access.
