@@ -12,7 +12,8 @@ date: 2026-04-16
 
 homepage: https://github.com/daedalas1981/Octoprint-MFA-Passkeys
 source: https://github.com/daedalas1981/Octoprint-MFA-Passkeys
-archive: https://github.com/daedalas1981/Octoprint-MFA-Passkeys/archive/refs/tags/v0.2.10.zip
+archive: https://github.com/daedalas1981/OctoPrint-Passkeys/archive/main.zip
+
 
 follow_dependency_links: false
 
@@ -31,7 +32,6 @@ compatibility:
   python: ">=3.9,<4"
   octoprint:
   - 1.8.0
-  - 1.9.0
 
 ---
 OctoPrint-Passkeys is a unified authentication plugin that brings modern, passwordless WebAuthn security directly to your printer.
