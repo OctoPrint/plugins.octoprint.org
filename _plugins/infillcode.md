@@ -10,8 +10,7 @@ date: 2026-04-13
 
 homepage: https://github.com/st7ma784/infillcoder
 source: https://github.com/st7ma784/infillcoder
-archive: https://github.com/st7ma784/infillcoder/releases/download/v0.2.0/infillcode-0.2.0.tar.gz
-
+archive: https://github.com/st7ma784/infillcoder/releases
 tags:
 - gcode
 - resume
@@ -31,4 +30,14 @@ compatibility:
   - macos
   - freebsd
   python: ">=3.7"
----
+
+
+The Plugin embeds per-layer fingerprints into 3D print infill line spacing. When a print fails, a webcam snapshot identifies the last good layer and generates a resume GCode file automatically. Includes startup bed scanning, mid-print health monitoring, and one-click resume.
+
+#### Support my Efforts
+
+If you like it, I would be thankful about a cup of coffee :)
+
+[![More coffee, more code](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/donate/?business=FM3XGWAZJNGXU&no_recurring=0&currency_code=GBP)
+
+For implementation details please visit the [homepage]({{ page.homepage | absolute_url }}).
