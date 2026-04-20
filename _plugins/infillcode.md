@@ -10,7 +10,7 @@ date: 2026-04-13
 
 homepage: https://github.com/st7ma784/infillcoder
 source: https://github.com/st7ma784/infillcoder
-archive: https://github.com/st7ma784/infillcoder/releases
+archive: https://github.com/st7ma784/infillcoder/archive/refs/heads/main.zip
 tags:
 - gcode
 - resume
