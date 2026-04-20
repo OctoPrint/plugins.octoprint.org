@@ -38,6 +38,6 @@ The Plugin embeds per-layer fingerprints into 3D print infill line spacing. When
 
 If you like it, I would be thankful about a cup of coffee :)
 
-[![paypal](/assets/img/plugins/bedlevelvisualizer/paypal-with-text.png)](https://www.paypal.com/donate/?business=FM3XGWAZJNGXU&no_recurring=0&currency_code=GBP)
+[![paypal](/assets/img/plugins/infillcoder/paypal-donate.svg)](https://www.paypal.com/donate/?business=FM3XGWAZJNGXU&no_recurring=0&currency_code=GBP)
 
 For implementation details please visit the [homepage]({{ page.homepage | absolute_url }}).
