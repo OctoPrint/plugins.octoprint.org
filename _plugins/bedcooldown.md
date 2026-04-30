@@ -10,9 +10,9 @@ license: MPL-2.0
 
 date: 2021-09-26
 
-homepage: https://github.com/rfinnie/OctoPrint-BedCooldown
-source: https://github.com/rfinnie/OctoPrint-BedCooldown
-archive: https://github.com/rfinnie/OctoPrint-BedCooldown/archive/release.zip
+homepage: https://codeberg.org/rfinnie/OctoPrint-BedCooldown
+source: https://codeberg.org/rfinnie/OctoPrint-BedCooldown
+archive: https://codeberg.org/rfinnie/OctoPrint-BedCooldown/archive/release.zip
 
 follow_dependency_links: false
 
