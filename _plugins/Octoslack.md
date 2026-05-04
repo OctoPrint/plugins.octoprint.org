@@ -83,6 +83,7 @@ featuredimage: /assets/img/plugins/Octoslack/Octoslack-PrintProgress_SlackOnly.p
 attributes:
 - cloud
 
+abandoned: https://github.com/OctoPrint/plugins.octoprint.org/issues/1432
 ---
 
 
