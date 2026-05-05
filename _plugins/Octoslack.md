@@ -8,7 +8,7 @@ author: Šárka Hawke
 license: MIT
 
 # today's date in format YYYY-MM-DD, e.g.
-date: 2026-05-06
+date: 2017-05-20
 
 homepage: https://github.com/misconfigurations/Octoslack
 source: https://github.com/misconfigurations/Octoslack
