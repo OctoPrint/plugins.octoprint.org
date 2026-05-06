@@ -4,6 +4,7 @@ layout: plugin
 id: octogoat
 title: OctoGoat
 description: Safely resume failed 3D prints with guided alignment, local resume G-code generation, and Klipper/Moonraker support.
+author: ksmith1489
 license: Proprietary - See LICENSE.txt
 
 date: 2026-05-05
