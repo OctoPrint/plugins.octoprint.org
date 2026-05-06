@@ -4,7 +4,7 @@ layout: plugin
 id: Octoslack
 title: Octoslack
 description: An OctoPrint plugin for monitoring your printer and prints via Slack, Mattermost, Pushbullet, Pushover, Rocket.Chat, Discord, Riot/Matrix, or Microsoft Teams
-author: Šárka Hawke
+author: Chris Fraschetti
 license: MIT
 
 # today's date in format YYYY-MM-DD, e.g.
