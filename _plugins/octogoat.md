@@ -5,7 +5,7 @@ id: octogoat
 title: OctoGoat
 description: Safely resume failed 3D prints with guided alignment, local resume G-code generation, and Klipper/Moonraker support.
 author: ksmith1489
-license: Proprietary - See LICENSE.txt
+license: Proprietary https://app.lazarus3dprint.com/license
 
 date: 2026-05-05
 
@@ -38,7 +38,7 @@ compatibility:
   - windows
   - macos
 
-  python: ">=3,<4"
+  python: ">=3.7,<4"
 
 ---
 
