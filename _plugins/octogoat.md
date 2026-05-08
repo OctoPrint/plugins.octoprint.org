@@ -27,7 +27,6 @@ tags:
 attributes:
 - cloud
 - commercial
-- free-tier
 
 compatibility:
   octoprint:
@@ -75,7 +74,7 @@ If the license validation service is unavailable, OctoGoat is designed to fail g
 
 ## Commercial use
 
-OctoGoat is a commercial plugin with subscription-based licensing. License, terms, and privacy information are available from the OctoGoat/Lazarus website.
+OctoGoat is a commercial plugin with subscription-based licensing. Installing the plugin is free, but an active paid subscription is required before the plugin can generate, download, upload, or execute resume output. License, terms, privacy, and pricing information are available from the OctoGoat/Lazarus website.
 
 ## Klipper/Moonraker support
 
