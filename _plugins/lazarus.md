@@ -11,8 +11,8 @@ license: Proprietary - See LICENSE.txt
 date: 2026-05-09
 
 homepage: https://app.lazarus3dprint.com
-source: https://github.com/ksmith1489/octogoat-plugin
-archive: https://github.com/ksmith1489/octogoat-plugin/archive/refs/heads/main.zip
+source: https://github.com/ksmith1489/lazarus-plugin
+archive: https://github.com/ksmith1489/lazarus-plugin/archive/refs/heads/main.zip
 
 privacypolicy: https://app.lazarus3dprint.com/privacy
 
