@@ -4,15 +4,17 @@ layout: plugin
 id: Octoslack
 title: Octoslack
 description: An OctoPrint plugin for monitoring your printer and prints via Slack, Mattermost, Pushbullet, Pushover, Rocket.Chat, Discord, Riot/Matrix, or Microsoft Teams
-author: Chris Fraschetti
+authors:
+    - Šárka Hawke
+    - Chris Fraschetti
 license: MIT
 
 # today's date in format YYYY-MM-DD, e.g.
 date: 2017-05-20
 
-homepage: https://github.com/fraschetti/Octoslack
-source: https://github.com/fraschetti/Octoslack
-archive: https://github.com/fraschetti/Octoslack/archive/master.zip
+homepage: https://github.com/misconfigurations/Octoslack
+source: https://github.com/misconfigurations/Octoslack
+archive: https://github.com/misconfigurations/Octoslack/archive/master.zip
 
 # Set this to true if your plugin uses the dependency_links setup parameter to include
 # library versions not yet published on pypi. SHOULD ONLY BE USED IF THERE IS NO OTHER OPTION!
@@ -50,7 +52,7 @@ tags:
 - gcode
 
 compatibility:
-  python: ">=2.7,<4"
+  python: ">=3.7,<4"
 
 screenshots:
 - url: /assets/img/plugins/Octoslack/Octoslack-PrintStarted.png
@@ -82,8 +84,6 @@ featuredimage: /assets/img/plugins/Octoslack/Octoslack-PrintProgress_SlackOnly.p
 
 attributes:
 - cloud
-
-abandoned: https://github.com/OctoPrint/plugins.octoprint.org/issues/1432
 ---
 
 

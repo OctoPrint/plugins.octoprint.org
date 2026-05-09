@@ -80,3 +80,6 @@ sidebarmacros:
 psucontrol_shelly:
   user: triodes
   pip: https://github.com/triodes/OctoPrint-PSUControl-Shelly/archive/{target_version}.zip
+octoslack:
+  user: misconfigurations
+  pip: https://github.com/misconfigurations/Octoslack/archive/{target_version}.zip
