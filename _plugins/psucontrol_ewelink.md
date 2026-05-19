@@ -8,7 +8,7 @@ authors:
 - Christos Miniotis
 license: MIT
 
-date: 2026-01-18
+date: 2026-05-19
 
 homepage: https://github.com/chrismin13/OctoPrint-PSUControl-eWeLink
 source: https://github.com/chrismin13/OctoPrint-PSUControl-eWeLink
