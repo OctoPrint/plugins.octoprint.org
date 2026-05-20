@@ -42,6 +42,7 @@ compatibility:
 
 attributes:
 - cloud
+- ai-developed
 
 screenshots:
 - url: /assets/img/plugins/psucontrol_ewelink/settings_screenshot.png

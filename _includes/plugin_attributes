@@ -4,5 +4,6 @@
 {% if include.plugin.attributes contains "cloud" %}<small class="label label-info"><i class="fas fa-cloud"></i> Cloud</small>{% endif %}
 {% if include.plugin.attributes contains "commercial" %}<small class="label label-warning"><i class="fas fa-coins"></i> Commercial</small>{% endif %}
 {% if include.plugin.attributes contains "free-tier" %}<small class="label label-success"><i class="fas fa-thumbs-up"></i> Free tier</small>{% endif %}
+{% if include.plugin.attributes contains "ai-developed" %}<small class="label label-important"><i class="fas fa-robot"></i> AI Developed</small>{% endif %}
 {% endif %}
 </div>{% endif %}
