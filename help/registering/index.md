@@ -202,6 +202,7 @@ If all is in the green, follow these steps:
     #  - cloud  # if your plugin requires access to a cloud to function
     #  - commercial  # if your plugin has a commercial aspect to it
     #  - free-tier  # if your plugin has a free tier
+    #  - ai-developed # if your plugin was developed with the use of Artificial Intelligence
     
     ---
 
@@ -265,6 +266,9 @@ If all is in the green, follow these steps:
       mark it as such using the `attributes` property. If you are unsure about whether your plugin qualifies as being
       commercial, ask for clarification on that in your registration pull request. Please note that commercial plugins are
       excluded from the public stats after some cases of manipulation.
+
+    - If your plugin **was developed with the aid of Artificial Intelligence** you _must_
+      mark it as such using the `attributes` property. 
 
     If you are unsure about how something should be structured, take a look at the existing plugins or
     [ask on the forum](https://community.octoprint.org/c/development) or in your registration pull request.
