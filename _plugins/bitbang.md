@@ -11,7 +11,7 @@ date: 2026-05-25
 
 homepage: https://github.com/richlegrand/OctoPrint-BitBang
 source: https://github.com/richlegrand/OctoPrint-BitBang
-archive: https://github.com/richlegrand/OctoPrint-BitBang/archive/refs/tags/v0.1.2.zip
+archive: https://github.com/richlegrand/OctoPrint-BitBang/archive/main.zip
 
 privacypolicy: https://github.com/richlegrand/OctoPrint-BitBang/blob/main/PRIVACY.md
 
