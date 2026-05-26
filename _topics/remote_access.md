@@ -3,6 +3,7 @@ layout: topic
 title: Remote Access
 plugins:
   - astroprint
+  - BitBang
   - DiscordRemote
   - mattacloud
   - ngrok
