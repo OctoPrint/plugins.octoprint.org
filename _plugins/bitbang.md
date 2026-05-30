@@ -45,6 +45,7 @@ featuredimage: /assets/img/plugins/bitbang/bitbang_default.png
 
 attributes:
 - cloud
+- ai-developed
 
 compatibility:
   octoprint:
