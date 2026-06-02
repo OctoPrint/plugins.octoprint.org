@@ -40,6 +40,8 @@ compatibility:
   octoprint:
   - 1.4.0
 
+attributes:
+- ai-developed
 ---
 
 Layer Notify lets you set one or more target layers and receive an alert — visual (browser toast + OS notification) and audible (configurable sound) — the moment that layer starts printing.
