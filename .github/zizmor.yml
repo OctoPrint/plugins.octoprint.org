@@ -1,0 +1,9 @@
+rules:
+  dangerous-triggers:
+    ignore:
+      - add_to_backlog.yml
+      - pr-labeler.yml
+  unpinned-uses:
+    config:
+      policies:
+        OctoPrint/actions/*: any

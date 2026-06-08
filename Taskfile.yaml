@@ -12,17 +12,17 @@ tasks:
     cmds:
       - |
         bundle exec jekyll s --future
-  
+
   assets:
     desc: "Compiles static assets"
     cmds:
       - |
         lessc "--clean-css=--s1 --advanced --compatibility=ie8" assets/less/site.less assets/css/site.css
-  
+
   remove-plugin:
     desc: "Removes a plugin, use like this: task remove-plugin -- plugin_id"
     vars:
-      PLUGIN: '{{.CLI_ARGS}}'
+      PLUGIN: "{{.CLI_ARGS}}"
     cmds:
       - |
         echo "Removing plugin {{.PLUGIN}}..."
@@ -49,3 +49,10 @@ tasks:
           fi
         done
         popd > /dev/null
+
+  ### CI related
+
+  ci-update:
+    desc: Update GitHub Action workflow files to new versions of used actions
+    cmds:
+      - npx actions-up --include-branches
