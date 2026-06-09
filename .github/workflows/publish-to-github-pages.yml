@@ -70,23 +70,15 @@ jobs:
         run: |
           bundle exec jekyll build --future --trace
 
-      - name: 🕵️‍♂️ Validate plugins.json
+      - name: 🕵️‍♂️ Validate json files
         run: |
-          docker run \
-          -v ${{ github.workspace }}/_site:/json \
-          peterdavehello/jsonlint jsonlint -q /json/plugins.json
+          [[ $(jq -er type _site/plugins.json) == "array" ]]
+          [[ $(jq -er type _site/notices.json) == "array" ]]
+          [[ $(jq -er type _site/search.json) == "object" ]]
 
-      - name: 🕵️‍♂️ Validate notices.json
+      - name: 🕵️‍♂️ Validate ATOM feed
         run: |
-          docker run \
-          -v ${{ github.workspace }}/_site:/json \
-          peterdavehello/jsonlint jsonlint -q /json/notices.json
-
-      - name: 🕵️‍♂️ Validate search.json
-        run: |
-          docker run \
-          -v ${{ github.workspace }}/_site:/json \
-          peterdavehello/jsonlint jsonlint -q /json/search.json
+          [[ $(yq --xml-strict-mode -ojson _site/feed.xml | jq -er type) == "object" ]]
 
       - name: ⬆ Upload pages artifact
         uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
