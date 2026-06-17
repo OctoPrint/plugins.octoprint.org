@@ -70,6 +70,25 @@ OctoPrint-BitBang gives you full remote access to your OctoPrint instance — in
 - **Mobile friendly:** BitBang URL works on phones and tablets.
 - **PIN protection:** Optional PIN required to access the remote URL.
 
+## Prerequisites
+
+A few OS-level steps before installing (full details in the [README](https://github.com/richlegrand/OctoPrint-BitBang#installation)):
+
+**Free the camera** from OctoPi's default streamer:
+
+```
+sudo systemctl disable --now webcamd ffmpeg_hls camera-streamer
+```
+
+**32-bit Raspberry Pi OS** (`armv7l`, the standard OctoPi image) also needs `aiortc` and `pylibsrtp` rebuilt once against the system libraries, since its piwheels builds link newer libraries than Bookworm ships:
+
+```
+sudo apt install -y libvpx-dev libopus-dev libsrtp2-dev
+~/oprint/bin/pip install --no-binary aiortc,pylibsrtp --force-reinstall --no-deps aiortc==1.10.1 pylibsrtp==1.0.0
+```
+
+64-bit and x86_64 need nothing further.
+
 ## How it works
 
 - The `bitbang-python` package handles WebRTC signaling, identity, and the ASGI interface.
