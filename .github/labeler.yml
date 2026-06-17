@@ -1,3 +1,5 @@
 needs review:
-  - _plugins/*
-  - _plugins/**/*
+  - changed-files:
+      - any-glob-to-any-file:
+          - _plugins/*
+          - _plugins/**/*
