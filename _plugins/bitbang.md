@@ -2,7 +2,7 @@
 layout: plugin
 
 id: bitbang
-title: OctoPrint-BitBang
+title: BitBang
 description: Remote OctoPrint access with live H.264 video via BitBang WebRTC. No account, no port forwarding, one shareable link.
 authors:
 - Rich LeGrand
@@ -92,7 +92,7 @@ sudo apt install -y libvpx-dev libopus-dev libsrtp2-dev
 ## How it works
 
 - The `bitbang-python` package handles WebRTC signaling, identity, and the ASGI interface.
-- This plugin wraps it with OctoPrint integration: settings UI, `WebcamProviderPlugin` hooks, camera auto-detect, CSRF-safe cookie handling, and the JavaScript that injects the `<video>` element into OctoPrint's Control tab.
+- This plugin wraps it with OctoPrint integration: settings UI, `WebcamProviderPlugin` hooks, camera auto-detect, CSRF-safe cookie handling, and a webcam-provider template that renders the H.264 `<video>` in OctoPrint's Control tab.
 - The `bitba.ng` cloud acts purely as a signaling relay to broker a direct peer-to-peer connection. If a direct connection isn't available, `bitba.ng` will use TURN instead.
 
 ## Privacy
