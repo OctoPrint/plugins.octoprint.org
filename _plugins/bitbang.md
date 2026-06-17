@@ -7,7 +7,7 @@ description: Remote OctoPrint access with live H.264 video via BitBang WebRTC. N
 authors:
 - Rich LeGrand
 license: MIT
-date: 2026-05-25
+date: 2026-06-17
 
 homepage: https://github.com/richlegrand/OctoPrint-BitBang
 source: https://github.com/richlegrand/OctoPrint-BitBang
