@@ -21,6 +21,8 @@ tags:
     - alerts
     - monitoring
 
+python: ">=3,<4" # Python 3 only
+
 # TODO
 # When registering a plugin on plugins.octoprint.org, all screenshots should be uploaded not linked from external sites.
 screenshots:
