@@ -24,10 +24,6 @@ tags:
 compatibility:
   octoprint:
   - 1.9.0
-  os:
-  - linux
-  - windows
-  - mac
   python: ">=3,<4"
 
 # TODO
