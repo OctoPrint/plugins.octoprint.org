@@ -33,7 +33,6 @@ screenshots:
     - url: /assets/img/plugins/maintenance_reminder/maintenance_modal.png
       alt: modal showing maintenance due
       caption: Modal before printing with maintenance due
-    - ...
 
 # TODO
 featuredimage: /assets/img/plugins/maintenance_reminder/maintenance_popover.png
