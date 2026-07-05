@@ -27,7 +27,7 @@ screenshots:
     - url: /assets/img/plugins/maintenance_reminder/maintenance_navbar.png
       alt: icon in navbar
       caption: Icon in navbar
-	- url: /assets/img/plugins/maintenance_reminder/maintenance_popover.png
+    - url: /assets/img/plugins/maintenance_reminder/maintenance_popover.png
       alt: popover from navbar
       caption: Popover showing maintenance status
     - url: /assets/img/plugins/maintenance_reminder/maintenance_modal.png
