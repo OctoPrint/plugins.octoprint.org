@@ -5,7 +5,7 @@ id: maintenance_reminder
 title: OctoPrint-Maintenance-Reminder
 description: Receive maintenance notifications when you complete a certain number of prints
 authors:
-    - Garron Anderson
+  - Garron Anderson
 license: AGPL-3.0-or-later
 
 date: 2026-07-03
@@ -16,25 +16,32 @@ archive: https://github.com/GarronAnderson/OctoPrint-Maintenance-Reminder/archiv
 
 # TODO
 tags:
-    - maintenance
-    - reminders
-    - alerts
-    - monitoring
+  - maintenance
+  - reminders
+  - alerts
+  - monitoring
 
-python: ">=3,<4" # Python 3 only
+compatibility:
+  octoprint:
+  - 1.9.0
+  os:
+  - linux
+  - windows
+  - mac
+  python: ">=3,<4"
 
 # TODO
 # When registering a plugin on plugins.octoprint.org, all screenshots should be uploaded not linked from external sites.
 screenshots:
-    - url: /assets/img/plugins/maintenance_reminder/maintenance_navbar.png
-      alt: icon in navbar
-      caption: Icon in navbar
-    - url: /assets/img/plugins/maintenance_reminder/maintenance_popover.png
-      alt: popover from navbar
-      caption: Popover showing maintenance status
-    - url: /assets/img/plugins/maintenance_reminder/maintenance_modal.png
-      alt: modal showing maintenance due
-      caption: Modal before printing with maintenance due
+  - url: /assets/img/plugins/maintenance_reminder/maintenance_navbar.png
+    alt: icon in navbar
+    caption: Icon in navbar
+  - url: /assets/img/plugins/maintenance_reminder/maintenance_popover.png
+    alt: popover from navbar
+    caption: Popover showing maintenance status
+  - url: /assets/img/plugins/maintenance_reminder/maintenance_modal.png
+    alt: modal showing maintenance due
+    caption: Modal before printing with maintenance due
 
 # TODO
 featuredimage: /assets/img/plugins/maintenance_reminder/maintenance_popover.png
