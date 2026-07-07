@@ -83,3 +83,6 @@ psucontrol_shelly:
 octoslack:
   user: misconfigurations
   pip: https://github.com/misconfigurations/Octoslack/archive/{target_version}.zip
+prettygcode:
+  user: jacopotediosi
+  pip: https://github.com/jacopotediosi/OctoPrint-PrettyGCode/archive/{target_version}.zip
