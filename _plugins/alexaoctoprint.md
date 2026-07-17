@@ -12,7 +12,7 @@ date: 2026-07-17
 
 homepage: https://github.com/RICLAMER/AlexaOctoPrint
 source: https://github.com/RICLAMER/AlexaOctoPrint
-archive: https://github.com/RICLAMER/AlexaOctoPrint/archive/0.2.0.zip
+archive: https://github.com/RICLAMER/AlexaOctoPrint/releases/latest/download/OctoPrint-AlexaOctoPrint.zip
 
 tags:
 - alexa
