@@ -15,6 +15,8 @@ homepage: https://github.com/LazeMSS/OctoPrint-TopTemp
 source: https://github.com/LazeMSS/OctoPrint-TopTemp/
 archive: https://github.com/LazeMSS/OctoPrint-TopTemp/archive/main.zip
 
+compatibility:
+  python: ">=2.7,<4"
 
 tags:
 - temperature
