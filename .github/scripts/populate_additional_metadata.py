@@ -52,10 +52,10 @@ GITHUB_GRAPHQL_QUERY = """repository(owner: \"{{user}}\", name: \"{{repo}}\") {
       }
     }
   },
-  watchers(first:1){
+  watchers{
     totalCount
   },
-  stargazers(first:1){
+  stargazers{
     totalCount
   }
 }
