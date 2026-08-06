@@ -39,7 +39,7 @@ featuredimage: /assets/img/plugins/prettygcode/screen_1.jpg
 
 compatibility:
   octoprint:
-  - 1.4.0
+  - 1.9.0
   python: ">=3.7,<4"
 
 ---
@@ -48,14 +48,24 @@ This plugin adds a 3D GCode visualizer tab in Octoprint. It displays colored lin
 
 ## Features
 
-- 3D G-code visualizer
-- Paths color-coded by slicer feature (perimeters, infill, support, skirt…)
-- Layer slider to scrub through the model
-- Syncs to the print job with an animated nozzle
+### 3D Visualization
+- Interactive 3D G-code visualizer, with a view cube to orient the camera and perspective/orthographic projection
+- Paths colored by slicer feature (perimeters, infill, support, skirt...), with built-in presets for popular slicers, or your own custom colors
+- Layer and segment sliders to scrub through the model
+- Belt printers are supported too, with a customizable gantry angle
+
+### Print monitoring
+- While printing, the view syncs to the print job with an animated nozzle
 - Temperature status bar
+- Resizable webcam inset
+
+### Interface & appearance
 - Tabbed, maximized and fullscreen views
-- Resizable webcam inset and [Dashboard](https://plugins.octoprint.org/plugins/dashboard/) plugin window (if installed)
-- Many view options, e.g. dark mode, mirror reflection on bed's plate, antialiasing and idle auto-orbit
+- Many view options, e.g. dark mode, customizable nozzle marker, mirror reflection on the bed, antialiasing...
+
+### Other plugin integrations
+- [Exclude Region](https://plugins.octoprint.org/plugins/excluderegion/) and [Cancel Object](https://plugins.octoprint.org/plugins/cancelobject/): to grey-out or hide the excluded parts of your model
+- [Dashboard](https://plugins.octoprint.org/plugins/dashboard/): to show the Dashboard in a resizable inset within the 3D view
 
 ## Bugs reporting
 
