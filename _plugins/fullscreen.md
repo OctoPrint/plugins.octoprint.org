@@ -61,9 +61,3 @@ If the DisplayLayerProgress plugin is installed, it will also display the layer 
 - **Widescreen mode**: Toggle to enable widescreen mode
 - **Pause/Resume button**: Click to pause/resume your print
 - **Preview in settings**: See how the overlay and progress bar will look before saving
-
-## Screenshots
-
-![Main Screenshot](/assets/img/plugins/fullscreen/main-screenshot.jpg)
-
-![Settings Screenshot](/assets/img/plugins/fullscreen/settings-screenshot.png)
