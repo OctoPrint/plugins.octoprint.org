@@ -12,7 +12,7 @@ date: 2026-07-03
 
 homepage: https://github.com/GarronAnderson/OctoPrint-Maintenance-Reminder
 source: https://github.com/GarronAnderson/OctoPrint-Maintenance-Reminder
-archive: https://github.com/GarronAnderson/OctoPrint-Maintenance-Reminder/archive/main.zip
+archive: https://github.com/GarronAnderson/OctoPrint-Maintenance-Reminder/archive/master.zip
 
 # TODO
 tags:
