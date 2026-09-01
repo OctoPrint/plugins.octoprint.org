@@ -11,7 +11,7 @@ date: 2024-03-06
 
 homepage: https://github.com/DrAlexLiu/OctoPrint-PiNozCam
 source: https://github.com/DrAlexLiu/OctoPrint-PiNozCam
-archive: https://github.com/DrAlexLiu/OctoPrint-PiNozCam/archive/refs/tags/1.1.0.zip
+archive: https://github.com/DrAlexLiu/OctoPrint-PiNozCam/archive/master.zip
 
 follow_dependency_links: false
 
