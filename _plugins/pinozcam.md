@@ -61,6 +61,7 @@ compatibility:
 # Developed with the use of Artificial Intelligence.
 attributes:
 - ai-developed
+- cloud
 
 # Detection is local, but the optional Telegram and Discord integrations
 # upload camera images and print status to a third party, so the plugin
