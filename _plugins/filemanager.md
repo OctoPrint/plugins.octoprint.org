@@ -35,6 +35,8 @@ screenshots:
 
 featuredimage: /assets/img/plugins/filemanager/img1.png
 
+replaced: The plugin is abandoned and has been replaced by [the bundled Upload Manager Plugin](https://docs.octoprint.org/en/main/bundledplugins/uploadmanager.html) since OctoPrint 1.11.0.
+
 ---
 
 A simple file manager.

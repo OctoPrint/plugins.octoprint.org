@@ -39,6 +39,8 @@ screenshots:
 
 featuredimage: /assets/img/plugins/customControl/img4.png
 
+replaced: The plugin is abandoned and has been replaced by [the bundled Custom Control Manager](https://docs.octoprint.org/en/main/bundledplugins/customcontrolmanager.html) since OctoPrint 1.11.0.
+
 ---
 
 This plugin helps you create, edit and delete your [custom controls](http://docs.octoprint.org/en/master/features/custom_controls.html).

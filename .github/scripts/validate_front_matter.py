@@ -92,6 +92,7 @@ SCHEMA = Schema(
         Optional("compatibility"): Compatibility,
         Optional("disabled"): NonEmptyString,
         Optional("abandoned"): NonEmptyString,
+        Optional("replaced"): NonEmptyString,
         Optional("up_for_adoption"): Url(),
         Optional("redirect_from"): Any(All([NonEmptyString]), NonEmptyString),
         Optional("attributes"): Any(list, None),
