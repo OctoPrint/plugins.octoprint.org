@@ -46,3 +46,11 @@
   octoversions:
     - ">=1.11.0rc1"
   reason: "[Issue that breaks file uploads](https://github.com/eyal0/OctoPrint-PrintTimeGenius/issues/322)"
+- plugin: filemanager
+  octoversions:
+    - ">=2.0.0rc1"
+  reason: "Plugin is abandoned and has breaking bugs. It has been replaced by the bundled Upload Manager plugin since OctoPrint 1.11.0."
+- plugin: customControl
+  octoversions:
+    - ">=2.0.0rc1"
+  reason: "Plugin is abandoned and has breaking bugs. It has been replaced by the bundled Custom Control Manager plugin since OctoPrint 1.11.0."

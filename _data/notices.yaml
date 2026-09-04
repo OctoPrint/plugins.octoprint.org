@@ -404,4 +404,11 @@
     Version 2.2.1 of this plugin is available from a new maintainer. The release notes of the version by the
     new maintainer can be found at the "Read more..." link below.
   link: https://github.com/misconfigurations/Octoslack/releases/tag/2.2.1
-
+- plugin: filemanager
+  date: 2026-09-04 12:00:00Z
+  text: This plugin has been abandoned by its maintainer and you should uninstall it. It has been replaced by the bundled Upload Manager Plugin since OctoPrint 1.11.0.
+  link: https://docs.octoprint.org/en/main/bundledplugins/uploadmanager.html
+- plugin: customControl
+  date: 2026-09-04 12:00:00Z
+  text: This plugin has been abandoned by its maintainer and you should uninstall it. It has been replaced by the bundled Custom Control Manager Plugin since OctoPrint 1.11.0.
+  link: https://docs.octoprint.org/en/main/bundledplugins/customcontrolmanager.html
