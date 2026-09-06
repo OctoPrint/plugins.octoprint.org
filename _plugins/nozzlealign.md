@@ -6,7 +6,7 @@ title: XY Nozzle Alignment
 description: Measures the XY offset between two nozzles with a camera on the bed, and writes it to the firmware with M218.
 authors:
 - Chris Nesbitt-Smith
-license: AGPLv3
+license: MIT
 
 date: 2026-09-06
 
