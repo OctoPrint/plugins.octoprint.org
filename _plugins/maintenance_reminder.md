@@ -14,7 +14,6 @@ homepage: https://github.com/GarronAnderson/OctoPrint-Maintenance-Reminder
 source: https://github.com/GarronAnderson/OctoPrint-Maintenance-Reminder
 archive: https://github.com/GarronAnderson/OctoPrint-Maintenance-Reminder/archive/master.zip
 
-# TODO
 tags:
   - maintenance
   - reminders
@@ -24,10 +23,8 @@ tags:
 compatibility:
   octoprint:
   - 1.9.0
-  python: ">=3,<4"
+  python: ">=3.7,<4"
 
-# TODO
-# When registering a plugin on plugins.octoprint.org, all screenshots should be uploaded not linked from external sites.
 screenshots:
   - url: /assets/img/plugins/maintenance_reminder/maintenance_navbar.png
     alt: icon in navbar
@@ -39,10 +36,8 @@ screenshots:
     alt: modal showing maintenance due
     caption: Modal before printing with maintenance due
 
-# TODO
 featuredimage: /assets/img/plugins/maintenance_reminder/maintenance_popover.png
 
-# TODO
 # If any of the below attributes apply to your project, uncomment the corresponding lines. This is MANDATORY!
 
 attributes:
