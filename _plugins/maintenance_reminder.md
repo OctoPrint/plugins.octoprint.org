@@ -8,7 +8,7 @@ authors:
   - Garron Anderson
 license: AGPL-3.0-or-later
 
-date: 2026-07-03
+date: 2026-09-07
 
 homepage: https://github.com/GarronAnderson/OctoPrint-Maintenance-Reminder
 source: https://github.com/GarronAnderson/OctoPrint-Maintenance-Reminder
