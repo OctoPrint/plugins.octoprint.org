@@ -3,7 +3,7 @@ layout: plugin
 
 id: reality_check
 title: Reality Check
-description: Blocks a print streamed over serial when the gcode's filament type or nozzle size contradicts what the printer's firmware reports loaded/fitted (Prusa Buddy M865 / M862.1 Q).
+description: Block a print if the file wants a different setup than what the printer currently reports (Prusa Buddy M865 / M862.1 Q).
 authors:
 - Nitzan Raz
 license: AGPLv3
@@ -54,35 +54,28 @@ attributes:
 ---
 
 Prusa Buddy printers (CORE One, MK4 family, XL...) validate filament type and
-nozzle size themselves - but only for **file-based** prints (USB stick,
-PrusaLink, Connect), where the firmware can read the file's metadata. A print
-streamed from OctoPrint over serial arrives one command at a time and
-bypasses every one of those checks. Slice with the wrong preset and the
-printer lays PETG on a 60°C bed without a word.
+nozzle size themselves for **file-based** prints (USB stick,
+PrusaLink, Connect), where the firmware can read the file's metadata.
+Printing over serial (e.g. OctoPrint) arrives one command at a time and
+can't have those checks. If you're like me, you'll print a PLA gcode with
+a PETG filament loaded and wonder why the print doesn't adhere to the bed. No more!
 
-Reality Check restores the missing gate:
+Reality Check helps by blocking prints that specify a setup that doesn't match the printer's report.
 
-1. While the printer idles, it polls the firmware's own state: `M865 I<tool>`
-   (loaded filament type - the same state the printer's file-print preview
-   trusts) and `M862.1 Q` (fitted nozzle diameter / hardened / high-flow,
-   from EEPROM).
-2. When a print starts, it holds the first job command in OctoPrint's
-   gcode-queuing phase, reads `; filament_type` and `; nozzle_diameter` from
-   the selected file, and compares.
-3. On mismatch it cancels the print and pops an error naming both sides and
-   the ways out (reslice, reload, or ignore via settings). A warn-only mode
-   shows the popup without cancelling.
+1. While the printer idles, it polls the firmware's own state:  
+   1. `M865 I<tool>` for loaded filament type
+   2. `M862.1 Q` for nozzle configuration
+2. Plugs into "gcode-queueing" phase, reads `; filament_type` and
+   `; nozzle_diameter` from the file, and compares.
+3. On mismatch it cancels the print and pops an error message.  
+   Can be configured to only warn and let the print go through.
 
-No spool database, no bookkeeping, no companion plugins: the printer is the
-single source of truth. Anything that updates the printer's loaded filament -
-its own load/change UI, or an external `M865 S"PETG" L0` - feeds the check
-automatically. Unknown states fail open with an explanation; the plugin only
-blocks on a positive contradiction.
+The main value here is simplicity. We have no persistence and
+read world state from the printer itself.
+Fail open on unexpected states (no filament read from printer) -
+only block when we **know** there's a mismatch.
 
-A **Reality Check tab** shows the current printer inventory (per-tool
-filament and nozzle, with flags), the cache age, a manual refresh button and
-a collapsible table of recent check results. Tool count follows OctoPrint's
-printer profile.
+A dedicated tab for current printer inventory and event log.
 
 Requires a Prusa Buddy-firmware printer connected over serial with `M865`
 support (test by sending `M865 I0` in the terminal - you should get
