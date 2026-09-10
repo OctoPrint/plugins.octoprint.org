@@ -30,6 +30,7 @@ compatibility:
 attributes:
 - cloud
 
+abandoned: https://github.com/OctoPrint/plugins.octoprint.org/issues/1485
 ---
 
 # WebDAV Backup
