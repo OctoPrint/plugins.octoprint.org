@@ -6,7 +6,7 @@ title: Tapo Auto Shutdown + Obico Delay
 description: Automatically control a Tapo P110 smart plug and manage Obico AI monitoring around your prints.
 
 authors:
-  - SpideRaY
+- SpideRaY
 
 license: MIT
 
@@ -19,22 +19,22 @@ archive: https://github.com/SpideRaY/OctoPrint-TapoAutoShutdown-ObicoDelay/archi
 privacypolicy: https://github.com/SpideRaY/OctoPrint-TapoAutoShutdown-ObicoDelay/blob/main/PRIVACY.md
 
 tags:
-  -tapo
-  -p110
-  -smart plug
-  -power
-  -shutdown
-  -obico
-  -ai
-  -automation
-  -print monitoring
+- tapo
+- p110
+- smart plug
+- power
+- shutdown
+- obico
+- ai
+- automation
+- print monitoring
 
 compatibility:
   python: ">=3.9,<3.14"
 
 attributes:
-  -cloud
-  -ai-developed
+  - cloud
+  - ai-developed
 
 ---
 
