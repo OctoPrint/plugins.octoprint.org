@@ -14,7 +14,7 @@ date: 2026-09-12
 
 homepage: https://github.com/SpideRaY/OctoPrint-TapoAutoShutdown-ObicoDelay
 source: https://github.com/SpideRaY/OctoPrint-TapoAutoShutdown-ObicoDelay
-archive: https://github.com/SpideRaY/OctoPrint-TapoAutoShutdown-ObicoDelay/archive/refs/tags/v0.2.0.zip
+archive: https://github.com/SpideRaY/OctoPrint-TapoAutoShutdown-ObicoDelay/archive/main.zip
 
 privacypolicy: https://github.com/SpideRaY/OctoPrint-TapoAutoShutdown-ObicoDelay/blob/main/PRIVACY.md
 
