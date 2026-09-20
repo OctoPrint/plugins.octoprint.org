@@ -36,6 +36,8 @@ compatibility:
   - freebsd
   python: ">=3.6,<4"
 
+attributes:
+- ai-developed
 ---
 
 # Bed Ready
@@ -55,6 +57,10 @@ For the plugin to work properly add `@BEDREADY` at the beginning of your slicer'
 Use the Test Snapshot button to compare the currently stored Reference Image with the bed.
 
 ![Test Results](/assets/img/plugins/bedready/screenshot_test_results.png)
+
+## AI Development
+
+The plugin has received AI developed code contributions in the form of pull requests from third parties that were personally reviewed by me, jneilliii, for validity and accuracy prior to merging. As such, the plugin has been marked as `ai-developed` for transparency. 
 
 ## Get Help
 
