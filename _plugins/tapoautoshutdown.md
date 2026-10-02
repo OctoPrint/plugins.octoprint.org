@@ -10,7 +10,7 @@ authors:
 
 license: MIT
 
-date: 2026-09-12
+date: 2026-10-02
 
 homepage: https://github.com/SpideRaY/OctoPrint-TapoAutoShutdown-ObicoDelay
 source: https://github.com/SpideRaY/OctoPrint-TapoAutoShutdown-ObicoDelay
