@@ -30,7 +30,7 @@ tags:
 - print monitoring
 
 compatibility:
-  python: ">=3.9,<3.14"
+  python: ">=3.11,<4"
 
 attributes:
   - cloud
