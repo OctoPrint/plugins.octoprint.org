@@ -46,7 +46,7 @@ compatibility:
   - macos
   - freebsd
 
-  python: ">=3,<4"
+  python: ">=3.9,<4"
 
 attributes:
 - cloud  # only the optional brightness feature, which goes through Prusa Connect
@@ -63,6 +63,6 @@ Turn the chamber light of a **Prusa CORE One** on and off from OctoPrint, and op
   firmware has no G-code for brightness. This uses Prusa Connect's unofficial web API and a login token from your
   Prusa account, so it needs internet access and may stop working if Prusa changes the API.
 
-Tested with a CORE One on firmware 7.0.0 and OctoPrint 1.11.8. Not affiliated with Prusa Research.
+Tested with a CORE One on firmware 7.0.0, on OctoPrint 1.11.8 and 2.0.0rc5. Not affiliated with Prusa Research.
 
 See the [README](https://github.com/Aryeh95/OctoPrint-PrusaChamberLight#readme) for setup and details.
