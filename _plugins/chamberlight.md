@@ -50,6 +50,7 @@ compatibility:
 
 attributes:
 - cloud  # only the optional brightness feature, which goes through Prusa Connect
+- ai-developed
 
 ---
 
