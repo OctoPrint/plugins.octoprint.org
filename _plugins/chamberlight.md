@@ -14,6 +14,9 @@ homepage: https://github.com/Aryeh95/OctoPrint-PrusaChamberLight
 source: https://github.com/Aryeh95/OctoPrint-PrusaChamberLight
 archive: https://github.com/Aryeh95/OctoPrint-PrusaChamberLight/archive/main.zip
 
+# Only the optional brightness feature talks to a cloud service (Prusa Connect)
+privacypolicy: https://github.com/Aryeh95/OctoPrint-PrusaChamberLight/blob/main/PRIVACY.md
+
 tags:
 - prusa
 - core one
