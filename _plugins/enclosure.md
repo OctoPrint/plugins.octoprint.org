@@ -55,6 +55,8 @@ compatibility:
   os:
   - nix
   python: '>=2.7,<4'
+
+abandoned: https://github.com/OctoPrint/plugins.octoprint.org/issues/1240
 ---
 
 This plugin is intended to control your printer enclosure using raspberry pi GPIO (At the moment this plugin only support raspberry pi).
