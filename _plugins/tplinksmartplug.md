@@ -22,7 +22,7 @@ tags:
 - Power
 
 compatibility:
-  python: ">=2.7,<4"
+  python: ">=3.11,<4"
 
 featuredimage: /assets/img/plugins/tplinksmartplug/screenshot_on.png
 
