@@ -3,7 +3,7 @@ layout: plugin
 
 id: git_backup
 title: Git Backup Plugin
-description: Automatically push OctoPrint backups to a remote Git repository after each backup is created. One-click install and auth setup for apt-based systems (Raspberry Pi OS, Ubuntu, Debian).
+description: Automatically push OctoPrint backups to a remote Git repository after each backup is created.
 authors:
 - Mauro Druwel
 license: MIT
@@ -42,7 +42,7 @@ compatibility:
   - macos
   - freebsd
 
-  python: ">=3,<4"
+  python: ">=3.7,<4"
 
 ---
 
@@ -58,13 +58,13 @@ While GitHub is the primary target (with built-in GitHub CLI setup helpers), **a
 - **Optional auto-delete**, remove the local `.zip` after a successful push to save disk space
 - **README-safe**, existing `README.md` in the repo is never overwritten by backup contents
 - **Live auth status panel**, shows git/gh CLI status and credential helper setup in the OctoPrint settings UI
-- **One-click setup buttons**, install git, install gh CLI, and run `gh auth login` directly from the settings panel (apt-based systems)
+- **Guided GitHub CLI setup**, trigger `gh auth login` directly from the settings panel with device code flow
 
 ## Setup
 
 1. Create a **private** GitHub repository (backups may contain API keys and credentials)
 2. Enter the repository URL in the plugin settings
-3. Authenticate, on Raspberry Pi OS / Ubuntu / Debian the settings panel has one-click buttons for `git`, `gh CLI`, and `gh auth login`. On other systems set up git auth at the OS level (SSH key or credential manager)
+3. Authenticate: configure git authentication at the OS level (SSH key, credential helper, or use the guided GitHub CLI login in the settings panel)
 4. Trigger a backup from OctoPrint, the plugin pushes it automatically
 
 ## Tips
