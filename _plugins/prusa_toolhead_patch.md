@@ -33,4 +33,4 @@ compatibility:
 
     
 ---
-Prusa firmware v6.10.x for the XL and XL+ printers introduced an incompatibility with Octorprint. Specifically the the `M106/M107/M201/M203/M221` commands now want a valid tool to be specified. This is (probably) a temporary fix until the bug in the firmware is corrected, assuming it is in-fact a bug. 
+Prusa firmware v6.10.x for the XL and XL+ printers introduced an incompatibility with Octorprint. Specifically the `M106/M107/M201/M203/M221` commands now want a valid tool to be specified. This is (probably) a temporary fix until the bug in the firmware is corrected, assuming it is in-fact a bug. 
