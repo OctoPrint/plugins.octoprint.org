@@ -42,8 +42,10 @@ compatibility:
   - macos
   - freebsd
 
-  python: ">=3,<4"
+  python: ">=3.7,<4"
 
+attributes:
+- ai-developed
 ---
 
 Shows the weights from a [FilamentScale](https://github.com/jelinj8/firmware-FilamentScale), a WiFi scale for up to five
@@ -58,3 +60,9 @@ in a slim sidebar panel.
 OctoPrint polls the scale's JSON API on your local network (every 2 s by default); the browser never talks to the scale
 directly, so the panel also works over remote access. The plugin uses no cloud services and sends nothing to the internet.
 The scale serves plain HTTP, as embedded devices on a local network usually do.
+
+## AI Development
+
+The code was written with Claude Code (Anthropic) under my direction: I specified the features, made the design
+decisions and tested every version on my own printer with the real scale. The plugin is therefore marked as
+`ai-developed` for transparency.
