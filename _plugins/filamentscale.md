@@ -8,7 +8,7 @@ authors:
 - Jakub Jelínek
 license: AGPL-3.0-or-later
 
-date: 2026-10-23
+date: 2026-10-25
 
 homepage: https://github.com/jelinj8/plugin-OctoPrint-FilamentScale
 source: https://github.com/jelinj8/plugin-OctoPrint-FilamentScale
