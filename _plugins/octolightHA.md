@@ -37,7 +37,7 @@ featuredimage: /assets/img/plugins/octolightHA/controls.png
 
 compatibility:
   octoprint:
-  - ">=1.11.8,<3"
+  - ">=1.8.0,<3"
   os:
   - linux
   python: ">=3.9,<4"
@@ -74,7 +74,7 @@ Brightness, RGB colour and native flashes depend on each light's capabilities.
 
 ## Requirements and setup
 
-Requires Python **>=3.9,<4**, OctoPrint **>=1.11.8,<3** on Linux, and a Home
+Requires Python **>=3.9,<4**, OctoPrint **>=1.8.0,<3** on Linux, and a Home
 Assistant instance reachable from the OctoPrint host. Create a Home Assistant
 long-lived access token with access to the entities you want to control.
 
@@ -84,8 +84,8 @@ long-lived access token with access to the entities you want to control.
 4. Select **Search Home Assistant**, then choose a light, switch or input boolean.
 5. Select **Test connection and entity**, save, and configure optional automation.
 
-Tested with OctoPrint **1.11.8 / Python 3.9 and 3.10**, and
-**2.0.0rc7 / Python 3.12**. OctoPrint 2 testing covers this release candidate.
+Tested with OctoPrint **1.8.0 / Python 3.9**, **1.11.8 / Python 3.9 and 3.10**,
+and **2.0.0rc7 / Python 3.12**. OctoPrint 2 testing covers this release candidate.
 Automated checks use Linux and a simulated Home Assistant; physical devices,
 Windows and macOS have not been verified.
 
@@ -108,13 +108,6 @@ The API is `/api/plugin/octolightHA`. GET reads cached state; authenticated JSON
 POST requests operate lights. See the
 [API documentation](https://github.com/mark-bloom/OctoLight_Home-Assistant#http-api)
 for commands and permission requirements.
-
-## Upgrading
-
-Existing OctoLight Home Assistant installations upgrade in place. The plugin
-identifier, settings and update source remain the same, so no settings import is
-needed. Integrations using GET requests to toggle, turn on or turn off lights must
-switch to authenticated JSON POST commands on the same API endpoint.
 
 ## Connections and credentials
 
