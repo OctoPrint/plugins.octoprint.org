@@ -38,14 +38,14 @@ attributes:
 
 ---
 
-Tapo Auto Shutdown automatically switches a Tapo P110 smart plug off after a completed print and can manage Obico AI monitoring during the print.
+Tapo Auto Shutdown
 
-The plugin provides configurable delays for both Tapo shutdown and Obico AI monitoring. Obico AI monitoring is disabled when a print starts and can be automatically re-enabled after the configured delay if the print is still running.
+Automatically control a Tapo P110 smart plug after a completed print and manage Obico AI monitoring during your prints.
 
-If the print completes, is cancelled, or fails, the Obico monitoring timer is cancelled and AI monitoring is disabled.
+Tapo Auto Shutdown switches off the printer’s Tapo smart plug when a print has finished. It can also delay shutdown to allow timelapse rendering to complete before power is removed.
 
-The plugin requires an OctoPrint installation, a Tapo P110 smart plug, the tapo Python package, and the Obico OctoPrint plugin for Obico monitoring features.
+Obico AI monitoring is disabled when a print starts. It can be automatically re-enabled after the configured Obico delay if the print is still running.
 
-The plugin does not modify the printer's operating system or install system services.
+If the print completes, is cancelled, or fails, the Obico monitoring timer is cancelled and AI monitoring remains disabled.
 
-For more information, configuration details and source code, see the project repository.
+The plugin supports optional Tapo plug control and Obico monitoring management, allowing you to configure the features you need for your printing setup.
