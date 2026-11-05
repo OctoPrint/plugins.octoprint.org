@@ -4,15 +4,17 @@ layout: plugin
 id: arc_welder
 title: Arc Welder
 description: Anti-Stutter and GCode Compression.  Replaces G0/G1 with G2/G3 where possible.
-author: Brad Hochgesang
+authors:
+    - Steve Dougherty
+    - Brad Hochgesang
 license: AGPL-3.0
 
 # today's date in format YYYY-MM-DD, e.g.
 date: 2020-10-24
 
-homepage: https://github.com/FormerLurker/ArcWelderPlugin
-source: https://github.com/FormerLurker/ArcWelderPlugin
-archive: https://github.com/FormerLurker/ArcWelderPlugin/archive/master.zip
+homepage: https://github.com/Thynix/ArcWelderPlugin
+source: https://github.com/Thynix/ArcWelderPlugin
+archive: https://github.com/Thynix/ArcWelderPlugin/archive/main.zip
 
 # Set this to true if your plugin uses the dependency_links setup parameter to include
 # library versions not yet published on pypi. SHOULD ONLY BE USED IF THERE IS NO OTHER OPTION!
@@ -26,6 +28,7 @@ tags:
 - g2
 - g3
 - stutter
+- ai-developed
 
 #screenshots:
 #- url: url of a screenshot, /assets/img/...
@@ -55,7 +58,7 @@ compatibility:
   # OctoPrint versions being supported.
 
   octoprint:
-  - 1.4.0
+  - 1.8.0
 
   # List of compatible operating systems
   #
@@ -78,7 +81,7 @@ compatibility:
   - linux
   - windows
   - freebsd
-  # Not supported Yet
+  # Not supported
   # - macos
 
   # Compatible Python version
@@ -90,7 +93,7 @@ compatibility:
   # If your plugin only supports Python 2 (worst case, not recommended for newly developed plugins since Python 2
   # is EOL), leave at ">=2.7,<3"
 
-  python: ">=2.7,<4"
+  python: ">=3.9,<4"
 
 ---
 # Arc Welder: Anti Stutter and GCode Compression
@@ -104,18 +107,13 @@ compatibility:
 <figure style="text-align:center">
     <img src="{{site.url}}/assets/img/plugins/arc_welder/tab_mini.jpg" alt="The Arc Welder Tab" title="The Arc Welder Tab."/>
     <figcaption>
-        <a href="https://github.com/FormerLurker/ArcWelderPlugin/wiki/">
-            <i>The Arc Welder Tab</i>
-        </a>
+        <i>The Arc Welder Tab</i>
     </figcaption>
 </figure>
 ## How To Use Arc Welder
-Please read the [readme file](https://github.com/FormerLurker/ArcWelderPlugin/#arc-welder-anti-stutter) in the Github Repository for installation and usage instructions.  I am planning to add a complete wiki for the plugin in the near future and will link to that here when it is complete.
+Please read the [readme file](https://github.com/Thynix/ArcWelderPlugin/#arc-welder-anti-stutter) in the GitHub repository for installation and usage instructions.
 
-Please note that if you are using Python 3, you may need to install the *python3-dev* package before *Arc Welder* will install. This is detailed in the [prerequisites section of the readme file](https://github.com/FormerLurker/ArcWelderPlugin/#prerequisites) linked to above.
-
-## Support *Arc Welder* Development
-Please consider supporting my work by becoming a [patron](https://www.patreon.com/join/FormerLurker), a [Github Sponsor](https://github.com/sponsors/FormerLurker), or by sending me beer money via [PayPal](https://paypal.me/formerlurker).  Almost all of the donations go towards offsetting the cost of development, which is substantial. Plus, it always makes my day!  If you cannot afford to leave a tip or just don't want to, that is fine too! *Arc Welder* is [free and open source](https://raw.githubusercontent.com/FormerLurker/ArcWelderPlugin/master/LICENSE) after all.
+Please note that if you are using Python 3, you may need to install the *python3-dev* package before *Arc Welder* will install. This is detailed in the [prerequisites section of the readme file](https://github.com/Thynix/ArcWelderPlugin/#prerequisites) linked to above.
 
 ## What *Arc Welder* Does
 *Arc Welder* attempts to replace G0/G1 (linear move) GCodes with G2/G3 (arc move) GCodes.  This can substantially compress many GCode files and may reduce stuttering caused by sending many tiny movements in rapid succession over a slower serial connection.  Here is an example of the before and after of a single layer of a cylinder with archimedean infill produced by PrusaSlicer:
@@ -196,10 +194,10 @@ It is important to note that the example above is zoomed WAY in so that the devi
 * **Enable/Disable Notifications** - Tired of popup messages?  Turn them off in the settings.
 * **Advanced Logging Settings** - You can control logging from within the plugin's settings page if you run into problems.  You can even delete the existing log(s) completely.
 * **Restore Plugin Defaults** - Easily restore the default settings if you run into trouble.
-* **Receive Notifications for New Development or Maintenance Release Candidates** - Get early notifications about new features and bug fixes.  Help contribute to the project!  *Arc Welder* also supports plugin-specific release channels in a future version of OctoPrint (if that feature is eventually released).
+* **Receive Notifications for New Development or Maintenance Release Candidates** - Get early notifications about new features and bug fixes.  Help contribute to the project!  *Arc Welder* also supports OctoPrint's plugin-specific release channels.
 
 ## *Arc Welder* Library and Console Application
-The core of the *Arc Welder* plugin is a set of libraries written in c++ based on code that was originally designed for the Octolapse plugin.  This code allows *Arc Welder* to parse GCode and determine the printer's position and extruder state after each command.  Since the code is written entirely in c++, it is orders of magnitude faster than similar code written in Python.  The complete source, as well as a console version and inverse processor (convert G2/G3 to G0/G1), can be found [here](https://github.com/FormerLurker/ArcWelderLib).  There are also [pre-compiled binaries](https://github.com/FormerLurker/ArcWelderLib/actions?query=workflow%3A%22CMake+Build+Matrix%22), though I've not gotten them to work properly in MacOS or in some flavors of Linux.  There are currently no GitHub hosted runners for any Raspberry Pi.  I am working on these issues.
+The core of the *Arc Welder* plugin is a set of libraries written in c++ based on code that was originally designed for the Octolapse plugin.  This code allows *Arc Welder* to parse GCode and determine the printer's position and extruder state after each command.  Since the code is written entirely in c++, it is orders of magnitude faster than similar code written in Python.  The complete source, as well as a console version and inverse processor (convert G2/G3 to G0/G1), can be found [here](https://github.com/Thynix/ArcWelderLib).  There are also [pre-compiled binaries](https://github.com/Thynix/ArcWelderLib/actions?query=workflow%3A%22CMake+Build+Matrix%22), though they may not work properly on macOS, and none are built for the Raspberry Pi.
 
 Using the console application, it is possible to arc-weld files via most slicers as a post-processor.  However, all slicers that I have tested except for [Simplify 3D](https://www.simplify3d.com/) fail to correctly visualize the G2/G3 commands.  Simplify 3D does seem to work perfectly for this, but other slicers make it look like the GCode is faulty.  Keep that in mind if you plan to integrate the *Arc Welder Console Application* with your slicer.
 
@@ -220,8 +218,6 @@ If your printer is running a fork of Marlin, but arc support is not enabled or i
 ### Prusa Firmware
 [Prusa's fork of Marlin](https://github.com/prusa3d/Prusa-Firmware) does support G2/G3 commands, however the default settings can produce sharp corners for very small arcs.  I've only noticed this in a few of my test prints, so it is not a particularly common issue.  You should be able to see it on the roof of a Benchy if you look closely.  Reducing the *MM_PER_ARC_SEGMENT* setting slightly can correct this but can also introduce stuttering.  Reducing the value massively (say to 0.1mm) will introduce a LOT of stutter and is NOT recommended.  Please note that adjusting this setting currently requires a manual firmware recompile.
 
-I have been toying with the firmware and have submitted a pull request to enhance the capabilities, but it hasn't made it into the firmware yet and may require further modifications.  I am planning to add some enhancements from Marlin 2.0.6 as well.  I also added some new GCodes for adjusting arc interpolating and for retrieving the firmware settings for arc generation.  You can view the pull request [here](https://github.com/prusa3d/Prusa-Firmware/pull/2657).  Feel free to give this pull request a thumbs up, but realize that it needs some work and that the good folks at [Prusa Research]([https://www.prusa3d.com/) have a lot on their plates.
-
 Also, some very old versions of Prusa's firmware (I'm not sure exactly how old) do not support bed leveling adjustments during arc movements.  Please make sure you are using a recent version of the firmware so that interpolated movements are properly leveled.
 
 ### Klipper
@@ -237,18 +233,18 @@ G0 X0 Y0
 G2 X40 I20
 ```
 
-If your printer supports arc commands, it should move across a small arc from the origin.  Please feel free to let me know if your firmware supports arc movements, and I may add it to the list.
+If your printer supports arc commands, it should move across a small arc from the origin.
 
-**Warning**:  The above GCode has not been tested on all printers.  Please use it with caution and [report any issues here](https://github.com/FormerLurker/ArcWelderPlugin/issues).
+**Warning**:  The above GCode has not been tested on all printers.  Please use it with caution and [report any issues here](https://github.com/Thynix/ArcWelderPlugin/issues).
 
 ### Other Firmware Considerations
 
 Most firmware will convert G2/G3 commands to many small segments through a process called interpolation.  The length of these segments varies by implementation.  In most cases the interpolated segments are much closer together than the linear segments you will find within your GCode file, but it's impossible to know for sure without examining the firmware in detail.
 
-All firmware that I am aware of will inscribe these interpolated segments within the arc.  These segments will be entirely within the arc, only touching it at the endpoints.  This will reduce the average radius slightly.  In most cases, this effect is minimal and has no practical impact.  However, in some odd cases, like a snap fitting that is extremely sensitive to changes in diameter, the effect may be noticeable.  The smaller the interpolated segments (all firmware controlled), the less of an effect there is.  In general, it will be a much smaller effect than normal variations in filament diameter.  I hope to find a solution to this problem.
+All firmware that I am aware of will inscribe these interpolated segments within the arc.  These segments will be entirely within the arc, only touching it at the endpoints.  This will reduce the average radius slightly.  In most cases, this effect is minimal and has no practical impact.  However, in some odd cases, like a snap fitting that is extremely sensitive to changes in diameter, the effect may be noticeable.  The smaller the interpolated segments (all firmware controlled), the less of an effect there is.  In general, it will be a much smaller effect than normal variations in filament diameter.
 
 G2/G3 support is not perfect at the moment, but I suspect things will start to improve as they become more common.  If you are willing and have the skills to improve G2/G3 support in any way, please do!
 
 ## License
 
-View the [*Arc Welder* license](https://raw.githubusercontent.com/FormerLurker/ArcWelderPlugin/master/LICENSE).
+[*GNU Affero v3* license](https://raw.githubusercontent.com/Thynix/ArcWelderPlugin/main/LICENSE).
