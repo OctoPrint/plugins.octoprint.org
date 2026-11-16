@@ -3,7 +3,7 @@ layout: plugin
 
 id: octohue
 title: OctoHue
-description: Illuminate your 3D printer and signal its status using Philips Hue lights. Supports event-driven colour changes, CT mode for white-spectrum bulbs, night mode, smart plug auto power-off, and guided in-settings bridge pairing.
+description: Illuminate your 3D printer and signal its status using Philips Hue or WLED lights. Supports event-driven colour changes, CT mode for white-spectrum bulbs, night mode, smart plug auto power-off, and guided in-settings Hue bridge pairing.
 authors:
 - Simon Beckett
 license: AGPLv3
@@ -19,6 +19,7 @@ follow_dependency_links: false
 tags:
 - Philips Hue
 - Hue
+- WLED
 - Lights
 - Status
 - Automation
@@ -58,10 +59,11 @@ compatibility:
 
 # OctoPrint-OctoHue
 
-Illuminate your 3D print job and signal its status using Philips Hue lights — and optionally cut power to your printer automatically once it cools down.
+Illuminate your 3D print job and signal its status using Philips Hue or WLED lights — and optionally cut power to your printer automatically once it cools down (Hue smart plugs).
 
 ## Features
 
+- **Philips Hue or WLED** — choose your light system from the **Light Controller** dropdown on the Bridge tab. WLED needs only the controller's IP address or hostname; flash and smart-plug features are Hue-only
 - **Event-driven lighting** — map any OctoPrint event (Connected, PrintStarted, PrintDone, PrintFailed, etc.) to a specific colour or colour temperature, brightness, optional delay, flash alert, and on/off state
 - **CT mode** — switch any event to colour-temperature mode for RGBCCT lights, activating the white channel instead of the RGB LEDs
 - **Configurable toggle colour** — the navbar toggle button turns your light on with a dedicated colour, CT value, and brightness you configure
@@ -69,6 +71,7 @@ Illuminate your 3D print job and signal its status using Philips Hue lights — 
 - **Smart plug control** — configure a Hue smart plug to cut printer power after a completed print
 - **Auto power-off** — automatically switch off the plug once all extruders cool below a configurable temperature threshold
 - **Guided bridge pairing** — find your Hue bridge on the network and pair it without leaving OctoPrint settings; after pairing, a single button takes you straight to the Lights tab
+- **Find Moved Bridge** — if your Hue bridge changes IP address, settings show it as unreachable and can find it again on the network, keeping your existing pairing
 - **Navbar toggle** — optional toolbar button to toggle your lights on/off at any time
 - **Group support** — target individual lights or Hue rooms/zones from a single combined dropdown
 - **Configurable delay** — add a delay (in seconds) before each event triggers its light change
@@ -76,9 +79,11 @@ Illuminate your 3D print job and signal its status using Philips Hue lights — 
 
 ## Setup
 
-### 1. Bridge pairing
+### 1. Choose your light system
 
-Open OctoPrint **Settings → OctoHue → Bridge**.
+Open OctoPrint **Settings → OctoHue → Bridge** and pick **Philips Hue** or **WLED** under **Light Controller**. For WLED, enter the controller's IP address or hostname, save, and continue at step 3.
+
+### 2. Bridge pairing (Hue)
 
 - Click **Find My Bridge** to locate your Hue bridge automatically on your local network.
 - Once found, press the **physical button on top of your Hue bridge**, then click **Start Pairing** within 30 seconds.
@@ -86,15 +91,15 @@ Open OctoPrint **Settings → OctoHue → Bridge**.
 
 > If auto-discovery does not work (e.g. the bridge is on a different subnet), you can enter the bridge IP address and API key manually after pairing via the [Hue Getting Started guide](https://developers.meethue.com/develop/get-started-2/).
 
-### 2. Light or group selection
+### 3. Light or group selection
 
 On the **Lights** tab, select your light or group from the dropdown. Individual lights and Hue rooms/zones appear in the same list — groups are labelled **(Group)**. Set **Default Brightness** (1–100%) to control brightness when an event does not specify its own.
 
-### 3. Event configuration
+### 4. Event configuration
 
 Still on the **Lights** tab, expand **Event Lighting Options** to configure which OctoPrint events trigger a light change. For each event you can set colour (RGB or CT), brightness (1–100%), delay, flash, and turn-off behaviour.
 
-### 4. Power control (optional)
+### 5. Power control (optional, Hue)
 
 Open the **Power** tab to select a Hue smart plug and configure auto power-off after prints complete.
 
