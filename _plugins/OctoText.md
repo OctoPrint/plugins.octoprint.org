@@ -96,7 +96,7 @@ compatibility:
   # is EOL), leave at ">=2.7,<3" - be aware that your plugin will not be allowed to register on the
   # plugin repository if it only support Python 2.
 
-  python: ">=3,<4"
+  python: ">=3.7,<4"
 
 ---
 # OctoText - Simple, Easy to use, Free text or email notifications
@@ -124,27 +124,22 @@ is installed on and never transmitted anywhere for any reason.
 If you can set up an email account you can configure OctoText!
 
 1. Install the plugin via the [Plugin Manager](https://docs.octoprint.org/en/master/bundledplugins/pluginmanager.html)
-2. Choose an existing email or set up a new email account to be used for the plugin. It is recommended that you use a free
-service such as Microsoft's Outlook just for this. Your email host will must allow you to send messages
-via an SMTP connection and you will need the port and server address information to set up OctoText.
-3. Open the settings tab on Octoprint for the OctoText settings and change the default gateway and port
-for your email hosting service. As an example, Outlook uses smtp.office365.com for its gateway and 587 for the port number.
-   If your service uses SSL encryption then you will need to check the SSL box and set the port number appropriately
-   (usually this is port 465). TLS encryption is the default.
-4. Optionally modify the "Message" setting for the test.
-5. Change the email address and password settings to match the account you have set up. The password is stored securely on
-the OctoPrint server and NEVER transmitted beyond initiating the email connection.
-6. For a text message enter the phone number and SMS gateway(1), for email destination enter the username and host.com address
-7. If you are going to use the webcam - test the snapshot setting first!
+2. Choose an existing email or set up a new email account to be used for the plugin. Your email host must allow you to send messages via an SMTP connection, and you will need the port and server address information to set up OctoText.
+3. Open the settings tab in OctoPrint for OctoText and enter the SMTP gateway and port for your email hosting service:
+   - **Gmail:** `smtp.gmail.com`, port `587` (TLS, SSL unchecked), using a [Google App Password](https://myaccount.google.com/apppasswords) (requires 2-Step Verification; spaces in Google's displayed format are stripped automatically).
+   - **Outlook / Office 365:** `smtp.office365.com`, port `587` (TLS, SSL unchecked).
+   - If your provider uses SSL encryption instead of STARTTLS, check the SSL box and set the port accordingly (usually `465`).
+4. Optionally modify the "Message" setting for the test, or set a custom **From address** / **Subject prefix** if needed.
+5. Enter the sender username, host domain, and password for your email account. The password is stored securely on the OctoPrint server and NEVER transmitted beyond initiating the email connection.
+6. For a text message enter the phone number and SMS gateway(1), for email destination enter the username and host.com address.
+7. If you are going to use webcam snapshots (supports both OctoPrint 1.9+/2.x webcams and legacy webcam settings), test the snapshot setting first!
 8. Save your settings.
 9. Press the test button!
 
 That's it! You will get feedback relatively quickly if the text/email was configured correctly.
 The only error case that we cannot detect easily is a bad destination address of the text or email.
 
-Some email services such as gmail and yahoo require an "app" password that you will need to use
-in order to login to the account. Check your email provider to see how this is done or go to the
-OctoText discussion board for instructions: [FAQ](https://github.com/OctoText/OctoText/discussions/1#discussion-3279932)
+Some email services such as Gmail and Yahoo require an "app" password to log in via SMTP. Check your email provider to see how this is done or visit the OctoText discussion board for instructions: [FAQ](https://github.com/OctoText/OctoText/discussions/1#discussion-3279932)
 
 (1) [https://en.wikipedia.org/wiki/SMS_gateway](https://en.wikipedia.org/wiki/SMS_gateway)
 
