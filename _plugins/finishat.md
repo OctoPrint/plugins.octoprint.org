@@ -8,7 +8,7 @@ authors:
 - Ale6699
 license: AGPLv3
 
-date: 2026-11-22
+date: 2026-11-27
 
 homepage: https://github.com/Ale6699/OctoPrint-FinishAt
 source: https://github.com/Ale6699/OctoPrint-FinishAt
